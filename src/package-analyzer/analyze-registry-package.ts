@@ -12,7 +12,7 @@ import { tryGetPackageAPI } from './try-get-package-api';
  * Analyze the latest version of package `query-registry` from the npm registry:
  *
  * ```typescript
- * import { analyzeRegistryPackage } from '@jsdocs-io/package-analyzer';
+ * import { analyzeRegistryPackage } from '@jsdocs-io/extractor';
  *
  * (async () => {
  *     const info = await analyzeRegistryPackage({ name: 'query-registry' });
