@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`export-default-named-function snapshot 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [],
+    "enums": Array [],
+    "functions": Array [
+      Object {
+        "docs": Array [
+          "/** func1 */",
+        ],
+        "id": "func1",
+        "kind": "FunctionDeclaration",
+        "name": "func1",
+        "signature": "func1: (a: number, b: number) => number;",
+        "source": Object {
+          "filename": "index.ts",
+          "line": 2,
+          "url": undefined,
+        },
+        "type": "(a: number, b: number) => number",
+      },
+    ],
+    "interfaces": Array [],
+    "namespaces": Array [],
+    "typeAliases": Array [],
+    "variables": Array [],
+  },
+  "files": Array [
+    Object {
+      "filename": "index.ts",
+      "isIndexFile": true,
+      "url": undefined,
+    },
+  ],
+  "overview": undefined,
+}
+`;

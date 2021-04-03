@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`export-equals-function-and-namespace snapshot 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [],
+    "enums": Array [],
+    "functions": Array [
+      Object {
+        "docs": Array [
+          "/** func1 function */",
+        ],
+        "id": "func1",
+        "kind": "FunctionDeclaration",
+        "name": "func1",
+        "signature": "func1: typeof func1;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 10,
+          "url": undefined,
+        },
+        "type": "typeof func1",
+      },
+    ],
+    "interfaces": Array [
+      Object {
+        "docs": Array [
+          "/** Interface1 */",
+        ],
+        "id": "Interface1",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "Interface1.foo",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "foo",
+              "signature": "readonly foo: string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 17,
+                "url": undefined,
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "Interface1",
+        "signature": "interface Interface1 {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 16,
+          "url": undefined,
+        },
+      },
+      Object {
+        "docs": Array [
+          "/** Interface2 */",
+        ],
+        "id": "Interface2",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "Interface2.bar",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "bar",
+              "signature": "readonly bar: number;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 22,
+                "url": undefined,
+              },
+              "type": "number",
+            },
+          ],
+        },
+        "name": "Interface2",
+        "signature": "interface Interface2 {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 21,
+          "url": undefined,
+        },
+      },
+    ],
+    "namespaces": Array [],
+    "typeAliases": Array [],
+    "variables": Array [
+      Object {
+        "docs": Array [
+          "/** var1 */",
+        ],
+        "id": "var1",
+        "kind": "VariableDeclaration",
+        "name": "var1",
+        "signature": "const var1: string;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 26,
+          "url": undefined,
+        },
+        "type": "string",
+        "variableKind": "const",
+      },
+    ],
+  },
+  "files": Array [
+    Object {
+      "filename": "index.d.ts",
+      "isIndexFile": true,
+      "url": undefined,
+    },
+  ],
+  "overview": "/**
+ * This is the overview.
+ *
+ * @packageDocumentation
+ */",
+}
+`;

@@ -1,0 +1,1184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dayjs 1.10.4 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [],
+            "id": "Dayjs.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(config?: ConfigType);",
+            "source": Object {
+              "filename": "index.d.ts",
+              "line": 28,
+              "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L28",
+            },
+          },
+        ],
+        "docs": Array [],
+        "id": "Dayjs",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * Returns a cloned Day.js object with a specified amount of time added.
+     * \`\`\`
+     * dayjs().add(7, 'day')// => Dayjs
+     * \`\`\`
+     * Units are case insensitive, and support plural and short forms.
+     *
+     * Docs: https://day.js.org/docs/en/manipulate/add
+     */",
+              ],
+              "id": "Dayjs.add",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "add",
+              "signature": "add: (value: number, unit?: OpUnitType) => Dayjs;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 234,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L234",
+              },
+              "type": "(value: number, unit?: OpUnitType) => Dayjs",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * All Day.js objects are immutable. Still, \`dayjs#clone\` can create a clone of the current object if you need one.
+     * \`\`\`
+     * dayjs().clone()// => Dayjs
+     * dayjs(dayjs('2019-01-25')) // passing a Dayjs object to a constructor will also clone it
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/parse/dayjs-clone
+     */",
+              ],
+              "id": "Dayjs.clone",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "clone",
+              "signature": "clone: () => Dayjs;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 37,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L37",
+              },
+              "type": "() => Dayjs",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Get the date of the month.
+     * \`\`\`
+     * dayjs().date()// => 1-31
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/get-set/date
+     */",
+                "/**
+     * Set the date of the month.
+     *
+     * Accepts numbers from 1 to 31. If the range is exceeded, it will bubble up to the months.
+     * \`\`\`
+     * dayjs().date(1)// => Dayjs
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/get-set/date
+     */",
+              ],
+              "id": "Dayjs.date",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "date",
+              "signature": "date: { (): number; (value: number): Dayjs };",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 91,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L91",
+              },
+              "type": "{ (): number; (value: number): Dayjs; }",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Get the day of the week.
+     *
+     * Returns numbers from 0 (Sunday) to 6 (Saturday).
+     * \`\`\`
+     * dayjs().day()// 0-6
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/get-set/day
+     */",
+                "/**
+     * Set the day of the week.
+     *
+     * Accepts numbers from 0 (Sunday) to 6 (Saturday). If the range is exceeded, it will bubble up to other weeks.
+     * \`\`\`
+     * dayjs().day(0)// => Dayjs
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/get-set/day
+     */",
+              ],
+              "id": "Dayjs.day",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "day",
+              "signature": "day: { (): number; (value: number): Dayjs };",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 111,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L111",
+              },
+              "type": "{ (): number; (value: number): Dayjs; }",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Get the number of days in the current month.
+     * \`\`\`
+     * dayjs('2019-01-25').daysInMonth() // 31
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/display/days-in-month
+     */",
+              ],
+              "id": "Dayjs.daysInMonth",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "daysInMonth",
+              "signature": "daysInMonth: () => number;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 324,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L324",
+              },
+              "type": "() => number",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * This indicates the difference between two date-time in the specified unit.
+     *
+     * To get the difference in milliseconds, use \`dayjs#diff\`
+     * \`\`\`
+     * const date1 = dayjs('2019-01-25')
+     * const date2 = dayjs('2018-06-05')
+     * date1.diff(date2) // 20214000000 default milliseconds
+     * \`\`\`
+     * To get the difference in another unit of measurement, pass that measurement as the second argument.
+     * \`\`\`
+     * const date1 = dayjs('2019-01-25')
+     * date1.diff('2018-06-05', 'month') // 7
+     * \`\`\`
+     * Units are case insensitive, and support plural and short forms.
+     *
+     * Docs: https://day.js.org/docs/en/display/difference
+     */",
+              ],
+              "id": "Dayjs.diff",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "diff",
+              "signature": "diff: (
+    date: ConfigType,
+    unit?: QUnitType | OpUnitType,
+    float?: boolean
+) => number;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 295,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L295",
+              },
+              "type": "(date: ConfigType, unit?: QUnitType | OpUnitType, float?: boolean) => number",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Returns a cloned Day.js object and set it to the end of a unit of time.
+     * \`\`\`
+     * dayjs().endOf('month')// => Dayjs
+     * \`\`\`
+     * Units are case insensitive, and support plural and short forms.
+     *
+     * Docs: https://day.js.org/docs/en/manipulate/end-of
+     */",
+              ],
+              "id": "Dayjs.endOf",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "endOf",
+              "signature": "endOf: (unit: OpUnitType) => Dayjs;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 264,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L264",
+              },
+              "type": "(unit: OpUnitType) => Dayjs",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Get the formatted date according to the string of tokens passed in.
+     *
+     * To escape characters, wrap them in square brackets (e.g. [MM]).
+     * \`\`\`
+     * dayjs().format()// => current date in ISO8601, without fraction seconds e.g. '2020-04-02T08:02:17-05:00'
+     * dayjs('2019-01-25').format('[YYYYescape] YYYY-MM-DDTHH:mm:ssZ[Z]')// 'YYYYescape 2019-01-25T00:00:00-02:00Z'
+     * dayjs('2019-01-25').format('DD/MM/YYYY') // '25/01/2019'
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/display/format
+     */",
+              ],
+              "id": "Dayjs.format",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "format",
+              "signature": "format: (template?: string) => string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 276,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L276",
+              },
+              "type": "(template?: string) => string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * String getter, returns the corresponding information getting from Day.js object.
+     *
+     * In general:
+     * \`\`\`
+     * dayjs().get(unit) === dayjs()[unit]()
+     * \`\`\`
+     * Units are case insensitive, and support plural and short forms.
+     * \`\`\`
+     * dayjs().get('year')
+     * dayjs().get('month') // start 0
+     * dayjs().get('date')
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/get-set/get
+     */",
+              ],
+              "id": "Dayjs.get",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "get",
+              "signature": "get: (unit: UnitType) => number;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 224,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L224",
+              },
+              "type": "(unit: UnitType) => number",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Get the hour.
+     * \`\`\`
+     * dayjs().hour()// => 0-23
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/get-set/hour
+     */",
+                "/**
+     * Set the hour.
+     *
+     * Accepts numbers from 0 to 23. If the range is exceeded, it will bubble up to the day.
+     * \`\`\`
+     * dayjs().hour(12)// => Dayjs
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/get-set/hour
+     */",
+              ],
+              "id": "Dayjs.hour",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "hour",
+              "signature": "hour: { (): number; (value: number): Dayjs };",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 129,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L129",
+              },
+              "type": "{ (): number; (value: number): Dayjs; }",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * This indicates whether the Day.js object is after the other supplied date-time.
+     * \`\`\`
+     * dayjs().isAfter(dayjs('2011-01-01')) // default milliseconds
+     * \`\`\`
+     * If you want to limit the granularity to a unit other than milliseconds, pass it as the second parameter.
+     * \`\`\`
+     * dayjs().isAfter('2011-01-01', 'year')// => boolean
+     * \`\`\`
+     * Units are case insensitive, and support plural and short forms.
+     *
+     * Docs: https://day.js.org/docs/en/query/is-after
+     */",
+              ],
+              "id": "Dayjs.isAfter",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "isAfter",
+              "signature": "isAfter: (date: ConfigType, unit?: OpUnitType) => boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 403,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L403",
+              },
+              "type": "(date: ConfigType, unit?: OpUnitType) => boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * This indicates whether the Day.js object is before the other supplied date-time.
+     * \`\`\`
+     * dayjs().isBefore(dayjs('2011-01-01')) // default milliseconds
+     * \`\`\`
+     * If you want to limit the granularity to a unit other than milliseconds, pass it as the second parameter.
+     * \`\`\`
+     * dayjs().isBefore('2011-01-01', 'year')// => boolean
+     * \`\`\`
+     * Units are case insensitive, and support plural and short forms.
+     *
+     * Docs: https://day.js.org/docs/en/query/is-before
+     */",
+              ],
+              "id": "Dayjs.isBefore",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "isBefore",
+              "signature": "isBefore: (date: ConfigType, unit?: OpUnitType) => boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 377,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L377",
+              },
+              "type": "(date: ConfigType, unit?: OpUnitType) => boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * This indicates whether the Day.js object is the same as the other supplied date-time.
+     * \`\`\`
+     * dayjs().isSame(dayjs('2011-01-01')) // default milliseconds
+     * \`\`\`
+     * If you want to limit the granularity to a unit other than milliseconds, pass it as the second parameter.
+     * \`\`\`
+     * dayjs().isSame('2011-01-01', 'year')// => boolean
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/query/is-same
+     */",
+              ],
+              "id": "Dayjs.isSame",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "isSame",
+              "signature": "isSame: (date: ConfigType, unit?: OpUnitType) => boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 389,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L389",
+              },
+              "type": "(date: ConfigType, unit?: OpUnitType) => boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * This returns a \`boolean\` indicating whether the Day.js object contains a valid date or not.
+     * \`\`\`
+     * dayjs().isValid()// => boolean
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/parse/is-valid
+     */",
+              ],
+              "id": "Dayjs.isValid",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "isValid",
+              "signature": "isValid: () => boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 45,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L45",
+              },
+              "type": "() => boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Dayjs.locale",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "locale",
+              "signature": "locale: {
+    (): string;
+    (preset: string | ILocale, object?: Partial<ILocale>): Dayjs;
+};",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 405,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L405",
+              },
+              "type": "{ (): string; (preset: string | ILocale, object?: Partial<ILocale>): Dayjs; }",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Get the milliseconds.
+     * \`\`\`
+     * dayjs().millisecond()// => 0-999
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/get-set/millisecond
+     */",
+                "/**
+     * Set the milliseconds.
+     *
+     * Accepts numbers from 0 to 999. If the range is exceeded, it will bubble up to the seconds.
+     * \`\`\`
+     * dayjs().millisecond(1)// => Dayjs
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/get-set/millisecond
+     */",
+              ],
+              "id": "Dayjs.millisecond",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "millisecond",
+              "signature": "millisecond: { (): number; (value: number): Dayjs };",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 182,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L182",
+              },
+              "type": "{ (): number; (value: number): Dayjs; }",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Get the minutes.
+     * \`\`\`
+     * dayjs().minute()// => 0-59
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/get-set/minute
+     */",
+                "/**
+     * Set the minutes.
+     *
+     * Accepts numbers from 0 to 59. If the range is exceeded, it will bubble up to the hour.
+     * \`\`\`
+     * dayjs().minute(59)// => Dayjs
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/get-set/minute
+     */",
+              ],
+              "id": "Dayjs.minute",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "minute",
+              "signature": "minute: { (): number; (value: number): Dayjs };",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 147,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L147",
+              },
+              "type": "{ (): number; (value: number): Dayjs; }",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Get the month.
+     *
+     * Months are zero indexed, so January is month 0.
+     * \`\`\`
+     * dayjs().month()// => 0-11
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/get-set/month
+     */",
+                "/**
+     * Set the month.
+     *
+     * Months are zero indexed, so January is month 0.
+     *
+     * Accepts numbers from 0 to 11. If the range is exceeded, it will bubble up to the year.
+     * \`\`\`
+     * dayjs().month(0)// => Dayjs
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/get-set/month
+     */",
+              ],
+              "id": "Dayjs.month",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "month",
+              "signature": "month: { (): number; (value: number): Dayjs };",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 71,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L71",
+              },
+              "type": "{ (): number; (value: number): Dayjs; }",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Get the seconds.
+     * \`\`\`
+     * dayjs().second()// => 0-59
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/get-set/second
+     */",
+                "/**
+     * Set the seconds.
+     *
+     * Accepts numbers from 0 to 59. If the range is exceeded, it will bubble up to the minutes.
+     * \`\`\`
+     * dayjs().second(1)// Dayjs
+     * \`\`\`
+     */",
+              ],
+              "id": "Dayjs.second",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "second",
+              "signature": "second: { (): number; (value: number): Dayjs };",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 165,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L165",
+              },
+              "type": "{ (): number; (value: number): Dayjs; }",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Generic setter, accepting unit as first argument, and value as second, returns a new instance with the applied changes.
+     *
+     * In general:
+     * \`\`\`
+     * dayjs().set(unit, value) === dayjs()[unit](value)
+     * \`\`\`
+     * Units are case insensitive, and support plural and short forms.
+     * \`\`\`
+     * dayjs().set('date', 1)
+     * dayjs().set('month', 3) // April
+     * dayjs().set('second', 30)
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/get-set/set
+     */",
+              ],
+              "id": "Dayjs.set",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "set",
+              "signature": "set: (unit: UnitType, value: number) => Dayjs;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 208,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L208",
+              },
+              "type": "(unit: UnitType, value: number) => Dayjs",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Returns a cloned Day.js object and set it to the start of a unit of time.
+     * \`\`\`
+     * dayjs().startOf('year')// => Dayjs
+     * \`\`\`
+     * Units are case insensitive, and support plural and short forms.
+     *
+     * Docs: https://day.js.org/docs/en/manipulate/start-of
+     */",
+              ],
+              "id": "Dayjs.startOf",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "startOf",
+              "signature": "startOf: (unit: OpUnitType) => Dayjs;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 254,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L254",
+              },
+              "type": "(unit: OpUnitType) => Dayjs",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Returns a cloned Day.js object with a specified amount of time subtracted.
+     * \`\`\`
+     * dayjs().subtract(7, 'year')// => Dayjs
+     * \`\`\`
+     * Units are case insensitive, and support plural and short forms.
+     *
+     * Docs: https://day.js.org/docs/en/manipulate/subtract
+     */",
+              ],
+              "id": "Dayjs.subtract",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "subtract",
+              "signature": "subtract: (value: number, unit?: OpUnitType) => Dayjs;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 244,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L244",
+              },
+              "type": "(value: number, unit?: OpUnitType) => Dayjs",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * To get a copy of the native \`Date\` object parsed from the Day.js object use \`dayjs#toDate\`.
+     * \`\`\`
+     * dayjs('2019-01-25').toDate()// => Date
+     * \`\`\`
+     */",
+              ],
+              "id": "Dayjs.toDate",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "toDate",
+              "signature": "toDate: () => Date;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 331,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L331",
+              },
+              "type": "() => Date",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * To format as an ISO 8601 string.
+     * \`\`\`
+     * dayjs('2019-01-25').toISOString() // '2019-01-25T02:00:00.000Z'
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/display/as-iso-string
+     */",
+              ],
+              "id": "Dayjs.toISOString",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "toISOString",
+              "signature": "toISOString: () => string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 347,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L347",
+              },
+              "type": "() => string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * To serialize as an ISO 8601 string.
+     * \`\`\`
+     * dayjs('2019-01-25').toJSON() // '2019-01-25T02:00:00.000Z'
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/display/as-json
+     */",
+              ],
+              "id": "Dayjs.toJSON",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "toJSON",
+              "signature": "toJSON: () => string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 339,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L339",
+              },
+              "type": "() => string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Returns a string representation of the date.
+     * \`\`\`
+     * dayjs('2019-01-25').toString() // 'Fri, 25 Jan 2019 02:00:00 GMT'
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/display/as-string
+     */",
+              ],
+              "id": "Dayjs.toString",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "toString",
+              "signature": "toString: () => string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 355,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L355",
+              },
+              "type": "() => string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * This returns the Unix timestamp (the number of **seconds** since the Unix Epoch) of the Day.js object.
+     * \`\`\`
+     * dayjs('2019-01-25').unix() // 1548381600
+     * \`\`\`
+     * This value is floored to the nearest second, and does not include a milliseconds component.
+     *
+     * Docs: https://day.js.org/docs/en/display/unix-timestamp
+     */",
+              ],
+              "id": "Dayjs.unix",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "unix",
+              "signature": "unix: () => number;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 316,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L316",
+              },
+              "type": "() => number",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Get the UTC offset in minutes.
+     * \`\`\`
+     * dayjs().utcOffset()
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/manipulate/utc-offset
+     */",
+              ],
+              "id": "Dayjs.utcOffset",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "utcOffset",
+              "signature": "utcOffset: () => number;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 363,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L363",
+              },
+              "type": "() => number",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * This returns the number of **milliseconds** since the Unix Epoch of the Day.js object.
+     * \`\`\`
+     * dayjs('2019-01-25').valueOf() // 1548381600000
+     * +dayjs(1548381600000) // 1548381600000
+     * \`\`\`
+     * To get a Unix timestamp (the number of seconds since the epoch) from a Day.js object, you should use Unix Timestamp \`dayjs#unix()\`.
+     *
+     * Docs: https://day.js.org/docs/en/display/unix-timestamp-milliseconds
+     */",
+              ],
+              "id": "Dayjs.valueOf",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "valueOf",
+              "signature": "valueOf: () => number;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 306,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L306",
+              },
+              "type": "() => number",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Get the year.
+     * \`\`\`
+     * dayjs().year()// => 2020
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/get-set/year
+     */",
+                "/**
+     * Set the year.
+     * \`\`\`
+     * dayjs().year(2000)// => Dayjs
+     * \`\`\`
+     * Docs: https://day.js.org/docs/en/get-set/year
+     */",
+              ],
+              "id": "Dayjs.year",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "year",
+              "signature": "year: { (): number; (value: number): Dayjs };",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 53,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L53",
+              },
+              "type": "{ (): number; (value: number): Dayjs; }",
+            },
+          ],
+          "properties": Array [],
+        },
+        "name": "Dayjs",
+        "signature": "class Dayjs {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 27,
+          "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L27",
+        },
+      },
+    ],
+    "enums": Array [],
+    "functions": Array [
+      Object {
+        "docs": Array [],
+        "id": "dayjs",
+        "kind": "FunctionDeclaration",
+        "name": "dayjs",
+        "signature": "dayjs: typeof dayjs;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 5,
+          "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L5",
+        },
+        "type": "typeof dayjs",
+      },
+      Object {
+        "docs": Array [],
+        "id": "extend",
+        "kind": "FunctionDeclaration",
+        "name": "extend",
+        "signature": "extend: <T = unknown>(plugin: PluginFunc<T>, option?: T) => Dayjs;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 412,
+          "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L412",
+        },
+        "type": "<T = unknown>(plugin: PluginFunc<T>, option?: T) => Dayjs",
+      },
+      Object {
+        "docs": Array [],
+        "id": "isDayjs",
+        "kind": "FunctionDeclaration",
+        "name": "isDayjs",
+        "signature": "isDayjs: (d: any) => d is Dayjs;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 416,
+          "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L416",
+        },
+        "type": "(d: any) => d is Dayjs",
+      },
+      Object {
+        "docs": Array [],
+        "id": "locale",
+        "kind": "FunctionDeclaration",
+        "name": "locale",
+        "signature": "locale: (
+    preset?: string | ILocale,
+    object?: Partial<ILocale>,
+    isLocal?: boolean
+) => string;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 414,
+          "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L414",
+        },
+        "type": "(preset?: string | ILocale, object?: Partial<ILocale>, isLocal?: boolean) => string",
+      },
+      Object {
+        "docs": Array [],
+        "id": "unix",
+        "kind": "FunctionDeclaration",
+        "name": "unix",
+        "signature": "unix: (t: number) => Dayjs;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 418,
+          "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L418",
+        },
+        "type": "(t: number) => Dayjs",
+      },
+    ],
+    "interfaces": Array [],
+    "namespaces": Array [
+      Object {
+        "declarations": Object {
+          "classes": Array [],
+          "enums": Array [],
+          "functions": Array [],
+          "interfaces": Array [
+            Object {
+              "docs": Array [],
+              "id": "dayjs/esm/locale/*.Locale",
+              "kind": "InterfaceDeclaration",
+              "members": Object {
+                "callSignatures": Array [],
+                "constructSignatures": Array [],
+                "indexSignatures": Array [],
+                "methods": Array [],
+                "properties": Array [],
+              },
+              "name": "Locale",
+              "signature": "interface Locale extends ILocale {}",
+              "source": Object {
+                "filename": "esm/locale/index.d.ts",
+                "line": 5,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/esm/locale/index.d.ts#L5",
+              },
+            },
+          ],
+          "namespaces": Array [],
+          "typeAliases": Array [],
+          "variables": Array [
+            Object {
+              "docs": Array [],
+              "id": "dayjs/esm/locale/*.locale",
+              "kind": "VariableDeclaration",
+              "name": "locale",
+              "signature": "const locale: locale.Locale;",
+              "source": Object {
+                "filename": "esm/locale/index.d.ts",
+                "line": 8,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/esm/locale/index.d.ts#L8",
+              },
+              "type": "locale.Locale",
+              "variableKind": "const",
+            },
+          ],
+        },
+        "docs": Array [],
+        "id": "dayjs/esm/locale/*",
+        "kind": "NamespaceDeclaration",
+        "name": "dayjs/esm/locale/*",
+        "signature": "module 'dayjs/esm/locale/*' {}",
+        "source": Object {
+          "filename": "esm/locale/index.d.ts",
+          "line": 3,
+          "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/esm/locale/index.d.ts#L3",
+        },
+      },
+      Object {
+        "declarations": Object {
+          "classes": Array [],
+          "enums": Array [],
+          "functions": Array [],
+          "interfaces": Array [
+            Object {
+              "docs": Array [],
+              "id": "dayjs/locale/*.Locale",
+              "kind": "InterfaceDeclaration",
+              "members": Object {
+                "callSignatures": Array [],
+                "constructSignatures": Array [],
+                "indexSignatures": Array [],
+                "methods": Array [],
+                "properties": Array [],
+              },
+              "name": "Locale",
+              "signature": "interface Locale extends ILocale {}",
+              "source": Object {
+                "filename": "locale/index.d.ts",
+                "line": 5,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/locale/index.d.ts#L5",
+              },
+            },
+          ],
+          "namespaces": Array [],
+          "typeAliases": Array [],
+          "variables": Array [
+            Object {
+              "docs": Array [],
+              "id": "dayjs/locale/*.locale",
+              "kind": "VariableDeclaration",
+              "name": "locale",
+              "signature": "const locale: locale.Locale;",
+              "source": Object {
+                "filename": "locale/index.d.ts",
+                "line": 8,
+                "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/locale/index.d.ts#L8",
+              },
+              "type": "locale.Locale",
+              "variableKind": "const",
+            },
+          ],
+        },
+        "docs": Array [],
+        "id": "dayjs/locale/*",
+        "kind": "NamespaceDeclaration",
+        "name": "dayjs/locale/*",
+        "signature": "module 'dayjs/locale/*' {}",
+        "source": Object {
+          "filename": "locale/index.d.ts",
+          "line": 3,
+          "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/locale/index.d.ts#L3",
+        },
+      },
+    ],
+    "typeAliases": Array [
+      Object {
+        "docs": Array [],
+        "id": "ConfigType",
+        "kind": "TypeAliasDeclaration",
+        "name": "ConfigType",
+        "signature": "type ConfigType = string | number | Date | Dayjs;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 12,
+          "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L12",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "OptionType",
+        "kind": "TypeAliasDeclaration",
+        "name": "OptionType",
+        "signature": "type OptionType =
+    | { locale?: string; format?: string; utc?: boolean }
+    | string
+    | string[];",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 14,
+          "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L14",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "OpUnitType",
+        "kind": "TypeAliasDeclaration",
+        "name": "OpUnitType",
+        "signature": "type OpUnitType = UnitType | 'week' | 'weeks' | 'w';",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 24,
+          "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L24",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "PluginFunc",
+        "kind": "TypeAliasDeclaration",
+        "name": "PluginFunc",
+        "signature": "type PluginFunc<T = unknown> = (option: T, c: typeof Dayjs, d: typeof dayjs) => void;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 410,
+          "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L410",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "QUnitType",
+        "kind": "TypeAliasDeclaration",
+        "name": "QUnitType",
+        "signature": "type QUnitType = UnitType | 'quarter' | 'quarters' | 'Q';",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 25,
+          "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L25",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "UnitType",
+        "kind": "TypeAliasDeclaration",
+        "name": "UnitType",
+        "signature": "type UnitType = UnitTypeLong | UnitTypeLongPlural | UnitTypeShort;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 22,
+          "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L22",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "UnitTypeLong",
+        "kind": "TypeAliasDeclaration",
+        "name": "UnitTypeLong",
+        "signature": "type UnitTypeLong =
+    | 'millisecond'
+    | 'second'
+    | 'minute'
+    | 'hour'
+    | 'day'
+    | 'month'
+    | 'year'
+    | 'date';",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 18,
+          "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L18",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "UnitTypeLongPlural",
+        "kind": "TypeAliasDeclaration",
+        "name": "UnitTypeLongPlural",
+        "signature": "type UnitTypeLongPlural =
+    | 'milliseconds'
+    | 'seconds'
+    | 'minutes'
+    | 'hours'
+    | 'days'
+    | 'months'
+    | 'years'
+    | 'dates';",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 20,
+          "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L20",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "UnitTypeShort",
+        "kind": "TypeAliasDeclaration",
+        "name": "UnitTypeShort",
+        "signature": "type UnitTypeShort = 'd' | 'M' | 'y' | 'h' | 'm' | 's' | 'ms';",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 16,
+          "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L16",
+        },
+      },
+    ],
+    "variables": Array [
+      Object {
+        "docs": Array [],
+        "id": "Ls",
+        "kind": "VariableDeclaration",
+        "name": "Ls",
+        "signature": "const Ls: { [key: string]: ILocale };",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 420,
+          "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L420",
+        },
+        "type": "{ [key: string]: ILocale; }",
+        "variableKind": "const",
+      },
+    ],
+  },
+  "files": Array [
+    Object {
+      "filename": "esm/locale/index.d.ts",
+      "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/esm/locale/index.d.ts",
+    },
+    Object {
+      "filename": "index.d.ts",
+      "isIndexFile": true,
+      "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts",
+    },
+    Object {
+      "filename": "locale/index.d.ts",
+      "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/locale/index.d.ts",
+    },
+  ],
+  "overview": undefined,
+}
+`;

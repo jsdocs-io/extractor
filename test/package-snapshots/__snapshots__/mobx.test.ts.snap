@@ -1,0 +1,4671 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mobx 6.0.5 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [],
+            "id": "ObservableMap.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(
+    initialData?: IObservableMapInitialValues<K, V>,
+    enhancer_?: IEnhancer<V>,
+    name_?: string
+);",
+            "source": Object {
+              "filename": "src/types/observablemap.ts",
+              "line": 97,
+              "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L97",
+            },
+          },
+        ],
+        "docs": Array [],
+        "id": "ObservableMap",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.[Symbol.iterator]",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "[Symbol.iterator]",
+              "signature": "[Symbol.iterator]: () => IterableIterator<IMapEntry<K, V>>;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 302,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L302",
+              },
+              "type": "() => IterableIterator<IMapEntry<K, V>>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.clear",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "clear",
+              "signature": "clear: () => void;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 329,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L329",
+              },
+              "type": "() => void",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.delete",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "delete",
+              "signature": "delete: (key: K) => boolean;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 153,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L153",
+              },
+              "type": "(key: K) => boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.entries",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "entries",
+              "signature": "entries: () => IterableIterator<IMapEntry<K, V>>;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 288,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L288",
+              },
+              "type": "() => IterableIterator<IMapEntry<K, V>>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.forEach",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "forEach",
+              "signature": "forEach: (
+    callback: (value: V, key: K, object: Map<K, V>) => void,
+    thisArg?: any
+) => void;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 306,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L306",
+              },
+              "type": "(callback: (value: V, key: K, object: Map<K, V>) => void, thisArg?: any) => void",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.get",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "get",
+              "signature": "get: (key: K) => V | undefined;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 257,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L257",
+              },
+              "type": "(key: K) => V | undefined",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.has",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "has",
+              "signature": "has: (key: K) => boolean;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 115,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L115",
+              },
+              "type": "(key: K) => boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.intercept_",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "intercept_",
+              "signature": "intercept_: (handler: IInterceptor<IMapWillChange<K, V>>) => Lambda;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 443,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L443",
+              },
+              "type": "(handler: IInterceptor<IMapWillChange<K, V>>) => Lambda",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.keys",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "keys",
+              "signature": "keys: () => IterableIterator<K>;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 269,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L269",
+              },
+              "type": "() => IterableIterator<K>",
+            },
+            Object {
+              "docs": Array [
+                "/** Merge another object into this object, returns this. */",
+              ],
+              "id": "ObservableMap.merge",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "merge",
+              "signature": "merge: (
+    other: ObservableMap<K, V> | IKeyValueMap<V> | any
+) => ObservableMap<K, V>;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 311,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L311",
+              },
+              "type": "(other: ObservableMap<K, V> | IKeyValueMap<V> | any) => ObservableMap<K, V>",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Observes this object. Triggers for the events 'add', 'update' and 'delete'.
+     * See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/observe
+     * for callback details
+     */",
+              ],
+              "id": "ObservableMap.observe_",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "observe_",
+              "signature": "observe_: (
+    listener: (changes: IMapDidChange<K, V>) => void,
+    fireImmediately?: boolean
+) => Lambda;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 437,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L437",
+              },
+              "type": "(listener: (changes: IMapDidChange<K, V>) => void, fireImmediately?: boolean) => Lambda",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.replace",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "replace",
+              "signature": "replace: (
+    values: ObservableMap<K, V> | IKeyValueMap<V> | any
+) => ObservableMap<K, V>;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 337,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L337",
+              },
+              "type": "(values: ObservableMap<K, V> | IKeyValueMap<V> | any) => ObservableMap<K, V>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.set",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "set",
+              "signature": "set: (key: K, value: V) => this;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 133,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L133",
+              },
+              "type": "(key: K, value: V) => this",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.toJSON",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "toJSON",
+              "signature": "toJSON: () => [K, V][];",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 424,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L424",
+              },
+              "type": "() => [K, V][]",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.toString",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "toString",
+              "signature": "toString: () => string;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 420,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L420",
+              },
+              "type": "() => string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.values",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "values",
+              "signature": "values: () => IterableIterator<V>;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 274,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L274",
+              },
+              "type": "() => IterableIterator<V>",
+            },
+          ],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.[$mobx]",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "[$mobx]",
+              "signature": "[$mobx]: {};",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 89,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L89",
+              },
+              "type": "{}",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.[Symbol.toStringTag]",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "[Symbol.toStringTag]",
+              "signature": "readonly [Symbol.toStringTag]: string;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 428,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L428",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.changeListeners_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "changeListeners_",
+              "signature": "changeListeners_: any;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 94,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L94",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.data_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "data_",
+              "signature": "data_: Map<K, ObservableValue<V>>;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 90,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L90",
+              },
+              "type": "Map<K, ObservableValue<V>>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.dehancer",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "dehancer",
+              "signature": "dehancer: any;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 95,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L95",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.enhancer_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "enhancer_",
+              "signature": "enhancer_: IEnhancer<V>;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 99,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L99",
+              },
+              "type": "IEnhancer<V>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.hasMap_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "hasMap_",
+              "signature": "hasMap_: Map<K, ObservableValue<boolean>>;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 91,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L91",
+              },
+              "type": "Map<K, ObservableValue<boolean>>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.interceptors_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "interceptors_",
+              "signature": "interceptors_: any;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 93,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L93",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.keysAtom_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "keysAtom_",
+              "signature": "keysAtom_: IAtom;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 92,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L92",
+              },
+              "type": "IAtom",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.name_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "name_",
+              "signature": "name_: string;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 100,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L100",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableMap.size",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "size",
+              "signature": "readonly size: number;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 415,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L415",
+              },
+              "type": "number",
+            },
+          ],
+        },
+        "name": "ObservableMap",
+        "signature": "class ObservableMap<K = any, V = any>
+    implements Map<K, V>, IInterceptable<IMapWillChange<K, V>>, IListenable {}",
+        "source": Object {
+          "filename": "src/types/observablemap.ts",
+          "line": 87,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L87",
+        },
+      },
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [],
+            "id": "ObservableSet.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(
+    initialData?: IObservableSetInitialValues<T>,
+    enhancer?: IEnhancer<T>,
+    name_?: string
+);",
+            "source": Object {
+              "filename": "src/types/observableset.ts",
+              "line": 74,
+              "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L74",
+            },
+          },
+        ],
+        "docs": Array [],
+        "id": "ObservableSet",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [
+            Object {
+              "docs": Array [],
+              "id": "ObservableSet.[Symbol.iterator]",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "[Symbol.iterator]",
+              "signature": "[Symbol.iterator]: () => IterableIterator<T>;",
+              "source": Object {
+                "filename": "src/types/observableset.ts",
+                "line": 263,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L263",
+              },
+              "type": "() => IterableIterator<T>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableSet.add",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "add",
+              "signature": "add: (value: T) => this;",
+              "source": Object {
+                "filename": "src/types/observableset.ts",
+                "line": 115,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L115",
+              },
+              "type": "(value: T) => this",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableSet.clear",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "clear",
+              "signature": "clear: () => void;",
+              "source": Object {
+                "filename": "src/types/observableset.ts",
+                "line": 96,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L96",
+              },
+              "type": "() => void",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableSet.delete",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "delete",
+              "signature": "delete: (value: any) => boolean;",
+              "source": Object {
+                "filename": "src/types/observableset.ts",
+                "line": 152,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L152",
+              },
+              "type": "(value: any) => boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableSet.entries",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "entries",
+              "signature": "entries: () => IterableIterator<[T, T]>;",
+              "source": Object {
+                "filename": "src/types/observableset.ts",
+                "line": 192,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L192",
+              },
+              "type": "() => IterableIterator<[T, T]>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableSet.forEach",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "forEach",
+              "signature": "forEach: (
+    callbackFn: (value: T, value2: T, set: Set<T>) => void,
+    thisArg?: any
+) => void;",
+              "source": Object {
+                "filename": "src/types/observableset.ts",
+                "line": 104,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L104",
+              },
+              "type": "(callbackFn: (value: T, value2: T, set: Set<T>) => void, thisArg?: any) => void",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableSet.has",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "has",
+              "signature": "has: (value: any) => boolean;",
+              "source": Object {
+                "filename": "src/types/observableset.ts",
+                "line": 187,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L187",
+              },
+              "type": "(value: any) => boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableSet.intercept_",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "intercept_",
+              "signature": "intercept_: (handler: IInterceptor<ISetWillChange<T>>) => Lambda;",
+              "source": Object {
+                "filename": "src/types/observableset.ts",
+                "line": 251,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L251",
+              },
+              "type": "(handler: IInterceptor<ISetWillChange<T>>) => Lambda",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableSet.keys",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "keys",
+              "signature": "keys: () => IterableIterator<T>;",
+              "source": Object {
+                "filename": "src/types/observableset.ts",
+                "line": 207,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L207",
+              },
+              "type": "() => IterableIterator<T>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableSet.observe_",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "observe_",
+              "signature": "observe_: (
+    listener: (changes: ISetDidChange<T>) => void,
+    fireImmediately?: boolean
+) => Lambda;",
+              "source": Object {
+                "filename": "src/types/observableset.ts",
+                "line": 244,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L244",
+              },
+              "type": "(listener: (changes: ISetDidChange<T>) => void, fireImmediately?: boolean) => Lambda",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableSet.replace",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "replace",
+              "signature": "replace: (
+    other: ObservableSet<T> | IObservableSetInitialValues<T>
+) => ObservableSet<T>;",
+              "source": Object {
+                "filename": "src/types/observableset.ts",
+                "line": 225,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L225",
+              },
+              "type": "(other: ObservableSet<T> | IObservableSetInitialValues<T>) => ObservableSet<T>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableSet.toJSON",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "toJSON",
+              "signature": "toJSON: () => T[];",
+              "source": Object {
+                "filename": "src/types/observableset.ts",
+                "line": 255,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L255",
+              },
+              "type": "() => T[]",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableSet.toString",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "toString",
+              "signature": "toString: () => string;",
+              "source": Object {
+                "filename": "src/types/observableset.ts",
+                "line": 259,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L259",
+              },
+              "type": "() => string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableSet.values",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "values",
+              "signature": "values: () => IterableIterator<T>;",
+              "source": Object {
+                "filename": "src/types/observableset.ts",
+                "line": 211,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L211",
+              },
+              "type": "() => IterableIterator<T>",
+            },
+          ],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "ObservableSet.[$mobx]",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "[$mobx]",
+              "signature": "[$mobx]: {};",
+              "source": Object {
+                "filename": "src/types/observableset.ts",
+                "line": 66,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L66",
+              },
+              "type": "{}",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableSet.[Symbol.toStringTag]",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "[Symbol.toStringTag]",
+              "signature": "readonly [Symbol.toStringTag]: string;",
+              "source": Object {
+                "filename": "src/types/observableset.ts",
+                "line": 267,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L267",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableSet.changeListeners_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "changeListeners_",
+              "signature": "changeListeners_: any;",
+              "source": Object {
+                "filename": "src/types/observableset.ts",
+                "line": 69,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L69",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableSet.dehancer",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "dehancer",
+              "signature": "dehancer: any;",
+              "source": Object {
+                "filename": "src/types/observableset.ts",
+                "line": 71,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L71",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableSet.enhancer_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "enhancer_",
+              "signature": "enhancer_: (newV: any, oldV: any | undefined) => any;",
+              "source": Object {
+                "filename": "src/types/observableset.ts",
+                "line": 72,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L72",
+              },
+              "type": "(newV: any, oldV: any | undefined) => any",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableSet.interceptors_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "interceptors_",
+              "signature": "interceptors_: any;",
+              "source": Object {
+                "filename": "src/types/observableset.ts",
+                "line": 70,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L70",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableSet.name_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "name_",
+              "signature": "name_: string;",
+              "source": Object {
+                "filename": "src/types/observableset.ts",
+                "line": 77,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L77",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ObservableSet.size",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "size",
+              "signature": "readonly size: number;",
+              "source": Object {
+                "filename": "src/types/observableset.ts",
+                "line": 110,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L110",
+              },
+              "type": "number",
+            },
+          ],
+        },
+        "name": "ObservableSet",
+        "signature": "class ObservableSet<T = any>
+    implements Set<T>, IInterceptable<ISetWillChange>, IListenable {}",
+        "source": Object {
+          "filename": "src/types/observableset.ts",
+          "line": 65,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L65",
+        },
+      },
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [],
+            "id": "Reaction.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(
+    name_?: string,
+    onInvalidate_: () => void,
+    errorHandler_?: (error: any, derivation: IDerivation) => void,
+    requiresObservable_?: boolean
+);",
+            "source": Object {
+              "filename": "src/core/reaction.ts",
+              "line": 67,
+              "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L67",
+            },
+          },
+        ],
+        "docs": Array [],
+        "id": "Reaction",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [
+            Object {
+              "docs": Array [],
+              "id": "Reaction.dispose",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "dispose",
+              "signature": "dispose: () => void;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 183,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L183",
+              },
+              "type": "() => void",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Reaction.getDisposer_",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "getDisposer_",
+              "signature": "getDisposer_: () => IReactionDisposer;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 195,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L195",
+              },
+              "type": "() => IReactionDisposer",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Reaction.isScheduled",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "isScheduled",
+              "signature": "isScheduled: () => boolean;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 86,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L86",
+              },
+              "type": "() => boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Reaction.onBecomeStale_",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "onBecomeStale_",
+              "signature": "onBecomeStale_: () => void;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 74,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L74",
+              },
+              "type": "() => void",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Reaction.reportExceptionInDerivation_",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "reportExceptionInDerivation_",
+              "signature": "reportExceptionInDerivation_: (error: any) => void;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 155,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L155",
+              },
+              "type": "(error: any) => void",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * internal, use schedule() if you intend to kick off a reaction
+     */",
+              ],
+              "id": "Reaction.runReaction_",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "runReaction_",
+              "signature": "runReaction_: () => void;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 93,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L93",
+              },
+              "type": "() => void",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Reaction.schedule_",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "schedule_",
+              "signature": "schedule_: () => void;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 78,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L78",
+              },
+              "type": "() => void",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Reaction.toString",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "toString",
+              "signature": "toString: () => string;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 201,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L201",
+              },
+              "type": "() => string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Reaction.trace",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "trace",
+              "signature": "trace: (enterBreakPoint?: boolean) => void;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 205,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L205",
+              },
+              "type": "(enterBreakPoint?: boolean) => void",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Reaction.track",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "track",
+              "signature": "track: (fn: () => void) => void;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 120,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L120",
+              },
+              "type": "(fn: () => void) => void",
+            },
+          ],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "Reaction.dependenciesState_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "dependenciesState_",
+              "signature": "dependenciesState_: IDerivationState_;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 56,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L56",
+              },
+              "type": "IDerivationState_",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Reaction.diffValue_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "diffValue_",
+              "signature": "diffValue_: number;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 57,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L57",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Reaction.isDisposed_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "isDisposed_",
+              "signature": "isDisposed_: boolean;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 61,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L61",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Reaction.isRunning_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "isRunning_",
+              "signature": "isRunning_: boolean;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 64,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L64",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Reaction.isScheduled_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "isScheduled_",
+              "signature": "isScheduled_: boolean;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 62,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L62",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Reaction.isTracing_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "isTracing_",
+              "signature": "isTracing_: TraceMode;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 65,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L65",
+              },
+              "type": "TraceMode",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Reaction.isTrackPending_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "isTrackPending_",
+              "signature": "isTrackPending_: boolean;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 63,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L63",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Reaction.mapid_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "mapid_",
+              "signature": "mapid_: string;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 60,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L60",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Reaction.name_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "name_",
+              "signature": "name_: string;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 68,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L68",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Reaction.newObserving_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "newObserving_",
+              "signature": "newObserving_: IObservable[];",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 55,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L55",
+              },
+              "type": "IObservable[]",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Reaction.observing_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "observing_",
+              "signature": "observing_: IObservable[];",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 54,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L54",
+              },
+              "type": "IObservable[]",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Reaction.requiresObservable_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "requiresObservable_",
+              "signature": "requiresObservable_: boolean;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 71,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L71",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Reaction.runId_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "runId_",
+              "signature": "runId_: number;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 58,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L58",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Reaction.unboundDepsCount_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "unboundDepsCount_",
+              "signature": "unboundDepsCount_: number;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 59,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L59",
+              },
+              "type": "number",
+            },
+          ],
+        },
+        "name": "Reaction",
+        "signature": "class Reaction implements IDerivation, IReactionPublic {}",
+        "source": Object {
+          "filename": "src/core/reaction.ts",
+          "line": 53,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L53",
+        },
+      },
+    ],
+    "enums": Array [],
+    "functions": Array [
+      Object {
+        "docs": Array [
+          "/**
+ * Creates a named reactive view and keeps it alive, so that the view is always
+ * updated if one of the dependencies changes, even when the view is not further used by something else.
+ * @param view The reactive view
+ * @returns disposer function, which can be used to stop the view from being updated in the future.
+ */",
+        ],
+        "id": "autorun",
+        "kind": "FunctionDeclaration",
+        "name": "autorun",
+        "signature": "autorun: (
+    view: (r: IReactionPublic) => any,
+    opts?: IAutorunOptions
+) => IReactionDisposer;",
+        "source": Object {
+          "filename": "src/api/autorun.ts",
+          "line": 36,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/autorun.ts#L36",
+        },
+        "type": "(view: (r: IReactionPublic) => any, opts?: IAutorunOptions) => IReactionDisposer",
+      },
+      Object {
+        "docs": Array [],
+        "id": "configure",
+        "kind": "FunctionDeclaration",
+        "name": "configure",
+        "signature": "configure: (options: {
+    enforceActions?: 'never' | 'always' | 'observed';
+    computedRequiresReaction?: boolean;
+    reactionRequiresObservable?: boolean;
+    observableRequiresReaction?: boolean;
+    isolateGlobalState?: boolean;
+    disableErrorBoundaries?: boolean;
+    reactionScheduler?: (f: () => void) => void;
+    useProxies?: 'always' | 'never' | 'ifavailable';
+}) => void;",
+        "source": Object {
+          "filename": "src/api/configure.ts",
+          "line": 8,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/configure.ts#L8",
+        },
+        "type": "(options: { enforceActions?: \\"never\\" | \\"always\\" | \\"observed\\"; computedRequiresReaction?: boolean; reactionRequiresObservable?: boolean; observableRequiresReaction?: boolean; isolateGlobalState?: boolean; disableErrorBoundaries?: boolean; reactionScheduler?: (f: () => void) => void; useProxies?: \\"always\\" | \\"never\\" | \\"ifavailable\\"; }) => void",
+      },
+      Object {
+        "docs": Array [],
+        "id": "createAtom",
+        "kind": "FunctionDeclaration",
+        "name": "createAtom",
+        "signature": "createAtom: (
+    name: string,
+    onBecomeObservedHandler?: () => void,
+    onBecomeUnobservedHandler?: () => void
+) => IAtom;",
+        "source": Object {
+          "filename": "src/core/atom.ts",
+          "line": 79,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/atom.ts#L79",
+        },
+        "type": "(name: string, onBecomeObservedHandler?: () => void, onBecomeUnobservedHandler?: () => void) => IAtom",
+      },
+      Object {
+        "docs": Array [],
+        "id": "entries",
+        "kind": "FunctionDeclaration",
+        "name": "entries",
+        "signature": "entries: {
+    <K, T>(map: ObservableMap<K, T>): readonly [K, T][];
+    <T>(set: ObservableSet<T>): readonly [T, T][];
+    <T>(ar: IObservableArray<T>): readonly [number, T][];
+    <T = any>(obj: T): readonly [string, T extends object ? T[keyof T] : any][];
+};",
+        "source": Object {
+          "filename": "src/api/object-api.ts",
+          "line": 63,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/object-api.ts#L63",
+        },
+        "type": "{ <K, T>(map: ObservableMap<K, T>): readonly [K, T][]; <T>(set: ObservableSet<T>): readonly [T, T][]; <T>(ar: IObservableArray<T>): readonly [number, T][]; <T = any>(obj: T): readonly [string, T extends object ? T[keyof T] : any][]; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "extendObservable",
+        "kind": "FunctionDeclaration",
+        "name": "extendObservable",
+        "signature": "extendObservable: <A extends Object, B extends Object>(
+    target: A,
+    properties: B,
+    annotations?: AnnotationsMap<B, never>,
+    options?: CreateObservableOptions
+) => A & B;",
+        "source": Object {
+          "filename": "src/api/extendobservable.ts",
+          "line": 18,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/extendobservable.ts#L18",
+        },
+        "type": "<A extends Object, B extends Object>(target: A, properties: B, annotations?: AnnotationsMap<B, never>, options?: CreateObservableOptions) => A & B",
+      },
+      Object {
+        "docs": Array [],
+        "id": "FlowCancellationError",
+        "kind": "FunctionDeclaration",
+        "name": "FlowCancellationError",
+        "signature": "FlowCancellationError: typeof FlowCancellationError;",
+        "source": Object {
+          "filename": "src/api/flow.ts",
+          "line": 7,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/flow.ts#L7",
+        },
+        "type": "typeof FlowCancellationError",
+      },
+      Object {
+        "docs": Array [],
+        "id": "flowResult",
+        "kind": "FunctionDeclaration",
+        "name": "flowResult",
+        "signature": "flowResult: <T>(
+    result: T
+) => T extends Generator<any, infer R, any>
+    ? CancellablePromise<R>
+    : T extends CancellablePromise<any>
+    ? T
+    : never;",
+        "source": Object {
+          "filename": "src/api/flow.ts",
+          "line": 121,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/flow.ts#L121",
+        },
+        "type": "<T>(result: T) => T extends Generator<any, infer R, any> ? CancellablePromise<R> : T extends CancellablePromise<any> ? T : never",
+      },
+      Object {
+        "docs": Array [],
+        "id": "get",
+        "kind": "FunctionDeclaration",
+        "name": "get",
+        "signature": "get: {
+    <K, V>(obj: ObservableMap<K, V>, key: K): V;
+    <T>(obj: IObservableArray<T>, index: number): T;
+    <T extends Object>(obj: T, key: string): any;
+};",
+        "source": Object {
+          "filename": "src/api/object-api.ts",
+          "line": 158,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/object-api.ts#L158",
+        },
+        "type": "{ <K, V>(obj: ObservableMap<K, V>, key: K): V; <T>(obj: IObservableArray<T>, index: number): T; <T extends Object>(obj: T, key: string): any; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "getAtom",
+        "kind": "FunctionDeclaration",
+        "name": "getAtom",
+        "signature": "getAtom: (thing: any, property?: string) => IDepTreeNode;",
+        "source": Object {
+          "filename": "src/types/type-utils.ts",
+          "line": 15,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/type-utils.ts#L15",
+        },
+        "type": "(thing: any, property?: string) => IDepTreeNode",
+      },
+      Object {
+        "docs": Array [],
+        "id": "getDebugName",
+        "kind": "FunctionDeclaration",
+        "name": "getDebugName",
+        "signature": "getDebugName: (thing: any, property?: string) => string;",
+        "source": Object {
+          "filename": "src/types/type-utils.ts",
+          "line": 58,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/type-utils.ts#L58",
+        },
+        "type": "(thing: any, property?: string) => string",
+      },
+      Object {
+        "docs": Array [],
+        "id": "getDependencyTree",
+        "kind": "FunctionDeclaration",
+        "name": "getDependencyTree",
+        "signature": "getDependencyTree: (thing: any, property?: string) => IDependencyTree;",
+        "source": Object {
+          "filename": "src/api/extras.ts",
+          "line": 13,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/extras.ts#L13",
+        },
+        "type": "(thing: any, property?: string) => IDependencyTree",
+      },
+      Object {
+        "docs": Array [],
+        "id": "getObserverTree",
+        "kind": "FunctionDeclaration",
+        "name": "getObserverTree",
+        "signature": "getObserverTree: (thing: any, property?: string) => IObserverTree;",
+        "source": Object {
+          "filename": "src/api/extras.ts",
+          "line": 26,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/extras.ts#L26",
+        },
+        "type": "(thing: any, property?: string) => IObserverTree",
+      },
+      Object {
+        "docs": Array [],
+        "id": "has",
+        "kind": "FunctionDeclaration",
+        "name": "has",
+        "signature": "has: {
+    <K>(obj: ObservableMap<K, any>, key: K): boolean;
+    <T>(obj: ObservableSet<T>, key: T): boolean;
+    <T>(obj: IObservableArray<T>, index: number): boolean;
+    <T extends Object>(obj: T, key: string): boolean;
+};",
+        "source": Object {
+          "filename": "src/api/object-api.ts",
+          "line": 141,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/object-api.ts#L141",
+        },
+        "type": "{ <K>(obj: ObservableMap<K, any>, key: K): boolean; <T>(obj: ObservableSet<T>, key: T): boolean; <T>(obj: IObservableArray<T>, index: number): boolean; <T extends Object>(obj: T, key: string): boolean; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "intercept",
+        "kind": "FunctionDeclaration",
+        "name": "intercept",
+        "signature": "intercept: {
+    <T>(
+        value: IObservableValue<T>,
+        handler: IInterceptor<IValueWillChange<T>>
+    ): Lambda;
+    <T>(
+        observableArray: IObservableArray<T>,
+        handler: IInterceptor<IArrayWillChange<T> | IArrayWillSplice<T>>
+    ): Lambda;
+    <K, V>(
+        observableMap: ObservableMap<K, V>,
+        handler: IInterceptor<IMapWillChange<K, V>>
+    ): Lambda;
+    <V>(
+        observableMap: ObservableSet<V>,
+        handler: IInterceptor<ISetWillChange<V>>
+    ): Lambda;
+    <K, V>(
+        observableMap: ObservableMap<K, V>,
+        property: K,
+        handler: IInterceptor<IValueWillChange<V>>
+    ): Lambda;
+    (object: Object, handler: IInterceptor<IObjectWillChange<any>>): Lambda;
+    <T extends Object, K extends keyof T>(
+        object: T,
+        property: K,
+        handler: IInterceptor<IValueWillChange<any>>
+    ): Lambda;
+};",
+        "source": Object {
+          "filename": "src/api/intercept.ts",
+          "line": 45,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/intercept.ts#L45",
+        },
+        "type": "{ <T>(value: IObservableValue<T>, handler: IInterceptor<IValueWillChange<T>>): Lambda; <T>(observableArray: IObservableArray<T>, handler: IInterceptor<IArrayWillChange<T> | IArrayWillSplice<T>>): Lambda; <K, V>(observableMap: ObservableMap<K, V>, handler: IInterceptor<IMapWillChange<K, V>>): Lambda; <V>(observableMap: ObservableSet<V>, handler: IInterceptor<ISetWillChange<V>>): Lambda; <K, V>(observableMap: ObservableMap<K, V>, property: K, handler: IInterceptor<IValueWillChange<V>>): Lambda; (object: Object, handler: IInterceptor<IObjectWillChange<any>>): Lambda; <T extends Object, K extends keyof T>(object: T, property: K, handler: IInterceptor<IValueWillChange<any>>): Lambda; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "isAction",
+        "kind": "FunctionDeclaration",
+        "name": "isAction",
+        "signature": "isAction: (thing: any) => boolean;",
+        "source": Object {
+          "filename": "src/api/action.ts",
+          "line": 71,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/action.ts#L71",
+        },
+        "type": "(thing: any) => boolean",
+      },
+      Object {
+        "docs": Array [],
+        "id": "isComputed",
+        "kind": "FunctionDeclaration",
+        "name": "isComputed",
+        "signature": "isComputed: (value: any) => boolean;",
+        "source": Object {
+          "filename": "src/api/iscomputed.ts",
+          "line": 13,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/iscomputed.ts#L13",
+        },
+        "type": "(value: any) => boolean",
+      },
+      Object {
+        "docs": Array [],
+        "id": "isComputedProp",
+        "kind": "FunctionDeclaration",
+        "name": "isComputedProp",
+        "signature": "isComputedProp: (value: any, propName: string) => boolean;",
+        "source": Object {
+          "filename": "src/api/iscomputed.ts",
+          "line": 21,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/iscomputed.ts#L21",
+        },
+        "type": "(value: any, propName: string) => boolean",
+      },
+      Object {
+        "docs": Array [],
+        "id": "isFlowCancellationError",
+        "kind": "FunctionDeclaration",
+        "name": "isFlowCancellationError",
+        "signature": "isFlowCancellationError: (error: Error) => boolean;",
+        "source": Object {
+          "filename": "src/api/flow.ts",
+          "line": 12,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/flow.ts#L12",
+        },
+        "type": "(error: Error) => boolean",
+      },
+      Object {
+        "docs": Array [],
+        "id": "isObservable",
+        "kind": "FunctionDeclaration",
+        "name": "isObservable",
+        "signature": "isObservable: (value: any) => boolean;",
+        "source": Object {
+          "filename": "src/api/isobservable.ts",
+          "line": 35,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/isobservable.ts#L35",
+        },
+        "type": "(value: any) => boolean",
+      },
+      Object {
+        "docs": Array [],
+        "id": "isObservableArray",
+        "kind": "FunctionDeclaration",
+        "name": "isObservableArray",
+        "signature": "isObservableArray: (thing: any) => thing is IObservableArray<any>;",
+        "source": Object {
+          "filename": "src/types/observablearray.ts",
+          "line": 530,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L530",
+        },
+        "type": "(thing: any) => thing is IObservableArray<any>",
+      },
+      Object {
+        "docs": Array [],
+        "id": "isObservableObject",
+        "kind": "FunctionDeclaration",
+        "name": "isObservableObject",
+        "signature": "isObservableObject: (thing: any) => boolean;",
+        "source": Object {
+          "filename": "src/types/observableobject.ts",
+          "line": 386,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableobject.ts#L386",
+        },
+        "type": "(thing: any) => boolean",
+      },
+      Object {
+        "docs": Array [],
+        "id": "isObservableProp",
+        "kind": "FunctionDeclaration",
+        "name": "isObservableProp",
+        "signature": "isObservableProp: (value: any, propName: string) => boolean;",
+        "source": Object {
+          "filename": "src/api/isobservable.ts",
+          "line": 43,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/isobservable.ts#L43",
+        },
+        "type": "(value: any, propName: string) => boolean",
+      },
+      Object {
+        "docs": Array [],
+        "id": "keys",
+        "kind": "FunctionDeclaration",
+        "name": "keys",
+        "signature": "keys: {
+    <K>(map: ObservableMap<K, any>): readonly K[];
+    <T>(ar: IObservableArray<T>): readonly number[];
+    <T>(set: ObservableSet<T>): readonly T[];
+    <T extends Object>(obj: T): readonly PropertyKey[];
+};",
+        "source": Object {
+          "filename": "src/api/object-api.ts",
+          "line": 22,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/object-api.ts#L22",
+        },
+        "type": "{ <K>(map: ObservableMap<K, any>): readonly K[]; <T>(ar: IObservableArray<T>): readonly number[]; <T>(set: ObservableSet<T>): readonly T[]; <T extends Object>(obj: T): readonly PropertyKey[]; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "makeAutoObservable",
+        "kind": "FunctionDeclaration",
+        "name": "makeAutoObservable",
+        "signature": "makeAutoObservable: <
+    T extends Object,
+    AdditionalKeys extends PropertyKey = never
+>(
+    target: T,
+    overrides?: AnnotationsMap<T, NoInfer<AdditionalKeys>>,
+    options?: CreateObservableOptions
+) => T;",
+        "source": Object {
+          "filename": "src/api/makeObservable.ts",
+          "line": 223,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/makeObservable.ts#L223",
+        },
+        "type": "<T extends Object, AdditionalKeys extends PropertyKey = never>(target: T, overrides?: AnnotationsMap<T, NoInfer<AdditionalKeys>>, options?: CreateObservableOptions) => T",
+      },
+      Object {
+        "docs": Array [],
+        "id": "makeObservable",
+        "kind": "FunctionDeclaration",
+        "name": "makeObservable",
+        "signature": "makeObservable: <T, AdditionalKeys extends PropertyKey = never>(
+    target: T,
+    annotations?: AnnotationsMap<T, NoInfer<AdditionalKeys>>,
+    options?: CreateObservableOptions
+) => T;",
+        "source": Object {
+          "filename": "src/api/makeObservable.ts",
+          "line": 190,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/makeObservable.ts#L190",
+        },
+        "type": "<T, AdditionalKeys extends PropertyKey = never>(target: T, annotations?: AnnotationsMap<T, NoInfer<AdditionalKeys>>, options?: CreateObservableOptions) => T",
+      },
+      Object {
+        "docs": Array [],
+        "id": "observe",
+        "kind": "FunctionDeclaration",
+        "name": "observe",
+        "signature": "observe: {
+    <T>(
+        value: IObservableValue<T> | IComputedValue<T>,
+        listener: (change: IValueDidChange<T>) => void,
+        fireImmediately?: boolean
+    ): Lambda;
+    <T>(
+        observableArray: IObservableArray<T>,
+        listener: (change: IArrayDidChange<T>) => void,
+        fireImmediately?: boolean
+    ): Lambda;
+    <V>(
+        observableMap: ObservableSet<V>,
+        listener: (change: ISetDidChange<V>) => void,
+        fireImmediately?: boolean
+    ): Lambda;
+    <K, V>(
+        observableMap: ObservableMap<K, V>,
+        listener: (change: IMapDidChange<K, V>) => void,
+        fireImmediately?: boolean
+    ): Lambda;
+    <K, V>(
+        observableMap: ObservableMap<K, V>,
+        property: K,
+        listener: (change: IValueDidChange<V>) => void,
+        fireImmediately?: boolean
+    ): Lambda;
+    (
+        object: Object,
+        listener: (change: IObjectDidChange<any>) => void,
+        fireImmediately?: boolean
+    ): Lambda;
+    <T, K extends keyof T>(
+        object: T,
+        property: K,
+        listener: (change: IValueDidChange<T[K]>) => void,
+        fireImmediately?: boolean
+    ): Lambda;
+};",
+        "source": Object {
+          "filename": "src/api/observe.ts",
+          "line": 54,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observe.ts#L54",
+        },
+        "type": "{ <T>(value: IObservableValue<T> | IComputedValue<T>, listener: (change: IValueDidChange<T>) => void, fireImmediately?: boolean): Lambda; <T>(observableArray: IObservableArray<T>, listener: (change: IArrayDidChange<T>) => void, fireImmediately?: boolean): Lambda; <V>(observableMap: ObservableSet<V>, listener: (change: ISetDidChange<V>) => void, fireImmediately?: boolean): Lambda; <K, V>(observableMap: ObservableMap<K, V>, listener: (change: IMapDidChange<K, V>) => void, fireImmediately?: boolean): Lambda; <K, V>(observableMap: ObservableMap<K, V>, property: K, listener: (change: IValueDidChange<V>) => void, fireImmediately?: boolean): Lambda; (object: Object, listener: (change: IObjectDidChange<any>) => void, fireImmediately?: boolean): Lambda; <T, K extends keyof T>(object: T, property: K, listener: (change: IValueDidChange<T[K]>) => void, fireImmediately?: boolean): Lambda; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "onBecomeObserved",
+        "kind": "FunctionDeclaration",
+        "name": "onBecomeObserved",
+        "signature": "onBecomeObserved: {
+    (
+        value:
+            | IObservable
+            | IObservableValue<any>
+            | IObservableArray<any>
+            | ObservableMap<any, any>
+            | ObservableSet<any>
+            | IComputedValue<any>,
+        listener: Lambda
+    ): Lambda;
+    <K, V = any>(
+        value: Object | ObservableMap<K, V>,
+        property: K,
+        listener: Lambda
+    ): Lambda;
+};",
+        "source": Object {
+          "filename": "src/api/become-observed.ts",
+          "line": 31,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/become-observed.ts#L31",
+        },
+        "type": "{ (value: IObservable | IObservableValue<any> | IObservableArray<any> | ObservableMap<any, any> | ObservableSet<any> | IComputedValue<any>, listener: Lambda): Lambda; <K, V = any>(value: Object | ObservableMap<K, V>, property: K, listener: Lambda): Lambda; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "onBecomeUnobserved",
+        "kind": "FunctionDeclaration",
+        "name": "onBecomeUnobserved",
+        "signature": "onBecomeUnobserved: {
+    (
+        value:
+            | IObservable
+            | IObservableValue<any>
+            | IObservableArray<any>
+            | ObservableMap<any, any>
+            | ObservableSet<any>
+            | IComputedValue<any>,
+        listener: Lambda
+    ): Lambda;
+    <K, V = any>(
+        value: Object | ObservableMap<K, V>,
+        property: K,
+        listener: Lambda
+    ): Lambda;
+};",
+        "source": Object {
+          "filename": "src/api/become-observed.ts",
+          "line": 50,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/become-observed.ts#L50",
+        },
+        "type": "{ (value: IObservable | IObservableValue<any> | IObservableArray<any> | ObservableMap<any, any> | ObservableSet<any> | IComputedValue<any>, listener: Lambda): Lambda; <K, V = any>(value: Object | ObservableMap<K, V>, property: K, listener: Lambda): Lambda; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "onReactionError",
+        "kind": "FunctionDeclaration",
+        "name": "onReactionError",
+        "signature": "onReactionError: (
+    handler: (error: any, derivation: IDerivation) => void
+) => Lambda;",
+        "source": Object {
+          "filename": "src/core/reaction.ts",
+          "line": 210,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L210",
+        },
+        "type": "(handler: (error: any, derivation: IDerivation) => void) => Lambda",
+      },
+      Object {
+        "docs": Array [],
+        "id": "reaction",
+        "kind": "FunctionDeclaration",
+        "name": "reaction",
+        "signature": "reaction: <T>(
+    expression: (r: IReactionPublic) => T,
+    effect: (arg: T, prev: T, r: IReactionPublic) => void,
+    opts?: IReactionOptions
+) => IReactionDisposer;",
+        "source": Object {
+          "filename": "src/api/autorun.ts",
+          "line": 103,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/autorun.ts#L103",
+        },
+        "type": "<T>(expression: (r: IReactionPublic) => T, effect: (arg: T, prev: T, r: IReactionPublic) => void, opts?: IReactionOptions) => IReactionDisposer",
+      },
+      Object {
+        "docs": Array [],
+        "id": "remove",
+        "kind": "FunctionDeclaration",
+        "name": "remove",
+        "signature": "remove: {
+    <K, V>(obj: ObservableMap<K, V>, key: K): any;
+    <T>(obj: ObservableSet<T>, key: T): any;
+    <T>(obj: IObservableArray<T>, index: number): any;
+    <T extends Object>(obj: T, key: string): any;
+};",
+        "source": Object {
+          "filename": "src/api/object-api.ts",
+          "line": 122,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/object-api.ts#L122",
+        },
+        "type": "{ <K, V>(obj: ObservableMap<K, V>, key: K): any; <T>(obj: ObservableSet<T>, key: T): any; <T>(obj: IObservableArray<T>, index: number): any; <T extends Object>(obj: T, key: string): any; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "runInAction",
+        "kind": "FunctionDeclaration",
+        "name": "runInAction",
+        "signature": "runInAction: <T>(fn: () => T) => T;",
+        "source": Object {
+          "filename": "src/api/action.ts",
+          "line": 67,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/action.ts#L67",
+        },
+        "type": "<T>(fn: () => T) => T",
+      },
+      Object {
+        "docs": Array [],
+        "id": "set",
+        "kind": "FunctionDeclaration",
+        "name": "set",
+        "signature": "set: {
+    <V>(obj: ObservableMap<PropertyKey, V>, values: { [key: string]: V }): any;
+    <K, V>(obj: ObservableMap<K, V>, key: K, value: V): any;
+    <T>(obj: ObservableSet<T>, value: T): any;
+    <T>(obj: IObservableArray<T>, index: number, value: T): any;
+    <T extends Object>(obj: T, values: { [key: string]: any }): any;
+    <T extends Object>(obj: T, key: PropertyKey, value: any): any;
+};",
+        "source": Object {
+          "filename": "src/api/object-api.ts",
+          "line": 85,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/object-api.ts#L85",
+        },
+        "type": "{ <V>(obj: ObservableMap<PropertyKey, V>, values: { [key: string]: V; }): any; <K, V>(obj: ObservableMap<K, V>, key: K, value: V): any; <T>(obj: ObservableSet<T>, value: T): any; <T>(obj: IObservableArray<T>, index: number, value: T): any; <T extends Object>(obj: T, values: { [key: string]: any; }): any; <T extends Object>(obj: T, key: PropertyKey, value: any): any; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "spy",
+        "kind": "FunctionDeclaration",
+        "name": "spy",
+        "signature": "spy: (listener: (change: SpyEvent) => void) => Lambda;",
+        "source": Object {
+          "filename": "src/core/spy.ts",
+          "line": 48,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/spy.ts#L48",
+        },
+        "type": "(listener: (change: SpyEvent) => void) => Lambda",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Basically, a deep clone, so that no reactive property will exist anymore.
+ */",
+        ],
+        "id": "toJS",
+        "kind": "FunctionDeclaration",
+        "name": "toJS",
+        "signature": "toJS: <T>(source: T, options?: any) => T;",
+        "source": Object {
+          "filename": "src/api/tojs.ts",
+          "line": 64,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/tojs.ts#L64",
+        },
+        "type": "<T>(source: T, options?: any) => T",
+      },
+      Object {
+        "docs": Array [],
+        "id": "trace",
+        "kind": "FunctionDeclaration",
+        "name": "trace",
+        "signature": "trace: {
+    (thing?: any, prop?: string, enterBreakPoint?: boolean): void;
+    (thing?: any, enterBreakPoint?: boolean): void;
+    (enterBreakPoint?: boolean): void;
+};",
+        "source": Object {
+          "filename": "src/api/trace.ts",
+          "line": 6,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/trace.ts#L6",
+        },
+        "type": "{ (thing?: any, prop?: string, enterBreakPoint?: boolean): void; (thing?: any, enterBreakPoint?: boolean): void; (enterBreakPoint?: boolean): void; }",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * During a transaction no views are updated until the end of the transaction.
+ * The transaction will be run synchronously nonetheless.
+ *
+ * @param action a function that updates some reactive state
+ * @returns any value that was returned by the 'action' parameter.
+ */",
+        ],
+        "id": "transaction",
+        "kind": "FunctionDeclaration",
+        "name": "transaction",
+        "signature": "transaction: <T>(action: () => T, thisArg?: any) => T;",
+        "source": Object {
+          "filename": "src/api/transaction.ts",
+          "line": 10,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/transaction.ts#L10",
+        },
+        "type": "<T>(action: () => T, thisArg?: any) => T",
+      },
+      Object {
+        "docs": Array [],
+        "id": "untracked",
+        "kind": "FunctionDeclaration",
+        "name": "untracked",
+        "signature": "untracked: <T>(action: () => T) => T;",
+        "source": Object {
+          "filename": "src/core/derivation.ts",
+          "line": 279,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/derivation.ts#L279",
+        },
+        "type": "<T>(action: () => T) => T",
+      },
+      Object {
+        "docs": Array [],
+        "id": "values",
+        "kind": "FunctionDeclaration",
+        "name": "values",
+        "signature": "values: {
+    <K, T>(map: ObservableMap<K, T>): readonly T[];
+    <T>(set: ObservableSet<T>): readonly T[];
+    <T>(ar: IObservableArray<T>): readonly T[];
+    <T = any>(obj: T): readonly (T extends object ? T[keyof T] : any)[];
+};",
+        "source": Object {
+          "filename": "src/api/object-api.ts",
+          "line": 41,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/object-api.ts#L41",
+        },
+        "type": "{ <K, T>(map: ObservableMap<K, T>): readonly T[]; <T>(set: ObservableSet<T>): readonly T[]; <T>(ar: IObservableArray<T>): readonly T[]; <T = any>(obj: T): readonly (T extends object ? T[keyof T] : any)[]; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "when",
+        "kind": "FunctionDeclaration",
+        "name": "when",
+        "signature": "when: {
+    (predicate: () => boolean, opts?: IWhenOptions): Promise<void> & {
+        cancel(): void;
+    };
+    (
+        predicate: () => boolean,
+        effect: Lambda,
+        opts?: IWhenOptions
+    ): IReactionDisposer;
+};",
+        "source": Object {
+          "filename": "src/api/when.ts",
+          "line": 27,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/when.ts#L27",
+        },
+        "type": "{ (predicate: () => boolean, opts?: IWhenOptions): Promise<void> & { cancel(): void; }; (predicate: () => boolean, effect: Lambda, opts?: IWhenOptions): IReactionDisposer; }",
+      },
+    ],
+    "interfaces": Array [
+      Object {
+        "docs": Array [],
+        "id": "IActionFactory",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [
+            Object {
+              "docs": Array [],
+              "id": "IActionFactory.0-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "<T extends Function | undefined | null>(fn: T): T;",
+              "source": Object {
+                "filename": "src/api/action.ts",
+                "line": 22,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/action.ts#L22",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "IActionFactory.1-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "<T extends Function | undefined | null>(name: string, fn: T): T;",
+              "source": Object {
+                "filename": "src/api/action.ts",
+                "line": 24,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/action.ts#L24",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "IActionFactory.2-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "(customName: string): PropertyDecorator & Annotation;",
+              "source": Object {
+                "filename": "src/api/action.ts",
+                "line": 27,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/action.ts#L27",
+              },
+            },
+          ],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "IActionFactory.bound",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "bound",
+              "signature": "bound: IBoundActionFactory;",
+              "source": Object {
+                "filename": "src/api/action.ts",
+                "line": 30,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/action.ts#L30",
+              },
+              "type": "IBoundActionFactory",
+            },
+          ],
+        },
+        "name": "IActionFactory",
+        "signature": "interface IActionFactory extends Annotation, PropertyDecorator {}",
+        "source": Object {
+          "filename": "src/api/action.ts",
+          "line": 20,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/action.ts#L20",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IActionRunInfo",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "IActionRunInfo.actionId_",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "actionId_",
+              "signature": "actionId_: number;",
+              "source": Object {
+                "filename": "src/core/action.ts",
+                "line": 82,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/action.ts#L82",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IActionRunInfo.error_",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "error_",
+              "signature": "error_?: any;",
+              "source": Object {
+                "filename": "src/core/action.ts",
+                "line": 80,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/action.ts#L80",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IActionRunInfo.notifySpy_",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "notifySpy_",
+              "signature": "notifySpy_: boolean;",
+              "source": Object {
+                "filename": "src/core/action.ts",
+                "line": 78,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/action.ts#L78",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IActionRunInfo.parentActionId_",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "parentActionId_",
+              "signature": "parentActionId_: number;",
+              "source": Object {
+                "filename": "src/core/action.ts",
+                "line": 81,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/action.ts#L81",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IActionRunInfo.prevAllowStateChanges_",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "prevAllowStateChanges_",
+              "signature": "prevAllowStateChanges_: boolean;",
+              "source": Object {
+                "filename": "src/core/action.ts",
+                "line": 76,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/action.ts#L76",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IActionRunInfo.prevAllowStateReads_",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "prevAllowStateReads_",
+              "signature": "prevAllowStateReads_: boolean;",
+              "source": Object {
+                "filename": "src/core/action.ts",
+                "line": 77,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/action.ts#L77",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IActionRunInfo.prevDerivation_",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "prevDerivation_",
+              "signature": "prevDerivation_: IDerivation | null;",
+              "source": Object {
+                "filename": "src/core/action.ts",
+                "line": 75,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/action.ts#L75",
+              },
+              "type": "IDerivation",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IActionRunInfo.runAsAction_",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "runAsAction_",
+              "signature": "runAsAction_?: boolean;",
+              "source": Object {
+                "filename": "src/core/action.ts",
+                "line": 83,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/action.ts#L83",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IActionRunInfo.startTime_",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "startTime_",
+              "signature": "startTime_: number;",
+              "source": Object {
+                "filename": "src/core/action.ts",
+                "line": 79,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/action.ts#L79",
+              },
+              "type": "number",
+            },
+          ],
+        },
+        "name": "IActionRunInfo",
+        "signature": "interface IActionRunInfo {}",
+        "source": Object {
+          "filename": "src/core/action.ts",
+          "line": 74,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/action.ts#L74",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IArraySplice",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "IArraySplice.added",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "added",
+              "signature": "added: T[];",
+              "source": Object {
+                "filename": "src/types/observablearray.ts",
+                "line": 63,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L63",
+              },
+              "type": "T[]",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IArraySplice.addedCount",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "addedCount",
+              "signature": "addedCount: number;",
+              "source": Object {
+                "filename": "src/types/observablearray.ts",
+                "line": 64,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L64",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IArraySplice.removed",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "removed",
+              "signature": "removed: T[];",
+              "source": Object {
+                "filename": "src/types/observablearray.ts",
+                "line": 65,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L65",
+              },
+              "type": "T[]",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IArraySplice.removedCount",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "removedCount",
+              "signature": "removedCount: number;",
+              "source": Object {
+                "filename": "src/types/observablearray.ts",
+                "line": 66,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L66",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IArraySplice.type",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "type",
+              "signature": "type: 'splice';",
+              "source": Object {
+                "filename": "src/types/observablearray.ts",
+                "line": 62,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L62",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "IArraySplice",
+        "signature": "interface IArraySplice<T = any> extends IArrayBaseChange<T> {}",
+        "source": Object {
+          "filename": "src/types/observablearray.ts",
+          "line": 61,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L61",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IArrayUpdate",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "IArrayUpdate.newValue",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "newValue",
+              "signature": "newValue: T;",
+              "source": Object {
+                "filename": "src/types/observablearray.ts",
+                "line": 57,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L57",
+              },
+              "type": "{}",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IArrayUpdate.oldValue",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "oldValue",
+              "signature": "oldValue: T;",
+              "source": Object {
+                "filename": "src/types/observablearray.ts",
+                "line": 58,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L58",
+              },
+              "type": "{}",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IArrayUpdate.type",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "type",
+              "signature": "type: 'update';",
+              "source": Object {
+                "filename": "src/types/observablearray.ts",
+                "line": 56,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L56",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "IArrayUpdate",
+        "signature": "interface IArrayUpdate<T = any> extends IArrayBaseChange<T> {}",
+        "source": Object {
+          "filename": "src/types/observablearray.ts",
+          "line": 55,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L55",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IArrayWillChange",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "IArrayWillChange.index",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "index",
+              "signature": "index: number;",
+              "source": Object {
+                "filename": "src/types/observablearray.ts",
+                "line": 71,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L71",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IArrayWillChange.newValue",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "newValue",
+              "signature": "newValue: T;",
+              "source": Object {
+                "filename": "src/types/observablearray.ts",
+                "line": 73,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L73",
+              },
+              "type": "{}",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IArrayWillChange.object",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "object",
+              "signature": "object: IObservableArray<T>;",
+              "source": Object {
+                "filename": "src/types/observablearray.ts",
+                "line": 70,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L70",
+              },
+              "type": "IObservableArray<T>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IArrayWillChange.type",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "type",
+              "signature": "type: 'update';",
+              "source": Object {
+                "filename": "src/types/observablearray.ts",
+                "line": 72,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L72",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "IArrayWillChange",
+        "signature": "interface IArrayWillChange<T = any> {}",
+        "source": Object {
+          "filename": "src/types/observablearray.ts",
+          "line": 69,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L69",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IArrayWillSplice",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "IArrayWillSplice.added",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "added",
+              "signature": "added: T[];",
+              "source": Object {
+                "filename": "src/types/observablearray.ts",
+                "line": 80,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L80",
+              },
+              "type": "T[]",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IArrayWillSplice.index",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "index",
+              "signature": "index: number;",
+              "source": Object {
+                "filename": "src/types/observablearray.ts",
+                "line": 78,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L78",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IArrayWillSplice.object",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "object",
+              "signature": "object: IObservableArray<T>;",
+              "source": Object {
+                "filename": "src/types/observablearray.ts",
+                "line": 77,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L77",
+              },
+              "type": "IObservableArray<T>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IArrayWillSplice.removedCount",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "removedCount",
+              "signature": "removedCount: number;",
+              "source": Object {
+                "filename": "src/types/observablearray.ts",
+                "line": 81,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L81",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IArrayWillSplice.type",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "type",
+              "signature": "type: 'splice';",
+              "source": Object {
+                "filename": "src/types/observablearray.ts",
+                "line": 79,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L79",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "IArrayWillSplice",
+        "signature": "interface IArrayWillSplice<T = any> {}",
+        "source": Object {
+          "filename": "src/types/observablearray.ts",
+          "line": 76,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L76",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IAtom",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [
+            Object {
+              "docs": Array [],
+              "id": "IAtom.reportChanged",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "reportChanged",
+              "signature": "reportChanged: () => any;",
+              "source": Object {
+                "filename": "src/core/atom.ts",
+                "line": 21,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/atom.ts#L21",
+              },
+              "type": "() => any",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IAtom.reportObserved",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "reportObserved",
+              "signature": "reportObserved: () => any;",
+              "source": Object {
+                "filename": "src/core/atom.ts",
+                "line": 20,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/atom.ts#L20",
+              },
+              "type": "() => any",
+            },
+          ],
+          "properties": Array [],
+        },
+        "name": "IAtom",
+        "signature": "interface IAtom extends IObservable {}",
+        "source": Object {
+          "filename": "src/core/atom.ts",
+          "line": 19,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/atom.ts#L19",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IAutorunOptions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "IAutorunOptions.delay",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "delay",
+              "signature": "delay?: number;",
+              "source": Object {
+                "filename": "src/api/autorun.ts",
+                "line": 19,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/autorun.ts#L19",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IAutorunOptions.name",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "name",
+              "signature": "name?: string;",
+              "source": Object {
+                "filename": "src/api/autorun.ts",
+                "line": 20,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/autorun.ts#L20",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IAutorunOptions.onError",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "onError",
+              "signature": "onError?: (error: any) => void;",
+              "source": Object {
+                "filename": "src/api/autorun.ts",
+                "line": 27,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/autorun.ts#L27",
+              },
+              "type": "(error: any) => void",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Experimental.
+     * Warns if the view doesn't track observables
+     */",
+              ],
+              "id": "IAutorunOptions.requiresObservable",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "requiresObservable",
+              "signature": "requiresObservable?: boolean;",
+              "source": Object {
+                "filename": "src/api/autorun.ts",
+                "line": 25,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/autorun.ts#L25",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IAutorunOptions.scheduler",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "scheduler",
+              "signature": "scheduler?: (callback: () => void) => any;",
+              "source": Object {
+                "filename": "src/api/autorun.ts",
+                "line": 26,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/autorun.ts#L26",
+              },
+              "type": "(callback: () => void) => any",
+            },
+          ],
+        },
+        "name": "IAutorunOptions",
+        "signature": "interface IAutorunOptions {}",
+        "source": Object {
+          "filename": "src/api/autorun.ts",
+          "line": 18,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/autorun.ts#L18",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IComputedValue",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [
+            Object {
+              "docs": Array [],
+              "id": "IComputedValue.get",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "get",
+              "signature": "get: () => T;",
+              "source": Object {
+                "filename": "src/core/computedvalue.ts",
+                "line": 36,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L36",
+              },
+              "type": "() => T",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IComputedValue.observe_",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "observe_",
+              "signature": "observe_: (
+    listener: (change: IComputedDidChange<T>) => void,
+    fireImmediately?: boolean
+) => Lambda;",
+              "source": Object {
+                "filename": "src/core/computedvalue.ts",
+                "line": 38,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L38",
+              },
+              "type": "(listener: (change: IComputedDidChange<T>) => void, fireImmediately?: boolean) => Lambda",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IComputedValue.set",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "set",
+              "signature": "set: (value: T) => void;",
+              "source": Object {
+                "filename": "src/core/computedvalue.ts",
+                "line": 37,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L37",
+              },
+              "type": "(value: T) => void",
+            },
+          ],
+          "properties": Array [],
+        },
+        "name": "IComputedValue",
+        "signature": "interface IComputedValue<T> {}",
+        "source": Object {
+          "filename": "src/core/computedvalue.ts",
+          "line": 35,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L35",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IComputedValueOptions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "IComputedValueOptions.context",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "context",
+              "signature": "context?: any;",
+              "source": Object {
+                "filename": "src/core/computedvalue.ts",
+                "line": 46,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L46",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IComputedValueOptions.equals",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "equals",
+              "signature": "equals?: IEqualsComparer<T>;",
+              "source": Object {
+                "filename": "src/core/computedvalue.ts",
+                "line": 45,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L45",
+              },
+              "type": "IEqualsComparer<T>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IComputedValueOptions.get",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "get",
+              "signature": "get?: () => T;",
+              "source": Object {
+                "filename": "src/core/computedvalue.ts",
+                "line": 42,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L42",
+              },
+              "type": "() => T",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IComputedValueOptions.keepAlive",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "keepAlive",
+              "signature": "keepAlive?: boolean;",
+              "source": Object {
+                "filename": "src/core/computedvalue.ts",
+                "line": 48,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L48",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IComputedValueOptions.name",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "name",
+              "signature": "name?: string;",
+              "source": Object {
+                "filename": "src/core/computedvalue.ts",
+                "line": 44,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L44",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IComputedValueOptions.requiresReaction",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "requiresReaction",
+              "signature": "requiresReaction?: boolean;",
+              "source": Object {
+                "filename": "src/core/computedvalue.ts",
+                "line": 47,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L47",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IComputedValueOptions.set",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "set",
+              "signature": "set?: (value: T) => void;",
+              "source": Object {
+                "filename": "src/core/computedvalue.ts",
+                "line": 43,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L43",
+              },
+              "type": "(value: T) => void",
+            },
+          ],
+        },
+        "name": "IComputedValueOptions",
+        "signature": "interface IComputedValueOptions<T> {}",
+        "source": Object {
+          "filename": "src/core/computedvalue.ts",
+          "line": 41,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L41",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IDependencyTree",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "IDependencyTree.dependencies",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "dependencies",
+              "signature": "dependencies?: IDependencyTree[];",
+              "source": Object {
+                "filename": "src/api/extras.ts",
+                "line": 5,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/extras.ts#L5",
+              },
+              "type": "IDependencyTree[]",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IDependencyTree.name",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "name",
+              "signature": "name: string;",
+              "source": Object {
+                "filename": "src/api/extras.ts",
+                "line": 4,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/extras.ts#L4",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "IDependencyTree",
+        "signature": "interface IDependencyTree {}",
+        "source": Object {
+          "filename": "src/api/extras.ts",
+          "line": 3,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/extras.ts#L3",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IDepTreeNode",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "IDepTreeNode.name_",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "name_",
+              "signature": "name_: string;",
+              "source": Object {
+                "filename": "src/core/observable.ts",
+                "line": 15,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L15",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IDepTreeNode.observing_",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "observing_",
+              "signature": "observing_?: IObservable[];",
+              "source": Object {
+                "filename": "src/core/observable.ts",
+                "line": 16,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L16",
+              },
+              "type": "IObservable[]",
+            },
+          ],
+        },
+        "name": "IDepTreeNode",
+        "signature": "interface IDepTreeNode {}",
+        "source": Object {
+          "filename": "src/core/observable.ts",
+          "line": 14,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L14",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IEnhancer",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [
+            Object {
+              "docs": Array [],
+              "id": "IEnhancer.0-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "(newValue: T, oldValue: T | undefined, name: string): T;",
+              "source": Object {
+                "filename": "src/types/modifiers.ts",
+                "line": 16,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/modifiers.ts#L16",
+              },
+            },
+          ],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "IEnhancer",
+        "signature": "interface IEnhancer<T> {}",
+        "source": Object {
+          "filename": "src/types/modifiers.ts",
+          "line": 15,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/modifiers.ts#L15",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IEqualsComparer",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [
+            Object {
+              "docs": Array [],
+              "id": "IEqualsComparer.0-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "(a: T, b: T): boolean;",
+              "source": Object {
+                "filename": "src/utils/comparer.ts",
+                "line": 4,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/utils/comparer.ts#L4",
+              },
+            },
+          ],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "IEqualsComparer",
+        "signature": "interface IEqualsComparer<T> {}",
+        "source": Object {
+          "filename": "src/utils/comparer.ts",
+          "line": 3,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/utils/comparer.ts#L3",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IInterceptable",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "IInterceptable.interceptors_",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "interceptors_",
+              "signature": "interceptors_: IInterceptor<T>[] | undefined;",
+              "source": Object {
+                "filename": "src/types/intercept-utils.ts",
+                "line": 6,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/intercept-utils.ts#L6",
+              },
+              "type": "IInterceptor<T>[]",
+            },
+          ],
+        },
+        "name": "IInterceptable",
+        "signature": "interface IInterceptable<T> {}",
+        "source": Object {
+          "filename": "src/types/intercept-utils.ts",
+          "line": 5,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/intercept-utils.ts#L5",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IKeyValueMap",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [
+            Object {
+              "docs": Array [],
+              "id": "IKeyValueMap.0-index-signature",
+              "kind": "InterfaceIndexSignatureDeclaration",
+              "name": "index signature",
+              "signature": "[key: string]: V;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 40,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L40",
+              },
+            },
+          ],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "IKeyValueMap",
+        "signature": "interface IKeyValueMap<V = any> {}",
+        "source": Object {
+          "filename": "src/types/observablemap.ts",
+          "line": 39,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L39",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IListenable",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "IListenable.changeListeners_",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "changeListeners_",
+              "signature": "changeListeners_: Function[] | undefined;",
+              "source": Object {
+                "filename": "src/types/listen-utils.ts",
+                "line": 4,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/listen-utils.ts#L4",
+              },
+              "type": "Function[]",
+            },
+          ],
+        },
+        "name": "IListenable",
+        "signature": "interface IListenable {}",
+        "source": Object {
+          "filename": "src/types/listen-utils.ts",
+          "line": 3,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/listen-utils.ts#L3",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IMapWillChange",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "IMapWillChange.name",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "name",
+              "signature": "name: K;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 71,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L71",
+              },
+              "type": "{}",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IMapWillChange.newValue",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "newValue",
+              "signature": "newValue?: V;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 72,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L72",
+              },
+              "type": "{}",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IMapWillChange.object",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "object",
+              "signature": "object: ObservableMap<K, V>;",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 69,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L69",
+              },
+              "type": "ObservableMap<K, V>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IMapWillChange.type",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "type",
+              "signature": "type: 'update' | 'add' | 'delete';",
+              "source": Object {
+                "filename": "src/types/observablemap.ts",
+                "line": 70,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L70",
+              },
+              "type": "\\"update\\" | \\"add\\" | \\"delete\\"",
+            },
+          ],
+        },
+        "name": "IMapWillChange",
+        "signature": "interface IMapWillChange<K = any, V = any> {}",
+        "source": Object {
+          "filename": "src/types/observablemap.ts",
+          "line": 68,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L68",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IObservable",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [
+            Object {
+              "docs": Array [],
+              "id": "IObservable.onBO",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "onBO",
+              "signature": "onBO: () => void;",
+              "source": Object {
+                "filename": "src/core/observable.ts",
+                "line": 35,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L35",
+              },
+              "type": "() => void",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObservable.onBUO",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "onBUO",
+              "signature": "onBUO: () => void;",
+              "source": Object {
+                "filename": "src/core/observable.ts",
+                "line": 34,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L34",
+              },
+              "type": "() => void",
+            },
+          ],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "IObservable.diffValue_",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "diffValue_",
+              "signature": "diffValue_: number;",
+              "source": Object {
+                "filename": "src/core/observable.ts",
+                "line": 20,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L20",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObservable.isBeingObserved_",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "isBeingObserved_",
+              "signature": "isBeingObserved_: boolean;",
+              "source": Object {
+                "filename": "src/core/observable.ts",
+                "line": 27,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L27",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObservable.isPendingUnobservation_",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "isPendingUnobservation_",
+              "signature": "isPendingUnobservation_: boolean;",
+              "source": Object {
+                "filename": "src/core/observable.ts",
+                "line": 30,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L30",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Id of the derivation *run* that last accessed this observable.
+     * If this id equals the *run* id of the current derivation,
+     * the dependency is already established
+     */",
+              ],
+              "id": "IObservable.lastAccessedBy_",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "lastAccessedBy_",
+              "signature": "lastAccessedBy_: number;",
+              "source": Object {
+                "filename": "src/core/observable.ts",
+                "line": 26,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L26",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObservable.lowestObserverState_",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "lowestObserverState_",
+              "signature": "lowestObserverState_: IDerivationState_;",
+              "source": Object {
+                "filename": "src/core/observable.ts",
+                "line": 29,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L29",
+              },
+              "type": "IDerivationState_",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObservable.observers_",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "observers_",
+              "signature": "observers_: Set<IDerivation>;",
+              "source": Object {
+                "filename": "src/core/observable.ts",
+                "line": 32,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L32",
+              },
+              "type": "Set<IDerivation>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObservable.onBOL",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "onBOL",
+              "signature": "onBOL: Set<Lambda> | undefined;",
+              "source": Object {
+                "filename": "src/core/observable.ts",
+                "line": 38,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L38",
+              },
+              "type": "Set<Lambda>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObservable.onBUOL",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "onBUOL",
+              "signature": "onBUOL: Set<Lambda> | undefined;",
+              "source": Object {
+                "filename": "src/core/observable.ts",
+                "line": 37,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L37",
+              },
+              "type": "Set<Lambda>",
+            },
+          ],
+        },
+        "name": "IObservable",
+        "signature": "interface IObservable extends IDepTreeNode {}",
+        "source": Object {
+          "filename": "src/core/observable.ts",
+          "line": 19,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L19",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IObservableArray",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [
+            Object {
+              "docs": Array [],
+              "id": "IObservableArray.clear",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "clear",
+              "signature": "clear: () => T[];",
+              "source": Object {
+                "filename": "src/types/observablearray.ts",
+                "line": 40,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L40",
+              },
+              "type": "() => T[]",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObservableArray.remove",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "remove",
+              "signature": "remove: (value: T) => boolean;",
+              "source": Object {
+                "filename": "src/types/observablearray.ts",
+                "line": 42,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L42",
+              },
+              "type": "(value: T) => boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObservableArray.replace",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "replace",
+              "signature": "replace: (newItems: T[]) => T[];",
+              "source": Object {
+                "filename": "src/types/observablearray.ts",
+                "line": 41,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L41",
+              },
+              "type": "(newItems: T[]) => T[]",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObservableArray.spliceWithArray",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "spliceWithArray",
+              "signature": "spliceWithArray: (index: number, deleteCount?: number, newItems?: T[]) => T[];",
+              "source": Object {
+                "filename": "src/types/observablearray.ts",
+                "line": 39,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L39",
+              },
+              "type": "(index: number, deleteCount?: number, newItems?: T[]) => T[]",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObservableArray.toJSON",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "toJSON",
+              "signature": "toJSON: () => T[];",
+              "source": Object {
+                "filename": "src/types/observablearray.ts",
+                "line": 43,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L43",
+              },
+              "type": "() => T[]",
+            },
+          ],
+          "properties": Array [],
+        },
+        "name": "IObservableArray",
+        "signature": "interface IObservableArray<T = any> extends Array<T> {}",
+        "source": Object {
+          "filename": "src/types/observablearray.ts",
+          "line": 38,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L38",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IObservableFactory",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [
+            Object {
+              "docs": Array [],
+              "id": "IObservableFactory.0-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "<T = any>(value: T[], options?: CreateObservableOptions): IObservableArray<T>;",
+              "source": Object {
+                "filename": "src/api/observable.ts",
+                "line": 116,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L116",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObservableFactory.1-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "<T = any>(value: Set<T>, options?: CreateObservableOptions): ObservableSet<T>;",
+              "source": Object {
+                "filename": "src/api/observable.ts",
+                "line": 117,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L117",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObservableFactory.2-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "<K = any, V = any>(
+    value: Map<K, V>,
+    options?: CreateObservableOptions
+): ObservableMap<K, V>;",
+              "source": Object {
+                "filename": "src/api/observable.ts",
+                "line": 118,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L118",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObservableFactory.3-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "<T extends Object>(
+    value: T,
+    decorators?: AnnotationsMap<T, never>,
+    options?: CreateObservableOptions
+): T;",
+              "source": Object {
+                "filename": "src/api/observable.ts",
+                "line": 119,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L119",
+              },
+            },
+          ],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "IObservableFactory.array",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "array",
+              "signature": "array: <T = any>(
+    initialValues?: T[],
+    options?: CreateObservableOptions
+) => IObservableArray<T>;",
+              "source": Object {
+                "filename": "src/api/observable.ts",
+                "line": 126,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L126",
+              },
+              "type": "<T = any>(initialValues?: T[], options?: CreateObservableOptions) => IObservableArray<T>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObservableFactory.box",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "box",
+              "signature": "box: <T = any>(
+    value?: T,
+    options?: CreateObservableOptions
+) => IObservableValue<T>;",
+              "source": Object {
+                "filename": "src/api/observable.ts",
+                "line": 125,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L125",
+              },
+              "type": "<T = any>(value?: T, options?: CreateObservableOptions) => IObservableValue<T>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObservableFactory.deep",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "deep",
+              "signature": "deep: Annotation & PropertyDecorator;",
+              "source": Object {
+                "filename": "src/api/observable.ts",
+                "line": 149,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L149",
+              },
+              "type": "Annotation & PropertyDecorator",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObservableFactory.map",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "map",
+              "signature": "map: <K = any, V = any>(
+    initialValues?: IObservableMapInitialValues<K, V>,
+    options?: CreateObservableOptions
+) => ObservableMap<K, V>;",
+              "source": Object {
+                "filename": "src/api/observable.ts",
+                "line": 131,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L131",
+              },
+              "type": "<K = any, V = any>(initialValues?: IObservableMapInitialValues<K, V>, options?: CreateObservableOptions) => ObservableMap<K, V>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObservableFactory.object",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "object",
+              "signature": "object: <T = any>(
+    props: T,
+    decorators?: AnnotationsMap<T, never>,
+    options?: CreateObservableOptions
+) => T;",
+              "source": Object {
+                "filename": "src/api/observable.ts",
+                "line": 135,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L135",
+              },
+              "type": "<T = any>(props: T, decorators?: AnnotationsMap<T, never>, options?: CreateObservableOptions) => T",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Decorator that creates an observable that only observes the references, but doesn't try to turn the assigned value into an observable.ts.
+     */",
+              ],
+              "id": "IObservableFactory.ref",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "ref",
+              "signature": "ref: Annotation & PropertyDecorator;",
+              "source": Object {
+                "filename": "src/api/observable.ts",
+                "line": 144,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L144",
+              },
+              "type": "Annotation & PropertyDecorator",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObservableFactory.set",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "set",
+              "signature": "set: <T = any>(
+    initialValues?: IObservableSetInitialValues<T>,
+    options?: CreateObservableOptions
+) => ObservableSet<T>;",
+              "source": Object {
+                "filename": "src/api/observable.ts",
+                "line": 127,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L127",
+              },
+              "type": "<T = any>(initialValues?: IObservableSetInitialValues<T>, options?: CreateObservableOptions) => ObservableSet<T>",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Decorator that creates an observable converts its value (objects, maps or arrays) into a shallow observable structure
+     */",
+              ],
+              "id": "IObservableFactory.shallow",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "shallow",
+              "signature": "shallow: Annotation & PropertyDecorator;",
+              "source": Object {
+                "filename": "src/api/observable.ts",
+                "line": 148,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L148",
+              },
+              "type": "Annotation & PropertyDecorator",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObservableFactory.struct",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "struct",
+              "signature": "struct: Annotation & PropertyDecorator;",
+              "source": Object {
+                "filename": "src/api/observable.ts",
+                "line": 150,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L150",
+              },
+              "type": "Annotation & PropertyDecorator",
+            },
+          ],
+        },
+        "name": "IObservableFactory",
+        "signature": "interface IObservableFactory extends Annotation, PropertyDecorator {}",
+        "source": Object {
+          "filename": "src/api/observable.ts",
+          "line": 115,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L115",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IObservableValue",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [
+            Object {
+              "docs": Array [],
+              "id": "IObservableValue.get",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "get",
+              "signature": "get: () => T;",
+              "source": Object {
+                "filename": "src/types/observablevalue.ts",
+                "line": 54,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts#L54",
+              },
+              "type": "() => T",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObservableValue.intercept_",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "intercept_",
+              "signature": "intercept_: (handler: IInterceptor<IValueWillChange<T>>) => Lambda;",
+              "source": Object {
+                "filename": "src/types/observablevalue.ts",
+                "line": 56,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts#L56",
+              },
+              "type": "(handler: IInterceptor<IValueWillChange<T>>) => Lambda",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObservableValue.observe_",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "observe_",
+              "signature": "observe_: (
+    listener: (change: IValueDidChange<T>) => void,
+    fireImmediately?: boolean
+) => Lambda;",
+              "source": Object {
+                "filename": "src/types/observablevalue.ts",
+                "line": 57,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts#L57",
+              },
+              "type": "(listener: (change: IValueDidChange<T>) => void, fireImmediately?: boolean) => Lambda",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObservableValue.set",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "set",
+              "signature": "set: (value: T) => void;",
+              "source": Object {
+                "filename": "src/types/observablevalue.ts",
+                "line": 55,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts#L55",
+              },
+              "type": "(value: T) => void",
+            },
+          ],
+          "properties": Array [],
+        },
+        "name": "IObservableValue",
+        "signature": "interface IObservableValue<T> {}",
+        "source": Object {
+          "filename": "src/types/observablevalue.ts",
+          "line": 53,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts#L53",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IObserverTree",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "IObserverTree.name",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "name",
+              "signature": "name: string;",
+              "source": Object {
+                "filename": "src/api/extras.ts",
+                "line": 9,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/extras.ts#L9",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IObserverTree.observers",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "observers",
+              "signature": "observers?: IObserverTree[];",
+              "source": Object {
+                "filename": "src/api/extras.ts",
+                "line": 10,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/extras.ts#L10",
+              },
+              "type": "IObserverTree[]",
+            },
+          ],
+        },
+        "name": "IObserverTree",
+        "signature": "interface IObserverTree {}",
+        "source": Object {
+          "filename": "src/api/extras.ts",
+          "line": 8,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/extras.ts#L8",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IReactionDisposer",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [
+            Object {
+              "docs": Array [],
+              "id": "IReactionDisposer.0-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "(): void;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 49,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L49",
+              },
+            },
+          ],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "IReactionDisposer.$mobx",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "$mobx",
+              "signature": "$mobx: Reaction;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 50,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L50",
+              },
+              "type": "Reaction",
+            },
+          ],
+        },
+        "name": "IReactionDisposer",
+        "signature": "interface IReactionDisposer {}",
+        "source": Object {
+          "filename": "src/core/reaction.ts",
+          "line": 48,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L48",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Reactions are a special kind of derivations. Several things distinguishes them from normal reactive computations
+ *
+ * 1) They will always run, whether they are used by other computations or not.
+ * This means that they are very suitable for triggering side effects like logging, updating the DOM and making network requests.
+ * 2) They are not observable themselves
+ * 3) They will always run after any 'normal' derivations
+ * 4) They are allowed to change the state and thereby triggering themselves again, as long as they make sure the state propagates to a stable state in a reasonable amount of iterations.
+ *
+ * The state machine of a Reaction is as follows:
+ *
+ * 1) after creating, the reaction should be started by calling \`runReaction\` or by scheduling it (see also \`autorun\`)
+ * 2) the \`onInvalidate\` handler should somehow result in a call to \`this.track(someFunction)\`
+ * 3) all observables accessed in \`someFunction\` will be observed by this reaction.
+ * 4) as soon as some of the dependencies has changed the Reaction will be rescheduled for another run (after the current mutation or transaction). \`isScheduled\` will yield true once a dependency is stale and during this period
+ * 5) \`onInvalidate\` will be called, and we are back at step 1.
+ *
+ */",
+        ],
+        "id": "IReactionPublic",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [
+            Object {
+              "docs": Array [],
+              "id": "IReactionPublic.dispose",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "dispose",
+              "signature": "dispose: () => void;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 44,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L44",
+              },
+              "type": "() => void",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IReactionPublic.trace",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "trace",
+              "signature": "trace: (enterBreakPoint?: boolean) => void;",
+              "source": Object {
+                "filename": "src/core/reaction.ts",
+                "line": 45,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L45",
+              },
+              "type": "(enterBreakPoint?: boolean) => void",
+            },
+          ],
+          "properties": Array [],
+        },
+        "name": "IReactionPublic",
+        "signature": "interface IReactionPublic {}",
+        "source": Object {
+          "filename": "src/core/reaction.ts",
+          "line": 43,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L43",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IValueWillChange",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "IValueWillChange.newValue",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "newValue",
+              "signature": "newValue: T;",
+              "source": Object {
+                "filename": "src/types/observablevalue.ts",
+                "line": 32,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts#L32",
+              },
+              "type": "{}",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IValueWillChange.object",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "object",
+              "signature": "object: IObservableValue<T>;",
+              "source": Object {
+                "filename": "src/types/observablevalue.ts",
+                "line": 30,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts#L30",
+              },
+              "type": "IObservableValue<T>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IValueWillChange.type",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "type",
+              "signature": "type: 'update';",
+              "source": Object {
+                "filename": "src/types/observablevalue.ts",
+                "line": 31,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts#L31",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "IValueWillChange",
+        "signature": "interface IValueWillChange<T> {}",
+        "source": Object {
+          "filename": "src/types/observablevalue.ts",
+          "line": 29,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts#L29",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IWhenOptions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "IWhenOptions.name",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "name",
+              "signature": "name?: string;",
+              "source": Object {
+                "filename": "src/api/when.ts",
+                "line": 13,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/when.ts#L13",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IWhenOptions.onError",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "onError",
+              "signature": "onError?: (error: any) => void;",
+              "source": Object {
+                "filename": "src/api/when.ts",
+                "line": 15,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/when.ts#L15",
+              },
+              "type": "(error: any) => void",
+            },
+            Object {
+              "docs": Array [],
+              "id": "IWhenOptions.timeout",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "timeout",
+              "signature": "timeout?: number;",
+              "source": Object {
+                "filename": "src/api/when.ts",
+                "line": 14,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/when.ts#L14",
+              },
+              "type": "number",
+            },
+          ],
+        },
+        "name": "IWhenOptions",
+        "signature": "interface IWhenOptions {}",
+        "source": Object {
+          "filename": "src/api/when.ts",
+          "line": 12,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/when.ts#L12",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Lambda",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [
+            Object {
+              "docs": Array [],
+              "id": "Lambda.0-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "(): void;",
+              "source": Object {
+                "filename": "src/utils/utils.ts",
+                "line": 16,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/utils/utils.ts#L16",
+              },
+            },
+          ],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "Lambda.name",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "name",
+              "signature": "name?: string;",
+              "source": Object {
+                "filename": "src/utils/utils.ts",
+                "line": 17,
+                "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/utils/utils.ts#L17",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "Lambda",
+        "signature": "interface Lambda {}",
+        "source": Object {
+          "filename": "src/utils/utils.ts",
+          "line": 15,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/utils/utils.ts#L15",
+        },
+      },
+    ],
+    "namespaces": Array [],
+    "typeAliases": Array [
+      Object {
+        "docs": Array [],
+        "id": "AnnotationMapEntry",
+        "kind": "TypeAliasDeclaration",
+        "name": "AnnotationMapEntry",
+        "signature": "type AnnotationMapEntry =
+    | Annotation
+    | true /* follow the default decorator, usually deep */
+    | false;",
+        "source": Object {
+          "filename": "src/api/annotation.ts",
+          "line": 17,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/annotation.ts#L17",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "AnnotationsMap",
+        "kind": "TypeAliasDeclaration",
+        "name": "AnnotationsMap",
+        "signature": "type AnnotationsMap<T, AdditionalFields extends PropertyKey> = {
+    [P in Exclude<keyof T, 'toString'>]?: AnnotationMapEntry;
+} &
+    Record<AdditionalFields, AnnotationMapEntry>;",
+        "source": Object {
+          "filename": "src/api/annotation.ts",
+          "line": 24,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/annotation.ts#L24",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "CreateObservableOptions",
+        "kind": "TypeAliasDeclaration",
+        "name": "CreateObservableOptions",
+        "signature": "type CreateObservableOptions = {
+    name?: string;
+    equals?: IEqualsComparer<any>;
+    deep?: boolean;
+    defaultDecorator?: Annotation;
+    proxy?: boolean;
+    autoBind?: boolean;
+};",
+        "source": Object {
+          "filename": "src/api/observable.ts",
+          "line": 39,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L39",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IArrayDidChange",
+        "kind": "TypeAliasDeclaration",
+        "name": "IArrayDidChange",
+        "signature": "type IArrayDidChange<T = any> = IArrayUpdate<T> | IArraySplice<T>;",
+        "source": Object {
+          "filename": "src/types/observablearray.ts",
+          "line": 53,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L53",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IInterceptor",
+        "kind": "TypeAliasDeclaration",
+        "name": "IInterceptor",
+        "signature": "type IInterceptor<T> = (change: T) => T | null;",
+        "source": Object {
+          "filename": "src/types/intercept-utils.ts",
+          "line": 3,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/intercept-utils.ts#L3",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IMapDidChange",
+        "kind": "TypeAliasDeclaration",
+        "name": "IMapDidChange",
+        "signature": "type IMapDidChange<K = any, V = any> = {
+    observableKind: 'map';
+    debugObjectName: string;
+} & (
+    | {
+          object: ObservableMap<K, V>;
+          name: K; // actual the key or index, but this is based on the ancient .observe proposal for consistency
+          type: 'update';
+          newValue: V;
+          oldValue: V;
+      }
+    | {
+          object: ObservableMap<K, V>;
+          name: K;
+          type: 'add';
+          newValue: V;
+      }
+    | {
+          object: ObservableMap<K, V>;
+          name: K;
+          type: 'delete';
+          oldValue: V;
+      }
+);",
+        "source": Object {
+          "filename": "src/types/observablemap.ts",
+          "line": 46,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L46",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IMapEntries",
+        "kind": "TypeAliasDeclaration",
+        "name": "IMapEntries",
+        "signature": "type IMapEntries<K = any, V = any> = IMapEntry<K, V>[];",
+        "source": Object {
+          "filename": "src/types/observablemap.ts",
+          "line": 44,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L44",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IMapEntry",
+        "kind": "TypeAliasDeclaration",
+        "name": "IMapEntry",
+        "signature": "type IMapEntry<K = any, V = any> = [K, V];",
+        "source": Object {
+          "filename": "src/types/observablemap.ts",
+          "line": 43,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L43",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IObjectDidChange",
+        "kind": "TypeAliasDeclaration",
+        "name": "IObjectDidChange",
+        "signature": "type IObjectDidChange<T = any> = {
+    observableKind: 'object';
+    name: PropertyKey;
+    object: T;
+    debugObjectName: string;
+} & (
+    | {
+          type: 'add';
+          newValue: any;
+      }
+    | {
+          type: 'update';
+          oldValue: any;
+          newValue: any;
+      }
+    | {
+          type: 'remove';
+          oldValue: any;
+      }
+);",
+        "source": Object {
+          "filename": "src/types/observableobject.ts",
+          "line": 40,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableobject.ts#L40",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IObjectWillChange",
+        "kind": "TypeAliasDeclaration",
+        "name": "IObjectWillChange",
+        "signature": "type IObjectWillChange<T = any> =
+    | {
+          object: T;
+          type: 'update' | 'add';
+          name: PropertyKey;
+          newValue: any;
+      }
+    | {
+          object: T;
+          type: 'remove';
+          name: PropertyKey;
+      };",
+        "source": Object {
+          "filename": "src/types/observableobject.ts",
+          "line": 61,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableobject.ts#L61",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IObservableMapInitialValues",
+        "kind": "TypeAliasDeclaration",
+        "name": "IObservableMapInitialValues",
+        "signature": "type IObservableMapInitialValues<K = any, V = any> =
+    | IMapEntries<K, V>
+    | IKeyValueMap<V>
+    | Map<K, V>;",
+        "source": Object {
+          "filename": "src/types/observablemap.ts",
+          "line": 80,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L80",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IObservableSetInitialValues",
+        "kind": "TypeAliasDeclaration",
+        "name": "IObservableSetInitialValues",
+        "signature": "type IObservableSetInitialValues<T> = Set<T> | readonly T[];",
+        "source": Object {
+          "filename": "src/types/observableset.ts",
+          "line": 35,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L35",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IReactionOptions",
+        "kind": "TypeAliasDeclaration",
+        "name": "IReactionOptions",
+        "signature": "type IReactionOptions = IAutorunOptions & {
+    fireImmediately?: boolean;
+    equals?: IEqualsComparer<any>;
+};",
+        "source": Object {
+          "filename": "src/api/autorun.ts",
+          "line": 88,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/autorun.ts#L88",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "ISetDidChange",
+        "kind": "TypeAliasDeclaration",
+        "name": "ISetDidChange",
+        "signature": "type ISetDidChange<T = any> =
+    | {
+          object: ObservableSet<T>;
+          observableKind: 'set';
+          debugObjectName: string;
+          type: 'add';
+          newValue: T;
+      }
+    | {
+          object: ObservableSet<T>;
+          observableKind: 'set';
+          debugObjectName: string;
+          type: 'delete';
+          oldValue: T;
+      };",
+        "source": Object {
+          "filename": "src/types/observableset.ts",
+          "line": 37,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L37",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "ISetWillChange",
+        "kind": "TypeAliasDeclaration",
+        "name": "ISetWillChange",
+        "signature": "type ISetWillChange<T = any> =
+    | {
+          type: 'delete';
+          object: ObservableSet<T>;
+          oldValue: T;
+      }
+    | {
+          type: 'add';
+          object: ObservableSet<T>;
+          newValue: T;
+      };",
+        "source": Object {
+          "filename": "src/types/observableset.ts",
+          "line": 53,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L53",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IValueDidChange",
+        "kind": "TypeAliasDeclaration",
+        "name": "IValueDidChange",
+        "signature": "type IValueDidChange<T = any> = {
+    type: 'update';
+    observableKind: 'value';
+    object: IObservableValue<T>;
+    debugObjectName: string;
+    newValue: unknown;
+    oldValue: unknown;
+};",
+        "source": Object {
+          "filename": "src/types/observablevalue.ts",
+          "line": 35,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts#L35",
+        },
+      },
+    ],
+    "variables": Array [
+      Object {
+        "docs": Array [],
+        "id": "$mobx",
+        "kind": "VariableDeclaration",
+        "name": "$mobx",
+        "signature": "const $mobx: Symbol;",
+        "source": Object {
+          "filename": "src/core/atom.ts",
+          "line": 17,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/atom.ts#L17",
+        },
+        "type": "Symbol",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [],
+        "id": "action",
+        "kind": "VariableDeclaration",
+        "name": "action",
+        "signature": "const action: IActionFactory;",
+        "source": Object {
+          "filename": "src/api/action.ts",
+          "line": 61,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/action.ts#L61",
+        },
+        "type": "IActionFactory",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [],
+        "id": "comparer",
+        "kind": "VariableDeclaration",
+        "name": "comparer",
+        "signature": "const comparer: {
+    identity: (a: any, b: any) => boolean;
+    structural: (a: any, b: any) => boolean;
+    default: (a: any, b: any) => boolean;
+    shallow: (a: any, b: any) => boolean;
+};",
+        "source": Object {
+          "filename": "src/utils/comparer.ts",
+          "line": 23,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/utils/comparer.ts#L23",
+        },
+        "type": "{ identity: (a: any, b: any) => boolean; structural: (a: any, b: any) => boolean; default: (a: any, b: any) => boolean; shallow: (a: any, b: any) => boolean; }",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Decorator for class properties: @computed get value() { return expr; }.
+ * For legacy purposes also invokable as ES5 observable created: \`computed(() => expr)\`;
+ */",
+        ],
+        "id": "computed",
+        "kind": "VariableDeclaration",
+        "name": "computed",
+        "signature": "const computed: IComputedFactory;",
+        "source": Object {
+          "filename": "src/api/computed.ts",
+          "line": 31,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/computed.ts#L31",
+        },
+        "type": "IComputedFactory",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [],
+        "id": "flow",
+        "kind": "VariableDeclaration",
+        "name": "flow",
+        "signature": "const flow: Flow;",
+        "source": Object {
+          "filename": "src/api/flow.ts",
+          "line": 24,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/flow.ts#L24",
+        },
+        "type": "Flow",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [],
+        "id": "FlowCancellationError",
+        "kind": "VariableDeclaration",
+        "name": "FlowCancellationError",
+        "signature": "const FlowCancellationError: typeof FlowCancellationError;",
+        "source": Object {
+          "filename": "src/api/flow.ts",
+          "line": 10,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/flow.ts#L10",
+        },
+        "type": "typeof FlowCancellationError",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [],
+        "id": "isBoxedObservable",
+        "kind": "VariableDeclaration",
+        "name": "isBoxedObservable",
+        "signature": "const isBoxedObservable: (x: any) => x is IObservableValue<any>;",
+        "source": Object {
+          "filename": "src/types/observablevalue.ts",
+          "line": 191,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts#L191",
+        },
+        "type": "(x: any) => x is IObservableValue<any>",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [],
+        "id": "isObservableMap",
+        "kind": "VariableDeclaration",
+        "name": "isObservableMap",
+        "signature": "var isObservableMap: (thing: any) => thing is ObservableMap<any, any>;",
+        "source": Object {
+          "filename": "src/types/observablemap.ts",
+          "line": 449,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L449",
+        },
+        "type": "(thing: any) => thing is ObservableMap<any, any>",
+        "variableKind": "var",
+      },
+      Object {
+        "docs": Array [],
+        "id": "isObservableSet",
+        "kind": "VariableDeclaration",
+        "name": "isObservableSet",
+        "signature": "var isObservableSet: (thing: any) => thing is ObservableSet<any>;",
+        "source": Object {
+          "filename": "src/types/observableset.ts",
+          "line": 273,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L273",
+        },
+        "type": "(thing: any) => thing is ObservableSet<any>",
+        "variableKind": "var",
+      },
+      Object {
+        "docs": Array [],
+        "id": "observable",
+        "kind": "VariableDeclaration",
+        "name": "observable",
+        "signature": "var observable: IObservableFactory;",
+        "source": Object {
+          "filename": "src/api/observable.ts",
+          "line": 202,
+          "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L202",
+        },
+        "type": "IObservableFactory",
+        "variableKind": "var",
+      },
+    ],
+  },
+  "files": Array [
+    Object {
+      "filename": "src/api/action.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/action.ts",
+    },
+    Object {
+      "filename": "src/api/annotation.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/annotation.ts",
+    },
+    Object {
+      "filename": "src/api/autorun.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/autorun.ts",
+    },
+    Object {
+      "filename": "src/api/become-observed.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/become-observed.ts",
+    },
+    Object {
+      "filename": "src/api/computed.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/computed.ts",
+    },
+    Object {
+      "filename": "src/api/configure.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/configure.ts",
+    },
+    Object {
+      "filename": "src/api/extendobservable.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/extendobservable.ts",
+    },
+    Object {
+      "filename": "src/api/extras.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/extras.ts",
+    },
+    Object {
+      "filename": "src/api/flow.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/flow.ts",
+    },
+    Object {
+      "filename": "src/api/intercept.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/intercept.ts",
+    },
+    Object {
+      "filename": "src/api/iscomputed.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/iscomputed.ts",
+    },
+    Object {
+      "filename": "src/api/isobservable.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/isobservable.ts",
+    },
+    Object {
+      "filename": "src/api/makeObservable.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/makeObservable.ts",
+    },
+    Object {
+      "filename": "src/api/object-api.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/object-api.ts",
+    },
+    Object {
+      "filename": "src/api/observable.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts",
+    },
+    Object {
+      "filename": "src/api/observe.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observe.ts",
+    },
+    Object {
+      "filename": "src/api/tojs.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/tojs.ts",
+    },
+    Object {
+      "filename": "src/api/trace.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/trace.ts",
+    },
+    Object {
+      "filename": "src/api/transaction.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/transaction.ts",
+    },
+    Object {
+      "filename": "src/api/when.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/when.ts",
+    },
+    Object {
+      "filename": "src/core/action.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/action.ts",
+    },
+    Object {
+      "filename": "src/core/atom.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/atom.ts",
+    },
+    Object {
+      "filename": "src/core/computedvalue.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts",
+    },
+    Object {
+      "filename": "src/core/derivation.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/derivation.ts",
+    },
+    Object {
+      "filename": "src/core/observable.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts",
+    },
+    Object {
+      "filename": "src/core/reaction.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts",
+    },
+    Object {
+      "filename": "src/core/spy.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/spy.ts",
+    },
+    Object {
+      "filename": "src/mobx.ts",
+      "isIndexFile": true,
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/mobx.ts",
+    },
+    Object {
+      "filename": "src/types/intercept-utils.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/intercept-utils.ts",
+    },
+    Object {
+      "filename": "src/types/listen-utils.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/listen-utils.ts",
+    },
+    Object {
+      "filename": "src/types/modifiers.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/modifiers.ts",
+    },
+    Object {
+      "filename": "src/types/observablearray.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts",
+    },
+    Object {
+      "filename": "src/types/observablemap.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts",
+    },
+    Object {
+      "filename": "src/types/observableobject.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableobject.ts",
+    },
+    Object {
+      "filename": "src/types/observableset.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts",
+    },
+    Object {
+      "filename": "src/types/observablevalue.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts",
+    },
+    Object {
+      "filename": "src/types/type-utils.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/type-utils.ts",
+    },
+    Object {
+      "filename": "src/utils/comparer.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/utils/comparer.ts",
+    },
+    Object {
+      "filename": "src/utils/utils.ts",
+      "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/utils/utils.ts",
+    },
+  ],
+  "overview": undefined,
+}
+`;

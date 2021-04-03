@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`export-type-import-type snapshot 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [],
+    "enums": Array [],
+    "functions": Array [],
+    "interfaces": Array [],
+    "namespaces": Array [
+      Object {
+        "declarations": Object {
+          "classes": Array [],
+          "enums": Array [],
+          "functions": Array [],
+          "interfaces": Array [],
+          "namespaces": Array [],
+          "typeAliases": Array [
+            Object {
+              "docs": Array [
+                "/** Type alias Foo1 */",
+              ],
+              "id": "Foo.Foo1",
+              "kind": "TypeAliasDeclaration",
+              "name": "Foo1",
+              "signature": "type Foo1 = string | number;",
+              "source": Object {
+                "filename": "foo.d.ts",
+                "line": 6,
+                "url": undefined,
+              },
+            },
+            Object {
+              "docs": Array [
+                "/** Type alias Foo2 */",
+              ],
+              "id": "Foo.Foo2",
+              "kind": "TypeAliasDeclaration",
+              "name": "Foo2",
+              "signature": "type Foo2 = {
+    bar: boolean;
+};",
+              "source": Object {
+                "filename": "foo.d.ts",
+                "line": 9,
+                "url": undefined,
+              },
+            },
+          ],
+          "variables": Array [],
+        },
+        "docs": Array [
+          "/**
+ * Module Foo.
+ */",
+        ],
+        "id": "Foo",
+        "kind": "NamespaceDeclaration",
+        "name": "Foo",
+        "signature": "module 'foo.d.ts' {}",
+        "source": Object {
+          "filename": "foo.d.ts",
+          "line": 1,
+          "url": undefined,
+        },
+      },
+    ],
+    "typeAliases": Array [],
+    "variables": Array [],
+  },
+  "files": Array [
+    Object {
+      "filename": "foo.d.ts",
+      "url": undefined,
+    },
+    Object {
+      "filename": "index.d.ts",
+      "isIndexFile": true,
+      "url": undefined,
+    },
+  ],
+  "overview": "/**
+ * This is similar to the structure of \`index.d.ts\` for \`@jest/types@26.6.2\`.
+ *
+ * @packageDocumentation
+ */",
+}
+`;

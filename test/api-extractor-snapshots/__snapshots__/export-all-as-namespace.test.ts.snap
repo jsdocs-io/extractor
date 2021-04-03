@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`export-all-as-namespace snapshot 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [],
+    "enums": Array [],
+    "functions": Array [],
+    "interfaces": Array [],
+    "namespaces": Array [
+      Object {
+        "declarations": Object {
+          "classes": Array [],
+          "enums": Array [],
+          "functions": Array [],
+          "interfaces": Array [],
+          "namespaces": Array [],
+          "typeAliases": Array [],
+          "variables": Array [
+            Object {
+              "docs": Array [
+                "/** Variable foo1 */",
+              ],
+              "id": "foo.foo1",
+              "kind": "VariableDeclaration",
+              "name": "foo1",
+              "signature": "const foo1: string;",
+              "source": Object {
+                "filename": "foo.d.ts",
+                "line": 6,
+                "url": undefined,
+              },
+              "type": "string",
+              "variableKind": "const",
+            },
+          ],
+        },
+        "docs": Array [
+          "/**
+ * Module Foo
+ */",
+        ],
+        "id": "foo",
+        "kind": "NamespaceDeclaration",
+        "name": "foo",
+        "signature": "module 'foo.d.ts' {}",
+        "source": Object {
+          "filename": "foo.d.ts",
+          "line": 1,
+          "url": undefined,
+        },
+      },
+    ],
+    "typeAliases": Array [],
+    "variables": Array [],
+  },
+  "files": Array [
+    Object {
+      "filename": "foo.d.ts",
+      "url": undefined,
+    },
+    Object {
+      "filename": "index.d.ts",
+      "isIndexFile": true,
+      "url": undefined,
+    },
+  ],
+  "overview": undefined,
+}
+`;

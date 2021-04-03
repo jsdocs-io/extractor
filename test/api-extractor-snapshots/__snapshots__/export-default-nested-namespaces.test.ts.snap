@@ -1,0 +1,187 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`export-default-nested-namespaces snapshot 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [],
+    "enums": Array [],
+    "functions": Array [],
+    "interfaces": Array [],
+    "namespaces": Array [
+      Object {
+        "declarations": Object {
+          "classes": Array [],
+          "enums": Array [],
+          "functions": Array [
+            Object {
+              "docs": Array [
+                "/** fooFunc doc */",
+              ],
+              "id": "foo.fooFunc",
+              "kind": "FunctionDeclaration",
+              "name": "fooFunc",
+              "signature": "fooFunc: (s: string) => string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 10,
+                "url": undefined,
+              },
+              "type": "(s: string) => string",
+            },
+          ],
+          "interfaces": Array [],
+          "namespaces": Array [
+            Object {
+              "declarations": Object {
+                "classes": Array [],
+                "enums": Array [],
+                "functions": Array [
+                  Object {
+                    "docs": Array [
+                      "/** foobarFunc doc */",
+                    ],
+                    "id": "foo.bar.foobarFunc",
+                    "kind": "FunctionDeclaration",
+                    "name": "foobarFunc",
+                    "signature": "foobarFunc: (n: number) => number;",
+                    "source": Object {
+                      "filename": "index.d.ts",
+                      "line": 16,
+                      "url": undefined,
+                    },
+                    "type": "(n: number) => number",
+                  },
+                ],
+                "interfaces": Array [],
+                "namespaces": Array [
+                  Object {
+                    "declarations": Object {
+                      "classes": Array [],
+                      "enums": Array [],
+                      "functions": Array [
+                        Object {
+                          "docs": Array [
+                            "/** foobarbazFunc doc */",
+                          ],
+                          "id": "foo.bar.baz.foobarbazFunc",
+                          "kind": "FunctionDeclaration",
+                          "name": "foobarbazFunc",
+                          "signature": "foobarbazFunc: (b: boolean) => boolean;",
+                          "source": Object {
+                            "filename": "index.d.ts",
+                            "line": 22,
+                            "url": undefined,
+                          },
+                          "type": "(b: boolean) => boolean",
+                        },
+                      ],
+                      "interfaces": Array [],
+                      "namespaces": Array [
+                        Object {
+                          "declarations": Object {
+                            "classes": Array [],
+                            "enums": Array [],
+                            "functions": Array [],
+                            "interfaces": Array [],
+                            "namespaces": Array [
+                              Object {
+                                "declarations": Object {
+                                  "classes": Array [],
+                                  "enums": Array [],
+                                  "functions": Array [],
+                                  "interfaces": Array [],
+                                  "namespaces": Array [],
+                                  "typeAliases": Array [],
+                                  "variables": Array [],
+                                },
+                                "docs": Array [],
+                                "id": "foo.bar.baz.qux.xyz",
+                                "kind": "NamespaceDeclaration",
+                                "name": "foo.bar.baz.qux.xyz",
+                                "signature": "namespace foo.bar.baz.qux.xyz {}",
+                                "source": Object {
+                                  "filename": "index.d.ts",
+                                  "line": 26,
+                                  "url": undefined,
+                                },
+                              },
+                            ],
+                            "typeAliases": Array [],
+                            "variables": Array [],
+                          },
+                          "docs": Array [],
+                          "id": "foo.bar.baz.qux",
+                          "kind": "NamespaceDeclaration",
+                          "name": "foo.bar.baz.qux",
+                          "signature": "namespace foo.bar.baz.qux {}",
+                          "source": Object {
+                            "filename": "index.d.ts",
+                            "line": 26,
+                            "url": undefined,
+                          },
+                        },
+                      ],
+                      "typeAliases": Array [],
+                      "variables": Array [],
+                    },
+                    "docs": Array [],
+                    "id": "foo.bar.baz",
+                    "kind": "NamespaceDeclaration",
+                    "name": "foo.bar.baz",
+                    "signature": "namespace foo.bar.baz {}",
+                    "source": Object {
+                      "filename": "index.d.ts",
+                      "line": 20,
+                      "url": undefined,
+                    },
+                  },
+                ],
+                "typeAliases": Array [],
+                "variables": Array [],
+              },
+              "docs": Array [],
+              "id": "foo.bar",
+              "kind": "NamespaceDeclaration",
+              "name": "foo.bar",
+              "signature": "namespace foo.bar {}",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 14,
+                "url": undefined,
+              },
+            },
+          ],
+          "typeAliases": Array [],
+          "variables": Array [],
+        },
+        "docs": Array [
+          "/** foo doc */",
+        ],
+        "id": "foo",
+        "kind": "NamespaceDeclaration",
+        "name": "foo",
+        "signature": "namespace foo {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 8,
+          "url": undefined,
+        },
+      },
+    ],
+    "typeAliases": Array [],
+    "variables": Array [],
+  },
+  "files": Array [
+    Object {
+      "filename": "index.d.ts",
+      "isIndexFile": true,
+      "url": undefined,
+    },
+  ],
+  "overview": "/**
+ * This is similar to the structure of \`index.d.ts\` for \`firebase@8.2.2\`.
+ *
+ * @packageDocumentation
+ */",
+}
+`;

@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`export-named-import-all snapshot 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [],
+    "enums": Array [],
+    "functions": Array [],
+    "interfaces": Array [],
+    "namespaces": Array [
+      Object {
+        "declarations": Object {
+          "classes": Array [],
+          "enums": Array [],
+          "functions": Array [],
+          "interfaces": Array [],
+          "namespaces": Array [],
+          "typeAliases": Array [],
+          "variables": Array [
+            Object {
+              "docs": Array [],
+              "id": "bar.baz",
+              "kind": "VariableDeclaration",
+              "name": "baz",
+              "signature": "const baz: boolean;",
+              "source": Object {
+                "filename": "bar.d.ts",
+                "line": 1,
+                "url": undefined,
+              },
+              "type": "boolean",
+              "variableKind": "const",
+            },
+          ],
+        },
+        "docs": Array [],
+        "id": "bar",
+        "kind": "NamespaceDeclaration",
+        "name": "bar",
+        "signature": "module 'bar.d.ts' {}",
+        "source": Object {
+          "filename": "bar.d.ts",
+          "line": 1,
+          "url": undefined,
+        },
+      },
+      Object {
+        "declarations": Object {
+          "classes": Array [],
+          "enums": Array [],
+          "functions": Array [
+            Object {
+              "docs": Array [
+                "/** Function bar2 */",
+              ],
+              "id": "foo.bar2",
+              "kind": "FunctionDeclaration",
+              "name": "bar2",
+              "signature": "bar2: (a: number, b: number) => number;",
+              "source": Object {
+                "filename": "foo.d.ts",
+                "line": 9,
+                "url": undefined,
+              },
+              "type": "(a: number, b: number) => number",
+            },
+          ],
+          "interfaces": Array [
+            Object {
+              "docs": Array [
+                "/** Interface Bar3 */",
+              ],
+              "id": "foo.Bar3",
+              "kind": "InterfaceDeclaration",
+              "members": Object {
+                "callSignatures": Array [],
+                "constructSignatures": Array [],
+                "indexSignatures": Array [],
+                "methods": Array [],
+                "properties": Array [
+                  Object {
+                    "docs": Array [],
+                    "id": "foo.Bar3.baz",
+                    "isOptional": false,
+                    "isReadonly": true,
+                    "kind": "InterfacePropertyDeclaration",
+                    "name": "baz",
+                    "signature": "readonly baz: <U>(t: T, u: U) => boolean;",
+                    "source": Object {
+                      "filename": "foo.d.ts",
+                      "line": 13,
+                      "url": undefined,
+                    },
+                    "type": "<U>(t: T, u: U) => boolean",
+                  },
+                ],
+              },
+              "name": "Bar3",
+              "signature": "interface Bar3<T> {}",
+              "source": Object {
+                "filename": "foo.d.ts",
+                "line": 12,
+                "url": undefined,
+              },
+            },
+          ],
+          "namespaces": Array [],
+          "typeAliases": Array [],
+          "variables": Array [
+            Object {
+              "docs": Array [
+                "/** Variable bar1 */",
+              ],
+              "id": "foo.bar1",
+              "kind": "VariableDeclaration",
+              "name": "bar1",
+              "signature": "const bar1: string;",
+              "source": Object {
+                "filename": "foo.d.ts",
+                "line": 6,
+                "url": undefined,
+              },
+              "type": "string",
+              "variableKind": "const",
+            },
+          ],
+        },
+        "docs": Array [
+          "/**
+ * Foo module
+ */",
+        ],
+        "id": "foo",
+        "kind": "NamespaceDeclaration",
+        "name": "foo",
+        "signature": "module 'foo.d.ts' {}",
+        "source": Object {
+          "filename": "foo.d.ts",
+          "line": 1,
+          "url": undefined,
+        },
+      },
+    ],
+    "typeAliases": Array [],
+    "variables": Array [],
+  },
+  "files": Array [
+    Object {
+      "filename": "bar.d.ts",
+      "url": undefined,
+    },
+    Object {
+      "filename": "foo.d.ts",
+      "url": undefined,
+    },
+    Object {
+      "filename": "index.d.ts",
+      "isIndexFile": true,
+      "url": undefined,
+    },
+  ],
+  "overview": "/**
+ * This is similar to the structure of \`index.d.ts\` for \`fp-ts@2.9.3\`.
+ *
+ * @packageDocumentation
+ */",
+}
+`;

@@ -1,0 +1,657 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@types/express 4.17.11 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [],
+    "enums": Array [],
+    "functions": Array [
+      Object {
+        "docs": Array [
+          "/**
+ * Creates an Express application. The express() function is a top-level function exported by the express module.
+ */",
+        ],
+        "id": "e",
+        "kind": "FunctionDeclaration",
+        "name": "e",
+        "signature": "e: typeof e;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 27,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L27",
+        },
+        "type": "typeof e",
+      },
+      Object {
+        "docs": Array [
+          "/**
+     * This is a built-in middleware function in Express. It parses incoming request query parameters.
+     */",
+        ],
+        "id": "query",
+        "kind": "FunctionDeclaration",
+        "name": "query",
+        "signature": "query: (options: qs.IParseOptions | typeof qs.parse) => Handler;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 69,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L69",
+        },
+        "type": "(options: qs.IParseOptions | typeof qs.parse) => Handler",
+      },
+      Object {
+        "docs": Array [],
+        "id": "Router",
+        "kind": "FunctionDeclaration",
+        "name": "Router",
+        "signature": "Router: (options?: RouterOptions) => any;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 71,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L71",
+        },
+        "type": "(options?: RouterOptions) => any",
+      },
+    ],
+    "interfaces": Array [
+      Object {
+        "docs": Array [],
+        "id": "Application",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Application",
+        "signature": "interface Application extends core.Application {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 94,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L94",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "CookieOptions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "CookieOptions",
+        "signature": "interface CookieOptions extends core.CookieOptions {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 95,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L95",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Errback",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Errback",
+        "signature": "interface Errback extends core.Errback {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 96,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L96",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "ErrorRequestHandler",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "ErrorRequestHandler",
+        "signature": "interface ErrorRequestHandler<
+    P = core.ParamsDictionary,
+    ResBody = any,
+    ReqBody = any,
+    ReqQuery = core.Query,
+    Locals extends Record<string, any> = Record<string, any>
+> extends core.ErrorRequestHandler<P, ResBody, ReqBody, ReqQuery, Locals> {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 97,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L97",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Express",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Express",
+        "signature": "interface Express extends core.Express {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 104,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L104",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Handler",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Handler",
+        "signature": "interface Handler extends core.Handler {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 105,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L105",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IRoute",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "IRoute",
+        "signature": "interface IRoute extends core.IRoute {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 106,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L106",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IRouter",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "IRouter",
+        "signature": "interface IRouter extends core.IRouter {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 107,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L107",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IRouterHandler",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "IRouterHandler",
+        "signature": "interface IRouterHandler<T> extends core.IRouterHandler<T> {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 108,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L108",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "IRouterMatcher",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "IRouterMatcher",
+        "signature": "interface IRouterMatcher<T> extends core.IRouterMatcher<T> {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 109,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L109",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "MediaType",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "MediaType",
+        "signature": "interface MediaType extends core.MediaType {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 110,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L110",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "NextFunction",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "NextFunction",
+        "signature": "interface NextFunction extends core.NextFunction {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 111,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L111",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Request",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Request",
+        "signature": "interface Request<
+    P = core.ParamsDictionary,
+    ResBody = any,
+    ReqBody = any,
+    ReqQuery = core.Query,
+    Locals extends Record<string, any> = Record<string, any>
+> extends core.Request<P, ResBody, ReqBody, ReqQuery, Locals> {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 112,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L112",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "RequestHandler",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "RequestHandler",
+        "signature": "interface RequestHandler<
+    P = core.ParamsDictionary,
+    ResBody = any,
+    ReqBody = any,
+    ReqQuery = core.Query,
+    Locals extends Record<string, any> = Record<string, any>
+> extends core.RequestHandler<P, ResBody, ReqBody, ReqQuery, Locals> {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 119,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L119",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "RequestParamHandler",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "RequestParamHandler",
+        "signature": "interface RequestParamHandler extends core.RequestParamHandler {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 126,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L126",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Response",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Response",
+        "signature": "interface Response<
+    ResBody = any,
+    Locals extends Record<string, any> = Record<string, any>
+> extends core.Response<ResBody, Locals> {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 127,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L127",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Router",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Router",
+        "signature": "interface Router extends core.Router {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 129,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L129",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "RouterOptions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+         * Enable case sensitivity.
+         */",
+              ],
+              "id": "RouterOptions.caseSensitive",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "caseSensitive",
+              "signature": "caseSensitive?: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 77,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L77",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+         * Preserve the req.params values from the parent router.
+         * If the parent and the child have conflicting param names, the child’s value take precedence.
+         *
+         * @default false
+         * @since 4.5.0
+         */",
+              ],
+              "id": "RouterOptions.mergeParams",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "mergeParams",
+              "signature": "mergeParams?: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 86,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L86",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+         * Enable strict routing.
+         */",
+              ],
+              "id": "RouterOptions.strict",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "strict",
+              "signature": "strict?: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 91,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L91",
+              },
+              "type": "boolean",
+            },
+          ],
+        },
+        "name": "RouterOptions",
+        "signature": "interface RouterOptions {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 73,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L73",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Send",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Send",
+        "signature": "interface Send extends core.Send {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 130,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L130",
+        },
+      },
+    ],
+    "namespaces": Array [],
+    "typeAliases": Array [],
+    "variables": Array [
+      Object {
+        "docs": Array [
+          "/**
+     * These are the exposed prototypes.
+     */",
+        ],
+        "id": "application",
+        "kind": "VariableDeclaration",
+        "name": "application",
+        "signature": "var application: Application;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 51,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L51",
+        },
+        "type": "Application",
+        "variableKind": "var",
+      },
+      Object {
+        "docs": Array [
+          "/**
+     * This is a built-in middleware function in Express. It parses incoming requests with JSON payloads and is based on body-parser.
+     * @since 4.16.0
+     */",
+        ],
+        "id": "json",
+        "kind": "VariableDeclaration",
+        "name": "json",
+        "signature": "var json: any;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 34,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L34",
+        },
+        "type": "any",
+        "variableKind": "var",
+      },
+      Object {
+        "docs": Array [
+          "/**
+     * This is a built-in middleware function in Express. It parses incoming requests with Buffer payloads and is based on body-parser.
+     * @since 4.17.0
+     */",
+        ],
+        "id": "raw",
+        "kind": "VariableDeclaration",
+        "name": "raw",
+        "signature": "var raw: any;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 40,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L40",
+        },
+        "type": "any",
+        "variableKind": "var",
+      },
+      Object {
+        "docs": Array [],
+        "id": "request",
+        "kind": "VariableDeclaration",
+        "name": "request",
+        "signature": "var request: Request<any, any, any, any, Record<string, any>>;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 52,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L52",
+        },
+        "type": "Request<any, any, any, any, Record<string, any>>",
+        "variableKind": "var",
+      },
+      Object {
+        "docs": Array [],
+        "id": "response",
+        "kind": "VariableDeclaration",
+        "name": "response",
+        "signature": "var response: Response<any, Record<string, any>>;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 53,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L53",
+        },
+        "type": "Response<any, Record<string, any>>",
+        "variableKind": "var",
+      },
+      Object {
+        "docs": Array [
+          "/**
+     * This is a built-in middleware function in Express. It serves static files and is based on serve-static.
+     */",
+        ],
+        "id": "static",
+        "kind": "VariableDeclaration",
+        "name": "static",
+        "signature": "var static: any;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 58,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L58",
+        },
+        "type": "any",
+        "variableKind": "var",
+      },
+      Object {
+        "docs": Array [
+          "/**
+     * This is a built-in middleware function in Express. It parses incoming requests with text payloads and is based on body-parser.
+     * @since 4.17.0
+     */",
+        ],
+        "id": "text",
+        "kind": "VariableDeclaration",
+        "name": "text",
+        "signature": "var text: any;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 46,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L46",
+        },
+        "type": "any",
+        "variableKind": "var",
+      },
+      Object {
+        "docs": Array [
+          "/**
+     * This is a built-in middleware function in Express. It parses incoming requests with urlencoded payloads and is based on body-parser.
+     * @since 4.16.0
+     */",
+        ],
+        "id": "urlencoded",
+        "kind": "VariableDeclaration",
+        "name": "urlencoded",
+        "signature": "var urlencoded: any;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 64,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L64",
+        },
+        "type": "any",
+        "variableKind": "var",
+      },
+    ],
+  },
+  "files": Array [
+    Object {
+      "filename": "index.d.ts",
+      "isIndexFile": true,
+      "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts",
+    },
+  ],
+  "overview": undefined,
+}
+`;

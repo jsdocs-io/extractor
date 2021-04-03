@@ -1,0 +1,1401 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`chalk 4.1.0 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [],
+    "enums": Array [],
+    "functions": Array [],
+    "interfaces": Array [
+      Object {
+        "docs": Array [],
+        "id": "Chalk",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [
+            Object {
+              "docs": Array [
+                "/**
+		Use a [Select/Set Graphic Rendition](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters) (SGR) [color code number](https://en.wikipedia.org/wiki/ANSI_escape_code#3/4_bit) to set text color.
+
+		30 <= code && code < 38 || 90 <= code && code < 98
+		For example, 31 for red, 91 for redBright.
+		*/",
+              ],
+              "id": "Chalk.ansi",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "ansi",
+              "signature": "ansi: (code: number) => Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 226,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L226",
+              },
+              "type": "(code: number) => Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Use a [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set text color.
+		*/",
+              ],
+              "id": "Chalk.ansi256",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "ansi256",
+              "signature": "ansi256: (index: number) => Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 231,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L231",
+              },
+              "type": "(index: number) => Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Use a [Select/Set Graphic Rendition](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters) (SGR) [color code number](https://en.wikipedia.org/wiki/ANSI_escape_code#3/4_bit) to set background color.
+
+		30 <= code && code < 38 || 90 <= code && code < 98
+		For example, 31 for red, 91 for redBright.
+		Use the foreground code, not the background code (for example, not 41, nor 101).
+		*/",
+              ],
+              "id": "Chalk.bgAnsi",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "bgAnsi",
+              "signature": "bgAnsi: (code: number) => Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 288,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L288",
+              },
+              "type": "(code: number) => Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Use a [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set background color.
+		*/",
+              ],
+              "id": "Chalk.bgAnsi256",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "bgAnsi256",
+              "signature": "bgAnsi256: (index: number) => Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 293,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L293",
+              },
+              "type": "(index: number) => Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Use HEX value to set background color.
+
+		@param color - Hexadecimal value representing the desired color.
+
+		@example
+		\`\`\`
+		import chalk = require('chalk');
+
+		chalk.bgHex('#DEADED');
+		\`\`\`
+		*/",
+              ],
+              "id": "Chalk.bgHex",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "bgHex",
+              "signature": "bgHex: (color: string) => Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 245,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L245",
+              },
+              "type": "(color: string) => Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Use HSL values to set background color.
+		*/",
+              ],
+              "id": "Chalk.bgHsl",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "bgHsl",
+              "signature": "bgHsl: (hue: number, saturation: number, lightness: number) => Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 269,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L269",
+              },
+              "type": "(hue: number, saturation: number, lightness: number) => Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Use HSV values to set background color.
+		*/",
+              ],
+              "id": "Chalk.bgHsv",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "bgHsv",
+              "signature": "bgHsv: (hue: number, saturation: number, value: number) => Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 274,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L274",
+              },
+              "type": "(hue: number, saturation: number, value: number) => Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Use HWB values to set background color.
+		*/",
+              ],
+              "id": "Chalk.bgHwb",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "bgHwb",
+              "signature": "bgHwb: (hue: number, whiteness: number, blackness: number) => Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 279,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L279",
+              },
+              "type": "(hue: number, whiteness: number, blackness: number) => Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Use keyword color value to set background color.
+
+		@param color - Keyword value representing the desired color.
+
+		@example
+		\`\`\`
+		import chalk = require('chalk');
+
+		chalk.bgKeyword('orange');
+		\`\`\`
+		*/",
+              ],
+              "id": "Chalk.bgKeyword",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "bgKeyword",
+              "signature": "bgKeyword: (color: string) => Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 259,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L259",
+              },
+              "type": "(color: string) => Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Use RGB values to set background color.
+		*/",
+              ],
+              "id": "Chalk.bgRgb",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "bgRgb",
+              "signature": "bgRgb: (red: number, green: number, blue: number) => Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 264,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L264",
+              },
+              "type": "(red: number, green: number, blue: number) => Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Use HEX value to set text color.
+
+		@param color - Hexadecimal value representing the desired color.
+
+		@example
+		\`\`\`
+		import chalk = require('chalk');
+
+		chalk.hex('#DEADED');
+		\`\`\`
+		*/",
+              ],
+              "id": "Chalk.hex",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "hex",
+              "signature": "hex: (color: string) => Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 184,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L184",
+              },
+              "type": "(color: string) => Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Use HSL values to set text color.
+		*/",
+              ],
+              "id": "Chalk.hsl",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "hsl",
+              "signature": "hsl: (hue: number, saturation: number, lightness: number) => Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 208,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L208",
+              },
+              "type": "(hue: number, saturation: number, lightness: number) => Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Use HSV values to set text color.
+		*/",
+              ],
+              "id": "Chalk.hsv",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "hsv",
+              "signature": "hsv: (hue: number, saturation: number, value: number) => Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 213,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L213",
+              },
+              "type": "(hue: number, saturation: number, value: number) => Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Use HWB values to set text color.
+		*/",
+              ],
+              "id": "Chalk.hwb",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "hwb",
+              "signature": "hwb: (hue: number, whiteness: number, blackness: number) => Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 218,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L218",
+              },
+              "type": "(hue: number, whiteness: number, blackness: number) => Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Use keyword color value to set text color.
+
+		@param color - Keyword value representing the desired color.
+
+		@example
+		\`\`\`
+		import chalk = require('chalk');
+
+		chalk.keyword('orange');
+		\`\`\`
+		*/",
+              ],
+              "id": "Chalk.keyword",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "keyword",
+              "signature": "keyword: (color: string) => Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 198,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L198",
+              },
+              "type": "(color: string) => Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Use RGB values to set text color.
+		*/",
+              ],
+              "id": "Chalk.rgb",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "rgb",
+              "signature": "rgb: (red: number, green: number, blue: number) => Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 203,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L203",
+              },
+              "type": "(red: number, green: number, blue: number) => Chalk",
+            },
+          ],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "Chalk.bgBlack",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "bgBlack",
+              "signature": "readonly bgBlack: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 369,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L369",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.bgBlackBright",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "bgBlackBright",
+              "signature": "readonly bgBlackBright: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 388,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L388",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.bgBlue",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "bgBlue",
+              "signature": "readonly bgBlue: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 373,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L373",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.bgBlueBright",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "bgBlueBright",
+              "signature": "readonly bgBlueBright: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 392,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L392",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.bgCyan",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "bgCyan",
+              "signature": "readonly bgCyan: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 375,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L375",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.bgCyanBright",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "bgCyanBright",
+              "signature": "readonly bgCyanBright: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 394,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L394",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.bgGray",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "bgGray",
+              "signature": "readonly bgGray: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 381,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L381",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.bgGreen",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "bgGreen",
+              "signature": "readonly bgGreen: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 371,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L371",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.bgGreenBright",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "bgGreenBright",
+              "signature": "readonly bgGreenBright: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 390,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L390",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.bgGrey",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "bgGrey",
+              "signature": "readonly bgGrey: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 386,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L386",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.bgMagenta",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "bgMagenta",
+              "signature": "readonly bgMagenta: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 374,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L374",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.bgMagentaBright",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "bgMagentaBright",
+              "signature": "readonly bgMagentaBright: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 393,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L393",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.bgRed",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "bgRed",
+              "signature": "readonly bgRed: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 370,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L370",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.bgRedBright",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "bgRedBright",
+              "signature": "readonly bgRedBright: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 389,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L389",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.bgWhite",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "bgWhite",
+              "signature": "readonly bgWhite: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 376,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L376",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.bgWhiteBright",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "bgWhiteBright",
+              "signature": "readonly bgWhiteBright: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 395,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L395",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.bgYellow",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "bgYellow",
+              "signature": "readonly bgYellow: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 372,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L372",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.bgYellowBright",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "bgYellowBright",
+              "signature": "readonly bgYellowBright: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 391,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L391",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.black",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "black",
+              "signature": "readonly black: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 341,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L341",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.blackBright",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "blackBright",
+              "signature": "readonly blackBright: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 360,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L360",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.blue",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "blue",
+              "signature": "readonly blue: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 345,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L345",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.blueBright",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "blueBright",
+              "signature": "readonly blueBright: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 364,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L364",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Modifier: Make text bold.
+		*/",
+              ],
+              "id": "Chalk.bold",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "bold",
+              "signature": "readonly bold: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 303,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L303",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.cyan",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "cyan",
+              "signature": "readonly cyan: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 347,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L347",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.cyanBright",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "cyanBright",
+              "signature": "readonly cyanBright: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 366,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L366",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Modifier: Emitting only a small amount of light.
+		*/",
+              ],
+              "id": "Chalk.dim",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "dim",
+              "signature": "readonly dim: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 308,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L308",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.gray",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "gray",
+              "signature": "readonly gray: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 353,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L353",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.green",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "green",
+              "signature": "readonly green: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 343,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L343",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.greenBright",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "greenBright",
+              "signature": "readonly greenBright: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 362,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L362",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.grey",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "grey",
+              "signature": "readonly grey: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 358,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L358",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Modifier: Prints the text, but makes it invisible.
+		*/",
+              ],
+              "id": "Chalk.hidden",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "hidden",
+              "signature": "readonly hidden: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 328,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L328",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Return a new Chalk instance.
+		*/",
+              ],
+              "id": "Chalk.Instance",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "Instance",
+              "signature": "Instance: Instance;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 157,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L157",
+              },
+              "type": "Instance",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Modifier: Inverse background and foreground colors.
+		*/",
+              ],
+              "id": "Chalk.inverse",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "inverse",
+              "signature": "readonly inverse: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 323,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L323",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Modifier: Make text italic. (Not widely supported)
+		*/",
+              ],
+              "id": "Chalk.italic",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "italic",
+              "signature": "readonly italic: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 313,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L313",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		The color support for Chalk.
+
+		By default, color support is automatically detected based on the environment.
+
+		Levels:
+		- \`0\` - All colors disabled.
+		- \`1\` - Basic 16 colors support.
+		- \`2\` - ANSI 256 colors support.
+		- \`3\` - Truecolor 16 million colors support.
+		*/",
+              ],
+              "id": "Chalk.level",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "level",
+              "signature": "level: Level;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 170,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L170",
+              },
+              "type": "Level",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.magenta",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "magenta",
+              "signature": "readonly magenta: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 346,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L346",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.magentaBright",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "magentaBright",
+              "signature": "readonly magentaBright: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 365,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L365",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.red",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "red",
+              "signature": "readonly red: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 342,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L342",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.redBright",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "redBright",
+              "signature": "readonly redBright: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 361,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L361",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Modifier: Resets the current color chain.
+		*/",
+              ],
+              "id": "Chalk.reset",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "reset",
+              "signature": "readonly reset: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 298,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L298",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Modifier: Puts a horizontal line through the center of the text. (Not widely supported)
+		*/",
+              ],
+              "id": "Chalk.strikethrough",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "strikethrough",
+              "signature": "readonly strikethrough: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 333,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L333",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Modifier: Make text underline. (Not widely supported)
+		*/",
+              ],
+              "id": "Chalk.underline",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "underline",
+              "signature": "readonly underline: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 318,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L318",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Modifier: Prints the text only when Chalk has a color support level > 0.
+		Can be useful for things that are purely cosmetic.
+		*/",
+              ],
+              "id": "Chalk.visible",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "visible",
+              "signature": "readonly visible: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 339,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L339",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.white",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "white",
+              "signature": "readonly white: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 348,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L348",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.whiteBright",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "whiteBright",
+              "signature": "readonly whiteBright: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 367,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L367",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.yellow",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "yellow",
+              "signature": "readonly yellow: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 344,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L344",
+              },
+              "type": "Chalk",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Chalk.yellowBright",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "yellowBright",
+              "signature": "readonly yellowBright: Chalk;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 363,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L363",
+              },
+              "type": "Chalk",
+            },
+          ],
+        },
+        "name": "Chalk",
+        "signature": "interface Chalk extends ChalkFunction {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 153,
+          "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L153",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "ChalkFunction",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [
+            Object {
+              "docs": Array [
+                "/**
+		Use a template string.
+
+		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
+
+		@example
+		\`\`\`
+		import chalk = require('chalk');
+
+		log(chalk\`
+		CPU: {red \${cpu.totalPercent}%}
+		RAM: {green \${ram.used / ram.total * 100}%}
+		DISK: {rgb(255,131,0) \${disk.used / disk.total * 100}%}
+		\`);
+		\`\`\`
+
+		@example
+		\`\`\`
+		import chalk = require('chalk');
+
+		log(chalk.red.bgBlack\`2 + 3 = {bold \${2 + 3}}\`)
+		\`\`\`
+		*/",
+              ],
+              "id": "ChalkFunction.0-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "(text: TemplateStringsArray, ...placeholders: unknown[]): string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 148,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L148",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "ChalkFunction.1-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "(...text: unknown[]): string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 150,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L150",
+              },
+            },
+          ],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "ChalkFunction",
+        "signature": "interface ChalkFunction {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 124,
+          "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L124",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+	Detect whether the terminal supports color.
+	*/",
+        ],
+        "id": "ColorSupport",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+		Return whether Chalk supports Truecolor 16 million colors.
+		*/",
+              ],
+              "id": "ColorSupport.has16m",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "has16m",
+              "signature": "has16m: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 121,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L121",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Return whether Chalk supports ANSI 256 colors.
+		*/",
+              ],
+              "id": "ColorSupport.has256",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "has256",
+              "signature": "has256: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 116,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L116",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Return whether Chalk supports basic 16 colors.
+		*/",
+              ],
+              "id": "ColorSupport.hasBasic",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "hasBasic",
+              "signature": "hasBasic: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 111,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L111",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		The color level used by Chalk.
+		*/",
+              ],
+              "id": "ColorSupport.level",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "level",
+              "signature": "level: Level;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 106,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L106",
+              },
+              "type": "Level",
+            },
+          ],
+        },
+        "name": "ColorSupport",
+        "signature": "interface ColorSupport {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 102,
+          "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L102",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Options",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+		Specify the color support for Chalk.
+
+		By default, color support is automatically detected based on the environment.
+
+		Levels:
+		- \`0\` - All colors disabled.
+		- \`1\` - Basic 16 colors support.
+		- \`2\` - ANSI 256 colors support.
+		- \`3\` - Truecolor 16 million colors support.
+		*/",
+              ],
+              "id": "Options.level",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "level",
+              "signature": "level?: Level;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 91,
+                "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L91",
+              },
+              "type": "Level",
+            },
+          ],
+        },
+        "name": "Options",
+        "signature": "interface Options {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 79,
+          "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L79",
+        },
+      },
+    ],
+    "namespaces": Array [],
+    "typeAliases": Array [
+      Object {
+        "docs": Array [
+          "/**
+	Return a new Chalk instance.
+	*/",
+        ],
+        "id": "Instance",
+        "kind": "TypeAliasDeclaration",
+        "name": "Instance",
+        "signature": "type Instance = new (options?: Options) => Chalk;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 97,
+          "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L97",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+	Levels:
+	- \`0\` - All colors disabled.
+	- \`1\` - Basic 16 colors support.
+	- \`2\` - ANSI 256 colors support.
+	- \`3\` - Truecolor 16 million colors support.
+	*/",
+        ],
+        "id": "Level",
+        "kind": "TypeAliasDeclaration",
+        "name": "Level",
+        "signature": "type Level = 0 | 1 | 2 | 3;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 77,
+          "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L77",
+        },
+      },
+    ],
+    "variables": Array [
+      Object {
+        "docs": Array [
+          "/**
+Main Chalk object that allows to chain styles together.
+Call the last one as a method with a string argument.
+Order doesn't matter, and later styles take precedent in case of a conflict.
+This simply means that \`chalk.red.yellow.green\` is equivalent to \`chalk.green\`.
+*/",
+        ],
+        "id": "chalk",
+        "kind": "VariableDeclaration",
+        "name": "chalk",
+        "signature": "const chalk: chalk.Chalk &
+    chalk.ChalkFunction & {
+        supportsColor: chalk.ColorSupport | false;
+        Level: chalk.Level;
+        Color: Color;
+        ForegroundColor: ForegroundColor;
+        BackgroundColor: BackgroundColor;
+        Modifiers: Modifiers;
+        stderr: chalk.Chalk & { supportsColor: chalk.ColorSupport | false };
+    };",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 405,
+          "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L405",
+        },
+        "type": "chalk.Chalk & chalk.ChalkFunction & { supportsColor: chalk.ColorSupport | false; Level: chalk.Level; Color: Color; ForegroundColor: ForegroundColor; BackgroundColor: BackgroundColor; Modifiers: Modifiers; stderr: chalk.Chalk & {    supportsColor: chalk.ColorSupport | false;}; }",
+        "variableKind": "const",
+      },
+    ],
+  },
+  "files": Array [
+    Object {
+      "filename": "index.d.ts",
+      "isIndexFile": true,
+      "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts",
+    },
+  ],
+  "overview": undefined,
+}
+`;

@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`class-with-overloaded-methods snapshot 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Class1",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [
+            Object {
+              "docs": Array [
+                "/** (A) foo */",
+                "/** (B) foo */",
+              ],
+              "id": "Class1.foo",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "foo",
+              "signature": "foo: { (a: string): number; (b: number): string };",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 3,
+                "url": undefined,
+              },
+              "type": "{ (a: string): number; (b: number): string; }",
+            },
+          ],
+          "properties": Array [],
+        },
+        "name": "Class1",
+        "signature": "class Class1 {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 1,
+          "url": undefined,
+        },
+      },
+    ],
+    "enums": Array [],
+    "functions": Array [],
+    "interfaces": Array [],
+    "namespaces": Array [],
+    "typeAliases": Array [],
+    "variables": Array [],
+  },
+  "files": Array [
+    Object {
+      "filename": "index.d.ts",
+      "isIndexFile": true,
+      "url": undefined,
+    },
+  ],
+  "overview": undefined,
+}
+`;

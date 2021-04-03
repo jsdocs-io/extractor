@@ -1,0 +1,751 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`immer 8.0.1 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [],
+            "id": "Immer.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(config?: { useProxies?: boolean; autoFreeze?: boolean });",
+            "source": Object {
+              "filename": "src/core/immerClass.ts",
+              "line": 40,
+              "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts#L40",
+            },
+          },
+        ],
+        "docs": Array [],
+        "id": "Immer",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [
+            Object {
+              "docs": Array [],
+              "id": "Immer.applyPatches",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "applyPatches",
+              "signature": "applyPatches: (base: Objectish, patches: Patch[]) => any;",
+              "source": Object {
+                "filename": "src/core/immerClass.ts",
+                "line": 186,
+                "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts#L186",
+              },
+              "type": "(base: Objectish, patches: Patch[]) => any",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Immer.createDraft",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "createDraft",
+              "signature": "createDraft: <T extends Objectish>(base: T) => Draft<T>;",
+              "source": Object {
+                "filename": "src/core/immerClass.ts",
+                "line": 140,
+                "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts#L140",
+              },
+              "type": "<T extends Objectish>(base: T) => Draft<T>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Immer.finishDraft",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "finishDraft",
+              "signature": "finishDraft: <D extends unknown>(
+    draft: D,
+    patchListener?: PatchListener
+) => D extends Draft<infer T> ? T : never;",
+              "source": Object {
+                "filename": "src/core/immerClass.ts",
+                "line": 150,
+                "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts#L150",
+              },
+              "type": "<D extends unknown>(draft: D, patchListener?: PatchListener) => D extends Draft<infer T> ? T : never",
+            },
+            Object {
+              "docs": Array [
+                "/**
+	 * The \`produce\` function takes a value and a \\"recipe function\\" (whose
+	 * return value often depends on the base state). The recipe function is
+	 * free to mutate its first argument however it wants. All mutations are
+	 * only ever applied to a __copy__ of the base state.
+	 *
+	 * Pass only a function to create a \\"curried producer\\" which relieves you
+	 * from passing the recipe function every time.
+	 *
+	 * Only plain objects and arrays are made mutable. All other objects are
+	 * considered uncopyable.
+	 *
+	 * Note: This function is __bound__ to its \`Immer\` instance.
+	 *
+	 * @param {any} base - the initial state
+	 * @param {Function} producer - function that receives a proxy of the base state as first argument and which can be freely modified
+	 * @param {Function} patchListener - optional function that will be called with all the patches produced here
+	 * @returns {any} a new state, or the initial state if nothing was modified
+	 */",
+              ],
+              "id": "Immer.produce",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "produce",
+              "signature": "produce: (base: any, recipe?: any, patchListener?: any) => any;",
+              "source": Object {
+                "filename": "src/core/immerClass.ts",
+                "line": 68,
+                "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts#L68",
+              },
+              "type": "(base: any, recipe?: any, patchListener?: any) => any",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Immer.produceWithPatches",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "produceWithPatches",
+              "signature": "produceWithPatches: (arg1: any, arg2?: any, arg3?: any) => any;",
+              "source": Object {
+                "filename": "src/core/immerClass.ts",
+                "line": 126,
+                "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts#L126",
+              },
+              "type": "(arg1: any, arg2?: any, arg3?: any) => any",
+            },
+            Object {
+              "docs": Array [
+                "/**
+	 * Pass true to automatically freeze all copies created by Immer.
+	 *
+	 * By default, auto-freezing is enabled.
+	 */",
+              ],
+              "id": "Immer.setAutoFreeze",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "setAutoFreeze",
+              "signature": "setAutoFreeze: (value: boolean) => void;",
+              "source": Object {
+                "filename": "src/core/immerClass.ts",
+                "line": 169,
+                "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts#L169",
+              },
+              "type": "(value: boolean) => void",
+            },
+            Object {
+              "docs": Array [
+                "/**
+	 * Pass true to use the ES2015 \`Proxy\` class when creating drafts, which is
+	 * always faster than using ES5 proxies.
+	 *
+	 * By default, feature detection is used, so calling this is rarely necessary.
+	 */",
+              ],
+              "id": "Immer.setUseProxies",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "setUseProxies",
+              "signature": "setUseProxies: (value: boolean) => void;",
+              "source": Object {
+                "filename": "src/core/immerClass.ts",
+                "line": 179,
+                "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts#L179",
+              },
+              "type": "(value: boolean) => void",
+            },
+          ],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "Immer.autoFreeze_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "autoFreeze_",
+              "signature": "autoFreeze_: boolean;",
+              "source": Object {
+                "filename": "src/core/immerClass.ts",
+                "line": 38,
+                "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts#L38",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Immer.useProxies_",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "useProxies_",
+              "signature": "useProxies_: boolean;",
+              "source": Object {
+                "filename": "src/core/immerClass.ts",
+                "line": 36,
+                "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts#L36",
+              },
+              "type": "boolean",
+            },
+          ],
+        },
+        "name": "Immer",
+        "signature": "class Immer implements ProducersFns {}",
+        "source": Object {
+          "filename": "src/core/immerClass.ts",
+          "line": 35,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts#L35",
+        },
+      },
+    ],
+    "enums": Array [],
+    "functions": Array [
+      Object {
+        "docs": Array [
+          "/**
+ * This function is actually a no-op, but can be used to cast an immutable type
+ * to an draft type and make TypeScript happy
+ *
+ * @param value
+ */",
+        ],
+        "id": "castDraft",
+        "kind": "FunctionDeclaration",
+        "name": "castDraft",
+        "signature": "castDraft: <T>(value: T) => Draft<T>;",
+        "source": Object {
+          "filename": "src/immer.ts",
+          "line": 99,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/immer.ts#L99",
+        },
+        "type": "<T>(value: T) => Draft<T>",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * This function is actually a no-op, but can be used to cast a mutable type
+ * to an immutable type and make TypeScript happy
+ * @param value
+ */",
+        ],
+        "id": "castImmutable",
+        "kind": "FunctionDeclaration",
+        "name": "castImmutable",
+        "signature": "castImmutable: <T>(value: T) => Immutable<T>;",
+        "source": Object {
+          "filename": "src/immer.ts",
+          "line": 108,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/immer.ts#L108",
+        },
+        "type": "<T>(value: T) => Immutable<T>",
+      },
+      Object {
+        "docs": Array [
+          "/** Takes a snapshot of the current state of a draft and finalizes it (but without freezing). This is a great utility to print the current state during debugging (no Proxies in the way). The output of current can also be safely leaked outside the producer. */",
+        ],
+        "id": "current",
+        "kind": "FunctionDeclaration",
+        "name": "current",
+        "signature": "current: <T>(value: T) => T;",
+        "source": Object {
+          "filename": "src/core/current.ts",
+          "line": 19,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/current.ts#L19",
+        },
+        "type": "<T>(value: T) => T",
+      },
+      Object {
+        "docs": Array [],
+        "id": "enableAllPlugins",
+        "kind": "FunctionDeclaration",
+        "name": "enableAllPlugins",
+        "signature": "enableAllPlugins: () => void;",
+        "source": Object {
+          "filename": "src/plugins/all.ts",
+          "line": 5,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/plugins/all.ts#L5",
+        },
+        "type": "() => void",
+      },
+      Object {
+        "docs": Array [],
+        "id": "enableES5",
+        "kind": "FunctionDeclaration",
+        "name": "enableES5",
+        "signature": "enableES5: () => void;",
+        "source": Object {
+          "filename": "src/plugins/es5.ts",
+          "line": 26,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/plugins/es5.ts#L26",
+        },
+        "type": "() => void",
+      },
+      Object {
+        "docs": Array [],
+        "id": "enableMapSet",
+        "kind": "FunctionDeclaration",
+        "name": "enableMapSet",
+        "signature": "enableMapSet: () => void;",
+        "source": Object {
+          "filename": "src/plugins/mapset.ts",
+          "line": 22,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/plugins/mapset.ts#L22",
+        },
+        "type": "() => void",
+      },
+      Object {
+        "docs": Array [],
+        "id": "enablePatches",
+        "kind": "FunctionDeclaration",
+        "name": "enablePatches",
+        "signature": "enablePatches: () => void;",
+        "source": Object {
+          "filename": "src/plugins/patches.ts",
+          "line": 33,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/plugins/patches.ts#L33",
+        },
+        "type": "() => void",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Freezes draftable objects. Returns the original object.
+ * By default freezes shallowly, but if the second argument is \`true\` it will freeze recursively.
+ *
+ * @param obj
+ * @param deep
+ */",
+        ],
+        "id": "freeze",
+        "kind": "FunctionDeclaration",
+        "name": "freeze",
+        "signature": "freeze: <T>(obj: T, deep?: boolean) => T;",
+        "source": Object {
+          "filename": "src/utils/common.ts",
+          "line": 190,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/utils/common.ts#L190",
+        },
+        "type": "<T>(obj: T, deep?: boolean) => T",
+      },
+      Object {
+        "docs": Array [
+          "/** Returns true if the given value is an Immer draft */",
+        ],
+        "id": "isDraft",
+        "kind": "FunctionDeclaration",
+        "name": "isDraft",
+        "signature": "isDraft: (value: any) => boolean;",
+        "source": Object {
+          "filename": "src/utils/common.ts",
+          "line": 21,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/utils/common.ts#L21",
+        },
+        "type": "(value: any) => boolean",
+      },
+      Object {
+        "docs": Array [
+          "/** Returns true if the given value can be drafted by Immer */",
+        ],
+        "id": "isDraftable",
+        "kind": "FunctionDeclaration",
+        "name": "isDraftable",
+        "signature": "isDraftable: (value: any) => boolean;",
+        "source": Object {
+          "filename": "src/utils/common.ts",
+          "line": 27,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/utils/common.ts#L27",
+        },
+        "type": "(value: any) => boolean",
+      },
+      Object {
+        "docs": Array [
+          "/** Get the underlying object that is represented by the given draft */",
+        ],
+        "id": "original",
+        "kind": "FunctionDeclaration",
+        "name": "original",
+        "signature": "original: <T>(value: T) => T;",
+        "source": Object {
+          "filename": "src/utils/common.ts",
+          "line": 49,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/utils/common.ts#L49",
+        },
+        "type": "<T>(value: T) => T",
+      },
+    ],
+    "interfaces": Array [
+      Object {
+        "docs": Array [],
+        "id": "Patch",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "Patch.op",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "op",
+              "signature": "op: 'replace' | 'remove' | 'add';",
+              "source": Object {
+                "filename": "src/types/types-external.ts",
+                "line": 71,
+                "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/types/types-external.ts#L71",
+              },
+              "type": "\\"replace\\" | \\"remove\\" | \\"add\\"",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Patch.path",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "path",
+              "signature": "path: (string | number)[];",
+              "source": Object {
+                "filename": "src/types/types-external.ts",
+                "line": 72,
+                "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/types/types-external.ts#L72",
+              },
+              "type": "(string | number)[]",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Patch.value",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "value",
+              "signature": "value?: any;",
+              "source": Object {
+                "filename": "src/types/types-external.ts",
+                "line": 73,
+                "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/types/types-external.ts#L73",
+              },
+              "type": "any",
+            },
+          ],
+        },
+        "name": "Patch",
+        "signature": "interface Patch {}",
+        "source": Object {
+          "filename": "src/types/types-external.ts",
+          "line": 70,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/types/types-external.ts#L70",
+        },
+      },
+    ],
+    "namespaces": Array [],
+    "typeAliases": Array [
+      Object {
+        "docs": Array [],
+        "id": "Draft",
+        "kind": "TypeAliasDeclaration",
+        "name": "Draft",
+        "signature": "type Draft<T> = T extends AtomicObject
+    ? T
+    : T extends IfAvailable<ReadonlyMap<infer K, infer V>> // Map extends ReadonlyMap
+    ? Map<Draft<K>, Draft<V>>
+    : T extends IfAvailable<ReadonlySet<infer V>> // Set extends ReadonlySet
+    ? Set<Draft<V>>
+    : T extends WeakReferences
+    ? T
+    : T extends object
+    ? WritableDraft<T>
+    : T;",
+        "source": Object {
+          "filename": "src/types/types-external.ts",
+          "line": 45,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/types/types-external.ts#L45",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/** Convert a mutable type into a readonly type */",
+        ],
+        "id": "Immutable",
+        "kind": "TypeAliasDeclaration",
+        "name": "Immutable",
+        "signature": "type Immutable<T> = T extends AtomicObject
+    ? T
+    : T extends IfAvailable<ReadonlyMap<infer K, infer V>> // Map extends ReadonlyMap
+    ? ReadonlyMap<Immutable<K>, Immutable<V>>
+    : T extends IfAvailable<ReadonlySet<infer V>> // Set extends ReadonlySet
+    ? ReadonlySet<Immutable<V>>
+    : T extends WeakReferences
+    ? T
+    : T extends object
+    ? { readonly [K in keyof T]: Immutable<T[K]> }
+    : T;",
+        "source": Object {
+          "filename": "src/types/types-external.ts",
+          "line": 58,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/types/types-external.ts#L58",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "PatchListener",
+        "kind": "TypeAliasDeclaration",
+        "name": "PatchListener",
+        "signature": "type PatchListener = (patches: Patch[], inversePatches: Patch[]) => void;",
+        "source": Object {
+          "filename": "src/types/types-external.ts",
+          "line": 76,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/types/types-external.ts#L76",
+        },
+      },
+    ],
+    "variables": Array [
+      Object {
+        "docs": Array [
+          "/**
+ * Apply an array of Immer patches to the first argument.
+ *
+ * This function is a producer, which means copy-on-write is in effect.
+ */",
+        ],
+        "id": "applyPatches",
+        "kind": "VariableDeclaration",
+        "name": "applyPatches",
+        "signature": "const applyPatches: any;",
+        "source": Object {
+          "filename": "src/immer.ts",
+          "line": 75,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/immer.ts#L75",
+        },
+        "type": "any",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Create an Immer draft from the given base state, which may be a draft itself.
+ * The draft can be modified until you finalize it with the \`finishDraft\` function.
+ */",
+        ],
+        "id": "createDraft",
+        "kind": "VariableDeclaration",
+        "name": "createDraft",
+        "signature": "const createDraft: any;",
+        "source": Object {
+          "filename": "src/immer.ts",
+          "line": 81,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/immer.ts#L81",
+        },
+        "type": "any",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Finalize an Immer draft from a \`createDraft\` call, returning the base state
+ * (if no changes were made) or a modified copy. The draft must *not* be
+ * mutated afterwards.
+ *
+ * Pass a function as the 2nd argument to generate Immer patches based on the
+ * changes that were made.
+ */",
+        ],
+        "id": "finishDraft",
+        "kind": "VariableDeclaration",
+        "name": "finishDraft",
+        "signature": "const finishDraft: any;",
+        "source": Object {
+          "filename": "src/immer.ts",
+          "line": 91,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/immer.ts#L91",
+        },
+        "type": "any",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * To let Immer treat your class instances as plain immutable objects
+ * (albeit with a custom prototype), you must define either an instance property
+ * or a static property on each of your custom classes.
+ *
+ * Otherwise, your class instance will never be drafted, which means it won't be
+ * safe to mutate in a produce callback.
+ */",
+        ],
+        "id": "immerable",
+        "kind": "VariableDeclaration",
+        "name": "immerable",
+        "signature": "const immerable: Symbol;",
+        "source": Object {
+          "filename": "src/utils/env.ts",
+          "line": 30,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/utils/env.ts#L30",
+        },
+        "type": "Symbol",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * The sentinel value returned by producers to replace the draft with undefined.
+ */",
+        ],
+        "id": "nothing",
+        "kind": "VariableDeclaration",
+        "name": "nothing",
+        "signature": "const nothing: Nothing;",
+        "source": Object {
+          "filename": "src/utils/env.ts",
+          "line": 18,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/utils/env.ts#L18",
+        },
+        "type": "Nothing",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * The \`produce\` function takes a value and a \\"recipe function\\" (whose
+ * return value often depends on the base state). The recipe function is
+ * free to mutate its first argument however it wants. All mutations are
+ * only ever applied to a __copy__ of the base state.
+ *
+ * Pass only a function to create a \\"curried producer\\" which relieves you
+ * from passing the recipe function every time.
+ *
+ * Only plain objects and arrays are made mutable. All other objects are
+ * considered uncopyable.
+ *
+ * Note: This function is __bound__ to its \`Immer\` instance.
+ *
+ * @param {any} base - the initial state
+ * @param {Function} producer - function that receives a proxy of the base state as first argument and which can be freely modified
+ * @param {Function} patchListener - optional function that will be called with all the patches produced here
+ * @returns {any} a new state, or the initial state if nothing was modified
+ */",
+        ],
+        "id": "produce",
+        "kind": "VariableDeclaration",
+        "name": "produce",
+        "signature": "const produce: IProduce;",
+        "source": Object {
+          "filename": "src/immer.ts",
+          "line": 44,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/immer.ts#L44",
+        },
+        "type": "IProduce",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Like \`produce\`, but \`produceWithPatches\` always returns a tuple
+ * [nextState, patches, inversePatches] (instead of just the next state)
+ */",
+        ],
+        "id": "produceWithPatches",
+        "kind": "VariableDeclaration",
+        "name": "produceWithPatches",
+        "signature": "const produceWithPatches: IProduceWithPatches;",
+        "source": Object {
+          "filename": "src/immer.ts",
+          "line": 51,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/immer.ts#L51",
+        },
+        "type": "IProduceWithPatches",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Pass true to automatically freeze all copies created by Immer.
+ *
+ * Always freeze by default, even in production mode
+ */",
+        ],
+        "id": "setAutoFreeze",
+        "kind": "VariableDeclaration",
+        "name": "setAutoFreeze",
+        "signature": "const setAutoFreeze: any;",
+        "source": Object {
+          "filename": "src/immer.ts",
+          "line": 60,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/immer.ts#L60",
+        },
+        "type": "any",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Pass true to use the ES2015 \`Proxy\` class when creating drafts, which is
+ * always faster than using ES5 proxies.
+ *
+ * By default, feature detection is used, so calling this is rarely necessary.
+ */",
+        ],
+        "id": "setUseProxies",
+        "kind": "VariableDeclaration",
+        "name": "setUseProxies",
+        "signature": "const setUseProxies: any;",
+        "source": Object {
+          "filename": "src/immer.ts",
+          "line": 68,
+          "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/immer.ts#L68",
+        },
+        "type": "any",
+        "variableKind": "const",
+      },
+    ],
+  },
+  "files": Array [
+    Object {
+      "filename": "src/core/current.ts",
+      "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/current.ts",
+    },
+    Object {
+      "filename": "src/core/immerClass.ts",
+      "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts",
+    },
+    Object {
+      "filename": "src/immer.ts",
+      "isIndexFile": true,
+      "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/immer.ts",
+    },
+    Object {
+      "filename": "src/plugins/all.ts",
+      "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/plugins/all.ts",
+    },
+    Object {
+      "filename": "src/plugins/es5.ts",
+      "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/plugins/es5.ts",
+    },
+    Object {
+      "filename": "src/plugins/mapset.ts",
+      "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/plugins/mapset.ts",
+    },
+    Object {
+      "filename": "src/plugins/patches.ts",
+      "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/plugins/patches.ts",
+    },
+    Object {
+      "filename": "src/types/types-external.ts",
+      "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/types/types-external.ts",
+    },
+    Object {
+      "filename": "src/utils/common.ts",
+      "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/utils/common.ts",
+    },
+    Object {
+      "filename": "src/utils/env.ts",
+      "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/utils/env.ts",
+    },
+  ],
+  "overview": undefined,
+}
+`;

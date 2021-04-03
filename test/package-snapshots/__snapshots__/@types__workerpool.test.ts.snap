@@ -1,0 +1,682 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@types/workerpool 6.0.0 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Promise",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [
+            Object {
+              "docs": Array [],
+              "id": "Promise.all",
+              "isStatic": true,
+              "kind": "ClassMethodDeclaration",
+              "name": "all",
+              "signature": "static all: (promises: Array<Promise<any, any>>) => Promise<any[], any>;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 67,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L67",
+              },
+              "type": "(promises: Array<Promise<any, any>>) => Promise<any[], any>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Promise.always",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "always",
+              "signature": "always: <TT>(handler: () => Promise<TT>) => Promise<TT>;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 61,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L61",
+              },
+              "type": "<TT>(handler: () => Promise<TT>) => Promise<TT>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Promise.cancel",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "cancel",
+              "signature": "cancel: () => this;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 64,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L64",
+              },
+              "type": "() => this",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Promise.catch",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "catch",
+              "signature": "catch: <TT>(err: (error: E) => TT) => Promise<T | TT>;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 63,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L63",
+              },
+              "type": "<TT>(err: (error: E) => TT) => Promise<T | TT>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Promise.then",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "then",
+              "signature": "then: <TT, TE = never>(
+    result: (r: T) => TT,
+    err?: (r: E) => TE
+) => Promise<TT | TE, any>;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 62,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L62",
+              },
+              "type": "<TT, TE = never>(result: (r: T) => TT, err?: (r: E) => TE) => Promise<TT | TE, any>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Promise.timeout",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "timeout",
+              "signature": "timeout: (delay: number) => this;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 65,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L65",
+              },
+              "type": "(delay: number) => this",
+            },
+          ],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "Promise.pending",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "pending",
+              "signature": "readonly pending: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 59,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L59",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Promise.rejected",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "rejected",
+              "signature": "readonly rejected: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 58,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L58",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Promise.resolved",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "resolved",
+              "signature": "readonly resolved: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 57,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L57",
+              },
+              "type": "boolean",
+            },
+          ],
+        },
+        "name": "Promise",
+        "signature": "class Promise<T, E = Error> {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 56,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L56",
+        },
+      },
+    ],
+    "enums": Array [],
+    "functions": Array [
+      Object {
+        "docs": Array [
+          "/**
+ * When a \`script\` argument is provided, the provided script will be started as a dedicated worker.
+ * When no \`script\` argument is provided, a default worker is started which can be used to offload functions dynamically via \`Pool.exec\`.
+ * Note that on node.js, \`script\` must be an absolute file path like \`__dirname + '/myWorker.js'\`.
+ * In a browser environment, \`script\` can also be a data URL like \`'data:application/javascript;base64,...'\`.
+ * This allows embedding the bundled code of a worker in your main application. See \`examples/embeddedWorker\` for a demo.
+ */",
+          "/**
+ * When a script argument is provided, the provided script will be started as a dedicated worker.
+ * When no script argument is provided, a default worker is started which can be used to offload functions dynamically via Pool.exec.
+ * Note that on node.js, script must be an absolute file path like __dirname + '/myWorker.js'.
+ */",
+        ],
+        "id": "pool",
+        "kind": "FunctionDeclaration",
+        "name": "pool",
+        "signature": "pool: {
+    (pathToScript?: string, options?: WorkerPoolOptions): WorkerPool;
+    (options?: WorkerPoolOptions): WorkerPool;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 118,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L118",
+        },
+        "type": "{ (pathToScript?: string, options?: WorkerPoolOptions): WorkerPool; (options?: WorkerPoolOptions): WorkerPool; }",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Argument methods is optional can can be an object with functions available in the worker.
+ * Registered functions will be available via the worker pool.
+ */",
+        ],
+        "id": "worker",
+        "kind": "FunctionDeclaration",
+        "name": "worker",
+        "signature": "worker: (methods?: { [k: string]: (...args: any[]) => any }) => any;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 131,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L131",
+        },
+        "type": "(methods?: { [k: string]: (...args: any[]) => any; }) => any",
+      },
+    ],
+    "interfaces": Array [
+      Object {
+        "docs": Array [],
+        "id": "WorkerPool",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * Execute a function on a worker with given arguments.
+     * @param method When method is a string, a method with this name must exist at the worker
+     * and must be registered to make it accessible via the pool.
+     * The function will be executed on the worker with given parameters.
+     * When method is a function, the provided function fn will be stringified, send to the worker,
+     * and executed there with the provided parameters. The provided function must be static,
+     * it must not depend on variables in a surrounding scope.
+     */",
+              ],
+              "id": "WorkerPool.exec",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "exec",
+              "signature": "exec: <T extends (...args: any[]) => any>(
+    method: T | string,
+    params: Parameters<T> | null
+) => Promise<ReturnType<T>>;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 35,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L35",
+              },
+              "type": "<T extends (...args: any[]) => any>(method: T | string, params: Parameters<T> | null) => Promise<ReturnType<T>>",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Create a proxy for the worker pool.
+     * The proxy contains a proxy for all methods available on the worker.
+     * All methods return promises resolving the methods result.
+     */",
+              ],
+              "id": "WorkerPool.proxy",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "proxy",
+              "signature": "proxy: <T extends { [k: string]: (...args: any[]) => any }>() => Promise<
+    Proxy<T>
+>;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 43,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L43",
+              },
+              "type": "<T extends { [k: string]: (...args: any[]) => any; }>() => Promise<Proxy<T>>",
+            },
+            Object {
+              "docs": Array [
+                "/** Retrieve statistics on workers, and active and pending tasks. */",
+              ],
+              "id": "WorkerPool.stats",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "stats",
+              "signature": "stats: () => WorkerPoolStats;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 46,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L46",
+              },
+              "type": "() => WorkerPoolStats",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * If parameter force is false (default), workers will finish the tasks they are working on before terminating themselves.
+     * When force is true, all workers are terminated immediately without finishing running tasks.
+     * If timeout is provided, worker will be forced to terminal when the timeout expires and the worker has not finished.
+     */",
+              ],
+              "id": "WorkerPool.terminate",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "terminate",
+              "signature": "terminate: (force?: boolean, timeout?: number) => Promise<any[]>;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 53,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L53",
+              },
+              "type": "(force?: boolean, timeout?: number) => Promise<any[]>",
+            },
+          ],
+          "properties": Array [],
+        },
+        "name": "WorkerPool",
+        "signature": "interface WorkerPool {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 25,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L25",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "WorkerPoolOptions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/** 2nd argument to pass to childProcess.fork() */",
+              ],
+              "id": "WorkerPoolOptions.forkArgs",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "forkArgs",
+              "signature": "forkArgs?: string[];",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 106,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L106",
+              },
+              "type": "string[]",
+            },
+            Object {
+              "docs": Array [],
+              "id": "WorkerPoolOptions.forkOpts",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "forkOpts",
+              "signature": "forkOpts?: cp.ForkOptions;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 108,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L108",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * The default number of maxWorkers is the number of CPU's minus one.
+     * When the number of CPU's could not be determined (for example in older browsers), maxWorkers is set to 3.
+     */",
+              ],
+              "id": "WorkerPoolOptions.maxWorkers",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "maxWorkers",
+              "signature": "maxWorkers?: number;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 92,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L92",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * The minimum number of workers that must be initialized and kept available.
+     * Setting this to 'max' will create maxWorkers default workers.
+     */",
+              ],
+              "id": "WorkerPoolOptions.minWorkers",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "minWorkers",
+              "signature": "minWorkers?: number | 'max';",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 87,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L87",
+              },
+              "type": "number | \\"max\\"",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * - In case of \`'auto'\` (default), workerpool will automatically pick a suitable type of worker:
+     *   when in a browser environment, \`'web'\` will be used. When in a node.js environment, \`worker_threads\` will be used
+     *   if available (Node.js >= 11.7.0), else \`child_process\` will be used.
+     * - In case of \`'web'\`, a Web Worker will be used. Only available in a browser environment.
+     * - In case of \`'process'\`, \`child_process\` will be used. Only available in a node.js environment.
+     * - In case of \`'thread'\`, \`worker_threads\` will be used. If \`worker_threads\` are not available, an error is thrown.
+     *   Only available in a node.js environment.
+     */",
+              ],
+              "id": "WorkerPoolOptions.workerType",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "workerType",
+              "signature": "workerType?: 'auto' | 'web' | 'process' | 'thread';",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 103,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L103",
+              },
+              "type": "\\"auto\\" | \\"web\\" | \\"process\\" | \\"thread\\"",
+            },
+          ],
+        },
+        "name": "WorkerPoolOptions",
+        "signature": "interface WorkerPoolOptions {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 82,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L82",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "WorkerPoolStats",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "WorkerPoolStats.activeTasks",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "activeTasks",
+              "signature": "activeTasks: number;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 18,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L18",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "WorkerPoolStats.busyWorkers",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "busyWorkers",
+              "signature": "busyWorkers: number;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 15,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L15",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "WorkerPoolStats.idleWorkers",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "idleWorkers",
+              "signature": "idleWorkers: number;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 16,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L16",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "WorkerPoolStats.pendingTasks",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "pendingTasks",
+              "signature": "pendingTasks: number;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 17,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L17",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "WorkerPoolStats.totalWorkers",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "totalWorkers",
+              "signature": "totalWorkers: number;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 14,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L14",
+              },
+              "type": "number",
+            },
+          ],
+        },
+        "name": "WorkerPoolStats",
+        "signature": "interface WorkerPoolStats {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 13,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L13",
+        },
+      },
+    ],
+    "namespaces": Array [
+      Object {
+        "declarations": Object {
+          "classes": Array [
+            Object {
+              "constructors": Array [],
+              "docs": Array [],
+              "id": "Promise.CancellationError",
+              "isAbstract": false,
+              "kind": "ClassDeclaration",
+              "members": Object {
+                "methods": Array [],
+                "properties": Array [
+                  Object {
+                    "docs": Array [],
+                    "id": "Promise.CancellationError.name",
+                    "isStatic": false,
+                    "kind": "ClassPropertyDeclaration",
+                    "name": "name",
+                    "signature": "name: string;",
+                    "source": Object {
+                      "filename": "index.d.ts",
+                      "line": 73,
+                      "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L73",
+                    },
+                    "type": "string",
+                  },
+                ],
+              },
+              "name": "CancellationError",
+              "signature": "class CancellationError extends Error {}",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 72,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L72",
+              },
+            },
+            Object {
+              "constructors": Array [],
+              "docs": Array [],
+              "id": "Promise.TimeoutError",
+              "isAbstract": false,
+              "kind": "ClassDeclaration",
+              "members": Object {
+                "methods": Array [],
+                "properties": Array [
+                  Object {
+                    "docs": Array [],
+                    "id": "Promise.TimeoutError.name",
+                    "isStatic": false,
+                    "kind": "ClassPropertyDeclaration",
+                    "name": "name",
+                    "signature": "name: string;",
+                    "source": Object {
+                      "filename": "index.d.ts",
+                      "line": 78,
+                      "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L78",
+                    },
+                    "type": "string",
+                  },
+                ],
+              },
+              "name": "TimeoutError",
+              "signature": "class TimeoutError extends Error {}",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 77,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L77",
+              },
+            },
+          ],
+          "enums": Array [],
+          "functions": Array [],
+          "interfaces": Array [],
+          "namespaces": Array [],
+          "typeAliases": Array [],
+          "variables": Array [],
+        },
+        "docs": Array [],
+        "id": "Promise",
+        "kind": "NamespaceDeclaration",
+        "name": "Promise",
+        "signature": "namespace Promise {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 70,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L70",
+        },
+      },
+    ],
+    "typeAliases": Array [
+      Object {
+        "docs": Array [],
+        "id": "Proxy",
+        "kind": "TypeAliasDeclaration",
+        "name": "Proxy",
+        "signature": "type Proxy<T extends { [k: string]: (...args: any[]) => any }> = {
+    [M in keyof T]: (...args: Parameters<T[M]>) => Promise<ReturnType<T[M]>>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 21,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L21",
+        },
+      },
+    ],
+    "variables": Array [
+      Object {
+        "docs": Array [],
+        "id": "cpus",
+        "kind": "VariableDeclaration",
+        "name": "cpus",
+        "signature": "const cpus: number;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 134,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L134",
+        },
+        "type": "number",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [],
+        "id": "isMainThread",
+        "kind": "VariableDeclaration",
+        "name": "isMainThread",
+        "signature": "const isMainThread: boolean;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 133,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L133",
+        },
+        "type": "boolean",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [],
+        "id": "platform",
+        "kind": "VariableDeclaration",
+        "name": "platform",
+        "signature": "const platform: 'node' | 'browser';",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 132,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L132",
+        },
+        "type": "\\"node\\" | \\"browser\\"",
+        "variableKind": "const",
+      },
+    ],
+  },
+  "files": Array [
+    Object {
+      "filename": "index.d.ts",
+      "isIndexFile": true,
+      "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts",
+    },
+  ],
+  "overview": undefined,
+}
+`;

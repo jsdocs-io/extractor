@@ -1,0 +1,33 @@
+name: CI
+on: [push]
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        strategy:
+            matrix:
+                node: ['12.x', '14.x']
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v2
+
+            - name: Use Node ${{ matrix.node }}
+              uses: actions/setup-node@v2.1.5
+              with:
+                  node-version: ${{ matrix.node }}
+
+            - name: Install dependencies and build (with cache)
+              uses: bahmutov/npm-install@v1
+
+            - name: Install dependencies
+              run: yarn install --frozen-lockfile
+
+            - name: Lint
+              run: yarn lint
+
+            - name: Test
+              run: yarn test:ci
+
+            - name: Build
+              run: yarn build

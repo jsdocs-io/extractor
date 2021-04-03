@@ -1,0 +1,3199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`export-named-declarations snapshot 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [
+      Object {
+        "constructors": Array [],
+        "docs": Array [
+          "/**
+ * Class001
+ */",
+        ],
+        "id": "Class001",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Class001",
+        "signature": "class Class001 {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 4,
+          "url": undefined,
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Class002",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Class002",
+        "signature": "class Class002 extends Class001 {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 6,
+          "url": undefined,
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Class003",
+        "isAbstract": true,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Class003",
+        "signature": "abstract class Class003 {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 8,
+          "url": undefined,
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Class004",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Class004",
+        "signature": "class Class004 implements A, B {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 13,
+          "url": undefined,
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Class005",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Class005",
+        "signature": "class Class005 extends Class003 implements A, B {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 15,
+          "url": undefined,
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Class006",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Class006",
+        "signature": "class Class006<T> {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 18,
+          "url": undefined,
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Class007",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Class007",
+        "signature": "class Class007<T extends object, U, V extends keyof T>
+    extends Class003
+    implements A, B {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 20,
+          "url": undefined,
+        },
+      },
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [
+              "/** Constructor */",
+            ],
+            "id": "Class008.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(foo: any, bar: any);",
+            "source": Object {
+              "filename": "classes.ts",
+              "line": 25,
+              "url": undefined,
+            },
+          },
+          Object {
+            "docs": Array [],
+            "id": "Class008.1-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(foo: string, bar: number);",
+            "source": Object {
+              "filename": "classes.ts",
+              "line": 26,
+              "url": undefined,
+            },
+          },
+        ],
+        "docs": Array [],
+        "id": "Class008",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Class008",
+        "signature": "class Class008 {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 23,
+          "url": undefined,
+        },
+      },
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [],
+            "id": "Class009.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "protected constructor(foo: string, bar: number);",
+            "source": Object {
+              "filename": "classes.ts",
+              "line": 33,
+              "url": undefined,
+            },
+          },
+        ],
+        "docs": Array [],
+        "id": "Class009",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Class009",
+        "signature": "class Class009 {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 32,
+          "url": undefined,
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Class010",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Class010",
+        "signature": "class Class010 {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 39,
+          "url": undefined,
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Class011",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [
+            Object {
+              "docs": Array [
+                "/** Bar */",
+              ],
+              "id": "Class011.bar",
+              "isStatic": true,
+              "kind": "ClassMethodDeclaration",
+              "name": "bar",
+              "signature": "static bar: () => number;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 53,
+                "url": undefined,
+              },
+              "type": "() => number",
+            },
+          ],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/** Get bat */",
+              ],
+              "id": "Class011.bat",
+              "isStatic": true,
+              "kind": "ClassPropertyDeclaration",
+              "name": "bat",
+              "signature": "static readonly bat: string;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 69,
+                "url": undefined,
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/** Get baz */",
+              ],
+              "id": "Class011.baz",
+              "isStatic": true,
+              "kind": "ClassPropertyDeclaration",
+              "name": "baz",
+              "signature": "static baz: number;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 58,
+                "url": undefined,
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [
+                "/** Foo */",
+              ],
+              "id": "Class011.foo",
+              "isStatic": true,
+              "kind": "ClassPropertyDeclaration",
+              "name": "foo",
+              "signature": "static readonly foo: string;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 50,
+                "url": undefined,
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "Class011",
+        "signature": "class Class011 {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 46,
+          "url": undefined,
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Class012",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [
+            Object {
+              "docs": Array [
+                "/** Bar */",
+              ],
+              "id": "Class012.bar",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "bar",
+              "signature": "bar: () => number;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 84,
+                "url": undefined,
+              },
+              "type": "() => number",
+            },
+          ],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/** Get bat */",
+              ],
+              "id": "Class012.bat",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "bat",
+              "signature": "readonly bat: string;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 100,
+                "url": undefined,
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/** Get baz */",
+              ],
+              "id": "Class012.baz",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "baz",
+              "signature": "baz: number;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 89,
+                "url": undefined,
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [
+                "/** Foo */",
+              ],
+              "id": "Class012.foo",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "foo",
+              "signature": "readonly foo: string;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 78,
+                "url": undefined,
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/** Foobar */",
+              ],
+              "id": "Class012.foobar",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "foobar",
+              "signature": "foobar?: string;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 81,
+                "url": undefined,
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "Class012",
+        "signature": "class Class012 {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 74,
+          "url": undefined,
+        },
+      },
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [],
+            "id": "Class013.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(
+    foo?: string,
+    bar: string,
+    baz: string,
+    qux: string,
+    ...rest: number[]
+);",
+            "source": Object {
+              "filename": "classes.ts",
+              "line": 106,
+              "url": undefined,
+            },
+          },
+        ],
+        "docs": Array [],
+        "id": "Class013",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/** Bar */",
+              ],
+              "id": "Class013.bar",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "bar",
+              "signature": "protected readonly bar: string;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 110,
+                "url": undefined,
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/** Foo */",
+              ],
+              "id": "Class013.foo",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "foo",
+              "signature": "readonly foo: string;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 108,
+                "url": undefined,
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "Class013",
+        "signature": "class Class013 {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 105,
+          "url": undefined,
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Class014",
+        "isAbstract": true,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [
+            Object {
+              "docs": Array [
+                "/** Baz */",
+              ],
+              "id": "Class014.baz",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "baz",
+              "signature": "abstract baz: () => number;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 125,
+                "url": undefined,
+              },
+              "type": "() => number",
+            },
+          ],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/** Bar */",
+              ],
+              "id": "Class014.bar",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "bar",
+              "signature": "protected abstract bar: string;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 122,
+                "url": undefined,
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/** Foo */",
+              ],
+              "id": "Class014.foo",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "foo",
+              "signature": "abstract foo: string;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 119,
+                "url": undefined,
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "Class014",
+        "signature": "abstract class Class014 {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 117,
+          "url": undefined,
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Class016",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Class016",
+        "signature": "class Class016 {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 131,
+          "url": undefined,
+        },
+      },
+    ],
+    "enums": Array [
+      Object {
+        "docs": Array [
+          "/**
+ * Enum1
+ */",
+        ],
+        "id": "Enum1",
+        "isConst": true,
+        "kind": "EnumDeclaration",
+        "members": Array [
+          Object {
+            "docs": Array [],
+            "id": "Enum1.No",
+            "kind": "EnumMemberDeclaration",
+            "name": "No",
+            "signature": "No",
+            "source": Object {
+              "filename": "enums.ts",
+              "line": 7,
+              "url": undefined,
+            },
+            "value": 1,
+          },
+          Object {
+            "docs": Array [
+              "/** Positive */",
+            ],
+            "id": "Enum1.Yes",
+            "kind": "EnumMemberDeclaration",
+            "name": "Yes",
+            "signature": "Yes",
+            "source": Object {
+              "filename": "enums.ts",
+              "line": 6,
+              "url": undefined,
+            },
+            "value": 0,
+          },
+        ],
+        "name": "Enum1",
+        "signature": "const enum Enum1 {
+    Yes,
+    No,
+}",
+        "source": Object {
+          "filename": "enums.ts",
+          "line": 4,
+          "url": undefined,
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Enum2",
+        "isConst": false,
+        "kind": "EnumDeclaration",
+        "members": Array [
+          Object {
+            "docs": Array [],
+            "id": "Enum2.Ko",
+            "kind": "EnumMemberDeclaration",
+            "name": "Ko",
+            "signature": "Ko",
+            "source": Object {
+              "filename": "enums.ts",
+              "line": 12,
+              "url": undefined,
+            },
+            "value": 2,
+          },
+          Object {
+            "docs": Array [],
+            "id": "Enum2.Ok",
+            "kind": "EnumMemberDeclaration",
+            "name": "Ok",
+            "signature": "Ok = 1",
+            "source": Object {
+              "filename": "enums.ts",
+              "line": 11,
+              "url": undefined,
+            },
+            "value": 1,
+          },
+        ],
+        "name": "Enum2",
+        "signature": "enum Enum2 {
+    Ok = 1,
+    Ko,
+}",
+        "source": Object {
+          "filename": "enums.ts",
+          "line": 10,
+          "url": undefined,
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Enum3",
+        "isConst": false,
+        "kind": "EnumDeclaration",
+        "members": Array [
+          Object {
+            "docs": Array [],
+            "id": "Enum3.A",
+            "kind": "EnumMemberDeclaration",
+            "name": "A",
+            "signature": "A = 'A'",
+            "source": Object {
+              "filename": "enums.ts",
+              "line": 16,
+              "url": undefined,
+            },
+            "value": "A",
+          },
+          Object {
+            "docs": Array [],
+            "id": "Enum3.B",
+            "kind": "EnumMemberDeclaration",
+            "name": "B",
+            "signature": "B = 'B'",
+            "source": Object {
+              "filename": "enums.ts",
+              "line": 17,
+              "url": undefined,
+            },
+            "value": "B",
+          },
+          Object {
+            "docs": Array [],
+            "id": "Enum3.C",
+            "kind": "EnumMemberDeclaration",
+            "name": "C",
+            "signature": "C = 'C'",
+            "source": Object {
+              "filename": "enums.ts",
+              "line": 18,
+              "url": undefined,
+            },
+            "value": "C",
+          },
+        ],
+        "name": "Enum3",
+        "signature": "enum Enum3 {
+    A = 'A',
+    B = 'B',
+    C = 'C',
+}",
+        "source": Object {
+          "filename": "enums.ts",
+          "line": 15,
+          "url": undefined,
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Enum4",
+        "isConst": false,
+        "kind": "EnumDeclaration",
+        "members": Array [],
+        "name": "Enum4",
+        "signature": "enum Enum4 {}",
+        "source": Object {
+          "filename": "enums.ts",
+          "line": 23,
+          "url": undefined,
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Enum6",
+        "isConst": false,
+        "kind": "EnumDeclaration",
+        "members": Array [
+          Object {
+            "docs": Array [],
+            "id": "Enum6.A",
+            "kind": "EnumMemberDeclaration",
+            "name": "A",
+            "signature": "A",
+            "source": Object {
+              "filename": "enums.ts",
+              "line": 29,
+              "url": undefined,
+            },
+            "value": 0,
+          },
+        ],
+        "name": "Enum6",
+        "signature": "enum Enum6 {
+    A,
+}",
+        "source": Object {
+          "filename": "enums.ts",
+          "line": 28,
+          "url": undefined,
+        },
+      },
+    ],
+    "functions": Array [
+      Object {
+        "docs": Array [
+          "/**
+ * Func1 returns the sum of two numbers.
+ * @param a - the first number
+ * @param b - the second number
+ */",
+        ],
+        "id": "func1",
+        "kind": "FunctionDeclaration",
+        "name": "func1",
+        "signature": "func1: (a: number, b: number) => number;",
+        "source": Object {
+          "filename": "functions.ts",
+          "line": 6,
+          "url": undefined,
+        },
+        "type": "(a: number, b: number) => number",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Func2 returns the sum of two numbers.
+ * @param a - the first number
+ * @param b - the second number
+ */",
+        ],
+        "id": "func2",
+        "kind": "FunctionDeclaration",
+        "name": "func2",
+        "signature": "func2: ({ a, b }: { a: number; b: number }) => number;",
+        "source": Object {
+          "filename": "functions.ts",
+          "line": 15,
+          "url": undefined,
+        },
+        "type": "({ a, b }: { a: number; b: number; }) => number",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Func3 returns the sum of two numbers.
+ * @param a - the first number
+ * @param b - the second number
+ */",
+        ],
+        "id": "func3",
+        "kind": "FunctionDeclaration",
+        "name": "func3",
+        "signature": "func3: ({ a, b }: { a: number; b: number }) => number;",
+        "source": Object {
+          "filename": "functions.ts",
+          "line": 22,
+          "url": undefined,
+        },
+        "type": "({ a, b }: { a: number; b: number; }) => number",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Func4 is overloaded and returns its input.
+ */",
+        ],
+        "id": "func4",
+        "kind": "FunctionDeclaration",
+        "name": "func4",
+        "signature": "func4: { (a: number): number; (a: string): string };",
+        "source": Object {
+          "filename": "functions.ts",
+          "line": 31,
+          "url": undefined,
+        },
+        "type": "{ (a: number): number; (a: string): string; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "func5",
+        "kind": "FunctionDeclaration",
+        "name": "func5",
+        "signature": "func5: () => Promise<void>;",
+        "source": Object {
+          "filename": "functions.ts",
+          "line": 37,
+          "url": undefined,
+        },
+        "type": "() => Promise<void>",
+      },
+      Object {
+        "docs": Array [],
+        "id": "func8",
+        "kind": "FunctionDeclaration",
+        "name": "func8",
+        "signature": "func8: (a: string) => number;",
+        "source": Object {
+          "filename": "functions.ts",
+          "line": 45,
+          "url": undefined,
+        },
+        "type": "(a: string) => number",
+      },
+    ],
+    "interfaces": Array [
+      Object {
+        "docs": Array [
+          "/**
+ * Interface001
+ */",
+        ],
+        "id": "Interface001",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "Interface001.x",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "x",
+              "signature": "readonly x: number;",
+              "source": Object {
+                "filename": "interfaces.ts",
+                "line": 5,
+                "url": undefined,
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Interface001.y",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "y",
+              "signature": "readonly y: number;",
+              "source": Object {
+                "filename": "interfaces.ts",
+                "line": 6,
+                "url": undefined,
+              },
+              "type": "number",
+            },
+          ],
+        },
+        "name": "Interface001",
+        "signature": "interface Interface001 {}",
+        "source": Object {
+          "filename": "interfaces.ts",
+          "line": 4,
+          "url": undefined,
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Interface002",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "Interface002.z",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "z",
+              "signature": "z?: number;",
+              "source": Object {
+                "filename": "interfaces.ts",
+                "line": 10,
+                "url": undefined,
+              },
+              "type": "number",
+            },
+          ],
+        },
+        "name": "Interface002",
+        "signature": "interface Interface002 extends Interface001 {}",
+        "source": Object {
+          "filename": "interfaces.ts",
+          "line": 9,
+          "url": undefined,
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Interface003",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Interface003",
+        "signature": "interface Interface003 extends Interface001, Interface002 {}",
+        "source": Object {
+          "filename": "interfaces.ts",
+          "line": 13,
+          "url": undefined,
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Interface004",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [
+            Object {
+              "docs": Array [],
+              "id": "Interface004.0-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "(a: string): string;",
+              "source": Object {
+                "filename": "interfaces.ts",
+                "line": 16,
+                "url": undefined,
+              },
+            },
+          ],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Interface004",
+        "signature": "interface Interface004 {}",
+        "source": Object {
+          "filename": "interfaces.ts",
+          "line": 15,
+          "url": undefined,
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Interface005",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [
+            Object {
+              "docs": Array [],
+              "id": "Interface005.0-index-signature",
+              "kind": "InterfaceIndexSignatureDeclaration",
+              "name": "index signature",
+              "signature": "readonly [index: string]: number | string;",
+              "source": Object {
+                "filename": "interfaces.ts",
+                "line": 20,
+                "url": undefined,
+              },
+            },
+          ],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Interface005",
+        "signature": "interface Interface005 {}",
+        "source": Object {
+          "filename": "interfaces.ts",
+          "line": 19,
+          "url": undefined,
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Interface006",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [
+            Object {
+              "docs": Array [],
+              "id": "Interface006.getAny",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "getAny",
+              "signature": "getAny: () => any;",
+              "source": Object {
+                "filename": "interfaces.ts",
+                "line": 25,
+                "url": undefined,
+              },
+              "type": "() => any",
+            },
+          ],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "Interface006.something",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "something",
+              "signature": "something: any;",
+              "source": Object {
+                "filename": "interfaces.ts",
+                "line": 24,
+                "url": undefined,
+              },
+              "type": "any",
+            },
+          ],
+        },
+        "name": "Interface006",
+        "signature": "interface Interface006 {}",
+        "source": Object {
+          "filename": "interfaces.ts",
+          "line": 23,
+          "url": undefined,
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Interface007",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [
+            Object {
+              "docs": Array [],
+              "id": "Interface007.0-construct-signature",
+              "kind": "InterfaceConstructSignatureDeclaration",
+              "name": "construct signature",
+              "signature": "new (): Interface006;",
+              "source": Object {
+                "filename": "interfaces.ts",
+                "line": 29,
+                "url": undefined,
+              },
+            },
+          ],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Interface007",
+        "signature": "interface Interface007 {}",
+        "source": Object {
+          "filename": "interfaces.ts",
+          "line": 28,
+          "url": undefined,
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Interface008",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Interface008",
+        "signature": "interface Interface008<T> {}",
+        "source": Object {
+          "filename": "interfaces.ts",
+          "line": 34,
+          "url": undefined,
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Interface009",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Interface009",
+        "signature": "interface Interface009<T extends object, U, V extends keyof T>
+    extends Interface001,
+        Interface002 {}",
+        "source": Object {
+          "filename": "interfaces.ts",
+          "line": 36,
+          "url": undefined,
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Interface011",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "Interface011.baz",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "baz",
+              "signature": "baz: boolean;",
+              "source": Object {
+                "filename": "interfaces.ts",
+                "line": 49,
+                "url": undefined,
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Interface011.foo",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "foo",
+              "signature": "foo: string;",
+              "source": Object {
+                "filename": "interfaces.ts",
+                "line": 44,
+                "url": undefined,
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "Interface011",
+        "signature": "interface Interface011 {}",
+        "source": Object {
+          "filename": "interfaces.ts",
+          "line": 43,
+          "url": undefined,
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Interface012",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [
+            Object {
+              "docs": Array [],
+              "id": "Interface012.foo",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "foo",
+              "signature": "foo: (a: number) => string;",
+              "source": Object {
+                "filename": "interfaces.ts",
+                "line": 53,
+                "url": undefined,
+              },
+              "type": "(a: number) => string",
+            },
+          ],
+          "properties": Array [],
+        },
+        "name": "Interface012",
+        "signature": "interface Interface012 {}",
+        "source": Object {
+          "filename": "interfaces.ts",
+          "line": 52,
+          "url": undefined,
+        },
+      },
+    ],
+    "namespaces": Array [
+      Object {
+        "declarations": Object {
+          "classes": Array [],
+          "enums": Array [],
+          "functions": Array [],
+          "interfaces": Array [],
+          "namespaces": Array [],
+          "typeAliases": Array [],
+          "variables": Array [],
+        },
+        "docs": Array [
+          "/**
+ * Namespace1.
+ */",
+        ],
+        "id": "Namespace1",
+        "kind": "NamespaceDeclaration",
+        "name": "Namespace1",
+        "signature": "namespace Namespace1 {}",
+        "source": Object {
+          "filename": "namespaces.ts",
+          "line": 4,
+          "url": undefined,
+        },
+      },
+      Object {
+        "declarations": Object {
+          "classes": Array [],
+          "enums": Array [],
+          "functions": Array [],
+          "interfaces": Array [],
+          "namespaces": Array [
+            Object {
+              "declarations": Object {
+                "classes": Array [],
+                "enums": Array [],
+                "functions": Array [],
+                "interfaces": Array [],
+                "namespaces": Array [
+                  Object {
+                    "declarations": Object {
+                      "classes": Array [],
+                      "enums": Array [],
+                      "functions": Array [],
+                      "interfaces": Array [],
+                      "namespaces": Array [],
+                      "typeAliases": Array [],
+                      "variables": Array [],
+                    },
+                    "docs": Array [],
+                    "id": "Namespace2.Namespace21.Namespace22",
+                    "kind": "NamespaceDeclaration",
+                    "name": "Namespace2.Namespace21.Namespace22",
+                    "signature": "namespace Namespace2.Namespace21.Namespace22 {}",
+                    "source": Object {
+                      "filename": "namespaces.ts",
+                      "line": 13,
+                      "url": undefined,
+                    },
+                  },
+                ],
+                "typeAliases": Array [],
+                "variables": Array [
+                  Object {
+                    "docs": Array [],
+                    "id": "Namespace2.Namespace21.var2",
+                    "kind": "VariableDeclaration",
+                    "name": "var2",
+                    "signature": "const var2: string;",
+                    "source": Object {
+                      "filename": "namespaces.ts",
+                      "line": 11,
+                      "url": undefined,
+                    },
+                    "type": "string",
+                    "variableKind": "const",
+                  },
+                ],
+              },
+              "docs": Array [],
+              "id": "Namespace2.Namespace21",
+              "kind": "NamespaceDeclaration",
+              "name": "Namespace2.Namespace21",
+              "signature": "namespace Namespace2.Namespace21 {}",
+              "source": Object {
+                "filename": "namespaces.ts",
+                "line": 10,
+                "url": undefined,
+              },
+            },
+          ],
+          "typeAliases": Array [],
+          "variables": Array [
+            Object {
+              "docs": Array [
+                "/** Var1 */",
+              ],
+              "id": "Namespace2.var1",
+              "kind": "VariableDeclaration",
+              "name": "var1",
+              "signature": "const var1: number;",
+              "source": Object {
+                "filename": "namespaces.ts",
+                "line": 8,
+                "url": undefined,
+              },
+              "type": "number",
+              "variableKind": "const",
+            },
+          ],
+        },
+        "docs": Array [],
+        "id": "Namespace2",
+        "kind": "NamespaceDeclaration",
+        "name": "Namespace2",
+        "signature": "namespace Namespace2 {}",
+        "source": Object {
+          "filename": "namespaces.ts",
+          "line": 6,
+          "url": undefined,
+        },
+      },
+      Object {
+        "declarations": Object {
+          "classes": Array [],
+          "enums": Array [],
+          "functions": Array [],
+          "interfaces": Array [],
+          "namespaces": Array [],
+          "typeAliases": Array [],
+          "variables": Array [
+            Object {
+              "docs": Array [],
+              "id": "Namespace3.var1",
+              "kind": "VariableDeclaration",
+              "name": "var1",
+              "signature": "const var1: number;",
+              "source": Object {
+                "filename": "namespaces.ts",
+                "line": 18,
+                "url": undefined,
+              },
+              "type": "number",
+              "variableKind": "const",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Namespace3.var2",
+              "kind": "VariableDeclaration",
+              "name": "var2",
+              "signature": "const var2: string;",
+              "source": Object {
+                "filename": "namespaces.ts",
+                "line": 22,
+                "url": undefined,
+              },
+              "type": "string",
+              "variableKind": "const",
+            },
+          ],
+        },
+        "docs": Array [],
+        "id": "Namespace3",
+        "kind": "NamespaceDeclaration",
+        "name": "Namespace3",
+        "signature": "namespace Namespace3 {}",
+        "source": Object {
+          "filename": "namespaces.ts",
+          "line": 17,
+          "url": undefined,
+        },
+      },
+    ],
+    "typeAliases": Array [
+      Object {
+        "docs": Array [
+          "/**
+ * TypeAlias1 aliases a function.
+ */",
+        ],
+        "id": "TypeAlias1",
+        "kind": "TypeAliasDeclaration",
+        "name": "TypeAlias1",
+        "signature": "type TypeAlias1 = () => any;",
+        "source": Object {
+          "filename": "type-aliases.ts",
+          "line": 4,
+          "url": undefined,
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "TypeAlias2",
+        "kind": "TypeAliasDeclaration",
+        "name": "TypeAlias2",
+        "signature": "type TypeAlias2 = string;",
+        "source": Object {
+          "filename": "type-aliases.ts",
+          "line": 6,
+          "url": undefined,
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "TypeAlias3",
+        "kind": "TypeAliasDeclaration",
+        "name": "TypeAlias3",
+        "signature": "type TypeAlias3 = number | string;",
+        "source": Object {
+          "filename": "type-aliases.ts",
+          "line": 8,
+          "url": undefined,
+        },
+      },
+    ],
+    "variables": Array [
+      Object {
+        "docs": Array [
+          "/**
+ * This is var1.
+ */",
+        ],
+        "id": "var1",
+        "kind": "VariableDeclaration",
+        "name": "var1",
+        "signature": "const var1: string;",
+        "source": Object {
+          "filename": "variables.ts",
+          "line": 8,
+          "url": undefined,
+        },
+        "type": "string",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [],
+        "id": "var2",
+        "kind": "VariableDeclaration",
+        "name": "var2",
+        "signature": "let var2: number;",
+        "source": Object {
+          "filename": "variables.ts",
+          "line": 10,
+          "url": undefined,
+        },
+        "type": "number",
+        "variableKind": "let",
+      },
+      Object {
+        "docs": Array [],
+        "id": "var3",
+        "kind": "VariableDeclaration",
+        "name": "var3",
+        "signature": "var var3: (string | number)[];",
+        "source": Object {
+          "filename": "variables.ts",
+          "line": 12,
+          "url": undefined,
+        },
+        "type": "(string | number)[]",
+        "variableKind": "var",
+      },
+      Object {
+        "docs": Array [],
+        "id": "var4",
+        "kind": "VariableDeclaration",
+        "name": "var4",
+        "signature": "const var4: string;",
+        "source": Object {
+          "filename": "variables.ts",
+          "line": 3,
+          "url": undefined,
+        },
+        "type": "string",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [],
+        "id": "var6",
+        "kind": "VariableDeclaration",
+        "name": "var6",
+        "signature": "const var6: SomeType;",
+        "source": Object {
+          "filename": "variables.ts",
+          "line": 21,
+          "url": undefined,
+        },
+        "type": "SomeType",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [],
+        "id": "var7",
+        "kind": "VariableDeclaration",
+        "name": "var7",
+        "signature": "let var7: string;",
+        "source": Object {
+          "filename": "variables.ts",
+          "line": 23,
+          "url": undefined,
+        },
+        "type": "string",
+        "variableKind": "let",
+      },
+    ],
+  },
+  "files": Array [
+    Object {
+      "filename": "classes.ts",
+      "url": undefined,
+    },
+    Object {
+      "filename": "enums.ts",
+      "url": undefined,
+    },
+    Object {
+      "filename": "functions.ts",
+      "url": undefined,
+    },
+    Object {
+      "filename": "index.ts",
+      "isIndexFile": true,
+      "url": undefined,
+    },
+    Object {
+      "filename": "interfaces.ts",
+      "url": undefined,
+    },
+    Object {
+      "filename": "namespaces.ts",
+      "url": undefined,
+    },
+    Object {
+      "filename": "type-aliases.ts",
+      "url": undefined,
+    },
+    Object {
+      "filename": "variables.ts",
+      "url": undefined,
+    },
+  ],
+  "overview": "/**
+ * This is the overview.
+ *
+ * @packageDocumentation
+ */",
+}
+`;
+
+exports[`export-named-declarations with repository snapshot 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [
+      Object {
+        "constructors": Array [],
+        "docs": Array [
+          "/**
+ * Class001
+ */",
+        ],
+        "id": "Class001",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Class001",
+        "signature": "class Class001 {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 4,
+          "url": "https://github.com/test/repo/tree/master/classes.ts#L4",
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Class002",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Class002",
+        "signature": "class Class002 extends Class001 {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 6,
+          "url": "https://github.com/test/repo/tree/master/classes.ts#L6",
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Class003",
+        "isAbstract": true,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Class003",
+        "signature": "abstract class Class003 {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 8,
+          "url": "https://github.com/test/repo/tree/master/classes.ts#L8",
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Class004",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Class004",
+        "signature": "class Class004 implements A, B {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 13,
+          "url": "https://github.com/test/repo/tree/master/classes.ts#L13",
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Class005",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Class005",
+        "signature": "class Class005 extends Class003 implements A, B {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 15,
+          "url": "https://github.com/test/repo/tree/master/classes.ts#L15",
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Class006",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Class006",
+        "signature": "class Class006<T> {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 18,
+          "url": "https://github.com/test/repo/tree/master/classes.ts#L18",
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Class007",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Class007",
+        "signature": "class Class007<T extends object, U, V extends keyof T>
+    extends Class003
+    implements A, B {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 20,
+          "url": "https://github.com/test/repo/tree/master/classes.ts#L20",
+        },
+      },
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [
+              "/** Constructor */",
+            ],
+            "id": "Class008.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(foo: any, bar: any);",
+            "source": Object {
+              "filename": "classes.ts",
+              "line": 25,
+              "url": "https://github.com/test/repo/tree/master/classes.ts#L25",
+            },
+          },
+          Object {
+            "docs": Array [],
+            "id": "Class008.1-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(foo: string, bar: number);",
+            "source": Object {
+              "filename": "classes.ts",
+              "line": 26,
+              "url": "https://github.com/test/repo/tree/master/classes.ts#L26",
+            },
+          },
+        ],
+        "docs": Array [],
+        "id": "Class008",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Class008",
+        "signature": "class Class008 {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 23,
+          "url": "https://github.com/test/repo/tree/master/classes.ts#L23",
+        },
+      },
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [],
+            "id": "Class009.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "protected constructor(foo: string, bar: number);",
+            "source": Object {
+              "filename": "classes.ts",
+              "line": 33,
+              "url": "https://github.com/test/repo/tree/master/classes.ts#L33",
+            },
+          },
+        ],
+        "docs": Array [],
+        "id": "Class009",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Class009",
+        "signature": "class Class009 {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 32,
+          "url": "https://github.com/test/repo/tree/master/classes.ts#L32",
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Class010",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Class010",
+        "signature": "class Class010 {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 39,
+          "url": "https://github.com/test/repo/tree/master/classes.ts#L39",
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Class011",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [
+            Object {
+              "docs": Array [
+                "/** Bar */",
+              ],
+              "id": "Class011.bar",
+              "isStatic": true,
+              "kind": "ClassMethodDeclaration",
+              "name": "bar",
+              "signature": "static bar: () => number;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 53,
+                "url": "https://github.com/test/repo/tree/master/classes.ts#L53",
+              },
+              "type": "() => number",
+            },
+          ],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/** Get bat */",
+              ],
+              "id": "Class011.bat",
+              "isStatic": true,
+              "kind": "ClassPropertyDeclaration",
+              "name": "bat",
+              "signature": "static readonly bat: string;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 69,
+                "url": "https://github.com/test/repo/tree/master/classes.ts#L69",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/** Get baz */",
+              ],
+              "id": "Class011.baz",
+              "isStatic": true,
+              "kind": "ClassPropertyDeclaration",
+              "name": "baz",
+              "signature": "static baz: number;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 58,
+                "url": "https://github.com/test/repo/tree/master/classes.ts#L58",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [
+                "/** Foo */",
+              ],
+              "id": "Class011.foo",
+              "isStatic": true,
+              "kind": "ClassPropertyDeclaration",
+              "name": "foo",
+              "signature": "static readonly foo: string;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 50,
+                "url": "https://github.com/test/repo/tree/master/classes.ts#L50",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "Class011",
+        "signature": "class Class011 {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 46,
+          "url": "https://github.com/test/repo/tree/master/classes.ts#L46",
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Class012",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [
+            Object {
+              "docs": Array [
+                "/** Bar */",
+              ],
+              "id": "Class012.bar",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "bar",
+              "signature": "bar: () => number;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 84,
+                "url": "https://github.com/test/repo/tree/master/classes.ts#L84",
+              },
+              "type": "() => number",
+            },
+          ],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/** Get bat */",
+              ],
+              "id": "Class012.bat",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "bat",
+              "signature": "readonly bat: string;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 100,
+                "url": "https://github.com/test/repo/tree/master/classes.ts#L100",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/** Get baz */",
+              ],
+              "id": "Class012.baz",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "baz",
+              "signature": "baz: number;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 89,
+                "url": "https://github.com/test/repo/tree/master/classes.ts#L89",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [
+                "/** Foo */",
+              ],
+              "id": "Class012.foo",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "foo",
+              "signature": "readonly foo: string;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 78,
+                "url": "https://github.com/test/repo/tree/master/classes.ts#L78",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/** Foobar */",
+              ],
+              "id": "Class012.foobar",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "foobar",
+              "signature": "foobar?: string;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 81,
+                "url": "https://github.com/test/repo/tree/master/classes.ts#L81",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "Class012",
+        "signature": "class Class012 {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 74,
+          "url": "https://github.com/test/repo/tree/master/classes.ts#L74",
+        },
+      },
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [],
+            "id": "Class013.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(
+    foo?: string,
+    bar: string,
+    baz: string,
+    qux: string,
+    ...rest: number[]
+);",
+            "source": Object {
+              "filename": "classes.ts",
+              "line": 106,
+              "url": "https://github.com/test/repo/tree/master/classes.ts#L106",
+            },
+          },
+        ],
+        "docs": Array [],
+        "id": "Class013",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/** Bar */",
+              ],
+              "id": "Class013.bar",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "bar",
+              "signature": "protected readonly bar: string;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 110,
+                "url": "https://github.com/test/repo/tree/master/classes.ts#L110",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/** Foo */",
+              ],
+              "id": "Class013.foo",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "foo",
+              "signature": "readonly foo: string;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 108,
+                "url": "https://github.com/test/repo/tree/master/classes.ts#L108",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "Class013",
+        "signature": "class Class013 {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 105,
+          "url": "https://github.com/test/repo/tree/master/classes.ts#L105",
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Class014",
+        "isAbstract": true,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [
+            Object {
+              "docs": Array [
+                "/** Baz */",
+              ],
+              "id": "Class014.baz",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "baz",
+              "signature": "abstract baz: () => number;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 125,
+                "url": "https://github.com/test/repo/tree/master/classes.ts#L125",
+              },
+              "type": "() => number",
+            },
+          ],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/** Bar */",
+              ],
+              "id": "Class014.bar",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "bar",
+              "signature": "protected abstract bar: string;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 122,
+                "url": "https://github.com/test/repo/tree/master/classes.ts#L122",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/** Foo */",
+              ],
+              "id": "Class014.foo",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "foo",
+              "signature": "abstract foo: string;",
+              "source": Object {
+                "filename": "classes.ts",
+                "line": 119,
+                "url": "https://github.com/test/repo/tree/master/classes.ts#L119",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "Class014",
+        "signature": "abstract class Class014 {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 117,
+          "url": "https://github.com/test/repo/tree/master/classes.ts#L117",
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [],
+        "id": "Class016",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Class016",
+        "signature": "class Class016 {}",
+        "source": Object {
+          "filename": "classes.ts",
+          "line": 131,
+          "url": "https://github.com/test/repo/tree/master/classes.ts#L131",
+        },
+      },
+    ],
+    "enums": Array [
+      Object {
+        "docs": Array [
+          "/**
+ * Enum1
+ */",
+        ],
+        "id": "Enum1",
+        "isConst": true,
+        "kind": "EnumDeclaration",
+        "members": Array [
+          Object {
+            "docs": Array [],
+            "id": "Enum1.No",
+            "kind": "EnumMemberDeclaration",
+            "name": "No",
+            "signature": "No",
+            "source": Object {
+              "filename": "enums.ts",
+              "line": 7,
+              "url": "https://github.com/test/repo/tree/master/enums.ts#L7",
+            },
+            "value": 1,
+          },
+          Object {
+            "docs": Array [
+              "/** Positive */",
+            ],
+            "id": "Enum1.Yes",
+            "kind": "EnumMemberDeclaration",
+            "name": "Yes",
+            "signature": "Yes",
+            "source": Object {
+              "filename": "enums.ts",
+              "line": 6,
+              "url": "https://github.com/test/repo/tree/master/enums.ts#L6",
+            },
+            "value": 0,
+          },
+        ],
+        "name": "Enum1",
+        "signature": "const enum Enum1 {
+    Yes,
+    No,
+}",
+        "source": Object {
+          "filename": "enums.ts",
+          "line": 4,
+          "url": "https://github.com/test/repo/tree/master/enums.ts#L4",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Enum2",
+        "isConst": false,
+        "kind": "EnumDeclaration",
+        "members": Array [
+          Object {
+            "docs": Array [],
+            "id": "Enum2.Ko",
+            "kind": "EnumMemberDeclaration",
+            "name": "Ko",
+            "signature": "Ko",
+            "source": Object {
+              "filename": "enums.ts",
+              "line": 12,
+              "url": "https://github.com/test/repo/tree/master/enums.ts#L12",
+            },
+            "value": 2,
+          },
+          Object {
+            "docs": Array [],
+            "id": "Enum2.Ok",
+            "kind": "EnumMemberDeclaration",
+            "name": "Ok",
+            "signature": "Ok = 1",
+            "source": Object {
+              "filename": "enums.ts",
+              "line": 11,
+              "url": "https://github.com/test/repo/tree/master/enums.ts#L11",
+            },
+            "value": 1,
+          },
+        ],
+        "name": "Enum2",
+        "signature": "enum Enum2 {
+    Ok = 1,
+    Ko,
+}",
+        "source": Object {
+          "filename": "enums.ts",
+          "line": 10,
+          "url": "https://github.com/test/repo/tree/master/enums.ts#L10",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Enum3",
+        "isConst": false,
+        "kind": "EnumDeclaration",
+        "members": Array [
+          Object {
+            "docs": Array [],
+            "id": "Enum3.A",
+            "kind": "EnumMemberDeclaration",
+            "name": "A",
+            "signature": "A = 'A'",
+            "source": Object {
+              "filename": "enums.ts",
+              "line": 16,
+              "url": "https://github.com/test/repo/tree/master/enums.ts#L16",
+            },
+            "value": "A",
+          },
+          Object {
+            "docs": Array [],
+            "id": "Enum3.B",
+            "kind": "EnumMemberDeclaration",
+            "name": "B",
+            "signature": "B = 'B'",
+            "source": Object {
+              "filename": "enums.ts",
+              "line": 17,
+              "url": "https://github.com/test/repo/tree/master/enums.ts#L17",
+            },
+            "value": "B",
+          },
+          Object {
+            "docs": Array [],
+            "id": "Enum3.C",
+            "kind": "EnumMemberDeclaration",
+            "name": "C",
+            "signature": "C = 'C'",
+            "source": Object {
+              "filename": "enums.ts",
+              "line": 18,
+              "url": "https://github.com/test/repo/tree/master/enums.ts#L18",
+            },
+            "value": "C",
+          },
+        ],
+        "name": "Enum3",
+        "signature": "enum Enum3 {
+    A = 'A',
+    B = 'B',
+    C = 'C',
+}",
+        "source": Object {
+          "filename": "enums.ts",
+          "line": 15,
+          "url": "https://github.com/test/repo/tree/master/enums.ts#L15",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Enum4",
+        "isConst": false,
+        "kind": "EnumDeclaration",
+        "members": Array [],
+        "name": "Enum4",
+        "signature": "enum Enum4 {}",
+        "source": Object {
+          "filename": "enums.ts",
+          "line": 23,
+          "url": "https://github.com/test/repo/tree/master/enums.ts#L23",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Enum6",
+        "isConst": false,
+        "kind": "EnumDeclaration",
+        "members": Array [
+          Object {
+            "docs": Array [],
+            "id": "Enum6.A",
+            "kind": "EnumMemberDeclaration",
+            "name": "A",
+            "signature": "A",
+            "source": Object {
+              "filename": "enums.ts",
+              "line": 29,
+              "url": "https://github.com/test/repo/tree/master/enums.ts#L29",
+            },
+            "value": 0,
+          },
+        ],
+        "name": "Enum6",
+        "signature": "enum Enum6 {
+    A,
+}",
+        "source": Object {
+          "filename": "enums.ts",
+          "line": 28,
+          "url": "https://github.com/test/repo/tree/master/enums.ts#L28",
+        },
+      },
+    ],
+    "functions": Array [
+      Object {
+        "docs": Array [
+          "/**
+ * Func1 returns the sum of two numbers.
+ * @param a - the first number
+ * @param b - the second number
+ */",
+        ],
+        "id": "func1",
+        "kind": "FunctionDeclaration",
+        "name": "func1",
+        "signature": "func1: (a: number, b: number) => number;",
+        "source": Object {
+          "filename": "functions.ts",
+          "line": 6,
+          "url": "https://github.com/test/repo/tree/master/functions.ts#L6",
+        },
+        "type": "(a: number, b: number) => number",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Func2 returns the sum of two numbers.
+ * @param a - the first number
+ * @param b - the second number
+ */",
+        ],
+        "id": "func2",
+        "kind": "FunctionDeclaration",
+        "name": "func2",
+        "signature": "func2: ({ a, b }: { a: number; b: number }) => number;",
+        "source": Object {
+          "filename": "functions.ts",
+          "line": 15,
+          "url": "https://github.com/test/repo/tree/master/functions.ts#L15",
+        },
+        "type": "({ a, b }: { a: number; b: number; }) => number",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Func3 returns the sum of two numbers.
+ * @param a - the first number
+ * @param b - the second number
+ */",
+        ],
+        "id": "func3",
+        "kind": "FunctionDeclaration",
+        "name": "func3",
+        "signature": "func3: ({ a, b }: { a: number; b: number }) => number;",
+        "source": Object {
+          "filename": "functions.ts",
+          "line": 22,
+          "url": "https://github.com/test/repo/tree/master/functions.ts#L22",
+        },
+        "type": "({ a, b }: { a: number; b: number; }) => number",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Func4 is overloaded and returns its input.
+ */",
+        ],
+        "id": "func4",
+        "kind": "FunctionDeclaration",
+        "name": "func4",
+        "signature": "func4: { (a: number): number; (a: string): string };",
+        "source": Object {
+          "filename": "functions.ts",
+          "line": 31,
+          "url": "https://github.com/test/repo/tree/master/functions.ts#L31",
+        },
+        "type": "{ (a: number): number; (a: string): string; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "func5",
+        "kind": "FunctionDeclaration",
+        "name": "func5",
+        "signature": "func5: () => Promise<void>;",
+        "source": Object {
+          "filename": "functions.ts",
+          "line": 37,
+          "url": "https://github.com/test/repo/tree/master/functions.ts#L37",
+        },
+        "type": "() => Promise<void>",
+      },
+      Object {
+        "docs": Array [],
+        "id": "func8",
+        "kind": "FunctionDeclaration",
+        "name": "func8",
+        "signature": "func8: (a: string) => number;",
+        "source": Object {
+          "filename": "functions.ts",
+          "line": 45,
+          "url": "https://github.com/test/repo/tree/master/functions.ts#L45",
+        },
+        "type": "(a: string) => number",
+      },
+    ],
+    "interfaces": Array [
+      Object {
+        "docs": Array [
+          "/**
+ * Interface001
+ */",
+        ],
+        "id": "Interface001",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "Interface001.x",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "x",
+              "signature": "readonly x: number;",
+              "source": Object {
+                "filename": "interfaces.ts",
+                "line": 5,
+                "url": "https://github.com/test/repo/tree/master/interfaces.ts#L5",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Interface001.y",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "y",
+              "signature": "readonly y: number;",
+              "source": Object {
+                "filename": "interfaces.ts",
+                "line": 6,
+                "url": "https://github.com/test/repo/tree/master/interfaces.ts#L6",
+              },
+              "type": "number",
+            },
+          ],
+        },
+        "name": "Interface001",
+        "signature": "interface Interface001 {}",
+        "source": Object {
+          "filename": "interfaces.ts",
+          "line": 4,
+          "url": "https://github.com/test/repo/tree/master/interfaces.ts#L4",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Interface002",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "Interface002.z",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "z",
+              "signature": "z?: number;",
+              "source": Object {
+                "filename": "interfaces.ts",
+                "line": 10,
+                "url": "https://github.com/test/repo/tree/master/interfaces.ts#L10",
+              },
+              "type": "number",
+            },
+          ],
+        },
+        "name": "Interface002",
+        "signature": "interface Interface002 extends Interface001 {}",
+        "source": Object {
+          "filename": "interfaces.ts",
+          "line": 9,
+          "url": "https://github.com/test/repo/tree/master/interfaces.ts#L9",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Interface003",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Interface003",
+        "signature": "interface Interface003 extends Interface001, Interface002 {}",
+        "source": Object {
+          "filename": "interfaces.ts",
+          "line": 13,
+          "url": "https://github.com/test/repo/tree/master/interfaces.ts#L13",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Interface004",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [
+            Object {
+              "docs": Array [],
+              "id": "Interface004.0-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "(a: string): string;",
+              "source": Object {
+                "filename": "interfaces.ts",
+                "line": 16,
+                "url": "https://github.com/test/repo/tree/master/interfaces.ts#L16",
+              },
+            },
+          ],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Interface004",
+        "signature": "interface Interface004 {}",
+        "source": Object {
+          "filename": "interfaces.ts",
+          "line": 15,
+          "url": "https://github.com/test/repo/tree/master/interfaces.ts#L15",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Interface005",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [
+            Object {
+              "docs": Array [],
+              "id": "Interface005.0-index-signature",
+              "kind": "InterfaceIndexSignatureDeclaration",
+              "name": "index signature",
+              "signature": "readonly [index: string]: number | string;",
+              "source": Object {
+                "filename": "interfaces.ts",
+                "line": 20,
+                "url": "https://github.com/test/repo/tree/master/interfaces.ts#L20",
+              },
+            },
+          ],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Interface005",
+        "signature": "interface Interface005 {}",
+        "source": Object {
+          "filename": "interfaces.ts",
+          "line": 19,
+          "url": "https://github.com/test/repo/tree/master/interfaces.ts#L19",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Interface006",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [
+            Object {
+              "docs": Array [],
+              "id": "Interface006.getAny",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "getAny",
+              "signature": "getAny: () => any;",
+              "source": Object {
+                "filename": "interfaces.ts",
+                "line": 25,
+                "url": "https://github.com/test/repo/tree/master/interfaces.ts#L25",
+              },
+              "type": "() => any",
+            },
+          ],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "Interface006.something",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "something",
+              "signature": "something: any;",
+              "source": Object {
+                "filename": "interfaces.ts",
+                "line": 24,
+                "url": "https://github.com/test/repo/tree/master/interfaces.ts#L24",
+              },
+              "type": "any",
+            },
+          ],
+        },
+        "name": "Interface006",
+        "signature": "interface Interface006 {}",
+        "source": Object {
+          "filename": "interfaces.ts",
+          "line": 23,
+          "url": "https://github.com/test/repo/tree/master/interfaces.ts#L23",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Interface007",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [
+            Object {
+              "docs": Array [],
+              "id": "Interface007.0-construct-signature",
+              "kind": "InterfaceConstructSignatureDeclaration",
+              "name": "construct signature",
+              "signature": "new (): Interface006;",
+              "source": Object {
+                "filename": "interfaces.ts",
+                "line": 29,
+                "url": "https://github.com/test/repo/tree/master/interfaces.ts#L29",
+              },
+            },
+          ],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Interface007",
+        "signature": "interface Interface007 {}",
+        "source": Object {
+          "filename": "interfaces.ts",
+          "line": 28,
+          "url": "https://github.com/test/repo/tree/master/interfaces.ts#L28",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Interface008",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Interface008",
+        "signature": "interface Interface008<T> {}",
+        "source": Object {
+          "filename": "interfaces.ts",
+          "line": 34,
+          "url": "https://github.com/test/repo/tree/master/interfaces.ts#L34",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Interface009",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Interface009",
+        "signature": "interface Interface009<T extends object, U, V extends keyof T>
+    extends Interface001,
+        Interface002 {}",
+        "source": Object {
+          "filename": "interfaces.ts",
+          "line": 36,
+          "url": "https://github.com/test/repo/tree/master/interfaces.ts#L36",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Interface011",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "Interface011.baz",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "baz",
+              "signature": "baz: boolean;",
+              "source": Object {
+                "filename": "interfaces.ts",
+                "line": 49,
+                "url": "https://github.com/test/repo/tree/master/interfaces.ts#L49",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Interface011.foo",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "foo",
+              "signature": "foo: string;",
+              "source": Object {
+                "filename": "interfaces.ts",
+                "line": 44,
+                "url": "https://github.com/test/repo/tree/master/interfaces.ts#L44",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "Interface011",
+        "signature": "interface Interface011 {}",
+        "source": Object {
+          "filename": "interfaces.ts",
+          "line": 43,
+          "url": "https://github.com/test/repo/tree/master/interfaces.ts#L43",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Interface012",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [
+            Object {
+              "docs": Array [],
+              "id": "Interface012.foo",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "foo",
+              "signature": "foo: (a: number) => string;",
+              "source": Object {
+                "filename": "interfaces.ts",
+                "line": 53,
+                "url": "https://github.com/test/repo/tree/master/interfaces.ts#L53",
+              },
+              "type": "(a: number) => string",
+            },
+          ],
+          "properties": Array [],
+        },
+        "name": "Interface012",
+        "signature": "interface Interface012 {}",
+        "source": Object {
+          "filename": "interfaces.ts",
+          "line": 52,
+          "url": "https://github.com/test/repo/tree/master/interfaces.ts#L52",
+        },
+      },
+    ],
+    "namespaces": Array [
+      Object {
+        "declarations": Object {
+          "classes": Array [],
+          "enums": Array [],
+          "functions": Array [],
+          "interfaces": Array [],
+          "namespaces": Array [],
+          "typeAliases": Array [],
+          "variables": Array [],
+        },
+        "docs": Array [
+          "/**
+ * Namespace1.
+ */",
+        ],
+        "id": "Namespace1",
+        "kind": "NamespaceDeclaration",
+        "name": "Namespace1",
+        "signature": "namespace Namespace1 {}",
+        "source": Object {
+          "filename": "namespaces.ts",
+          "line": 4,
+          "url": "https://github.com/test/repo/tree/master/namespaces.ts#L4",
+        },
+      },
+      Object {
+        "declarations": Object {
+          "classes": Array [],
+          "enums": Array [],
+          "functions": Array [],
+          "interfaces": Array [],
+          "namespaces": Array [
+            Object {
+              "declarations": Object {
+                "classes": Array [],
+                "enums": Array [],
+                "functions": Array [],
+                "interfaces": Array [],
+                "namespaces": Array [
+                  Object {
+                    "declarations": Object {
+                      "classes": Array [],
+                      "enums": Array [],
+                      "functions": Array [],
+                      "interfaces": Array [],
+                      "namespaces": Array [],
+                      "typeAliases": Array [],
+                      "variables": Array [],
+                    },
+                    "docs": Array [],
+                    "id": "Namespace2.Namespace21.Namespace22",
+                    "kind": "NamespaceDeclaration",
+                    "name": "Namespace2.Namespace21.Namespace22",
+                    "signature": "namespace Namespace2.Namespace21.Namespace22 {}",
+                    "source": Object {
+                      "filename": "namespaces.ts",
+                      "line": 13,
+                      "url": "https://github.com/test/repo/tree/master/namespaces.ts#L13",
+                    },
+                  },
+                ],
+                "typeAliases": Array [],
+                "variables": Array [
+                  Object {
+                    "docs": Array [],
+                    "id": "Namespace2.Namespace21.var2",
+                    "kind": "VariableDeclaration",
+                    "name": "var2",
+                    "signature": "const var2: string;",
+                    "source": Object {
+                      "filename": "namespaces.ts",
+                      "line": 11,
+                      "url": "https://github.com/test/repo/tree/master/namespaces.ts#L11",
+                    },
+                    "type": "string",
+                    "variableKind": "const",
+                  },
+                ],
+              },
+              "docs": Array [],
+              "id": "Namespace2.Namespace21",
+              "kind": "NamespaceDeclaration",
+              "name": "Namespace2.Namespace21",
+              "signature": "namespace Namespace2.Namespace21 {}",
+              "source": Object {
+                "filename": "namespaces.ts",
+                "line": 10,
+                "url": "https://github.com/test/repo/tree/master/namespaces.ts#L10",
+              },
+            },
+          ],
+          "typeAliases": Array [],
+          "variables": Array [
+            Object {
+              "docs": Array [
+                "/** Var1 */",
+              ],
+              "id": "Namespace2.var1",
+              "kind": "VariableDeclaration",
+              "name": "var1",
+              "signature": "const var1: number;",
+              "source": Object {
+                "filename": "namespaces.ts",
+                "line": 8,
+                "url": "https://github.com/test/repo/tree/master/namespaces.ts#L8",
+              },
+              "type": "number",
+              "variableKind": "const",
+            },
+          ],
+        },
+        "docs": Array [],
+        "id": "Namespace2",
+        "kind": "NamespaceDeclaration",
+        "name": "Namespace2",
+        "signature": "namespace Namespace2 {}",
+        "source": Object {
+          "filename": "namespaces.ts",
+          "line": 6,
+          "url": "https://github.com/test/repo/tree/master/namespaces.ts#L6",
+        },
+      },
+      Object {
+        "declarations": Object {
+          "classes": Array [],
+          "enums": Array [],
+          "functions": Array [],
+          "interfaces": Array [],
+          "namespaces": Array [],
+          "typeAliases": Array [],
+          "variables": Array [
+            Object {
+              "docs": Array [],
+              "id": "Namespace3.var1",
+              "kind": "VariableDeclaration",
+              "name": "var1",
+              "signature": "const var1: number;",
+              "source": Object {
+                "filename": "namespaces.ts",
+                "line": 18,
+                "url": "https://github.com/test/repo/tree/master/namespaces.ts#L18",
+              },
+              "type": "number",
+              "variableKind": "const",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Namespace3.var2",
+              "kind": "VariableDeclaration",
+              "name": "var2",
+              "signature": "const var2: string;",
+              "source": Object {
+                "filename": "namespaces.ts",
+                "line": 22,
+                "url": "https://github.com/test/repo/tree/master/namespaces.ts#L22",
+              },
+              "type": "string",
+              "variableKind": "const",
+            },
+          ],
+        },
+        "docs": Array [],
+        "id": "Namespace3",
+        "kind": "NamespaceDeclaration",
+        "name": "Namespace3",
+        "signature": "namespace Namespace3 {}",
+        "source": Object {
+          "filename": "namespaces.ts",
+          "line": 17,
+          "url": "https://github.com/test/repo/tree/master/namespaces.ts#L17",
+        },
+      },
+    ],
+    "typeAliases": Array [
+      Object {
+        "docs": Array [
+          "/**
+ * TypeAlias1 aliases a function.
+ */",
+        ],
+        "id": "TypeAlias1",
+        "kind": "TypeAliasDeclaration",
+        "name": "TypeAlias1",
+        "signature": "type TypeAlias1 = () => any;",
+        "source": Object {
+          "filename": "type-aliases.ts",
+          "line": 4,
+          "url": "https://github.com/test/repo/tree/master/type-aliases.ts#L4",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "TypeAlias2",
+        "kind": "TypeAliasDeclaration",
+        "name": "TypeAlias2",
+        "signature": "type TypeAlias2 = string;",
+        "source": Object {
+          "filename": "type-aliases.ts",
+          "line": 6,
+          "url": "https://github.com/test/repo/tree/master/type-aliases.ts#L6",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "TypeAlias3",
+        "kind": "TypeAliasDeclaration",
+        "name": "TypeAlias3",
+        "signature": "type TypeAlias3 = number | string;",
+        "source": Object {
+          "filename": "type-aliases.ts",
+          "line": 8,
+          "url": "https://github.com/test/repo/tree/master/type-aliases.ts#L8",
+        },
+      },
+    ],
+    "variables": Array [
+      Object {
+        "docs": Array [
+          "/**
+ * This is var1.
+ */",
+        ],
+        "id": "var1",
+        "kind": "VariableDeclaration",
+        "name": "var1",
+        "signature": "const var1: string;",
+        "source": Object {
+          "filename": "variables.ts",
+          "line": 8,
+          "url": "https://github.com/test/repo/tree/master/variables.ts#L8",
+        },
+        "type": "string",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [],
+        "id": "var2",
+        "kind": "VariableDeclaration",
+        "name": "var2",
+        "signature": "let var2: number;",
+        "source": Object {
+          "filename": "variables.ts",
+          "line": 10,
+          "url": "https://github.com/test/repo/tree/master/variables.ts#L10",
+        },
+        "type": "number",
+        "variableKind": "let",
+      },
+      Object {
+        "docs": Array [],
+        "id": "var3",
+        "kind": "VariableDeclaration",
+        "name": "var3",
+        "signature": "var var3: (string | number)[];",
+        "source": Object {
+          "filename": "variables.ts",
+          "line": 12,
+          "url": "https://github.com/test/repo/tree/master/variables.ts#L12",
+        },
+        "type": "(string | number)[]",
+        "variableKind": "var",
+      },
+      Object {
+        "docs": Array [],
+        "id": "var4",
+        "kind": "VariableDeclaration",
+        "name": "var4",
+        "signature": "const var4: string;",
+        "source": Object {
+          "filename": "variables.ts",
+          "line": 3,
+          "url": "https://github.com/test/repo/tree/master/variables.ts#L3",
+        },
+        "type": "string",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [],
+        "id": "var6",
+        "kind": "VariableDeclaration",
+        "name": "var6",
+        "signature": "const var6: SomeType;",
+        "source": Object {
+          "filename": "variables.ts",
+          "line": 21,
+          "url": "https://github.com/test/repo/tree/master/variables.ts#L21",
+        },
+        "type": "SomeType",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [],
+        "id": "var7",
+        "kind": "VariableDeclaration",
+        "name": "var7",
+        "signature": "let var7: string;",
+        "source": Object {
+          "filename": "variables.ts",
+          "line": 23,
+          "url": "https://github.com/test/repo/tree/master/variables.ts#L23",
+        },
+        "type": "string",
+        "variableKind": "let",
+      },
+    ],
+  },
+  "files": Array [
+    Object {
+      "filename": "classes.ts",
+      "url": "https://github.com/test/repo/tree/master/classes.ts",
+    },
+    Object {
+      "filename": "enums.ts",
+      "url": "https://github.com/test/repo/tree/master/enums.ts",
+    },
+    Object {
+      "filename": "functions.ts",
+      "url": "https://github.com/test/repo/tree/master/functions.ts",
+    },
+    Object {
+      "filename": "index.ts",
+      "isIndexFile": true,
+      "url": "https://github.com/test/repo/tree/master/index.ts",
+    },
+    Object {
+      "filename": "interfaces.ts",
+      "url": "https://github.com/test/repo/tree/master/interfaces.ts",
+    },
+    Object {
+      "filename": "namespaces.ts",
+      "url": "https://github.com/test/repo/tree/master/namespaces.ts",
+    },
+    Object {
+      "filename": "type-aliases.ts",
+      "url": "https://github.com/test/repo/tree/master/type-aliases.ts",
+    },
+    Object {
+      "filename": "variables.ts",
+      "url": "https://github.com/test/repo/tree/master/variables.ts",
+    },
+  ],
+  "overview": "/**
+ * This is the overview.
+ *
+ * @packageDocumentation
+ */",
+}
+`;

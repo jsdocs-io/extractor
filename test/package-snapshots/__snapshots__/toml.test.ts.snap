@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`toml 3.0.0 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [],
+    "enums": Array [],
+    "functions": Array [],
+    "interfaces": Array [],
+    "namespaces": Array [
+      Object {
+        "declarations": Object {
+          "classes": Array [],
+          "enums": Array [],
+          "functions": Array [
+            Object {
+              "docs": Array [],
+              "id": "toml.parse",
+              "kind": "FunctionDeclaration",
+              "name": "parse",
+              "signature": "parse: (input: string) => any;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 2,
+                "url": "https://github.com/BinaryMuse/toml-node/tree/4bad34e1dc81586e799e269e5d2c78662b6657b2/index.d.ts#L2",
+              },
+              "type": "(input: string) => any",
+            },
+          ],
+          "interfaces": Array [],
+          "namespaces": Array [],
+          "typeAliases": Array [],
+          "variables": Array [],
+        },
+        "docs": Array [],
+        "id": "toml",
+        "kind": "NamespaceDeclaration",
+        "name": "toml",
+        "signature": "module 'toml' {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 1,
+          "url": "https://github.com/BinaryMuse/toml-node/tree/4bad34e1dc81586e799e269e5d2c78662b6657b2/index.d.ts#L1",
+        },
+      },
+    ],
+    "typeAliases": Array [],
+    "variables": Array [],
+  },
+  "files": Array [
+    Object {
+      "filename": "index.d.ts",
+      "isIndexFile": true,
+      "url": "https://github.com/BinaryMuse/toml-node/tree/4bad34e1dc81586e799e269e5d2c78662b6657b2/index.d.ts",
+    },
+  ],
+  "overview": undefined,
+}
+`;

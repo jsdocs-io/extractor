@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ts-dedent 2.0.0 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [],
+    "enums": Array [],
+    "functions": Array [
+      Object {
+        "docs": Array [],
+        "id": "dedent",
+        "kind": "FunctionDeclaration",
+        "name": "dedent",
+        "signature": "dedent: (templ: TemplateStringsArray | string, ...values: unknown[]) => string;",
+        "source": Object {
+          "filename": "dist/index.d.ts",
+          "line": 1,
+          "url": "https://github.com/tamino-martinius/node-ts-dedent/tree/49635b610831f0bf97d247168acc9598bafbbe6d/dist/index.d.ts#L1",
+        },
+        "type": "(templ: TemplateStringsArray | string, ...values: unknown[]) => string",
+      },
+    ],
+    "interfaces": Array [],
+    "namespaces": Array [],
+    "typeAliases": Array [],
+    "variables": Array [],
+  },
+  "files": Array [
+    Object {
+      "filename": "dist/index.d.ts",
+      "isIndexFile": true,
+      "url": "https://github.com/tamino-martinius/node-ts-dedent/tree/49635b610831f0bf97d247168acc9598bafbbe6d/dist/index.d.ts",
+    },
+  ],
+  "overview": undefined,
+}
+`;

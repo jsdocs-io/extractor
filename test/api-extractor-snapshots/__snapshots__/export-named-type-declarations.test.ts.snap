@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`export-named-type-declarations snapshot 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [
+      Object {
+        "constructors": Array [],
+        "docs": Array [
+          "/** Class1 */",
+        ],
+        "id": "Class1",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Class1",
+        "signature": "class Class1 {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 18,
+          "url": undefined,
+        },
+      },
+    ],
+    "enums": Array [
+      Object {
+        "docs": Array [
+          "/** Enum1 */",
+        ],
+        "id": "Enum1",
+        "isConst": false,
+        "kind": "EnumDeclaration",
+        "members": Array [],
+        "name": "Enum1",
+        "signature": "enum Enum1 {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 24,
+          "url": undefined,
+        },
+      },
+    ],
+    "functions": Array [
+      Object {
+        "docs": Array [
+          "/** func1 */",
+        ],
+        "id": "func1",
+        "kind": "FunctionDeclaration",
+        "name": "func1",
+        "signature": "func1: { (a: number, b: number): number; (a: string, b: string): string };",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 11,
+          "url": undefined,
+        },
+        "type": "{ (a: number, b: number): number; (a: string, b: string): string; }",
+      },
+      Object {
+        "docs": Array [
+          "/** func2 */",
+        ],
+        "id": "func2",
+        "kind": "FunctionDeclaration",
+        "name": "func2",
+        "signature": "func2: (a: number, b: number) => number;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 15,
+          "url": undefined,
+        },
+        "type": "(a: number, b: number) => number",
+      },
+    ],
+    "interfaces": Array [
+      Object {
+        "docs": Array [
+          "/** Interface1 */",
+        ],
+        "id": "Interface1",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Interface1",
+        "signature": "interface Interface1 {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 21,
+          "url": undefined,
+        },
+      },
+    ],
+    "namespaces": Array [
+      Object {
+        "declarations": Object {
+          "classes": Array [],
+          "enums": Array [],
+          "functions": Array [],
+          "interfaces": Array [],
+          "namespaces": Array [],
+          "typeAliases": Array [],
+          "variables": Array [],
+        },
+        "docs": Array [
+          "/** Namespace1 */",
+        ],
+        "id": "Namespace1",
+        "kind": "NamespaceDeclaration",
+        "name": "Namespace1",
+        "signature": "namespace Namespace1 {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 30,
+          "url": undefined,
+        },
+      },
+    ],
+    "typeAliases": Array [
+      Object {
+        "docs": Array [
+          "/** TypeAlias1 */",
+        ],
+        "id": "TypeAlias1",
+        "kind": "TypeAliasDeclaration",
+        "name": "TypeAlias1",
+        "signature": "type TypeAlias1 = number | string;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 27,
+          "url": undefined,
+        },
+      },
+    ],
+    "variables": Array [
+      Object {
+        "docs": Array [
+          "/** var1 */",
+        ],
+        "id": "var1",
+        "kind": "VariableDeclaration",
+        "name": "var1",
+        "signature": "const var1: string;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 8,
+          "url": undefined,
+        },
+        "type": "string",
+        "variableKind": "const",
+      },
+    ],
+  },
+  "files": Array [
+    Object {
+      "filename": "index.d.ts",
+      "isIndexFile": true,
+      "url": undefined,
+    },
+  ],
+  "overview": "/**
+ * This is the overview.
+ *
+ * @packageDocumentation
+ */",
+}
+`;

@@ -1,0 +1,4076 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`got 11.8.1 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [],
+            "id": "CacheError.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(error: any, request: Request);",
+            "source": Object {
+              "filename": "dist/source/core/index.d.ts",
+              "line": 991,
+              "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L991",
+            },
+          },
+        ],
+        "docs": Array [
+          "/**
+An error to be thrown when a cache method fails.
+For example, if the database goes down or there's a filesystem error.
+*/",
+        ],
+        "id": "CacheError",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "CacheError.request",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "request",
+              "signature": "readonly request: Request;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 990,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L990",
+              },
+              "type": "Request",
+            },
+          ],
+        },
+        "name": "CacheError",
+        "signature": "class CacheError extends RequestError {}",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 989,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L989",
+        },
+      },
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [],
+            "id": "CancelError.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(request: Request);",
+            "source": Object {
+              "filename": "dist/source/as-promise/types.d.ts",
+              "line": 248,
+              "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L248",
+            },
+          },
+        ],
+        "docs": Array [
+          "/**
+An error to be thrown when the request is aborted with \`.cancel()\`.
+*/",
+        ],
+        "id": "CancelError",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "CancelError.isCanceled",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "isCanceled",
+              "signature": "readonly isCanceled: boolean;",
+              "source": Object {
+                "filename": "dist/source/as-promise/types.d.ts",
+                "line": 249,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L249",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "CancelError.response",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "response",
+              "signature": "readonly response: Response<unknown>;",
+              "source": Object {
+                "filename": "dist/source/as-promise/types.d.ts",
+                "line": 247,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L247",
+              },
+              "type": "Response<unknown>",
+            },
+          ],
+        },
+        "name": "CancelError",
+        "signature": "class CancelError extends RequestError {}",
+        "source": Object {
+          "filename": "dist/source/as-promise/types.d.ts",
+          "line": 246,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L246",
+        },
+      },
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [],
+            "id": "HTTPError.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(response: Response<unknown>);",
+            "source": Object {
+              "filename": "dist/source/core/index.d.ts",
+              "line": 983,
+              "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L983",
+            },
+          },
+        ],
+        "docs": Array [
+          "/**
+An error to be thrown when the server response code is not 2xx nor 3xx if \`options.followRedirect\` is \`true\`, but always except for 304.
+Includes a \`response\` property.
+*/",
+        ],
+        "id": "HTTPError",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "HTTPError.request",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "request",
+              "signature": "readonly request: Request;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 981,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L981",
+              },
+              "type": "Request",
+            },
+            Object {
+              "docs": Array [],
+              "id": "HTTPError.response",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "response",
+              "signature": "readonly response: Response<unknown>;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 980,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L980",
+              },
+              "type": "Response<unknown>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "HTTPError.timings",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "timings",
+              "signature": "readonly timings: any;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 982,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L982",
+              },
+              "type": "any",
+            },
+          ],
+        },
+        "name": "HTTPError",
+        "signature": "class HTTPError extends RequestError {}",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 979,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L979",
+        },
+      },
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [],
+            "id": "MaxRedirectsError.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(request: Request);",
+            "source": Object {
+              "filename": "dist/source/core/index.d.ts",
+              "line": 973,
+              "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L973",
+            },
+          },
+        ],
+        "docs": Array [
+          "/**
+An error to be thrown when the server redirects you more than ten times.
+Includes a \`response\` property.
+*/",
+        ],
+        "id": "MaxRedirectsError",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "MaxRedirectsError.request",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "request",
+              "signature": "readonly request: Request;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 971,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L971",
+              },
+              "type": "Request",
+            },
+            Object {
+              "docs": Array [],
+              "id": "MaxRedirectsError.response",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "response",
+              "signature": "readonly response: Response<unknown>;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 970,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L970",
+              },
+              "type": "Response<unknown>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "MaxRedirectsError.timings",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "timings",
+              "signature": "readonly timings: any;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 972,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L972",
+              },
+              "type": "any",
+            },
+          ],
+        },
+        "name": "MaxRedirectsError",
+        "signature": "class MaxRedirectsError extends RequestError {}",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 969,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L969",
+        },
+      },
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [],
+            "id": "ParseError.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(error: Error, response: Response<unknown>);",
+            "source": Object {
+              "filename": "dist/source/as-promise/types.d.ts",
+              "line": 241,
+              "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L241",
+            },
+          },
+        ],
+        "docs": Array [
+          "/**
+An error to be thrown when server response code is 2xx, and parsing body fails.
+Includes a \`response\` property.
+*/",
+        ],
+        "id": "ParseError",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "ParseError.response",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "response",
+              "signature": "readonly response: Response<unknown>;",
+              "source": Object {
+                "filename": "dist/source/as-promise/types.d.ts",
+                "line": 240,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L240",
+              },
+              "type": "Response<unknown>",
+            },
+          ],
+        },
+        "name": "ParseError",
+        "signature": "class ParseError extends RequestError {}",
+        "source": Object {
+          "filename": "dist/source/as-promise/types.d.ts",
+          "line": 239,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L239",
+        },
+      },
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [],
+            "id": "ReadError.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(error: any, request: Request);",
+            "source": Object {
+              "filename": "dist/source/core/index.d.ts",
+              "line": 1017,
+              "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L1017",
+            },
+          },
+        ],
+        "docs": Array [
+          "/**
+An error to be thrown when reading from response stream fails.
+*/",
+        ],
+        "id": "ReadError",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "ReadError.request",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "request",
+              "signature": "readonly request: Request;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 1014,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L1014",
+              },
+              "type": "Request",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ReadError.response",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "response",
+              "signature": "readonly response: Response<unknown>;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 1015,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L1015",
+              },
+              "type": "Response<unknown>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ReadError.timings",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "timings",
+              "signature": "readonly timings: any;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 1016,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L1016",
+              },
+              "type": "any",
+            },
+          ],
+        },
+        "name": "ReadError",
+        "signature": "class ReadError extends RequestError {}",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 1013,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L1013",
+        },
+      },
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [],
+            "id": "RequestError.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(
+    message: string,
+    error: Partial<any>,
+    self: NormalizedOptions | Request
+);",
+            "source": Object {
+              "filename": "dist/source/core/index.d.ts",
+              "line": 961,
+              "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L961",
+            },
+          },
+        ],
+        "docs": Array [
+          "/**
+An error to be thrown when a request fails.
+Contains a \`code\` property with error class code, like \`ECONNREFUSED\`.
+*/",
+        ],
+        "id": "RequestError",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "RequestError.code",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "code",
+              "signature": "code?: string;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 955,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L955",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "RequestError.options",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "options",
+              "signature": "readonly options: NormalizedOptions;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 957,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L957",
+              },
+              "type": "NormalizedOptions",
+            },
+            Object {
+              "docs": Array [],
+              "id": "RequestError.request",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "request",
+              "signature": "readonly request?: Request;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 959,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L959",
+              },
+              "type": "Request",
+            },
+            Object {
+              "docs": Array [],
+              "id": "RequestError.response",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "response",
+              "signature": "readonly response?: Response<unknown>;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 958,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L958",
+              },
+              "type": "Response<unknown>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "RequestError.stack",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "stack",
+              "signature": "stack: string;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 956,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L956",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "RequestError.timings",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "timings",
+              "signature": "readonly timings?: any;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 960,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L960",
+              },
+              "type": "any",
+            },
+          ],
+        },
+        "name": "RequestError",
+        "signature": "class RequestError extends Error {}",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 954,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L954",
+        },
+      },
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [],
+            "id": "TimeoutError.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(error: TimedOutTimeoutError, timings: any, request: Request);",
+            "source": Object {
+              "filename": "dist/source/core/index.d.ts",
+              "line": 1008,
+              "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L1008",
+            },
+          },
+        ],
+        "docs": Array [
+          "/**
+An error to be thrown when the request is aborted due to a timeout.
+Includes an \`event\` and \`timings\` property.
+*/",
+        ],
+        "id": "TimeoutError",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "TimeoutError.event",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "event",
+              "signature": "readonly event: string;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 1007,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L1007",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "TimeoutError.request",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "request",
+              "signature": "readonly request: Request;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 1005,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L1005",
+              },
+              "type": "Request",
+            },
+            Object {
+              "docs": Array [],
+              "id": "TimeoutError.timings",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "timings",
+              "signature": "readonly timings: any;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 1006,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L1006",
+              },
+              "type": "any",
+            },
+          ],
+        },
+        "name": "TimeoutError",
+        "signature": "class TimeoutError extends RequestError {}",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 1004,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L1004",
+        },
+      },
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [],
+            "id": "UnsupportedProtocolError.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(options: NormalizedOptions);",
+            "source": Object {
+              "filename": "dist/source/core/index.d.ts",
+              "line": 1023,
+              "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L1023",
+            },
+          },
+        ],
+        "docs": Array [
+          "/**
+An error to be thrown when given an unsupported protocol.
+*/",
+        ],
+        "id": "UnsupportedProtocolError",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "UnsupportedProtocolError",
+        "signature": "class UnsupportedProtocolError extends RequestError {}",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 1022,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L1022",
+        },
+      },
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [],
+            "id": "UploadError.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(error: any, request: Request);",
+            "source": Object {
+              "filename": "dist/source/core/index.d.ts",
+              "line": 998,
+              "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L998",
+            },
+          },
+        ],
+        "docs": Array [
+          "/**
+An error to be thrown when the request body is a stream and an error occurs while reading from that stream.
+*/",
+        ],
+        "id": "UploadError",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "UploadError.request",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "request",
+              "signature": "readonly request: Request;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 997,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L997",
+              },
+              "type": "Request",
+            },
+          ],
+        },
+        "name": "UploadError",
+        "signature": "class UploadError extends RequestError {}",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 996,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L996",
+        },
+      },
+    ],
+    "enums": Array [],
+    "functions": Array [
+      Object {
+        "docs": Array [],
+        "id": "setNonEnumerableProperties",
+        "kind": "FunctionDeclaration",
+        "name": "setNonEnumerableProperties",
+        "signature": "setNonEnumerableProperties: (
+    sources: Array<Options | Defaults | undefined>,
+    to: Options
+) => void;",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 949,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L949",
+        },
+        "type": "(sources: Array<Options | Defaults | undefined>, to: Options) => void",
+      },
+    ],
+    "interfaces": Array [
+      Object {
+        "docs": Array [],
+        "id": "Agents",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "Agents.http",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "http",
+              "signature": "http?: http.Agent;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 38,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L38",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Agents.http2",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "http2",
+              "signature": "http2?: unknown;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 40,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L40",
+              },
+              "type": "{}",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Agents.https",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "https",
+              "signature": "https?: https.Agent;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 39,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L39",
+              },
+              "type": "any",
+            },
+          ],
+        },
+        "name": "Agents",
+        "signature": "interface Agents {}",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 37,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L37",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "CacheOptions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "CacheOptions.cacheHeuristic",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "cacheHeuristic",
+              "signature": "cacheHeuristic?: number;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 226,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L226",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "CacheOptions.ignoreCargoCult",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "ignoreCargoCult",
+              "signature": "ignoreCargoCult?: boolean;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 228,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L228",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "CacheOptions.immutableMinTimeToLive",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "immutableMinTimeToLive",
+              "signature": "immutableMinTimeToLive?: number;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 227,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L227",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "CacheOptions.shared",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "shared",
+              "signature": "shared?: boolean;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 225,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L225",
+              },
+              "type": "boolean",
+            },
+          ],
+        },
+        "name": "CacheOptions",
+        "signature": "interface CacheOptions {}",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 224,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L224",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "CancelableRequest",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "CancelableRequest.buffer",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "buffer",
+              "signature": "buffer: () => CancelableRequest<Buffer>;",
+              "source": Object {
+                "filename": "dist/source/as-promise/types.d.ts",
+                "line": 253,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L253",
+              },
+              "type": "() => CancelableRequest<Buffer>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "CancelableRequest.json",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "json",
+              "signature": "json: <ReturnType>() => CancelableRequest<ReturnType>;",
+              "source": Object {
+                "filename": "dist/source/as-promise/types.d.ts",
+                "line": 252,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L252",
+              },
+              "type": "<ReturnType>() => CancelableRequest<ReturnType>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "CancelableRequest.text",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "text",
+              "signature": "text: () => CancelableRequest<string>;",
+              "source": Object {
+                "filename": "dist/source/as-promise/types.d.ts",
+                "line": 254,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L254",
+              },
+              "type": "() => CancelableRequest<string>",
+            },
+          ],
+        },
+        "name": "CancelableRequest",
+        "signature": "interface CancelableRequest<T extends Response | Response['body'] = Response['body']>
+    extends PCancelable<T>,
+        RequestEvents<CancelableRequest<T>> {}",
+        "source": Object {
+          "filename": "dist/source/as-promise/types.d.ts",
+          "line": 251,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L251",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Defaults",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Defaults",
+        "signature": "interface Defaults extends PromiseOnly.Defaults, PlainDefaults {}",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 796,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L796",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+The options available for \`got.extend()\`.
+*/",
+        ],
+        "id": "ExtendOptions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+    An array of functions. You execute them directly by calling \`got()\`.
+    They are some sort of \\"global hooks\\" - these functions are called first.
+    The last handler (*it's hidden*) is either \`asPromise\` or \`asStream\`, depending on the \`options.isStream\` property.
+
+    @default []
+    */",
+              ],
+              "id": "ExtendOptions.handlers",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "handlers",
+              "signature": "handlers?: HandlerFunction[];",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 53,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L53",
+              },
+              "type": "HandlerFunction[]",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    A read-only boolean describing whether the defaults are mutable or not.
+    If set to \`true\`, you can update headers over time, for example, update an access token when it expires.
+
+    @default false
+    */",
+              ],
+              "id": "ExtendOptions.mutableDefaults",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "mutableDefaults",
+              "signature": "mutableDefaults?: boolean;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 60,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L60",
+              },
+              "type": "boolean",
+            },
+          ],
+        },
+        "name": "ExtendOptions",
+        "signature": "interface ExtendOptions extends Options {}",
+        "source": Object {
+          "filename": "dist/source/types.d.ts",
+          "line": 45,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L45",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+An instance of \`got\`.
+*/",
+        ],
+        "id": "Got",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+    An error to be thrown when a cache method fails.
+    For example, if the database goes down or there's a filesystem error.
+    */",
+              ],
+              "id": "Got.CacheError",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "CacheError",
+              "signature": "CacheError: typeof CacheError;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 232,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L232",
+              },
+              "type": "typeof CacheError",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    An error to be thrown when the request is aborted with \`.cancel()\`.
+    */",
+              ],
+              "id": "Got.CancelError",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "CancelError",
+              "signature": "CancelError: typeof CancelError;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 273,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L273",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    The Got defaults used in that instance.
+    */",
+              ],
+              "id": "Got.defaults",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "defaults",
+              "signature": "defaults: InstanceDefaults;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 227,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L227",
+              },
+              "type": "InstanceDefaults",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    Configure a new \`got\` instance with default \`options\`.
+    The \`options\` are merged with the parent instance's \`defaults.options\` using \`got.mergeOptions\`.
+    You can access the resolved options with the \`.defaults\` property on the instance.
+
+    Additionally, \`got.extend()\` accepts two properties from the \`defaults\` object: \`mutableDefaults\` and \`handlers\`.
+
+    It is also possible to merges many instances into a single one:
+    - options are merged using \`got.mergeOptions()\` (including hooks),
+    - handlers are stored in an array (you can access them through \`instance.defaults.handlers\`).
+
+    @example
+    \`\`\`js
+    const client = got.extend({
+        prefixUrl: 'https://example.com',
+        headers: {
+            'x-unicorn': 'rainbow'
+        }
+    });
+
+    client.get('demo');
+
+    // HTTP Request =>
+    // GET /demo HTTP/1.1
+    // Host: example.com
+    // x-unicorn: rainbow
+    \`\`\`
+    */",
+              ],
+              "id": "Got.extend",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "extend",
+              "signature": "extend: (...instancesOrOptions: Array<Got | ExtendOptions>) => Got;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 302,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L302",
+              },
+              "type": "(...instancesOrOptions: Array<Got | ExtendOptions>) => Got",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    An error to be thrown when the server response code is not 2xx nor 3xx if \`options.followRedirect\` is \`true\`, but always except for 304.
+    Includes a \`response\` property.
+    */",
+              ],
+              "id": "Got.HTTPError",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "HTTPError",
+              "signature": "HTTPError: typeof HTTPError;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 251,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L251",
+              },
+              "type": "typeof HTTPError",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    An error to be thrown when the server redirects you more than ten times.
+    Includes a \`response\` property.
+    */",
+              ],
+              "id": "Got.MaxRedirectsError",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "MaxRedirectsError",
+              "signature": "MaxRedirectsError: typeof MaxRedirectsError;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 256,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L256",
+              },
+              "type": "typeof MaxRedirectsError",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    Merges multiple \`got\` instances into the parent.
+    */",
+              ],
+              "id": "Got.mergeInstances",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "mergeInstances",
+              "signature": "mergeInstances: (parent: Got, ...instances: Got[]) => Got;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 306,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L306",
+              },
+              "type": "(parent: Got, ...instances: Got[]) => Got",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    Extends parent options.
+    Avoid using [object spread](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#Spread_in_object_literals) as it doesn't work recursively.
+
+    Options are deeply merged to a new object. The value of each key is determined as follows:
+
+    - If the new property is not defined, the old value is used.
+    - If the new property is explicitly set to \`undefined\`:
+        - If the parent property is a plain \`object\`, the parent value is deeply cloned.
+        - Otherwise, \`undefined\` is used.
+    - If the parent value is an instance of \`URLSearchParams\`:
+        - If the new value is a \`string\`, an \`object\` or an instance of \`URLSearchParams\`, a new \`URLSearchParams\` instance is created.
+            The values are merged using [\`urlSearchParams.append(key, value)\`](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/append).
+            The keys defined in the new value override the keys defined in the parent value.
+        - Otherwise, the only available value is \`undefined\`.
+    - If the new property is a plain \`object\`:
+        - If the parent property is a plain \`object\` too, both values are merged recursively into a new \`object\`.
+        - Otherwise, only the new value is deeply cloned.
+    - If the new property is an \`Array\`, it overwrites the old one with a deep clone of the new property.
+    - Properties that are not enumerable, such as \`context\`, \`body\`, \`json\`, and \`form\`, will not be merged.
+    - Otherwise, the new value is assigned to the key.
+
+    **Note:** Only Got options are merged! Custom user options should be defined via [\`options.context\`](#context).
+
+    @example
+    \`\`\`
+    const a = {headers: {cat: 'meow', wolf: ['bark', 'wrrr']}};
+    const b = {headers: {cow: 'moo', wolf: ['auuu']}};
+
+    {...a, ...b}            // => {headers: {cow: 'moo', wolf: ['auuu']}}
+    got.mergeOptions(a, b)  // => {headers: {cat: 'meow', cow: 'moo', wolf: ['auuu']}}
+    \`\`\`
+    */",
+              ],
+              "id": "Got.mergeOptions",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "mergeOptions",
+              "signature": "mergeOptions: (...sources: Options[]) => NormalizedOptions;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 340,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L340",
+              },
+              "type": "(...sources: Options[]) => NormalizedOptions",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    Returns an async iterator.
+
+    See pagination.options for more pagination options.
+
+    @example
+    \`\`\`
+    (async () => {
+        const countLimit = 10;
+
+        const pagination = got.paginate('https://api.github.com/repos/sindresorhus/got/commits', {
+            pagination: {countLimit}
+        });
+
+        console.log(\`Printing latest \${countLimit} Got commits (newest to oldest):\`);
+
+        for await (const commitData of pagination) {
+            console.log(commitData.commit.message);
+        }
+    })();
+    \`\`\`
+    */",
+              ],
+              "id": "Got.paginate",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "paginate",
+              "signature": "paginate: GotPaginate;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 223,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L223",
+              },
+              "type": "GotPaginate",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    An error to be thrown when server response code is 2xx, and parsing body fails.
+    Includes a \`response\` property.
+    */",
+              ],
+              "id": "Got.ParseError",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "ParseError",
+              "signature": "ParseError: typeof ParseError;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 246,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L246",
+              },
+              "type": "typeof ParseError",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    An error to be thrown when reading from response stream fails.
+    */",
+              ],
+              "id": "Got.ReadError",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "ReadError",
+              "signature": "ReadError: typeof ReadError;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 241,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L241",
+              },
+              "type": "typeof ReadError",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    An error to be thrown when a request fails.
+    Contains a \`code\` property with error class code, like \`ECONNREFUSED\`.
+    */",
+              ],
+              "id": "Got.RequestError",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "RequestError",
+              "signature": "RequestError: typeof RequestError;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 237,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L237",
+              },
+              "type": "typeof RequestError",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    Sets \`options.isStream\` to \`true\`.
+
+    Returns a [duplex stream](https://nodejs.org/api/stream.html#stream_class_stream_duplex) with additional events:
+    - request
+    - response
+    - redirect
+    - uploadProgress
+    - downloadProgress
+    - error
+    */",
+              ],
+              "id": "Got.stream",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "stream",
+              "signature": "stream: GotStream;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 200,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L200",
+              },
+              "type": "GotStream",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    An error to be thrown when the request is aborted due to a timeout.
+    Includes an \`event\` and \`timings\` property.
+    */",
+              ],
+              "id": "Got.TimeoutError",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "TimeoutError",
+              "signature": "TimeoutError: typeof TimeoutError;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 265,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L265",
+              },
+              "type": "typeof TimeoutError",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    An error to be thrown when given an unsupported protocol.
+    */",
+              ],
+              "id": "Got.UnsupportedProtocolError",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "UnsupportedProtocolError",
+              "signature": "UnsupportedProtocolError: typeof UnsupportedProtocolError;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 260,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L260",
+              },
+              "type": "typeof UnsupportedProtocolError",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    An error to be thrown when the request body is a stream and an error occurs while reading from that stream.
+    */",
+              ],
+              "id": "Got.UploadError",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "UploadError",
+              "signature": "UploadError: typeof UploadError;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 269,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L269",
+              },
+              "type": "typeof UploadError",
+            },
+          ],
+        },
+        "name": "Got",
+        "signature": "interface Got extends Record<HTTPAlias, GotRequestFunction>, GotRequestFunction {}",
+        "source": Object {
+          "filename": "dist/source/types.d.ts",
+          "line": 188,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L188",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+An instance of \`got.paginate\`.
+*/",
+        ],
+        "id": "GotPaginate",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [
+            Object {
+              "docs": Array [
+                "/**
+    Same as \`GotPaginate.each\`.
+    */",
+              ],
+              "id": "GotPaginate.2-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "<T, R = unknown>(
+    url: string | URL,
+    options?: OptionsWithPagination<T, R>
+): AsyncIterableIterator<T>;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 139,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L139",
+              },
+            },
+            Object {
+              "docs": Array [
+                "/**
+    Same as \`GotPaginate.each\`.
+    */",
+              ],
+              "id": "GotPaginate.3-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "<T, R = unknown>(
+    options?: OptionsWithPagination<T, R>
+): AsyncIterableIterator<T>;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 143,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L143",
+              },
+            },
+          ],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+    Returns a Promise for an array of all results.
+
+    See pagination.options for more pagination options.
+
+    @example
+    \`\`\`
+    (async () => {
+        const countLimit = 10;
+
+        const results = await got.paginate.all('https://api.github.com/repos/sindresorhus/got/commits', {
+            pagination: {countLimit}
+        });
+
+        console.log(\`Printing latest \${countLimit} Got commits (newest to oldest):\`);
+        console.log(results);
+    })();
+    \`\`\`
+    */",
+              ],
+              "id": "GotPaginate.all",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "all",
+              "signature": "all: (<T, R = unknown>(
+    url: string | URL,
+    options?: OptionsWithPagination<T, R>
+) => Promise<T[]>) &
+    (<T, R = unknown>(options?: OptionsWithPagination<T, R>) => Promise<T[]>);",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 135,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L135",
+              },
+              "type": "(<T, R = unknown>(url: string | URL, options?: OptionsWithPagination<T, R>) => Promise<T[]>) & (<T, R = unknown>(options?: OptionsWithPagination<T, R>) => Promise<T[]>)",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    Returns an async iterator.
+
+    See pagination.options for more pagination options.
+
+    @example
+    \`\`\`
+    (async () => {
+        const countLimit = 10;
+
+        const pagination = got.paginate('https://api.github.com/repos/sindresorhus/got/commits', {
+            pagination: {countLimit}
+        });
+
+        console.log(\`Printing latest \${countLimit} Got commits (newest to oldest):\`);
+
+        for await (const commitData of pagination) {
+            console.log(commitData.commit.message);
+        }
+    })();
+    \`\`\`
+    */",
+              ],
+              "id": "GotPaginate.each",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "each",
+              "signature": "each: (<T, R = unknown>(
+    url: string | URL,
+    options?: OptionsWithPagination<T, R>
+) => AsyncIterableIterator<T>) &
+    (<T, R = unknown>(
+        options?: OptionsWithPagination<T, R>
+    ) => AsyncIterableIterator<T>);",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 115,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L115",
+              },
+              "type": "(<T, R = unknown>(url: string | URL, options?: OptionsWithPagination<T, R>) => AsyncIterableIterator<T>) & (<T, R = unknown>(options?: OptionsWithPagination<T, R>) => AsyncIterableIterator<T>)",
+            },
+          ],
+        },
+        "name": "GotPaginate",
+        "signature": "interface GotPaginate {}",
+        "source": Object {
+          "filename": "dist/source/types.d.ts",
+          "line": 92,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L92",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "GotRequestFunction",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [
+            Object {
+              "docs": Array [],
+              "id": "GotRequestFunction.0-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "(url: string | URL, options?: OptionsOfTextResponseBody): CancelableRequest<
+    Response<string>
+>;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 146,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L146",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "GotRequestFunction.1-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "<T>(url: string | URL, options?: OptionsOfJSONResponseBody): CancelableRequest<
+    Response<T>
+>;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 147,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L147",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "GotRequestFunction.10-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "(
+    url: string | URL,
+    options?: Merge<OptionsOfBufferResponseBody, ResponseBodyOnly>
+): CancelableRequest<Buffer>;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 156,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L156",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "GotRequestFunction.11-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "(
+    options: Merge<OptionsOfTextResponseBody, ResponseBodyOnly>
+): CancelableRequest<string>;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 157,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L157",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "GotRequestFunction.12-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "<T>(
+    options: Merge<OptionsOfJSONResponseBody, ResponseBodyOnly>
+): CancelableRequest<T>;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 158,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L158",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "GotRequestFunction.13-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "(
+    options: Merge<OptionsOfBufferResponseBody, ResponseBodyOnly>
+): CancelableRequest<Buffer>;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 159,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L159",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "GotRequestFunction.14-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "(
+    url: string | URL,
+    options?: Merge<
+        Options,
+        {
+            isStream: true;
+        }
+    >
+): Request;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 160,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L160",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "GotRequestFunction.15-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "(
+    options: Merge<
+        Options,
+        {
+            isStream: true;
+        }
+    >
+): Request;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 163,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L163",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "GotRequestFunction.16-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "(url: string | URL, options?: Options): CancelableRequest | Request;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 166,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L166",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "GotRequestFunction.17-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "(options: Options): CancelableRequest | Request;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 167,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L167",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "GotRequestFunction.2-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "(url: string | URL, options?: OptionsOfBufferResponseBody): CancelableRequest<
+    Response<Buffer>
+>;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 148,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L148",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "GotRequestFunction.3-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "(
+    url: string | URL,
+    options?: OptionsOfUnknownResponseBody
+): CancelableRequest<Response>;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 149,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L149",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "GotRequestFunction.4-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "(options: OptionsOfTextResponseBody): CancelableRequest<Response<string>>;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 150,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L150",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "GotRequestFunction.5-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "<T>(options: OptionsOfJSONResponseBody): CancelableRequest<Response<T>>;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 151,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L151",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "GotRequestFunction.6-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "(options: OptionsOfBufferResponseBody): CancelableRequest<Response<Buffer>>;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 152,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L152",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "GotRequestFunction.7-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "(options: OptionsOfUnknownResponseBody): CancelableRequest<Response>;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 153,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L153",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "GotRequestFunction.8-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "(
+    url: string | URL,
+    options?: Merge<OptionsOfTextResponseBody, ResponseBodyOnly>
+): CancelableRequest<string>;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 154,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L154",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "GotRequestFunction.9-call-signature",
+              "kind": "InterfaceCallSignatureDeclaration",
+              "name": "call signature",
+              "signature": "<T>(
+    url: string | URL,
+    options?: Merge<OptionsOfJSONResponseBody, ResponseBodyOnly>
+): CancelableRequest<T>;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 155,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L155",
+              },
+            },
+          ],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "GotRequestFunction",
+        "signature": "interface GotRequestFunction {}",
+        "source": Object {
+          "filename": "dist/source/types.d.ts",
+          "line": 145,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L145",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+All available hook of Got.
+*/",
+        ],
+        "id": "Hooks",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Hooks",
+        "signature": "interface Hooks extends PromiseOnly.Hooks, PlainHooks {}",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 172,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L172",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "HTTPSOptions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+    [Certificate chains](https://en.wikipedia.org/wiki/X.509#Certificate_chains_and_cross-certification) in [PEM](https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail) format.
+
+    One cert chain should be provided per private key (\`options.https.key\`).
+
+    When providing multiple cert chains, they do not have to be in the same order as their private keys in \`options.https.key\`.
+
+    If the intermediate certificates are not provided, the peer will not be able to validate the certificate, and the handshake will fail.
+    */",
+              ],
+              "id": "HTTPSOptions.certificate",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "certificate",
+              "signature": "certificate?: SecureContextOptions['cert'];",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 726,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L726",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    Override the default Certificate Authorities ([from Mozilla](https://ccadb-public.secure.force.com/mozilla/IncludedCACertificateReport)).
+
+    @example
+    \`\`\`
+    // Single Certificate Authority
+    got('https://example.com', {
+        https: {
+            certificateAuthority: fs.readFileSync('./my_ca.pem')
+        }
+    });
+    \`\`\`
+    */",
+              ],
+              "id": "HTTPSOptions.certificateAuthority",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "certificateAuthority",
+              "signature": "certificateAuthority?: SecureContextOptions['ca'];",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 707,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L707",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [],
+              "id": "HTTPSOptions.checkServerIdentity",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "checkServerIdentity",
+              "signature": "checkServerIdentity?: CheckServerIdentityFunction;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 693,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L693",
+              },
+              "type": "CheckServerIdentityFunction",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    Private keys in [PEM](https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail) format.
+
+    [PEM](https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail) allows the option of private keys being encrypted.
+    Encrypted keys will be decrypted with \`options.https.passphrase\`.
+
+    Multiple keys with different passphrases can be provided as an array of \`{pem: <string | Buffer>, passphrase: <string>}\`
+    */",
+              ],
+              "id": "HTTPSOptions.key",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "key",
+              "signature": "key?: SecureContextOptions['key'];",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 716,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L716",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    The passphrase to decrypt the \`options.https.key\` (if different keys have different passphrases refer to \`options.https.key\` documentation).
+    */",
+              ],
+              "id": "HTTPSOptions.passphrase",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "passphrase",
+              "signature": "passphrase?: SecureContextOptions['passphrase'];",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 730,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L730",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [],
+              "id": "HTTPSOptions.pfx",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "pfx",
+              "signature": "pfx?: SecureContextOptions['pfx'];",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 731,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L731",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [],
+              "id": "HTTPSOptions.rejectUnauthorized",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "rejectUnauthorized",
+              "signature": "rejectUnauthorized?: https.RequestOptions['rejectUnauthorized'];",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 692,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L692",
+              },
+              "type": "any",
+            },
+          ],
+        },
+        "name": "HTTPSOptions",
+        "signature": "interface HTTPSOptions {}",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 691,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L691",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+Defaults for each Got instance.
+*/",
+        ],
+        "id": "InstanceDefaults",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+    An array of functions. You execute them directly by calling \`got()\`.
+    They are some sort of \\"global hooks\\" - these functions are called first.
+    The last handler (*it's hidden*) is either \`asPromise\` or \`asStream\`, depending on the \`options.isStream\` property.
+
+    @default []
+    */",
+              ],
+              "id": "InstanceDefaults.handlers",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "handlers",
+              "signature": "handlers: HandlerFunction[];",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 23,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L23",
+              },
+              "type": "HandlerFunction[]",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    A read-only boolean describing whether the defaults are mutable or not.
+    If set to \`true\`, you can update headers over time, for example, update an access token when it expires.
+
+    @default false
+    */",
+              ],
+              "id": "InstanceDefaults.mutableDefaults",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "mutableDefaults",
+              "signature": "mutableDefaults: boolean;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 30,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L30",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+  An object containing the default options of Got.
+    */",
+              ],
+              "id": "InstanceDefaults.options",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "options",
+              "signature": "options: DefaultOptions;",
+              "source": Object {
+                "filename": "dist/source/types.d.ts",
+                "line": 15,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L15",
+              },
+              "type": "DefaultOptions",
+            },
+          ],
+        },
+        "name": "InstanceDefaults",
+        "signature": "interface InstanceDefaults {}",
+        "source": Object {
+          "filename": "dist/source/types.d.ts",
+          "line": 11,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L11",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "NormalizedOptions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "NormalizedOptions",
+        "signature": "interface NormalizedOptions
+    extends PromiseOnly.NormalizedOptions,
+        NormalizedPlainOptions {}",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 764,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L764",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Options",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "Options",
+        "signature": "interface Options extends PromiseOnly.Options, PlainOptions {}",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 689,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L689",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "PaginationOptions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+    All options accepted by \`got.paginate()\`.
+    */",
+              ],
+              "id": "PaginationOptions.pagination",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "pagination",
+              "signature": "pagination?: {
+    /**
+    A function that transform [\`Response\`](#response) into an array of items.
+    This is where you should do the parsing.
+
+    @default response => JSON.parse(response.body)
+    */
+    transform?: (response: Response<R>) => Promise<T[]> | T[];
+    /**
+    Checks whether the item should be emitted or not.
+
+    @default (item, allItems, currentItems) => true
+    */
+    filter?: (item: T, allItems: T[], currentItems: T[]) => boolean;
+    /**
+    The function takes three arguments:
+    - \`response\` - The current response object.
+    - \`allItems\` - An array of the emitted items.
+    - \`currentItems\` - Items from the current response.
+
+    It should return an object representing Got options pointing to the next page.
+    The options are merged automatically with the previous request, therefore the options returned \`pagination.paginate(...)\` must reflect changes only.
+    If there are no more pages, \`false\` should be returned.
+
+    @example
+    \`\`\`
+    const got = require('got');
+
+    (async () => {
+        const limit = 10;
+
+        const items = got.paginate('https://example.com/items', {
+            searchParams: {
+                limit,
+                offset: 0
+            },
+            pagination: {
+                paginate: (response, allItems, currentItems) => {
+                    const previousSearchParams = response.request.options.searchParams;
+                    const previousOffset = previousSearchParams.get('offset');
+
+                    if (currentItems.length < limit) {
+                        return false;
+                    }
+
+                    return {
+                        searchParams: {
+                            ...previousSearchParams,
+                            offset: Number(previousOffset) + limit,
+                        }
+                    };
+                }
+            }
+        });
+
+        console.log('Items from all pages:', items);
+    })();
+    \`\`\`
+    */
+    paginate?: (
+        response: Response<R>,
+        allItems: T[],
+        currentItems: T[]
+    ) => Options | false;
+    /**
+    Checks whether the pagination should continue.
+
+    For example, if you need to stop **before** emitting an entry with some flag, you should use \`(item, allItems, currentItems) => !item.flag\`.
+    If you want to stop **after** emitting the entry, you should use \`(item, allItems, currentItems) => allItems.some(entry => entry.flag)\` instead.
+
+    @default (item, allItems, currentItems) => true
+    */
+    shouldContinue?: (item: T, allItems: T[], currentItems: T[]) => boolean;
+    /**
+    The maximum amount of items that should be emitted.
+
+    @default Infinity
+    */
+    countLimit?: number;
+    /**
+    Milliseconds to wait before the next request is triggered.
+
+    @default 0
+    */
+    backoff?: number;
+    /**
+    The maximum amount of request that should be triggered.
+    Retries on failure are not counted towards this limit.
+
+    For example, it can be helpful during development to avoid an infinite number of requests.
+
+    @default 10000
+    */
+    requestLimit?: number;
+    /**
+    Defines how the parameter \`allItems\` in pagination.paginate, pagination.filter and pagination.shouldContinue is managed.
+    When set to \`false\`, the parameter \`allItems\` is always an empty array.
+
+    This option can be helpful to save on memory usage when working with a large dataset.
+    */
+    stackAllItems?: boolean;
+};",
+              "source": Object {
+                "filename": "dist/source/as-promise/types.d.ts",
+                "line": 12,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L12",
+              },
+              "type": "{ transform?: (response: Response<R>) => Promise<T[]> | T[]; filter?: (item: T, allItems: T[], currentItems: T[]) => boolean; paginate?: (response: Response<R>, allItems: T[], currentItems: T[]) => Options | false; shouldContinue?: (item: T, allItems: T[], currentItems: T[]) => boolean; countLimit?: number; backoff?: number; requestLimit?: number; stackAllItems?: boolean; }",
+            },
+          ],
+        },
+        "name": "PaginationOptions",
+        "signature": "interface PaginationOptions<T, R> {}",
+        "source": Object {
+          "filename": "dist/source/as-promise/types.d.ts",
+          "line": 8,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L8",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "PlainResponse",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+    The result of the request.
+    */",
+              ],
+              "id": "PlainResponse.body",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "body",
+              "signature": "body?: unknown;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 877,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L877",
+              },
+              "type": "{}",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    The remote IP address.
+
+    This is hopefully a temporary limitation, see [lukechilds/cacheable-request#86](https://github.com/lukechilds/cacheable-request/issues/86).
+
+    __Note__: Not available when the response is cached.
+    */",
+              ],
+              "id": "PlainResponse.ip",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "ip",
+              "signature": "ip?: string;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 825,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L825",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    Whether the response was retrieved from the cache.
+    */",
+              ],
+              "id": "PlainResponse.isFromCache",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "isFromCache",
+              "signature": "isFromCache: boolean;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 829,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L829",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    The raw result of the request.
+    */",
+              ],
+              "id": "PlainResponse.rawBody",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "rawBody",
+              "signature": "rawBody?: Buffer;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 873,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L873",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    The redirect URLs.
+    */",
+              ],
+              "id": "PlainResponse.redirectUrls",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "redirectUrls",
+              "signature": "redirectUrls: string[];",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 811,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L811",
+              },
+              "type": "string[]",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    - \`options\` - The Got options that were set on this request.
+
+    __Note__: This is not a [http.ClientRequest](https://nodejs.org/api/http.html#http_class_http_clientrequest).
+    */",
+              ],
+              "id": "PlainResponse.request",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "request",
+              "signature": "request: Request;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 817,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L817",
+              },
+              "type": "Request",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    The original request URL.
+    */",
+              ],
+              "id": "PlainResponse.requestUrl",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "requestUrl",
+              "signature": "requestUrl: string;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 807,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L807",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    The number of times the request was retried.
+    */",
+              ],
+              "id": "PlainResponse.retryCount",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "retryCount",
+              "signature": "retryCount: number;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 869,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L869",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    The status code of the response.
+    */",
+              ],
+              "id": "PlainResponse.statusCode",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "statusCode",
+              "signature": "statusCode: number;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 833,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L833",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    The object contains the following properties:
+
+    - \`start\` - Time when the request started.
+    - \`socket\` - Time when a socket was assigned to the request.
+    - \`lookup\` - Time when the DNS lookup finished.
+    - \`connect\` - Time when the socket successfully connected.
+    - \`secureConnect\` - Time when the socket securely connected.
+    - \`upload\` - Time when the request finished uploading.
+    - \`response\` - Time when the request fired \`response\` event.
+    - \`end\` - Time when the response fired \`end\` event.
+    - \`error\` - Time when the request fired \`error\` event.
+    - \`abort\` - Time when the request fired \`abort\` event.
+    - \`phases\`
+        - \`wait\` - \`timings.socket - timings.start\`
+        - \`dns\` - \`timings.lookup - timings.socket\`
+        - \`tcp\` - \`timings.connect - timings.lookup\`
+        - \`tls\` - \`timings.secureConnect - timings.connect\`
+        - \`request\` - \`timings.upload - (timings.secureConnect || timings.connect)\`
+        - \`firstByte\` - \`timings.response - timings.upload\`
+        - \`download\` - \`timings.end - timings.response\`
+        - \`total\` - \`(timings.end || timings.error || timings.abort) - timings.start\`
+
+    If something has not been measured yet, it will be \`undefined\`.
+
+    __Note__: The time is a \`number\` representing the milliseconds elapsed since the UNIX epoch.
+    */",
+              ],
+              "id": "PlainResponse.timings",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "timings",
+              "signature": "timings: Timings;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 865,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L865",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    The request URL or the final URL after redirects.
+    */",
+              ],
+              "id": "PlainResponse.url",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "url",
+              "signature": "url: string;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 837,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L837",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "PlainResponse",
+        "signature": "interface PlainResponse extends IncomingMessageWithTimings {}",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 803,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L803",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Progress",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "Progress.percent",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "percent",
+              "signature": "percent: number;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 799,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L799",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Progress.total",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "total",
+              "signature": "total?: number;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 801,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L801",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Progress.transferred",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "transferred",
+              "signature": "transferred: number;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 800,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L800",
+              },
+              "type": "number",
+            },
+          ],
+        },
+        "name": "Progress",
+        "signature": "interface Progress {}",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 798,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L798",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "PromiseCookieJar",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "PromiseCookieJar.getCookieString",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "getCookieString",
+              "signature": "getCookieString: (url: string) => Promise<string>;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 48,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L48",
+              },
+              "type": "(url: string) => Promise<string>",
+            },
+            Object {
+              "docs": Array [],
+              "id": "PromiseCookieJar.setCookie",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "setCookie",
+              "signature": "setCookie: (rawCookie: string, url: string) => Promise<unknown>;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 49,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L49",
+              },
+              "type": "(rawCookie: string, url: string) => Promise<unknown>",
+            },
+          ],
+        },
+        "name": "PromiseCookieJar",
+        "signature": "interface PromiseCookieJar {}",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 47,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L47",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "RequestEvents",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+    \`request\` event to get the request object of the request.
+
+     __Tip__: You can use \`request\` event to abort requests.
+
+    @example
+    \`\`\`
+    got.stream('https://github.com')
+        .on('request', request => setTimeout(() => request.destroy(), 50));
+    \`\`\`
+    */",
+              ],
+              "id": "RequestEvents.on",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "on",
+              "signature": "on: ((name: 'request', listener: (request: http.ClientRequest) => void) => T) &
+    /**
+The \`response\` event to get the response object of the final request.
+*/
+    (<R extends Response>(
+        name: 'response',
+        listener: (response: R) => void
+    ) => T) &
+    /**
+The \`redirect\` event to get the response object of a redirect. The second argument is options for the next request to the redirect location.
+*/
+    (<R extends Response, N extends NormalizedOptions>(
+        name: 'redirect',
+        listener: (response: R, nextOptions: N) => void
+    ) => T) &
+    /**
+Progress events for uploading (sending a request) and downloading (receiving a response).
+The \`progress\` argument is an object like:
+
+\`\`\`js
+{
+    percent: 0.1,
+    transferred: 1024,
+    total: 10240
+}
+\`\`\`
+
+If the \`content-length\` header is missing, \`total\` will be \`undefined\`.
+
+@example
+\`\`\`js
+(async () => {
+    const response = await got('https://sindresorhus.com')
+        .on('downloadProgress', progress => {
+            // Report download progress
+        })
+        .on('uploadProgress', progress => {
+            // Report upload progress
+        });
+
+    console.log(response);
+})();
+\`\`\`
+*/
+    ((
+        name: 'uploadProgress' | 'downloadProgress',
+        listener: (progress: Progress) => void
+    ) => T) &
+    /**
+To enable retrying on a Got stream, it is required to have a \`retry\` handler attached.
+
+When this event is emitted, you should reset the stream you were writing to and prepare the body again.
+
+See \`got.options.retry\` for more information.
+*/
+    ((
+        name: 'retry',
+        listener: (retryCount: number, error: RequestError) => void
+    ) => T);",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 901,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L901",
+              },
+              "type": "((name: 'request', listener: (request: any) => void) => T) & (<R extends Response<unknown>>(name: 'response', listener: (response: R) => void) => T) & (<R extends Response<unknown>, N extends NormalizedOptions>(name: 'redirect', listener: (response: R, nextOptions: N) => void) => T) & ((name: 'uploadProgress' | 'downloadProgress', listener: (progress: Progress) => void) => T) & ((name: 'retry', listener: (retryCount: number, error: RequestError) => void) => T)",
+            },
+          ],
+        },
+        "name": "RequestEvents",
+        "signature": "interface RequestEvents<T> {}",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 889,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L889",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+An object representing \`limit\`, \`calculateDelay\`, \`methods\`, \`statusCodes\`, \`maxRetryAfter\` and \`errorCodes\` fields for maximum retry count, retry handler, allowed methods, allowed status codes, maximum [\`Retry-After\`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Retry-After) time and allowed error codes.
+
+Delays between retries counts with function \`1000 * Math.pow(2, retry) + Math.random() * 100\`, where \`retry\` is attempt number (starts from 1).
+
+The \`calculateDelay\` property is a \`function\` that receives an object with \`attemptCount\`, \`retryOptions\`, \`error\` and \`computedValue\` properties for current retry count, the retry options, error and default computed value.
+The function must return a delay in milliseconds (or a Promise resolving with it) (\`0\` return value cancels retry).
+
+By default, it retries *only* on the specified methods, status codes, and on these network errors:
+- \`ETIMEDOUT\`: One of the [timeout](#timeout) limits were reached.
+- \`ECONNRESET\`: Connection was forcibly closed by a peer.
+- \`EADDRINUSE\`: Could not bind to any free port.
+- \`ECONNREFUSED\`: Connection was refused by the server.
+- \`EPIPE\`: The remote side of the stream being written has been closed.
+- \`ENOTFOUND\`: Couldn't resolve the hostname to an IP address.
+- \`ENETUNREACH\`: No internet connection.
+- \`EAI_AGAIN\`: DNS lookup timed out.
+
+__Note__: If \`maxRetryAfter\` is set to \`undefined\`, it will use \`options.timeout\`.
+__Note__: If [\`Retry-After\`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Retry-After) header is greater than \`maxRetryAfter\`, it will cancel the request.
+*/",
+        ],
+        "id": "RequiredRetryOptions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "RequiredRetryOptions.calculateDelay",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "calculateDelay",
+              "signature": "calculateDelay: RetryFunction;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 221,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L221",
+              },
+              "type": "RetryFunction",
+            },
+            Object {
+              "docs": Array [],
+              "id": "RequiredRetryOptions.errorCodes",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "errorCodes",
+              "signature": "errorCodes: string[];",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 220,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L220",
+              },
+              "type": "string[]",
+            },
+            Object {
+              "docs": Array [],
+              "id": "RequiredRetryOptions.limit",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "limit",
+              "signature": "limit: number;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 217,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L217",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "RequiredRetryOptions.maxRetryAfter",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "maxRetryAfter",
+              "signature": "maxRetryAfter?: number;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 222,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L222",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "RequiredRetryOptions.methods",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "methods",
+              "signature": "methods: Method[];",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 218,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L218",
+              },
+              "type": "Method[]",
+            },
+            Object {
+              "docs": Array [],
+              "id": "RequiredRetryOptions.statusCodes",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "statusCodes",
+              "signature": "statusCodes: number[];",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 219,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L219",
+              },
+              "type": "number[]",
+            },
+          ],
+        },
+        "name": "RequiredRetryOptions",
+        "signature": "interface RequiredRetryOptions {}",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 216,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L216",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Response",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+    The result of the request.
+    */",
+              ],
+              "id": "Response.body",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "body",
+              "signature": "body: T;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 883,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L883",
+              },
+              "type": "{}",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    The raw result of the request.
+    */",
+              ],
+              "id": "Response.rawBody",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "rawBody",
+              "signature": "rawBody: Buffer;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 887,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L887",
+              },
+              "type": "any",
+            },
+          ],
+        },
+        "name": "Response",
+        "signature": "interface Response<T = unknown> extends PlainResponse {}",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 879,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L879",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "RetryObject",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "RetryObject.attemptCount",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "attemptCount",
+              "signature": "attemptCount: number;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 188,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L188",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "RetryObject.computedValue",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "computedValue",
+              "signature": "computedValue: number;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 191,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L191",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "RetryObject.error",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "error",
+              "signature": "error: TimeoutError | RequestError;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 190,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L190",
+              },
+              "type": "RequestError | TimeoutError",
+            },
+            Object {
+              "docs": Array [],
+              "id": "RetryObject.retryAfter",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "retryAfter",
+              "signature": "retryAfter?: number;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 192,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L192",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "RetryObject.retryOptions",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "retryOptions",
+              "signature": "retryOptions: RequiredRetryOptions;",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 189,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L189",
+              },
+              "type": "RequiredRetryOptions",
+            },
+          ],
+        },
+        "name": "RetryObject",
+        "signature": "interface RetryObject {}",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 187,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L187",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "ToughCookieJar",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "ToughCookieJar.getCookieString",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "getCookieString",
+              "signature": "getCookieString: ((
+    currentUrl: string,
+    options: Record<string, unknown>,
+    cb: (err: Error | null, cookies: string) => void
+) => void) &
+    ((
+        url: string,
+        callback: (error: Error | null, cookieHeader: string) => void
+    ) => void);",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 44,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L44",
+              },
+              "type": "((currentUrl: string, options: Record<string, unknown>, cb: (err: Error | null, cookies: string) => void) => void) & ((url: string, callback: (error: Error | null, cookieHeader: string) => void) => void)",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ToughCookieJar.setCookie",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "setCookie",
+              "signature": "setCookie: ((
+    cookieOrString: unknown,
+    currentUrl: string,
+    options: Record<string, unknown>,
+    cb: (err: Error | null, cookie: unknown) => void
+) => void) &
+    ((
+        rawCookie: string,
+        url: string,
+        callback: (error: Error | null, result: unknown) => void
+    ) => void);",
+              "source": Object {
+                "filename": "dist/source/core/index.d.ts",
+                "line": 45,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L45",
+              },
+              "type": "((cookieOrString: unknown, currentUrl: string, options: Record<string, unknown>, cb: (err: Error | null, cookie: unknown) => void) => void) & ((rawCookie: string, url: string, callback: (error: Error | null, result: unknown) => void) => void)",
+            },
+          ],
+        },
+        "name": "ToughCookieJar",
+        "signature": "interface ToughCookieJar {}",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 43,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L43",
+        },
+      },
+    ],
+    "namespaces": Array [
+      Object {
+        "declarations": Object {
+          "classes": Array [],
+          "enums": Array [],
+          "functions": Array [],
+          "interfaces": Array [
+            Object {
+              "docs": Array [],
+              "id": "PromiseOnly.Defaults",
+              "kind": "InterfaceDeclaration",
+              "members": Object {
+                "callSignatures": Array [],
+                "constructSignatures": Array [],
+                "indexSignatures": Array [],
+                "methods": Array [],
+                "properties": Array [
+                  Object {
+                    "docs": Array [],
+                    "id": "PromiseOnly.Defaults.isStream",
+                    "isOptional": false,
+                    "isReadonly": false,
+                    "kind": "InterfacePropertyDeclaration",
+                    "name": "isStream",
+                    "signature": "isStream: boolean;",
+                    "source": Object {
+                      "filename": "dist/source/as-promise/types.d.ts",
+                      "line": 230,
+                      "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L230",
+                    },
+                    "type": "boolean",
+                  },
+                  Object {
+                    "docs": Array [],
+                    "id": "PromiseOnly.Defaults.pagination",
+                    "isOptional": true,
+                    "isReadonly": false,
+                    "kind": "InterfacePropertyDeclaration",
+                    "name": "pagination",
+                    "signature": "pagination?: Required<PaginationOptions<unknown, unknown>['pagination']>;",
+                    "source": Object {
+                      "filename": "dist/source/as-promise/types.d.ts",
+                      "line": 231,
+                      "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L231",
+                    },
+                    "type": "Required<{ transform?: (response: Response<unknown>) => unknown[] | Promise<unknown[]>; filter?: (item: unknown, allItems: unknown[], currentItems: unknown[]) => boolean; paginate?: (response: Response<unknown>, allItems: unknown[], currentItems: unknown[]) => false | Options; shouldContinue?: (item: unknown, allItems: unknown[], currentItems: unknown[]) => boolean; countLimit?: number; backoff?: number; requestLimit?: number; stackAllItems?: boolean; }>",
+                  },
+                  Object {
+                    "docs": Array [],
+                    "id": "PromiseOnly.Defaults.resolveBodyOnly",
+                    "isOptional": false,
+                    "isReadonly": false,
+                    "kind": "InterfacePropertyDeclaration",
+                    "name": "resolveBodyOnly",
+                    "signature": "resolveBodyOnly: boolean;",
+                    "source": Object {
+                      "filename": "dist/source/as-promise/types.d.ts",
+                      "line": 229,
+                      "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L229",
+                    },
+                    "type": "boolean",
+                  },
+                  Object {
+                    "docs": Array [],
+                    "id": "PromiseOnly.Defaults.responseType",
+                    "isOptional": false,
+                    "isReadonly": false,
+                    "kind": "InterfacePropertyDeclaration",
+                    "name": "responseType",
+                    "signature": "responseType: ResponseType;",
+                    "source": Object {
+                      "filename": "dist/source/as-promise/types.d.ts",
+                      "line": 228,
+                      "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L228",
+                    },
+                    "type": "ResponseType",
+                  },
+                ],
+              },
+              "name": "Defaults",
+              "signature": "interface Defaults {}",
+              "source": Object {
+                "filename": "dist/source/as-promise/types.d.ts",
+                "line": 227,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L227",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "PromiseOnly.Hooks",
+              "kind": "InterfaceDeclaration",
+              "members": Object {
+                "callSignatures": Array [],
+                "constructSignatures": Array [],
+                "indexSignatures": Array [],
+                "methods": Array [],
+                "properties": Array [
+                  Object {
+                    "docs": Array [
+                      "/**
+        Called with [response object](#response) and a retry function.
+        Calling the retry function will trigger \`beforeRetry\` hooks.
+
+        Each function should return the response.
+        This is especially useful when you want to refresh an access token.
+
+        __Note__: When using streams, this hook is ignored.
+
+        @example
+        \`\`\`
+        const got = require('got');
+
+        const instance = got.extend({
+            hooks: {
+                afterResponse: [
+                    (response, retryWithMergedOptions) => {
+                        if (response.statusCode === 401) { // Unauthorized
+                            const updatedOptions = {
+                                headers: {
+                                    token: getNewToken() // Refresh the access token
+                                }
+                            };
+
+                            // Save for further requests
+                            instance.defaults.options = got.mergeOptions(instance.defaults.options, updatedOptions);
+
+                            // Make a new retry
+                            return retryWithMergedOptions(updatedOptions);
+                        }
+
+                        // No changes otherwise
+                        return response;
+                    }
+                ],
+                beforeRetry: [
+                    (options, error, retryCount) => {
+                        // This will be called on \`retryWithMergedOptions(...)\`
+                    }
+                ]
+            },
+            mutableDefaults: true
+        });
+        \`\`\`
+        */",
+                    ],
+                    "id": "PromiseOnly.Hooks.afterResponse",
+                    "isOptional": true,
+                    "isReadonly": false,
+                    "kind": "InterfacePropertyDeclaration",
+                    "name": "afterResponse",
+                    "signature": "afterResponse?: AfterResponseHook[];",
+                    "source": Object {
+                      "filename": "dist/source/as-promise/types.d.ts",
+                      "line": 159,
+                      "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L159",
+                    },
+                    "type": "AfterResponseHook[]",
+                  },
+                ],
+              },
+              "name": "Hooks",
+              "signature": "interface Hooks {}",
+              "source": Object {
+                "filename": "dist/source/as-promise/types.d.ts",
+                "line": 113,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L113",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "PromiseOnly.NormalizedOptions",
+              "kind": "InterfaceDeclaration",
+              "members": Object {
+                "callSignatures": Array [],
+                "constructSignatures": Array [],
+                "indexSignatures": Array [],
+                "methods": Array [],
+                "properties": Array [
+                  Object {
+                    "docs": Array [],
+                    "id": "PromiseOnly.NormalizedOptions.encoding",
+                    "isOptional": true,
+                    "isReadonly": false,
+                    "kind": "InterfacePropertyDeclaration",
+                    "name": "encoding",
+                    "signature": "encoding?: BufferEncoding;",
+                    "source": Object {
+                      "filename": "dist/source/as-promise/types.d.ts",
+                      "line": 224,
+                      "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L224",
+                    },
+                    "type": "any",
+                  },
+                  Object {
+                    "docs": Array [],
+                    "id": "PromiseOnly.NormalizedOptions.isStream",
+                    "isOptional": false,
+                    "isReadonly": false,
+                    "kind": "InterfacePropertyDeclaration",
+                    "name": "isStream",
+                    "signature": "isStream: boolean;",
+                    "source": Object {
+                      "filename": "dist/source/as-promise/types.d.ts",
+                      "line": 223,
+                      "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L223",
+                    },
+                    "type": "boolean",
+                  },
+                  Object {
+                    "docs": Array [],
+                    "id": "PromiseOnly.NormalizedOptions.pagination",
+                    "isOptional": true,
+                    "isReadonly": false,
+                    "kind": "InterfacePropertyDeclaration",
+                    "name": "pagination",
+                    "signature": "pagination?: Required<PaginationOptions<unknown, unknown>['pagination']>;",
+                    "source": Object {
+                      "filename": "dist/source/as-promise/types.d.ts",
+                      "line": 225,
+                      "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L225",
+                    },
+                    "type": "Required<{ transform?: (response: Response<unknown>) => unknown[] | Promise<unknown[]>; filter?: (item: unknown, allItems: unknown[], currentItems: unknown[]) => boolean; paginate?: (response: Response<unknown>, allItems: unknown[], currentItems: unknown[]) => false | Options; shouldContinue?: (item: unknown, allItems: unknown[], currentItems: unknown[]) => boolean; countLimit?: number; backoff?: number; requestLimit?: number; stackAllItems?: boolean; }>",
+                  },
+                  Object {
+                    "docs": Array [],
+                    "id": "PromiseOnly.NormalizedOptions.resolveBodyOnly",
+                    "isOptional": false,
+                    "isReadonly": false,
+                    "kind": "InterfacePropertyDeclaration",
+                    "name": "resolveBodyOnly",
+                    "signature": "resolveBodyOnly: boolean;",
+                    "source": Object {
+                      "filename": "dist/source/as-promise/types.d.ts",
+                      "line": 222,
+                      "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L222",
+                    },
+                    "type": "boolean",
+                  },
+                  Object {
+                    "docs": Array [],
+                    "id": "PromiseOnly.NormalizedOptions.responseType",
+                    "isOptional": false,
+                    "isReadonly": false,
+                    "kind": "InterfacePropertyDeclaration",
+                    "name": "responseType",
+                    "signature": "responseType: ResponseType;",
+                    "source": Object {
+                      "filename": "dist/source/as-promise/types.d.ts",
+                      "line": 221,
+                      "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L221",
+                    },
+                    "type": "ResponseType",
+                  },
+                ],
+              },
+              "name": "NormalizedOptions",
+              "signature": "interface NormalizedOptions {}",
+              "source": Object {
+                "filename": "dist/source/as-promise/types.d.ts",
+                "line": 220,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L220",
+              },
+            },
+            Object {
+              "docs": Array [],
+              "id": "PromiseOnly.Options",
+              "kind": "InterfaceDeclaration",
+              "members": Object {
+                "callSignatures": Array [],
+                "constructSignatures": Array [],
+                "indexSignatures": Array [],
+                "methods": Array [],
+                "properties": Array [
+                  Object {
+                    "docs": Array [
+                      "/**
+        [Encoding](https://nodejs.org/api/buffer.html#buffer_buffers_and_character_encodings) to be used on \`setEncoding\` of the response data.
+
+        To get a [\`Buffer\`](https://nodejs.org/api/buffer.html), you need to set \`responseType\` to \`buffer\` instead.
+        Don't set this option to \`null\`.
+
+        __Note__: This doesn't affect streams! Instead, you need to do \`got.stream(...).setEncoding(encoding)\`.
+
+        @default 'utf-8'
+        */",
+                    ],
+                    "id": "PromiseOnly.Options.encoding",
+                    "isOptional": true,
+                    "isReadonly": false,
+                    "kind": "InterfacePropertyDeclaration",
+                    "name": "encoding",
+                    "signature": "encoding?: BufferEncoding;",
+                    "source": Object {
+                      "filename": "dist/source/as-promise/types.d.ts",
+                      "line": 218,
+                      "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L218",
+                    },
+                    "type": "any",
+                  },
+                  Object {
+                    "docs": Array [
+                      "/**
+        Returns a \`Stream\` instead of a \`Promise\`.
+        This is equivalent to calling \`got.stream(url, options?)\`.
+
+        @default false
+        */",
+                    ],
+                    "id": "PromiseOnly.Options.isStream",
+                    "isOptional": true,
+                    "isReadonly": false,
+                    "kind": "InterfacePropertyDeclaration",
+                    "name": "isStream",
+                    "signature": "isStream?: boolean;",
+                    "source": Object {
+                      "filename": "dist/source/as-promise/types.d.ts",
+                      "line": 207,
+                      "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L207",
+                    },
+                    "type": "boolean",
+                  },
+                  Object {
+                    "docs": Array [
+                      "/**
+        When set to \`true\` the promise will return the Response body instead of the Response object.
+
+        @default false
+        */",
+                    ],
+                    "id": "PromiseOnly.Options.resolveBodyOnly",
+                    "isOptional": true,
+                    "isReadonly": false,
+                    "kind": "InterfacePropertyDeclaration",
+                    "name": "resolveBodyOnly",
+                    "signature": "resolveBodyOnly?: boolean;",
+                    "source": Object {
+                      "filename": "dist/source/as-promise/types.d.ts",
+                      "line": 200,
+                      "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L200",
+                    },
+                    "type": "boolean",
+                  },
+                  Object {
+                    "docs": Array [
+                      "/**
+        The parsing method.
+
+        The promise also has \`.text()\`, \`.json()\` and \`.buffer()\` methods which return another Got promise for the parsed body.
+
+        It's like setting the options to \`{responseType: 'json', resolveBodyOnly: true}\` but without affecting the main Got promise.
+
+        __Note__: When using streams, this option is ignored.
+
+        @example
+        \`\`\`
+        (async () => {
+            const responsePromise = got(url);
+            const bufferPromise = responsePromise.buffer();
+            const jsonPromise = responsePromise.json();
+
+            const [response, buffer, json] = Promise.all([responsePromise, bufferPromise, jsonPromise]);
+            // \`response\` is an instance of Got Response
+            // \`buffer\` is an instance of Buffer
+            // \`json\` is an object
+        })();
+        \`\`\`
+
+        @example
+        \`\`\`
+        // This
+        const body = await got(url).json();
+
+        // is semantically the same as this
+        const body = await got(url, {responseType: 'json', resolveBodyOnly: true});
+        \`\`\`
+        */",
+                    ],
+                    "id": "PromiseOnly.Options.responseType",
+                    "isOptional": true,
+                    "isReadonly": false,
+                    "kind": "InterfacePropertyDeclaration",
+                    "name": "responseType",
+                    "signature": "responseType?: ResponseType;",
+                    "source": Object {
+                      "filename": "dist/source/as-promise/types.d.ts",
+                      "line": 194,
+                      "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L194",
+                    },
+                    "type": "ResponseType",
+                  },
+                ],
+              },
+              "name": "Options",
+              "signature": "interface Options extends PaginationOptions<unknown, unknown> {}",
+              "source": Object {
+                "filename": "dist/source/as-promise/types.d.ts",
+                "line": 161,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L161",
+              },
+            },
+          ],
+          "namespaces": Array [],
+          "typeAliases": Array [
+            Object {
+              "docs": Array [],
+              "id": "PromiseOnly.HookEvent",
+              "kind": "TypeAliasDeclaration",
+              "name": "HookEvent",
+              "signature": "type HookEvent = 'afterResponse';",
+              "source": Object {
+                "filename": "dist/source/as-promise/types.d.ts",
+                "line": 233,
+                "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L233",
+              },
+            },
+          ],
+          "variables": Array [],
+        },
+        "docs": Array [],
+        "id": "PromiseOnly",
+        "kind": "NamespaceDeclaration",
+        "name": "PromiseOnly",
+        "signature": "namespace PromiseOnly {}",
+        "source": Object {
+          "filename": "dist/source/as-promise/types.d.ts",
+          "line": 112,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L112",
+        },
+      },
+    ],
+    "typeAliases": Array [
+      Object {
+        "docs": Array [],
+        "id": "AfterResponseHook",
+        "kind": "TypeAliasDeclaration",
+        "name": "AfterResponseHook",
+        "signature": "type AfterResponseHook = (
+    response: Response,
+    retryWithMergedOptions: (options: Options) => CancelableRequest<Response>
+) =>
+    | Response
+    | CancelableRequest<Response>
+    | Promise<Response | CancelableRequest<Response>>;",
+        "source": Object {
+          "filename": "dist/source/as-promise/types.d.ts",
+          "line": 111,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L111",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "BeforeErrorHook",
+        "kind": "TypeAliasDeclaration",
+        "name": "BeforeErrorHook",
+        "signature": "type BeforeErrorHook = (error: RequestError) => Promisable<RequestError>;",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 59,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L59",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "BeforeRedirectHook",
+        "kind": "TypeAliasDeclaration",
+        "name": "BeforeRedirectHook",
+        "signature": "type BeforeRedirectHook = (
+    options: NormalizedOptions,
+    response: Response
+) => Promisable<void>;",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 58,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L58",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "BeforeRequestHook",
+        "kind": "TypeAliasDeclaration",
+        "name": "BeforeRequestHook",
+        "signature": "type BeforeRequestHook = (
+    options: NormalizedOptions
+) => Promisable<void | Response | ResponseLike>;",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 57,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L57",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "BeforeRetryHook",
+        "kind": "TypeAliasDeclaration",
+        "name": "BeforeRetryHook",
+        "signature": "type BeforeRetryHook = (
+    options: NormalizedOptions,
+    error?: RequestError,
+    retryCount?: number
+) => void | Promise<void>;",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 60,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L60",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+A Request object returned by calling Got, or any of the Got HTTP alias request functions.
+*/",
+        ],
+        "id": "GotReturn",
+        "kind": "TypeAliasDeclaration",
+        "name": "GotReturn",
+        "signature": "type GotReturn = Request | CancelableRequest;",
+        "source": Object {
+          "filename": "dist/source/types.d.ts",
+          "line": 36,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L36",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+An instance of \`got.stream()\`.
+*/",
+        ],
+        "id": "GotStream",
+        "kind": "TypeAliasDeclaration",
+        "name": "GotStream",
+        "signature": "type GotStream = GotStreamFunction & Record<HTTPAlias, GotStreamFunction>;",
+        "source": Object {
+          "filename": "dist/source/types.d.ts",
+          "line": 184,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L184",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+A function to handle options and returns a Request object.
+It acts sort of like a \\"global hook\\", and will be called before any actual request is made.
+*/",
+        ],
+        "id": "HandlerFunction",
+        "kind": "TypeAliasDeclaration",
+        "name": "HandlerFunction",
+        "signature": "type HandlerFunction = <T extends GotReturn>(
+    options: NormalizedOptions,
+    next: (options: NormalizedOptions) => T
+) => T | Promise<T>;",
+        "source": Object {
+          "filename": "dist/source/types.d.ts",
+          "line": 41,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L41",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Headers",
+        "kind": "TypeAliasDeclaration",
+        "name": "Headers",
+        "signature": "type Headers = Record<string, string | string[] | undefined>;",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 183,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L183",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+All hook events acceptable by Got.
+*/",
+        ],
+        "id": "HookEvent",
+        "kind": "TypeAliasDeclaration",
+        "name": "HookEvent",
+        "signature": "type HookEvent = PromiseOnly.HookEvent | PlainHookEvent;",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 178,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L178",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+All available HTTP request methods provided by Got.
+*/",
+        ],
+        "id": "HTTPAlias",
+        "kind": "TypeAliasDeclaration",
+        "name": "HTTPAlias",
+        "signature": "type HTTPAlias = 'get' | 'post' | 'put' | 'patch' | 'head' | 'delete';",
+        "source": Object {
+          "filename": "dist/source/types.d.ts",
+          "line": 172,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L172",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "InitHook",
+        "kind": "TypeAliasDeclaration",
+        "name": "InitHook",
+        "signature": "type InitHook = (options: Options) => void;",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 56,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L56",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+All available HTTP request methods provided by Got.
+*/",
+        ],
+        "id": "Method",
+        "kind": "TypeAliasDeclaration",
+        "name": "Method",
+        "signature": "type Method =
+    | 'GET'
+    | 'POST'
+    | 'PUT'
+    | 'PATCH'
+    | 'HEAD'
+    | 'DELETE'
+    | 'OPTIONS'
+    | 'TRACE'
+    | 'get'
+    | 'post'
+    | 'put'
+    | 'patch'
+    | 'head'
+    | 'delete'
+    | 'options'
+    | 'trace';",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 54,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L54",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "OptionsOfBufferResponseBody",
+        "kind": "TypeAliasDeclaration",
+        "name": "OptionsOfBufferResponseBody",
+        "signature": "type OptionsOfBufferResponseBody = Merge<
+    Options,
+    {
+        isStream?: false;
+        resolveBodyOnly?: false;
+        responseType: 'buffer';
+    }
+>;",
+        "source": Object {
+          "filename": "dist/source/types.d.ts",
+          "line": 72,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L72",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "OptionsOfJSONResponseBody",
+        "kind": "TypeAliasDeclaration",
+        "name": "OptionsOfJSONResponseBody",
+        "signature": "type OptionsOfJSONResponseBody = Merge<
+    Options,
+    {
+        isStream?: false;
+        resolveBodyOnly?: false;
+        responseType?: 'json';
+    }
+>;",
+        "source": Object {
+          "filename": "dist/source/types.d.ts",
+          "line": 67,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L67",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "OptionsOfTextResponseBody",
+        "kind": "TypeAliasDeclaration",
+        "name": "OptionsOfTextResponseBody",
+        "signature": "type OptionsOfTextResponseBody = Merge<
+    Options,
+    {
+        isStream?: false;
+        resolveBodyOnly?: false;
+        responseType?: 'text';
+    }
+>;",
+        "source": Object {
+          "filename": "dist/source/types.d.ts",
+          "line": 62,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L62",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "OptionsOfUnknownResponseBody",
+        "kind": "TypeAliasDeclaration",
+        "name": "OptionsOfUnknownResponseBody",
+        "signature": "type OptionsOfUnknownResponseBody = Merge<
+    Options,
+    {
+        isStream?: false;
+        resolveBodyOnly?: false;
+    }
+>;",
+        "source": Object {
+          "filename": "dist/source/types.d.ts",
+          "line": 77,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L77",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "OptionsWithPagination",
+        "kind": "TypeAliasDeclaration",
+        "name": "OptionsWithPagination",
+        "signature": "type OptionsWithPagination<T = unknown, R = unknown> = Merge<
+    Options,
+    PaginationOptions<T, R>
+>;",
+        "source": Object {
+          "filename": "dist/source/types.d.ts",
+          "line": 88,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L88",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "ParseJsonFunction",
+        "kind": "TypeAliasDeclaration",
+        "name": "ParseJsonFunction",
+        "signature": "type ParseJsonFunction = (text: string) => unknown;",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 185,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L185",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "RequestFunction",
+        "kind": "TypeAliasDeclaration",
+        "name": "RequestFunction",
+        "signature": "type RequestFunction = (
+    url: URL,
+    options: RequestOptions,
+    callback?: (response: AcceptableResponse) => void
+) => AcceptableRequestResult;",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 182,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L182",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+All parsing methods supported by Got.
+*/",
+        ],
+        "id": "ResponseType",
+        "kind": "TypeAliasDeclaration",
+        "name": "ResponseType",
+        "signature": "type ResponseType = 'json' | 'buffer' | 'text';",
+        "source": Object {
+          "filename": "dist/source/as-promise/types.d.ts",
+          "line": 7,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts#L7",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "RetryFunction",
+        "kind": "TypeAliasDeclaration",
+        "name": "RetryFunction",
+        "signature": "type RetryFunction = (retryObject: RetryObject) => number | Promise<number>;",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 194,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L194",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "StreamOptions",
+        "kind": "TypeAliasDeclaration",
+        "name": "StreamOptions",
+        "signature": "type StreamOptions = Merge<
+    Options,
+    {
+        isStream?: true;
+    }
+>;",
+        "source": Object {
+          "filename": "dist/source/types.d.ts",
+          "line": 82,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L82",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "StrictOptions",
+        "kind": "TypeAliasDeclaration",
+        "name": "StrictOptions",
+        "signature": "type StrictOptions = Except<
+    Options,
+    'isStream' | 'responseType' | 'resolveBodyOnly'
+>;",
+        "source": Object {
+          "filename": "dist/source/types.d.ts",
+          "line": 81,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts#L81",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "StringifyJsonFunction",
+        "kind": "TypeAliasDeclaration",
+        "name": "StringifyJsonFunction",
+        "signature": "type StringifyJsonFunction = (object: unknown) => string;",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 186,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L186",
+        },
+      },
+    ],
+    "variables": Array [
+      Object {
+        "docs": Array [],
+        "id": "defaultHandler",
+        "kind": "VariableDeclaration",
+        "name": "defaultHandler",
+        "signature": "const defaultHandler: HandlerFunction;",
+        "source": Object {
+          "filename": "dist/source/create.d.ts",
+          "line": 2,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/create.d.ts#L2",
+        },
+        "type": "HandlerFunction",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [],
+        "id": "got",
+        "kind": "VariableDeclaration",
+        "name": "got",
+        "signature": "const got: Got;",
+        "source": Object {
+          "filename": "dist/source/index.d.ts",
+          "line": 1,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/index.d.ts#L1",
+        },
+        "type": "Got",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [],
+        "id": "kIsNormalizedAlready",
+        "kind": "VariableDeclaration",
+        "name": "kIsNormalizedAlready",
+        "signature": "const kIsNormalizedAlready: Symbol;",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 36,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L36",
+        },
+        "type": "Symbol",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [],
+        "id": "knownHookEvents",
+        "kind": "VariableDeclaration",
+        "name": "knownHookEvents",
+        "signature": "const knownHookEvents: HookEvent[];",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 179,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L179",
+        },
+        "type": "HookEvent[]",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [],
+        "id": "withoutBody",
+        "kind": "VariableDeclaration",
+        "name": "withoutBody",
+        "signature": "const withoutBody: ReadonlySet<string>;",
+        "source": Object {
+          "filename": "dist/source/core/index.d.ts",
+          "line": 42,
+          "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts#L42",
+        },
+        "type": "ReadonlySet<string>",
+        "variableKind": "const",
+      },
+    ],
+  },
+  "files": Array [
+    Object {
+      "filename": "dist/source/as-promise/types.d.ts",
+      "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/as-promise/types.d.ts",
+    },
+    Object {
+      "filename": "dist/source/core/index.d.ts",
+      "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/core/index.d.ts",
+    },
+    Object {
+      "filename": "dist/source/create.d.ts",
+      "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/create.d.ts",
+    },
+    Object {
+      "filename": "dist/source/index.d.ts",
+      "isIndexFile": true,
+      "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/index.d.ts",
+    },
+    Object {
+      "filename": "dist/source/types.d.ts",
+      "url": "https://github.com/sindresorhus/got/tree/a72ed844c6406b12c84fd5cfe6106e65549946e1/dist/source/types.d.ts",
+    },
+  ],
+  "overview": undefined,
+}
+`;

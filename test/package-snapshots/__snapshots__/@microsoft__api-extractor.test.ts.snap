@@ -1,0 +1,3511 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@microsoft/api-extractor 7.13.0 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [
+      Object {
+        "constructors": Array [],
+        "docs": Array [
+          "/**
+ * This class represents the TypeScript compiler state.  This allows an optimization where multiple invocations
+ * of API Extractor can reuse the same TypeScript compiler analysis.
+ *
+ * @public
+ */",
+        ],
+        "id": "CompilerState",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * Create a compiler state for use with the specified \`IExtractorInvokeOptions\`.
+     */",
+              ],
+              "id": "CompilerState.create",
+              "isStatic": true,
+              "kind": "ClassMethodDeclaration",
+              "name": "create",
+              "signature": "static create: (
+    extractorConfig: ExtractorConfig,
+    options?: ICompilerStateCreateOptions
+) => CompilerState;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 31,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L31",
+              },
+              "type": "(extractorConfig: ExtractorConfig, options?: ICompilerStateCreateOptions) => CompilerState",
+            },
+          ],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * The TypeScript compiler's \`Program\` object, which represents a complete scope of analysis.
+     */",
+              ],
+              "id": "CompilerState.program",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "program",
+              "signature": "readonly program: {};",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 26,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L26",
+              },
+              "type": "{}",
+            },
+          ],
+        },
+        "name": "CompilerState",
+        "signature": "class CompilerState {}",
+        "source": Object {
+          "filename": "dist/rollup.d.ts",
+          "line": 22,
+          "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L22",
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [
+          "/**
+ * The starting point for invoking the API Extractor tool.
+ * @public
+ */",
+        ],
+        "id": "Extractor",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * Invoke API Extractor using an already prepared \`ExtractorConfig\` object.
+     */",
+              ],
+              "id": "Extractor.invoke",
+              "isStatic": true,
+              "kind": "ClassMethodDeclaration",
+              "name": "invoke",
+              "signature": "static invoke: (
+    extractorConfig: ExtractorConfig,
+    options?: IExtractorInvokeOptions
+) => ExtractorResult;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 137,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L137",
+              },
+              "type": "(extractorConfig: ExtractorConfig, options?: IExtractorInvokeOptions) => ExtractorResult",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Load the api-extractor.json config file from the specified path, and then invoke API Extractor.
+     */",
+              ],
+              "id": "Extractor.loadConfigAndInvoke",
+              "isStatic": true,
+              "kind": "ClassMethodDeclaration",
+              "name": "loadConfigAndInvoke",
+              "signature": "static loadConfigAndInvoke: (
+    configFilePath: string,
+    options?: IExtractorInvokeOptions
+) => ExtractorResult;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 133,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L133",
+              },
+              "type": "(configFilePath: string, options?: IExtractorInvokeOptions) => ExtractorResult",
+            },
+          ],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * Returns the package name of the API Extractor NPM package.
+     */",
+              ],
+              "id": "Extractor.packageName",
+              "isStatic": true,
+              "kind": "ClassPropertyDeclaration",
+              "name": "packageName",
+              "signature": "static readonly packageName: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 128,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L128",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Returns the version number of the API Extractor NPM package.
+     */",
+              ],
+              "id": "Extractor.version",
+              "isStatic": true,
+              "kind": "ClassPropertyDeclaration",
+              "name": "version",
+              "signature": "static readonly version: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 124,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L124",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "Extractor",
+        "signature": "class Extractor {}",
+        "source": Object {
+          "filename": "dist/rollup.d.ts",
+          "line": 120,
+          "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L120",
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [
+          "/**
+ * The \`ExtractorConfig\` class loads, validates, interprets, and represents the api-extractor.json config file.
+ * @public
+ */",
+        ],
+        "id": "ExtractorConfig",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * Returns a JSON-like string representing the \`ExtractorConfig\` state, which can be printed to a console
+     * for diagnostic purposes.
+     *
+     * @remarks
+     * This is used by the \\"--diagnostics\\" command-line option.  The string is not intended to be deserialized;
+     * its format may be changed at any time.
+     */",
+              ],
+              "id": "ExtractorConfig.getDiagnosticDump",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "getDiagnosticDump",
+              "signature": "getDiagnosticDump: () => string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 221,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L221",
+              },
+              "type": "() => string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Returns true if the specified file path has the \\".d.ts\\" file extension.
+     */",
+              ],
+              "id": "ExtractorConfig.hasDtsFileExtension",
+              "isStatic": true,
+              "kind": "ClassMethodDeclaration",
+              "name": "hasDtsFileExtension",
+              "signature": "static hasDtsFileExtension: (filePath: string) => boolean;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 278,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L278",
+              },
+              "type": "(filePath: string) => boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Performs only the first half of {@link ExtractorConfig.loadFileAndPrepare}, providing an opportunity to
+     * modify the object before it is passed to {@link ExtractorConfig.prepare}.
+     *
+     * @remarks
+     * Loads the api-extractor.json config file from the specified file path.   If the \\"extends\\" field is present,
+     * the referenced file(s) will be merged.  For any omitted fields, the API Extractor default values are merged.
+     */",
+              ],
+              "id": "ExtractorConfig.loadFile",
+              "isStatic": true,
+              "kind": "ClassMethodDeclaration",
+              "name": "loadFile",
+              "signature": "static loadFile: (jsonFilePath: string) => IConfigFile;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 264,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L264",
+              },
+              "type": "(jsonFilePath: string) => IConfigFile",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Loads the api-extractor.json config file from the specified file path, and prepares an \`ExtractorConfig\` object.
+     *
+     * @remarks
+     * Loads the api-extractor.json config file from the specified file path.   If the \\"extends\\" field is present,
+     * the referenced file(s) will be merged.  For any omitted fields, the API Extractor default values are merged.
+     *
+     * The result is prepared using \`ExtractorConfig.prepare()\`.
+     */",
+              ],
+              "id": "ExtractorConfig.loadFileAndPrepare",
+              "isStatic": true,
+              "kind": "ClassMethodDeclaration",
+              "name": "loadFileAndPrepare",
+              "signature": "static loadFileAndPrepare: (configJsonFilePath: string) => ExtractorConfig;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 255,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L255",
+              },
+              "type": "(configJsonFilePath: string) => ExtractorConfig",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Prepares an \`ExtractorConfig\` object using a configuration that is provided as a runtime object,
+     * rather than reading it from disk.  This allows configurations to be constructed programmatically,
+     * loaded from an alternate source, and/or customized after loading.
+     */",
+              ],
+              "id": "ExtractorConfig.prepare",
+              "isStatic": true,
+              "kind": "ClassMethodDeclaration",
+              "name": "prepare",
+              "signature": "static prepare: (options: IExtractorConfigPrepareOptions) => ExtractorConfig;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 272,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L272",
+              },
+              "type": "(options: IExtractorConfigPrepareOptions) => ExtractorConfig",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Searches for the api-extractor.json config file associated with the specified starting folder,
+     * and loads the file if found.  This lookup supports
+     * {@link https://www.npmjs.com/package/@rushstack/rig-package | rig packages}.
+     *
+     * @remarks
+     * The search will first look for a package.json file in a parent folder of the starting folder;
+     * if found, that will be used as the base folder instead of the starting folder.  If the config
+     * file is not found in \`<baseFolder>/api-extractor.json\` or \`<baseFolder>/config/api-extractor.json\`,
+     * then \`<baseFolder/config/rig.json\` will be checked to see whether a
+     * {@link https://www.npmjs.com/package/@rushstack/rig-package | rig package} is referenced; if so then
+     * the rig's api-extractor.json file will be used instead.  If a config file is found, it will be loaded
+     * and returned with the \`IExtractorConfigPrepareOptions\` object. Otherwise, \`undefined\` is returned
+     * to indicate that API Extractor does not appear to be configured for the specified folder.
+     *
+     * @returns An options object that can be passed to {@link ExtractorConfig.prepare}, or \`undefined\`
+     * if not api-extractor.json file was found.
+     */",
+              ],
+              "id": "ExtractorConfig.tryLoadForFolder",
+              "isStatic": true,
+              "kind": "ClassMethodDeclaration",
+              "name": "tryLoadForFolder",
+              "signature": "static tryLoadForFolder: (
+    options: IExtractorConfigLoadForFolderOptions
+) => IExtractorConfigPrepareOptions | undefined;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 245,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L245",
+              },
+              "type": "(options: IExtractorConfigLoadForFolderOptions) => IExtractorConfigPrepareOptions | undefined",
+            },
+          ],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/** {@inheritDoc IConfigDocModel.apiJsonFilePath} */",
+              ],
+              "id": "ExtractorConfig.apiJsonFilePath",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "apiJsonFilePath",
+              "signature": "readonly apiJsonFilePath: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 188,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L188",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/** {@inheritDoc IConfigApiReport.enabled} */",
+              ],
+              "id": "ExtractorConfig.apiReportEnabled",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "apiReportEnabled",
+              "signature": "readonly apiReportEnabled: boolean;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 180,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L180",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/** {@inheritDoc IConfigDtsRollup.betaTrimmedFilePath} */",
+              ],
+              "id": "ExtractorConfig.betaTrimmedFilePath",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "betaTrimmedFilePath",
+              "signature": "readonly betaTrimmedFilePath: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 194,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L194",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/** {@inheritDoc IConfigFile.bundledPackages} */",
+              ],
+              "id": "ExtractorConfig.bundledPackages",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "bundledPackages",
+              "signature": "readonly bundledPackages: string[];",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 172,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L172",
+              },
+              "type": "string[]",
+            },
+            Object {
+              "docs": Array [
+                "/** {@inheritDoc IConfigDocModel.enabled} */",
+              ],
+              "id": "ExtractorConfig.docModelEnabled",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "docModelEnabled",
+              "signature": "readonly docModelEnabled: boolean;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 186,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L186",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * The config file name \\"api-extractor.json\\".
+     */",
+              ],
+              "id": "ExtractorConfig.FILENAME",
+              "isStatic": true,
+              "kind": "ClassPropertyDeclaration",
+              "name": "FILENAME",
+              "signature": "static readonly FILENAME: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 154,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L154",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * The JSON Schema for API Extractor config file (api-extractor.schema.json).
+     */",
+              ],
+              "id": "ExtractorConfig.jsonSchema",
+              "isStatic": true,
+              "kind": "ClassPropertyDeclaration",
+              "name": "jsonSchema",
+              "signature": "static readonly jsonSchema: any;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 150,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L150",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [
+                "/** {@inheritDoc IConfigFile.mainEntryPointFilePath} */",
+              ],
+              "id": "ExtractorConfig.mainEntryPointFilePath",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "mainEntryPointFilePath",
+              "signature": "readonly mainEntryPointFilePath: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 170,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L170",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/** {@inheritDoc IConfigFile.messages} */",
+              ],
+              "id": "ExtractorConfig.messages",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "messages",
+              "signature": "readonly messages: IExtractorMessagesConfig;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 209,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L209",
+              },
+              "type": "IExtractorMessagesConfig",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Specifies what type of newlines API Extractor should use when writing output files.  By default, the output files
+     * will be written with Windows-style newlines.
+     */",
+              ],
+              "id": "ExtractorConfig.newlineKind",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "newlineKind",
+              "signature": "readonly newlineKind: any;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 207,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L207",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [
+                "/** {@inheritDoc IConfigDtsRollup.omitTrimmingComments} */",
+              ],
+              "id": "ExtractorConfig.omitTrimmingComments",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "omitTrimmingComments",
+              "signature": "readonly omitTrimmingComments: boolean;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 198,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L198",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/** {@inheritDoc IConfigCompiler.overrideTsconfig} */",
+              ],
+              "id": "ExtractorConfig.overrideTsconfig",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "overrideTsconfig",
+              "signature": "readonly overrideTsconfig: {};",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 176,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L176",
+              },
+              "type": "{}",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * The absolute path of the folder containing the package.json file for the working package, or undefined
+     * if API Extractor was invoked without a package.json file.
+     */",
+              ],
+              "id": "ExtractorConfig.packageFolder",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "packageFolder",
+              "signature": "readonly packageFolder: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 168,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L168",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * The parsed package.json file for the working package, or undefined if API Extractor was invoked without
+     * a package.json file.
+     */",
+              ],
+              "id": "ExtractorConfig.packageJson",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "packageJson",
+              "signature": "readonly packageJson: any;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 163,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L163",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [
+                "/** {@inheritDoc IConfigFile.projectFolder} */",
+              ],
+              "id": "ExtractorConfig.projectFolder",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "projectFolder",
+              "signature": "readonly projectFolder: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 158,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L158",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/** {@inheritDoc IConfigDtsRollup.publicTrimmedFilePath} */",
+              ],
+              "id": "ExtractorConfig.publicTrimmedFilePath",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "publicTrimmedFilePath",
+              "signature": "readonly publicTrimmedFilePath: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 196,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L196",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/** The \`reportFolder\` path combined with the \`reportFileName\`. */",
+              ],
+              "id": "ExtractorConfig.reportFilePath",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "reportFilePath",
+              "signature": "readonly reportFilePath: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 182,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L182",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/** The \`reportTempFolder\` path combined with the \`reportFileName\`. */",
+              ],
+              "id": "ExtractorConfig.reportTempFilePath",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "reportTempFilePath",
+              "signature": "readonly reportTempFilePath: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 184,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L184",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/** {@inheritDoc IConfigDtsRollup.enabled} */",
+              ],
+              "id": "ExtractorConfig.rollupEnabled",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "rollupEnabled",
+              "signature": "readonly rollupEnabled: boolean;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 190,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L190",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/** {@inheritDoc IConfigCompiler.skipLibCheck} */",
+              ],
+              "id": "ExtractorConfig.skipLibCheck",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "skipLibCheck",
+              "signature": "readonly skipLibCheck: boolean;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 178,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L178",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/** {@inheritDoc IConfigFile.testMode} */",
+              ],
+              "id": "ExtractorConfig.testMode",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "testMode",
+              "signature": "readonly testMode: boolean;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 211,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L211",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/** {@inheritDoc IConfigCompiler.tsconfigFilePath} */",
+              ],
+              "id": "ExtractorConfig.tsconfigFilePath",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "tsconfigFilePath",
+              "signature": "readonly tsconfigFilePath: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 174,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L174",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/** {@inheritDoc IConfigTsdocMetadata.enabled} */",
+              ],
+              "id": "ExtractorConfig.tsdocMetadataEnabled",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "tsdocMetadataEnabled",
+              "signature": "readonly tsdocMetadataEnabled: boolean;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 200,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L200",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/** {@inheritDoc IConfigTsdocMetadata.tsdocMetadataFilePath} */",
+              ],
+              "id": "ExtractorConfig.tsdocMetadataFilePath",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "tsdocMetadataFilePath",
+              "signature": "readonly tsdocMetadataFilePath: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 202,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L202",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/** {@inheritDoc IConfigDtsRollup.untrimmedFilePath} */",
+              ],
+              "id": "ExtractorConfig.untrimmedFilePath",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "untrimmedFilePath",
+              "signature": "readonly untrimmedFilePath: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 192,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L192",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "ExtractorConfig",
+        "signature": "class ExtractorConfig {}",
+        "source": Object {
+          "filename": "dist/rollup.d.ts",
+          "line": 146,
+          "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L146",
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [
+          "/**
+ * This object is used to report an error or warning that occurred during API Extractor's analysis.
+ *
+ * @public
+ */",
+        ],
+        "id": "ExtractorMessage",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * Returns the message formatted with its identifier and file position.
+     * @remarks
+     * Example:
+     * \`\`\`
+     * src/folder/File.ts:123:4 - (ae-extra-release-tag) The doc comment should not contain more than one release tag.
+     * \`\`\`
+     */",
+              ],
+              "id": "ExtractorMessage.formatMessageWithLocation",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "formatMessageWithLocation",
+              "signature": "formatMessageWithLocation: (
+    workingPackageFolderPath: string | undefined
+) => string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 408,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L408",
+              },
+              "type": "(workingPackageFolderPath: string | undefined) => string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ExtractorMessage.formatMessageWithoutLocation",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "formatMessageWithoutLocation",
+              "signature": "formatMessageWithoutLocation: () => string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 409,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L409",
+              },
+              "type": "() => string",
+            },
+          ],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * The category of issue.
+     */",
+              ],
+              "id": "ExtractorMessage.category",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "category",
+              "signature": "readonly category: ExtractorMessageCategory;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 340,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L340",
+              },
+              "type": "ExtractorMessageCategory",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * If the {@link IExtractorInvokeOptions.messageCallback} sets this property to true, it will prevent the message
+     * from being displayed by API Extractor.
+     *
+     * @remarks
+     * If the \`messageCallback\` routes the message to a custom handler (e.g. a toolchain logger), it should
+     * assign \`handled = true\` to prevent API Extractor from displaying it.  Assigning \`handled = true\` for all messages
+     * would effectively disable all console output from the \`Extractor\` API.
+     *
+     * If \`handled\` is set to true, the message will still be included in the count of errors/warnings;
+     * to discard a message entirely, instead assign \`logLevel = none\`.
+     */",
+              ],
+              "id": "ExtractorMessage.handled",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "handled",
+              "signature": "handled: boolean;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 383,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L383",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Specifies how the message should be reported.
+     *
+     * @remarks
+     * If the {@link IExtractorInvokeOptions.messageCallback} handles the message (i.e. sets \`handled = true\`),
+     * it can use the \`logLevel\` to determine how to display the message.
+     *
+     * Alternatively, if API Extractor is handling the message, the \`messageCallback\` could assign \`logLevel\` to change
+     * how it will be processed.  However, in general the recommended practice is to configure message routing
+     * using the \`messages\` section in api-extractor.json.
+     *
+     * To discard a message entirely, assign \`logLevel = none\`.
+     */",
+              ],
+              "id": "ExtractorMessage.logLevel",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "logLevel",
+              "signature": "logLevel: ExtractorLogLevel;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 398,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L398",
+              },
+              "type": "ExtractorLogLevel",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * A text string that uniquely identifies the issue type.  This identifier can be used to suppress
+     * or configure the reporting of issues, and also to search for help about an issue.
+     */",
+              ],
+              "id": "ExtractorMessage.messageId",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "messageId",
+              "signature": "readonly messageId: any;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 345,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L345",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Additional contextual information about the message that may be useful when reporting errors.
+     * All properties are optional.
+     */",
+              ],
+              "id": "ExtractorMessage.properties",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "properties",
+              "signature": "readonly properties: IExtractorMessageProperties;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 368,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L368",
+              },
+              "type": "IExtractorMessageProperties",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * The column number where the issue occurred in the input source file.  This is not used if \`sourceFilePath\`
+     * is undefined.  The first column number is 1.
+     */",
+              ],
+              "id": "ExtractorMessage.sourceFileColumn",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "sourceFileColumn",
+              "signature": "readonly sourceFileColumn: number;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 363,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L363",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * The line number where the issue occurred in the input source file.  This is not used if \`sourceFilePath\`
+     * is undefined.  The first line number is 1.
+     */",
+              ],
+              "id": "ExtractorMessage.sourceFileLine",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "sourceFileLine",
+              "signature": "readonly sourceFileLine: number;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 358,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L358",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * The absolute path to the affected input source file, if there is one.
+     */",
+              ],
+              "id": "ExtractorMessage.sourceFilePath",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "sourceFilePath",
+              "signature": "readonly sourceFilePath: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 353,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L353",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * The text description of this issue.
+     */",
+              ],
+              "id": "ExtractorMessage.text",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "text",
+              "signature": "readonly text: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 349,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L349",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "ExtractorMessage",
+        "signature": "class ExtractorMessage {}",
+        "source": Object {
+          "filename": "dist/rollup.d.ts",
+          "line": 334,
+          "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L334",
+        },
+      },
+      Object {
+        "constructors": Array [],
+        "docs": Array [
+          "/**
+ * This object represents the outcome of an invocation of API Extractor.
+ *
+ * @public
+ */",
+        ],
+        "id": "ExtractorResult",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * Returns true if the API report was found to have changed.
+     */",
+              ],
+              "id": "ExtractorResult.apiReportChanged",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "apiReportChanged",
+              "signature": "readonly apiReportChanged: boolean;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 562,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L562",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * The TypeScript compiler state that was used.
+     */",
+              ],
+              "id": "ExtractorResult.compilerState",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "compilerState",
+              "signature": "readonly compilerState: CompilerState;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 543,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L543",
+              },
+              "type": "CompilerState",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Reports the number of errors encountered during analysis.
+     *
+     * @remarks
+     * This does not count exceptions, where unexpected issues prematurely abort the operation.
+     */",
+              ],
+              "id": "ExtractorResult.errorCount",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "errorCount",
+              "signature": "readonly errorCount: number;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 569,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L569",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * The API Extractor configuration that was used.
+     */",
+              ],
+              "id": "ExtractorResult.extractorConfig",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "extractorConfig",
+              "signature": "readonly extractorConfig: ExtractorConfig;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 547,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L547",
+              },
+              "type": "ExtractorConfig",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Whether the invocation of API Extractor was successful.  For example, if \`succeeded\` is false, then the build task
+     * would normally return a nonzero process exit code, indicating that the operation failed.
+     *
+     * @remarks
+     *
+     * Normally the operation \\"succeeds\\" if \`errorCount\` and \`warningCount\` are both zero.  However if
+     * {@link IExtractorInvokeOptions.localBuild} is \`true\`, then the operation \\"succeeds\\" if \`errorCount\` is zero
+     * (i.e. warnings are ignored).
+     */",
+              ],
+              "id": "ExtractorResult.succeeded",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "succeeded",
+              "signature": "readonly succeeded: boolean;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 558,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L558",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Reports the number of warnings encountered during analysis.
+     *
+     * @remarks
+     * This does not count warnings that are emitted in the API report file.
+     */",
+              ],
+              "id": "ExtractorResult.warningCount",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "warningCount",
+              "signature": "readonly warningCount: number;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 576,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L576",
+              },
+              "type": "number",
+            },
+          ],
+        },
+        "name": "ExtractorResult",
+        "signature": "class ExtractorResult {}",
+        "source": Object {
+          "filename": "dist/rollup.d.ts",
+          "line": 539,
+          "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L539",
+        },
+      },
+    ],
+    "enums": Array [
+      Object {
+        "docs": Array [
+          "/**
+ * Unique identifiers for console messages reported by API Extractor.
+ *
+ * @remarks
+ *
+ * These strings are possible values for the {@link ExtractorMessage.messageId} property
+ * when the \`ExtractorMessage.category\` is {@link ExtractorMessageCategory.Console}.
+ *
+ * @public
+ */",
+        ],
+        "id": "ConsoleMessageId",
+        "isConst": true,
+        "kind": "EnumDeclaration",
+        "members": Array [
+          Object {
+            "docs": Array [
+              "/**
+     * \\"You have changed the public API signature for this project.  Updating ___\\"
+     */",
+            ],
+            "id": "ConsoleMessageId.ApiReportCopied",
+            "kind": "EnumMemberDeclaration",
+            "name": "ApiReportCopied",
+            "signature": "ApiReportCopied = 'console-api-report-copied'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 97,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L97",
+            },
+            "value": "console-api-report-copied",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"The API report file was missing, so a new file was created. Please add this file to Git: ___\\"
+     */",
+            ],
+            "id": "ConsoleMessageId.ApiReportCreated",
+            "kind": "EnumMemberDeclaration",
+            "name": "ApiReportCreated",
+            "signature": "ApiReportCreated = 'console-api-report-created'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 105,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L105",
+            },
+            "value": "console-api-report-created",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"Unable to create the API report file. Please make sure the target folder exists: ___\\"
+     */",
+            ],
+            "id": "ConsoleMessageId.ApiReportFolderMissing",
+            "kind": "EnumMemberDeclaration",
+            "name": "ApiReportFolderMissing",
+            "signature": "ApiReportFolderMissing = 'console-api-report-folder-missing'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 109,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L109",
+            },
+            "value": "console-api-report-folder-missing",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"You have changed the public API signature for this project.
+     * Please copy the file ___ to ___, or perform a local build (which does this automatically).
+     * See the Git repo documentation for more info.\\"
+     *
+     * OR
+     *
+     * \\"The API report file is missing.
+     * Please copy the file ___ to ___, or perform a local build (which does this automatically).
+     * See the Git repo documentation for more info.\\"
+     */",
+            ],
+            "id": "ConsoleMessageId.ApiReportNotCopied",
+            "kind": "EnumMemberDeclaration",
+            "name": "ApiReportNotCopied",
+            "signature": "ApiReportNotCopied = 'console-api-report-not-copied'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 93,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L93",
+            },
+            "value": "console-api-report-not-copied",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"The API report is up to date: ___\\"
+     */",
+            ],
+            "id": "ConsoleMessageId.ApiReportUnchanged",
+            "kind": "EnumMemberDeclaration",
+            "name": "ApiReportUnchanged",
+            "signature": "ApiReportUnchanged = 'console-api-report-unchanged'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 101,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L101",
+            },
+            "value": "console-api-report-unchanged",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"The target project appears to use TypeScript ___ which is newer than the bundled compiler engine;
+     * consider upgrading API Extractor.\\"
+     */",
+            ],
+            "id": "ConsoleMessageId.CompilerVersionNotice",
+            "kind": "EnumMemberDeclaration",
+            "name": "CompilerVersionNotice",
+            "signature": "CompilerVersionNotice = 'console-compiler-version-notice'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 69,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L69",
+            },
+            "value": "console-compiler-version-notice",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * Used for the information printed when the \\"--diagnostics\\" flag is enabled.
+     */",
+            ],
+            "id": "ConsoleMessageId.Diagnostics",
+            "kind": "EnumMemberDeclaration",
+            "name": "Diagnostics",
+            "signature": "Diagnostics = 'console-diagnostics'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 113,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L113",
+            },
+            "value": "console-diagnostics",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"Found metadata in ___\\"
+     */",
+            ],
+            "id": "ConsoleMessageId.FoundTSDocMetadata",
+            "kind": "EnumMemberDeclaration",
+            "name": "FoundTSDocMetadata",
+            "signature": "FoundTSDocMetadata = 'console-found-tsdoc-metadata'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 73,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L73",
+            },
+            "value": "console-found-tsdoc-metadata",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"Analysis will use the bundled TypeScript version ___\\"
+     */",
+            ],
+            "id": "ConsoleMessageId.Preamble",
+            "kind": "EnumMemberDeclaration",
+            "name": "Preamble",
+            "signature": "Preamble = 'console-preamble'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 64,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L64",
+            },
+            "value": "console-preamble",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"Writing: ___\\"
+     */",
+            ],
+            "id": "ConsoleMessageId.WritingDocModelFile",
+            "kind": "EnumMemberDeclaration",
+            "name": "WritingDocModelFile",
+            "signature": "WritingDocModelFile = 'console-writing-doc-model-file'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 77,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L77",
+            },
+            "value": "console-writing-doc-model-file",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"Writing package typings: ___\\"
+     */",
+            ],
+            "id": "ConsoleMessageId.WritingDtsRollup",
+            "kind": "EnumMemberDeclaration",
+            "name": "WritingDtsRollup",
+            "signature": "WritingDtsRollup = 'console-writing-dts-rollup'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 81,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L81",
+            },
+            "value": "console-writing-dts-rollup",
+          },
+        ],
+        "name": "ConsoleMessageId",
+        "signature": "const enum ConsoleMessageId {
+    Preamble = 'console-preamble',
+    CompilerVersionNotice = 'console-compiler-version-notice',
+    FoundTSDocMetadata = 'console-found-tsdoc-metadata',
+    WritingDocModelFile = 'console-writing-doc-model-file',
+    WritingDtsRollup = 'console-writing-dts-rollup',
+    ApiReportNotCopied = 'console-api-report-not-copied',
+    ApiReportCopied = 'console-api-report-copied',
+    ApiReportUnchanged = 'console-api-report-unchanged',
+    ApiReportCreated = 'console-api-report-created',
+    ApiReportFolderMissing = 'console-api-report-folder-missing',
+    Diagnostics = 'console-diagnostics',
+}",
+        "source": Object {
+          "filename": "dist/rollup.d.ts",
+          "line": 60,
+          "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L60",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Used with {@link IConfigMessageReportingRule.logLevel} and {@link IExtractorInvokeOptions.messageCallback}.
+ *
+ * @remarks
+ * This is part of the {@link IConfigFile} structure.
+ *
+ * @public
+ */",
+        ],
+        "id": "ExtractorLogLevel",
+        "isConst": true,
+        "kind": "EnumDeclaration",
+        "members": Array [
+          Object {
+            "docs": Array [
+              "/**
+     * The message will be displayed as an error.
+     *
+     * @remarks
+     * Errors typically cause the build to fail and return a nonzero exit code.
+     */",
+            ],
+            "id": "ExtractorLogLevel.Error",
+            "kind": "EnumMemberDeclaration",
+            "name": "Error",
+            "signature": "Error = 'error'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 301,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L301",
+            },
+            "value": "error",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * The message will be displayed as an informational message.
+     *
+     * @remarks
+     * Informational messages may contain newlines to ensure nice formatting of the output,
+     * however word-wrapping is the responsibility of the message handler.
+     */",
+            ],
+            "id": "ExtractorLogLevel.Info",
+            "kind": "EnumMemberDeclaration",
+            "name": "Info",
+            "signature": "Info = 'info'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 317,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L317",
+            },
+            "value": "info",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * The message will be discarded entirely.
+     */",
+            ],
+            "id": "ExtractorLogLevel.None",
+            "kind": "EnumMemberDeclaration",
+            "name": "None",
+            "signature": "None = 'none'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 326,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L326",
+            },
+            "value": "none",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * The message will be displayed only when \\"verbose\\" output is requested, e.g. using the \`--verbose\`
+     * command line option.
+     */",
+            ],
+            "id": "ExtractorLogLevel.Verbose",
+            "kind": "EnumMemberDeclaration",
+            "name": "Verbose",
+            "signature": "Verbose = 'verbose'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 322,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L322",
+            },
+            "value": "verbose",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * The message will be displayed as an warning.
+     *
+     * @remarks
+     * Warnings typically cause a production build fail and return a nonzero exit code.  For a non-production build
+     * (e.g. using the \`--local\` option with \`api-extractor run\`), the warning is displayed but the build will not fail.
+     */",
+            ],
+            "id": "ExtractorLogLevel.Warning",
+            "kind": "EnumMemberDeclaration",
+            "name": "Warning",
+            "signature": "Warning = 'warning'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 309,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L309",
+            },
+            "value": "warning",
+          },
+        ],
+        "name": "ExtractorLogLevel",
+        "signature": "const enum ExtractorLogLevel {
+    Error = 'error',
+    Warning = 'warning',
+    Info = 'info',
+    Verbose = 'verbose',
+    None = 'none',
+}",
+        "source": Object {
+          "filename": "dist/rollup.d.ts",
+          "line": 294,
+          "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L294",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Specifies a category of messages for use with {@link ExtractorMessage}.
+ * @public
+ */",
+        ],
+        "id": "ExtractorMessageCategory",
+        "isConst": true,
+        "kind": "EnumDeclaration",
+        "members": Array [
+          Object {
+            "docs": Array [
+              "/**
+     * Messages originating from the TypeScript compiler.
+     *
+     * @remarks
+     * These strings begin with the prefix \\"TS\\" and have a numeric error code.
+     * Example: \`TS2551\`
+     */",
+            ],
+            "id": "ExtractorMessageCategory.Compiler",
+            "kind": "EnumMemberDeclaration",
+            "name": "Compiler",
+            "signature": "Compiler = 'Compiler'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 424,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L424",
+            },
+            "value": "Compiler",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * Console messages communicate the progress of the overall operation.  They may include newlines to ensure
+     * nice formatting.  They are output in real time, and cannot be routed to the API Report file.
+     *
+     * @remarks
+     * These strings begin with the prefix \\"console-\\".
+     * Example: \`console-writing-typings-file\`
+     */",
+            ],
+            "id": "ExtractorMessageCategory.Console",
+            "kind": "EnumMemberDeclaration",
+            "name": "Console",
+            "signature": "Console = 'console'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 449,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L449",
+            },
+            "value": "console",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * Messages related to API Extractor's analysis.
+     *
+     * @remarks
+     * These strings begin with the prefix \\"ae-\\".
+     * Example: \`ae-extra-release-tag\`
+     */",
+            ],
+            "id": "ExtractorMessageCategory.Extractor",
+            "kind": "EnumMemberDeclaration",
+            "name": "Extractor",
+            "signature": "Extractor = 'Extractor'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 440,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L440",
+            },
+            "value": "Extractor",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * Messages related to parsing of TSDoc comments.
+     *
+     * @remarks
+     * These strings begin with the prefix \\"tsdoc-\\".
+     * Example: \`tsdoc-link-tag-unescaped-text\`
+     */",
+            ],
+            "id": "ExtractorMessageCategory.TSDoc",
+            "kind": "EnumMemberDeclaration",
+            "name": "TSDoc",
+            "signature": "TSDoc = 'TSDoc'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 432,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L432",
+            },
+            "value": "TSDoc",
+          },
+        ],
+        "name": "ExtractorMessageCategory",
+        "signature": "const enum ExtractorMessageCategory {
+    Compiler = 'Compiler',
+    TSDoc = 'TSDoc',
+    Extractor = 'Extractor',
+    Console = 'console',
+}",
+        "source": Object {
+          "filename": "dist/rollup.d.ts",
+          "line": 416,
+          "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L416",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Unique identifiers for messages reported by API Extractor during its analysis.
+ *
+ * @remarks
+ *
+ * These strings are possible values for the {@link ExtractorMessage.messageId} property
+ * when the \`ExtractorMessage.category\` is {@link ExtractorMessageCategory.Extractor}.
+ *
+ * @public
+ */",
+        ],
+        "id": "ExtractorMessageId",
+        "isConst": true,
+        "kind": "EnumDeclaration",
+        "members": Array [
+          Object {
+            "docs": Array [
+              "/**
+     * \\"The \`@inheritDoc\` tag for ___ refers to its own declaration.\\"
+     */",
+            ],
+            "id": "ExtractorMessageId.CyclicInheritDoc",
+            "kind": "EnumMemberDeclaration",
+            "name": "CyclicInheritDoc",
+            "signature": "CyclicInheritDoc = 'ae-cyclic-inherit-doc'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 519,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L519",
+            },
+            "value": "ae-cyclic-inherit-doc",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"This symbol has another declaration with a different release tag.\\"
+     */",
+            ],
+            "id": "ExtractorMessageId.DifferentReleaseTags",
+            "kind": "EnumMemberDeclaration",
+            "name": "DifferentReleaseTags",
+            "signature": "DifferentReleaseTags = 'ae-different-release-tags'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 470,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L470",
+            },
+            "value": "ae-different-release-tags",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"The doc comment should not contain more than one release tag.\\"
+     */",
+            ],
+            "id": "ExtractorMessageId.ExtraReleaseTag",
+            "kind": "EnumMemberDeclaration",
+            "name": "ExtraReleaseTag",
+            "signature": "ExtraReleaseTag = 'ae-extra-release-tag'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 466,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L466",
+            },
+            "value": "ae-extra-release-tag",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"The symbol ___ needs to be exported by the entry point ___.\\"
+     */",
+            ],
+            "id": "ExtractorMessageId.ForgottenExport",
+            "kind": "EnumMemberDeclaration",
+            "name": "ForgottenExport",
+            "signature": "ForgottenExport = 'ae-forgotten-export'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 486,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L486",
+            },
+            "value": "ae-forgotten-export",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"The symbol ___ is marked as ___, but its signature references ___ which is marked as ___.\\"
+     */",
+            ],
+            "id": "ExtractorMessageId.IncompatibleReleaseTags",
+            "kind": "EnumMemberDeclaration",
+            "name": "IncompatibleReleaseTags",
+            "signature": "IncompatibleReleaseTags = 'ae-incompatible-release-tags'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 474,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L474",
+            },
+            "value": "ae-incompatible-release-tags",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"The name ___ should be prefixed with an underscore because the declaration is marked as \`@internal\`.\\"
+     */",
+            ],
+            "id": "ExtractorMessageId.InternalMissingUnderscore",
+            "kind": "EnumMemberDeclaration",
+            "name": "InternalMissingUnderscore",
+            "signature": "InternalMissingUnderscore = 'ae-internal-missing-underscore'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 490,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L490",
+            },
+            "value": "ae-internal-missing-underscore",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"Mixed release tags are not allowed for ___ because one of its declarations is marked as \`@internal\`.\\"
+     */",
+            ],
+            "id": "ExtractorMessageId.InternalMixedReleaseTag",
+            "kind": "EnumMemberDeclaration",
+            "name": "InternalMixedReleaseTag",
+            "signature": "InternalMixedReleaseTag = 'ae-internal-mixed-release-tag'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 494,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L494",
+            },
+            "value": "ae-internal-mixed-release-tag",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"The \`@packageDocumentation\` comment must appear at the top of entry point *.d.ts file.\\"
+     */",
+            ],
+            "id": "ExtractorMessageId.MisplacedPackageTag",
+            "kind": "EnumMemberDeclaration",
+            "name": "MisplacedPackageTag",
+            "signature": "MisplacedPackageTag = 'ae-misplaced-package-tag'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 482,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L482",
+            },
+            "value": "ae-misplaced-package-tag",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"The property ___ has a setter but no getter.\\"
+     */",
+            ],
+            "id": "ExtractorMessageId.MissingGetter",
+            "kind": "EnumMemberDeclaration",
+            "name": "MissingGetter",
+            "signature": "MissingGetter = 'ae-missing-getter'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 531,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L531",
+            },
+            "value": "ae-missing-getter",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"___ is exported by the package, but it is missing a release tag (\`@alpha\`, \`@beta\`, \`@public\`, or \`@internal\`).\\"
+     */",
+            ],
+            "id": "ExtractorMessageId.MissingReleaseTag",
+            "kind": "EnumMemberDeclaration",
+            "name": "MissingReleaseTag",
+            "signature": "MissingReleaseTag = 'ae-missing-release-tag'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 478,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L478",
+            },
+            "value": "ae-missing-release-tag",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"The \`@preapproved\` tag cannot be applied to ___ without an \`@internal\` release tag.\\"
+     */",
+            ],
+            "id": "ExtractorMessageId.PreapprovedBadReleaseTag",
+            "kind": "EnumMemberDeclaration",
+            "name": "PreapprovedBadReleaseTag",
+            "signature": "PreapprovedBadReleaseTag = 'ae-preapproved-bad-release-tag'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 502,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L502",
+            },
+            "value": "ae-preapproved-bad-release-tag",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"The \`@preapproved\` tag cannot be applied to ___ because it is not a supported declaration type.\\"
+     */",
+            ],
+            "id": "ExtractorMessageId.PreapprovedUnsupportedType",
+            "kind": "EnumMemberDeclaration",
+            "name": "PreapprovedUnsupportedType",
+            "signature": "PreapprovedUnsupportedType = 'ae-preapproved-unsupported-type'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 498,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L498",
+            },
+            "value": "ae-preapproved-unsupported-type",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"The doc comment for the property ___ must appear on the getter, not the setter.\\"
+     */",
+            ],
+            "id": "ExtractorMessageId.SetterWithDocs",
+            "kind": "EnumMemberDeclaration",
+            "name": "SetterWithDocs",
+            "signature": "SetterWithDocs = 'ae-setter-with-docs'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 527,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L527",
+            },
+            "value": "ae-setter-with-docs",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"The \`@inheritDoc\` tag needs a TSDoc declaration reference; signature matching is not supported yet.\\"
+     *
+     * @privateRemarks
+     * In the future, we will implement signature matching so that you can write \`{@inheritDoc}\` and API Extractor
+     * will find a corresponding member from a base class (or implemented interface).  Until then, the tag
+     * always needs an explicit declaration reference such as \`{@inhertDoc MyBaseClass.sameMethod}\`.
+     */",
+            ],
+            "id": "ExtractorMessageId.UnresolvedInheritDocBase",
+            "kind": "EnumMemberDeclaration",
+            "name": "UnresolvedInheritDocBase",
+            "signature": "UnresolvedInheritDocBase = 'ae-unresolved-inheritdoc-base'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 515,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L515",
+            },
+            "value": "ae-unresolved-inheritdoc-base",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"The \`@inheritDoc\` reference could not be resolved.\\"
+     */",
+            ],
+            "id": "ExtractorMessageId.UnresolvedInheritDocReference",
+            "kind": "EnumMemberDeclaration",
+            "name": "UnresolvedInheritDocReference",
+            "signature": "UnresolvedInheritDocReference = 'ae-unresolved-inheritdoc-reference'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 506,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L506",
+            },
+            "value": "ae-unresolved-inheritdoc-reference",
+          },
+          Object {
+            "docs": Array [
+              "/**
+     * \\"The \`@link\` reference could not be resolved.\\"
+     */",
+            ],
+            "id": "ExtractorMessageId.UnresolvedLink",
+            "kind": "EnumMemberDeclaration",
+            "name": "UnresolvedLink",
+            "signature": "UnresolvedLink = 'ae-unresolved-link'",
+            "source": Object {
+              "filename": "dist/rollup.d.ts",
+              "line": 523,
+              "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L523",
+            },
+            "value": "ae-unresolved-link",
+          },
+        ],
+        "name": "ExtractorMessageId",
+        "signature": "const enum ExtractorMessageId {
+    ExtraReleaseTag = 'ae-extra-release-tag',
+    DifferentReleaseTags = 'ae-different-release-tags',
+    IncompatibleReleaseTags = 'ae-incompatible-release-tags',
+    MissingReleaseTag = 'ae-missing-release-tag',
+    MisplacedPackageTag = 'ae-misplaced-package-tag',
+    ForgottenExport = 'ae-forgotten-export',
+    InternalMissingUnderscore = 'ae-internal-missing-underscore',
+    InternalMixedReleaseTag = 'ae-internal-mixed-release-tag',
+    PreapprovedUnsupportedType = 'ae-preapproved-unsupported-type',
+    PreapprovedBadReleaseTag = 'ae-preapproved-bad-release-tag',
+    UnresolvedInheritDocReference = 'ae-unresolved-inheritdoc-reference',
+    UnresolvedInheritDocBase = 'ae-unresolved-inheritdoc-base',
+    CyclicInheritDoc = 'ae-cyclic-inherit-doc',
+    UnresolvedLink = 'ae-unresolved-link',
+    SetterWithDocs = 'ae-setter-with-docs',
+    MissingGetter = 'ae-missing-getter',
+}",
+        "source": Object {
+          "filename": "dist/rollup.d.ts",
+          "line": 462,
+          "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L462",
+        },
+      },
+    ],
+    "functions": Array [],
+    "interfaces": Array [
+      Object {
+        "docs": Array [
+          "/**
+ * Options for {@link CompilerState.create}
+ * @public
+ */",
+        ],
+        "id": "ICompilerStateCreateOptions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * Additional .d.ts files to include in the analysis.
+     */",
+              ],
+              "id": "ICompilerStateCreateOptions.additionalEntryPoints",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "additionalEntryPoints",
+              "signature": "additionalEntryPoints?: string[];",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 591,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L591",
+              },
+              "type": "string[]",
+            },
+            Object {
+              "docs": Array [
+                "/** {@inheritDoc IExtractorInvokeOptions.typescriptCompilerFolder} */",
+              ],
+              "id": "ICompilerStateCreateOptions.typescriptCompilerFolder",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "typescriptCompilerFolder",
+              "signature": "typescriptCompilerFolder?: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 587,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L587",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "ICompilerStateCreateOptions",
+        "signature": "interface ICompilerStateCreateOptions {}",
+        "source": Object {
+          "filename": "dist/rollup.d.ts",
+          "line": 585,
+          "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L585",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Configures how the API report files (*.api.md) will be generated.
+ *
+ * @remarks
+ * This is part of the {@link IConfigFile} structure.
+ *
+ * @public
+ */",
+        ],
+        "id": "IConfigApiReport",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * Whether to generate an API report.
+     */",
+              ],
+              "id": "IConfigApiReport.enabled",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "enabled",
+              "signature": "enabled: boolean;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 606,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L606",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * The filename for the API report files.  It will be combined with \`reportFolder\` or \`reportTempFolder\` to produce
+     * a full output filename.
+     *
+     * @remarks
+     * The file extension should be \\".api.md\\", and the string should not contain a path separator such as \`\\\\\` or \`/\`.
+     */",
+              ],
+              "id": "IConfigApiReport.reportFileName",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "reportFileName",
+              "signature": "reportFileName?: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 614,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L614",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Specifies the folder where the API report file is written.  The file name portion is determined by
+     * the \`reportFileName\` setting.
+     *
+     * @remarks
+     * The API report file is normally tracked by Git.  Changes to it can be used to trigger a branch policy,
+     * e.g. for an API review.
+     *
+     * The path is resolved relative to the folder of the config file that contains the setting; to change this,
+     * prepend a folder token such as \`<projectFolder>\`.
+     */",
+              ],
+              "id": "IConfigApiReport.reportFolder",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "reportFolder",
+              "signature": "reportFolder?: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 626,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L626",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Specifies the folder where the temporary report file is written.  The file name portion is determined by
+     * the \`reportFileName\` setting.
+     *
+     * @remarks
+     * After the temporary file is written to disk, it is compared with the file in the \`reportFolder\`.
+     * If they are different, a production build will fail.
+     *
+     * The path is resolved relative to the folder of the config file that contains the setting; to change this,
+     * prepend a folder token such as \`<projectFolder>\`.
+     */",
+              ],
+              "id": "IConfigApiReport.reportTempFolder",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "reportTempFolder",
+              "signature": "reportTempFolder?: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 638,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L638",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "IConfigApiReport",
+        "signature": "interface IConfigApiReport {}",
+        "source": Object {
+          "filename": "dist/rollup.d.ts",
+          "line": 602,
+          "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L602",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Determines how the TypeScript compiler engine will be invoked by API Extractor.
+ *
+ * @remarks
+ * This is part of the {@link IConfigFile} structure.
+ *
+ * @public
+ */",
+        ],
+        "id": "IConfigCompiler",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * Provides a compiler configuration that will be used instead of reading the tsconfig.json file from disk.
+     *
+     * @remarks
+     * The value must conform to the TypeScript tsconfig schema:
+     *
+     * http://json.schemastore.org/tsconfig
+     *
+     * If omitted, then the tsconfig.json file will instead be read from the projectFolder.
+     */",
+              ],
+              "id": "IConfigCompiler.overrideTsconfig",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "overrideTsconfig",
+              "signature": "overrideTsconfig?: {};",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 670,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L670",
+              },
+              "type": "{}",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * This option causes the compiler to be invoked with the \`--skipLibCheck\` option.
+     *
+     * @remarks
+     * This option is not recommended and may cause API Extractor to produce incomplete or incorrect declarations,
+     * but it may be required when dependencies contain declarations that are incompatible with the TypeScript engine
+     * that API Extractor uses for its analysis.  Where possible, the underlying issue should be fixed rather than
+     * relying on skipLibCheck.
+     */",
+              ],
+              "id": "IConfigCompiler.skipLibCheck",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "skipLibCheck",
+              "signature": "skipLibCheck?: boolean;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 680,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L680",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Specifies the path to the tsconfig.json file to be used by API Extractor when analyzing the project.
+     *
+     * @remarks
+     * The path is resolved relative to the folder of the config file that contains the setting; to change this,
+     * prepend a folder token such as \`<projectFolder>\`.
+     *
+     * Note: This setting will be ignored if \`overrideTsconfig\` is used.
+     */",
+              ],
+              "id": "IConfigCompiler.tsconfigFilePath",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "tsconfigFilePath",
+              "signature": "tsconfigFilePath?: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 659,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L659",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "IConfigCompiler",
+        "signature": "interface IConfigCompiler {}",
+        "source": Object {
+          "filename": "dist/rollup.d.ts",
+          "line": 649,
+          "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L649",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Configures how the doc model file (*.api.json) will be generated.
+ *
+ * @remarks
+ * This is part of the {@link IConfigFile} structure.
+ *
+ * @public
+ */",
+        ],
+        "id": "IConfigDocModel",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * The output path for the doc model file.  The file extension should be \\".api.json\\".
+     *
+     * @remarks
+     * The path is resolved relative to the folder of the config file that contains the setting; to change this,
+     * prepend a folder token such as \`<projectFolder>\`.
+     */",
+              ],
+              "id": "IConfigDocModel.apiJsonFilePath",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "apiJsonFilePath",
+              "signature": "apiJsonFilePath?: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 703,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L703",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Whether to generate a doc model file.
+     */",
+              ],
+              "id": "IConfigDocModel.enabled",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "enabled",
+              "signature": "enabled: boolean;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 695,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L695",
+              },
+              "type": "boolean",
+            },
+          ],
+        },
+        "name": "IConfigDocModel",
+        "signature": "interface IConfigDocModel {}",
+        "source": Object {
+          "filename": "dist/rollup.d.ts",
+          "line": 691,
+          "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L691",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Configures how the .d.ts rollup file will be generated.
+ *
+ * @remarks
+ * This is part of the {@link IConfigFile} structure.
+ *
+ * @public
+ */",
+        ],
+        "id": "IConfigDtsRollup",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * Specifies the output path for a .d.ts rollup file to be generated with trimming for a \\"beta\\" release.
+     *
+     * @remarks
+     * This file will include only declarations that are marked as \`@public\` or \`@beta\`.
+     *
+     * The path is resolved relative to the folder of the config file that contains the setting; to change this,
+     * prepend a folder token such as \`<projectFolder>\`.
+     */",
+              ],
+              "id": "IConfigDtsRollup.betaTrimmedFilePath",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "betaTrimmedFilePath",
+              "signature": "betaTrimmedFilePath?: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 740,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L740",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Whether to generate the .d.ts rollup file.
+     */",
+              ],
+              "id": "IConfigDtsRollup.enabled",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "enabled",
+              "signature": "enabled: boolean;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 718,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L718",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * When a declaration is trimmed, by default it will be replaced by a code comment such as
+     * \\"Excluded from this release type: exampleMember\\".  Set \\"omitTrimmingComments\\" to true to remove the
+     * declaration completely.
+     */",
+              ],
+              "id": "IConfigDtsRollup.omitTrimmingComments",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "omitTrimmingComments",
+              "signature": "omitTrimmingComments?: boolean;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 758,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L758",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Specifies the output path for a .d.ts rollup file to be generated with trimming for a \\"public\\" release.
+     *
+     * @remarks
+     * This file will include only declarations that are marked as \`@public\`.
+     *
+     * If the path is an empty string, then this file will not be written.
+     *
+     * The path is resolved relative to the folder of the config file that contains the setting; to change this,
+     * prepend a folder token such as \`<projectFolder>\`.
+     */",
+              ],
+              "id": "IConfigDtsRollup.publicTrimmedFilePath",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "publicTrimmedFilePath",
+              "signature": "publicTrimmedFilePath?: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 752,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L752",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Specifies the output path for a .d.ts rollup file to be generated without any trimming.
+     *
+     * @remarks
+     * This file will include all declarations that are exported by the main entry point.
+     *
+     * If the path is an empty string, then this file will not be written.
+     *
+     * The path is resolved relative to the folder of the config file that contains the setting; to change this,
+     * prepend a folder token such as \`<projectFolder>\`.
+     */",
+              ],
+              "id": "IConfigDtsRollup.untrimmedFilePath",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "untrimmedFilePath",
+              "signature": "untrimmedFilePath?: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 730,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L730",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "IConfigDtsRollup",
+        "signature": "interface IConfigDtsRollup {}",
+        "source": Object {
+          "filename": "dist/rollup.d.ts",
+          "line": 714,
+          "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L714",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Configuration options for the API Extractor tool.  These options can be constructed programmatically
+ * or loaded from the api-extractor.json config file using the {@link ExtractorConfig} class.
+ *
+ * @public
+ */",
+        ],
+        "id": "IConfigFile",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * {@inheritDoc IConfigApiReport}
+     */",
+              ],
+              "id": "IConfigFile.apiReport",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "apiReport",
+              "signature": "apiReport?: IConfigApiReport;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 832,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L832",
+              },
+              "type": "IConfigApiReport",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * A list of NPM package names whose exports should be treated as part of this package.
+     *
+     * @remarks
+     *
+     * For example, suppose that Webpack is used to generate a distributed bundle for the project \`library1\`,
+     * and another NPM package \`library2\` is embedded in this bundle.  Some types from \`library2\` may become part
+     * of the exported API for \`library1\`, but by default API Extractor would generate a .d.ts rollup that explicitly
+     * imports \`library2\`.  To avoid this, we can specify:
+     *
+     * \`\`\`js
+     *   \\"bundledPackages\\": [ \\"library2\\" ],
+     * \`\`\`
+     *
+     * This would direct API Extractor to embed those types directly in the .d.ts rollup, as if they had been
+     * local files for \`library1\`.
+     */",
+              ],
+              "id": "IConfigFile.bundledPackages",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "bundledPackages",
+              "signature": "bundledPackages?: string[];",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 824,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L824",
+              },
+              "type": "string[]",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * {@inheritDoc IConfigCompiler}
+     */",
+              ],
+              "id": "IConfigFile.compiler",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "compiler",
+              "signature": "compiler?: IConfigCompiler;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 828,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L828",
+              },
+              "type": "IConfigCompiler",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * {@inheritDoc IConfigDocModel}
+     */",
+              ],
+              "id": "IConfigFile.docModel",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "docModel",
+              "signature": "docModel?: IConfigDocModel;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 836,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L836",
+              },
+              "type": "IConfigDocModel",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * {@inheritDoc IConfigDtsRollup}
+     * @beta
+     */",
+              ],
+              "id": "IConfigFile.dtsRollup",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "dtsRollup",
+              "signature": "dtsRollup?: IConfigDtsRollup;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 841,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L841",
+              },
+              "type": "IConfigDtsRollup",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Optionally specifies another JSON config file that this file extends from.  This provides a way for
+     * standard settings to be shared across multiple projects.
+     *
+     * @remarks
+     * If the path starts with \`./\` or \`../\`, the path is resolved relative to the folder of the file that contains
+     * the \`extends\` field.  Otherwise, the first path segment is interpreted as an NPM package name, and will be
+     * resolved using NodeJS \`require()\`.
+     */",
+              ],
+              "id": "IConfigFile.extends",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "extends",
+              "signature": "extends?: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 777,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L777",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Specifies the .d.ts file to be used as the starting point for analysis.  API Extractor
+     * analyzes the symbols exported by this module.
+     *
+     * @remarks
+     *
+     * The file extension must be \\".d.ts\\" and not \\".ts\\".
+     * The path is resolved relative to the \\"projectFolder\\" location.
+     */",
+              ],
+              "id": "IConfigFile.mainEntryPointFilePath",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "mainEntryPointFilePath",
+              "signature": "mainEntryPointFilePath: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 806,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L806",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * {@inheritDoc IExtractorMessagesConfig}
+     */",
+              ],
+              "id": "IConfigFile.messages",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "messages",
+              "signature": "messages?: IExtractorMessagesConfig;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 859,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L859",
+              },
+              "type": "IExtractorMessagesConfig",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Specifies what type of newlines API Extractor should use when writing output files.
+     *
+     * @remarks
+     * By default, the output files will be written with Windows-style newlines.
+     * To use POSIX-style newlines, specify \\"lf\\" instead.
+     * To use the OS's default newline kind, specify \\"os\\".
+     */",
+              ],
+              "id": "IConfigFile.newlineKind",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "newlineKind",
+              "signature": "newlineKind?: 'crlf' | 'lf' | 'os';",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 855,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L855",
+              },
+              "type": "\\"crlf\\" | \\"lf\\" | \\"os\\"",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Determines the \`<projectFolder>\` token that can be used with other config file settings.  The project folder
+     * typically contains the tsconfig.json and package.json config files, but the path is user-defined.
+     *
+     * @remarks
+     *
+     * The path is resolved relative to the folder of the config file that contains the setting.
+     *
+     * The default value for \`projectFolder\` is the token \`<lookup>\`, which means the folder is determined using
+     * the following heuristics:
+     *
+     * If the config/rig.json system is used (as defined by {@link https://www.npmjs.com/package/@rushstack/rig-package
+     * | @rushstack/rig-package}), then the \`<lookup>\` value will be the package folder that referenced the rig.
+     *
+     * Otherwise, the \`<lookup>\` value is determined by traversing parent folders, starting from the folder containing
+     * api-extractor.json, and stopping at the first folder that contains a tsconfig.json file.  If a tsconfig.json file
+     * cannot be found in this way, then an error will be reported.
+     */",
+              ],
+              "id": "IConfigFile.projectFolder",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "projectFolder",
+              "signature": "projectFolder?: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 796,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L796",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Set to true when invoking API Extractor's test harness.
+     * @remarks
+     * When \`testMode\` is true, the \`toolVersion\` field in the .api.json file is assigned an empty string
+     * to prevent spurious diffs in output files tracked for tests.
+     */",
+              ],
+              "id": "IConfigFile.testMode",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "testMode",
+              "signature": "testMode?: boolean;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 866,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L866",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * {@inheritDoc IConfigTsdocMetadata}
+     * @beta
+     */",
+              ],
+              "id": "IConfigFile.tsdocMetadata",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "tsdocMetadata",
+              "signature": "tsdocMetadata?: IConfigTsdocMetadata;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 846,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L846",
+              },
+              "type": "IConfigTsdocMetadata",
+            },
+          ],
+        },
+        "name": "IConfigFile",
+        "signature": "interface IConfigFile {}",
+        "source": Object {
+          "filename": "dist/rollup.d.ts",
+          "line": 767,
+          "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L767",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Configures reporting for a given message identifier.
+ *
+ * @remarks
+ * This is part of the {@link IConfigFile} structure.
+ *
+ * @public
+ */",
+        ],
+        "id": "IConfigMessageReportingRule",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * When \`addToApiReportFile\` is true:  If API Extractor is configured to write an API report file (.api.md),
+     * then the message will be written inside that file; otherwise, the message is instead logged according to
+     * the \`logLevel\` option.
+     */",
+              ],
+              "id": "IConfigMessageReportingRule.addToApiReportFile",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "addToApiReportFile",
+              "signature": "addToApiReportFile?: boolean;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 890,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L890",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Specifies whether the message should be written to the the tool's output log.
+     *
+     * @remarks
+     * Note that the \`addToApiReportFile\` property may supersede this option.
+     */",
+              ],
+              "id": "IConfigMessageReportingRule.logLevel",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "logLevel",
+              "signature": "logLevel: ExtractorLogLevel;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 884,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L884",
+              },
+              "type": "ExtractorLogLevel",
+            },
+          ],
+        },
+        "name": "IConfigMessageReportingRule",
+        "signature": "interface IConfigMessageReportingRule {}",
+        "source": Object {
+          "filename": "dist/rollup.d.ts",
+          "line": 877,
+          "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L877",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Specifies a table of reporting rules for different message identifiers, and also the default rule used for
+ * identifiers that do not appear in the table.
+ *
+ * @remarks
+ * This is part of the {@link IConfigFile} structure.
+ *
+ * @public
+ */",
+        ],
+        "id": "IConfigMessageReportingTable",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * The key is a message identifier for the associated type of message, or \\"default\\" to specify the default policy.
+     * For example, the key might be \`TS2551\` (a compiler message), \`tsdoc-link-tag-unescaped-text\` (a TSDOc message),
+     * or \`ae-extra-release-tag\` (a message related to the API Extractor analysis).
+     */",
+              ],
+              "id": "IConfigMessageReportingTable.0-index-signature",
+              "kind": "InterfaceIndexSignatureDeclaration",
+              "name": "index signature",
+              "signature": "[messageId: string]: IConfigMessageReportingRule;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 908,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L908",
+              },
+            },
+          ],
+          "methods": Array [],
+          "properties": Array [],
+        },
+        "name": "IConfigMessageReportingTable",
+        "signature": "interface IConfigMessageReportingTable {}",
+        "source": Object {
+          "filename": "dist/rollup.d.ts",
+          "line": 902,
+          "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L902",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Configures how the tsdoc-metadata.json file will be generated.
+ *
+ * @remarks
+ * This is part of the {@link IConfigFile} structure.
+ *
+ * @public
+ */",
+        ],
+        "id": "IConfigTsdocMetadata",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * Whether to generate the tsdoc-metadata.json file.
+     */",
+              ],
+              "id": "IConfigTsdocMetadata.enabled",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "enabled",
+              "signature": "enabled: boolean;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 923,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L923",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Specifies where the TSDoc metadata file should be written.
+     *
+     * @remarks
+     * The path is resolved relative to the folder of the config file that contains the setting; to change this,
+     * prepend a folder token such as \`<projectFolder>\`.
+     *
+     * The default value is \`<lookup>\`, which causes the path to be automatically inferred from the \`tsdocMetadata\`,
+     * \`typings\` or \`main\` fields of the project's package.json.  If none of these fields are set, the lookup
+     * falls back to \`tsdoc-metadata.json\` in the package folder.
+     */",
+              ],
+              "id": "IConfigTsdocMetadata.tsdocMetadataFilePath",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "tsdocMetadataFilePath",
+              "signature": "tsdocMetadataFilePath?: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 935,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L935",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "IConfigTsdocMetadata",
+        "signature": "interface IConfigTsdocMetadata {}",
+        "source": Object {
+          "filename": "dist/rollup.d.ts",
+          "line": 919,
+          "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L919",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Options for {@link ExtractorConfig.tryLoadForFolder}.
+ *
+ * @public
+ */",
+        ],
+        "id": "IExtractorConfigLoadForFolderOptions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * An already constructed \`PackageJsonLookup\` cache object to use.  If omitted, a temporary one will
+     * be constructed.
+     */",
+              ],
+              "id": "IExtractorConfigLoadForFolderOptions.packageJsonLookup",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "packageJsonLookup",
+              "signature": "packageJsonLookup?: PackageJsonLookup;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 952,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L952",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * An already constructed \`RigConfig\` object.  If omitted, then a new \`RigConfig\` object will be constructed.
+     */",
+              ],
+              "id": "IExtractorConfigLoadForFolderOptions.rigConfig",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "rigConfig",
+              "signature": "rigConfig?: RigConfig;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 956,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L956",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * The folder path to start from when searching for api-extractor.json.
+     */",
+              ],
+              "id": "IExtractorConfigLoadForFolderOptions.startingFolder",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "startingFolder",
+              "signature": "startingFolder: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 947,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L947",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "IExtractorConfigLoadForFolderOptions",
+        "signature": "interface IExtractorConfigLoadForFolderOptions {}",
+        "source": Object {
+          "filename": "dist/rollup.d.ts",
+          "line": 943,
+          "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L943",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Options for {@link ExtractorConfig.prepare}.
+ *
+ * @public
+ */",
+        ],
+        "id": "IExtractorConfigPrepareOptions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * A configuration object as returned by {@link ExtractorConfig.loadFile}.
+     */",
+              ],
+              "id": "IExtractorConfigPrepareOptions.configObject",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "configObject",
+              "signature": "configObject: IConfigFile;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 968,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L968",
+              },
+              "type": "IConfigFile",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * The absolute path of the file that the \`configObject\` object was loaded from.  This is used for error messages
+     * and when probing for \`tsconfig.json\`.
+     *
+     * @remarks
+     *
+     * If \`configObjectFullPath\` and \`projectFolderLookupToken\` are both unspecified, then the api-extractor.json
+     * config file must explicitly specify a \`projectFolder\` setting rather than relying on the \`<lookup>\` token.
+     */",
+              ],
+              "id": "IExtractorConfigPrepareOptions.configObjectFullPath",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "configObjectFullPath",
+              "signature": "configObjectFullPath: string | undefined;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 978,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L978",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * The parsed package.json file for the working package, or undefined if API Extractor was invoked without
+     * a package.json file.
+     *
+     * @remarks
+     *
+     * If omitted, then the \`<unscopedPackageName>\` and \`<packageName>\` tokens will have default values.
+     */",
+              ],
+              "id": "IExtractorConfigPrepareOptions.packageJson",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "packageJson",
+              "signature": "packageJson?: INodePackageJson | undefined;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 987,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L987",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * The absolute path of the file that the \`packageJson\` object was loaded from, or undefined if API Extractor
+     * was invoked without a package.json file.
+     *
+     * @remarks
+     *
+     * This is used for error messages and when resolving paths found in package.json.
+     *
+     * If \`packageJsonFullPath\` is specified but \`packageJson\` is omitted, the file will be loaded automatically.
+     */",
+              ],
+              "id": "IExtractorConfigPrepareOptions.packageJsonFullPath",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "packageJsonFullPath",
+              "signature": "packageJsonFullPath: string | undefined;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 998,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L998",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * The default value for the \`projectFolder\` setting is the \`<lookup>\` token, which uses a heuristic to guess
+     * an appropriate project folder.  Use \`projectFolderLookupValue\` to manually specify the \`<lookup>\` token value
+     * instead.
+     *
+     * @remarks
+     * If the \`projectFolder\` setting is explicitly specified in api-extractor.json file, it should take precedence
+     * over a value specified via the API.  Thus the \`projectFolderLookupToken\` option provides a way to override
+     * the default value for \`projectFolder\` setting while still honoring a manually specified value.
+     */",
+              ],
+              "id": "IExtractorConfigPrepareOptions.projectFolderLookupToken",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "projectFolderLookupToken",
+              "signature": "projectFolderLookupToken?: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 1009,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L1009",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "IExtractorConfigPrepareOptions",
+        "signature": "interface IExtractorConfigPrepareOptions {}",
+        "source": Object {
+          "filename": "dist/rollup.d.ts",
+          "line": 964,
+          "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L964",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Runtime options for Extractor.
+ *
+ * @public
+ */",
+        ],
+        "id": "IExtractorInvokeOptions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * An optional TypeScript compiler state.  This allows an optimization where multiple invocations of API Extractor
+     * can reuse the same TypeScript compiler analysis.
+     */",
+              ],
+              "id": "IExtractorInvokeOptions.compilerState",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "compilerState",
+              "signature": "compilerState?: CompilerState;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 1022,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L1022",
+              },
+              "type": "CompilerState",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Indicates that API Extractor is running as part of a local build, e.g. on developer's
+     * machine.
+     *
+     * @remarks
+     * This disables certain validation that would normally be performed for a ship/production build. For example,
+     * the *.api.md report file is automatically updated in a local build.
+     *
+     * The default value is false.
+     */",
+              ],
+              "id": "IExtractorInvokeOptions.localBuild",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "localBuild",
+              "signature": "localBuild?: boolean;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 1033,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L1033",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * An optional callback function that will be called for each \`ExtractorMessage\` before it is displayed by
+     * API Extractor.  The callback can customize the message, handle it, or discard it.
+     *
+     * @remarks
+     * If a \`messageCallback\` is not provided, then by default API Extractor will print the messages to
+     * the STDERR/STDOUT console.
+     */",
+              ],
+              "id": "IExtractorInvokeOptions.messageCallback",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "messageCallback",
+              "signature": "messageCallback?: (message: ExtractorMessage) => void;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 1065,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L1065",
+              },
+              "type": "(message: ExtractorMessage) => void",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * If true, API Extractor will print diagnostic information used for troubleshooting problems.
+     * These messages will be included as {@link ExtractorLogLevel.Verbose} output.
+     *
+     * @remarks
+     * Setting \`showDiagnostics=true\` forces \`showVerboseMessages=true\`.
+     */",
+              ],
+              "id": "IExtractorInvokeOptions.showDiagnostics",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "showDiagnostics",
+              "signature": "showDiagnostics?: boolean;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 1045,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L1045",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * If true, API Extractor will include {@link ExtractorLogLevel.Verbose} messages in its output.
+     */",
+              ],
+              "id": "IExtractorInvokeOptions.showVerboseMessages",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "showVerboseMessages",
+              "signature": "showVerboseMessages?: boolean;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 1037,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L1037",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Specifies an alternate folder path to be used when loading the TypeScript system typings.
+     *
+     * @remarks
+     * API Extractor uses its own TypeScript compiler engine to analyze your project.  If your project
+     * is built with a significantly different TypeScript version, sometimes API Extractor may report compilation
+     * errors due to differences in the system typings (e.g. lib.dom.d.ts).  You can use the \\"--typescriptCompilerFolder\\"
+     * option to specify the folder path where you installed the TypeScript package, and API Extractor's compiler will
+     * use those system typings instead.
+     */",
+              ],
+              "id": "IExtractorInvokeOptions.typescriptCompilerFolder",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "typescriptCompilerFolder",
+              "signature": "typescriptCompilerFolder?: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 1056,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L1056",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "IExtractorInvokeOptions",
+        "signature": "interface IExtractorInvokeOptions {}",
+        "source": Object {
+          "filename": "dist/rollup.d.ts",
+          "line": 1017,
+          "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L1017",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Used by {@link ExtractorMessage.properties}.
+ *
+ * @public
+ */",
+        ],
+        "id": "IExtractorMessageProperties",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * A declaration can have multiple names if it is exported more than once.
+     * If an \`ExtractorMessage\` applies to a specific export name, this property can indicate that.
+     *
+     * @remarks
+     *
+     * Used by {@link ExtractorMessageId.InternalMissingUnderscore}.
+     */",
+              ],
+              "id": "IExtractorMessageProperties.exportName",
+              "isOptional": true,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "exportName",
+              "signature": "readonly exportName?: string;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 1096,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L1096",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "IExtractorMessageProperties",
+        "signature": "interface IExtractorMessageProperties {}",
+        "source": Object {
+          "filename": "dist/rollup.d.ts",
+          "line": 1087,
+          "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L1087",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Configures how API Extractor reports error and warning messages produced during analysis.
+ *
+ * @remarks
+ * This is part of the {@link IConfigFile} structure.
+ *
+ * @public
+ */",
+        ],
+        "id": "IExtractorMessagesConfig",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * Configures handling of diagnostic messages generating the TypeScript compiler while analyzing the
+     * input .d.ts files.
+     */",
+              ],
+              "id": "IExtractorMessagesConfig.compilerMessageReporting",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "compilerMessageReporting",
+              "signature": "compilerMessageReporting?: IConfigMessageReportingTable;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 1112,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L1112",
+              },
+              "type": "IConfigMessageReportingTable",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Configures handling of messages reported by API Extractor during its analysis.
+     */",
+              ],
+              "id": "IExtractorMessagesConfig.extractorMessageReporting",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "extractorMessageReporting",
+              "signature": "extractorMessageReporting?: IConfigMessageReportingTable;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 1116,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L1116",
+              },
+              "type": "IConfigMessageReportingTable",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Configures handling of messages reported by the TSDoc parser when analyzing code comments.
+     */",
+              ],
+              "id": "IExtractorMessagesConfig.tsdocMessageReporting",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "tsdocMessageReporting",
+              "signature": "tsdocMessageReporting?: IConfigMessageReportingTable;",
+              "source": Object {
+                "filename": "dist/rollup.d.ts",
+                "line": 1120,
+                "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L1120",
+              },
+              "type": "IConfigMessageReportingTable",
+            },
+          ],
+        },
+        "name": "IExtractorMessagesConfig",
+        "signature": "interface IExtractorMessagesConfig {}",
+        "source": Object {
+          "filename": "dist/rollup.d.ts",
+          "line": 1107,
+          "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L1107",
+        },
+      },
+    ],
+    "namespaces": Array [],
+    "typeAliases": Array [],
+    "variables": Array [],
+  },
+  "files": Array [
+    Object {
+      "filename": "dist/rollup.d.ts",
+      "isIndexFile": true,
+      "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts",
+    },
+  ],
+  "overview": "/**
+ * API Extractor helps with validation, documentation, and reviewing of the exported API for a TypeScript library.
+ * The \`@microsoft/api-extractor\` package provides the command-line tool.  It also exposes a developer API that you
+ * can use to invoke API Extractor programmatically.
+ *
+ * @packageDocumentation
+ */",
+}
+`;

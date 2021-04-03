@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`export-default-let snapshot 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [],
+    "enums": Array [],
+    "functions": Array [],
+    "interfaces": Array [],
+    "namespaces": Array [],
+    "typeAliases": Array [],
+    "variables": Array [
+      Object {
+        "docs": Array [
+          "/** var1 */",
+        ],
+        "id": "default",
+        "kind": "VariableDeclaration",
+        "name": "default",
+        "signature": "let default: string;",
+        "source": Object {
+          "filename": "index.ts",
+          "line": 2,
+          "url": undefined,
+        },
+        "type": "string",
+        "variableKind": "let",
+      },
+    ],
+  },
+  "files": Array [
+    Object {
+      "filename": "index.ts",
+      "isIndexFile": true,
+      "url": undefined,
+    },
+  ],
+  "overview": undefined,
+}
+`;

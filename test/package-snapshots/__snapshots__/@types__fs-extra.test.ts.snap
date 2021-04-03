@@ -1,0 +1,2136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@types/fs-extra 9.0.6 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [],
+    "enums": Array [],
+    "functions": Array [
+      Object {
+        "docs": Array [],
+        "id": "access",
+        "kind": "FunctionDeclaration",
+        "name": "access",
+        "signature": "access: {
+    (path: any, callback: (err: any) => void): void;
+    (path: any, mode: number, callback: (err: any) => void): void;
+    (path: any, mode?: number): Promise<void>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 125,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L125",
+        },
+        "type": "{ (path: any, callback: (err: any) => void): void; (path: any, mode: number, callback: (err: any) => void): void; (path: any, mode?: number): Promise<void>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "appendFile",
+        "kind": "FunctionDeclaration",
+        "name": "appendFile",
+        "signature": "appendFile: {
+    (
+        file: PathLike | number,
+        data: any,
+        options: { encoding?: string; mode?: number | string; flag?: string },
+        callback: (err: any) => void
+    ): void;
+    (file: any, data: any, callback: (err: any) => void): void;
+    (
+        file: any,
+        data: any,
+        options?: { encoding?: string; mode?: string | number; flag?: string }
+    ): Promise<void>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 129,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L129",
+        },
+        "type": "{ (file: PathLike | number, data: any, options: {    encoding?: string;    mode?: number | string;    flag?: string;}, callback: (err: any) => void): void; (file: any, data: any, callback: (err: any) => void): void; (file: any, data: any, options?: { encoding?: string; mode?: string | number; flag?: string; }): Promise<void>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "chmod",
+        "kind": "FunctionDeclaration",
+        "name": "chmod",
+        "signature": "chmod: {
+    (path: any, mode: Mode, callback: (err: any) => void): void;
+    (path: any, mode: Mode): Promise<void>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 134,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L134",
+        },
+        "type": "{ (path: any, mode: Mode, callback: (err: any) => void): void; (path: any, mode: Mode): Promise<void>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "chown",
+        "kind": "FunctionDeclaration",
+        "name": "chown",
+        "signature": "chown: {
+    (path: any, uid: number, gid: number): Promise<void>;
+    (path: any, uid: number, gid: number, callback: (err: any) => void): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 137,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L137",
+        },
+        "type": "{ (path: any, uid: number, gid: number): Promise<void>; (path: any, uid: number, gid: number, callback: (err: any) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "close",
+        "kind": "FunctionDeclaration",
+        "name": "close",
+        "signature": "close: {
+    (fd: number, callback: (err: any) => void): void;
+    (fd: number): Promise<void>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 140,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L140",
+        },
+        "type": "{ (fd: number, callback: (err: any) => void): void; (fd: number): Promise<void>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "copy",
+        "kind": "FunctionDeclaration",
+        "name": "copy",
+        "signature": "copy: {
+    (src: string, dest: string, options?: CopyOptions): Promise<void>;
+    (src: string, dest: string, callback: (err: Error) => void): void;
+    (
+        src: string,
+        dest: string,
+        options: CopyOptions,
+        callback: (err: Error) => void
+    ): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 22,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L22",
+        },
+        "type": "{ (src: string, dest: string, options?: CopyOptions): Promise<void>; (src: string, dest: string, callback: (err: Error) => void): void; (src: string, dest: string, options: CopyOptions, callback: (err: Error) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "copyFile",
+        "kind": "FunctionDeclaration",
+        "name": "copyFile",
+        "signature": "copyFile: {
+    (src: string, dest: string, flags?: number): Promise<void>;
+    (src: string, dest: string, callback: (err: Error) => void): void;
+    (src: string, dest: string, flags: number, callback: (err: Error) => void): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 27,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L27",
+        },
+        "type": "{ (src: string, dest: string, flags?: number): Promise<void>; (src: string, dest: string, callback: (err: Error) => void): void; (src: string, dest: string, flags: number, callback: (err: Error) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "copySync",
+        "kind": "FunctionDeclaration",
+        "name": "copySync",
+        "signature": "copySync: (src: string, dest: string, options?: CopyOptionsSync) => void;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 25,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L25",
+        },
+        "type": "(src: string, dest: string, options?: CopyOptionsSync) => void",
+      },
+      Object {
+        "docs": Array [],
+        "id": "createFile",
+        "kind": "FunctionDeclaration",
+        "name": "createFile",
+        "signature": "createFile: {
+    (file: string): Promise<void>;
+    (file: string, callback: (err: Error) => void): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 36,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L36",
+        },
+        "type": "{ (file: string): Promise<void>; (file: string, callback: (err: Error) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "createFileSync",
+        "kind": "FunctionDeclaration",
+        "name": "createFileSync",
+        "signature": "createFileSync: (file: string) => void;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 38,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L38",
+        },
+        "type": "(file: string) => void",
+      },
+      Object {
+        "docs": Array [],
+        "id": "createSymlink",
+        "kind": "FunctionDeclaration",
+        "name": "createSymlink",
+        "signature": "createSymlink: {
+    (src: string, dest: string, type: SymlinkType): Promise<void>;
+    (
+        src: string,
+        dest: string,
+        type: SymlinkType,
+        callback?: (err: Error) => void
+    ): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 40,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L40",
+        },
+        "type": "{ (src: string, dest: string, type: SymlinkType): Promise<void>; (src: string, dest: string, type: SymlinkType, callback?: (err: Error) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "createSymlinkSync",
+        "kind": "FunctionDeclaration",
+        "name": "createSymlinkSync",
+        "signature": "createSymlinkSync: (src: string, dest: string, type: SymlinkType) => void;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 42,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L42",
+        },
+        "type": "(src: string, dest: string, type: SymlinkType) => void",
+      },
+      Object {
+        "docs": Array [],
+        "id": "emptyDir",
+        "kind": "FunctionDeclaration",
+        "name": "emptyDir",
+        "signature": "emptyDir: {
+    (path: string): Promise<void>;
+    (path: string, callback: (err: Error) => void): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 111,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L111",
+        },
+        "type": "{ (path: string): Promise<void>; (path: string, callback: (err: Error) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "emptyDirSync",
+        "kind": "FunctionDeclaration",
+        "name": "emptyDirSync",
+        "signature": "emptyDirSync: (path: string) => void;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 115,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L115",
+        },
+        "type": "(path: string) => void",
+      },
+      Object {
+        "docs": Array [],
+        "id": "ensureDir",
+        "kind": "FunctionDeclaration",
+        "name": "ensureDir",
+        "signature": "ensureDir: {
+    (path: string, options?: EnsureOptions | number): Promise<void>;
+    (path: string, callback?: (err: Error) => void): void;
+    (
+        path: string,
+        options?: number | EnsureOptions,
+        callback?: (err: Error) => void
+    ): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 44,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L44",
+        },
+        "type": "{ (path: string, options?: EnsureOptions | number): Promise<void>; (path: string, callback?: (err: Error) => void): void; (path: string, options?: number | EnsureOptions, callback?: (err: Error) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "ensureDirSync",
+        "kind": "FunctionDeclaration",
+        "name": "ensureDirSync",
+        "signature": "ensureDirSync: (path: string, options?: EnsureOptions | number) => void;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 47,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L47",
+        },
+        "type": "(path: string, options?: EnsureOptions | number) => void",
+      },
+      Object {
+        "docs": Array [],
+        "id": "ensureFile",
+        "kind": "FunctionDeclaration",
+        "name": "ensureFile",
+        "signature": "ensureFile: {
+    (path: string): Promise<void>;
+    (path: string, callback: (err: Error) => void): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 94,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L94",
+        },
+        "type": "{ (path: string): Promise<void>; (path: string, callback: (err: Error) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "ensureFileSync",
+        "kind": "FunctionDeclaration",
+        "name": "ensureFileSync",
+        "signature": "ensureFileSync: (path: string) => void;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 96,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L96",
+        },
+        "type": "(path: string) => void",
+      },
+      Object {
+        "docs": Array [],
+        "id": "ensureLink",
+        "kind": "FunctionDeclaration",
+        "name": "ensureLink",
+        "signature": "ensureLink: {
+    (src: string, dest: string): Promise<void>;
+    (src: string, dest: string, callback: (err: Error) => void): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 98,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L98",
+        },
+        "type": "{ (src: string, dest: string): Promise<void>; (src: string, dest: string, callback: (err: Error) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "ensureLinkSync",
+        "kind": "FunctionDeclaration",
+        "name": "ensureLinkSync",
+        "signature": "ensureLinkSync: (src: string, dest: string) => void;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 102,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L102",
+        },
+        "type": "(src: string, dest: string) => void",
+      },
+      Object {
+        "docs": Array [],
+        "id": "ensureSymlink",
+        "kind": "FunctionDeclaration",
+        "name": "ensureSymlink",
+        "signature": "ensureSymlink: {
+    (src: string, dest: string, type?: SymlinkType): Promise<void>;
+    (
+        src: string,
+        dest: string,
+        type: SymlinkType,
+        callback: (err: Error) => void
+    ): void;
+    (src: string, dest: string, callback: (err: Error) => void): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 106,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L106",
+        },
+        "type": "{ (src: string, dest: string, type?: SymlinkType): Promise<void>; (src: string, dest: string, type: SymlinkType, callback: (err: Error) => void): void; (src: string, dest: string, callback: (err: Error) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "ensureSymlinkSync",
+        "kind": "FunctionDeclaration",
+        "name": "ensureSymlinkSync",
+        "signature": "ensureSymlinkSync: (src: string, dest: string, type?: SymlinkType) => void;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 109,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L109",
+        },
+        "type": "(src: string, dest: string, type?: SymlinkType) => void",
+      },
+      Object {
+        "docs": Array [],
+        "id": "fchmod",
+        "kind": "FunctionDeclaration",
+        "name": "fchmod",
+        "signature": "fchmod: {
+    (fd: number, mode: Mode, callback: (err: any) => void): void;
+    (fd: number, mode: Mode): Promise<void>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 143,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L143",
+        },
+        "type": "{ (fd: number, mode: Mode, callback: (err: any) => void): void; (fd: number, mode: Mode): Promise<void>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "fchown",
+        "kind": "FunctionDeclaration",
+        "name": "fchown",
+        "signature": "fchown: {
+    (fd: number, uid: number, gid: number, callback: (err: any) => void): void;
+    (fd: number, uid: number, gid: number): Promise<void>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 146,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L146",
+        },
+        "type": "{ (fd: number, uid: number, gid: number, callback: (err: any) => void): void; (fd: number, uid: number, gid: number): Promise<void>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "fdatasync",
+        "kind": "FunctionDeclaration",
+        "name": "fdatasync",
+        "signature": "fdatasync: {
+    (fd: number, callback: () => void): void;
+    (fd: number): Promise<void>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 149,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L149",
+        },
+        "type": "{ (fd: number, callback: () => void): void; (fd: number): Promise<void>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "fstat",
+        "kind": "FunctionDeclaration",
+        "name": "fstat",
+        "signature": "fstat: {
+    (fd: number, callback: (err: any, stats: any) => any): void;
+    (fd: number): Promise<any>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 152,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L152",
+        },
+        "type": "{ (fd: number, callback: (err: any, stats: any) => any): void; (fd: number): Promise<any>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "fsync",
+        "kind": "FunctionDeclaration",
+        "name": "fsync",
+        "signature": "fsync: {
+    (fd: number, callback: (err: any) => void): void;
+    (fd: number): Promise<void>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 155,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L155",
+        },
+        "type": "{ (fd: number, callback: (err: any) => void): void; (fd: number): Promise<void>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "ftruncate",
+        "kind": "FunctionDeclaration",
+        "name": "ftruncate",
+        "signature": "ftruncate: {
+    (fd: number, callback: (err: any) => void): void;
+    (fd: number, len: number, callback: (err: any) => void): void;
+    (fd: number, len?: number): Promise<void>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 158,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L158",
+        },
+        "type": "{ (fd: number, callback: (err: any) => void): void; (fd: number, len: number, callback: (err: any) => void): void; (fd: number, len?: number): Promise<void>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "futimes",
+        "kind": "FunctionDeclaration",
+        "name": "futimes",
+        "signature": "futimes: {
+    (fd: number, atime: number, mtime: number, callback: (err: any) => void): void;
+    (fd: number, atime: Date, mtime: Date, callback: (err: any) => void): void;
+    (fd: number, atime: number, mtime: number): Promise<void>;
+    (fd: number, atime: Date, mtime: Date): Promise<void>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 162,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L162",
+        },
+        "type": "{ (fd: number, atime: number, mtime: number, callback: (err: any) => void): void; (fd: number, atime: Date, mtime: Date, callback: (err: any) => void): void; (fd: number, atime: number, mtime: number): Promise<void>; (fd: number, atime: Date, mtime: Date): Promise<void>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "lchown",
+        "kind": "FunctionDeclaration",
+        "name": "lchown",
+        "signature": "lchown: {
+    (path: any, uid: number, gid: number, callback: (err: any) => void): void;
+    (path: any, uid: number, gid: number): Promise<void>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 167,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L167",
+        },
+        "type": "{ (path: any, uid: number, gid: number, callback: (err: any) => void): void; (path: any, uid: number, gid: number): Promise<void>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "link",
+        "kind": "FunctionDeclaration",
+        "name": "link",
+        "signature": "link: {
+    (existingPath: any, newPath: any, callback: (err: any) => void): void;
+    (existingPath: any, newPath: any): Promise<void>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 170,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L170",
+        },
+        "type": "{ (existingPath: any, newPath: any, callback: (err: any) => void): void; (existingPath: any, newPath: any): Promise<void>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "lstat",
+        "kind": "FunctionDeclaration",
+        "name": "lstat",
+        "signature": "lstat: {
+    (path: any, callback: (err: any, stats: any) => any): void;
+    (path: any): Promise<any>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 173,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L173",
+        },
+        "type": "{ (path: any, callback: (err: any, stats: any) => any): void; (path: any): Promise<any>; }",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Asynchronous mkdir - creates the directory specified in {path}.  Parameter {mode} defaults to 0777.
+ *
+ * @param callback No arguments other than a possible exception are given to the completion callback.
+ */",
+        ],
+        "id": "mkdir",
+        "kind": "FunctionDeclaration",
+        "name": "mkdir",
+        "signature": "mkdir: {
+    (path: any, callback: (err: any) => void): void;
+    (path: any, options: any, callback: (err: any) => void): void;
+    (path: any, options?: any): Promise<void>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 181,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L181",
+        },
+        "type": "{ (path: any, callback: (err: any) => void): void; (path: any, options: any, callback: (err: any) => void): void; (path: any, options?: any): Promise<void>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "mkdirp",
+        "kind": "FunctionDeclaration",
+        "name": "mkdirp",
+        "signature": "mkdirp: {
+    (dir: string): Promise<void>;
+    (dir: string, callback: (err: Error) => void): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 51,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L51",
+        },
+        "type": "{ (dir: string): Promise<void>; (dir: string, callback: (err: Error) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "mkdirpSync",
+        "kind": "FunctionDeclaration",
+        "name": "mkdirpSync",
+        "signature": "mkdirpSync: (dir: string) => void;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 54,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L54",
+        },
+        "type": "(dir: string) => void",
+      },
+      Object {
+        "docs": Array [],
+        "id": "mkdirs",
+        "kind": "FunctionDeclaration",
+        "name": "mkdirs",
+        "signature": "mkdirs: {
+    (dir: string): Promise<void>;
+    (dir: string, callback: (err: Error) => void): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 49,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L49",
+        },
+        "type": "{ (dir: string): Promise<void>; (dir: string, callback: (err: Error) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "mkdirsSync",
+        "kind": "FunctionDeclaration",
+        "name": "mkdirsSync",
+        "signature": "mkdirsSync: (dir: string) => void;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 53,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L53",
+        },
+        "type": "(dir: string) => void",
+      },
+      Object {
+        "docs": Array [],
+        "id": "mkdirSync",
+        "kind": "FunctionDeclaration",
+        "name": "mkdirSync",
+        "signature": "mkdirSync: (path: any, options?: Mode | fs.MakeDirectoryOptions | null) => void;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 189,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L189",
+        },
+        "type": "(path: any, options?: Mode | fs.MakeDirectoryOptions | null) => void",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Asynchronous mkdtemp - Creates a unique temporary directory. Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
+ *
+ * @param callback The created folder path is passed as a string to the callback's second parameter.
+ */",
+        ],
+        "id": "mkdtemp",
+        "kind": "FunctionDeclaration",
+        "name": "mkdtemp",
+        "signature": "mkdtemp: {
+    (prefix: string): Promise<string>;
+    (prefix: string, callback: (err: any, folder: string) => void): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 290,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L290",
+        },
+        "type": "{ (prefix: string): Promise<string>; (prefix: string, callback: (err: any, folder: string) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "move",
+        "kind": "FunctionDeclaration",
+        "name": "move",
+        "signature": "move: {
+    (src: string, dest: string, options?: MoveOptions): Promise<void>;
+    (src: string, dest: string, callback: (err: Error) => void): void;
+    (
+        src: string,
+        dest: string,
+        options: MoveOptions,
+        callback: (err: Error) => void
+    ): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 31,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L31",
+        },
+        "type": "{ (src: string, dest: string, options?: MoveOptions): Promise<void>; (src: string, dest: string, callback: (err: Error) => void): void; (src: string, dest: string, options: MoveOptions, callback: (err: Error) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "moveSync",
+        "kind": "FunctionDeclaration",
+        "name": "moveSync",
+        "signature": "moveSync: (src: string, dest: string, options?: MoveOptions) => void;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 34,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L34",
+        },
+        "type": "(src: string, dest: string, options?: MoveOptions) => void",
+      },
+      Object {
+        "docs": Array [],
+        "id": "open",
+        "kind": "FunctionDeclaration",
+        "name": "open",
+        "signature": "open: {
+    (
+        path: any,
+        flags: string | number,
+        callback: (err: any, fd: number) => void
+    ): void;
+    (
+        path: any,
+        flags: string | number,
+        mode: Mode,
+        callback: (err: any, fd: number) => void
+    ): void;
+    (path: any, flags: string | number, mode?: Mode): Promise<number>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 191,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L191",
+        },
+        "type": "{ (path: any, flags: string | number, callback: (err: any, fd: number) => void): void; (path: any, flags: string | number, mode: Mode, callback: (err: any, fd: number) => void): void; (path: any, flags: string | number, mode?: Mode): Promise<number>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "opendir",
+        "kind": "FunctionDeclaration",
+        "name": "opendir",
+        "signature": "opendir: {
+    (path: string, cb: (err: NodeJS.ErrnoException | null, dir: any) => void): void;
+    (path: string, options: any, cb: (err: any, dir: any) => void): void;
+    (path: string, options?: any): Promise<any>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 195,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L195",
+        },
+        "type": "{ (path: string, cb: (err: NodeJS.ErrnoException | null, dir: any) => void): void; (path: string, options: any, cb: (err: any, dir: any) => void): void; (path: string, options?: any): Promise<any>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "outputFile",
+        "kind": "FunctionDeclaration",
+        "name": "outputFile",
+        "signature": "outputFile: {
+    (file: string, data: any, options?: WriteFileOptions | string): Promise<void>;
+    (file: string, data: any, callback: (err: Error) => void): void;
+    (
+        file: string,
+        data: any,
+        options: string | WriteFileOptions,
+        callback: (err: Error) => void
+    ): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 56,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L56",
+        },
+        "type": "{ (file: string, data: any, options?: WriteFileOptions | string): Promise<void>; (file: string, data: any, callback: (err: Error) => void): void; (file: string, data: any, options: string | WriteFileOptions, callback: (err: Error) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "outputFileSync",
+        "kind": "FunctionDeclaration",
+        "name": "outputFileSync",
+        "signature": "outputFileSync: (
+    file: string,
+    data: any,
+    options?: WriteFileOptions | string
+) => void;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 59,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L59",
+        },
+        "type": "(file: string, data: any, options?: WriteFileOptions | string) => void",
+      },
+      Object {
+        "docs": Array [],
+        "id": "outputJson",
+        "kind": "FunctionDeclaration",
+        "name": "outputJson",
+        "signature": "outputJson: {
+    (file: string, data: any, options?: WriteOptions): Promise<void>;
+    (
+        file: string,
+        data: any,
+        options: WriteOptions,
+        callback: (err: Error) => void
+    ): void;
+    (file: string, data: any, callback: (err: Error) => void): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 78,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L78",
+        },
+        "type": "{ (file: string, data: any, options?: WriteOptions): Promise<void>; (file: string, data: any, options: WriteOptions, callback: (err: Error) => void): void; (file: string, data: any, callback: (err: Error) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "outputJSON",
+        "kind": "FunctionDeclaration",
+        "name": "outputJSON",
+        "signature": "outputJSON: {
+    (file: string, data: any, options?: WriteOptions): Promise<void>;
+    (
+        file: string,
+        data: any,
+        options: WriteOptions,
+        callback: (err: Error) => void
+    ): void;
+    (file: string, data: any, callback: (err: Error) => void): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 75,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L75",
+        },
+        "type": "{ (file: string, data: any, options?: WriteOptions): Promise<void>; (file: string, data: any, options: WriteOptions, callback: (err: Error) => void): void; (file: string, data: any, callback: (err: Error) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "outputJsonSync",
+        "kind": "FunctionDeclaration",
+        "name": "outputJsonSync",
+        "signature": "outputJsonSync: (file: string, data: any, options?: WriteOptions) => void;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 81,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L81",
+        },
+        "type": "(file: string, data: any, options?: WriteOptions) => void",
+      },
+      Object {
+        "docs": Array [],
+        "id": "outputJSONSync",
+        "kind": "FunctionDeclaration",
+        "name": "outputJSONSync",
+        "signature": "outputJSONSync: (file: string, data: any, options?: WriteOptions) => void;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 82,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L82",
+        },
+        "type": "(file: string, data: any, options?: WriteOptions) => void",
+      },
+      Object {
+        "docs": Array [],
+        "id": "pathExists",
+        "kind": "FunctionDeclaration",
+        "name": "pathExists",
+        "signature": "pathExists: {
+    (path: string): Promise<boolean>;
+    (path: string, callback: (err: Error, exists: boolean) => void): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 118,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L118",
+        },
+        "type": "{ (path: string): Promise<boolean>; (path: string, callback: (err: Error, exists: boolean) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "pathExistsSync",
+        "kind": "FunctionDeclaration",
+        "name": "pathExistsSync",
+        "signature": "pathExistsSync: (path: string) => boolean;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 120,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L120",
+        },
+        "type": "(path: string) => boolean",
+      },
+      Object {
+        "docs": Array [],
+        "id": "read",
+        "kind": "FunctionDeclaration",
+        "name": "read",
+        "signature": "read: {
+    <TBuffer extends unknown>(
+        fd: number,
+        buffer: TBuffer,
+        offset: number,
+        length: number,
+        position: number | null,
+        callback: (err: any, bytesRead: number, buffer: TBuffer) => void
+    ): void;
+    <TBuffer extends unknown>(
+        fd: number,
+        buffer: TBuffer,
+        offset: number,
+        length: number,
+        position: number
+    ): Promise<{ bytesRead: number; buffer: TBuffer }>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 203,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L203",
+        },
+        "type": "{ <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset: number, length: number, position: number | null, callback: (err: any, bytesRead: number, buffer: TBuffer) => void): void; <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset: number, length: number, position: number): Promise<{ bytesRead: number; buffer: TBuffer; }>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "readdir",
+        "kind": "FunctionDeclaration",
+        "name": "readdir",
+        "signature": "readdir: {
+    (path: any, callback: (err: any, files: string[]) => void): void;
+    (path: any, options?: any): Promise<string[]>;
+    (
+        path: any,
+        options: 'buffer' | { encoding: 'buffer'; withFileTypes?: false }
+    ): Promise<any[]>;
+    (path: any, options?: { encoding?: string; withFileTypes?: false }): Promise<
+        string[] | any[]
+    >;
+    (path: any, options: { encoding?: string; withFileTypes: true }): Promise<any[]>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 215,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L215",
+        },
+        "type": "{ (path: any, callback: (err: any, files: string[]) => void): void; (path: any, options?: any): Promise<string[]>; (path: any, options: \\"buffer\\" | { encoding: \\"buffer\\"; withFileTypes?: false; }): Promise<any[]>; (path: any, options?: { encoding?: string; withFileTypes?: false; }): Promise<string[] | any[]>; (path: any, options: { encoding?: string; withFileTypes: true; }): Promise<any[]>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "readFile",
+        "kind": "FunctionDeclaration",
+        "name": "readFile",
+        "signature": "readFile: {
+    (file: PathLike | number, callback: (err: any, data: any) => void): void;
+    (file: any, encoding: string, callback: (err: any, data: string) => void): void;
+    (
+        file: any,
+        options: { flag?: string } | { encoding: string; flag?: string },
+        callback: (err: any, data: any) => void
+    ): void;
+    (
+        file: any,
+        options: { flag?: string } | { encoding: string; flag?: string }
+    ): Promise<string>;
+    (file: any, encoding: string): Promise<string>;
+    (file: any): Promise<any>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 207,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L207",
+        },
+        "type": "{ (file: PathLike | number, callback: (err: any, data: any) => void): void; (file: any, encoding: string, callback: (err: any, data: string) => void): void; (file: any, options: { flag?: string; } | { encoding: string; flag?: string; }, callback: (err: any, data: any) => void): void; (file: any, options: { flag?: string; } | { encoding: string; flag?: string; }): Promise<string>; (file: any, encoding: string): Promise<string>; (file: any): Promise<any>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "readJson",
+        "kind": "FunctionDeclaration",
+        "name": "readJson",
+        "signature": "readJson: {
+    (file: string, options?: ReadOptions): Promise<any>;
+    (file: string, callback: (err: Error, jsonObject: any) => void): void;
+    (
+        file: string,
+        options: ReadOptions,
+        callback: (err: Error, jsonObject: any) => void
+    ): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 61,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L61",
+        },
+        "type": "{ (file: string, options?: ReadOptions): Promise<any>; (file: string, callback: (err: Error, jsonObject: any) => void): void; (file: string, options: ReadOptions, callback: (err: Error, jsonObject: any) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "readJSON",
+        "kind": "FunctionDeclaration",
+        "name": "readJSON",
+        "signature": "readJSON: {
+    (file: string, options?: ReadOptions): Promise<any>;
+    (file: string, callback: (err: Error, jsonObject: any) => void): void;
+    (
+        file: string,
+        options: ReadOptions,
+        callback: (err: Error, jsonObject: any) => void
+    ): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 64,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L64",
+        },
+        "type": "{ (file: string, options?: ReadOptions): Promise<any>; (file: string, callback: (err: Error, jsonObject: any) => void): void; (file: string, options: ReadOptions, callback: (err: Error, jsonObject: any) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "readJsonSync",
+        "kind": "FunctionDeclaration",
+        "name": "readJsonSync",
+        "signature": "readJsonSync: (file: string, options?: ReadOptions) => any;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 68,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L68",
+        },
+        "type": "(file: string, options?: ReadOptions) => any",
+      },
+      Object {
+        "docs": Array [],
+        "id": "readJSONSync",
+        "kind": "FunctionDeclaration",
+        "name": "readJSONSync",
+        "signature": "readJSONSync: (file: string, options?: ReadOptions) => any;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 69,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L69",
+        },
+        "type": "(file: string, options?: ReadOptions) => any",
+      },
+      Object {
+        "docs": Array [],
+        "id": "readlink",
+        "kind": "FunctionDeclaration",
+        "name": "readlink",
+        "signature": "readlink: {
+    (path: any, callback: (err: any, linkString: string) => any): void;
+    (path: any): Promise<string>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 221,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L221",
+        },
+        "type": "{ (path: any, callback: (err: any, linkString: string) => any): void; (path: any): Promise<string>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "realpath",
+        "kind": "FunctionDeclaration",
+        "name": "realpath",
+        "signature": "realpath: {
+    (path: any, callback: (err: any, resolvedPath: string) => any): void;
+    (
+        path: any,
+        cache: { [path: string]: string },
+        callback: (err: any, resolvedPath: string) => any
+    ): void;
+    (path: any, cache?: { [path: string]: string }): Promise<string>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 224,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L224",
+        },
+        "type": "{ (path: any, callback: (err: any, resolvedPath: string) => any): void; (path: any, cache: { [path: string]: string; }, callback: (err: any, resolvedPath: string) => any): void; (path: any, cache?: { [path: string]: string; }): Promise<string>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "remove",
+        "kind": "FunctionDeclaration",
+        "name": "remove",
+        "signature": "remove: {
+    (dir: string): Promise<void>;
+    (dir: string, callback: (err: Error) => void): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 71,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L71",
+        },
+        "type": "{ (dir: string): Promise<void>; (dir: string, callback: (err: Error) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "removeSync",
+        "kind": "FunctionDeclaration",
+        "name": "removeSync",
+        "signature": "removeSync: (dir: string) => void;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 73,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L73",
+        },
+        "type": "(dir: string) => void",
+      },
+      Object {
+        "docs": Array [],
+        "id": "rename",
+        "kind": "FunctionDeclaration",
+        "name": "rename",
+        "signature": "rename: {
+    (oldPath: any, newPath: any, callback: (err: any) => void): void;
+    (oldPath: any, newPath: any): Promise<void>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 228,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L228",
+        },
+        "type": "{ (oldPath: any, newPath: any, callback: (err: any) => void): void; (oldPath: any, newPath: any): Promise<void>; }",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Asynchronous rmdir - removes the directory specified in {path}
+ *
+ * @param callback No arguments other than a possible exception are given to the completion callback.
+ */",
+        ],
+        "id": "rmdir",
+        "kind": "FunctionDeclaration",
+        "name": "rmdir",
+        "signature": "rmdir: {
+    (path: any, callback: (err: any) => void): void;
+    (path: any): Promise<void>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 236,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L236",
+        },
+        "type": "{ (path: any, callback: (err: any) => void): void; (path: any): Promise<void>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "stat",
+        "kind": "FunctionDeclaration",
+        "name": "stat",
+        "signature": "stat: {
+    (path: any, callback: (err: any, stats: any) => any): void;
+    (path: any): Promise<any>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 239,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L239",
+        },
+        "type": "{ (path: any, callback: (err: any, stats: any) => any): void; (path: any): Promise<any>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "symlink",
+        "kind": "FunctionDeclaration",
+        "name": "symlink",
+        "signature": "symlink: {
+    (
+        target: any,
+        path: any,
+        type: SymlinkType | undefined,
+        callback: (err: any) => void
+    ): void;
+    (target: any, path: any, callback: (err: any) => void): void;
+    (target: any, path: any, type?: SymlinkType): Promise<void>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 242,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L242",
+        },
+        "type": "{ (target: any, path: any, type: SymlinkType | undefined, callback: (err: any) => void): void; (target: any, path: any, callback: (err: any) => void): void; (target: any, path: any, type?: SymlinkType): Promise<void>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "truncate",
+        "kind": "FunctionDeclaration",
+        "name": "truncate",
+        "signature": "truncate: {
+    (path: any, callback: (err: any) => void): void;
+    (path: any, len: number, callback: (err: any) => void): void;
+    (path: any, len?: number): Promise<void>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 246,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L246",
+        },
+        "type": "{ (path: any, callback: (err: any) => void): void; (path: any, len: number, callback: (err: any) => void): void; (path: any, len?: number): Promise<void>; }",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * Asynchronous unlink - deletes the file specified in {path}
+ *
+ * @param callback No arguments other than a possible exception are given to the completion callback.
+ */",
+        ],
+        "id": "unlink",
+        "kind": "FunctionDeclaration",
+        "name": "unlink",
+        "signature": "unlink: {
+    (path: any, callback: (err: any) => void): void;
+    (path: any): Promise<void>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 255,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L255",
+        },
+        "type": "{ (path: any, callback: (err: any) => void): void; (path: any): Promise<void>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "utimes",
+        "kind": "FunctionDeclaration",
+        "name": "utimes",
+        "signature": "utimes: {
+    (path: any, atime: number, mtime: number, callback: (err: any) => void): void;
+    (path: any, atime: Date, mtime: Date, callback: (err: any) => void): void;
+    (path: any, atime: number, mtime: number): Promise<void>;
+    (path: any, atime: Date, mtime: Date): Promise<void>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 258,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L258",
+        },
+        "type": "{ (path: any, atime: number, mtime: number, callback: (err: any) => void): void; (path: any, atime: Date, mtime: Date, callback: (err: any) => void): void; (path: any, atime: number, mtime: number): Promise<void>; (path: any, atime: Date, mtime: Date): Promise<void>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "write",
+        "kind": "FunctionDeclaration",
+        "name": "write",
+        "signature": "write: {
+    <TBuffer extends unknown>(
+        fd: number,
+        buffer: TBuffer,
+        offset: number,
+        length: number,
+        position: number | null,
+        callback: (err: any, written: number, buffer: TBuffer) => void
+    ): void;
+    <TBuffer extends unknown>(
+        fd: number,
+        buffer: TBuffer,
+        offset: number,
+        length: number,
+        callback: (err: any, written: number, buffer: TBuffer) => void
+    ): void;
+    (
+        fd: number,
+        data: any,
+        callback: (err: any, written: number, str: string) => void
+    ): void;
+    (
+        fd: number,
+        data: any,
+        offset: number,
+        callback: (err: any, written: number, str: string) => void
+    ): void;
+    (
+        fd: number,
+        data: any,
+        offset: number,
+        encoding: string,
+        callback: (err: any, written: number, str: string) => void
+    ): void;
+    <TBuffer extends unknown>(
+        fd: number,
+        buffer: TBuffer,
+        offset?: number,
+        length?: number,
+        position?: number
+    ): Promise<{ bytesWritten: number; buffer: TBuffer }>;
+    (fd: number, data: any, offset?: number, encoding?: string): Promise<{
+        bytesWritten: number;
+        buffer: string;
+    }>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 263,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L263",
+        },
+        "type": "{ <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset: number, length: number, position: number | null, callback: (err: any, written: number, buffer: TBuffer) => void): void; <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset: number, length: number, callback: (err: any, written: number, buffer: TBuffer) => void): void; (fd: number, data: any, callback: (err: any, written: number, str: string) => void): void; (fd: number, data: any, offset: number, callback: (err: any, written: number, str: string) => void): void; (fd: number, data: any, offset: number, encoding: string, callback: (err: any, written: number, str: string) => void): void; <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset?: number, length?: number, position?: number): Promise<{ bytesWritten: number; buffer: TBuffer; }>; (fd: number, data: any, offset?: number, encoding?: string): Promise<{ bytesWritten: number; buffer: string; }>; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "writeFile",
+        "kind": "FunctionDeclaration",
+        "name": "writeFile",
+        "signature": "writeFile: {
+    (file: PathLike | number, data: any, callback: (err: any) => void): void;
+    (file: any, data: any, options?: string | WriteFileOptions): Promise<void>;
+    (
+        file: any,
+        data: any,
+        options: string | WriteFileOptions,
+        callback: (err: any) => void
+    ): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 277,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L277",
+        },
+        "type": "{ (file: PathLike | number, data: any, callback: (err: any) => void): void; (file: any, data: any, options?: string | WriteFileOptions): Promise<void>; (file: any, data: any, options: string | WriteFileOptions, callback: (err: any) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "writeJson",
+        "kind": "FunctionDeclaration",
+        "name": "writeJson",
+        "signature": "writeJson: {
+    (file: string, object: any, options?: WriteOptions): Promise<void>;
+    (file: string, object: any, callback: (err: Error) => void): void;
+    (
+        file: string,
+        object: any,
+        options: WriteOptions,
+        callback: (err: Error) => void
+    ): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 87,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L87",
+        },
+        "type": "{ (file: string, object: any, options?: WriteOptions): Promise<void>; (file: string, object: any, callback: (err: Error) => void): void; (file: string, object: any, options: WriteOptions, callback: (err: Error) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "writeJSON",
+        "kind": "FunctionDeclaration",
+        "name": "writeJSON",
+        "signature": "writeJSON: {
+    (file: string, object: any, options?: WriteOptions): Promise<void>;
+    (file: string, object: any, callback: (err: Error) => void): void;
+    (
+        file: string,
+        object: any,
+        options: WriteOptions,
+        callback: (err: Error) => void
+    ): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 84,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L84",
+        },
+        "type": "{ (file: string, object: any, options?: WriteOptions): Promise<void>; (file: string, object: any, callback: (err: Error) => void): void; (file: string, object: any, options: WriteOptions, callback: (err: Error) => void): void; }",
+      },
+      Object {
+        "docs": Array [],
+        "id": "writeJsonSync",
+        "kind": "FunctionDeclaration",
+        "name": "writeJsonSync",
+        "signature": "writeJsonSync: (file: string, object: any, options?: WriteOptions) => void;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 91,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L91",
+        },
+        "type": "(file: string, object: any, options?: WriteOptions) => void",
+      },
+      Object {
+        "docs": Array [],
+        "id": "writeJSONSync",
+        "kind": "FunctionDeclaration",
+        "name": "writeJSONSync",
+        "signature": "writeJSONSync: (file: string, object: any, options?: WriteOptions) => void;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 92,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L92",
+        },
+        "type": "(file: string, object: any, options?: WriteOptions) => void",
+      },
+      Object {
+        "docs": Array [],
+        "id": "writev",
+        "kind": "FunctionDeclaration",
+        "name": "writev",
+        "signature": "writev: {
+    (
+        fd: number,
+        buffers: NodeJS.ArrayBufferView[],
+        position: number,
+        cb: (
+            err: NodeJS.ErrnoException | null,
+            bytesWritten: number,
+            buffers: NodeJS.ArrayBufferView[]
+        ) => void
+    ): void;
+    (
+        fd: number,
+        buffers: any[],
+        cb: (err: any, bytesWritten: number, buffers: any[]) => void
+    ): void;
+    (fd: number, buffers: any[], position?: number): Promise<WritevResult>;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 281,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L281",
+        },
+        "type": "{ (fd: number, buffers: NodeJS.ArrayBufferView[], position: number, cb: (err: NodeJS.ErrnoException | null, bytesWritten: number, buffers: NodeJS.ArrayBufferView[]) => void): void; (fd: number, buffers: any[], cb: (err: any, bytesWritten: number, buffers: any[]) => void): void; (fd: number, buffers: any[], position?: number): Promise<WritevResult>; }",
+      },
+    ],
+    "interfaces": Array [
+      Object {
+        "docs": Array [],
+        "id": "CopyOptions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "CopyOptions.dereference",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "dereference",
+              "signature": "dereference?: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 312,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L312",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "CopyOptions.errorOnExist",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "errorOnExist",
+              "signature": "errorOnExist?: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 315,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L315",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "CopyOptions.filter",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "filter",
+              "signature": "filter?: CopyFilterSync | CopyFilterAsync;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 316,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L316",
+              },
+              "type": "CopyFilterSync | CopyFilterAsync",
+            },
+            Object {
+              "docs": Array [],
+              "id": "CopyOptions.overwrite",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "overwrite",
+              "signature": "overwrite?: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 313,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L313",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "CopyOptions.preserveTimestamps",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "preserveTimestamps",
+              "signature": "preserveTimestamps?: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 314,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L314",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "CopyOptions.recursive",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "recursive",
+              "signature": "recursive?: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 317,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L317",
+              },
+              "type": "boolean",
+            },
+          ],
+        },
+        "name": "CopyOptions",
+        "signature": "interface CopyOptions {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 311,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L311",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "CopyOptionsSync",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "CopyOptionsSync.filter",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "filter",
+              "signature": "filter?: CopyFilterSync;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 321,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L321",
+              },
+              "type": "CopyFilterSync",
+            },
+          ],
+        },
+        "name": "CopyOptionsSync",
+        "signature": "interface CopyOptionsSync extends CopyOptions {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 320,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L320",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "EnsureOptions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "EnsureOptions.mode",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "mode",
+              "signature": "mode?: number;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 325,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L325",
+              },
+              "type": "number",
+            },
+          ],
+        },
+        "name": "EnsureOptions",
+        "signature": "interface EnsureOptions {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 324,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L324",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "MoveOptions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "MoveOptions.limit",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "limit",
+              "signature": "limit?: number;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 330,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L330",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "MoveOptions.overwrite",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "overwrite",
+              "signature": "overwrite?: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 329,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L329",
+              },
+              "type": "boolean",
+            },
+          ],
+        },
+        "name": "MoveOptions",
+        "signature": "interface MoveOptions {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 328,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L328",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "PathEntry",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "PathEntry.path",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "path",
+              "signature": "path: string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 294,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L294",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "PathEntry.stats",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "stats",
+              "signature": "stats: Stats;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 295,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L295",
+              },
+              "type": "any",
+            },
+          ],
+        },
+        "name": "PathEntry",
+        "signature": "interface PathEntry {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 293,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L293",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "PathEntryStream",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [
+            Object {
+              "docs": Array [],
+              "id": "PathEntryStream.read",
+              "kind": "InterfaceMethodDeclaration",
+              "name": "read",
+              "signature": "read: () => PathEntry | null;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 299,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L299",
+              },
+              "type": "() => PathEntry | null",
+            },
+          ],
+          "properties": Array [],
+        },
+        "name": "PathEntryStream",
+        "signature": "interface PathEntryStream {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 298,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L298",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "ReadOptions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "ReadOptions.encoding",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "encoding",
+              "signature": "encoding?: string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 337,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L337",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ReadOptions.flag",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "flag",
+              "signature": "flag?: string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 338,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L338",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ReadOptions.fs",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "fs",
+              "signature": "fs?: object;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 335,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L335",
+              },
+              "type": "{}",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ReadOptions.reviver",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "reviver",
+              "signature": "reviver?: any;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 336,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L336",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [],
+              "id": "ReadOptions.throws",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "throws",
+              "signature": "throws?: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 334,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L334",
+              },
+              "type": "boolean",
+            },
+          ],
+        },
+        "name": "ReadOptions",
+        "signature": "interface ReadOptions {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 333,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L333",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "WriteFileOptions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "WriteFileOptions.encoding",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "encoding",
+              "signature": "encoding?: string | null;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 342,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L342",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "WriteFileOptions.flag",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "flag",
+              "signature": "flag?: string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 343,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L343",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "WriteFileOptions.mode",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "mode",
+              "signature": "mode?: number;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 344,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L344",
+              },
+              "type": "number",
+            },
+          ],
+        },
+        "name": "WriteFileOptions",
+        "signature": "interface WriteFileOptions {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 341,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L341",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "WriteOptions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "WriteOptions.EOL",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "EOL",
+              "signature": "EOL?: string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 351,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L351",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "WriteOptions.fs",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "fs",
+              "signature": "fs?: object;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 348,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L348",
+              },
+              "type": "{}",
+            },
+            Object {
+              "docs": Array [],
+              "id": "WriteOptions.replacer",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "replacer",
+              "signature": "replacer?: any;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 349,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L349",
+              },
+              "type": "any",
+            },
+            Object {
+              "docs": Array [],
+              "id": "WriteOptions.spaces",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "spaces",
+              "signature": "spaces?: number | string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 350,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L350",
+              },
+              "type": "string | number",
+            },
+          ],
+        },
+        "name": "WriteOptions",
+        "signature": "interface WriteOptions extends WriteFileOptions {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 347,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L347",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "WritevResult",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "WritevResult.buffers",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "buffers",
+              "signature": "buffers: ArrayBufferView[];",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 356,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L356",
+              },
+              "type": "any[]",
+            },
+            Object {
+              "docs": Array [],
+              "id": "WritevResult.bytesWritten",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "bytesWritten",
+              "signature": "bytesWritten: number;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 355,
+                "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L355",
+              },
+              "type": "number",
+            },
+          ],
+        },
+        "name": "WritevResult",
+        "signature": "interface WritevResult {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 354,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L354",
+        },
+      },
+    ],
+    "namespaces": Array [],
+    "typeAliases": Array [
+      Object {
+        "docs": Array [],
+        "id": "ArrayBufferView",
+        "kind": "TypeAliasDeclaration",
+        "name": "ArrayBufferView",
+        "signature": "type ArrayBufferView = NodeJS.TypedArray | DataView;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 309,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L309",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "CopyFilterAsync",
+        "kind": "TypeAliasDeclaration",
+        "name": "CopyFilterAsync",
+        "signature": "type CopyFilterAsync = (src: string, dest: string) => Promise<boolean>;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 303,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L303",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "CopyFilterSync",
+        "kind": "TypeAliasDeclaration",
+        "name": "CopyFilterSync",
+        "signature": "type CopyFilterSync = (src: string, dest: string) => boolean;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 302,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L302",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Mode",
+        "kind": "TypeAliasDeclaration",
+        "name": "Mode",
+        "signature": "type Mode = string | number;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 307,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L307",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "SymlinkType",
+        "kind": "TypeAliasDeclaration",
+        "name": "SymlinkType",
+        "signature": "type SymlinkType = 'dir' | 'file' | 'junction';",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 305,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L305",
+        },
+      },
+    ],
+    "variables": Array [
+      Object {
+        "docs": Array [],
+        "id": "createLink",
+        "kind": "VariableDeclaration",
+        "name": "createLink",
+        "signature": "const createLink: {
+    (src: string, dest: string): Promise<void>;
+    (src: string, dest: string, callback: (err: Error) => void): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 101,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L101",
+        },
+        "type": "{ (src: string, dest: string): Promise<void>; (src: string, dest: string, callback: (err: Error) => void): void; }",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [],
+        "id": "createLinkSync",
+        "kind": "VariableDeclaration",
+        "name": "createLinkSync",
+        "signature": "const createLinkSync: (src: string, dest: string) => void;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 104,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L104",
+        },
+        "type": "(src: string, dest: string) => void",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [],
+        "id": "emptydir",
+        "kind": "VariableDeclaration",
+        "name": "emptydir",
+        "signature": "const emptydir: {
+    (path: string): Promise<void>;
+    (path: string, callback: (err: Error) => void): void;
+};",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 113,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L113",
+        },
+        "type": "{ (path: string): Promise<void>; (path: string, callback: (err: Error) => void): void; }",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [],
+        "id": "emptydirSync",
+        "kind": "VariableDeclaration",
+        "name": "emptydirSync",
+        "signature": "const emptydirSync: (path: string) => void;",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 116,
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L116",
+        },
+        "type": "(path: string) => void",
+        "variableKind": "const",
+      },
+    ],
+  },
+  "files": Array [
+    Object {
+      "filename": "index.d.ts",
+      "isIndexFile": true,
+      "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts",
+    },
+  ],
+  "overview": undefined,
+}
+`;

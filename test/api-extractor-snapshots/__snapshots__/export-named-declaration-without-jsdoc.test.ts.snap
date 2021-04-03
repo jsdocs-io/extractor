@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`export-named-declaration-without-jsdoc snapshot 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [],
+    "enums": Array [],
+    "functions": Array [],
+    "interfaces": Array [],
+    "namespaces": Array [],
+    "typeAliases": Array [],
+    "variables": Array [
+      Object {
+        "docs": Array [],
+        "id": "var1",
+        "kind": "VariableDeclaration",
+        "name": "var1",
+        "signature": "const var1: number;",
+        "source": Object {
+          "filename": "index.ts",
+          "line": 7,
+          "url": undefined,
+        },
+        "type": "number",
+        "variableKind": "const",
+      },
+    ],
+  },
+  "files": Array [
+    Object {
+      "filename": "index.ts",
+      "isIndexFile": true,
+      "url": undefined,
+    },
+  ],
+  "overview": "/**
+ * This is the overview and not the documentation for \`var1\`.
+ *
+ * @packageDocumentation
+ */",
+}
+`;

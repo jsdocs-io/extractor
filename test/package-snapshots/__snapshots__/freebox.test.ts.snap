@@ -1,0 +1,841 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`freebox 1.3.3 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [
+              "/**
+    @returns Freebox instance
+		*/",
+            ],
+            "id": "Freebox.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(appRegistered: AppRegistered);",
+            "source": Object {
+              "filename": "index.d.ts",
+              "line": 152,
+              "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L152",
+            },
+          },
+        ],
+        "docs": Array [],
+        "id": "Freebox",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [
+            Object {
+              "docs": Array [],
+              "id": "Freebox.getChallenge",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "getChallenge",
+              "signature": "getChallenge: () => any;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 170,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L170",
+              },
+              "type": "() => any",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    Login to a Freebox by opening a session.
+    
+    @returns \`Object\` Session
+		*/",
+              ],
+              "id": "Freebox.login",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "login",
+              "signature": "login: (challenge?: string) => Session;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 166,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L166",
+              },
+              "type": "(challenge?: string) => Session",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    Close the current session.
+    
+    @returns \`Object\` AxiosResponse
+		*/",
+              ],
+              "id": "Freebox.logout",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "logout",
+              "signature": "logout: () => any;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 177,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L177",
+              },
+              "type": "() => any",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Freebox.openSession",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "openSession",
+              "signature": "openSession: (sessionStart: SessionStart) => any;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 168,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L168",
+              },
+              "type": "(sessionStart: SessionStart) => any",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    Requests the Freebox by passing an object \`AxiosRequestConfig\` (https://github.com/axios/axios#request-config).
+    
+    @returns \`Object\` AxiosResponse
+		*/",
+              ],
+              "id": "Freebox.request",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "request",
+              "signature": "request: (requestConfig: any) => any;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 159,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L159",
+              },
+              "type": "(requestConfig: any) => any",
+            },
+          ],
+          "properties": Array [],
+        },
+        "name": "Freebox",
+        "signature": "class Freebox {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 148,
+          "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L148",
+        },
+      },
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [],
+            "id": "FreeboxRegister.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(appIdentity?: AppIdentity);",
+            "source": Object {
+              "filename": "index.d.ts",
+              "line": 134,
+              "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L134",
+            },
+          },
+        ],
+        "docs": Array [],
+        "id": "FreeboxRegister",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [
+            Object {
+              "docs": Array [],
+              "id": "FreeboxRegister.discovery",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "discovery",
+              "signature": "discovery: () => any;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 142,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L142",
+              },
+              "type": "() => any",
+            },
+            Object {
+              "docs": Array [],
+              "id": "FreeboxRegister.getAuthorizationStatus",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "getAuthorizationStatus",
+              "signature": "getAuthorizationStatus: (track_id: number | string) => boolean | AxiosError;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 144,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L144",
+              },
+              "type": "(track_id: number | string) => boolean | AxiosError",
+            },
+            Object {
+              "docs": Array [
+                "/**
+		Register your app to the Freebox. It requires a manual input on Freebox LCD screen.
+    @returns \`Object\` with all the informations needed to login and request your Freebox.
+		*/",
+              ],
+              "id": "FreeboxRegister.register",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "register",
+              "signature": "register: (options?: RegisterOptions) => AppRegistered;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 140,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L140",
+              },
+              "type": "(options?: RegisterOptions) => AppRegistered",
+            },
+            Object {
+              "docs": Array [],
+              "id": "FreeboxRegister.request",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "request",
+              "signature": "request: (requestConfig: any) => any;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 141,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L141",
+              },
+              "type": "(requestConfig: any) => any",
+            },
+            Object {
+              "docs": Array [],
+              "id": "FreeboxRegister.requestAuthorization",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "requestAuthorization",
+              "signature": "requestAuthorization: () => any;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 143,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L143",
+              },
+              "type": "() => any",
+            },
+            Object {
+              "docs": Array [],
+              "id": "FreeboxRegister.trackAuthorizationProgress",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "trackAuthorizationProgress",
+              "signature": "trackAuthorizationProgress: (track_id: number | string) => any;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 145,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L145",
+              },
+              "type": "(track_id: number | string) => any",
+            },
+          ],
+          "properties": Array [],
+        },
+        "name": "FreeboxRegister",
+        "signature": "class FreeboxRegister {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 133,
+          "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L133",
+        },
+      },
+    ],
+    "enums": Array [],
+    "functions": Array [],
+    "interfaces": Array [
+      Object {
+        "docs": Array [],
+        "id": "AppIdentity",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+    A unique \`app_id\` string.
+    
+    @default 'fbx.nodejs_app_{generatedId}'
+		*/",
+              ],
+              "id": "AppIdentity.app_id",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "app_id",
+              "signature": "app_id?: string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 10,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L10",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    A descriptive application name (will be displayed on lcd).
+    
+    @default 'nodejs_app_{generatedId}'
+		*/",
+              ],
+              "id": "AppIdentity.app_name",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "app_name",
+              "signature": "app_name?: string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 17,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L17",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    Your app version.
+    
+    @default '1.0.0'
+		*/",
+              ],
+              "id": "AppIdentity.app_version",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "app_version",
+              "signature": "app_version?: string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 24,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L24",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    The name of the device on which the app will be used.
+    
+    @default 'NodeJS'
+		*/",
+              ],
+              "id": "AppIdentity.device_name",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "device_name",
+              "signature": "device_name?: string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 31,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L31",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "AppIdentity",
+        "signature": "interface AppIdentity {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 4,
+          "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L4",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "AppRegistered",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+    The API root path on the HTTP server.
+    
+    @default '/api/'
+		*/",
+              ],
+              "id": "AppRegistered.api_base_url",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "api_base_url",
+              "signature": "api_base_url?: string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 78,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L78",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    The domain to use in place of hardcoded Freebox IP.
+    
+    @default 'https://mafreebox.freebox.fr'
+		*/",
+              ],
+              "id": "AppRegistered.api_domain",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "api_domain",
+              "signature": "api_domain?: string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 66,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L66",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    The current API version on the Freebox.
+		*/",
+              ],
+              "id": "AppRegistered.api_version",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "api_version",
+              "signature": "api_version: string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 83,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L83",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    Same \`app_id\` used in TokenRequest to get the \`app_token\`.
+		*/",
+              ],
+              "id": "AppRegistered.app_id",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "app_id",
+              "signature": "app_id: string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 59,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L59",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    Unique \`app_token\` provided after authorizing the app via \`FreeboxRegister\` class.
+    This token has been associated with a set of default permissions.
+		*/",
+              ],
+              "id": "AppRegistered.app_token",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "app_token",
+              "signature": "app_token: string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 54,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L54",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    Same \`app_version\` used in TokenRequest (using \`FreeboxRegister\` class) to get the \`app_token\`.
+		*/",
+              ],
+              "id": "AppRegistered.app_version",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "app_version",
+              "signature": "app_version?: string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 88,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L88",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    Port to use for remote https access to the Freebox API.
+		*/",
+              ],
+              "id": "AppRegistered.https_port",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "https_port",
+              "signature": "https_port?: number;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 71,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L71",
+              },
+              "type": "number",
+            },
+          ],
+        },
+        "name": "AppRegistered",
+        "signature": "interface AppRegistered {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 49,
+          "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L49",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Permissions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+    Access to call logs
+		*/",
+              ],
+              "id": "Permissions.calls",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "calls",
+              "signature": "calls?: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 113,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L113",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    Access to contact list
+		*/",
+              ],
+              "id": "Permissions.contacts",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "contacts",
+              "signature": "contacts?: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 108,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L108",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    Access to downloader
+		*/",
+              ],
+              "id": "Permissions.downloader",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "downloader",
+              "signature": "downloader?: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 123,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L123",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    Access to filesystem
+		*/",
+              ],
+              "id": "Permissions.explorer",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "explorer",
+              "signature": "explorer?: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 118,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L118",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    Access to parental control
+		*/",
+              ],
+              "id": "Permissions.parental",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "parental",
+              "signature": "parental?: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 128,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L128",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "Permissions.pvr",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "pvr",
+              "signature": "pvr?: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 130,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L130",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    Allow modifying the Freebox settings (reading settings is always allowed).
+		*/",
+              ],
+              "id": "Permissions.settings",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "settings",
+              "signature": "settings?: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 103,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L103",
+              },
+              "type": "boolean",
+            },
+          ],
+        },
+        "name": "Permissions",
+        "signature": "interface Permissions {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 99,
+          "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L99",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "RegisterOptions",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+    Prevent logging to console.
+    
+    @default  false
+		*/",
+              ],
+              "id": "RegisterOptions.silent",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "silent",
+              "signature": "silent?: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 40,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L40",
+              },
+              "type": "boolean",
+            },
+          ],
+        },
+        "name": "RegisterOptions",
+        "signature": "interface RegisterOptions {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 34,
+          "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L34",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "Session",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "Session.permissions",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "permissions",
+              "signature": "permissions: Permissions;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 96,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L96",
+              },
+              "type": "Permissions",
+            },
+            Object {
+              "docs": Array [
+                "/**
+    A \`session_token\` is a combination of app_token and a challenge to open a session
+    */",
+              ],
+              "id": "Session.session_token",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "session_token",
+              "signature": "session_token: string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 95,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L95",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "Session",
+        "signature": "interface Session {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 91,
+          "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L91",
+        },
+      },
+      Object {
+        "docs": Array [],
+        "id": "SessionStart",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "SessionStart.app_id",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "app_id",
+              "signature": "app_id: string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 44,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L44",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "SessionStart.app_version",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "app_version",
+              "signature": "app_version?: string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 45,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L45",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "SessionStart.password",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "password",
+              "signature": "password: string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 46,
+                "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L46",
+              },
+              "type": "string",
+            },
+          ],
+        },
+        "name": "SessionStart",
+        "signature": "interface SessionStart {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 43,
+          "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L43",
+        },
+      },
+    ],
+    "namespaces": Array [],
+    "typeAliases": Array [],
+    "variables": Array [],
+  },
+  "files": Array [
+    Object {
+      "filename": "index.d.ts",
+      "isIndexFile": true,
+      "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts",
+    },
+  ],
+  "overview": undefined,
+}
+`;

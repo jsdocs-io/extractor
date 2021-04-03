@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ambient-modules snapshot 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [],
+    "enums": Array [],
+    "functions": Array [],
+    "interfaces": Array [],
+    "namespaces": Array [
+      Object {
+        "declarations": Object {
+          "classes": Array [],
+          "enums": Array [],
+          "functions": Array [],
+          "interfaces": Array [],
+          "namespaces": Array [],
+          "typeAliases": Array [],
+          "variables": Array [
+            Object {
+              "docs": Array [
+                "/** Variable var1 */",
+              ],
+              "id": "bar.var1",
+              "kind": "VariableDeclaration",
+              "name": "var1",
+              "signature": "const var1: string;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 7,
+                "url": undefined,
+              },
+              "type": "string",
+              "variableKind": "const",
+            },
+            Object {
+              "docs": Array [
+                "/** Variable var2 */",
+              ],
+              "id": "bar.var2",
+              "kind": "VariableDeclaration",
+              "name": "var2",
+              "signature": "const var2: boolean;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 10,
+                "url": undefined,
+              },
+              "type": "boolean",
+              "variableKind": "const",
+            },
+          ],
+        },
+        "docs": Array [
+          "/** Module 'bar' */",
+        ],
+        "id": "bar",
+        "kind": "NamespaceDeclaration",
+        "name": "bar",
+        "signature": "module 'bar' {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 5,
+          "url": undefined,
+        },
+      },
+      Object {
+        "declarations": Object {
+          "classes": Array [],
+          "enums": Array [],
+          "functions": Array [],
+          "interfaces": Array [],
+          "namespaces": Array [],
+          "typeAliases": Array [],
+          "variables": Array [],
+        },
+        "docs": Array [
+          "/** Module 'foo' */",
+        ],
+        "id": "foo",
+        "kind": "NamespaceDeclaration",
+        "name": "foo",
+        "signature": "module 'foo' {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 2,
+          "url": undefined,
+        },
+      },
+      Object {
+        "declarations": Object {
+          "classes": Array [],
+          "enums": Array [],
+          "functions": Array [
+            Object {
+              "docs": Array [],
+              "id": "foo_bar.sum",
+              "kind": "FunctionDeclaration",
+              "name": "sum",
+              "signature": "sum: (a: number, b: number) => number;",
+              "source": Object {
+                "filename": "index.d.ts",
+                "line": 15,
+                "url": undefined,
+              },
+              "type": "(a: number, b: number) => number",
+            },
+          ],
+          "interfaces": Array [],
+          "namespaces": Array [],
+          "typeAliases": Array [],
+          "variables": Array [],
+        },
+        "docs": Array [
+          "/** Module 'foo bar' */",
+        ],
+        "id": "foo_bar",
+        "kind": "NamespaceDeclaration",
+        "name": "foo_bar",
+        "signature": "module 'foo bar' {}",
+        "source": Object {
+          "filename": "index.d.ts",
+          "line": 14,
+          "url": undefined,
+        },
+      },
+    ],
+    "typeAliases": Array [],
+    "variables": Array [],
+  },
+  "files": Array [
+    Object {
+      "filename": "index.d.ts",
+      "isIndexFile": true,
+      "url": undefined,
+    },
+  ],
+  "overview": undefined,
+}
+`;

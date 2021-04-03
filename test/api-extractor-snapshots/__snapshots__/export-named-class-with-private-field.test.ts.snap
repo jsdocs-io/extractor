@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`export-named-class-with-private-field snapshot 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [
+      Object {
+        "constructors": Array [],
+        "docs": Array [
+          "/** Class1 */",
+        ],
+        "id": "Class1",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [
+            Object {
+              "docs": Array [],
+              "id": "Class1.qux",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "qux",
+              "signature": "qux: () => string;",
+              "source": Object {
+                "filename": "index.ts",
+                "line": 9,
+                "url": undefined,
+              },
+              "type": "() => string",
+            },
+          ],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "Class1.bar",
+              "isStatic": false,
+              "kind": "ClassPropertyDeclaration",
+              "name": "bar",
+              "signature": "bar: number;",
+              "source": Object {
+                "filename": "index.ts",
+                "line": 7,
+                "url": undefined,
+              },
+              "type": "number",
+            },
+          ],
+        },
+        "name": "Class1",
+        "signature": "class Class1 {}",
+        "source": Object {
+          "filename": "index.ts",
+          "line": 2,
+          "url": undefined,
+        },
+      },
+    ],
+    "enums": Array [],
+    "functions": Array [],
+    "interfaces": Array [],
+    "namespaces": Array [],
+    "typeAliases": Array [],
+    "variables": Array [],
+  },
+  "files": Array [
+    Object {
+      "filename": "index.ts",
+      "isIndexFile": true,
+      "url": undefined,
+    },
+  ],
+  "overview": undefined,
+}
+`;

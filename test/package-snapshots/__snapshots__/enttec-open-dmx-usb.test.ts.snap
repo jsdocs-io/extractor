@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`enttec-open-dmx-usb 2.0.0 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [
+      Object {
+        "constructors": Array [
+          Object {
+            "docs": Array [
+              "/**
+     * @param {string} path A path returned by {@link EnttecOpenDMXUSBDevice.listDevices} or
+     * {@link EnttecOpenDMXUSBDevice.getFirstAvailableDevice}.
+     * @param {boolean} [startSending=true] If the device should start sending as soon as it is ready.
+     */",
+            ],
+            "id": "EnttecOpenDMXUSBDevice.0-constructor",
+            "kind": "ClassConstructorDeclaration",
+            "name": "constructor",
+            "signature": "constructor(path: string, startSending?: boolean);",
+            "source": Object {
+              "filename": "dist-types/index.d.ts",
+              "line": 15,
+              "url": "https://github.com/moritzruth/node-enttec-open-dmx-usb/tree/v2.0.0/dist-types/index.d.ts#L15",
+            },
+          },
+        ],
+        "docs": Array [],
+        "id": "EnttecOpenDMXUSBDevice",
+        "isAbstract": false,
+        "kind": "ClassDeclaration",
+        "members": Object {
+          "methods": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * Gets the path of the first available device found.
+     * @throws Error when no device is found.
+     * @returns {Promise<string>}
+     */",
+              ],
+              "id": "EnttecOpenDMXUSBDevice.getFirstAvailableDevice",
+              "isStatic": true,
+              "kind": "ClassMethodDeclaration",
+              "name": "getFirstAvailableDevice",
+              "signature": "static getFirstAvailableDevice: () => Promise<string>;",
+              "source": Object {
+                "filename": "dist-types/index.d.ts",
+                "line": 51,
+                "url": "https://github.com/moritzruth/node-enttec-open-dmx-usb/tree/v2.0.0/dist-types/index.d.ts#L51",
+              },
+              "type": "() => Promise<string>",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Lists the paths of all available devices.
+     * @returns {Promise<string[]>}
+     */",
+              ],
+              "id": "EnttecOpenDMXUSBDevice.listDevices",
+              "isStatic": true,
+              "kind": "ClassMethodDeclaration",
+              "name": "listDevices",
+              "signature": "static listDevices: () => Promise<string[]>;",
+              "source": Object {
+                "filename": "dist-types/index.d.ts",
+                "line": 45,
+                "url": "https://github.com/moritzruth/node-enttec-open-dmx-usb/tree/v2.0.0/dist-types/index.d.ts#L45",
+              },
+              "type": "() => Promise<string[]>",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Sets the channel values.
+     * If channels is an Object, the keys are the channel numbers.
+     *
+     * @param {Buffer|Object|Array} channels
+     * @param {boolean} [clear=false] Whether all previously assigned channels should be set to 0
+     */",
+              ],
+              "id": "EnttecOpenDMXUSBDevice.setChannels",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "setChannels",
+              "signature": "setChannels: (channels: any, clear?: boolean) => void;",
+              "source": Object {
+                "filename": "dist-types/index.d.ts",
+                "line": 33,
+                "url": "https://github.com/moritzruth/node-enttec-open-dmx-usb/tree/v2.0.0/dist-types/index.d.ts#L33",
+              },
+              "type": "(channels: any, clear?: boolean) => void",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Starts sending.
+     * @param {number} [interval=0] The time between each attempt to send.
+     * @throws Error If the device is not ready yet.
+     */",
+              ],
+              "id": "EnttecOpenDMXUSBDevice.startSending",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "startSending",
+              "signature": "startSending: (interval?: number) => void;",
+              "source": Object {
+                "filename": "dist-types/index.d.ts",
+                "line": 21,
+                "url": "https://github.com/moritzruth/node-enttec-open-dmx-usb/tree/v2.0.0/dist-types/index.d.ts#L21",
+              },
+              "type": "(interval?: number) => void",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Stops sending.
+     */",
+              ],
+              "id": "EnttecOpenDMXUSBDevice.stopSending",
+              "isStatic": false,
+              "kind": "ClassMethodDeclaration",
+              "name": "stopSending",
+              "signature": "stopSending: () => void;",
+              "source": Object {
+                "filename": "dist-types/index.d.ts",
+                "line": 25,
+                "url": "https://github.com/moritzruth/node-enttec-open-dmx-usb/tree/v2.0.0/dist-types/index.d.ts#L25",
+              },
+              "type": "() => void",
+            },
+          ],
+          "properties": Array [],
+        },
+        "name": "EnttecOpenDMXUSBDevice",
+        "signature": "class EnttecOpenDMXUSBDevice extends EventEmitter {}",
+        "source": Object {
+          "filename": "dist-types/index.d.ts",
+          "line": 5,
+          "url": "https://github.com/moritzruth/node-enttec-open-dmx-usb/tree/v2.0.0/dist-types/index.d.ts#L5",
+        },
+      },
+    ],
+    "enums": Array [],
+    "functions": Array [],
+    "interfaces": Array [],
+    "namespaces": Array [],
+    "typeAliases": Array [],
+    "variables": Array [
+      Object {
+        "docs": Array [],
+        "id": "PRODUCT_ID",
+        "kind": "VariableDeclaration",
+        "name": "PRODUCT_ID",
+        "signature": "const PRODUCT_ID: string;",
+        "source": Object {
+          "filename": "dist-types/index.d.ts",
+          "line": 4,
+          "url": "https://github.com/moritzruth/node-enttec-open-dmx-usb/tree/v2.0.0/dist-types/index.d.ts#L4",
+        },
+        "type": "string",
+        "variableKind": "const",
+      },
+      Object {
+        "docs": Array [],
+        "id": "VENDOR_ID",
+        "kind": "VariableDeclaration",
+        "name": "VENDOR_ID",
+        "signature": "const VENDOR_ID: string;",
+        "source": Object {
+          "filename": "dist-types/index.d.ts",
+          "line": 3,
+          "url": "https://github.com/moritzruth/node-enttec-open-dmx-usb/tree/v2.0.0/dist-types/index.d.ts#L3",
+        },
+        "type": "string",
+        "variableKind": "const",
+      },
+    ],
+  },
+  "files": Array [
+    Object {
+      "filename": "dist-types/index.d.ts",
+      "isIndexFile": true,
+      "url": "https://github.com/moritzruth/node-enttec-open-dmx-usb/tree/v2.0.0/dist-types/index.d.ts",
+    },
+  ],
+  "overview": undefined,
+}
+`;

@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`export-default-object snapshot 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [],
+    "enums": Array [],
+    "functions": Array [],
+    "interfaces": Array [],
+    "namespaces": Array [],
+    "typeAliases": Array [],
+    "variables": Array [
+      Object {
+        "docs": Array [
+          "/** obj1 */",
+        ],
+        "id": "default",
+        "kind": "VariableDeclaration",
+        "name": "default",
+        "signature": "const default: { a: string; b: boolean; c: number; d: { e: string } };",
+        "source": Object {
+          "filename": "index.ts",
+          "line": 2,
+          "url": undefined,
+        },
+        "type": "{ a: string; b: boolean; c: number; d: { e: string; }; }",
+        "variableKind": "const",
+      },
+    ],
+  },
+  "files": Array [
+    Object {
+      "filename": "index.ts",
+      "isIndexFile": true,
+      "url": undefined,
+    },
+  ],
+  "overview": undefined,
+}
+`;

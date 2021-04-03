@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tiny-lru 7.0.6 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [],
+    "enums": Array [],
+    "functions": Array [],
+    "interfaces": Array [],
+    "namespaces": Array [
+      Object {
+        "declarations": Object {
+          "classes": Array [
+            Object {
+              "constructors": Array [
+                Object {
+                  "docs": Array [],
+                  "id": "tiny-lru.Lru.0-constructor",
+                  "kind": "ClassConstructorDeclaration",
+                  "name": "constructor",
+                  "signature": "constructor(max?: number, ttl?: number);",
+                  "source": Object {
+                    "filename": "tiny-lru.d.ts",
+                    "line": 3,
+                    "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts#L3",
+                  },
+                },
+              ],
+              "docs": Array [],
+              "id": "tiny-lru.Lru",
+              "isAbstract": false,
+              "kind": "ClassDeclaration",
+              "members": Object {
+                "methods": Array [
+                  Object {
+                    "docs": Array [],
+                    "id": "tiny-lru.Lru.clear",
+                    "isStatic": false,
+                    "kind": "ClassMethodDeclaration",
+                    "name": "clear",
+                    "signature": "clear: () => this;",
+                    "source": Object {
+                      "filename": "tiny-lru.d.ts",
+                      "line": 8,
+                      "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts#L8",
+                    },
+                    "type": "() => this",
+                  },
+                  Object {
+                    "docs": Array [],
+                    "id": "tiny-lru.Lru.delete",
+                    "isStatic": false,
+                    "kind": "ClassMethodDeclaration",
+                    "name": "delete",
+                    "signature": "delete: (key: string) => this;",
+                    "source": Object {
+                      "filename": "tiny-lru.d.ts",
+                      "line": 9,
+                      "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts#L9",
+                    },
+                    "type": "(key: string) => this",
+                  },
+                  Object {
+                    "docs": Array [],
+                    "id": "tiny-lru.Lru.evict",
+                    "isStatic": false,
+                    "kind": "ClassMethodDeclaration",
+                    "name": "evict",
+                    "signature": "evict: () => this;",
+                    "source": Object {
+                      "filename": "tiny-lru.d.ts",
+                      "line": 10,
+                      "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts#L10",
+                    },
+                    "type": "() => this",
+                  },
+                  Object {
+                    "docs": Array [],
+                    "id": "tiny-lru.Lru.get",
+                    "isStatic": false,
+                    "kind": "ClassMethodDeclaration",
+                    "name": "get",
+                    "signature": "get: (key: string) => T | undefined;",
+                    "source": Object {
+                      "filename": "tiny-lru.d.ts",
+                      "line": 6,
+                      "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts#L6",
+                    },
+                    "type": "(key: string) => T | undefined",
+                  },
+                  Object {
+                    "docs": Array [],
+                    "id": "tiny-lru.Lru.has",
+                    "isStatic": false,
+                    "kind": "ClassMethodDeclaration",
+                    "name": "has",
+                    "signature": "has: (key: string) => boolean;",
+                    "source": Object {
+                      "filename": "tiny-lru.d.ts",
+                      "line": 5,
+                      "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts#L5",
+                    },
+                    "type": "(key: string) => boolean",
+                  },
+                  Object {
+                    "docs": Array [],
+                    "id": "tiny-lru.Lru.keys",
+                    "isStatic": false,
+                    "kind": "ClassMethodDeclaration",
+                    "name": "keys",
+                    "signature": "keys: () => string[];",
+                    "source": Object {
+                      "filename": "tiny-lru.d.ts",
+                      "line": 11,
+                      "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts#L11",
+                    },
+                    "type": "() => string[]",
+                  },
+                  Object {
+                    "docs": Array [],
+                    "id": "tiny-lru.Lru.set",
+                    "isStatic": false,
+                    "kind": "ClassMethodDeclaration",
+                    "name": "set",
+                    "signature": "set: (key: string, value: T, bypass?: boolean) => this;",
+                    "source": Object {
+                      "filename": "tiny-lru.d.ts",
+                      "line": 7,
+                      "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts#L7",
+                    },
+                    "type": "(key: string, value: T, bypass?: boolean) => this",
+                  },
+                ],
+                "properties": Array [],
+              },
+              "name": "Lru",
+              "signature": "class Lru<T = any> {}",
+              "source": Object {
+                "filename": "tiny-lru.d.ts",
+                "line": 2,
+                "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts#L2",
+              },
+            },
+          ],
+          "enums": Array [],
+          "functions": Array [
+            Object {
+              "docs": Array [],
+              "id": "tiny-lru.factory",
+              "kind": "FunctionDeclaration",
+              "name": "factory",
+              "signature": "factory: <T = any>(max?: number, ttl?: number) => Lru<T>;",
+              "source": Object {
+                "filename": "tiny-lru.d.ts",
+                "line": 13,
+                "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts#L13",
+              },
+              "type": "<T = any>(max?: number, ttl?: number) => Lru<T>",
+            },
+          ],
+          "interfaces": Array [],
+          "namespaces": Array [],
+          "typeAliases": Array [],
+          "variables": Array [],
+        },
+        "docs": Array [],
+        "id": "tiny-lru",
+        "kind": "NamespaceDeclaration",
+        "name": "tiny-lru",
+        "signature": "module 'tiny-lru' {}",
+        "source": Object {
+          "filename": "tiny-lru.d.ts",
+          "line": 1,
+          "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts#L1",
+        },
+      },
+    ],
+    "typeAliases": Array [],
+    "variables": Array [],
+  },
+  "files": Array [
+    Object {
+      "filename": "tiny-lru.d.ts",
+      "isIndexFile": true,
+      "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts",
+    },
+  ],
+  "overview": undefined,
+}
+`;

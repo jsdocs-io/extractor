@@ -1,0 +1,105 @@
+{
+    "name": "@jsdocs-io/extractor",
+    "description": "Analyze and extract the API from npm packages",
+    "version": "0.0.1",
+    "author": "Edoardo Scibona (velut)",
+    "license": "AGPL-3.0-or-later",
+    "source": "./src/index.ts",
+    "main": "./dist/index.js",
+    "module": "./dist/extractor.esm.js",
+    "types": "./dist/index.d.ts",
+    "sideEffects": false,
+    "exports": {
+        ".": {
+            "require": "./dist/index.js",
+            "import": "./dist/extractor.esm.js",
+            "default": "./dist/index.js"
+        },
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "src",
+        "dist"
+    ],
+    "engines": {
+        "node": ">=12"
+    },
+    "scripts": {
+        "start": "tsdx watch --target node",
+        "build:check": "tsc --noEmit",
+        "build": "tsc --noEmit && tsdx build --target node",
+        "test": "tsdx test --runInBand --testTimeout=20000",
+        "test:packages": "tsdx test test/package-snapshots --maxWorkers=4 --testTimeout=20000",
+        "test:cov": "tsdx test --coverage --maxWorkers=4 --testTimeout=20000",
+        "test:watch": "tsdx test --runInBand --watchAll --coverage",
+        "test:ci": "tsdx test --coverage --maxWorkers=2 --testTimeout=20000 --bail --ci",
+        "lint": "tsdx lint src test",
+        "lint:fix": "tsdx lint src test --fix",
+        "prepare": "husky install && yarn build",
+        "pre-push": "yarn && yarn lint && yarn build && yarn test:cov",
+        "release": "np"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jsdocs-io/extractor.git"
+    },
+    "bugs": {
+        "url": "https://github.com/jsdocs-io/extractor/issues"
+    },
+    "keywords": [
+        "npm",
+        "package",
+        "analyzer",
+        "analyze",
+        "info",
+        "api",
+        "extractor",
+        "typescript",
+        "javascript",
+        "jsdocs",
+        "jsdocs.io"
+    ],
+    "dependencies": {
+        "@microsoft/tsdoc": "^0.13.0",
+        "concat-stream": "^2.0.0",
+        "debug": "^4.3.1",
+        "got": "^11.8.2",
+        "gunzip-maybe": "^1.4.2",
+        "hosted-git-info": "^4.0.2",
+        "prettier": "^2.2.1",
+        "query-registry": "^2.0.0",
+        "tar-stream": "^2.2.0",
+        "ts-morph": "^10.0.2"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "12.0.1",
+        "@commitlint/config-conventional": "12.0.1",
+        "@pollyjs/adapter-node-http": "5.1.0",
+        "@pollyjs/core": "5.1.0",
+        "@pollyjs/persister-fs": "5.0.0",
+        "@types/concat-stream": "1.6.0",
+        "@types/debug": "4.1.5",
+        "@types/fs-extra": "9.0.9",
+        "@types/gunzip-maybe": "1.4.0",
+        "@types/hosted-git-info": "3.0.1",
+        "@types/pollyjs__adapter-node-http": "2.0.1",
+        "@types/pollyjs__core": "4.3.2",
+        "@types/pollyjs__persister-fs": "2.0.1",
+        "@types/prettier": "2.2.3",
+        "@types/setup-polly-jest": "0.5.1",
+        "@types/tar-stream": "2.2.0",
+        "clinic": "8.0.1",
+        "eslint-plugin-prettier": "3.3.1",
+        "fast-glob": "3.2.5",
+        "fs-extra": "9.1.0",
+        "husky": "6.0.0",
+        "nock": "13.0.11",
+        "np": "7.4.0",
+        "setup-polly-jest": "0.9.1",
+        "ts-dedent": "2.1.0",
+        "ts-jest": "26.5.4",
+        "tsdx": "0.14.1",
+        "tslib": "2.1.0",
+        "typescript": "4.2.3"
+    }
+}
