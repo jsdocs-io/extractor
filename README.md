@@ -8,7 +8,58 @@
 [![npm](https://img.shields.io/npm/v/@jsdocs-io/extractor)](https://www.npmjs.com/package/@jsdocs-io/extractor)
 [![License](https://img.shields.io/github/license/jsdocs-io/extractor)](https://github.com/jsdocs-io/extractor/blob/main/LICENSE)
 
-API extractor for npm packages
+This package downloads npm packages and extracts their public API.
+
+## API & Package Info
+
+-   Explore the API on [**jsDocs.io**](https://www.jsdocs.io/package/@jsdocs-io/extractor)
+-   View package contents on [**unpkg**](https://unpkg.com/@jsdocs-io/extractor/)
+-   View repository on [**GitHub**](https://github.com/jsdocs-io/extractor)
+-   Read the changelog on [**GitHub**](https://github.com/jsdocs-io/extractor/blob/main/CHANGELOG.md)
+
+## Install
+
+Using `npm`:
+
+```
+npm i @jsdocs-io/extractor
+```
+
+Using `yarn`:
+
+```
+yarn add @jsdocs-io/extractor
+```
+
+## Usage Example
+
+Analyze the latest version of the `query-registry` package from the npm registry:
+
+> **Warning**: analyzing packages is a blocking operation that requires some time to finish!
+
+```typescript
+import { analyzeRegistryPackage } from '@jsdocs-io/extractor';
+
+(async () => {
+    const info = await analyzeRegistryPackage({ name: 'query-registry' });
+
+    // Output: 'query-registry'
+    console.log(info.manifest.name);
+
+    // Output: 'string'
+    console.log(typeof info.api?.overview);
+})();
+```
+
+## Debug
+
+Debug messages are available when the `DEBUG` environment variable is set to `@jsdocs-io/extractor`:
+
+```bash
+DEBUG="@jsdocs-io/extractor"
+```
+
+For more information, see the [debug package](https://www.npmjs.com/package/debug).
 
 ## License
 
