@@ -35,6 +35,7 @@
         "test:ci": "tsdx test --coverage --maxWorkers=2 --testTimeout=20000 --bail --ci",
         "lint": "tsdx lint src test",
         "lint:fix": "tsdx lint src test --fix",
+        "debug:analyze": "yarn ts-node --skip-project scripts/debug-analyze.ts",
         "prepare": "husky install && yarn build",
         "pre-push": "yarn && yarn lint && yarn build && yarn test:cov",
         "release": "np"
@@ -98,6 +99,7 @@
         "setup-polly-jest": "0.9.1",
         "ts-dedent": "2.1.1",
         "ts-jest": "26.5.4",
+        "ts-node": "9.1.1",
         "tsdx": "0.14.1",
         "tslib": "2.2.0",
         "typescript": "4.2.4"
