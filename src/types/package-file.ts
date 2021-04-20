@@ -10,4 +10,7 @@ export interface PackageFile {
 
     /** URL in a remote repository linking to the file */
     readonly url?: string;
+
+    /** URL on unpkg.com linking to the file */
+    readonly unpkgURL?: string;
 }

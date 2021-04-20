@@ -15,6 +15,7 @@ Object {
             "source": Object {
               "filename": "src/core/immerClass.ts",
               "line": 40,
+              "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts#L40",
               "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts#L40",
             },
           },
@@ -35,6 +36,7 @@ Object {
               "source": Object {
                 "filename": "src/core/immerClass.ts",
                 "line": 186,
+                "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts#L186",
                 "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts#L186",
               },
               "type": "(base: Objectish, patches: Patch[]) => any",
@@ -49,6 +51,7 @@ Object {
               "source": Object {
                 "filename": "src/core/immerClass.ts",
                 "line": 140,
+                "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts#L140",
                 "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts#L140",
               },
               "type": "<T extends Objectish>(base: T) => Draft<T>",
@@ -66,6 +69,7 @@ Object {
               "source": Object {
                 "filename": "src/core/immerClass.ts",
                 "line": 150,
+                "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts#L150",
                 "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts#L150",
               },
               "type": "<D extends unknown>(draft: D, patchListener?: PatchListener) => D extends Draft<infer T> ? T : never",
@@ -100,6 +104,7 @@ Object {
               "source": Object {
                 "filename": "src/core/immerClass.ts",
                 "line": 68,
+                "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts#L68",
                 "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts#L68",
               },
               "type": "(base: any, recipe?: any, patchListener?: any) => any",
@@ -114,6 +119,7 @@ Object {
               "source": Object {
                 "filename": "src/core/immerClass.ts",
                 "line": 126,
+                "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts#L126",
                 "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts#L126",
               },
               "type": "(arg1: any, arg2?: any, arg3?: any) => any",
@@ -134,6 +140,7 @@ Object {
               "source": Object {
                 "filename": "src/core/immerClass.ts",
                 "line": 169,
+                "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts#L169",
                 "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts#L169",
               },
               "type": "(value: boolean) => void",
@@ -155,6 +162,7 @@ Object {
               "source": Object {
                 "filename": "src/core/immerClass.ts",
                 "line": 179,
+                "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts#L179",
                 "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts#L179",
               },
               "type": "(value: boolean) => void",
@@ -171,6 +179,7 @@ Object {
               "source": Object {
                 "filename": "src/core/immerClass.ts",
                 "line": 38,
+                "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts#L38",
                 "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts#L38",
               },
               "type": "boolean",
@@ -185,6 +194,7 @@ Object {
               "source": Object {
                 "filename": "src/core/immerClass.ts",
                 "line": 36,
+                "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts#L36",
                 "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts#L36",
               },
               "type": "boolean",
@@ -196,6 +206,7 @@ Object {
         "source": Object {
           "filename": "src/core/immerClass.ts",
           "line": 35,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts#L35",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts#L35",
         },
       },
@@ -218,6 +229,7 @@ Object {
         "source": Object {
           "filename": "src/immer.ts",
           "line": 99,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/immer.ts#L99",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/immer.ts#L99",
         },
         "type": "<T>(value: T) => Draft<T>",
@@ -237,6 +249,7 @@ Object {
         "source": Object {
           "filename": "src/immer.ts",
           "line": 108,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/immer.ts#L108",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/immer.ts#L108",
         },
         "type": "<T>(value: T) => Immutable<T>",
@@ -252,6 +265,7 @@ Object {
         "source": Object {
           "filename": "src/core/current.ts",
           "line": 19,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/current.ts#L19",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/current.ts#L19",
         },
         "type": "<T>(value: T) => T",
@@ -265,6 +279,7 @@ Object {
         "source": Object {
           "filename": "src/plugins/all.ts",
           "line": 5,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/plugins/all.ts#L5",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/plugins/all.ts#L5",
         },
         "type": "() => void",
@@ -278,6 +293,7 @@ Object {
         "source": Object {
           "filename": "src/plugins/es5.ts",
           "line": 26,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/plugins/es5.ts#L26",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/plugins/es5.ts#L26",
         },
         "type": "() => void",
@@ -291,6 +307,7 @@ Object {
         "source": Object {
           "filename": "src/plugins/mapset.ts",
           "line": 22,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/plugins/mapset.ts#L22",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/plugins/mapset.ts#L22",
         },
         "type": "() => void",
@@ -304,6 +321,7 @@ Object {
         "source": Object {
           "filename": "src/plugins/patches.ts",
           "line": 33,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/plugins/patches.ts#L33",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/plugins/patches.ts#L33",
         },
         "type": "() => void",
@@ -325,6 +343,7 @@ Object {
         "source": Object {
           "filename": "src/utils/common.ts",
           "line": 190,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/utils/common.ts#L190",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/utils/common.ts#L190",
         },
         "type": "<T>(obj: T, deep?: boolean) => T",
@@ -340,6 +359,7 @@ Object {
         "source": Object {
           "filename": "src/utils/common.ts",
           "line": 21,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/utils/common.ts#L21",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/utils/common.ts#L21",
         },
         "type": "(value: any) => boolean",
@@ -355,6 +375,7 @@ Object {
         "source": Object {
           "filename": "src/utils/common.ts",
           "line": 27,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/utils/common.ts#L27",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/utils/common.ts#L27",
         },
         "type": "(value: any) => boolean",
@@ -370,6 +391,7 @@ Object {
         "source": Object {
           "filename": "src/utils/common.ts",
           "line": 49,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/utils/common.ts#L49",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/utils/common.ts#L49",
         },
         "type": "<T>(value: T) => T",
@@ -397,6 +419,7 @@ Object {
               "source": Object {
                 "filename": "src/types/types-external.ts",
                 "line": 71,
+                "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/types/types-external.ts#L71",
                 "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/types/types-external.ts#L71",
               },
               "type": "\\"replace\\" | \\"remove\\" | \\"add\\"",
@@ -412,6 +435,7 @@ Object {
               "source": Object {
                 "filename": "src/types/types-external.ts",
                 "line": 72,
+                "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/types/types-external.ts#L72",
                 "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/types/types-external.ts#L72",
               },
               "type": "(string | number)[]",
@@ -427,6 +451,7 @@ Object {
               "source": Object {
                 "filename": "src/types/types-external.ts",
                 "line": 73,
+                "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/types/types-external.ts#L73",
                 "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/types/types-external.ts#L73",
               },
               "type": "any",
@@ -438,6 +463,7 @@ Object {
         "source": Object {
           "filename": "src/types/types-external.ts",
           "line": 70,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/types/types-external.ts#L70",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/types/types-external.ts#L70",
         },
       },
@@ -463,6 +489,7 @@ Object {
         "source": Object {
           "filename": "src/types/types-external.ts",
           "line": 45,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/types/types-external.ts#L45",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/types/types-external.ts#L45",
         },
       },
@@ -487,6 +514,7 @@ Object {
         "source": Object {
           "filename": "src/types/types-external.ts",
           "line": 58,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/types/types-external.ts#L58",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/types/types-external.ts#L58",
         },
       },
@@ -499,6 +527,7 @@ Object {
         "source": Object {
           "filename": "src/types/types-external.ts",
           "line": 76,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/types/types-external.ts#L76",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/types/types-external.ts#L76",
         },
       },
@@ -519,6 +548,7 @@ Object {
         "source": Object {
           "filename": "src/immer.ts",
           "line": 75,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/immer.ts#L75",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/immer.ts#L75",
         },
         "type": "any",
@@ -538,6 +568,7 @@ Object {
         "source": Object {
           "filename": "src/immer.ts",
           "line": 81,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/immer.ts#L81",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/immer.ts#L81",
         },
         "type": "any",
@@ -561,6 +592,7 @@ Object {
         "source": Object {
           "filename": "src/immer.ts",
           "line": 91,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/immer.ts#L91",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/immer.ts#L91",
         },
         "type": "any",
@@ -584,6 +616,7 @@ Object {
         "source": Object {
           "filename": "src/utils/env.ts",
           "line": 30,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/utils/env.ts#L30",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/utils/env.ts#L30",
         },
         "type": "Symbol",
@@ -602,6 +635,7 @@ Object {
         "source": Object {
           "filename": "src/utils/env.ts",
           "line": 18,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/utils/env.ts#L18",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/utils/env.ts#L18",
         },
         "type": "Nothing",
@@ -636,6 +670,7 @@ Object {
         "source": Object {
           "filename": "src/immer.ts",
           "line": 44,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/immer.ts#L44",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/immer.ts#L44",
         },
         "type": "IProduce",
@@ -655,6 +690,7 @@ Object {
         "source": Object {
           "filename": "src/immer.ts",
           "line": 51,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/immer.ts#L51",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/immer.ts#L51",
         },
         "type": "IProduceWithPatches",
@@ -675,6 +711,7 @@ Object {
         "source": Object {
           "filename": "src/immer.ts",
           "line": 60,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/immer.ts#L60",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/immer.ts#L60",
         },
         "type": "any",
@@ -696,6 +733,7 @@ Object {
         "source": Object {
           "filename": "src/immer.ts",
           "line": 68,
+          "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/immer.ts#L68",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/immer.ts#L68",
         },
         "type": "any",
@@ -706,43 +744,53 @@ Object {
   "files": Array [
     Object {
       "filename": "src/core/current.ts",
+      "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/current.ts",
       "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/current.ts",
     },
     Object {
       "filename": "src/core/immerClass.ts",
+      "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts",
       "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts",
     },
     Object {
       "filename": "src/immer.ts",
       "isIndexFile": true,
+      "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/immer.ts",
       "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/immer.ts",
     },
     Object {
       "filename": "src/plugins/all.ts",
+      "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/plugins/all.ts",
       "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/plugins/all.ts",
     },
     Object {
       "filename": "src/plugins/es5.ts",
+      "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/plugins/es5.ts",
       "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/plugins/es5.ts",
     },
     Object {
       "filename": "src/plugins/mapset.ts",
+      "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/plugins/mapset.ts",
       "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/plugins/mapset.ts",
     },
     Object {
       "filename": "src/plugins/patches.ts",
+      "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/plugins/patches.ts",
       "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/plugins/patches.ts",
     },
     Object {
       "filename": "src/types/types-external.ts",
+      "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/types/types-external.ts",
       "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/types/types-external.ts",
     },
     Object {
       "filename": "src/utils/common.ts",
+      "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/utils/common.ts",
       "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/utils/common.ts",
     },
     Object {
       "filename": "src/utils/env.ts",
+      "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/utils/env.ts",
       "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/utils/env.ts",
     },
   ],

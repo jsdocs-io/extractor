@@ -78,6 +78,7 @@ Object {
         "source": Object {
           "filename": "src/index.ts",
           "line": 71,
+          "unpkgURL": "https://unpkg.com/browse/short-time-ago@2.0.0/src/index.ts#L71",
           "url": "https://github.com/velut/node-short-time-ago/tree/v2.0.0/src/index.ts#L71",
         },
         "type": "(date: Date, now?: Date) => string",
@@ -92,6 +93,7 @@ Object {
     Object {
       "filename": "src/index.ts",
       "isIndexFile": true,
+      "unpkgURL": "https://unpkg.com/browse/short-time-ago@2.0.0/src/index.ts",
       "url": "https://github.com/velut/node-short-time-ago/tree/v2.0.0/src/index.ts",
     },
   ],

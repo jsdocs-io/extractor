@@ -22,6 +22,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 67,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L67",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L67",
               },
               "type": "(promises: Array<Promise<any, any>>) => Promise<any[], any>",
@@ -36,6 +37,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 61,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L61",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L61",
               },
               "type": "<TT>(handler: () => Promise<TT>) => Promise<TT>",
@@ -50,6 +52,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 64,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L64",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L64",
               },
               "type": "() => this",
@@ -64,6 +67,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 63,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L63",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L63",
               },
               "type": "<TT>(err: (error: E) => TT) => Promise<T | TT>",
@@ -81,6 +85,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 62,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L62",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L62",
               },
               "type": "<TT, TE = never>(result: (r: T) => TT, err?: (r: E) => TE) => Promise<TT | TE, any>",
@@ -95,6 +100,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 65,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L65",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L65",
               },
               "type": "(delay: number) => this",
@@ -111,6 +117,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 59,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L59",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L59",
               },
               "type": "boolean",
@@ -125,6 +132,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 58,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L58",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L58",
               },
               "type": "boolean",
@@ -139,6 +147,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 57,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L57",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L57",
               },
               "type": "boolean",
@@ -150,6 +159,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 56,
+          "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L56",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L56",
         },
       },
@@ -181,6 +191,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 118,
+          "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L118",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L118",
         },
         "type": "{ (pathToScript?: string, options?: WorkerPoolOptions): WorkerPool; (options?: WorkerPoolOptions): WorkerPool; }",
@@ -199,6 +210,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 131,
+          "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L131",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L131",
         },
         "type": "(methods?: { [k: string]: (...args: any[]) => any; }) => any",
@@ -236,6 +248,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 35,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L35",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L35",
               },
               "type": "<T extends (...args: any[]) => any>(method: T | string, params: Parameters<T> | null) => Promise<ReturnType<T>>",
@@ -257,6 +270,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 43,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L43",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L43",
               },
               "type": "<T extends { [k: string]: (...args: any[]) => any; }>() => Promise<Proxy<T>>",
@@ -272,6 +286,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 46,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L46",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L46",
               },
               "type": "() => WorkerPoolStats",
@@ -291,6 +306,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 53,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L53",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L53",
               },
               "type": "(force?: boolean, timeout?: number) => Promise<any[]>",
@@ -303,6 +319,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 25,
+          "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L25",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L25",
         },
       },
@@ -329,6 +346,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 106,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L106",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L106",
               },
               "type": "string[]",
@@ -344,6 +362,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 108,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L108",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L108",
               },
               "type": "any",
@@ -364,6 +383,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 92,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L92",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L92",
               },
               "type": "number",
@@ -384,6 +404,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 87,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L87",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L87",
               },
               "type": "number | \\"max\\"",
@@ -409,6 +430,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 103,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L103",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L103",
               },
               "type": "\\"auto\\" | \\"web\\" | \\"process\\" | \\"thread\\"",
@@ -420,6 +442,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 82,
+          "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L82",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L82",
         },
       },
@@ -444,6 +467,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 18,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L18",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L18",
               },
               "type": "number",
@@ -459,6 +483,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 15,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L15",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L15",
               },
               "type": "number",
@@ -474,6 +499,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 16,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L16",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L16",
               },
               "type": "number",
@@ -489,6 +515,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 17,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L17",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L17",
               },
               "type": "number",
@@ -504,6 +531,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 14,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L14",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L14",
               },
               "type": "number",
@@ -515,6 +543,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 13,
+          "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L13",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L13",
         },
       },
@@ -542,6 +571,7 @@ Object {
                     "source": Object {
                       "filename": "index.d.ts",
                       "line": 73,
+                      "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L73",
                       "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L73",
                     },
                     "type": "string",
@@ -553,6 +583,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 72,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L72",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L72",
               },
             },
@@ -575,6 +606,7 @@ Object {
                     "source": Object {
                       "filename": "index.d.ts",
                       "line": 78,
+                      "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L78",
                       "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L78",
                     },
                     "type": "string",
@@ -586,6 +618,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 77,
+                "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L77",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L77",
               },
             },
@@ -605,6 +638,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 70,
+          "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L70",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L70",
         },
       },
@@ -621,6 +655,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 21,
+          "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L21",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L21",
         },
       },
@@ -635,6 +670,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 134,
+          "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L134",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L134",
         },
         "type": "number",
@@ -649,6 +685,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 133,
+          "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L133",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L133",
         },
         "type": "boolean",
@@ -663,6 +700,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 132,
+          "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L132",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L132",
         },
         "type": "\\"node\\" | \\"browser\\"",
@@ -674,6 +712,7 @@ Object {
     Object {
       "filename": "index.d.ts",
       "isIndexFile": true,
+      "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts",
       "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts",
     },
   ],

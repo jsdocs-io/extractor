@@ -61,6 +61,7 @@ Object {
         "source": Object {
           "filename": "fastify.d.ts",
           "line": 24,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/fastify.d.ts#L24",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/fastify.d.ts#L24",
         },
         "type": "{ <Server extends any, Request extends RawRequestDefaultExpression<Server> = RawRequestDefaultExpression<Server>, Reply extends RawReplyDefaultExpression<Server> = RawReplyDefaultExpression<Server>, Logger extends FastifyLoggerInstance = FastifyLoggerInstance>(opts: FastifyHttp2SecureOptions<Server, Logger>): FastifyInstance<Server, Request, Reply, Logger> & PromiseLike<FastifyInstance<Server, Request, Reply, Logger>>; <Server extends any, Request extends RawRequestDefaultExpression<Server> = RawRequestDefaultExpression<Server>, Reply extends RawReplyDefaultExpression<Server> = RawReplyDefaultExpression<Server>, Logger extends FastifyLoggerInstance = FastifyLoggerInstance>(opts: FastifyHttp2Options<Server, Logger>): FastifyInstance<Server, Request, Reply, Logger> & PromiseLike<FastifyInstance<Server, Request, Reply, Logger>>; <Server extends any, Request extends RawRequestDefaultExpression<Server> = RawRequestDefaultExpression<Server>, Reply extends RawReplyDefaultExpression<Server> = RawReplyDefaultExpression<Server>, Logger extends FastifyLoggerInstance = FastifyLoggerInstance>(opts: FastifyHttpsOptions<Server, Logger>): FastifyInstance<Server, Request, Reply, Logger> & PromiseLike<FastifyInstance<Server, Request, Reply, Logger>>; <Server extends any, Request extends RawRequestDefaultExpression<Server> = RawRequestDefaultExpression<Server>, Reply extends RawReplyDefaultExpression<Server> = RawReplyDefaultExpression<Server>, Logger extends FastifyLoggerInstance = FastifyLoggerInstance>(opts?: FastifyServerOptions<Server, Logger>): FastifyInstance<Server, Request, Reply, Logger> & PromiseLike<FastifyInstance<Server, Request, Reply, Logger>>; }",
@@ -92,6 +93,7 @@ Object {
               "source": Object {
                 "filename": "types/content-type-parser.d.ts",
                 "line": 35,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/content-type-parser.d.ts#L35",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/content-type-parser.d.ts#L35",
               },
             },
@@ -107,6 +109,7 @@ Object {
               "source": Object {
                 "filename": "types/content-type-parser.d.ts",
                 "line": 42,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/content-type-parser.d.ts#L42",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/content-type-parser.d.ts#L42",
               },
             },
@@ -126,6 +129,7 @@ Object {
               "source": Object {
                 "filename": "types/content-type-parser.d.ts",
                 "line": 43,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/content-type-parser.d.ts#L43",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/content-type-parser.d.ts#L43",
               },
             },
@@ -143,6 +147,7 @@ Object {
         "source": Object {
           "filename": "types/content-type-parser.d.ts",
           "line": 31,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/content-type-parser.d.ts#L31",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/content-type-parser.d.ts#L31",
         },
       },
@@ -161,6 +166,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 144,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L144",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L144",
               },
             },
@@ -173,6 +179,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 145,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L145",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L145",
               },
             },
@@ -185,6 +192,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 146,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L146",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L146",
               },
             },
@@ -199,6 +207,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 143,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L143",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L143",
         },
       },
@@ -227,6 +236,7 @@ Object {
               "source": Object {
                 "filename": "types/context.d.ts",
                 "line": 7,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/context.d.ts#L7",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/context.d.ts#L7",
               },
               "type": "{}",
@@ -238,6 +248,7 @@ Object {
         "source": Object {
           "filename": "types/context.d.ts",
           "line": 6,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/context.d.ts#L6",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/context.d.ts#L6",
         },
       },
@@ -592,6 +603,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 84,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L84",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L84",
               },
               "type": "{ <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: 'onRequest', hook: onRequestHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onRequest\\", hook: onRequestAsyncHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preParsing\\", hook: preParsingHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preParsing\\", hook: preParsingAsyncHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preValidation\\", hook: preValidationHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preValidation\\", hook: preValidationAsyncHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preHandler\\", hook: preHandlerHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preHandler\\", hook: preHandlerAsyncHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <PreSerializationPayload = unknown, RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preSerialization\\", hook: preSerializationHookHandler<PreSerializationPayload, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <PreSerializationPayload = unknown, RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preSerialization\\", hook: preSerializationAsyncHookHandler<PreSerializationPayload, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <OnSendPayload = unknown, RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onSend\\", hook: onSendHookHandler<OnSendPayload, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <OnSendPayload = unknown, RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onSend\\", hook: onSendAsyncHookHandler<OnSendPayload, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onResponse\\", hook: onResponseHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onResponse\\", hook: onResponseAsyncHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onTimeout\\", hook: onTimeoutHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onTimeout\\", hook: onTimeoutAsyncHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onError\\", hook: onErrorHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig, any>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onError\\", hook: onErrorAsyncHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig, any>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onRoute\\", hook: onRouteHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; (name: \\"onRegister\\", hook: onRegisterHookHandler<RawServer, RawRequest, RawReply, Logger>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; (name: \\"onReady\\", hook: onReadyHookHandler): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; (name: \\"onReady\\", hook: onReadyAsyncHookHandler): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; (name: \\"onClose\\", hook: onCloseHookHandler<RawServer, RawRequest, RawReply, Logger>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; }",
@@ -607,6 +619,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 27,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L27",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L27",
               },
               "type": "(schema: unknown) => FastifyInstance<RawServer, RawRequest, RawReply, Logger>",
@@ -629,6 +642,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 31,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L31",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L31",
               },
               "type": "{ (): FastifyInstance<RawServer, RawRequest, RawReply, Logger> & PromiseLike<undefined>; (afterListener: (err: Error) => void): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; }",
@@ -651,6 +665,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 34,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L34",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L34",
               },
               "type": "{ (): FastifyInstance<RawServer, RawRequest, RawReply, Logger> & PromiseLike<undefined>; (closeListener: () => void): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; }",
@@ -668,6 +683,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 38,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L38",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L38",
               },
               "type": "(property: string | symbol, value: any, dependencies?: string[]) => FastifyInstance<RawServer, RawRequest, RawReply, Logger>",
@@ -685,6 +701,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 40,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L40",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L40",
               },
               "type": "(property: string | symbol, value: any, dependencies?: string[]) => FastifyInstance<RawServer, RawRequest, RawReply, Logger>",
@@ -702,6 +719,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 39,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L39",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L39",
               },
               "type": "(property: string | symbol, value: any, dependencies?: string[]) => FastifyInstance<RawServer, RawRequest, RawReply, Logger>",
@@ -715,6 +733,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 28,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L28",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L28",
               },
               "type": "(schemaId: string) => unknown",
@@ -728,6 +747,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 29,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L29",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L29",
               },
               "type": "() => Record<string, unknown>",
@@ -741,6 +761,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 42,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L42",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L42",
               },
               "type": "(decorator: string | symbol) => boolean",
@@ -754,6 +775,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 44,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L44",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L44",
               },
               "type": "(decorator: string | symbol) => boolean",
@@ -767,6 +789,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 43,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L43",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L43",
               },
               "type": "(decorator: string | symbol) => boolean",
@@ -784,6 +807,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 46,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L46",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L46",
               },
               "type": "{ (opts: InjectOptions | string, cb: any): void; (opts: any): Promise<any>; (): any; }",
@@ -819,6 +843,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 50,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L50",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L50",
               },
               "type": "{ (port: number | string, address: string, backlog: number, callback: (err: Error, address: string) => void): void; (port: string | number, address: string, callback: (err: Error, address: string) => void): void; (port: string | number, callback: (err: Error, address: string) => void): void; (port: string | number, address?: string, backlog?: number): Promise<string>; (opts: { port: number; host?: string; backlog?: number; }, callback: (err: Error, address: string) => void): void; (opts: { port: number; host?: string; backlog?: number; }): Promise<string>; }",
@@ -836,6 +861,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 355,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L355",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L355",
               },
               "type": "() => string",
@@ -858,6 +884,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 57,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L57",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L57",
               },
               "type": "{ (): FastifyInstance<RawServer, RawRequest, RawReply> & PromiseLike<undefined>; (readyListener: (err: Error) => void): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; }",
@@ -882,6 +909,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 62,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L62",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L62",
               },
               "type": "<RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(opts: RouteOptions<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>) => FastifyInstance<RawServer, RawRequest, RawReply, Logger>",
@@ -909,6 +937,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 323,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L323",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L323",
               },
               "type": "<TError extends Error = any, RouteGeneric extends RouteGenericInterface = RouteGenericInterface>(handler: (this: FastifyInstance<RawServer, RawRequest, RawReply, Logger>, error: TError, request: FastifyRequest<RouteGeneric, RawServer, RawRequest>, reply: FastifyReply<RawServer, RawRequest, RawReply, RouteGeneric>) => void) => FastifyInstance<RawServer, RawRequest, RawReply, Logger>",
@@ -933,6 +962,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 311,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L311",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L311",
               },
               "type": "<RouteGeneric extends RouteGenericInterface = RouteGenericInterface>(handler: (request: FastifyRequest<RouteGeneric, RawServer, RawRequest>, reply: FastifyReply<RawServer, RawRequest, RawReply, RouteGeneric>) => void) => FastifyInstance<RawServer, RawRequest, RawReply, Logger>",
@@ -952,6 +982,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 340,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L340",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L340",
               },
               "type": "(replySerializer: (payload: unknown, statusCode: number) => string) => FastifyInstance<RawServer, RawRequest, RawReply, Logger>",
@@ -970,6 +1001,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 345,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L345",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L345",
               },
               "type": "(errorFormatter: (errors: FastifySchemaValidationError[], dataVar: string) => Error) => FastifyInstance<RawServer, RawRequest, RawReply, Logger>",
@@ -989,6 +1021,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 335,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L335",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L335",
               },
               "type": "(schemaCompiler: FastifySerializerCompiler) => FastifyInstance<RawServer, RawRequest, RawReply, Logger>",
@@ -1008,6 +1041,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 330,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L330",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L330",
               },
               "type": "(schemaCompiler: FastifySchemaCompiler) => FastifyInstance<RawServer, RawRequest, RawReply, Logger>",
@@ -1029,6 +1063,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 349,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L349",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L349",
               },
               "type": "AddContentTypeParser<RawServer, RawRequest>",
@@ -1044,6 +1079,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 74,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L74",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L74",
               },
               "type": "RouteShorthandMethod<RawServer, RawRequest, RawReply>",
@@ -1059,6 +1095,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 71,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L71",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L71",
               },
               "type": "RouteShorthandMethod<RawServer, RawRequest, RawReply>",
@@ -1082,6 +1119,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 318,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L318",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L318",
               },
               "type": "(error: any, request: FastifyRequest, reply: FastifyReply) => void",
@@ -1097,6 +1135,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 67,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L67",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L67",
               },
               "type": "RouteShorthandMethod<RawServer, RawRequest, RawReply>",
@@ -1112,6 +1151,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 350,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L350",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L350",
               },
               "type": "hasContentTypeParser",
@@ -1127,6 +1167,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 68,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L68",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L68",
               },
               "type": "RouteShorthandMethod<RawServer, RawRequest, RawReply>",
@@ -1142,6 +1183,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 25,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L25",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L25",
               },
               "type": "{}",
@@ -1157,6 +1199,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 72,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L72",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L72",
               },
               "type": "RouteShorthandMethod<RawServer, RawRequest, RawReply>",
@@ -1172,6 +1215,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 73,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L73",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L73",
               },
               "type": "RouteShorthandMethod<RawServer, RawRequest, RawReply>",
@@ -1187,6 +1231,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 69,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L69",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L69",
               },
               "type": "RouteShorthandMethod<RawServer, RawRequest, RawReply>",
@@ -1202,6 +1247,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 23,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L23",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L23",
               },
               "type": "string",
@@ -1217,6 +1263,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 70,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L70",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L70",
               },
               "type": "RouteShorthandMethod<RawServer, RawRequest, RawReply>",
@@ -1235,6 +1282,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 60,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L60",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L60",
               },
               "type": "FastifyRegister<FastifyInstance<RawServer, RawRequest, RawReply, Logger> & PromiseLike<undefined>>",
@@ -1250,6 +1298,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 22,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L22",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L22",
               },
               "type": "{}",
@@ -1265,6 +1314,7 @@ Object {
               "source": Object {
                 "filename": "types/instance.d.ts",
                 "line": 24,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L24",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L24",
               },
               "type": "string",
@@ -1281,6 +1331,7 @@ Object {
         "source": Object {
           "filename": "types/instance.d.ts",
           "line": 16,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L16",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L16",
         },
       },
@@ -1303,6 +1354,7 @@ Object {
               "source": Object {
                 "filename": "types/logger.d.ts",
                 "line": 29,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/logger.d.ts#L29",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/logger.d.ts#L29",
               },
             },
@@ -1315,6 +1367,7 @@ Object {
               "source": Object {
                 "filename": "types/logger.d.ts",
                 "line": 30,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/logger.d.ts#L30",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/logger.d.ts#L30",
               },
             },
@@ -1329,6 +1382,7 @@ Object {
         "source": Object {
           "filename": "types/logger.d.ts",
           "line": 28,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/logger.d.ts#L28",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/logger.d.ts#L28",
         },
       },
@@ -1350,6 +1404,7 @@ Object {
               "source": Object {
                 "filename": "types/logger.d.ts",
                 "line": 50,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/logger.d.ts#L50",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/logger.d.ts#L50",
               },
               "type": "(bindings: Bindings) => FastifyLoggerInstance",
@@ -1367,6 +1422,7 @@ Object {
               "source": Object {
                 "filename": "types/logger.d.ts",
                 "line": 49,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/logger.d.ts#L49",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/logger.d.ts#L49",
               },
               "type": "FastifyLogFn",
@@ -1382,6 +1438,7 @@ Object {
               "source": Object {
                 "filename": "types/logger.d.ts",
                 "line": 46,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/logger.d.ts#L46",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/logger.d.ts#L46",
               },
               "type": "FastifyLogFn",
@@ -1397,6 +1454,7 @@ Object {
               "source": Object {
                 "filename": "types/logger.d.ts",
                 "line": 47,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/logger.d.ts#L47",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/logger.d.ts#L47",
               },
               "type": "FastifyLogFn",
@@ -1412,6 +1470,7 @@ Object {
               "source": Object {
                 "filename": "types/logger.d.ts",
                 "line": 44,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/logger.d.ts#L44",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/logger.d.ts#L44",
               },
               "type": "FastifyLogFn",
@@ -1427,6 +1486,7 @@ Object {
               "source": Object {
                 "filename": "types/logger.d.ts",
                 "line": 48,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/logger.d.ts#L48",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/logger.d.ts#L48",
               },
               "type": "FastifyLogFn",
@@ -1442,6 +1502,7 @@ Object {
               "source": Object {
                 "filename": "types/logger.d.ts",
                 "line": 45,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/logger.d.ts#L45",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/logger.d.ts#L45",
               },
               "type": "FastifyLogFn",
@@ -1453,6 +1514,7 @@ Object {
         "source": Object {
           "filename": "types/logger.d.ts",
           "line": 43,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/logger.d.ts#L43",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/logger.d.ts#L43",
         },
       },
@@ -1487,6 +1549,7 @@ Object {
               "source": Object {
                 "filename": "types/logger.d.ts",
                 "line": 142,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/logger.d.ts#L142",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/logger.d.ts#L142",
               },
               "type": "<RequestGeneric extends RequestGenericInterface = RequestGenericInterface>(req: FastifyRequest<RequestGeneric, RawServer, RawRequest>) => string",
@@ -1502,6 +1565,7 @@ Object {
               "source": Object {
                 "filename": "types/logger.d.ts",
                 "line": 141,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/logger.d.ts#L141",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/logger.d.ts#L141",
               },
               "type": "string",
@@ -1517,6 +1581,7 @@ Object {
               "source": Object {
                 "filename": "types/logger.d.ts",
                 "line": 143,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/logger.d.ts#L143",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/logger.d.ts#L143",
               },
               "type": "boolean | PrettyOptions",
@@ -1558,6 +1623,7 @@ Object {
               "source": Object {
                 "filename": "types/logger.d.ts",
                 "line": 120,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/logger.d.ts#L120",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/logger.d.ts#L120",
               },
               "type": "{ req?: (req: RawRequest) => { [key: string]: unknown; method?: string; url?: string; version?: string; hostname?: string; remoteAddress?: string; remotePort?: number; }; err?: (err: any) => { [key: string]: unknown; type: string; message: string; stack: string; }; res?: (res: RawReply) => { [key: string]: unknown; statusCode: string | number; }; }",
@@ -1573,6 +1639,7 @@ Object {
         "source": Object {
           "filename": "types/logger.d.ts",
           "line": 115,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/logger.d.ts#L115",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/logger.d.ts#L115",
         },
       },
@@ -1600,6 +1667,7 @@ Object {
               "source": Object {
                 "filename": "types/register.d.ts",
                 "line": 18,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/register.d.ts#L18",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/register.d.ts#L18",
               },
             },
@@ -1615,6 +1683,7 @@ Object {
               "source": Object {
                 "filename": "types/register.d.ts",
                 "line": 22,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/register.d.ts#L22",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/register.d.ts#L22",
               },
             },
@@ -1634,6 +1703,7 @@ Object {
               "source": Object {
                 "filename": "types/register.d.ts",
                 "line": 26,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/register.d.ts#L26",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/register.d.ts#L26",
               },
             },
@@ -1648,6 +1718,7 @@ Object {
         "source": Object {
           "filename": "types/register.d.ts",
           "line": 17,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/register.d.ts#L17",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/register.d.ts#L17",
         },
       },
@@ -1674,6 +1745,7 @@ Object {
               "source": Object {
                 "filename": "types/reply.d.ts",
                 "line": 43,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L43",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L43",
               },
               "type": "() => void",
@@ -1689,6 +1761,7 @@ Object {
               "source": Object {
                 "filename": "types/reply.d.ts",
                 "line": 26,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L26",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L26",
               },
               "type": "(statusCode: number) => FastifyReply<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>",
@@ -1702,6 +1775,7 @@ Object {
               "source": Object {
                 "filename": "types/reply.d.ts",
                 "line": 33,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L33",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L33",
               },
               "type": "(key: string) => string | undefined",
@@ -1715,6 +1789,7 @@ Object {
               "source": Object {
                 "filename": "types/reply.d.ts",
                 "line": 34,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L34",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L34",
               },
               "type": "() => { [key: string]: string | number | string[]; }",
@@ -1728,6 +1803,7 @@ Object {
               "source": Object {
                 "filename": "types/reply.d.ts",
                 "line": 44,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L44",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L44",
               },
               "type": "() => number",
@@ -1741,6 +1817,7 @@ Object {
               "source": Object {
                 "filename": "types/reply.d.ts",
                 "line": 39,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L39",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L39",
               },
               "type": "(key: string) => boolean",
@@ -1757,6 +1834,7 @@ Object {
               "source": Object {
                 "filename": "types/reply.d.ts",
                 "line": 31,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L31",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L31",
               },
               "type": "(key: string, value: any) => FastifyReply<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>",
@@ -1772,6 +1850,7 @@ Object {
               "source": Object {
                 "filename": "types/reply.d.ts",
                 "line": 32,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L32",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L32",
               },
               "type": "(values: { [key: string]: any; }) => FastifyReply<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>",
@@ -1800,6 +1879,7 @@ Object {
               "source": Object {
                 "filename": "types/reply.d.ts",
                 "line": 41,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L41",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L41",
               },
               "type": "{ (statusCode: number, url: string): FastifyReply<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>; (url: string): FastifyReply<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>; }",
@@ -1813,6 +1893,7 @@ Object {
               "source": Object {
                 "filename": "types/reply.d.ts",
                 "line": 38,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L38",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L38",
               },
               "type": "(key: string) => void",
@@ -1828,6 +1909,7 @@ Object {
               "source": Object {
                 "filename": "types/reply.d.ts",
                 "line": 30,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L30",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L30",
               },
               "type": "(payload?: RouteGeneric['Reply']) => FastifyReply<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>",
@@ -1841,6 +1923,7 @@ Object {
               "source": Object {
                 "filename": "types/reply.d.ts",
                 "line": 47,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L47",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L47",
               },
               "type": "(payload: any) => string",
@@ -1856,6 +1939,7 @@ Object {
               "source": Object {
                 "filename": "types/reply.d.ts",
                 "line": 46,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L46",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L46",
               },
               "type": "(fn: (payload: any) => string) => FastifyReply<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>",
@@ -1871,6 +1955,7 @@ Object {
               "source": Object {
                 "filename": "types/reply.d.ts",
                 "line": 27,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L27",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L27",
               },
               "type": "(statusCode: number) => FastifyReply<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>",
@@ -1884,6 +1969,7 @@ Object {
               "source": Object {
                 "filename": "types/reply.d.ts",
                 "line": 48,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L48",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L48",
               },
               "type": "(fullfilled: () => void, rejected: (err: Error) => void) => void",
@@ -1899,6 +1985,7 @@ Object {
               "source": Object {
                 "filename": "types/reply.d.ts",
                 "line": 45,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L45",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L45",
               },
               "type": "(contentType: string) => FastifyReply<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>",
@@ -1916,6 +2003,7 @@ Object {
               "source": Object {
                 "filename": "types/reply.d.ts",
                 "line": 23,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L23",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L23",
               },
               "type": "FastifyContext<ContextConfig>",
@@ -1931,6 +2019,7 @@ Object {
               "source": Object {
                 "filename": "types/reply.d.ts",
                 "line": 24,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L24",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L24",
               },
               "type": "FastifyLoggerInstance",
@@ -1946,6 +2035,7 @@ Object {
               "source": Object {
                 "filename": "types/reply.d.ts",
                 "line": 22,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L22",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L22",
               },
               "type": "any",
@@ -1961,6 +2051,7 @@ Object {
               "source": Object {
                 "filename": "types/reply.d.ts",
                 "line": 25,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L25",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L25",
               },
               "type": "FastifyRequest<RouteGeneric, RawServer, RawRequest>",
@@ -1976,6 +2067,7 @@ Object {
               "source": Object {
                 "filename": "types/reply.d.ts",
                 "line": 29,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L29",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L29",
               },
               "type": "boolean",
@@ -1991,6 +2083,7 @@ Object {
               "source": Object {
                 "filename": "types/reply.d.ts",
                 "line": 28,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L28",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L28",
               },
               "type": "number",
@@ -2008,6 +2101,7 @@ Object {
         "source": Object {
           "filename": "types/reply.d.ts",
           "line": 15,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L15",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L15",
         },
       },
@@ -2032,6 +2126,7 @@ Object {
               "source": Object {
                 "filename": "test/types/decorate-request-reply.test-d.ts",
                 "line": 11,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/test/types/decorate-request-reply.test-d.ts#L11",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/test/types/decorate-request-reply.test-d.ts#L11",
               },
               "type": "void",
@@ -2043,6 +2138,7 @@ Object {
         "source": Object {
           "filename": "test/types/decorate-request-reply.test-d.ts",
           "line": 10,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/test/types/decorate-request-reply.test-d.ts#L10",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/test/types/decorate-request-reply.test-d.ts#L10",
         },
       },
@@ -2072,6 +2168,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 26,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L26",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L26",
               },
               "type": "{}",
@@ -2087,6 +2184,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 49,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L49",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L49",
               },
               "type": "any",
@@ -2102,6 +2200,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 35,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L35",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L35",
               },
               "type": "any",
@@ -2117,6 +2216,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 38,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L38",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L38",
               },
               "type": "string",
@@ -2132,6 +2232,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 21,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L21",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L21",
               },
               "type": "any",
@@ -2147,6 +2248,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 36,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L36",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L36",
               },
               "type": "string",
@@ -2162,6 +2264,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 37,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L37",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L37",
               },
               "type": "string[]",
@@ -2177,6 +2280,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 44,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L44",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L44",
               },
               "type": "boolean",
@@ -2192,6 +2296,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 25,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L25",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L25",
               },
               "type": "FastifyLoggerInstance",
@@ -2207,6 +2312,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 41,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L41",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L41",
               },
               "type": "string",
@@ -2222,6 +2328,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 22,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L22",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L22",
               },
               "type": "{}",
@@ -2237,6 +2344,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 40,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L40",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L40",
               },
               "type": "\\"http\\" | \\"https\\"",
@@ -2252,6 +2360,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 24,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L24",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L24",
               },
               "type": "{}",
@@ -2267,6 +2376,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 23,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L23",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L23",
               },
               "type": "any",
@@ -2286,6 +2396,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 34,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L34",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L34",
               },
               "type": "any",
@@ -2301,6 +2412,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 43,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L43",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L43",
               },
               "type": "string",
@@ -2316,6 +2428,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 42,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L42",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L42",
               },
               "type": "string",
@@ -2331,6 +2444,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 45,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L45",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L45",
               },
               "type": "any",
@@ -2346,6 +2460,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 39,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L39",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L39",
               },
               "type": "string",
@@ -2363,6 +2478,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 29,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L29",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L29",
               },
               "type": "Error & { validation: any; validationContext: string; }",
@@ -2378,6 +2494,7 @@ Object {
         "source": Object {
           "filename": "types/request.d.ts",
           "line": 16,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L16",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L16",
         },
       },
@@ -2402,6 +2519,7 @@ Object {
               "source": Object {
                 "filename": "test/types/decorate-request-reply.test-d.ts",
                 "line": 8,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/test/types/decorate-request-reply.test-d.ts#L8",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/test/types/decorate-request-reply.test-d.ts#L8",
               },
               "type": "void",
@@ -2413,6 +2531,7 @@ Object {
         "source": Object {
           "filename": "test/types/decorate-request-reply.test-d.ts",
           "line": 7,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/test/types/decorate-request-reply.test-d.ts#L7",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/test/types/decorate-request-reply.test-d.ts#L7",
         },
       },
@@ -2444,6 +2563,7 @@ Object {
               "source": Object {
                 "filename": "types/schema.d.ts",
                 "line": 8,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/schema.d.ts#L8",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/schema.d.ts#L8",
               },
               "type": "{}",
@@ -2459,6 +2579,7 @@ Object {
               "source": Object {
                 "filename": "types/schema.d.ts",
                 "line": 11,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/schema.d.ts#L11",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/schema.d.ts#L11",
               },
               "type": "{}",
@@ -2474,6 +2595,7 @@ Object {
               "source": Object {
                 "filename": "types/schema.d.ts",
                 "line": 10,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/schema.d.ts#L10",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/schema.d.ts#L10",
               },
               "type": "{}",
@@ -2489,6 +2611,7 @@ Object {
               "source": Object {
                 "filename": "types/schema.d.ts",
                 "line": 9,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/schema.d.ts#L9",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/schema.d.ts#L9",
               },
               "type": "{}",
@@ -2504,6 +2627,7 @@ Object {
               "source": Object {
                 "filename": "types/schema.d.ts",
                 "line": 12,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/schema.d.ts#L12",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/schema.d.ts#L12",
               },
               "type": "{}",
@@ -2515,6 +2639,7 @@ Object {
         "source": Object {
           "filename": "types/schema.d.ts",
           "line": 7,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/schema.d.ts#L7",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/schema.d.ts#L7",
         },
       },
@@ -2536,6 +2661,7 @@ Object {
               "source": Object {
                 "filename": "types/serverFactory.d.ts",
                 "line": 18,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/serverFactory.d.ts#L18",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/serverFactory.d.ts#L18",
               },
             },
@@ -2550,6 +2676,7 @@ Object {
         "source": Object {
           "filename": "types/serverFactory.d.ts",
           "line": 15,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/serverFactory.d.ts#L15",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/serverFactory.d.ts#L15",
         },
       },
@@ -2575,6 +2702,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 373,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L373",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L373",
               },
             },
@@ -2594,6 +2722,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 367,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L367",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L367",
         },
       },
@@ -2622,6 +2751,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 311,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L311",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L311",
               },
             },
@@ -2643,6 +2773,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 303,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L303",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L303",
         },
       },
@@ -2679,6 +2810,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 295,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L295",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L295",
               },
             },
@@ -2700,6 +2832,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 287,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L287",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L287",
         },
       },
@@ -2718,6 +2851,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 362,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L362",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L362",
               },
             },
@@ -2732,6 +2866,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 361,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L361",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L361",
         },
       },
@@ -2754,6 +2889,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 356,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L356",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L356",
               },
             },
@@ -2768,6 +2904,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 355,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L355",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L355",
         },
       },
@@ -2795,6 +2932,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 346,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L346",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L346",
               },
             },
@@ -2814,6 +2952,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 340,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L340",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L340",
         },
       },
@@ -2841,6 +2980,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 43,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L43",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L43",
               },
             },
@@ -2861,6 +3001,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 36,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L36",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L36",
         },
       },
@@ -2894,6 +3035,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 29,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L29",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L29",
               },
             },
@@ -2914,6 +3056,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 22,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L22",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L22",
         },
       },
@@ -2941,6 +3084,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 244,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L244",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L244",
               },
             },
@@ -2961,6 +3105,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 237,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L237",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L237",
         },
       },
@@ -2994,6 +3139,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 230,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L230",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L230",
               },
             },
@@ -3014,6 +3160,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 223,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L223",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L223",
         },
       },
@@ -3044,6 +3191,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 330,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L330",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L330",
               },
             },
@@ -3064,6 +3212,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 323,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L323",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L323",
         },
       },
@@ -3092,6 +3241,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 212,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L212",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L212",
               },
             },
@@ -3113,6 +3263,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 204,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L204",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L204",
         },
       },
@@ -3147,6 +3298,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 196,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L196",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L196",
               },
             },
@@ -3168,6 +3320,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 188,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L188",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L188",
         },
       },
@@ -3195,6 +3348,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 275,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L275",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L275",
               },
             },
@@ -3215,6 +3369,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 268,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L268",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L268",
         },
       },
@@ -3248,6 +3403,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 261,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L261",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L261",
               },
             },
@@ -3268,6 +3424,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 254,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L254",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L254",
         },
       },
@@ -3295,6 +3452,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 136,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L136",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L136",
               },
             },
@@ -3315,6 +3473,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 129,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L129",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L129",
         },
       },
@@ -3347,6 +3506,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 122,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L122",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L122",
               },
             },
@@ -3367,6 +3527,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 115,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L115",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L115",
         },
       },
@@ -3395,6 +3556,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 75,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L75",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L75",
               },
             },
@@ -3415,6 +3577,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 68,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L68",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L68",
         },
       },
@@ -3452,6 +3615,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 60,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L60",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L60",
               },
             },
@@ -3472,6 +3636,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 53,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L53",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L53",
         },
       },
@@ -3500,6 +3665,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 177,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L177",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L177",
               },
             },
@@ -3521,6 +3687,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 169,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L169",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L169",
         },
       },
@@ -3555,6 +3722,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 161,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L161",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L161",
               },
             },
@@ -3576,6 +3744,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 153,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L153",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L153",
         },
       },
@@ -3603,6 +3772,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 106,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L106",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L106",
               },
             },
@@ -3623,6 +3793,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 99,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L99",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L99",
         },
       },
@@ -3655,6 +3826,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 92,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L92",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L92",
               },
             },
@@ -3675,6 +3847,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 85,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L85",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L85",
         },
       },
@@ -3699,6 +3872,7 @@ Object {
               "source": Object {
                 "filename": "types/register.d.ts",
                 "line": 6,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/register.d.ts#L6",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/register.d.ts#L6",
               },
               "type": "LogLevel",
@@ -3714,6 +3888,7 @@ Object {
               "source": Object {
                 "filename": "types/register.d.ts",
                 "line": 7,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/register.d.ts#L7",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/register.d.ts#L7",
               },
               "type": "Record<string, (value: any) => string>",
@@ -3729,6 +3904,7 @@ Object {
               "source": Object {
                 "filename": "types/register.d.ts",
                 "line": 5,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/register.d.ts#L5",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/register.d.ts#L5",
               },
               "type": "string",
@@ -3740,6 +3916,7 @@ Object {
         "source": Object {
           "filename": "types/register.d.ts",
           "line": 4,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/register.d.ts#L4",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/register.d.ts#L4",
         },
       },
@@ -3764,6 +3941,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 6,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L6",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L6",
               },
               "type": "{}",
@@ -3779,6 +3957,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 9,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L9",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L9",
               },
               "type": "{}",
@@ -3794,6 +3973,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 8,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L8",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L8",
               },
               "type": "{}",
@@ -3809,6 +3989,7 @@ Object {
               "source": Object {
                 "filename": "types/request.d.ts",
                 "line": 7,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L7",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L7",
               },
               "type": "{}",
@@ -3820,6 +4001,7 @@ Object {
         "source": Object {
           "filename": "types/request.d.ts",
           "line": 5,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L5",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L5",
         },
       },
@@ -3844,6 +4026,7 @@ Object {
               "source": Object {
                 "filename": "types/hooks.d.ts",
                 "line": 13,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L13",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L13",
               },
               "type": "number",
@@ -3855,6 +4038,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 12,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L12",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L12",
         },
       },
@@ -3889,6 +4073,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 111,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L111",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L111",
               },
               "type": "RouteHandlerMethod<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>",
@@ -3904,6 +4089,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 109,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L109",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L109",
               },
               "type": "HTTPMethods | HTTPMethods[]",
@@ -3919,6 +4105,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 110,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L110",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L110",
               },
               "type": "string",
@@ -3942,6 +4129,7 @@ Object {
         "source": Object {
           "filename": "types/route.d.ts",
           "line": 102,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L102",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L102",
         },
       },
@@ -3983,6 +4171,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 84,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L84",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L84",
               },
             },
@@ -4007,6 +4196,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 89,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L89",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L89",
               },
             },
@@ -4031,6 +4221,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 93,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L93",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L93",
               },
             },
@@ -4049,6 +4240,7 @@ Object {
         "source": Object {
           "filename": "types/route.d.ts",
           "line": 79,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L79",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L79",
         },
       },
@@ -4077,6 +4269,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 23,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L23",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L23",
               },
               "type": "boolean",
@@ -4092,6 +4285,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 27,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L27",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L27",
               },
               "type": "number",
@@ -4107,6 +4301,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 29,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L29",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L29",
               },
               "type": "{}",
@@ -4127,6 +4322,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 32,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L32",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L32",
               },
               "type": "(this: FastifyInstance, error: any, request: FastifyRequest, reply: FastifyReply) => void",
@@ -4142,6 +4338,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 24,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L24",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L24",
               },
               "type": "boolean",
@@ -4157,6 +4354,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 28,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L28",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L28",
               },
               "type": "LogLevel",
@@ -4186,6 +4384,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 45,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L45",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L45",
               },
               "type": "onErrorHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig, any> | onErrorHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig, any>[]",
@@ -4215,6 +4414,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 37,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L37",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L37",
               },
               "type": "onRequestHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig> | onRequestHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>[]",
@@ -4244,6 +4444,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 43,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L43",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L43",
               },
               "type": "onResponseHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig> | onResponseHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>[]",
@@ -4275,6 +4476,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 42,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L42",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L42",
               },
               "type": "onSendHookHandler<unknown, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig> | onSendHookHandler<unknown, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>[]",
@@ -4304,6 +4506,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 44,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L44",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L44",
               },
               "type": "onTimeoutHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig> | onTimeoutHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>[]",
@@ -4319,6 +4522,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 31,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L31",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L31",
               },
               "type": "\\"slash\\" | \\"no-slash\\" | \\"both\\"",
@@ -4348,6 +4552,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 40,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L40",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L40",
               },
               "type": "preHandlerHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig> | preHandlerHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>[]",
@@ -4377,6 +4582,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 38,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L38",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L38",
               },
               "type": "preParsingHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig> | preParsingHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>[]",
@@ -4408,6 +4614,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 41,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L41",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L41",
               },
               "type": "preSerializationHookHandler<unknown, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig> | preSerializationHookHandler<unknown, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>[]",
@@ -4437,6 +4644,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 39,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L39",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L39",
               },
               "type": "preValidationHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig> | preValidationHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>[]",
@@ -4452,6 +4660,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 22,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L22",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L22",
               },
               "type": "FastifySchema",
@@ -4470,6 +4679,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 34,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L34",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L34",
               },
               "type": "(errors: FastifySchemaValidationError[], dataVar: string) => Error",
@@ -4485,6 +4695,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 26,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L26",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L26",
               },
               "type": "FastifySerializerCompiler",
@@ -4500,6 +4711,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 25,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L25",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L25",
               },
               "type": "FastifySchemaCompiler",
@@ -4515,6 +4727,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 30,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L30",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L30",
               },
               "type": "string",
@@ -4532,6 +4745,7 @@ Object {
         "source": Object {
           "filename": "types/route.d.ts",
           "line": 15,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L15",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L15",
         },
       },
@@ -4566,6 +4780,7 @@ Object {
               "source": Object {
                 "filename": "types/route.d.ts",
                 "line": 73,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L73",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L73",
               },
               "type": "RouteHandlerMethod<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>",
@@ -4589,6 +4804,7 @@ Object {
         "source": Object {
           "filename": "types/route.d.ts",
           "line": 66,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L66",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L66",
         },
       },
@@ -4613,6 +4829,7 @@ Object {
               "source": Object {
                 "filename": "fastify.d.ts",
                 "line": 130,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/fastify.d.ts#L130",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/fastify.d.ts#L130",
               },
               "type": "string",
@@ -4628,6 +4845,7 @@ Object {
               "source": Object {
                 "filename": "fastify.d.ts",
                 "line": 129,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/fastify.d.ts#L129",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/fastify.d.ts#L129",
               },
               "type": "string",
@@ -4643,6 +4861,7 @@ Object {
               "source": Object {
                 "filename": "fastify.d.ts",
                 "line": 133,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/fastify.d.ts#L133",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/fastify.d.ts#L133",
               },
               "type": "string",
@@ -4658,6 +4877,7 @@ Object {
               "source": Object {
                 "filename": "fastify.d.ts",
                 "line": 132,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/fastify.d.ts#L132",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/fastify.d.ts#L132",
               },
               "type": "Record<string, string | string[]>",
@@ -4673,6 +4893,7 @@ Object {
               "source": Object {
                 "filename": "fastify.d.ts",
                 "line": 131,
+                "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/fastify.d.ts#L131",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/fastify.d.ts#L131",
               },
               "type": "string",
@@ -4684,6 +4905,7 @@ Object {
         "source": Object {
           "filename": "fastify.d.ts",
           "line": 128,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/fastify.d.ts#L128",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/fastify.d.ts#L128",
         },
       },
@@ -4699,6 +4921,7 @@ Object {
         "source": Object {
           "filename": "types/utils.d.ts",
           "line": 43,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/utils.d.ts#L43",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/utils.d.ts#L43",
         },
       },
@@ -4729,6 +4952,7 @@ Object {
         "source": Object {
           "filename": "types/content-type-parser.d.ts",
           "line": 10,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/content-type-parser.d.ts#L10",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/content-type-parser.d.ts#L10",
         },
       },
@@ -4758,6 +4982,7 @@ Object {
         "source": Object {
           "filename": "types/content-type-parser.d.ts",
           "line": 21,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/content-type-parser.d.ts#L21",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/content-type-parser.d.ts#L21",
         },
       },
@@ -4776,6 +5001,7 @@ Object {
         "source": Object {
           "filename": "fastify.d.ts",
           "line": 58,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/fastify.d.ts#L58",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/fastify.d.ts#L58",
         },
       },
@@ -4794,6 +5020,7 @@ Object {
         "source": Object {
           "filename": "fastify.d.ts",
           "line": 50,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/fastify.d.ts#L50",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/fastify.d.ts#L50",
         },
       },
@@ -4811,6 +5038,7 @@ Object {
         "source": Object {
           "filename": "fastify.d.ts",
           "line": 66,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/fastify.d.ts#L66",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/fastify.d.ts#L66",
         },
       },
@@ -4830,6 +5058,7 @@ Object {
         "source": Object {
           "filename": "types/plugin.d.ts",
           "line": 31,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/plugin.d.ts#L31",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/plugin.d.ts#L31",
         },
       },
@@ -4858,6 +5087,7 @@ Object {
         "source": Object {
           "filename": "types/plugin.d.ts",
           "line": 22,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/plugin.d.ts#L22",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/plugin.d.ts#L22",
         },
       },
@@ -4887,6 +5117,7 @@ Object {
         "source": Object {
           "filename": "types/plugin.d.ts",
           "line": 11,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/plugin.d.ts#L11",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/plugin.d.ts#L11",
         },
       },
@@ -4899,6 +5130,7 @@ Object {
         "source": Object {
           "filename": "types/plugin.d.ts",
           "line": 4,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/plugin.d.ts#L4",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/plugin.d.ts#L4",
         },
       },
@@ -4913,6 +5145,7 @@ Object {
         "source": Object {
           "filename": "types/register.d.ts",
           "line": 10,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/register.d.ts#L10",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/register.d.ts#L10",
         },
       },
@@ -4931,6 +5164,7 @@ Object {
         "source": Object {
           "filename": "types/schema.d.ts",
           "line": 35,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/schema.d.ts#L35",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/schema.d.ts#L35",
         },
       },
@@ -4955,6 +5189,7 @@ Object {
         "source": Object {
           "filename": "types/serverFactory.d.ts",
           "line": 6,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/serverFactory.d.ts#L6",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/serverFactory.d.ts#L6",
         },
       },
@@ -5035,6 +5270,7 @@ Object {
         "source": Object {
           "filename": "fastify.d.ts",
           "line": 75,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/fastify.d.ts#L75",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/fastify.d.ts#L75",
         },
       },
@@ -5051,6 +5287,7 @@ Object {
         "source": Object {
           "filename": "types/content-type-parser.d.ts",
           "line": 56,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/content-type-parser.d.ts#L56",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/content-type-parser.d.ts#L56",
         },
       },
@@ -5065,6 +5302,7 @@ Object {
         "source": Object {
           "filename": "types/hooks.d.ts",
           "line": 10,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts#L10",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts#L10",
         },
       },
@@ -5081,6 +5319,7 @@ Object {
         "source": Object {
           "filename": "types/utils.d.ts",
           "line": 8,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/utils.d.ts#L8",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/utils.d.ts#L8",
         },
       },
@@ -5093,6 +5332,7 @@ Object {
         "source": Object {
           "filename": "types/logger.d.ts",
           "line": 33,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/logger.d.ts#L33",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/logger.d.ts#L33",
         },
       },
@@ -5115,6 +5355,7 @@ Object {
         "source": Object {
           "filename": "types/utils.d.ts",
           "line": 32,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/utils.d.ts#L32",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/utils.d.ts#L32",
         },
       },
@@ -5137,6 +5378,7 @@ Object {
         "source": Object {
           "filename": "types/utils.d.ts",
           "line": 23,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/utils.d.ts#L23",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/utils.d.ts#L23",
         },
       },
@@ -5157,6 +5399,7 @@ Object {
         "source": Object {
           "filename": "types/utils.d.ts",
           "line": 13,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/utils.d.ts#L13",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/utils.d.ts#L13",
         },
       },
@@ -5173,6 +5416,7 @@ Object {
         "source": Object {
           "filename": "types/utils.d.ts",
           "line": 18,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/utils.d.ts#L18",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/utils.d.ts#L18",
         },
       },
@@ -5185,6 +5429,7 @@ Object {
         "source": Object {
           "filename": "types/utils.d.ts",
           "line": 38,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/utils.d.ts#L38",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/utils.d.ts#L38",
         },
       },
@@ -5197,6 +5442,7 @@ Object {
         "source": Object {
           "filename": "types/utils.d.ts",
           "line": 41,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/utils.d.ts#L41",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/utils.d.ts#L41",
         },
       },
@@ -5209,6 +5455,7 @@ Object {
         "source": Object {
           "filename": "types/utils.d.ts",
           "line": 40,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/utils.d.ts#L40",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/utils.d.ts#L40",
         },
       },
@@ -5221,6 +5468,7 @@ Object {
         "source": Object {
           "filename": "types/utils.d.ts",
           "line": 39,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/utils.d.ts#L39",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/utils.d.ts#L39",
         },
       },
@@ -5243,6 +5491,7 @@ Object {
         "source": Object {
           "filename": "types/route.d.ts",
           "line": 114,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L114",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L114",
         },
       },
@@ -5269,6 +5518,7 @@ Object {
         "source": Object {
           "filename": "types/route.d.ts",
           "line": 51,
+          "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L51",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L51",
         },
       },
@@ -5279,62 +5529,77 @@ Object {
     Object {
       "filename": "fastify.d.ts",
       "isIndexFile": true,
+      "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/fastify.d.ts",
       "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/fastify.d.ts",
     },
     Object {
       "filename": "test/types/decorate-request-reply.test-d.ts",
+      "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/test/types/decorate-request-reply.test-d.ts",
       "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/test/types/decorate-request-reply.test-d.ts",
     },
     Object {
       "filename": "types/content-type-parser.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/content-type-parser.d.ts",
       "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/content-type-parser.d.ts",
     },
     Object {
       "filename": "types/context.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/context.d.ts",
       "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/context.d.ts",
     },
     Object {
       "filename": "types/hooks.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/hooks.d.ts",
       "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/hooks.d.ts",
     },
     Object {
       "filename": "types/instance.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts",
       "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts",
     },
     Object {
       "filename": "types/logger.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/logger.d.ts",
       "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/logger.d.ts",
     },
     Object {
       "filename": "types/plugin.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/plugin.d.ts",
       "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/plugin.d.ts",
     },
     Object {
       "filename": "types/register.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/register.d.ts",
       "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/register.d.ts",
     },
     Object {
       "filename": "types/reply.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts",
       "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts",
     },
     Object {
       "filename": "types/request.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts",
       "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts",
     },
     Object {
       "filename": "types/route.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts",
       "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts",
     },
     Object {
       "filename": "types/schema.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/schema.d.ts",
       "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/schema.d.ts",
     },
     Object {
       "filename": "types/serverFactory.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/serverFactory.d.ts",
       "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/serverFactory.d.ts",
     },
     Object {
       "filename": "types/utils.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/utils.d.ts",
       "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/utils.d.ts",
     },
   ],

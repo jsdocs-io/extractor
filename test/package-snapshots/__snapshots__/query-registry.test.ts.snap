@@ -37,6 +37,7 @@ Object {
             "source": Object {
               "filename": "dist/registry.d.ts",
               "line": 62,
+              "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry.d.ts#L62",
               "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry.d.ts#L62",
             },
           },
@@ -75,6 +76,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry.d.ts",
                 "line": 114,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry.d.ts#L114",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry.d.ts#L114",
               },
               "type": "(name: string, period?: DownloadPeriod) => Promise<PackageDailyDownloads>",
@@ -97,6 +99,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry.d.ts",
                 "line": 130,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry.d.ts#L130",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry.d.ts#L130",
               },
               "type": "(period?: DownloadPeriod) => Promise<DailyDownloads>",
@@ -115,6 +118,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry.d.ts",
                 "line": 66,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry.d.ts#L66",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry.d.ts#L66",
               },
               "type": "() => Promise<RegistryMetadata>",
@@ -141,6 +145,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry.d.ts",
                 "line": 105,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry.d.ts#L105",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry.d.ts#L105",
               },
               "type": "(name: string, period?: DownloadPeriod) => Promise<PackageDownloads>",
@@ -163,6 +168,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry.d.ts",
                 "line": 74,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry.d.ts#L74",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry.d.ts#L74",
               },
               "type": "(name: string, version?: string) => Promise<PackageManifest>",
@@ -184,6 +190,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry.d.ts",
                 "line": 137,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry.d.ts#L137",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry.d.ts#L137",
               },
               "type": "(query: string) => Promise<PackageSearchResult[]>",
@@ -205,6 +212,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry.d.ts",
                 "line": 89,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry.d.ts#L89",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry.d.ts#L89",
               },
               "type": "(name: string) => Promise<Packument>",
@@ -230,6 +238,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry.d.ts",
                 "line": 82,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry.d.ts#L82",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry.d.ts#L82",
               },
               "type": "(name: string, version?: string) => Promise<PackageManifestRaw>",
@@ -251,6 +260,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry.d.ts",
                 "line": 96,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry.d.ts#L96",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry.d.ts#L96",
               },
               "type": "(name: string) => Promise<PackumentRaw>",
@@ -273,6 +283,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry.d.ts",
                 "line": 122,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry.d.ts#L122",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry.d.ts#L122",
               },
               "type": "(period?: DownloadPeriod) => Promise<Downloads>",
@@ -296,6 +307,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry.d.ts",
                 "line": 163,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry.d.ts#L163",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry.d.ts#L163",
               },
               "type": "<T>(endpoint: string, query?: QueryParameters) => Promise<T>",
@@ -320,6 +332,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry.d.ts",
                 "line": 154,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry.d.ts#L154",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry.d.ts#L154",
               },
               "type": "<T>(endpoint: string, query?: QueryParameters) => Promise<T>",
@@ -341,6 +354,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry.d.ts",
                 "line": 144,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry.d.ts#L144",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry.d.ts#L144",
               },
               "type": "(searchOptions: SearchOptions) => Promise<SearchResults>",
@@ -353,6 +367,7 @@ Object {
         "source": Object {
           "filename": "dist/registry.d.ts",
           "line": 40,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry.d.ts#L40",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry.d.ts#L40",
         },
       },
@@ -385,6 +400,7 @@ Object {
               "source": Object {
                 "filename": "dist/bug-tracker.d.ts",
                 "line": 6,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/bug-tracker.d.ts#L6",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/bug-tracker.d.ts#L6",
               },
               "type": "string",
@@ -400,6 +416,7 @@ Object {
               "source": Object {
                 "filename": "dist/bug-tracker.d.ts",
                 "line": 5,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/bug-tracker.d.ts#L5",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/bug-tracker.d.ts#L5",
               },
               "type": "string",
@@ -411,6 +428,7 @@ Object {
         "source": Object {
           "filename": "dist/bug-tracker.d.ts",
           "line": 4,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/bug-tracker.d.ts#L4",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/bug-tracker.d.ts#L4",
         },
       },
@@ -445,6 +463,7 @@ Object {
               "source": Object {
                 "filename": "dist/downloads.d.ts",
                 "line": 45,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/downloads.d.ts#L45",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/downloads.d.ts#L45",
               },
               "type": "DownloadsPerDay[]",
@@ -462,6 +481,7 @@ Object {
               "source": Object {
                 "filename": "dist/downloads.d.ts",
                 "line": 49,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/downloads.d.ts#L49",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/downloads.d.ts#L49",
               },
               "type": "string",
@@ -479,6 +499,7 @@ Object {
               "source": Object {
                 "filename": "dist/downloads.d.ts",
                 "line": 47,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/downloads.d.ts#L47",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/downloads.d.ts#L47",
               },
               "type": "string",
@@ -490,6 +511,7 @@ Object {
         "source": Object {
           "filename": "dist/downloads.d.ts",
           "line": 43,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/downloads.d.ts#L43",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/downloads.d.ts#L43",
         },
       },
@@ -528,6 +550,7 @@ Object {
               "source": Object {
                 "filename": "dist/download-period.d.ts",
                 "line": 38,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/download-period.d.ts#L38",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/download-period.d.ts#L38",
               },
               "type": "Date",
@@ -545,6 +568,7 @@ Object {
               "source": Object {
                 "filename": "dist/download-period.d.ts",
                 "line": 36,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/download-period.d.ts#L36",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/download-period.d.ts#L36",
               },
               "type": "Date",
@@ -556,6 +580,7 @@ Object {
         "source": Object {
           "filename": "dist/download-period.d.ts",
           "line": 34,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/download-period.d.ts#L34",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/download-period.d.ts#L34",
         },
       },
@@ -587,6 +612,7 @@ Object {
               "source": Object {
                 "filename": "dist/dist-info.d.ts",
                 "line": 17,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/dist-info.d.ts#L17",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/dist-info.d.ts#L17",
               },
               "type": "string",
@@ -604,6 +630,7 @@ Object {
               "source": Object {
                 "filename": "dist/dist-info.d.ts",
                 "line": 13,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/dist-info.d.ts#L13",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/dist-info.d.ts#L13",
               },
               "type": "number",
@@ -621,6 +648,7 @@ Object {
               "source": Object {
                 "filename": "dist/dist-info.d.ts",
                 "line": 11,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/dist-info.d.ts#L11",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/dist-info.d.ts#L11",
               },
               "type": "string",
@@ -638,6 +666,7 @@ Object {
               "source": Object {
                 "filename": "dist/dist-info.d.ts",
                 "line": 9,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/dist-info.d.ts#L9",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/dist-info.d.ts#L9",
               },
               "type": "string",
@@ -655,6 +684,7 @@ Object {
               "source": Object {
                 "filename": "dist/dist-info.d.ts",
                 "line": 7,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/dist-info.d.ts#L7",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/dist-info.d.ts#L7",
               },
               "type": "string",
@@ -672,6 +702,7 @@ Object {
               "source": Object {
                 "filename": "dist/dist-info.d.ts",
                 "line": 15,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/dist-info.d.ts#L15",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/dist-info.d.ts#L15",
               },
               "type": "number",
@@ -683,6 +714,7 @@ Object {
         "source": Object {
           "filename": "dist/dist-info.d.ts",
           "line": 5,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/dist-info.d.ts#L5",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/dist-info.d.ts#L5",
         },
       },
@@ -709,6 +741,7 @@ Object {
               "source": Object {
                 "filename": "dist/dist-tags.d.ts",
                 "line": 8,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/dist-tags.d.ts#L8",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/dist-tags.d.ts#L8",
               },
             },
@@ -728,6 +761,7 @@ Object {
               "source": Object {
                 "filename": "dist/dist-tags.d.ts",
                 "line": 6,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/dist-tags.d.ts#L6",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/dist-tags.d.ts#L6",
               },
               "type": "string",
@@ -739,6 +773,7 @@ Object {
         "source": Object {
           "filename": "dist/dist-tags.d.ts",
           "line": 4,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/dist-tags.d.ts#L4",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/dist-tags.d.ts#L4",
         },
       },
@@ -771,6 +806,7 @@ Object {
               "source": Object {
                 "filename": "dist/downloads.d.ts",
                 "line": 19,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/downloads.d.ts#L19",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/downloads.d.ts#L19",
               },
               "type": "number",
@@ -788,6 +824,7 @@ Object {
               "source": Object {
                 "filename": "dist/downloads.d.ts",
                 "line": 23,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/downloads.d.ts#L23",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/downloads.d.ts#L23",
               },
               "type": "string",
@@ -805,6 +842,7 @@ Object {
               "source": Object {
                 "filename": "dist/downloads.d.ts",
                 "line": 21,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/downloads.d.ts#L21",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/downloads.d.ts#L21",
               },
               "type": "string",
@@ -816,6 +854,7 @@ Object {
         "source": Object {
           "filename": "dist/downloads.d.ts",
           "line": 17,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/downloads.d.ts#L17",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/downloads.d.ts#L17",
         },
       },
@@ -846,6 +885,7 @@ Object {
               "source": Object {
                 "filename": "dist/downloads.d.ts",
                 "line": 58,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/downloads.d.ts#L58",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/downloads.d.ts#L58",
               },
               "type": "string",
@@ -863,6 +903,7 @@ Object {
               "source": Object {
                 "filename": "dist/downloads.d.ts",
                 "line": 56,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/downloads.d.ts#L56",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/downloads.d.ts#L56",
               },
               "type": "number",
@@ -874,6 +915,7 @@ Object {
         "source": Object {
           "filename": "dist/downloads.d.ts",
           "line": 54,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/downloads.d.ts#L54",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/downloads.d.ts#L54",
         },
       },
@@ -898,6 +940,7 @@ Object {
               "source": Object {
                 "filename": "dist/npm-operational-internal.d.ts",
                 "line": 2,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/npm-operational-internal.d.ts#L2",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/npm-operational-internal.d.ts#L2",
               },
               "type": "string",
@@ -913,6 +956,7 @@ Object {
               "source": Object {
                 "filename": "dist/npm-operational-internal.d.ts",
                 "line": 3,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/npm-operational-internal.d.ts#L3",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/npm-operational-internal.d.ts#L3",
               },
               "type": "string",
@@ -924,6 +968,7 @@ Object {
         "source": Object {
           "filename": "dist/npm-operational-internal.d.ts",
           "line": 1,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/npm-operational-internal.d.ts#L1",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/npm-operational-internal.d.ts#L1",
         },
       },
@@ -958,6 +1003,7 @@ Object {
               "source": Object {
                 "filename": "dist/downloads.d.ts",
                 "line": 34,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/downloads.d.ts#L34",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/downloads.d.ts#L34",
               },
               "type": "string",
@@ -969,6 +1015,7 @@ Object {
         "source": Object {
           "filename": "dist/downloads.d.ts",
           "line": 32,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/downloads.d.ts#L32",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/downloads.d.ts#L32",
         },
       },
@@ -1003,6 +1050,7 @@ Object {
               "source": Object {
                 "filename": "dist/downloads.d.ts",
                 "line": 10,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/downloads.d.ts#L10",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/downloads.d.ts#L10",
               },
               "type": "string",
@@ -1014,6 +1062,7 @@ Object {
         "source": Object {
           "filename": "dist/downloads.d.ts",
           "line": 8,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/downloads.d.ts#L8",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/downloads.d.ts#L8",
         },
       },
@@ -1044,6 +1093,7 @@ Object {
               "source": Object {
                 "filename": "dist/search-results.d.ts",
                 "line": 74,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-results.d.ts#L74",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-results.d.ts#L74",
               },
               "type": "boolean",
@@ -1061,6 +1111,7 @@ Object {
               "source": Object {
                 "filename": "dist/search-results.d.ts",
                 "line": 72,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-results.d.ts#L72",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-results.d.ts#L72",
               },
               "type": "boolean",
@@ -1072,6 +1123,7 @@ Object {
         "source": Object {
           "filename": "dist/search-results.d.ts",
           "line": 70,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-results.d.ts#L70",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-results.d.ts#L70",
         },
       },
@@ -1098,6 +1150,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 100,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L100",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L100",
               },
             },
@@ -1120,6 +1173,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 26,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L26",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L26",
               },
               "type": "Person",
@@ -1137,6 +1191,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 74,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L74",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L74",
               },
               "type": "string | Record<string, string>",
@@ -1154,6 +1209,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 64,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L64",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L64",
               },
               "type": "string",
@@ -1174,6 +1230,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 46,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L46",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L46",
               },
               "type": "BugTracker",
@@ -1191,6 +1248,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 58,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L58",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L58",
               },
               "type": "string[]",
@@ -1208,6 +1266,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 56,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L56",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L56",
               },
               "type": "string[]",
@@ -1225,6 +1284,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 82,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L82",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L82",
               },
               "type": "Record<string, string>",
@@ -1245,6 +1305,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 36,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L36",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L36",
               },
               "type": "Person[]",
@@ -1262,6 +1323,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 88,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L88",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L88",
               },
               "type": "string[]",
@@ -1279,6 +1341,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 48,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L48",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L48",
               },
               "type": "Record<string, string>",
@@ -1296,6 +1359,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 94,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L94",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L94",
               },
               "type": "string",
@@ -1313,6 +1377,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 13,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L13",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L13",
               },
               "type": "string",
@@ -1330,6 +1395,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 50,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L50",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L50",
               },
               "type": "Record<string, string>",
@@ -1347,6 +1413,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 78,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L78",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L78",
               },
               "type": "Record<string, string>",
@@ -1364,6 +1431,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 84,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L84",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L84",
               },
               "type": "Record<string, string>",
@@ -1381,6 +1449,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 72,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L72",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L72",
               },
               "type": "string[]",
@@ -1398,6 +1467,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 15,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L15",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L15",
               },
               "type": "string",
@@ -1415,6 +1485,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 21,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L21",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L21",
               },
               "type": "string[]",
@@ -1432,6 +1503,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 17,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L17",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L17",
               },
               "type": "string",
@@ -1449,6 +1521,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 19,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L19",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L19",
               },
               "type": "string",
@@ -1466,6 +1539,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 62,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L62",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L62",
               },
               "type": "string",
@@ -1486,6 +1560,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 31,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L31",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L31",
               },
               "type": "Person[]",
@@ -1503,6 +1578,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 76,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L76",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L76",
               },
               "type": "string | string[]",
@@ -1520,6 +1596,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 66,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L66",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L66",
               },
               "type": "string",
@@ -1537,6 +1614,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 9,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L9",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L9",
               },
               "type": "string",
@@ -1554,6 +1632,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 54,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L54",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L54",
               },
               "type": "Record<string, string>",
@@ -1571,6 +1650,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 86,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L86",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L86",
               },
               "type": "string[]",
@@ -1588,6 +1668,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 52,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L52",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L52",
               },
               "type": "Record<string, string>",
@@ -1605,6 +1686,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 90,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L90",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L90",
               },
               "type": "boolean",
@@ -1622,6 +1704,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 92,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L92",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L92",
               },
               "type": "Record<string, string>",
@@ -1639,6 +1722,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 96,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L96",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L96",
               },
               "type": "string",
@@ -1656,6 +1740,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 98,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L98",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L98",
               },
               "type": "string",
@@ -1676,6 +1761,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 41,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L41",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L41",
               },
               "type": "Repository",
@@ -1693,6 +1779,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 80,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L80",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L80",
               },
               "type": "Record<string, string>",
@@ -1710,6 +1797,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 60,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L60",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L60",
               },
               "type": "string",
@@ -1727,6 +1815,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 68,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L68",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L68",
               },
               "type": "string",
@@ -1744,6 +1833,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 70,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L70",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L70",
               },
               "type": "string",
@@ -1761,6 +1851,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-json.d.ts",
                 "line": 11,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L11",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L11",
               },
               "type": "string",
@@ -1772,6 +1863,7 @@ Object {
         "source": Object {
           "filename": "dist/package-json.d.ts",
           "line": 7,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts#L7",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts#L7",
         },
       },
@@ -1796,6 +1888,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-links.d.ts",
                 "line": 9,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-links.d.ts#L9",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-links.d.ts#L9",
               },
             },
@@ -1813,6 +1906,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-links.d.ts",
                 "line": 8,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-links.d.ts#L8",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-links.d.ts#L8",
               },
               "type": "string",
@@ -1828,6 +1922,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-links.d.ts",
                 "line": 6,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-links.d.ts#L6",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-links.d.ts#L6",
               },
               "type": "string",
@@ -1843,6 +1938,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-links.d.ts",
                 "line": 5,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-links.d.ts#L5",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-links.d.ts#L5",
               },
               "type": "string",
@@ -1858,6 +1954,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-links.d.ts",
                 "line": 7,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-links.d.ts#L7",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-links.d.ts#L7",
               },
               "type": "string",
@@ -1869,6 +1966,7 @@ Object {
         "source": Object {
           "filename": "dist/package-links.d.ts",
           "line": 4,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-links.d.ts#L4",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-links.d.ts#L4",
         },
       },
@@ -1896,6 +1994,7 @@ Object {
         "source": Object {
           "filename": "dist/package-manifest.d.ts",
           "line": 12,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-manifest.d.ts#L12",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-manifest.d.ts#L12",
         },
       },
@@ -1927,6 +2026,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-manifest.d.ts",
                 "line": 54,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-manifest.d.ts#L54",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-manifest.d.ts#L54",
               },
               "type": "string",
@@ -1944,6 +2044,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-manifest.d.ts",
                 "line": 61,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-manifest.d.ts#L61",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-manifest.d.ts#L61",
               },
               "type": "string",
@@ -1961,6 +2062,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-manifest.d.ts",
                 "line": 52,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-manifest.d.ts#L52",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-manifest.d.ts#L52",
               },
               "type": "string",
@@ -1981,6 +2083,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-manifest.d.ts",
                 "line": 59,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-manifest.d.ts#L59",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-manifest.d.ts#L59",
               },
               "type": "Person",
@@ -1998,6 +2101,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-manifest.d.ts",
                 "line": 63,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-manifest.d.ts#L63",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-manifest.d.ts#L63",
               },
               "type": "string",
@@ -2009,6 +2113,7 @@ Object {
         "source": Object {
           "filename": "dist/package-manifest.d.ts",
           "line": 50,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-manifest.d.ts#L50",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-manifest.d.ts#L50",
         },
       },
@@ -2044,6 +2149,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-manifest.d.ts",
                 "line": 26,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-manifest.d.ts#L26",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-manifest.d.ts#L26",
               },
               "type": "DistInfo",
@@ -2061,6 +2167,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-manifest.d.ts",
                 "line": 28,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-manifest.d.ts#L28",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-manifest.d.ts#L28",
               },
               "type": "string",
@@ -2072,6 +2179,7 @@ Object {
         "source": Object {
           "filename": "dist/package-manifest.d.ts",
           "line": 19,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-manifest.d.ts#L19",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-manifest.d.ts#L19",
         },
       },
@@ -2106,6 +2214,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-search-result.d.ts",
                 "line": 34,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-search-result.d.ts#L34",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-search-result.d.ts#L34",
               },
               "type": "Person",
@@ -2123,6 +2232,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-search-result.d.ts",
                 "line": 19,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-search-result.d.ts#L19",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-search-result.d.ts#L19",
               },
               "type": "string",
@@ -2140,6 +2250,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-search-result.d.ts",
                 "line": 15,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-search-result.d.ts#L15",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-search-result.d.ts#L15",
               },
               "type": "string",
@@ -2157,6 +2268,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-search-result.d.ts",
                 "line": 17,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-search-result.d.ts#L17",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-search-result.d.ts#L17",
               },
               "type": "string[]",
@@ -2177,6 +2289,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-search-result.d.ts",
                 "line": 24,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-search-result.d.ts#L24",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-search-result.d.ts#L24",
               },
               "type": "PackageLinks",
@@ -2197,6 +2310,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-search-result.d.ts",
                 "line": 39,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-search-result.d.ts#L39",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-search-result.d.ts#L39",
               },
               "type": "Person[]",
@@ -2214,6 +2328,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-search-result.d.ts",
                 "line": 9,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-search-result.d.ts#L9",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-search-result.d.ts#L9",
               },
               "type": "string",
@@ -2234,6 +2349,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-search-result.d.ts",
                 "line": 29,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-search-result.d.ts#L29",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-search-result.d.ts#L29",
               },
               "type": "Person",
@@ -2251,6 +2367,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-search-result.d.ts",
                 "line": 11,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-search-result.d.ts#L11",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-search-result.d.ts#L11",
               },
               "type": "string",
@@ -2268,6 +2385,7 @@ Object {
               "source": Object {
                 "filename": "dist/package-search-result.d.ts",
                 "line": 13,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-search-result.d.ts#L13",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-search-result.d.ts#L13",
               },
               "type": "string",
@@ -2279,6 +2397,7 @@ Object {
         "source": Object {
           "filename": "dist/package-search-result.d.ts",
           "line": 7,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-search-result.d.ts#L7",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-search-result.d.ts#L7",
         },
       },
@@ -2307,6 +2426,7 @@ Object {
         "source": Object {
           "filename": "dist/packument.d.ts",
           "line": 13,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/packument.d.ts#L13",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/packument.d.ts#L13",
         },
       },
@@ -2341,6 +2461,7 @@ Object {
               "source": Object {
                 "filename": "dist/packument.d.ts",
                 "line": 54,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/packument.d.ts#L54",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/packument.d.ts#L54",
               },
               "type": "DistTags",
@@ -2358,6 +2479,7 @@ Object {
               "source": Object {
                 "filename": "dist/packument.d.ts",
                 "line": 49,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/packument.d.ts#L49",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/packument.d.ts#L49",
               },
               "type": "string",
@@ -2375,6 +2497,7 @@ Object {
               "source": Object {
                 "filename": "dist/packument.d.ts",
                 "line": 56,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/packument.d.ts#L56",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/packument.d.ts#L56",
               },
               "type": "Record<string, string>",
@@ -2386,6 +2509,7 @@ Object {
         "source": Object {
           "filename": "dist/packument.d.ts",
           "line": 47,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/packument.d.ts#L47",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/packument.d.ts#L47",
         },
       },
@@ -2421,6 +2545,7 @@ Object {
               "source": Object {
                 "filename": "dist/packument.d.ts",
                 "line": 29,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/packument.d.ts#L29",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/packument.d.ts#L29",
               },
               "type": "DistTags",
@@ -2441,6 +2566,7 @@ Object {
               "source": Object {
                 "filename": "dist/packument.d.ts",
                 "line": 34,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/packument.d.ts#L34",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/packument.d.ts#L34",
               },
               "type": "TimestampsByVersion",
@@ -2458,6 +2584,7 @@ Object {
               "source": Object {
                 "filename": "dist/packument.d.ts",
                 "line": 36,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/packument.d.ts#L36",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/packument.d.ts#L36",
               },
               "type": "Record<string, boolean>",
@@ -2478,6 +2605,7 @@ Object {
               "source": Object {
                 "filename": "dist/packument.d.ts",
                 "line": 41,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/packument.d.ts#L41",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/packument.d.ts#L41",
               },
               "type": "Record<string, PackageManifestRaw>",
@@ -2489,6 +2617,7 @@ Object {
         "source": Object {
           "filename": "dist/packument.d.ts",
           "line": 20,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/packument.d.ts#L20",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/packument.d.ts#L20",
         },
       },
@@ -2517,6 +2646,7 @@ Object {
               "source": Object {
                 "filename": "dist/person.d.ts",
                 "line": 7,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/person.d.ts#L7",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/person.d.ts#L7",
               },
               "type": "string",
@@ -2532,6 +2662,7 @@ Object {
               "source": Object {
                 "filename": "dist/person.d.ts",
                 "line": 5,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/person.d.ts#L5",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/person.d.ts#L5",
               },
               "type": "string",
@@ -2547,6 +2678,7 @@ Object {
               "source": Object {
                 "filename": "dist/person.d.ts",
                 "line": 8,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/person.d.ts#L8",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/person.d.ts#L8",
               },
               "type": "string",
@@ -2562,6 +2694,7 @@ Object {
               "source": Object {
                 "filename": "dist/person.d.ts",
                 "line": 6,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/person.d.ts#L6",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/person.d.ts#L6",
               },
               "type": "string",
@@ -2573,6 +2706,7 @@ Object {
         "source": Object {
           "filename": "dist/person.d.ts",
           "line": 4,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/person.d.ts#L4",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/person.d.ts#L4",
         },
       },
@@ -2597,6 +2731,7 @@ Object {
         "source": Object {
           "filename": "dist/registry.d.ts",
           "line": 33,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry.d.ts#L33",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry.d.ts#L33",
         },
       },
@@ -2630,6 +2765,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry.d.ts",
                 "line": 23,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry.d.ts#L23",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry.d.ts#L23",
               },
               "type": "string",
@@ -2647,6 +2783,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry.d.ts",
                 "line": 27,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry.d.ts#L27",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry.d.ts#L27",
               },
               "type": "any",
@@ -2664,6 +2801,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry.d.ts",
                 "line": 21,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry.d.ts#L21",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry.d.ts#L21",
               },
               "type": "string[]",
@@ -2681,6 +2819,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry.d.ts",
                 "line": 19,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry.d.ts#L19",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry.d.ts#L19",
               },
               "type": "string",
@@ -2698,6 +2837,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry.d.ts",
                 "line": 25,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry.d.ts#L25",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry.d.ts#L25",
               },
               "type": "string",
@@ -2709,6 +2849,7 @@ Object {
         "source": Object {
           "filename": "dist/registry.d.ts",
           "line": 17,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry.d.ts#L17",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry.d.ts#L17",
         },
       },
@@ -2741,6 +2882,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry-metadata.d.ts",
                 "line": 22,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry-metadata.d.ts#L22",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry-metadata.d.ts#L22",
               },
               "type": "number",
@@ -2756,6 +2898,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry-metadata.d.ts",
                 "line": 15,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry-metadata.d.ts#L15",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry-metadata.d.ts#L15",
               },
               "type": "boolean",
@@ -2771,6 +2914,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry-metadata.d.ts",
                 "line": 23,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry-metadata.d.ts#L23",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry-metadata.d.ts#L23",
               },
               "type": "number",
@@ -2786,6 +2930,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry-metadata.d.ts",
                 "line": 18,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry-metadata.d.ts#L18",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry-metadata.d.ts#L18",
               },
               "type": "number",
@@ -2803,6 +2948,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry-metadata.d.ts",
                 "line": 10,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry-metadata.d.ts#L10",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry-metadata.d.ts#L10",
               },
               "type": "string",
@@ -2818,6 +2964,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry-metadata.d.ts",
                 "line": 21,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry-metadata.d.ts#L21",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry-metadata.d.ts#L21",
               },
               "type": "number",
@@ -2833,6 +2980,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry-metadata.d.ts",
                 "line": 16,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry-metadata.d.ts#L16",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry-metadata.d.ts#L16",
               },
               "type": "number",
@@ -2848,6 +2996,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry-metadata.d.ts",
                 "line": 11,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry-metadata.d.ts#L11",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry-metadata.d.ts#L11",
               },
               "type": "number",
@@ -2863,6 +3012,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry-metadata.d.ts",
                 "line": 12,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry-metadata.d.ts#L12",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry-metadata.d.ts#L12",
               },
               "type": "number",
@@ -2878,6 +3028,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry-metadata.d.ts",
                 "line": 20,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry-metadata.d.ts#L20",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry-metadata.d.ts#L20",
               },
               "type": "string",
@@ -2893,6 +3044,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry-metadata.d.ts",
                 "line": 17,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry-metadata.d.ts#L17",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry-metadata.d.ts#L17",
               },
               "type": "RegistryMetadataOther",
@@ -2908,6 +3060,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry-metadata.d.ts",
                 "line": 14,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry-metadata.d.ts#L14",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry-metadata.d.ts#L14",
               },
               "type": "number",
@@ -2923,6 +3076,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry-metadata.d.ts",
                 "line": 19,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry-metadata.d.ts#L19",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry-metadata.d.ts#L19",
               },
               "type": "RegistryMetadataSizes",
@@ -2938,6 +3092,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry-metadata.d.ts",
                 "line": 13,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry-metadata.d.ts#L13",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry-metadata.d.ts#L13",
               },
               "type": "number",
@@ -2953,6 +3108,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry-metadata.d.ts",
                 "line": 24,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry-metadata.d.ts#L24",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry-metadata.d.ts#L24",
               },
               "type": "string",
@@ -2964,6 +3120,7 @@ Object {
         "source": Object {
           "filename": "dist/registry-metadata.d.ts",
           "line": 8,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry-metadata.d.ts#L8",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry-metadata.d.ts#L8",
         },
       },
@@ -2988,6 +3145,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry-metadata.d.ts",
                 "line": 27,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry-metadata.d.ts#L27",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry-metadata.d.ts#L27",
               },
               "type": "number",
@@ -2999,6 +3157,7 @@ Object {
         "source": Object {
           "filename": "dist/registry-metadata.d.ts",
           "line": 26,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry-metadata.d.ts#L26",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry-metadata.d.ts#L26",
         },
       },
@@ -3023,6 +3182,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry-metadata.d.ts",
                 "line": 31,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry-metadata.d.ts#L31",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry-metadata.d.ts#L31",
               },
               "type": "number",
@@ -3038,6 +3198,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry-metadata.d.ts",
                 "line": 32,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry-metadata.d.ts#L32",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry-metadata.d.ts#L32",
               },
               "type": "number",
@@ -3053,6 +3214,7 @@ Object {
               "source": Object {
                 "filename": "dist/registry-metadata.d.ts",
                 "line": 30,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry-metadata.d.ts#L30",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry-metadata.d.ts#L30",
               },
               "type": "number",
@@ -3064,6 +3226,7 @@ Object {
         "source": Object {
           "filename": "dist/registry-metadata.d.ts",
           "line": 29,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry-metadata.d.ts#L29",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry-metadata.d.ts#L29",
         },
       },
@@ -3099,6 +3262,7 @@ Object {
               "source": Object {
                 "filename": "dist/repository.d.ts",
                 "line": 15,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/repository.d.ts#L15",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/repository.d.ts#L15",
               },
               "type": "string",
@@ -3116,6 +3280,7 @@ Object {
               "source": Object {
                 "filename": "dist/repository.d.ts",
                 "line": 8,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/repository.d.ts#L8",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/repository.d.ts#L8",
               },
               "type": "string",
@@ -3133,6 +3298,7 @@ Object {
               "source": Object {
                 "filename": "dist/repository.d.ts",
                 "line": 10,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/repository.d.ts#L10",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/repository.d.ts#L10",
               },
               "type": "string",
@@ -3144,6 +3310,7 @@ Object {
         "source": Object {
           "filename": "dist/repository.d.ts",
           "line": 6,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/repository.d.ts#L6",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/repository.d.ts#L6",
         },
       },
@@ -3176,6 +3343,7 @@ Object {
               "source": Object {
                 "filename": "dist/search-options.d.ts",
                 "line": 38,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-options.d.ts#L38",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-options.d.ts#L38",
               },
               "type": "number",
@@ -3193,6 +3361,7 @@ Object {
               "source": Object {
                 "filename": "dist/search-options.d.ts",
                 "line": 44,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-options.d.ts#L44",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-options.d.ts#L44",
               },
               "type": "number",
@@ -3210,6 +3379,7 @@ Object {
               "source": Object {
                 "filename": "dist/search-options.d.ts",
                 "line": 42,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-options.d.ts#L42",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-options.d.ts#L42",
               },
               "type": "number",
@@ -3227,6 +3397,7 @@ Object {
               "source": Object {
                 "filename": "dist/search-options.d.ts",
                 "line": 40,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-options.d.ts#L40",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-options.d.ts#L40",
               },
               "type": "number",
@@ -3244,6 +3415,7 @@ Object {
               "source": Object {
                 "filename": "dist/search-options.d.ts",
                 "line": 36,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-options.d.ts#L36",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-options.d.ts#L36",
               },
               "type": "number",
@@ -3287,6 +3459,7 @@ Object {
               "source": Object {
                 "filename": "dist/search-options.d.ts",
                 "line": 34,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-options.d.ts#L34",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-options.d.ts#L34",
               },
               "type": "string",
@@ -3298,6 +3471,7 @@ Object {
         "source": Object {
           "filename": "dist/search-options.d.ts",
           "line": 6,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-options.d.ts#L6",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-options.d.ts#L6",
         },
       },
@@ -3331,6 +3505,7 @@ Object {
               "source": Object {
                 "filename": "dist/search-results.d.ts",
                 "line": 41,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-results.d.ts#L41",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-results.d.ts#L41",
               },
               "type": "PackageFlags",
@@ -3351,6 +3526,7 @@ Object {
               "source": Object {
                 "filename": "dist/search-results.d.ts",
                 "line": 29,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-results.d.ts#L29",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-results.d.ts#L29",
               },
               "type": "PackageSearchResult",
@@ -3371,6 +3547,7 @@ Object {
               "source": Object {
                 "filename": "dist/search-results.d.ts",
                 "line": 34,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-results.d.ts#L34",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-results.d.ts#L34",
               },
               "type": "SearchScore",
@@ -3388,6 +3565,7 @@ Object {
               "source": Object {
                 "filename": "dist/search-results.d.ts",
                 "line": 36,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-results.d.ts#L36",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-results.d.ts#L36",
               },
               "type": "number",
@@ -3399,6 +3577,7 @@ Object {
         "source": Object {
           "filename": "dist/search-results.d.ts",
           "line": 24,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-results.d.ts#L24",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-results.d.ts#L24",
         },
       },
@@ -3434,6 +3613,7 @@ Object {
               "source": Object {
                 "filename": "dist/search-results.d.ts",
                 "line": 12,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-results.d.ts#L12",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-results.d.ts#L12",
               },
               "type": "SearchResult[]",
@@ -3451,6 +3631,7 @@ Object {
               "source": Object {
                 "filename": "dist/search-results.d.ts",
                 "line": 19,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-results.d.ts#L19",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-results.d.ts#L19",
               },
               "type": "string",
@@ -3471,6 +3652,7 @@ Object {
               "source": Object {
                 "filename": "dist/search-results.d.ts",
                 "line": 17,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-results.d.ts#L17",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-results.d.ts#L17",
               },
               "type": "number",
@@ -3482,6 +3664,7 @@ Object {
         "source": Object {
           "filename": "dist/search-results.d.ts",
           "line": 7,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-results.d.ts#L7",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-results.d.ts#L7",
         },
       },
@@ -3515,6 +3698,7 @@ Object {
               "source": Object {
                 "filename": "dist/search-results.d.ts",
                 "line": 53,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-results.d.ts#L53",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-results.d.ts#L53",
               },
               "type": "SearchScoreDetail",
@@ -3532,6 +3716,7 @@ Object {
               "source": Object {
                 "filename": "dist/search-results.d.ts",
                 "line": 48,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-results.d.ts#L48",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-results.d.ts#L48",
               },
               "type": "number",
@@ -3543,6 +3728,7 @@ Object {
         "source": Object {
           "filename": "dist/search-results.d.ts",
           "line": 46,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-results.d.ts#L46",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-results.d.ts#L46",
         },
       },
@@ -3574,6 +3760,7 @@ Object {
               "source": Object {
                 "filename": "dist/search-results.d.ts",
                 "line": 65,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-results.d.ts#L65",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-results.d.ts#L65",
               },
               "type": "number",
@@ -3591,6 +3778,7 @@ Object {
               "source": Object {
                 "filename": "dist/search-results.d.ts",
                 "line": 63,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-results.d.ts#L63",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-results.d.ts#L63",
               },
               "type": "number",
@@ -3608,6 +3796,7 @@ Object {
               "source": Object {
                 "filename": "dist/search-results.d.ts",
                 "line": 61,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-results.d.ts#L61",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-results.d.ts#L61",
               },
               "type": "number",
@@ -3619,6 +3808,7 @@ Object {
         "source": Object {
           "filename": "dist/search-results.d.ts",
           "line": 59,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-results.d.ts#L59",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-results.d.ts#L59",
         },
       },
@@ -3646,6 +3836,7 @@ Object {
               "source": Object {
                 "filename": "dist/timestamps-by-version.d.ts",
                 "line": 11,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/timestamps-by-version.d.ts#L11",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/timestamps-by-version.d.ts#L11",
               },
             },
@@ -3665,6 +3856,7 @@ Object {
               "source": Object {
                 "filename": "dist/timestamps-by-version.d.ts",
                 "line": 7,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/timestamps-by-version.d.ts#L7",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/timestamps-by-version.d.ts#L7",
               },
               "type": "string",
@@ -3682,6 +3874,7 @@ Object {
               "source": Object {
                 "filename": "dist/timestamps-by-version.d.ts",
                 "line": 9,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/timestamps-by-version.d.ts#L9",
                 "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/timestamps-by-version.d.ts#L9",
               },
               "type": "string",
@@ -3693,6 +3886,7 @@ Object {
         "source": Object {
           "filename": "dist/timestamps-by-version.d.ts",
           "line": 5,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/timestamps-by-version.d.ts#L5",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/timestamps-by-version.d.ts#L5",
         },
       },
@@ -3716,6 +3910,7 @@ Object {
         "source": Object {
           "filename": "dist/cache.d.ts",
           "line": 9,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/cache.d.ts#L9",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/cache.d.ts#L9",
         },
       },
@@ -3733,6 +3928,7 @@ Object {
         "source": Object {
           "filename": "dist/download-period.d.ts",
           "line": 22,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/download-period.d.ts#L22",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/download-period.d.ts#L22",
         },
       },
@@ -3762,6 +3958,7 @@ Object {
         "source": Object {
           "filename": "dist/download-period.d.ts",
           "line": 17,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/download-period.d.ts#L17",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/download-period.d.ts#L17",
         },
       },
@@ -3781,6 +3978,7 @@ Object {
         "source": Object {
           "filename": "dist/query-parameters.d.ts",
           "line": 4,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/query-parameters.d.ts#L4",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/query-parameters.d.ts#L4",
         },
       },
@@ -3804,6 +4002,7 @@ Object {
         "source": Object {
           "filename": "dist/errors.d.ts",
           "line": 10,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/errors.d.ts#L10",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/errors.d.ts#L10",
         },
         "type": "any",
@@ -3824,6 +4023,7 @@ Object {
         "source": Object {
           "filename": "dist/errors.d.ts",
           "line": 16,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/errors.d.ts#L16",
           "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/errors.d.ts#L16",
         },
         "type": "any",
@@ -3834,91 +4034,113 @@ Object {
   "files": Array [
     Object {
       "filename": "dist/bug-tracker.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/bug-tracker.d.ts",
       "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/bug-tracker.d.ts",
     },
     Object {
       "filename": "dist/cache.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/cache.d.ts",
       "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/cache.d.ts",
     },
     Object {
       "filename": "dist/dist-info.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/dist-info.d.ts",
       "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/dist-info.d.ts",
     },
     Object {
       "filename": "dist/dist-tags.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/dist-tags.d.ts",
       "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/dist-tags.d.ts",
     },
     Object {
       "filename": "dist/download-period.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/download-period.d.ts",
       "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/download-period.d.ts",
     },
     Object {
       "filename": "dist/downloads.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/downloads.d.ts",
       "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/downloads.d.ts",
     },
     Object {
       "filename": "dist/errors.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/errors.d.ts",
       "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/errors.d.ts",
     },
     Object {
       "filename": "dist/index.d.ts",
       "isIndexFile": true,
+      "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/index.d.ts",
       "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/index.d.ts",
     },
     Object {
       "filename": "dist/npm-operational-internal.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/npm-operational-internal.d.ts",
       "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/npm-operational-internal.d.ts",
     },
     Object {
       "filename": "dist/package-json.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-json.d.ts",
       "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-json.d.ts",
     },
     Object {
       "filename": "dist/package-links.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-links.d.ts",
       "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-links.d.ts",
     },
     Object {
       "filename": "dist/package-manifest.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-manifest.d.ts",
       "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-manifest.d.ts",
     },
     Object {
       "filename": "dist/package-search-result.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/package-search-result.d.ts",
       "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/package-search-result.d.ts",
     },
     Object {
       "filename": "dist/packument.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/packument.d.ts",
       "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/packument.d.ts",
     },
     Object {
       "filename": "dist/person.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/person.d.ts",
       "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/person.d.ts",
     },
     Object {
       "filename": "dist/query-parameters.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/query-parameters.d.ts",
       "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/query-parameters.d.ts",
     },
     Object {
       "filename": "dist/registry-metadata.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry-metadata.d.ts",
       "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry-metadata.d.ts",
     },
     Object {
       "filename": "dist/registry.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/registry.d.ts",
       "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/registry.d.ts",
     },
     Object {
       "filename": "dist/repository.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/repository.d.ts",
       "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/repository.d.ts",
     },
     Object {
       "filename": "dist/search-options.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-options.d.ts",
       "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-options.d.ts",
     },
     Object {
       "filename": "dist/search-results.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/search-results.d.ts",
       "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/search-results.d.ts",
     },
     Object {
       "filename": "dist/timestamps-by-version.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@1.2.0/dist/timestamps-by-version.d.ts",
       "url": "https://github.com/velut/node-query-registry/tree/4368380f3b4f3677f46ee323d94124944bc7bd2e/dist/timestamps-by-version.d.ts",
     },
   ],
@@ -4000,6 +4222,7 @@ Object {
             "source": Object {
               "filename": "src/utils/errors.ts",
               "line": 9,
+              "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/utils/errors.ts#L9",
               "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/utils/errors.ts#L9",
             },
           },
@@ -4029,6 +4252,7 @@ Object {
               "source": Object {
                 "filename": "src/utils/errors.ts",
                 "line": 14,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/utils/errors.ts#L14",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/utils/errors.ts#L14",
               },
               "type": "Response",
@@ -4045,6 +4269,7 @@ Object {
               "source": Object {
                 "filename": "src/utils/errors.ts",
                 "line": 11,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/utils/errors.ts#L11",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/utils/errors.ts#L11",
               },
               "type": "string",
@@ -4056,6 +4281,7 @@ Object {
         "source": Object {
           "filename": "src/utils/errors.ts",
           "line": 8,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/utils/errors.ts#L8",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/utils/errors.ts#L8",
         },
       },
@@ -4130,6 +4356,7 @@ Object {
         "source": Object {
           "filename": "src/endpoints/get-daily-package-downloads.ts",
           "line": 55,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/get-daily-package-downloads.ts#L55",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/get-daily-package-downloads.ts#L55",
         },
         "type": "({ name, period: rawDownloadPeriod, registryDownloadsAPI, cached, }: { name: string; period?: DownloadPeriod; registryDownloadsAPI?: string; cached?: boolean; }) => Promise<DailyPackageDownloads>",
@@ -4193,6 +4420,7 @@ Object {
         "source": Object {
           "filename": "src/endpoints/get-daily-registry-downloads.ts",
           "line": 47,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/get-daily-registry-downloads.ts#L47",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/get-daily-registry-downloads.ts#L47",
         },
         "type": "({ period: rawDownloadPeriod, registryDownloadsAPI, cached, }?: { period?: DownloadPeriod; registryDownloadsAPI?: string; cached?: boolean; }) => Promise<DailyRegistryDownloads>",
@@ -4265,6 +4493,7 @@ Object {
         "source": Object {
           "filename": "src/endpoints/get-package-downloads.ts",
           "line": 55,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/get-package-downloads.ts#L55",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/get-package-downloads.ts#L55",
         },
         "type": "({ name, period: rawDownloadPeriod, registryDownloadsAPI, cached, }: { name: string; period?: DownloadPeriod; registryDownloadsAPI?: string; cached?: boolean; }) => Promise<PackageDownloads>",
@@ -4337,6 +4566,7 @@ Object {
         "source": Object {
           "filename": "src/endpoints/get-package-manifest.ts",
           "line": 52,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/get-package-manifest.ts#L52",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/get-package-manifest.ts#L52",
         },
         "type": "({ name, version, registry, mirrors, cached, }: {    name: string;    version?: string;    registry?: string;    mirrors?: string[];    cached?: boolean;}) => Promise<PackageManifest>",
@@ -4389,6 +4619,7 @@ Object {
         "source": Object {
           "filename": "src/endpoints/get-packument.ts",
           "line": 33,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/get-packument.ts#L33",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/get-packument.ts#L33",
         },
         "type": "({ name, registry, mirrors, cached, }: {    name: string;    registry?: string;    mirrors?: string[];    cached?: boolean;}) => Promise<Packument>",
@@ -4462,6 +4693,7 @@ Object {
         "source": Object {
           "filename": "src/endpoints/get-raw-package-manifest.ts",
           "line": 52,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/get-raw-package-manifest.ts#L52",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/get-raw-package-manifest.ts#L52",
         },
         "type": "({ name, version, registry, mirrors, cached, }: {    name: string;    version?: string;    registry?: string;    mirrors?: string[];    cached?: boolean;}) => Promise<RawPackageManifest>",
@@ -4515,6 +4747,7 @@ Object {
         "source": Object {
           "filename": "src/endpoints/get-raw-packument.ts",
           "line": 34,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/get-raw-packument.ts#L34",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/get-raw-packument.ts#L34",
         },
         "type": "({ name, registry, mirrors, cached, }: {    name: string;    registry?: string;    mirrors?: string[];    cached?: boolean;}) => Promise<RawPackument>",
@@ -4578,6 +4811,7 @@ Object {
         "source": Object {
           "filename": "src/endpoints/get-registry-downloads.ts",
           "line": 47,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/get-registry-downloads.ts#L47",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/get-registry-downloads.ts#L47",
         },
         "type": "({ period: rawDownloadPeriod, registryDownloadsAPI, cached, }?: { period?: DownloadPeriod; registryDownloadsAPI?: string; cached?: boolean; }) => Promise<RegistryDownloads>",
@@ -4632,6 +4866,7 @@ Object {
         "source": Object {
           "filename": "src/endpoints/get-registry-metadata.ts",
           "line": 38,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/get-registry-metadata.ts#L38",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/get-registry-metadata.ts#L38",
         },
         "type": "({ registry, cached, }?: {    registry?: string;    cached?: boolean;}) => Promise<RegistryMetadata>",
@@ -4683,6 +4918,7 @@ Object {
         "source": Object {
           "filename": "src/endpoints/search-packages.ts",
           "line": 33,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/search-packages.ts#L33",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/search-packages.ts#L33",
         },
         "type": "({ query: rawSearchCriteria, registry, mirrors, cached, }: { query: SearchCriteria; registry?: string; mirrors?: string[]; cached?: boolean; }) => Promise<SearchResults>",
@@ -4714,6 +4950,7 @@ Object {
               "source": Object {
                 "filename": "src/types/bug-tracker.ts",
                 "line": 6,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/bug-tracker.ts#L6",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/bug-tracker.ts#L6",
               },
               "type": "string",
@@ -4729,6 +4966,7 @@ Object {
               "source": Object {
                 "filename": "src/types/bug-tracker.ts",
                 "line": 5,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/bug-tracker.ts#L5",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/bug-tracker.ts#L5",
               },
               "type": "string",
@@ -4740,6 +4978,7 @@ Object {
         "source": Object {
           "filename": "src/types/bug-tracker.ts",
           "line": 4,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/bug-tracker.ts#L4",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/bug-tracker.ts#L4",
         },
       },
@@ -4774,6 +5013,7 @@ Object {
               "source": Object {
                 "filename": "src/types/downloads.ts",
                 "line": 39,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/downloads.ts#L39",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/downloads.ts#L39",
               },
               "type": "string",
@@ -4785,6 +5025,7 @@ Object {
         "source": Object {
           "filename": "src/types/downloads.ts",
           "line": 37,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/downloads.ts#L37",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/downloads.ts#L37",
         },
       },
@@ -4819,6 +5060,7 @@ Object {
               "source": Object {
                 "filename": "src/types/downloads.ts",
                 "line": 51,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/downloads.ts#L51",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/downloads.ts#L51",
               },
               "type": "DownloadsPerDay[]",
@@ -4836,6 +5078,7 @@ Object {
               "source": Object {
                 "filename": "src/types/downloads.ts",
                 "line": 57,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/downloads.ts#L57",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/downloads.ts#L57",
               },
               "type": "string",
@@ -4853,6 +5096,7 @@ Object {
               "source": Object {
                 "filename": "src/types/downloads.ts",
                 "line": 54,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/downloads.ts#L54",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/downloads.ts#L54",
               },
               "type": "string",
@@ -4864,6 +5108,7 @@ Object {
         "source": Object {
           "filename": "src/types/downloads.ts",
           "line": 49,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/downloads.ts#L49",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/downloads.ts#L49",
         },
       },
@@ -4905,6 +5150,7 @@ Object {
               "source": Object {
                 "filename": "src/types/download-period.ts",
                 "line": 49,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/download-period.ts#L49",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/download-period.ts#L49",
               },
               "type": "Date",
@@ -4922,6 +5168,7 @@ Object {
               "source": Object {
                 "filename": "src/types/download-period.ts",
                 "line": 46,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/download-period.ts#L46",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/download-period.ts#L46",
               },
               "type": "Date",
@@ -4933,6 +5180,7 @@ Object {
         "source": Object {
           "filename": "src/types/download-period.ts",
           "line": 44,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/download-period.ts#L44",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/download-period.ts#L44",
         },
       },
@@ -4965,6 +5213,7 @@ Object {
               "source": Object {
                 "filename": "src/types/dist-info.ts",
                 "line": 23,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/dist-info.ts#L23",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/dist-info.ts#L23",
               },
               "type": "string",
@@ -4982,6 +5231,7 @@ Object {
               "source": Object {
                 "filename": "src/types/dist-info.ts",
                 "line": 17,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/dist-info.ts#L17",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/dist-info.ts#L17",
               },
               "type": "number",
@@ -4999,6 +5249,7 @@ Object {
               "source": Object {
                 "filename": "src/types/dist-info.ts",
                 "line": 14,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/dist-info.ts#L14",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/dist-info.ts#L14",
               },
               "type": "string",
@@ -5016,6 +5267,7 @@ Object {
               "source": Object {
                 "filename": "src/types/dist-info.ts",
                 "line": 11,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/dist-info.ts#L11",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/dist-info.ts#L11",
               },
               "type": "string",
@@ -5033,6 +5285,7 @@ Object {
               "source": Object {
                 "filename": "src/types/dist-info.ts",
                 "line": 8,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/dist-info.ts#L8",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/dist-info.ts#L8",
               },
               "type": "string",
@@ -5050,6 +5303,7 @@ Object {
               "source": Object {
                 "filename": "src/types/dist-info.ts",
                 "line": 20,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/dist-info.ts#L20",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/dist-info.ts#L20",
               },
               "type": "number",
@@ -5061,6 +5315,7 @@ Object {
         "source": Object {
           "filename": "src/types/dist-info.ts",
           "line": 6,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/dist-info.ts#L6",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/dist-info.ts#L6",
         },
       },
@@ -5087,6 +5342,7 @@ Object {
               "source": Object {
                 "filename": "src/types/dist-tags.ts",
                 "line": 9,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/dist-tags.ts#L9",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/dist-tags.ts#L9",
               },
             },
@@ -5106,6 +5362,7 @@ Object {
               "source": Object {
                 "filename": "src/types/dist-tags.ts",
                 "line": 6,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/dist-tags.ts#L6",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/dist-tags.ts#L6",
               },
               "type": "string",
@@ -5117,6 +5374,7 @@ Object {
         "source": Object {
           "filename": "src/types/dist-tags.ts",
           "line": 4,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/dist-tags.ts#L4",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/dist-tags.ts#L4",
         },
       },
@@ -5147,6 +5405,7 @@ Object {
               "source": Object {
                 "filename": "src/types/downloads.ts",
                 "line": 68,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/downloads.ts#L68",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/downloads.ts#L68",
               },
               "type": "string",
@@ -5164,6 +5423,7 @@ Object {
               "source": Object {
                 "filename": "src/types/downloads.ts",
                 "line": 65,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/downloads.ts#L65",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/downloads.ts#L65",
               },
               "type": "number",
@@ -5175,6 +5435,7 @@ Object {
         "source": Object {
           "filename": "src/types/downloads.ts",
           "line": 63,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/downloads.ts#L63",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/downloads.ts#L63",
         },
       },
@@ -5211,6 +5472,7 @@ Object {
               "source": Object {
                 "filename": "src/types/git-repository.ts",
                 "line": 18,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/git-repository.ts#L18",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/git-repository.ts#L18",
               },
               "type": "string",
@@ -5228,6 +5490,7 @@ Object {
               "source": Object {
                 "filename": "src/types/git-repository.ts",
                 "line": 9,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/git-repository.ts#L9",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/git-repository.ts#L9",
               },
               "type": "string",
@@ -5245,6 +5508,7 @@ Object {
               "source": Object {
                 "filename": "src/types/git-repository.ts",
                 "line": 12,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/git-repository.ts#L12",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/git-repository.ts#L12",
               },
               "type": "string",
@@ -5256,6 +5520,7 @@ Object {
         "source": Object {
           "filename": "src/types/git-repository.ts",
           "line": 7,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/git-repository.ts#L7",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/git-repository.ts#L7",
         },
       },
@@ -5280,6 +5545,7 @@ Object {
               "source": Object {
                 "filename": "src/types/npm-operational-internal.ts",
                 "line": 2,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/npm-operational-internal.ts#L2",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/npm-operational-internal.ts#L2",
               },
               "type": "string",
@@ -5295,6 +5561,7 @@ Object {
               "source": Object {
                 "filename": "src/types/npm-operational-internal.ts",
                 "line": 3,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/npm-operational-internal.ts#L3",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/npm-operational-internal.ts#L3",
               },
               "type": "string",
@@ -5306,6 +5573,7 @@ Object {
         "source": Object {
           "filename": "src/types/npm-operational-internal.ts",
           "line": 1,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/npm-operational-internal.ts#L1",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/npm-operational-internal.ts#L1",
         },
       },
@@ -5340,6 +5608,7 @@ Object {
               "source": Object {
                 "filename": "src/types/downloads.ts",
                 "line": 10,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/downloads.ts#L10",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/downloads.ts#L10",
               },
               "type": "string",
@@ -5351,6 +5620,7 @@ Object {
         "source": Object {
           "filename": "src/types/downloads.ts",
           "line": 8,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/downloads.ts#L8",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/downloads.ts#L8",
         },
       },
@@ -5381,6 +5651,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 167,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L167",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L167",
               },
               "type": "boolean",
@@ -5398,6 +5669,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 164,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L164",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L164",
               },
               "type": "boolean",
@@ -5409,6 +5681,7 @@ Object {
         "source": Object {
           "filename": "src/types/search-results.ts",
           "line": 162,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L162",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L162",
         },
       },
@@ -5442,6 +5715,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 158,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L158",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L158",
               },
             },
@@ -5465,6 +5739,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 42,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L42",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L42",
               },
               "type": "Person",
@@ -5482,6 +5757,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 119,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L119",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L119",
               },
               "type": "string | Record<string, string>",
@@ -5499,6 +5775,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 97,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L97",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L97",
               },
               "type": "string",
@@ -5520,6 +5797,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 70,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L70",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L70",
               },
               "type": "BugTracker",
@@ -5537,6 +5815,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 88,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L88",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L88",
               },
               "type": "string[]",
@@ -5554,6 +5833,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 85,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L85",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L85",
               },
               "type": "string[]",
@@ -5571,6 +5851,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 131,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L131",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L131",
               },
               "type": "Record<string, string>",
@@ -5592,6 +5873,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 56,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L56",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L56",
               },
               "type": "Person[]",
@@ -5609,6 +5891,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 140,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L140",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L140",
               },
               "type": "string[]",
@@ -5626,6 +5909,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 73,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L73",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L73",
               },
               "type": "Record<string, string>",
@@ -5643,6 +5927,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 149,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L149",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L149",
               },
               "type": "string",
@@ -5660,6 +5945,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 23,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L23",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L23",
               },
               "type": "string",
@@ -5677,6 +5963,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 76,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L76",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L76",
               },
               "type": "Record<string, string>",
@@ -5694,6 +5981,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 125,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L125",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L125",
               },
               "type": "Record<string, string>",
@@ -5711,6 +5999,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 134,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L134",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L134",
               },
               "type": "Record<string, string>",
@@ -5732,6 +6021,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 113,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L113",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L113",
               },
               "type": "string | Record<string, unknown>",
@@ -5749,6 +6039,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 116,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L116",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L116",
               },
               "type": "string[]",
@@ -5766,6 +6057,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 26,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L26",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L26",
               },
               "type": "string",
@@ -5783,6 +6075,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 35,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L35",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L35",
               },
               "type": "string[]",
@@ -5800,6 +6093,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 29,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L29",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L29",
               },
               "type": "string",
@@ -5817,6 +6111,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 32,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L32",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L32",
               },
               "type": "string",
@@ -5834,6 +6129,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 94,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L94",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L94",
               },
               "type": "string",
@@ -5855,6 +6151,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 49,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L49",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L49",
               },
               "type": "Person[]",
@@ -5872,6 +6169,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 122,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L122",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L122",
               },
               "type": "string | string[]",
@@ -5889,6 +6187,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 100,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L100",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L100",
               },
               "type": "string",
@@ -5906,6 +6205,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 17,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L17",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L17",
               },
               "type": "string",
@@ -5923,6 +6223,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 82,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L82",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L82",
               },
               "type": "Record<string, string>",
@@ -5940,6 +6241,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 137,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L137",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L137",
               },
               "type": "string[]",
@@ -5957,6 +6259,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 79,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L79",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L79",
               },
               "type": "Record<string, string>",
@@ -5974,6 +6277,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 143,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L143",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L143",
               },
               "type": "boolean",
@@ -5991,6 +6295,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 146,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L146",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L146",
               },
               "type": "Record<string, string>",
@@ -6008,6 +6313,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 152,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L152",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L152",
               },
               "type": "string",
@@ -6025,6 +6331,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 155,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L155",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L155",
               },
               "type": "string",
@@ -6046,6 +6353,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 63,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L63",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L63",
               },
               "type": "string | Repository",
@@ -6063,6 +6371,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 128,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L128",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L128",
               },
               "type": "Record<string, string>",
@@ -6080,6 +6389,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 91,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L91",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L91",
               },
               "type": "string",
@@ -6097,6 +6407,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 103,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L103",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L103",
               },
               "type": "string",
@@ -6114,6 +6425,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 106,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L106",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L106",
               },
               "type": "string",
@@ -6131,6 +6443,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-json.ts",
                 "line": 20,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L20",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L20",
               },
               "type": "string",
@@ -6142,6 +6455,7 @@ Object {
         "source": Object {
           "filename": "src/types/package-json.ts",
           "line": 15,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts#L15",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts#L15",
         },
       },
@@ -6166,6 +6480,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 124,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L124",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L124",
               },
             },
@@ -6183,6 +6498,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 123,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L123",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L123",
               },
               "type": "string",
@@ -6198,6 +6514,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 121,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L121",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L121",
               },
               "type": "string",
@@ -6213,6 +6530,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 120,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L120",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L120",
               },
               "type": "string",
@@ -6228,6 +6546,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 122,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L122",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L122",
               },
               "type": "string",
@@ -6239,6 +6558,7 @@ Object {
         "source": Object {
           "filename": "src/types/search-results.ts",
           "line": 119,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L119",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L119",
         },
       },
@@ -6276,6 +6596,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-manifest.ts",
                 "line": 20,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-manifest.ts#L20",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-manifest.ts#L20",
               },
               "type": "string",
@@ -6293,6 +6614,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-manifest.ts",
                 "line": 36,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-manifest.ts#L36",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-manifest.ts#L36",
               },
               "type": "string",
@@ -6310,6 +6632,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-manifest.ts",
                 "line": 33,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-manifest.ts#L33",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-manifest.ts#L33",
               },
               "type": "GitRepository",
@@ -6327,6 +6650,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-manifest.ts",
                 "line": 17,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-manifest.ts#L17",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-manifest.ts#L17",
               },
               "type": "string",
@@ -6344,6 +6668,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-manifest.ts",
                 "line": 30,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-manifest.ts#L30",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-manifest.ts#L30",
               },
               "type": "string",
@@ -6365,6 +6690,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-manifest.ts",
                 "line": 27,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-manifest.ts#L27",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-manifest.ts#L27",
               },
               "type": "Person",
@@ -6382,6 +6708,7 @@ Object {
               "source": Object {
                 "filename": "src/types/package-manifest.ts",
                 "line": 39,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-manifest.ts#L39",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-manifest.ts#L39",
               },
               "type": "string",
@@ -6393,6 +6720,7 @@ Object {
         "source": Object {
           "filename": "src/types/package-manifest.ts",
           "line": 15,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-manifest.ts#L15",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-manifest.ts#L15",
         },
       },
@@ -6431,6 +6759,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 106,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L106",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L106",
               },
               "type": "Person",
@@ -6448,6 +6777,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 79,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L79",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L79",
               },
               "type": "string",
@@ -6465,6 +6795,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 96,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L96",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L96",
               },
               "type": "string",
@@ -6482,6 +6813,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 99,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L99",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L99",
               },
               "type": "string[]",
@@ -6503,6 +6835,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 93,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L93",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L93",
               },
               "type": "PackageLinks",
@@ -6524,6 +6857,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 113,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L113",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L113",
               },
               "type": "Person[]",
@@ -6541,6 +6875,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 70,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L70",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L70",
               },
               "type": "string",
@@ -6562,6 +6897,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 86,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L86",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L86",
               },
               "type": "Person",
@@ -6579,6 +6915,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 76,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L76",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L76",
               },
               "type": "string",
@@ -6596,6 +6933,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 73,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L73",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L73",
               },
               "type": "string",
@@ -6607,6 +6945,7 @@ Object {
         "source": Object {
           "filename": "src/types/search-results.ts",
           "line": 68,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L68",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L68",
         },
       },
@@ -6649,6 +6988,7 @@ Object {
               "source": Object {
                 "filename": "src/types/packument.ts",
                 "line": 28,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/packument.ts#L28",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/packument.ts#L28",
               },
               "type": "DistTags",
@@ -6666,6 +7006,7 @@ Object {
               "source": Object {
                 "filename": "src/types/packument.ts",
                 "line": 43,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/packument.ts#L43",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/packument.ts#L43",
               },
               "type": "GitRepository",
@@ -6686,6 +7027,7 @@ Object {
               "source": Object {
                 "filename": "src/types/packument.ts",
                 "line": 20,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/packument.ts#L20",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/packument.ts#L20",
               },
               "type": "string",
@@ -6703,6 +7045,7 @@ Object {
               "source": Object {
                 "filename": "src/types/packument.ts",
                 "line": 40,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/packument.ts#L40",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/packument.ts#L40",
               },
               "type": "string",
@@ -6726,6 +7069,7 @@ Object {
               "source": Object {
                 "filename": "src/types/packument.ts",
                 "line": 37,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/packument.ts#L37",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/packument.ts#L37",
               },
               "type": "Record<string, string>",
@@ -6737,6 +7081,7 @@ Object {
         "source": Object {
           "filename": "src/types/packument.ts",
           "line": 15,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/packument.ts#L15",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/packument.ts#L15",
         },
       },
@@ -6765,6 +7110,7 @@ Object {
               "source": Object {
                 "filename": "src/types/person.ts",
                 "line": 7,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/person.ts#L7",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/person.ts#L7",
               },
               "type": "string",
@@ -6780,6 +7126,7 @@ Object {
               "source": Object {
                 "filename": "src/types/person.ts",
                 "line": 5,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/person.ts#L5",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/person.ts#L5",
               },
               "type": "string",
@@ -6795,6 +7142,7 @@ Object {
               "source": Object {
                 "filename": "src/types/person.ts",
                 "line": 8,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/person.ts#L8",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/person.ts#L8",
               },
               "type": "string",
@@ -6810,6 +7158,7 @@ Object {
               "source": Object {
                 "filename": "src/types/person.ts",
                 "line": 6,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/person.ts#L6",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/person.ts#L6",
               },
               "type": "string",
@@ -6821,6 +7170,7 @@ Object {
         "source": Object {
           "filename": "src/types/person.ts",
           "line": 4,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/person.ts#L4",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/person.ts#L4",
         },
       },
@@ -6866,6 +7216,7 @@ Object {
               "source": Object {
                 "filename": "src/types/raw-package-manifest.ts",
                 "line": 35,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/raw-package-manifest.ts#L35",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/raw-package-manifest.ts#L35",
               },
               "type": "DistInfo",
@@ -6883,6 +7234,7 @@ Object {
               "source": Object {
                 "filename": "src/types/raw-package-manifest.ts",
                 "line": 38,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/raw-package-manifest.ts#L38",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/raw-package-manifest.ts#L38",
               },
               "type": "string",
@@ -6900,6 +7252,7 @@ Object {
               "source": Object {
                 "filename": "src/types/raw-package-manifest.ts",
                 "line": 25,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/raw-package-manifest.ts#L25",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/raw-package-manifest.ts#L25",
               },
               "type": "string",
@@ -6917,6 +7270,7 @@ Object {
               "source": Object {
                 "filename": "src/types/raw-package-manifest.ts",
                 "line": 28,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/raw-package-manifest.ts#L28",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/raw-package-manifest.ts#L28",
               },
               "type": "string",
@@ -6928,6 +7282,7 @@ Object {
         "source": Object {
           "filename": "src/types/raw-package-manifest.ts",
           "line": 20,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/raw-package-manifest.ts#L20",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/raw-package-manifest.ts#L20",
         },
       },
@@ -6972,6 +7327,7 @@ Object {
               "source": Object {
                 "filename": "src/types/raw-packument.ts",
                 "line": 34,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/raw-packument.ts#L34",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/raw-packument.ts#L34",
               },
               "type": "DistTags",
@@ -6989,6 +7345,7 @@ Object {
               "source": Object {
                 "filename": "src/types/raw-packument.ts",
                 "line": 27,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/raw-packument.ts#L27",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/raw-packument.ts#L27",
               },
               "type": "string",
@@ -7010,6 +7367,7 @@ Object {
               "source": Object {
                 "filename": "src/types/raw-packument.ts",
                 "line": 41,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/raw-packument.ts#L41",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/raw-packument.ts#L41",
               },
               "type": "VersionsToTimestamps",
@@ -7027,6 +7385,7 @@ Object {
               "source": Object {
                 "filename": "src/types/raw-packument.ts",
                 "line": 51,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/raw-packument.ts#L51",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/raw-packument.ts#L51",
               },
               "type": "Record<string, boolean>",
@@ -7048,6 +7407,7 @@ Object {
               "source": Object {
                 "filename": "src/types/raw-packument.ts",
                 "line": 48,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/raw-packument.ts#L48",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/raw-packument.ts#L48",
               },
               "type": "Record<string, RawPackageManifest>",
@@ -7059,6 +7419,7 @@ Object {
         "source": Object {
           "filename": "src/types/raw-packument.ts",
           "line": 19,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/raw-packument.ts#L19",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/raw-packument.ts#L19",
         },
       },
@@ -7092,6 +7453,7 @@ Object {
               "source": Object {
                 "filename": "src/types/downloads.ts",
                 "line": 21,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/downloads.ts#L21",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/downloads.ts#L21",
               },
               "type": "number",
@@ -7109,6 +7471,7 @@ Object {
               "source": Object {
                 "filename": "src/types/downloads.ts",
                 "line": 27,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/downloads.ts#L27",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/downloads.ts#L27",
               },
               "type": "string",
@@ -7126,6 +7489,7 @@ Object {
               "source": Object {
                 "filename": "src/types/downloads.ts",
                 "line": 24,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/downloads.ts#L24",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/downloads.ts#L24",
               },
               "type": "string",
@@ -7137,6 +7501,7 @@ Object {
         "source": Object {
           "filename": "src/types/downloads.ts",
           "line": 19,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/downloads.ts#L19",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/downloads.ts#L19",
         },
       },
@@ -7170,6 +7535,7 @@ Object {
               "source": Object {
                 "filename": "src/types/registry-metadata.ts",
                 "line": 21,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/registry-metadata.ts#L21",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/registry-metadata.ts#L21",
               },
               "type": "number",
@@ -7185,6 +7551,7 @@ Object {
               "source": Object {
                 "filename": "src/types/registry-metadata.ts",
                 "line": 16,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/registry-metadata.ts#L16",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/registry-metadata.ts#L16",
               },
               "type": "boolean",
@@ -7200,6 +7567,7 @@ Object {
               "source": Object {
                 "filename": "src/types/registry-metadata.ts",
                 "line": 22,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/registry-metadata.ts#L22",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/registry-metadata.ts#L22",
               },
               "type": "number",
@@ -7215,6 +7583,7 @@ Object {
               "source": Object {
                 "filename": "src/types/registry-metadata.ts",
                 "line": 18,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/registry-metadata.ts#L18",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/registry-metadata.ts#L18",
               },
               "type": "number",
@@ -7232,6 +7601,7 @@ Object {
               "source": Object {
                 "filename": "src/types/registry-metadata.ts",
                 "line": 11,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/registry-metadata.ts#L11",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/registry-metadata.ts#L11",
               },
               "type": "string",
@@ -7247,6 +7617,7 @@ Object {
               "source": Object {
                 "filename": "src/types/registry-metadata.ts",
                 "line": 20,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/registry-metadata.ts#L20",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/registry-metadata.ts#L20",
               },
               "type": "number",
@@ -7262,6 +7633,7 @@ Object {
               "source": Object {
                 "filename": "src/types/registry-metadata.ts",
                 "line": 17,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/registry-metadata.ts#L17",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/registry-metadata.ts#L17",
               },
               "type": "number",
@@ -7277,6 +7649,7 @@ Object {
               "source": Object {
                 "filename": "src/types/registry-metadata.ts",
                 "line": 12,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/registry-metadata.ts#L12",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/registry-metadata.ts#L12",
               },
               "type": "number",
@@ -7292,6 +7665,7 @@ Object {
               "source": Object {
                 "filename": "src/types/registry-metadata.ts",
                 "line": 13,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/registry-metadata.ts#L13",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/registry-metadata.ts#L13",
               },
               "type": "number",
@@ -7307,6 +7681,7 @@ Object {
               "source": Object {
                 "filename": "src/types/registry-metadata.ts",
                 "line": 19,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/registry-metadata.ts#L19",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/registry-metadata.ts#L19",
               },
               "type": "string",
@@ -7322,6 +7697,7 @@ Object {
               "source": Object {
                 "filename": "src/types/registry-metadata.ts",
                 "line": 24,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/registry-metadata.ts#L24",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/registry-metadata.ts#L24",
               },
               "type": "RegistryMetadataOther",
@@ -7337,6 +7713,7 @@ Object {
               "source": Object {
                 "filename": "src/types/registry-metadata.ts",
                 "line": 15,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/registry-metadata.ts#L15",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/registry-metadata.ts#L15",
               },
               "type": "number",
@@ -7352,6 +7729,7 @@ Object {
               "source": Object {
                 "filename": "src/types/registry-metadata.ts",
                 "line": 25,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/registry-metadata.ts#L25",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/registry-metadata.ts#L25",
               },
               "type": "RegistryMetadataSizes",
@@ -7367,6 +7745,7 @@ Object {
               "source": Object {
                 "filename": "src/types/registry-metadata.ts",
                 "line": 14,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/registry-metadata.ts#L14",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/registry-metadata.ts#L14",
               },
               "type": "number",
@@ -7382,6 +7761,7 @@ Object {
               "source": Object {
                 "filename": "src/types/registry-metadata.ts",
                 "line": 23,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/registry-metadata.ts#L23",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/registry-metadata.ts#L23",
               },
               "type": "string",
@@ -7393,6 +7773,7 @@ Object {
         "source": Object {
           "filename": "src/types/registry-metadata.ts",
           "line": 9,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/registry-metadata.ts#L9",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/registry-metadata.ts#L9",
         },
       },
@@ -7417,6 +7798,7 @@ Object {
               "source": Object {
                 "filename": "src/types/registry-metadata.ts",
                 "line": 29,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/registry-metadata.ts#L29",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/registry-metadata.ts#L29",
               },
               "type": "number",
@@ -7428,6 +7810,7 @@ Object {
         "source": Object {
           "filename": "src/types/registry-metadata.ts",
           "line": 28,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/registry-metadata.ts#L28",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/registry-metadata.ts#L28",
         },
       },
@@ -7452,6 +7835,7 @@ Object {
               "source": Object {
                 "filename": "src/types/registry-metadata.ts",
                 "line": 34,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/registry-metadata.ts#L34",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/registry-metadata.ts#L34",
               },
               "type": "number",
@@ -7467,6 +7851,7 @@ Object {
               "source": Object {
                 "filename": "src/types/registry-metadata.ts",
                 "line": 35,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/registry-metadata.ts#L35",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/registry-metadata.ts#L35",
               },
               "type": "number",
@@ -7482,6 +7867,7 @@ Object {
               "source": Object {
                 "filename": "src/types/registry-metadata.ts",
                 "line": 33,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/registry-metadata.ts#L33",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/registry-metadata.ts#L33",
               },
               "type": "number",
@@ -7493,6 +7879,7 @@ Object {
         "source": Object {
           "filename": "src/types/registry-metadata.ts",
           "line": 32,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/registry-metadata.ts#L32",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/registry-metadata.ts#L32",
         },
       },
@@ -7529,6 +7916,7 @@ Object {
               "source": Object {
                 "filename": "src/types/repository.ts",
                 "line": 18,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/repository.ts#L18",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/repository.ts#L18",
               },
               "type": "string",
@@ -7546,6 +7934,7 @@ Object {
               "source": Object {
                 "filename": "src/types/repository.ts",
                 "line": 9,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/repository.ts#L9",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/repository.ts#L9",
               },
               "type": "string",
@@ -7563,6 +7952,7 @@ Object {
               "source": Object {
                 "filename": "src/types/repository.ts",
                 "line": 12,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/repository.ts#L12",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/repository.ts#L12",
               },
               "type": "string",
@@ -7574,6 +7964,7 @@ Object {
         "source": Object {
           "filename": "src/types/repository.ts",
           "line": 7,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/repository.ts#L7",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/repository.ts#L7",
         },
       },
@@ -7606,6 +7997,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-criteria.ts",
                 "line": 41,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-criteria.ts#L41",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-criteria.ts#L41",
               },
               "type": "number",
@@ -7623,6 +8015,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-criteria.ts",
                 "line": 50,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-criteria.ts#L50",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-criteria.ts#L50",
               },
               "type": "number",
@@ -7640,6 +8033,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-criteria.ts",
                 "line": 47,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-criteria.ts#L47",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-criteria.ts#L47",
               },
               "type": "number",
@@ -7657,6 +8051,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-criteria.ts",
                 "line": 44,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-criteria.ts#L44",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-criteria.ts#L44",
               },
               "type": "number",
@@ -7674,6 +8069,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-criteria.ts",
                 "line": 38,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-criteria.ts#L38",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-criteria.ts#L38",
               },
               "type": "number",
@@ -7718,6 +8114,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-criteria.ts",
                 "line": 35,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-criteria.ts#L35",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-criteria.ts#L35",
               },
               "type": "string",
@@ -7729,6 +8126,7 @@ Object {
         "source": Object {
           "filename": "src/types/search-criteria.ts",
           "line": 6,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-criteria.ts#L6",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-criteria.ts#L6",
         },
       },
@@ -7768,6 +8166,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 58,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L58",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L58",
               },
               "type": "PackageFlags",
@@ -7789,6 +8188,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 41,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L41",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L41",
               },
               "type": "PackageSearchResult",
@@ -7810,6 +8210,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 48,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L48",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L48",
               },
               "type": "SearchScore",
@@ -7827,6 +8228,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 51,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L51",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L51",
               },
               "type": "number",
@@ -7838,6 +8240,7 @@ Object {
         "source": Object {
           "filename": "src/types/search-results.ts",
           "line": 35,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L35",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L35",
         },
       },
@@ -7875,6 +8278,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 15,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L15",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L15",
               },
               "type": "SearchResult[]",
@@ -7892,6 +8296,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 24,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L24",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L24",
               },
               "type": "string",
@@ -7912,6 +8317,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 21,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L21",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L21",
               },
               "type": "number",
@@ -7923,6 +8329,7 @@ Object {
         "source": Object {
           "filename": "src/types/search-results.ts",
           "line": 9,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L9",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L9",
         },
       },
@@ -7959,6 +8366,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 141,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L141",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L141",
               },
               "type": "SearchScoreDetail",
@@ -7976,6 +8384,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 134,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L134",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L134",
               },
               "type": "number",
@@ -7987,6 +8396,7 @@ Object {
         "source": Object {
           "filename": "src/types/search-results.ts",
           "line": 132,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L132",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L132",
         },
       },
@@ -8018,6 +8428,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 156,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L156",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L156",
               },
               "type": "number",
@@ -8035,6 +8446,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 153,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L153",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L153",
               },
               "type": "number",
@@ -8052,6 +8464,7 @@ Object {
               "source": Object {
                 "filename": "src/types/search-results.ts",
                 "line": 150,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L150",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L150",
               },
               "type": "number",
@@ -8063,6 +8476,7 @@ Object {
         "source": Object {
           "filename": "src/types/search-results.ts",
           "line": 148,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts#L148",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts#L148",
         },
       },
@@ -8089,6 +8503,7 @@ Object {
               "source": Object {
                 "filename": "src/types/versions-to-timestamps.ts",
                 "line": 12,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/versions-to-timestamps.ts#L12",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/versions-to-timestamps.ts#L12",
               },
             },
@@ -8108,6 +8523,7 @@ Object {
               "source": Object {
                 "filename": "src/types/versions-to-timestamps.ts",
                 "line": 6,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/versions-to-timestamps.ts#L6",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/versions-to-timestamps.ts#L6",
               },
               "type": "string",
@@ -8125,6 +8541,7 @@ Object {
               "source": Object {
                 "filename": "src/types/versions-to-timestamps.ts",
                 "line": 9,
+                "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/versions-to-timestamps.ts#L9",
                 "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/versions-to-timestamps.ts#L9",
               },
               "type": "string",
@@ -8136,6 +8553,7 @@ Object {
         "source": Object {
           "filename": "src/types/versions-to-timestamps.ts",
           "line": 4,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/versions-to-timestamps.ts#L4",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/versions-to-timestamps.ts#L4",
         },
       },
@@ -8156,6 +8574,7 @@ Object {
         "source": Object {
           "filename": "src/types/download-period.ts",
           "line": 24,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/download-period.ts#L24",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/download-period.ts#L24",
         },
       },
@@ -8186,6 +8605,7 @@ Object {
         "source": Object {
           "filename": "src/types/download-period.ts",
           "line": 18,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/download-period.ts#L18",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/download-period.ts#L18",
         },
       },
@@ -8224,6 +8644,7 @@ Object {
         "source": Object {
           "filename": "src/types/raw-packument.ts",
           "line": 66,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/raw-packument.ts#L66",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/raw-packument.ts#L66",
         },
       },
@@ -8245,6 +8666,7 @@ Object {
         "source": Object {
           "filename": "src/data/registries.ts",
           "line": 14,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/data/registries.ts#L14",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/data/registries.ts#L14",
         },
         "type": "string",
@@ -8268,6 +8690,7 @@ Object {
         "source": Object {
           "filename": "src/utils/errors.ts",
           "line": 30,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/utils/errors.ts#L30",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/utils/errors.ts#L30",
         },
         "type": "any",
@@ -8288,6 +8711,7 @@ Object {
         "source": Object {
           "filename": "src/utils/errors.ts",
           "line": 37,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/utils/errors.ts#L37",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/utils/errors.ts#L37",
         },
         "type": "any",
@@ -8308,6 +8732,7 @@ Object {
         "source": Object {
           "filename": "src/data/registries.ts",
           "line": 6,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/data/registries.ts#L6",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/data/registries.ts#L6",
         },
         "type": "string",
@@ -8328,6 +8753,7 @@ Object {
         "source": Object {
           "filename": "src/data/registries.ts",
           "line": 36,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/data/registries.ts#L36",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/data/registries.ts#L36",
         },
         "type": "string",
@@ -8349,6 +8775,7 @@ Object {
         "source": Object {
           "filename": "src/data/registries.ts",
           "line": 29,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/data/registries.ts#L29",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/data/registries.ts#L29",
         },
         "type": "string[]",
@@ -8369,6 +8796,7 @@ Object {
         "source": Object {
           "filename": "src/data/registries.ts",
           "line": 21,
+          "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/data/registries.ts#L21",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/data/registries.ts#L21",
         },
         "type": "string",
@@ -8379,127 +8807,158 @@ Object {
   "files": Array [
     Object {
       "filename": "src/data/registries.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/data/registries.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/data/registries.ts",
     },
     Object {
       "filename": "src/endpoints/get-daily-package-downloads.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/get-daily-package-downloads.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/get-daily-package-downloads.ts",
     },
     Object {
       "filename": "src/endpoints/get-daily-registry-downloads.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/get-daily-registry-downloads.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/get-daily-registry-downloads.ts",
     },
     Object {
       "filename": "src/endpoints/get-package-downloads.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/get-package-downloads.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/get-package-downloads.ts",
     },
     Object {
       "filename": "src/endpoints/get-package-manifest.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/get-package-manifest.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/get-package-manifest.ts",
     },
     Object {
       "filename": "src/endpoints/get-packument.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/get-packument.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/get-packument.ts",
     },
     Object {
       "filename": "src/endpoints/get-raw-package-manifest.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/get-raw-package-manifest.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/get-raw-package-manifest.ts",
     },
     Object {
       "filename": "src/endpoints/get-raw-packument.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/get-raw-packument.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/get-raw-packument.ts",
     },
     Object {
       "filename": "src/endpoints/get-registry-downloads.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/get-registry-downloads.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/get-registry-downloads.ts",
     },
     Object {
       "filename": "src/endpoints/get-registry-metadata.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/get-registry-metadata.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/get-registry-metadata.ts",
     },
     Object {
       "filename": "src/endpoints/search-packages.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/search-packages.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/search-packages.ts",
     },
     Object {
       "filename": "src/index.ts",
       "isIndexFile": true,
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/index.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/index.ts",
     },
     Object {
       "filename": "src/types/bug-tracker.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/bug-tracker.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/bug-tracker.ts",
     },
     Object {
       "filename": "src/types/dist-info.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/dist-info.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/dist-info.ts",
     },
     Object {
       "filename": "src/types/dist-tags.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/dist-tags.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/dist-tags.ts",
     },
     Object {
       "filename": "src/types/download-period.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/download-period.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/download-period.ts",
     },
     Object {
       "filename": "src/types/downloads.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/downloads.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/downloads.ts",
     },
     Object {
       "filename": "src/types/git-repository.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/git-repository.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/git-repository.ts",
     },
     Object {
       "filename": "src/types/npm-operational-internal.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/npm-operational-internal.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/npm-operational-internal.ts",
     },
     Object {
       "filename": "src/types/package-json.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-json.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-json.ts",
     },
     Object {
       "filename": "src/types/package-manifest.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/package-manifest.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/package-manifest.ts",
     },
     Object {
       "filename": "src/types/packument.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/packument.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/packument.ts",
     },
     Object {
       "filename": "src/types/person.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/person.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/person.ts",
     },
     Object {
       "filename": "src/types/raw-package-manifest.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/raw-package-manifest.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/raw-package-manifest.ts",
     },
     Object {
       "filename": "src/types/raw-packument.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/raw-packument.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/raw-packument.ts",
     },
     Object {
       "filename": "src/types/registry-metadata.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/registry-metadata.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/registry-metadata.ts",
     },
     Object {
       "filename": "src/types/repository.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/repository.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/repository.ts",
     },
     Object {
       "filename": "src/types/search-criteria.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-criteria.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-criteria.ts",
     },
     Object {
       "filename": "src/types/search-results.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/search-results.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/search-results.ts",
     },
     Object {
       "filename": "src/types/versions-to-timestamps.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/types/versions-to-timestamps.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/types/versions-to-timestamps.ts",
     },
     Object {
       "filename": "src/utils/errors.ts",
+      "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/utils/errors.ts",
       "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/utils/errors.ts",
     },
   ],

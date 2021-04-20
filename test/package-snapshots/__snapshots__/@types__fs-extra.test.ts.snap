@@ -19,6 +19,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 125,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L125",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L125",
         },
         "type": "{ (path: any, callback: (err: any) => void): void; (path: any, mode: number, callback: (err: any) => void): void; (path: any, mode?: number): Promise<void>; }",
@@ -45,6 +46,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 129,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L129",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L129",
         },
         "type": "{ (file: PathLike | number, data: any, options: {    encoding?: string;    mode?: number | string;    flag?: string;}, callback: (err: any) => void): void; (file: any, data: any, callback: (err: any) => void): void; (file: any, data: any, options?: { encoding?: string; mode?: string | number; flag?: string; }): Promise<void>; }",
@@ -61,6 +63,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 134,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L134",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L134",
         },
         "type": "{ (path: any, mode: Mode, callback: (err: any) => void): void; (path: any, mode: Mode): Promise<void>; }",
@@ -77,6 +80,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 137,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L137",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L137",
         },
         "type": "{ (path: any, uid: number, gid: number): Promise<void>; (path: any, uid: number, gid: number, callback: (err: any) => void): void; }",
@@ -93,6 +97,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 140,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L140",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L140",
         },
         "type": "{ (fd: number, callback: (err: any) => void): void; (fd: number): Promise<void>; }",
@@ -115,6 +120,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 22,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L22",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L22",
         },
         "type": "{ (src: string, dest: string, options?: CopyOptions): Promise<void>; (src: string, dest: string, callback: (err: Error) => void): void; (src: string, dest: string, options: CopyOptions, callback: (err: Error) => void): void; }",
@@ -132,6 +138,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 27,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L27",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L27",
         },
         "type": "{ (src: string, dest: string, flags?: number): Promise<void>; (src: string, dest: string, callback: (err: Error) => void): void; (src: string, dest: string, flags: number, callback: (err: Error) => void): void; }",
@@ -145,6 +152,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 25,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L25",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L25",
         },
         "type": "(src: string, dest: string, options?: CopyOptionsSync) => void",
@@ -161,6 +169,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 36,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L36",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L36",
         },
         "type": "{ (file: string): Promise<void>; (file: string, callback: (err: Error) => void): void; }",
@@ -174,6 +183,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 38,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L38",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L38",
         },
         "type": "(file: string) => void",
@@ -195,6 +205,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 40,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L40",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L40",
         },
         "type": "{ (src: string, dest: string, type: SymlinkType): Promise<void>; (src: string, dest: string, type: SymlinkType, callback?: (err: Error) => void): void; }",
@@ -208,6 +219,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 42,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L42",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L42",
         },
         "type": "(src: string, dest: string, type: SymlinkType) => void",
@@ -224,6 +236,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 111,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L111",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L111",
         },
         "type": "{ (path: string): Promise<void>; (path: string, callback: (err: Error) => void): void; }",
@@ -237,6 +250,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 115,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L115",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L115",
         },
         "type": "(path: string) => void",
@@ -258,6 +272,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 44,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L44",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L44",
         },
         "type": "{ (path: string, options?: EnsureOptions | number): Promise<void>; (path: string, callback?: (err: Error) => void): void; (path: string, options?: number | EnsureOptions, callback?: (err: Error) => void): void; }",
@@ -271,6 +286,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 47,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L47",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L47",
         },
         "type": "(path: string, options?: EnsureOptions | number) => void",
@@ -287,6 +303,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 94,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L94",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L94",
         },
         "type": "{ (path: string): Promise<void>; (path: string, callback: (err: Error) => void): void; }",
@@ -300,6 +317,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 96,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L96",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L96",
         },
         "type": "(path: string) => void",
@@ -316,6 +334,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 98,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L98",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L98",
         },
         "type": "{ (src: string, dest: string): Promise<void>; (src: string, dest: string, callback: (err: Error) => void): void; }",
@@ -329,6 +348,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 102,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L102",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L102",
         },
         "type": "(src: string, dest: string) => void",
@@ -351,6 +371,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 106,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L106",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L106",
         },
         "type": "{ (src: string, dest: string, type?: SymlinkType): Promise<void>; (src: string, dest: string, type: SymlinkType, callback: (err: Error) => void): void; (src: string, dest: string, callback: (err: Error) => void): void; }",
@@ -364,6 +385,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 109,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L109",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L109",
         },
         "type": "(src: string, dest: string, type?: SymlinkType) => void",
@@ -380,6 +402,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 143,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L143",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L143",
         },
         "type": "{ (fd: number, mode: Mode, callback: (err: any) => void): void; (fd: number, mode: Mode): Promise<void>; }",
@@ -396,6 +419,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 146,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L146",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L146",
         },
         "type": "{ (fd: number, uid: number, gid: number, callback: (err: any) => void): void; (fd: number, uid: number, gid: number): Promise<void>; }",
@@ -412,6 +436,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 149,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L149",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L149",
         },
         "type": "{ (fd: number, callback: () => void): void; (fd: number): Promise<void>; }",
@@ -428,6 +453,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 152,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L152",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L152",
         },
         "type": "{ (fd: number, callback: (err: any, stats: any) => any): void; (fd: number): Promise<any>; }",
@@ -444,6 +470,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 155,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L155",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L155",
         },
         "type": "{ (fd: number, callback: (err: any) => void): void; (fd: number): Promise<void>; }",
@@ -461,6 +488,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 158,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L158",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L158",
         },
         "type": "{ (fd: number, callback: (err: any) => void): void; (fd: number, len: number, callback: (err: any) => void): void; (fd: number, len?: number): Promise<void>; }",
@@ -479,6 +507,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 162,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L162",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L162",
         },
         "type": "{ (fd: number, atime: number, mtime: number, callback: (err: any) => void): void; (fd: number, atime: Date, mtime: Date, callback: (err: any) => void): void; (fd: number, atime: number, mtime: number): Promise<void>; (fd: number, atime: Date, mtime: Date): Promise<void>; }",
@@ -495,6 +524,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 167,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L167",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L167",
         },
         "type": "{ (path: any, uid: number, gid: number, callback: (err: any) => void): void; (path: any, uid: number, gid: number): Promise<void>; }",
@@ -511,6 +541,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 170,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L170",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L170",
         },
         "type": "{ (existingPath: any, newPath: any, callback: (err: any) => void): void; (existingPath: any, newPath: any): Promise<void>; }",
@@ -527,6 +558,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 173,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L173",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L173",
         },
         "type": "{ (path: any, callback: (err: any, stats: any) => any): void; (path: any): Promise<any>; }",
@@ -550,6 +582,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 181,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L181",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L181",
         },
         "type": "{ (path: any, callback: (err: any) => void): void; (path: any, options: any, callback: (err: any) => void): void; (path: any, options?: any): Promise<void>; }",
@@ -566,6 +599,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 51,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L51",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L51",
         },
         "type": "{ (dir: string): Promise<void>; (dir: string, callback: (err: Error) => void): void; }",
@@ -579,6 +613,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 54,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L54",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L54",
         },
         "type": "(dir: string) => void",
@@ -595,6 +630,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 49,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L49",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L49",
         },
         "type": "{ (dir: string): Promise<void>; (dir: string, callback: (err: Error) => void): void; }",
@@ -608,6 +644,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 53,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L53",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L53",
         },
         "type": "(dir: string) => void",
@@ -621,6 +658,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 189,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L189",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L189",
         },
         "type": "(path: any, options?: Mode | fs.MakeDirectoryOptions | null) => void",
@@ -643,6 +681,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 290,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L290",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L290",
         },
         "type": "{ (prefix: string): Promise<string>; (prefix: string, callback: (err: any, folder: string) => void): void; }",
@@ -665,6 +704,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 31,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L31",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L31",
         },
         "type": "{ (src: string, dest: string, options?: MoveOptions): Promise<void>; (src: string, dest: string, callback: (err: Error) => void): void; (src: string, dest: string, options: MoveOptions, callback: (err: Error) => void): void; }",
@@ -678,6 +718,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 34,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L34",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L34",
         },
         "type": "(src: string, dest: string, options?: MoveOptions) => void",
@@ -704,6 +745,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 191,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L191",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L191",
         },
         "type": "{ (path: any, flags: string | number, callback: (err: any, fd: number) => void): void; (path: any, flags: string | number, mode: Mode, callback: (err: any, fd: number) => void): void; (path: any, flags: string | number, mode?: Mode): Promise<number>; }",
@@ -721,6 +763,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 195,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L195",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L195",
         },
         "type": "{ (path: string, cb: (err: NodeJS.ErrnoException | null, dir: any) => void): void; (path: string, options: any, cb: (err: any, dir: any) => void): void; (path: string, options?: any): Promise<any>; }",
@@ -743,6 +786,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 56,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L56",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L56",
         },
         "type": "{ (file: string, data: any, options?: WriteFileOptions | string): Promise<void>; (file: string, data: any, callback: (err: Error) => void): void; (file: string, data: any, options: string | WriteFileOptions, callback: (err: Error) => void): void; }",
@@ -760,6 +804,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 59,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L59",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L59",
         },
         "type": "(file: string, data: any, options?: WriteFileOptions | string) => void",
@@ -782,6 +827,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 78,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L78",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L78",
         },
         "type": "{ (file: string, data: any, options?: WriteOptions): Promise<void>; (file: string, data: any, options: WriteOptions, callback: (err: Error) => void): void; (file: string, data: any, callback: (err: Error) => void): void; }",
@@ -804,6 +850,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 75,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L75",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L75",
         },
         "type": "{ (file: string, data: any, options?: WriteOptions): Promise<void>; (file: string, data: any, options: WriteOptions, callback: (err: Error) => void): void; (file: string, data: any, callback: (err: Error) => void): void; }",
@@ -817,6 +864,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 81,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L81",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L81",
         },
         "type": "(file: string, data: any, options?: WriteOptions) => void",
@@ -830,6 +878,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 82,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L82",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L82",
         },
         "type": "(file: string, data: any, options?: WriteOptions) => void",
@@ -846,6 +895,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 118,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L118",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L118",
         },
         "type": "{ (path: string): Promise<boolean>; (path: string, callback: (err: Error, exists: boolean) => void): void; }",
@@ -859,6 +909,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 120,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L120",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L120",
         },
         "type": "(path: string) => boolean",
@@ -888,6 +939,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 203,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L203",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L203",
         },
         "type": "{ <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset: number, length: number, position: number | null, callback: (err: any, bytesRead: number, buffer: TBuffer) => void): void; <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset: number, length: number, position: number): Promise<{ bytesRead: number; buffer: TBuffer; }>; }",
@@ -912,6 +964,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 215,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L215",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L215",
         },
         "type": "{ (path: any, callback: (err: any, files: string[]) => void): void; (path: any, options?: any): Promise<string[]>; (path: any, options: \\"buffer\\" | { encoding: \\"buffer\\"; withFileTypes?: false; }): Promise<any[]>; (path: any, options?: { encoding?: string; withFileTypes?: false; }): Promise<string[] | any[]>; (path: any, options: { encoding?: string; withFileTypes: true; }): Promise<any[]>; }",
@@ -939,6 +992,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 207,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L207",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L207",
         },
         "type": "{ (file: PathLike | number, callback: (err: any, data: any) => void): void; (file: any, encoding: string, callback: (err: any, data: string) => void): void; (file: any, options: { flag?: string; } | { encoding: string; flag?: string; }, callback: (err: any, data: any) => void): void; (file: any, options: { flag?: string; } | { encoding: string; flag?: string; }): Promise<string>; (file: any, encoding: string): Promise<string>; (file: any): Promise<any>; }",
@@ -960,6 +1014,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 61,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L61",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L61",
         },
         "type": "{ (file: string, options?: ReadOptions): Promise<any>; (file: string, callback: (err: Error, jsonObject: any) => void): void; (file: string, options: ReadOptions, callback: (err: Error, jsonObject: any) => void): void; }",
@@ -981,6 +1036,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 64,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L64",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L64",
         },
         "type": "{ (file: string, options?: ReadOptions): Promise<any>; (file: string, callback: (err: Error, jsonObject: any) => void): void; (file: string, options: ReadOptions, callback: (err: Error, jsonObject: any) => void): void; }",
@@ -994,6 +1050,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 68,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L68",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L68",
         },
         "type": "(file: string, options?: ReadOptions) => any",
@@ -1007,6 +1064,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 69,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L69",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L69",
         },
         "type": "(file: string, options?: ReadOptions) => any",
@@ -1023,6 +1081,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 221,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L221",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L221",
         },
         "type": "{ (path: any, callback: (err: any, linkString: string) => any): void; (path: any): Promise<string>; }",
@@ -1044,6 +1103,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 224,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L224",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L224",
         },
         "type": "{ (path: any, callback: (err: any, resolvedPath: string) => any): void; (path: any, cache: { [path: string]: string; }, callback: (err: any, resolvedPath: string) => any): void; (path: any, cache?: { [path: string]: string; }): Promise<string>; }",
@@ -1060,6 +1120,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 71,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L71",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L71",
         },
         "type": "{ (dir: string): Promise<void>; (dir: string, callback: (err: Error) => void): void; }",
@@ -1073,6 +1134,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 73,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L73",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L73",
         },
         "type": "(dir: string) => void",
@@ -1089,6 +1151,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 228,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L228",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L228",
         },
         "type": "{ (oldPath: any, newPath: any, callback: (err: any) => void): void; (oldPath: any, newPath: any): Promise<void>; }",
@@ -1111,6 +1174,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 236,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L236",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L236",
         },
         "type": "{ (path: any, callback: (err: any) => void): void; (path: any): Promise<void>; }",
@@ -1127,6 +1191,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 239,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L239",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L239",
         },
         "type": "{ (path: any, callback: (err: any, stats: any) => any): void; (path: any): Promise<any>; }",
@@ -1149,6 +1214,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 242,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L242",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L242",
         },
         "type": "{ (target: any, path: any, type: SymlinkType | undefined, callback: (err: any) => void): void; (target: any, path: any, callback: (err: any) => void): void; (target: any, path: any, type?: SymlinkType): Promise<void>; }",
@@ -1166,6 +1232,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 246,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L246",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L246",
         },
         "type": "{ (path: any, callback: (err: any) => void): void; (path: any, len: number, callback: (err: any) => void): void; (path: any, len?: number): Promise<void>; }",
@@ -1188,6 +1255,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 255,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L255",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L255",
         },
         "type": "{ (path: any, callback: (err: any) => void): void; (path: any): Promise<void>; }",
@@ -1206,6 +1274,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 258,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L258",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L258",
         },
         "type": "{ (path: any, atime: number, mtime: number, callback: (err: any) => void): void; (path: any, atime: Date, mtime: Date, callback: (err: any) => void): void; (path: any, atime: number, mtime: number): Promise<void>; (path: any, atime: Date, mtime: Date): Promise<void>; }",
@@ -1264,6 +1333,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 263,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L263",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L263",
         },
         "type": "{ <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset: number, length: number, position: number | null, callback: (err: any, written: number, buffer: TBuffer) => void): void; <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset: number, length: number, callback: (err: any, written: number, buffer: TBuffer) => void): void; (fd: number, data: any, callback: (err: any, written: number, str: string) => void): void; (fd: number, data: any, offset: number, callback: (err: any, written: number, str: string) => void): void; (fd: number, data: any, offset: number, encoding: string, callback: (err: any, written: number, str: string) => void): void; <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset?: number, length?: number, position?: number): Promise<{ bytesWritten: number; buffer: TBuffer; }>; (fd: number, data: any, offset?: number, encoding?: string): Promise<{ bytesWritten: number; buffer: string; }>; }",
@@ -1286,6 +1356,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 277,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L277",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L277",
         },
         "type": "{ (file: PathLike | number, data: any, callback: (err: any) => void): void; (file: any, data: any, options?: string | WriteFileOptions): Promise<void>; (file: any, data: any, options: string | WriteFileOptions, callback: (err: any) => void): void; }",
@@ -1308,6 +1379,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 87,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L87",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L87",
         },
         "type": "{ (file: string, object: any, options?: WriteOptions): Promise<void>; (file: string, object: any, callback: (err: Error) => void): void; (file: string, object: any, options: WriteOptions, callback: (err: Error) => void): void; }",
@@ -1330,6 +1402,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 84,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L84",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L84",
         },
         "type": "{ (file: string, object: any, options?: WriteOptions): Promise<void>; (file: string, object: any, callback: (err: Error) => void): void; (file: string, object: any, options: WriteOptions, callback: (err: Error) => void): void; }",
@@ -1343,6 +1416,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 91,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L91",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L91",
         },
         "type": "(file: string, object: any, options?: WriteOptions) => void",
@@ -1356,6 +1430,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 92,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L92",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L92",
         },
         "type": "(file: string, object: any, options?: WriteOptions) => void",
@@ -1386,6 +1461,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 281,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L281",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L281",
         },
         "type": "{ (fd: number, buffers: NodeJS.ArrayBufferView[], position: number, cb: (err: NodeJS.ErrnoException | null, bytesWritten: number, buffers: NodeJS.ArrayBufferView[]) => void): void; (fd: number, buffers: any[], cb: (err: any, bytesWritten: number, buffers: any[]) => void): void; (fd: number, buffers: any[], position?: number): Promise<WritevResult>; }",
@@ -1413,6 +1489,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 312,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L312",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L312",
               },
               "type": "boolean",
@@ -1428,6 +1505,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 315,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L315",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L315",
               },
               "type": "boolean",
@@ -1443,6 +1521,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 316,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L316",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L316",
               },
               "type": "CopyFilterSync | CopyFilterAsync",
@@ -1458,6 +1537,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 313,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L313",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L313",
               },
               "type": "boolean",
@@ -1473,6 +1553,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 314,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L314",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L314",
               },
               "type": "boolean",
@@ -1488,6 +1569,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 317,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L317",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L317",
               },
               "type": "boolean",
@@ -1499,6 +1581,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 311,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L311",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L311",
         },
       },
@@ -1523,6 +1606,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 321,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L321",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L321",
               },
               "type": "CopyFilterSync",
@@ -1534,6 +1618,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 320,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L320",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L320",
         },
       },
@@ -1558,6 +1643,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 325,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L325",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L325",
               },
               "type": "number",
@@ -1569,6 +1655,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 324,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L324",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L324",
         },
       },
@@ -1593,6 +1680,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 330,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L330",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L330",
               },
               "type": "number",
@@ -1608,6 +1696,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 329,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L329",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L329",
               },
               "type": "boolean",
@@ -1619,6 +1708,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 328,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L328",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L328",
         },
       },
@@ -1643,6 +1733,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 294,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L294",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L294",
               },
               "type": "string",
@@ -1658,6 +1749,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 295,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L295",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L295",
               },
               "type": "any",
@@ -1669,6 +1761,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 293,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L293",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L293",
         },
       },
@@ -1690,6 +1783,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 299,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L299",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L299",
               },
               "type": "() => PathEntry | null",
@@ -1702,6 +1796,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 298,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L298",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L298",
         },
       },
@@ -1726,6 +1821,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 337,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L337",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L337",
               },
               "type": "string",
@@ -1741,6 +1837,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 338,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L338",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L338",
               },
               "type": "string",
@@ -1756,6 +1853,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 335,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L335",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L335",
               },
               "type": "{}",
@@ -1771,6 +1869,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 336,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L336",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L336",
               },
               "type": "any",
@@ -1786,6 +1885,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 334,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L334",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L334",
               },
               "type": "boolean",
@@ -1797,6 +1897,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 333,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L333",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L333",
         },
       },
@@ -1821,6 +1922,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 342,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L342",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L342",
               },
               "type": "string",
@@ -1836,6 +1938,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 343,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L343",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L343",
               },
               "type": "string",
@@ -1851,6 +1954,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 344,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L344",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L344",
               },
               "type": "number",
@@ -1862,6 +1966,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 341,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L341",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L341",
         },
       },
@@ -1886,6 +1991,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 351,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L351",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L351",
               },
               "type": "string",
@@ -1901,6 +2007,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 348,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L348",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L348",
               },
               "type": "{}",
@@ -1916,6 +2023,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 349,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L349",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L349",
               },
               "type": "any",
@@ -1931,6 +2039,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 350,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L350",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L350",
               },
               "type": "string | number",
@@ -1942,6 +2051,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 347,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L347",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L347",
         },
       },
@@ -1966,6 +2076,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 356,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L356",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L356",
               },
               "type": "any[]",
@@ -1981,6 +2092,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 355,
+                "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L355",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L355",
               },
               "type": "number",
@@ -1992,6 +2104,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 354,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L354",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L354",
         },
       },
@@ -2007,6 +2120,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 309,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L309",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L309",
         },
       },
@@ -2019,6 +2133,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 303,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L303",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L303",
         },
       },
@@ -2031,6 +2146,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 302,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L302",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L302",
         },
       },
@@ -2043,6 +2159,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 307,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L307",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L307",
         },
       },
@@ -2055,6 +2172,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 305,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L305",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L305",
         },
       },
@@ -2072,6 +2190,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 101,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L101",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L101",
         },
         "type": "{ (src: string, dest: string): Promise<void>; (src: string, dest: string, callback: (err: Error) => void): void; }",
@@ -2086,6 +2205,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 104,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L104",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L104",
         },
         "type": "(src: string, dest: string) => void",
@@ -2103,6 +2223,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 113,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L113",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L113",
         },
         "type": "{ (path: string): Promise<void>; (path: string, callback: (err: Error) => void): void; }",
@@ -2117,6 +2238,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 116,
+          "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L116",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L116",
         },
         "type": "(path: string) => void",
@@ -2128,6 +2250,7 @@ Object {
     Object {
       "filename": "index.d.ts",
       "isIndexFile": true,
+      "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts",
       "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts",
     },
   ],

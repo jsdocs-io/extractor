@@ -15,6 +15,7 @@ Object {
             "source": Object {
               "filename": "index.d.ts",
               "line": 28,
+              "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L28",
               "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L28",
             },
           },
@@ -45,6 +46,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 234,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L234",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L234",
               },
               "type": "(value: number, unit?: OpUnitType) => Dayjs",
@@ -68,6 +70,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 37,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L37",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L37",
               },
               "type": "() => Dayjs",
@@ -99,6 +102,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 91,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L91",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L91",
               },
               "type": "{ (): number; (value: number): Dayjs; }",
@@ -132,6 +136,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 111,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L111",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L111",
               },
               "type": "{ (): number; (value: number): Dayjs; }",
@@ -154,6 +159,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 324,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L324",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L324",
               },
               "type": "() => number",
@@ -191,6 +197,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 295,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L295",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L295",
               },
               "type": "(date: ConfigType, unit?: QUnitType | OpUnitType, float?: boolean) => number",
@@ -215,6 +222,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 264,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L264",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L264",
               },
               "type": "(unit: OpUnitType) => Dayjs",
@@ -241,6 +249,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 276,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L276",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L276",
               },
               "type": "(template?: string) => string",
@@ -271,6 +280,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 224,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L224",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L224",
               },
               "type": "(unit: UnitType) => number",
@@ -302,6 +312,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 129,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L129",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L129",
               },
               "type": "{ (): number; (value: number): Dayjs; }",
@@ -330,6 +341,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 403,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L403",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L403",
               },
               "type": "(date: ConfigType, unit?: OpUnitType) => boolean",
@@ -358,6 +370,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 377,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L377",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L377",
               },
               "type": "(date: ConfigType, unit?: OpUnitType) => boolean",
@@ -384,6 +397,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 389,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L389",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L389",
               },
               "type": "(date: ConfigType, unit?: OpUnitType) => boolean",
@@ -406,6 +420,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 45,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L45",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L45",
               },
               "type": "() => boolean",
@@ -423,6 +438,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 405,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L405",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L405",
               },
               "type": "{ (): string; (preset: string | ILocale, object?: Partial<ILocale>): Dayjs; }",
@@ -454,6 +470,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 182,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L182",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L182",
               },
               "type": "{ (): number; (value: number): Dayjs; }",
@@ -485,6 +502,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 147,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L147",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L147",
               },
               "type": "{ (): number; (value: number): Dayjs; }",
@@ -520,6 +538,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 71,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L71",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L71",
               },
               "type": "{ (): number; (value: number): Dayjs; }",
@@ -550,6 +569,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 165,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L165",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L165",
               },
               "type": "{ (): number; (value: number): Dayjs; }",
@@ -580,6 +600,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 208,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L208",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L208",
               },
               "type": "(unit: UnitType, value: number) => Dayjs",
@@ -604,6 +625,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 254,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L254",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L254",
               },
               "type": "(unit: OpUnitType) => Dayjs",
@@ -628,6 +650,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 244,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L244",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L244",
               },
               "type": "(value: number, unit?: OpUnitType) => Dayjs",
@@ -649,6 +672,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 331,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L331",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L331",
               },
               "type": "() => Date",
@@ -671,6 +695,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 347,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L347",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L347",
               },
               "type": "() => string",
@@ -693,6 +718,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 339,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L339",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L339",
               },
               "type": "() => string",
@@ -715,6 +741,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 355,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L355",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L355",
               },
               "type": "() => string",
@@ -739,6 +766,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 316,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L316",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L316",
               },
               "type": "() => number",
@@ -761,6 +789,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 363,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L363",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L363",
               },
               "type": "() => number",
@@ -786,6 +815,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 306,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L306",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L306",
               },
               "type": "() => number",
@@ -815,6 +845,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 53,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L53",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L53",
               },
               "type": "{ (): number; (value: number): Dayjs; }",
@@ -827,6 +858,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 27,
+          "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L27",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L27",
         },
       },
@@ -842,6 +874,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 5,
+          "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L5",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L5",
         },
         "type": "typeof dayjs",
@@ -855,6 +888,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 412,
+          "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L412",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L412",
         },
         "type": "<T = unknown>(plugin: PluginFunc<T>, option?: T) => Dayjs",
@@ -868,6 +902,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 416,
+          "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L416",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L416",
         },
         "type": "(d: any) => d is Dayjs",
@@ -885,6 +920,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 414,
+          "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L414",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L414",
         },
         "type": "(preset?: string | ILocale, object?: Partial<ILocale>, isLocal?: boolean) => string",
@@ -898,6 +934,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 418,
+          "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L418",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L418",
         },
         "type": "(t: number) => Dayjs",
@@ -927,6 +964,7 @@ Object {
               "source": Object {
                 "filename": "esm/locale/index.d.ts",
                 "line": 5,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/esm/locale/index.d.ts#L5",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/esm/locale/index.d.ts#L5",
               },
             },
@@ -943,6 +981,7 @@ Object {
               "source": Object {
                 "filename": "esm/locale/index.d.ts",
                 "line": 8,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/esm/locale/index.d.ts#L8",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/esm/locale/index.d.ts#L8",
               },
               "type": "locale.Locale",
@@ -958,6 +997,7 @@ Object {
         "source": Object {
           "filename": "esm/locale/index.d.ts",
           "line": 3,
+          "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/esm/locale/index.d.ts#L3",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/esm/locale/index.d.ts#L3",
         },
       },
@@ -983,6 +1023,7 @@ Object {
               "source": Object {
                 "filename": "locale/index.d.ts",
                 "line": 5,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/locale/index.d.ts#L5",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/locale/index.d.ts#L5",
               },
             },
@@ -999,6 +1040,7 @@ Object {
               "source": Object {
                 "filename": "locale/index.d.ts",
                 "line": 8,
+                "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/locale/index.d.ts#L8",
                 "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/locale/index.d.ts#L8",
               },
               "type": "locale.Locale",
@@ -1014,6 +1056,7 @@ Object {
         "source": Object {
           "filename": "locale/index.d.ts",
           "line": 3,
+          "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/locale/index.d.ts#L3",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/locale/index.d.ts#L3",
         },
       },
@@ -1028,6 +1071,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 12,
+          "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L12",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L12",
         },
       },
@@ -1043,6 +1087,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 14,
+          "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L14",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L14",
         },
       },
@@ -1055,6 +1100,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 24,
+          "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L24",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L24",
         },
       },
@@ -1067,6 +1113,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 410,
+          "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L410",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L410",
         },
       },
@@ -1079,6 +1126,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 25,
+          "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L25",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L25",
         },
       },
@@ -1091,6 +1139,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 22,
+          "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L22",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L22",
         },
       },
@@ -1111,6 +1160,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 18,
+          "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L18",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L18",
         },
       },
@@ -1131,6 +1181,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 20,
+          "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L20",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L20",
         },
       },
@@ -1143,6 +1194,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 16,
+          "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L16",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L16",
         },
       },
@@ -1157,6 +1209,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 420,
+          "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L420",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L420",
         },
         "type": "{ [key: string]: ILocale; }",
@@ -1167,15 +1220,18 @@ Object {
   "files": Array [
     Object {
       "filename": "esm/locale/index.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/esm/locale/index.d.ts",
       "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/esm/locale/index.d.ts",
     },
     Object {
       "filename": "index.d.ts",
       "isIndexFile": true,
+      "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts",
       "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts",
     },
     Object {
       "filename": "locale/index.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/locale/index.d.ts",
       "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/locale/index.d.ts",
     },
   ],

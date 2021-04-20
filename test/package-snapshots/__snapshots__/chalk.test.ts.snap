@@ -32,6 +32,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 226,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L226",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L226",
               },
               "type": "(code: number) => Chalk",
@@ -49,6 +50,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 231,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L231",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L231",
               },
               "type": "(index: number) => Chalk",
@@ -70,6 +72,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 288,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L288",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L288",
               },
               "type": "(code: number) => Chalk",
@@ -87,6 +90,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 293,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L293",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L293",
               },
               "type": "(index: number) => Chalk",
@@ -113,6 +117,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 245,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L245",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L245",
               },
               "type": "(color: string) => Chalk",
@@ -130,6 +135,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 269,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L269",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L269",
               },
               "type": "(hue: number, saturation: number, lightness: number) => Chalk",
@@ -147,6 +153,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 274,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L274",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L274",
               },
               "type": "(hue: number, saturation: number, value: number) => Chalk",
@@ -164,6 +171,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 279,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L279",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L279",
               },
               "type": "(hue: number, whiteness: number, blackness: number) => Chalk",
@@ -190,6 +198,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 259,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L259",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L259",
               },
               "type": "(color: string) => Chalk",
@@ -207,6 +216,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 264,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L264",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L264",
               },
               "type": "(red: number, green: number, blue: number) => Chalk",
@@ -233,6 +243,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 184,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L184",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L184",
               },
               "type": "(color: string) => Chalk",
@@ -250,6 +261,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 208,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L208",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L208",
               },
               "type": "(hue: number, saturation: number, lightness: number) => Chalk",
@@ -267,6 +279,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 213,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L213",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L213",
               },
               "type": "(hue: number, saturation: number, value: number) => Chalk",
@@ -284,6 +297,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 218,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L218",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L218",
               },
               "type": "(hue: number, whiteness: number, blackness: number) => Chalk",
@@ -310,6 +324,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 198,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L198",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L198",
               },
               "type": "(color: string) => Chalk",
@@ -327,6 +342,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 203,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L203",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L203",
               },
               "type": "(red: number, green: number, blue: number) => Chalk",
@@ -344,6 +360,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 369,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L369",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L369",
               },
               "type": "Chalk",
@@ -359,6 +376,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 388,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L388",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L388",
               },
               "type": "Chalk",
@@ -374,6 +392,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 373,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L373",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L373",
               },
               "type": "Chalk",
@@ -389,6 +408,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 392,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L392",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L392",
               },
               "type": "Chalk",
@@ -404,6 +424,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 375,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L375",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L375",
               },
               "type": "Chalk",
@@ -419,6 +440,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 394,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L394",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L394",
               },
               "type": "Chalk",
@@ -434,6 +456,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 381,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L381",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L381",
               },
               "type": "Chalk",
@@ -449,6 +472,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 371,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L371",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L371",
               },
               "type": "Chalk",
@@ -464,6 +488,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 390,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L390",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L390",
               },
               "type": "Chalk",
@@ -479,6 +504,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 386,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L386",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L386",
               },
               "type": "Chalk",
@@ -494,6 +520,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 374,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L374",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L374",
               },
               "type": "Chalk",
@@ -509,6 +536,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 393,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L393",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L393",
               },
               "type": "Chalk",
@@ -524,6 +552,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 370,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L370",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L370",
               },
               "type": "Chalk",
@@ -539,6 +568,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 389,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L389",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L389",
               },
               "type": "Chalk",
@@ -554,6 +584,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 376,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L376",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L376",
               },
               "type": "Chalk",
@@ -569,6 +600,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 395,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L395",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L395",
               },
               "type": "Chalk",
@@ -584,6 +616,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 372,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L372",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L372",
               },
               "type": "Chalk",
@@ -599,6 +632,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 391,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L391",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L391",
               },
               "type": "Chalk",
@@ -614,6 +648,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 341,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L341",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L341",
               },
               "type": "Chalk",
@@ -629,6 +664,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 360,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L360",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L360",
               },
               "type": "Chalk",
@@ -644,6 +680,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 345,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L345",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L345",
               },
               "type": "Chalk",
@@ -659,6 +696,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 364,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L364",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L364",
               },
               "type": "Chalk",
@@ -678,6 +716,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 303,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L303",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L303",
               },
               "type": "Chalk",
@@ -693,6 +732,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 347,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L347",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L347",
               },
               "type": "Chalk",
@@ -708,6 +748,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 366,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L366",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L366",
               },
               "type": "Chalk",
@@ -727,6 +768,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 308,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L308",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L308",
               },
               "type": "Chalk",
@@ -742,6 +784,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 353,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L353",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L353",
               },
               "type": "Chalk",
@@ -757,6 +800,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 343,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L343",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L343",
               },
               "type": "Chalk",
@@ -772,6 +816,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 362,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L362",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L362",
               },
               "type": "Chalk",
@@ -787,6 +832,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 358,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L358",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L358",
               },
               "type": "Chalk",
@@ -806,6 +852,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 328,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L328",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L328",
               },
               "type": "Chalk",
@@ -825,6 +872,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 157,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L157",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L157",
               },
               "type": "Instance",
@@ -844,6 +892,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 323,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L323",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L323",
               },
               "type": "Chalk",
@@ -863,6 +912,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 313,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L313",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L313",
               },
               "type": "Chalk",
@@ -890,6 +940,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 170,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L170",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L170",
               },
               "type": "Level",
@@ -905,6 +956,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 346,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L346",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L346",
               },
               "type": "Chalk",
@@ -920,6 +972,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 365,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L365",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L365",
               },
               "type": "Chalk",
@@ -935,6 +988,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 342,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L342",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L342",
               },
               "type": "Chalk",
@@ -950,6 +1004,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 361,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L361",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L361",
               },
               "type": "Chalk",
@@ -969,6 +1024,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 298,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L298",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L298",
               },
               "type": "Chalk",
@@ -988,6 +1044,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 333,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L333",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L333",
               },
               "type": "Chalk",
@@ -1007,6 +1064,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 318,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L318",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L318",
               },
               "type": "Chalk",
@@ -1027,6 +1085,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 339,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L339",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L339",
               },
               "type": "Chalk",
@@ -1042,6 +1101,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 348,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L348",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L348",
               },
               "type": "Chalk",
@@ -1057,6 +1117,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 367,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L367",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L367",
               },
               "type": "Chalk",
@@ -1072,6 +1133,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 344,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L344",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L344",
               },
               "type": "Chalk",
@@ -1087,6 +1149,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 363,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L363",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L363",
               },
               "type": "Chalk",
@@ -1098,6 +1161,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 153,
+          "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L153",
           "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L153",
         },
       },
@@ -1140,6 +1204,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 148,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L148",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L148",
               },
             },
@@ -1152,6 +1217,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 150,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L150",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L150",
               },
             },
@@ -1166,6 +1232,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 124,
+          "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L124",
           "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L124",
         },
       },
@@ -1198,6 +1265,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 121,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L121",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L121",
               },
               "type": "boolean",
@@ -1217,6 +1285,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 116,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L116",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L116",
               },
               "type": "boolean",
@@ -1236,6 +1305,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 111,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L111",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L111",
               },
               "type": "boolean",
@@ -1255,6 +1325,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 106,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L106",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L106",
               },
               "type": "Level",
@@ -1266,6 +1337,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 102,
+          "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L102",
           "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L102",
         },
       },
@@ -1302,6 +1374,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 91,
+                "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L91",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L91",
               },
               "type": "Level",
@@ -1313,6 +1386,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 79,
+          "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L79",
           "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L79",
         },
       },
@@ -1332,6 +1406,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 97,
+          "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L97",
           "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L97",
         },
       },
@@ -1352,6 +1427,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 77,
+          "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L77",
           "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L77",
         },
       },
@@ -1382,6 +1458,7 @@ This simply means that \`chalk.red.yellow.green\` is equivalent to \`chalk.green
         "source": Object {
           "filename": "index.d.ts",
           "line": 405,
+          "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L405",
           "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L405",
         },
         "type": "chalk.Chalk & chalk.ChalkFunction & { supportsColor: chalk.ColorSupport | false; Level: chalk.Level; Color: Color; ForegroundColor: ForegroundColor; BackgroundColor: BackgroundColor; Modifiers: Modifiers; stderr: chalk.Chalk & {    supportsColor: chalk.ColorSupport | false;}; }",
@@ -1393,6 +1470,7 @@ This simply means that \`chalk.red.yellow.green\` is equivalent to \`chalk.green
     Object {
       "filename": "index.d.ts",
       "isIndexFile": true,
+      "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts",
       "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts",
     },
   ],

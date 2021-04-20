@@ -15,6 +15,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 767,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L767",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L767",
         },
         "type": "(m: Moment, now: Moment) => string",
@@ -31,6 +32,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 757,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L757",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L757",
         },
         "type": "(language: string, localeSpec: LocaleSpecification | void) => Locale",
@@ -44,6 +46,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 707,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L707",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L707",
         },
         "type": "(inp?: DurationInputArg1, unit?: DurationInputArg2) => Duration",
@@ -57,6 +60,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 687,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L687",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L687",
         },
         "type": "(flags?: MomentParsingFlagsOpt) => Moment",
@@ -70,6 +74,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 689,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L689",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L689",
         },
         "type": "(m: any) => m is Date",
@@ -83,6 +88,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 690,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L690",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L690",
         },
         "type": "(d: any) => d is Duration",
@@ -96,6 +102,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 688,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L688",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L688",
         },
         "type": "(m: any) => m is Moment",
@@ -116,6 +123,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 695,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L695",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L695",
         },
         "type": "{ (language?: string): string; (language?: string, definition?: Locale): string; }",
@@ -133,6 +141,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 701,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L701",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L701",
         },
         "type": "{ (language?: string): string; (language?: string[]): string; (language?: string, definition?: void | LocaleSpecification): string; }",
@@ -146,6 +155,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 705,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L705",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L705",
         },
         "type": "(key?: string | string[]) => Locale",
@@ -159,6 +169,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 760,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L760",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L760",
         },
         "type": "() => string[]",
@@ -172,6 +183,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 749,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L749",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L749",
         },
         "type": "{ (moments: Moment[]): Moment; (...moments: Moment[]): Moment; }",
@@ -185,6 +197,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 747,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L747",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L747",
         },
         "type": "{ (moments: Moment[]): Moment; (...moments: Moment[]): Moment; }",
@@ -208,6 +221,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 5,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L5",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L5",
         },
         "type": "typeof moment",
@@ -226,6 +240,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 713,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L713",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L713",
         },
         "type": "{ (): string[]; (index: number): string; (format: string): string[]; (format: string, index: number): string; }",
@@ -244,6 +259,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 717,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L717",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L717",
         },
         "type": "{ (): string[]; (index: number): string; (format: string): string[]; (format: string, index: number): string; }",
@@ -257,6 +273,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 762,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L762",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L762",
         },
         "type": "(unit: unitOfTime.All) => string",
@@ -274,6 +291,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 755,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L755",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L755",
         },
         "type": "() => number",
@@ -287,6 +305,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 769,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L769",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L769",
         },
         "type": "(input: string) => number",
@@ -312,6 +331,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 710,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L710",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L710",
         },
         "type": "{ (inp?: MomentInput, format?: MomentFormatSpecification, strict?: boolean): Moment; (inp?: MomentInput, format?: MomentFormatSpecification, language?: string, strict?: boolean): Moment; }",
@@ -328,6 +348,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 765,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L765",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L765",
         },
         "type": "{ (fn: (num: number) => number): boolean; (): (num: number) => number; }",
@@ -344,6 +365,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 763,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L763",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L763",
         },
         "type": "{ (threshold: string): number | boolean; (threshold: string, limit: number): boolean; }",
@@ -357,6 +379,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 685,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L685",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L685",
         },
         "type": "(timestamp: number) => Moment",
@@ -373,6 +396,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 758,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L758",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L758",
         },
         "type": "(language: string, localeSpec: LocaleSpecification | void) => Locale",
@@ -409,6 +433,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 671,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L671",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L671",
         },
         "type": "{ (inp?: MomentInput, strict?: boolean): Moment; (inp?: MomentInput, format?: MomentFormatSpecification, strict?: boolean): Moment; (inp?: MomentInput, format?: MomentFormatSpecification, language?: string, strict?: boolean): Moment; }",
@@ -431,6 +456,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 722,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L722",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L722",
         },
         "type": "{ (): string[]; (index: number): string; (format: string): string[]; (format: string, index: number): string; (localeSorted: boolean): string[]; (localeSorted: boolean, index: number): string; (localeSorted: boolean, format: string): string[]; (localeSorted: boolean, format: string, index: number): string; }",
@@ -453,6 +479,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 738,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L738",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L738",
         },
         "type": "{ (): string[]; (index: number): string; (format: string): string[]; (format: string, index: number): string; (localeSorted: boolean): string[]; (localeSorted: boolean, index: number): string; (localeSorted: boolean, format: string): string[]; (localeSorted: boolean, format: string, index: number): string; }",
@@ -475,6 +502,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 730,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L730",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L730",
         },
         "type": "{ (): string[]; (index: number): string; (format: string): string[]; (format: string, index: number): string; (localeSorted: boolean): string[]; (localeSorted: boolean, index: number): string; (localeSorted: boolean, format: string): string[]; (localeSorted: boolean, format: string, index: number): string; }",
@@ -502,6 +530,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 188,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L188",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L188",
               },
               "type": "number",
@@ -517,6 +546,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 187,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L187",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L187",
               },
               "type": "number",
@@ -532,6 +562,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 186,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L186",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L186",
               },
               "type": "number",
@@ -547,6 +578,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 190,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L190",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L190",
               },
               "type": "number",
@@ -562,6 +594,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 185,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L185",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L185",
               },
               "type": "number",
@@ -577,6 +610,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 184,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L184",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L184",
               },
               "type": "number",
@@ -592,6 +626,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 189,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L189",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L189",
               },
               "type": "number | void",
@@ -603,6 +638,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 183,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L183",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L183",
         },
       },
@@ -623,6 +659,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 86,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L86",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L86",
               },
             },
@@ -640,6 +677,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 80,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L80",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L80",
               },
               "type": "CalendarSpecVal",
@@ -655,6 +693,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 82,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L82",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L82",
               },
               "type": "CalendarSpecVal",
@@ -670,6 +709,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 79,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L79",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L79",
               },
               "type": "CalendarSpecVal",
@@ -685,6 +725,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 81,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L81",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L81",
               },
               "type": "CalendarSpecVal",
@@ -700,6 +741,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 78,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L78",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L78",
               },
               "type": "CalendarSpecVal",
@@ -715,6 +757,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 83,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L83",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L83",
               },
               "type": "CalendarSpecVal",
@@ -726,6 +769,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 77,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L77",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L77",
         },
       },
@@ -747,6 +791,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 200,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L200",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L200",
               },
               "type": "() => Duration",
@@ -760,6 +805,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 229,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L229",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L229",
               },
               "type": "(inp?: DurationInputArg1, unit?: DurationInputArg2) => Duration",
@@ -773,6 +819,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 202,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L202",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L202",
               },
               "type": "(units: unitOfTime.Base) => number",
@@ -786,6 +833,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 218,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L218",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L218",
               },
               "type": "() => number",
@@ -799,6 +847,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 215,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L215",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L215",
               },
               "type": "() => number",
@@ -812,6 +861,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 206,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L206",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L206",
               },
               "type": "() => number",
@@ -825,6 +875,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 212,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L212",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L212",
               },
               "type": "() => number",
@@ -838,6 +889,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 224,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L224",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L224",
               },
               "type": "() => number",
@@ -851,6 +903,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 209,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L209",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L209",
               },
               "type": "() => number",
@@ -864,6 +917,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 221,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L221",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L221",
               },
               "type": "() => number",
@@ -877,6 +931,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 227,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L227",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L227",
               },
               "type": "() => number",
@@ -890,6 +945,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 194,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L194",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L194",
               },
               "type": "() => Duration",
@@ -903,6 +959,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 217,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L217",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L217",
               },
               "type": "() => number",
@@ -916,6 +973,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 203,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L203",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L203",
               },
               "type": "(units: unitOfTime.Base) => number",
@@ -929,6 +987,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 214,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L214",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L214",
               },
               "type": "() => number",
@@ -945,6 +1004,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 196,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L196",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L196",
               },
               "type": "{ (argWithSuffix?: boolean, argThresholds?: argThresholdOpts): string; (argThresholds?: argThresholdOpts): string; }",
@@ -958,6 +1018,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 239,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L239",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L239",
               },
               "type": "() => boolean",
@@ -975,6 +1036,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 244,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L244",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L244",
               },
               "type": "{ (locale: LocaleSpecifier): Moment; (): Locale; }",
@@ -988,6 +1050,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 232,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L232",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L232",
               },
               "type": "{ (): string; (locale: LocaleSpecifier): Duration; }",
@@ -1001,6 +1064,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 234,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L234",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L234",
               },
               "type": "() => Locale",
@@ -1014,6 +1078,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 205,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L205",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L205",
               },
               "type": "() => number",
@@ -1027,6 +1092,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 211,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L211",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L211",
               },
               "type": "() => number",
@@ -1040,6 +1106,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 223,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L223",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L223",
               },
               "type": "() => number",
@@ -1053,6 +1120,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 208,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L208",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L208",
               },
               "type": "() => number",
@@ -1066,6 +1134,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 230,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L230",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L230",
               },
               "type": "(inp?: DurationInputArg1, unit?: DurationInputArg2) => Duration",
@@ -1083,6 +1152,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 252,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L252",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L252",
               },
               "type": "() => string",
@@ -1096,6 +1166,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 236,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L236",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L236",
               },
               "type": "() => string",
@@ -1109,6 +1180,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 237,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L237",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L237",
               },
               "type": "() => string",
@@ -1122,6 +1194,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 220,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L220",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L220",
               },
               "type": "() => number",
@@ -1135,6 +1208,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 226,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L226",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L226",
               },
               "type": "() => number",
@@ -1147,6 +1221,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 193,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L193",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L193",
         },
       },
@@ -1171,6 +1246,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 395,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L395",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L395",
               },
               "type": "numberlike",
@@ -1186,6 +1262,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 394,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L394",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L394",
               },
               "type": "numberlike",
@@ -1201,6 +1278,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 393,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L393",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L393",
               },
               "type": "numberlike",
@@ -1216,6 +1294,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 399,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L399",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L399",
               },
               "type": "numberlike",
@@ -1231,6 +1310,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 398,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L398",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L398",
               },
               "type": "numberlike",
@@ -1246,6 +1326,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 397,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L397",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L397",
               },
               "type": "numberlike",
@@ -1257,6 +1338,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 392,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L392",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L392",
         },
       },
@@ -1281,6 +1363,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 140,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L140",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L140",
               },
               "type": "string",
@@ -1296,6 +1379,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 138,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L138",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L138",
               },
               "type": "string",
@@ -1311,6 +1395,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 139,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L139",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L139",
               },
               "type": "string",
@@ -1326,6 +1411,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 137,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L137",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L137",
               },
               "type": "number",
@@ -1341,6 +1427,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 135,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L135",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L135",
               },
               "type": "string | number",
@@ -1356,6 +1443,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 136,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L136",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L136",
               },
               "type": "string | number",
@@ -1367,6 +1455,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 134,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L134",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L134",
         },
       },
@@ -1391,6 +1480,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 437,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L437",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L437",
               },
               "type": "MomentInput",
@@ -1406,6 +1496,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 438,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L438",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L438",
               },
               "type": "MomentInput",
@@ -1417,6 +1508,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 436,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L436",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L436",
         },
       },
@@ -1438,6 +1530,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 25,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L25",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L25",
               },
               "type": "(key?: CalendarKey, m?: Moment, now?: Moment) => string",
@@ -1451,6 +1544,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 48,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L48",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L48",
               },
               "type": "() => number",
@@ -1464,6 +1558,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 47,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L47",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L47",
               },
               "type": "() => number",
@@ -1477,6 +1572,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 28,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L28",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L28",
               },
               "type": "() => string",
@@ -1490,6 +1586,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 61,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L61",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L61",
               },
               "type": "(input: string) => boolean",
@@ -1503,6 +1600,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 27,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L27",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L27",
               },
               "type": "(key: LongDateFormatKey) => string",
@@ -1516,6 +1614,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 62,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L62",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L62",
               },
               "type": "(hour: number, minute: number, isLower: boolean) => string",
@@ -1529,6 +1628,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 38,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L38",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L38",
               },
               "type": "{ (): string[]; (m: Moment, format?: string): string; }",
@@ -1542,6 +1642,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 42,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L42",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L42",
               },
               "type": "(monthName: string, format: string, strict: boolean) => number",
@@ -1555,6 +1656,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 43,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L43",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L43",
               },
               "type": "(strict: boolean) => RegExp",
@@ -1568,6 +1670,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 40,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L40",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L40",
               },
               "type": "{ (): string[]; (m: Moment, format?: string): string; }",
@@ -1581,6 +1684,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 44,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L44",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L44",
               },
               "type": "(strict: boolean) => RegExp",
@@ -1594,6 +1698,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 29,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L29",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L29",
               },
               "type": "(n: number) => string",
@@ -1607,6 +1712,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 35,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L35",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L35",
               },
               "type": "(diff: number, absRelTime: string) => string",
@@ -1620,6 +1726,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 32,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L32",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L32",
               },
               "type": "(inp: string) => string",
@@ -1633,6 +1740,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 31,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L31",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L31",
               },
               "type": "(inp: string) => string",
@@ -1651,6 +1759,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 33,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L33",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L33",
               },
               "type": "(n: number, withoutSuffix: boolean, key: RelativeTimeKey, isFuture: boolean) => string",
@@ -1664,6 +1773,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 36,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L36",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L36",
               },
               "type": "(config: Object) => void",
@@ -1677,6 +1787,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 46,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L46",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L46",
               },
               "type": "(m: Moment) => number",
@@ -1690,6 +1801,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 50,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L50",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L50",
               },
               "type": "{ (): string[]; (m: Moment, format?: string): string; }",
@@ -1703,6 +1815,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 52,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L52",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L52",
               },
               "type": "{ (): string[]; (m: Moment): string; }",
@@ -1716,6 +1829,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 59,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L59",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L59",
               },
               "type": "(strict: boolean) => RegExp",
@@ -1729,6 +1843,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 56,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L56",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L56",
               },
               "type": "(weekdayName: string, format: string, strict: boolean) => number",
@@ -1742,6 +1857,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 57,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L57",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L57",
               },
               "type": "(strict: boolean) => RegExp",
@@ -1755,6 +1871,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 54,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L54",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L54",
               },
               "type": "{ (): string[]; (m: Moment): string; }",
@@ -1768,6 +1885,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 58,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L58",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L58",
               },
               "type": "(strict: boolean) => RegExp",
@@ -1780,6 +1898,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 24,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L24",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L24",
         },
       },
@@ -1800,6 +1919,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 168,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L168",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L168",
               },
             },
@@ -1817,6 +1937,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 157,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L157",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L157",
               },
               "type": "CalendarSpec",
@@ -1832,6 +1953,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 164,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L164",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L164",
               },
               "type": "EraSpec[]",
@@ -1847,6 +1969,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 159,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L159",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L159",
               },
               "type": "string",
@@ -1862,6 +1985,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 154,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L154",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L154",
               },
               "type": "(input: string) => boolean",
@@ -1877,6 +2001,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 156,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L156",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L156",
               },
               "type": "LongDateFormatSpec",
@@ -1892,6 +2017,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 152,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L152",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L152",
               },
               "type": "(hour: number, minute: number, isLower: boolean) => string",
@@ -1907,6 +2033,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 151,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L151",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L151",
               },
               "type": "RegExp",
@@ -1922,6 +2049,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 144,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L144",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L144",
               },
               "type": "string[] | StandaloneFormatSpec | MonthWeekdayFn",
@@ -1937,6 +2065,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 145,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L145",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L145",
               },
               "type": "string[] | StandaloneFormatSpec | MonthWeekdayFn",
@@ -1952,6 +2081,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 160,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L160",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L160",
               },
               "type": "(n: number) => string",
@@ -1967,6 +2097,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 161,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L161",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L161",
               },
               "type": "RegExp",
@@ -1982,6 +2113,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 158,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L158",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L158",
               },
               "type": "RelativeTimeSpec",
@@ -1997,6 +2129,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 163,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L163",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L163",
               },
               "type": "WeekSpec",
@@ -2012,6 +2145,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 147,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L147",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L147",
               },
               "type": "string[] | StandaloneFormatSpec | MonthWeekdayFn",
@@ -2027,6 +2161,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 149,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L149",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L149",
               },
               "type": "string[] | StandaloneFormatSpec | WeekdaySimpleFn",
@@ -2042,6 +2177,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 148,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L148",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L148",
               },
               "type": "string[] | StandaloneFormatSpec | WeekdaySimpleFn",
@@ -2053,6 +2189,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 143,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L143",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L143",
         },
       },
@@ -2077,6 +2214,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 126,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L126",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L126",
               },
               "type": "string",
@@ -2092,6 +2230,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 118,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L118",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L118",
               },
               "type": "string",
@@ -2107,6 +2246,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 127,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L127",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L127",
               },
               "type": "string",
@@ -2122,6 +2262,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 119,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L119",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L119",
               },
               "type": "string",
@@ -2137,6 +2278,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 128,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L128",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L128",
               },
               "type": "string",
@@ -2152,6 +2294,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 120,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L120",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L120",
               },
               "type": "string",
@@ -2167,6 +2310,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 129,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L129",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L129",
               },
               "type": "string",
@@ -2182,6 +2326,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 121,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L121",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L121",
               },
               "type": "string",
@@ -2197,6 +2342,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 125,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L125",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L125",
               },
               "type": "string",
@@ -2212,6 +2358,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 117,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L117",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L117",
               },
               "type": "string",
@@ -2227,6 +2374,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 124,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L124",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L124",
               },
               "type": "string",
@@ -2242,6 +2390,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 116,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L116",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L116",
               },
               "type": "string",
@@ -2253,6 +2402,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 115,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L115",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L115",
         },
       },
@@ -2281,6 +2431,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 460,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L460",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L460",
               },
               "type": "{ (amount?: DurationInputArg1, unit?: DurationInputArg2): Moment; (unit: unitOfTime.DurationConstructor, amount: string | number): Moment; }",
@@ -2298,6 +2449,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 472,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L472",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L472",
               },
               "type": "{ (): string; (formats: CalendarSpec): string; (time: MomentInput, formats?: CalendarSpec): string; }",
@@ -2311,6 +2463,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 476,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L476",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L476",
               },
               "type": "() => Moment",
@@ -2324,6 +2477,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 501,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L501",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L501",
               },
               "type": "() => MomentCreationData",
@@ -2337,6 +2491,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 532,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L532",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L532",
               },
               "type": "{ (d: number): Moment; (): number; }",
@@ -2357,6 +2512,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 537,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L537",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L537",
               },
               "type": "{ (d: number): Moment; (): number; }",
@@ -2370,6 +2526,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 528,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L528",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L528",
               },
               "type": "{ (d: number | string): Moment; (): number; }",
@@ -2383,6 +2540,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 578,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L578",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L578",
               },
               "type": "{ (): number; (d: number): Moment; }",
@@ -2396,6 +2554,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 530,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L530",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L530",
               },
               "type": "{ (d: number | string): Moment; (): number; }",
@@ -2409,6 +2568,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 604,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L604",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L604",
               },
               "type": "() => number",
@@ -2426,6 +2586,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 586,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L586",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L586",
               },
               "type": "(b: MomentInput, unitOfTime?: unitOfTime.Diff, precise?: boolean) => number",
@@ -2439,6 +2600,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 458,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L458",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L458",
               },
               "type": "(unitOfTime: unitOfTime.StartOf) => Moment",
@@ -2452,6 +2614,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 455,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L455",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L455",
               },
               "type": "(format?: string) => string",
@@ -2465,6 +2628,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 581,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L581",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L581",
               },
               "type": "(inp: MomentInput, suffix?: boolean) => string",
@@ -2478,6 +2642,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 583,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L583",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L583",
               },
               "type": "(withoutSuffix?: boolean) => string",
@@ -2491,6 +2656,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 656,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L656",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L656",
               },
               "type": "(unit: unitOfTime.All) => number",
@@ -2504,6 +2670,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 499,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L499",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L499",
               },
               "type": "(other?: MomentInput) => boolean",
@@ -2517,6 +2684,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 542,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L542",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L542",
               },
               "type": "{ (h: number): Moment; (): number; }",
@@ -2530,6 +2698,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 544,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L544",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L544",
               },
               "type": "{ (h: number): Moment; (): number; }",
@@ -2543,6 +2712,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 591,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L591",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L591",
               },
               "type": "() => string",
@@ -2556,6 +2726,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 497,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L497",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L497",
               },
               "type": "() => number",
@@ -2569,6 +2740,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 611,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L611",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L611",
               },
               "type": "(inp?: MomentInput, granularity?: unitOfTime.StartOf) => boolean",
@@ -2582,6 +2754,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 610,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L610",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L610",
               },
               "type": "(inp?: MomentInput, granularity?: unitOfTime.StartOf) => boolean",
@@ -2600,6 +2773,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 615,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L615",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L615",
               },
               "type": "(a: MomentInput, b: MomentInput, granularity?: unitOfTime.StartOf, inclusivity?: \\"()\\" | \\"[)\\" | \\"(]\\" | \\"[]\\") => boolean",
@@ -2613,6 +2787,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 605,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L605",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L605",
               },
               "type": "() => boolean",
@@ -2630,6 +2805,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 634,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L634",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L634",
               },
               "type": "() => boolean",
@@ -2643,6 +2819,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 595,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L595",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L595",
               },
               "type": "() => boolean",
@@ -2656,6 +2833,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 485,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L485",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L485",
               },
               "type": "() => boolean",
@@ -2669,6 +2847,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 570,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L570",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L570",
               },
               "type": "{ (): number; (d: number): Moment; }",
@@ -2682,6 +2861,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 560,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L560",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L560",
               },
               "type": "{ (): number; (d: string | number): Moment; }",
@@ -2695,6 +2875,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 572,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L572",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L572",
               },
               "type": "{ (): number; (d: number): Moment; }",
@@ -2708,6 +2889,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 577,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L577",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L577",
               },
               "type": "() => number",
@@ -2721,6 +2903,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 576,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L576",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L576",
               },
               "type": "() => number",
@@ -2734,6 +2917,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 564,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L564",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L564",
               },
               "type": "{ (): number; (d: number): Moment; }",
@@ -2747,6 +2931,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 612,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L612",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L612",
               },
               "type": "(inp?: MomentInput, granularity?: unitOfTime.StartOf) => boolean",
@@ -2760,6 +2945,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 613,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L613",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L613",
               },
               "type": "(inp?: MomentInput, granularity?: unitOfTime.StartOf) => boolean",
@@ -2773,6 +2959,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 614,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L614",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L614",
               },
               "type": "(inp?: MomentInput, granularity?: unitOfTime.StartOf) => boolean",
@@ -2790,6 +2977,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 493,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L493",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L493",
               },
               "type": "() => boolean",
@@ -2803,6 +2991,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 489,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L489",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L489",
               },
               "type": "() => boolean",
@@ -2816,6 +3005,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 603,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L603",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L603",
               },
               "type": "() => boolean",
@@ -2829,6 +3019,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 496,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L496",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L496",
               },
               "type": "() => boolean",
@@ -2846,6 +3037,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 620,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L620",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L620",
               },
               "type": "{ (language: LocaleSpecifier): Moment; (): Locale; }",
@@ -2859,6 +3051,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 484,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L484",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L484",
               },
               "type": "(keepLocalTime?: boolean) => Moment",
@@ -2872,6 +3065,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 626,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L626",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L626",
               },
               "type": "{ (): string; (locale: LocaleSpecifier): Moment; }",
@@ -2885,6 +3079,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 629,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L629",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L629",
               },
               "type": "() => Locale",
@@ -2914,6 +3109,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 640,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L640",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L640",
               },
               "type": "{ (inp?: MomentInput, format?: MomentFormatSpecification, strict?: boolean): Moment; (inp?: MomentInput, format?: MomentFormatSpecification, language?: string, strict?: boolean): Moment; }",
@@ -2927,6 +3123,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 554,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L554",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L554",
               },
               "type": "{ (ms: number): Moment; (): number; }",
@@ -2940,6 +3137,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 556,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L556",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L556",
               },
               "type": "{ (ms: number): Moment; (): number; }",
@@ -2969,6 +3167,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 650,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L650",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L650",
               },
               "type": "{ (inp?: MomentInput, format?: MomentFormatSpecification, strict?: boolean): Moment; (inp?: MomentInput, format?: MomentFormatSpecification, language?: string, strict?: boolean): Moment; }",
@@ -2982,6 +3181,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 546,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L546",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L546",
               },
               "type": "{ (m: number): Moment; (): number; }",
@@ -2995,6 +3195,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 548,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L548",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L548",
               },
               "type": "{ (m: number): Moment; (): number; }",
@@ -3008,6 +3209,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 518,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L518",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L518",
               },
               "type": "{ (M: number | string): Moment; (): number; }",
@@ -3028,6 +3230,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 523,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L523",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L523",
               },
               "type": "{ (M: number | string): Moment; (): number; }",
@@ -3041,6 +3244,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 495,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L495",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L495",
               },
               "type": "() => Moment",
@@ -3054,6 +3258,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 502,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L502",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L502",
               },
               "type": "() => MomentParsingFlags",
@@ -3067,6 +3272,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 514,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L514",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L514",
               },
               "type": "{ (): number; (q: number): Moment; }",
@@ -3080,6 +3286,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 516,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L516",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L516",
               },
               "type": "{ (): number; (q: number): Moment; }",
@@ -3093,6 +3300,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 550,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L550",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L550",
               },
               "type": "{ (s: number): Moment; (): number; }",
@@ -3106,6 +3314,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 552,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L552",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L552",
               },
               "type": "{ (s: number): Moment; (): number; }",
@@ -3122,6 +3331,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 657,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L657",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L657",
               },
               "type": "{ (unit: unitOfTime.All, value: number): Moment; (objectLiteral: MomentSetObject): Moment; }",
@@ -3135,6 +3345,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 457,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L457",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L457",
               },
               "type": "(unitOfTime: unitOfTime.StartOf) => Moment",
@@ -3155,6 +3366,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 466,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L466",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L466",
               },
               "type": "{ (amount?: DurationInputArg1, unit?: DurationInputArg2): Moment; (unit: unitOfTime.DurationConstructor, amount: string | number): Moment; }",
@@ -3168,6 +3380,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 582,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L582",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L582",
               },
               "type": "(inp: MomentInput, suffix?: boolean) => string",
@@ -3181,6 +3394,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 588,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L588",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L588",
               },
               "type": "() => number[]",
@@ -3194,6 +3408,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 589,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L589",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L589",
               },
               "type": "() => Date",
@@ -3207,6 +3422,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 590,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L590",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L590",
               },
               "type": "(keepOffset?: boolean) => string",
@@ -3220,6 +3436,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 592,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L592",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L592",
               },
               "type": "() => string",
@@ -3233,6 +3450,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 584,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L584",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L584",
               },
               "type": "(withoutPrefix?: boolean) => string",
@@ -3246,6 +3464,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 660,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L660",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L660",
               },
               "type": "() => MomentObjectOutput",
@@ -3259,6 +3478,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 593,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L593",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L593",
               },
               "type": "() => number",
@@ -3272,6 +3492,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 488,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L488",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L488",
               },
               "type": "(keepLocalTime?: boolean) => Moment",
@@ -3285,6 +3506,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 601,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L601",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L601",
               },
               "type": "{ (): number; (b: string | number, keepLocalTime?: boolean): Moment; }",
@@ -3302,6 +3524,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 481,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L481",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L481",
               },
               "type": "() => number",
@@ -3315,6 +3538,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 566,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L566",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L566",
               },
               "type": "{ (): number; (d: number): Moment; }",
@@ -3328,6 +3552,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 558,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L558",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L558",
               },
               "type": "{ (): number; (d: number): Moment; }",
@@ -3341,6 +3566,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 568,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L568",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L568",
               },
               "type": "{ (): number; (d: number): Moment; }",
@@ -3354,6 +3580,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 575,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L575",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L575",
               },
               "type": "() => number",
@@ -3367,6 +3594,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 574,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L574",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L574",
               },
               "type": "() => number",
@@ -3380,6 +3608,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 562,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L562",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L562",
               },
               "type": "{ (): number; (d: number): Moment; }",
@@ -3393,6 +3622,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 504,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L504",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L504",
               },
               "type": "{ (y: number): Moment; (): number; }",
@@ -3413,6 +3643,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 509,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L509",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L509",
               },
               "type": "{ (y: number): Moment; (): number; }",
@@ -3430,6 +3661,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 599,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L599",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L599",
               },
               "type": "{ (): number; (b: string | number): Moment; }",
@@ -3443,6 +3675,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 607,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L607",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L607",
               },
               "type": "() => string",
@@ -3456,6 +3689,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 608,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L608",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L608",
               },
               "type": "() => string",
@@ -3468,6 +3702,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 454,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L454",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L454",
         },
       },
@@ -3487,6 +3722,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 318,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L318",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L318",
         },
       },
@@ -3511,6 +3747,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 448,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L448",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L448",
               },
               "type": "MomentFormatSpecification",
@@ -3526,6 +3763,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 447,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L447",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L447",
               },
               "type": "MomentInput",
@@ -3541,6 +3779,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 450,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L450",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L450",
               },
               "type": "boolean",
@@ -3556,6 +3795,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 449,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L449",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L449",
               },
               "type": "Locale",
@@ -3571,6 +3811,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 451,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L451",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L451",
               },
               "type": "boolean",
@@ -3582,6 +3823,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 446,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L446",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L446",
         },
       },
@@ -3606,6 +3848,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 369,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L369",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L369",
               },
               "type": "numberlike",
@@ -3621,6 +3864,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 373,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L373",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L373",
               },
               "type": "numberlike",
@@ -3636,6 +3880,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 372,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L372",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L372",
               },
               "type": "numberlike",
@@ -3651,6 +3896,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 371,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L371",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L371",
               },
               "type": "numberlike",
@@ -3666,6 +3912,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 368,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L368",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L368",
               },
               "type": "numberlike",
@@ -3681,6 +3928,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 367,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L367",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L367",
               },
               "type": "numberlike",
@@ -3696,6 +3944,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 377,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L377",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L377",
               },
               "type": "numberlike",
@@ -3711,6 +3960,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 376,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L376",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L376",
               },
               "type": "numberlike",
@@ -3726,6 +3976,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 375,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L375",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L375",
               },
               "type": "numberlike",
@@ -3741,6 +3992,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 381,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L381",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L381",
               },
               "type": "numberlike",
@@ -3756,6 +4008,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 365,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L365",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L365",
               },
               "type": "numberlike",
@@ -3771,6 +4024,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 388,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L388",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L388",
               },
               "type": "numberlike",
@@ -3786,6 +4040,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 387,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L387",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L387",
               },
               "type": "numberlike",
@@ -3801,6 +4056,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 380,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L380",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L380",
               },
               "type": "numberlike",
@@ -3816,6 +4072,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 379,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L379",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L379",
               },
               "type": "numberlike",
@@ -3831,6 +4088,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 364,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L364",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L364",
               },
               "type": "numberlike",
@@ -3846,6 +4104,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 363,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L363",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L363",
               },
               "type": "numberlike",
@@ -3861,6 +4120,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 389,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L389",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L389",
               },
               "type": "numberlike",
@@ -3876,6 +4136,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 385,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L385",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L385",
               },
               "type": "numberlike",
@@ -3891,6 +4152,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 384,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L384",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L384",
               },
               "type": "numberlike",
@@ -3906,6 +4168,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 383,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L383",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L383",
               },
               "type": "numberlike",
@@ -3921,6 +4184,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 361,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L361",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L361",
               },
               "type": "numberlike",
@@ -3936,6 +4200,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 360,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L360",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L360",
               },
               "type": "numberlike",
@@ -3951,6 +4216,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 359,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L359",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L359",
               },
               "type": "numberlike",
@@ -3962,6 +4228,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 358,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L358",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L358",
         },
       },
@@ -3986,6 +4253,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 280,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L280",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L280",
               },
               "type": "string",
@@ -4001,6 +4269,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 273,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L273",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L273",
               },
               "type": "string",
@@ -4016,6 +4285,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 281,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L281",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L281",
               },
               "type": "string",
@@ -4031,6 +4301,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 274,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L274",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L274",
               },
               "type": "string",
@@ -4046,6 +4317,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 282,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L282",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L282",
               },
               "type": "string",
@@ -4061,6 +4333,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 275,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L275",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L275",
               },
               "type": "string",
@@ -4076,6 +4349,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 283,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L283",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L283",
               },
               "type": "string",
@@ -4091,6 +4365,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 276,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L276",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L276",
               },
               "type": "string",
@@ -4106,6 +4381,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 284,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L284",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L284",
               },
               "type": "string",
@@ -4121,6 +4397,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 277,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L277",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L277",
               },
               "type": "string",
@@ -4136,6 +4413,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 285,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L285",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L285",
               },
               "type": "string",
@@ -4151,6 +4429,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 278,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L278",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L278",
               },
               "type": "string",
@@ -4162,6 +4441,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 272,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L272",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L272",
         },
       },
@@ -4186,6 +4466,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 176,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L176",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L176",
               },
               "type": "number",
@@ -4201,6 +4482,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 177,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L177",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L177",
               },
               "type": "number",
@@ -4216,6 +4498,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 180,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L180",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L180",
               },
               "type": "number",
@@ -4231,6 +4514,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 178,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L178",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L178",
               },
               "type": "number",
@@ -4246,6 +4530,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 174,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L174",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L174",
               },
               "type": "number",
@@ -4261,6 +4546,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 179,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L179",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L179",
               },
               "type": "number",
@@ -4276,6 +4562,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 172,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L172",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L172",
               },
               "type": "number",
@@ -4287,6 +4574,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 171,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L171",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L171",
         },
       },
@@ -4311,6 +4599,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 293,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L293",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L293",
               },
               "type": "number",
@@ -4326,6 +4615,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 289,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L289",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L289",
               },
               "type": "boolean",
@@ -4341,6 +4631,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 296,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L296",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L296",
               },
               "type": "boolean",
@@ -4356,6 +4647,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 295,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L295",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L295",
               },
               "type": "string | void",
@@ -4371,6 +4663,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 298,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L298",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L298",
               },
               "type": "boolean",
@@ -4386,6 +4679,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 300,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L300",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L300",
               },
               "type": "string | void",
@@ -4401,6 +4695,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 294,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L294",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L294",
               },
               "type": "boolean",
@@ -4416,6 +4711,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 292,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L292",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L292",
               },
               "type": "number",
@@ -4431,6 +4727,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 299,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L299",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L299",
               },
               "type": "any[]",
@@ -4446,6 +4743,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 291,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L291",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L291",
               },
               "type": "string[]",
@@ -4461,6 +4759,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 290,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L290",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L290",
               },
               "type": "string[]",
@@ -4476,6 +4775,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 297,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L297",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L297",
               },
               "type": "boolean",
@@ -4487,6 +4787,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 288,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L288",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L288",
         },
       },
@@ -4511,6 +4812,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 308,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L308",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L308",
               },
               "type": "number",
@@ -4526,6 +4828,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 304,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L304",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L304",
               },
               "type": "boolean",
@@ -4541,6 +4844,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 311,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L311",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L311",
               },
               "type": "boolean",
@@ -4556,6 +4860,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 310,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L310",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L310",
               },
               "type": "string",
@@ -4571,6 +4876,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 313,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L313",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L313",
               },
               "type": "boolean",
@@ -4586,6 +4892,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 315,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L315",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L315",
               },
               "type": "string",
@@ -4601,6 +4908,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 309,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L309",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L309",
               },
               "type": "boolean",
@@ -4616,6 +4924,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 307,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L307",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L307",
               },
               "type": "number",
@@ -4631,6 +4940,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 314,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L314",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L314",
               },
               "type": "any[]",
@@ -4646,6 +4956,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 306,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L306",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L306",
               },
               "type": "string[]",
@@ -4661,6 +4972,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 305,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L305",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L305",
               },
               "type": "string[]",
@@ -4676,6 +4988,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 312,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L312",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L312",
               },
               "type": "boolean",
@@ -4687,6 +5000,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 303,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L303",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L303",
         },
       },
@@ -4711,6 +5025,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 264,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L264",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L264",
               },
               "type": "any",
@@ -4726,6 +5041,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 265,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L265",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L265",
               },
               "type": "any",
@@ -4741,6 +5057,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 256,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L256",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L256",
               },
               "type": "any",
@@ -4756,6 +5073,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 262,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L262",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L262",
               },
               "type": "any",
@@ -4771,6 +5089,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 263,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L263",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L263",
               },
               "type": "any",
@@ -4786,6 +5105,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 260,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L260",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L260",
               },
               "type": "any",
@@ -4801,6 +5121,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 266,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L266",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L266",
               },
               "type": "any",
@@ -4816,6 +5137,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 261,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L261",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L261",
               },
               "type": "any",
@@ -4831,6 +5153,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 267,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L267",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L267",
               },
               "type": "any",
@@ -4846,6 +5169,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 257,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L257",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L257",
               },
               "type": "any",
@@ -4861,6 +5185,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 258,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L258",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L258",
               },
               "type": "any",
@@ -4876,6 +5201,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 259,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L259",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L259",
               },
               "type": "any",
@@ -4891,6 +5217,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 268,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L268",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L268",
               },
               "type": "any",
@@ -4906,6 +5233,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 269,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L269",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L269",
               },
               "type": "any",
@@ -4917,6 +5245,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 255,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L255",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L255",
         },
       },
@@ -4941,6 +5270,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 424,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L424",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L424",
               },
               "type": "numberlike",
@@ -4956,6 +5286,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 423,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L423",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L423",
               },
               "type": "numberlike",
@@ -4971,6 +5302,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 425,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L425",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L425",
               },
               "type": "numberlike",
@@ -4986,6 +5318,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 429,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L429",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L429",
               },
               "type": "numberlike",
@@ -5001,6 +5334,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 433,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L433",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L433",
               },
               "type": "numberlike",
@@ -5016,6 +5350,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 405,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L405",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L405",
               },
               "type": "numberlike",
@@ -5031,6 +5366,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 409,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L409",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L409",
               },
               "type": "numberlike",
@@ -5046,6 +5382,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 420,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L420",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L420",
               },
               "type": "numberlike",
@@ -5061,6 +5398,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 432,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L432",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L432",
               },
               "type": "numberlike",
@@ -5076,6 +5414,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 431,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L431",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L431",
               },
               "type": "numberlike",
@@ -5091,6 +5430,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 419,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L419",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L419",
               },
               "type": "numberlike",
@@ -5106,6 +5446,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 408,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L408",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L408",
               },
               "type": "numberlike",
@@ -5121,6 +5462,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 407,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L407",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L407",
               },
               "type": "numberlike",
@@ -5136,6 +5478,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 413,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L413",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L413",
               },
               "type": "numberlike",
@@ -5151,6 +5494,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 412,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L412",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L412",
               },
               "type": "numberlike",
@@ -5166,6 +5510,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 411,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L411",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L411",
               },
               "type": "numberlike",
@@ -5181,6 +5526,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 417,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L417",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L417",
               },
               "type": "numberlike",
@@ -5196,6 +5542,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 421,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L421",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L421",
               },
               "type": "numberlike",
@@ -5211,6 +5558,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 416,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L416",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L416",
               },
               "type": "numberlike",
@@ -5226,6 +5574,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 428,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L428",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L428",
               },
               "type": "numberlike",
@@ -5241,6 +5590,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 427,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L427",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L427",
               },
               "type": "numberlike",
@@ -5256,6 +5606,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 415,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L415",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L415",
               },
               "type": "numberlike",
@@ -5271,6 +5622,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 404,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L404",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L404",
               },
               "type": "numberlike",
@@ -5286,6 +5638,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 403,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L403",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L403",
               },
               "type": "numberlike",
@@ -5297,6 +5650,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 402,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L402",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L402",
         },
       },
@@ -5321,6 +5675,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 105,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L105",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L105",
               },
               "type": "RelativeTimeSpecVal",
@@ -5336,6 +5691,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 106,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L106",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L106",
               },
               "type": "RelativeTimeSpecVal",
@@ -5351,6 +5707,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 97,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L97",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L97",
               },
               "type": "RelativeTimeFuturePastVal",
@@ -5366,6 +5723,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 103,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L103",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L103",
               },
               "type": "RelativeTimeSpecVal",
@@ -5381,6 +5739,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 104,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L104",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L104",
               },
               "type": "RelativeTimeSpecVal",
@@ -5396,6 +5755,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 101,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L101",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L101",
               },
               "type": "RelativeTimeSpecVal",
@@ -5411,6 +5771,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 109,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L109",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L109",
               },
               "type": "RelativeTimeSpecVal",
@@ -5426,6 +5787,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 102,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L102",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L102",
               },
               "type": "RelativeTimeSpecVal",
@@ -5441,6 +5803,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 110,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L110",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L110",
               },
               "type": "RelativeTimeSpecVal",
@@ -5456,6 +5819,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 98,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L98",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L98",
               },
               "type": "RelativeTimeFuturePastVal",
@@ -5471,6 +5835,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 99,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L99",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L99",
               },
               "type": "RelativeTimeSpecVal",
@@ -5486,6 +5851,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 100,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L100",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L100",
               },
               "type": "RelativeTimeSpecVal",
@@ -5501,6 +5867,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 107,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L107",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L107",
               },
               "type": "RelativeTimeSpecVal",
@@ -5516,6 +5883,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 108,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L108",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L108",
               },
               "type": "RelativeTimeSpecVal",
@@ -5531,6 +5899,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 111,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L111",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L111",
               },
               "type": "RelativeTimeSpecVal",
@@ -5546,6 +5915,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 112,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L112",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L112",
               },
               "type": "RelativeTimeSpecVal",
@@ -5557,6 +5927,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 96,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L96",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L96",
         },
       },
@@ -5581,6 +5952,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 66,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L66",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L66",
               },
               "type": "string[]",
@@ -5596,6 +5968,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 68,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L68",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L68",
               },
               "type": "RegExp",
@@ -5611,6 +5984,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 67,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L67",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L67",
               },
               "type": "string[]",
@@ -5622,6 +5996,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 65,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L65",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L65",
         },
       },
@@ -5646,6 +6021,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 72,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L72",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L72",
               },
               "type": "number",
@@ -5661,6 +6037,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 73,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L73",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L73",
               },
               "type": "number",
@@ -5672,6 +6049,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 71,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L71",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L71",
         },
       },
@@ -5713,6 +6091,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 349,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L349",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L349",
               },
             },
@@ -5749,6 +6128,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 325,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L325",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L325",
               },
             },
@@ -5761,6 +6141,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 345,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L345",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L345",
               },
             },
@@ -5773,6 +6154,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 341,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L341",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L341",
               },
             },
@@ -5785,6 +6167,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 339,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L339",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L339",
               },
             },
@@ -5797,6 +6180,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 347,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L347",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L347",
               },
             },
@@ -5809,6 +6193,7 @@ Object {
               "source": Object {
                 "filename": "moment.d.ts",
                 "line": 343,
+                "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L343",
                 "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L343",
               },
             },
@@ -5823,6 +6208,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 324,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L324",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L324",
         },
       },
@@ -5844,6 +6230,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 21,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L21",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L21",
         },
       },
@@ -5856,6 +6243,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 76,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L76",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L76",
         },
       },
@@ -5874,6 +6262,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 442,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L442",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L442",
         },
       },
@@ -5886,6 +6275,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 443,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L443",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L443",
         },
       },
@@ -5898,6 +6288,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 444,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L444",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L444",
         },
       },
@@ -5922,6 +6313,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 22,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L22",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L22",
         },
       },
@@ -5937,6 +6329,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 322,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L322",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L322",
         },
       },
@@ -5956,6 +6349,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 441,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L441",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L441",
         },
       },
@@ -5968,6 +6362,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 132,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L132",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L132",
         },
       },
@@ -5980,6 +6375,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 357,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L357",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L357",
         },
       },
@@ -5992,6 +6388,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 94,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L94",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L94",
         },
       },
@@ -6018,6 +6415,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 20,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L20",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L20",
         },
       },
@@ -6037,6 +6435,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 89,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L89",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L89",
         },
       },
@@ -6049,6 +6448,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 133,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L133",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L133",
         },
       },
@@ -6063,6 +6463,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 777,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L777",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L777",
         },
         "type": "string",
@@ -6077,6 +6478,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 778,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L778",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L778",
         },
         "type": "string",
@@ -6091,6 +6493,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 780,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L780",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L780",
         },
         "type": "void | ((name: string | void, msg: string) => void)",
@@ -6105,6 +6508,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 664,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L664",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L664",
         },
         "type": "Moment",
@@ -6129,6 +6533,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 782,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L782",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L782",
         },
         "type": "{ DATETIME_LOCAL: string; DATETIME_LOCAL_SECONDS: string; DATETIME_LOCAL_MS: string; DATE: string; TIME: string; TIME_SECONDS: string; TIME_MS: string; WEEK: string; MONTH: string; }",
@@ -6147,6 +6552,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 774,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L774",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L774",
         },
         "type": "MomentBuiltinFormat",
@@ -6161,6 +6567,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 775,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L775",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L775",
         },
         "type": "MomentBuiltinFormat",
@@ -6175,6 +6582,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 779,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L779",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L779",
         },
         "type": "boolean",
@@ -6189,6 +6597,7 @@ Object {
         "source": Object {
           "filename": "moment.d.ts",
           "line": 663,
+          "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts#L663",
           "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts#L663",
         },
         "type": "string",
@@ -6200,6 +6609,7 @@ Object {
     Object {
       "filename": "moment.d.ts",
       "isIndexFile": true,
+      "unpkgURL": "https://unpkg.com/browse/moment@2.29.1/moment.d.ts",
       "url": "https://github.com/moment/moment/tree/v2.29.1/moment.d.ts",
     },
   ],

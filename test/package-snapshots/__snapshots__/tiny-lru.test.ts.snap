@@ -22,6 +22,7 @@ Object {
                   "source": Object {
                     "filename": "tiny-lru.d.ts",
                     "line": 3,
+                    "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts#L3",
                     "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts#L3",
                   },
                 },
@@ -42,6 +43,7 @@ Object {
                     "source": Object {
                       "filename": "tiny-lru.d.ts",
                       "line": 8,
+                      "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts#L8",
                       "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts#L8",
                     },
                     "type": "() => this",
@@ -56,6 +58,7 @@ Object {
                     "source": Object {
                       "filename": "tiny-lru.d.ts",
                       "line": 9,
+                      "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts#L9",
                       "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts#L9",
                     },
                     "type": "(key: string) => this",
@@ -70,6 +73,7 @@ Object {
                     "source": Object {
                       "filename": "tiny-lru.d.ts",
                       "line": 10,
+                      "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts#L10",
                       "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts#L10",
                     },
                     "type": "() => this",
@@ -84,6 +88,7 @@ Object {
                     "source": Object {
                       "filename": "tiny-lru.d.ts",
                       "line": 6,
+                      "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts#L6",
                       "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts#L6",
                     },
                     "type": "(key: string) => T | undefined",
@@ -98,6 +103,7 @@ Object {
                     "source": Object {
                       "filename": "tiny-lru.d.ts",
                       "line": 5,
+                      "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts#L5",
                       "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts#L5",
                     },
                     "type": "(key: string) => boolean",
@@ -112,6 +118,7 @@ Object {
                     "source": Object {
                       "filename": "tiny-lru.d.ts",
                       "line": 11,
+                      "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts#L11",
                       "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts#L11",
                     },
                     "type": "() => string[]",
@@ -126,6 +133,7 @@ Object {
                     "source": Object {
                       "filename": "tiny-lru.d.ts",
                       "line": 7,
+                      "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts#L7",
                       "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts#L7",
                     },
                     "type": "(key: string, value: T, bypass?: boolean) => this",
@@ -138,6 +146,7 @@ Object {
               "source": Object {
                 "filename": "tiny-lru.d.ts",
                 "line": 2,
+                "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts#L2",
                 "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts#L2",
               },
             },
@@ -153,6 +162,7 @@ Object {
               "source": Object {
                 "filename": "tiny-lru.d.ts",
                 "line": 13,
+                "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts#L13",
                 "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts#L13",
               },
               "type": "<T = any>(max?: number, ttl?: number) => Lru<T>",
@@ -171,6 +181,7 @@ Object {
         "source": Object {
           "filename": "tiny-lru.d.ts",
           "line": 1,
+          "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts#L1",
           "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts#L1",
         },
       },
@@ -182,6 +193,7 @@ Object {
     Object {
       "filename": "tiny-lru.d.ts",
       "isIndexFile": true,
+      "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts",
       "url": "https://github.com/avoidwork/tiny-lru/tree/683f030c52af26041af3be3f42f5a99316651197/tiny-lru.d.ts",
     },
   ],

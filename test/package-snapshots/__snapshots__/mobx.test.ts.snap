@@ -19,6 +19,7 @@ Object {
             "source": Object {
               "filename": "src/types/observablemap.ts",
               "line": 97,
+              "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L97",
               "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L97",
             },
           },
@@ -39,6 +40,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 302,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L302",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L302",
               },
               "type": "() => IterableIterator<IMapEntry<K, V>>",
@@ -53,6 +55,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 329,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L329",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L329",
               },
               "type": "() => void",
@@ -67,6 +70,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 153,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L153",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L153",
               },
               "type": "(key: K) => boolean",
@@ -81,6 +85,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 288,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L288",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L288",
               },
               "type": "() => IterableIterator<IMapEntry<K, V>>",
@@ -98,6 +103,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 306,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L306",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L306",
               },
               "type": "(callback: (value: V, key: K, object: Map<K, V>) => void, thisArg?: any) => void",
@@ -112,6 +118,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 257,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L257",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L257",
               },
               "type": "(key: K) => V | undefined",
@@ -126,6 +133,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 115,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L115",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L115",
               },
               "type": "(key: K) => boolean",
@@ -140,6 +148,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 443,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L443",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L443",
               },
               "type": "(handler: IInterceptor<IMapWillChange<K, V>>) => Lambda",
@@ -154,6 +163,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 269,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L269",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L269",
               },
               "type": "() => IterableIterator<K>",
@@ -172,6 +182,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 311,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L311",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L311",
               },
               "type": "(other: ObservableMap<K, V> | IKeyValueMap<V> | any) => ObservableMap<K, V>",
@@ -195,6 +206,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 437,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L437",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L437",
               },
               "type": "(listener: (changes: IMapDidChange<K, V>) => void, fireImmediately?: boolean) => Lambda",
@@ -211,6 +223,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 337,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L337",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L337",
               },
               "type": "(values: ObservableMap<K, V> | IKeyValueMap<V> | any) => ObservableMap<K, V>",
@@ -225,6 +238,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 133,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L133",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L133",
               },
               "type": "(key: K, value: V) => this",
@@ -239,6 +253,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 424,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L424",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L424",
               },
               "type": "() => [K, V][]",
@@ -253,6 +268,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 420,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L420",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L420",
               },
               "type": "() => string",
@@ -267,6 +283,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 274,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L274",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L274",
               },
               "type": "() => IterableIterator<V>",
@@ -283,6 +300,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 89,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L89",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L89",
               },
               "type": "{}",
@@ -297,6 +315,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 428,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L428",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L428",
               },
               "type": "string",
@@ -311,6 +330,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 94,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L94",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L94",
               },
               "type": "any",
@@ -325,6 +345,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 90,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L90",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L90",
               },
               "type": "Map<K, ObservableValue<V>>",
@@ -339,6 +360,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 95,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L95",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L95",
               },
               "type": "any",
@@ -353,6 +375,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 99,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L99",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L99",
               },
               "type": "IEnhancer<V>",
@@ -367,6 +390,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 91,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L91",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L91",
               },
               "type": "Map<K, ObservableValue<boolean>>",
@@ -381,6 +405,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 93,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L93",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L93",
               },
               "type": "any",
@@ -395,6 +420,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 92,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L92",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L92",
               },
               "type": "IAtom",
@@ -409,6 +435,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 100,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L100",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L100",
               },
               "type": "string",
@@ -423,6 +450,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 415,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L415",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L415",
               },
               "type": "number",
@@ -435,6 +463,7 @@ Object {
         "source": Object {
           "filename": "src/types/observablemap.ts",
           "line": 87,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L87",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L87",
         },
       },
@@ -453,6 +482,7 @@ Object {
             "source": Object {
               "filename": "src/types/observableset.ts",
               "line": 74,
+              "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L74",
               "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L74",
             },
           },
@@ -473,6 +503,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observableset.ts",
                 "line": 263,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L263",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L263",
               },
               "type": "() => IterableIterator<T>",
@@ -487,6 +518,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observableset.ts",
                 "line": 115,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L115",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L115",
               },
               "type": "(value: T) => this",
@@ -501,6 +533,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observableset.ts",
                 "line": 96,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L96",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L96",
               },
               "type": "() => void",
@@ -515,6 +548,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observableset.ts",
                 "line": 152,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L152",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L152",
               },
               "type": "(value: any) => boolean",
@@ -529,6 +563,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observableset.ts",
                 "line": 192,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L192",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L192",
               },
               "type": "() => IterableIterator<[T, T]>",
@@ -546,6 +581,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observableset.ts",
                 "line": 104,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L104",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L104",
               },
               "type": "(callbackFn: (value: T, value2: T, set: Set<T>) => void, thisArg?: any) => void",
@@ -560,6 +596,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observableset.ts",
                 "line": 187,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L187",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L187",
               },
               "type": "(value: any) => boolean",
@@ -574,6 +611,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observableset.ts",
                 "line": 251,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L251",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L251",
               },
               "type": "(handler: IInterceptor<ISetWillChange<T>>) => Lambda",
@@ -588,6 +626,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observableset.ts",
                 "line": 207,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L207",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L207",
               },
               "type": "() => IterableIterator<T>",
@@ -605,6 +644,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observableset.ts",
                 "line": 244,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L244",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L244",
               },
               "type": "(listener: (changes: ISetDidChange<T>) => void, fireImmediately?: boolean) => Lambda",
@@ -621,6 +661,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observableset.ts",
                 "line": 225,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L225",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L225",
               },
               "type": "(other: ObservableSet<T> | IObservableSetInitialValues<T>) => ObservableSet<T>",
@@ -635,6 +676,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observableset.ts",
                 "line": 255,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L255",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L255",
               },
               "type": "() => T[]",
@@ -649,6 +691,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observableset.ts",
                 "line": 259,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L259",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L259",
               },
               "type": "() => string",
@@ -663,6 +706,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observableset.ts",
                 "line": 211,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L211",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L211",
               },
               "type": "() => IterableIterator<T>",
@@ -679,6 +723,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observableset.ts",
                 "line": 66,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L66",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L66",
               },
               "type": "{}",
@@ -693,6 +738,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observableset.ts",
                 "line": 267,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L267",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L267",
               },
               "type": "string",
@@ -707,6 +753,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observableset.ts",
                 "line": 69,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L69",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L69",
               },
               "type": "any",
@@ -721,6 +768,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observableset.ts",
                 "line": 71,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L71",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L71",
               },
               "type": "any",
@@ -735,6 +783,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observableset.ts",
                 "line": 72,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L72",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L72",
               },
               "type": "(newV: any, oldV: any | undefined) => any",
@@ -749,6 +798,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observableset.ts",
                 "line": 70,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L70",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L70",
               },
               "type": "any",
@@ -763,6 +813,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observableset.ts",
                 "line": 77,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L77",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L77",
               },
               "type": "string",
@@ -777,6 +828,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observableset.ts",
                 "line": 110,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L110",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L110",
               },
               "type": "number",
@@ -789,6 +841,7 @@ Object {
         "source": Object {
           "filename": "src/types/observableset.ts",
           "line": 65,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L65",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L65",
         },
       },
@@ -808,6 +861,7 @@ Object {
             "source": Object {
               "filename": "src/core/reaction.ts",
               "line": 67,
+              "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L67",
               "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L67",
             },
           },
@@ -828,6 +882,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 183,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L183",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L183",
               },
               "type": "() => void",
@@ -842,6 +897,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 195,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L195",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L195",
               },
               "type": "() => IReactionDisposer",
@@ -856,6 +912,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 86,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L86",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L86",
               },
               "type": "() => boolean",
@@ -870,6 +927,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 74,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L74",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L74",
               },
               "type": "() => void",
@@ -884,6 +942,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 155,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L155",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L155",
               },
               "type": "(error: any) => void",
@@ -902,6 +961,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 93,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L93",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L93",
               },
               "type": "() => void",
@@ -916,6 +976,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 78,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L78",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L78",
               },
               "type": "() => void",
@@ -930,6 +991,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 201,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L201",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L201",
               },
               "type": "() => string",
@@ -944,6 +1006,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 205,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L205",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L205",
               },
               "type": "(enterBreakPoint?: boolean) => void",
@@ -958,6 +1021,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 120,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L120",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L120",
               },
               "type": "(fn: () => void) => void",
@@ -974,6 +1038,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 56,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L56",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L56",
               },
               "type": "IDerivationState_",
@@ -988,6 +1053,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 57,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L57",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L57",
               },
               "type": "number",
@@ -1002,6 +1068,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 61,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L61",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L61",
               },
               "type": "boolean",
@@ -1016,6 +1083,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 64,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L64",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L64",
               },
               "type": "boolean",
@@ -1030,6 +1098,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 62,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L62",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L62",
               },
               "type": "boolean",
@@ -1044,6 +1113,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 65,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L65",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L65",
               },
               "type": "TraceMode",
@@ -1058,6 +1128,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 63,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L63",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L63",
               },
               "type": "boolean",
@@ -1072,6 +1143,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 60,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L60",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L60",
               },
               "type": "string",
@@ -1086,6 +1158,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 68,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L68",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L68",
               },
               "type": "string",
@@ -1100,6 +1173,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 55,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L55",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L55",
               },
               "type": "IObservable[]",
@@ -1114,6 +1188,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 54,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L54",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L54",
               },
               "type": "IObservable[]",
@@ -1128,6 +1203,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 71,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L71",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L71",
               },
               "type": "boolean",
@@ -1142,6 +1218,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 58,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L58",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L58",
               },
               "type": "number",
@@ -1156,6 +1233,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 59,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L59",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L59",
               },
               "type": "number",
@@ -1167,6 +1245,7 @@ Object {
         "source": Object {
           "filename": "src/core/reaction.ts",
           "line": 53,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L53",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L53",
         },
       },
@@ -1192,6 +1271,7 @@ Object {
         "source": Object {
           "filename": "src/api/autorun.ts",
           "line": 36,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/autorun.ts#L36",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/autorun.ts#L36",
         },
         "type": "(view: (r: IReactionPublic) => any, opts?: IAutorunOptions) => IReactionDisposer",
@@ -1214,6 +1294,7 @@ Object {
         "source": Object {
           "filename": "src/api/configure.ts",
           "line": 8,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/configure.ts#L8",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/configure.ts#L8",
         },
         "type": "(options: { enforceActions?: \\"never\\" | \\"always\\" | \\"observed\\"; computedRequiresReaction?: boolean; reactionRequiresObservable?: boolean; observableRequiresReaction?: boolean; isolateGlobalState?: boolean; disableErrorBoundaries?: boolean; reactionScheduler?: (f: () => void) => void; useProxies?: \\"always\\" | \\"never\\" | \\"ifavailable\\"; }) => void",
@@ -1231,6 +1312,7 @@ Object {
         "source": Object {
           "filename": "src/core/atom.ts",
           "line": 79,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/atom.ts#L79",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/atom.ts#L79",
         },
         "type": "(name: string, onBecomeObservedHandler?: () => void, onBecomeUnobservedHandler?: () => void) => IAtom",
@@ -1249,6 +1331,7 @@ Object {
         "source": Object {
           "filename": "src/api/object-api.ts",
           "line": 63,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/object-api.ts#L63",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/object-api.ts#L63",
         },
         "type": "{ <K, T>(map: ObservableMap<K, T>): readonly [K, T][]; <T>(set: ObservableSet<T>): readonly [T, T][]; <T>(ar: IObservableArray<T>): readonly [number, T][]; <T = any>(obj: T): readonly [string, T extends object ? T[keyof T] : any][]; }",
@@ -1267,6 +1350,7 @@ Object {
         "source": Object {
           "filename": "src/api/extendobservable.ts",
           "line": 18,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/extendobservable.ts#L18",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/extendobservable.ts#L18",
         },
         "type": "<A extends Object, B extends Object>(target: A, properties: B, annotations?: AnnotationsMap<B, never>, options?: CreateObservableOptions) => A & B",
@@ -1280,6 +1364,7 @@ Object {
         "source": Object {
           "filename": "src/api/flow.ts",
           "line": 7,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/flow.ts#L7",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/flow.ts#L7",
         },
         "type": "typeof FlowCancellationError",
@@ -1299,6 +1384,7 @@ Object {
         "source": Object {
           "filename": "src/api/flow.ts",
           "line": 121,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/flow.ts#L121",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/flow.ts#L121",
         },
         "type": "<T>(result: T) => T extends Generator<any, infer R, any> ? CancellablePromise<R> : T extends CancellablePromise<any> ? T : never",
@@ -1316,6 +1402,7 @@ Object {
         "source": Object {
           "filename": "src/api/object-api.ts",
           "line": 158,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/object-api.ts#L158",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/object-api.ts#L158",
         },
         "type": "{ <K, V>(obj: ObservableMap<K, V>, key: K): V; <T>(obj: IObservableArray<T>, index: number): T; <T extends Object>(obj: T, key: string): any; }",
@@ -1329,6 +1416,7 @@ Object {
         "source": Object {
           "filename": "src/types/type-utils.ts",
           "line": 15,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/type-utils.ts#L15",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/type-utils.ts#L15",
         },
         "type": "(thing: any, property?: string) => IDepTreeNode",
@@ -1342,6 +1430,7 @@ Object {
         "source": Object {
           "filename": "src/types/type-utils.ts",
           "line": 58,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/type-utils.ts#L58",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/type-utils.ts#L58",
         },
         "type": "(thing: any, property?: string) => string",
@@ -1355,6 +1444,7 @@ Object {
         "source": Object {
           "filename": "src/api/extras.ts",
           "line": 13,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/extras.ts#L13",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/extras.ts#L13",
         },
         "type": "(thing: any, property?: string) => IDependencyTree",
@@ -1368,6 +1458,7 @@ Object {
         "source": Object {
           "filename": "src/api/extras.ts",
           "line": 26,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/extras.ts#L26",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/extras.ts#L26",
         },
         "type": "(thing: any, property?: string) => IObserverTree",
@@ -1386,6 +1477,7 @@ Object {
         "source": Object {
           "filename": "src/api/object-api.ts",
           "line": 141,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/object-api.ts#L141",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/object-api.ts#L141",
         },
         "type": "{ <K>(obj: ObservableMap<K, any>, key: K): boolean; <T>(obj: ObservableSet<T>, key: T): boolean; <T>(obj: IObservableArray<T>, index: number): boolean; <T extends Object>(obj: T, key: string): boolean; }",
@@ -1427,6 +1519,7 @@ Object {
         "source": Object {
           "filename": "src/api/intercept.ts",
           "line": 45,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/intercept.ts#L45",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/intercept.ts#L45",
         },
         "type": "{ <T>(value: IObservableValue<T>, handler: IInterceptor<IValueWillChange<T>>): Lambda; <T>(observableArray: IObservableArray<T>, handler: IInterceptor<IArrayWillChange<T> | IArrayWillSplice<T>>): Lambda; <K, V>(observableMap: ObservableMap<K, V>, handler: IInterceptor<IMapWillChange<K, V>>): Lambda; <V>(observableMap: ObservableSet<V>, handler: IInterceptor<ISetWillChange<V>>): Lambda; <K, V>(observableMap: ObservableMap<K, V>, property: K, handler: IInterceptor<IValueWillChange<V>>): Lambda; (object: Object, handler: IInterceptor<IObjectWillChange<any>>): Lambda; <T extends Object, K extends keyof T>(object: T, property: K, handler: IInterceptor<IValueWillChange<any>>): Lambda; }",
@@ -1440,6 +1533,7 @@ Object {
         "source": Object {
           "filename": "src/api/action.ts",
           "line": 71,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/action.ts#L71",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/action.ts#L71",
         },
         "type": "(thing: any) => boolean",
@@ -1453,6 +1547,7 @@ Object {
         "source": Object {
           "filename": "src/api/iscomputed.ts",
           "line": 13,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/iscomputed.ts#L13",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/iscomputed.ts#L13",
         },
         "type": "(value: any) => boolean",
@@ -1466,6 +1561,7 @@ Object {
         "source": Object {
           "filename": "src/api/iscomputed.ts",
           "line": 21,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/iscomputed.ts#L21",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/iscomputed.ts#L21",
         },
         "type": "(value: any, propName: string) => boolean",
@@ -1479,6 +1575,7 @@ Object {
         "source": Object {
           "filename": "src/api/flow.ts",
           "line": 12,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/flow.ts#L12",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/flow.ts#L12",
         },
         "type": "(error: Error) => boolean",
@@ -1492,6 +1589,7 @@ Object {
         "source": Object {
           "filename": "src/api/isobservable.ts",
           "line": 35,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/isobservable.ts#L35",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/isobservable.ts#L35",
         },
         "type": "(value: any) => boolean",
@@ -1505,6 +1603,7 @@ Object {
         "source": Object {
           "filename": "src/types/observablearray.ts",
           "line": 530,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L530",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L530",
         },
         "type": "(thing: any) => thing is IObservableArray<any>",
@@ -1518,6 +1617,7 @@ Object {
         "source": Object {
           "filename": "src/types/observableobject.ts",
           "line": 386,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableobject.ts#L386",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableobject.ts#L386",
         },
         "type": "(thing: any) => boolean",
@@ -1531,6 +1631,7 @@ Object {
         "source": Object {
           "filename": "src/api/isobservable.ts",
           "line": 43,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/isobservable.ts#L43",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/isobservable.ts#L43",
         },
         "type": "(value: any, propName: string) => boolean",
@@ -1549,6 +1650,7 @@ Object {
         "source": Object {
           "filename": "src/api/object-api.ts",
           "line": 22,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/object-api.ts#L22",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/object-api.ts#L22",
         },
         "type": "{ <K>(map: ObservableMap<K, any>): readonly K[]; <T>(ar: IObservableArray<T>): readonly number[]; <T>(set: ObservableSet<T>): readonly T[]; <T extends Object>(obj: T): readonly PropertyKey[]; }",
@@ -1569,6 +1671,7 @@ Object {
         "source": Object {
           "filename": "src/api/makeObservable.ts",
           "line": 223,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/makeObservable.ts#L223",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/makeObservable.ts#L223",
         },
         "type": "<T extends Object, AdditionalKeys extends PropertyKey = never>(target: T, overrides?: AnnotationsMap<T, NoInfer<AdditionalKeys>>, options?: CreateObservableOptions) => T",
@@ -1586,6 +1689,7 @@ Object {
         "source": Object {
           "filename": "src/api/makeObservable.ts",
           "line": 190,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/makeObservable.ts#L190",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/makeObservable.ts#L190",
         },
         "type": "<T, AdditionalKeys extends PropertyKey = never>(target: T, annotations?: AnnotationsMap<T, NoInfer<AdditionalKeys>>, options?: CreateObservableOptions) => T",
@@ -1637,6 +1741,7 @@ Object {
         "source": Object {
           "filename": "src/api/observe.ts",
           "line": 54,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/observe.ts#L54",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observe.ts#L54",
         },
         "type": "{ <T>(value: IObservableValue<T> | IComputedValue<T>, listener: (change: IValueDidChange<T>) => void, fireImmediately?: boolean): Lambda; <T>(observableArray: IObservableArray<T>, listener: (change: IArrayDidChange<T>) => void, fireImmediately?: boolean): Lambda; <V>(observableMap: ObservableSet<V>, listener: (change: ISetDidChange<V>) => void, fireImmediately?: boolean): Lambda; <K, V>(observableMap: ObservableMap<K, V>, listener: (change: IMapDidChange<K, V>) => void, fireImmediately?: boolean): Lambda; <K, V>(observableMap: ObservableMap<K, V>, property: K, listener: (change: IValueDidChange<V>) => void, fireImmediately?: boolean): Lambda; (object: Object, listener: (change: IObjectDidChange<any>) => void, fireImmediately?: boolean): Lambda; <T, K extends keyof T>(object: T, property: K, listener: (change: IValueDidChange<T[K]>) => void, fireImmediately?: boolean): Lambda; }",
@@ -1666,6 +1771,7 @@ Object {
         "source": Object {
           "filename": "src/api/become-observed.ts",
           "line": 31,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/become-observed.ts#L31",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/become-observed.ts#L31",
         },
         "type": "{ (value: IObservable | IObservableValue<any> | IObservableArray<any> | ObservableMap<any, any> | ObservableSet<any> | IComputedValue<any>, listener: Lambda): Lambda; <K, V = any>(value: Object | ObservableMap<K, V>, property: K, listener: Lambda): Lambda; }",
@@ -1695,6 +1801,7 @@ Object {
         "source": Object {
           "filename": "src/api/become-observed.ts",
           "line": 50,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/become-observed.ts#L50",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/become-observed.ts#L50",
         },
         "type": "{ (value: IObservable | IObservableValue<any> | IObservableArray<any> | ObservableMap<any, any> | ObservableSet<any> | IComputedValue<any>, listener: Lambda): Lambda; <K, V = any>(value: Object | ObservableMap<K, V>, property: K, listener: Lambda): Lambda; }",
@@ -1710,6 +1817,7 @@ Object {
         "source": Object {
           "filename": "src/core/reaction.ts",
           "line": 210,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L210",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L210",
         },
         "type": "(handler: (error: any, derivation: IDerivation) => void) => Lambda",
@@ -1727,6 +1835,7 @@ Object {
         "source": Object {
           "filename": "src/api/autorun.ts",
           "line": 103,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/autorun.ts#L103",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/autorun.ts#L103",
         },
         "type": "<T>(expression: (r: IReactionPublic) => T, effect: (arg: T, prev: T, r: IReactionPublic) => void, opts?: IReactionOptions) => IReactionDisposer",
@@ -1745,6 +1854,7 @@ Object {
         "source": Object {
           "filename": "src/api/object-api.ts",
           "line": 122,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/object-api.ts#L122",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/object-api.ts#L122",
         },
         "type": "{ <K, V>(obj: ObservableMap<K, V>, key: K): any; <T>(obj: ObservableSet<T>, key: T): any; <T>(obj: IObservableArray<T>, index: number): any; <T extends Object>(obj: T, key: string): any; }",
@@ -1758,6 +1868,7 @@ Object {
         "source": Object {
           "filename": "src/api/action.ts",
           "line": 67,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/action.ts#L67",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/action.ts#L67",
         },
         "type": "<T>(fn: () => T) => T",
@@ -1778,6 +1889,7 @@ Object {
         "source": Object {
           "filename": "src/api/object-api.ts",
           "line": 85,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/object-api.ts#L85",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/object-api.ts#L85",
         },
         "type": "{ <V>(obj: ObservableMap<PropertyKey, V>, values: { [key: string]: V; }): any; <K, V>(obj: ObservableMap<K, V>, key: K, value: V): any; <T>(obj: ObservableSet<T>, value: T): any; <T>(obj: IObservableArray<T>, index: number, value: T): any; <T extends Object>(obj: T, values: { [key: string]: any; }): any; <T extends Object>(obj: T, key: PropertyKey, value: any): any; }",
@@ -1791,6 +1903,7 @@ Object {
         "source": Object {
           "filename": "src/core/spy.ts",
           "line": 48,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/spy.ts#L48",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/spy.ts#L48",
         },
         "type": "(listener: (change: SpyEvent) => void) => Lambda",
@@ -1808,6 +1921,7 @@ Object {
         "source": Object {
           "filename": "src/api/tojs.ts",
           "line": 64,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/tojs.ts#L64",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/tojs.ts#L64",
         },
         "type": "<T>(source: T, options?: any) => T",
@@ -1825,6 +1939,7 @@ Object {
         "source": Object {
           "filename": "src/api/trace.ts",
           "line": 6,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/trace.ts#L6",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/trace.ts#L6",
         },
         "type": "{ (thing?: any, prop?: string, enterBreakPoint?: boolean): void; (thing?: any, enterBreakPoint?: boolean): void; (enterBreakPoint?: boolean): void; }",
@@ -1846,6 +1961,7 @@ Object {
         "source": Object {
           "filename": "src/api/transaction.ts",
           "line": 10,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/transaction.ts#L10",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/transaction.ts#L10",
         },
         "type": "<T>(action: () => T, thisArg?: any) => T",
@@ -1859,6 +1975,7 @@ Object {
         "source": Object {
           "filename": "src/core/derivation.ts",
           "line": 279,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/derivation.ts#L279",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/derivation.ts#L279",
         },
         "type": "<T>(action: () => T) => T",
@@ -1877,6 +1994,7 @@ Object {
         "source": Object {
           "filename": "src/api/object-api.ts",
           "line": 41,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/object-api.ts#L41",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/object-api.ts#L41",
         },
         "type": "{ <K, T>(map: ObservableMap<K, T>): readonly T[]; <T>(set: ObservableSet<T>): readonly T[]; <T>(ar: IObservableArray<T>): readonly T[]; <T = any>(obj: T): readonly (T extends object ? T[keyof T] : any)[]; }",
@@ -1899,6 +2017,7 @@ Object {
         "source": Object {
           "filename": "src/api/when.ts",
           "line": 27,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/when.ts#L27",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/when.ts#L27",
         },
         "type": "{ (predicate: () => boolean, opts?: IWhenOptions): Promise<void> & { cancel(): void; }; (predicate: () => boolean, effect: Lambda, opts?: IWhenOptions): IReactionDisposer; }",
@@ -1920,6 +2039,7 @@ Object {
               "source": Object {
                 "filename": "src/api/action.ts",
                 "line": 22,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/action.ts#L22",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/action.ts#L22",
               },
             },
@@ -1932,6 +2052,7 @@ Object {
               "source": Object {
                 "filename": "src/api/action.ts",
                 "line": 24,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/action.ts#L24",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/action.ts#L24",
               },
             },
@@ -1944,6 +2065,7 @@ Object {
               "source": Object {
                 "filename": "src/api/action.ts",
                 "line": 27,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/action.ts#L27",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/action.ts#L27",
               },
             },
@@ -1963,6 +2085,7 @@ Object {
               "source": Object {
                 "filename": "src/api/action.ts",
                 "line": 30,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/action.ts#L30",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/action.ts#L30",
               },
               "type": "IBoundActionFactory",
@@ -1974,6 +2097,7 @@ Object {
         "source": Object {
           "filename": "src/api/action.ts",
           "line": 20,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/action.ts#L20",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/action.ts#L20",
         },
       },
@@ -1998,6 +2122,7 @@ Object {
               "source": Object {
                 "filename": "src/core/action.ts",
                 "line": 82,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/action.ts#L82",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/action.ts#L82",
               },
               "type": "number",
@@ -2013,6 +2138,7 @@ Object {
               "source": Object {
                 "filename": "src/core/action.ts",
                 "line": 80,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/action.ts#L80",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/action.ts#L80",
               },
               "type": "any",
@@ -2028,6 +2154,7 @@ Object {
               "source": Object {
                 "filename": "src/core/action.ts",
                 "line": 78,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/action.ts#L78",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/action.ts#L78",
               },
               "type": "boolean",
@@ -2043,6 +2170,7 @@ Object {
               "source": Object {
                 "filename": "src/core/action.ts",
                 "line": 81,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/action.ts#L81",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/action.ts#L81",
               },
               "type": "number",
@@ -2058,6 +2186,7 @@ Object {
               "source": Object {
                 "filename": "src/core/action.ts",
                 "line": 76,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/action.ts#L76",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/action.ts#L76",
               },
               "type": "boolean",
@@ -2073,6 +2202,7 @@ Object {
               "source": Object {
                 "filename": "src/core/action.ts",
                 "line": 77,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/action.ts#L77",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/action.ts#L77",
               },
               "type": "boolean",
@@ -2088,6 +2218,7 @@ Object {
               "source": Object {
                 "filename": "src/core/action.ts",
                 "line": 75,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/action.ts#L75",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/action.ts#L75",
               },
               "type": "IDerivation",
@@ -2103,6 +2234,7 @@ Object {
               "source": Object {
                 "filename": "src/core/action.ts",
                 "line": 83,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/action.ts#L83",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/action.ts#L83",
               },
               "type": "boolean",
@@ -2118,6 +2250,7 @@ Object {
               "source": Object {
                 "filename": "src/core/action.ts",
                 "line": 79,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/action.ts#L79",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/action.ts#L79",
               },
               "type": "number",
@@ -2129,6 +2262,7 @@ Object {
         "source": Object {
           "filename": "src/core/action.ts",
           "line": 74,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/action.ts#L74",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/action.ts#L74",
         },
       },
@@ -2153,6 +2287,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablearray.ts",
                 "line": 63,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L63",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L63",
               },
               "type": "T[]",
@@ -2168,6 +2303,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablearray.ts",
                 "line": 64,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L64",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L64",
               },
               "type": "number",
@@ -2183,6 +2319,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablearray.ts",
                 "line": 65,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L65",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L65",
               },
               "type": "T[]",
@@ -2198,6 +2335,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablearray.ts",
                 "line": 66,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L66",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L66",
               },
               "type": "number",
@@ -2213,6 +2351,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablearray.ts",
                 "line": 62,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L62",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L62",
               },
               "type": "string",
@@ -2224,6 +2363,7 @@ Object {
         "source": Object {
           "filename": "src/types/observablearray.ts",
           "line": 61,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L61",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L61",
         },
       },
@@ -2248,6 +2388,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablearray.ts",
                 "line": 57,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L57",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L57",
               },
               "type": "{}",
@@ -2263,6 +2404,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablearray.ts",
                 "line": 58,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L58",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L58",
               },
               "type": "{}",
@@ -2278,6 +2420,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablearray.ts",
                 "line": 56,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L56",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L56",
               },
               "type": "string",
@@ -2289,6 +2432,7 @@ Object {
         "source": Object {
           "filename": "src/types/observablearray.ts",
           "line": 55,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L55",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L55",
         },
       },
@@ -2313,6 +2457,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablearray.ts",
                 "line": 71,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L71",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L71",
               },
               "type": "number",
@@ -2328,6 +2473,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablearray.ts",
                 "line": 73,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L73",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L73",
               },
               "type": "{}",
@@ -2343,6 +2489,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablearray.ts",
                 "line": 70,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L70",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L70",
               },
               "type": "IObservableArray<T>",
@@ -2358,6 +2505,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablearray.ts",
                 "line": 72,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L72",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L72",
               },
               "type": "string",
@@ -2369,6 +2517,7 @@ Object {
         "source": Object {
           "filename": "src/types/observablearray.ts",
           "line": 69,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L69",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L69",
         },
       },
@@ -2393,6 +2542,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablearray.ts",
                 "line": 80,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L80",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L80",
               },
               "type": "T[]",
@@ -2408,6 +2558,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablearray.ts",
                 "line": 78,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L78",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L78",
               },
               "type": "number",
@@ -2423,6 +2574,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablearray.ts",
                 "line": 77,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L77",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L77",
               },
               "type": "IObservableArray<T>",
@@ -2438,6 +2590,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablearray.ts",
                 "line": 81,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L81",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L81",
               },
               "type": "number",
@@ -2453,6 +2606,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablearray.ts",
                 "line": 79,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L79",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L79",
               },
               "type": "string",
@@ -2464,6 +2618,7 @@ Object {
         "source": Object {
           "filename": "src/types/observablearray.ts",
           "line": 76,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L76",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L76",
         },
       },
@@ -2485,6 +2640,7 @@ Object {
               "source": Object {
                 "filename": "src/core/atom.ts",
                 "line": 21,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/atom.ts#L21",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/atom.ts#L21",
               },
               "type": "() => any",
@@ -2498,6 +2654,7 @@ Object {
               "source": Object {
                 "filename": "src/core/atom.ts",
                 "line": 20,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/atom.ts#L20",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/atom.ts#L20",
               },
               "type": "() => any",
@@ -2510,6 +2667,7 @@ Object {
         "source": Object {
           "filename": "src/core/atom.ts",
           "line": 19,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/atom.ts#L19",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/atom.ts#L19",
         },
       },
@@ -2534,6 +2692,7 @@ Object {
               "source": Object {
                 "filename": "src/api/autorun.ts",
                 "line": 19,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/autorun.ts#L19",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/autorun.ts#L19",
               },
               "type": "number",
@@ -2549,6 +2708,7 @@ Object {
               "source": Object {
                 "filename": "src/api/autorun.ts",
                 "line": 20,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/autorun.ts#L20",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/autorun.ts#L20",
               },
               "type": "string",
@@ -2564,6 +2724,7 @@ Object {
               "source": Object {
                 "filename": "src/api/autorun.ts",
                 "line": 27,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/autorun.ts#L27",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/autorun.ts#L27",
               },
               "type": "(error: any) => void",
@@ -2584,6 +2745,7 @@ Object {
               "source": Object {
                 "filename": "src/api/autorun.ts",
                 "line": 25,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/autorun.ts#L25",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/autorun.ts#L25",
               },
               "type": "boolean",
@@ -2599,6 +2761,7 @@ Object {
               "source": Object {
                 "filename": "src/api/autorun.ts",
                 "line": 26,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/autorun.ts#L26",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/autorun.ts#L26",
               },
               "type": "(callback: () => void) => any",
@@ -2610,6 +2773,7 @@ Object {
         "source": Object {
           "filename": "src/api/autorun.ts",
           "line": 18,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/autorun.ts#L18",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/autorun.ts#L18",
         },
       },
@@ -2631,6 +2795,7 @@ Object {
               "source": Object {
                 "filename": "src/core/computedvalue.ts",
                 "line": 36,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/computedvalue.ts#L36",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L36",
               },
               "type": "() => T",
@@ -2647,6 +2812,7 @@ Object {
               "source": Object {
                 "filename": "src/core/computedvalue.ts",
                 "line": 38,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/computedvalue.ts#L38",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L38",
               },
               "type": "(listener: (change: IComputedDidChange<T>) => void, fireImmediately?: boolean) => Lambda",
@@ -2660,6 +2826,7 @@ Object {
               "source": Object {
                 "filename": "src/core/computedvalue.ts",
                 "line": 37,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/computedvalue.ts#L37",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L37",
               },
               "type": "(value: T) => void",
@@ -2672,6 +2839,7 @@ Object {
         "source": Object {
           "filename": "src/core/computedvalue.ts",
           "line": 35,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/computedvalue.ts#L35",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L35",
         },
       },
@@ -2696,6 +2864,7 @@ Object {
               "source": Object {
                 "filename": "src/core/computedvalue.ts",
                 "line": 46,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/computedvalue.ts#L46",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L46",
               },
               "type": "any",
@@ -2711,6 +2880,7 @@ Object {
               "source": Object {
                 "filename": "src/core/computedvalue.ts",
                 "line": 45,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/computedvalue.ts#L45",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L45",
               },
               "type": "IEqualsComparer<T>",
@@ -2726,6 +2896,7 @@ Object {
               "source": Object {
                 "filename": "src/core/computedvalue.ts",
                 "line": 42,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/computedvalue.ts#L42",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L42",
               },
               "type": "() => T",
@@ -2741,6 +2912,7 @@ Object {
               "source": Object {
                 "filename": "src/core/computedvalue.ts",
                 "line": 48,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/computedvalue.ts#L48",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L48",
               },
               "type": "boolean",
@@ -2756,6 +2928,7 @@ Object {
               "source": Object {
                 "filename": "src/core/computedvalue.ts",
                 "line": 44,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/computedvalue.ts#L44",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L44",
               },
               "type": "string",
@@ -2771,6 +2944,7 @@ Object {
               "source": Object {
                 "filename": "src/core/computedvalue.ts",
                 "line": 47,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/computedvalue.ts#L47",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L47",
               },
               "type": "boolean",
@@ -2786,6 +2960,7 @@ Object {
               "source": Object {
                 "filename": "src/core/computedvalue.ts",
                 "line": 43,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/computedvalue.ts#L43",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L43",
               },
               "type": "(value: T) => void",
@@ -2797,6 +2972,7 @@ Object {
         "source": Object {
           "filename": "src/core/computedvalue.ts",
           "line": 41,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/computedvalue.ts#L41",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts#L41",
         },
       },
@@ -2821,6 +2997,7 @@ Object {
               "source": Object {
                 "filename": "src/api/extras.ts",
                 "line": 5,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/extras.ts#L5",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/extras.ts#L5",
               },
               "type": "IDependencyTree[]",
@@ -2836,6 +3013,7 @@ Object {
               "source": Object {
                 "filename": "src/api/extras.ts",
                 "line": 4,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/extras.ts#L4",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/extras.ts#L4",
               },
               "type": "string",
@@ -2847,6 +3025,7 @@ Object {
         "source": Object {
           "filename": "src/api/extras.ts",
           "line": 3,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/extras.ts#L3",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/extras.ts#L3",
         },
       },
@@ -2871,6 +3050,7 @@ Object {
               "source": Object {
                 "filename": "src/core/observable.ts",
                 "line": 15,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/observable.ts#L15",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L15",
               },
               "type": "string",
@@ -2886,6 +3066,7 @@ Object {
               "source": Object {
                 "filename": "src/core/observable.ts",
                 "line": 16,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/observable.ts#L16",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L16",
               },
               "type": "IObservable[]",
@@ -2897,6 +3078,7 @@ Object {
         "source": Object {
           "filename": "src/core/observable.ts",
           "line": 14,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/observable.ts#L14",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L14",
         },
       },
@@ -2915,6 +3097,7 @@ Object {
               "source": Object {
                 "filename": "src/types/modifiers.ts",
                 "line": 16,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/modifiers.ts#L16",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/modifiers.ts#L16",
               },
             },
@@ -2929,6 +3112,7 @@ Object {
         "source": Object {
           "filename": "src/types/modifiers.ts",
           "line": 15,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/modifiers.ts#L15",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/modifiers.ts#L15",
         },
       },
@@ -2947,6 +3131,7 @@ Object {
               "source": Object {
                 "filename": "src/utils/comparer.ts",
                 "line": 4,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/utils/comparer.ts#L4",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/utils/comparer.ts#L4",
               },
             },
@@ -2961,6 +3146,7 @@ Object {
         "source": Object {
           "filename": "src/utils/comparer.ts",
           "line": 3,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/utils/comparer.ts#L3",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/utils/comparer.ts#L3",
         },
       },
@@ -2985,6 +3171,7 @@ Object {
               "source": Object {
                 "filename": "src/types/intercept-utils.ts",
                 "line": 6,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/intercept-utils.ts#L6",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/intercept-utils.ts#L6",
               },
               "type": "IInterceptor<T>[]",
@@ -2996,6 +3183,7 @@ Object {
         "source": Object {
           "filename": "src/types/intercept-utils.ts",
           "line": 5,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/intercept-utils.ts#L5",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/intercept-utils.ts#L5",
         },
       },
@@ -3016,6 +3204,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 40,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L40",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L40",
               },
             },
@@ -3028,6 +3217,7 @@ Object {
         "source": Object {
           "filename": "src/types/observablemap.ts",
           "line": 39,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L39",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L39",
         },
       },
@@ -3052,6 +3242,7 @@ Object {
               "source": Object {
                 "filename": "src/types/listen-utils.ts",
                 "line": 4,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/listen-utils.ts#L4",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/listen-utils.ts#L4",
               },
               "type": "Function[]",
@@ -3063,6 +3254,7 @@ Object {
         "source": Object {
           "filename": "src/types/listen-utils.ts",
           "line": 3,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/listen-utils.ts#L3",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/listen-utils.ts#L3",
         },
       },
@@ -3087,6 +3279,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 71,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L71",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L71",
               },
               "type": "{}",
@@ -3102,6 +3295,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 72,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L72",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L72",
               },
               "type": "{}",
@@ -3117,6 +3311,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 69,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L69",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L69",
               },
               "type": "ObservableMap<K, V>",
@@ -3132,6 +3327,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablemap.ts",
                 "line": 70,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L70",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L70",
               },
               "type": "\\"update\\" | \\"add\\" | \\"delete\\"",
@@ -3143,6 +3339,7 @@ Object {
         "source": Object {
           "filename": "src/types/observablemap.ts",
           "line": 68,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L68",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L68",
         },
       },
@@ -3164,6 +3361,7 @@ Object {
               "source": Object {
                 "filename": "src/core/observable.ts",
                 "line": 35,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/observable.ts#L35",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L35",
               },
               "type": "() => void",
@@ -3177,6 +3375,7 @@ Object {
               "source": Object {
                 "filename": "src/core/observable.ts",
                 "line": 34,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/observable.ts#L34",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L34",
               },
               "type": "() => void",
@@ -3194,6 +3393,7 @@ Object {
               "source": Object {
                 "filename": "src/core/observable.ts",
                 "line": 20,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/observable.ts#L20",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L20",
               },
               "type": "number",
@@ -3209,6 +3409,7 @@ Object {
               "source": Object {
                 "filename": "src/core/observable.ts",
                 "line": 27,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/observable.ts#L27",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L27",
               },
               "type": "boolean",
@@ -3224,6 +3425,7 @@ Object {
               "source": Object {
                 "filename": "src/core/observable.ts",
                 "line": 30,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/observable.ts#L30",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L30",
               },
               "type": "boolean",
@@ -3245,6 +3447,7 @@ Object {
               "source": Object {
                 "filename": "src/core/observable.ts",
                 "line": 26,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/observable.ts#L26",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L26",
               },
               "type": "number",
@@ -3260,6 +3463,7 @@ Object {
               "source": Object {
                 "filename": "src/core/observable.ts",
                 "line": 29,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/observable.ts#L29",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L29",
               },
               "type": "IDerivationState_",
@@ -3275,6 +3479,7 @@ Object {
               "source": Object {
                 "filename": "src/core/observable.ts",
                 "line": 32,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/observable.ts#L32",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L32",
               },
               "type": "Set<IDerivation>",
@@ -3290,6 +3495,7 @@ Object {
               "source": Object {
                 "filename": "src/core/observable.ts",
                 "line": 38,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/observable.ts#L38",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L38",
               },
               "type": "Set<Lambda>",
@@ -3305,6 +3511,7 @@ Object {
               "source": Object {
                 "filename": "src/core/observable.ts",
                 "line": 37,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/observable.ts#L37",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L37",
               },
               "type": "Set<Lambda>",
@@ -3316,6 +3523,7 @@ Object {
         "source": Object {
           "filename": "src/core/observable.ts",
           "line": 19,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/observable.ts#L19",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts#L19",
         },
       },
@@ -3337,6 +3545,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablearray.ts",
                 "line": 40,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L40",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L40",
               },
               "type": "() => T[]",
@@ -3350,6 +3559,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablearray.ts",
                 "line": 42,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L42",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L42",
               },
               "type": "(value: T) => boolean",
@@ -3363,6 +3573,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablearray.ts",
                 "line": 41,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L41",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L41",
               },
               "type": "(newItems: T[]) => T[]",
@@ -3376,6 +3587,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablearray.ts",
                 "line": 39,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L39",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L39",
               },
               "type": "(index: number, deleteCount?: number, newItems?: T[]) => T[]",
@@ -3389,6 +3601,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablearray.ts",
                 "line": 43,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L43",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L43",
               },
               "type": "() => T[]",
@@ -3401,6 +3614,7 @@ Object {
         "source": Object {
           "filename": "src/types/observablearray.ts",
           "line": 38,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L38",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L38",
         },
       },
@@ -3419,6 +3633,7 @@ Object {
               "source": Object {
                 "filename": "src/api/observable.ts",
                 "line": 116,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/observable.ts#L116",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L116",
               },
             },
@@ -3431,6 +3646,7 @@ Object {
               "source": Object {
                 "filename": "src/api/observable.ts",
                 "line": 117,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/observable.ts#L117",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L117",
               },
             },
@@ -3446,6 +3662,7 @@ Object {
               "source": Object {
                 "filename": "src/api/observable.ts",
                 "line": 118,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/observable.ts#L118",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L118",
               },
             },
@@ -3462,6 +3679,7 @@ Object {
               "source": Object {
                 "filename": "src/api/observable.ts",
                 "line": 119,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/observable.ts#L119",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L119",
               },
             },
@@ -3484,6 +3702,7 @@ Object {
               "source": Object {
                 "filename": "src/api/observable.ts",
                 "line": 126,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/observable.ts#L126",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L126",
               },
               "type": "<T = any>(initialValues?: T[], options?: CreateObservableOptions) => IObservableArray<T>",
@@ -3502,6 +3721,7 @@ Object {
               "source": Object {
                 "filename": "src/api/observable.ts",
                 "line": 125,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/observable.ts#L125",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L125",
               },
               "type": "<T = any>(value?: T, options?: CreateObservableOptions) => IObservableValue<T>",
@@ -3517,6 +3737,7 @@ Object {
               "source": Object {
                 "filename": "src/api/observable.ts",
                 "line": 149,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/observable.ts#L149",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L149",
               },
               "type": "Annotation & PropertyDecorator",
@@ -3535,6 +3756,7 @@ Object {
               "source": Object {
                 "filename": "src/api/observable.ts",
                 "line": 131,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/observable.ts#L131",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L131",
               },
               "type": "<K = any, V = any>(initialValues?: IObservableMapInitialValues<K, V>, options?: CreateObservableOptions) => ObservableMap<K, V>",
@@ -3554,6 +3776,7 @@ Object {
               "source": Object {
                 "filename": "src/api/observable.ts",
                 "line": 135,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/observable.ts#L135",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L135",
               },
               "type": "<T = any>(props: T, decorators?: AnnotationsMap<T, never>, options?: CreateObservableOptions) => T",
@@ -3573,6 +3796,7 @@ Object {
               "source": Object {
                 "filename": "src/api/observable.ts",
                 "line": 144,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/observable.ts#L144",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L144",
               },
               "type": "Annotation & PropertyDecorator",
@@ -3591,6 +3815,7 @@ Object {
               "source": Object {
                 "filename": "src/api/observable.ts",
                 "line": 127,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/observable.ts#L127",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L127",
               },
               "type": "<T = any>(initialValues?: IObservableSetInitialValues<T>, options?: CreateObservableOptions) => ObservableSet<T>",
@@ -3610,6 +3835,7 @@ Object {
               "source": Object {
                 "filename": "src/api/observable.ts",
                 "line": 148,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/observable.ts#L148",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L148",
               },
               "type": "Annotation & PropertyDecorator",
@@ -3625,6 +3851,7 @@ Object {
               "source": Object {
                 "filename": "src/api/observable.ts",
                 "line": 150,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/observable.ts#L150",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L150",
               },
               "type": "Annotation & PropertyDecorator",
@@ -3636,6 +3863,7 @@ Object {
         "source": Object {
           "filename": "src/api/observable.ts",
           "line": 115,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/observable.ts#L115",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L115",
         },
       },
@@ -3657,6 +3885,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablevalue.ts",
                 "line": 54,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablevalue.ts#L54",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts#L54",
               },
               "type": "() => T",
@@ -3670,6 +3899,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablevalue.ts",
                 "line": 56,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablevalue.ts#L56",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts#L56",
               },
               "type": "(handler: IInterceptor<IValueWillChange<T>>) => Lambda",
@@ -3686,6 +3916,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablevalue.ts",
                 "line": 57,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablevalue.ts#L57",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts#L57",
               },
               "type": "(listener: (change: IValueDidChange<T>) => void, fireImmediately?: boolean) => Lambda",
@@ -3699,6 +3930,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablevalue.ts",
                 "line": 55,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablevalue.ts#L55",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts#L55",
               },
               "type": "(value: T) => void",
@@ -3711,6 +3943,7 @@ Object {
         "source": Object {
           "filename": "src/types/observablevalue.ts",
           "line": 53,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablevalue.ts#L53",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts#L53",
         },
       },
@@ -3735,6 +3968,7 @@ Object {
               "source": Object {
                 "filename": "src/api/extras.ts",
                 "line": 9,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/extras.ts#L9",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/extras.ts#L9",
               },
               "type": "string",
@@ -3750,6 +3984,7 @@ Object {
               "source": Object {
                 "filename": "src/api/extras.ts",
                 "line": 10,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/extras.ts#L10",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/extras.ts#L10",
               },
               "type": "IObserverTree[]",
@@ -3761,6 +3996,7 @@ Object {
         "source": Object {
           "filename": "src/api/extras.ts",
           "line": 8,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/extras.ts#L8",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/extras.ts#L8",
         },
       },
@@ -3779,6 +4015,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 49,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L49",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L49",
               },
             },
@@ -3798,6 +4035,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 50,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L50",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L50",
               },
               "type": "Reaction",
@@ -3809,6 +4047,7 @@ Object {
         "source": Object {
           "filename": "src/core/reaction.ts",
           "line": 48,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L48",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L48",
         },
       },
@@ -3849,6 +4088,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 44,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L44",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L44",
               },
               "type": "() => void",
@@ -3862,6 +4102,7 @@ Object {
               "source": Object {
                 "filename": "src/core/reaction.ts",
                 "line": 45,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L45",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L45",
               },
               "type": "(enterBreakPoint?: boolean) => void",
@@ -3874,6 +4115,7 @@ Object {
         "source": Object {
           "filename": "src/core/reaction.ts",
           "line": 43,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts#L43",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts#L43",
         },
       },
@@ -3898,6 +4140,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablevalue.ts",
                 "line": 32,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablevalue.ts#L32",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts#L32",
               },
               "type": "{}",
@@ -3913,6 +4156,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablevalue.ts",
                 "line": 30,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablevalue.ts#L30",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts#L30",
               },
               "type": "IObservableValue<T>",
@@ -3928,6 +4172,7 @@ Object {
               "source": Object {
                 "filename": "src/types/observablevalue.ts",
                 "line": 31,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablevalue.ts#L31",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts#L31",
               },
               "type": "string",
@@ -3939,6 +4184,7 @@ Object {
         "source": Object {
           "filename": "src/types/observablevalue.ts",
           "line": 29,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablevalue.ts#L29",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts#L29",
         },
       },
@@ -3963,6 +4209,7 @@ Object {
               "source": Object {
                 "filename": "src/api/when.ts",
                 "line": 13,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/when.ts#L13",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/when.ts#L13",
               },
               "type": "string",
@@ -3978,6 +4225,7 @@ Object {
               "source": Object {
                 "filename": "src/api/when.ts",
                 "line": 15,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/when.ts#L15",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/when.ts#L15",
               },
               "type": "(error: any) => void",
@@ -3993,6 +4241,7 @@ Object {
               "source": Object {
                 "filename": "src/api/when.ts",
                 "line": 14,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/when.ts#L14",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/when.ts#L14",
               },
               "type": "number",
@@ -4004,6 +4253,7 @@ Object {
         "source": Object {
           "filename": "src/api/when.ts",
           "line": 12,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/when.ts#L12",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/when.ts#L12",
         },
       },
@@ -4022,6 +4272,7 @@ Object {
               "source": Object {
                 "filename": "src/utils/utils.ts",
                 "line": 16,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/utils/utils.ts#L16",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/utils/utils.ts#L16",
               },
             },
@@ -4041,6 +4292,7 @@ Object {
               "source": Object {
                 "filename": "src/utils/utils.ts",
                 "line": 17,
+                "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/utils/utils.ts#L17",
                 "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/utils/utils.ts#L17",
               },
               "type": "string",
@@ -4052,6 +4304,7 @@ Object {
         "source": Object {
           "filename": "src/utils/utils.ts",
           "line": 15,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/utils/utils.ts#L15",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/utils/utils.ts#L15",
         },
       },
@@ -4070,6 +4323,7 @@ Object {
         "source": Object {
           "filename": "src/api/annotation.ts",
           "line": 17,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/annotation.ts#L17",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/annotation.ts#L17",
         },
       },
@@ -4085,6 +4339,7 @@ Object {
         "source": Object {
           "filename": "src/api/annotation.ts",
           "line": 24,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/annotation.ts#L24",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/annotation.ts#L24",
         },
       },
@@ -4104,6 +4359,7 @@ Object {
         "source": Object {
           "filename": "src/api/observable.ts",
           "line": 39,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/observable.ts#L39",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L39",
         },
       },
@@ -4116,6 +4372,7 @@ Object {
         "source": Object {
           "filename": "src/types/observablearray.ts",
           "line": 53,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts#L53",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts#L53",
         },
       },
@@ -4128,6 +4385,7 @@ Object {
         "source": Object {
           "filename": "src/types/intercept-utils.ts",
           "line": 3,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/intercept-utils.ts#L3",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/intercept-utils.ts#L3",
         },
       },
@@ -4163,6 +4421,7 @@ Object {
         "source": Object {
           "filename": "src/types/observablemap.ts",
           "line": 46,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L46",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L46",
         },
       },
@@ -4175,6 +4434,7 @@ Object {
         "source": Object {
           "filename": "src/types/observablemap.ts",
           "line": 44,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L44",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L44",
         },
       },
@@ -4187,6 +4447,7 @@ Object {
         "source": Object {
           "filename": "src/types/observablemap.ts",
           "line": 43,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L43",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L43",
         },
       },
@@ -4218,6 +4479,7 @@ Object {
         "source": Object {
           "filename": "src/types/observableobject.ts",
           "line": 40,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableobject.ts#L40",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableobject.ts#L40",
         },
       },
@@ -4241,6 +4503,7 @@ Object {
         "source": Object {
           "filename": "src/types/observableobject.ts",
           "line": 61,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableobject.ts#L61",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableobject.ts#L61",
         },
       },
@@ -4256,6 +4519,7 @@ Object {
         "source": Object {
           "filename": "src/types/observablemap.ts",
           "line": 80,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L80",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L80",
         },
       },
@@ -4268,6 +4532,7 @@ Object {
         "source": Object {
           "filename": "src/types/observableset.ts",
           "line": 35,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L35",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L35",
         },
       },
@@ -4283,6 +4548,7 @@ Object {
         "source": Object {
           "filename": "src/api/autorun.ts",
           "line": 88,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/autorun.ts#L88",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/autorun.ts#L88",
         },
       },
@@ -4309,6 +4575,7 @@ Object {
         "source": Object {
           "filename": "src/types/observableset.ts",
           "line": 37,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L37",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L37",
         },
       },
@@ -4331,6 +4598,7 @@ Object {
         "source": Object {
           "filename": "src/types/observableset.ts",
           "line": 53,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L53",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L53",
         },
       },
@@ -4350,6 +4618,7 @@ Object {
         "source": Object {
           "filename": "src/types/observablevalue.ts",
           "line": 35,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablevalue.ts#L35",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts#L35",
         },
       },
@@ -4364,6 +4633,7 @@ Object {
         "source": Object {
           "filename": "src/core/atom.ts",
           "line": 17,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/atom.ts#L17",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/atom.ts#L17",
         },
         "type": "Symbol",
@@ -4378,6 +4648,7 @@ Object {
         "source": Object {
           "filename": "src/api/action.ts",
           "line": 61,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/action.ts#L61",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/action.ts#L61",
         },
         "type": "IActionFactory",
@@ -4397,6 +4668,7 @@ Object {
         "source": Object {
           "filename": "src/utils/comparer.ts",
           "line": 23,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/utils/comparer.ts#L23",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/utils/comparer.ts#L23",
         },
         "type": "{ identity: (a: any, b: any) => boolean; structural: (a: any, b: any) => boolean; default: (a: any, b: any) => boolean; shallow: (a: any, b: any) => boolean; }",
@@ -4416,6 +4688,7 @@ Object {
         "source": Object {
           "filename": "src/api/computed.ts",
           "line": 31,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/computed.ts#L31",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/computed.ts#L31",
         },
         "type": "IComputedFactory",
@@ -4430,6 +4703,7 @@ Object {
         "source": Object {
           "filename": "src/api/flow.ts",
           "line": 24,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/flow.ts#L24",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/flow.ts#L24",
         },
         "type": "Flow",
@@ -4444,6 +4718,7 @@ Object {
         "source": Object {
           "filename": "src/api/flow.ts",
           "line": 10,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/flow.ts#L10",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/flow.ts#L10",
         },
         "type": "typeof FlowCancellationError",
@@ -4458,6 +4733,7 @@ Object {
         "source": Object {
           "filename": "src/types/observablevalue.ts",
           "line": 191,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablevalue.ts#L191",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts#L191",
         },
         "type": "(x: any) => x is IObservableValue<any>",
@@ -4472,6 +4748,7 @@ Object {
         "source": Object {
           "filename": "src/types/observablemap.ts",
           "line": 449,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts#L449",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts#L449",
         },
         "type": "(thing: any) => thing is ObservableMap<any, any>",
@@ -4486,6 +4763,7 @@ Object {
         "source": Object {
           "filename": "src/types/observableset.ts",
           "line": 273,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts#L273",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts#L273",
         },
         "type": "(thing: any) => thing is ObservableSet<any>",
@@ -4500,6 +4778,7 @@ Object {
         "source": Object {
           "filename": "src/api/observable.ts",
           "line": 202,
+          "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/observable.ts#L202",
           "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts#L202",
         },
         "type": "IObservableFactory",
@@ -4510,159 +4789,198 @@ Object {
   "files": Array [
     Object {
       "filename": "src/api/action.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/action.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/action.ts",
     },
     Object {
       "filename": "src/api/annotation.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/annotation.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/annotation.ts",
     },
     Object {
       "filename": "src/api/autorun.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/autorun.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/autorun.ts",
     },
     Object {
       "filename": "src/api/become-observed.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/become-observed.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/become-observed.ts",
     },
     Object {
       "filename": "src/api/computed.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/computed.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/computed.ts",
     },
     Object {
       "filename": "src/api/configure.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/configure.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/configure.ts",
     },
     Object {
       "filename": "src/api/extendobservable.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/extendobservable.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/extendobservable.ts",
     },
     Object {
       "filename": "src/api/extras.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/extras.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/extras.ts",
     },
     Object {
       "filename": "src/api/flow.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/flow.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/flow.ts",
     },
     Object {
       "filename": "src/api/intercept.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/intercept.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/intercept.ts",
     },
     Object {
       "filename": "src/api/iscomputed.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/iscomputed.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/iscomputed.ts",
     },
     Object {
       "filename": "src/api/isobservable.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/isobservable.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/isobservable.ts",
     },
     Object {
       "filename": "src/api/makeObservable.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/makeObservable.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/makeObservable.ts",
     },
     Object {
       "filename": "src/api/object-api.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/object-api.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/object-api.ts",
     },
     Object {
       "filename": "src/api/observable.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/observable.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observable.ts",
     },
     Object {
       "filename": "src/api/observe.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/observe.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/observe.ts",
     },
     Object {
       "filename": "src/api/tojs.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/tojs.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/tojs.ts",
     },
     Object {
       "filename": "src/api/trace.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/trace.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/trace.ts",
     },
     Object {
       "filename": "src/api/transaction.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/transaction.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/transaction.ts",
     },
     Object {
       "filename": "src/api/when.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/api/when.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/api/when.ts",
     },
     Object {
       "filename": "src/core/action.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/action.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/action.ts",
     },
     Object {
       "filename": "src/core/atom.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/atom.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/atom.ts",
     },
     Object {
       "filename": "src/core/computedvalue.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/computedvalue.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/computedvalue.ts",
     },
     Object {
       "filename": "src/core/derivation.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/derivation.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/derivation.ts",
     },
     Object {
       "filename": "src/core/observable.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/observable.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/observable.ts",
     },
     Object {
       "filename": "src/core/reaction.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/reaction.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/reaction.ts",
     },
     Object {
       "filename": "src/core/spy.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/core/spy.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/core/spy.ts",
     },
     Object {
       "filename": "src/mobx.ts",
       "isIndexFile": true,
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/mobx.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/mobx.ts",
     },
     Object {
       "filename": "src/types/intercept-utils.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/intercept-utils.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/intercept-utils.ts",
     },
     Object {
       "filename": "src/types/listen-utils.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/listen-utils.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/listen-utils.ts",
     },
     Object {
       "filename": "src/types/modifiers.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/modifiers.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/modifiers.ts",
     },
     Object {
       "filename": "src/types/observablearray.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablearray.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablearray.ts",
     },
     Object {
       "filename": "src/types/observablemap.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablemap.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablemap.ts",
     },
     Object {
       "filename": "src/types/observableobject.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableobject.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableobject.ts",
     },
     Object {
       "filename": "src/types/observableset.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observableset.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observableset.ts",
     },
     Object {
       "filename": "src/types/observablevalue.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/observablevalue.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/observablevalue.ts",
     },
     Object {
       "filename": "src/types/type-utils.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/types/type-utils.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/types/type-utils.ts",
     },
     Object {
       "filename": "src/utils/comparer.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/utils/comparer.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/utils/comparer.ts",
     },
     Object {
       "filename": "src/utils/utils.ts",
+      "unpkgURL": "https://unpkg.com/browse/mobx@6.0.5/src/utils/utils.ts",
       "url": "https://github.com/mobxjs/mobx/tree/v6.0.5/src/utils/utils.ts",
     },
   ],

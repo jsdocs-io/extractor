@@ -275,6 +275,9 @@ export interface DeclarationSource {
     /** Starting line number */
     readonly line: number;
 
-    /** URL in a remote repository linking to to the declaration */
+    /** URL in a remote repository linking to the declaration */
     readonly url?: string;
+
+    /** URL on unpkg.com linking to the declaration */
+    readonly unpkgURL?: string;
 }

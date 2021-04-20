@@ -26,6 +26,7 @@ Object {
               "source": Object {
                 "filename": "bar.d.ts",
                 "line": 1,
+                "unpkgURL": undefined,
                 "url": undefined,
               },
               "type": "boolean",
@@ -41,6 +42,7 @@ Object {
         "source": Object {
           "filename": "bar.d.ts",
           "line": 1,
+          "unpkgURL": undefined,
           "url": undefined,
         },
       },
@@ -60,6 +62,7 @@ Object {
               "source": Object {
                 "filename": "foo.d.ts",
                 "line": 9,
+                "unpkgURL": undefined,
                 "url": undefined,
               },
               "type": "(a: number, b: number) => number",
@@ -89,6 +92,7 @@ Object {
                     "source": Object {
                       "filename": "foo.d.ts",
                       "line": 13,
+                      "unpkgURL": undefined,
                       "url": undefined,
                     },
                     "type": "<U>(t: T, u: U) => boolean",
@@ -100,6 +104,7 @@ Object {
               "source": Object {
                 "filename": "foo.d.ts",
                 "line": 12,
+                "unpkgURL": undefined,
                 "url": undefined,
               },
             },
@@ -118,6 +123,7 @@ Object {
               "source": Object {
                 "filename": "foo.d.ts",
                 "line": 6,
+                "unpkgURL": undefined,
                 "url": undefined,
               },
               "type": "string",
@@ -137,6 +143,7 @@ Object {
         "source": Object {
           "filename": "foo.d.ts",
           "line": 1,
+          "unpkgURL": undefined,
           "url": undefined,
         },
       },
@@ -147,15 +154,18 @@ Object {
   "files": Array [
     Object {
       "filename": "bar.d.ts",
+      "unpkgURL": undefined,
       "url": undefined,
     },
     Object {
       "filename": "foo.d.ts",
+      "unpkgURL": undefined,
       "url": undefined,
     },
     Object {
       "filename": "index.d.ts",
       "isIndexFile": true,
+      "unpkgURL": undefined,
       "url": undefined,
     },
   ],

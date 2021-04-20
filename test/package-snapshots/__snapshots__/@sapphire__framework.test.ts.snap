@@ -15,6 +15,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 165,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L165",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L165",
             },
           },
@@ -65,6 +66,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 607,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L607",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L607",
               },
               "type": "{ <T>(argument: IArgument<T>, parameter: string, message: string): ArgumentError<T>; <T>(argument: IArgument<T>, parameter: string, type: string, message: string): ArgumentError<T>; }",
@@ -96,6 +98,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 542,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L542",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L542",
               },
               "type": "(...keys: readonly string[]) => boolean",
@@ -127,6 +130,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 559,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L559",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L559",
               },
               "type": "(...keys: readonly string[]) => string | null",
@@ -158,6 +162,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 576,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L576",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L576",
               },
               "type": "(...keys: readonly string[]) => string[] | null",
@@ -177,6 +182,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 600,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L600",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L600",
               },
               "type": "<T>(cb: IArgument<T>['run'], name?: string) => IArgument<T>",
@@ -218,6 +224,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 508,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L508",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L508",
               },
               "type": "{ (): string; <T>(cb: ArgsNextCallback<T>): T; }",
@@ -260,6 +267,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 479,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L479",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L479",
               },
               "type": "{ (): Maybe<string>; <T>(cb: ArgsNextCallback<T>): any; }",
@@ -340,6 +348,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 429,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L429",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L429",
               },
               "type": "{ <T>(type: () => ArgumentResult<T>): Promise<T>; <T>(type: IArgument<T>, options?: ArgOptions): Promise<T>; <K extends keyof ArgType>(type: K | (() => any), options?: ArgOptions): Promise<ArgType[K]>; }",
@@ -418,6 +427,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 369,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L369",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L369",
               },
               "type": "{ <T>(type: () => ArgumentResult<T>): Promise<Result<T, UserError>>; <T>(type: IArgument<T>, options?: ArgOptions): Promise<any>; <K extends keyof ArgType>(type: K | (() => any), options?: ArgOptions): Promise<any>; }",
@@ -467,6 +477,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 223,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L223",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L223",
               },
               "type": "{ <T>(type: IArgument<T>, options?: ArgOptions): Promise<T>; <K extends keyof ArgType>(type: K, options?: ArgOptions): Promise<ArgType[K]>; }",
@@ -519,6 +530,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 188,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L188",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L188",
               },
               "type": "{ <T>(type: IArgument<T>, options?: ArgOptions): Promise<Result<T, UserError>>; <K extends keyof ArgType>(type: K, options?: ArgOptions): Promise<any>; }",
@@ -562,6 +574,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 336,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L336",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L336",
               },
               "type": "{ <T>(type: IArgument<T>, options?: RepeatArgOptions): Promise<T[]>; <K extends keyof ArgType>(type: K, options?: RepeatArgOptions): Promise<ArgType[K][]>; }",
@@ -609,6 +622,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 309,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L309",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L309",
               },
               "type": "{ <T>(type: IArgument<T>, options?: RepeatArgOptions): Promise<Result<T[], UserError>>; <K extends keyof ArgType>(type: K, options?: RepeatArgOptions): Promise<any>; }",
@@ -653,6 +667,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 281,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L281",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L281",
               },
               "type": "{ <T>(type: IArgument<T>, options?: ArgOptions): Promise<T>; <K extends keyof ArgType>(type: K, options?: ArgOptions): Promise<ArgType[K]>; }",
@@ -672,6 +687,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 586,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L586",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L586",
               },
               "type": "() => void",
@@ -720,6 +736,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 251,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L251",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L251",
               },
               "type": "{ <T>(type: IArgument<T>, options?: ArgOptions): Promise<Result<T, UserError>>; <K extends keyof ArgType>(type: K, options?: ArgOptions): Promise<any>; }",
@@ -739,6 +756,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 581,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L581",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L581",
               },
               "type": "() => void",
@@ -757,6 +775,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 169,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L169",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L169",
               },
               "type": "() => Args",
@@ -777,6 +796,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 162,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L162",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L162",
               },
               "type": "Command<Args>",
@@ -795,6 +815,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 590,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L590",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L590",
               },
               "type": "boolean",
@@ -813,6 +834,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 158,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L158",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L158",
               },
               "type": "any",
@@ -824,6 +846,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 154,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L154",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L154",
         },
       },
@@ -917,6 +940,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1147,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1147",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1147",
               },
               "type": "{ (parameter: string, message: string): any; (parameter: string, type: string, message: string): any; }",
@@ -936,6 +960,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1141,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1141",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1141",
               },
               "type": "(value: T) => any",
@@ -950,6 +975,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1136,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1136",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1136",
               },
               "type": "(argument: string, context: ArgumentContext) => any",
@@ -962,6 +988,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1135,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1135",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1135",
         },
       },
@@ -981,6 +1008,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1173,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1173",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1173",
             },
           },
@@ -1007,6 +1035,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1171,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1171",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1171",
               },
               "type": "IArgument<T>",
@@ -1021,6 +1050,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1172,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1172",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1172",
               },
               "type": "string",
@@ -1032,6 +1062,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1170,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1170",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1170",
         },
       },
@@ -1046,6 +1077,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1239,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1239",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1239",
             },
           },
@@ -1063,6 +1095,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1238,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1238",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1238",
         },
       },
@@ -1083,6 +1116,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 988,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L988",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L988",
             },
           },
@@ -1109,6 +1143,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 994,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L994",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L994",
               },
               "type": "(message: any, parameters: string) => any",
@@ -1129,6 +1164,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1000,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1000",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1000",
               },
               "type": "(message: any, args: T, context: CommandContext) => any",
@@ -1147,6 +1183,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1004,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1004",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1004",
               },
               "type": "() => Record<string, any>",
@@ -1168,6 +1205,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 967,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L967",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L967",
               },
               "type": "string",
@@ -1187,6 +1225,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 977,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L977",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L977",
               },
               "type": "string",
@@ -1206,6 +1245,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 972,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L972",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L972",
               },
               "type": "IPreconditionContainer",
@@ -1225,6 +1265,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 982,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L982",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L982",
               },
               "type": "any",
@@ -1236,6 +1277,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 961,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L961",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L961",
         },
       },
@@ -1250,6 +1292,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1247,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1247",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1247",
             },
           },
@@ -1272,6 +1315,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1246,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1246",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1246",
         },
       },
@@ -1286,6 +1330,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1294,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1294",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1294",
             },
           },
@@ -1346,6 +1391,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1296,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1296",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1296",
               },
               "type": "() => void",
@@ -1360,6 +1406,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1297,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1297",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1297",
               },
               "type": "() => void",
@@ -1376,6 +1423,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1295,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1295",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1295",
               },
               "type": "(...args: E extends keyof ClientEvents ? ClientEvents[E] : unknown[]) => unknown",
@@ -1390,6 +1438,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1298,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1298",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1298",
               },
               "type": "() => Record<PropertyKey, unknown>",
@@ -1406,6 +1455,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1291,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1291",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1291",
               },
               "type": "any",
@@ -1420,6 +1470,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1292,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1292",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1292",
               },
               "type": "string",
@@ -1434,6 +1485,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1293,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1293",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1293",
               },
               "type": "boolean",
@@ -1445,6 +1497,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1289,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1289",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1289",
         },
       },
@@ -1459,6 +1512,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1309,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1309",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1309",
             },
           },
@@ -1476,6 +1530,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1308,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1308",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1308",
         },
       },
@@ -1490,6 +1545,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1679,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1679",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1679",
             },
           },
@@ -1557,6 +1613,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1686,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1686",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1686",
               },
               "type": "(parsed: ArgType[K], context: ExtendedArgumentContext) => any",
@@ -1571,6 +1628,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1685,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1685",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1685",
               },
               "type": "(argument: string, context: ArgumentContext) => AsyncArgumentResult<T>",
@@ -1592,6 +1650,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1684,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1684",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1684",
               },
               "type": "IArgument<ArgType[K]>",
@@ -1606,6 +1665,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1678,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1678",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1678",
               },
               "type": "keyof ArgType",
@@ -1617,6 +1677,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1677,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1677",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1677",
         },
       },
@@ -1631,6 +1692,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1825,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1825",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1825",
             },
           },
@@ -1651,6 +1713,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1827,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1827",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1827",
               },
               "type": "(...values: readonly unknown[]) => void",
@@ -1665,6 +1728,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1830,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1830",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1830",
               },
               "type": "(...values: readonly unknown[]) => void",
@@ -1679,6 +1743,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1831,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1831",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1831",
               },
               "type": "(...values: readonly unknown[]) => void",
@@ -1693,6 +1758,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1828,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1828",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1828",
               },
               "type": "(...values: readonly unknown[]) => void",
@@ -1707,6 +1773,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1826,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1826",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1826",
               },
               "type": "(...values: readonly unknown[]) => void",
@@ -1721,6 +1788,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1829,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1829",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1829",
               },
               "type": "(...values: readonly unknown[]) => void",
@@ -1735,6 +1803,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1832,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1832",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1832",
               },
               "type": "(level: LogLevel, ...values: readonly unknown[]) => void",
@@ -1751,6 +1820,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1824,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1824",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1824",
               },
               "type": "LogLevel",
@@ -1765,6 +1835,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1833,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1833",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1833",
               },
               "type": "Map<LogLevel, LogMethods>",
@@ -1776,6 +1847,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1823,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1823",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1823",
         },
       },
@@ -1795,6 +1867,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1877,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1877",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1877",
             },
           },
@@ -1838,6 +1911,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1872,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1872",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1872",
               },
               "type": "PreconditionContext",
@@ -1852,6 +1926,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1871,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1871",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1871",
               },
               "type": "string",
@@ -1863,6 +1938,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1870,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1870",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1870",
         },
       },
@@ -1885,6 +1961,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1626,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1626",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1626",
               },
               "type": "(this: SapphireClient, options: any) => void",
@@ -1899,6 +1976,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1628,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1628",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1628",
               },
               "type": "(this: SapphireClient, options: any) => any",
@@ -1916,6 +1994,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1624,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1624",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1624",
               },
               "type": "(this: SapphireClient, options: any) => void",
@@ -1930,6 +2009,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1625,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1625",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1625",
               },
               "type": "(this: SapphireClient, options: any) => void",
@@ -1944,6 +2024,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1627,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1627",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1627",
               },
               "type": "(this: SapphireClient, options: any) => any",
@@ -1955,6 +2036,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1623,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1623",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1623",
         },
       },
@@ -1979,6 +2061,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1225,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1225",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1225",
               },
               "type": "{ (hook: SapphirePluginHook, type: SyncPluginHooks, name?: string): this; (hook: SapphirePluginAsyncHook, type: AsyncPluginHooks, name?: string): this; }",
@@ -1996,6 +2079,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1229,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1229",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1229",
               },
               "type": "(hook: SapphirePluginHook, name?: string) => this",
@@ -2010,6 +2094,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1231,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1231",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1231",
               },
               "type": "(hook: SapphirePluginAsyncHook, name?: string) => this",
@@ -2027,6 +2112,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1227,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1227",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1227",
               },
               "type": "(hook: SapphirePluginHook, name?: string) => this",
@@ -2041,6 +2127,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1228,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1228",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1228",
               },
               "type": "(hook: SapphirePluginHook, name?: string) => this",
@@ -2055,6 +2142,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1230,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1230",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1230",
               },
               "type": "(hook: SapphirePluginAsyncHook, name?: string) => this",
@@ -2069,6 +2157,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1232,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1232",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1232",
               },
               "type": "(plugin: typeof Plugin) => this",
@@ -2095,6 +2184,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1233,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1233",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1233",
               },
               "type": "{ (): Generator<SapphirePluginHookEntry, void, unknown>; (hook: SyncPluginHooks): Generator<SapphirePluginHookEntry<SapphirePluginHook>, void, unknown>; (hook: AsyncPluginHooks): Generator<SapphirePluginHookEntry<SapphirePluginAsyncHook>, void, unknown>; }",
@@ -2113,6 +2203,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1224,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1224",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1224",
               },
               "type": "Set<SapphirePluginHookEntry<SapphirePluginAsyncHook | SapphirePluginHook>>",
@@ -2124,6 +2215,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1223,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1223",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1223",
         },
       },
@@ -2158,6 +2250,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 729,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L729",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L729",
               },
               "type": "{ (message: string, extras?: PreconditionErrorExtras): any; (type: string, message: string, extras?: object): any; }",
@@ -2172,6 +2265,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 724,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L724",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L724",
               },
               "type": "() => any",
@@ -2190,6 +2284,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 723,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L723",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L723",
               },
               "type": "(message: any, command: Command, context: PreconditionContext) => any",
@@ -2202,6 +2297,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 722,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L722",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L722",
         },
       },
@@ -2219,6 +2315,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 886,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L886",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L886",
             },
           },
@@ -2265,6 +2362,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 892,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L892",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L892",
               },
               "type": "(entry: IPreconditionContainer) => this",
@@ -2285,6 +2383,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 905,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L905",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L905",
               },
               "type": "(entries: Iterable<PreconditionEntryResolvable>) => this",
@@ -2306,6 +2405,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 899,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L899",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L899",
               },
               "type": "(message: any, command: Command) => any",
@@ -2327,6 +2427,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 910,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L910",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L910",
               },
               "type": "IPreconditionCondition",
@@ -2363,6 +2464,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 932,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L932",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L932",
               },
               "type": "any",
@@ -2382,6 +2484,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 880,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L880",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L880",
               },
               "type": "IPreconditionContainer[]",
@@ -2401,6 +2504,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 875,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L875",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L875",
               },
               "type": "PreconditionRunMode",
@@ -2420,6 +2524,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 885,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L885",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L885",
               },
               "type": "PreconditionRunCondition",
@@ -2431,6 +2536,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 870,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L870",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L870",
         },
       },
@@ -2445,6 +2551,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 779,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L779",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L779",
             },
           },
@@ -2477,6 +2584,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 786,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L786",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L786",
               },
               "type": "(message: any, command: Command) => any",
@@ -2500,6 +2608,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 773,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L773",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L773",
               },
               "type": "PreconditionContext",
@@ -2519,6 +2628,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 778,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L778",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L778",
               },
               "type": "string",
@@ -2530,6 +2640,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 766,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L766",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L766",
         },
       },
@@ -2544,6 +2655,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 717,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L717",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L717",
             },
           },
@@ -2570,6 +2682,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 716,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L716",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L716",
               },
               "type": "{}",
@@ -2584,6 +2697,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 715,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L715",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L715",
               },
               "type": "Precondition",
@@ -2595,6 +2709,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 714,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L714",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L714",
         },
       },
@@ -2609,6 +2724,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1313,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1313",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1313",
             },
           },
@@ -2626,6 +2742,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1312,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1312",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1312",
         },
       },
@@ -2640,6 +2757,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1548,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1548",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1548",
             },
           },
@@ -2711,6 +2829,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1583,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1583",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1583",
               },
               "type": "<T extends any>(store: any) => this",
@@ -2732,6 +2851,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1590,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1590",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1590",
               },
               "type": "(token?: string) => Promise<string>",
@@ -2751,6 +2871,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1577,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1577",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1577",
               },
               "type": "<T extends any>(store: any) => this",
@@ -2789,6 +2910,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1572,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1572",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1572",
               },
               "type": "(rootDirectory?: string) => void",
@@ -2803,6 +2925,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1592,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1592",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1592",
               },
               "type": "(plugin: typeof Plugin) => typeof SapphireClient",
@@ -2824,6 +2947,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1527,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1527",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1527",
               },
               "type": "ArgumentStore",
@@ -2843,6 +2967,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1532,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1532",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1532",
               },
               "type": "CommandStore",
@@ -2862,6 +2987,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1537,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1537",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1537",
               },
               "type": "EventStore",
@@ -2905,6 +3031,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1516,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1516",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1516",
               },
               "type": "SapphirePrefixHook",
@@ -2924,6 +3051,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1487,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1487",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1487",
               },
               "type": "string",
@@ -2944,6 +3072,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1522,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1522",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1522",
               },
               "type": "ILogger",
@@ -2958,6 +3087,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1591,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1591",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1591",
               },
               "type": "PluginManager",
@@ -2977,6 +3107,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1542,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1542",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1542",
               },
               "type": "PreconditionStore",
@@ -2996,6 +3127,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1547,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1547",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1547",
               },
               "type": "Set<any>",
@@ -3007,6 +3139,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1482,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1482",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1482",
         },
       },
@@ -3027,6 +3160,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 23,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L23",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L23",
             },
           },
@@ -3057,6 +3191,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 17,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L17",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L17",
               },
               "type": "string",
@@ -3068,6 +3203,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 13,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L13",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L13",
         },
       },
@@ -3096,6 +3232,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1195,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1195",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1195",
             },
             "value": 0,
@@ -3113,6 +3250,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1199,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1199",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1199",
             },
             "value": 1,
@@ -3130,6 +3268,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1203,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1203",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1203",
             },
             "value": 2,
@@ -3147,6 +3286,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1207,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1207",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1207",
             },
             "value": 3,
@@ -3162,6 +3302,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1191,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1191",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1191",
         },
       },
@@ -3180,6 +3321,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1177,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1177",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1177",
             },
             "value": "author",
@@ -3193,6 +3335,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1178,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1178",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1178",
             },
             "value": "channel",
@@ -3206,6 +3349,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1179,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1179",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1179",
             },
             "value": "guild",
@@ -3220,6 +3364,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1176,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1176",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1176",
         },
       },
@@ -3238,6 +3383,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1708,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1708",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1708",
             },
             "value": "channelCreate",
@@ -3251,6 +3397,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1709,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1709",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1709",
             },
             "value": "channelDelete",
@@ -3264,6 +3411,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1710,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1710",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1710",
             },
             "value": "channelPinsUpdate",
@@ -3277,6 +3425,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1711,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1711",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1711",
             },
             "value": "channelUpdate",
@@ -3290,6 +3439,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1767,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1767",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1767",
             },
             "value": "commandAccepted",
@@ -3303,6 +3453,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1766,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1766",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1766",
             },
             "value": "commandDenied",
@@ -3316,6 +3467,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1771,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1771",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1771",
             },
             "value": "commandError",
@@ -3329,6 +3481,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1770,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1770",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1770",
             },
             "value": "commandFinish",
@@ -3342,6 +3495,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1768,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1768",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1768",
             },
             "value": "commandRun",
@@ -3355,6 +3509,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1769,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1769",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1769",
             },
             "value": "commandSuccess",
@@ -3368,6 +3523,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1712,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1712",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1712",
             },
             "value": "debug",
@@ -3381,6 +3537,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1714,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1714",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1714",
             },
             "value": "disconnect",
@@ -3394,6 +3551,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1715,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1715",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1715",
             },
             "value": "emojiCreate",
@@ -3407,6 +3565,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1716,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1716",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1716",
             },
             "value": "emojiDelete",
@@ -3420,6 +3579,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1717,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1717",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1717",
             },
             "value": "emojiUpdate",
@@ -3433,6 +3593,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1718,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1718",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1718",
             },
             "value": "error",
@@ -3446,6 +3607,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1761,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1761",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1761",
             },
             "value": "eventError",
@@ -3459,6 +3621,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1719,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1719",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1719",
             },
             "value": "guildBanAdd",
@@ -3472,6 +3635,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1720,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1720",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1720",
             },
             "value": "guildBanRemove",
@@ -3485,6 +3649,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1721,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1721",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1721",
             },
             "value": "guildCreate",
@@ -3498,6 +3663,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1722,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1722",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1722",
             },
             "value": "guildDelete",
@@ -3511,6 +3677,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1724,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1724",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1724",
             },
             "value": "guildIntegrationsUpdate",
@@ -3524,6 +3691,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1725,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1725",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1725",
             },
             "value": "guildMemberAdd",
@@ -3537,6 +3705,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1726,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1726",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1726",
             },
             "value": "guildMemberAvailable",
@@ -3550,6 +3719,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1727,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1727",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1727",
             },
             "value": "guildMemberRemove",
@@ -3563,6 +3733,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1728,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1728",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1728",
             },
             "value": "guildMembersChunk",
@@ -3576,6 +3747,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1729,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1729",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1729",
             },
             "value": "guildMemberSpeaking",
@@ -3589,6 +3761,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1730,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1730",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1730",
             },
             "value": "guildMemberUpdate",
@@ -3602,6 +3775,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1723,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1723",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1723",
             },
             "value": "guildUnavailable",
@@ -3615,6 +3789,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1731,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1731",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1731",
             },
             "value": "guildUpdate",
@@ -3628,6 +3803,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1745,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1745",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1745",
             },
             "value": "invalidated",
@@ -3641,6 +3817,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1732,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1732",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1732",
             },
             "value": "inviteCreate",
@@ -3654,6 +3831,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1733,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1733",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1733",
             },
             "value": "inviteDelete",
@@ -3667,6 +3845,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1760,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1760",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1760",
             },
             "value": "mentionPrefixOnly",
@@ -3680,6 +3859,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1734,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1734",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1734",
             },
             "value": "message",
@@ -3693,6 +3873,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1735,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1735",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1735",
             },
             "value": "messageDelete",
@@ -3706,6 +3887,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1738,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1738",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1738",
             },
             "value": "messageDeleteBulk",
@@ -3719,6 +3901,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1739,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1739",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1739",
             },
             "value": "messageReactionAdd",
@@ -3732,6 +3915,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1740,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1740",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1740",
             },
             "value": "messageReactionRemove",
@@ -3745,6 +3929,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1736,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1736",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1736",
             },
             "value": "messageReactionRemoveAll",
@@ -3758,6 +3943,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1737,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1737",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1737",
             },
             "value": "messageReactionRemoveEmoji",
@@ -3771,6 +3957,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1741,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1741",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1741",
             },
             "value": "messageUpdate",
@@ -3784,6 +3971,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1759,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1759",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1759",
             },
             "value": "piecePostLoad",
@@ -3797,6 +3985,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1758,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1758",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1758",
             },
             "value": "pieceUnload",
@@ -3810,6 +3999,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1772,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1772",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1772",
             },
             "value": "pluginLoaded",
@@ -3823,6 +4013,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1765,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1765",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1765",
             },
             "value": "preCommandRun",
@@ -3836,6 +4027,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1762,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1762",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1762",
             },
             "value": "prefixedMessage",
@@ -3849,6 +4041,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1742,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1742",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1742",
             },
             "value": "presenceUpdate",
@@ -3862,6 +4055,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1743,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1743",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1743",
             },
             "value": "rateLimit",
@@ -3875,6 +4069,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1744,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1744",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1744",
             },
             "value": "ready",
@@ -3888,6 +4083,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1746,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1746",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1746",
             },
             "value": "roleCreate",
@@ -3901,6 +4097,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1747,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1747",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1747",
             },
             "value": "roleDelete",
@@ -3914,6 +4111,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1748,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1748",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1748",
             },
             "value": "roleUpdate",
@@ -3927,6 +4125,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1753,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1753",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1753",
             },
             "value": "shardDisconnect",
@@ -3940,6 +4139,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1754,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1754",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1754",
             },
             "value": "shardError",
@@ -3953,6 +4153,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1755,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1755",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1755",
             },
             "value": "shardReady",
@@ -3966,6 +4167,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1756,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1756",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1756",
             },
             "value": "shardReconnecting",
@@ -3979,6 +4181,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1757,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1757",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1757",
             },
             "value": "shardResume",
@@ -3992,6 +4195,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1749,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1749",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1749",
             },
             "value": "typingStart",
@@ -4005,6 +4209,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1764,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1764",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1764",
             },
             "value": "unknownCommand",
@@ -4018,6 +4223,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1763,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1763",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1763",
             },
             "value": "unknownCommandName",
@@ -4031,6 +4237,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1750,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1750",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1750",
             },
             "value": "userUpdate",
@@ -4044,6 +4251,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1751,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1751",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1751",
             },
             "value": "voiceStateUpdate",
@@ -4057,6 +4265,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1713,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1713",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1713",
             },
             "value": "warn",
@@ -4070,6 +4279,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1752,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1752",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1752",
             },
             "value": "webhookUpdate",
@@ -4146,6 +4356,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1707,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1707",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1707",
         },
       },
@@ -4172,6 +4383,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1327,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1327",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1327",
             },
             "value": 20,
@@ -4189,6 +4401,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1339,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1339",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1339",
             },
             "value": 50,
@@ -4206,6 +4419,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1343,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1343",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1343",
             },
             "value": 60,
@@ -4223,6 +4437,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1331,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1331",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1331",
             },
             "value": 30,
@@ -4240,6 +4455,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1347,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1347",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1347",
             },
             "value": 100,
@@ -4257,6 +4473,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1323,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1323",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1323",
             },
             "value": 10,
@@ -4274,6 +4491,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1335,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1335",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1335",
             },
             "value": 40,
@@ -4292,6 +4510,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1319,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1319",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1319",
         },
       },
@@ -4310,6 +4529,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1184,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1184",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1184",
             },
             "value": "postInitialization",
@@ -4323,6 +4543,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1186,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1186",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1186",
             },
             "value": "postLogin",
@@ -4336,6 +4557,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1182,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1182",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1182",
             },
             "value": "preGenericsInitialization",
@@ -4349,6 +4571,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1183,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1183",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1183",
             },
             "value": "preInitialization",
@@ -4362,6 +4585,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1185,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1185",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1185",
             },
             "value": "preLogin",
@@ -4378,6 +4602,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1181,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1181",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1181",
         },
       },
@@ -4405,6 +4630,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 815,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L815",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L815",
             },
             "value": 0,
@@ -4423,6 +4649,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 820,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L820",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L820",
             },
             "value": 1,
@@ -4436,6 +4663,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 810,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L810",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L810",
         },
       },
@@ -4465,6 +4693,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 805,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L805",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L805",
             },
             "value": 1,
@@ -4484,6 +4713,7 @@ Object {
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 799,
+              "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L799",
               "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L799",
             },
             "value": 0,
@@ -4497,6 +4727,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 793,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L793",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L793",
         },
       },
@@ -4522,6 +4753,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 58,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L58",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L58",
         },
         "type": "{ (): any; <E>(x: E): any; }",
@@ -4541,6 +4773,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 77,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L77",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L77",
         },
         "type": "<T, E>(x: Result<T, E>) => x is any",
@@ -4563,6 +4796,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 144,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L144",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L144",
         },
         "type": "{ <T>(x: Maybe<T>): true; <T>(x: unknown): x is any; }",
@@ -4581,6 +4815,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 139,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L139",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L139",
         },
         "type": "<T>(x: Maybe<T>) => x is any",
@@ -4600,6 +4835,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 71,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L71",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L71",
         },
         "type": "<T, E>(x: Result<T, E>) => x is any",
@@ -4618,6 +4854,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 134,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L134",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L134",
         },
         "type": "<T>(x: Maybe<T>) => x is any",
@@ -4653,6 +4890,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 97,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L97",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L97",
         },
         "type": "{ <T, V extends unknown>(value: V): V; (value: any): any; <T>(value: any): any; <T>(value: any): any; }",
@@ -4671,6 +4909,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 129,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L129",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L129",
         },
         "type": "() => any",
@@ -4695,6 +4934,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 46,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L46",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L46",
         },
         "type": "{ (): any; <T>(x: T): any; }",
@@ -4719,6 +4959,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 117,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L117",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L117",
         },
         "type": "{ (): any; <T>(x: T): any; }",
@@ -4741,6 +4982,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 636,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L636",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L636",
         },
       },
@@ -4767,6 +5009,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 652,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L652",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L652",
               },
             },
@@ -4781,6 +5024,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 648,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L648",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L648",
         },
       },
@@ -4805,6 +5049,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 618,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L618",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L618",
               },
               "type": "boolean",
@@ -4820,6 +5065,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 619,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L619",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L619",
               },
               "type": "any",
@@ -4835,6 +5081,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 620,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L620",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L620",
               },
               "type": "Date",
@@ -4850,6 +5097,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 621,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L621",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L621",
               },
               "type": "any",
@@ -4865,6 +5113,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 622,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L622",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L622",
               },
               "type": "number",
@@ -4880,6 +5129,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 623,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L623",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L623",
               },
               "type": "any",
@@ -4895,6 +5145,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 624,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L624",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L624",
               },
               "type": "any",
@@ -4910,6 +5161,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 625,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L625",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L625",
               },
               "type": "number",
@@ -4925,6 +5177,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 626,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L626",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L626",
               },
               "type": "any",
@@ -4940,6 +5193,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 627,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L627",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L627",
               },
               "type": "any",
@@ -4955,6 +5209,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 628,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L628",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L628",
               },
               "type": "any",
@@ -4970,6 +5225,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 629,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L629",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L629",
               },
               "type": "number",
@@ -4985,6 +5241,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 630,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L630",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L630",
               },
               "type": "any",
@@ -5000,6 +5257,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 631,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L631",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L631",
               },
               "type": "string",
@@ -5015,6 +5273,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 632,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L632",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L632",
               },
               "type": "any",
@@ -5030,6 +5289,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 633,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L633",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L633",
               },
               "type": "any",
@@ -5045,6 +5305,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 634,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L634",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L634",
               },
               "type": "any",
@@ -5056,6 +5317,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 617,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L617",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L617",
         },
       },
@@ -5080,6 +5342,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1160,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1160",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1160",
               },
               "type": "Command<Args>",
@@ -5095,6 +5358,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1163,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1163",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1163",
               },
               "type": "boolean",
@@ -5110,6 +5374,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1162,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1162",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1162",
               },
               "type": "number",
@@ -5125,6 +5390,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1159,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1159",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1159",
               },
               "type": "any",
@@ -5140,6 +5406,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1161,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1161",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1161",
               },
               "type": "number",
@@ -5151,6 +5418,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1158,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1158",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1158",
         },
       },
@@ -5170,6 +5438,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1156,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1156",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1156",
         },
       },
@@ -5194,6 +5463,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1596,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1596",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1596",
               },
               "type": "ILogger",
@@ -5209,6 +5479,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1595,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1595",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1595",
               },
               "type": "LogLevel",
@@ -5220,6 +5491,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1594,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1594",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1594",
         },
       },
@@ -5244,6 +5516,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1794,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1794",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1794",
               },
               "type": "CommandContext",
@@ -5259,6 +5532,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1793,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1793",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1793",
               },
               "type": "string",
@@ -5270,6 +5544,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1792,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1792",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1792",
         },
       },
@@ -5298,6 +5573,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1056,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1056",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1056",
               },
               "type": "string",
@@ -5317,6 +5593,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1052,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1052",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1052",
               },
               "type": "string",
@@ -5328,6 +5605,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1048,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1048",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1048",
         },
       },
@@ -5352,6 +5630,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1790,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1790",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1790",
               },
               "type": "CommandContext",
@@ -5367,6 +5646,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1789,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1789",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1789",
               },
               "type": "string",
@@ -5378,6 +5658,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1788,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1788",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1788",
         },
       },
@@ -5402,6 +5683,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1782,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1782",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1782",
               },
               "type": "any",
@@ -5417,6 +5699,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1781,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1781",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1781",
               },
               "type": "Command<Args>",
@@ -5428,6 +5711,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1780,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1780",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1780",
         },
       },
@@ -5463,6 +5747,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1016,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1016",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1016",
               },
               "type": "string",
@@ -5484,6 +5769,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1022,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1022",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1022",
               },
               "type": "string",
@@ -5506,6 +5792,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1029,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1029",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1029",
               },
               "type": "PreconditionArrayResolvable",
@@ -5532,6 +5819,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1046,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1046",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1046",
               },
               "type": "[string, string][]",
@@ -5553,6 +5841,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1035,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1035",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1035",
               },
               "type": "FlagStrategyOptions",
@@ -5564,6 +5853,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1010,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1010",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1010",
         },
       },
@@ -5588,6 +5878,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1798,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1798",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1798",
               },
               "type": "string",
@@ -5603,6 +5894,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1797,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1797",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1797",
               },
               "type": "{}",
@@ -5614,6 +5906,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1796,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1796",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1796",
         },
       },
@@ -5638,6 +5931,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1778,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1778",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1778",
               },
               "type": "Event<\\"\\">",
@@ -5649,6 +5943,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1777,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1777",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1777",
         },
       },
@@ -5673,6 +5968,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1303,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1303",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1303",
               },
               "type": "any",
@@ -5688,6 +5984,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1304,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1304",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1304",
               },
               "type": "string",
@@ -5703,6 +6000,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1305,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1305",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1305",
               },
               "type": "boolean",
@@ -5714,6 +6012,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1302,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1302",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1302",
         },
       },
@@ -5747,6 +6046,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1704,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1704",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1704",
               },
               "type": "string",
@@ -5758,6 +6058,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1695,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1695",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1695",
         },
       },
@@ -5787,6 +6088,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1693,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1693",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1693",
               },
               "type": "keyof ArgType",
@@ -5798,6 +6100,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1688,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1688",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1688",
         },
       },
@@ -5825,6 +6128,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1077,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1077",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1077",
               },
               "type": "(argument: string, context: ArgumentContext) => any",
@@ -5846,6 +6150,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1071,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1071",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1071",
               },
               "type": "string",
@@ -5857,6 +6162,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1067,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1067",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1067",
         },
       },
@@ -5881,6 +6187,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1786,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1786",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1786",
               },
               "type": "Command<Args>",
@@ -5896,6 +6203,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1785,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1785",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1785",
               },
               "type": "any",
@@ -5907,6 +6215,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1784,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1784",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1784",
         },
       },
@@ -5933,6 +6242,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1359,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1359",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1359",
               },
               "type": "(...values: readonly unknown[]) => void",
@@ -5951,6 +6261,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1374,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1374",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1374",
               },
               "type": "(...values: readonly unknown[]) => void",
@@ -5969,6 +6280,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1379,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1379",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1379",
               },
               "type": "(...values: readonly unknown[]) => void",
@@ -5987,6 +6299,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1364,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1364",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1364",
               },
               "type": "(...values: readonly unknown[]) => void",
@@ -6005,6 +6318,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1354,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1354",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1354",
               },
               "type": "(...values: readonly unknown[]) => void",
@@ -6023,6 +6337,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1369,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1369",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1369",
               },
               "type": "(...values: readonly unknown[]) => void",
@@ -6042,6 +6357,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1385,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1385",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1385",
               },
               "type": "(level: LogLevel, ...values: readonly unknown[]) => void",
@@ -6054,6 +6370,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1349,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1349",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1349",
         },
       },
@@ -6078,6 +6395,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1775,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1775",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1775",
               },
               "type": "any",
@@ -6089,6 +6407,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1774,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1774",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1774",
         },
       },
@@ -6128,6 +6447,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 706,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L706",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L706",
               },
               "type": "(message: any, command: Command, entries: readonly IPreconditionContainer[]) => any",
@@ -6154,6 +6474,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 697,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L697",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L697",
               },
               "type": "(message: any, command: Command, entries: readonly IPreconditionContainer[]) => any",
@@ -6166,6 +6487,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 688,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L688",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L688",
         },
       },
@@ -6199,6 +6521,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 681,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L681",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L681",
               },
               "type": "(message: any, command: Command) => any",
@@ -6211,6 +6534,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 674,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L674",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L674",
         },
       },
@@ -6230,6 +6554,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1800,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1800",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1800",
         },
       },
@@ -6265,6 +6590,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 832,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L832",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L832",
               },
               "type": "readonly PreconditionEntryResolvable[]",
@@ -6285,6 +6611,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 837,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L837",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L837",
               },
               "type": "PreconditionRunMode",
@@ -6296,6 +6623,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 827,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L827",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L827",
         },
       },
@@ -6315,6 +6643,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 737,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L737",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L737",
         },
       },
@@ -6350,6 +6679,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 755,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L755",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L755",
               },
               "type": "PreconditionContext",
@@ -6370,6 +6700,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 750,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L750",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L750",
               },
               "type": "string",
@@ -6381,6 +6712,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 745,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L745",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L745",
         },
       },
@@ -6410,6 +6742,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 643,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L643",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L643",
               },
               "type": "number",
@@ -6421,6 +6754,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 638,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L638",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L638",
         },
       },
@@ -6453,6 +6787,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1406,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1406",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1406",
               },
               "type": "string",
@@ -6474,6 +6809,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1412,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1412",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1412",
               },
               "type": "boolean",
@@ -6495,6 +6831,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1418,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1418",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1418",
               },
               "type": "SapphirePrefix",
@@ -6516,6 +6853,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1424,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1424",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1424",
               },
               "type": "SapphirePrefixHook",
@@ -6537,6 +6875,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1430,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1430",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1430",
               },
               "type": "string",
@@ -6558,6 +6897,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1436,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1436",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1436",
               },
               "type": "ClientLoggerOptions",
@@ -6569,6 +6909,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1398,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1398",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1398",
         },
       },
@@ -6587,6 +6928,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1212,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1212",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1212",
               },
             },
@@ -6601,6 +6943,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1211,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1211",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1211",
         },
       },
@@ -6619,6 +6962,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1216,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1216",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1216",
               },
             },
@@ -6633,6 +6977,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1215,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1215",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1215",
         },
       },
@@ -6657,6 +7002,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1219,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1219",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1219",
               },
               "type": "{}",
@@ -6672,6 +7018,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1221,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1221",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1221",
               },
               "type": "string",
@@ -6687,6 +7034,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1220,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1220",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1220",
               },
               "type": "PluginHook",
@@ -6700,6 +7048,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1218,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1218",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1218",
         },
       },
@@ -6718,6 +7067,7 @@ Object {
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1396,
+                "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1396",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1396",
               },
             },
@@ -6732,6 +7082,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1395,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1395",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1395",
         },
       },
@@ -6751,6 +7102,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1062,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1062",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1062",
         },
       },
@@ -6767,6 +7119,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1066,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1066",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1066",
         },
       },
@@ -6779,6 +7132,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1210,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1210",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1210",
         },
       },
@@ -6796,6 +7150,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 669,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L669",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L669",
         },
       },
@@ -6808,6 +7163,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 721,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L721",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L721",
         },
       },
@@ -6825,6 +7181,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 41,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L41",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L41",
         },
       },
@@ -6837,6 +7194,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1835,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1835",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1835",
         },
       },
@@ -6854,6 +7212,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 83,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L83",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L83",
         },
       },
@@ -6870,6 +7229,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 92,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L92",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L92",
         },
       },
@@ -6887,6 +7247,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 36,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L36",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L36",
         },
       },
@@ -6906,6 +7267,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 843,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L843",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L843",
         },
       },
@@ -6923,6 +7285,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 659,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L659",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L659",
         },
       },
@@ -6940,6 +7303,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 664,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L664",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L664",
         },
       },
@@ -6961,6 +7325,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 850,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L850",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L850",
         },
       },
@@ -6973,6 +7338,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 709,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L709",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L709",
         },
       },
@@ -6985,6 +7351,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 720,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L720",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L720",
         },
       },
@@ -7002,6 +7369,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 761,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L761",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L761",
         },
       },
@@ -7020,6 +7388,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 31,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L31",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L31",
         },
       },
@@ -7039,6 +7408,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1394,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1394",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1394",
         },
       },
@@ -7056,6 +7426,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 88,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L88",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L88",
         },
       },
@@ -7068,6 +7439,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1214,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1214",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1214",
         },
       },
@@ -7082,6 +7454,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1619,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1619",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1619",
         },
         "type": "Symbol",
@@ -7096,6 +7469,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1621,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1621",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1621",
         },
         "type": "Symbol",
@@ -7115,6 +7489,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1841,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1841",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1841",
         },
         "type": "IPreconditionCondition",
@@ -7134,6 +7509,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1847,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1847",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1847",
         },
         "type": "IPreconditionCondition",
@@ -7148,6 +7524,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1617,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1617",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1617",
         },
         "type": "Symbol",
@@ -7162,6 +7539,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1618,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1618",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1618",
         },
         "type": "Symbol",
@@ -7176,6 +7554,7 @@ Object {
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 1620,
+          "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1620",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1620",
         },
         "type": "Symbol",
@@ -7187,6 +7566,7 @@ Object {
     Object {
       "filename": "dist/index.d.ts",
       "isIndexFile": true,
+      "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts",
       "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts",
     },
   ],

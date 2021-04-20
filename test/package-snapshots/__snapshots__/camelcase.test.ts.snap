@@ -75,6 +75,7 @@ camelCase('lorem-ipsum', {locale: 'en-US'});
         "source": Object {
           "filename": "index.d.ts",
           "line": 96,
+          "unpkgURL": "https://unpkg.com/browse/camelcase@6.2.0/index.d.ts#L96",
           "url": "https://github.com/sindresorhus/camelcase/tree/1321775c740c20bd93d0bdbd844703464e0e6de4/index.d.ts#L96",
         },
         "type": "(input: string | readonly string[], options?: camelcase.Options) => string",
@@ -122,6 +123,7 @@ camelCase('lorem-ipsum', {locale: 'en-US'});
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 36,
+                "unpkgURL": "https://unpkg.com/browse/camelcase@6.2.0/index.d.ts#L36",
                 "url": "https://github.com/sindresorhus/camelcase/tree/1321775c740c20bd93d0bdbd844703464e0e6de4/index.d.ts#L36",
               },
               "type": "string | readonly string[]",
@@ -143,6 +145,7 @@ camelCase('lorem-ipsum', {locale: 'en-US'});
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 8,
+                "unpkgURL": "https://unpkg.com/browse/camelcase@6.2.0/index.d.ts#L8",
                 "url": "https://github.com/sindresorhus/camelcase/tree/1321775c740c20bd93d0bdbd844703464e0e6de4/index.d.ts#L8",
               },
               "type": "boolean",
@@ -164,6 +167,7 @@ camelCase('lorem-ipsum', {locale: 'en-US'});
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 15,
+                "unpkgURL": "https://unpkg.com/browse/camelcase@6.2.0/index.d.ts#L15",
                 "url": "https://github.com/sindresorhus/camelcase/tree/1321775c740c20bd93d0bdbd844703464e0e6de4/index.d.ts#L15",
               },
               "type": "boolean",
@@ -175,6 +179,7 @@ camelCase('lorem-ipsum', {locale: 'en-US'});
         "source": Object {
           "filename": "index.d.ts",
           "line": 2,
+          "unpkgURL": "https://unpkg.com/browse/camelcase@6.2.0/index.d.ts#L2",
           "url": "https://github.com/sindresorhus/camelcase/tree/1321775c740c20bd93d0bdbd844703464e0e6de4/index.d.ts#L2",
         },
       },
@@ -187,6 +192,7 @@ camelCase('lorem-ipsum', {locale: 'en-US'});
     Object {
       "filename": "index.d.ts",
       "isIndexFile": true,
+      "unpkgURL": "https://unpkg.com/browse/camelcase@6.2.0/index.d.ts",
       "url": "https://github.com/sindresorhus/camelcase/tree/1321775c740c20bd93d0bdbd844703464e0e6de4/index.d.ts",
     },
   ],

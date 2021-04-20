@@ -28,6 +28,7 @@ Object {
               "source": Object {
                 "filename": "index.d.ts",
                 "line": 3,
+                "unpkgURL": undefined,
                 "url": undefined,
               },
               "type": "{ (a: string): number; (b: number): string; }",
@@ -40,6 +41,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 1,
+          "unpkgURL": undefined,
           "url": undefined,
         },
       },
@@ -52,6 +54,7 @@ Object {
     Object {
       "filename": "index.d.ts",
       "isIndexFile": true,
+      "unpkgURL": undefined,
       "url": undefined,
     },
   ],

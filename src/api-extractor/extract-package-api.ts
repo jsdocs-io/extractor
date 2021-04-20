@@ -10,6 +10,7 @@ import { getProject } from './get-project';
 import { getRepositoryFileURLProvider } from './repository-file-url-provider';
 import { getSourceProvider } from './source-provider';
 import { getTypeChecker } from './type-checker';
+import { getUnpkgFileURLProvider } from './unpkg-file-url-provider';
 
 /**
  * `extractPackageAPI` extracts the public API from a package.
@@ -63,7 +64,13 @@ export function extractPackageAPI({
     const getRepositoryFileURL = getRepositoryFileURLProvider({ repository });
     log('extractPackageAPI: got repository file URL provider');
 
-    const getSource = getSourceProvider({ getRepositoryFileURL });
+    const getUnpkgFileURL = getUnpkgFileURLProvider({ id });
+    log('extractPackageAPI: got unpkg file URL provider');
+
+    const getSource = getSourceProvider({
+        getRepositoryFileURL,
+        getUnpkgFileURL,
+    });
     log('extractPackageAPI: got source provider');
 
     const getType = getTypeChecker({ project });
@@ -88,6 +95,7 @@ export function extractPackageAPI({
         indexFile,
         declarations,
         getRepositoryFileURL,
+        getUnpkgFileURL,
     });
     log('extractPackageAPI: got package files: %O', { id, files });
 
@@ -98,5 +106,6 @@ export function extractPackageAPI({
         id,
         api: { overview, declarations, files },
     });
+
     return { overview, declarations, files };
 }

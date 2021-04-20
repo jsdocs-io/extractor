@@ -27,6 +27,7 @@ Object {
               "source": Object {
                 "filename": "foo.d.ts",
                 "line": 6,
+                "unpkgURL": undefined,
                 "url": undefined,
               },
             },
@@ -43,6 +44,7 @@ Object {
               "source": Object {
                 "filename": "foo.d.ts",
                 "line": 9,
+                "unpkgURL": undefined,
                 "url": undefined,
               },
             },
@@ -61,6 +63,7 @@ Object {
         "source": Object {
           "filename": "foo.d.ts",
           "line": 1,
+          "unpkgURL": undefined,
           "url": undefined,
         },
       },
@@ -71,11 +74,13 @@ Object {
   "files": Array [
     Object {
       "filename": "foo.d.ts",
+      "unpkgURL": undefined,
       "url": undefined,
     },
     Object {
       "filename": "index.d.ts",
       "isIndexFile": true,
+      "unpkgURL": undefined,
       "url": undefined,
     },
   ],

@@ -19,6 +19,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 307,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L307",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L307",
         },
         "type": "() => void",
@@ -38,6 +39,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 284,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L284",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L284",
         },
         "type": "(spec: Spec) => void",
@@ -57,6 +59,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 291,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L291",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L291",
         },
         "type": "(tags?: string[]) => RuleMetadata[]",
@@ -75,6 +78,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 302,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L302",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L302",
         },
         "type": "(plugin: AxePlugin) => void",
@@ -92,6 +96,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 296,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L296",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L296",
         },
         "type": "() => void",
@@ -122,6 +127,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 264,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L264",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L264",
         },
         "type": "{ (context?: ElementContext): Promise<AxeResults>; (options: RunOptions): Promise<AxeResults>; (callback: (error: Error, results: AxeResults) => void): void; (context: ElementContext, callback: RunCallback): void; (options: RunOptions, callback: RunCallback): void; (context: ElementContext, options: RunOptions): Promise<AxeResults>; (context: ElementContext, options: RunOptions, callback: RunCallback): void; }",
@@ -149,6 +155,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 160,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L160",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L160",
               },
               "type": "boolean",
@@ -164,6 +171,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 161,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L161",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L161",
               },
               "type": "boolean",
@@ -179,6 +187,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 158,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L158",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L158",
               },
               "type": "AriaAttrsType",
@@ -194,6 +203,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 162,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L162",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L162",
               },
               "type": "boolean",
@@ -209,6 +219,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 159,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L159",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L159",
               },
               "type": "string[]",
@@ -220,6 +231,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 157,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L157",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L157",
         },
       },
@@ -244,6 +256,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 169,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L169",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L169",
               },
               "type": "string[]",
@@ -259,6 +272,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 170,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L170",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L170",
               },
               "type": "boolean",
@@ -274,6 +288,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 168,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L168",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L168",
               },
               "type": "string[]",
@@ -289,6 +304,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 166,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L166",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L166",
               },
               "type": "string[]",
@@ -304,6 +320,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 167,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L167",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L167",
               },
               "type": "string[]",
@@ -319,6 +336,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 165,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L165",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L165",
               },
               "type": "\\"abstract\\" | \\"widget\\" | \\"structure\\" | \\"landmark\\" | \\"section\\" | \\"link\\" | \\"listitem\\" | \\"img\\" | \\"navigation\\" | \\"note\\" | \\"separator\\" | \\"none\\" | \\"sectionhead\\"",
@@ -334,6 +352,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 171,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L171",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L171",
               },
               "type": "boolean",
@@ -345,6 +364,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 164,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L164",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L164",
         },
       },
@@ -366,6 +386,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 233,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L233",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L233",
               },
               "type": "(callback: Function) => void",
@@ -379,6 +400,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 228,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L228",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L228",
               },
               "type": "(...args: any[]) => any",
@@ -399,6 +421,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 229,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L229",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L229",
               },
               "type": "{ id: string; callback(...args: any[]): void; }[]",
@@ -414,6 +437,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 227,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L227",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L227",
               },
               "type": "string",
@@ -425,6 +449,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 226,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L226",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L226",
         },
       },
@@ -449,6 +474,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 105,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L105",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L105",
               },
               "type": "Result[]",
@@ -464,6 +490,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 104,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L104",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L104",
               },
               "type": "Result[]",
@@ -479,6 +506,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 102,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L102",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L102",
               },
               "type": "Result[]",
@@ -494,6 +522,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 97,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L97",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L97",
               },
               "type": "TestEngine",
@@ -509,6 +538,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 99,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L99",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L99",
               },
               "type": "TestEnvironment",
@@ -524,6 +554,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 98,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L98",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L98",
               },
               "type": "TestRunner",
@@ -539,6 +570,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 101,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L101",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L101",
               },
               "type": "string",
@@ -554,6 +586,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 96,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L96",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L96",
               },
               "type": "RunOptions",
@@ -569,6 +602,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 100,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L100",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L100",
               },
               "type": "string",
@@ -584,6 +618,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 103,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L103",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L103",
               },
               "type": "Result[]",
@@ -595,6 +630,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 95,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L95",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L95",
         },
       },
@@ -619,6 +655,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 208,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L208",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L208",
               },
               "type": "string | Function",
@@ -634,6 +671,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 211,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L211",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L211",
               },
               "type": "boolean",
@@ -649,6 +687,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 207,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L207",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L207",
               },
               "type": "string | Function",
@@ -664,6 +703,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 206,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L206",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L206",
               },
               "type": "string",
@@ -679,6 +719,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 210,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L210",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L210",
               },
               "type": "string",
@@ -694,6 +735,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 209,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L209",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L209",
               },
               "type": "any",
@@ -705,6 +747,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 205,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L205",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L205",
         },
       },
@@ -729,6 +772,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 146,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L146",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L146",
               },
             },
@@ -741,6 +785,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 145,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L145",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L145",
         },
       },
@@ -765,6 +810,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 132,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L132",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L132",
               },
               "type": "any",
@@ -780,6 +826,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 129,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L129",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L129",
               },
               "type": "string",
@@ -795,6 +842,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 130,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L130",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L130",
               },
               "type": "string",
@@ -810,6 +858,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 131,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L131",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L131",
               },
               "type": "string",
@@ -825,6 +874,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 133,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L133",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L133",
               },
               "type": "RelatedNode[]",
@@ -836,6 +886,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 128,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L128",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L128",
         },
       },
@@ -860,6 +911,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 182,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L182",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L182",
               },
               "type": "{ [key: string]: HtmlElmsVariant; }",
@@ -871,6 +923,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 181,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L181",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L181",
         },
       },
@@ -895,6 +948,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 175,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L175",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L175",
               },
               "type": "boolean | string[]",
@@ -910,6 +964,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 174,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L174",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L174",
               },
               "type": "HtmlContentTypes[]",
@@ -925,6 +980,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 178,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L178",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L178",
               },
               "type": "{ [key: string]: string; }",
@@ -940,6 +996,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 179,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L179",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L179",
               },
               "type": "string[]",
@@ -955,6 +1012,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 176,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L176",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L176",
               },
               "type": "boolean",
@@ -970,6 +1028,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 177,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L177",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L177",
               },
               "type": "boolean",
@@ -981,6 +1040,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 173,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L173",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L173",
         },
       },
@@ -1005,6 +1065,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 155,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L155",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L155",
               },
               "type": "CheckLocale",
@@ -1020,6 +1081,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 153,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L153",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L153",
               },
               "type": "string",
@@ -1035,6 +1097,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 154,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L154",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L154",
               },
               "type": "RuleLocale",
@@ -1046,6 +1109,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 152,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L152",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L152",
         },
       },
@@ -1070,6 +1134,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 123,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L123",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L123",
               },
               "type": "CheckResult[]",
@@ -1085,6 +1150,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 121,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L121",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L121",
               },
               "type": "string[]",
@@ -1100,6 +1166,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 122,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L122",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L122",
               },
               "type": "CheckResult[]",
@@ -1115,6 +1182,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 126,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L126",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L126",
               },
               "type": "HTMLElement",
@@ -1130,6 +1198,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 125,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L125",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L125",
               },
               "type": "string",
@@ -1145,6 +1214,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 117,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L117",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L117",
               },
               "type": "string",
@@ -1160,6 +1230,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 118,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L118",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L118",
               },
               "type": "ImpactValue",
@@ -1175,6 +1246,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 124,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L124",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L124",
               },
               "type": "CheckResult[]",
@@ -1190,6 +1262,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 119,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L119",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L119",
               },
               "type": "string[]",
@@ -1205,6 +1278,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 120,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L120",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L120",
               },
               "type": "string[]",
@@ -1216,6 +1290,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 116,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L116",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L116",
         },
       },
@@ -1240,6 +1315,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 137,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L137",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L137",
               },
               "type": "string",
@@ -1255,6 +1331,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 136,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L136",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L136",
               },
               "type": "string[]",
@@ -1266,6 +1343,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 135,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L135",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L135",
         },
       },
@@ -1290,6 +1368,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 108,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L108",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L108",
               },
               "type": "string",
@@ -1305,6 +1384,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 109,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L109",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L109",
               },
               "type": "string",
@@ -1320,6 +1400,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 110,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L110",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L110",
               },
               "type": "string",
@@ -1335,6 +1416,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 111,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L111",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L111",
               },
               "type": "string",
@@ -1350,6 +1432,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 112,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L112",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L112",
               },
               "type": "ImpactValue",
@@ -1365,6 +1448,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 114,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L114",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L114",
               },
               "type": "NodeResult[]",
@@ -1380,6 +1464,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 113,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L113",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L113",
               },
               "type": "string[]",
@@ -1391,6 +1476,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 107,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L107",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L107",
         },
       },
@@ -1415,6 +1501,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 221,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L221",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L221",
               },
               "type": "string[]",
@@ -1430,6 +1517,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 220,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L220",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L220",
               },
               "type": "string[]",
@@ -1445,6 +1533,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 218,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L218",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L218",
               },
               "type": "boolean",
@@ -1460,6 +1549,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 217,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L217",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L217",
               },
               "type": "boolean",
@@ -1475,6 +1565,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 214,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L214",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L214",
               },
               "type": "string",
@@ -1490,6 +1581,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 216,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L216",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L216",
               },
               "type": "ImpactValue",
@@ -1505,6 +1597,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 224,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L224",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L224",
               },
               "type": "string",
@@ -1520,6 +1613,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 222,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L222",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L222",
               },
               "type": "string[]",
@@ -1535,6 +1629,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 219,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L219",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L219",
               },
               "type": "boolean",
@@ -1550,6 +1645,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 215,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L215",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L215",
               },
               "type": "string",
@@ -1565,6 +1661,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 223,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L223",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L223",
               },
               "type": "string[]",
@@ -1576,6 +1673,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 213,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L213",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L213",
         },
       },
@@ -1599,6 +1697,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 140,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L140",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L140",
               },
             },
@@ -1611,6 +1710,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 139,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L139",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L139",
         },
       },
@@ -1635,6 +1735,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 237,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L237",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L237",
               },
               "type": "string",
@@ -1650,6 +1751,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 238,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L238",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L238",
               },
               "type": "string",
@@ -1665,6 +1767,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 239,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L239",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L239",
               },
               "type": "string",
@@ -1680,6 +1783,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 236,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L236",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L236",
               },
               "type": "string",
@@ -1695,6 +1799,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 240,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L240",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L240",
               },
               "type": "string[]",
@@ -1706,6 +1811,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 235,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L235",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L235",
         },
       },
@@ -1728,6 +1834,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 76,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L76",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L76",
               },
             },
@@ -1740,6 +1847,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 75,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L75",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L75",
         },
       },
@@ -1764,6 +1872,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 72,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L72",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L72",
               },
               "type": "RunOnlyType",
@@ -1779,6 +1888,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 73,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L73",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L73",
               },
               "type": "string[]",
@@ -1790,6 +1900,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 71,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L71",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L71",
         },
       },
@@ -1814,6 +1925,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 88,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L88",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L88",
               },
               "type": "boolean",
@@ -1829,6 +1941,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 86,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L86",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L86",
               },
               "type": "boolean",
@@ -1844,6 +1957,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 90,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L90",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L90",
               },
               "type": "boolean",
@@ -1859,6 +1973,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 91,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L91",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L91",
               },
               "type": "number",
@@ -1874,6 +1989,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 89,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L89",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L89",
               },
               "type": "boolean",
@@ -1889,6 +2005,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 93,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L93",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L93",
               },
               "type": "boolean",
@@ -1904,6 +2021,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 92,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L92",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L92",
               },
               "type": "boolean",
@@ -1919,6 +2037,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 83,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L83",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L83",
               },
               "type": "ReporterVersion",
@@ -1934,6 +2053,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 84,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L84",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L84",
               },
               "type": "resultGroups[]",
@@ -1949,6 +2069,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 82,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L82",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L82",
               },
               "type": "RuleObject",
@@ -1964,6 +2085,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 81,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L81",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L81",
               },
               "type": "string[] | RunOnly",
@@ -1979,6 +2101,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 85,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L85",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L85",
               },
               "type": "boolean",
@@ -1994,6 +2117,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 87,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L87",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L87",
               },
               "type": "boolean",
@@ -2005,6 +2129,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 80,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L80",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L80",
         },
       },
@@ -2029,6 +2154,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 201,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L201",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L201",
               },
               "type": "string",
@@ -2047,6 +2173,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 191,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L191",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L191",
               },
               "type": "{ brand?: string; application?: string; }",
@@ -2062,6 +2189,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 196,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L196",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L196",
               },
               "type": "Check[]",
@@ -2077,6 +2205,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 200,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L200",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L200",
               },
               "type": "boolean",
@@ -2092,6 +2221,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 199,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L199",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L199",
               },
               "type": "Locale",
@@ -2107,6 +2237,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 195,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L195",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L195",
               },
               "type": "ReporterVersion",
@@ -2122,6 +2253,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 197,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L197",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L197",
               },
               "type": "Rule[]",
@@ -2137,6 +2269,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 198,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L198",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L198",
               },
               "type": "Standards",
@@ -2152,6 +2285,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 203,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L203",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L203",
               },
               "type": "string",
@@ -2163,6 +2297,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 190,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L190",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L190",
         },
       },
@@ -2187,6 +2322,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 185,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L185",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L185",
               },
               "type": "{ [key: string]: AriaAttrs; }",
@@ -2202,6 +2338,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 186,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L186",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L186",
               },
               "type": "{ [key: string]: AriaRoles; }",
@@ -2217,6 +2354,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 188,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L188",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L188",
               },
               "type": "{ [key: string]: number[]; }",
@@ -2232,6 +2370,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 187,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L187",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L187",
               },
               "type": "{ [key: string]: HtmlElms; }",
@@ -2243,6 +2382,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 184,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L184",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L184",
         },
       },
@@ -2267,6 +2407,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 58,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L58",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L58",
               },
               "type": "string",
@@ -2282,6 +2423,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 59,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L59",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L59",
               },
               "type": "string",
@@ -2293,6 +2435,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 57,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L57",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L57",
         },
       },
@@ -2317,6 +2460,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 68,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L68",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L68",
               },
               "type": "number",
@@ -2332,6 +2476,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 69,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L69",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L69",
               },
               "type": "string",
@@ -2347,6 +2492,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 65,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L65",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L65",
               },
               "type": "string",
@@ -2362,6 +2508,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 67,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L67",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L67",
               },
               "type": "number",
@@ -2377,6 +2524,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 66,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L66",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L66",
               },
               "type": "number",
@@ -2388,6 +2536,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 64,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L64",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L64",
         },
       },
@@ -2412,6 +2561,7 @@ Object {
               "source": Object {
                 "filename": "axe.d.ts",
                 "line": 62,
+                "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L62",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L62",
               },
               "type": "string",
@@ -2423,6 +2573,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 61,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L61",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L61",
         },
       },
@@ -2446,6 +2597,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 16,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L16",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L16",
         },
       },
@@ -2458,6 +2610,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 26,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L26",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L26",
         },
       },
@@ -2473,6 +2626,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 48,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L48",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L48",
         },
       },
@@ -2495,6 +2649,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 28,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L28",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L28",
         },
       },
@@ -2507,6 +2662,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 55,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L55",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L55",
         },
       },
@@ -2525,6 +2681,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 40,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L40",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L40",
         },
       },
@@ -2537,6 +2694,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 6,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L6",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L6",
         },
       },
@@ -2549,6 +2707,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 10,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L10",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L10",
         },
       },
@@ -2561,6 +2720,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 14,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L14",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L14",
         },
       },
@@ -2573,6 +2733,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 53,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L53",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L53",
         },
       },
@@ -2585,6 +2746,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 12,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L12",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L12",
         },
       },
@@ -2597,6 +2759,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 8,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L8",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L8",
         },
       },
@@ -2615,6 +2778,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 254,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L254",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L254",
         },
         "type": "AxeResults",
@@ -2629,6 +2793,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 244,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L244",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L244",
         },
         "type": "any",
@@ -2647,6 +2812,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 249,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L249",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L249",
         },
         "type": "string",
@@ -2661,6 +2827,7 @@ Object {
         "source": Object {
           "filename": "axe.d.ts",
           "line": 243,
+          "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L243",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L243",
         },
         "type": "string",
@@ -2672,6 +2839,7 @@ Object {
     Object {
       "filename": "axe.d.ts",
       "isIndexFile": true,
+      "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts",
       "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts",
     },
   ],

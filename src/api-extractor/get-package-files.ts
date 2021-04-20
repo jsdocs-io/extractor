@@ -4,15 +4,18 @@ import { Declaration, ModuleDeclarations } from '../types/module-declarations';
 import { PackageFile } from '../types/package-file';
 import { getFilename } from './get-filename';
 import { RepositoryFileURLProvider } from './repository-file-url-provider';
+import { UnpkgFileURLProvider } from './unpkg-file-url-provider';
 
 export function getPackageFiles({
     indexFile,
     declarations,
     getRepositoryFileURL,
+    getUnpkgFileURL,
 }: {
     indexFile: tsm.SourceFile;
     declarations: ModuleDeclarations;
     getRepositoryFileURL: RepositoryFileURLProvider;
+    getUnpkgFileURL: UnpkgFileURLProvider;
 }): PackageFile[] {
     const indexFilename = getFilename({ declaration: indexFile });
     const declarationFilenames = getDeclarationFilenames({ declarations });
@@ -21,12 +24,13 @@ export function getPackageFiles({
         .sort()
         .map((filename) => {
             const url = getRepositoryFileURL({ filename });
+            const unpkgURL = getUnpkgFileURL({ filename });
 
             if (filename === indexFilename) {
-                return { isIndexFile: true, filename, url };
+                return { isIndexFile: true, filename, url, unpkgURL };
             }
 
-            return { filename, url };
+            return { filename, url, unpkgURL };
         });
 }
 

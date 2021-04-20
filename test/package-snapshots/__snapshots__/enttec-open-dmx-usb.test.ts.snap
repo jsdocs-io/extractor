@@ -21,6 +21,7 @@ Object {
             "source": Object {
               "filename": "dist-types/index.d.ts",
               "line": 15,
+              "unpkgURL": "https://unpkg.com/browse/enttec-open-dmx-usb@2.0.0/dist-types/index.d.ts#L15",
               "url": "https://github.com/moritzruth/node-enttec-open-dmx-usb/tree/v2.0.0/dist-types/index.d.ts#L15",
             },
           },
@@ -47,6 +48,7 @@ Object {
               "source": Object {
                 "filename": "dist-types/index.d.ts",
                 "line": 51,
+                "unpkgURL": "https://unpkg.com/browse/enttec-open-dmx-usb@2.0.0/dist-types/index.d.ts#L51",
                 "url": "https://github.com/moritzruth/node-enttec-open-dmx-usb/tree/v2.0.0/dist-types/index.d.ts#L51",
               },
               "type": "() => Promise<string>",
@@ -66,6 +68,7 @@ Object {
               "source": Object {
                 "filename": "dist-types/index.d.ts",
                 "line": 45,
+                "unpkgURL": "https://unpkg.com/browse/enttec-open-dmx-usb@2.0.0/dist-types/index.d.ts#L45",
                 "url": "https://github.com/moritzruth/node-enttec-open-dmx-usb/tree/v2.0.0/dist-types/index.d.ts#L45",
               },
               "type": "() => Promise<string[]>",
@@ -88,6 +91,7 @@ Object {
               "source": Object {
                 "filename": "dist-types/index.d.ts",
                 "line": 33,
+                "unpkgURL": "https://unpkg.com/browse/enttec-open-dmx-usb@2.0.0/dist-types/index.d.ts#L33",
                 "url": "https://github.com/moritzruth/node-enttec-open-dmx-usb/tree/v2.0.0/dist-types/index.d.ts#L33",
               },
               "type": "(channels: any, clear?: boolean) => void",
@@ -108,6 +112,7 @@ Object {
               "source": Object {
                 "filename": "dist-types/index.d.ts",
                 "line": 21,
+                "unpkgURL": "https://unpkg.com/browse/enttec-open-dmx-usb@2.0.0/dist-types/index.d.ts#L21",
                 "url": "https://github.com/moritzruth/node-enttec-open-dmx-usb/tree/v2.0.0/dist-types/index.d.ts#L21",
               },
               "type": "(interval?: number) => void",
@@ -126,6 +131,7 @@ Object {
               "source": Object {
                 "filename": "dist-types/index.d.ts",
                 "line": 25,
+                "unpkgURL": "https://unpkg.com/browse/enttec-open-dmx-usb@2.0.0/dist-types/index.d.ts#L25",
                 "url": "https://github.com/moritzruth/node-enttec-open-dmx-usb/tree/v2.0.0/dist-types/index.d.ts#L25",
               },
               "type": "() => void",
@@ -138,6 +144,7 @@ Object {
         "source": Object {
           "filename": "dist-types/index.d.ts",
           "line": 5,
+          "unpkgURL": "https://unpkg.com/browse/enttec-open-dmx-usb@2.0.0/dist-types/index.d.ts#L5",
           "url": "https://github.com/moritzruth/node-enttec-open-dmx-usb/tree/v2.0.0/dist-types/index.d.ts#L5",
         },
       },
@@ -157,6 +164,7 @@ Object {
         "source": Object {
           "filename": "dist-types/index.d.ts",
           "line": 4,
+          "unpkgURL": "https://unpkg.com/browse/enttec-open-dmx-usb@2.0.0/dist-types/index.d.ts#L4",
           "url": "https://github.com/moritzruth/node-enttec-open-dmx-usb/tree/v2.0.0/dist-types/index.d.ts#L4",
         },
         "type": "string",
@@ -171,6 +179,7 @@ Object {
         "source": Object {
           "filename": "dist-types/index.d.ts",
           "line": 3,
+          "unpkgURL": "https://unpkg.com/browse/enttec-open-dmx-usb@2.0.0/dist-types/index.d.ts#L3",
           "url": "https://github.com/moritzruth/node-enttec-open-dmx-usb/tree/v2.0.0/dist-types/index.d.ts#L3",
         },
         "type": "string",
@@ -182,6 +191,7 @@ Object {
     Object {
       "filename": "dist-types/index.d.ts",
       "isIndexFile": true,
+      "unpkgURL": "https://unpkg.com/browse/enttec-open-dmx-usb@2.0.0/dist-types/index.d.ts",
       "url": "https://github.com/moritzruth/node-enttec-open-dmx-usb/tree/v2.0.0/dist-types/index.d.ts",
     },
   ],

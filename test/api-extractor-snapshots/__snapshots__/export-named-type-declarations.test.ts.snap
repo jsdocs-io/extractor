@@ -21,6 +21,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 18,
+          "unpkgURL": undefined,
           "url": undefined,
         },
       },
@@ -39,6 +40,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 24,
+          "unpkgURL": undefined,
           "url": undefined,
         },
       },
@@ -55,6 +57,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 11,
+          "unpkgURL": undefined,
           "url": undefined,
         },
         "type": "{ (a: number, b: number): number; (a: string, b: string): string; }",
@@ -70,6 +73,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 15,
+          "unpkgURL": undefined,
           "url": undefined,
         },
         "type": "(a: number, b: number) => number",
@@ -94,6 +98,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 21,
+          "unpkgURL": undefined,
           "url": undefined,
         },
       },
@@ -119,6 +124,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 30,
+          "unpkgURL": undefined,
           "url": undefined,
         },
       },
@@ -135,6 +141,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 27,
+          "unpkgURL": undefined,
           "url": undefined,
         },
       },
@@ -151,6 +158,7 @@ Object {
         "source": Object {
           "filename": "index.d.ts",
           "line": 8,
+          "unpkgURL": undefined,
           "url": undefined,
         },
         "type": "string",
@@ -162,6 +170,7 @@ Object {
     Object {
       "filename": "index.d.ts",
       "isIndexFile": true,
+      "unpkgURL": undefined,
       "url": undefined,
     },
   ],

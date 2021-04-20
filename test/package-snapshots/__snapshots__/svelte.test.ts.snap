@@ -26,6 +26,7 @@ Object {
         "source": Object {
           "filename": "types/runtime/ambient.d.ts",
           "line": 1,
+          "unpkgURL": "https://unpkg.com/browse/svelte@3.31.2/types/runtime/ambient.d.ts#L1",
           "url": "https://github.com/sveltejs/svelte/tree/c758028cde56e2af4846240816dc9ceed57e97cd/types/runtime/ambient.d.ts#L1",
         },
       },
@@ -36,11 +37,13 @@ Object {
   "files": Array [
     Object {
       "filename": "types/runtime/ambient.d.ts",
+      "unpkgURL": "https://unpkg.com/browse/svelte@3.31.2/types/runtime/ambient.d.ts",
       "url": "https://github.com/sveltejs/svelte/tree/c758028cde56e2af4846240816dc9ceed57e97cd/types/runtime/ambient.d.ts",
     },
     Object {
       "filename": "types/runtime/index.d.ts",
       "isIndexFile": true,
+      "unpkgURL": "https://unpkg.com/browse/svelte@3.31.2/types/runtime/index.d.ts",
       "url": "https://github.com/sveltejs/svelte/tree/c758028cde56e2af4846240816dc9ceed57e97cd/types/runtime/index.d.ts",
     },
   ],
