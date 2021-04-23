@@ -116,6 +116,18 @@ describe('analyzeRegistryPackage', () => {
         expect(api).toBeUndefined();
     });
 
+    it('skips API extraction if required', async () => {
+        expect.assertions(1);
+
+        const { api } = await analyzeRegistryPackage({
+            name: 'short-time-ago',
+            version: '2.0.0',
+            skipAPIExtraction: true,
+        });
+
+        expect(api).toBeUndefined();
+    });
+
     it('extracts the API from a registry package', async () => {
         expect.assertions(1);
 

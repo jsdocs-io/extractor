@@ -31,6 +31,7 @@ import { tryGetPackageAPI } from './try-get-package-api';
  * @param mirrors - URLs of registry mirrors (default: npm registry mirrors)
  * @param ignoreLicense - if `true`, extract API from unlicensed or proprietary packages (default: `false`)
  * @param ignoreFilePatternOptimizations - if `true`, ignore file pattern optimizations for known npm packages (default: `false`)
+ * @param skipAPIExtraction - if `true`, do not extract the API from the package (default: `false`)
  *
  * @see {@link RegistryPackageInfo}
  */
@@ -41,6 +42,7 @@ export async function analyzeRegistryPackage({
     mirrors,
     ignoreLicense,
     ignoreFilePatternOptimizations,
+    skipAPIExtraction = false,
 }: {
     name: string;
     version?: string;
@@ -48,6 +50,7 @@ export async function analyzeRegistryPackage({
     mirrors?: string[];
     ignoreLicense?: boolean;
     ignoreFilePatternOptimizations?: boolean;
+    skipAPIExtraction?: boolean;
 }): Promise<RegistryPackageInfo> {
     const start = performance.now();
     log('analyzeRegistryPackage: analyzing package: %O', { name, version });
@@ -60,6 +63,17 @@ export async function analyzeRegistryPackage({
     });
     const { id } = manifest;
     log('analyzeRegistryPackage: got manifest: %O', { id, manifest });
+
+    if (skipAPIExtraction) {
+        log('analyzeRegistryPackage: skipping API extraction: %O', { id });
+        return {
+            id,
+            manifest,
+            api: undefined,
+            elapsed: Math.round(performance.now() - start),
+            createdAt: new Date().toISOString(),
+        };
+    }
 
     const api = await tryGetPackageAPI({
         manifest,
