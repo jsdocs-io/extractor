@@ -35,7 +35,7 @@ yarn add @jsdocs-io/extractor
 
 Analyze the latest version of the `query-registry` package from the npm registry:
 
-> **Warning**: analyzing packages is a blocking operation that requires some time to finish!
+> **Warning**: analyzing packages is a blocking operation that requires some time (even seconds) to finish! Using a worker pool is recommended.
 
 ```typescript
 import { analyzeRegistryPackage } from '@jsdocs-io/extractor';
