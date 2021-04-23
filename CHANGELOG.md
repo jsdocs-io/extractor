@@ -7,10 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+None
+
+## [0.2.0] - 2021-04-23
+
 ### Added
 
-### Changed
+-   Skip API extraction from packages with `skipAPIExtraction` option in `analyzeRegistryPackage`
 
-### Removed
+## [0.1.0] - 2021-04-20
 
-[unreleased]: https://github.com/jsdocs-io/extractor/compare/v1.0.0...HEAD
+### Added
+
+-   Initial release
+
+[unreleased]: https://github.com/jsdocs-io/extractor/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/jsdocs-io/extractor/compare/v0.1.0...v0.2.0
+[0.1.0]: https://github.com/jsdocs-io/extractor/releases/tag/v0.1.0
