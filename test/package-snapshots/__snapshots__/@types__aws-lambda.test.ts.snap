@@ -13657,7 +13657,8 @@ Object {
         "id": "APIGatewayEventRequestContext",
         "kind": "TypeAliasDeclaration",
         "name": "APIGatewayEventRequestContext",
-        "signature": "type APIGatewayEventRequestContext = APIGatewayEventRequestContextWithAuthorizer<APIGatewayEventDefaultAuthorizerContext>;",
+        "signature": "type APIGatewayEventRequestContext =
+    APIGatewayEventRequestContextWithAuthorizer<APIGatewayEventDefaultAuthorizerContext>;",
         "source": Object {
           "filename": "common/api-gateway.d.ts",
           "line": 18,
@@ -13711,7 +13712,8 @@ Object {
         "id": "APIGatewayProxyEvent",
         "kind": "TypeAliasDeclaration",
         "name": "APIGatewayProxyEvent",
-        "signature": "type APIGatewayProxyEvent = APIGatewayProxyEventBase<APIGatewayEventDefaultAuthorizerContext>;",
+        "signature": "type APIGatewayProxyEvent =
+    APIGatewayProxyEventBase<APIGatewayEventDefaultAuthorizerContext>;",
         "source": Object {
           "filename": "trigger/api-gateway-proxy.d.ts",
           "line": 33,
@@ -13784,7 +13786,8 @@ Object {
         "id": "APIGatewayProxyWithCognitoAuthorizerEvent",
         "kind": "TypeAliasDeclaration",
         "name": "APIGatewayProxyWithCognitoAuthorizerEvent",
-        "signature": "type APIGatewayProxyWithCognitoAuthorizerEvent = APIGatewayProxyEventBase<APIGatewayProxyCognitoAuthorizer>;",
+        "signature": "type APIGatewayProxyWithCognitoAuthorizerEvent =
+    APIGatewayProxyEventBase<APIGatewayProxyCognitoAuthorizer>;",
         "source": Object {
           "filename": "trigger/api-gateway-proxy.d.ts",
           "line": 56,
@@ -13813,11 +13816,10 @@ Object {
         "id": "APIGatewayProxyWithLambdaAuthorizerEvent",
         "kind": "TypeAliasDeclaration",
         "name": "APIGatewayProxyWithLambdaAuthorizerEvent",
-        "signature": "type APIGatewayProxyWithLambdaAuthorizerEvent<
-    TAuthorizerContext
-> = APIGatewayProxyEventBase<
-    APIGatewayEventLambdaAuthorizerContext<TAuthorizerContext>
->;",
+        "signature": "type APIGatewayProxyWithLambdaAuthorizerEvent<TAuthorizerContext> =
+    APIGatewayProxyEventBase<
+        APIGatewayEventLambdaAuthorizerContext<TAuthorizerContext>
+    >;",
         "source": Object {
           "filename": "trigger/api-gateway-proxy.d.ts",
           "line": 41,
@@ -13830,11 +13832,10 @@ Object {
         "id": "APIGatewayProxyWithLambdaAuthorizerEventRequestContext",
         "kind": "TypeAliasDeclaration",
         "name": "APIGatewayProxyWithLambdaAuthorizerEventRequestContext",
-        "signature": "type APIGatewayProxyWithLambdaAuthorizerEventRequestContext<
-    TAuthorizerContext
-> = APIGatewayEventRequestContextWithAuthorizer<
-    APIGatewayEventLambdaAuthorizerContext<TAuthorizerContext>
->;",
+        "signature": "type APIGatewayProxyWithLambdaAuthorizerEventRequestContext<TAuthorizerContext> =
+    APIGatewayEventRequestContextWithAuthorizer<
+        APIGatewayEventLambdaAuthorizerContext<TAuthorizerContext>
+    >;",
         "source": Object {
           "filename": "trigger/api-gateway-proxy.d.ts",
           "line": 44,
@@ -14662,7 +14663,8 @@ Object {
         "id": "CustomMessageAdminCreateUserTriggerEvent",
         "kind": "TypeAliasDeclaration",
         "name": "CustomMessageAdminCreateUserTriggerEvent",
-        "signature": "type CustomMessageAdminCreateUserTriggerEvent = BaseCustomMessageTriggerEvent<'CustomMessage_AdminCreateUser'>;",
+        "signature": "type CustomMessageAdminCreateUserTriggerEvent =
+    BaseCustomMessageTriggerEvent<'CustomMessage_AdminCreateUser'>;",
         "source": Object {
           "filename": "trigger/cognito-user-pool-trigger/custom-message.d.ts",
           "line": 18,
@@ -14675,7 +14677,8 @@ Object {
         "id": "CustomMessageAuthenticationTriggerEvent",
         "kind": "TypeAliasDeclaration",
         "name": "CustomMessageAuthenticationTriggerEvent",
-        "signature": "type CustomMessageAuthenticationTriggerEvent = BaseCustomMessageTriggerEvent<'CustomMessage_Authentication'>;",
+        "signature": "type CustomMessageAuthenticationTriggerEvent =
+    BaseCustomMessageTriggerEvent<'CustomMessage_Authentication'>;",
         "source": Object {
           "filename": "trigger/cognito-user-pool-trigger/custom-message.d.ts",
           "line": 20,
@@ -14688,7 +14691,8 @@ Object {
         "id": "CustomMessageForgotPasswordTriggerEvent",
         "kind": "TypeAliasDeclaration",
         "name": "CustomMessageForgotPasswordTriggerEvent",
-        "signature": "type CustomMessageForgotPasswordTriggerEvent = BaseCustomMessageTriggerEvent<'CustomMessage_ForgotPassword'>;",
+        "signature": "type CustomMessageForgotPasswordTriggerEvent =
+    BaseCustomMessageTriggerEvent<'CustomMessage_ForgotPassword'>;",
         "source": Object {
           "filename": "trigger/cognito-user-pool-trigger/custom-message.d.ts",
           "line": 22,
@@ -14701,7 +14705,8 @@ Object {
         "id": "CustomMessageResendCodeTriggerEvent",
         "kind": "TypeAliasDeclaration",
         "name": "CustomMessageResendCodeTriggerEvent",
-        "signature": "type CustomMessageResendCodeTriggerEvent = BaseCustomMessageTriggerEvent<'CustomMessage_ResendCode'>;",
+        "signature": "type CustomMessageResendCodeTriggerEvent =
+    BaseCustomMessageTriggerEvent<'CustomMessage_ResendCode'>;",
         "source": Object {
           "filename": "trigger/cognito-user-pool-trigger/custom-message.d.ts",
           "line": 24,
@@ -14714,7 +14719,8 @@ Object {
         "id": "CustomMessageSignUpTriggerEvent",
         "kind": "TypeAliasDeclaration",
         "name": "CustomMessageSignUpTriggerEvent",
-        "signature": "type CustomMessageSignUpTriggerEvent = BaseCustomMessageTriggerEvent<'CustomMessage_SignUp'>;",
+        "signature": "type CustomMessageSignUpTriggerEvent =
+    BaseCustomMessageTriggerEvent<'CustomMessage_SignUp'>;",
         "source": Object {
           "filename": "trigger/cognito-user-pool-trigger/custom-message.d.ts",
           "line": 26,
@@ -14764,7 +14770,8 @@ Object {
         "id": "CustomMessageUpdateUserAttributeTriggerEvent",
         "kind": "TypeAliasDeclaration",
         "name": "CustomMessageUpdateUserAttributeTriggerEvent",
-        "signature": "type CustomMessageUpdateUserAttributeTriggerEvent = BaseCustomMessageTriggerEvent<'CustomMessage_UpdateUserAttribute'>;",
+        "signature": "type CustomMessageUpdateUserAttributeTriggerEvent =
+    BaseCustomMessageTriggerEvent<'CustomMessage_UpdateUserAttribute'>;",
         "source": Object {
           "filename": "trigger/cognito-user-pool-trigger/custom-message.d.ts",
           "line": 28,
@@ -14777,7 +14784,8 @@ Object {
         "id": "CustomMessageVerifyUserAttributeTriggerEvent",
         "kind": "TypeAliasDeclaration",
         "name": "CustomMessageVerifyUserAttributeTriggerEvent",
-        "signature": "type CustomMessageVerifyUserAttributeTriggerEvent = BaseCustomMessageTriggerEvent<'CustomMessage_VerifyUserAttribute'>;",
+        "signature": "type CustomMessageVerifyUserAttributeTriggerEvent =
+    BaseCustomMessageTriggerEvent<'CustomMessage_VerifyUserAttribute'>;",
         "source": Object {
           "filename": "trigger/cognito-user-pool-trigger/custom-message.d.ts",
           "line": 30,
@@ -15100,7 +15108,8 @@ Object {
         "id": "PostConfirmationConfirmForgotPassword",
         "kind": "TypeAliasDeclaration",
         "name": "PostConfirmationConfirmForgotPassword",
-        "signature": "type PostConfirmationConfirmForgotPassword = BasePostConfirmationTriggerEvent<'PostConfirmation_ConfirmForgotPassword'>;",
+        "signature": "type PostConfirmationConfirmForgotPassword =
+    BasePostConfirmationTriggerEvent<'PostConfirmation_ConfirmForgotPassword'>;",
         "source": Object {
           "filename": "trigger/cognito-user-pool-trigger/post-confirmation.d.ts",
           "line": 13,
@@ -15113,7 +15122,8 @@ Object {
         "id": "PostConfirmationConfirmSignUpTriggerEvent",
         "kind": "TypeAliasDeclaration",
         "name": "PostConfirmationConfirmSignUpTriggerEvent",
-        "signature": "type PostConfirmationConfirmSignUpTriggerEvent = BasePostConfirmationTriggerEvent<'PostConfirmation_ConfirmSignUp'>;",
+        "signature": "type PostConfirmationConfirmSignUpTriggerEvent =
+    BasePostConfirmationTriggerEvent<'PostConfirmation_ConfirmSignUp'>;",
         "source": Object {
           "filename": "trigger/cognito-user-pool-trigger/post-confirmation.d.ts",
           "line": 11,
@@ -15171,7 +15181,8 @@ Object {
         "id": "PreSignUpAdminCreateUserTriggerEvent",
         "kind": "TypeAliasDeclaration",
         "name": "PreSignUpAdminCreateUserTriggerEvent",
-        "signature": "type PreSignUpAdminCreateUserTriggerEvent = BasePreSignUpTriggerEvent<'PreSignUp_AdminCreateUser'>;",
+        "signature": "type PreSignUpAdminCreateUserTriggerEvent =
+    BasePreSignUpTriggerEvent<'PreSignUp_AdminCreateUser'>;",
         "source": Object {
           "filename": "trigger/cognito-user-pool-trigger/pre-signup.d.ts",
           "line": 21,
@@ -15197,7 +15208,8 @@ Object {
         "id": "PreSignUpExternalProviderTriggerEvent",
         "kind": "TypeAliasDeclaration",
         "name": "PreSignUpExternalProviderTriggerEvent",
-        "signature": "type PreSignUpExternalProviderTriggerEvent = BasePreSignUpTriggerEvent<'PreSignUp_ExternalProvider'>;",
+        "signature": "type PreSignUpExternalProviderTriggerEvent =
+    BasePreSignUpTriggerEvent<'PreSignUp_ExternalProvider'>;",
         "source": Object {
           "filename": "trigger/cognito-user-pool-trigger/pre-signup.d.ts",
           "line": 19,
@@ -15243,7 +15255,8 @@ Object {
         "id": "PreTokenGenerationAuthenticateDeviceTriggerEvent",
         "kind": "TypeAliasDeclaration",
         "name": "PreTokenGenerationAuthenticateDeviceTriggerEvent",
-        "signature": "type PreTokenGenerationAuthenticateDeviceTriggerEvent = BasePreTokenGenerationTriggerEvent<'TokenGeneration_AuthenticateDevice'>;",
+        "signature": "type PreTokenGenerationAuthenticateDeviceTriggerEvent =
+    BasePreTokenGenerationTriggerEvent<'TokenGeneration_AuthenticateDevice'>;",
         "source": Object {
           "filename": "trigger/cognito-user-pool-trigger/pre-token-generation.d.ts",
           "line": 31,
@@ -15256,7 +15269,8 @@ Object {
         "id": "PreTokenGenerationAuthenticationTriggerEvent",
         "kind": "TypeAliasDeclaration",
         "name": "PreTokenGenerationAuthenticationTriggerEvent",
-        "signature": "type PreTokenGenerationAuthenticationTriggerEvent = BasePreTokenGenerationTriggerEvent<'TokenGeneration_Authentication'>;",
+        "signature": "type PreTokenGenerationAuthenticationTriggerEvent =
+    BasePreTokenGenerationTriggerEvent<'TokenGeneration_Authentication'>;",
         "source": Object {
           "filename": "trigger/cognito-user-pool-trigger/pre-token-generation.d.ts",
           "line": 27,
@@ -15269,7 +15283,8 @@ Object {
         "id": "PreTokenGenerationHostedAuthTriggerEvent",
         "kind": "TypeAliasDeclaration",
         "name": "PreTokenGenerationHostedAuthTriggerEvent",
-        "signature": "type PreTokenGenerationHostedAuthTriggerEvent = BasePreTokenGenerationTriggerEvent<'TokenGeneration_HostedAuth'>;",
+        "signature": "type PreTokenGenerationHostedAuthTriggerEvent =
+    BasePreTokenGenerationTriggerEvent<'TokenGeneration_HostedAuth'>;",
         "source": Object {
           "filename": "trigger/cognito-user-pool-trigger/pre-token-generation.d.ts",
           "line": 25,
@@ -15282,7 +15297,8 @@ Object {
         "id": "PreTokenGenerationNewPasswordChallengeTriggerEvent",
         "kind": "TypeAliasDeclaration",
         "name": "PreTokenGenerationNewPasswordChallengeTriggerEvent",
-        "signature": "type PreTokenGenerationNewPasswordChallengeTriggerEvent = BasePreTokenGenerationTriggerEvent<'TokenGeneration_NewPasswordChallenge'>;",
+        "signature": "type PreTokenGenerationNewPasswordChallengeTriggerEvent =
+    BasePreTokenGenerationTriggerEvent<'TokenGeneration_NewPasswordChallenge'>;",
         "source": Object {
           "filename": "trigger/cognito-user-pool-trigger/pre-token-generation.d.ts",
           "line": 29,
@@ -15295,7 +15311,8 @@ Object {
         "id": "PreTokenGenerationRefreshTokensTriggerEvent",
         "kind": "TypeAliasDeclaration",
         "name": "PreTokenGenerationRefreshTokensTriggerEvent",
-        "signature": "type PreTokenGenerationRefreshTokensTriggerEvent = BasePreTokenGenerationTriggerEvent<'TokenGeneration_RefreshTokens'>;",
+        "signature": "type PreTokenGenerationRefreshTokensTriggerEvent =
+    BasePreTokenGenerationTriggerEvent<'TokenGeneration_RefreshTokens'>;",
         "source": Object {
           "filename": "trigger/cognito-user-pool-trigger/pre-token-generation.d.ts",
           "line": 33,
@@ -15598,7 +15615,8 @@ Object {
         "id": "UserMigrationAuthenticationTriggerEvent",
         "kind": "TypeAliasDeclaration",
         "name": "UserMigrationAuthenticationTriggerEvent",
-        "signature": "type UserMigrationAuthenticationTriggerEvent = BaseUserMigrationTriggerEvent<'UserMigration_Authentication'>;",
+        "signature": "type UserMigrationAuthenticationTriggerEvent =
+    BaseUserMigrationTriggerEvent<'UserMigration_Authentication'>;",
         "source": Object {
           "filename": "trigger/cognito-user-pool-trigger/user-migration.d.ts",
           "line": 28,
@@ -15611,7 +15629,8 @@ Object {
         "id": "UserMigrationForgotPasswordTriggerEvent",
         "kind": "TypeAliasDeclaration",
         "name": "UserMigrationForgotPasswordTriggerEvent",
-        "signature": "type UserMigrationForgotPasswordTriggerEvent = BaseUserMigrationTriggerEvent<'UserMigration_ForgotPassword'>;",
+        "signature": "type UserMigrationForgotPasswordTriggerEvent =
+    BaseUserMigrationTriggerEvent<'UserMigration_ForgotPassword'>;",
         "source": Object {
           "filename": "trigger/cognito-user-pool-trigger/user-migration.d.ts",
           "line": 30,
@@ -15676,7 +15695,8 @@ Object {
         "id": "VerifyAuthChallengeResponseTriggerHandler",
         "kind": "TypeAliasDeclaration",
         "name": "VerifyAuthChallengeResponseTriggerHandler",
-        "signature": "type VerifyAuthChallengeResponseTriggerHandler = Handler<VerifyAuthChallengeResponseTriggerEvent>;",
+        "signature": "type VerifyAuthChallengeResponseTriggerHandler =
+    Handler<VerifyAuthChallengeResponseTriggerEvent>;",
         "source": Object {
           "filename": "trigger/cognito-user-pool-trigger/verify-auth-challenge-response.d.ts",
           "line": 20,

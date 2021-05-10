@@ -2651,9 +2651,7 @@ Object {
               "id": "VueConstructor.compile",
               "kind": "InterfaceMethodDeclaration",
               "name": "compile",
-              "signature": "compile: (
-    template: string
-) => {
+              "signature": "compile: (template: string) => {
     render(createElement: typeof Vue.prototype.$createElement): VNode;
     staticRenderFns: (() => VNode)[];
 };",

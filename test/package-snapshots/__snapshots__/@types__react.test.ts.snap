@@ -29125,9 +29125,8 @@ Object {
         "id": "ReducerStateWithoutAction",
         "kind": "TypeAliasDeclaration",
         "name": "ReducerStateWithoutAction",
-        "signature": "type ReducerStateWithoutAction<
-    R extends ReducerWithoutAction<any>
-> = R extends ReducerWithoutAction<infer S> ? S : never;",
+        "signature": "type ReducerStateWithoutAction<R extends ReducerWithoutAction<any>> =
+    R extends ReducerWithoutAction<infer S> ? S : never;",
         "source": Object {
           "filename": "index.d.ts",
           "line": 888,

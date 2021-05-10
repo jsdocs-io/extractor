@@ -1594,9 +1594,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "serializers",
               "signature": "serializers?: {
-    req?: (
-        req: RawRequest
-    ) => {
+    req?: (req: RawRequest) => {
         method?: string;
         url?: string;
         version?: string;
@@ -1605,17 +1603,13 @@ Object {
         remotePort?: number;
         [key: string]: unknown;
     };
-    err?: (
-        err: FastifyError
-    ) => {
+    err?: (err: FastifyError) => {
         type: string;
         message: string;
         stack: string;
         [key: string]: unknown;
     };
-    res?: (
-        res: RawReply
-    ) => {
+    res?: (res: RawReply) => {
         statusCode: string | number;
         [key: string]: unknown;
     };
@@ -5345,13 +5339,12 @@ Object {
         "id": "RawReplyDefaultExpression",
         "kind": "TypeAliasDeclaration",
         "name": "RawReplyDefaultExpression",
-        "signature": "type RawReplyDefaultExpression<
-    RawServer extends RawServerBase = RawServerDefault
-> = RawServer extends http.Server | https.Server
-    ? http.ServerResponse
-    : RawServer extends http2.Http2Server | http2.Http2SecureServer
-    ? http2.Http2ServerResponse
-    : never;",
+        "signature": "type RawReplyDefaultExpression<RawServer extends RawServerBase = RawServerDefault> =
+    RawServer extends http.Server | https.Server
+        ? http.ServerResponse
+        : RawServer extends http2.Http2Server | http2.Http2SecureServer
+        ? http2.Http2ServerResponse
+        : never;",
         "source": Object {
           "filename": "types/utils.d.ts",
           "line": 32,

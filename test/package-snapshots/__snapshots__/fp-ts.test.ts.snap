@@ -2619,9 +2619,10 @@ Object {
               "id": "array.difference",
               "kind": "FunctionDeclaration",
               "name": "difference",
-              "signature": "difference: <A>(
-    E: Eq<A>
-) => { (xs: A[]): (ys: A[]) => A[]; (xs: A[], ys: A[]): A[] };",
+              "signature": "difference: <A>(E: Eq<A>) => {
+    (xs: A[]): (ys: A[]) => A[];
+    (xs: A[], ys: A[]): A[];
+};",
               "source": Object {
                 "filename": "lib/Array.d.ts",
                 "line": 899,
@@ -2750,9 +2751,10 @@ Object {
               "id": "array.elem",
               "kind": "FunctionDeclaration",
               "name": "elem",
-              "signature": "elem: <A>(
-    E: Eq<A>
-) => { (a: A): (as: A[]) => boolean; (a: A, as: A[]): boolean };",
+              "signature": "elem: <A>(E: Eq<A>) => {
+    (a: A): (as: A[]) => boolean;
+    (a: A, as: A[]): boolean;
+};",
               "source": Object {
                 "filename": "lib/Array.d.ts",
                 "line": 709,
@@ -3362,9 +3364,10 @@ Object {
               "id": "array.intersection",
               "kind": "FunctionDeclaration",
               "name": "intersection",
-              "signature": "intersection: <A>(
-    E: Eq<A>
-) => { (xs: A[]): (ys: A[]) => A[]; (xs: A[], ys: A[]): A[] };",
+              "signature": "intersection: <A>(E: Eq<A>) => {
+    (xs: A[]): (ys: A[]) => A[];
+    (xs: A[], ys: A[]): A[];
+};",
               "source": Object {
                 "filename": "lib/Array.d.ts",
                 "line": 879,
@@ -4100,9 +4103,10 @@ Object {
               "kind": "FunctionDeclaration",
               "name": "spanLeft",
               "signature": "spanLeft: {
-    <A, B extends A>(refinement: Refinement<A, B>): (
-        as: Array<A>
-    ) => { init: Array<B>; rest: Array<A> };
+    <A, B extends A>(refinement: Refinement<A, B>): (as: Array<A>) => {
+        init: Array<B>;
+        rest: Array<A>;
+    };
     <A>(predicate: Predicate<A>): (as: A[]) => { init: A[]; rest: A[] };
 };",
               "source": Object {
@@ -28098,9 +28102,10 @@ Object {
               "id": "map.elem",
               "kind": "FunctionDeclaration",
               "name": "elem",
-              "signature": "elem: <A>(
-    E: Eq<A>
-) => { (a: A): <K>(m: Map<K, A>) => boolean; <K>(a: A, m: Map<K, A>): boolean };",
+              "signature": "elem: <A>(E: Eq<A>) => {
+    (a: A): <K>(m: Map<K, A>) => boolean;
+    <K>(a: A, m: Map<K, A>): boolean;
+};",
               "source": Object {
                 "filename": "lib/Map.d.ts",
                 "line": 55,
@@ -28358,9 +28363,10 @@ Object {
               "id": "map.lookup",
               "kind": "FunctionDeclaration",
               "name": "lookup",
-              "signature": "lookup: <K>(
-    E: Eq<K>
-) => { (k: K): <A>(m: Map<K, A>) => Option<A>; <A>(k: K, m: Map<K, A>): Option<A> };",
+              "signature": "lookup: <K>(E: Eq<K>) => {
+    (k: K): <A>(m: Map<K, A>) => Option<A>;
+    <A>(k: K, m: Map<K, A>): Option<A>;
+};",
               "source": Object {
                 "filename": "lib/Map.d.ts",
                 "line": 138,
@@ -28381,9 +28387,7 @@ Object {
               "id": "map.lookupWithKey",
               "kind": "FunctionDeclaration",
               "name": "lookupWithKey",
-              "signature": "lookupWithKey: <K>(
-    E: Eq<K>
-) => {
+              "signature": "lookupWithKey: <K>(E: Eq<K>) => {
     (k: K): <A>(m: Map<K, A>) => Option<[K, A]>;
     <A>(k: K, m: Map<K, A>): Option<[K, A]>;
 };",
@@ -28447,9 +28451,10 @@ Object {
               "id": "map.member",
               "kind": "FunctionDeclaration",
               "name": "member",
-              "signature": "member: <K>(
-    E: Eq<K>
-) => { (k: K): <A>(m: Map<K, A>) => boolean; <A>(k: K, m: Map<K, A>): boolean };",
+              "signature": "member: <K>(E: Eq<K>) => {
+    (k: K): <A>(m: Map<K, A>) => boolean;
+    <A>(k: K, m: Map<K, A>): boolean;
+};",
               "source": Object {
                 "filename": "lib/Map.d.ts",
                 "line": 44,
@@ -31239,9 +31244,7 @@ Object {
               "id": "nonEmptyArray.group",
               "kind": "FunctionDeclaration",
               "name": "group",
-              "signature": "group: <B>(
-    E: Eq<B>
-) => {
+              "signature": "group: <B>(E: Eq<B>) => {
     <A extends B>(as: NonEmptyArray<A>): NonEmptyArray<NonEmptyArray<A>>;
     <A extends B>(as: A[]): NonEmptyArray<A>[];
 };",
@@ -31303,9 +31306,7 @@ Object {
               "id": "nonEmptyArray.groupSort",
               "kind": "FunctionDeclaration",
               "name": "groupSort",
-              "signature": "groupSort: <B>(
-    O: Ord<B>
-) => {
+              "signature": "groupSort: <B>(O: Ord<B>) => {
     <A extends B>(as: NonEmptyArray<A>): NonEmptyArray<NonEmptyArray<A>>;
     <A extends B>(as: A[]): NonEmptyArray<A>[];
 };",
@@ -50679,9 +50680,7 @@ Object {
               "id": "readonlyArray.difference",
               "kind": "FunctionDeclaration",
               "name": "difference",
-              "signature": "difference: <A>(
-    E: Eq<A>
-) => {
+              "signature": "difference: <A>(E: Eq<A>) => {
     (xs: ReadonlyArray<A>): (ys: ReadonlyArray<A>) => ReadonlyArray<A>;
     (xs: ReadonlyArray<A>, ys: ReadonlyArray<A>): ReadonlyArray<A>;
 };",
@@ -50815,9 +50814,7 @@ Object {
               "id": "readonlyArray.elem",
               "kind": "FunctionDeclaration",
               "name": "elem",
-              "signature": "elem: <A>(
-    E: Eq<A>
-) => {
+              "signature": "elem: <A>(E: Eq<A>) => {
     (a: A): (as: ReadonlyArray<A>) => boolean;
     (a: A, as: ReadonlyArray<A>): boolean;
 };",
@@ -51472,9 +51469,7 @@ Object {
               "id": "readonlyArray.intersection",
               "kind": "FunctionDeclaration",
               "name": "intersection",
-              "signature": "intersection: <A>(
-    E: Eq<A>
-) => {
+              "signature": "intersection: <A>(E: Eq<A>) => {
     (xs: ReadonlyArray<A>): (ys: ReadonlyArray<A>) => ReadonlyArray<A>;
     (xs: ReadonlyArray<A>, ys: ReadonlyArray<A>): ReadonlyArray<A>;
 };",
@@ -52478,9 +52473,7 @@ Object {
               "id": "readonlyArray.union",
               "kind": "FunctionDeclaration",
               "name": "union",
-              "signature": "union: <A>(
-    E: Eq<A>
-) => {
+              "signature": "union: <A>(E: Eq<A>) => {
     (xs: ReadonlyArray<A>): (ys: ReadonlyArray<A>) => ReadonlyArray<A>;
     (xs: ReadonlyArray<A>, ys: ReadonlyArray<A>): ReadonlyArray<A>;
 };",
@@ -53532,9 +53525,7 @@ Object {
               "id": "readonlyMap.elem",
               "kind": "FunctionDeclaration",
               "name": "elem",
-              "signature": "elem: <A>(
-    E: Eq<A>
-) => {
+              "signature": "elem: <A>(E: Eq<A>) => {
     (a: A): <K>(m: ReadonlyMap<K, A>) => boolean;
     <K>(a: A, m: ReadonlyMap<K, A>): boolean;
 };",
@@ -53820,9 +53811,7 @@ Object {
               "id": "readonlyMap.lookup",
               "kind": "FunctionDeclaration",
               "name": "lookup",
-              "signature": "lookup: <K>(
-    E: Eq<K>
-) => {
+              "signature": "lookup: <K>(E: Eq<K>) => {
     (k: K): <A>(m: ReadonlyMap<K, A>) => O.Option<A>;
     <A>(k: K, m: ReadonlyMap<K, A>): O.Option<A>;
 };",
@@ -53846,9 +53835,7 @@ Object {
               "id": "readonlyMap.lookupWithKey",
               "kind": "FunctionDeclaration",
               "name": "lookupWithKey",
-              "signature": "lookupWithKey: <K>(
-    E: Eq<K>
-) => {
+              "signature": "lookupWithKey: <K>(E: Eq<K>) => {
     (k: K): <A>(m: ReadonlyMap<K, A>) => O.Option<readonly [K, A]>;
     <A>(k: K, m: ReadonlyMap<K, A>): O.Option<readonly [K, A]>;
 };",
@@ -53914,9 +53901,7 @@ Object {
               "id": "readonlyMap.member",
               "kind": "FunctionDeclaration",
               "name": "member",
-              "signature": "member: <K>(
-    E: Eq<K>
-) => {
+              "signature": "member: <K>(E: Eq<K>) => {
     (k: K): <A>(m: ReadonlyMap<K, A>) => boolean;
     <A>(k: K, m: ReadonlyMap<K, A>): boolean;
 };",
@@ -54970,9 +54955,7 @@ Object {
               "id": "readonlyNonEmptyArray.group",
               "kind": "FunctionDeclaration",
               "name": "group",
-              "signature": "group: <B>(
-    E: Eq<B>
-) => {
+              "signature": "group: <B>(E: Eq<B>) => {
     <A extends B>(as: ReadonlyNonEmptyArray<A>): ReadonlyNonEmptyArray<
         ReadonlyNonEmptyArray<A>
     >;
@@ -55036,9 +55019,7 @@ Object {
               "id": "readonlyNonEmptyArray.groupSort",
               "kind": "FunctionDeclaration",
               "name": "groupSort",
-              "signature": "groupSort: <B>(
-    O: Ord<B>
-) => {
+              "signature": "groupSort: <B>(O: Ord<B>) => {
     <A extends B>(as: ReadonlyNonEmptyArray<A>): ReadonlyNonEmptyArray<
         ReadonlyNonEmptyArray<A>
     >;
@@ -56126,9 +56107,7 @@ Object {
               "id": "readonlyRecord.elem",
               "kind": "FunctionDeclaration",
               "name": "elem",
-              "signature": "elem: <A>(
-    E: Eq<A>
-) => {
+              "signature": "elem: <A>(E: Eq<A>) => {
     (a: A): (fa: ReadonlyRecord<string, A>) => boolean;
     (a: A, fa: ReadonlyRecord<string, A>): boolean;
 };",
@@ -56534,9 +56513,7 @@ Object {
               "id": "readonlyRecord.isSubrecord",
               "kind": "FunctionDeclaration",
               "name": "isSubrecord",
-              "signature": "isSubrecord: <A>(
-    E: Eq<A>
-) => {
+              "signature": "isSubrecord: <A>(E: Eq<A>) => {
     (that: ReadonlyRecord<string, A>): (me: ReadonlyRecord<string, A>) => boolean;
     (me: ReadonlyRecord<string, A>, that: ReadonlyRecord<string, A>): boolean;
 };",
@@ -57601,9 +57578,7 @@ Object {
               "id": "readonlySet.difference",
               "kind": "FunctionDeclaration",
               "name": "difference",
-              "signature": "difference: <A>(
-    E: Eq<A>
-) => {
+              "signature": "difference: <A>(E: Eq<A>) => {
     (that: ReadonlySet<A>): (me: ReadonlySet<A>) => ReadonlySet<A>;
     (me: ReadonlySet<A>, that: ReadonlySet<A>): ReadonlySet<A>;
 };",
@@ -57626,9 +57601,7 @@ Object {
               "id": "readonlySet.elem",
               "kind": "FunctionDeclaration",
               "name": "elem",
-              "signature": "elem: <A>(
-    E: Eq<A>
-) => {
+              "signature": "elem: <A>(E: Eq<A>) => {
     (a: A): (set: ReadonlySet<A>) => boolean;
     (a: A, set: ReadonlySet<A>): boolean;
 };",
@@ -57873,9 +57846,7 @@ Object {
               "id": "readonlySet.intersection",
               "kind": "FunctionDeclaration",
               "name": "intersection",
-              "signature": "intersection: <A>(
-    E: Eq<A>
-) => {
+              "signature": "intersection: <A>(E: Eq<A>) => {
     (that: ReadonlySet<A>): (me: ReadonlySet<A>) => ReadonlySet<A>;
     (me: ReadonlySet<A>, that: ReadonlySet<A>): ReadonlySet<A>;
 };",
@@ -57898,9 +57869,7 @@ Object {
               "id": "readonlySet.isSubset",
               "kind": "FunctionDeclaration",
               "name": "isSubset",
-              "signature": "isSubset: <A>(
-    E: Eq<A>
-) => {
+              "signature": "isSubset: <A>(E: Eq<A>) => {
     (that: ReadonlySet<A>): (me: ReadonlySet<A>) => boolean;
     (me: ReadonlySet<A>, that: ReadonlySet<A>): boolean;
 };",
@@ -58134,9 +58103,7 @@ Object {
               "id": "readonlySet.union",
               "kind": "FunctionDeclaration",
               "name": "union",
-              "signature": "union: <A>(
-    E: Eq<A>
-) => {
+              "signature": "union: <A>(E: Eq<A>) => {
     (that: ReadonlySet<A>): (me: ReadonlySet<A>) => ReadonlySet<A>;
     (me: ReadonlySet<A>, that: ReadonlySet<A>): ReadonlySet<A>;
 };",
@@ -58887,9 +58854,7 @@ Object {
               "id": "record.elem",
               "kind": "FunctionDeclaration",
               "name": "elem",
-              "signature": "elem: <A>(
-    E: Eq<A>
-) => {
+              "signature": "elem: <A>(E: Eq<A>) => {
     (a: A): (fa: Record<string, A>) => boolean;
     (a: A, fa: Record<string, A>): boolean;
 };",
@@ -59264,9 +59229,7 @@ Object {
               "id": "record.isSubrecord",
               "kind": "FunctionDeclaration",
               "name": "isSubrecord",
-              "signature": "isSubrecord: <A>(
-    E: Eq<A>
-) => {
+              "signature": "isSubrecord: <A>(E: Eq<A>) => {
     (that: Record<string, A>): (me: Record<string, A>) => boolean;
     (me: Record<string, A>, that: Record<string, A>): boolean;
 };",
@@ -60381,9 +60344,7 @@ Object {
               "id": "semigroup.fold",
               "kind": "FunctionDeclaration",
               "name": "fold",
-              "signature": "fold: <A>(
-    S: Semigroup<A>
-) => {
+              "signature": "fold: <A>(S: Semigroup<A>) => {
     (startWith: A): (as: ReadonlyArray<A>) => A;
     (startWith: A, as: ReadonlyArray<A>): A;
 };",
@@ -61524,9 +61485,10 @@ Object {
               "id": "set.difference",
               "kind": "FunctionDeclaration",
               "name": "difference",
-              "signature": "difference: <A>(
-    E: Eq<A>
-) => { (that: Set<A>): (me: Set<A>) => Set<A>; (me: Set<A>, that: Set<A>): Set<A> };",
+              "signature": "difference: <A>(E: Eq<A>) => {
+    (that: Set<A>): (me: Set<A>) => Set<A>;
+    (me: Set<A>, that: Set<A>): Set<A>;
+};",
               "source": Object {
                 "filename": "lib/Set.d.ts",
                 "line": 134,
@@ -61546,9 +61508,10 @@ Object {
               "id": "set.elem",
               "kind": "FunctionDeclaration",
               "name": "elem",
-              "signature": "elem: <A>(
-    E: Eq<A>
-) => { (a: A): (set: Set<A>) => boolean; (a: A, set: Set<A>): boolean };",
+              "signature": "elem: <A>(E: Eq<A>) => {
+    (a: A): (set: Set<A>) => boolean;
+    (a: A, set: Set<A>): boolean;
+};",
               "source": Object {
                 "filename": "lib/Set.d.ts",
                 "line": 84,
@@ -61769,9 +61732,10 @@ Object {
               "id": "set.intersection",
               "kind": "FunctionDeclaration",
               "name": "intersection",
-              "signature": "intersection: <A>(
-    E: Eq<A>
-) => { (that: Set<A>): (me: Set<A>) => Set<A>; (me: Set<A>, that: Set<A>): Set<A> };",
+              "signature": "intersection: <A>(E: Eq<A>) => {
+    (that: Set<A>): (me: Set<A>) => Set<A>;
+    (me: Set<A>, that: Set<A>): Set<A>;
+};",
               "source": Object {
                 "filename": "lib/Set.d.ts",
                 "line": 108,
@@ -61956,9 +61920,7 @@ Object {
               "id": "set.subset",
               "kind": "FunctionDeclaration",
               "name": "subset",
-              "signature": "subset: <A>(
-    E: Eq<A>
-) => {
+              "signature": "subset: <A>(E: Eq<A>) => {
     (that: Set<A>): (me: Set<A>) => boolean;
     (me: Set<A>, that: Set<A>): boolean;
 };",
@@ -62024,9 +61986,10 @@ Object {
               "id": "set.union",
               "kind": "FunctionDeclaration",
               "name": "union",
-              "signature": "union: <A>(
-    E: Eq<A>
-) => { (that: Set<A>): (me: Set<A>) => Set<A>; (me: Set<A>, that: Set<A>): Set<A> };",
+              "signature": "union: <A>(E: Eq<A>) => {
+    (that: Set<A>): (me: Set<A>) => Set<A>;
+    (me: Set<A>, that: Set<A>): Set<A>;
+};",
               "source": Object {
                 "filename": "lib/Set.d.ts",
                 "line": 96,
@@ -71309,9 +71272,7 @@ Object {
                     "isReadonly": true,
                     "kind": "InterfacePropertyDeclaration",
                     "name": "getMonad",
-                    "signature": "readonly getMonad: <E>(
-    S: Semigroup<E>
-) => {
+                    "signature": "readonly getMonad: <E>(S: Semigroup<E>) => {
     readonly _E: E;
     readonly map: <A, B>(ma: TheseT<M, E, A>, f: (a: A) => B) => TheseT<M, E, B>;
     readonly of: <A>(a: A) => TheseT<M, E, A>;
@@ -71552,9 +71513,7 @@ Object {
                     "isReadonly": true,
                     "kind": "InterfacePropertyDeclaration",
                     "name": "getMonad",
-                    "signature": "readonly getMonad: <E>(
-    S: Semigroup<E>
-) => {
+                    "signature": "readonly getMonad: <E>(S: Semigroup<E>) => {
     readonly _E: E;
     readonly map: <A, B>(
         ma: TheseT1<M, E, A>,
@@ -71801,9 +71760,7 @@ Object {
                     "isReadonly": true,
                     "kind": "InterfacePropertyDeclaration",
                     "name": "getMonad",
-                    "signature": "readonly getMonad: <E>(
-    S: Semigroup<E>
-) => {
+                    "signature": "readonly getMonad: <E>(S: Semigroup<E>) => {
     readonly _E: E;
     readonly map: <R, A, B>(
         ma: TheseT2<M, R, E, A>,
@@ -80473,9 +80430,7 @@ Object {
                     "isReadonly": true,
                     "kind": "InterfacePropertyDeclaration",
                     "name": "getMonad",
-                    "signature": "readonly getMonad: <W>(
-    M: Monoid<W>
-) => {
+                    "signature": "readonly getMonad: <W>(M: Monoid<W>) => {
     readonly _E: W;
     readonly map: <A, B>(
         ma: WriterT<M, W, A>,
@@ -80668,9 +80623,7 @@ Object {
                     "isReadonly": true,
                     "kind": "InterfacePropertyDeclaration",
                     "name": "getMonad",
-                    "signature": "readonly getMonad: <W>(
-    M: Monoid<W>
-) => {
+                    "signature": "readonly getMonad: <W>(M: Monoid<W>) => {
     readonly _E: W;
     readonly map: <A, B>(
         ma: WriterT1<M, W, A>,
@@ -80863,9 +80816,7 @@ Object {
                     "isReadonly": true,
                     "kind": "InterfacePropertyDeclaration",
                     "name": "getMonad",
-                    "signature": "readonly getMonad: <W>(
-    M: Monoid<W>
-) => {
+                    "signature": "readonly getMonad: <W>(M: Monoid<W>) => {
     readonly _E: W;
     readonly map: <E, A, B>(
         ma: WriterT2<M, E, W, A>,
@@ -81062,9 +81013,7 @@ Object {
                     "isReadonly": true,
                     "kind": "InterfacePropertyDeclaration",
                     "name": "getMonad",
-                    "signature": "readonly getMonad: <W>(
-    M: Monoid<W>
-) => {
+                    "signature": "readonly getMonad: <W>(M: Monoid<W>) => {
     readonly _E: W;
     readonly map: <A, B>(
         ma: WriterT2<M, E, W, A>,
@@ -81263,9 +81212,7 @@ Object {
                     "isReadonly": true,
                     "kind": "InterfacePropertyDeclaration",
                     "name": "getMonad",
-                    "signature": "readonly getMonad: <W>(
-    M: Monoid<W>
-) => {
+                    "signature": "readonly getMonad: <W>(M: Monoid<W>) => {
     readonly _E: W;
     readonly map: <R, E, A, B>(
         ma: WriterT3<M, R, E, W, A>,

@@ -15898,9 +15898,7 @@ Object {
            */
           options?: string | { [index: string]: any };
       }
-    | ((
-          data: object
-      ) =>
+    | ((data: object) =>
           | string
           | {
                 /**
@@ -18865,9 +18863,7 @@ Object {
                     "isStatic": false,
                     "kind": "ClassMethodDeclaration",
                     "name": "extractMemberExpressionChain",
-                    "signature": "extractMemberExpressionChain: (
-    expression: any
-) => {
+                    "signature": "extractMemberExpressionChain: (expression: any) => {
     members: string[];
     object:
         | UnaryExpression
@@ -18927,9 +18923,10 @@ Object {
                     "isStatic": false,
                     "kind": "ClassMethodDeclaration",
                     "name": "getFreeInfoFromVariable",
-                    "signature": "getFreeInfoFromVariable: (
-    varName: string
-) => { name: string; info: string | VariableInfo };",
+                    "signature": "getFreeInfoFromVariable: (varName: string) => {
+    name: string;
+    info: string | VariableInfo;
+};",
                     "source": Object {
                       "filename": "types.d.ts",
                       "line": 4663,
@@ -18962,9 +18959,7 @@ Object {
                     "isStatic": false,
                     "kind": "ClassMethodDeclaration",
                     "name": "getNameForExpression",
-                    "signature": "getNameForExpression: (
-    expression: any
-) => {
+                    "signature": "getNameForExpression: (expression: any) => {
     name: string;
     rootInfo: ExportedVariableInfo;
     getMembers: () => string[];
