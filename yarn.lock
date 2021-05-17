@@ -1311,12 +1311,12 @@
   resolved "https://registry.yarnpkg.com/@microsoft/tsdoc/-/tsdoc-0.13.2.tgz#3b0efb6d3903bd49edb073696f60e90df08efb26"
   integrity sha512-WrHvO8PDL8wd8T2+zBGKrMwVL5IyzR3ryWUsl0PXgEV0QHup4mTLi0QcATefGI6Gx9Anu7vthPyyyLpY0EpiQg==
 
-"@nearform/bubbleprof@^6.0.1":
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/@nearform/bubbleprof/-/bubbleprof-6.0.1.tgz#e99fb04927b4081847c591259dba1fb0f676c20b"
-  integrity sha512-KggBfwy0tS8Z2yRuQPY2zP+4cem0VdGzVbovtUMRznKNznXTpqEdYjicmkU9XX3bT+6x4Mk2Q7VH5gPlyN84cQ==
+"@nearform/bubbleprof@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@nearform/bubbleprof/-/bubbleprof-7.0.0.tgz#b8ba6c998b374fb76e286efd1fee4eae8b5aece4"
+  integrity sha512-fKXaqklgkt4UuRaV/8nc4e3bBjWhA+cPGhQareLl9dDZd/DRnMXkyMbzElZl2QFnvcQoe1rRdtaLMm8ssphxFg==
   dependencies:
-    "@nearform/clinic-common" "^5.0.0"
+    "@nearform/clinic-common" "^6.0.0"
     "@nearform/node-trace-log-join" "2.0.0-0"
     "@nearform/trace-events-parser" "^1.0.4"
     array-flatten "^3.0.0"
@@ -1341,10 +1341,10 @@
     protocol-buffers "^4.0.4"
     pump "^3.0.0"
 
-"@nearform/clinic-common@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@nearform/clinic-common/-/clinic-common-5.0.0.tgz#1d84c6563e7b4be71d3b372c5519040881394b36"
-  integrity sha512-W0OojaQb9xc6sEUJOg8PpgX9S5B42soJYJZUMH11p4kQfu3/4Ygp6eVPc5Ye/J+mmzVQD/553ZQgavJMwkBrbg==
+"@nearform/clinic-common@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@nearform/clinic-common/-/clinic-common-6.0.0.tgz#371bde41fdc706b649e3139a73addc0fe803067e"
+  integrity sha512-bt0RKC1MDmS+l6vANEl0KE/l1OgN+FtT6wzOYPYTNjZYg9cR4gLyQeE0/KrCccChXuL2Nh+9RdMtfjJEI5KxNA==
   dependencies:
     brfs "^2.0.1"
     browserify "^17.0.0"
@@ -1356,12 +1356,12 @@
     stream-template "0.0.10"
     webfontloader "^1.6.28"
 
-"@nearform/doctor@^7.0.1":
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/@nearform/doctor/-/doctor-7.0.1.tgz#43714574ff138826629a0af7c12ee405e0e4b3da"
-  integrity sha512-SP/ABddWzGPfGLm6gOUsI9C1XZwogyA6TfTfy1/3CqJcmjg+RSZBWxbtyc+FmQdDOXVNElNn/yNaMSiVINXwaA==
+"@nearform/doctor@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@nearform/doctor/-/doctor-8.0.0.tgz#7dbc1537d6fcf685414c0179e8fe574fc1dfe78c"
+  integrity sha512-XB3o3p0arxsYLAER9NwOc89YBv4ir4rQE3QIHfFZOtySHNEAjOxxfZI7Pev9ZBDmTetvSgHLm55bjTK2DT5+TA==
   dependencies:
-    "@nearform/clinic-common" "^5.0.0"
+    "@nearform/clinic-common" "^6.0.0"
     "@nearform/node-trace-log-join" "2.0.0-0"
     "@nearform/trace-events-parser" "^1.0.4"
     "@tensorflow/tfjs-core" "^1.2.1"
@@ -1390,13 +1390,13 @@
     summary "^2.1.0"
     ttest "^3.0.0"
 
-"@nearform/flame@^8.0.1":
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/@nearform/flame/-/flame-8.0.1.tgz#a37198200a890b84e08998ae8ed2de7498e25bff"
-  integrity sha512-BzjjJgOQuI/DHo7n8b3H8EZDU9Ul7nMdGs/qg0JrKNVHvIf5Rvo5D3TQJtQwVYEAik27R1o39X5CVQyhxtOqTA==
+"@nearform/flame@^9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@nearform/flame/-/flame-9.0.0.tgz#2746eb823b6799a319598d6c5ec7430c7de02a43"
+  integrity sha512-KBH/kbbZvCOali8M5neULbFLCN1WHjFbaRWVVzFDqWPkehkrY3kU0K2K/3NfzKJH+yiflbT+D8g9KxffPNM0Cg==
   dependencies:
     "0x" "^4.10.2"
-    "@nearform/clinic-common" "^5.0.0"
+    "@nearform/clinic-common" "^6.0.0"
     copy-to-clipboard "^3.0.8"
     d3-array "^2.0.2"
     d3-fg "^6.13.1"
@@ -1406,6 +1406,14 @@
     pump "^3.0.0"
     querystringify "^2.1.0"
     rimraf "^3.0.2"
+
+"@nearform/heap-profiler@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@nearform/heap-profiler/-/heap-profiler-2.0.0.tgz#93e750b314a41988991bbd095ea14be529542f0d"
+  integrity sha512-846CWyq3Ky5rzcl8Z3S+VT3z6GQSlYD1G/dqbtANu29NUHoCO+W7tOZRK6eA6FjLHnNX0DvP1Mrt2oFBPnkxLw==
+  dependencies:
+    abort-controller "^3.0.0"
+    sonic-boom "^1.0.1"
 
 "@nearform/multistream@5.0.0-2":
   version "5.0.0-2"
@@ -2003,6 +2011,13 @@ abab@^2.0.0:
   resolved "https://registry.yarnpkg.com/abab/-/abab-2.0.4.tgz#6dfa57b417ca06d21b2478f0e638302f99c2405c"
   integrity sha512-Eu9ELJWCz/c1e9gTiCY+FceWxcqzjYEbqMgtndnuSqZSUCOL73TWNK2mHfIj4Cw2E/ongOp+JISVNCmovt2KYQ==
 
+abort-controller@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/abort-controller/-/abort-controller-3.0.0.tgz#eaf54d53b62bae4138e809ca225c8439a6efb392"
+  integrity sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==
+  dependencies:
+    event-target-shim "^5.0.0"
+
 accepts@~1.3.7:
   version "1.3.7"
   resolved "https://registry.yarnpkg.com/accepts/-/accepts-1.3.7.tgz#531bc726517a3b2b41f850021c6cc15eaab507cd"
@@ -2373,6 +2388,11 @@ atob@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
+
+atomic-sleep@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/atomic-sleep/-/atomic-sleep-1.0.0.tgz#eb85b77a601fc932cfe432c5acd364a9e2c9075b"
+  integrity sha512-kNOjDqAh7px0XWNI+4QbzoiR/nTkHAWNud2uvnJquD1/x5a7EQZMJT0AczqK0Qn67oY/TTQ1LbUKajZpp3I9tQ==
 
 autocannon@^6.5.0:
   version "6.5.0"
@@ -3237,14 +3257,14 @@ cli-width@^3.0.0:
   resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-3.0.0.tgz#a2f48437a2caa9a22436e794bf071ec9e61cedf6"
   integrity sha512-FxqpkPPwu1HjuN93Omfm4h8uIanXofW0RxVEW3k5RKx+mJJYSthzNhp32Kzxxy3YAEZ/Dc/EWN1vZRY0+kOhbw==
 
-clinic@8.0.1:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/clinic/-/clinic-8.0.1.tgz#9c7fb546fdeeb54e0fb2cd052749ad321b9d6bf9"
-  integrity sha512-SJ/VBzvJefNJ4I3HBpK2nQi3znf/E4IOPKIaOENjlX9KeuQqUei5uoUELgay5y1XBfy8rc0bk9M+0eK5LtaQnw==
+clinic@9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/clinic/-/clinic-9.0.0.tgz#9b91235b5e00401545700bae2cf872c69032bcf2"
+  integrity sha512-w6fchhCY6LrdNsJ/Kdymuv2gaB0jdX1Ql2t0MCAC4lr/ulY4+sPAB+nATl40OrGXKhPRlJINb4QebsnIvLv+3A==
   dependencies:
-    "@nearform/bubbleprof" "^6.0.1"
-    "@nearform/doctor" "^7.0.1"
-    "@nearform/flame" "^8.0.1"
+    "@nearform/bubbleprof" "^7.0.0"
+    "@nearform/doctor" "^8.0.0"
+    "@nearform/flame" "^9.0.0"
     any-shell-escape "^0.1.1"
     async "^3.0.1"
     autocannon "^6.5.0"
@@ -3255,6 +3275,7 @@ clinic@8.0.1:
     execspawn "^1.0.1"
     insight "^0.10.1"
     minimist "^1.2.0"
+    node-clinic-heap-profiler "^1.0.0"
     open "^7.3.0"
     ora "^5.1.0"
     rimraf "^3.0.0"
@@ -4770,6 +4791,11 @@ event-emitter@~0.3.5:
     d "1"
     es5-ext "~0.10.14"
 
+event-target-shim@^5.0.0:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/event-target-shim/-/event-target-shim-5.0.1.tgz#5d4d3ebdf9583d63a5333ce2deb7480ab2b05789"
+  integrity sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==
+
 events@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/events/-/events-2.1.0.tgz#2a9a1e18e6106e0e812aa9ebd4a819b3c29c0ba5"
@@ -5150,6 +5176,11 @@ flat-cache@^2.0.1:
     rimraf "2.6.3"
     write "1.0.3"
 
+flatstr@^1.0.12:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/flatstr/-/flatstr-1.0.12.tgz#c2ba6a08173edbb6c9640e3055b95e287ceb5931"
+  integrity sha512-4zPxDyhCyiN2wIAtSLI6gc82/EjqZc1onI4Mz/l0pWrAlsSfYH/2ZIcU+e3oA2wDwbzIWNKwa23F8rh6+DRWkw==
+
 flatted@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-2.0.2.tgz#4575b21e2bcee7434aa9be662f4b7b5f9c2b5138"
@@ -5252,6 +5283,16 @@ fs-extra@^9.0.0:
     graceful-fs "^4.2.0"
     jsonfile "^6.0.1"
     universalify "^1.0.0"
+
+fs-extra@^9.0.1:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-9.1.0.tgz#5954460c764a8da2094ba3554bf839e6b9a7c86d"
+  integrity sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==
+  dependencies:
+    at-least-node "^1.0.0"
+    graceful-fs "^4.2.0"
+    jsonfile "^6.0.1"
+    universalify "^2.0.0"
 
 fs.realpath@^1.0.0:
   version "1.0.0"
@@ -8090,6 +8131,25 @@ nock@^12.0.3:
     lodash "^4.17.13"
     propagate "^2.0.0"
 
+node-clinic-heap-profiler@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/node-clinic-heap-profiler/-/node-clinic-heap-profiler-1.0.0.tgz#2f66b26069139ca85290f2d529e83f25fa298254"
+  integrity sha512-MwUKAoc6pr93PTkKR0HjtE9ryyXqb7bwxWaZ7PiN2PJHvSH08f9oORLznBVp/JvF0+tt3p2Otu0KW+TeyG5sBQ==
+  dependencies:
+    "@nearform/clinic-common" "^6.0.0"
+    "@nearform/heap-profiler" "^2.0.0"
+    abort-controller "^3.0.0"
+    copy-to-clipboard "^3.0.8"
+    d3-array "^2.0.2"
+    d3-fg "^6.13.1"
+    d3-selection "^1.3.2"
+    fs-extra "^9.0.1"
+    lodash.debounce "^4.0.8"
+    on-net-listen "1.1.2"
+    pump "^3.0.0"
+    querystringify "^2.1.0"
+    sinusoidal-decimal "^1.0.0"
+
 node-fetch@^2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
@@ -8371,7 +8431,7 @@ on-headers@~1.0.2:
   resolved "https://registry.yarnpkg.com/on-headers/-/on-headers-1.0.2.tgz#772b0ae6aaa525c399e489adfad90c403eb3c28f"
   integrity sha512-pZAE+FJLoyITytdqK0U5s+FIpjN0JP3OzFi/u8Rx+EV5/W+JTWGXG8xFzevE7AjBfDqHv/8vL8qQsIhHnqRkrA==
 
-on-net-listen@^1.0.0, on-net-listen@^1.1.0, on-net-listen@^1.1.1:
+on-net-listen@1.1.2, on-net-listen@^1.0.0, on-net-listen@^1.1.0, on-net-listen@^1.1.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/on-net-listen/-/on-net-listen-1.1.2.tgz#671e55a81c910fa7e5b1e4d506545e9ea0f2e11c"
   integrity sha512-y1HRYy8s/RlcBvDUwKXSmkODMdx4KSuIvloCnQYJ2LdBBC1asY4HtfhXwe3UWknLakATZDnbzht2Ijw3M1EqFg==
@@ -10063,6 +10123,14 @@ snapdragon@^0.8.1:
     source-map "^0.5.6"
     source-map-resolve "^0.5.0"
     use "^3.1.0"
+
+sonic-boom@^1.0.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/sonic-boom/-/sonic-boom-1.4.1.tgz#d35d6a74076624f12e6f917ade7b9d75e918f53e"
+  integrity sha512-LRHh/A8tpW7ru89lrlkU4AszXt1dbwSjVWguGrmlxE7tawVmDBlI1PILMkXAxJTwqhgsEeTHzj36D5CmHgQmNg==
+  dependencies:
+    atomic-sleep "^1.0.0"
+    flatstr "^1.0.12"
 
 source-map-resolve@^0.5.0:
   version "0.5.3"
