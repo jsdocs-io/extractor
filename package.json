@@ -73,7 +73,7 @@
         "ts-morph": "^10.0.2"
     },
     "devDependencies": {
-        "@commitlint/cli": "12.1.1",
+        "@commitlint/cli": "12.1.4",
         "@commitlint/config-conventional": "12.1.1",
         "@pollyjs/adapter-node-http": "5.1.0",
         "@pollyjs/core": "5.1.0",
