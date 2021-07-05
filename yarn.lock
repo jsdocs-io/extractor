@@ -1946,10 +1946,10 @@
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-1.0.1.tgz#0a851d3bd96498fa25c33ab7278ed3bd65f06c3e"
   integrity sha512-l42BggppR6zLmpfU6fq9HEa2oGPEI8yrSPL3GITjfRInppYFahObbIQOQK3UGxEnyQpltZLaPe75046NOZQikw==
 
-"@types/tar-stream@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@types/tar-stream/-/tar-stream-2.2.0.tgz#2778ef8e328a520959a39681c15c83c53553426f"
-  integrity sha512-sRTpT180sVigzD4SiCWJQQrqcdkWnmscWvx+cXvAoPtXbLFC5+QmKi2xwRcPe4iRu0GcVl1qTeJKUTS5hULfrw==
+"@types/tar-stream@2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@types/tar-stream/-/tar-stream-2.2.1.tgz#7cb4516fe6d1a926a37b7733905c50885718e7ad"
+  integrity sha512-zhcfACZ4HavArMutfAB1/ApfSx44kNF2zyytU4mbO1dGCT/y9kL2IZwRDRyYYtBUxW6LRparZpLoX8i67b6IZw==
   dependencies:
     "@types/node" "*"
 
