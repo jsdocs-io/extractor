@@ -80,7 +80,7 @@
         "@pollyjs/persister-fs": "5.1.1",
         "@types/concat-stream": "1.6.0",
         "@types/debug": "4.1.6",
-        "@types/fs-extra": "9.0.11",
+        "@types/fs-extra": "9.0.12",
         "@types/gunzip-maybe": "1.4.0",
         "@types/hosted-git-info": "3.0.1",
         "@types/pollyjs__adapter-node-http": "2.0.1",
@@ -99,7 +99,7 @@
         "setup-polly-jest": "0.9.1",
         "ts-dedent": "2.1.1",
         "ts-jest": "27.0.3",
-        "ts-node": "10.0.0",
+        "ts-node": "10.1.0",
         "tsdx": "0.14.1",
         "tslib": "2.3.0",
         "typescript": "4.3.5"
