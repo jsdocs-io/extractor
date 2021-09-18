@@ -4334,8 +4334,7 @@ Object {
         "name": "AnnotationsMap",
         "signature": "type AnnotationsMap<T, AdditionalFields extends PropertyKey> = {
     [P in Exclude<keyof T, 'toString'>]?: AnnotationMapEntry;
-} &
-    Record<AdditionalFields, AnnotationMapEntry>;",
+} & Record<AdditionalFields, AnnotationMapEntry>;",
         "source": Object {
           "filename": "src/api/annotation.ts",
           "line": 24,

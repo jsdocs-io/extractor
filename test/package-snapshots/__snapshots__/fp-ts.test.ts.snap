@@ -13500,9 +13500,9 @@ Object {
               "id": "eq.getStructEq",
               "kind": "FunctionDeclaration",
               "name": "getStructEq",
-              "signature": "getStructEq: <O extends Readonly<Record<string, any>>>(
-    eqs: { [K in keyof O]: Eq<O[K]> }
-) => Eq<O>;",
+              "signature": "getStructEq: <O extends Readonly<Record<string, any>>>(eqs: {
+    [K in keyof O]: Eq<O[K]>;
+}) => Eq<O>;",
               "source": Object {
                 "filename": "lib/Eq.d.ts",
                 "line": 78,
@@ -30350,9 +30350,9 @@ Object {
               "id": "monoid.getStructMonoid",
               "kind": "FunctionDeclaration",
               "name": "getStructMonoid",
-              "signature": "getStructMonoid: <O extends Readonly<Record<string, any>>>(
-    monoids: { [K in keyof O]: Monoid<O[K]> }
-) => Monoid<O>;",
+              "signature": "getStructMonoid: <O extends Readonly<Record<string, any>>>(monoids: {
+    [K in keyof O]: Monoid<O[K]>;
+}) => Monoid<O>;",
               "source": Object {
                 "filename": "lib/Monoid.d.ts",
                 "line": 224,
@@ -60620,9 +60620,9 @@ Object {
               "id": "semigroup.getStructSemigroup",
               "kind": "FunctionDeclaration",
               "name": "getStructSemigroup",
-              "signature": "getStructSemigroup: <O extends Readonly<Record<string, any>>>(
-    semigroups: { [K in keyof O]: Semigroup<O[K]> }
-) => Semigroup<O>;",
+              "signature": "getStructSemigroup: <O extends Readonly<Record<string, any>>>(semigroups: {
+    [K in keyof O]: Semigroup<O[K]>;
+}) => Semigroup<O>;",
               "source": Object {
                 "filename": "lib/Semigroup.d.ts",
                 "line": 133,
@@ -62055,9 +62055,9 @@ Object {
               "id": "show.getStructShow",
               "kind": "FunctionDeclaration",
               "name": "getStructShow",
-              "signature": "getStructShow: <O extends Readonly<Record<string, any>>>(
-    shows: { [K in keyof O]: Show<O[K]> }
-) => Show<O>;",
+              "signature": "getStructShow: <O extends Readonly<Record<string, any>>>(shows: {
+    [K in keyof O]: Show<O[K]>;
+}) => Show<O>;",
               "source": Object {
                 "filename": "lib/Show.d.ts",
                 "line": 38,
