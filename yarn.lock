@@ -1335,10 +1335,10 @@
   resolved "https://registry.yarnpkg.com/@microsoft/tsdoc/-/tsdoc-0.13.2.tgz#3b0efb6d3903bd49edb073696f60e90df08efb26"
   integrity sha512-WrHvO8PDL8wd8T2+zBGKrMwVL5IyzR3ryWUsl0PXgEV0QHup4mTLi0QcATefGI6Gx9Anu7vthPyyyLpY0EpiQg==
 
-"@nearform/bubbleprof@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@nearform/bubbleprof/-/bubbleprof-7.0.0.tgz#b8ba6c998b374fb76e286efd1fee4eae8b5aece4"
-  integrity sha512-fKXaqklgkt4UuRaV/8nc4e3bBjWhA+cPGhQareLl9dDZd/DRnMXkyMbzElZl2QFnvcQoe1rRdtaLMm8ssphxFg==
+"@nearform/bubbleprof@^7.0.1":
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/@nearform/bubbleprof/-/bubbleprof-7.0.1.tgz#60318260ecbf9b405abffbd0bd5a642e6d329336"
+  integrity sha512-J6oA0uMRRfpeKA4GotMdE1yhGI7ah8LwMwPG0WGRzGO5O5e8HVuTwdRYzAgfHEQvAFxDBwXG+ZPK400pU17m7g==
   dependencies:
     "@nearform/clinic-common" "^6.0.0"
     "@nearform/node-trace-log-join" "2.0.0-0"
@@ -1380,10 +1380,29 @@
     stream-template "0.0.10"
     webfontloader "^1.6.28"
 
-"@nearform/doctor@^8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@nearform/doctor/-/doctor-8.0.0.tgz#7dbc1537d6fcf685414c0179e8fe574fc1dfe78c"
-  integrity sha512-XB3o3p0arxsYLAER9NwOc89YBv4ir4rQE3QIHfFZOtySHNEAjOxxfZI7Pev9ZBDmTetvSgHLm55bjTK2DT5+TA==
+"@nearform/clinic-heap-profiler@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@nearform/clinic-heap-profiler/-/clinic-heap-profiler-1.1.0.tgz#2c690cbe61f93f4395c940315be7a1d0ca0e4176"
+  integrity sha512-HP8qhJKKBzm1++aj7PrvPjigbtDuy4zo0ntW0cpZhygHRrq14tZKfrn1CfA519BSMogxSsDlp2M+3+iVfX4gfQ==
+  dependencies:
+    "@nearform/clinic-common" "^6.0.0"
+    "@nearform/heap-profiler" "^2.0.0"
+    abort-controller "^3.0.0"
+    copy-to-clipboard "^3.0.8"
+    d3-array "^2.0.2"
+    d3-fg "^6.13.1"
+    d3-selection "^1.3.2"
+    fs-extra "^9.0.1"
+    lodash.debounce "^4.0.8"
+    on-net-listen "1.1.2"
+    pump "^3.0.0"
+    querystringify "^2.1.0"
+    sinusoidal-decimal "^1.0.0"
+
+"@nearform/doctor@^8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@nearform/doctor/-/doctor-8.1.0.tgz#7cb8d2547cae43f7e52df15e83297ad964c9e351"
+  integrity sha512-DcUOVxH6mgA1kWUpO9ZNc1KuycmJdN+qCn1SECCo0dV2RGECTLZpbR2KIoU04WuR7ck3bw6MiW4YreZ5FV5dww==
   dependencies:
     "@nearform/clinic-common" "^6.0.0"
     "@nearform/node-trace-log-join" "2.0.0-0"
@@ -1414,10 +1433,10 @@
     summary "^2.1.0"
     ttest "^3.0.0"
 
-"@nearform/flame@^9.0.0":
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/@nearform/flame/-/flame-9.0.0.tgz#2746eb823b6799a319598d6c5ec7430c7de02a43"
-  integrity sha512-KBH/kbbZvCOali8M5neULbFLCN1WHjFbaRWVVzFDqWPkehkrY3kU0K2K/3NfzKJH+yiflbT+D8g9KxffPNM0Cg==
+"@nearform/flame@^9.1.0":
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/@nearform/flame/-/flame-9.1.0.tgz#ed50bbf05e3def2a464cd40ffe9b17a9e09afa16"
+  integrity sha512-rGC8tDiwkD+YaMGhJadbhbE+wT0omIrXwVKsCxqZJmNG2yDib7W36DVY6eHfa75Tyb0rqXkWl46gsgg/mr3HBQ==
   dependencies:
     "0x" "^4.10.2"
     "@nearform/clinic-common" "^6.0.0"
@@ -3303,14 +3322,15 @@ cli-width@^3.0.0:
   resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-3.0.0.tgz#a2f48437a2caa9a22436e794bf071ec9e61cedf6"
   integrity sha512-FxqpkPPwu1HjuN93Omfm4h8uIanXofW0RxVEW3k5RKx+mJJYSthzNhp32Kzxxy3YAEZ/Dc/EWN1vZRY0+kOhbw==
 
-clinic@9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/clinic/-/clinic-9.0.0.tgz#9b91235b5e00401545700bae2cf872c69032bcf2"
-  integrity sha512-w6fchhCY6LrdNsJ/Kdymuv2gaB0jdX1Ql2t0MCAC4lr/ulY4+sPAB+nATl40OrGXKhPRlJINb4QebsnIvLv+3A==
+clinic@9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/clinic/-/clinic-9.1.0.tgz#fb28a2c7635610593ded71fff787220c784a60e5"
+  integrity sha512-e/tNTXs6CTqZdaqCg3LABd+k+QWhTSVbEWJJSI+FVsfpjLT0daWZFQIzyj97LxOGx9ot59r+PmpQPomiV87dBQ==
   dependencies:
-    "@nearform/bubbleprof" "^7.0.0"
-    "@nearform/doctor" "^8.0.0"
-    "@nearform/flame" "^9.0.0"
+    "@nearform/bubbleprof" "^7.0.1"
+    "@nearform/clinic-heap-profiler" "^1.1.0"
+    "@nearform/doctor" "^8.1.0"
+    "@nearform/flame" "^9.1.0"
     any-shell-escape "^0.1.1"
     async "^3.0.1"
     autocannon "^6.5.0"
@@ -3321,7 +3341,6 @@ clinic@9.0.0:
     execspawn "^1.0.1"
     insight "^0.10.1"
     minimist "^1.2.0"
-    node-clinic-heap-profiler "^1.0.0"
     open "^7.3.0"
     ora "^5.1.0"
     rimraf "^3.0.0"
@@ -8178,25 +8197,6 @@ nock@^12.0.3:
     json-stringify-safe "^5.0.1"
     lodash "^4.17.13"
     propagate "^2.0.0"
-
-node-clinic-heap-profiler@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/node-clinic-heap-profiler/-/node-clinic-heap-profiler-1.0.0.tgz#2f66b26069139ca85290f2d529e83f25fa298254"
-  integrity sha512-MwUKAoc6pr93PTkKR0HjtE9ryyXqb7bwxWaZ7PiN2PJHvSH08f9oORLznBVp/JvF0+tt3p2Otu0KW+TeyG5sBQ==
-  dependencies:
-    "@nearform/clinic-common" "^6.0.0"
-    "@nearform/heap-profiler" "^2.0.0"
-    abort-controller "^3.0.0"
-    copy-to-clipboard "^3.0.8"
-    d3-array "^2.0.2"
-    d3-fg "^6.13.1"
-    d3-selection "^1.3.2"
-    fs-extra "^9.0.1"
-    lodash.debounce "^4.0.8"
-    on-net-listen "1.1.2"
-    pump "^3.0.0"
-    querystringify "^2.1.0"
-    sinusoidal-decimal "^1.0.0"
 
 node-fetch@^2.6.1:
   version "2.6.1"
