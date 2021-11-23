@@ -459,14 +459,14 @@ Object {
               "isStatic": true,
               "kind": "ClassPropertyDeclaration",
               "name": "jsonSchema",
-              "signature": "static readonly jsonSchema: any;",
+              "signature": "static readonly jsonSchema: JsonSchema;",
               "source": Object {
                 "filename": "dist/rollup.d.ts",
                 "line": 150,
                 "unpkgURL": "https://unpkg.com/browse/@microsoft/api-extractor@7.13.0/dist/rollup.d.ts#L150",
                 "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L150",
               },
-              "type": "any",
+              "type": "JsonSchema",
             },
             Object {
               "docs": Array [
@@ -513,14 +513,14 @@ Object {
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "newlineKind",
-              "signature": "readonly newlineKind: any;",
+              "signature": "readonly newlineKind: NewlineKind;",
               "source": Object {
                 "filename": "dist/rollup.d.ts",
                 "line": 207,
                 "unpkgURL": "https://unpkg.com/browse/@microsoft/api-extractor@7.13.0/dist/rollup.d.ts#L207",
                 "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L207",
               },
-              "type": "any",
+              "type": "NewlineKind",
             },
             Object {
               "docs": Array [
@@ -3133,7 +3133,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@microsoft/api-extractor@7.13.0/dist/rollup.d.ts#L952",
                 "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L952",
               },
-              "type": "any",
+              "type": "PackageJsonLookup",
             },
             Object {
               "docs": Array [
@@ -3153,7 +3153,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@microsoft/api-extractor@7.13.0/dist/rollup.d.ts#L956",
                 "url": "https://github.com/microsoft/rushstack/tree/v7.13.0/apps/api-extractor/dist/rollup.d.ts#L956",
               },
-              "type": "any",
+              "type": "RigConfig",
             },
             Object {
               "docs": Array [

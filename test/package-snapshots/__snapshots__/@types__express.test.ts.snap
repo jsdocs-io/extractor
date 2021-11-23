@@ -47,14 +47,14 @@ Object {
         "id": "Router",
         "kind": "FunctionDeclaration",
         "name": "Router",
-        "signature": "Router: (options?: RouterOptions) => any;",
+        "signature": "Router: (options?: RouterOptions) => core.Router;",
         "source": Object {
           "filename": "index.d.ts",
           "line": 71,
           "unpkgURL": "https://unpkg.com/browse/@types/express@4.17.11/index.d.ts#L71",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L71",
         },
-        "type": "(options?: RouterOptions) => any",
+        "type": "(options?: RouterOptions) => core.Router",
       },
     ],
     "interfaces": Array [
@@ -592,14 +592,20 @@ Object {
         "id": "request",
         "kind": "VariableDeclaration",
         "name": "request",
-        "signature": "var request: Request<any, any, any, any, Record<string, any>>;",
+        "signature": "var request: Request<
+    core.ParamsDictionary,
+    any,
+    any,
+    core.Query,
+    Record<string, any>
+>;",
         "source": Object {
           "filename": "index.d.ts",
           "line": 52,
           "unpkgURL": "https://unpkg.com/browse/@types/express@4.17.11/index.d.ts#L52",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L52",
         },
-        "type": "Request<any, any, any, any, Record<string, any>>",
+        "type": "Request<core.ParamsDictionary, any, any, core.Query, Record<string, any>>",
         "variableKind": "var",
       },
       Object {
@@ -626,14 +632,16 @@ Object {
         "id": "static",
         "kind": "VariableDeclaration",
         "name": "static",
-        "signature": "var static: any;",
+        "signature": "var static: serveStatic.RequestHandlerConstructor<
+    Response<any, Record<string, any>>
+>;",
         "source": Object {
           "filename": "index.d.ts",
           "line": 58,
           "unpkgURL": "https://unpkg.com/browse/@types/express@4.17.11/index.d.ts#L58",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/express/index.d.ts#L58",
         },
-        "type": "any",
+        "type": "serveStatic.RequestHandlerConstructor<Response<any, Record<string, any>>>",
         "variableKind": "var",
       },
       Object {

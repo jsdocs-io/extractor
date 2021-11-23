@@ -12,9 +12,13 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "access",
         "signature": "access: {
-    (path: any, callback: (err: any) => void): void;
-    (path: any, mode: number, callback: (err: any) => void): void;
-    (path: any, mode?: number): Promise<void>;
+    (path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void;
+    (
+        path: PathLike,
+        mode: number,
+        callback: (err: NodeJS.ErrnoException) => void
+    ): void;
+    (path: PathLike, mode?: number): Promise<void>;
 };",
         "source": Object {
           "filename": "index.d.ts",
@@ -22,7 +26,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L125",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L125",
         },
-        "type": "{ (path: any, callback: (err: any) => void): void; (path: any, mode: number, callback: (err: any) => void): void; (path: any, mode?: number): Promise<void>; }",
+        "type": "{ (path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike, mode: number, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike, mode?: number): Promise<void>; }",
       },
       Object {
         "docs": Array [],
@@ -34,9 +38,9 @@ Object {
         file: PathLike | number,
         data: any,
         options: { encoding?: string; mode?: number | string; flag?: string },
-        callback: (err: any) => void
+        callback: (err: NodeJS.ErrnoException) => void
     ): void;
-    (file: any, data: any, callback: (err: any) => void): void;
+    (file: any, data: any, callback: (err: NodeJS.ErrnoException) => void): void;
     (
         file: any,
         data: any,
@@ -49,7 +53,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L129",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L129",
         },
-        "type": "{ (file: PathLike | number, data: any, options: {    encoding?: string;    mode?: number | string;    flag?: string;}, callback: (err: any) => void): void; (file: any, data: any, callback: (err: any) => void): void; (file: any, data: any, options?: { encoding?: string; mode?: string | number; flag?: string; }): Promise<void>; }",
+        "type": "{ (file: PathLike | number, data: any, options: {    encoding?: string;    mode?: number | string;    flag?: string;}, callback: (err: NodeJS.ErrnoException) => void): void; (file: any, data: any, callback: (err: NodeJS.ErrnoException) => void): void; (file: any, data: any, options?: { encoding?: string; mode?: string | number; flag?: string; }): Promise<void>; }",
       },
       Object {
         "docs": Array [],
@@ -57,8 +61,12 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "chmod",
         "signature": "chmod: {
-    (path: any, mode: Mode, callback: (err: any) => void): void;
-    (path: any, mode: Mode): Promise<void>;
+    (
+        path: PathLike,
+        mode: Mode,
+        callback: (err: NodeJS.ErrnoException) => void
+    ): void;
+    (path: PathLike, mode: Mode): Promise<void>;
 };",
         "source": Object {
           "filename": "index.d.ts",
@@ -66,7 +74,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L134",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L134",
         },
-        "type": "{ (path: any, mode: Mode, callback: (err: any) => void): void; (path: any, mode: Mode): Promise<void>; }",
+        "type": "{ (path: PathLike, mode: Mode, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike, mode: Mode): Promise<void>; }",
       },
       Object {
         "docs": Array [],
@@ -74,8 +82,13 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "chown",
         "signature": "chown: {
-    (path: any, uid: number, gid: number): Promise<void>;
-    (path: any, uid: number, gid: number, callback: (err: any) => void): void;
+    (path: PathLike, uid: number, gid: number): Promise<void>;
+    (
+        path: PathLike,
+        uid: number,
+        gid: number,
+        callback: (err: NodeJS.ErrnoException) => void
+    ): void;
 };",
         "source": Object {
           "filename": "index.d.ts",
@@ -83,7 +96,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L137",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L137",
         },
-        "type": "{ (path: any, uid: number, gid: number): Promise<void>; (path: any, uid: number, gid: number, callback: (err: any) => void): void; }",
+        "type": "{ (path: PathLike, uid: number, gid: number): Promise<void>; (path: PathLike, uid: number, gid: number, callback: (err: NodeJS.ErrnoException) => void): void; }",
       },
       Object {
         "docs": Array [],
@@ -91,7 +104,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "close",
         "signature": "close: {
-    (fd: number, callback: (err: any) => void): void;
+    (fd: number, callback: (err: NodeJS.ErrnoException) => void): void;
     (fd: number): Promise<void>;
 };",
         "source": Object {
@@ -100,7 +113,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L140",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L140",
         },
-        "type": "{ (fd: number, callback: (err: any) => void): void; (fd: number): Promise<void>; }",
+        "type": "{ (fd: number, callback: (err: NodeJS.ErrnoException) => void): void; (fd: number): Promise<void>; }",
       },
       Object {
         "docs": Array [],
@@ -396,7 +409,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "fchmod",
         "signature": "fchmod: {
-    (fd: number, mode: Mode, callback: (err: any) => void): void;
+    (fd: number, mode: Mode, callback: (err: NodeJS.ErrnoException) => void): void;
     (fd: number, mode: Mode): Promise<void>;
 };",
         "source": Object {
@@ -405,7 +418,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L143",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L143",
         },
-        "type": "{ (fd: number, mode: Mode, callback: (err: any) => void): void; (fd: number, mode: Mode): Promise<void>; }",
+        "type": "{ (fd: number, mode: Mode, callback: (err: NodeJS.ErrnoException) => void): void; (fd: number, mode: Mode): Promise<void>; }",
       },
       Object {
         "docs": Array [],
@@ -413,7 +426,12 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "fchown",
         "signature": "fchown: {
-    (fd: number, uid: number, gid: number, callback: (err: any) => void): void;
+    (
+        fd: number,
+        uid: number,
+        gid: number,
+        callback: (err: NodeJS.ErrnoException) => void
+    ): void;
     (fd: number, uid: number, gid: number): Promise<void>;
 };",
         "source": Object {
@@ -422,7 +440,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L146",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L146",
         },
-        "type": "{ (fd: number, uid: number, gid: number, callback: (err: any) => void): void; (fd: number, uid: number, gid: number): Promise<void>; }",
+        "type": "{ (fd: number, uid: number, gid: number, callback: (err: NodeJS.ErrnoException) => void): void; (fd: number, uid: number, gid: number): Promise<void>; }",
       },
       Object {
         "docs": Array [],
@@ -447,8 +465,8 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "fstat",
         "signature": "fstat: {
-    (fd: number, callback: (err: any, stats: any) => any): void;
-    (fd: number): Promise<any>;
+    (fd: number, callback: (err: NodeJS.ErrnoException, stats: Stats) => any): void;
+    (fd: number): Promise<Stats>;
 };",
         "source": Object {
           "filename": "index.d.ts",
@@ -456,7 +474,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L152",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L152",
         },
-        "type": "{ (fd: number, callback: (err: any, stats: any) => any): void; (fd: number): Promise<any>; }",
+        "type": "{ (fd: number, callback: (err: NodeJS.ErrnoException, stats: Stats) => any): void; (fd: number): Promise<Stats>; }",
       },
       Object {
         "docs": Array [],
@@ -464,7 +482,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "fsync",
         "signature": "fsync: {
-    (fd: number, callback: (err: any) => void): void;
+    (fd: number, callback: (err: NodeJS.ErrnoException) => void): void;
     (fd: number): Promise<void>;
 };",
         "source": Object {
@@ -473,7 +491,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L155",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L155",
         },
-        "type": "{ (fd: number, callback: (err: any) => void): void; (fd: number): Promise<void>; }",
+        "type": "{ (fd: number, callback: (err: NodeJS.ErrnoException) => void): void; (fd: number): Promise<void>; }",
       },
       Object {
         "docs": Array [],
@@ -481,8 +499,8 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "ftruncate",
         "signature": "ftruncate: {
-    (fd: number, callback: (err: any) => void): void;
-    (fd: number, len: number, callback: (err: any) => void): void;
+    (fd: number, callback: (err: NodeJS.ErrnoException) => void): void;
+    (fd: number, len: number, callback: (err: NodeJS.ErrnoException) => void): void;
     (fd: number, len?: number): Promise<void>;
 };",
         "source": Object {
@@ -491,7 +509,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L158",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L158",
         },
-        "type": "{ (fd: number, callback: (err: any) => void): void; (fd: number, len: number, callback: (err: any) => void): void; (fd: number, len?: number): Promise<void>; }",
+        "type": "{ (fd: number, callback: (err: NodeJS.ErrnoException) => void): void; (fd: number, len: number, callback: (err: NodeJS.ErrnoException) => void): void; (fd: number, len?: number): Promise<void>; }",
       },
       Object {
         "docs": Array [],
@@ -499,8 +517,18 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "futimes",
         "signature": "futimes: {
-    (fd: number, atime: number, mtime: number, callback: (err: any) => void): void;
-    (fd: number, atime: Date, mtime: Date, callback: (err: any) => void): void;
+    (
+        fd: number,
+        atime: number,
+        mtime: number,
+        callback: (err: NodeJS.ErrnoException) => void
+    ): void;
+    (
+        fd: number,
+        atime: Date,
+        mtime: Date,
+        callback: (err: NodeJS.ErrnoException) => void
+    ): void;
     (fd: number, atime: number, mtime: number): Promise<void>;
     (fd: number, atime: Date, mtime: Date): Promise<void>;
 };",
@@ -510,7 +538,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L162",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L162",
         },
-        "type": "{ (fd: number, atime: number, mtime: number, callback: (err: any) => void): void; (fd: number, atime: Date, mtime: Date, callback: (err: any) => void): void; (fd: number, atime: number, mtime: number): Promise<void>; (fd: number, atime: Date, mtime: Date): Promise<void>; }",
+        "type": "{ (fd: number, atime: number, mtime: number, callback: (err: NodeJS.ErrnoException) => void): void; (fd: number, atime: Date, mtime: Date, callback: (err: NodeJS.ErrnoException) => void): void; (fd: number, atime: number, mtime: number): Promise<void>; (fd: number, atime: Date, mtime: Date): Promise<void>; }",
       },
       Object {
         "docs": Array [],
@@ -518,8 +546,13 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "lchown",
         "signature": "lchown: {
-    (path: any, uid: number, gid: number, callback: (err: any) => void): void;
-    (path: any, uid: number, gid: number): Promise<void>;
+    (
+        path: PathLike,
+        uid: number,
+        gid: number,
+        callback: (err: NodeJS.ErrnoException) => void
+    ): void;
+    (path: PathLike, uid: number, gid: number): Promise<void>;
 };",
         "source": Object {
           "filename": "index.d.ts",
@@ -527,7 +560,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L167",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L167",
         },
-        "type": "{ (path: any, uid: number, gid: number, callback: (err: any) => void): void; (path: any, uid: number, gid: number): Promise<void>; }",
+        "type": "{ (path: PathLike, uid: number, gid: number, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike, uid: number, gid: number): Promise<void>; }",
       },
       Object {
         "docs": Array [],
@@ -535,8 +568,12 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "link",
         "signature": "link: {
-    (existingPath: any, newPath: any, callback: (err: any) => void): void;
-    (existingPath: any, newPath: any): Promise<void>;
+    (
+        existingPath: PathLike,
+        newPath: PathLike,
+        callback: (err: NodeJS.ErrnoException) => void
+    ): void;
+    (existingPath: PathLike, newPath: PathLike): Promise<void>;
 };",
         "source": Object {
           "filename": "index.d.ts",
@@ -544,7 +581,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L170",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L170",
         },
-        "type": "{ (existingPath: any, newPath: any, callback: (err: any) => void): void; (existingPath: any, newPath: any): Promise<void>; }",
+        "type": "{ (existingPath: PathLike, newPath: PathLike, callback: (err: NodeJS.ErrnoException) => void): void; (existingPath: PathLike, newPath: PathLike): Promise<void>; }",
       },
       Object {
         "docs": Array [],
@@ -552,8 +589,11 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "lstat",
         "signature": "lstat: {
-    (path: any, callback: (err: any, stats: any) => any): void;
-    (path: any): Promise<any>;
+    (
+        path: PathLike,
+        callback: (err: NodeJS.ErrnoException, stats: Stats) => any
+    ): void;
+    (path: PathLike): Promise<Stats>;
 };",
         "source": Object {
           "filename": "index.d.ts",
@@ -561,7 +601,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L173",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L173",
         },
-        "type": "{ (path: any, callback: (err: any, stats: any) => any): void; (path: any): Promise<any>; }",
+        "type": "{ (path: PathLike, callback: (err: NodeJS.ErrnoException, stats: Stats) => any): void; (path: PathLike): Promise<Stats>; }",
       },
       Object {
         "docs": Array [
@@ -575,9 +615,13 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "mkdir",
         "signature": "mkdir: {
-    (path: any, callback: (err: any) => void): void;
-    (path: any, options: any, callback: (err: any) => void): void;
-    (path: any, options?: any): Promise<void>;
+    (path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void;
+    (
+        path: PathLike,
+        options: any,
+        callback: (err: NodeJS.ErrnoException) => void
+    ): void;
+    (path: PathLike, options?: any): Promise<void>;
 };",
         "source": Object {
           "filename": "index.d.ts",
@@ -585,7 +629,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L181",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L181",
         },
-        "type": "{ (path: any, callback: (err: any) => void): void; (path: any, options: any, callback: (err: any) => void): void; (path: any, options?: any): Promise<void>; }",
+        "type": "{ (path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike, options: any, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike, options?: any): Promise<void>; }",
       },
       Object {
         "docs": Array [],
@@ -654,14 +698,17 @@ Object {
         "id": "mkdirSync",
         "kind": "FunctionDeclaration",
         "name": "mkdirSync",
-        "signature": "mkdirSync: (path: any, options?: Mode | fs.MakeDirectoryOptions | null) => void;",
+        "signature": "mkdirSync: (
+    path: PathLike,
+    options?: Mode | fs.MakeDirectoryOptions | null
+) => void;",
         "source": Object {
           "filename": "index.d.ts",
           "line": 189,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L189",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L189",
         },
-        "type": "(path: any, options?: Mode | fs.MakeDirectoryOptions | null) => void",
+        "type": "(path: PathLike, options?: Mode | fs.MakeDirectoryOptions | null) => void",
       },
       Object {
         "docs": Array [
@@ -676,7 +723,10 @@ Object {
         "name": "mkdtemp",
         "signature": "mkdtemp: {
     (prefix: string): Promise<string>;
-    (prefix: string, callback: (err: any, folder: string) => void): void;
+    (
+        prefix: string,
+        callback: (err: NodeJS.ErrnoException, folder: string) => void
+    ): void;
 };",
         "source": Object {
           "filename": "index.d.ts",
@@ -684,7 +734,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L290",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L290",
         },
-        "type": "{ (prefix: string): Promise<string>; (prefix: string, callback: (err: any, folder: string) => void): void; }",
+        "type": "{ (prefix: string): Promise<string>; (prefix: string, callback: (err: NodeJS.ErrnoException, folder: string) => void): void; }",
       },
       Object {
         "docs": Array [],
@@ -730,17 +780,17 @@ Object {
         "name": "open",
         "signature": "open: {
     (
-        path: any,
+        path: PathLike,
         flags: string | number,
-        callback: (err: any, fd: number) => void
+        callback: (err: NodeJS.ErrnoException, fd: number) => void
     ): void;
     (
-        path: any,
+        path: PathLike,
         flags: string | number,
         mode: Mode,
-        callback: (err: any, fd: number) => void
+        callback: (err: NodeJS.ErrnoException, fd: number) => void
     ): void;
-    (path: any, flags: string | number, mode?: Mode): Promise<number>;
+    (path: PathLike, flags: string | number, mode?: Mode): Promise<number>;
 };",
         "source": Object {
           "filename": "index.d.ts",
@@ -748,7 +798,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L191",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L191",
         },
-        "type": "{ (path: any, flags: string | number, callback: (err: any, fd: number) => void): void; (path: any, flags: string | number, mode: Mode, callback: (err: any, fd: number) => void): void; (path: any, flags: string | number, mode?: Mode): Promise<number>; }",
+        "type": "{ (path: PathLike, flags: string | number, callback: (err: NodeJS.ErrnoException, fd: number) => void): void; (path: PathLike, flags: string | number, mode: Mode, callback: (err: NodeJS.ErrnoException, fd: number) => void): void; (path: PathLike, flags: string | number, mode?: Mode): Promise<number>; }",
       },
       Object {
         "docs": Array [],
@@ -756,9 +806,16 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "opendir",
         "signature": "opendir: {
-    (path: string, cb: (err: NodeJS.ErrnoException | null, dir: any) => void): void;
-    (path: string, options: any, cb: (err: any, dir: any) => void): void;
-    (path: string, options?: any): Promise<any>;
+    (
+        path: string,
+        cb: (err: NodeJS.ErrnoException | null, dir: fs.Dir) => void
+    ): void;
+    (
+        path: string,
+        options: fs.OpenDirOptions,
+        cb: (err: any, dir: fs.Dir) => void
+    ): void;
+    (path: string, options?: fs.OpenDirOptions): Promise<fs.Dir>;
 };",
         "source": Object {
           "filename": "index.d.ts",
@@ -766,7 +823,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L195",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L195",
         },
-        "type": "{ (path: string, cb: (err: NodeJS.ErrnoException | null, dir: any) => void): void; (path: string, options: any, cb: (err: any, dir: any) => void): void; (path: string, options?: any): Promise<any>; }",
+        "type": "{ (path: string, cb: (err: NodeJS.ErrnoException | null, dir: fs.Dir) => void): void; (path: string, options: fs.OpenDirOptions, cb: (err: any, dir: fs.Dir) => void): void; (path: string, options?: fs.OpenDirOptions): Promise<fs.Dir>; }",
       },
       Object {
         "docs": Array [],
@@ -926,7 +983,11 @@ Object {
         offset: number,
         length: number,
         position: number | null,
-        callback: (err: any, bytesRead: number, buffer: TBuffer) => void
+        callback: (
+            err: NodeJS.ErrnoException,
+            bytesRead: number,
+            buffer: TBuffer
+        ) => void
     ): void;
     <TBuffer extends unknown>(
         fd: number,
@@ -942,7 +1003,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L203",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L203",
         },
-        "type": "{ <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset: number, length: number, position: number | null, callback: (err: any, bytesRead: number, buffer: TBuffer) => void): void; <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset: number, length: number, position: number): Promise<{ bytesRead: number; buffer: TBuffer; }>; }",
+        "type": "{ <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset: number, length: number, position: number | null, callback: (err: NodeJS.ErrnoException, bytesRead: number, buffer: TBuffer) => void): void; <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset: number, length: number, position: number): Promise<{ bytesRead: number; buffer: TBuffer; }>; }",
       },
       Object {
         "docs": Array [],
@@ -950,16 +1011,22 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "readdir",
         "signature": "readdir: {
-    (path: any, callback: (err: any, files: string[]) => void): void;
-    (path: any, options?: any): Promise<string[]>;
     (
-        path: any,
+        path: PathLike,
+        callback: (err: NodeJS.ErrnoException, files: string[]) => void
+    ): void;
+    (path: PathLike, options?: any): Promise<string[]>;
+    (
+        path: PathLike,
         options: 'buffer' | { encoding: 'buffer'; withFileTypes?: false }
-    ): Promise<any[]>;
-    (path: any, options?: { encoding?: string; withFileTypes?: false }): Promise<
-        string[] | any[]
+    ): Promise<Buffer[]>;
+    (
+        path: PathLike,
+        options?: { encoding?: string; withFileTypes?: false }
+    ): Promise<string[] | Buffer[]>;
+    (path: PathLike, options: { encoding?: string; withFileTypes: true }): Promise<
+        fs.Dirent[]
     >;
-    (path: any, options: { encoding?: string; withFileTypes: true }): Promise<any[]>;
 };",
         "source": Object {
           "filename": "index.d.ts",
@@ -967,7 +1034,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L215",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L215",
         },
-        "type": "{ (path: any, callback: (err: any, files: string[]) => void): void; (path: any, options?: any): Promise<string[]>; (path: any, options: \\"buffer\\" | { encoding: \\"buffer\\"; withFileTypes?: false; }): Promise<any[]>; (path: any, options?: { encoding?: string; withFileTypes?: false; }): Promise<string[] | any[]>; (path: any, options: { encoding?: string; withFileTypes: true; }): Promise<any[]>; }",
+        "type": "{ (path: PathLike, callback: (err: NodeJS.ErrnoException, files: string[]) => void): void; (path: PathLike, options?: any): Promise<string[]>; (path: PathLike, options: \\"buffer\\" | { encoding: \\"buffer\\"; withFileTypes?: false; }): Promise<Buffer[]>; (path: PathLike, options?: { encoding?: string; withFileTypes?: false; }): Promise<string[] | Buffer[]>; (path: PathLike, options: { encoding?: string; withFileTypes: true; }): Promise<fs.Dirent[]>; }",
       },
       Object {
         "docs": Array [],
@@ -975,19 +1042,26 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "readFile",
         "signature": "readFile: {
-    (file: PathLike | number, callback: (err: any, data: any) => void): void;
-    (file: any, encoding: string, callback: (err: any, data: string) => void): void;
+    (
+        file: PathLike | number,
+        callback: (err: NodeJS.ErrnoException, data: Buffer) => void
+    ): void;
+    (
+        file: any,
+        encoding: string,
+        callback: (err: NodeJS.ErrnoException, data: string) => void
+    ): void;
     (
         file: any,
         options: { flag?: string } | { encoding: string; flag?: string },
-        callback: (err: any, data: any) => void
+        callback: (err: NodeJS.ErrnoException, data: Buffer) => void
     ): void;
     (
         file: any,
         options: { flag?: string } | { encoding: string; flag?: string }
     ): Promise<string>;
     (file: any, encoding: string): Promise<string>;
-    (file: any): Promise<any>;
+    (file: any): Promise<Buffer>;
 };",
         "source": Object {
           "filename": "index.d.ts",
@@ -995,7 +1069,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L207",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L207",
         },
-        "type": "{ (file: PathLike | number, callback: (err: any, data: any) => void): void; (file: any, encoding: string, callback: (err: any, data: string) => void): void; (file: any, options: { flag?: string; } | { encoding: string; flag?: string; }, callback: (err: any, data: any) => void): void; (file: any, options: { flag?: string; } | { encoding: string; flag?: string; }): Promise<string>; (file: any, encoding: string): Promise<string>; (file: any): Promise<any>; }",
+        "type": "{ (file: PathLike | number, callback: (err: NodeJS.ErrnoException, data: Buffer) => void): void; (file: any, encoding: string, callback: (err: NodeJS.ErrnoException, data: string) => void): void; (file: any, options: { flag?: string; } | { encoding: string; flag?: string; }, callback: (err: NodeJS.ErrnoException, data: Buffer) => void): void; (file: any, options: { flag?: string; } | { encoding: string; flag?: string; }): Promise<string>; (file: any, encoding: string): Promise<string>; (file: any): Promise<Buffer>; }",
       },
       Object {
         "docs": Array [],
@@ -1075,8 +1149,11 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "readlink",
         "signature": "readlink: {
-    (path: any, callback: (err: any, linkString: string) => any): void;
-    (path: any): Promise<string>;
+    (
+        path: PathLike,
+        callback: (err: NodeJS.ErrnoException, linkString: string) => any
+    ): void;
+    (path: PathLike): Promise<string>;
 };",
         "source": Object {
           "filename": "index.d.ts",
@@ -1084,7 +1161,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L221",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L221",
         },
-        "type": "{ (path: any, callback: (err: any, linkString: string) => any): void; (path: any): Promise<string>; }",
+        "type": "{ (path: PathLike, callback: (err: NodeJS.ErrnoException, linkString: string) => any): void; (path: PathLike): Promise<string>; }",
       },
       Object {
         "docs": Array [],
@@ -1092,13 +1169,16 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "realpath",
         "signature": "realpath: {
-    (path: any, callback: (err: any, resolvedPath: string) => any): void;
     (
-        path: any,
-        cache: { [path: string]: string },
-        callback: (err: any, resolvedPath: string) => any
+        path: PathLike,
+        callback: (err: NodeJS.ErrnoException, resolvedPath: string) => any
     ): void;
-    (path: any, cache?: { [path: string]: string }): Promise<string>;
+    (
+        path: PathLike,
+        cache: { [path: string]: string },
+        callback: (err: NodeJS.ErrnoException, resolvedPath: string) => any
+    ): void;
+    (path: PathLike, cache?: { [path: string]: string }): Promise<string>;
 };",
         "source": Object {
           "filename": "index.d.ts",
@@ -1106,7 +1186,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L224",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L224",
         },
-        "type": "{ (path: any, callback: (err: any, resolvedPath: string) => any): void; (path: any, cache: { [path: string]: string; }, callback: (err: any, resolvedPath: string) => any): void; (path: any, cache?: { [path: string]: string; }): Promise<string>; }",
+        "type": "{ (path: PathLike, callback: (err: NodeJS.ErrnoException, resolvedPath: string) => any): void; (path: PathLike, cache: { [path: string]: string; }, callback: (err: NodeJS.ErrnoException, resolvedPath: string) => any): void; (path: PathLike, cache?: { [path: string]: string; }): Promise<string>; }",
       },
       Object {
         "docs": Array [],
@@ -1145,8 +1225,12 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "rename",
         "signature": "rename: {
-    (oldPath: any, newPath: any, callback: (err: any) => void): void;
-    (oldPath: any, newPath: any): Promise<void>;
+    (
+        oldPath: PathLike,
+        newPath: PathLike,
+        callback: (err: NodeJS.ErrnoException) => void
+    ): void;
+    (oldPath: PathLike, newPath: PathLike): Promise<void>;
 };",
         "source": Object {
           "filename": "index.d.ts",
@@ -1154,7 +1238,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L228",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L228",
         },
-        "type": "{ (oldPath: any, newPath: any, callback: (err: any) => void): void; (oldPath: any, newPath: any): Promise<void>; }",
+        "type": "{ (oldPath: PathLike, newPath: PathLike, callback: (err: NodeJS.ErrnoException) => void): void; (oldPath: PathLike, newPath: PathLike): Promise<void>; }",
       },
       Object {
         "docs": Array [
@@ -1168,8 +1252,8 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "rmdir",
         "signature": "rmdir: {
-    (path: any, callback: (err: any) => void): void;
-    (path: any): Promise<void>;
+    (path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void;
+    (path: PathLike): Promise<void>;
 };",
         "source": Object {
           "filename": "index.d.ts",
@@ -1177,7 +1261,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L236",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L236",
         },
-        "type": "{ (path: any, callback: (err: any) => void): void; (path: any): Promise<void>; }",
+        "type": "{ (path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike): Promise<void>; }",
       },
       Object {
         "docs": Array [],
@@ -1185,8 +1269,11 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "stat",
         "signature": "stat: {
-    (path: any, callback: (err: any, stats: any) => any): void;
-    (path: any): Promise<any>;
+    (
+        path: PathLike,
+        callback: (err: NodeJS.ErrnoException, stats: Stats) => any
+    ): void;
+    (path: PathLike): Promise<Stats>;
 };",
         "source": Object {
           "filename": "index.d.ts",
@@ -1194,7 +1281,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L239",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L239",
         },
-        "type": "{ (path: any, callback: (err: any, stats: any) => any): void; (path: any): Promise<any>; }",
+        "type": "{ (path: PathLike, callback: (err: NodeJS.ErrnoException, stats: Stats) => any): void; (path: PathLike): Promise<Stats>; }",
       },
       Object {
         "docs": Array [],
@@ -1203,13 +1290,17 @@ Object {
         "name": "symlink",
         "signature": "symlink: {
     (
-        target: any,
-        path: any,
+        target: PathLike,
+        path: PathLike,
         type: SymlinkType | undefined,
-        callback: (err: any) => void
+        callback: (err: NodeJS.ErrnoException) => void
     ): void;
-    (target: any, path: any, callback: (err: any) => void): void;
-    (target: any, path: any, type?: SymlinkType): Promise<void>;
+    (
+        target: PathLike,
+        path: PathLike,
+        callback: (err: NodeJS.ErrnoException) => void
+    ): void;
+    (target: PathLike, path: PathLike, type?: SymlinkType): Promise<void>;
 };",
         "source": Object {
           "filename": "index.d.ts",
@@ -1217,7 +1308,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L242",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L242",
         },
-        "type": "{ (target: any, path: any, type: SymlinkType | undefined, callback: (err: any) => void): void; (target: any, path: any, callback: (err: any) => void): void; (target: any, path: any, type?: SymlinkType): Promise<void>; }",
+        "type": "{ (target: PathLike, path: PathLike, type: SymlinkType | undefined, callback: (err: NodeJS.ErrnoException) => void): void; (target: PathLike, path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void; (target: PathLike, path: PathLike, type?: SymlinkType): Promise<void>; }",
       },
       Object {
         "docs": Array [],
@@ -1225,9 +1316,13 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "truncate",
         "signature": "truncate: {
-    (path: any, callback: (err: any) => void): void;
-    (path: any, len: number, callback: (err: any) => void): void;
-    (path: any, len?: number): Promise<void>;
+    (path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void;
+    (
+        path: PathLike,
+        len: number,
+        callback: (err: NodeJS.ErrnoException) => void
+    ): void;
+    (path: PathLike, len?: number): Promise<void>;
 };",
         "source": Object {
           "filename": "index.d.ts",
@@ -1235,7 +1330,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L246",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L246",
         },
-        "type": "{ (path: any, callback: (err: any) => void): void; (path: any, len: number, callback: (err: any) => void): void; (path: any, len?: number): Promise<void>; }",
+        "type": "{ (path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike, len: number, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike, len?: number): Promise<void>; }",
       },
       Object {
         "docs": Array [
@@ -1249,8 +1344,8 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "unlink",
         "signature": "unlink: {
-    (path: any, callback: (err: any) => void): void;
-    (path: any): Promise<void>;
+    (path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void;
+    (path: PathLike): Promise<void>;
 };",
         "source": Object {
           "filename": "index.d.ts",
@@ -1258,7 +1353,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L255",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L255",
         },
-        "type": "{ (path: any, callback: (err: any) => void): void; (path: any): Promise<void>; }",
+        "type": "{ (path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike): Promise<void>; }",
       },
       Object {
         "docs": Array [],
@@ -1266,10 +1361,20 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "utimes",
         "signature": "utimes: {
-    (path: any, atime: number, mtime: number, callback: (err: any) => void): void;
-    (path: any, atime: Date, mtime: Date, callback: (err: any) => void): void;
-    (path: any, atime: number, mtime: number): Promise<void>;
-    (path: any, atime: Date, mtime: Date): Promise<void>;
+    (
+        path: PathLike,
+        atime: number,
+        mtime: number,
+        callback: (err: NodeJS.ErrnoException) => void
+    ): void;
+    (
+        path: PathLike,
+        atime: Date,
+        mtime: Date,
+        callback: (err: NodeJS.ErrnoException) => void
+    ): void;
+    (path: PathLike, atime: number, mtime: number): Promise<void>;
+    (path: PathLike, atime: Date, mtime: Date): Promise<void>;
 };",
         "source": Object {
           "filename": "index.d.ts",
@@ -1277,7 +1382,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L258",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L258",
         },
-        "type": "{ (path: any, atime: number, mtime: number, callback: (err: any) => void): void; (path: any, atime: Date, mtime: Date, callback: (err: any) => void): void; (path: any, atime: number, mtime: number): Promise<void>; (path: any, atime: Date, mtime: Date): Promise<void>; }",
+        "type": "{ (path: PathLike, atime: number, mtime: number, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike, atime: Date, mtime: Date, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike, atime: number, mtime: number): Promise<void>; (path: PathLike, atime: Date, mtime: Date): Promise<void>; }",
       },
       Object {
         "docs": Array [],
@@ -1291,32 +1396,40 @@ Object {
         offset: number,
         length: number,
         position: number | null,
-        callback: (err: any, written: number, buffer: TBuffer) => void
+        callback: (
+            err: NodeJS.ErrnoException,
+            written: number,
+            buffer: TBuffer
+        ) => void
     ): void;
     <TBuffer extends unknown>(
         fd: number,
         buffer: TBuffer,
         offset: number,
         length: number,
-        callback: (err: any, written: number, buffer: TBuffer) => void
+        callback: (
+            err: NodeJS.ErrnoException,
+            written: number,
+            buffer: TBuffer
+        ) => void
     ): void;
     (
         fd: number,
         data: any,
-        callback: (err: any, written: number, str: string) => void
+        callback: (err: NodeJS.ErrnoException, written: number, str: string) => void
     ): void;
     (
         fd: number,
         data: any,
         offset: number,
-        callback: (err: any, written: number, str: string) => void
+        callback: (err: NodeJS.ErrnoException, written: number, str: string) => void
     ): void;
     (
         fd: number,
         data: any,
         offset: number,
         encoding: string,
-        callback: (err: any, written: number, str: string) => void
+        callback: (err: NodeJS.ErrnoException, written: number, str: string) => void
     ): void;
     <TBuffer extends unknown>(
         fd: number,
@@ -1336,7 +1449,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L263",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L263",
         },
-        "type": "{ <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset: number, length: number, position: number | null, callback: (err: any, written: number, buffer: TBuffer) => void): void; <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset: number, length: number, callback: (err: any, written: number, buffer: TBuffer) => void): void; (fd: number, data: any, callback: (err: any, written: number, str: string) => void): void; (fd: number, data: any, offset: number, callback: (err: any, written: number, str: string) => void): void; (fd: number, data: any, offset: number, encoding: string, callback: (err: any, written: number, str: string) => void): void; <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset?: number, length?: number, position?: number): Promise<{ bytesWritten: number; buffer: TBuffer; }>; (fd: number, data: any, offset?: number, encoding?: string): Promise<{ bytesWritten: number; buffer: string; }>; }",
+        "type": "{ <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset: number, length: number, position: number | null, callback: (err: NodeJS.ErrnoException, written: number, buffer: TBuffer) => void): void; <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset: number, length: number, callback: (err: NodeJS.ErrnoException, written: number, buffer: TBuffer) => void): void; (fd: number, data: any, callback: (err: NodeJS.ErrnoException, written: number, str: string) => void): void; (fd: number, data: any, offset: number, callback: (err: NodeJS.ErrnoException, written: number, str: string) => void): void; (fd: number, data: any, offset: number, encoding: string, callback: (err: NodeJS.ErrnoException, written: number, str: string) => void): void; <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset?: number, length?: number, position?: number): Promise<{ bytesWritten: number; buffer: TBuffer; }>; (fd: number, data: any, offset?: number, encoding?: string): Promise<{ bytesWritten: number; buffer: string; }>; }",
       },
       Object {
         "docs": Array [],
@@ -1344,13 +1457,17 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "writeFile",
         "signature": "writeFile: {
-    (file: PathLike | number, data: any, callback: (err: any) => void): void;
+    (
+        file: PathLike | number,
+        data: any,
+        callback: (err: NodeJS.ErrnoException) => void
+    ): void;
     (file: any, data: any, options?: string | WriteFileOptions): Promise<void>;
     (
         file: any,
         data: any,
         options: string | WriteFileOptions,
-        callback: (err: any) => void
+        callback: (err: NodeJS.ErrnoException) => void
     ): void;
 };",
         "source": Object {
@@ -1359,7 +1476,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L277",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L277",
         },
-        "type": "{ (file: PathLike | number, data: any, callback: (err: any) => void): void; (file: any, data: any, options?: string | WriteFileOptions): Promise<void>; (file: any, data: any, options: string | WriteFileOptions, callback: (err: any) => void): void; }",
+        "type": "{ (file: PathLike | number, data: any, callback: (err: NodeJS.ErrnoException) => void): void; (file: any, data: any, options?: string | WriteFileOptions): Promise<void>; (file: any, data: any, options: string | WriteFileOptions, callback: (err: NodeJS.ErrnoException) => void): void; }",
       },
       Object {
         "docs": Array [],
@@ -1453,10 +1570,18 @@ Object {
     ): void;
     (
         fd: number,
-        buffers: any[],
-        cb: (err: any, bytesWritten: number, buffers: any[]) => void
+        buffers: NodeJS.ArrayBufferView[],
+        cb: (
+            err: any,
+            bytesWritten: number,
+            buffers: NodeJS.ArrayBufferView[]
+        ) => void
     ): void;
-    (fd: number, buffers: any[], position?: number): Promise<WritevResult>;
+    (
+        fd: number,
+        buffers: NodeJS.ArrayBufferView[],
+        position?: number
+    ): Promise<WritevResult>;
 };",
         "source": Object {
           "filename": "index.d.ts",
@@ -1464,7 +1589,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L281",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L281",
         },
-        "type": "{ (fd: number, buffers: NodeJS.ArrayBufferView[], position: number, cb: (err: NodeJS.ErrnoException | null, bytesWritten: number, buffers: NodeJS.ArrayBufferView[]) => void): void; (fd: number, buffers: any[], cb: (err: any, bytesWritten: number, buffers: any[]) => void): void; (fd: number, buffers: any[], position?: number): Promise<WritevResult>; }",
+        "type": "{ (fd: number, buffers: NodeJS.ArrayBufferView[], position: number, cb: (err: NodeJS.ErrnoException | null, bytesWritten: number, buffers: NodeJS.ArrayBufferView[]) => void): void; (fd: number, buffers: NodeJS.ArrayBufferView[], cb: (err: any, bytesWritten: number, buffers: NodeJS.ArrayBufferView[]) => void): void; (fd: number, buffers: NodeJS.ArrayBufferView[], position?: number): Promise<WritevResult>; }",
       },
     ],
     "interfaces": Array [
@@ -1752,7 +1877,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L295",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra/index.d.ts#L295",
               },
-              "type": "any",
+              "type": "Stats",
             },
           ],
         },

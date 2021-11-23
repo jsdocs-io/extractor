@@ -278,12 +278,19 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "hooks",
               "signature": "hooks: {
-    get: any;
-    store: any;
-    storeBuildDependencies: any;
-    beginIdle: any;
-    endIdle: any;
-    shutdown: any;
+    get: AsyncSeriesBailHook<
+        [
+            string,
+            Etag,
+            ((result: any, callback: (arg0?: Error) => void) => void)[]
+        ],
+        any
+    >;
+    store: AsyncParallelHook<[string, Etag, any]>;
+    storeBuildDependencies: AsyncParallelHook<[Iterable<string>]>;
+    beginIdle: SyncHook<[]>;
+    endIdle: AsyncParallelHook<[]>;
+    shutdown: AsyncParallelHook<[]>;
 };",
               "source": Object {
                 "filename": "types.d.ts",
@@ -291,7 +298,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L501",
                 "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L501",
               },
-              "type": "{ get: any; store: any; storeBuildDependencies: any; beginIdle: any; endIdle: any; shutdown: any; }",
+              "type": "{ get: AsyncSeriesBailHook<[string, Etag, ((result: any, callback: (arg0?: Error) => void) => void)[]], any>; store: AsyncParallelHook<[string, Etag, any]>; storeBuildDependencies: AsyncParallelHook<[Iterable<string>]>; beginIdle: SyncHook<[]>; endIdle: AsyncParallelHook<[]>; shutdown: AsyncParallelHook<[]>; }",
             },
             Object {
               "docs": Array [],
@@ -3974,67 +3981,74 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "hooks",
               "signature": "hooks: Readonly<{
-    buildModule: any;
-    rebuildModule: any;
-    failedModule: any;
-    succeedModule: any;
-    stillValidModule: any;
-    addEntry: any;
-    failedEntry: any;
-    succeedEntry: any;
-    dependencyReferencedExports: any;
-    finishModules: any;
-    finishRebuildingModule: any;
-    unseal: any;
-    seal: any;
-    beforeChunks: any;
-    afterChunks: any;
-    optimizeDependencies: any;
-    afterOptimizeDependencies: any;
-    optimize: any;
-    optimizeModules: any;
-    afterOptimizeModules: any;
-    optimizeChunks: any;
-    afterOptimizeChunks: any;
-    optimizeTree: any;
-    afterOptimizeTree: any;
-    optimizeChunkModules: any;
-    afterOptimizeChunkModules: any;
-    shouldRecord: any;
-    additionalChunkRuntimeRequirements: any;
-    runtimeRequirementInChunk: any;
-    additionalModuleRuntimeRequirements: any;
-    runtimeRequirementInModule: any;
-    additionalTreeRuntimeRequirements: any;
-    runtimeRequirementInTree: any;
-    runtimeModule: any;
-    reviveModules: any;
-    beforeModuleIds: any;
-    moduleIds: any;
-    optimizeModuleIds: any;
-    afterOptimizeModuleIds: any;
-    reviveChunks: any;
-    beforeChunkIds: any;
-    chunkIds: any;
-    optimizeChunkIds: any;
-    afterOptimizeChunkIds: any;
-    recordModules: any;
-    recordChunks: any;
-    optimizeCodeGeneration: any;
-    beforeModuleHash: any;
-    afterModuleHash: any;
-    beforeCodeGeneration: any;
-    afterCodeGeneration: any;
-    beforeRuntimeRequirements: any;
-    afterRuntimeRequirements: any;
-    beforeHash: any;
-    contentHash: any;
-    afterHash: any;
-    recordHash: any;
-    record: any;
-    beforeModuleAssets: any;
-    shouldGenerateChunkAssets: any;
-    beforeChunkAssets: any;
+    buildModule: SyncHook<[Module]>;
+    rebuildModule: SyncHook<[Module]>;
+    failedModule: SyncHook<[Module, WebpackError]>;
+    succeedModule: SyncHook<[Module]>;
+    stillValidModule: SyncHook<[Module]>;
+    addEntry: SyncHook<[Dependency, EntryOptions]>;
+    failedEntry: SyncHook<[Dependency, EntryOptions, Error]>;
+    succeedEntry: SyncHook<[Dependency, EntryOptions, Module]>;
+    dependencyReferencedExports: SyncWaterfallHook<
+        [(string[] | ReferencedExport)[], Dependency, RuntimeSpec]
+    >;
+    finishModules: AsyncSeriesHook<[Iterable<Module>]>;
+    finishRebuildingModule: AsyncSeriesHook<[Module]>;
+    unseal: SyncHook<[]>;
+    seal: SyncHook<[]>;
+    beforeChunks: SyncHook<[]>;
+    afterChunks: SyncHook<[Iterable<Chunk>]>;
+    optimizeDependencies: SyncBailHook<[Iterable<Module>], any>;
+    afterOptimizeDependencies: SyncHook<[Iterable<Module>]>;
+    optimize: SyncHook<[]>;
+    optimizeModules: SyncBailHook<[Iterable<Module>], any>;
+    afterOptimizeModules: SyncHook<[Iterable<Module>]>;
+    optimizeChunks: SyncBailHook<[Iterable<Chunk>, ChunkGroup[]], any>;
+    afterOptimizeChunks: SyncHook<[Iterable<Chunk>, ChunkGroup[]]>;
+    optimizeTree: AsyncSeriesHook<[Iterable<Chunk>, Iterable<Module>]>;
+    afterOptimizeTree: SyncHook<[Iterable<Chunk>, Iterable<Module>]>;
+    optimizeChunkModules: AsyncSeriesBailHook<
+        [Iterable<Chunk>, Iterable<Module>],
+        any
+    >;
+    afterOptimizeChunkModules: SyncHook<[Iterable<Chunk>, Iterable<Module>]>;
+    shouldRecord: SyncBailHook<[], boolean>;
+    additionalChunkRuntimeRequirements: SyncHook<[Chunk, Set<string>]>;
+    runtimeRequirementInChunk: HookMap<SyncBailHook<[Chunk, Set<string>], any>>;
+    additionalModuleRuntimeRequirements: SyncHook<[Module, Set<string>]>;
+    runtimeRequirementInModule: HookMap<
+        SyncBailHook<[Module, Set<string>], any>
+    >;
+    additionalTreeRuntimeRequirements: SyncHook<[Chunk, Set<string>]>;
+    runtimeRequirementInTree: HookMap<SyncBailHook<[Chunk, Set<string>], any>>;
+    runtimeModule: SyncHook<[RuntimeModule, Chunk]>;
+    reviveModules: SyncHook<[Iterable<Module>, any]>;
+    beforeModuleIds: SyncHook<[Iterable<Module>]>;
+    moduleIds: SyncHook<[Iterable<Module>]>;
+    optimizeModuleIds: SyncHook<[Iterable<Module>]>;
+    afterOptimizeModuleIds: SyncHook<[Iterable<Module>]>;
+    reviveChunks: SyncHook<[Iterable<Chunk>, any]>;
+    beforeChunkIds: SyncHook<[Iterable<Chunk>]>;
+    chunkIds: SyncHook<[Iterable<Chunk>]>;
+    optimizeChunkIds: SyncHook<[Iterable<Chunk>]>;
+    afterOptimizeChunkIds: SyncHook<[Iterable<Chunk>]>;
+    recordModules: SyncHook<[Iterable<Module>, any]>;
+    recordChunks: SyncHook<[Iterable<Chunk>, any]>;
+    optimizeCodeGeneration: SyncHook<[Iterable<Module>]>;
+    beforeModuleHash: SyncHook<[]>;
+    afterModuleHash: SyncHook<[]>;
+    beforeCodeGeneration: SyncHook<[]>;
+    afterCodeGeneration: SyncHook<[]>;
+    beforeRuntimeRequirements: SyncHook<[]>;
+    afterRuntimeRequirements: SyncHook<[]>;
+    beforeHash: SyncHook<[]>;
+    contentHash: SyncHook<[Chunk]>;
+    afterHash: SyncHook<[]>;
+    recordHash: SyncHook<[any]>;
+    record: SyncHook<[Compilation, any]>;
+    beforeModuleAssets: SyncHook<[]>;
+    shouldGenerateChunkAssets: SyncBailHook<[], boolean>;
+    beforeChunkAssets: SyncHook<[]>;
     additionalChunkAssets: FakeHook<
         Pick<
             AsyncSeriesHook<[Set<Chunk>]>,
@@ -4056,29 +4070,41 @@ Object {
             'tap' | 'tapAsync' | 'tapPromise' | 'name'
         >
     >;
-    optimizeAssets: any;
-    afterOptimizeAssets: any;
-    processAssets: any;
-    afterProcessAssets: any;
-    processAdditionalAssets: any;
-    needAdditionalSeal: any;
-    afterSeal: any;
-    renderManifest: any;
-    fullHash: any;
-    chunkHash: any;
-    moduleAsset: any;
-    chunkAsset: any;
-    assetPath: any;
-    needAdditionalPass: any;
-    childCompiler: any;
-    log: any;
-    processWarnings: any;
-    processErrors: any;
-    statsPreset: any;
-    statsNormalize: any;
-    statsFactory: any;
-    statsPrinter: any;
-    readonly normalModuleLoader: any;
+    optimizeAssets: AsyncSeriesHook<
+        [CompilationAssets],
+        ProcessAssetsAdditionalOptions
+    >;
+    afterOptimizeAssets: SyncHook<[CompilationAssets]>;
+    processAssets: AsyncSeriesHook<
+        [CompilationAssets],
+        ProcessAssetsAdditionalOptions
+    >;
+    afterProcessAssets: SyncHook<[CompilationAssets]>;
+    processAdditionalAssets: AsyncSeriesHook<[CompilationAssets]>;
+    needAdditionalSeal: SyncBailHook<[], boolean>;
+    afterSeal: AsyncSeriesHook<[]>;
+    renderManifest: SyncWaterfallHook<
+        [RenderManifestEntry[], RenderManifestOptions]
+    >;
+    fullHash: SyncHook<[Hash]>;
+    chunkHash: SyncHook<[Chunk, Hash, ChunkHashContext]>;
+    moduleAsset: SyncHook<[Module, string]>;
+    chunkAsset: SyncHook<[Chunk, string]>;
+    assetPath: SyncWaterfallHook<[string, object, AssetInfo]>;
+    needAdditionalPass: SyncBailHook<[], boolean>;
+    childCompiler: SyncHook<[Compiler, string, number]>;
+    log: SyncBailHook<[string, LogEntry], true>;
+    processWarnings: SyncWaterfallHook<[WebpackError[]]>;
+    processErrors: SyncWaterfallHook<[WebpackError[]]>;
+    statsPreset: HookMap<
+        SyncHook<[Partial<NormalizedStatsOptions>, CreateStatsOptionsContext]>
+    >;
+    statsNormalize: SyncHook<
+        [Partial<NormalizedStatsOptions>, CreateStatsOptionsContext]
+    >;
+    statsFactory: SyncHook<[StatsFactory, NormalizedStatsOptions]>;
+    statsPrinter: SyncHook<[StatsPrinter, NormalizedStatsOptions]>;
+    readonly normalModuleLoader: SyncHook<[object, NormalModule]>;
 }>;",
               "source": Object {
                 "filename": "types.d.ts",
@@ -4086,7 +4112,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L1124",
                 "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L1124",
               },
-              "type": "Readonly<{ buildModule: any; rebuildModule: any; failedModule: any; succeedModule: any; stillValidModule: any; addEntry: any; failedEntry: any; succeedEntry: any; dependencyReferencedExports: any; finishModules: any; finishRebuildingModule: any; unseal: any; seal: any; beforeChunks: any; afterChunks: any; optimizeDependencies: any; afterOptimizeDependencies: any; optimize: any; optimizeModules: any; afterOptimizeModules: any; optimizeChunks: any; afterOptimizeChunks: any; optimizeTree: any; afterOptimizeTree: any; optimizeChunkModules: any; afterOptimizeChunkModules: any; shouldRecord: any; additionalChunkRuntimeRequirements: any; runtimeRequirementInChunk: any; additionalModuleRuntimeRequirements: any; runtimeRequirementInModule: any; additionalTreeRuntimeRequirements: any; runtimeRequirementInTree: any; runtimeModule: any; reviveModules: any; beforeModuleIds: any; moduleIds: any; optimizeModuleIds: any; afterOptimizeModuleIds: any; reviveChunks: any; beforeChunkIds: any; chunkIds: any; optimizeChunkIds: any; afterOptimizeChunkIds: any; recordModules: any; recordChunks: any; optimizeCodeGeneration: any; beforeModuleHash: any; afterModuleHash: any; beforeCodeGeneration: any; afterCodeGeneration: any; beforeRuntimeRequirements: any; afterRuntimeRequirements: any; beforeHash: any; contentHash: any; afterHash: any; recordHash: any; record: any; beforeModuleAssets: any; shouldGenerateChunkAssets: any; beforeChunkAssets: any; additionalChunkAssets: FakeHook<Pick<AsyncSeriesHook<[Set<Chunk>]>, \\"tap\\" | \\"tapAsync\\" | \\"tapPromise\\" | \\"name\\">>; additionalAssets: FakeHook<Pick<AsyncSeriesHook<[]>, \\"tap\\" | \\"tapAsync\\" | \\"tapPromise\\" | \\"name\\">>; optimizeChunkAssets: FakeHook<Pick<AsyncSeriesHook<[Set<Chunk>]>, \\"tap\\" | \\"tapAsync\\" | \\"tapPromise\\" | \\"name\\">>; afterOptimizeChunkAssets: FakeHook<Pick<AsyncSeriesHook<[Set<Chunk>]>, \\"tap\\" | \\"tapAsync\\" | \\"tapPromise\\" | \\"name\\">>; optimizeAssets: any; afterOptimizeAssets: any; processAssets: any; afterProcessAssets: any; processAdditionalAssets: any; needAdditionalSeal: any; afterSeal: any; renderManifest: any; fullHash: any; chunkHash: any; moduleAsset: any; chunkAsset: any; assetPath: any; needAdditionalPass: any; childCompiler: any; log: any; processWarnings: any; processErrors: any; statsPreset: any; statsNormalize: any; statsFactory: any; statsPrinter: any; readonly normalModuleLoader: any; }>",
+              "type": "Readonly<{ buildModule: SyncHook<[Module]>; rebuildModule: SyncHook<[Module]>; failedModule: SyncHook<[Module, WebpackError]>; succeedModule: SyncHook<[Module]>; stillValidModule: SyncHook<[Module]>; addEntry: SyncHook<[Dependency, EntryOptions]>; failedEntry: SyncHook<[Dependency, EntryOptions, Error]>; succeedEntry: SyncHook<[Dependency, EntryOptions, Module]>; dependencyReferencedExports: SyncWaterfallHook<[(string[] | ReferencedExport)[], Dependency, RuntimeSpec]>; finishModules: AsyncSeriesHook<[Iterable<Module>]>; finishRebuildingModule: AsyncSeriesHook<[Module]>; unseal: SyncHook<[]>; seal: SyncHook<[]>; beforeChunks: SyncHook<[]>; afterChunks: SyncHook<[Iterable<Chunk>]>; optimizeDependencies: SyncBailHook<[Iterable<Module>], any>; afterOptimizeDependencies: SyncHook<[Iterable<Module>]>; optimize: SyncHook<[]>; optimizeModules: SyncBailHook<[Iterable<Module>], any>; afterOptimizeModules: SyncHook<[Iterable<Module>]>; optimizeChunks: SyncBailHook<[Iterable<Chunk>, ChunkGroup[]], any>; afterOptimizeChunks: SyncHook<[Iterable<Chunk>, ChunkGroup[]]>; optimizeTree: AsyncSeriesHook<[Iterable<Chunk>, Iterable<Module>]>; afterOptimizeTree: SyncHook<[Iterable<Chunk>, Iterable<Module>]>; optimizeChunkModules: AsyncSeriesBailHook<[Iterable<Chunk>, Iterable<Module>], any>; afterOptimizeChunkModules: SyncHook<[Iterable<Chunk>, Iterable<Module>]>; shouldRecord: SyncBailHook<[], boolean>; additionalChunkRuntimeRequirements: SyncHook<[Chunk, Set<string>]>; runtimeRequirementInChunk: HookMap<SyncBailHook<[Chunk, Set<string>], any>>; additionalModuleRuntimeRequirements: SyncHook<[Module, Set<string>]>; runtimeRequirementInModule: HookMap<SyncBailHook<[Module, Set<string>], any>>; additionalTreeRuntimeRequirements: SyncHook<[Chunk, Set<string>]>; runtimeRequirementInTree: HookMap<SyncBailHook<[Chunk, Set<string>], any>>; runtimeModule: SyncHook<[RuntimeModule, Chunk]>; reviveModules: SyncHook<[Iterable<Module>, any]>; beforeModuleIds: SyncHook<[Iterable<Module>]>; moduleIds: SyncHook<[Iterable<Module>]>; optimizeModuleIds: SyncHook<[Iterable<Module>]>; afterOptimizeModuleIds: SyncHook<[Iterable<Module>]>; reviveChunks: SyncHook<[Iterable<Chunk>, any]>; beforeChunkIds: SyncHook<[Iterable<Chunk>]>; chunkIds: SyncHook<[Iterable<Chunk>]>; optimizeChunkIds: SyncHook<[Iterable<Chunk>]>; afterOptimizeChunkIds: SyncHook<[Iterable<Chunk>]>; recordModules: SyncHook<[Iterable<Module>, any]>; recordChunks: SyncHook<[Iterable<Chunk>, any]>; optimizeCodeGeneration: SyncHook<[Iterable<Module>]>; beforeModuleHash: SyncHook<[]>; afterModuleHash: SyncHook<[]>; beforeCodeGeneration: SyncHook<[]>; afterCodeGeneration: SyncHook<[]>; beforeRuntimeRequirements: SyncHook<[]>; afterRuntimeRequirements: SyncHook<[]>; beforeHash: SyncHook<[]>; contentHash: SyncHook<[Chunk]>; afterHash: SyncHook<[]>; recordHash: SyncHook<[any]>; record: SyncHook<[Compilation, any]>; beforeModuleAssets: SyncHook<[]>; shouldGenerateChunkAssets: SyncBailHook<[], boolean>; beforeChunkAssets: SyncHook<[]>; additionalChunkAssets: FakeHook<Pick<AsyncSeriesHook<[Set<Chunk>]>, \\"tap\\" | \\"tapAsync\\" | \\"tapPromise\\" | \\"name\\">>; additionalAssets: FakeHook<Pick<AsyncSeriesHook<[]>, \\"tap\\" | \\"tapAsync\\" | \\"tapPromise\\" | \\"name\\">>; optimizeChunkAssets: FakeHook<Pick<AsyncSeriesHook<[Set<Chunk>]>, \\"tap\\" | \\"tapAsync\\" | \\"tapPromise\\" | \\"name\\">>; afterOptimizeChunkAssets: FakeHook<Pick<AsyncSeriesHook<[Set<Chunk>]>, \\"tap\\" | \\"tapAsync\\" | \\"tapPromise\\" | \\"name\\">>; optimizeAssets: AsyncSeriesHook<[CompilationAssets], ProcessAssetsAdditionalOptions>; afterOptimizeAssets: SyncHook<[CompilationAssets]>; processAssets: AsyncSeriesHook<[CompilationAssets], ProcessAssetsAdditionalOptions>; afterProcessAssets: SyncHook<[CompilationAssets]>; processAdditionalAssets: AsyncSeriesHook<[CompilationAssets]>; needAdditionalSeal: SyncBailHook<[], boolean>; afterSeal: AsyncSeriesHook<[]>; renderManifest: SyncWaterfallHook<[RenderManifestEntry[], RenderManifestOptions]>; fullHash: SyncHook<[Hash]>; chunkHash: SyncHook<[Chunk, Hash, ChunkHashContext]>; moduleAsset: SyncHook<[Module, string]>; chunkAsset: SyncHook<[Chunk, string]>; assetPath: SyncWaterfallHook<[string, object, AssetInfo]>; needAdditionalPass: SyncBailHook<[], boolean>; childCompiler: SyncHook<[Compiler, string, number]>; log: SyncBailHook<[string, LogEntry], true>; processWarnings: SyncWaterfallHook<[WebpackError[]]>; processErrors: SyncWaterfallHook<[WebpackError[]]>; statsPreset: HookMap<SyncHook<[Partial<NormalizedStatsOptions>, CreateStatsOptionsContext]>>; statsNormalize: SyncHook<[Partial<NormalizedStatsOptions>, CreateStatsOptionsContext]>; statsFactory: SyncHook<[StatsFactory, NormalizedStatsOptions]>; statsPrinter: SyncHook<[StatsPrinter, NormalizedStatsOptions]>; readonly normalModuleLoader: SyncHook<[object, NormalModule]>; }>",
             },
             Object {
               "docs": Array [],
@@ -5155,36 +5181,36 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "hooks",
               "signature": "hooks: Readonly<{
-    initialize: any;
-    shouldEmit: any;
-    done: any;
-    afterDone: any;
-    additionalPass: any;
-    beforeRun: any;
-    run: any;
-    emit: any;
-    assetEmitted: any;
-    afterEmit: any;
-    thisCompilation: any;
-    compilation: any;
-    normalModuleFactory: any;
-    contextModuleFactory: any;
-    beforeCompile: any;
-    compile: any;
-    make: any;
-    finishMake: any;
-    afterCompile: any;
-    watchRun: any;
-    failed: any;
-    invalid: any;
-    watchClose: any;
-    shutdown: any;
-    infrastructureLog: any;
-    environment: any;
-    afterEnvironment: any;
-    afterPlugins: any;
-    afterResolvers: any;
-    entryOption: any;
+    initialize: SyncHook<[]>;
+    shouldEmit: SyncBailHook<[Compilation], boolean>;
+    done: AsyncSeriesHook<[Stats]>;
+    afterDone: SyncHook<[Stats]>;
+    additionalPass: AsyncSeriesHook<[]>;
+    beforeRun: AsyncSeriesHook<[Compiler]>;
+    run: AsyncSeriesHook<[Compiler]>;
+    emit: AsyncSeriesHook<[Compilation]>;
+    assetEmitted: AsyncSeriesHook<[string, AssetEmittedInfo]>;
+    afterEmit: AsyncSeriesHook<[Compilation]>;
+    thisCompilation: SyncHook<[Compilation, CompilationParams]>;
+    compilation: SyncHook<[Compilation, CompilationParams]>;
+    normalModuleFactory: SyncHook<[NormalModuleFactory]>;
+    contextModuleFactory: SyncHook<[ContextModuleFactory]>;
+    beforeCompile: AsyncSeriesHook<[CompilationParams]>;
+    compile: SyncHook<[CompilationParams]>;
+    make: AsyncParallelHook<[Compilation]>;
+    finishMake: AsyncParallelHook<[Compilation]>;
+    afterCompile: AsyncSeriesHook<[Compilation]>;
+    watchRun: AsyncSeriesHook<[Compiler]>;
+    failed: SyncHook<[Error]>;
+    invalid: SyncHook<[string, number]>;
+    watchClose: SyncHook<[]>;
+    shutdown: AsyncSeriesHook<[]>;
+    infrastructureLog: SyncBailHook<[string, string, any[]], true>;
+    environment: SyncHook<[]>;
+    afterEnvironment: SyncHook<[]>;
+    afterPlugins: SyncHook<[Compiler]>;
+    afterResolvers: SyncHook<[Compiler]>;
+    entryOption: SyncBailHook<[string, EntryNormalized], boolean>;
 }>;",
               "source": Object {
                 "filename": "types.d.ts",
@@ -5192,7 +5218,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L1600",
                 "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L1600",
               },
-              "type": "Readonly<{ initialize: any; shouldEmit: any; done: any; afterDone: any; additionalPass: any; beforeRun: any; run: any; emit: any; assetEmitted: any; afterEmit: any; thisCompilation: any; compilation: any; normalModuleFactory: any; contextModuleFactory: any; beforeCompile: any; compile: any; make: any; finishMake: any; afterCompile: any; watchRun: any; failed: any; invalid: any; watchClose: any; shutdown: any; infrastructureLog: any; environment: any; afterEnvironment: any; afterPlugins: any; afterResolvers: any; entryOption: any; }>",
+              "type": "Readonly<{ initialize: SyncHook<[]>; shouldEmit: SyncBailHook<[Compilation], boolean>; done: AsyncSeriesHook<[Stats]>; afterDone: SyncHook<[Stats]>; additionalPass: AsyncSeriesHook<[]>; beforeRun: AsyncSeriesHook<[Compiler]>; run: AsyncSeriesHook<[Compiler]>; emit: AsyncSeriesHook<[Compilation]>; assetEmitted: AsyncSeriesHook<[string, AssetEmittedInfo]>; afterEmit: AsyncSeriesHook<[Compilation]>; thisCompilation: SyncHook<[Compilation, CompilationParams]>; compilation: SyncHook<[Compilation, CompilationParams]>; normalModuleFactory: SyncHook<[NormalModuleFactory]>; contextModuleFactory: SyncHook<[ContextModuleFactory]>; beforeCompile: AsyncSeriesHook<[CompilationParams]>; compile: SyncHook<[CompilationParams]>; make: AsyncParallelHook<[Compilation]>; finishMake: AsyncParallelHook<[Compilation]>; afterCompile: AsyncSeriesHook<[Compilation]>; watchRun: AsyncSeriesHook<[Compiler]>; failed: SyncHook<[Error]>; invalid: SyncHook<[string, number]>; watchClose: SyncHook<[]>; shutdown: AsyncSeriesHook<[]>; infrastructureLog: SyncBailHook<[string, string, any[]], true>; environment: SyncHook<[]>; afterEnvironment: SyncHook<[]>; afterPlugins: SyncHook<[Compiler]>; afterResolvers: SyncHook<[Compiler]>; entryOption: SyncBailHook<[string, EntryNormalized], boolean>; }>",
             },
             Object {
               "docs": Array [],
@@ -10731,12 +10757,12 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "hooks",
               "signature": "hooks: Readonly<{
-    done: any;
-    invalid: any;
-    run: any;
-    watchClose: any;
-    watchRun: any;
-    infrastructureLog: any;
+    done: SyncHook<[MultiStats]>;
+    invalid: MultiHook<SyncHook<[string, number]>>;
+    run: MultiHook<AsyncSeriesHook<[Compiler]>>;
+    watchClose: SyncHook<[]>;
+    watchRun: MultiHook<AsyncSeriesHook<[Compiler]>>;
+    infrastructureLog: MultiHook<SyncBailHook<[string, string, any[]], true>>;
 }>;",
               "source": Object {
                 "filename": "types.d.ts",
@@ -10744,7 +10770,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L5961",
                 "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L5961",
               },
-              "type": "Readonly<{ done: any; invalid: any; run: any; watchClose: any; watchRun: any; infrastructureLog: any; }>",
+              "type": "Readonly<{ done: SyncHook<[MultiStats]>; invalid: MultiHook<SyncHook<[string, number]>>; run: MultiHook<AsyncSeriesHook<[Compiler]>>; watchClose: SyncHook<[]>; watchRun: MultiHook<AsyncSeriesHook<[Compiler]>>; infrastructureLog: MultiHook<SyncBailHook<[string, string, any[]], true>>; }>",
             },
             Object {
               "docs": Array [],
@@ -13165,7 +13191,7 @@ Object {
         "signature": "validateSchema: (
     schema: Schema,
     options: object | object[],
-    validationConfiguration?: any
+    validationConfiguration?: ValidationErrorConfiguration
 ) => void;",
         "source": Object {
           "filename": "types.d.ts",
@@ -13173,7 +13199,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L10757",
           "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L10757",
         },
-        "type": "(schema: Schema, options: object | object[], validationConfiguration?: any) => void",
+        "type": "(schema: Schema, options: object | object[], validationConfiguration?: ValidationErrorConfiguration) => void",
       },
     ],
     "interfaces": Array [
@@ -13622,7 +13648,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L1873",
                 "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L1873",
               },
-              "type": "\\"development\\" | \\"production\\" | \\"none\\"",
+              "type": "\\"none\\" | \\"development\\" | \\"production\\"",
             },
             Object {
               "docs": Array [
@@ -13955,7 +13981,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L1956",
                 "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L1956",
               },
-              "type": "boolean | StatsOptions | \\"none\\" | \\"summary\\" | \\"errors-only\\" | \\"errors-warnings\\" | \\"minimal\\" | \\"normal\\" | \\"detailed\\" | \\"verbose\\"",
+              "type": "boolean | StatsOptions | \\"none\\" | \\"verbose\\" | \\"summary\\" | \\"errors-only\\" | \\"errors-warnings\\" | \\"minimal\\" | \\"normal\\" | \\"detailed\\"",
             },
             Object {
               "docs": Array [
@@ -16289,7 +16315,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L10599",
                 "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L10599",
               },
-              "type": "\\"development\\" | \\"production\\" | \\"none\\"",
+              "type": "\\"none\\" | \\"development\\" | \\"production\\"",
             },
             Object {
               "docs": Array [
@@ -17084,14 +17110,14 @@ Object {
               "signature": "scope: <T>(
     scope: string,
     options: ContainerOptionsFormat<T>
-) => Record<string, string | T | string[]>;",
+) => Record<string, string | string[] | T>;",
               "source": Object {
                 "filename": "types.d.ts",
                 "line": 10963,
                 "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L10963",
                 "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L10963",
               },
-              "type": "<T>(scope: string, options: ContainerOptionsFormat<T>) => Record<string, string | T | string[]>",
+              "type": "<T>(scope: string, options: ContainerOptionsFormat<T>) => Record<string, string | string[] | T>",
             },
           ],
           "interfaces": Array [],
@@ -18581,15 +18607,15 @@ Object {
                     "kind": "ClassMethodDeclaration",
                     "name": "callHooksForExpressionWithFallback",
                     "signature": "callHooksForExpressionWithFallback: <T, R>(
-    hookMap: any,
-    expr: any,
+    hookMap: HookMap<SyncBailHook<T, R>>,
+    expr: MemberExpression,
     fallback: (
         arg0: string,
         arg1: string | ScopeInfo | VariableInfo,
         arg2: () => string[]
     ) => any,
     defined: (arg0: string) => any,
-    ...args: any
+    ...args: AsArray<T>
 ) => R;",
                     "source": Object {
                       "filename": "types.d.ts",
@@ -18597,7 +18623,7 @@ Object {
                       "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L4529",
                       "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L4529",
                     },
-                    "type": "<T, R>(hookMap: any, expr: any, fallback: (arg0: string, arg1: string | ScopeInfo | VariableInfo, arg2: () => string[]) => any, defined: (arg0: string) => any, ...args: any) => R",
+                    "type": "<T, R>(hookMap: HookMap<SyncBailHook<T, R>>, expr: MemberExpression, fallback: (arg0: string, arg1: string | ScopeInfo | VariableInfo, arg2: () => string[]) => any, defined: (arg0: string) => any, ...args: AsArray<T>) => R",
                   },
                   Object {
                     "docs": Array [],
@@ -18606,9 +18632,9 @@ Object {
                     "kind": "ClassMethodDeclaration",
                     "name": "callHooksForInfo",
                     "signature": "callHooksForInfo: <T, R>(
-    hookMap: any,
+    hookMap: HookMap<SyncBailHook<T, R>>,
     info: ExportedVariableInfo,
-    ...args: any
+    ...args: AsArray<T>
 ) => R;",
                     "source": Object {
                       "filename": "types.d.ts",
@@ -18616,7 +18642,7 @@ Object {
                       "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L4545",
                       "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L4545",
                     },
-                    "type": "<T, R>(hookMap: any, info: ExportedVariableInfo, ...args: any) => R",
+                    "type": "<T, R>(hookMap: HookMap<SyncBailHook<T, R>>, info: ExportedVariableInfo, ...args: AsArray<T>) => R",
                   },
                   Object {
                     "docs": Array [],
@@ -18625,11 +18651,11 @@ Object {
                     "kind": "ClassMethodDeclaration",
                     "name": "callHooksForInfoWithFallback",
                     "signature": "callHooksForInfoWithFallback: <T, R>(
-    hookMap: any,
+    hookMap: HookMap<SyncBailHook<T, R>>,
     info: ExportedVariableInfo,
     fallback: (arg0: string) => any,
     defined: () => any,
-    ...args: any
+    ...args: AsArray<T>
 ) => R;",
                     "source": Object {
                       "filename": "types.d.ts",
@@ -18637,7 +18663,7 @@ Object {
                       "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L4550",
                       "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L4550",
                     },
-                    "type": "<T, R>(hookMap: any, info: ExportedVariableInfo, fallback: (arg0: string) => any, defined: () => any, ...args: any) => R",
+                    "type": "<T, R>(hookMap: HookMap<SyncBailHook<T, R>>, info: ExportedVariableInfo, fallback: (arg0: string) => any, defined: () => any, ...args: AsArray<T>) => R",
                   },
                   Object {
                     "docs": Array [],
@@ -18645,14 +18671,18 @@ Object {
                     "isStatic": false,
                     "kind": "ClassMethodDeclaration",
                     "name": "callHooksForName",
-                    "signature": "callHooksForName: <T, R>(hookMap: any, name: string, ...args: any) => R;",
+                    "signature": "callHooksForName: <T, R>(
+    hookMap: HookMap<SyncBailHook<T, R>>,
+    name: string,
+    ...args: AsArray<T>
+) => R;",
                     "source": Object {
                       "filename": "types.d.ts",
                       "line": 4540,
                       "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L4540",
                       "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L4540",
                     },
-                    "type": "<T, R>(hookMap: any, name: string, ...args: any) => R",
+                    "type": "<T, R>(hookMap: HookMap<SyncBailHook<T, R>>, name: string, ...args: AsArray<T>) => R",
                   },
                   Object {
                     "docs": Array [],
@@ -18661,11 +18691,11 @@ Object {
                     "kind": "ClassMethodDeclaration",
                     "name": "callHooksForNameWithFallback",
                     "signature": "callHooksForNameWithFallback: <T, R>(
-    hookMap: any,
+    hookMap: HookMap<SyncBailHook<T, R>>,
     name: string,
     fallback: (arg0: string) => any,
     defined: () => any,
-    ...args: any
+    ...args: AsArray<T>
 ) => R;",
                     "source": Object {
                       "filename": "types.d.ts",
@@ -18673,7 +18703,7 @@ Object {
                       "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L4557",
                       "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L4557",
                     },
-                    "type": "<T, R>(hookMap: any, name: string, fallback: (arg0: string) => any, defined: () => any, ...args: any) => R",
+                    "type": "<T, R>(hookMap: HookMap<SyncBailHook<T, R>>, name: string, fallback: (arg0: string) => any, defined: () => any, ...args: AsArray<T>) => R",
                   },
                   Object {
                     "docs": Array [],
@@ -18863,7 +18893,7 @@ Object {
                     "isStatic": false,
                     "kind": "ClassMethodDeclaration",
                     "name": "extractMemberExpressionChain",
-                    "signature": "extractMemberExpressionChain: (expression: any) => {
+                    "signature": "extractMemberExpressionChain: (expression: MemberExpression) => {
     members: string[];
     object:
         | UnaryExpression
@@ -18900,7 +18930,7 @@ Object {
                       "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L4630",
                       "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L4630",
                     },
-                    "type": "(expression: any) => {    members: string[];    object: UnaryExpression | ThisExpression | ArrayExpression | ObjectExpression | FunctionExpression | ArrowFunctionExpression | YieldExpression | SimpleLiteral | RegExpLiteral | UpdateExpression | BinaryExpression | AssignmentExpression | LogicalExpression | MemberExpression | ConditionalExpression | SimpleCallExpression | NewExpression | SequenceExpression | TemplateLiteral | TaggedTemplateExpression | ClassExpression | MetaProperty | Identifier | AwaitExpression | ImportExpression | ChainExpression | Super;}",
+                    "type": "(expression: MemberExpression) => {    members: string[];    object: UnaryExpression | ThisExpression | ArrayExpression | ObjectExpression | FunctionExpression | ArrowFunctionExpression | YieldExpression | SimpleLiteral | RegExpLiteral | UpdateExpression | BinaryExpression | AssignmentExpression | LogicalExpression | MemberExpression | ConditionalExpression | SimpleCallExpression | NewExpression | SequenceExpression | TemplateLiteral | TaggedTemplateExpression | ClassExpression | MetaProperty | Identifier | AwaitExpression | ImportExpression | ChainExpression | Super;}",
                   },
                   Object {
                     "docs": Array [],
@@ -18942,7 +18972,7 @@ Object {
                     "kind": "ClassMethodDeclaration",
                     "name": "getMemberExpressionInfo",
                     "signature": "getMemberExpressionInfo: (
-    expression: any,
+    expression: MemberExpression,
     allowedTypes: number
 ) => undefined | CallExpressionInfo | ExpressionExpressionInfo;",
                     "source": Object {
@@ -18951,7 +18981,7 @@ Object {
                       "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L4666",
                       "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L4666",
                     },
-                    "type": "(expression: any, allowedTypes: number) => undefined | CallExpressionInfo | ExpressionExpressionInfo",
+                    "type": "(expression: MemberExpression, allowedTypes: number) => undefined | CallExpressionInfo | ExpressionExpressionInfo",
                   },
                   Object {
                     "docs": Array [],
@@ -18959,7 +18989,7 @@ Object {
                     "isStatic": false,
                     "kind": "ClassMethodDeclaration",
                     "name": "getNameForExpression",
-                    "signature": "getNameForExpression: (expression: any) => {
+                    "signature": "getNameForExpression: (expression: MemberExpression) => {
     name: string;
     rootInfo: ExportedVariableInfo;
     getMembers: () => string[];
@@ -18970,7 +19000,7 @@ Object {
                       "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L4670",
                       "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L4670",
                     },
-                    "type": "(expression: any) => {    name: string;    rootInfo: ExportedVariableInfo;    getMembers: () => string[];}",
+                    "type": "(expression: MemberExpression) => {    name: string;    rootInfo: ExportedVariableInfo;    getMembers: () => string[];}",
                   },
                   Object {
                     "docs": Array [],
@@ -19674,14 +19704,14 @@ Object {
                     "isStatic": false,
                     "kind": "ClassMethodDeclaration",
                     "name": "walkChainExpression",
-                    "signature": "walkChainExpression: (expression: any) => void;",
+                    "signature": "walkChainExpression: (expression: ChainExpression) => void;",
                     "source": Object {
                       "filename": "types.d.ts",
                       "line": 4514,
                       "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L4514",
                       "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L4514",
                     },
-                    "type": "(expression: any) => void",
+                    "type": "(expression: ChainExpression) => void",
                   },
                   Object {
                     "docs": Array [],
@@ -20040,14 +20070,14 @@ Object {
                     "isStatic": false,
                     "kind": "ClassMethodDeclaration",
                     "name": "walkMetaProperty",
-                    "signature": "walkMetaProperty: (metaProperty: any) => void;",
+                    "signature": "walkMetaProperty: (metaProperty: MetaProperty) => void;",
                     "source": Object {
                       "filename": "types.d.ts",
                       "line": 4527,
                       "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L4527",
                       "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L4527",
                     },
-                    "type": "(metaProperty: any) => void",
+                    "type": "(metaProperty: MetaProperty) => void",
                   },
                   Object {
                     "docs": Array [],
@@ -20181,14 +20211,14 @@ Object {
                     "isStatic": false,
                     "kind": "ClassMethodDeclaration",
                     "name": "walkSequenceExpression",
-                    "signature": "walkSequenceExpression: (expression: any) => void;",
+                    "signature": "walkSequenceExpression: (expression: SequenceExpression) => void;",
                     "source": Object {
                       "filename": "types.d.ts",
                       "line": 4501,
                       "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L4501",
                       "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L4501",
                     },
-                    "type": "(expression: any) => void",
+                    "type": "(expression: SequenceExpression) => void",
                   },
                   Object {
                     "docs": Array [],
@@ -20529,54 +20559,73 @@ Object {
                     "kind": "ClassPropertyDeclaration",
                     "name": "hooks",
                     "signature": "hooks: Readonly<{
-    evaluateTypeof: any;
-    evaluate: any;
-    evaluateIdentifier: any;
-    evaluateDefinedIdentifier: any;
-    evaluateCallExpressionMember: any;
-    isPure: any;
-    preStatement: any;
-    blockPreStatement: any;
-    statement: any;
-    statementIf: any;
-    classExtendsExpression: any;
-    classBodyElement: any;
-    label: any;
-    import: any;
-    importSpecifier: any;
-    export: any;
-    exportImport: any;
-    exportDeclaration: any;
-    exportExpression: any;
-    exportSpecifier: any;
-    exportImportSpecifier: any;
-    preDeclarator: any;
-    declarator: any;
-    varDeclaration: any;
-    varDeclarationLet: any;
-    varDeclarationConst: any;
-    varDeclarationVar: any;
-    pattern: any;
-    canRename: any;
-    rename: any;
-    assign: any;
-    assignMemberChain: any;
-    typeof: any;
-    importCall: any;
-    topLevelAwait: any;
-    call: any;
-    callMemberChain: any;
-    memberChainOfCallMemberChain: any;
-    callMemberChainOfCallMemberChain: any;
-    optionalChaining: any;
-    new: any;
-    expression: any;
-    expressionMemberChain: any;
-    unhandledExpressionMemberChain: any;
-    expressionConditionalOperator: any;
-    expressionLogicalOperator: any;
-    program: any;
-    finish: any;
+    evaluateTypeof: HookMap<
+        SyncBailHook<[UnaryExpression], BasicEvaluatedExpression>
+    >;
+    evaluate: HookMap<SyncBailHook<[any], BasicEvaluatedExpression>>;
+    evaluateIdentifier: HookMap<SyncBailHook<[any], BasicEvaluatedExpression>>;
+    evaluateDefinedIdentifier: HookMap<
+        SyncBailHook<[any], BasicEvaluatedExpression>
+    >;
+    evaluateCallExpressionMember: HookMap<
+        SyncBailHook<[any, BasicEvaluatedExpression], BasicEvaluatedExpression>
+    >;
+    isPure: HookMap<SyncBailHook<[any, number], boolean | void>>;
+    preStatement: SyncBailHook<[any], boolean | void>;
+    blockPreStatement: SyncBailHook<[any], boolean | void>;
+    statement: SyncBailHook<[any], boolean | void>;
+    statementIf: SyncBailHook<[IfStatement], boolean | void>;
+    classExtendsExpression: SyncBailHook<[any, any], boolean | void>;
+    classBodyElement: SyncBailHook<[MethodDefinition, any], boolean | void>;
+    label: HookMap<SyncBailHook<[LabeledStatement], boolean | void>>;
+    import: SyncBailHook<[any, any], boolean | void>;
+    importSpecifier: SyncBailHook<[any, any, string, string], boolean | void>;
+    export: SyncBailHook<[any], boolean | void>;
+    exportImport: SyncBailHook<[any, any], boolean | void>;
+    exportDeclaration: SyncBailHook<[any, any], boolean | void>;
+    exportExpression: SyncBailHook<[any, any], boolean | void>;
+    exportSpecifier: SyncBailHook<[any, string, string, number], boolean | void>;
+    exportImportSpecifier: SyncBailHook<
+        [any, any, string, string, number],
+        boolean | void
+    >;
+    preDeclarator: SyncBailHook<[VariableDeclarator, any], boolean | void>;
+    declarator: SyncBailHook<[VariableDeclarator, any], boolean | void>;
+    varDeclaration: HookMap<SyncBailHook<[any], boolean | void>>;
+    varDeclarationLet: HookMap<SyncBailHook<[any], boolean | void>>;
+    varDeclarationConst: HookMap<SyncBailHook<[any], boolean | void>>;
+    varDeclarationVar: HookMap<SyncBailHook<[any], boolean | void>>;
+    pattern: HookMap<SyncBailHook<any, any>>;
+    canRename: HookMap<SyncBailHook<[any], boolean | void>>;
+    rename: HookMap<SyncBailHook<[any], boolean | void>>;
+    assign: HookMap<SyncBailHook<[AssignmentExpression], boolean | void>>;
+    assignMemberChain: HookMap<
+        SyncBailHook<[AssignmentExpression, string[]], boolean | void>
+    >;
+    typeof: HookMap<SyncBailHook<[any], boolean | void>>;
+    importCall: SyncBailHook<[any], boolean | void>;
+    topLevelAwait: SyncBailHook<[any], boolean | void>;
+    call: HookMap<SyncBailHook<[any], boolean | void>>;
+    callMemberChain: HookMap<SyncBailHook<[any, string[]], boolean | void>>;
+    memberChainOfCallMemberChain: HookMap<
+        SyncBailHook<[any, string[], any, string[]], boolean | void>
+    >;
+    callMemberChainOfCallMemberChain: HookMap<
+        SyncBailHook<[any, string[], any, string[]], boolean | void>
+    >;
+    optionalChaining: SyncBailHook<[ChainExpression], boolean | void>;
+    new: HookMap<SyncBailHook<[NewExpression], boolean | void>>;
+    expression: HookMap<SyncBailHook<[any], boolean | void>>;
+    expressionMemberChain: HookMap<
+        SyncBailHook<[any, string[]], boolean | void>
+    >;
+    unhandledExpressionMemberChain: HookMap<
+        SyncBailHook<[any, string[]], boolean | void>
+    >;
+    expressionConditionalOperator: SyncBailHook<[any], boolean | void>;
+    expressionLogicalOperator: SyncBailHook<[any], boolean | void>;
+    program: SyncBailHook<[Program, Comment[]], boolean | void>;
+    finish: SyncBailHook<[Program, Comment[]], boolean | void>;
 }>;",
                     "source": Object {
                       "filename": "types.d.ts",
@@ -20584,7 +20633,7 @@ Object {
                       "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L4139",
                       "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L4139",
                     },
-                    "type": "Readonly<{ evaluateTypeof: any; evaluate: any; evaluateIdentifier: any; evaluateDefinedIdentifier: any; evaluateCallExpressionMember: any; isPure: any; preStatement: any; blockPreStatement: any; statement: any; statementIf: any; classExtendsExpression: any; classBodyElement: any; label: any; import: any; importSpecifier: any; export: any; exportImport: any; exportDeclaration: any; exportExpression: any; exportSpecifier: any; exportImportSpecifier: any; preDeclarator: any; declarator: any; varDeclaration: any; varDeclarationLet: any; varDeclarationConst: any; varDeclarationVar: any; pattern: any; canRename: any; rename: any; assign: any; assignMemberChain: any; typeof: any; importCall: any; topLevelAwait: any; call: any; callMemberChain: any; memberChainOfCallMemberChain: any; callMemberChainOfCallMemberChain: any; optionalChaining: any; new: any; expression: any; expressionMemberChain: any; unhandledExpressionMemberChain: any; expressionConditionalOperator: any; expressionLogicalOperator: any; program: any; finish: any; }>",
+                    "type": "Readonly<{ evaluateTypeof: HookMap<SyncBailHook<[UnaryExpression], BasicEvaluatedExpression>>; evaluate: HookMap<SyncBailHook<[any], BasicEvaluatedExpression>>; evaluateIdentifier: HookMap<SyncBailHook<[any], BasicEvaluatedExpression>>; evaluateDefinedIdentifier: HookMap<SyncBailHook<[any], BasicEvaluatedExpression>>; evaluateCallExpressionMember: HookMap<SyncBailHook<[any, BasicEvaluatedExpression], BasicEvaluatedExpression>>; isPure: HookMap<SyncBailHook<[any, number], boolean | void>>; preStatement: SyncBailHook<[any], boolean | void>; blockPreStatement: SyncBailHook<[any], boolean | void>; statement: SyncBailHook<[any], boolean | void>; statementIf: SyncBailHook<[IfStatement], boolean | void>; classExtendsExpression: SyncBailHook<[any, any], boolean | void>; classBodyElement: SyncBailHook<[MethodDefinition, any], boolean | void>; label: HookMap<SyncBailHook<[LabeledStatement], boolean | void>>; import: SyncBailHook<[any, any], boolean | void>; importSpecifier: SyncBailHook<[any, any, string, string], boolean | void>; export: SyncBailHook<[any], boolean | void>; exportImport: SyncBailHook<[any, any], boolean | void>; exportDeclaration: SyncBailHook<[any, any], boolean | void>; exportExpression: SyncBailHook<[any, any], boolean | void>; exportSpecifier: SyncBailHook<[any, string, string, number], boolean | void>; exportImportSpecifier: SyncBailHook<[any, any, string, string, number], boolean | void>; preDeclarator: SyncBailHook<[VariableDeclarator, any], boolean | void>; declarator: SyncBailHook<[VariableDeclarator, any], boolean | void>; varDeclaration: HookMap<SyncBailHook<[any], boolean | void>>; varDeclarationLet: HookMap<SyncBailHook<[any], boolean | void>>; varDeclarationConst: HookMap<SyncBailHook<[any], boolean | void>>; varDeclarationVar: HookMap<SyncBailHook<[any], boolean | void>>; pattern: HookMap<SyncBailHook<any, any>>; canRename: HookMap<SyncBailHook<[any], boolean | void>>; rename: HookMap<SyncBailHook<[any], boolean | void>>; assign: HookMap<SyncBailHook<[AssignmentExpression], boolean | void>>; assignMemberChain: HookMap<SyncBailHook<[AssignmentExpression, string[]], boolean | void>>; typeof: HookMap<SyncBailHook<[any], boolean | void>>; importCall: SyncBailHook<[any], boolean | void>; topLevelAwait: SyncBailHook<[any], boolean | void>; call: HookMap<SyncBailHook<[any], boolean | void>>; callMemberChain: HookMap<SyncBailHook<[any, string[]], boolean | void>>; memberChainOfCallMemberChain: HookMap<SyncBailHook<[any, string[], any, string[]], boolean | void>>; callMemberChainOfCallMemberChain: HookMap<SyncBailHook<[any, string[], any, string[]], boolean | void>>; optionalChaining: SyncBailHook<[ChainExpression], boolean | void>; new: HookMap<SyncBailHook<[NewExpression], boolean | void>>; expression: HookMap<SyncBailHook<[any], boolean | void>>; expressionMemberChain: HookMap<SyncBailHook<[any, string[]], boolean | void>>; unhandledExpressionMemberChain: HookMap<SyncBailHook<[any, string[]], boolean | void>>; expressionConditionalOperator: SyncBailHook<[any], boolean | void>; expressionLogicalOperator: SyncBailHook<[any], boolean | void>; program: SyncBailHook<[Program, Comment[]], boolean | void>; finish: SyncBailHook<[Program, Comment[]], boolean | void>; }>",
                   },
                   Object {
                     "docs": Array [],
@@ -24424,14 +24473,14 @@ Object {
                     "isStatic": false,
                     "kind": "ClassMethodDeclaration",
                     "name": "buffer",
-                    "signature": "buffer: () => any;",
+                    "signature": "buffer: () => Buffer;",
                     "source": Object {
                       "filename": "types.d.ts",
                       "line": 9406,
                       "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L9406",
                       "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L9406",
                     },
-                    "type": "() => any",
+                    "type": "() => Buffer",
                   },
                   Object {
                     "docs": Array [],
@@ -26207,14 +26256,14 @@ Object {
         "id": "ValidationError",
         "kind": "VariableDeclaration",
         "name": "ValidationError",
-        "signature": "const ValidationError: any;",
+        "signature": "const ValidationError: ValidationError;",
         "source": Object {
           "filename": "types.d.ts",
           "line": 10882,
           "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L10882",
           "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L10882",
         },
-        "type": "any",
+        "type": "ValidationError",
         "variableKind": "const",
       },
       Object {
@@ -26258,14 +26307,14 @@ Object {
         "id": "WebpackOptionsValidationError",
         "kind": "VariableDeclaration",
         "name": "WebpackOptionsValidationError",
-        "signature": "const WebpackOptionsValidationError: any;",
+        "signature": "const WebpackOptionsValidationError: ValidationError;",
         "source": Object {
           "filename": "types.d.ts",
           "line": 10881,
           "unpkgURL": "https://unpkg.com/browse/webpack@5.17.0/types.d.ts#L10881",
           "url": "https://github.com/webpack/webpack/tree/d02e8daa267ca094fc0a030a595b000d35a99493/types.d.ts#L10881",
         },
-        "type": "any",
+        "type": "ValidationError",
         "variableKind": "const",
       },
     ],

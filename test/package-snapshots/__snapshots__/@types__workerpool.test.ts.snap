@@ -365,7 +365,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@types/workerpool@6.0.0/index.d.ts#L108",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/workerpool/index.d.ts#L108",
               },
-              "type": "any",
+              "type": "cp.ForkOptions",
             },
             Object {
               "docs": Array [

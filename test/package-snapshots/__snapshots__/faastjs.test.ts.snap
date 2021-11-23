@@ -1961,7 +1961,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L206",
                 "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L206",
               },
-              "type": "any",
+              "type": "ConfigurationOptions",
             },
             Object {
               "docs": Array [
@@ -2000,7 +2000,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L188",
                 "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L188",
               },
-              "type": "any",
+              "type": "Lambda.CreateFunctionRequest",
             },
             Object {
               "docs": Array [
@@ -2878,7 +2878,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L670",
                 "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L670",
               },
-              "type": "any",
+              "type": "webpack.Configuration",
             },
           ],
         },
@@ -3406,7 +3406,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1888",
                 "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L1888",
               },
-              "type": "any",
+              "type": "cloudfunctions_v1.Schema$CloudFunction",
             },
             Object {
               "docs": Array [
@@ -4759,15 +4759,15 @@ Object {
         "kind": "VariableDeclaration",
         "name": "log",
         "signature": "const log: {
-    info: any;
-    minimal: any;
-    warn: any;
-    gc: any;
-    leaks: any;
-    calls: any;
-    webpack: any;
-    provider: any;
-    awssdk: any;
+    info: debug_2.Debugger;
+    minimal: debug_2.Debugger;
+    warn: debug_2.Debugger;
+    gc: debug_2.Debugger;
+    leaks: debug_2.Debugger;
+    calls: debug_2.Debugger;
+    webpack: debug_2.Debugger;
+    provider: debug_2.Debugger;
+    awssdk: debug_2.Debugger;
 };",
         "source": Object {
           "filename": "dist/faastjs.d.ts",
@@ -4775,7 +4775,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2115",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L2115",
         },
-        "type": "{ info: any; minimal: any; warn: any; gc: any; leaks: any; calls: any; webpack: any; provider: any; awssdk: any; }",
+        "type": "{ info: debug_2.Debugger; minimal: debug_2.Debugger; warn: debug_2.Debugger; gc: debug_2.Debugger; leaks: debug_2.Debugger; calls: debug_2.Debugger; webpack: debug_2.Debugger; provider: debug_2.Debugger; awssdk: debug_2.Debugger; }",
         "variableKind": "const",
       },
       Object {

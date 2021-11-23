@@ -22,7 +22,7 @@ Object {
         "name": "fastify",
         "signature": "fastify: {
     <
-        Server extends any,
+        Server extends http2.Http2SecureServer,
         Request extends RawRequestDefaultExpression<Server> = RawRequestDefaultExpression<Server>,
         Reply extends RawReplyDefaultExpression<Server> = RawReplyDefaultExpression<Server>,
         Logger extends FastifyLoggerInstance = FastifyLoggerInstance
@@ -31,7 +31,7 @@ Object {
     ): FastifyInstance<Server, Request, Reply, Logger> &
         PromiseLike<FastifyInstance<Server, Request, Reply, Logger>>;
     <
-        Server extends any,
+        Server extends http2.Http2Server,
         Request extends RawRequestDefaultExpression<Server> = RawRequestDefaultExpression<Server>,
         Reply extends RawReplyDefaultExpression<Server> = RawReplyDefaultExpression<Server>,
         Logger extends FastifyLoggerInstance = FastifyLoggerInstance
@@ -40,7 +40,7 @@ Object {
     ): FastifyInstance<Server, Request, Reply, Logger> &
         PromiseLike<FastifyInstance<Server, Request, Reply, Logger>>;
     <
-        Server extends any,
+        Server extends https.Server,
         Request extends RawRequestDefaultExpression<Server> = RawRequestDefaultExpression<Server>,
         Reply extends RawReplyDefaultExpression<Server> = RawReplyDefaultExpression<Server>,
         Logger extends FastifyLoggerInstance = FastifyLoggerInstance
@@ -49,7 +49,7 @@ Object {
     ): FastifyInstance<Server, Request, Reply, Logger> &
         PromiseLike<FastifyInstance<Server, Request, Reply, Logger>>;
     <
-        Server extends any,
+        Server extends http.Server,
         Request extends RawRequestDefaultExpression<Server> = RawRequestDefaultExpression<Server>,
         Reply extends RawReplyDefaultExpression<Server> = RawReplyDefaultExpression<Server>,
         Logger extends FastifyLoggerInstance = FastifyLoggerInstance
@@ -64,7 +64,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/fastify.d.ts#L24",
           "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/fastify.d.ts#L24",
         },
-        "type": "{ <Server extends any, Request extends RawRequestDefaultExpression<Server> = RawRequestDefaultExpression<Server>, Reply extends RawReplyDefaultExpression<Server> = RawReplyDefaultExpression<Server>, Logger extends FastifyLoggerInstance = FastifyLoggerInstance>(opts: FastifyHttp2SecureOptions<Server, Logger>): FastifyInstance<Server, Request, Reply, Logger> & PromiseLike<FastifyInstance<Server, Request, Reply, Logger>>; <Server extends any, Request extends RawRequestDefaultExpression<Server> = RawRequestDefaultExpression<Server>, Reply extends RawReplyDefaultExpression<Server> = RawReplyDefaultExpression<Server>, Logger extends FastifyLoggerInstance = FastifyLoggerInstance>(opts: FastifyHttp2Options<Server, Logger>): FastifyInstance<Server, Request, Reply, Logger> & PromiseLike<FastifyInstance<Server, Request, Reply, Logger>>; <Server extends any, Request extends RawRequestDefaultExpression<Server> = RawRequestDefaultExpression<Server>, Reply extends RawReplyDefaultExpression<Server> = RawReplyDefaultExpression<Server>, Logger extends FastifyLoggerInstance = FastifyLoggerInstance>(opts: FastifyHttpsOptions<Server, Logger>): FastifyInstance<Server, Request, Reply, Logger> & PromiseLike<FastifyInstance<Server, Request, Reply, Logger>>; <Server extends any, Request extends RawRequestDefaultExpression<Server> = RawRequestDefaultExpression<Server>, Reply extends RawReplyDefaultExpression<Server> = RawReplyDefaultExpression<Server>, Logger extends FastifyLoggerInstance = FastifyLoggerInstance>(opts?: FastifyServerOptions<Server, Logger>): FastifyInstance<Server, Request, Reply, Logger> & PromiseLike<FastifyInstance<Server, Request, Reply, Logger>>; }",
+        "type": "{ <Server extends http2.Http2SecureServer, Request extends RawRequestDefaultExpression<Server> = RawRequestDefaultExpression<Server>, Reply extends RawReplyDefaultExpression<Server> = RawReplyDefaultExpression<Server>, Logger extends FastifyLoggerInstance = FastifyLoggerInstance>(opts: FastifyHttp2SecureOptions<Server, Logger>): FastifyInstance<Server, Request, Reply, Logger> & PromiseLike<FastifyInstance<Server, Request, Reply, Logger>>; <Server extends http2.Http2Server, Request extends RawRequestDefaultExpression<Server> = RawRequestDefaultExpression<Server>, Reply extends RawReplyDefaultExpression<Server> = RawReplyDefaultExpression<Server>, Logger extends FastifyLoggerInstance = FastifyLoggerInstance>(opts: FastifyHttp2Options<Server, Logger>): FastifyInstance<Server, Request, Reply, Logger> & PromiseLike<FastifyInstance<Server, Request, Reply, Logger>>; <Server extends https.Server, Request extends RawRequestDefaultExpression<Server> = RawRequestDefaultExpression<Server>, Reply extends RawReplyDefaultExpression<Server> = RawReplyDefaultExpression<Server>, Logger extends FastifyLoggerInstance = FastifyLoggerInstance>(opts: FastifyHttpsOptions<Server, Logger>): FastifyInstance<Server, Request, Reply, Logger> & PromiseLike<FastifyInstance<Server, Request, Reply, Logger>>; <Server extends http.Server, Request extends RawRequestDefaultExpression<Server> = RawRequestDefaultExpression<Server>, Reply extends RawReplyDefaultExpression<Server> = RawReplyDefaultExpression<Server>, Logger extends FastifyLoggerInstance = FastifyLoggerInstance>(opts?: FastifyServerOptions<Server, Logger>): FastifyInstance<Server, Request, Reply, Logger> & PromiseLike<FastifyInstance<Server, Request, Reply, Logger>>; }",
       },
     ],
     "interfaces": Array [
@@ -549,7 +549,7 @@ Object {
             RawReply,
             RouteGeneric,
             ContextConfig,
-            any
+            FastifyError
         >
     ): FastifyInstance<RawServer, RawRequest, RawReply, Logger>;
     <
@@ -563,7 +563,7 @@ Object {
             RawReply,
             RouteGeneric,
             ContextConfig,
-            any
+            FastifyError
         >
     ): FastifyInstance<RawServer, RawRequest, RawReply, Logger>;
     <
@@ -606,7 +606,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L84",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L84",
               },
-              "type": "{ <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: 'onRequest', hook: onRequestHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onRequest\\", hook: onRequestAsyncHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preParsing\\", hook: preParsingHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preParsing\\", hook: preParsingAsyncHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preValidation\\", hook: preValidationHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preValidation\\", hook: preValidationAsyncHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preHandler\\", hook: preHandlerHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preHandler\\", hook: preHandlerAsyncHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <PreSerializationPayload = unknown, RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preSerialization\\", hook: preSerializationHookHandler<PreSerializationPayload, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <PreSerializationPayload = unknown, RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preSerialization\\", hook: preSerializationAsyncHookHandler<PreSerializationPayload, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <OnSendPayload = unknown, RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onSend\\", hook: onSendHookHandler<OnSendPayload, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <OnSendPayload = unknown, RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onSend\\", hook: onSendAsyncHookHandler<OnSendPayload, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onResponse\\", hook: onResponseHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onResponse\\", hook: onResponseAsyncHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onTimeout\\", hook: onTimeoutHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onTimeout\\", hook: onTimeoutAsyncHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onError\\", hook: onErrorHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig, any>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onError\\", hook: onErrorAsyncHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig, any>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onRoute\\", hook: onRouteHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; (name: \\"onRegister\\", hook: onRegisterHookHandler<RawServer, RawRequest, RawReply, Logger>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; (name: \\"onReady\\", hook: onReadyHookHandler): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; (name: \\"onReady\\", hook: onReadyAsyncHookHandler): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; (name: \\"onClose\\", hook: onCloseHookHandler<RawServer, RawRequest, RawReply, Logger>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; }",
+              "type": "{ <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: 'onRequest', hook: onRequestHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onRequest\\", hook: onRequestAsyncHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preParsing\\", hook: preParsingHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preParsing\\", hook: preParsingAsyncHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preValidation\\", hook: preValidationHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preValidation\\", hook: preValidationAsyncHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preHandler\\", hook: preHandlerHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preHandler\\", hook: preHandlerAsyncHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <PreSerializationPayload = unknown, RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preSerialization\\", hook: preSerializationHookHandler<PreSerializationPayload, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <PreSerializationPayload = unknown, RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"preSerialization\\", hook: preSerializationAsyncHookHandler<PreSerializationPayload, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <OnSendPayload = unknown, RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onSend\\", hook: onSendHookHandler<OnSendPayload, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <OnSendPayload = unknown, RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onSend\\", hook: onSendAsyncHookHandler<OnSendPayload, RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onResponse\\", hook: onResponseHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onResponse\\", hook: onResponseAsyncHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onTimeout\\", hook: onTimeoutHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onTimeout\\", hook: onTimeoutAsyncHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onError\\", hook: onErrorHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig, FastifyError>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onError\\", hook: onErrorAsyncHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig, FastifyError>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; <RouteGeneric extends RouteGenericInterface = RouteGenericInterface, ContextConfig = unknown>(name: \\"onRoute\\", hook: onRouteHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; (name: \\"onRegister\\", hook: onRegisterHookHandler<RawServer, RawRequest, RawReply, Logger>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; (name: \\"onReady\\", hook: onReadyHookHandler): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; (name: \\"onReady\\", hook: onReadyAsyncHookHandler): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; (name: \\"onClose\\", hook: onCloseHookHandler<RawServer, RawRequest, RawReply, Logger>): FastifyInstance<RawServer, RawRequest, RawReply, Logger>; }",
             },
             Object {
               "docs": Array [],
@@ -800,9 +800,9 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "inject",
               "signature": "inject: {
-    (opts: InjectOptions | string, cb: any): void;
-    (opts: any): Promise<any>;
-    (): any;
+    (opts: InjectOptions | string, cb: LightMyRequestCallback): void;
+    (opts: any): Promise<LightMyRequestResponse>;
+    (): LightMyRequestChain;
 };",
               "source": Object {
                 "filename": "types/instance.d.ts",
@@ -810,7 +810,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L46",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L46",
               },
-              "type": "{ (opts: InjectOptions | string, cb: any): void; (opts: any): Promise<any>; (): any; }",
+              "type": "{ (opts: InjectOptions | string, cb: LightMyRequestCallback): void; (opts: any): Promise<LightMyRequestResponse>; (): LightMyRequestChain; }",
             },
             Object {
               "docs": Array [],
@@ -924,7 +924,7 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "setErrorHandler",
               "signature": "setErrorHandler: <
-    TError extends Error = any,
+    TError extends Error = FastifyError,
     RouteGeneric extends RouteGenericInterface = RouteGenericInterface
 >(
     handler: (
@@ -940,7 +940,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L323",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L323",
               },
-              "type": "<TError extends Error = any, RouteGeneric extends RouteGenericInterface = RouteGenericInterface>(handler: (this: FastifyInstance<RawServer, RawRequest, RawReply, Logger>, error: TError, request: FastifyRequest<RouteGeneric, RawServer, RawRequest>, reply: FastifyReply<RawServer, RawRequest, RawReply, RouteGeneric>) => void) => FastifyInstance<RawServer, RawRequest, RawReply, Logger>",
+              "type": "<TError extends Error = FastifyError, RouteGeneric extends RouteGenericInterface = RouteGenericInterface>(handler: (this: FastifyInstance<RawServer, RawRequest, RawReply, Logger>, error: TError, request: FastifyRequest<RouteGeneric, RawServer, RawRequest>, reply: FastifyReply<RawServer, RawRequest, RawReply, RouteGeneric>) => void) => FastifyInstance<RawServer, RawRequest, RawReply, Logger>",
             },
             Object {
               "docs": Array [
@@ -1122,7 +1122,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/instance.d.ts#L318",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/instance.d.ts#L318",
               },
-              "type": "(error: any, request: FastifyRequest, reply: FastifyReply) => void",
+              "type": "(error: FastifyError, request: FastifyRequest, reply: FastifyReply) => void",
             },
             Object {
               "docs": Array [],
@@ -1620,7 +1620,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/logger.d.ts#L120",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/logger.d.ts#L120",
               },
-              "type": "{ req?: (req: RawRequest) => { [key: string]: unknown; method?: string; url?: string; version?: string; hostname?: string; remoteAddress?: string; remotePort?: number; }; err?: (err: any) => { [key: string]: unknown; type: string; message: string; stack: string; }; res?: (res: RawReply) => { [key: string]: unknown; statusCode: string | number; }; }",
+              "type": "{ req?: (req: RawRequest) => { [key: string]: unknown; method?: string; url?: string; version?: string; hostname?: string; remoteAddress?: string; remotePort?: number; }; err?: (err: FastifyError) => { [key: string]: unknown; type: string; message: string; stack: string; }; res?: (res: RawReply) => { [key: string]: unknown; statusCode: string | number; }; }",
             },
           ],
         },
@@ -2032,7 +2032,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/reply.d.ts#L22",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/reply.d.ts#L22",
               },
-              "type": "any",
+              "type": "http.ServerResponse",
             },
             Object {
               "docs": Array [],
@@ -2181,7 +2181,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L49",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L49",
               },
-              "type": "any",
+              "type": "http.IncomingMessage",
             },
             Object {
               "docs": Array [],
@@ -2373,7 +2373,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L23",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L23",
               },
-              "type": "any",
+              "type": "http.IncomingMessage",
             },
             Object {
               "docs": Array [
@@ -2393,7 +2393,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L34",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L34",
               },
-              "type": "any",
+              "type": "http.IncomingMessage",
             },
             Object {
               "docs": Array [],
@@ -2441,7 +2441,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/request.d.ts#L45",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/request.d.ts#L45",
               },
-              "type": "any",
+              "type": "http.IncomingMessage",
             },
             Object {
               "docs": Array [],
@@ -4319,7 +4319,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L32",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L32",
               },
-              "type": "(this: FastifyInstance, error: any, request: FastifyRequest, reply: FastifyReply) => void",
+              "type": "(this: FastifyInstance, error: FastifyError, request: FastifyRequest, reply: FastifyReply) => void",
             },
             Object {
               "docs": Array [],
@@ -4381,7 +4381,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/fastify@3.10.1/types/route.d.ts#L45",
                 "url": "https://github.com/fastify/fastify/tree/8abfd250b1542315bb7f9304f0296f98cac29c63/types/route.d.ts#L45",
               },
-              "type": "onErrorHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig, any> | onErrorHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig, any>[]",
+              "type": "onErrorHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig, FastifyError> | onErrorHookHandler<RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig, FastifyError>[]",
             },
             Object {
               "docs": Array [],

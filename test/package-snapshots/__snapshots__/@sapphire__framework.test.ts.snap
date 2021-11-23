@@ -11,7 +11,7 @@ Object {
             "id": "Args.0-constructor",
             "kind": "ClassConstructorDeclaration",
             "name": "constructor",
-            "signature": "constructor(message: any, command: Command<Args>, parser: any);",
+            "signature": "constructor(message: Message, command: Command<Args>, parser: Args$1);",
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 165,
@@ -341,7 +341,7 @@ Object {
     <T>(type: () => ArgumentResult<T>): Promise<T>;
     <T>(type: IArgument<T>, options?: ArgOptions): Promise<T>;
     <K extends keyof ArgType>(
-        type: K | (() => any),
+        type: K | (() => Awaited<any>),
         options?: ArgOptions
     ): Promise<ArgType[K]>;
 };",
@@ -351,7 +351,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L429",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L429",
               },
-              "type": "{ <T>(type: () => ArgumentResult<T>): Promise<T>; <T>(type: IArgument<T>, options?: ArgOptions): Promise<T>; <K extends keyof ArgType>(type: K | (() => any), options?: ArgOptions): Promise<ArgType[K]>; }",
+              "type": "{ <T>(type: () => ArgumentResult<T>): Promise<T>; <T>(type: IArgument<T>, options?: ArgOptions): Promise<T>; <K extends keyof ArgType>(type: K | (() => Awaited<any>), options?: ArgOptions): Promise<ArgType[K]>; }",
             },
             Object {
               "docs": Array [
@@ -420,7 +420,7 @@ Object {
     <T>(type: () => ArgumentResult<T>): Promise<Result<T, UserError>>;
     <T>(type: IArgument<T>, options?: ArgOptions): Promise<any>;
     <K extends keyof ArgType>(
-        type: K | (() => any),
+        type: K | (() => Awaited<any>),
         options?: ArgOptions
     ): Promise<any>;
 };",
@@ -430,7 +430,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L369",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L369",
               },
-              "type": "{ <T>(type: () => ArgumentResult<T>): Promise<Result<T, UserError>>; <T>(type: IArgument<T>, options?: ArgOptions): Promise<any>; <K extends keyof ArgType>(type: K | (() => any), options?: ArgOptions): Promise<any>; }",
+              "type": "{ <T>(type: () => ArgumentResult<T>): Promise<Result<T, UserError>>; <T>(type: IArgument<T>, options?: ArgOptions): Promise<any>; <K extends keyof ArgType>(type: K | (() => Awaited<any>), options?: ArgOptions): Promise<any>; }",
             },
             Object {
               "docs": Array [
@@ -830,14 +830,14 @@ Object {
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "message",
-              "signature": "readonly message: any;",
+              "signature": "readonly message: Message;",
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 158,
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L158",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L158",
               },
-              "type": "any",
+              "type": "Message",
             },
           ],
         },
@@ -934,8 +934,8 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "error",
               "signature": "error: {
-    (parameter: string, message: string): any;
-    (parameter: string, type: string, message: string): any;
+    (parameter: string, message: string): Awaited<any>;
+    (parameter: string, type: string, message: string): Awaited<any>;
 };",
               "source": Object {
                 "filename": "dist/index.d.ts",
@@ -943,7 +943,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1147",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1147",
               },
-              "type": "{ (parameter: string, message: string): any; (parameter: string, type: string, message: string): any; }",
+              "type": "{ (parameter: string, message: string): Awaited<any>; (parameter: string, type: string, message: string): Awaited<any>; }",
             },
             Object {
               "docs": Array [
@@ -956,14 +956,14 @@ Object {
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "ok",
-              "signature": "ok: (value: T) => any;",
+              "signature": "ok: (value: T) => Awaited<any>;",
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1141,
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1141",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1141",
               },
-              "type": "(value: T) => any",
+              "type": "(value: T) => Awaited<any>",
             },
             Object {
               "docs": Array [],
@@ -971,14 +971,14 @@ Object {
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "run",
-              "signature": "abstract run: (argument: string, context: ArgumentContext) => any;",
+              "signature": "abstract run: (argument: string, context: ArgumentContext) => Awaited<any>;",
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1136,
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1136",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1136",
               },
-              "type": "(argument: string, context: ArgumentContext) => any",
+              "type": "(argument: string, context: ArgumentContext) => Awaited<any>",
             },
           ],
           "properties": Array [],
@@ -1112,7 +1112,10 @@ Object {
             "id": "Command.0-constructor",
             "kind": "ClassConstructorDeclaration",
             "name": "constructor",
-            "signature": "protected constructor(context: any, { name, ...options }?: CommandOptions);",
+            "signature": "protected constructor(
+    context: PieceContext,
+    { name, ...options }?: CommandOptions
+);",
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 988,
@@ -1139,14 +1142,14 @@ Object {
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "preParse",
-              "signature": "preParse: (message: any, parameters: string) => any;",
+              "signature": "preParse: (message: Message, parameters: string) => Awaited<T>;",
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 994,
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L994",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L994",
               },
-              "type": "(message: any, parameters: string) => any",
+              "type": "(message: Message, parameters: string) => Awaited<T>",
             },
             Object {
               "docs": Array [
@@ -1160,14 +1163,18 @@ Object {
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "run",
-              "signature": "abstract run: (message: any, args: T, context: CommandContext) => any;",
+              "signature": "abstract run: (
+    message: Message,
+    args: T,
+    context: CommandContext
+) => Awaited<unknown>;",
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1000,
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1000",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1000",
               },
-              "type": "(message: any, args: T, context: CommandContext) => any",
+              "type": "(message: Message, args: T, context: CommandContext) => Awaited<unknown>",
             },
             Object {
               "docs": Array [
@@ -1261,14 +1268,14 @@ Object {
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "strategy",
-              "signature": "strategy: any;",
+              "signature": "strategy: UnorderedStrategy;",
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 982,
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L982",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L982",
               },
-              "type": "any",
+              "type": "UnorderedStrategy",
             },
           ],
         },
@@ -1326,7 +1333,7 @@ Object {
             "id": "Event.0-constructor",
             "kind": "ClassConstructorDeclaration",
             "name": "constructor",
-            "signature": "constructor(context: any, options?: EventOptions);",
+            "signature": "constructor(context: PieceContext, options?: EventOptions);",
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1294,
@@ -1541,7 +1548,7 @@ Object {
             "id": "ExtendedArgument.0-constructor",
             "kind": "ClassConstructorDeclaration",
             "name": "constructor",
-            "signature": "constructor(context: any, options: ExtendedArgumentOptions<K>);",
+            "signature": "constructor(context: PieceContext, options: ExtendedArgumentOptions<K>);",
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1679,
@@ -1609,14 +1616,17 @@ Object {
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "handle",
-              "signature": "abstract handle: (parsed: ArgType[K], context: ExtendedArgumentContext) => any;",
+              "signature": "abstract handle: (
+    parsed: ArgType[K],
+    context: ExtendedArgumentContext
+) => Awaited<any>;",
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1686,
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1686",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1686",
               },
-              "type": "(parsed: ArgType[K], context: ExtendedArgumentContext) => any",
+              "type": "(parsed: ArgType[K], context: ExtendedArgumentContext) => Awaited<any>",
             },
             Object {
               "docs": Array [],
@@ -1863,7 +1873,7 @@ Object {
             "id": "PermissionsPrecondition.0-constructor",
             "kind": "ClassConstructorDeclaration",
             "name": "constructor",
-            "signature": "constructor(permissions: any);",
+            "signature": "constructor(permissions: PermissionResolvable);",
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1877,
@@ -1957,14 +1967,17 @@ Object {
               "isStatic": true,
               "kind": "ClassPropertyDeclaration",
               "name": "[postInitialization]",
-              "signature": "static [postInitialization]?: (this: SapphireClient, options: any) => void;",
+              "signature": "static [postInitialization]?: (
+    this: SapphireClient,
+    options: ClientOptions
+) => void;",
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1626,
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1626",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1626",
               },
-              "type": "(this: SapphireClient, options: any) => void",
+              "type": "(this: SapphireClient, options: ClientOptions) => void",
             },
             Object {
               "docs": Array [],
@@ -1972,14 +1985,17 @@ Object {
               "isStatic": true,
               "kind": "ClassPropertyDeclaration",
               "name": "[postLogin]",
-              "signature": "static [postLogin]?: (this: SapphireClient, options: any) => any;",
+              "signature": "static [postLogin]?: (
+    this: SapphireClient,
+    options: ClientOptions
+) => Awaited<void>;",
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1628,
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1628",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1628",
               },
-              "type": "(this: SapphireClient, options: any) => any",
+              "type": "(this: SapphireClient, options: ClientOptions) => Awaited<void>",
             },
             Object {
               "docs": Array [],
@@ -1989,7 +2005,7 @@ Object {
               "name": "[preGenericsInitialization]",
               "signature": "static [preGenericsInitialization]?: (
     this: SapphireClient,
-    options: any
+    options: ClientOptions
 ) => void;",
               "source": Object {
                 "filename": "dist/index.d.ts",
@@ -1997,7 +2013,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1624",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1624",
               },
-              "type": "(this: SapphireClient, options: any) => void",
+              "type": "(this: SapphireClient, options: ClientOptions) => void",
             },
             Object {
               "docs": Array [],
@@ -2005,14 +2021,17 @@ Object {
               "isStatic": true,
               "kind": "ClassPropertyDeclaration",
               "name": "[preInitialization]",
-              "signature": "static [preInitialization]?: (this: SapphireClient, options: any) => void;",
+              "signature": "static [preInitialization]?: (
+    this: SapphireClient,
+    options: ClientOptions
+) => void;",
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1625,
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1625",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1625",
               },
-              "type": "(this: SapphireClient, options: any) => void",
+              "type": "(this: SapphireClient, options: ClientOptions) => void",
             },
             Object {
               "docs": Array [],
@@ -2020,14 +2039,17 @@ Object {
               "isStatic": true,
               "kind": "ClassPropertyDeclaration",
               "name": "[preLogin]",
-              "signature": "static [preLogin]?: (this: SapphireClient, options: any) => any;",
+              "signature": "static [preLogin]?: (
+    this: SapphireClient,
+    options: ClientOptions
+) => Awaited<void>;",
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1627,
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1627",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1627",
               },
-              "type": "(this: SapphireClient, options: any) => any",
+              "type": "(this: SapphireClient, options: ClientOptions) => Awaited<void>",
             },
           ],
         },
@@ -2244,8 +2266,8 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "error",
               "signature": "error: {
-    (message: string, extras?: PreconditionErrorExtras): any;
-    (type: string, message: string, extras?: object): any;
+    (message: string, extras?: PreconditionErrorExtras): Awaited<any>;
+    (type: string, message: string, extras?: object): Awaited<any>;
 };",
               "source": Object {
                 "filename": "dist/index.d.ts",
@@ -2253,7 +2275,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L729",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L729",
               },
-              "type": "{ (message: string, extras?: PreconditionErrorExtras): any; (type: string, message: string, extras?: object): any; }",
+              "type": "{ (message: string, extras?: PreconditionErrorExtras): Awaited<any>; (type: string, message: string, extras?: object): Awaited<any>; }",
             },
             Object {
               "docs": Array [],
@@ -2261,14 +2283,14 @@ Object {
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "ok",
-              "signature": "ok: () => any;",
+              "signature": "ok: () => Awaited<any>;",
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 724,
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L724",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L724",
               },
-              "type": "() => any",
+              "type": "() => Awaited<any>",
             },
             Object {
               "docs": Array [],
@@ -2277,17 +2299,17 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "run",
               "signature": "abstract run: (
-    message: any,
+    message: Message,
     command: Command,
     context: PreconditionContext
-) => any;",
+) => Awaited<any>;",
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 723,
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L723",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L723",
               },
-              "type": "(message: any, command: Command, context: PreconditionContext) => any",
+              "type": "(message: Message, command: Command, context: PreconditionContext) => Awaited<any>",
             },
           ],
           "properties": Array [],
@@ -2401,14 +2423,14 @@ Object {
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "run",
-              "signature": "run: (message: any, command: Command) => any;",
+              "signature": "run: (message: Message, command: Command) => Awaited<any>;",
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 899,
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L899",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L899",
               },
-              "type": "(message: any, command: Command) => any",
+              "type": "(message: Message, command: Command) => Awaited<any>",
             },
           ],
           "properties": Array [
@@ -2460,14 +2482,17 @@ Object {
               "isStatic": true,
               "kind": "ClassPropertyDeclaration",
               "name": "conditions",
-              "signature": "protected static readonly conditions: any;",
+              "signature": "protected static readonly conditions: Collection<
+    PreconditionRunCondition,
+    IPreconditionCondition
+>;",
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 932,
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L932",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L932",
               },
-              "type": "any",
+              "type": "Collection<PreconditionRunCondition, IPreconditionCondition>",
             },
             Object {
               "docs": Array [
@@ -2580,14 +2605,14 @@ Object {
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "run",
-              "signature": "run: (message: any, command: Command) => any;",
+              "signature": "run: (message: Message, command: Command) => Awaited<any>;",
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 786,
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L786",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L786",
               },
-              "type": "(message: any, command: Command) => any",
+              "type": "(message: Message, command: Command) => Awaited<any>",
             },
           ],
           "properties": Array [
@@ -2753,7 +2778,7 @@ Object {
             "id": "SapphireClient.0-constructor",
             "kind": "ClassConstructorDeclaration",
             "name": "constructor",
-            "signature": "constructor(options?: any);",
+            "signature": "constructor(options?: ClientOptions);",
             "source": Object {
               "filename": "dist/index.d.ts",
               "line": 1548,
@@ -2825,14 +2850,14 @@ Object {
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "deregisterStore",
-              "signature": "deregisterStore: <T extends any>(store: any) => this;",
+              "signature": "deregisterStore: <T extends Piece>(store: Store<T>) => this;",
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1583,
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1583",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1583",
               },
-              "type": "<T extends any>(store: any) => this",
+              "type": "<T extends Piece>(store: Store<T>) => this",
             },
             Object {
               "docs": Array [
@@ -2867,14 +2892,14 @@ Object {
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "registerStore",
-              "signature": "registerStore: <T extends any>(store: any) => this;",
+              "signature": "registerStore: <T extends Piece>(store: Store<T>) => this;",
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1577,
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1577",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1577",
               },
-              "type": "<T extends any>(store: any) => this",
+              "type": "<T extends Piece>(store: Store<T>) => this",
             },
             Object {
               "docs": Array [
@@ -3123,14 +3148,14 @@ Object {
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "stores",
-              "signature": "stores: Set<any>;",
+              "signature": "stores: Set<Store<Piece>>;",
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1547,
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1547",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1547",
               },
-              "type": "Set<any>",
+              "type": "Set<Store<Piece>>",
             },
           ],
         },
@@ -4749,14 +4774,14 @@ Object {
         "id": "err",
         "kind": "FunctionDeclaration",
         "name": "err",
-        "signature": "err: { (): any; <E>(x: E): any };",
+        "signature": "err: { (): Err$1<E>; <E>(x: E): Err$1<E> };",
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 58,
           "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L58",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L58",
         },
-        "type": "{ (): any; <E>(x: E): any; }",
+        "type": "{ (): Err$1<E>; <E>(x: E): Err$1<E>; }",
       },
       Object {
         "docs": Array [
@@ -4769,14 +4794,14 @@ Object {
         "id": "isErr",
         "kind": "FunctionDeclaration",
         "name": "isErr",
-        "signature": "isErr: <T, E>(x: Result<T, E>) => x is any;",
+        "signature": "isErr: <T, E>(x: Result<T, E>) => x is Err$1<E>;",
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 77,
           "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L77",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L77",
         },
-        "type": "<T, E>(x: Result<T, E>) => x is any",
+        "type": "<T, E>(x: Result<T, E>) => x is Err$1<E>",
       },
       Object {
         "docs": Array [
@@ -4811,14 +4836,14 @@ Object {
         "id": "isNone",
         "kind": "FunctionDeclaration",
         "name": "isNone",
-        "signature": "isNone: <T>(x: Maybe<T>) => x is any;",
+        "signature": "isNone: <T>(x: Maybe<T>) => x is option.None;",
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 139,
           "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L139",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L139",
         },
-        "type": "<T>(x: Maybe<T>) => x is any",
+        "type": "<T>(x: Maybe<T>) => x is option.None",
       },
       Object {
         "docs": Array [
@@ -4831,14 +4856,14 @@ Object {
         "id": "isOk",
         "kind": "FunctionDeclaration",
         "name": "isOk",
-        "signature": "isOk: <T, E>(x: Result<T, E>) => x is any;",
+        "signature": "isOk: <T, E>(x: Result<T, E>) => x is Ok$1<T>;",
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 71,
           "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L71",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L71",
         },
-        "type": "<T, E>(x: Result<T, E>) => x is any",
+        "type": "<T, E>(x: Result<T, E>) => x is Ok$1<T>",
       },
       Object {
         "docs": Array [
@@ -4850,14 +4875,14 @@ Object {
         "id": "isSome",
         "kind": "FunctionDeclaration",
         "name": "isSome",
-        "signature": "isSome: <T>(x: Maybe<T>) => x is any;",
+        "signature": "isSome: <T>(x: Maybe<T>) => x is option.Some<T>;",
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 134,
           "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L134",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L134",
         },
-        "type": "<T>(x: Maybe<T>) => x is any",
+        "type": "<T>(x: Maybe<T>) => x is option.Some<T>",
       },
       Object {
         "docs": Array [
@@ -4883,9 +4908,9 @@ Object {
         "name": "maybe",
         "signature": "maybe: {
     <T, V extends unknown>(value: V): V;
-    (value: any): any;
+    (value: any): option.None;
     <T>(value: any): any;
-    <T>(value: any): any;
+    <T>(value: any): option.Some<T>;
 };",
         "source": Object {
           "filename": "dist/index.d.ts",
@@ -4893,7 +4918,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L97",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L97",
         },
-        "type": "{ <T, V extends unknown>(value: V): V; (value: any): any; <T>(value: any): any; <T>(value: any): any; }",
+        "type": "{ <T, V extends unknown>(value: V): V; (value: any): option.None; <T>(value: any): any; <T>(value: any): option.Some<T>; }",
       },
       Object {
         "docs": Array [
@@ -4905,14 +4930,14 @@ Object {
         "id": "none",
         "kind": "FunctionDeclaration",
         "name": "none",
-        "signature": "none: () => any;",
+        "signature": "none: () => option.None;",
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 129,
           "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L129",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L129",
         },
-        "type": "() => any",
+        "type": "() => option.None",
       },
       Object {
         "docs": Array [
@@ -4930,14 +4955,14 @@ Object {
         "id": "ok",
         "kind": "FunctionDeclaration",
         "name": "ok",
-        "signature": "ok: { (): any; <T>(x: T): any };",
+        "signature": "ok: { (): Ok$1<T>; <T>(x: T): Ok$1<T> };",
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 46,
           "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L46",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L46",
         },
-        "type": "{ (): any; <T>(x: T): any; }",
+        "type": "{ (): Ok$1<T>; <T>(x: T): Ok$1<T>; }",
       },
       Object {
         "docs": Array [
@@ -4955,14 +4980,14 @@ Object {
         "id": "some",
         "kind": "FunctionDeclaration",
         "name": "some",
-        "signature": "some: { (): any; <T>(x: T): any };",
+        "signature": "some: { (): option.Some<T>; <T>(x: T): option.Some<T> };",
         "source": Object {
           "filename": "dist/index.d.ts",
           "line": 117,
           "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L117",
           "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L117",
         },
-        "type": "{ (): any; <T>(x: T): any; }",
+        "type": "{ (): option.Some<T>; <T>(x: T): option.Some<T>; }",
       },
     ],
     "interfaces": Array [
@@ -5068,7 +5093,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L619",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L619",
               },
-              "type": "any",
+              "type": "Channel",
             },
             Object {
               "docs": Array [],
@@ -5100,7 +5125,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L621",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L621",
               },
-              "type": "any",
+              "type": "DMChannel",
             },
             Object {
               "docs": Array [],
@@ -5132,7 +5157,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L623",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L623",
               },
-              "type": "any",
+              "type": "GuildChannel",
             },
             Object {
               "docs": Array [],
@@ -5148,7 +5173,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L624",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L624",
               },
-              "type": "any",
+              "type": "URL",
             },
             Object {
               "docs": Array [],
@@ -5180,7 +5205,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L626",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L626",
               },
-              "type": "any",
+              "type": "GuildMember",
             },
             Object {
               "docs": Array [],
@@ -5196,7 +5221,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L627",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L627",
               },
-              "type": "any",
+              "type": "Message",
             },
             Object {
               "docs": Array [],
@@ -5212,7 +5237,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L628",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L628",
               },
-              "type": "any",
+              "type": "NewsChannel",
             },
             Object {
               "docs": Array [],
@@ -5244,7 +5269,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L630",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L630",
               },
-              "type": "any",
+              "type": "Role",
             },
             Object {
               "docs": Array [],
@@ -5276,7 +5301,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L632",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L632",
               },
-              "type": "any",
+              "type": "TextChannel",
             },
             Object {
               "docs": Array [],
@@ -5292,7 +5317,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L633",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L633",
               },
-              "type": "any",
+              "type": "User",
             },
             Object {
               "docs": Array [],
@@ -5308,7 +5333,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L634",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L634",
               },
-              "type": "any",
+              "type": "VoiceChannel",
             },
           ],
         },
@@ -5393,7 +5418,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1159",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1159",
               },
-              "type": "any",
+              "type": "Message",
             },
             Object {
               "docs": Array [],
@@ -5686,7 +5711,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1782",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1782",
               },
-              "type": "any",
+              "type": "Message",
             },
             Object {
               "docs": Array [],
@@ -6124,14 +6149,14 @@ Object {
               "id": "IArgument.run",
               "kind": "InterfaceMethodDeclaration",
               "name": "run",
-              "signature": "run: (argument: string, context: ArgumentContext) => any;",
+              "signature": "run: (argument: string, context: ArgumentContext) => Awaited<any>;",
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 1077,
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1077",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1077",
               },
-              "type": "(argument: string, context: ArgumentContext) => any",
+              "type": "(argument: string, context: ArgumentContext) => Awaited<any>",
             },
           ],
           "properties": Array [
@@ -6206,7 +6231,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1785",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1785",
               },
-              "type": "any",
+              "type": "Message",
             },
           ],
         },
@@ -6398,7 +6423,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L1775",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L1775",
               },
-              "type": "any",
+              "type": "Piece",
             },
           ],
         },
@@ -6440,17 +6465,17 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "parallel",
               "signature": "parallel: (
-    message: any,
+    message: Message,
     command: Command,
     entries: readonly IPreconditionContainer[]
-) => any;",
+) => Awaited<any>;",
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 706,
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L706",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L706",
               },
-              "type": "(message: any, command: Command, entries: readonly IPreconditionContainer[]) => any",
+              "type": "(message: Message, command: Command, entries: readonly IPreconditionContainer[]) => Awaited<any>",
             },
             Object {
               "docs": Array [
@@ -6467,17 +6492,17 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "sequential",
               "signature": "sequential: (
-    message: any,
+    message: Message,
     command: Command,
     entries: readonly IPreconditionContainer[]
-) => any;",
+) => Awaited<any>;",
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 697,
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L697",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L697",
               },
-              "type": "(message: any, command: Command, entries: readonly IPreconditionContainer[]) => any",
+              "type": "(message: Message, command: Command, entries: readonly IPreconditionContainer[]) => Awaited<any>",
             },
           ],
           "properties": Array [],
@@ -6517,14 +6542,14 @@ Object {
               "id": "IPreconditionContainer.run",
               "kind": "InterfaceMethodDeclaration",
               "name": "run",
-              "signature": "run: (message: any, command: Command) => any;",
+              "signature": "run: (message: Message, command: Command) => Awaited<any>;",
               "source": Object {
                 "filename": "dist/index.d.ts",
                 "line": 681,
                 "unpkgURL": "https://unpkg.com/browse/@sapphire/framework@1.0.0-alpha.3/dist/index.d.ts#L681",
                 "url": "https://github.com/sapphire-project/framework/tree/1120d5fb140278550f03492e491145faaed102de/dist/index.d.ts#L681",
               },
-              "type": "(message: any, command: Command) => any",
+              "type": "(message: Message, command: Command) => Awaited<any>",
             },
           ],
           "properties": Array [],
