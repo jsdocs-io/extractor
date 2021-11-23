@@ -1,5 +1,7 @@
+/** @jest-environment setup-polly-jest/jest-environment-node */
+// See https://netflix.github.io/pollyjs/#/test-frameworks/jest-jasmine?id=supported-test-runners
+
 import NodeHttpAdapter from '@pollyjs/adapter-node-http';
-import { Polly } from '@pollyjs/core';
 import FSPersister from '@pollyjs/persister-fs';
 import * as path from 'path';
 import { setupPolly } from 'setup-polly-jest';
@@ -20,13 +22,14 @@ jest.mock('../../src/api-extractor/extract-package-api', () => ({
 const mockedTryDownloadPackage = mocked(tryDownloadPackage, true);
 const mockedExtractPackageAPI = mocked(extractPackageAPI, true);
 
-Polly.register(NodeHttpAdapter);
-Polly.register(FSPersister);
+// See https://github.com/gribnoysup/setup-polly-jest/issues/23#issuecomment-890494186
+// Polly.register(NodeHttpAdapter);
+// Polly.register(FSPersister);
 
 describe('analyzeRegistryPackage', () => {
     setupPolly({
-        adapters: ['node-http'],
-        persister: 'fs',
+        adapters: [NodeHttpAdapter],
+        persister: FSPersister,
         persisterOptions: {
             fs: {
                 recordingsDir: path.resolve(__dirname, '../../__recordings__'),
