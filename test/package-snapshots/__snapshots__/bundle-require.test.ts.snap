@@ -1,0 +1,215 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`bundle-require 2.1.2 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [],
+    "enums": Array [],
+    "functions": Array [
+      Object {
+        "docs": Array [],
+        "id": "bundleRequire",
+        "kind": "FunctionDeclaration",
+        "name": "bundleRequire",
+        "signature": "bundleRequire: (
+    options: Options
+) => Promise<{ mod: any; dependencies: string[] }>;",
+        "source": Object {
+          "filename": "dist/index.d.ts",
+          "line": 46,
+          "unpkgURL": "https://unpkg.com/browse/bundle-require@2.1.2/dist/index.d.ts#L46",
+          "url": undefined,
+        },
+        "type": "(options: Options) => Promise<{    mod: any;    dependencies: string[];}>",
+      },
+    ],
+    "interfaces": Array [
+      Object {
+        "docs": Array [],
+        "id": "Options",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+     * esbuild options
+     */",
+              ],
+              "id": "Options.esbuildOptions",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "esbuildOptions",
+              "signature": "esbuildOptions?: BuildOptions;",
+              "source": Object {
+                "filename": "dist/index.d.ts",
+                "line": 31,
+                "unpkgURL": "https://unpkg.com/browse/bundle-require@2.1.2/dist/index.d.ts#L31",
+                "url": undefined,
+              },
+              "type": "BuildOptions",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * The filepath to bundle and require
+     */",
+              ],
+              "id": "Options.filepath",
+              "isOptional": false,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "filepath",
+              "signature": "filepath: string;",
+              "source": Object {
+                "filename": "dist/index.d.ts",
+                "line": 21,
+                "unpkgURL": "https://unpkg.com/browse/bundle-require@2.1.2/dist/index.d.ts#L21",
+                "url": undefined,
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Get the path to the output file
+     * By default we simply replace the extension with \`.bundled.js\`
+     */",
+              ],
+              "id": "Options.getOutputFile",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "getOutputFile",
+              "signature": "getOutputFile?: (filepath: string) => string;",
+              "source": Object {
+                "filename": "dist/index.d.ts",
+                "line": 36,
+                "unpkgURL": "https://unpkg.com/browse/bundle-require@2.1.2/dist/index.d.ts#L36",
+                "url": undefined,
+              },
+              "type": "(filepath: string) => string",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * Enable watching and call the callback after each rebuild
+     */",
+              ],
+              "id": "Options.onRebuild",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "onRebuild",
+              "signature": "onRebuild?: (ctx: {
+    err?: BuildFailure;
+    mod?: any;
+    dependencies?: string[];
+}) => void;",
+              "source": Object {
+                "filename": "dist/index.d.ts",
+                "line": 40,
+                "unpkgURL": "https://unpkg.com/browse/bundle-require@2.1.2/dist/index.d.ts#L40",
+                "url": undefined,
+              },
+              "type": "(ctx: {    err?: BuildFailure;    mod?: any;    dependencies?: string[];}) => void",
+            },
+            Object {
+              "docs": Array [
+                "/**
+     * The \`require\` function that is used to load the output file
+     * Default to the global \`require\` function
+     * This function can be asynchronous, i.e. returns a Promise
+     */",
+              ],
+              "id": "Options.require",
+              "isOptional": true,
+              "isReadonly": false,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "require",
+              "signature": "require?: RequireFunction;",
+              "source": Object {
+                "filename": "dist/index.d.ts",
+                "line": 27,
+                "unpkgURL": "https://unpkg.com/browse/bundle-require@2.1.2/dist/index.d.ts#L27",
+                "url": undefined,
+              },
+              "type": "RequireFunction",
+            },
+          ],
+        },
+        "name": "Options",
+        "signature": "interface Options {}",
+        "source": Object {
+          "filename": "dist/index.d.ts",
+          "line": 17,
+          "unpkgURL": "https://unpkg.com/browse/bundle-require@2.1.2/dist/index.d.ts#L17",
+          "url": undefined,
+        },
+      },
+    ],
+    "namespaces": Array [],
+    "typeAliases": Array [
+      Object {
+        "docs": Array [],
+        "id": "RequireFunction",
+        "kind": "TypeAliasDeclaration",
+        "name": "RequireFunction",
+        "signature": "type RequireFunction = (
+    outfile: string,
+    ctx: {
+        format: 'cjs' | 'esm';
+    }
+) => any;",
+        "source": Object {
+          "filename": "dist/index.d.ts",
+          "line": 14,
+          "unpkgURL": "https://unpkg.com/browse/bundle-require@2.1.2/dist/index.d.ts#L14",
+          "url": undefined,
+        },
+      },
+    ],
+    "variables": Array [
+      Object {
+        "docs": Array [
+          "/**
+ * Dynamically import files. It will make sure it's not being compiled away by TS/Rollup.
+ *
+ * As a temporary workaround for Jest's lack of stable ESM support, we fallback to require
+ * if we're in a Jest environment.
+ * See https://github.com/vitejs/vite/pull/5197#issuecomment-938054077
+ *
+ * @param file File path to import.
+ */",
+        ],
+        "id": "dynamicImport",
+        "kind": "VariableDeclaration",
+        "name": "dynamicImport",
+        "signature": "const dynamicImport: RequireFunction;",
+        "source": Object {
+          "filename": "dist/index.d.ts",
+          "line": 12,
+          "unpkgURL": "https://unpkg.com/browse/bundle-require@2.1.2/dist/index.d.ts#L12",
+          "url": undefined,
+        },
+        "type": "RequireFunction",
+        "variableKind": "const",
+      },
+    ],
+  },
+  "files": Array [
+    Object {
+      "filename": "dist/index.d.ts",
+      "isIndexFile": true,
+      "unpkgURL": "https://unpkg.com/browse/bundle-require@2.1.2/dist/index.d.ts",
+      "url": undefined,
+    },
+  ],
+  "overview": undefined,
+}
+`;

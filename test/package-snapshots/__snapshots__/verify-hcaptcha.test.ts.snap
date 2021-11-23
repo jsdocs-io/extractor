@@ -1,0 +1,500 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`verify-hcaptcha 1.0.0 1`] = `
+Object {
+  "declarations": Object {
+    "classes": Array [],
+    "enums": Array [],
+    "functions": Array [
+      Object {
+        "docs": Array [
+          "/**
+ * \`rawVerifyHcaptchaToken\` verifies with the hCaptcha API that the response token
+ * obtained from a captcha challenge is valid and returns the raw hCaptcha response.
+ *
+ * @param token - required: the token obtained from a user with a captcha challenge
+ * @param secretKey - required: the secret key for your account
+ * @param siteKey - optional but recommended: the site key for the website hosting the captcha challenge
+ * @param remoteIp - optional: the IP address of the user submitting the challenge
+ *
+ * @returns a {@link RawHcaptchaResponse} with the verification result
+ */",
+        ],
+        "id": "rawVerifyHcaptchaToken",
+        "kind": "FunctionDeclaration",
+        "name": "rawVerifyHcaptchaToken",
+        "signature": "rawVerifyHcaptchaToken: ({
+    token,
+    secretKey,
+    siteKey,
+    remoteIp,
+}: {
+    token: string;
+    secretKey: string;
+    siteKey?: string;
+    remoteIp?: string;
+}) => Promise<RawHcaptchaResponse>;",
+        "source": Object {
+          "filename": "src/index.ts",
+          "line": 204,
+          "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L204",
+          "url": "https://github.com/velut/verify-hcaptcha/tree/v1.0.0/src/index.ts#L204",
+        },
+        "type": "({ token, secretKey, siteKey, remoteIp, }: {    token: string;    secretKey: string;    siteKey?: string;    remoteIp?: string;}) => Promise<RawHcaptchaResponse>",
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * \`verifyHcaptchaToken\` verifies with the hCaptcha API that the response token
+ * obtained from a captcha challenge is valid.
+ *
+ * @param token - required: the token obtained from a user with a captcha challenge
+ * @param secretKey - required: the secret key for your account
+ * @param siteKey - optional but recommended: the site key for the website hosting the captcha challenge
+ * @param remoteIp - optional: the IP address of the user submitting the challenge
+ *
+ * @returns a {@link HcaptchaResponse} with the verification result
+ */",
+        ],
+        "id": "verifyHcaptchaToken",
+        "kind": "FunctionDeclaration",
+        "name": "verifyHcaptchaToken",
+        "signature": "verifyHcaptchaToken: ({
+    token,
+    secretKey,
+    siteKey,
+    remoteIp,
+}: {
+    token: string;
+    secretKey: string;
+    siteKey?: string;
+    remoteIp?: string;
+}) => Promise<HcaptchaResponse>;",
+        "source": Object {
+          "filename": "src/index.ts",
+          "line": 156,
+          "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L156",
+          "url": "https://github.com/velut/verify-hcaptcha/tree/v1.0.0/src/index.ts#L156",
+        },
+        "type": "({ token, secretKey, siteKey, remoteIp, }: {    token: string;    secretKey: string;    siteKey?: string;    remoteIp?: string;}) => Promise<HcaptchaResponse>",
+      },
+    ],
+    "interfaces": Array [
+      Object {
+        "docs": Array [
+          "/**
+ * \`HcaptchaResponse\` represents the response to the verification challenge
+ * performed by calling {@link verifyHcaptchaToken}.
+ *
+ * @see {@link https://docs.hcaptcha.com/#verify-the-user-response-server-side}
+ */",
+        ],
+        "id": "HcaptchaResponse",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [
+                "/**
+   * Optional: UTC timestamp of the challenge in ISO 8601 format
+   * (for example, \`2021-10-02T18:12:10.149Z\`)
+   */",
+              ],
+              "id": "HcaptchaResponse.challengeTimestamp",
+              "isOptional": true,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "challengeTimestamp",
+              "signature": "readonly challengeTimestamp?: string;",
+              "source": Object {
+                "filename": "src/index.ts",
+                "line": 76,
+                "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L76",
+                "url": "https://github.com/velut/verify-hcaptcha/tree/v1.0.0/src/index.ts#L76",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/** Optional: true if the response will be credited */",
+              ],
+              "id": "HcaptchaResponse.credit",
+              "isOptional": true,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "credit",
+              "signature": "readonly credit?: boolean;",
+              "source": Object {
+                "filename": "src/index.ts",
+                "line": 82,
+                "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L82",
+                "url": "https://github.com/velut/verify-hcaptcha/tree/v1.0.0/src/index.ts#L82",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [
+                "/**
+   * Optional: list of error codes
+   *
+   * @see {@link HcaptchaError}
+   */",
+              ],
+              "id": "HcaptchaResponse.errorCodes",
+              "isOptional": true,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "errorCodes",
+              "signature": "readonly errorCodes?: HcaptchaError[];",
+              "source": Object {
+                "filename": "src/index.ts",
+                "line": 89,
+                "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L89",
+                "url": "https://github.com/velut/verify-hcaptcha/tree/v1.0.0/src/index.ts#L89",
+              },
+              "type": "HcaptchaError[]",
+            },
+            Object {
+              "docs": Array [
+                "/** Optional: hostname of the website where the challenge was solved */",
+              ],
+              "id": "HcaptchaResponse.hostname",
+              "isOptional": true,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "hostname",
+              "signature": "readonly hostname?: string;",
+              "source": Object {
+                "filename": "src/index.ts",
+                "line": 79,
+                "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L79",
+                "url": "https://github.com/velut/verify-hcaptcha/tree/v1.0.0/src/index.ts#L79",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [
+                "/** Enterprise-only feature: score for malicious activity */",
+              ],
+              "id": "HcaptchaResponse.score",
+              "isOptional": true,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "score",
+              "signature": "readonly score?: number;",
+              "source": Object {
+                "filename": "src/index.ts",
+                "line": 92,
+                "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L92",
+                "url": "https://github.com/velut/verify-hcaptcha/tree/v1.0.0/src/index.ts#L92",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [
+                "/** Enterprise-only feature: list of reasons for the malicious activity score */",
+              ],
+              "id": "HcaptchaResponse.scoreReasons",
+              "isOptional": true,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "scoreReasons",
+              "signature": "readonly scoreReasons?: string[];",
+              "source": Object {
+                "filename": "src/index.ts",
+                "line": 95,
+                "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L95",
+                "url": "https://github.com/velut/verify-hcaptcha/tree/v1.0.0/src/index.ts#L95",
+              },
+              "type": "string[]",
+            },
+            Object {
+              "docs": Array [
+                "/**
+   * True if the token is valid and meets the specified security criteria
+   * (for example, if the site key is associated to the secret key)
+   */",
+              ],
+              "id": "HcaptchaResponse.success",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "success",
+              "signature": "readonly success: boolean;",
+              "source": Object {
+                "filename": "src/index.ts",
+                "line": 70,
+                "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L70",
+                "url": "https://github.com/velut/verify-hcaptcha/tree/v1.0.0/src/index.ts#L70",
+              },
+              "type": "boolean",
+            },
+          ],
+        },
+        "name": "HcaptchaResponse",
+        "signature": "interface HcaptchaResponse {}",
+        "source": Object {
+          "filename": "src/index.ts",
+          "line": 65,
+          "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L65",
+          "url": "https://github.com/velut/verify-hcaptcha/tree/v1.0.0/src/index.ts#L65",
+        },
+      },
+      Object {
+        "docs": Array [
+          "/**
+ * \`RawHcaptchaResponse\` represents the raw response to the verification challenge
+ * obtained by directly calling the hCaptcha API endpoint
+ * with {@link rawVerifyHcaptchaToken}.
+ *
+ * @see {@link https://docs.hcaptcha.com/#verify-the-user-response-server-side}
+ */",
+        ],
+        "id": "RawHcaptchaResponse",
+        "kind": "InterfaceDeclaration",
+        "members": Object {
+          "callSignatures": Array [],
+          "constructSignatures": Array [],
+          "indexSignatures": Array [],
+          "methods": Array [],
+          "properties": Array [
+            Object {
+              "docs": Array [],
+              "id": "RawHcaptchaResponse.\\"error-codes\\"",
+              "isOptional": true,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "\\"error-codes\\"",
+              "signature": "readonly 'error-codes'?: string[];",
+              "source": Object {
+                "filename": "src/index.ts",
+                "line": 140,
+                "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L140",
+                "url": "https://github.com/velut/verify-hcaptcha/tree/v1.0.0/src/index.ts#L140",
+              },
+              "type": "string[]",
+            },
+            Object {
+              "docs": Array [],
+              "id": "RawHcaptchaResponse.challenge_ts",
+              "isOptional": true,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "challenge_ts",
+              "signature": "readonly challenge_ts?: string;",
+              "source": Object {
+                "filename": "src/index.ts",
+                "line": 137,
+                "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L137",
+                "url": "https://github.com/velut/verify-hcaptcha/tree/v1.0.0/src/index.ts#L137",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "RawHcaptchaResponse.credit",
+              "isOptional": true,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "credit",
+              "signature": "readonly credit?: boolean;",
+              "source": Object {
+                "filename": "src/index.ts",
+                "line": 139,
+                "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L139",
+                "url": "https://github.com/velut/verify-hcaptcha/tree/v1.0.0/src/index.ts#L139",
+              },
+              "type": "boolean",
+            },
+            Object {
+              "docs": Array [],
+              "id": "RawHcaptchaResponse.hostname",
+              "isOptional": true,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "hostname",
+              "signature": "readonly hostname?: string;",
+              "source": Object {
+                "filename": "src/index.ts",
+                "line": 138,
+                "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L138",
+                "url": "https://github.com/velut/verify-hcaptcha/tree/v1.0.0/src/index.ts#L138",
+              },
+              "type": "string",
+            },
+            Object {
+              "docs": Array [],
+              "id": "RawHcaptchaResponse.score",
+              "isOptional": true,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "score",
+              "signature": "readonly score?: number;",
+              "source": Object {
+                "filename": "src/index.ts",
+                "line": 141,
+                "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L141",
+                "url": "https://github.com/velut/verify-hcaptcha/tree/v1.0.0/src/index.ts#L141",
+              },
+              "type": "number",
+            },
+            Object {
+              "docs": Array [],
+              "id": "RawHcaptchaResponse.score_reason",
+              "isOptional": true,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "score_reason",
+              "signature": "readonly score_reason?: string[];",
+              "source": Object {
+                "filename": "src/index.ts",
+                "line": 142,
+                "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L142",
+                "url": "https://github.com/velut/verify-hcaptcha/tree/v1.0.0/src/index.ts#L142",
+              },
+              "type": "string[]",
+            },
+            Object {
+              "docs": Array [],
+              "id": "RawHcaptchaResponse.success",
+              "isOptional": false,
+              "isReadonly": true,
+              "kind": "InterfacePropertyDeclaration",
+              "name": "success",
+              "signature": "readonly success: boolean;",
+              "source": Object {
+                "filename": "src/index.ts",
+                "line": 136,
+                "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L136",
+                "url": "https://github.com/velut/verify-hcaptcha/tree/v1.0.0/src/index.ts#L136",
+              },
+              "type": "boolean",
+            },
+          ],
+        },
+        "name": "RawHcaptchaResponse",
+        "signature": "interface RawHcaptchaResponse {}",
+        "source": Object {
+          "filename": "src/index.ts",
+          "line": 135,
+          "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L135",
+          "url": "https://github.com/velut/verify-hcaptcha/tree/v1.0.0/src/index.ts#L135",
+        },
+      },
+    ],
+    "namespaces": Array [],
+    "typeAliases": Array [
+      Object {
+        "docs": Array [
+          "/**
+ * \`HcaptchaError\` collects the errors explaining why a verification challenge failed.
+ *
+ * @see {@link HcaptchaResponse}
+ * @see {@link https://docs.hcaptcha.com/#siteverify-error-codes-table}
+ */",
+        ],
+        "id": "HcaptchaError",
+        "kind": "TypeAliasDeclaration",
+        "name": "HcaptchaError",
+        "signature": "type HcaptchaError =
+    /** Secret key is missing */
+    | 'missing-input-secret'
+    /** Secret key is invalid */
+    | 'invalid-input-secret'
+    /** User response token is missing */
+    | 'missing-input-response'
+    /** User response token is invalid */
+    | 'invalid-input-response'
+    /** Site key is invalid */
+    | 'invalid-sitekey'
+    /** Remote user IP is invalid */
+    | 'invalid-remoteip'
+    /** Request is invalid */
+    | 'bad-request'
+    /** User response token is invalid or has already been checked */
+    | 'invalid-or-already-seen-response'
+    /** Must use the test site key when using a test verification token */
+    | 'not-using-dummy-passcode'
+    /** Must use the test secret key when using a test verification token */
+    | 'not-using-dummy-secret'
+    /** The site key is not associated to the secret key */
+    | 'sitekey-secret-mismatch';",
+        "source": Object {
+          "filename": "src/index.ts",
+          "line": 104,
+          "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L104",
+          "url": "https://github.com/velut/verify-hcaptcha/tree/v1.0.0/src/index.ts#L104",
+        },
+      },
+    ],
+    "variables": Array [],
+  },
+  "files": Array [
+    Object {
+      "filename": "src/index.ts",
+      "isIndexFile": true,
+      "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts",
+      "url": "https://github.com/velut/verify-hcaptcha/tree/v1.0.0/src/index.ts",
+    },
+  ],
+  "overview": "/**
+ *
+ * A no dependencies, fully typed library to verify hCaptcha tokens
+ * submitted by users when solving CAPTCHA challenges.
+ *
+ * @remarks
+ *
+ * Note: this is an unofficial library; we are not affiliated with hCaptcha.com
+ *
+ * @example
+ *
+ * Verify a token submitted by a user:
+ *
+ * \`\`\`typescript
+ * import { verifyHcaptchaToken } from 'verify-hcaptcha';
+ *
+ * (async () => {
+ *     const result = await verifyHcaptchaToken({
+ *       token: \\"USER-SUBMITTED-RESPONSE-TOKEN\\",
+ *       secretKey: \\"YOUR-SECRET-KEY\\",
+ *       siteKey: \\"YOUR-SITE-KEY\\",
+ *     });
+ *
+ *     if (result.success) {
+ *       console.log(\\"User is human\\");
+ *     } else {
+ *       console.log(\\"User is robot\\");
+ *     }
+ * })();
+ * \`\`\`
+ *
+ * @example
+ *
+ * Verify a token submitted by a user and get the raw response from hCaptcha:
+ *
+ * \`\`\`typescript
+ * import { rawVerifyHcaptchaToken } from 'verify-hcaptcha';
+ *
+ * (async () => {
+ *     const result = await rawVerifyHcaptchaToken({
+ *       token: \\"USER-SUBMITTED-RESPONSE-TOKEN\\",
+ *       secretKey: \\"YOUR-SECRET-KEY\\",
+ *       siteKey: \\"YOUR-SITE-KEY\\",
+ *     });
+ *
+ *     if (result.success) {
+ *       console.log(\\"User is human\\");
+ *     } else {
+ *       console.log(\\"User is robot\\");
+ *     }
+ * })();
+ * \`\`\`
+ *
+ * @packageDocumentation
+ */",
+}
+`;
