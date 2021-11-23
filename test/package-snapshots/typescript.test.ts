@@ -3,7 +3,7 @@ import { expectPackageAPIToMatchSnapshot } from '../helpers/expect-package-api-t
 describe('typescript', () => {
     const name = 'typescript';
 
-    it('4.1.3', async () => {
-        await expectPackageAPIToMatchSnapshot({ name, version: '4.1.3' });
+    it('4.5.2', async () => {
+        await expectPackageAPIToMatchSnapshot({ name, version: '4.5.2' });
     });
 });
