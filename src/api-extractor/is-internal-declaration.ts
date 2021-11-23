@@ -23,7 +23,7 @@ function hasPrivateModifier({
     declaration: tsm.Node;
 }): boolean {
     return (
-        tsm.Node.isModifierableNode(declaration) &&
+        tsm.Node.isModifierable(declaration) &&
         declaration.hasModifier(tsm.SyntaxKind.PrivateKeyword)
     );
 }

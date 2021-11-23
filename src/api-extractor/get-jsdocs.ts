@@ -34,7 +34,7 @@ function getDeclarationsWithDocs({
     // Exclude constructors since their signatures are built manually and
     // thus each constructor needs its own doc.
     if (
-        tsm.Node.isOverloadableNode(declaration) &&
+        tsm.Node.isOverloadable(declaration) &&
         !tsm.Node.isConstructorDeclaration(declaration)
     ) {
         const overloads = declaration.getOverloads();
