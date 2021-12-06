@@ -1531,22 +1531,22 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@pollyjs/adapter-node-http@5.1.1":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@pollyjs/adapter-node-http/-/adapter-node-http-5.1.1.tgz#b717f28eda10e76e80c821f33d71b1cf064f41d0"
-  integrity sha512-hN4pemkI4Wb+jAloezZrKDCqQUAlIXcgRXtrG6CZseE14QVQ8zl2I1RakUnEHBgeRWtvl5ve6uJrFNGdE8mrLA==
+"@pollyjs/adapter-node-http@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@pollyjs/adapter-node-http/-/adapter-node-http-6.0.0.tgz#536730a6d1782fc0ae608ea026d9295c34a8f3a3"
+  integrity sha512-dAXP3lhn+DXnMMeboBMetZKWKrSDtSa/JG/s2YpzfrRaxbPJx+i6VBYWUmd7YmsyyqPSmStm+vq+MkjPx1LNQw==
   dependencies:
-    "@pollyjs/adapter" "^5.1.1"
-    "@pollyjs/utils" "^5.1.1"
-    lodash-es "^4.17.11"
-    nock "^12.0.3"
+    "@pollyjs/adapter" "^6.0.0"
+    "@pollyjs/utils" "^6.0.0"
+    lodash-es "^4.17.21"
+    nock "^13.2.1"
 
-"@pollyjs/adapter@^5.1.1":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@pollyjs/adapter/-/adapter-5.1.1.tgz#ef55788dd59ba77589b884856406323fff700606"
-  integrity sha512-4Ju6batDrkqyhYFhmKhjDTIbkfj0p0kZslCQ/saA1JMWIqlFnrXMiJVCSVlwNEsej3Zt/n9JfU5mEzbXxi+3vg==
+"@pollyjs/adapter@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@pollyjs/adapter/-/adapter-6.0.0.tgz#d9552049f984ed1af704744601d47b64e0ab203c"
+  integrity sha512-Mtz52UrByy5QadREUfijB+U+mwwCDtEBYk3PtF7Dg3MdGvWMb7rYPX0+fIfRCddGiwbooJtKMpWmSZovvxz41Q==
   dependencies:
-    "@pollyjs/utils" "^5.1.1"
+    "@pollyjs/utils" "^6.0.0"
 
 "@pollyjs/core@6.0.0":
   version "6.0.0"
@@ -7405,7 +7405,7 @@ lodash.zip@^4.2.0:
   resolved "https://registry.yarnpkg.com/lodash.zip/-/lodash.zip-4.2.0.tgz#ec6662e4896408ed4ab6c542a3990b72cc080020"
   integrity sha1-7GZi5IlkCO1KtsVCo5kLcswIACA=
 
-lodash@^4.14.0, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.21, lodash@^4.7.0:
+lodash@^4.14.0, lodash@^4.17.12, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.21, lodash@^4.7.0:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -8032,7 +8032,7 @@ nocache@^2.1.0:
   resolved "https://registry.yarnpkg.com/nocache/-/nocache-2.1.0.tgz#120c9ffec43b5729b1d5de88cd71aa75a0ba491f"
   integrity sha512-0L9FvHG3nfnnmaEQPjT9xhfN4ISk0A8/2j4M37Np4mcDesJjHgEUfgPhdCyZuFI954tjokaIj/A3NdpFNdEh4Q==
 
-nock@13.2.1:
+nock@13.2.1, nock@^13.2.1:
   version "13.2.1"
   resolved "https://registry.yarnpkg.com/nock/-/nock-13.2.1.tgz#fcf5bdb9bb9f0554a84c25d3333166c0ffd80858"
   integrity sha512-CoHAabbqq/xZEknubuyQMjq6Lfi5b7RtK6SoNK6m40lebGp3yiMagWtIoYaw2s9sISD7wPuCfwFpivVHX/35RA==
@@ -8040,16 +8040,6 @@ nock@13.2.1:
     debug "^4.1.0"
     json-stringify-safe "^5.0.1"
     lodash.set "^4.3.2"
-    propagate "^2.0.0"
-
-nock@^12.0.3:
-  version "12.0.3"
-  resolved "https://registry.yarnpkg.com/nock/-/nock-12.0.3.tgz#83f25076dbc4c9aa82b5cdf54c9604c7a778d1c9"
-  integrity sha512-QNb/j8kbFnKCiyqi9C5DD0jH/FubFGj5rt9NQFONXwQm3IPB0CULECg/eS3AU1KgZb/6SwUa4/DTRKhVxkGABw==
-  dependencies:
-    debug "^4.1.0"
-    json-stringify-safe "^5.0.1"
-    lodash "^4.17.13"
     propagate "^2.0.0"
 
 node-fetch@^2.6.1:
