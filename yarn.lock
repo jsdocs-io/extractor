@@ -1598,7 +1598,7 @@
     set-cookie-parser "^2.4.8"
     utf8-byte-length "^1.0.4"
 
-"@pollyjs/utils@^6.0.0", "@pollyjs/utils@^6.0.1":
+"@pollyjs/utils@^6.0.1":
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/@pollyjs/utils/-/utils-6.0.1.tgz#215f53d6af71c44911c9e760c0669922bbcf04a6"
   integrity sha512-vTdtYhZs/HcBQM3Po85BDmuOpjMwvuQPkSdd9Cd4lUSc8HEO4d52dljtmwlwW83zVuQvlEu5xFIZJUYhX8HxLA==
@@ -10553,10 +10553,10 @@ ts-dedent@2.2.0:
   resolved "https://registry.yarnpkg.com/ts-dedent/-/ts-dedent-2.2.0.tgz#39e4bd297cd036292ae2394eb3412be63f563bb5"
   integrity sha512-q5W7tVM71e2xjHZTlgfTDoPF/SmqKG5hddq9SzR49CH2hayqRKJtQ4mtRlSxKaJlR/+9rEM+mnBHf7I2/BQcpQ==
 
-ts-jest@27.1.1, ts-jest@^27.0.7:
-  version "27.1.1"
-  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-27.1.1.tgz#5a54aca96db1dac37c681f3029dd10f3a8c36192"
-  integrity sha512-Ds0VkB+cB+8g2JUmP/GKWndeZcCKrbe6jzolGrVWdqVUFByY/2KDHqxJ7yBSon7hDB1TA4PXxjfZ+JjzJisvgA==
+ts-jest@27.1.2, ts-jest@^27.0.7:
+  version "27.1.2"
+  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-27.1.2.tgz#5991d6eb3fd8e1a8d4b8f6de3ec0a3cc567f3151"
+  integrity sha512-eSOiJOWq6Hhs6Khzk5wKC5sgWIXgXqOCiIl1+3lfnearu58Hj4QpE5tUhQcA3xtZrELbcvAGCsd6HB8OsaVaTA==
   dependencies:
     bs-logger "0.x"
     fast-json-stable-stringify "2.x"
