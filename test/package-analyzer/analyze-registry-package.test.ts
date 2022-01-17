@@ -5,7 +5,6 @@ import NodeHttpAdapter from '@pollyjs/adapter-node-http';
 import FSPersister from '@pollyjs/persister-fs';
 import * as path from 'path';
 import { setupPolly } from 'setup-polly-jest';
-import { mocked } from 'ts-jest/utils';
 import * as tsm from 'ts-morph';
 import { analyzeRegistryPackage } from '../../src';
 import { extractPackageAPI } from '../../src/api-extractor/extract-package-api';
@@ -19,8 +18,8 @@ jest.mock('../../src/api-extractor/extract-package-api', () => ({
     extractPackageAPI: jest.fn(),
 }));
 
-const mockedTryDownloadPackage = mocked(tryDownloadPackage, true);
-const mockedExtractPackageAPI = mocked(extractPackageAPI, true);
+const mockedTryDownloadPackage = jest.mocked(tryDownloadPackage, true);
+const mockedExtractPackageAPI = jest.mocked(extractPackageAPI, true);
 
 // See https://github.com/gribnoysup/setup-polly-jest/issues/23#issuecomment-890494186
 // Polly.register(NodeHttpAdapter);
