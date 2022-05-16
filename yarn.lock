@@ -9321,9 +9321,9 @@ qs@~6.5.2:
   integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
 
 query-registry@^2.0.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/query-registry/-/query-registry-2.3.0.tgz#022ddf65788a8c135f7d74e6a94fd3c97581d414"
-  integrity sha512-FK38U+4H7VpDWROIioL/PB1R2TjLfrzAR6yyDwjxY2cfsDiWLUgWFuuFx53WXEk0gy468k0dAphzYOewHH4xig==
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/query-registry/-/query-registry-2.4.0.tgz#cc43a35a4af4e0f941582e20ad53e75377b5c225"
+  integrity sha512-NkWBmqfo8CdsVdTIWkYoGNUaHxgK4F0CPWT0MWegz/wp/leNks0zgbNYV3D+IZs0Hqoo8ENPKHfnymB2k3L7QA==
   dependencies:
     git-url-parse "^11.4.4"
     isomorphic-unfetch "^3.1.0"
