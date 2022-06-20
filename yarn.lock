@@ -8338,10 +8338,10 @@ nocache@^3.0.1:
   resolved "https://registry.yarnpkg.com/nocache/-/nocache-3.0.1.tgz#54d8b53a7e0a0aa1a288cfceab8a3cefbcde67d4"
   integrity sha512-Gh39xwJwBKy0OvFmWfBs/vDO4Nl7JhnJtkqNP76OUinQz7BiMoszHYrIDHHAaqVl/QKVxCEy4ZxC/XZninu7nQ==
 
-nock@13.2.6, nock@^13.2.1:
-  version "13.2.6"
-  resolved "https://registry.yarnpkg.com/nock/-/nock-13.2.6.tgz#35e419cd9d385ffa67e59523d9699e41b29e1a03"
-  integrity sha512-GbyeSwSEP0FYouzETZ0l/XNm5tNcDNcXJKw3LCAb+mx8bZSwg1wEEvdL0FAyg5TkBJYiWSCtw6ag4XfmBy60FA==
+nock@13.2.7, nock@^13.2.1:
+  version "13.2.7"
+  resolved "https://registry.yarnpkg.com/nock/-/nock-13.2.7.tgz#c93933b61df42f4f4b3a07fde946a4e209c0c168"
+  integrity sha512-R6NUw7RIPtKwgK7jskuKoEi4VFMqIHtV2Uu9K/Uegc4TA5cqe+oNMYslZcUmnVNQCTG6wcSqUBaGTDd7sq5srg==
   dependencies:
     debug "^4.1.0"
     json-stringify-safe "^5.0.1"
