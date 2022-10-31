@@ -1601,7 +1601,7 @@
   dependencies:
     "@pollyjs/utils" "^6.0.1"
 
-"@pollyjs/core@6.0.5":
+"@pollyjs/core@6.0.5", "@pollyjs/core@^6.0.5":
   version "6.0.5"
   resolved "https://registry.yarnpkg.com/@pollyjs/core/-/core-6.0.5.tgz#e4e3eaf3e0c6a289ec7f558cb2d03a44317989c1"
   integrity sha512-LwKj20QT+VtDTv3HslK1KseTnNP04J8giz71W8RmwjYDSC5PRQvqcY3t86xd9xgVgbfN29in9ZYjAotqsmbyOw==
@@ -2101,12 +2101,14 @@
   dependencies:
     "@types/node" "*"
 
-"@types/setup-polly-jest@0.5.1":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@types/setup-polly-jest/-/setup-polly-jest-0.5.1.tgz#34548db71561e922b3d748ea89973868fc59b52c"
-  integrity sha512-YNyz4ANZOtmZxQMQOU2q43jjacEGKWywDTL8CkIBSosmRL7HEgoelcI3GyXSrmlennCCmvC/NEenHYFSqYMg+A==
+"@types/setup-polly-jest@0.5.2":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@types/setup-polly-jest/-/setup-polly-jest-0.5.2.tgz#c5797f35b6c25b127a5e8f829984a14b91f0260e"
+  integrity sha512-cvTA/xuf6WLjt7F8wSt6h5OU7c++ukXX6z959DPDnRwHq8rVcZPeqtq6lisKMaJP67Xkqn5vfCUftY2LphZntw==
   dependencies:
-    "@types/pollyjs__core" "*"
+    "@pollyjs/adapter" "^6.0.4"
+    "@pollyjs/core" "^6.0.5"
+    "@pollyjs/persister" "^6.0.5"
 
 "@types/stack-utils@^2.0.0":
   version "2.0.1"
