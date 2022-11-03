@@ -18665,7 +18665,7 @@ Object {
                 "unpkgURL": "https://unpkg.com/browse/@types/react@17.0.0/index.d.ts#L396",
                 "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react/index.d.ts#L396",
               },
-              "type": "ReactNode",
+              "type": "NonNullable<ReactNode>",
             },
           ],
         },
