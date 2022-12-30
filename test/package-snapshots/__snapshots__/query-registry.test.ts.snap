@@ -4344,7 +4344,7 @@ Object {
         "name": "getDailyPackageDownloads",
         "signature": "getDailyPackageDownloads: ({
     name,
-    period,
+    period: rawDownloadPeriod,
     registryDownloadsAPI,
     cached,
 }: {
@@ -4359,7 +4359,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/get-daily-package-downloads.ts#L55",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/get-daily-package-downloads.ts#L55",
         },
-        "type": "({ name, period, registryDownloadsAPI, cached, }: { name: string; period?: DownloadPeriod; registryDownloadsAPI?: string; cached?: boolean; }) => Promise<DailyPackageDownloads>",
+        "type": "({ name, period: rawDownloadPeriod, registryDownloadsAPI, cached, }: { name: string; period?: DownloadPeriod; registryDownloadsAPI?: string; cached?: boolean; }) => Promise<DailyPackageDownloads>",
       },
       Object {
         "docs": Array [
@@ -4409,7 +4409,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "getDailyRegistryDownloads",
         "signature": "getDailyRegistryDownloads: ({
-    period,
+    period: rawDownloadPeriod,
     registryDownloadsAPI,
     cached,
 }?: {
@@ -4423,7 +4423,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/get-daily-registry-downloads.ts#L47",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/get-daily-registry-downloads.ts#L47",
         },
-        "type": "({ period, registryDownloadsAPI, cached, }?: { period?: DownloadPeriod; registryDownloadsAPI?: string; cached?: boolean; }) => Promise<DailyRegistryDownloads>",
+        "type": "({ period: rawDownloadPeriod, registryDownloadsAPI, cached, }?: { period?: DownloadPeriod; registryDownloadsAPI?: string; cached?: boolean; }) => Promise<DailyRegistryDownloads>",
       },
       Object {
         "docs": Array [
@@ -4481,7 +4481,7 @@ Object {
         "name": "getPackageDownloads",
         "signature": "getPackageDownloads: ({
     name,
-    period,
+    period: rawDownloadPeriod,
     registryDownloadsAPI,
     cached,
 }: {
@@ -4496,7 +4496,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/get-package-downloads.ts#L55",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/get-package-downloads.ts#L55",
         },
-        "type": "({ name, period, registryDownloadsAPI, cached, }: { name: string; period?: DownloadPeriod; registryDownloadsAPI?: string; cached?: boolean; }) => Promise<PackageDownloads>",
+        "type": "({ name, period: rawDownloadPeriod, registryDownloadsAPI, cached, }: { name: string; period?: DownloadPeriod; registryDownloadsAPI?: string; cached?: boolean; }) => Promise<PackageDownloads>",
       },
       Object {
         "docs": Array [
@@ -4800,7 +4800,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "getRegistryDownloads",
         "signature": "getRegistryDownloads: ({
-    period,
+    period: rawDownloadPeriod,
     registryDownloadsAPI,
     cached,
 }?: {
@@ -4814,7 +4814,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/get-registry-downloads.ts#L47",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/get-registry-downloads.ts#L47",
         },
-        "type": "({ period, registryDownloadsAPI, cached, }?: { period?: DownloadPeriod; registryDownloadsAPI?: string; cached?: boolean; }) => Promise<RegistryDownloads>",
+        "type": "({ period: rawDownloadPeriod, registryDownloadsAPI, cached, }?: { period?: DownloadPeriod; registryDownloadsAPI?: string; cached?: boolean; }) => Promise<RegistryDownloads>",
       },
       Object {
         "docs": Array [
@@ -4905,7 +4905,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "searchPackages",
         "signature": "searchPackages: ({
-    query,
+    query: rawSearchCriteria,
     registry,
     mirrors,
     cached,
@@ -4921,7 +4921,7 @@ Object {
           "unpkgURL": "https://unpkg.com/browse/query-registry@2.0.0-0/src/endpoints/search-packages.ts#L33",
           "url": "https://github.com/velut/node-query-registry/tree/v2.0.0-0/src/endpoints/search-packages.ts#L33",
         },
-        "type": "({ query, registry, mirrors, cached, }: { query: SearchCriteria; registry?: string; mirrors?: string[]; cached?: boolean; }) => Promise<SearchResults>",
+        "type": "({ query: rawSearchCriteria, registry, mirrors, cached, }: { query: SearchCriteria; registry?: string; mirrors?: string[]; cached?: boolean; }) => Promise<SearchResults>",
       },
     ],
     "interfaces": Array [
