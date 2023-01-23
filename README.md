@@ -1,6 +1,6 @@
 # @jsdocs-io/extractor
 
-[![Build status](https://img.shields.io/github/workflow/status/jsdocs-io/extractor/CI/main)](https://github.com/jsdocs-io/extractor/actions?query=workflow%3ACI)
+[![Build status](https://img.shields.io/github/actions/workflow/status/jsdocs-io/extractor/main.yml?branch=main)](https://github.com/jsdocs-io/extractor/actions?query=workflow%3ACI)
 [![Coverage](https://img.shields.io/codecov/c/gh/jsdocs-io/extractor)](https://codecov.io/gh/jsdocs-io/extractor)
 [![jsDocs.io](https://img.shields.io/badge/jsDocs.io-reference-blue)](https://www.jsdocs.io/package/@jsdocs-io/extractor)
 ![Language](https://img.shields.io/github/languages/top/jsdocs-io/extractor)
