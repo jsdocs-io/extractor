@@ -3565,10 +3565,10 @@ cli-width@^3.0.0:
   resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-3.0.0.tgz#a2f48437a2caa9a22436e794bf071ec9e61cedf6"
   integrity sha512-FxqpkPPwu1HjuN93Omfm4h8uIanXofW0RxVEW3k5RKx+mJJYSthzNhp32Kzxxy3YAEZ/Dc/EWN1vZRY0+kOhbw==
 
-clinic@12.0.0:
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/clinic/-/clinic-12.0.0.tgz#87cdd26ca2f28a93fdf4fbf6bb50ac6eeda156a2"
-  integrity sha512-8qCOpodVGEIFdqf4Ax3T4vPAgaGOC02zJWVoM1Yk6SeAGf9cCiBw7pkND9dldeeDHQwpzweuoPZwLKv7/fab6A==
+clinic@12.1.0:
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/clinic/-/clinic-12.1.0.tgz#9f40db66dbbfd278ca26e9cbe446df2e578033fb"
+  integrity sha512-3blFGXMfuHERn33jL7qZYoFTXLgHuz0mL2icDa7KykOvRJtGAeYwOCqeHjedB1q069B/FrCA03mKqNtN72jRlA==
   dependencies:
     "@clinic/bubbleprof" "^9.0.0"
     "@clinic/doctor" "^10.0.0"
