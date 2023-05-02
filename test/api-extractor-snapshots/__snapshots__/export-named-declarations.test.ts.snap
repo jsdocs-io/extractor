@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`export-named-declarations snapshot 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [
-      Object {
-        "constructors": Array [],
-        "docs": Array [
+{
+  "declarations": {
+    "classes": [
+      {
+        "constructors": [],
+        "docs": [
           "/**
  * Class001
  */",
@@ -14,159 +14,159 @@ Object {
         "id": "Class001",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "Class001",
         "signature": "class Class001 {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 4,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [],
+      {
+        "constructors": [],
+        "docs": [],
         "id": "Class002",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "Class002",
         "signature": "class Class002 extends Class001 {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 6,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [],
+      {
+        "constructors": [],
+        "docs": [],
         "id": "Class003",
         "isAbstract": true,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "Class003",
         "signature": "abstract class Class003 {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 8,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [],
+      {
+        "constructors": [],
+        "docs": [],
         "id": "Class004",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "Class004",
         "signature": "class Class004 implements A, B {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 13,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [],
+      {
+        "constructors": [],
+        "docs": [],
         "id": "Class005",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "Class005",
         "signature": "class Class005 extends Class003 implements A, B {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 15,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [],
+      {
+        "constructors": [],
+        "docs": [],
         "id": "Class006",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "Class006",
         "signature": "class Class006<T> {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 18,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [],
+      {
+        "constructors": [],
+        "docs": [],
         "id": "Class007",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "Class007",
         "signature": "class Class007<T extends object, U, V extends keyof T>
     extends Class003
     implements A, B {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 20,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "constructors": Array [
-          Object {
-            "docs": Array [
+      {
+        "constructors": [
+          {
+            "docs": [
               "/** Constructor */",
             ],
             "id": "Class008.0-constructor",
             "kind": "ClassConstructorDeclaration",
             "name": "constructor",
             "signature": "constructor(foo: any, bar: any);",
-            "source": Object {
+            "source": {
               "filename": "classes.ts",
               "line": 25,
               "unpkgURL": undefined,
               "url": undefined,
             },
           },
-          Object {
-            "docs": Array [],
+          {
+            "docs": [],
             "id": "Class008.1-constructor",
             "kind": "ClassConstructorDeclaration",
             "name": "constructor",
             "signature": "constructor(foo: string, bar: number);",
-            "source": Object {
+            "source": {
               "filename": "classes.ts",
               "line": 26,
               "unpkgURL": undefined,
@@ -174,32 +174,32 @@ Object {
             },
           },
         ],
-        "docs": Array [],
+        "docs": [],
         "id": "Class008",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "Class008",
         "signature": "class Class008 {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 23,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "constructors": Array [
-          Object {
-            "docs": Array [],
+      {
+        "constructors": [
+          {
+            "docs": [],
             "id": "Class009.0-constructor",
             "kind": "ClassConstructorDeclaration",
             "name": "constructor",
             "signature": "protected constructor(foo: string, bar: number);",
-            "source": Object {
+            "source": {
               "filename": "classes.ts",
               "line": 33,
               "unpkgURL": undefined,
@@ -207,52 +207,52 @@ Object {
             },
           },
         ],
-        "docs": Array [],
+        "docs": [],
         "id": "Class009",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "Class009",
         "signature": "class Class009 {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 32,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [],
+      {
+        "constructors": [],
+        "docs": [],
         "id": "Class010",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "Class010",
         "signature": "class Class010 {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 39,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [],
+      {
+        "constructors": [],
+        "docs": [],
         "id": "Class011",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "methods": [
+            {
+              "docs": [
                 "/** Bar */",
               ],
               "id": "Class011.bar",
@@ -260,7 +260,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "bar",
               "signature": "static bar: () => number;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 53,
                 "unpkgURL": undefined,
@@ -269,9 +269,9 @@ Object {
               "type": "() => number",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [
+          "properties": [
+            {
+              "docs": [
                 "/** Get bat */",
               ],
               "id": "Class011.bat",
@@ -279,7 +279,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "bat",
               "signature": "static readonly bat: string;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 69,
                 "unpkgURL": undefined,
@@ -287,8 +287,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** Get baz */",
               ],
               "id": "Class011.baz",
@@ -296,7 +296,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "baz",
               "signature": "static baz: number;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 58,
                 "unpkgURL": undefined,
@@ -304,8 +304,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** Foo */",
               ],
               "id": "Class011.foo",
@@ -313,7 +313,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "foo",
               "signature": "static readonly foo: string;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 50,
                 "unpkgURL": undefined,
@@ -325,23 +325,23 @@ Object {
         },
         "name": "Class011",
         "signature": "class Class011 {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 46,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [],
+      {
+        "constructors": [],
+        "docs": [],
         "id": "Class012",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "methods": [
+            {
+              "docs": [
                 "/** Bar */",
               ],
               "id": "Class012.bar",
@@ -349,7 +349,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "bar",
               "signature": "bar: () => number;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 84,
                 "unpkgURL": undefined,
@@ -358,9 +358,9 @@ Object {
               "type": "() => number",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [
+          "properties": [
+            {
+              "docs": [
                 "/** Get bat */",
               ],
               "id": "Class012.bat",
@@ -368,7 +368,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "bat",
               "signature": "readonly bat: string;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 100,
                 "unpkgURL": undefined,
@@ -376,8 +376,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** Get baz */",
               ],
               "id": "Class012.baz",
@@ -385,7 +385,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "baz",
               "signature": "baz: number;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 89,
                 "unpkgURL": undefined,
@@ -393,8 +393,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** Foo */",
               ],
               "id": "Class012.foo",
@@ -402,7 +402,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "foo",
               "signature": "readonly foo: string;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 78,
                 "unpkgURL": undefined,
@@ -410,8 +410,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** Foobar */",
               ],
               "id": "Class012.foobar",
@@ -419,7 +419,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "foobar",
               "signature": "foobar?: string;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 81,
                 "unpkgURL": undefined,
@@ -431,17 +431,17 @@ Object {
         },
         "name": "Class012",
         "signature": "class Class012 {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 74,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "constructors": Array [
-          Object {
-            "docs": Array [],
+      {
+        "constructors": [
+          {
+            "docs": [],
             "id": "Class013.0-constructor",
             "kind": "ClassConstructorDeclaration",
             "name": "constructor",
@@ -452,7 +452,7 @@ Object {
     qux: string,
     ...rest: number[]
 );",
-            "source": Object {
+            "source": {
               "filename": "classes.ts",
               "line": 106,
               "unpkgURL": undefined,
@@ -460,15 +460,15 @@ Object {
             },
           },
         ],
-        "docs": Array [],
+        "docs": [],
         "id": "Class013",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "methods": [],
+          "properties": [
+            {
+              "docs": [
                 "/** Bar */",
               ],
               "id": "Class013.bar",
@@ -476,7 +476,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "bar",
               "signature": "protected readonly bar: string;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 110,
                 "unpkgURL": undefined,
@@ -484,8 +484,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** Foo */",
               ],
               "id": "Class013.foo",
@@ -493,7 +493,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "foo",
               "signature": "readonly foo: string;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 108,
                 "unpkgURL": undefined,
@@ -505,23 +505,23 @@ Object {
         },
         "name": "Class013",
         "signature": "class Class013 {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 105,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [],
+      {
+        "constructors": [],
+        "docs": [],
         "id": "Class014",
         "isAbstract": true,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "methods": [
+            {
+              "docs": [
                 "/** Baz */",
               ],
               "id": "Class014.baz",
@@ -529,7 +529,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "baz",
               "signature": "abstract baz: () => number;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 125,
                 "unpkgURL": undefined,
@@ -538,9 +538,9 @@ Object {
               "type": "() => number",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [
+          "properties": [
+            {
+              "docs": [
                 "/** Bar */",
               ],
               "id": "Class014.bar",
@@ -548,7 +548,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "bar",
               "signature": "protected abstract bar: string;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 122,
                 "unpkgURL": undefined,
@@ -556,8 +556,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** Foo */",
               ],
               "id": "Class014.foo",
@@ -565,7 +565,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "foo",
               "signature": "abstract foo: string;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 119,
                 "unpkgURL": undefined,
@@ -577,26 +577,26 @@ Object {
         },
         "name": "Class014",
         "signature": "abstract class Class014 {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 117,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [],
+      {
+        "constructors": [],
+        "docs": [],
         "id": "Class016",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "Class016",
         "signature": "class Class016 {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 131,
           "unpkgURL": undefined,
@@ -604,9 +604,9 @@ Object {
         },
       },
     ],
-    "enums": Array [
-      Object {
-        "docs": Array [
+    "enums": [
+      {
+        "docs": [
           "/**
  * Enum1
  */",
@@ -614,14 +614,14 @@ Object {
         "id": "Enum1",
         "isConst": true,
         "kind": "EnumDeclaration",
-        "members": Array [
-          Object {
-            "docs": Array [],
+        "members": [
+          {
+            "docs": [],
             "id": "Enum1.No",
             "kind": "EnumMemberDeclaration",
             "name": "No",
             "signature": "No",
-            "source": Object {
+            "source": {
               "filename": "enums.ts",
               "line": 7,
               "unpkgURL": undefined,
@@ -629,15 +629,15 @@ Object {
             },
             "value": 1,
           },
-          Object {
-            "docs": Array [
+          {
+            "docs": [
               "/** Positive */",
             ],
             "id": "Enum1.Yes",
             "kind": "EnumMemberDeclaration",
             "name": "Yes",
             "signature": "Yes",
-            "source": Object {
+            "source": {
               "filename": "enums.ts",
               "line": 6,
               "unpkgURL": undefined,
@@ -651,26 +651,26 @@ Object {
     Yes,
     No,
 }",
-        "source": Object {
+        "source": {
           "filename": "enums.ts",
           "line": 4,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Enum2",
         "isConst": false,
         "kind": "EnumDeclaration",
-        "members": Array [
-          Object {
-            "docs": Array [],
+        "members": [
+          {
+            "docs": [],
             "id": "Enum2.Ko",
             "kind": "EnumMemberDeclaration",
             "name": "Ko",
             "signature": "Ko",
-            "source": Object {
+            "source": {
               "filename": "enums.ts",
               "line": 12,
               "unpkgURL": undefined,
@@ -678,13 +678,13 @@ Object {
             },
             "value": 2,
           },
-          Object {
-            "docs": Array [],
+          {
+            "docs": [],
             "id": "Enum2.Ok",
             "kind": "EnumMemberDeclaration",
             "name": "Ok",
             "signature": "Ok = 1",
-            "source": Object {
+            "source": {
               "filename": "enums.ts",
               "line": 11,
               "unpkgURL": undefined,
@@ -698,26 +698,26 @@ Object {
     Ok = 1,
     Ko,
 }",
-        "source": Object {
+        "source": {
           "filename": "enums.ts",
           "line": 10,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Enum3",
         "isConst": false,
         "kind": "EnumDeclaration",
-        "members": Array [
-          Object {
-            "docs": Array [],
+        "members": [
+          {
+            "docs": [],
             "id": "Enum3.A",
             "kind": "EnumMemberDeclaration",
             "name": "A",
             "signature": "A = 'A'",
-            "source": Object {
+            "source": {
               "filename": "enums.ts",
               "line": 16,
               "unpkgURL": undefined,
@@ -725,13 +725,13 @@ Object {
             },
             "value": "A",
           },
-          Object {
-            "docs": Array [],
+          {
+            "docs": [],
             "id": "Enum3.B",
             "kind": "EnumMemberDeclaration",
             "name": "B",
             "signature": "B = 'B'",
-            "source": Object {
+            "source": {
               "filename": "enums.ts",
               "line": 17,
               "unpkgURL": undefined,
@@ -739,13 +739,13 @@ Object {
             },
             "value": "B",
           },
-          Object {
-            "docs": Array [],
+          {
+            "docs": [],
             "id": "Enum3.C",
             "kind": "EnumMemberDeclaration",
             "name": "C",
             "signature": "C = 'C'",
-            "source": Object {
+            "source": {
               "filename": "enums.ts",
               "line": 18,
               "unpkgURL": undefined,
@@ -760,41 +760,41 @@ Object {
     B = 'B',
     C = 'C',
 }",
-        "source": Object {
+        "source": {
           "filename": "enums.ts",
           "line": 15,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Enum4",
         "isConst": false,
         "kind": "EnumDeclaration",
-        "members": Array [],
+        "members": [],
         "name": "Enum4",
         "signature": "enum Enum4 {}",
-        "source": Object {
+        "source": {
           "filename": "enums.ts",
           "line": 23,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Enum6",
         "isConst": false,
         "kind": "EnumDeclaration",
-        "members": Array [
-          Object {
-            "docs": Array [],
+        "members": [
+          {
+            "docs": [],
             "id": "Enum6.A",
             "kind": "EnumMemberDeclaration",
             "name": "A",
             "signature": "A",
-            "source": Object {
+            "source": {
               "filename": "enums.ts",
               "line": 29,
               "unpkgURL": undefined,
@@ -807,7 +807,7 @@ Object {
         "signature": "enum Enum6 {
     A,
 }",
-        "source": Object {
+        "source": {
           "filename": "enums.ts",
           "line": 28,
           "unpkgURL": undefined,
@@ -815,9 +815,9 @@ Object {
         },
       },
     ],
-    "functions": Array [
-      Object {
-        "docs": Array [
+    "functions": [
+      {
+        "docs": [
           "/**
  * Func1 returns the sum of two numbers.
  * @param a - the first number
@@ -828,7 +828,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "func1",
         "signature": "func1: (a: number, b: number) => number;",
-        "source": Object {
+        "source": {
           "filename": "functions.ts",
           "line": 6,
           "unpkgURL": undefined,
@@ -836,8 +836,8 @@ Object {
         },
         "type": "(a: number, b: number) => number",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Func2 returns the sum of two numbers.
  * @param a - the first number
@@ -848,7 +848,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "func2",
         "signature": "func2: ({ a, b }: { a: number; b: number }) => number;",
-        "source": Object {
+        "source": {
           "filename": "functions.ts",
           "line": 15,
           "unpkgURL": undefined,
@@ -856,8 +856,8 @@ Object {
         },
         "type": "({ a, b }: { a: number; b: number; }) => number",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Func3 returns the sum of two numbers.
  * @param a - the first number
@@ -868,7 +868,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "func3",
         "signature": "func3: ({ a, b }: { a: number; b: number }) => number;",
-        "source": Object {
+        "source": {
           "filename": "functions.ts",
           "line": 22,
           "unpkgURL": undefined,
@@ -876,8 +876,8 @@ Object {
         },
         "type": "({ a, b }: { a: number; b: number; }) => number",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Func4 is overloaded and returns its input.
  */",
@@ -886,7 +886,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "func4",
         "signature": "func4: { (a: number): number; (a: string): string };",
-        "source": Object {
+        "source": {
           "filename": "functions.ts",
           "line": 31,
           "unpkgURL": undefined,
@@ -894,13 +894,13 @@ Object {
         },
         "type": "{ (a: number): number; (a: string): string; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "func5",
         "kind": "FunctionDeclaration",
         "name": "func5",
         "signature": "func5: () => Promise<void>;",
-        "source": Object {
+        "source": {
           "filename": "functions.ts",
           "line": 37,
           "unpkgURL": undefined,
@@ -908,13 +908,13 @@ Object {
         },
         "type": "() => Promise<void>",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "func8",
         "kind": "FunctionDeclaration",
         "name": "func8",
         "signature": "func8: (a: string) => number;",
-        "source": Object {
+        "source": {
           "filename": "functions.ts",
           "line": 45,
           "unpkgURL": undefined,
@@ -923,30 +923,30 @@ Object {
         "type": "(a: string) => number",
       },
     ],
-    "interfaces": Array [
-      Object {
-        "docs": Array [
+    "interfaces": [
+      {
+        "docs": [
           "/**
  * Interface001
  */",
         ],
         "id": "Interface001",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Interface001.x",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "x",
               "signature": "readonly x: number;",
-              "source": Object {
+              "source": {
                 "filename": "interfaces.ts",
                 "line": 5,
                 "unpkgURL": undefined,
@@ -954,15 +954,15 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Interface001.y",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "y",
               "signature": "readonly y: number;",
-              "source": Object {
+              "source": {
                 "filename": "interfaces.ts",
                 "line": 6,
                 "unpkgURL": undefined,
@@ -974,32 +974,32 @@ Object {
         },
         "name": "Interface001",
         "signature": "interface Interface001 {}",
-        "source": Object {
+        "source": {
           "filename": "interfaces.ts",
           "line": 4,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Interface002",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Interface002.z",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "z",
               "signature": "z?: number;",
-              "source": Object {
+              "source": {
                 "filename": "interfaces.ts",
                 "line": 10,
                 "unpkgURL": undefined,
@@ -1011,46 +1011,46 @@ Object {
         },
         "name": "Interface002",
         "signature": "interface Interface002 extends Interface001 {}",
-        "source": Object {
+        "source": {
           "filename": "interfaces.ts",
           "line": 9,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Interface003",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [],
         },
         "name": "Interface003",
         "signature": "interface Interface003 extends Interface001, Interface002 {}",
-        "source": Object {
+        "source": {
           "filename": "interfaces.ts",
           "line": 13,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Interface004",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [
+            {
+              "docs": [],
               "id": "Interface004.0-call-signature",
               "kind": "InterfaceCallSignatureDeclaration",
               "name": "call signature",
               "signature": "(a: string): string;",
-              "source": Object {
+              "source": {
                 "filename": "interfaces.ts",
                 "line": 16,
                 "unpkgURL": undefined,
@@ -1058,35 +1058,35 @@ Object {
               },
             },
           ],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [],
         },
         "name": "Interface004",
         "signature": "interface Interface004 {}",
-        "source": Object {
+        "source": {
           "filename": "interfaces.ts",
           "line": 15,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Interface005",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [
+            {
+              "docs": [],
               "id": "Interface005.0-index-signature",
               "kind": "InterfaceIndexSignatureDeclaration",
               "name": "index signature",
               "signature": "readonly [index: string]: number | string;",
-              "source": Object {
+              "source": {
                 "filename": "interfaces.ts",
                 "line": 20,
                 "unpkgURL": undefined,
@@ -1094,34 +1094,34 @@ Object {
               },
             },
           ],
-          "methods": Array [],
-          "properties": Array [],
+          "methods": [],
+          "properties": [],
         },
         "name": "Interface005",
         "signature": "interface Interface005 {}",
-        "source": Object {
+        "source": {
           "filename": "interfaces.ts",
           "line": 19,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Interface006",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [
+            {
+              "docs": [],
               "id": "Interface006.getAny",
               "kind": "InterfaceMethodDeclaration",
               "name": "getAny",
               "signature": "getAny: () => any;",
-              "source": Object {
+              "source": {
                 "filename": "interfaces.ts",
                 "line": 25,
                 "unpkgURL": undefined,
@@ -1130,16 +1130,16 @@ Object {
               "type": "() => any",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Interface006.something",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "something",
               "signature": "something: any;",
-              "source": Object {
+              "source": {
                 "filename": "interfaces.ts",
                 "line": 24,
                 "unpkgURL": undefined,
@@ -1151,27 +1151,27 @@ Object {
         },
         "name": "Interface006",
         "signature": "interface Interface006 {}",
-        "source": Object {
+        "source": {
           "filename": "interfaces.ts",
           "line": 23,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Interface007",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [
+            {
+              "docs": [],
               "id": "Interface007.0-construct-signature",
               "kind": "InterfaceConstructSignatureDeclaration",
               "name": "construct signature",
               "signature": "new (): Interface006;",
-              "source": Object {
+              "source": {
                 "filename": "interfaces.ts",
                 "line": 29,
                 "unpkgURL": undefined,
@@ -1179,80 +1179,80 @@ Object {
               },
             },
           ],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [],
         },
         "name": "Interface007",
         "signature": "interface Interface007 {}",
-        "source": Object {
+        "source": {
           "filename": "interfaces.ts",
           "line": 28,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Interface008",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [],
         },
         "name": "Interface008",
         "signature": "interface Interface008<T> {}",
-        "source": Object {
+        "source": {
           "filename": "interfaces.ts",
           "line": 34,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Interface009",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [],
         },
         "name": "Interface009",
         "signature": "interface Interface009<T extends object, U, V extends keyof T>
     extends Interface001,
         Interface002 {}",
-        "source": Object {
+        "source": {
           "filename": "interfaces.ts",
           "line": 36,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Interface011",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Interface011.baz",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "baz",
               "signature": "baz: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "interfaces.ts",
                 "line": 49,
                 "unpkgURL": undefined,
@@ -1260,15 +1260,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Interface011.foo",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "foo",
               "signature": "foo: string;",
-              "source": Object {
+              "source": {
                 "filename": "interfaces.ts",
                 "line": 44,
                 "unpkgURL": undefined,
@@ -1280,29 +1280,29 @@ Object {
         },
         "name": "Interface011",
         "signature": "interface Interface011 {}",
-        "source": Object {
+        "source": {
           "filename": "interfaces.ts",
           "line": 43,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Interface012",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [
+            {
+              "docs": [],
               "id": "Interface012.foo",
               "kind": "InterfaceMethodDeclaration",
               "name": "foo",
               "signature": "foo: (a: number) => string;",
-              "source": Object {
+              "source": {
                 "filename": "interfaces.ts",
                 "line": 53,
                 "unpkgURL": undefined,
@@ -1311,11 +1311,11 @@ Object {
               "type": "(a: number) => string",
             },
           ],
-          "properties": Array [],
+          "properties": [],
         },
         "name": "Interface012",
         "signature": "interface Interface012 {}",
-        "source": Object {
+        "source": {
           "filename": "interfaces.ts",
           "line": 52,
           "unpkgURL": undefined,
@@ -1323,18 +1323,18 @@ Object {
         },
       },
     ],
-    "namespaces": Array [
-      Object {
-        "declarations": Object {
-          "classes": Array [],
-          "enums": Array [],
-          "functions": Array [],
-          "interfaces": Array [],
-          "namespaces": Array [],
-          "typeAliases": Array [],
-          "variables": Array [],
+    "namespaces": [
+      {
+        "declarations": {
+          "classes": [],
+          "enums": [],
+          "functions": [],
+          "interfaces": [],
+          "namespaces": [],
+          "typeAliases": [],
+          "variables": [],
         },
-        "docs": Array [
+        "docs": [
           "/**
  * Namespace1.
  */",
@@ -1343,43 +1343,43 @@ Object {
         "kind": "NamespaceDeclaration",
         "name": "Namespace1",
         "signature": "namespace Namespace1 {}",
-        "source": Object {
+        "source": {
           "filename": "namespaces.ts",
           "line": 4,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "declarations": Object {
-          "classes": Array [],
-          "enums": Array [],
-          "functions": Array [],
-          "interfaces": Array [],
-          "namespaces": Array [
-            Object {
-              "declarations": Object {
-                "classes": Array [],
-                "enums": Array [],
-                "functions": Array [],
-                "interfaces": Array [],
-                "namespaces": Array [
-                  Object {
-                    "declarations": Object {
-                      "classes": Array [],
-                      "enums": Array [],
-                      "functions": Array [],
-                      "interfaces": Array [],
-                      "namespaces": Array [],
-                      "typeAliases": Array [],
-                      "variables": Array [],
+      {
+        "declarations": {
+          "classes": [],
+          "enums": [],
+          "functions": [],
+          "interfaces": [],
+          "namespaces": [
+            {
+              "declarations": {
+                "classes": [],
+                "enums": [],
+                "functions": [],
+                "interfaces": [],
+                "namespaces": [
+                  {
+                    "declarations": {
+                      "classes": [],
+                      "enums": [],
+                      "functions": [],
+                      "interfaces": [],
+                      "namespaces": [],
+                      "typeAliases": [],
+                      "variables": [],
                     },
-                    "docs": Array [],
+                    "docs": [],
                     "id": "Namespace2.Namespace21.Namespace22",
                     "kind": "NamespaceDeclaration",
                     "name": "Namespace2.Namespace21.Namespace22",
                     "signature": "namespace Namespace2.Namespace21.Namespace22 {}",
-                    "source": Object {
+                    "source": {
                       "filename": "namespaces.ts",
                       "line": 13,
                       "unpkgURL": undefined,
@@ -1387,15 +1387,15 @@ Object {
                     },
                   },
                 ],
-                "typeAliases": Array [],
-                "variables": Array [
-                  Object {
-                    "docs": Array [],
+                "typeAliases": [],
+                "variables": [
+                  {
+                    "docs": [],
                     "id": "Namespace2.Namespace21.var2",
                     "kind": "VariableDeclaration",
                     "name": "var2",
                     "signature": "const var2: string;",
-                    "source": Object {
+                    "source": {
                       "filename": "namespaces.ts",
                       "line": 11,
                       "unpkgURL": undefined,
@@ -1406,12 +1406,12 @@ Object {
                   },
                 ],
               },
-              "docs": Array [],
+              "docs": [],
               "id": "Namespace2.Namespace21",
               "kind": "NamespaceDeclaration",
               "name": "Namespace2.Namespace21",
               "signature": "namespace Namespace2.Namespace21 {}",
-              "source": Object {
+              "source": {
                 "filename": "namespaces.ts",
                 "line": 10,
                 "unpkgURL": undefined,
@@ -1419,17 +1419,17 @@ Object {
               },
             },
           ],
-          "typeAliases": Array [],
-          "variables": Array [
-            Object {
-              "docs": Array [
+          "typeAliases": [],
+          "variables": [
+            {
+              "docs": [
                 "/** Var1 */",
               ],
               "id": "Namespace2.var1",
               "kind": "VariableDeclaration",
               "name": "var1",
               "signature": "const var1: number;",
-              "source": Object {
+              "source": {
                 "filename": "namespaces.ts",
                 "line": 8,
                 "unpkgURL": undefined,
@@ -1440,34 +1440,34 @@ Object {
             },
           ],
         },
-        "docs": Array [],
+        "docs": [],
         "id": "Namespace2",
         "kind": "NamespaceDeclaration",
         "name": "Namespace2",
         "signature": "namespace Namespace2 {}",
-        "source": Object {
+        "source": {
           "filename": "namespaces.ts",
           "line": 6,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "declarations": Object {
-          "classes": Array [],
-          "enums": Array [],
-          "functions": Array [],
-          "interfaces": Array [],
-          "namespaces": Array [],
-          "typeAliases": Array [],
-          "variables": Array [
-            Object {
-              "docs": Array [],
+      {
+        "declarations": {
+          "classes": [],
+          "enums": [],
+          "functions": [],
+          "interfaces": [],
+          "namespaces": [],
+          "typeAliases": [],
+          "variables": [
+            {
+              "docs": [],
               "id": "Namespace3.var1",
               "kind": "VariableDeclaration",
               "name": "var1",
               "signature": "const var1: number;",
-              "source": Object {
+              "source": {
                 "filename": "namespaces.ts",
                 "line": 18,
                 "unpkgURL": undefined,
@@ -1476,13 +1476,13 @@ Object {
               "type": "number",
               "variableKind": "const",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Namespace3.var2",
               "kind": "VariableDeclaration",
               "name": "var2",
               "signature": "const var2: string;",
-              "source": Object {
+              "source": {
                 "filename": "namespaces.ts",
                 "line": 22,
                 "unpkgURL": undefined,
@@ -1493,12 +1493,12 @@ Object {
             },
           ],
         },
-        "docs": Array [],
+        "docs": [],
         "id": "Namespace3",
         "kind": "NamespaceDeclaration",
         "name": "Namespace3",
         "signature": "namespace Namespace3 {}",
-        "source": Object {
+        "source": {
           "filename": "namespaces.ts",
           "line": 17,
           "unpkgURL": undefined,
@@ -1506,9 +1506,9 @@ Object {
         },
       },
     ],
-    "typeAliases": Array [
-      Object {
-        "docs": Array [
+    "typeAliases": [
+      {
+        "docs": [
           "/**
  * TypeAlias1 aliases a function.
  */",
@@ -1517,33 +1517,33 @@ Object {
         "kind": "TypeAliasDeclaration",
         "name": "TypeAlias1",
         "signature": "type TypeAlias1 = () => any;",
-        "source": Object {
+        "source": {
           "filename": "type-aliases.ts",
           "line": 4,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "TypeAlias2",
         "kind": "TypeAliasDeclaration",
         "name": "TypeAlias2",
         "signature": "type TypeAlias2 = string;",
-        "source": Object {
+        "source": {
           "filename": "type-aliases.ts",
           "line": 6,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "TypeAlias3",
         "kind": "TypeAliasDeclaration",
         "name": "TypeAlias3",
         "signature": "type TypeAlias3 = number | string;",
-        "source": Object {
+        "source": {
           "filename": "type-aliases.ts",
           "line": 8,
           "unpkgURL": undefined,
@@ -1551,9 +1551,9 @@ Object {
         },
       },
     ],
-    "variables": Array [
-      Object {
-        "docs": Array [
+    "variables": [
+      {
+        "docs": [
           "/**
  * This is var1.
  */",
@@ -1562,7 +1562,7 @@ Object {
         "kind": "VariableDeclaration",
         "name": "var1",
         "signature": "const var1: string;",
-        "source": Object {
+        "source": {
           "filename": "variables.ts",
           "line": 8,
           "unpkgURL": undefined,
@@ -1571,13 +1571,13 @@ Object {
         "type": "string",
         "variableKind": "const",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "var2",
         "kind": "VariableDeclaration",
         "name": "var2",
         "signature": "let var2: number;",
-        "source": Object {
+        "source": {
           "filename": "variables.ts",
           "line": 10,
           "unpkgURL": undefined,
@@ -1586,13 +1586,13 @@ Object {
         "type": "number",
         "variableKind": "let",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "var3",
         "kind": "VariableDeclaration",
         "name": "var3",
         "signature": "var var3: (string | number)[];",
-        "source": Object {
+        "source": {
           "filename": "variables.ts",
           "line": 12,
           "unpkgURL": undefined,
@@ -1601,13 +1601,13 @@ Object {
         "type": "(string | number)[]",
         "variableKind": "var",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "var4",
         "kind": "VariableDeclaration",
         "name": "var4",
         "signature": "const var4: string;",
-        "source": Object {
+        "source": {
           "filename": "variables.ts",
           "line": 3,
           "unpkgURL": undefined,
@@ -1616,13 +1616,13 @@ Object {
         "type": "string",
         "variableKind": "const",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "var6",
         "kind": "VariableDeclaration",
         "name": "var6",
         "signature": "const var6: SomeType;",
-        "source": Object {
+        "source": {
           "filename": "variables.ts",
           "line": 21,
           "unpkgURL": undefined,
@@ -1631,13 +1631,13 @@ Object {
         "type": "SomeType",
         "variableKind": "const",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "var7",
         "kind": "VariableDeclaration",
         "name": "var7",
         "signature": "let var7: string;",
-        "source": Object {
+        "source": {
           "filename": "variables.ts",
           "line": 23,
           "unpkgURL": undefined,
@@ -1648,44 +1648,44 @@ Object {
       },
     ],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "classes.ts",
       "unpkgURL": undefined,
       "url": undefined,
     },
-    Object {
+    {
       "filename": "enums.ts",
       "unpkgURL": undefined,
       "url": undefined,
     },
-    Object {
+    {
       "filename": "functions.ts",
       "unpkgURL": undefined,
       "url": undefined,
     },
-    Object {
+    {
       "filename": "index.ts",
       "isIndexFile": true,
       "unpkgURL": undefined,
       "url": undefined,
     },
-    Object {
+    {
       "filename": "interfaces.ts",
       "unpkgURL": undefined,
       "url": undefined,
     },
-    Object {
+    {
       "filename": "namespaces.ts",
       "unpkgURL": undefined,
       "url": undefined,
     },
-    Object {
+    {
       "filename": "type-aliases.ts",
       "unpkgURL": undefined,
       "url": undefined,
     },
-    Object {
+    {
       "filename": "variables.ts",
       "unpkgURL": undefined,
       "url": undefined,
@@ -1700,12 +1700,12 @@ Object {
 `;
 
 exports[`export-named-declarations with repository snapshot 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [
-      Object {
-        "constructors": Array [],
-        "docs": Array [
+{
+  "declarations": {
+    "classes": [
+      {
+        "constructors": [],
+        "docs": [
           "/**
  * Class001
  */",
@@ -1713,159 +1713,159 @@ Object {
         "id": "Class001",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "Class001",
         "signature": "class Class001 {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 4,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/classes.ts#L4",
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [],
+      {
+        "constructors": [],
+        "docs": [],
         "id": "Class002",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "Class002",
         "signature": "class Class002 extends Class001 {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 6,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/classes.ts#L6",
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [],
+      {
+        "constructors": [],
+        "docs": [],
         "id": "Class003",
         "isAbstract": true,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "Class003",
         "signature": "abstract class Class003 {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 8,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/classes.ts#L8",
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [],
+      {
+        "constructors": [],
+        "docs": [],
         "id": "Class004",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "Class004",
         "signature": "class Class004 implements A, B {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 13,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/classes.ts#L13",
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [],
+      {
+        "constructors": [],
+        "docs": [],
         "id": "Class005",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "Class005",
         "signature": "class Class005 extends Class003 implements A, B {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 15,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/classes.ts#L15",
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [],
+      {
+        "constructors": [],
+        "docs": [],
         "id": "Class006",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "Class006",
         "signature": "class Class006<T> {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 18,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/classes.ts#L18",
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [],
+      {
+        "constructors": [],
+        "docs": [],
         "id": "Class007",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "Class007",
         "signature": "class Class007<T extends object, U, V extends keyof T>
     extends Class003
     implements A, B {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 20,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/classes.ts#L20",
         },
       },
-      Object {
-        "constructors": Array [
-          Object {
-            "docs": Array [
+      {
+        "constructors": [
+          {
+            "docs": [
               "/** Constructor */",
             ],
             "id": "Class008.0-constructor",
             "kind": "ClassConstructorDeclaration",
             "name": "constructor",
             "signature": "constructor(foo: any, bar: any);",
-            "source": Object {
+            "source": {
               "filename": "classes.ts",
               "line": 25,
               "unpkgURL": undefined,
               "url": "https://github.com/test/repo/tree/HEAD/classes.ts#L25",
             },
           },
-          Object {
-            "docs": Array [],
+          {
+            "docs": [],
             "id": "Class008.1-constructor",
             "kind": "ClassConstructorDeclaration",
             "name": "constructor",
             "signature": "constructor(foo: string, bar: number);",
-            "source": Object {
+            "source": {
               "filename": "classes.ts",
               "line": 26,
               "unpkgURL": undefined,
@@ -1873,32 +1873,32 @@ Object {
             },
           },
         ],
-        "docs": Array [],
+        "docs": [],
         "id": "Class008",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "Class008",
         "signature": "class Class008 {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 23,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/classes.ts#L23",
         },
       },
-      Object {
-        "constructors": Array [
-          Object {
-            "docs": Array [],
+      {
+        "constructors": [
+          {
+            "docs": [],
             "id": "Class009.0-constructor",
             "kind": "ClassConstructorDeclaration",
             "name": "constructor",
             "signature": "protected constructor(foo: string, bar: number);",
-            "source": Object {
+            "source": {
               "filename": "classes.ts",
               "line": 33,
               "unpkgURL": undefined,
@@ -1906,52 +1906,52 @@ Object {
             },
           },
         ],
-        "docs": Array [],
+        "docs": [],
         "id": "Class009",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "Class009",
         "signature": "class Class009 {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 32,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/classes.ts#L32",
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [],
+      {
+        "constructors": [],
+        "docs": [],
         "id": "Class010",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "Class010",
         "signature": "class Class010 {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 39,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/classes.ts#L39",
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [],
+      {
+        "constructors": [],
+        "docs": [],
         "id": "Class011",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "methods": [
+            {
+              "docs": [
                 "/** Bar */",
               ],
               "id": "Class011.bar",
@@ -1959,7 +1959,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "bar",
               "signature": "static bar: () => number;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 53,
                 "unpkgURL": undefined,
@@ -1968,9 +1968,9 @@ Object {
               "type": "() => number",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [
+          "properties": [
+            {
+              "docs": [
                 "/** Get bat */",
               ],
               "id": "Class011.bat",
@@ -1978,7 +1978,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "bat",
               "signature": "static readonly bat: string;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 69,
                 "unpkgURL": undefined,
@@ -1986,8 +1986,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** Get baz */",
               ],
               "id": "Class011.baz",
@@ -1995,7 +1995,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "baz",
               "signature": "static baz: number;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 58,
                 "unpkgURL": undefined,
@@ -2003,8 +2003,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** Foo */",
               ],
               "id": "Class011.foo",
@@ -2012,7 +2012,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "foo",
               "signature": "static readonly foo: string;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 50,
                 "unpkgURL": undefined,
@@ -2024,23 +2024,23 @@ Object {
         },
         "name": "Class011",
         "signature": "class Class011 {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 46,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/classes.ts#L46",
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [],
+      {
+        "constructors": [],
+        "docs": [],
         "id": "Class012",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "methods": [
+            {
+              "docs": [
                 "/** Bar */",
               ],
               "id": "Class012.bar",
@@ -2048,7 +2048,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "bar",
               "signature": "bar: () => number;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 84,
                 "unpkgURL": undefined,
@@ -2057,9 +2057,9 @@ Object {
               "type": "() => number",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [
+          "properties": [
+            {
+              "docs": [
                 "/** Get bat */",
               ],
               "id": "Class012.bat",
@@ -2067,7 +2067,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "bat",
               "signature": "readonly bat: string;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 100,
                 "unpkgURL": undefined,
@@ -2075,8 +2075,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** Get baz */",
               ],
               "id": "Class012.baz",
@@ -2084,7 +2084,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "baz",
               "signature": "baz: number;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 89,
                 "unpkgURL": undefined,
@@ -2092,8 +2092,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** Foo */",
               ],
               "id": "Class012.foo",
@@ -2101,7 +2101,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "foo",
               "signature": "readonly foo: string;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 78,
                 "unpkgURL": undefined,
@@ -2109,8 +2109,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** Foobar */",
               ],
               "id": "Class012.foobar",
@@ -2118,7 +2118,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "foobar",
               "signature": "foobar?: string;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 81,
                 "unpkgURL": undefined,
@@ -2130,17 +2130,17 @@ Object {
         },
         "name": "Class012",
         "signature": "class Class012 {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 74,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/classes.ts#L74",
         },
       },
-      Object {
-        "constructors": Array [
-          Object {
-            "docs": Array [],
+      {
+        "constructors": [
+          {
+            "docs": [],
             "id": "Class013.0-constructor",
             "kind": "ClassConstructorDeclaration",
             "name": "constructor",
@@ -2151,7 +2151,7 @@ Object {
     qux: string,
     ...rest: number[]
 );",
-            "source": Object {
+            "source": {
               "filename": "classes.ts",
               "line": 106,
               "unpkgURL": undefined,
@@ -2159,15 +2159,15 @@ Object {
             },
           },
         ],
-        "docs": Array [],
+        "docs": [],
         "id": "Class013",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "methods": [],
+          "properties": [
+            {
+              "docs": [
                 "/** Bar */",
               ],
               "id": "Class013.bar",
@@ -2175,7 +2175,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "bar",
               "signature": "protected readonly bar: string;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 110,
                 "unpkgURL": undefined,
@@ -2183,8 +2183,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** Foo */",
               ],
               "id": "Class013.foo",
@@ -2192,7 +2192,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "foo",
               "signature": "readonly foo: string;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 108,
                 "unpkgURL": undefined,
@@ -2204,23 +2204,23 @@ Object {
         },
         "name": "Class013",
         "signature": "class Class013 {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 105,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/classes.ts#L105",
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [],
+      {
+        "constructors": [],
+        "docs": [],
         "id": "Class014",
         "isAbstract": true,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "methods": [
+            {
+              "docs": [
                 "/** Baz */",
               ],
               "id": "Class014.baz",
@@ -2228,7 +2228,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "baz",
               "signature": "abstract baz: () => number;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 125,
                 "unpkgURL": undefined,
@@ -2237,9 +2237,9 @@ Object {
               "type": "() => number",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [
+          "properties": [
+            {
+              "docs": [
                 "/** Bar */",
               ],
               "id": "Class014.bar",
@@ -2247,7 +2247,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "bar",
               "signature": "protected abstract bar: string;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 122,
                 "unpkgURL": undefined,
@@ -2255,8 +2255,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** Foo */",
               ],
               "id": "Class014.foo",
@@ -2264,7 +2264,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "foo",
               "signature": "abstract foo: string;",
-              "source": Object {
+              "source": {
                 "filename": "classes.ts",
                 "line": 119,
                 "unpkgURL": undefined,
@@ -2276,26 +2276,26 @@ Object {
         },
         "name": "Class014",
         "signature": "abstract class Class014 {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 117,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/classes.ts#L117",
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [],
+      {
+        "constructors": [],
+        "docs": [],
         "id": "Class016",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "Class016",
         "signature": "class Class016 {}",
-        "source": Object {
+        "source": {
           "filename": "classes.ts",
           "line": 131,
           "unpkgURL": undefined,
@@ -2303,9 +2303,9 @@ Object {
         },
       },
     ],
-    "enums": Array [
-      Object {
-        "docs": Array [
+    "enums": [
+      {
+        "docs": [
           "/**
  * Enum1
  */",
@@ -2313,14 +2313,14 @@ Object {
         "id": "Enum1",
         "isConst": true,
         "kind": "EnumDeclaration",
-        "members": Array [
-          Object {
-            "docs": Array [],
+        "members": [
+          {
+            "docs": [],
             "id": "Enum1.No",
             "kind": "EnumMemberDeclaration",
             "name": "No",
             "signature": "No",
-            "source": Object {
+            "source": {
               "filename": "enums.ts",
               "line": 7,
               "unpkgURL": undefined,
@@ -2328,15 +2328,15 @@ Object {
             },
             "value": 1,
           },
-          Object {
-            "docs": Array [
+          {
+            "docs": [
               "/** Positive */",
             ],
             "id": "Enum1.Yes",
             "kind": "EnumMemberDeclaration",
             "name": "Yes",
             "signature": "Yes",
-            "source": Object {
+            "source": {
               "filename": "enums.ts",
               "line": 6,
               "unpkgURL": undefined,
@@ -2350,26 +2350,26 @@ Object {
     Yes,
     No,
 }",
-        "source": Object {
+        "source": {
           "filename": "enums.ts",
           "line": 4,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/enums.ts#L4",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Enum2",
         "isConst": false,
         "kind": "EnumDeclaration",
-        "members": Array [
-          Object {
-            "docs": Array [],
+        "members": [
+          {
+            "docs": [],
             "id": "Enum2.Ko",
             "kind": "EnumMemberDeclaration",
             "name": "Ko",
             "signature": "Ko",
-            "source": Object {
+            "source": {
               "filename": "enums.ts",
               "line": 12,
               "unpkgURL": undefined,
@@ -2377,13 +2377,13 @@ Object {
             },
             "value": 2,
           },
-          Object {
-            "docs": Array [],
+          {
+            "docs": [],
             "id": "Enum2.Ok",
             "kind": "EnumMemberDeclaration",
             "name": "Ok",
             "signature": "Ok = 1",
-            "source": Object {
+            "source": {
               "filename": "enums.ts",
               "line": 11,
               "unpkgURL": undefined,
@@ -2397,26 +2397,26 @@ Object {
     Ok = 1,
     Ko,
 }",
-        "source": Object {
+        "source": {
           "filename": "enums.ts",
           "line": 10,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/enums.ts#L10",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Enum3",
         "isConst": false,
         "kind": "EnumDeclaration",
-        "members": Array [
-          Object {
-            "docs": Array [],
+        "members": [
+          {
+            "docs": [],
             "id": "Enum3.A",
             "kind": "EnumMemberDeclaration",
             "name": "A",
             "signature": "A = 'A'",
-            "source": Object {
+            "source": {
               "filename": "enums.ts",
               "line": 16,
               "unpkgURL": undefined,
@@ -2424,13 +2424,13 @@ Object {
             },
             "value": "A",
           },
-          Object {
-            "docs": Array [],
+          {
+            "docs": [],
             "id": "Enum3.B",
             "kind": "EnumMemberDeclaration",
             "name": "B",
             "signature": "B = 'B'",
-            "source": Object {
+            "source": {
               "filename": "enums.ts",
               "line": 17,
               "unpkgURL": undefined,
@@ -2438,13 +2438,13 @@ Object {
             },
             "value": "B",
           },
-          Object {
-            "docs": Array [],
+          {
+            "docs": [],
             "id": "Enum3.C",
             "kind": "EnumMemberDeclaration",
             "name": "C",
             "signature": "C = 'C'",
-            "source": Object {
+            "source": {
               "filename": "enums.ts",
               "line": 18,
               "unpkgURL": undefined,
@@ -2459,41 +2459,41 @@ Object {
     B = 'B',
     C = 'C',
 }",
-        "source": Object {
+        "source": {
           "filename": "enums.ts",
           "line": 15,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/enums.ts#L15",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Enum4",
         "isConst": false,
         "kind": "EnumDeclaration",
-        "members": Array [],
+        "members": [],
         "name": "Enum4",
         "signature": "enum Enum4 {}",
-        "source": Object {
+        "source": {
           "filename": "enums.ts",
           "line": 23,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/enums.ts#L23",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Enum6",
         "isConst": false,
         "kind": "EnumDeclaration",
-        "members": Array [
-          Object {
-            "docs": Array [],
+        "members": [
+          {
+            "docs": [],
             "id": "Enum6.A",
             "kind": "EnumMemberDeclaration",
             "name": "A",
             "signature": "A",
-            "source": Object {
+            "source": {
               "filename": "enums.ts",
               "line": 29,
               "unpkgURL": undefined,
@@ -2506,7 +2506,7 @@ Object {
         "signature": "enum Enum6 {
     A,
 }",
-        "source": Object {
+        "source": {
           "filename": "enums.ts",
           "line": 28,
           "unpkgURL": undefined,
@@ -2514,9 +2514,9 @@ Object {
         },
       },
     ],
-    "functions": Array [
-      Object {
-        "docs": Array [
+    "functions": [
+      {
+        "docs": [
           "/**
  * Func1 returns the sum of two numbers.
  * @param a - the first number
@@ -2527,7 +2527,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "func1",
         "signature": "func1: (a: number, b: number) => number;",
-        "source": Object {
+        "source": {
           "filename": "functions.ts",
           "line": 6,
           "unpkgURL": undefined,
@@ -2535,8 +2535,8 @@ Object {
         },
         "type": "(a: number, b: number) => number",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Func2 returns the sum of two numbers.
  * @param a - the first number
@@ -2547,7 +2547,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "func2",
         "signature": "func2: ({ a, b }: { a: number; b: number }) => number;",
-        "source": Object {
+        "source": {
           "filename": "functions.ts",
           "line": 15,
           "unpkgURL": undefined,
@@ -2555,8 +2555,8 @@ Object {
         },
         "type": "({ a, b }: { a: number; b: number; }) => number",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Func3 returns the sum of two numbers.
  * @param a - the first number
@@ -2567,7 +2567,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "func3",
         "signature": "func3: ({ a, b }: { a: number; b: number }) => number;",
-        "source": Object {
+        "source": {
           "filename": "functions.ts",
           "line": 22,
           "unpkgURL": undefined,
@@ -2575,8 +2575,8 @@ Object {
         },
         "type": "({ a, b }: { a: number; b: number; }) => number",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Func4 is overloaded and returns its input.
  */",
@@ -2585,7 +2585,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "func4",
         "signature": "func4: { (a: number): number; (a: string): string };",
-        "source": Object {
+        "source": {
           "filename": "functions.ts",
           "line": 31,
           "unpkgURL": undefined,
@@ -2593,13 +2593,13 @@ Object {
         },
         "type": "{ (a: number): number; (a: string): string; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "func5",
         "kind": "FunctionDeclaration",
         "name": "func5",
         "signature": "func5: () => Promise<void>;",
-        "source": Object {
+        "source": {
           "filename": "functions.ts",
           "line": 37,
           "unpkgURL": undefined,
@@ -2607,13 +2607,13 @@ Object {
         },
         "type": "() => Promise<void>",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "func8",
         "kind": "FunctionDeclaration",
         "name": "func8",
         "signature": "func8: (a: string) => number;",
-        "source": Object {
+        "source": {
           "filename": "functions.ts",
           "line": 45,
           "unpkgURL": undefined,
@@ -2622,30 +2622,30 @@ Object {
         "type": "(a: string) => number",
       },
     ],
-    "interfaces": Array [
-      Object {
-        "docs": Array [
+    "interfaces": [
+      {
+        "docs": [
           "/**
  * Interface001
  */",
         ],
         "id": "Interface001",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Interface001.x",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "x",
               "signature": "readonly x: number;",
-              "source": Object {
+              "source": {
                 "filename": "interfaces.ts",
                 "line": 5,
                 "unpkgURL": undefined,
@@ -2653,15 +2653,15 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Interface001.y",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "y",
               "signature": "readonly y: number;",
-              "source": Object {
+              "source": {
                 "filename": "interfaces.ts",
                 "line": 6,
                 "unpkgURL": undefined,
@@ -2673,32 +2673,32 @@ Object {
         },
         "name": "Interface001",
         "signature": "interface Interface001 {}",
-        "source": Object {
+        "source": {
           "filename": "interfaces.ts",
           "line": 4,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/interfaces.ts#L4",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Interface002",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Interface002.z",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "z",
               "signature": "z?: number;",
-              "source": Object {
+              "source": {
                 "filename": "interfaces.ts",
                 "line": 10,
                 "unpkgURL": undefined,
@@ -2710,46 +2710,46 @@ Object {
         },
         "name": "Interface002",
         "signature": "interface Interface002 extends Interface001 {}",
-        "source": Object {
+        "source": {
           "filename": "interfaces.ts",
           "line": 9,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/interfaces.ts#L9",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Interface003",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [],
         },
         "name": "Interface003",
         "signature": "interface Interface003 extends Interface001, Interface002 {}",
-        "source": Object {
+        "source": {
           "filename": "interfaces.ts",
           "line": 13,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/interfaces.ts#L13",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Interface004",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [
+            {
+              "docs": [],
               "id": "Interface004.0-call-signature",
               "kind": "InterfaceCallSignatureDeclaration",
               "name": "call signature",
               "signature": "(a: string): string;",
-              "source": Object {
+              "source": {
                 "filename": "interfaces.ts",
                 "line": 16,
                 "unpkgURL": undefined,
@@ -2757,35 +2757,35 @@ Object {
               },
             },
           ],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [],
         },
         "name": "Interface004",
         "signature": "interface Interface004 {}",
-        "source": Object {
+        "source": {
           "filename": "interfaces.ts",
           "line": 15,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/interfaces.ts#L15",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Interface005",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [
+            {
+              "docs": [],
               "id": "Interface005.0-index-signature",
               "kind": "InterfaceIndexSignatureDeclaration",
               "name": "index signature",
               "signature": "readonly [index: string]: number | string;",
-              "source": Object {
+              "source": {
                 "filename": "interfaces.ts",
                 "line": 20,
                 "unpkgURL": undefined,
@@ -2793,34 +2793,34 @@ Object {
               },
             },
           ],
-          "methods": Array [],
-          "properties": Array [],
+          "methods": [],
+          "properties": [],
         },
         "name": "Interface005",
         "signature": "interface Interface005 {}",
-        "source": Object {
+        "source": {
           "filename": "interfaces.ts",
           "line": 19,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/interfaces.ts#L19",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Interface006",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [
+            {
+              "docs": [],
               "id": "Interface006.getAny",
               "kind": "InterfaceMethodDeclaration",
               "name": "getAny",
               "signature": "getAny: () => any;",
-              "source": Object {
+              "source": {
                 "filename": "interfaces.ts",
                 "line": 25,
                 "unpkgURL": undefined,
@@ -2829,16 +2829,16 @@ Object {
               "type": "() => any",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Interface006.something",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "something",
               "signature": "something: any;",
-              "source": Object {
+              "source": {
                 "filename": "interfaces.ts",
                 "line": 24,
                 "unpkgURL": undefined,
@@ -2850,27 +2850,27 @@ Object {
         },
         "name": "Interface006",
         "signature": "interface Interface006 {}",
-        "source": Object {
+        "source": {
           "filename": "interfaces.ts",
           "line": 23,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/interfaces.ts#L23",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Interface007",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [
+            {
+              "docs": [],
               "id": "Interface007.0-construct-signature",
               "kind": "InterfaceConstructSignatureDeclaration",
               "name": "construct signature",
               "signature": "new (): Interface006;",
-              "source": Object {
+              "source": {
                 "filename": "interfaces.ts",
                 "line": 29,
                 "unpkgURL": undefined,
@@ -2878,80 +2878,80 @@ Object {
               },
             },
           ],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [],
         },
         "name": "Interface007",
         "signature": "interface Interface007 {}",
-        "source": Object {
+        "source": {
           "filename": "interfaces.ts",
           "line": 28,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/interfaces.ts#L28",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Interface008",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [],
         },
         "name": "Interface008",
         "signature": "interface Interface008<T> {}",
-        "source": Object {
+        "source": {
           "filename": "interfaces.ts",
           "line": 34,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/interfaces.ts#L34",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Interface009",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [],
         },
         "name": "Interface009",
         "signature": "interface Interface009<T extends object, U, V extends keyof T>
     extends Interface001,
         Interface002 {}",
-        "source": Object {
+        "source": {
           "filename": "interfaces.ts",
           "line": 36,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/interfaces.ts#L36",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Interface011",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Interface011.baz",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "baz",
               "signature": "baz: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "interfaces.ts",
                 "line": 49,
                 "unpkgURL": undefined,
@@ -2959,15 +2959,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Interface011.foo",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "foo",
               "signature": "foo: string;",
-              "source": Object {
+              "source": {
                 "filename": "interfaces.ts",
                 "line": 44,
                 "unpkgURL": undefined,
@@ -2979,29 +2979,29 @@ Object {
         },
         "name": "Interface011",
         "signature": "interface Interface011 {}",
-        "source": Object {
+        "source": {
           "filename": "interfaces.ts",
           "line": 43,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/interfaces.ts#L43",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Interface012",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [
+            {
+              "docs": [],
               "id": "Interface012.foo",
               "kind": "InterfaceMethodDeclaration",
               "name": "foo",
               "signature": "foo: (a: number) => string;",
-              "source": Object {
+              "source": {
                 "filename": "interfaces.ts",
                 "line": 53,
                 "unpkgURL": undefined,
@@ -3010,11 +3010,11 @@ Object {
               "type": "(a: number) => string",
             },
           ],
-          "properties": Array [],
+          "properties": [],
         },
         "name": "Interface012",
         "signature": "interface Interface012 {}",
-        "source": Object {
+        "source": {
           "filename": "interfaces.ts",
           "line": 52,
           "unpkgURL": undefined,
@@ -3022,18 +3022,18 @@ Object {
         },
       },
     ],
-    "namespaces": Array [
-      Object {
-        "declarations": Object {
-          "classes": Array [],
-          "enums": Array [],
-          "functions": Array [],
-          "interfaces": Array [],
-          "namespaces": Array [],
-          "typeAliases": Array [],
-          "variables": Array [],
+    "namespaces": [
+      {
+        "declarations": {
+          "classes": [],
+          "enums": [],
+          "functions": [],
+          "interfaces": [],
+          "namespaces": [],
+          "typeAliases": [],
+          "variables": [],
         },
-        "docs": Array [
+        "docs": [
           "/**
  * Namespace1.
  */",
@@ -3042,43 +3042,43 @@ Object {
         "kind": "NamespaceDeclaration",
         "name": "Namespace1",
         "signature": "namespace Namespace1 {}",
-        "source": Object {
+        "source": {
           "filename": "namespaces.ts",
           "line": 4,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/namespaces.ts#L4",
         },
       },
-      Object {
-        "declarations": Object {
-          "classes": Array [],
-          "enums": Array [],
-          "functions": Array [],
-          "interfaces": Array [],
-          "namespaces": Array [
-            Object {
-              "declarations": Object {
-                "classes": Array [],
-                "enums": Array [],
-                "functions": Array [],
-                "interfaces": Array [],
-                "namespaces": Array [
-                  Object {
-                    "declarations": Object {
-                      "classes": Array [],
-                      "enums": Array [],
-                      "functions": Array [],
-                      "interfaces": Array [],
-                      "namespaces": Array [],
-                      "typeAliases": Array [],
-                      "variables": Array [],
+      {
+        "declarations": {
+          "classes": [],
+          "enums": [],
+          "functions": [],
+          "interfaces": [],
+          "namespaces": [
+            {
+              "declarations": {
+                "classes": [],
+                "enums": [],
+                "functions": [],
+                "interfaces": [],
+                "namespaces": [
+                  {
+                    "declarations": {
+                      "classes": [],
+                      "enums": [],
+                      "functions": [],
+                      "interfaces": [],
+                      "namespaces": [],
+                      "typeAliases": [],
+                      "variables": [],
                     },
-                    "docs": Array [],
+                    "docs": [],
                     "id": "Namespace2.Namespace21.Namespace22",
                     "kind": "NamespaceDeclaration",
                     "name": "Namespace2.Namespace21.Namespace22",
                     "signature": "namespace Namespace2.Namespace21.Namespace22 {}",
-                    "source": Object {
+                    "source": {
                       "filename": "namespaces.ts",
                       "line": 13,
                       "unpkgURL": undefined,
@@ -3086,15 +3086,15 @@ Object {
                     },
                   },
                 ],
-                "typeAliases": Array [],
-                "variables": Array [
-                  Object {
-                    "docs": Array [],
+                "typeAliases": [],
+                "variables": [
+                  {
+                    "docs": [],
                     "id": "Namespace2.Namespace21.var2",
                     "kind": "VariableDeclaration",
                     "name": "var2",
                     "signature": "const var2: string;",
-                    "source": Object {
+                    "source": {
                       "filename": "namespaces.ts",
                       "line": 11,
                       "unpkgURL": undefined,
@@ -3105,12 +3105,12 @@ Object {
                   },
                 ],
               },
-              "docs": Array [],
+              "docs": [],
               "id": "Namespace2.Namespace21",
               "kind": "NamespaceDeclaration",
               "name": "Namespace2.Namespace21",
               "signature": "namespace Namespace2.Namespace21 {}",
-              "source": Object {
+              "source": {
                 "filename": "namespaces.ts",
                 "line": 10,
                 "unpkgURL": undefined,
@@ -3118,17 +3118,17 @@ Object {
               },
             },
           ],
-          "typeAliases": Array [],
-          "variables": Array [
-            Object {
-              "docs": Array [
+          "typeAliases": [],
+          "variables": [
+            {
+              "docs": [
                 "/** Var1 */",
               ],
               "id": "Namespace2.var1",
               "kind": "VariableDeclaration",
               "name": "var1",
               "signature": "const var1: number;",
-              "source": Object {
+              "source": {
                 "filename": "namespaces.ts",
                 "line": 8,
                 "unpkgURL": undefined,
@@ -3139,34 +3139,34 @@ Object {
             },
           ],
         },
-        "docs": Array [],
+        "docs": [],
         "id": "Namespace2",
         "kind": "NamespaceDeclaration",
         "name": "Namespace2",
         "signature": "namespace Namespace2 {}",
-        "source": Object {
+        "source": {
           "filename": "namespaces.ts",
           "line": 6,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/namespaces.ts#L6",
         },
       },
-      Object {
-        "declarations": Object {
-          "classes": Array [],
-          "enums": Array [],
-          "functions": Array [],
-          "interfaces": Array [],
-          "namespaces": Array [],
-          "typeAliases": Array [],
-          "variables": Array [
-            Object {
-              "docs": Array [],
+      {
+        "declarations": {
+          "classes": [],
+          "enums": [],
+          "functions": [],
+          "interfaces": [],
+          "namespaces": [],
+          "typeAliases": [],
+          "variables": [
+            {
+              "docs": [],
               "id": "Namespace3.var1",
               "kind": "VariableDeclaration",
               "name": "var1",
               "signature": "const var1: number;",
-              "source": Object {
+              "source": {
                 "filename": "namespaces.ts",
                 "line": 18,
                 "unpkgURL": undefined,
@@ -3175,13 +3175,13 @@ Object {
               "type": "number",
               "variableKind": "const",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Namespace3.var2",
               "kind": "VariableDeclaration",
               "name": "var2",
               "signature": "const var2: string;",
-              "source": Object {
+              "source": {
                 "filename": "namespaces.ts",
                 "line": 22,
                 "unpkgURL": undefined,
@@ -3192,12 +3192,12 @@ Object {
             },
           ],
         },
-        "docs": Array [],
+        "docs": [],
         "id": "Namespace3",
         "kind": "NamespaceDeclaration",
         "name": "Namespace3",
         "signature": "namespace Namespace3 {}",
-        "source": Object {
+        "source": {
           "filename": "namespaces.ts",
           "line": 17,
           "unpkgURL": undefined,
@@ -3205,9 +3205,9 @@ Object {
         },
       },
     ],
-    "typeAliases": Array [
-      Object {
-        "docs": Array [
+    "typeAliases": [
+      {
+        "docs": [
           "/**
  * TypeAlias1 aliases a function.
  */",
@@ -3216,33 +3216,33 @@ Object {
         "kind": "TypeAliasDeclaration",
         "name": "TypeAlias1",
         "signature": "type TypeAlias1 = () => any;",
-        "source": Object {
+        "source": {
           "filename": "type-aliases.ts",
           "line": 4,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/type-aliases.ts#L4",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "TypeAlias2",
         "kind": "TypeAliasDeclaration",
         "name": "TypeAlias2",
         "signature": "type TypeAlias2 = string;",
-        "source": Object {
+        "source": {
           "filename": "type-aliases.ts",
           "line": 6,
           "unpkgURL": undefined,
           "url": "https://github.com/test/repo/tree/HEAD/type-aliases.ts#L6",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "TypeAlias3",
         "kind": "TypeAliasDeclaration",
         "name": "TypeAlias3",
         "signature": "type TypeAlias3 = number | string;",
-        "source": Object {
+        "source": {
           "filename": "type-aliases.ts",
           "line": 8,
           "unpkgURL": undefined,
@@ -3250,9 +3250,9 @@ Object {
         },
       },
     ],
-    "variables": Array [
-      Object {
-        "docs": Array [
+    "variables": [
+      {
+        "docs": [
           "/**
  * This is var1.
  */",
@@ -3261,7 +3261,7 @@ Object {
         "kind": "VariableDeclaration",
         "name": "var1",
         "signature": "const var1: string;",
-        "source": Object {
+        "source": {
           "filename": "variables.ts",
           "line": 8,
           "unpkgURL": undefined,
@@ -3270,13 +3270,13 @@ Object {
         "type": "string",
         "variableKind": "const",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "var2",
         "kind": "VariableDeclaration",
         "name": "var2",
         "signature": "let var2: number;",
-        "source": Object {
+        "source": {
           "filename": "variables.ts",
           "line": 10,
           "unpkgURL": undefined,
@@ -3285,13 +3285,13 @@ Object {
         "type": "number",
         "variableKind": "let",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "var3",
         "kind": "VariableDeclaration",
         "name": "var3",
         "signature": "var var3: (string | number)[];",
-        "source": Object {
+        "source": {
           "filename": "variables.ts",
           "line": 12,
           "unpkgURL": undefined,
@@ -3300,13 +3300,13 @@ Object {
         "type": "(string | number)[]",
         "variableKind": "var",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "var4",
         "kind": "VariableDeclaration",
         "name": "var4",
         "signature": "const var4: string;",
-        "source": Object {
+        "source": {
           "filename": "variables.ts",
           "line": 3,
           "unpkgURL": undefined,
@@ -3315,13 +3315,13 @@ Object {
         "type": "string",
         "variableKind": "const",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "var6",
         "kind": "VariableDeclaration",
         "name": "var6",
         "signature": "const var6: SomeType;",
-        "source": Object {
+        "source": {
           "filename": "variables.ts",
           "line": 21,
           "unpkgURL": undefined,
@@ -3330,13 +3330,13 @@ Object {
         "type": "SomeType",
         "variableKind": "const",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "var7",
         "kind": "VariableDeclaration",
         "name": "var7",
         "signature": "let var7: string;",
-        "source": Object {
+        "source": {
           "filename": "variables.ts",
           "line": 23,
           "unpkgURL": undefined,
@@ -3347,44 +3347,44 @@ Object {
       },
     ],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "classes.ts",
       "unpkgURL": undefined,
       "url": "https://github.com/test/repo/tree/HEAD/classes.ts",
     },
-    Object {
+    {
       "filename": "enums.ts",
       "unpkgURL": undefined,
       "url": "https://github.com/test/repo/tree/HEAD/enums.ts",
     },
-    Object {
+    {
       "filename": "functions.ts",
       "unpkgURL": undefined,
       "url": "https://github.com/test/repo/tree/HEAD/functions.ts",
     },
-    Object {
+    {
       "filename": "index.ts",
       "isIndexFile": true,
       "unpkgURL": undefined,
       "url": "https://github.com/test/repo/tree/HEAD/index.ts",
     },
-    Object {
+    {
       "filename": "interfaces.ts",
       "unpkgURL": undefined,
       "url": "https://github.com/test/repo/tree/HEAD/interfaces.ts",
     },
-    Object {
+    {
       "filename": "namespaces.ts",
       "unpkgURL": undefined,
       "url": "https://github.com/test/repo/tree/HEAD/namespaces.ts",
     },
-    Object {
+    {
       "filename": "type-aliases.ts",
       "unpkgURL": undefined,
       "url": "https://github.com/test/repo/tree/HEAD/type-aliases.ts",
     },
-    Object {
+    {
       "filename": "variables.ts",
       "unpkgURL": undefined,
       "url": "https://github.com/test/repo/tree/HEAD/variables.ts",

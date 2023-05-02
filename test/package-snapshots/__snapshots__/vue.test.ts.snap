@@ -1,28 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`vue 2.6.12 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [],
-    "interfaces": Array [
-      Object {
-        "docs": Array [],
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [],
+    "interfaces": [
+      {
+        "docs": [],
         "id": "ComponentOptions",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [
+            {
+              "docs": [],
               "id": "ComponentOptions.activated",
               "kind": "InterfaceMethodDeclaration",
               "name": "activated",
               "signature": "activated: () => void;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 96,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L96",
@@ -30,13 +30,13 @@ Object {
               },
               "type": "() => void",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.beforeCreate",
               "kind": "InterfaceMethodDeclaration",
               "name": "beforeCreate",
               "signature": "beforeCreate: (this: V) => void;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 88,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L88",
@@ -44,13 +44,13 @@ Object {
               },
               "type": "(this: V) => void",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.beforeDestroy",
               "kind": "InterfaceMethodDeclaration",
               "name": "beforeDestroy",
               "signature": "beforeDestroy: () => void;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 90,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L90",
@@ -58,13 +58,13 @@ Object {
               },
               "type": "() => void",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.beforeMount",
               "kind": "InterfaceMethodDeclaration",
               "name": "beforeMount",
               "signature": "beforeMount: () => void;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 92,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L92",
@@ -72,13 +72,13 @@ Object {
               },
               "type": "() => void",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.beforeUpdate",
               "kind": "InterfaceMethodDeclaration",
               "name": "beforeUpdate",
               "signature": "beforeUpdate: () => void;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 94,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L94",
@@ -86,13 +86,13 @@ Object {
               },
               "type": "() => void",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.created",
               "kind": "InterfaceMethodDeclaration",
               "name": "created",
               "signature": "created: () => void;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 89,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L89",
@@ -100,13 +100,13 @@ Object {
               },
               "type": "() => void",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.deactivated",
               "kind": "InterfaceMethodDeclaration",
               "name": "deactivated",
               "signature": "deactivated: () => void;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 97,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L97",
@@ -114,13 +114,13 @@ Object {
               },
               "type": "() => void",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.destroyed",
               "kind": "InterfaceMethodDeclaration",
               "name": "destroyed",
               "signature": "destroyed: () => void;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 91,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L91",
@@ -128,13 +128,13 @@ Object {
               },
               "type": "() => void",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.errorCaptured",
               "kind": "InterfaceMethodDeclaration",
               "name": "errorCaptured",
               "signature": "errorCaptured: (err: Error, vm: Vue, info: string) => boolean | void;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 98,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L98",
@@ -142,13 +142,13 @@ Object {
               },
               "type": "(err: Error, vm: Vue, info: string) => boolean | void",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.mounted",
               "kind": "InterfaceMethodDeclaration",
               "name": "mounted",
               "signature": "mounted: () => void;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 93,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L93",
@@ -156,13 +156,13 @@ Object {
               },
               "type": "() => void",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.render",
               "kind": "InterfaceMethodDeclaration",
               "name": "render",
               "signature": "render: (createElement: CreateElement, hack: RenderContext<Props>) => VNode;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 84,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L84",
@@ -170,13 +170,13 @@ Object {
               },
               "type": "(createElement: CreateElement, hack: RenderContext<Props>) => VNode",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.renderError",
               "kind": "InterfaceMethodDeclaration",
               "name": "renderError",
               "signature": "renderError: (createElement: CreateElement, err: Error) => VNode;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 85,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L85",
@@ -184,13 +184,13 @@ Object {
               },
               "type": "(createElement: CreateElement, err: Error) => VNode",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.serverPrefetch",
               "kind": "InterfaceMethodDeclaration",
               "name": "serverPrefetch",
               "signature": "serverPrefetch: (this: V) => Promise<void>;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 99,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L99",
@@ -198,13 +198,13 @@ Object {
               },
               "type": "(this: V) => Promise<void>",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.updated",
               "kind": "InterfaceMethodDeclaration",
               "name": "updated",
               "signature": "updated: () => void;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 95,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L95",
@@ -213,16 +213,16 @@ Object {
               "type": "() => void",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+          "properties": [
+            {
+              "docs": [],
               "id": "ComponentOptions.comments",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "comments",
               "signature": "comments?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 120,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L120",
@@ -230,8 +230,8 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.components",
               "isOptional": true,
               "isReadonly": false,
@@ -242,7 +242,7 @@ Object {
         | Component<any, any, any, any>
         | AsyncComponent<any, any, any, any>;
 };",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 102,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L102",
@@ -250,15 +250,15 @@ Object {
               },
               "type": "{ [key: string]: Component<any, any, any, any> | AsyncComponent<any, any, any, any>; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.computed",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "computed",
               "signature": "computed?: Accessors<Computed>;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 77,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L77",
@@ -266,15 +266,15 @@ Object {
               },
               "type": "Accessors<Computed>",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.data",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "data",
               "signature": "data?: Data;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 74,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L74",
@@ -282,15 +282,15 @@ Object {
               },
               "type": "{}",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.delimiters",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "delimiters",
               "signature": "delimiters?: [string, string];",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 119,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L119",
@@ -298,15 +298,15 @@ Object {
               },
               "type": "[string, string]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.directives",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "directives",
               "signature": "directives?: { [key: string]: DirectiveFunction | DirectiveOptions };",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 101,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L101",
@@ -314,15 +314,15 @@ Object {
               },
               "type": "{ [key: string]: DirectiveOptions | DirectiveFunction; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.el",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "el",
               "signature": "el?: Element | string;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 81,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L81",
@@ -330,15 +330,15 @@ Object {
               },
               "type": "string | Element",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.extends",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "extends",
               "signature": "extends?: ComponentOptions<Vue> | typeof Vue;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 118,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L118",
@@ -346,15 +346,15 @@ Object {
               },
               "type": "ComponentOptions<Vue, DefaultData<Vue>, DefaultMethods<Vue>, DefaultComputed, PropsDefinition<DefaultProps>, DefaultProps> | VueConstructor<Vue>",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.filters",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "filters",
               "signature": "filters?: { [key: string]: Function };",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 104,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L104",
@@ -362,15 +362,15 @@ Object {
               },
               "type": "{ [key: string]: Function; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.inheritAttrs",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "inheritAttrs",
               "signature": "inheritAttrs?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 121,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L121",
@@ -378,15 +378,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.inject",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "inject",
               "signature": "inject?: InjectOptions;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 107,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L107",
@@ -394,15 +394,15 @@ Object {
               },
               "type": "InjectOptions",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.methods",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "methods",
               "signature": "methods?: Methods;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 78,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L78",
@@ -410,15 +410,15 @@ Object {
               },
               "type": "{}",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.mixins",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "mixins",
               "signature": "mixins?: (ComponentOptions<Vue> | typeof Vue)[];",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 115,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L115",
@@ -426,8 +426,8 @@ Object {
               },
               "type": "(ComponentOptions<Vue, DefaultData<Vue>, DefaultMethods<Vue>, DefaultComputed, PropsDefinition<DefaultProps>, DefaultProps> | VueConstructor<Vue>)[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.model",
               "isOptional": true,
               "isReadonly": false,
@@ -437,7 +437,7 @@ Object {
     prop?: string;
     event?: string;
 };",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 109,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L109",
@@ -445,15 +445,15 @@ Object {
               },
               "type": "{ prop?: string; event?: string; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.name",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "name",
               "signature": "name?: string;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 116,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L116",
@@ -461,15 +461,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.parent",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "parent",
               "signature": "parent?: Vue;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 114,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L114",
@@ -477,15 +477,15 @@ Object {
               },
               "type": "Vue",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.props",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "props",
               "signature": "props?: PropsDef;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 75,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L75",
@@ -493,15 +493,15 @@ Object {
               },
               "type": "{}",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.propsData",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "propsData",
               "signature": "propsData?: object;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 76,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L76",
@@ -509,15 +509,15 @@ Object {
               },
               "type": "{}",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.provide",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "provide",
               "signature": "provide?: object | (() => object);",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 106,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L106",
@@ -525,15 +525,15 @@ Object {
               },
               "type": "object | (() => object)",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.staticRenderFns",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "staticRenderFns",
               "signature": "staticRenderFns?: ((createElement: CreateElement) => VNode)[];",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 86,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L86",
@@ -541,15 +541,15 @@ Object {
               },
               "type": "((createElement: CreateElement) => VNode)[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.template",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "template",
               "signature": "template?: string;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 82,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L82",
@@ -557,15 +557,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.transitions",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "transitions",
               "signature": "transitions?: { [key: string]: object };",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 103,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L103",
@@ -573,8 +573,8 @@ Object {
               },
               "type": "{ [key: string]: object; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComponentOptions.watch",
               "isOptional": true,
               "isReadonly": false,
@@ -584,7 +584,7 @@ Object {
     string,
     WatchOptionsWithHandler<any> | WatchHandler<any> | string
 >;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 79,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L79",
@@ -603,29 +603,29 @@ Object {
     PropsDef = PropsDefinition<DefaultProps>,
     Props = DefaultProps
 > {}",
-        "source": Object {
+        "source": {
           "filename": "types/options.d.ts",
           "line": 67,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L67",
           "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/options.d.ts#L67",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "ComputedOptions",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [
+            {
+              "docs": [],
               "id": "ComputedOptions.get",
               "kind": "InterfaceMethodDeclaration",
               "name": "get",
               "signature": "get: () => T;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 167,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L167",
@@ -633,13 +633,13 @@ Object {
               },
               "type": "() => T",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ComputedOptions.set",
               "kind": "InterfaceMethodDeclaration",
               "name": "set",
               "signature": "set: (value: T) => void;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 168,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L168",
@@ -648,16 +648,16 @@ Object {
               "type": "(value: T) => void",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+          "properties": [
+            {
+              "docs": [],
               "id": "ComputedOptions.cache",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "cache",
               "signature": "cache?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 169,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L169",
@@ -669,21 +669,21 @@ Object {
         },
         "name": "ComputedOptions",
         "signature": "interface ComputedOptions<T> {}",
-        "source": Object {
+        "source": {
           "filename": "types/options.d.ts",
           "line": 166,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L166",
           "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/options.d.ts#L166",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "CreateElement",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [
+            {
+              "docs": [],
               "id": "CreateElement.0-call-signature",
               "kind": "InterfaceCallSignatureDeclaration",
               "name": "call signature",
@@ -695,15 +695,15 @@ Object {
         | (() => Component),
     children?: VNodeChildren
 ): VNode;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 19,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L19",
                 "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/vue.d.ts#L19",
               },
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "CreateElement.1-call-signature",
               "kind": "InterfaceCallSignatureDeclaration",
               "name": "call signature",
@@ -716,7 +716,7 @@ Object {
     data?: VNodeData,
     children?: VNodeChildren
 ): VNode;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 20,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L20",
@@ -724,39 +724,39 @@ Object {
               },
             },
           ],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [],
         },
         "name": "CreateElement",
         "signature": "interface CreateElement {}",
-        "source": Object {
+        "source": {
           "filename": "types/vue.d.ts",
           "line": 18,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L18",
           "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/vue.d.ts#L18",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "DirectiveOptions",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "DirectiveOptions.bind",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "bind",
               "signature": "bind?: DirectiveFunction;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 195,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L195",
@@ -764,15 +764,15 @@ Object {
               },
               "type": "DirectiveFunction",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "DirectiveOptions.componentUpdated",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "componentUpdated",
               "signature": "componentUpdated?: DirectiveFunction;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 198,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L198",
@@ -780,15 +780,15 @@ Object {
               },
               "type": "DirectiveFunction",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "DirectiveOptions.inserted",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "inserted",
               "signature": "inserted?: DirectiveFunction;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 196,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L196",
@@ -796,15 +796,15 @@ Object {
               },
               "type": "DirectiveFunction",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "DirectiveOptions.unbind",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "unbind",
               "signature": "unbind?: DirectiveFunction;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 199,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L199",
@@ -812,15 +812,15 @@ Object {
               },
               "type": "DirectiveFunction",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "DirectiveOptions.update",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "update",
               "signature": "update?: DirectiveFunction;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 197,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L197",
@@ -832,24 +832,24 @@ Object {
         },
         "name": "DirectiveOptions",
         "signature": "interface DirectiveOptions {}",
-        "source": Object {
+        "source": {
           "filename": "types/options.d.ts",
           "line": 194,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L194",
           "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/options.d.ts#L194",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "FunctionalComponentOptions",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [
+            {
+              "docs": [],
               "id": "FunctionalComponentOptions.render",
               "kind": "InterfaceMethodDeclaration",
               "name": "render",
@@ -858,7 +858,7 @@ Object {
     createElement: CreateElement,
     context: RenderContext<Props>
 ) => VNode | VNode[];",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 133,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L133",
@@ -867,16 +867,16 @@ Object {
               "type": "(this: undefined, createElement: CreateElement, context: RenderContext<Props>) => VNode | VNode[]",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+          "properties": [
+            {
+              "docs": [],
               "id": "FunctionalComponentOptions.functional",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "functional",
               "signature": "functional: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 132,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L132",
@@ -884,15 +884,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "FunctionalComponentOptions.inject",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "inject",
               "signature": "inject?: InjectOptions;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 131,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L131",
@@ -900,8 +900,8 @@ Object {
               },
               "type": "InjectOptions",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "FunctionalComponentOptions.model",
               "isOptional": true,
               "isReadonly": false,
@@ -911,7 +911,7 @@ Object {
     prop?: string;
     event?: string;
 };",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 127,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L127",
@@ -919,15 +919,15 @@ Object {
               },
               "type": "{ prop?: string; event?: string; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "FunctionalComponentOptions.name",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "name",
               "signature": "name?: string;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 125,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L125",
@@ -935,15 +935,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "FunctionalComponentOptions.props",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "props",
               "signature": "props?: PropDefs;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 126,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L126",
@@ -958,28 +958,28 @@ Object {
     Props = DefaultProps,
     PropDefs = PropsDefinition<Props>
 > {}",
-        "source": Object {
+        "source": {
           "filename": "types/options.d.ts",
           "line": 124,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L124",
           "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/options.d.ts#L124",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "PluginObject",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [
+            {
+              "docs": [],
               "id": "PluginObject.1-index-signature",
               "kind": "InterfaceIndexSignatureDeclaration",
               "name": "index signature",
               "signature": "[key: string]: any;",
-              "source": Object {
+              "source": {
                 "filename": "types/plugin.d.ts",
                 "line": 7,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/plugin.d.ts#L7",
@@ -987,17 +987,17 @@ Object {
               },
             },
           ],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "PluginObject.install",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "install",
               "signature": "install: PluginFunction<T>;",
-              "source": Object {
+              "source": {
                 "filename": "types/plugin.d.ts",
                 "line": 6,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/plugin.d.ts#L6",
@@ -1009,29 +1009,29 @@ Object {
         },
         "name": "PluginObject",
         "signature": "interface PluginObject<T> {}",
-        "source": Object {
+        "source": {
           "filename": "types/plugin.d.ts",
           "line": 5,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/plugin.d.ts#L5",
           "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/plugin.d.ts#L5",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "PropOptions",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [
+            {
+              "docs": [],
               "id": "PropOptions.validator",
               "kind": "InterfaceMethodDeclaration",
               "name": "validator",
               "signature": "validator: (value: T) => boolean;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 157,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L157",
@@ -1040,16 +1040,16 @@ Object {
               "type": "(value: T) => boolean",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+          "properties": [
+            {
+              "docs": [],
               "id": "PropOptions.default",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "default",
               "signature": "default?: T | null | undefined | (() => T | null | undefined);",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 156,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L156",
@@ -1057,15 +1057,15 @@ Object {
               },
               "type": "T | (() => T | null | undefined)",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "PropOptions.required",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "required",
               "signature": "required?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 155,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L155",
@@ -1073,15 +1073,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "PropOptions.type",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "type",
               "signature": "type?: PropType<T>;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 154,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L154",
@@ -1093,29 +1093,29 @@ Object {
         },
         "name": "PropOptions",
         "signature": "interface PropOptions<T = any> {}",
-        "source": Object {
+        "source": {
           "filename": "types/options.d.ts",
           "line": 153,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L153",
           "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/options.d.ts#L153",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "RenderContext",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [
+            {
+              "docs": [],
               "id": "RenderContext.slots",
               "kind": "InterfaceMethodDeclaration",
               "name": "slots",
               "signature": "slots: () => any;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 139,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L139",
@@ -1124,16 +1124,16 @@ Object {
               "type": "() => any",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+          "properties": [
+            {
+              "docs": [],
               "id": "RenderContext.children",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "children",
               "signature": "children: VNode[];",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 138,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L138",
@@ -1141,15 +1141,15 @@ Object {
               },
               "type": "VNode[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RenderContext.data",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "data",
               "signature": "data: VNodeData;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 140,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L140",
@@ -1157,15 +1157,15 @@ Object {
               },
               "type": "VNodeData",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RenderContext.injections",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "injections",
               "signature": "injections: any;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 144,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L144",
@@ -1173,15 +1173,15 @@ Object {
               },
               "type": "any",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RenderContext.listeners",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "listeners",
               "signature": "listeners: { [key: string]: Function | Function[] };",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 142,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L142",
@@ -1189,15 +1189,15 @@ Object {
               },
               "type": "{ [key: string]: Function | Function[]; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RenderContext.parent",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "parent",
               "signature": "parent: Vue;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 141,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L141",
@@ -1205,15 +1205,15 @@ Object {
               },
               "type": "Vue",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RenderContext.props",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "props",
               "signature": "props: Props;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 137,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L137",
@@ -1221,15 +1221,15 @@ Object {
               },
               "type": "{}",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RenderContext.scopedSlots",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "scopedSlots",
               "signature": "scopedSlots: { [key: string]: NormalizedScopedSlot };",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 143,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L143",
@@ -1241,32 +1241,32 @@ Object {
         },
         "name": "RenderContext",
         "signature": "interface RenderContext<Props = DefaultProps> {}",
-        "source": Object {
+        "source": {
           "filename": "types/options.d.ts",
           "line": 136,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L136",
           "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/options.d.ts#L136",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "VNode",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "VNode.children",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "children",
               "signature": "children?: VNode[];",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 18,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L18",
@@ -1274,15 +1274,15 @@ Object {
               },
               "type": "VNode[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNode.componentInstance",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "componentInstance",
               "signature": "componentInstance?: Vue;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 25,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L25",
@@ -1290,15 +1290,15 @@ Object {
               },
               "type": "Vue",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNode.componentOptions",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "componentOptions",
               "signature": "componentOptions?: VNodeComponentOptions;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 24,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L24",
@@ -1306,15 +1306,15 @@ Object {
               },
               "type": "VNodeComponentOptions",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNode.context",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "context",
               "signature": "context?: Vue;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 22,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L22",
@@ -1322,15 +1322,15 @@ Object {
               },
               "type": "Vue",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNode.data",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "data",
               "signature": "data?: VNodeData;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 17,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L17",
@@ -1338,15 +1338,15 @@ Object {
               },
               "type": "VNodeData",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNode.elm",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "elm",
               "signature": "elm?: Node;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 20,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L20",
@@ -1354,15 +1354,15 @@ Object {
               },
               "type": "Node",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNode.isComment",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "isComment",
               "signature": "isComment: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 30,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L30",
@@ -1370,15 +1370,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNode.isRootInsert",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "isRootInsert",
               "signature": "isRootInsert: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 29,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L29",
@@ -1386,15 +1386,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNode.isStatic",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "isStatic",
               "signature": "isStatic?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 28,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L28",
@@ -1402,15 +1402,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNode.key",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "key",
               "signature": "key?: string | number;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 23,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L23",
@@ -1418,15 +1418,15 @@ Object {
               },
               "type": "string | number",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNode.ns",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "ns",
               "signature": "ns?: string;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 21,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L21",
@@ -1434,15 +1434,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNode.parent",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "parent",
               "signature": "parent?: VNode;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 26,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L26",
@@ -1450,15 +1450,15 @@ Object {
               },
               "type": "VNode",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNode.raw",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "raw",
               "signature": "raw?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 27,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L27",
@@ -1466,15 +1466,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNode.tag",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "tag",
               "signature": "tag?: string;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 16,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L16",
@@ -1482,15 +1482,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNode.text",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "text",
               "signature": "text?: string;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 19,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L19",
@@ -1502,52 +1502,52 @@ Object {
         },
         "name": "VNode",
         "signature": "interface VNode {}",
-        "source": Object {
+        "source": {
           "filename": "types/vnode.d.ts",
           "line": 15,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L15",
           "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/vnode.d.ts#L15",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "VNodeChildrenArrayContents",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [],
         },
         "name": "VNodeChildrenArrayContents",
         "signature": "interface VNodeChildrenArrayContents extends Array<VNodeChildren | VNode> {}",
-        "source": Object {
+        "source": {
           "filename": "types/vnode.d.ts",
           "line": 13,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L13",
           "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/vnode.d.ts#L13",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "VNodeComponentOptions",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "VNodeComponentOptions.children",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "children",
               "signature": "children?: VNode[];",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 37,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L37",
@@ -1555,15 +1555,15 @@ Object {
               },
               "type": "VNode[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeComponentOptions.Ctor",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "Ctor",
               "signature": "Ctor: typeof Vue;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 34,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L34",
@@ -1571,15 +1571,15 @@ Object {
               },
               "type": "VueConstructor<Vue>",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeComponentOptions.listeners",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "listeners",
               "signature": "listeners?: object;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 36,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L36",
@@ -1587,15 +1587,15 @@ Object {
               },
               "type": "{}",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeComponentOptions.propsData",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "propsData",
               "signature": "propsData?: object;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 35,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L35",
@@ -1603,15 +1603,15 @@ Object {
               },
               "type": "{}",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeComponentOptions.tag",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "tag",
               "signature": "tag?: string;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 38,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L38",
@@ -1623,32 +1623,32 @@ Object {
         },
         "name": "VNodeComponentOptions",
         "signature": "interface VNodeComponentOptions {}",
-        "source": Object {
+        "source": {
           "filename": "types/vnode.d.ts",
           "line": 33,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L33",
           "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/vnode.d.ts#L33",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "VNodeData",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "VNodeData.attrs",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "attrs",
               "signature": "attrs?: { [key: string]: any };",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 53,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L53",
@@ -1656,15 +1656,15 @@ Object {
               },
               "type": "{ [key: string]: any; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeData.class",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "class",
               "signature": "class?: any;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 49,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L49",
@@ -1672,15 +1672,15 @@ Object {
               },
               "type": "any",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeData.directives",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "directives",
               "signature": "directives?: VNodeDirective[];",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 64,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L64",
@@ -1688,15 +1688,15 @@ Object {
               },
               "type": "VNodeDirective[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeData.domProps",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "domProps",
               "signature": "domProps?: { [key: string]: any };",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 54,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L54",
@@ -1704,15 +1704,15 @@ Object {
               },
               "type": "{ [key: string]: any; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeData.hook",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "hook",
               "signature": "hook?: { [key: string]: Function };",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 55,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L55",
@@ -1720,8 +1720,8 @@ Object {
               },
               "type": "{ [key: string]: Function; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeData.inlineTemplate",
               "isOptional": true,
               "isReadonly": false,
@@ -1731,7 +1731,7 @@ Object {
     render: Function;
     staticRenderFns: Function[];
 };",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 60,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L60",
@@ -1739,15 +1739,15 @@ Object {
               },
               "type": "{ render: Function; staticRenderFns: Function[]; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeData.keepAlive",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "keepAlive",
               "signature": "keepAlive?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 65,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L65",
@@ -1755,15 +1755,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeData.key",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "key",
               "signature": "key?: string | number;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 42,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L42",
@@ -1771,15 +1771,15 @@ Object {
               },
               "type": "string | number",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeData.nativeOn",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "nativeOn",
               "signature": "nativeOn?: { [key: string]: Function | Function[] };",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 57,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L57",
@@ -1787,15 +1787,15 @@ Object {
               },
               "type": "{ [key: string]: Function | Function[]; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeData.on",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "on",
               "signature": "on?: { [key: string]: Function | Function[] };",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 56,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L56",
@@ -1803,15 +1803,15 @@ Object {
               },
               "type": "{ [key: string]: Function | Function[]; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeData.props",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "props",
               "signature": "props?: { [key: string]: any };",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 52,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L52",
@@ -1819,15 +1819,15 @@ Object {
               },
               "type": "{ [key: string]: any; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeData.ref",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "ref",
               "signature": "ref?: string;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 45,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L45",
@@ -1835,15 +1835,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeData.refInFor",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "refInFor",
               "signature": "refInFor?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 46,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L46",
@@ -1851,15 +1851,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeData.scopedSlots",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "scopedSlots",
               "signature": "scopedSlots?: { [key: string]: ScopedSlot | undefined };",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 44,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L44",
@@ -1867,15 +1867,15 @@ Object {
               },
               "type": "{ [key: string]: ScopedSlot; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeData.show",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "show",
               "signature": "show?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 59,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L59",
@@ -1883,15 +1883,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeData.slot",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "slot",
               "signature": "slot?: string;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 43,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L43",
@@ -1899,15 +1899,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeData.staticClass",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "staticClass",
               "signature": "staticClass?: string;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 48,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L48",
@@ -1915,15 +1915,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeData.staticStyle",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "staticStyle",
               "signature": "staticStyle?: { [key: string]: any };",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 50,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L50",
@@ -1931,15 +1931,15 @@ Object {
               },
               "type": "{ [key: string]: any; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeData.style",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "style",
               "signature": "style?: string | object[] | object;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 51,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L51",
@@ -1947,15 +1947,15 @@ Object {
               },
               "type": "string | object | object[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeData.tag",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "tag",
               "signature": "tag?: string;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 47,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L47",
@@ -1963,15 +1963,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeData.transition",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "transition",
               "signature": "transition?: object;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 58,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L58",
@@ -1983,32 +1983,32 @@ Object {
         },
         "name": "VNodeData",
         "signature": "interface VNodeData {}",
-        "source": Object {
+        "source": {
           "filename": "types/vnode.d.ts",
           "line": 41,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L41",
           "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/vnode.d.ts#L41",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "VNodeDirective",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "VNodeDirective.arg",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "arg",
               "signature": "arg?: string;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 73,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L73",
@@ -2016,15 +2016,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeDirective.expression",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "expression",
               "signature": "expression?: any;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 72,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L72",
@@ -2032,15 +2032,15 @@ Object {
               },
               "type": "any",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeDirective.modifiers",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "modifiers",
               "signature": "modifiers?: { [key: string]: boolean };",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 75,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L75",
@@ -2048,15 +2048,15 @@ Object {
               },
               "type": "{ [key: string]: boolean; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeDirective.name",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "name",
               "signature": "name: string;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 69,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L69",
@@ -2064,15 +2064,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeDirective.oldArg",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "oldArg",
               "signature": "oldArg?: string;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 74,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L74",
@@ -2080,15 +2080,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeDirective.oldValue",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "oldValue",
               "signature": "oldValue?: any;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 71,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L71",
@@ -2096,15 +2096,15 @@ Object {
               },
               "type": "any",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VNodeDirective.value",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "value",
               "signature": "value?: any;",
-              "source": Object {
+              "source": {
                 "filename": "types/vnode.d.ts",
                 "line": 70,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L70",
@@ -2116,29 +2116,29 @@ Object {
         },
         "name": "VNodeDirective",
         "signature": "interface VNodeDirective {}",
-        "source": Object {
+        "source": {
           "filename": "types/vnode.d.ts",
           "line": 68,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L68",
           "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/vnode.d.ts#L68",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Vue",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [
+            {
+              "docs": [],
               "id": "Vue.$destroy",
               "kind": "InterfaceMethodDeclaration",
               "name": "$destroy",
               "signature": "$destroy: () => void;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 42,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L42",
@@ -2146,13 +2146,13 @@ Object {
               },
               "type": "() => void",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$emit",
               "kind": "InterfaceMethodDeclaration",
               "name": "$emit",
               "signature": "$emit: (event: string, ...args: any[]) => this;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 58,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L58",
@@ -2160,13 +2160,13 @@ Object {
               },
               "type": "(event: string, ...args: any[]) => this",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$forceUpdate",
               "kind": "InterfaceMethodDeclaration",
               "name": "$forceUpdate",
               "signature": "$forceUpdate: () => void;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 41,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L41",
@@ -2174,13 +2174,13 @@ Object {
               },
               "type": "() => void",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$mount",
               "kind": "InterfaceMethodDeclaration",
               "name": "$mount",
               "signature": "$mount: (elementOrSelector?: Element | string, hydrating?: boolean) => this;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 40,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L40",
@@ -2188,13 +2188,13 @@ Object {
               },
               "type": "(elementOrSelector?: Element | string, hydrating?: boolean) => this",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$nextTick",
               "kind": "InterfaceMethodDeclaration",
               "name": "$nextTick",
               "signature": "$nextTick: { (callback: (this: this) => void): void; (): Promise<void> };",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 59,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L59",
@@ -2202,13 +2202,13 @@ Object {
               },
               "type": "{ (callback: (this: this) => void): void; (): Promise<void>; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$off",
               "kind": "InterfaceMethodDeclaration",
               "name": "$off",
               "signature": "$off: (event?: string | string[], callback?: Function) => this;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 57,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L57",
@@ -2216,13 +2216,13 @@ Object {
               },
               "type": "(event?: string | string[], callback?: Function) => this",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$on",
               "kind": "InterfaceMethodDeclaration",
               "name": "$on",
               "signature": "$on: (event: string | string[], callback: Function) => this;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 55,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L55",
@@ -2230,13 +2230,13 @@ Object {
               },
               "type": "(event: string | string[], callback: Function) => this",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$once",
               "kind": "InterfaceMethodDeclaration",
               "name": "$once",
               "signature": "$once: (event: string | string[], callback: Function) => this;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 56,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L56",
@@ -2244,8 +2244,8 @@ Object {
               },
               "type": "(event: string | string[], callback: Function) => this",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$watch",
               "kind": "InterfaceMethodDeclaration",
               "name": "$watch",
@@ -2261,7 +2261,7 @@ Object {
         options?: WatchOptions
     ): () => void;
 };",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 45,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L45",
@@ -2270,16 +2270,16 @@ Object {
               "type": "{ (expOrFn: string, callback: (this: this, n: any, o: any) => void, options?: WatchOptions): (() => void); <T>(expOrFn: (this: this) => T, callback: (this: this, n: T, o: T) => void, options?: WatchOptions): () => void; }",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Vue.$attrs",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "$attrs",
               "signature": "readonly $attrs: Record<string, string>;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 37,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L37",
@@ -2287,15 +2287,15 @@ Object {
               },
               "type": "Record<string, string>",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$children",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "$children",
               "signature": "readonly $children: Vue[];",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 28,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L28",
@@ -2303,15 +2303,15 @@ Object {
               },
               "type": "Vue[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$createElement",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "$createElement",
               "signature": "$createElement: CreateElement;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 61,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L61",
@@ -2319,15 +2319,15 @@ Object {
               },
               "type": "CreateElement",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$data",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "$data",
               "signature": "readonly $data: Record<string, any>;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 33,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L33",
@@ -2335,15 +2335,15 @@ Object {
               },
               "type": "Record<string, any>",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$delete",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "$delete",
               "signature": "$delete: typeof Vue.delete;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 44,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L44",
@@ -2351,15 +2351,15 @@ Object {
               },
               "type": "{ (object: object, key: string | number): void; <T>(array: T[], key: number): void; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$el",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "$el",
               "signature": "readonly $el: Element;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 24,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L24",
@@ -2367,15 +2367,15 @@ Object {
               },
               "type": "Element",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$isServer",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "$isServer",
               "signature": "readonly $isServer: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 32,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L32",
@@ -2383,15 +2383,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$listeners",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "$listeners",
               "signature": "readonly $listeners: Record<string, Function | Function[]>;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 38,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L38",
@@ -2399,15 +2399,15 @@ Object {
               },
               "type": "Record<string, Function | Function[]>",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$options",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "$options",
               "signature": "readonly $options: ComponentOptions<Vue>;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 25,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L25",
@@ -2415,15 +2415,15 @@ Object {
               },
               "type": "ComponentOptions<Vue, DefaultData<Vue>, DefaultMethods<Vue>, DefaultComputed, PropsDefinition<DefaultProps>, DefaultProps>",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$parent",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "$parent",
               "signature": "readonly $parent: Vue;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 26,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L26",
@@ -2431,15 +2431,15 @@ Object {
               },
               "type": "Vue",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$props",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "$props",
               "signature": "readonly $props: Record<string, any>;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 34,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L34",
@@ -2447,15 +2447,15 @@ Object {
               },
               "type": "Record<string, any>",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$refs",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "$refs",
               "signature": "readonly $refs: { [key: string]: Vue | Element | Vue[] | Element[] };",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 29,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L29",
@@ -2463,15 +2463,15 @@ Object {
               },
               "type": "{ [key: string]: Element | Vue | Vue[] | Element[]; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$root",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "$root",
               "signature": "readonly $root: Vue;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 27,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L27",
@@ -2479,15 +2479,15 @@ Object {
               },
               "type": "Vue",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$scopedSlots",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "$scopedSlots",
               "signature": "readonly $scopedSlots: { [key: string]: NormalizedScopedSlot | undefined };",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 31,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L31",
@@ -2495,15 +2495,15 @@ Object {
               },
               "type": "{ [key: string]: NormalizedScopedSlot; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$set",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "$set",
               "signature": "$set: typeof Vue.set;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 43,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L43",
@@ -2511,15 +2511,15 @@ Object {
               },
               "type": "{ <T>(object: object, key: string | number, value: T): T; <T>(array: T[], key: number, value: T): T; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$slots",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "$slots",
               "signature": "readonly $slots: { [key: string]: VNode[] | undefined };",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 30,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L30",
@@ -2527,15 +2527,15 @@ Object {
               },
               "type": "{ [key: string]: VNode[]; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$ssrContext",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "$ssrContext",
               "signature": "readonly $ssrContext: any;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 35,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L35",
@@ -2543,15 +2543,15 @@ Object {
               },
               "type": "any",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Vue.$vnode",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "$vnode",
               "signature": "readonly $vnode: VNode;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 36,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L36",
@@ -2563,22 +2563,22 @@ Object {
         },
         "name": "Vue",
         "signature": "interface Vue {}",
-        "source": Object {
+        "source": {
           "filename": "types/vue.d.ts",
           "line": 23,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L23",
           "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/vue.d.ts#L23",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "VueConstructor",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [
+            {
+              "docs": [],
               "id": "VueConstructor.0-construct-signature",
               "kind": "InterfaceConstructSignatureDeclaration",
               "name": "construct signature",
@@ -2596,15 +2596,15 @@ Object {
         PropNames
     >
 ): CombinedVueInstance<V, Data, Methods, Computed, Record<PropNames, any>>;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 81,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L81",
                 "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/vue.d.ts#L81",
               },
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VueConstructor.1-construct-signature",
               "kind": "InterfaceConstructSignatureDeclaration",
               "name": "construct signature",
@@ -2617,15 +2617,15 @@ Object {
         Props
     >
 ): CombinedVueInstance<V, Data, Methods, Computed, Record<keyof Props, any>>;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 83,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L83",
                 "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/vue.d.ts#L83",
               },
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VueConstructor.2-construct-signature",
               "kind": "InterfaceConstructSignatureDeclaration",
               "name": "construct signature",
@@ -2636,7 +2636,7 @@ Object {
     object,
     Record<keyof object, any>
 >;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 84,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L84",
@@ -2644,10 +2644,10 @@ Object {
               },
             },
           ],
-          "indexSignatures": Array [],
-          "methods": Array [
-            Object {
-              "docs": Array [],
+          "indexSignatures": [],
+          "methods": [
+            {
+              "docs": [],
               "id": "VueConstructor.compile",
               "kind": "InterfaceMethodDeclaration",
               "name": "compile",
@@ -2655,7 +2655,7 @@ Object {
     render(createElement: typeof Vue.prototype.$createElement): VNode;
     staticRenderFns: (() => VNode)[];
 };",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 117,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L117",
@@ -2663,8 +2663,8 @@ Object {
               },
               "type": "(template: string) => { render(createElement: typeof Vue.prototype.$createElement): VNode; staticRenderFns: (() => VNode)[]; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VueConstructor.component",
               "kind": "InterfaceMethodDeclaration",
               "name": "component",
@@ -2721,7 +2721,7 @@ Object {
         >
     ): ExtendedVue<V, {}, {}, {}, {}>;
 };",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 105,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L105",
@@ -2729,8 +2729,8 @@ Object {
               },
               "type": "{ (id: string): VueConstructor; <VC extends VueConstructor<Vue>>(id: string, constructor: VC): VC; <Data, Methods, Computed, Props>(id: string, definition: AsyncComponent<Data, Methods, Computed, Props>): ExtendedVue<V, Data, Methods, Computed, Props>; <Data, Methods, Computed, PropNames extends string = never>(id: string, definition?: ThisTypedComponentOptionsWithArrayProps<V, Data, Methods, Computed, PropNames>): ExtendedVue<V, Data, Methods, Computed, Record<PropNames, any>>; <Data, Methods, Computed, Props>(id: string, definition?: ThisTypedComponentOptionsWithRecordProps<V, Data, Methods, Computed, Props>): ExtendedVue<V, Data, Methods, Computed, Props>; <PropNames extends string>(id: string, definition: FunctionalComponentOptions<Record<PropNames, any>, PropNames[]>): ExtendedVue<V, {}, {}, {}, Record<PropNames, any>>; <Props>(id: string, definition: FunctionalComponentOptions<Props, RecordPropsDefinition<Props>>): ExtendedVue<V, {}, {}, {}, Props>; (id: string, definition?: ComponentOptions<V, DefaultData<V>, DefaultMethods<V>, DefaultComputed, PropsDefinition<DefaultProps>, DefaultProps>): ExtendedVue<V, {}, {}, {}, {}>; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VueConstructor.delete",
               "kind": "InterfaceMethodDeclaration",
               "name": "delete",
@@ -2738,7 +2738,7 @@ Object {
     (object: object, key: string | number): void;
     <T>(array: T[], key: number): void;
 };",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 96,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L96",
@@ -2746,8 +2746,8 @@ Object {
               },
               "type": "{ (object: object, key: string | number): void; <T>(array: T[], key: number): void; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VueConstructor.directive",
               "kind": "InterfaceMethodDeclaration",
               "name": "directive",
@@ -2755,7 +2755,7 @@ Object {
     id: string,
     definition?: DirectiveOptions | DirectiveFunction
 ) => DirectiveOptions;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 99,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L99",
@@ -2763,8 +2763,8 @@ Object {
               },
               "type": "(id: string, definition?: DirectiveOptions | DirectiveFunction) => DirectiveOptions",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VueConstructor.extend",
               "kind": "InterfaceMethodDeclaration",
               "name": "extend",
@@ -2810,7 +2810,7 @@ Object {
         >
     ): ExtendedVue<V, {}, {}, {}, {}>;
 };",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 86,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L86",
@@ -2818,13 +2818,13 @@ Object {
               },
               "type": "{ <Data, Methods, Computed, PropNames extends string = never>(options?: ThisTypedComponentOptionsWithArrayProps<V, Data, Methods, Computed, PropNames>): ExtendedVue<V, Data, Methods, Computed, Record<PropNames, any>>; <Data, Methods, Computed, Props>(options?: ThisTypedComponentOptionsWithRecordProps<V, Data, Methods, Computed, Props>): ExtendedVue<V, Data, Methods, Computed, Props>; <PropNames extends string = never>(definition: FunctionalComponentOptions<Record<PropNames, any>, PropNames[]>): ExtendedVue<V, {}, {}, {}, Record<PropNames, any>>; <Props>(definition: FunctionalComponentOptions<Props, RecordPropsDefinition<Props>>): ExtendedVue<V, {}, {}, {}, Props>; (options?: ComponentOptions<V, DefaultData<V>, DefaultMethods<V>, DefaultComputed, PropsDefinition<DefaultProps>, DefaultProps>): ExtendedVue<V, {}, {}, {}, {}>; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VueConstructor.filter",
               "kind": "InterfaceMethodDeclaration",
               "name": "filter",
               "signature": "filter: (id: string, definition?: Function) => Function;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 103,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L103",
@@ -2832,13 +2832,13 @@ Object {
               },
               "type": "(id: string, definition?: Function) => Function",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VueConstructor.mixin",
               "kind": "InterfaceMethodDeclaration",
               "name": "mixin",
               "signature": "mixin: (mixin: VueConstructor | ComponentOptions<Vue>) => VueConstructor<V>;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 116,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L116",
@@ -2846,8 +2846,8 @@ Object {
               },
               "type": "(mixin: VueConstructor | ComponentOptions<Vue>) => VueConstructor<V>",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VueConstructor.nextTick",
               "kind": "InterfaceMethodDeclaration",
               "name": "nextTick",
@@ -2855,7 +2855,7 @@ Object {
     <T>(callback: (this: T) => void, context?: T): void;
     (): Promise<void>;
 };",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 92,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L92",
@@ -2863,13 +2863,13 @@ Object {
               },
               "type": "{ <T>(callback: (this: T) => void, context?: T): void; (): Promise<void>; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VueConstructor.observable",
               "kind": "InterfaceMethodDeclaration",
               "name": "observable",
               "signature": "observable: <T>(obj: T) => T;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 122,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L122",
@@ -2877,8 +2877,8 @@ Object {
               },
               "type": "<T>(obj: T) => T",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VueConstructor.set",
               "kind": "InterfaceMethodDeclaration",
               "name": "set",
@@ -2886,7 +2886,7 @@ Object {
     <T>(object: object, key: string | number, value: T): T;
     <T>(array: T[], key: number, value: T): T;
 };",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 94,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L94",
@@ -2894,8 +2894,8 @@ Object {
               },
               "type": "{ <T>(object: object, key: string | number, value: T): T; <T>(array: T[], key: number, value: T): T; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VueConstructor.use",
               "kind": "InterfaceMethodDeclaration",
               "name": "use",
@@ -2909,7 +2909,7 @@ Object {
         ...options: any[]
     ): VueConstructor<V>;
 };",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 114,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L114",
@@ -2918,16 +2918,16 @@ Object {
               "type": "{ <T>(plugin: PluginObject<T> | PluginFunction<T>, options?: T): VueConstructor<V>; (plugin: PluginObject<any> | PluginFunction<any>, ...options: any[]): VueConstructor<V>; }",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+          "properties": [
+            {
+              "docs": [],
               "id": "VueConstructor.config",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "config",
               "signature": "config: VueConfiguration;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 124,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L124",
@@ -2935,15 +2935,15 @@ Object {
               },
               "type": "VueConfiguration",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "VueConstructor.version",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "version",
               "signature": "version: string;",
-              "source": Object {
+              "source": {
                 "filename": "types/vue.d.ts",
                 "line": 125,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L125",
@@ -2955,32 +2955,32 @@ Object {
         },
         "name": "VueConstructor",
         "signature": "interface VueConstructor<V extends Vue = Vue> {}",
-        "source": Object {
+        "source": {
           "filename": "types/vue.d.ts",
           "line": 80,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L80",
           "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/vue.d.ts#L80",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "WatchOptions",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "WatchOptions.deep",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "deep",
               "signature": "deep?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 175,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L175",
@@ -2988,15 +2988,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "WatchOptions.immediate",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "immediate",
               "signature": "immediate?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 176,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L176",
@@ -3008,32 +3008,32 @@ Object {
         },
         "name": "WatchOptions",
         "signature": "interface WatchOptions {}",
-        "source": Object {
+        "source": {
           "filename": "types/options.d.ts",
           "line": 174,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L174",
           "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/options.d.ts#L174",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "WatchOptionsWithHandler",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "WatchOptionsWithHandler.handler",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "handler",
               "signature": "handler: WatchHandler<T>;",
-              "source": Object {
+              "source": {
                 "filename": "types/options.d.ts",
                 "line": 180,
                 "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L180",
@@ -3045,7 +3045,7 @@ Object {
         },
         "name": "WatchOptionsWithHandler",
         "signature": "interface WatchOptionsWithHandler<T> extends WatchOptions {}",
-        "source": Object {
+        "source": {
           "filename": "types/options.d.ts",
           "line": 179,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L179",
@@ -3053,10 +3053,10 @@ Object {
         },
       },
     ],
-    "namespaces": Array [],
-    "typeAliases": Array [
-      Object {
-        "docs": Array [],
+    "namespaces": [],
+    "typeAliases": [
+      {
+        "docs": [],
         "id": "AsyncComponent",
         "kind": "TypeAliasDeclaration",
         "name": "AsyncComponent",
@@ -3068,15 +3068,15 @@ Object {
 > =
     | AsyncComponentPromise<Data, Methods, Computed, Props>
     | AsyncComponentFactory<Data, Methods, Computed, Props>;",
-        "source": Object {
+        "source": {
           "filename": "types/options.d.ts",
           "line": 19,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L19",
           "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/options.d.ts#L19",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Component",
         "kind": "TypeAliasDeclaration",
         "name": "Component",
@@ -3089,15 +3089,15 @@ Object {
     | typeof Vue
     | FunctionalComponentOptions<Props>
     | ComponentOptions<never, Data, Methods, Computed, Props>;",
-        "source": Object {
+        "source": {
           "filename": "types/options.d.ts",
           "line": 10,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L10",
           "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/options.d.ts#L10",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "DirectiveFunction",
         "kind": "TypeAliasDeclaration",
         "name": "DirectiveFunction",
@@ -3107,41 +3107,41 @@ Object {
     vnode: VNode,
     oldVnode: VNode
 ) => void;",
-        "source": Object {
+        "source": {
           "filename": "types/options.d.ts",
           "line": 187,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L187",
           "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/options.d.ts#L187",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "PluginFunction",
         "kind": "TypeAliasDeclaration",
         "name": "PluginFunction",
         "signature": "type PluginFunction<T> = (Vue: typeof _Vue, options?: T) => void;",
-        "source": Object {
+        "source": {
           "filename": "types/plugin.d.ts",
           "line": 3,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/plugin.d.ts#L3",
           "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/plugin.d.ts#L3",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "PropType",
         "kind": "TypeAliasDeclaration",
         "name": "PropType",
         "signature": "type PropType<T> = Prop<T> | Prop<T>[];",
-        "source": Object {
+        "source": {
           "filename": "types/options.d.ts",
           "line": 149,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L149",
           "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/options.d.ts#L149",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "VNodeChildren",
         "kind": "TypeAliasDeclaration",
         "name": "VNodeChildren",
@@ -3152,20 +3152,20 @@ Object {
     | boolean
     | null
     | undefined;",
-        "source": Object {
+        "source": {
           "filename": "types/vnode.d.ts",
           "line": 12,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts#L12",
           "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/vnode.d.ts#L12",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "WatchHandler",
         "kind": "TypeAliasDeclaration",
         "name": "WatchHandler",
         "signature": "type WatchHandler<T> = (val: T, oldVal: T) => void;",
-        "source": Object {
+        "source": {
           "filename": "types/options.d.ts",
           "line": 172,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts#L172",
@@ -3173,14 +3173,14 @@ Object {
         },
       },
     ],
-    "variables": Array [
-      Object {
-        "docs": Array [],
+    "variables": [
+      {
+        "docs": [],
         "id": "Vue",
         "kind": "VariableDeclaration",
         "name": "Vue",
         "signature": "const Vue: VueConstructor<Vue>;",
-        "source": Object {
+        "source": {
           "filename": "types/vue.d.ts",
           "line": 128,
           "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts#L128",
@@ -3191,29 +3191,29 @@ Object {
       },
     ],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "types/index.d.ts",
       "isIndexFile": true,
       "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/index.d.ts",
       "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/index.d.ts",
     },
-    Object {
+    {
       "filename": "types/options.d.ts",
       "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/options.d.ts",
       "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/options.d.ts",
     },
-    Object {
+    {
       "filename": "types/plugin.d.ts",
       "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/plugin.d.ts",
       "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/plugin.d.ts",
     },
-    Object {
+    {
       "filename": "types/vnode.d.ts",
       "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vnode.d.ts",
       "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/vnode.d.ts",
     },
-    Object {
+    {
       "filename": "types/vue.d.ts",
       "unpkgURL": "https://unpkg.com/browse/vue@2.6.12/types/vue.d.ts",
       "url": "https://github.com/vuejs/vue/tree/bb253db0b3e17124b6d1fe93fbf2db35470a1347/types/vue.d.ts",

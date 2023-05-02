@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`overloaded-function-with-multiple-docs snapshot 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [
-      Object {
-        "docs": Array [
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [
+      {
+        "docs": [
           "/** (A) number to string */",
           "/** (B) string to number */",
         ],
@@ -15,7 +15,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "func1",
         "signature": "func1: { (a: number): string; (b: string): number };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 2,
           "unpkgURL": undefined,
@@ -24,13 +24,13 @@ Object {
         "type": "{ (a: number): string; (b: string): number; }",
       },
     ],
-    "interfaces": Array [],
-    "namespaces": Array [],
-    "typeAliases": Array [],
-    "variables": Array [],
+    "interfaces": [],
+    "namespaces": [],
+    "typeAliases": [],
+    "variables": [],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "index.d.ts",
       "isIndexFile": true,
       "unpkgURL": undefined,

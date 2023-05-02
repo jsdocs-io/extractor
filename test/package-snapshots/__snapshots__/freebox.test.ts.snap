@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`freebox 1.3.3 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [
-      Object {
-        "constructors": Array [
-          Object {
-            "docs": Array [
+{
+  "declarations": {
+    "classes": [
+      {
+        "constructors": [
+          {
+            "docs": [
               "/**
     @returns Freebox instance
 		*/",
@@ -16,7 +16,7 @@ Object {
             "kind": "ClassConstructorDeclaration",
             "name": "constructor",
             "signature": "constructor(appRegistered: AppRegistered);",
-            "source": Object {
+            "source": {
               "filename": "index.d.ts",
               "line": 152,
               "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L152",
@@ -24,20 +24,20 @@ Object {
             },
           },
         ],
-        "docs": Array [],
+        "docs": [],
         "id": "Freebox",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "methods": [
+            {
+              "docs": [],
               "id": "Freebox.getChallenge",
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "getChallenge",
               "signature": "getChallenge: () => AxiosResponse;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 170,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L170",
@@ -45,8 +45,8 @@ Object {
               },
               "type": "() => AxiosResponse",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
     Login to a Freebox by opening a session.
     
@@ -58,7 +58,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "login",
               "signature": "login: (challenge?: string) => Session;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 166,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L166",
@@ -66,8 +66,8 @@ Object {
               },
               "type": "(challenge?: string) => Session",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
     Close the current session.
     
@@ -79,7 +79,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "logout",
               "signature": "logout: () => AxiosResponse;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 177,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L177",
@@ -87,14 +87,14 @@ Object {
               },
               "type": "() => AxiosResponse",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Freebox.openSession",
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "openSession",
               "signature": "openSession: (sessionStart: SessionStart) => AxiosResponse;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 168,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L168",
@@ -102,8 +102,8 @@ Object {
               },
               "type": "(sessionStart: SessionStart) => AxiosResponse",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
     Requests the Freebox by passing an object \`AxiosRequestConfig\` (https://github.com/axios/axios#request-config).
     
@@ -115,7 +115,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "request",
               "signature": "request: (requestConfig: AxiosRequestConfig) => AxiosResponse;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 159,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L159",
@@ -124,26 +124,26 @@ Object {
               "type": "(requestConfig: AxiosRequestConfig) => AxiosResponse",
             },
           ],
-          "properties": Array [],
+          "properties": [],
         },
         "name": "Freebox",
         "signature": "class Freebox {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 148,
           "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L148",
           "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L148",
         },
       },
-      Object {
-        "constructors": Array [
-          Object {
-            "docs": Array [],
+      {
+        "constructors": [
+          {
+            "docs": [],
             "id": "FreeboxRegister.0-constructor",
             "kind": "ClassConstructorDeclaration",
             "name": "constructor",
             "signature": "constructor(appIdentity?: AppIdentity);",
-            "source": Object {
+            "source": {
               "filename": "index.d.ts",
               "line": 134,
               "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L134",
@@ -151,20 +151,20 @@ Object {
             },
           },
         ],
-        "docs": Array [],
+        "docs": [],
         "id": "FreeboxRegister",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "methods": [
+            {
+              "docs": [],
               "id": "FreeboxRegister.discovery",
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "discovery",
               "signature": "discovery: () => AxiosResponse;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 142,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L142",
@@ -172,14 +172,14 @@ Object {
               },
               "type": "() => AxiosResponse",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "FreeboxRegister.getAuthorizationStatus",
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "getAuthorizationStatus",
               "signature": "getAuthorizationStatus: (track_id: number | string) => boolean | AxiosError;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 144,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L144",
@@ -187,8 +187,8 @@ Object {
               },
               "type": "(track_id: number | string) => boolean | AxiosError",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Register your app to the Freebox. It requires a manual input on Freebox LCD screen.
     @returns \`Object\` with all the informations needed to login and request your Freebox.
@@ -199,7 +199,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "register",
               "signature": "register: (options?: RegisterOptions) => AppRegistered;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 140,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L140",
@@ -207,14 +207,14 @@ Object {
               },
               "type": "(options?: RegisterOptions) => AppRegistered",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "FreeboxRegister.request",
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "request",
               "signature": "request: (requestConfig: AxiosRequestConfig) => AxiosResponse;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 141,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L141",
@@ -222,14 +222,14 @@ Object {
               },
               "type": "(requestConfig: AxiosRequestConfig) => AxiosResponse",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "FreeboxRegister.requestAuthorization",
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "requestAuthorization",
               "signature": "requestAuthorization: () => AxiosResponse;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 143,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L143",
@@ -237,14 +237,14 @@ Object {
               },
               "type": "() => AxiosResponse",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "FreeboxRegister.trackAuthorizationProgress",
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "trackAuthorizationProgress",
               "signature": "trackAuthorizationProgress: (track_id: number | string) => AxiosResponse;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 145,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L145",
@@ -253,11 +253,11 @@ Object {
               "type": "(track_id: number | string) => AxiosResponse",
             },
           ],
-          "properties": Array [],
+          "properties": [],
         },
         "name": "FreeboxRegister",
         "signature": "class FreeboxRegister {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 133,
           "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L133",
@@ -265,21 +265,21 @@ Object {
         },
       },
     ],
-    "enums": Array [],
-    "functions": Array [],
-    "interfaces": Array [
-      Object {
-        "docs": Array [],
+    "enums": [],
+    "functions": [],
+    "interfaces": [
+      {
+        "docs": [],
         "id": "AppIdentity",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [
                 "/**
     A unique \`app_id\` string.
     
@@ -292,7 +292,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "app_id",
               "signature": "app_id?: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 10,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L10",
@@ -300,8 +300,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
     A descriptive application name (will be displayed on lcd).
     
@@ -314,7 +314,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "app_name",
               "signature": "app_name?: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 17,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L17",
@@ -322,8 +322,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
     Your app version.
     
@@ -336,7 +336,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "app_version",
               "signature": "app_version?: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 24,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L24",
@@ -344,8 +344,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
     The name of the device on which the app will be used.
     
@@ -358,7 +358,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "device_name",
               "signature": "device_name?: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 31,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L31",
@@ -370,25 +370,25 @@ Object {
         },
         "name": "AppIdentity",
         "signature": "interface AppIdentity {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 4,
           "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L4",
           "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L4",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "AppRegistered",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [
                 "/**
     The API root path on the HTTP server.
     
@@ -401,7 +401,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "api_base_url",
               "signature": "api_base_url?: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 78,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L78",
@@ -409,8 +409,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
     The domain to use in place of hardcoded Freebox IP.
     
@@ -423,7 +423,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "api_domain",
               "signature": "api_domain?: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 66,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L66",
@@ -431,8 +431,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
     The current API version on the Freebox.
 		*/",
@@ -443,7 +443,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "api_version",
               "signature": "api_version: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 83,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L83",
@@ -451,8 +451,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
     Same \`app_id\` used in TokenRequest to get the \`app_token\`.
 		*/",
@@ -463,7 +463,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "app_id",
               "signature": "app_id: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 59,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L59",
@@ -471,8 +471,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
     Unique \`app_token\` provided after authorizing the app via \`FreeboxRegister\` class.
     This token has been associated with a set of default permissions.
@@ -484,7 +484,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "app_token",
               "signature": "app_token: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 54,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L54",
@@ -492,8 +492,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
     Same \`app_version\` used in TokenRequest (using \`FreeboxRegister\` class) to get the \`app_token\`.
 		*/",
@@ -504,7 +504,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "app_version",
               "signature": "app_version?: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 88,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L88",
@@ -512,8 +512,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
     Port to use for remote https access to the Freebox API.
 		*/",
@@ -524,7 +524,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "https_port",
               "signature": "https_port?: number;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 71,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L71",
@@ -536,25 +536,25 @@ Object {
         },
         "name": "AppRegistered",
         "signature": "interface AppRegistered {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 49,
           "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L49",
           "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L49",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Permissions",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [
                 "/**
     Access to call logs
 		*/",
@@ -565,7 +565,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "calls",
               "signature": "calls?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 113,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L113",
@@ -573,8 +573,8 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
     Access to contact list
 		*/",
@@ -585,7 +585,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "contacts",
               "signature": "contacts?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 108,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L108",
@@ -593,8 +593,8 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
     Access to downloader
 		*/",
@@ -605,7 +605,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "downloader",
               "signature": "downloader?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 123,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L123",
@@ -613,8 +613,8 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
     Access to filesystem
 		*/",
@@ -625,7 +625,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "explorer",
               "signature": "explorer?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 118,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L118",
@@ -633,8 +633,8 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
     Access to parental control
 		*/",
@@ -645,7 +645,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "parental",
               "signature": "parental?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 128,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L128",
@@ -653,15 +653,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Permissions.pvr",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "pvr",
               "signature": "pvr?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 130,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L130",
@@ -669,8 +669,8 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
     Allow modifying the Freebox settings (reading settings is always allowed).
 		*/",
@@ -681,7 +681,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "settings",
               "signature": "settings?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 103,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L103",
@@ -693,25 +693,25 @@ Object {
         },
         "name": "Permissions",
         "signature": "interface Permissions {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 99,
           "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L99",
           "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L99",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "RegisterOptions",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [
                 "/**
     Prevent logging to console.
     
@@ -724,7 +724,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "silent",
               "signature": "silent?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 40,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L40",
@@ -736,32 +736,32 @@ Object {
         },
         "name": "RegisterOptions",
         "signature": "interface RegisterOptions {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 34,
           "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L34",
           "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L34",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Session",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Session.permissions",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "permissions",
               "signature": "permissions: Permissions;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 96,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L96",
@@ -769,8 +769,8 @@ Object {
               },
               "type": "Permissions",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
     A \`session_token\` is a combination of app_token and a challenge to open a session
     */",
@@ -781,7 +781,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "session_token",
               "signature": "session_token: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 95,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L95",
@@ -793,32 +793,32 @@ Object {
         },
         "name": "Session",
         "signature": "interface Session {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 91,
           "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L91",
           "url": "https://github.com/Matschik/freebox/tree/v1.3.3/index.d.ts#L91",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "SessionStart",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "SessionStart.app_id",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "app_id",
               "signature": "app_id: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 44,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L44",
@@ -826,15 +826,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "SessionStart.app_version",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "app_version",
               "signature": "app_version?: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 45,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L45",
@@ -842,15 +842,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "SessionStart.password",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "password",
               "signature": "password: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 46,
                 "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L46",
@@ -862,7 +862,7 @@ Object {
         },
         "name": "SessionStart",
         "signature": "interface SessionStart {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 43,
           "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts#L43",
@@ -870,12 +870,12 @@ Object {
         },
       },
     ],
-    "namespaces": Array [],
-    "typeAliases": Array [],
-    "variables": Array [],
+    "namespaces": [],
+    "typeAliases": [],
+    "variables": [],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "index.d.ts",
       "isIndexFile": true,
       "unpkgURL": "https://unpkg.com/browse/freebox@1.3.3/index.d.ts",

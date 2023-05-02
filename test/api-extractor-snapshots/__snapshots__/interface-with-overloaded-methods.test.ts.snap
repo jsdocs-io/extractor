@@ -1,23 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`interface-with-overloaded-methods snapshot 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [],
-    "interfaces": Array [
-      Object {
-        "docs": Array [],
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [],
+    "interfaces": [
+      {
+        "docs": [],
         "id": "Interface1",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [
+            {
+              "docs": [
                 "/** (A) foo */",
                 "/** (B) foo */",
               ],
@@ -25,7 +25,7 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "foo",
               "signature": "foo: { (a: string): number; (b: number): string };",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 3,
                 "unpkgURL": undefined,
@@ -34,11 +34,11 @@ Object {
               "type": "{ (a: string): number; (b: number): string; }",
             },
           ],
-          "properties": Array [],
+          "properties": [],
         },
         "name": "Interface1",
         "signature": "interface Interface1 {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 1,
           "unpkgURL": undefined,
@@ -46,12 +46,12 @@ Object {
         },
       },
     ],
-    "namespaces": Array [],
-    "typeAliases": Array [],
-    "variables": Array [],
+    "namespaces": [],
+    "typeAliases": [],
+    "variables": [],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "index.d.ts",
       "isIndexFile": true,
       "unpkgURL": undefined,

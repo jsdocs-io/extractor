@@ -1,29 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`export-named-import-all snapshot 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [],
-    "interfaces": Array [],
-    "namespaces": Array [
-      Object {
-        "declarations": Object {
-          "classes": Array [],
-          "enums": Array [],
-          "functions": Array [],
-          "interfaces": Array [],
-          "namespaces": Array [],
-          "typeAliases": Array [],
-          "variables": Array [
-            Object {
-              "docs": Array [],
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [],
+    "interfaces": [],
+    "namespaces": [
+      {
+        "declarations": {
+          "classes": [],
+          "enums": [],
+          "functions": [],
+          "interfaces": [],
+          "namespaces": [],
+          "typeAliases": [],
+          "variables": [
+            {
+              "docs": [],
               "id": "bar.baz",
               "kind": "VariableDeclaration",
               "name": "baz",
               "signature": "const baz: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "bar.d.ts",
                 "line": 1,
                 "unpkgURL": undefined,
@@ -34,32 +34,32 @@ Object {
             },
           ],
         },
-        "docs": Array [],
+        "docs": [],
         "id": "bar",
         "kind": "NamespaceDeclaration",
         "name": "bar",
         "signature": "module 'bar.d.ts' {}",
-        "source": Object {
+        "source": {
           "filename": "bar.d.ts",
           "line": 1,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "declarations": Object {
-          "classes": Array [],
-          "enums": Array [],
-          "functions": Array [
-            Object {
-              "docs": Array [
+      {
+        "declarations": {
+          "classes": [],
+          "enums": [],
+          "functions": [
+            {
+              "docs": [
                 "/** Function bar2 */",
               ],
               "id": "foo.bar2",
               "kind": "FunctionDeclaration",
               "name": "bar2",
               "signature": "bar2: (a: number, b: number) => number;",
-              "source": Object {
+              "source": {
                 "filename": "foo.d.ts",
                 "line": 9,
                 "unpkgURL": undefined,
@@ -68,28 +68,28 @@ Object {
               "type": "(a: number, b: number) => number",
             },
           ],
-          "interfaces": Array [
-            Object {
-              "docs": Array [
+          "interfaces": [
+            {
+              "docs": [
                 "/** Interface Bar3 */",
               ],
               "id": "foo.Bar3",
               "kind": "InterfaceDeclaration",
-              "members": Object {
-                "callSignatures": Array [],
-                "constructSignatures": Array [],
-                "indexSignatures": Array [],
-                "methods": Array [],
-                "properties": Array [
-                  Object {
-                    "docs": Array [],
+              "members": {
+                "callSignatures": [],
+                "constructSignatures": [],
+                "indexSignatures": [],
+                "methods": [],
+                "properties": [
+                  {
+                    "docs": [],
                     "id": "foo.Bar3.baz",
                     "isOptional": false,
                     "isReadonly": true,
                     "kind": "InterfacePropertyDeclaration",
                     "name": "baz",
                     "signature": "readonly baz: <U>(t: T, u: U) => boolean;",
-                    "source": Object {
+                    "source": {
                       "filename": "foo.d.ts",
                       "line": 13,
                       "unpkgURL": undefined,
@@ -101,7 +101,7 @@ Object {
               },
               "name": "Bar3",
               "signature": "interface Bar3<T> {}",
-              "source": Object {
+              "source": {
                 "filename": "foo.d.ts",
                 "line": 12,
                 "unpkgURL": undefined,
@@ -109,18 +109,18 @@ Object {
               },
             },
           ],
-          "namespaces": Array [],
-          "typeAliases": Array [],
-          "variables": Array [
-            Object {
-              "docs": Array [
+          "namespaces": [],
+          "typeAliases": [],
+          "variables": [
+            {
+              "docs": [
                 "/** Variable bar1 */",
               ],
               "id": "foo.bar1",
               "kind": "VariableDeclaration",
               "name": "bar1",
               "signature": "const bar1: string;",
-              "source": Object {
+              "source": {
                 "filename": "foo.d.ts",
                 "line": 6,
                 "unpkgURL": undefined,
@@ -131,7 +131,7 @@ Object {
             },
           ],
         },
-        "docs": Array [
+        "docs": [
           "/**
  * Foo module
  */",
@@ -140,7 +140,7 @@ Object {
         "kind": "NamespaceDeclaration",
         "name": "foo",
         "signature": "module 'foo.d.ts' {}",
-        "source": Object {
+        "source": {
           "filename": "foo.d.ts",
           "line": 1,
           "unpkgURL": undefined,
@@ -148,21 +148,21 @@ Object {
         },
       },
     ],
-    "typeAliases": Array [],
-    "variables": Array [],
+    "typeAliases": [],
+    "variables": [],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "bar.d.ts",
       "unpkgURL": undefined,
       "url": undefined,
     },
-    Object {
+    {
       "filename": "foo.d.ts",
       "unpkgURL": undefined,
       "url": undefined,
     },
-    Object {
+    {
       "filename": "index.d.ts",
       "isIndexFile": true,
       "unpkgURL": undefined,

@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`verify-hcaptcha 1.0.0 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [
-      Object {
-        "docs": Array [
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [
+      {
+        "docs": [
           "/**
  * \`rawVerifyHcaptchaToken\` verifies with the hCaptcha API that the response token
  * obtained from a captcha challenge is valid and returns the raw hCaptcha response.
@@ -34,7 +34,7 @@ Object {
     siteKey?: string;
     remoteIp?: string;
 }) => Promise<RawHcaptchaResponse>;",
-        "source": Object {
+        "source": {
           "filename": "src/index.ts",
           "line": 204,
           "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L204",
@@ -42,8 +42,8 @@ Object {
         },
         "type": "({ token, secretKey, siteKey, remoteIp, }: {    token: string;    secretKey: string;    siteKey?: string;    remoteIp?: string;}) => Promise<RawHcaptchaResponse>",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * \`verifyHcaptchaToken\` verifies with the hCaptcha API that the response token
  * obtained from a captcha challenge is valid.
@@ -70,7 +70,7 @@ Object {
     siteKey?: string;
     remoteIp?: string;
 }) => Promise<HcaptchaResponse>;",
-        "source": Object {
+        "source": {
           "filename": "src/index.ts",
           "line": 156,
           "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L156",
@@ -79,9 +79,9 @@ Object {
         "type": "({ token, secretKey, siteKey, remoteIp, }: {    token: string;    secretKey: string;    siteKey?: string;    remoteIp?: string;}) => Promise<HcaptchaResponse>",
       },
     ],
-    "interfaces": Array [
-      Object {
-        "docs": Array [
+    "interfaces": [
+      {
+        "docs": [
           "/**
  * \`HcaptchaResponse\` represents the response to the verification challenge
  * performed by calling {@link verifyHcaptchaToken}.
@@ -91,14 +91,14 @@ Object {
         ],
         "id": "HcaptchaResponse",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [
                 "/**
    * Optional: UTC timestamp of the challenge in ISO 8601 format
    * (for example, \`2021-10-02T18:12:10.149Z\`)
@@ -110,7 +110,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "challengeTimestamp",
               "signature": "readonly challengeTimestamp?: string;",
-              "source": Object {
+              "source": {
                 "filename": "src/index.ts",
                 "line": 76,
                 "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L76",
@@ -118,8 +118,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** Optional: true if the response will be credited */",
               ],
               "id": "HcaptchaResponse.credit",
@@ -128,7 +128,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "credit",
               "signature": "readonly credit?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "src/index.ts",
                 "line": 82,
                 "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L82",
@@ -136,8 +136,8 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
    * Optional: list of error codes
    *
@@ -150,7 +150,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "errorCodes",
               "signature": "readonly errorCodes?: HcaptchaError[];",
-              "source": Object {
+              "source": {
                 "filename": "src/index.ts",
                 "line": 89,
                 "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L89",
@@ -158,8 +158,8 @@ Object {
               },
               "type": "HcaptchaError[]",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** Optional: hostname of the website where the challenge was solved */",
               ],
               "id": "HcaptchaResponse.hostname",
@@ -168,7 +168,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "hostname",
               "signature": "readonly hostname?: string;",
-              "source": Object {
+              "source": {
                 "filename": "src/index.ts",
                 "line": 79,
                 "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L79",
@@ -176,8 +176,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** Enterprise-only feature: score for malicious activity */",
               ],
               "id": "HcaptchaResponse.score",
@@ -186,7 +186,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "score",
               "signature": "readonly score?: number;",
-              "source": Object {
+              "source": {
                 "filename": "src/index.ts",
                 "line": 92,
                 "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L92",
@@ -194,8 +194,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** Enterprise-only feature: list of reasons for the malicious activity score */",
               ],
               "id": "HcaptchaResponse.scoreReasons",
@@ -204,7 +204,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "scoreReasons",
               "signature": "readonly scoreReasons?: string[];",
-              "source": Object {
+              "source": {
                 "filename": "src/index.ts",
                 "line": 95,
                 "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L95",
@@ -212,8 +212,8 @@ Object {
               },
               "type": "string[]",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
    * True if the token is valid and meets the specified security criteria
    * (for example, if the site key is associated to the secret key)
@@ -225,7 +225,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "success",
               "signature": "readonly success: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "src/index.ts",
                 "line": 70,
                 "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L70",
@@ -237,15 +237,15 @@ Object {
         },
         "name": "HcaptchaResponse",
         "signature": "interface HcaptchaResponse {}",
-        "source": Object {
+        "source": {
           "filename": "src/index.ts",
           "line": 65,
           "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L65",
           "url": "https://github.com/velut/verify-hcaptcha/tree/v1.0.0/src/index.ts#L65",
         },
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * \`RawHcaptchaResponse\` represents the raw response to the verification challenge
  * obtained by directly calling the hCaptcha API endpoint
@@ -256,21 +256,21 @@ Object {
         ],
         "id": "RawHcaptchaResponse",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
-              "id": "RawHcaptchaResponse.\\"error-codes\\"",
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
+              "id": "RawHcaptchaResponse."error-codes"",
               "isOptional": true,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
-              "name": "\\"error-codes\\"",
+              "name": ""error-codes"",
               "signature": "readonly 'error-codes'?: string[];",
-              "source": Object {
+              "source": {
                 "filename": "src/index.ts",
                 "line": 140,
                 "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L140",
@@ -278,15 +278,15 @@ Object {
               },
               "type": "string[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RawHcaptchaResponse.challenge_ts",
               "isOptional": true,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "challenge_ts",
               "signature": "readonly challenge_ts?: string;",
-              "source": Object {
+              "source": {
                 "filename": "src/index.ts",
                 "line": 137,
                 "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L137",
@@ -294,15 +294,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RawHcaptchaResponse.credit",
               "isOptional": true,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "credit",
               "signature": "readonly credit?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "src/index.ts",
                 "line": 139,
                 "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L139",
@@ -310,15 +310,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RawHcaptchaResponse.hostname",
               "isOptional": true,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "hostname",
               "signature": "readonly hostname?: string;",
-              "source": Object {
+              "source": {
                 "filename": "src/index.ts",
                 "line": 138,
                 "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L138",
@@ -326,15 +326,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RawHcaptchaResponse.score",
               "isOptional": true,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "score",
               "signature": "readonly score?: number;",
-              "source": Object {
+              "source": {
                 "filename": "src/index.ts",
                 "line": 141,
                 "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L141",
@@ -342,15 +342,15 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RawHcaptchaResponse.score_reason",
               "isOptional": true,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "score_reason",
               "signature": "readonly score_reason?: string[];",
-              "source": Object {
+              "source": {
                 "filename": "src/index.ts",
                 "line": 142,
                 "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L142",
@@ -358,15 +358,15 @@ Object {
               },
               "type": "string[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RawHcaptchaResponse.success",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "success",
               "signature": "readonly success: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "src/index.ts",
                 "line": 136,
                 "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L136",
@@ -378,7 +378,7 @@ Object {
         },
         "name": "RawHcaptchaResponse",
         "signature": "interface RawHcaptchaResponse {}",
-        "source": Object {
+        "source": {
           "filename": "src/index.ts",
           "line": 135,
           "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L135",
@@ -386,10 +386,10 @@ Object {
         },
       },
     ],
-    "namespaces": Array [],
-    "typeAliases": Array [
-      Object {
-        "docs": Array [
+    "namespaces": [],
+    "typeAliases": [
+      {
+        "docs": [
           "/**
  * \`HcaptchaError\` collects the errors explaining why a verification challenge failed.
  *
@@ -423,7 +423,7 @@ Object {
     | 'not-using-dummy-secret'
     /** The site key is not associated to the secret key */
     | 'sitekey-secret-mismatch';",
-        "source": Object {
+        "source": {
           "filename": "src/index.ts",
           "line": 104,
           "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts#L104",
@@ -431,10 +431,10 @@ Object {
         },
       },
     ],
-    "variables": Array [],
+    "variables": [],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "src/index.ts",
       "isIndexFile": true,
       "unpkgURL": "https://unpkg.com/browse/verify-hcaptcha@1.0.0/src/index.ts",
@@ -459,15 +459,15 @@ Object {
  *
  * (async () => {
  *     const result = await verifyHcaptchaToken({
- *       token: \\"USER-SUBMITTED-RESPONSE-TOKEN\\",
- *       secretKey: \\"YOUR-SECRET-KEY\\",
- *       siteKey: \\"YOUR-SITE-KEY\\",
+ *       token: "USER-SUBMITTED-RESPONSE-TOKEN",
+ *       secretKey: "YOUR-SECRET-KEY",
+ *       siteKey: "YOUR-SITE-KEY",
  *     });
  *
  *     if (result.success) {
- *       console.log(\\"User is human\\");
+ *       console.log("User is human");
  *     } else {
- *       console.log(\\"User is robot\\");
+ *       console.log("User is robot");
  *     }
  * })();
  * \`\`\`
@@ -481,15 +481,15 @@ Object {
  *
  * (async () => {
  *     const result = await rawVerifyHcaptchaToken({
- *       token: \\"USER-SUBMITTED-RESPONSE-TOKEN\\",
- *       secretKey: \\"YOUR-SECRET-KEY\\",
- *       siteKey: \\"YOUR-SITE-KEY\\",
+ *       token: "USER-SUBMITTED-RESPONSE-TOKEN",
+ *       secretKey: "YOUR-SECRET-KEY",
+ *       siteKey: "YOUR-SITE-KEY",
  *     });
  *
  *     if (result.success) {
- *       console.log(\\"User is human\\");
+ *       console.log("User is human");
  *     } else {
- *       console.log(\\"User is robot\\");
+ *       console.log("User is robot");
  *     }
  * })();
  * \`\`\`

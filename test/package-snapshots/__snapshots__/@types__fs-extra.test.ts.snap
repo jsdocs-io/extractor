@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`@types/fs-extra 9.0.6 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [
-      Object {
-        "docs": Array [],
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [
+      {
+        "docs": [],
         "id": "access",
         "kind": "FunctionDeclaration",
         "name": "access",
@@ -20,7 +20,7 @@ Object {
     ): void;
     (path: PathLike, mode?: number): Promise<void>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 125,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L125",
@@ -28,8 +28,8 @@ Object {
         },
         "type": "{ (path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike, mode: number, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike, mode?: number): Promise<void>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "appendFile",
         "kind": "FunctionDeclaration",
         "name": "appendFile",
@@ -47,7 +47,7 @@ Object {
         options?: { encoding?: string; mode?: string | number; flag?: string }
     ): Promise<void>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 129,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L129",
@@ -55,8 +55,8 @@ Object {
         },
         "type": "{ (file: PathLike | number, data: any, options: {    encoding?: string;    mode?: number | string;    flag?: string;}, callback: (err: NodeJS.ErrnoException) => void): void; (file: any, data: any, callback: (err: NodeJS.ErrnoException) => void): void; (file: any, data: any, options?: { encoding?: string; mode?: string | number; flag?: string; }): Promise<void>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "chmod",
         "kind": "FunctionDeclaration",
         "name": "chmod",
@@ -68,7 +68,7 @@ Object {
     ): void;
     (path: PathLike, mode: Mode): Promise<void>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 134,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L134",
@@ -76,8 +76,8 @@ Object {
         },
         "type": "{ (path: PathLike, mode: Mode, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike, mode: Mode): Promise<void>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "chown",
         "kind": "FunctionDeclaration",
         "name": "chown",
@@ -90,7 +90,7 @@ Object {
         callback: (err: NodeJS.ErrnoException) => void
     ): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 137,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L137",
@@ -98,8 +98,8 @@ Object {
         },
         "type": "{ (path: PathLike, uid: number, gid: number): Promise<void>; (path: PathLike, uid: number, gid: number, callback: (err: NodeJS.ErrnoException) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "close",
         "kind": "FunctionDeclaration",
         "name": "close",
@@ -107,7 +107,7 @@ Object {
     (fd: number, callback: (err: NodeJS.ErrnoException) => void): void;
     (fd: number): Promise<void>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 140,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L140",
@@ -115,8 +115,8 @@ Object {
         },
         "type": "{ (fd: number, callback: (err: NodeJS.ErrnoException) => void): void; (fd: number): Promise<void>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "copy",
         "kind": "FunctionDeclaration",
         "name": "copy",
@@ -130,7 +130,7 @@ Object {
         callback: (err: Error) => void
     ): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 22,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L22",
@@ -138,8 +138,8 @@ Object {
         },
         "type": "{ (src: string, dest: string, options?: CopyOptions): Promise<void>; (src: string, dest: string, callback: (err: Error) => void): void; (src: string, dest: string, options: CopyOptions, callback: (err: Error) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "copyFile",
         "kind": "FunctionDeclaration",
         "name": "copyFile",
@@ -148,7 +148,7 @@ Object {
     (src: string, dest: string, callback: (err: Error) => void): void;
     (src: string, dest: string, flags: number, callback: (err: Error) => void): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 27,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L27",
@@ -156,13 +156,13 @@ Object {
         },
         "type": "{ (src: string, dest: string, flags?: number): Promise<void>; (src: string, dest: string, callback: (err: Error) => void): void; (src: string, dest: string, flags: number, callback: (err: Error) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "copySync",
         "kind": "FunctionDeclaration",
         "name": "copySync",
         "signature": "copySync: (src: string, dest: string, options?: CopyOptionsSync) => void;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 25,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L25",
@@ -170,8 +170,8 @@ Object {
         },
         "type": "(src: string, dest: string, options?: CopyOptionsSync) => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "createFile",
         "kind": "FunctionDeclaration",
         "name": "createFile",
@@ -179,7 +179,7 @@ Object {
     (file: string): Promise<void>;
     (file: string, callback: (err: Error) => void): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 36,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L36",
@@ -187,13 +187,13 @@ Object {
         },
         "type": "{ (file: string): Promise<void>; (file: string, callback: (err: Error) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "createFileSync",
         "kind": "FunctionDeclaration",
         "name": "createFileSync",
         "signature": "createFileSync: (file: string) => void;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 38,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L38",
@@ -201,8 +201,8 @@ Object {
         },
         "type": "(file: string) => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "createSymlink",
         "kind": "FunctionDeclaration",
         "name": "createSymlink",
@@ -215,7 +215,7 @@ Object {
         callback?: (err: Error) => void
     ): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 40,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L40",
@@ -223,13 +223,13 @@ Object {
         },
         "type": "{ (src: string, dest: string, type: SymlinkType): Promise<void>; (src: string, dest: string, type: SymlinkType, callback?: (err: Error) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "createSymlinkSync",
         "kind": "FunctionDeclaration",
         "name": "createSymlinkSync",
         "signature": "createSymlinkSync: (src: string, dest: string, type: SymlinkType) => void;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 42,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L42",
@@ -237,8 +237,8 @@ Object {
         },
         "type": "(src: string, dest: string, type: SymlinkType) => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "emptyDir",
         "kind": "FunctionDeclaration",
         "name": "emptyDir",
@@ -246,7 +246,7 @@ Object {
     (path: string): Promise<void>;
     (path: string, callback: (err: Error) => void): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 111,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L111",
@@ -254,13 +254,13 @@ Object {
         },
         "type": "{ (path: string): Promise<void>; (path: string, callback: (err: Error) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "emptyDirSync",
         "kind": "FunctionDeclaration",
         "name": "emptyDirSync",
         "signature": "emptyDirSync: (path: string) => void;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 115,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L115",
@@ -268,8 +268,8 @@ Object {
         },
         "type": "(path: string) => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "ensureDir",
         "kind": "FunctionDeclaration",
         "name": "ensureDir",
@@ -282,7 +282,7 @@ Object {
         callback?: (err: Error) => void
     ): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 44,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L44",
@@ -290,13 +290,13 @@ Object {
         },
         "type": "{ (path: string, options?: EnsureOptions | number): Promise<void>; (path: string, callback?: (err: Error) => void): void; (path: string, options?: number | EnsureOptions, callback?: (err: Error) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "ensureDirSync",
         "kind": "FunctionDeclaration",
         "name": "ensureDirSync",
         "signature": "ensureDirSync: (path: string, options?: EnsureOptions | number) => void;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 47,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L47",
@@ -304,8 +304,8 @@ Object {
         },
         "type": "(path: string, options?: EnsureOptions | number) => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "ensureFile",
         "kind": "FunctionDeclaration",
         "name": "ensureFile",
@@ -313,7 +313,7 @@ Object {
     (path: string): Promise<void>;
     (path: string, callback: (err: Error) => void): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 94,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L94",
@@ -321,13 +321,13 @@ Object {
         },
         "type": "{ (path: string): Promise<void>; (path: string, callback: (err: Error) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "ensureFileSync",
         "kind": "FunctionDeclaration",
         "name": "ensureFileSync",
         "signature": "ensureFileSync: (path: string) => void;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 96,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L96",
@@ -335,8 +335,8 @@ Object {
         },
         "type": "(path: string) => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "ensureLink",
         "kind": "FunctionDeclaration",
         "name": "ensureLink",
@@ -344,7 +344,7 @@ Object {
     (src: string, dest: string): Promise<void>;
     (src: string, dest: string, callback: (err: Error) => void): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 98,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L98",
@@ -352,13 +352,13 @@ Object {
         },
         "type": "{ (src: string, dest: string): Promise<void>; (src: string, dest: string, callback: (err: Error) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "ensureLinkSync",
         "kind": "FunctionDeclaration",
         "name": "ensureLinkSync",
         "signature": "ensureLinkSync: (src: string, dest: string) => void;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 102,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L102",
@@ -366,8 +366,8 @@ Object {
         },
         "type": "(src: string, dest: string) => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "ensureSymlink",
         "kind": "FunctionDeclaration",
         "name": "ensureSymlink",
@@ -381,7 +381,7 @@ Object {
     ): void;
     (src: string, dest: string, callback: (err: Error) => void): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 106,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L106",
@@ -389,13 +389,13 @@ Object {
         },
         "type": "{ (src: string, dest: string, type?: SymlinkType): Promise<void>; (src: string, dest: string, type: SymlinkType, callback: (err: Error) => void): void; (src: string, dest: string, callback: (err: Error) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "ensureSymlinkSync",
         "kind": "FunctionDeclaration",
         "name": "ensureSymlinkSync",
         "signature": "ensureSymlinkSync: (src: string, dest: string, type?: SymlinkType) => void;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 109,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L109",
@@ -403,8 +403,8 @@ Object {
         },
         "type": "(src: string, dest: string, type?: SymlinkType) => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "fchmod",
         "kind": "FunctionDeclaration",
         "name": "fchmod",
@@ -412,7 +412,7 @@ Object {
     (fd: number, mode: Mode, callback: (err: NodeJS.ErrnoException) => void): void;
     (fd: number, mode: Mode): Promise<void>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 143,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L143",
@@ -420,8 +420,8 @@ Object {
         },
         "type": "{ (fd: number, mode: Mode, callback: (err: NodeJS.ErrnoException) => void): void; (fd: number, mode: Mode): Promise<void>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "fchown",
         "kind": "FunctionDeclaration",
         "name": "fchown",
@@ -434,7 +434,7 @@ Object {
     ): void;
     (fd: number, uid: number, gid: number): Promise<void>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 146,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L146",
@@ -442,8 +442,8 @@ Object {
         },
         "type": "{ (fd: number, uid: number, gid: number, callback: (err: NodeJS.ErrnoException) => void): void; (fd: number, uid: number, gid: number): Promise<void>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "fdatasync",
         "kind": "FunctionDeclaration",
         "name": "fdatasync",
@@ -451,7 +451,7 @@ Object {
     (fd: number, callback: () => void): void;
     (fd: number): Promise<void>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 149,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L149",
@@ -459,8 +459,8 @@ Object {
         },
         "type": "{ (fd: number, callback: () => void): void; (fd: number): Promise<void>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "fstat",
         "kind": "FunctionDeclaration",
         "name": "fstat",
@@ -468,7 +468,7 @@ Object {
     (fd: number, callback: (err: NodeJS.ErrnoException, stats: Stats) => any): void;
     (fd: number): Promise<Stats>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 152,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L152",
@@ -476,8 +476,8 @@ Object {
         },
         "type": "{ (fd: number, callback: (err: NodeJS.ErrnoException, stats: Stats) => any): void; (fd: number): Promise<Stats>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "fsync",
         "kind": "FunctionDeclaration",
         "name": "fsync",
@@ -485,7 +485,7 @@ Object {
     (fd: number, callback: (err: NodeJS.ErrnoException) => void): void;
     (fd: number): Promise<void>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 155,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L155",
@@ -493,8 +493,8 @@ Object {
         },
         "type": "{ (fd: number, callback: (err: NodeJS.ErrnoException) => void): void; (fd: number): Promise<void>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "ftruncate",
         "kind": "FunctionDeclaration",
         "name": "ftruncate",
@@ -503,7 +503,7 @@ Object {
     (fd: number, len: number, callback: (err: NodeJS.ErrnoException) => void): void;
     (fd: number, len?: number): Promise<void>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 158,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L158",
@@ -511,8 +511,8 @@ Object {
         },
         "type": "{ (fd: number, callback: (err: NodeJS.ErrnoException) => void): void; (fd: number, len: number, callback: (err: NodeJS.ErrnoException) => void): void; (fd: number, len?: number): Promise<void>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "futimes",
         "kind": "FunctionDeclaration",
         "name": "futimes",
@@ -532,7 +532,7 @@ Object {
     (fd: number, atime: number, mtime: number): Promise<void>;
     (fd: number, atime: Date, mtime: Date): Promise<void>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 162,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L162",
@@ -540,8 +540,8 @@ Object {
         },
         "type": "{ (fd: number, atime: number, mtime: number, callback: (err: NodeJS.ErrnoException) => void): void; (fd: number, atime: Date, mtime: Date, callback: (err: NodeJS.ErrnoException) => void): void; (fd: number, atime: number, mtime: number): Promise<void>; (fd: number, atime: Date, mtime: Date): Promise<void>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "lchown",
         "kind": "FunctionDeclaration",
         "name": "lchown",
@@ -554,7 +554,7 @@ Object {
     ): void;
     (path: PathLike, uid: number, gid: number): Promise<void>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 167,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L167",
@@ -562,8 +562,8 @@ Object {
         },
         "type": "{ (path: PathLike, uid: number, gid: number, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike, uid: number, gid: number): Promise<void>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "link",
         "kind": "FunctionDeclaration",
         "name": "link",
@@ -575,7 +575,7 @@ Object {
     ): void;
     (existingPath: PathLike, newPath: PathLike): Promise<void>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 170,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L170",
@@ -583,8 +583,8 @@ Object {
         },
         "type": "{ (existingPath: PathLike, newPath: PathLike, callback: (err: NodeJS.ErrnoException) => void): void; (existingPath: PathLike, newPath: PathLike): Promise<void>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "lstat",
         "kind": "FunctionDeclaration",
         "name": "lstat",
@@ -595,7 +595,7 @@ Object {
     ): void;
     (path: PathLike): Promise<Stats>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 173,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L173",
@@ -603,8 +603,8 @@ Object {
         },
         "type": "{ (path: PathLike, callback: (err: NodeJS.ErrnoException, stats: Stats) => any): void; (path: PathLike): Promise<Stats>; }",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Asynchronous mkdir - creates the directory specified in {path}.  Parameter {mode} defaults to 0777.
  *
@@ -623,7 +623,7 @@ Object {
     ): void;
     (path: PathLike, options?: any): Promise<void>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 181,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L181",
@@ -631,8 +631,8 @@ Object {
         },
         "type": "{ (path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike, options: any, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike, options?: any): Promise<void>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "mkdirp",
         "kind": "FunctionDeclaration",
         "name": "mkdirp",
@@ -640,7 +640,7 @@ Object {
     (dir: string): Promise<void>;
     (dir: string, callback: (err: Error) => void): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 51,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L51",
@@ -648,13 +648,13 @@ Object {
         },
         "type": "{ (dir: string): Promise<void>; (dir: string, callback: (err: Error) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "mkdirpSync",
         "kind": "FunctionDeclaration",
         "name": "mkdirpSync",
         "signature": "mkdirpSync: (dir: string) => void;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 54,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L54",
@@ -662,8 +662,8 @@ Object {
         },
         "type": "(dir: string) => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "mkdirs",
         "kind": "FunctionDeclaration",
         "name": "mkdirs",
@@ -671,7 +671,7 @@ Object {
     (dir: string): Promise<void>;
     (dir: string, callback: (err: Error) => void): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 49,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L49",
@@ -679,13 +679,13 @@ Object {
         },
         "type": "{ (dir: string): Promise<void>; (dir: string, callback: (err: Error) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "mkdirsSync",
         "kind": "FunctionDeclaration",
         "name": "mkdirsSync",
         "signature": "mkdirsSync: (dir: string) => void;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 53,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L53",
@@ -693,8 +693,8 @@ Object {
         },
         "type": "(dir: string) => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "mkdirSync",
         "kind": "FunctionDeclaration",
         "name": "mkdirSync",
@@ -702,7 +702,7 @@ Object {
     path: PathLike,
     options?: Mode | fs.MakeDirectoryOptions | null
 ) => void;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 189,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L189",
@@ -710,8 +710,8 @@ Object {
         },
         "type": "(path: PathLike, options?: Mode | fs.MakeDirectoryOptions | null) => void",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Asynchronous mkdtemp - Creates a unique temporary directory. Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
  *
@@ -728,7 +728,7 @@ Object {
         callback: (err: NodeJS.ErrnoException, folder: string) => void
     ): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 290,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L290",
@@ -736,8 +736,8 @@ Object {
         },
         "type": "{ (prefix: string): Promise<string>; (prefix: string, callback: (err: NodeJS.ErrnoException, folder: string) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "move",
         "kind": "FunctionDeclaration",
         "name": "move",
@@ -751,7 +751,7 @@ Object {
         callback: (err: Error) => void
     ): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 31,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L31",
@@ -759,13 +759,13 @@ Object {
         },
         "type": "{ (src: string, dest: string, options?: MoveOptions): Promise<void>; (src: string, dest: string, callback: (err: Error) => void): void; (src: string, dest: string, options: MoveOptions, callback: (err: Error) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "moveSync",
         "kind": "FunctionDeclaration",
         "name": "moveSync",
         "signature": "moveSync: (src: string, dest: string, options?: MoveOptions) => void;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 34,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L34",
@@ -773,8 +773,8 @@ Object {
         },
         "type": "(src: string, dest: string, options?: MoveOptions) => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "open",
         "kind": "FunctionDeclaration",
         "name": "open",
@@ -792,7 +792,7 @@ Object {
     ): void;
     (path: PathLike, flags: string | number, mode?: Mode): Promise<number>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 191,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L191",
@@ -800,8 +800,8 @@ Object {
         },
         "type": "{ (path: PathLike, flags: string | number, callback: (err: NodeJS.ErrnoException, fd: number) => void): void; (path: PathLike, flags: string | number, mode: Mode, callback: (err: NodeJS.ErrnoException, fd: number) => void): void; (path: PathLike, flags: string | number, mode?: Mode): Promise<number>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "opendir",
         "kind": "FunctionDeclaration",
         "name": "opendir",
@@ -817,7 +817,7 @@ Object {
     ): void;
     (path: string, options?: fs.OpenDirOptions): Promise<fs.Dir>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 195,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L195",
@@ -825,8 +825,8 @@ Object {
         },
         "type": "{ (path: string, cb: (err: NodeJS.ErrnoException | null, dir: fs.Dir) => void): void; (path: string, options: fs.OpenDirOptions, cb: (err: any, dir: fs.Dir) => void): void; (path: string, options?: fs.OpenDirOptions): Promise<fs.Dir>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "outputFile",
         "kind": "FunctionDeclaration",
         "name": "outputFile",
@@ -840,7 +840,7 @@ Object {
         callback: (err: Error) => void
     ): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 56,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L56",
@@ -848,8 +848,8 @@ Object {
         },
         "type": "{ (file: string, data: any, options?: WriteFileOptions | string): Promise<void>; (file: string, data: any, callback: (err: Error) => void): void; (file: string, data: any, options: string | WriteFileOptions, callback: (err: Error) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "outputFileSync",
         "kind": "FunctionDeclaration",
         "name": "outputFileSync",
@@ -858,7 +858,7 @@ Object {
     data: any,
     options?: WriteFileOptions | string
 ) => void;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 59,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L59",
@@ -866,8 +866,8 @@ Object {
         },
         "type": "(file: string, data: any, options?: WriteFileOptions | string) => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "outputJson",
         "kind": "FunctionDeclaration",
         "name": "outputJson",
@@ -881,7 +881,7 @@ Object {
     ): void;
     (file: string, data: any, callback: (err: Error) => void): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 78,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L78",
@@ -889,8 +889,8 @@ Object {
         },
         "type": "{ (file: string, data: any, options?: WriteOptions): Promise<void>; (file: string, data: any, options: WriteOptions, callback: (err: Error) => void): void; (file: string, data: any, callback: (err: Error) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "outputJSON",
         "kind": "FunctionDeclaration",
         "name": "outputJSON",
@@ -904,7 +904,7 @@ Object {
     ): void;
     (file: string, data: any, callback: (err: Error) => void): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 75,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L75",
@@ -912,13 +912,13 @@ Object {
         },
         "type": "{ (file: string, data: any, options?: WriteOptions): Promise<void>; (file: string, data: any, options: WriteOptions, callback: (err: Error) => void): void; (file: string, data: any, callback: (err: Error) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "outputJsonSync",
         "kind": "FunctionDeclaration",
         "name": "outputJsonSync",
         "signature": "outputJsonSync: (file: string, data: any, options?: WriteOptions) => void;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 81,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L81",
@@ -926,13 +926,13 @@ Object {
         },
         "type": "(file: string, data: any, options?: WriteOptions) => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "outputJSONSync",
         "kind": "FunctionDeclaration",
         "name": "outputJSONSync",
         "signature": "outputJSONSync: (file: string, data: any, options?: WriteOptions) => void;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 82,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L82",
@@ -940,8 +940,8 @@ Object {
         },
         "type": "(file: string, data: any, options?: WriteOptions) => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "pathExists",
         "kind": "FunctionDeclaration",
         "name": "pathExists",
@@ -949,7 +949,7 @@ Object {
     (path: string): Promise<boolean>;
     (path: string, callback: (err: Error, exists: boolean) => void): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 118,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L118",
@@ -957,13 +957,13 @@ Object {
         },
         "type": "{ (path: string): Promise<boolean>; (path: string, callback: (err: Error, exists: boolean) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "pathExistsSync",
         "kind": "FunctionDeclaration",
         "name": "pathExistsSync",
         "signature": "pathExistsSync: (path: string) => boolean;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 120,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L120",
@@ -971,8 +971,8 @@ Object {
         },
         "type": "(path: string) => boolean",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "read",
         "kind": "FunctionDeclaration",
         "name": "read",
@@ -997,7 +997,7 @@ Object {
         position: number
     ): Promise<{ bytesRead: number; buffer: TBuffer }>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 203,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L203",
@@ -1005,8 +1005,8 @@ Object {
         },
         "type": "{ <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset: number, length: number, position: number | null, callback: (err: NodeJS.ErrnoException, bytesRead: number, buffer: TBuffer) => void): void; <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset: number, length: number, position: number): Promise<{ bytesRead: number; buffer: TBuffer; }>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "readdir",
         "kind": "FunctionDeclaration",
         "name": "readdir",
@@ -1028,16 +1028,16 @@ Object {
         fs.Dirent[]
     >;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 215,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L215",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/fs-extra/index.d.ts#L215",
         },
-        "type": "{ (path: PathLike, callback: (err: NodeJS.ErrnoException, files: string[]) => void): void; (path: PathLike, options?: any): Promise<string[]>; (path: PathLike, options: \\"buffer\\" | { encoding: \\"buffer\\"; withFileTypes?: false; }): Promise<Buffer[]>; (path: PathLike, options?: { encoding?: string; withFileTypes?: false; }): Promise<string[] | Buffer[]>; (path: PathLike, options: { encoding?: string; withFileTypes: true; }): Promise<fs.Dirent[]>; }",
+        "type": "{ (path: PathLike, callback: (err: NodeJS.ErrnoException, files: string[]) => void): void; (path: PathLike, options?: any): Promise<string[]>; (path: PathLike, options: "buffer" | { encoding: "buffer"; withFileTypes?: false; }): Promise<Buffer[]>; (path: PathLike, options?: { encoding?: string; withFileTypes?: false; }): Promise<string[] | Buffer[]>; (path: PathLike, options: { encoding?: string; withFileTypes: true; }): Promise<fs.Dirent[]>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "readFile",
         "kind": "FunctionDeclaration",
         "name": "readFile",
@@ -1063,7 +1063,7 @@ Object {
     (file: any, encoding: string): Promise<string>;
     (file: any): Promise<Buffer>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 207,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L207",
@@ -1071,8 +1071,8 @@ Object {
         },
         "type": "{ (file: PathLike | number, callback: (err: NodeJS.ErrnoException, data: Buffer) => void): void; (file: any, encoding: string, callback: (err: NodeJS.ErrnoException, data: string) => void): void; (file: any, options: { flag?: string; } | { encoding: string; flag?: string; }, callback: (err: NodeJS.ErrnoException, data: Buffer) => void): void; (file: any, options: { flag?: string; } | { encoding: string; flag?: string; }): Promise<string>; (file: any, encoding: string): Promise<string>; (file: any): Promise<Buffer>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "readJson",
         "kind": "FunctionDeclaration",
         "name": "readJson",
@@ -1085,7 +1085,7 @@ Object {
         callback: (err: Error, jsonObject: any) => void
     ): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 61,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L61",
@@ -1093,8 +1093,8 @@ Object {
         },
         "type": "{ (file: string, options?: ReadOptions): Promise<any>; (file: string, callback: (err: Error, jsonObject: any) => void): void; (file: string, options: ReadOptions, callback: (err: Error, jsonObject: any) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "readJSON",
         "kind": "FunctionDeclaration",
         "name": "readJSON",
@@ -1107,7 +1107,7 @@ Object {
         callback: (err: Error, jsonObject: any) => void
     ): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 64,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L64",
@@ -1115,13 +1115,13 @@ Object {
         },
         "type": "{ (file: string, options?: ReadOptions): Promise<any>; (file: string, callback: (err: Error, jsonObject: any) => void): void; (file: string, options: ReadOptions, callback: (err: Error, jsonObject: any) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "readJsonSync",
         "kind": "FunctionDeclaration",
         "name": "readJsonSync",
         "signature": "readJsonSync: (file: string, options?: ReadOptions) => any;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 68,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L68",
@@ -1129,13 +1129,13 @@ Object {
         },
         "type": "(file: string, options?: ReadOptions) => any",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "readJSONSync",
         "kind": "FunctionDeclaration",
         "name": "readJSONSync",
         "signature": "readJSONSync: (file: string, options?: ReadOptions) => any;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 69,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L69",
@@ -1143,8 +1143,8 @@ Object {
         },
         "type": "(file: string, options?: ReadOptions) => any",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "readlink",
         "kind": "FunctionDeclaration",
         "name": "readlink",
@@ -1155,7 +1155,7 @@ Object {
     ): void;
     (path: PathLike): Promise<string>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 221,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L221",
@@ -1163,8 +1163,8 @@ Object {
         },
         "type": "{ (path: PathLike, callback: (err: NodeJS.ErrnoException, linkString: string) => any): void; (path: PathLike): Promise<string>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "realpath",
         "kind": "FunctionDeclaration",
         "name": "realpath",
@@ -1180,7 +1180,7 @@ Object {
     ): void;
     (path: PathLike, cache?: { [path: string]: string }): Promise<string>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 224,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L224",
@@ -1188,8 +1188,8 @@ Object {
         },
         "type": "{ (path: PathLike, callback: (err: NodeJS.ErrnoException, resolvedPath: string) => any): void; (path: PathLike, cache: { [path: string]: string; }, callback: (err: NodeJS.ErrnoException, resolvedPath: string) => any): void; (path: PathLike, cache?: { [path: string]: string; }): Promise<string>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "remove",
         "kind": "FunctionDeclaration",
         "name": "remove",
@@ -1197,7 +1197,7 @@ Object {
     (dir: string): Promise<void>;
     (dir: string, callback: (err: Error) => void): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 71,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L71",
@@ -1205,13 +1205,13 @@ Object {
         },
         "type": "{ (dir: string): Promise<void>; (dir: string, callback: (err: Error) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "removeSync",
         "kind": "FunctionDeclaration",
         "name": "removeSync",
         "signature": "removeSync: (dir: string) => void;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 73,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L73",
@@ -1219,8 +1219,8 @@ Object {
         },
         "type": "(dir: string) => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "rename",
         "kind": "FunctionDeclaration",
         "name": "rename",
@@ -1232,7 +1232,7 @@ Object {
     ): void;
     (oldPath: PathLike, newPath: PathLike): Promise<void>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 228,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L228",
@@ -1240,8 +1240,8 @@ Object {
         },
         "type": "{ (oldPath: PathLike, newPath: PathLike, callback: (err: NodeJS.ErrnoException) => void): void; (oldPath: PathLike, newPath: PathLike): Promise<void>; }",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Asynchronous rmdir - removes the directory specified in {path}
  *
@@ -1255,7 +1255,7 @@ Object {
     (path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void;
     (path: PathLike): Promise<void>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 236,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L236",
@@ -1263,8 +1263,8 @@ Object {
         },
         "type": "{ (path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike): Promise<void>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "stat",
         "kind": "FunctionDeclaration",
         "name": "stat",
@@ -1275,7 +1275,7 @@ Object {
     ): void;
     (path: PathLike): Promise<Stats>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 239,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L239",
@@ -1283,8 +1283,8 @@ Object {
         },
         "type": "{ (path: PathLike, callback: (err: NodeJS.ErrnoException, stats: Stats) => any): void; (path: PathLike): Promise<Stats>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "symlink",
         "kind": "FunctionDeclaration",
         "name": "symlink",
@@ -1302,7 +1302,7 @@ Object {
     ): void;
     (target: PathLike, path: PathLike, type?: SymlinkType): Promise<void>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 242,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L242",
@@ -1310,8 +1310,8 @@ Object {
         },
         "type": "{ (target: PathLike, path: PathLike, type: SymlinkType | undefined, callback: (err: NodeJS.ErrnoException) => void): void; (target: PathLike, path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void; (target: PathLike, path: PathLike, type?: SymlinkType): Promise<void>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "truncate",
         "kind": "FunctionDeclaration",
         "name": "truncate",
@@ -1324,7 +1324,7 @@ Object {
     ): void;
     (path: PathLike, len?: number): Promise<void>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 246,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L246",
@@ -1332,8 +1332,8 @@ Object {
         },
         "type": "{ (path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike, len: number, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike, len?: number): Promise<void>; }",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Asynchronous unlink - deletes the file specified in {path}
  *
@@ -1347,7 +1347,7 @@ Object {
     (path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void;
     (path: PathLike): Promise<void>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 255,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L255",
@@ -1355,8 +1355,8 @@ Object {
         },
         "type": "{ (path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike): Promise<void>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "utimes",
         "kind": "FunctionDeclaration",
         "name": "utimes",
@@ -1376,7 +1376,7 @@ Object {
     (path: PathLike, atime: number, mtime: number): Promise<void>;
     (path: PathLike, atime: Date, mtime: Date): Promise<void>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 258,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L258",
@@ -1384,8 +1384,8 @@ Object {
         },
         "type": "{ (path: PathLike, atime: number, mtime: number, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike, atime: Date, mtime: Date, callback: (err: NodeJS.ErrnoException) => void): void; (path: PathLike, atime: number, mtime: number): Promise<void>; (path: PathLike, atime: Date, mtime: Date): Promise<void>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "write",
         "kind": "FunctionDeclaration",
         "name": "write",
@@ -1443,7 +1443,7 @@ Object {
         buffer: string;
     }>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 263,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L263",
@@ -1451,8 +1451,8 @@ Object {
         },
         "type": "{ <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset: number, length: number, position: number | null, callback: (err: NodeJS.ErrnoException, written: number, buffer: TBuffer) => void): void; <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset: number, length: number, callback: (err: NodeJS.ErrnoException, written: number, buffer: TBuffer) => void): void; (fd: number, data: any, callback: (err: NodeJS.ErrnoException, written: number, str: string) => void): void; (fd: number, data: any, offset: number, callback: (err: NodeJS.ErrnoException, written: number, str: string) => void): void; (fd: number, data: any, offset: number, encoding: string, callback: (err: NodeJS.ErrnoException, written: number, str: string) => void): void; <TBuffer extends unknown>(fd: number, buffer: TBuffer, offset?: number, length?: number, position?: number): Promise<{ bytesWritten: number; buffer: TBuffer; }>; (fd: number, data: any, offset?: number, encoding?: string): Promise<{ bytesWritten: number; buffer: string; }>; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "writeFile",
         "kind": "FunctionDeclaration",
         "name": "writeFile",
@@ -1470,7 +1470,7 @@ Object {
         callback: (err: NodeJS.ErrnoException) => void
     ): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 277,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L277",
@@ -1478,8 +1478,8 @@ Object {
         },
         "type": "{ (file: PathLike | number, data: any, callback: (err: NodeJS.ErrnoException) => void): void; (file: any, data: any, options?: string | WriteFileOptions): Promise<void>; (file: any, data: any, options: string | WriteFileOptions, callback: (err: NodeJS.ErrnoException) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "writeJson",
         "kind": "FunctionDeclaration",
         "name": "writeJson",
@@ -1493,7 +1493,7 @@ Object {
         callback: (err: Error) => void
     ): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 87,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L87",
@@ -1501,8 +1501,8 @@ Object {
         },
         "type": "{ (file: string, object: any, options?: WriteOptions): Promise<void>; (file: string, object: any, callback: (err: Error) => void): void; (file: string, object: any, options: WriteOptions, callback: (err: Error) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "writeJSON",
         "kind": "FunctionDeclaration",
         "name": "writeJSON",
@@ -1516,7 +1516,7 @@ Object {
         callback: (err: Error) => void
     ): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 84,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L84",
@@ -1524,13 +1524,13 @@ Object {
         },
         "type": "{ (file: string, object: any, options?: WriteOptions): Promise<void>; (file: string, object: any, callback: (err: Error) => void): void; (file: string, object: any, options: WriteOptions, callback: (err: Error) => void): void; }",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "writeJsonSync",
         "kind": "FunctionDeclaration",
         "name": "writeJsonSync",
         "signature": "writeJsonSync: (file: string, object: any, options?: WriteOptions) => void;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 91,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L91",
@@ -1538,13 +1538,13 @@ Object {
         },
         "type": "(file: string, object: any, options?: WriteOptions) => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "writeJSONSync",
         "kind": "FunctionDeclaration",
         "name": "writeJSONSync",
         "signature": "writeJSONSync: (file: string, object: any, options?: WriteOptions) => void;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 92,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L92",
@@ -1552,8 +1552,8 @@ Object {
         },
         "type": "(file: string, object: any, options?: WriteOptions) => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "writev",
         "kind": "FunctionDeclaration",
         "name": "writev",
@@ -1583,7 +1583,7 @@ Object {
         position?: number
     ): Promise<WritevResult>;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 281,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L281",
@@ -1592,26 +1592,26 @@ Object {
         "type": "{ (fd: number, buffers: NodeJS.ArrayBufferView[], position: number, cb: (err: NodeJS.ErrnoException | null, bytesWritten: number, buffers: NodeJS.ArrayBufferView[]) => void): void; (fd: number, buffers: NodeJS.ArrayBufferView[], cb: (err: any, bytesWritten: number, buffers: NodeJS.ArrayBufferView[]) => void): void; (fd: number, buffers: NodeJS.ArrayBufferView[], position?: number): Promise<WritevResult>; }",
       },
     ],
-    "interfaces": Array [
-      Object {
-        "docs": Array [],
+    "interfaces": [
+      {
+        "docs": [],
         "id": "CopyOptions",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "CopyOptions.dereference",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "dereference",
               "signature": "dereference?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 312,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L312",
@@ -1619,15 +1619,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "CopyOptions.errorOnExist",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "errorOnExist",
               "signature": "errorOnExist?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 315,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L315",
@@ -1635,15 +1635,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "CopyOptions.filter",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "filter",
               "signature": "filter?: CopyFilterSync | CopyFilterAsync;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 316,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L316",
@@ -1651,15 +1651,15 @@ Object {
               },
               "type": "CopyFilterSync | CopyFilterAsync",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "CopyOptions.overwrite",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "overwrite",
               "signature": "overwrite?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 313,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L313",
@@ -1667,15 +1667,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "CopyOptions.preserveTimestamps",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "preserveTimestamps",
               "signature": "preserveTimestamps?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 314,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L314",
@@ -1683,15 +1683,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "CopyOptions.recursive",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "recursive",
               "signature": "recursive?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 317,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L317",
@@ -1703,32 +1703,32 @@ Object {
         },
         "name": "CopyOptions",
         "signature": "interface CopyOptions {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 311,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L311",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/fs-extra/index.d.ts#L311",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "CopyOptionsSync",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "CopyOptionsSync.filter",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "filter",
               "signature": "filter?: CopyFilterSync;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 321,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L321",
@@ -1740,32 +1740,32 @@ Object {
         },
         "name": "CopyOptionsSync",
         "signature": "interface CopyOptionsSync extends CopyOptions {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 320,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L320",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/fs-extra/index.d.ts#L320",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "EnsureOptions",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "EnsureOptions.mode",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "mode",
               "signature": "mode?: number;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 325,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L325",
@@ -1777,32 +1777,32 @@ Object {
         },
         "name": "EnsureOptions",
         "signature": "interface EnsureOptions {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 324,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L324",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/fs-extra/index.d.ts#L324",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "MoveOptions",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "MoveOptions.limit",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "limit",
               "signature": "limit?: number;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 330,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L330",
@@ -1810,15 +1810,15 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "MoveOptions.overwrite",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "overwrite",
               "signature": "overwrite?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 329,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L329",
@@ -1830,32 +1830,32 @@ Object {
         },
         "name": "MoveOptions",
         "signature": "interface MoveOptions {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 328,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L328",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/fs-extra/index.d.ts#L328",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "PathEntry",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "PathEntry.path",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "path",
               "signature": "path: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 294,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L294",
@@ -1863,15 +1863,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "PathEntry.stats",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "stats",
               "signature": "stats: Stats;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 295,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L295",
@@ -1883,29 +1883,29 @@ Object {
         },
         "name": "PathEntry",
         "signature": "interface PathEntry {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 293,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L293",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/fs-extra/index.d.ts#L293",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "PathEntryStream",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [
+            {
+              "docs": [],
               "id": "PathEntryStream.read",
               "kind": "InterfaceMethodDeclaration",
               "name": "read",
               "signature": "read: () => PathEntry | null;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 299,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L299",
@@ -1914,36 +1914,36 @@ Object {
               "type": "() => PathEntry | null",
             },
           ],
-          "properties": Array [],
+          "properties": [],
         },
         "name": "PathEntryStream",
         "signature": "interface PathEntryStream {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 298,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L298",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/fs-extra/index.d.ts#L298",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "ReadOptions",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "ReadOptions.encoding",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "encoding",
               "signature": "encoding?: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 337,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L337",
@@ -1951,15 +1951,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ReadOptions.flag",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "flag",
               "signature": "flag?: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 338,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L338",
@@ -1967,15 +1967,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ReadOptions.fs",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "fs",
               "signature": "fs?: object;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 335,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L335",
@@ -1983,15 +1983,15 @@ Object {
               },
               "type": "{}",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ReadOptions.reviver",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "reviver",
               "signature": "reviver?: any;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 336,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L336",
@@ -1999,15 +1999,15 @@ Object {
               },
               "type": "any",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ReadOptions.throws",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "throws",
               "signature": "throws?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 334,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L334",
@@ -2019,32 +2019,32 @@ Object {
         },
         "name": "ReadOptions",
         "signature": "interface ReadOptions {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 333,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L333",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/fs-extra/index.d.ts#L333",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "WriteFileOptions",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "WriteFileOptions.encoding",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "encoding",
               "signature": "encoding?: string | null;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 342,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L342",
@@ -2052,15 +2052,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "WriteFileOptions.flag",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "flag",
               "signature": "flag?: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 343,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L343",
@@ -2068,15 +2068,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "WriteFileOptions.mode",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "mode",
               "signature": "mode?: number;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 344,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L344",
@@ -2088,32 +2088,32 @@ Object {
         },
         "name": "WriteFileOptions",
         "signature": "interface WriteFileOptions {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 341,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L341",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/fs-extra/index.d.ts#L341",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "WriteOptions",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "WriteOptions.EOL",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "EOL",
               "signature": "EOL?: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 351,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L351",
@@ -2121,15 +2121,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "WriteOptions.fs",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "fs",
               "signature": "fs?: object;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 348,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L348",
@@ -2137,15 +2137,15 @@ Object {
               },
               "type": "{}",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "WriteOptions.replacer",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "replacer",
               "signature": "replacer?: any;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 349,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L349",
@@ -2153,15 +2153,15 @@ Object {
               },
               "type": "any",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "WriteOptions.spaces",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "spaces",
               "signature": "spaces?: number | string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 350,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L350",
@@ -2173,32 +2173,32 @@ Object {
         },
         "name": "WriteOptions",
         "signature": "interface WriteOptions extends WriteFileOptions {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 347,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L347",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/fs-extra/index.d.ts#L347",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "WritevResult",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "WritevResult.buffers",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "buffers",
               "signature": "buffers: ArrayBufferView[];",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 356,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L356",
@@ -2206,15 +2206,15 @@ Object {
               },
               "type": "any[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "WritevResult.bytesWritten",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "bytesWritten",
               "signature": "bytesWritten: number;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 355,
                 "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L355",
@@ -2226,7 +2226,7 @@ Object {
         },
         "name": "WritevResult",
         "signature": "interface WritevResult {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 354,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L354",
@@ -2234,67 +2234,67 @@ Object {
         },
       },
     ],
-    "namespaces": Array [],
-    "typeAliases": Array [
-      Object {
-        "docs": Array [],
+    "namespaces": [],
+    "typeAliases": [
+      {
+        "docs": [],
         "id": "ArrayBufferView",
         "kind": "TypeAliasDeclaration",
         "name": "ArrayBufferView",
         "signature": "type ArrayBufferView = NodeJS.TypedArray | DataView;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 309,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L309",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/fs-extra/index.d.ts#L309",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "CopyFilterAsync",
         "kind": "TypeAliasDeclaration",
         "name": "CopyFilterAsync",
         "signature": "type CopyFilterAsync = (src: string, dest: string) => Promise<boolean>;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 303,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L303",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/fs-extra/index.d.ts#L303",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "CopyFilterSync",
         "kind": "TypeAliasDeclaration",
         "name": "CopyFilterSync",
         "signature": "type CopyFilterSync = (src: string, dest: string) => boolean;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 302,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L302",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/fs-extra/index.d.ts#L302",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Mode",
         "kind": "TypeAliasDeclaration",
         "name": "Mode",
         "signature": "type Mode = string | number;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 307,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L307",
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/fs-extra/index.d.ts#L307",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "SymlinkType",
         "kind": "TypeAliasDeclaration",
         "name": "SymlinkType",
         "signature": "type SymlinkType = 'dir' | 'file' | 'junction';",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 305,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L305",
@@ -2302,9 +2302,9 @@ Object {
         },
       },
     ],
-    "variables": Array [
-      Object {
-        "docs": Array [],
+    "variables": [
+      {
+        "docs": [],
         "id": "createLink",
         "kind": "VariableDeclaration",
         "name": "createLink",
@@ -2312,7 +2312,7 @@ Object {
     (src: string, dest: string): Promise<void>;
     (src: string, dest: string, callback: (err: Error) => void): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 101,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L101",
@@ -2321,13 +2321,13 @@ Object {
         "type": "{ (src: string, dest: string): Promise<void>; (src: string, dest: string, callback: (err: Error) => void): void; }",
         "variableKind": "const",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "createLinkSync",
         "kind": "VariableDeclaration",
         "name": "createLinkSync",
         "signature": "const createLinkSync: (src: string, dest: string) => void;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 104,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L104",
@@ -2336,8 +2336,8 @@ Object {
         "type": "(src: string, dest: string) => void",
         "variableKind": "const",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "emptydir",
         "kind": "VariableDeclaration",
         "name": "emptydir",
@@ -2345,7 +2345,7 @@ Object {
     (path: string): Promise<void>;
     (path: string, callback: (err: Error) => void): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 113,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L113",
@@ -2354,13 +2354,13 @@ Object {
         "type": "{ (path: string): Promise<void>; (path: string, callback: (err: Error) => void): void; }",
         "variableKind": "const",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "emptydirSync",
         "kind": "VariableDeclaration",
         "name": "emptydirSync",
         "signature": "const emptydirSync: (path: string) => void;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 116,
           "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts#L116",
@@ -2371,8 +2371,8 @@ Object {
       },
     ],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "index.d.ts",
       "isIndexFile": true,
       "unpkgURL": "https://unpkg.com/browse/@types/fs-extra@9.0.6/index.d.ts",

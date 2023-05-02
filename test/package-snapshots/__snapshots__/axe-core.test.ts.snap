@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`axe-core 4.1.1 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [
-      Object {
-        "docs": Array [
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [
+      {
+        "docs": [
           "/**
 	 * Function to clean up plugin configuration in document and its subframes
 	 */",
@@ -16,7 +16,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "cleanup",
         "signature": "cleanup: () => void;",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 307,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L307",
@@ -24,8 +24,8 @@ Object {
         },
         "type": "() => void",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
 	 * Method for configuring the data format used by axe. Helpful for adding new
 	 * rules, which must be registered with the library to execute.
@@ -36,7 +36,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "configure",
         "signature": "configure: (spec: Spec) => void;",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 284,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L284",
@@ -44,8 +44,8 @@ Object {
         },
         "type": "(spec: Spec) => void",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
 	 * Searches and returns rules that contain a tag in the list of tags.
 	 * @param  {Array}  tags  Optional array of tags
@@ -56,7 +56,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "getRules",
         "signature": "getRules: (tags?: string[]) => RuleMetadata[];",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 291,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L291",
@@ -64,8 +64,8 @@ Object {
         },
         "type": "(tags?: string[]) => RuleMetadata[]",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
 	 * Function to register a plugin configuration in document and its subframes
 	 * @param  {Object}    plugin    A plugin configuration object
@@ -75,7 +75,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "registerPlugin",
         "signature": "registerPlugin: (plugin: AxePlugin) => void;",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 302,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L302",
@@ -83,8 +83,8 @@ Object {
         },
         "type": "(plugin: AxePlugin) => void",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
 	 * Restores the default axe configuration
 	 */",
@@ -93,7 +93,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "reset",
         "signature": "reset: () => void;",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 296,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L296",
@@ -101,8 +101,8 @@ Object {
         },
         "type": "() => void",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
 	 * Runs a number of rules against the provided HTML page and returns the resulting issue list
 	 *
@@ -124,7 +124,7 @@ Object {
     (context: ElementContext, options: RunOptions): Promise<AxeResults>;
     (context: ElementContext, options: RunOptions, callback: RunCallback): void;
 };",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 264,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L264",
@@ -133,26 +133,26 @@ Object {
         "type": "{ (context?: ElementContext): Promise<AxeResults>; (options: RunOptions): Promise<AxeResults>; (callback: (error: Error, results: AxeResults) => void): void; (context: ElementContext, callback: RunCallback): void; (options: RunOptions, callback: RunCallback): void; (context: ElementContext, options: RunOptions): Promise<AxeResults>; (context: ElementContext, options: RunOptions, callback: RunCallback): void; }",
       },
     ],
-    "interfaces": Array [
-      Object {
-        "docs": Array [],
+    "interfaces": [
+      {
+        "docs": [],
         "id": "AriaAttrs",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "AriaAttrs.allowEmpty",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "allowEmpty",
               "signature": "allowEmpty?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 160,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L160",
@@ -160,15 +160,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AriaAttrs.global",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "global",
               "signature": "global?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 161,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L161",
@@ -176,15 +176,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AriaAttrs.type",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "type",
               "signature": "type: AriaAttrsType;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 158,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L158",
@@ -192,15 +192,15 @@ Object {
               },
               "type": "AriaAttrsType",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AriaAttrs.unsupported",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "unsupported",
               "signature": "unsupported?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 162,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L162",
@@ -208,15 +208,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AriaAttrs.values",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "values",
               "signature": "values?: string[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 159,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L159",
@@ -228,32 +228,32 @@ Object {
         },
         "name": "AriaAttrs",
         "signature": "interface AriaAttrs {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 157,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L157",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L157",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "AriaRoles",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "AriaRoles.allowedAttrs",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "allowedAttrs",
               "signature": "allowedAttrs?: string[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 169,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L169",
@@ -261,15 +261,15 @@ Object {
               },
               "type": "string[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AriaRoles.nameFromContent",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "nameFromContent",
               "signature": "nameFromContent?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 170,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L170",
@@ -277,15 +277,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AriaRoles.requiredAttrs",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "requiredAttrs",
               "signature": "requiredAttrs?: string[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 168,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L168",
@@ -293,15 +293,15 @@ Object {
               },
               "type": "string[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AriaRoles.requiredContext",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "requiredContext",
               "signature": "requiredContext?: string[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 166,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L166",
@@ -309,15 +309,15 @@ Object {
               },
               "type": "string[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AriaRoles.requiredOwned",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "requiredOwned",
               "signature": "requiredOwned?: string[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 167,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L167",
@@ -325,31 +325,31 @@ Object {
               },
               "type": "string[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AriaRoles.type",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "type",
               "signature": "type: AriaRolesType | DpubRolesType;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 165,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L165",
                 "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L165",
               },
-              "type": "\\"abstract\\" | \\"widget\\" | \\"structure\\" | \\"landmark\\" | \\"section\\" | \\"link\\" | \\"listitem\\" | \\"img\\" | \\"navigation\\" | \\"note\\" | \\"separator\\" | \\"none\\" | \\"sectionhead\\"",
+              "type": ""abstract" | "widget" | "structure" | "landmark" | "section" | "link" | "listitem" | "img" | "navigation" | "note" | "separator" | "none" | "sectionhead"",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AriaRoles.unsupported",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "unsupported",
               "signature": "unsupported?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 171,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L171",
@@ -361,29 +361,29 @@ Object {
         },
         "name": "AriaRoles",
         "signature": "interface AriaRoles {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 164,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L164",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L164",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "AxePlugin",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [
+            {
+              "docs": [],
               "id": "AxePlugin.cleanup",
               "kind": "InterfaceMethodDeclaration",
               "name": "cleanup",
               "signature": "cleanup: (callback: Function) => void;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 233,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L233",
@@ -391,13 +391,13 @@ Object {
               },
               "type": "(callback: Function) => void",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxePlugin.run",
               "kind": "InterfaceMethodDeclaration",
               "name": "run",
               "signature": "run: (...args: any[]) => any;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 228,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L228",
@@ -406,9 +406,9 @@ Object {
               "type": "(...args: any[]) => any",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+          "properties": [
+            {
+              "docs": [],
               "id": "AxePlugin.commands",
               "isOptional": false,
               "isReadonly": false,
@@ -418,7 +418,7 @@ Object {
     id: string;
     callback(...args: any[]): void;
 }[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 229,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L229",
@@ -426,15 +426,15 @@ Object {
               },
               "type": "{ id: string; callback(...args: any[]): void; }[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxePlugin.id",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "id",
               "signature": "id: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 227,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L227",
@@ -446,32 +446,32 @@ Object {
         },
         "name": "AxePlugin",
         "signature": "interface AxePlugin {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 226,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L226",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L226",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "AxeResults",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "AxeResults.inapplicable",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "inapplicable",
               "signature": "inapplicable: Result[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 105,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L105",
@@ -479,15 +479,15 @@ Object {
               },
               "type": "Result[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxeResults.incomplete",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "incomplete",
               "signature": "incomplete: Result[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 104,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L104",
@@ -495,15 +495,15 @@ Object {
               },
               "type": "Result[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxeResults.passes",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "passes",
               "signature": "passes: Result[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 102,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L102",
@@ -511,15 +511,15 @@ Object {
               },
               "type": "Result[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxeResults.testEngine",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "testEngine",
               "signature": "testEngine: TestEngine;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 97,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L97",
@@ -527,15 +527,15 @@ Object {
               },
               "type": "TestEngine",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxeResults.testEnvironment",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "testEnvironment",
               "signature": "testEnvironment: TestEnvironment;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 99,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L99",
@@ -543,15 +543,15 @@ Object {
               },
               "type": "TestEnvironment",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxeResults.testRunner",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "testRunner",
               "signature": "testRunner: TestRunner;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 98,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L98",
@@ -559,15 +559,15 @@ Object {
               },
               "type": "TestRunner",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxeResults.timestamp",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "timestamp",
               "signature": "timestamp: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 101,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L101",
@@ -575,15 +575,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxeResults.toolOptions",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "toolOptions",
               "signature": "toolOptions: RunOptions;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 96,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L96",
@@ -591,15 +591,15 @@ Object {
               },
               "type": "RunOptions",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxeResults.url",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "url",
               "signature": "url: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 100,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L100",
@@ -607,15 +607,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxeResults.violations",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "violations",
               "signature": "violations: Result[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 103,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L103",
@@ -627,32 +627,32 @@ Object {
         },
         "name": "AxeResults",
         "signature": "interface AxeResults {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 95,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L95",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L95",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Check",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Check.after",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "after",
               "signature": "after?: Function | string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 208,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L208",
@@ -660,15 +660,15 @@ Object {
               },
               "type": "string | Function",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Check.enabled",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "enabled",
               "signature": "enabled?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 211,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L211",
@@ -676,15 +676,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Check.evaluate",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "evaluate",
               "signature": "evaluate: Function | string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 207,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L207",
@@ -692,15 +692,15 @@ Object {
               },
               "type": "string | Function",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Check.id",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "id",
               "signature": "id: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 206,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L206",
@@ -708,15 +708,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Check.matches",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "matches",
               "signature": "matches?: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 210,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L210",
@@ -724,15 +724,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Check.options",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "options",
               "signature": "options?: any;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 209,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L209",
@@ -744,23 +744,23 @@ Object {
         },
         "name": "Check",
         "signature": "interface Check {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 205,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L205",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L205",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "CheckLocale",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [
+            {
+              "docs": [],
               "id": "CheckLocale.0-index-signature",
               "kind": "InterfaceIndexSignatureDeclaration",
               "name": "index signature",
@@ -769,7 +769,7 @@ Object {
     fail: string | { [key: string]: string };
     incomplete: string | { [key: string]: string };
 };",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 146,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L146",
@@ -777,37 +777,37 @@ Object {
               },
             },
           ],
-          "methods": Array [],
-          "properties": Array [],
+          "methods": [],
+          "properties": [],
         },
         "name": "CheckLocale",
         "signature": "interface CheckLocale {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 145,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L145",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L145",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "CheckResult",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "CheckResult.data",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "data",
               "signature": "data: any;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 132,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L132",
@@ -815,15 +815,15 @@ Object {
               },
               "type": "any",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "CheckResult.id",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "id",
               "signature": "id: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 129,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L129",
@@ -831,15 +831,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "CheckResult.impact",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "impact",
               "signature": "impact: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 130,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L130",
@@ -847,15 +847,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "CheckResult.message",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "message",
               "signature": "message: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 131,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L131",
@@ -863,15 +863,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "CheckResult.relatedNodes",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "relatedNodes",
               "signature": "relatedNodes?: RelatedNode[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 133,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L133",
@@ -883,32 +883,32 @@ Object {
         },
         "name": "CheckResult",
         "signature": "interface CheckResult {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 128,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L128",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L128",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "HtmlElms",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "HtmlElms.variant",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "variant",
               "signature": "variant?: { [key: string]: HtmlElmsVariant };",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 182,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L182",
@@ -920,32 +920,32 @@ Object {
         },
         "name": "HtmlElms",
         "signature": "interface HtmlElms extends HtmlElmsVariant {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 181,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L181",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L181",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "HtmlElmsVariant",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "HtmlElmsVariant.allowedRoles",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "allowedRoles",
               "signature": "allowedRoles: boolean | string[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 175,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L175",
@@ -953,15 +953,15 @@ Object {
               },
               "type": "boolean | string[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "HtmlElmsVariant.contentTypes",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "contentTypes",
               "signature": "contentTypes?: HtmlContentTypes[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 174,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L174",
@@ -969,15 +969,15 @@ Object {
               },
               "type": "HtmlContentTypes[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "HtmlElmsVariant.implicitAttrs",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "implicitAttrs",
               "signature": "implicitAttrs?: { [key: string]: string };",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 178,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L178",
@@ -985,15 +985,15 @@ Object {
               },
               "type": "{ [key: string]: string; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "HtmlElmsVariant.namingMethods",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "namingMethods",
               "signature": "namingMethods?: string[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 179,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L179",
@@ -1001,15 +1001,15 @@ Object {
               },
               "type": "string[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "HtmlElmsVariant.noAriaAttrs",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "noAriaAttrs",
               "signature": "noAriaAttrs?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 176,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L176",
@@ -1017,15 +1017,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "HtmlElmsVariant.shadowRoot",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "shadowRoot",
               "signature": "shadowRoot?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 177,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L177",
@@ -1037,32 +1037,32 @@ Object {
         },
         "name": "HtmlElmsVariant",
         "signature": "interface HtmlElmsVariant {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 173,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L173",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L173",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Locale",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Locale.checks",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "checks",
               "signature": "checks?: CheckLocale;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 155,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L155",
@@ -1070,15 +1070,15 @@ Object {
               },
               "type": "CheckLocale",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Locale.lang",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "lang",
               "signature": "lang?: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 153,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L153",
@@ -1086,15 +1086,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Locale.rules",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "rules",
               "signature": "rules?: RuleLocale;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 154,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L154",
@@ -1106,32 +1106,32 @@ Object {
         },
         "name": "Locale",
         "signature": "interface Locale {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 152,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L152",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L152",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "NodeResult",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "NodeResult.all",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "all",
               "signature": "all: CheckResult[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 123,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L123",
@@ -1139,15 +1139,15 @@ Object {
               },
               "type": "CheckResult[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "NodeResult.ancestry",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "ancestry",
               "signature": "ancestry?: string[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 121,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L121",
@@ -1155,15 +1155,15 @@ Object {
               },
               "type": "string[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "NodeResult.any",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "any",
               "signature": "any: CheckResult[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 122,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L122",
@@ -1171,15 +1171,15 @@ Object {
               },
               "type": "CheckResult[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "NodeResult.element",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "element",
               "signature": "element?: HTMLElement;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 126,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L126",
@@ -1187,15 +1187,15 @@ Object {
               },
               "type": "HTMLElement",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "NodeResult.failureSummary",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "failureSummary",
               "signature": "failureSummary?: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 125,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L125",
@@ -1203,15 +1203,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "NodeResult.html",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "html",
               "signature": "html: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 117,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L117",
@@ -1219,15 +1219,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "NodeResult.impact",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "impact",
               "signature": "impact?: ImpactValue;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 118,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L118",
@@ -1235,15 +1235,15 @@ Object {
               },
               "type": "ImpactValue",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "NodeResult.none",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "none",
               "signature": "none: CheckResult[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 124,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L124",
@@ -1251,15 +1251,15 @@ Object {
               },
               "type": "CheckResult[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "NodeResult.target",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "target",
               "signature": "target: string[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 119,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L119",
@@ -1267,15 +1267,15 @@ Object {
               },
               "type": "string[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "NodeResult.xpath",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "xpath",
               "signature": "xpath?: string[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 120,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L120",
@@ -1287,32 +1287,32 @@ Object {
         },
         "name": "NodeResult",
         "signature": "interface NodeResult {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 116,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L116",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L116",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "RelatedNode",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "RelatedNode.html",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "html",
               "signature": "html: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 137,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L137",
@@ -1320,15 +1320,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RelatedNode.target",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "target",
               "signature": "target: string[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 136,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L136",
@@ -1340,32 +1340,32 @@ Object {
         },
         "name": "RelatedNode",
         "signature": "interface RelatedNode {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 135,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L135",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L135",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Result",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Result.description",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "description",
               "signature": "description: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 108,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L108",
@@ -1373,15 +1373,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Result.help",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "help",
               "signature": "help: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 109,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L109",
@@ -1389,15 +1389,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Result.helpUrl",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "helpUrl",
               "signature": "helpUrl: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 110,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L110",
@@ -1405,15 +1405,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Result.id",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "id",
               "signature": "id: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 111,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L111",
@@ -1421,15 +1421,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Result.impact",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "impact",
               "signature": "impact?: ImpactValue;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 112,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L112",
@@ -1437,15 +1437,15 @@ Object {
               },
               "type": "ImpactValue",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Result.nodes",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "nodes",
               "signature": "nodes: NodeResult[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 114,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L114",
@@ -1453,15 +1453,15 @@ Object {
               },
               "type": "NodeResult[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Result.tags",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "tags",
               "signature": "tags: TagValue[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 113,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L113",
@@ -1473,32 +1473,32 @@ Object {
         },
         "name": "Result",
         "signature": "interface Result {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 107,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L107",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L107",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Rule",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Rule.all",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "all",
               "signature": "all?: string[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 221,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L221",
@@ -1506,15 +1506,15 @@ Object {
               },
               "type": "string[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Rule.any",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "any",
               "signature": "any?: string[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 220,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L220",
@@ -1522,15 +1522,15 @@ Object {
               },
               "type": "string[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Rule.enabled",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "enabled",
               "signature": "enabled?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 218,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L218",
@@ -1538,15 +1538,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Rule.excludeHidden",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "excludeHidden",
               "signature": "excludeHidden?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 217,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L217",
@@ -1554,15 +1554,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Rule.id",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "id",
               "signature": "id: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 214,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L214",
@@ -1570,15 +1570,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Rule.impact",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "impact",
               "signature": "impact?: ImpactValue;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 216,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L216",
@@ -1586,15 +1586,15 @@ Object {
               },
               "type": "ImpactValue",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Rule.matches",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "matches",
               "signature": "matches?: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 224,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L224",
@@ -1602,15 +1602,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Rule.none",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "none",
               "signature": "none?: string[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 222,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L222",
@@ -1618,15 +1618,15 @@ Object {
               },
               "type": "string[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Rule.pageLevel",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "pageLevel",
               "signature": "pageLevel?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 219,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L219",
@@ -1634,15 +1634,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Rule.selector",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "selector",
               "signature": "selector?: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 215,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L215",
@@ -1650,15 +1650,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Rule.tags",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "tags",
               "signature": "tags?: string[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 223,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L223",
@@ -1670,23 +1670,23 @@ Object {
         },
         "name": "Rule",
         "signature": "interface Rule {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 213,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L213",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L213",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "RuleLocale",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [
+            {
+              "docs": [],
               "id": "RuleLocale.0-index-signature",
               "kind": "InterfaceIndexSignatureDeclaration",
               "name": "index signature",
@@ -1694,7 +1694,7 @@ Object {
     description: string;
     help: string;
 };",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 140,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L140",
@@ -1702,37 +1702,37 @@ Object {
               },
             },
           ],
-          "methods": Array [],
-          "properties": Array [],
+          "methods": [],
+          "properties": [],
         },
         "name": "RuleLocale",
         "signature": "interface RuleLocale {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 139,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L139",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L139",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "RuleMetadata",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "RuleMetadata.description",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "description",
               "signature": "description: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 237,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L237",
@@ -1740,15 +1740,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RuleMetadata.help",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "help",
               "signature": "help: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 238,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L238",
@@ -1756,15 +1756,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RuleMetadata.helpUrl",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "helpUrl",
               "signature": "helpUrl: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 239,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L239",
@@ -1772,15 +1772,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RuleMetadata.ruleId",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "ruleId",
               "signature": "ruleId: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 236,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L236",
@@ -1788,15 +1788,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RuleMetadata.tags",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "tags",
               "signature": "tags: string[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 240,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L240",
@@ -1808,30 +1808,30 @@ Object {
         },
         "name": "RuleMetadata",
         "signature": "interface RuleMetadata {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 235,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L235",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L235",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "RuleObject",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [
+            {
+              "docs": [],
               "id": "RuleObject.0-index-signature",
               "kind": "InterfaceIndexSignatureDeclaration",
               "name": "index signature",
               "signature": "[key: string]: {
     enabled: boolean;
 };",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 76,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L76",
@@ -1839,37 +1839,37 @@ Object {
               },
             },
           ],
-          "methods": Array [],
-          "properties": Array [],
+          "methods": [],
+          "properties": [],
         },
         "name": "RuleObject",
         "signature": "interface RuleObject {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 75,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L75",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L75",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "RunOnly",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "RunOnly.type",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "type",
               "signature": "type: RunOnlyType;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 72,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L72",
@@ -1877,15 +1877,15 @@ Object {
               },
               "type": "RunOnlyType",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RunOnly.values",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "values",
               "signature": "values: TagValue[] | string[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 73,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L73",
@@ -1897,32 +1897,32 @@ Object {
         },
         "name": "RunOnly",
         "signature": "interface RunOnly {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 71,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L71",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L71",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "RunOptions",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "RunOptions.absolutePaths",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "absolutePaths",
               "signature": "absolutePaths?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 88,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L88",
@@ -1930,15 +1930,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RunOptions.ancestry",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "ancestry",
               "signature": "ancestry?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 86,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L86",
@@ -1946,15 +1946,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RunOptions.elementRef",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "elementRef",
               "signature": "elementRef?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 90,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L90",
@@ -1962,15 +1962,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RunOptions.frameWaitTime",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "frameWaitTime",
               "signature": "frameWaitTime?: number;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 91,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L91",
@@ -1978,15 +1978,15 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RunOptions.iframes",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "iframes",
               "signature": "iframes?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 89,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L89",
@@ -1994,15 +1994,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RunOptions.performanceTimer",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "performanceTimer",
               "signature": "performanceTimer?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 93,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L93",
@@ -2010,15 +2010,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RunOptions.preload",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "preload",
               "signature": "preload?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 92,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L92",
@@ -2026,15 +2026,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RunOptions.reporter",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "reporter",
               "signature": "reporter?: ReporterVersion;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 83,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L83",
@@ -2042,15 +2042,15 @@ Object {
               },
               "type": "ReporterVersion",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RunOptions.resultTypes",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "resultTypes",
               "signature": "resultTypes?: resultGroups[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 84,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L84",
@@ -2058,15 +2058,15 @@ Object {
               },
               "type": "resultGroups[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RunOptions.rules",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "rules",
               "signature": "rules?: RuleObject;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 82,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L82",
@@ -2074,15 +2074,15 @@ Object {
               },
               "type": "RuleObject",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RunOptions.runOnly",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "runOnly",
               "signature": "runOnly?: RunOnly | TagValue[] | string[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 81,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L81",
@@ -2090,15 +2090,15 @@ Object {
               },
               "type": "string[] | RunOnly",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RunOptions.selectors",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "selectors",
               "signature": "selectors?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 85,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L85",
@@ -2106,15 +2106,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "RunOptions.xpath",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "xpath",
               "signature": "xpath?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 87,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L87",
@@ -2126,32 +2126,32 @@ Object {
         },
         "name": "RunOptions",
         "signature": "interface RunOptions {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 80,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L80",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L80",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Spec",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Spec.axeVersion",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "axeVersion",
               "signature": "axeVersion?: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 201,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L201",
@@ -2159,8 +2159,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Spec.branding",
               "isOptional": true,
               "isReadonly": false,
@@ -2170,7 +2170,7 @@ Object {
     brand?: string;
     application?: string;
 };",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 191,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L191",
@@ -2178,15 +2178,15 @@ Object {
               },
               "type": "{ brand?: string; application?: string; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Spec.checks",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "checks",
               "signature": "checks?: Check[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 196,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L196",
@@ -2194,15 +2194,15 @@ Object {
               },
               "type": "Check[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Spec.disableOtherRules",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "disableOtherRules",
               "signature": "disableOtherRules?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 200,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L200",
@@ -2210,15 +2210,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Spec.locale",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "locale",
               "signature": "locale?: Locale;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 199,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L199",
@@ -2226,15 +2226,15 @@ Object {
               },
               "type": "Locale",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Spec.reporter",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "reporter",
               "signature": "reporter?: ReporterVersion;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 195,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L195",
@@ -2242,15 +2242,15 @@ Object {
               },
               "type": "ReporterVersion",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Spec.rules",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "rules",
               "signature": "rules?: Rule[];",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 197,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L197",
@@ -2258,15 +2258,15 @@ Object {
               },
               "type": "Rule[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Spec.standards",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "standards",
               "signature": "standards?: Standards;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 198,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L198",
@@ -2274,15 +2274,15 @@ Object {
               },
               "type": "Standards",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Spec.ver",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "ver",
               "signature": "ver?: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 203,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L203",
@@ -2294,32 +2294,32 @@ Object {
         },
         "name": "Spec",
         "signature": "interface Spec {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 190,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L190",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L190",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Standards",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Standards.ariaAttrs",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "ariaAttrs",
               "signature": "ariaAttrs?: { [key: string]: AriaAttrs };",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 185,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L185",
@@ -2327,15 +2327,15 @@ Object {
               },
               "type": "{ [key: string]: AriaAttrs; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Standards.ariaRoles",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "ariaRoles",
               "signature": "ariaRoles?: { [key: string]: AriaRoles };",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 186,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L186",
@@ -2343,15 +2343,15 @@ Object {
               },
               "type": "{ [key: string]: AriaRoles; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Standards.cssColors",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "cssColors",
               "signature": "cssColors?: { [key: string]: number[] };",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 188,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L188",
@@ -2359,15 +2359,15 @@ Object {
               },
               "type": "{ [key: string]: number[]; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Standards.htmlElms",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "htmlElms",
               "signature": "htmlElms?: { [key: string]: HtmlElms };",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 187,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L187",
@@ -2379,32 +2379,32 @@ Object {
         },
         "name": "Standards",
         "signature": "interface Standards {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 184,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L184",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L184",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "TestEngine",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "TestEngine.name",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "name",
               "signature": "name: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 58,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L58",
@@ -2412,15 +2412,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "TestEngine.version",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "version",
               "signature": "version: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 59,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L59",
@@ -2432,32 +2432,32 @@ Object {
         },
         "name": "TestEngine",
         "signature": "interface TestEngine {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 57,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L57",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L57",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "TestEnvironment",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "TestEnvironment.orientationAngle",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "orientationAngle",
               "signature": "orientationAngle?: number;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 68,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L68",
@@ -2465,15 +2465,15 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "TestEnvironment.orientationType",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "orientationType",
               "signature": "orientationType?: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 69,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L69",
@@ -2481,15 +2481,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "TestEnvironment.userAgent",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "userAgent",
               "signature": "userAgent: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 65,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L65",
@@ -2497,15 +2497,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "TestEnvironment.windowHeight",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "windowHeight",
               "signature": "windowHeight: number;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 67,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L67",
@@ -2513,15 +2513,15 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "TestEnvironment.windowWidth",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "windowWidth",
               "signature": "windowWidth: number;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 66,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L66",
@@ -2533,32 +2533,32 @@ Object {
         },
         "name": "TestEnvironment",
         "signature": "interface TestEnvironment {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 64,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L64",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L64",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "TestRunner",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "TestRunner.name",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "name",
               "signature": "name: string;",
-              "source": Object {
+              "source": {
                 "filename": "axe.d.ts",
                 "line": 62,
                 "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L62",
@@ -2570,7 +2570,7 @@ Object {
         },
         "name": "TestRunner",
         "signature": "interface TestRunner {}",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 61,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L61",
@@ -2578,10 +2578,10 @@ Object {
         },
       },
     ],
-    "namespaces": Array [],
-    "typeAliases": Array [
-      Object {
-        "docs": Array [],
+    "namespaces": [],
+    "typeAliases": [
+      {
+        "docs": [],
         "id": "AriaAttrsType",
         "kind": "TypeAliasDeclaration",
         "name": "AriaAttrsType",
@@ -2594,28 +2594,28 @@ Object {
     | 'string'
     | 'decimal'
     | 'int';",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 16,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L16",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L16",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "AriaRolesType",
         "kind": "TypeAliasDeclaration",
         "name": "AriaRolesType",
         "signature": "type AriaRolesType = 'abstract' | 'widget' | 'structure' | 'landmark';",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 26,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L26",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L26",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "ContextObject",
         "kind": "TypeAliasDeclaration",
         "name": "ContextObject",
@@ -2623,15 +2623,15 @@ Object {
     include?: string[] | string[][];
     exclude?: string[] | string[][];
 };",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 48,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L48",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L48",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "DpubRolesType",
         "kind": "TypeAliasDeclaration",
         "name": "DpubRolesType",
@@ -2646,28 +2646,28 @@ Object {
     | 'separator'
     | 'none'
     | 'sectionhead';",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 28,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L28",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L28",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "ElementContext",
         "kind": "TypeAliasDeclaration",
         "name": "ElementContext",
         "signature": "type ElementContext = Node | string | ContextObject;",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 55,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L55",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L55",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "HtmlContentTypes",
         "kind": "TypeAliasDeclaration",
         "name": "HtmlContentTypes",
@@ -2678,85 +2678,85 @@ Object {
     | 'phrasing'
     | 'embedded'
     | 'interactive';",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 40,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L40",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L40",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "ImpactValue",
         "kind": "TypeAliasDeclaration",
         "name": "ImpactValue",
         "signature": "type ImpactValue = 'minor' | 'moderate' | 'serious' | 'critical' | null;",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 6,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L6",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L6",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "ReporterVersion",
         "kind": "TypeAliasDeclaration",
         "name": "ReporterVersion",
         "signature": "type ReporterVersion = 'v1' | 'v2' | 'raw' | 'raw-env' | 'no-passes';",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 10,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L10",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L10",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "resultGroups",
         "kind": "TypeAliasDeclaration",
         "name": "resultGroups",
         "signature": "type resultGroups = 'inapplicable' | 'passes' | 'incomplete' | 'violations';",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 14,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L14",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L14",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "RunCallback",
         "kind": "TypeAliasDeclaration",
         "name": "RunCallback",
         "signature": "type RunCallback = (error: Error, results: AxeResults) => void;",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 53,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L53",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L53",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "RunOnlyType",
         "kind": "TypeAliasDeclaration",
         "name": "RunOnlyType",
         "signature": "type RunOnlyType = 'rule' | 'rules' | 'tag' | 'tags';",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 12,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L12",
           "url": "https://github.com/dequelabs/axe-core/tree/7da2c51e3d673a29cd95016a41aa0871bb049c85/axe.d.ts#L12",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "TagValue",
         "kind": "TypeAliasDeclaration",
         "name": "TagValue",
         "signature": "type TagValue = string;",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 8,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L8",
@@ -2764,9 +2764,9 @@ Object {
         },
       },
     ],
-    "variables": Array [
-      Object {
-        "docs": Array [
+    "variables": [
+      {
+        "docs": [
           "/**
 	 * Object for axe Results
 	 */",
@@ -2775,7 +2775,7 @@ Object {
         "kind": "VariableDeclaration",
         "name": "AxeResults",
         "signature": "var AxeResults: AxeResults;",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 254,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L254",
@@ -2784,13 +2784,13 @@ Object {
         "type": "AxeResults",
         "variableKind": "var",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "plugins",
         "kind": "VariableDeclaration",
         "name": "plugins",
         "signature": "let plugins: any;",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 244,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L244",
@@ -2799,8 +2799,8 @@ Object {
         "type": "any",
         "variableKind": "let",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
 	 * Source string to use as an injected script in Selenium
 	 */",
@@ -2809,7 +2809,7 @@ Object {
         "kind": "VariableDeclaration",
         "name": "source",
         "signature": "let source: string;",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 249,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L249",
@@ -2818,13 +2818,13 @@ Object {
         "type": "string",
         "variableKind": "let",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "version",
         "kind": "VariableDeclaration",
         "name": "version",
         "signature": "let version: string;",
-        "source": Object {
+        "source": {
           "filename": "axe.d.ts",
           "line": 243,
           "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts#L243",
@@ -2835,8 +2835,8 @@ Object {
       },
     ],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "axe.d.ts",
       "isIndexFile": true,
       "unpkgURL": "https://unpkg.com/browse/axe-core@4.1.1/axe.d.ts",

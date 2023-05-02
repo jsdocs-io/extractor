@@ -1,31 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`export-all-as-namespace snapshot 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [],
-    "interfaces": Array [],
-    "namespaces": Array [
-      Object {
-        "declarations": Object {
-          "classes": Array [],
-          "enums": Array [],
-          "functions": Array [],
-          "interfaces": Array [],
-          "namespaces": Array [],
-          "typeAliases": Array [],
-          "variables": Array [
-            Object {
-              "docs": Array [
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [],
+    "interfaces": [],
+    "namespaces": [
+      {
+        "declarations": {
+          "classes": [],
+          "enums": [],
+          "functions": [],
+          "interfaces": [],
+          "namespaces": [],
+          "typeAliases": [],
+          "variables": [
+            {
+              "docs": [
                 "/** Variable foo1 */",
               ],
               "id": "foo.foo1",
               "kind": "VariableDeclaration",
               "name": "foo1",
               "signature": "const foo1: string;",
-              "source": Object {
+              "source": {
                 "filename": "foo.d.ts",
                 "line": 6,
                 "unpkgURL": undefined,
@@ -36,7 +36,7 @@ Object {
             },
           ],
         },
-        "docs": Array [
+        "docs": [
           "/**
  * Module Foo
  */",
@@ -45,7 +45,7 @@ Object {
         "kind": "NamespaceDeclaration",
         "name": "foo",
         "signature": "module 'foo.d.ts' {}",
-        "source": Object {
+        "source": {
           "filename": "foo.d.ts",
           "line": 1,
           "unpkgURL": undefined,
@@ -53,16 +53,16 @@ Object {
         },
       },
     ],
-    "typeAliases": Array [],
-    "variables": Array [],
+    "typeAliases": [],
+    "variables": [],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "foo.d.ts",
       "unpkgURL": undefined,
       "url": undefined,
     },
-    Object {
+    {
       "filename": "index.d.ts",
       "isIndexFile": true,
       "unpkgURL": undefined,

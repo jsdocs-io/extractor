@@ -1,27 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`export-named-class-with-private-field snapshot 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [
-      Object {
-        "constructors": Array [],
-        "docs": Array [
+{
+  "declarations": {
+    "classes": [
+      {
+        "constructors": [],
+        "docs": [
           "/** Class1 */",
         ],
         "id": "Class1",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "methods": [
+            {
+              "docs": [],
               "id": "Class1.qux",
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "qux",
               "signature": "qux: () => string;",
-              "source": Object {
+              "source": {
                 "filename": "index.ts",
                 "line": 9,
                 "unpkgURL": undefined,
@@ -30,15 +30,15 @@ Object {
               "type": "() => string",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Class1.bar",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "bar",
               "signature": "bar: number;",
-              "source": Object {
+              "source": {
                 "filename": "index.ts",
                 "line": 7,
                 "unpkgURL": undefined,
@@ -50,7 +50,7 @@ Object {
         },
         "name": "Class1",
         "signature": "class Class1 {}",
-        "source": Object {
+        "source": {
           "filename": "index.ts",
           "line": 2,
           "unpkgURL": undefined,
@@ -58,15 +58,15 @@ Object {
         },
       },
     ],
-    "enums": Array [],
-    "functions": Array [],
-    "interfaces": Array [],
-    "namespaces": Array [],
-    "typeAliases": Array [],
-    "variables": Array [],
+    "enums": [],
+    "functions": [],
+    "interfaces": [],
+    "namespaces": [],
+    "typeAliases": [],
+    "variables": [],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "index.ts",
       "isIndexFile": true,
       "unpkgURL": undefined,

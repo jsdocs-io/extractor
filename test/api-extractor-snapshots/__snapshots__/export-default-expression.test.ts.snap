@@ -1,24 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`export-default-expression snapshot 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [],
-    "interfaces": Array [],
-    "namespaces": Array [],
-    "typeAliases": Array [],
-    "variables": Array [
-      Object {
-        "docs": Array [
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [],
+    "interfaces": [],
+    "namespaces": [],
+    "typeAliases": [],
+    "variables": [
+      {
+        "docs": [
           "/** expr1 */",
         ],
         "id": "default",
         "kind": "VariableDeclaration",
         "name": "default",
         "signature": "const default: any;",
-        "source": Object {
+        "source": {
           "filename": "index.ts",
           "line": 2,
           "unpkgURL": undefined,
@@ -29,8 +29,8 @@ Object {
       },
     ],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "index.ts",
       "isIndexFile": true,
       "unpkgURL": undefined,

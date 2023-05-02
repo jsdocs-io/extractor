@@ -1,20 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ambient-namespaces snapshot 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [
-      Object {
-        "docs": Array [
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [
+      {
+        "docs": [
           "/** Global function foobar */",
         ],
         "id": "foobar",
         "kind": "FunctionDeclaration",
         "name": "foobar",
         "signature": "foobar: (a: number, b: number) => number;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 20,
           "unpkgURL": undefined,
@@ -23,28 +23,28 @@ Object {
         "type": "(a: number, b: number) => number",
       },
     ],
-    "interfaces": Array [],
-    "namespaces": Array [
-      Object {
-        "declarations": Object {
-          "classes": Array [],
-          "enums": Array [],
-          "functions": Array [],
-          "interfaces": Array [
-            Object {
-              "docs": Array [
+    "interfaces": [],
+    "namespaces": [
+      {
+        "declarations": {
+          "classes": [],
+          "enums": [],
+          "functions": [],
+          "interfaces": [
+            {
+              "docs": [
                 "/** Interface Bar */",
               ],
               "id": "Foo.Bar",
               "kind": "InterfaceDeclaration",
-              "members": Object {
-                "callSignatures": Array [],
-                "constructSignatures": Array [],
-                "indexSignatures": Array [],
-                "methods": Array [],
-                "properties": Array [
-                  Object {
-                    "docs": Array [
+              "members": {
+                "callSignatures": [],
+                "constructSignatures": [],
+                "indexSignatures": [],
+                "methods": [],
+                "properties": [
+                  {
+                    "docs": [
                       "/** Property qux */",
                     ],
                     "id": "Foo.Bar.qux",
@@ -53,7 +53,7 @@ Object {
                     "kind": "InterfacePropertyDeclaration",
                     "name": "qux",
                     "signature": "readonly qux: string;",
-                    "source": Object {
+                    "source": {
                       "filename": "index.d.ts",
                       "line": 6,
                       "unpkgURL": undefined,
@@ -65,7 +65,7 @@ Object {
               },
               "name": "Bar",
               "signature": "interface Bar {}",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 4,
                 "unpkgURL": undefined,
@@ -73,18 +73,18 @@ Object {
               },
             },
           ],
-          "namespaces": Array [],
-          "typeAliases": Array [],
-          "variables": Array [
-            Object {
-              "docs": Array [
+          "namespaces": [],
+          "typeAliases": [],
+          "variables": [
+            {
+              "docs": [
                 "/** Variable baz */",
               ],
               "id": "Foo.baz",
               "kind": "VariableDeclaration",
               "name": "baz",
               "signature": "const baz: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 10,
                 "unpkgURL": undefined,
@@ -95,14 +95,14 @@ Object {
             },
           ],
         },
-        "docs": Array [
+        "docs": [
           "/** Ambient namespace Foo */",
         ],
         "id": "Foo",
         "kind": "NamespaceDeclaration",
         "name": "Foo",
         "signature": "namespace Foo {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 2,
           "unpkgURL": undefined,
@@ -110,17 +110,17 @@ Object {
         },
       },
     ],
-    "typeAliases": Array [],
-    "variables": Array [
-      Object {
-        "docs": Array [
+    "typeAliases": [],
+    "variables": [
+      {
+        "docs": [
           "/** Global read-only variable bar */",
         ],
         "id": "bar",
         "kind": "VariableDeclaration",
         "name": "bar",
         "signature": "const bar: Foo.Bar;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 17,
           "unpkgURL": undefined,
@@ -129,15 +129,15 @@ Object {
         "type": "Foo.Bar",
         "variableKind": "const",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/** Global variable foo */",
         ],
         "id": "foo",
         "kind": "VariableDeclaration",
         "name": "foo",
         "signature": "var foo: Foo.Bar;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 14,
           "unpkgURL": undefined,
@@ -148,8 +148,8 @@ Object {
       },
     ],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "index.d.ts",
       "isIndexFile": true,
       "unpkgURL": undefined,

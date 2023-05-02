@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`faastjs 5.3.8 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [
-      Object {
-        "constructors": Array [],
-        "docs": Array [
+{
+  "declarations": {
+    "classes": [
+      {
+        "constructors": [],
+        "docs": [
           "/**
  * A line item in the cost estimate, including the resource usage metric
  * measured and its pricing.
@@ -16,10 +16,10 @@ Object {
         "id": "CostMetric",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "methods": [
+            {
+              "docs": [
                 "/**
      * The cost contribution of this cost metric. Equal to
      * {@link CostMetric.pricing} * {@link CostMetric.measured}.
@@ -30,7 +30,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "cost",
               "signature": "cost: () => number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1073,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1073",
@@ -38,8 +38,8 @@ Object {
               },
               "type": "() => number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Return a string with the cost estimate for this metric, omitting
      * comments.
@@ -50,7 +50,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "describeCostOnly",
               "signature": "describeCostOnly: () => string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1078,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1078",
@@ -58,8 +58,8 @@ Object {
               },
               "type": "() => string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** Describe this cost metric, including comments. */",
               ],
               "id": "CostMetric.toString",
@@ -67,7 +67,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "toString",
               "signature": "toString: () => string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1080,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1080",
@@ -76,9 +76,9 @@ Object {
               "type": "() => string",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [
+          "properties": [
+            {
+              "docs": [
                 "/**
      * An optional comment, usually providing a link to the provider's pricing
      * page and other data.
@@ -89,7 +89,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "comment",
               "signature": "readonly comment?: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1061,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1061",
@@ -97,8 +97,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * True if this cost metric is only for informational purposes (e.g. AWS's
      * \`logIngestion\`) and does not contribute cost.
@@ -109,7 +109,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "informationalOnly",
               "signature": "readonly informationalOnly?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1066,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1066",
@@ -117,8 +117,8 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** The measured value of the cost metric, in units. */",
               ],
               "id": "CostMetric.measured",
@@ -126,7 +126,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "measured",
               "signature": "readonly measured: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1050,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1050",
@@ -134,8 +134,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** The name of the cost metric, e.g. \`functionCallDuration\` */",
               ],
               "id": "CostMetric.name",
@@ -143,7 +143,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "name",
               "signature": "readonly name: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1044,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1044",
@@ -151,8 +151,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** The price in USD per unit measured. */",
               ],
               "id": "CostMetric.pricing",
@@ -160,7 +160,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "pricing",
               "signature": "readonly pricing: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1046,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1046",
@@ -168,8 +168,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** The name of the units that pricing is measured in for this metric. */",
               ],
               "id": "CostMetric.unit",
@@ -177,7 +177,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "unit",
               "signature": "readonly unit: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1048,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1048",
@@ -185,12 +185,12 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * The plural form of the unit name. By default the plural form will be the
-     * name of the unit with \\"s\\" appended at the end, unless the last letter is
-     * capitalized, in which case there is no plural form (e.g. \\"GB\\").
+     * name of the unit with "s" appended at the end, unless the last letter is
+     * capitalized, in which case there is no plural form (e.g. "GB").
      */",
               ],
               "id": "CostMetric.unitPlural",
@@ -198,7 +198,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "unitPlural",
               "signature": "readonly unitPlural?: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1056,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1056",
@@ -210,16 +210,16 @@ Object {
         },
         "name": "CostMetric",
         "signature": "class CostMetric {}",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 1042,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1042",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L1042",
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [
+      {
+        "constructors": [],
+        "docs": [
           "/**
  * A summary of the costs incurred by a faast.js module at a point in time.
  * Output of {@link FaastModule.costSnapshot}.
@@ -234,7 +234,7 @@ Object {
  *
  * Example using AWS:
  * \`\`\`typescript
- * const faastModule = await faast(\\"aws\\", m);
+ * const faastModule = await faast("aws", m);
  * try {
  *     // Invoke faastModule.functions.*
  * } finally {
@@ -284,11 +284,11 @@ Object {
  * - \`sqs\`: AWS Simple Queueing Service. This metric captures the number of
  *   queue requests made to insert and retrieve queued results (each 64kb chunk
  *   is counted as an additional request). SQS is used even if
- *   {@link CommonOptions.mode} is not set to \`\\"queue\\"\`, because it is necessary
+ *   {@link CommonOptions.mode} is not set to \`"queue"\`, because it is necessary
  *   for monitoring cloud function invocations.
  *
  * - \`sns\`: AWS Simple Notification Service. SNS is used to invoke Lambda
- *   functions when {@link CommonOptions.mode} is \`\\"queue\\"\`.
+ *   functions when {@link CommonOptions.mode} is \`"queue"\`.
  *
  * - \`outboundDataTransfer\`: an estimate of the network data transferred out
  *   from the cloud provider for this faast.js module. This estimate only counts
@@ -326,24 +326,24 @@ Object {
         "id": "CostSnapshot",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "methods": [
+            {
+              "docs": [
                 "/**
      * Comma separated value output for a cost snapshot.
      * @remarks
-     * The format is \\"metric,unit,pricing,measured,cost,percentage,comment\\".
+     * The format is "metric,unit,pricing,measured,cost,percentage,comment".
      *
      * Example output:
      * \`\`\`text
      * metric,unit,pricing,measured,cost,percentage,comment
-     * functionCallDuration,second,0.00002813,0.60000000,0.00001688,64.1% ,\\"https://aws.amazon.com/lambda/pricing (rate = 0.00001667/(GB*second) * 1.6875 GB = 0.00002813/second)\\"
-     * functionCallRequests,request,0.00000020,5,0.00000100,3.8% ,\\"https://aws.amazon.com/lambda/pricing\\"
-     * outboundDataTransfer,GB,0.09000000,0.00000844,0.00000076,2.9% ,\\"https://aws.amazon.com/ec2/pricing/on-demand/#Data_Transfer\\"
-     * sqs,request,0.00000040,13,0.00000520,19.7% ,\\"https://aws.amazon.com/sqs/pricing\\"
-     * sns,request,0.00000050,5,0.00000250,9.5% ,\\"https://aws.amazon.com/sns/pricing\\"
-     * logIngestion,GB,0.50000000,0,0,0.0% ,\\"https://aws.amazon.com/cloudwatch/pricing/ - Log ingestion costs not currently included.\\"
+     * functionCallDuration,second,0.00002813,0.60000000,0.00001688,64.1% ,"https://aws.amazon.com/lambda/pricing (rate = 0.00001667/(GB*second) * 1.6875 GB = 0.00002813/second)"
+     * functionCallRequests,request,0.00000020,5,0.00000100,3.8% ,"https://aws.amazon.com/lambda/pricing"
+     * outboundDataTransfer,GB,0.09000000,0.00000844,0.00000076,2.9% ,"https://aws.amazon.com/ec2/pricing/on-demand/#Data_Transfer"
+     * sqs,request,0.00000040,13,0.00000520,19.7% ,"https://aws.amazon.com/sqs/pricing"
+     * sns,request,0.00000050,5,0.00000250,9.5% ,"https://aws.amazon.com/sns/pricing"
+     * logIngestion,GB,0.50000000,0,0,0.0% ,"https://aws.amazon.com/cloudwatch/pricing/ - Log ingestion costs not currently included."
      * \`\`\`
      */",
               ],
@@ -352,7 +352,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "csv",
               "signature": "csv: () => string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1229,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1229",
@@ -360,8 +360,8 @@ Object {
               },
               "type": "() => string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Find a specific cost metric by name.
      * @returns a {@link CostMetric} if found, otherwise \`undefined\`.
@@ -372,7 +372,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "find",
               "signature": "find: (name: string) => CostMetric | undefined;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1236,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1236",
@@ -380,8 +380,8 @@ Object {
               },
               "type": "(name: string) => CostMetric | undefined",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** A summary of all cost metrics and prices in this cost snapshot. */",
               ],
               "id": "CostSnapshot.toString",
@@ -389,7 +389,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "toString",
               "signature": "toString: () => string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1212,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1212",
@@ -397,8 +397,8 @@ Object {
               },
               "type": "() => string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** Sum of cost metrics. */",
               ],
               "id": "CostSnapshot.total",
@@ -406,7 +406,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "total",
               "signature": "total: () => number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1210,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1210",
@@ -415,9 +415,9 @@ Object {
               "type": "() => number",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [
+          "properties": [
+            {
+              "docs": [
                 "/**
      * The cost metric components for this cost snapshot. See
      * {@link CostMetric}.
@@ -428,7 +428,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "costMetrics",
               "signature": "readonly costMetrics: CostMetric[];",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1199,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1199",
@@ -436,8 +436,8 @@ Object {
               },
               "type": "CostMetric[]",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * The options used to initialize the faast.js module where this cost
      * snapshot was generated.
@@ -448,7 +448,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "options",
               "signature": "readonly options: CommonOptions | AwsOptions | GoogleOptions;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1192,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1192",
@@ -456,16 +456,16 @@ Object {
               },
               "type": "CommonOptions | AwsOptions | GoogleOptions",
             },
-            Object {
-              "docs": Array [
-                "/** The {@link Provider}, e.g. \\"aws\\" or \\"google\\" */",
+            {
+              "docs": [
+                "/** The {@link Provider}, e.g. "aws" or "google" */",
               ],
               "id": "CostSnapshot.provider",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "provider",
               "signature": "readonly provider: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1187,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1187",
@@ -473,8 +473,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** The function statistics that were used to compute prices. */",
               ],
               "id": "CostSnapshot.stats",
@@ -482,7 +482,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "stats",
               "signature": "readonly stats: FunctionStats;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1194,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1194",
@@ -494,16 +494,16 @@ Object {
         },
         "name": "CostSnapshot",
         "signature": "class CostSnapshot {}",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 1185,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1185",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L1185",
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [
+      {
+        "constructors": [],
+        "docs": [
           "/**
  * FaastError is a subclass of VError (https://github.com/joyent/node-verror).
  * that is thrown by faast.js APIs and cloud function invocations.
@@ -542,22 +542,22 @@ Object {
         "id": "FaastError",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "FaastError",
         "signature": "class FaastError extends VError {}",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 1377,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1377",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L1377",
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [
+      {
+        "constructors": [],
+        "docs": [
           "/**
  * Implementation of {@link FaastModule}.
  * @remarks
@@ -575,10 +575,10 @@ Object {
         "id": "FaastModuleProxy",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "methods": [
+            {
+              "docs": [
                 "/** {@inheritdoc FaastModule.cleanup} */",
               ],
               "id": "FaastModuleProxy.cleanup",
@@ -586,7 +586,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "cleanup",
               "signature": "cleanup: (userCleanupOptions?: CleanupOptions) => Promise<void>;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1666,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1666",
@@ -594,8 +594,8 @@ Object {
               },
               "type": "(userCleanupOptions?: CleanupOptions) => Promise<void>",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** {@inheritdoc FaastModule.costSnapshot} */",
               ],
               "id": "FaastModuleProxy.costSnapshot",
@@ -603,7 +603,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "costSnapshot",
               "signature": "costSnapshot: () => Promise<CostSnapshot>;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1684,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1684",
@@ -611,8 +611,8 @@ Object {
               },
               "type": "() => Promise<CostSnapshot>",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** {@inheritdoc FaastModule.logUrl} */",
               ],
               "id": "FaastModuleProxy.logUrl",
@@ -620,7 +620,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "logUrl",
               "signature": "logUrl: () => string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1668,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1668",
@@ -628,8 +628,8 @@ Object {
               },
               "type": "() => string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** {@inheritdoc FaastModule.off} */",
               ],
               "id": "FaastModuleProxy.off",
@@ -637,16 +637,16 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "off",
               "signature": "off: (name: 'stats', listener: (statsEvent: FunctionStatsEvent) => void) => void;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1674,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1674",
                 "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L1674",
               },
-              "type": "(name: \\"stats\\", listener: (statsEvent: FunctionStatsEvent) => void) => void",
+              "type": "(name: "stats", listener: (statsEvent: FunctionStatsEvent) => void) => void",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** {@inheritdoc FaastModule.on} */",
               ],
               "id": "FaastModuleProxy.on",
@@ -654,16 +654,16 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "on",
               "signature": "on: (name: 'stats', listener: (statsEvent: FunctionStatsEvent) => void) => void;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1672,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1672",
                 "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L1672",
               },
-              "type": "(name: \\"stats\\", listener: (statsEvent: FunctionStatsEvent) => void) => void",
+              "type": "(name: "stats", listener: (statsEvent: FunctionStatsEvent) => void) => void",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** {@inheritdoc FaastModule.stats} */",
               ],
               "id": "FaastModuleProxy.stats",
@@ -671,7 +671,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "stats",
               "signature": "stats: (functionName?: string) => FunctionStats;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1686,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1686",
@@ -680,9 +680,9 @@ Object {
               "type": "(functionName?: string) => FunctionStats",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [
+          "properties": [
+            {
+              "docs": [
                 "/** {@inheritdoc FaastModule.functions} */",
               ],
               "id": "FaastModuleProxy.functions",
@@ -690,7 +690,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "functions",
               "signature": "functions: ProxyModule<M>;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1640,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1640",
@@ -698,8 +698,8 @@ Object {
               },
               "type": "ProxyModule<M>",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** {@inheritdoc FaastModule.functionsDetail} */",
               ],
               "id": "FaastModuleProxy.functionsDetail",
@@ -707,7 +707,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "functionsDetail",
               "signature": "functionsDetail: ProxyModuleDetail<M>;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1642,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1642",
@@ -715,8 +715,8 @@ Object {
               },
               "type": "ProxyModuleDetail<M>",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** The options set for this instance, which includes default values. */",
               ],
               "id": "FaastModuleProxy.options",
@@ -724,7 +724,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "options",
               "signature": "readonly options: Required<CommonOptions>;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1636,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1636",
@@ -732,16 +732,16 @@ Object {
               },
               "type": "Required<CommonOptions>",
             },
-            Object {
-              "docs": Array [
-                "/** The {@link Provider}, e.g. \\"aws\\" or \\"google\\". */",
+            {
+              "docs": [
+                "/** The {@link Provider}, e.g. "aws" or "google". */",
               ],
               "id": "FaastModuleProxy.provider",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "provider",
               "signature": "provider: Provider;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1638,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1638",
@@ -753,16 +753,16 @@ Object {
         },
         "name": "FaastModuleProxy",
         "signature": "class FaastModuleProxy<M extends object, O, S> implements FaastModule<M> {}",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 1629,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1629",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L1629",
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [
+      {
+        "constructors": [],
+        "docs": [
           "/**
  * Summary statistics for function invocations.
  * @remarks
@@ -808,10 +808,10 @@ Object {
         "id": "FunctionStats",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "methods": [
+            {
+              "docs": [
                 "/**
      * Summarize the function stats as a string.
      * @returns a string showing the value of completed, retries, errors, and
@@ -824,7 +824,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "toString",
               "signature": "toString: () => string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1814,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1814",
@@ -833,9 +833,9 @@ Object {
               "type": "() => string",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [
+          "properties": [
+            {
+              "docs": [
                 "/**
      * The number of invocations that were successfully completed.
      */",
@@ -845,7 +845,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "completed",
               "signature": "completed: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1795,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1795",
@@ -853,8 +853,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * The number of invocations that resulted in an error. If an invocation is
      * retried, an error is only counted once, no matter how many retries were
@@ -866,7 +866,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "errors",
               "signature": "errors: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1807,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1807",
@@ -874,8 +874,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Statistics for amount of time billed. This is similar to
      * {@link FunctionStats.executionTime} except each sampled time is rounded
@@ -887,7 +887,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "estimatedBilledTime",
               "signature": "estimatedBilledTime: Statistics;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1786,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1786",
@@ -895,8 +895,8 @@ Object {
               },
               "type": "Statistics",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Statistics for function execution time in milliseconds.  This is measured
      * as wall clock time inside the cloud function, and does not include the
@@ -909,7 +909,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "executionTime",
               "signature": "executionTime: Statistics;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1766,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1766",
@@ -917,8 +917,8 @@ Object {
               },
               "type": "Statistics",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * The number of invocations attempted. If an invocation is retried, this
      * only counts the invocation once.
@@ -929,7 +929,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "invocations",
               "signature": "invocations: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1791,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1791",
@@ -937,8 +937,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Statistics for how long invocations stay in the local queue before being
      * sent to the cloud provider.
@@ -949,7 +949,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "localStartLatency",
               "signature": "localStartLatency: Statistics;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1749,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1749",
@@ -957,8 +957,8 @@ Object {
               },
               "type": "Statistics",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Statistics for how long requests take to start execution after being sent
      * to the cloud provider. This typically includes remote queueing and cold
@@ -974,7 +974,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "remoteStartLatency",
               "signature": "remoteStartLatency: Statistics;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1759,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1759",
@@ -982,8 +982,8 @@ Object {
               },
               "type": "Statistics",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * The number of invocation retries attempted. This counts retries
      * attempted by faast.js to recover from transient errors, but does not
@@ -995,7 +995,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "retries",
               "signature": "retries: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1801,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1801",
@@ -1003,8 +1003,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Statistics for how long it takes to return a response from the end of
      * execution time to the receipt of the response locally. This measurement
@@ -1019,7 +1019,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "returnLatency",
               "signature": "returnLatency: Statistics;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1780,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1780",
@@ -1027,8 +1027,8 @@ Object {
               },
               "type": "Statistics",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Statistics for how long it takes to send the response to the response
      * queue.
@@ -1039,7 +1039,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "sendResponseLatency",
               "signature": "sendResponseLatency: Statistics;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1771,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1771",
@@ -1051,16 +1051,16 @@ Object {
         },
         "name": "FunctionStats",
         "signature": "class FunctionStats {}",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 1744,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1744",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L1744",
         },
       },
-      Object {
-        "constructors": Array [],
-        "docs": Array [
+      {
+        "constructors": [],
+        "docs": [
           "/**
  * Summarize statistics about cloud function invocations.
  * @public
@@ -1069,10 +1069,10 @@ Object {
         "id": "FunctionStatsEvent",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "methods": [
+            {
+              "docs": [
                 "/**
      * Returns a string summarizing the statistics event.
      * @remarks
@@ -1086,7 +1086,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "toString",
               "signature": "toString: () => string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1843,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1843",
@@ -1095,9 +1095,9 @@ Object {
               "type": "() => string",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [
+          "properties": [
+            {
+              "docs": [
                 "/** The name of the cloud function the statistics are about. */",
               ],
               "id": "FunctionStatsEvent.fn",
@@ -1105,7 +1105,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "fn",
               "signature": "readonly fn: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1825,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1825",
@@ -1113,8 +1113,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** See {@link FunctionStats}. */",
               ],
               "id": "FunctionStatsEvent.stats",
@@ -1122,7 +1122,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "stats",
               "signature": "readonly stats: FunctionStats;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1827,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1827",
@@ -1134,17 +1134,17 @@ Object {
         },
         "name": "FunctionStatsEvent",
         "signature": "class FunctionStatsEvent {}",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 1823,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1823",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L1823",
         },
       },
-      Object {
-        "constructors": Array [
-          Object {
-            "docs": Array [
+      {
+        "constructors": [
+          {
+            "docs": [
               "/**
      * Construct a new persistent cache, typically used with {@link Limits} as
      * part of the arguments to {@link throttle}.
@@ -1159,7 +1159,7 @@ Object {
             "kind": "ClassConstructorDeclaration",
             "name": "constructor",
             "signature": "constructor(dirRelativeToHomeDir: string, expiration?: number);",
-            "source": Object {
+            "source": {
               "filename": "dist/faastjs.d.ts",
               "line": 2178,
               "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2178",
@@ -1167,7 +1167,7 @@ Object {
             },
           },
         ],
-        "docs": Array [
+        "docs": [
           "/**
  * A simple persistent key-value store. Used to implement {@link Limits.cache}
  * for {@link throttle}.
@@ -1188,10 +1188,10 @@ Object {
         "id": "PersistentCache",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "methods": [
+            {
+              "docs": [
                 "/**
      * Deletes all cached entries from disk.
      * @param leaveEmptyDir - If true, leave the cache directory in place after
@@ -1208,7 +1208,7 @@ Object {
 }?: {
     leaveEmptyDir?: boolean | undefined;
 }) => Promise<void>;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 2210,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2210",
@@ -1216,8 +1216,8 @@ Object {
               },
               "type": "({ leaveEmptyDir }?: {    leaveEmptyDir?: boolean | undefined;}) => Promise<void>",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Retrieve all keys stored in the cache, including expired entries.
      */",
@@ -1227,7 +1227,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "entries",
               "signature": "entries: () => Promise<string[]>;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 2203,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2203",
@@ -1235,8 +1235,8 @@ Object {
               },
               "type": "() => Promise<string[]>",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Retrieves the value previously set for the given key, or undefined if the
      * key is not found.
@@ -1247,7 +1247,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "get",
               "signature": "get: (key: string) => Promise<Buffer | undefined>;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 2194,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2194",
@@ -1255,8 +1255,8 @@ Object {
               },
               "type": "(key: string) => Promise<Buffer | undefined>",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Set the cache key to the given value.
      * @returns a Promise that resolves when the cache entry has been persisted.
@@ -1270,7 +1270,7 @@ Object {
     key: string,
     value: Buffer | string | Uint8Array | Readable | Blob
 ) => Promise<void>;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 2199,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2199",
@@ -1279,9 +1279,9 @@ Object {
               "type": "(key: string, value: Buffer | string | Uint8Array | Readable | Blob) => Promise<void>",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [
+          "properties": [
+            {
+              "docs": [
                 "/**
      * The directory on disk where cached values are stored.
      */",
@@ -1291,7 +1291,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "dir",
               "signature": "readonly dir: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 2168,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2168",
@@ -1299,8 +1299,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * The directory under the user's home directory that will be used to
      * store cached values. The directory will be created if it doesn't
@@ -1312,7 +1312,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "dirRelativeToHomeDir",
               "signature": "readonly dirRelativeToHomeDir: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 2157,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2157",
@@ -1320,8 +1320,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * The age (in ms) after which a cached entry is invalid. Default:
      * \`24*3600*1000\` (1 day).
@@ -1332,7 +1332,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "expiration",
               "signature": "readonly expiration: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 2162,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2162",
@@ -1344,17 +1344,17 @@ Object {
         },
         "name": "PersistentCache",
         "signature": "class PersistentCache {}",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 2151,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2151",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L2151",
         },
       },
-      Object {
-        "constructors": Array [
-          Object {
-            "docs": Array [
+      {
+        "constructors": [
+          {
+            "docs": [
               "/**
      * Incrementally track mean, stdev, min, max, of a sequence of values.
      * @param printFixedPrecision - The number of decimal places to print in
@@ -1365,7 +1365,7 @@ Object {
             "kind": "ClassConstructorDeclaration",
             "name": "constructor",
             "signature": "constructor(printFixedPrecision?: number);",
-            "source": Object {
+            "source": {
               "filename": "dist/faastjs.d.ts",
               "line": 2312,
               "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2312",
@@ -1373,7 +1373,7 @@ Object {
             },
           },
         ],
-        "docs": Array [
+        "docs": [
           "/**
  * Incrementally updated statistics on a set of values.
  * @public
@@ -1382,10 +1382,10 @@ Object {
         "id": "Statistics",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "methods": [
+            {
+              "docs": [
                 "/**
      * Print the mean of the observations seen, with the precision specified in
      * the constructor.
@@ -1396,7 +1396,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "toString",
               "signature": "toString: () => string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 2325,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2325",
@@ -1404,8 +1404,8 @@ Object {
               },
               "type": "() => string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Update statistics with a new value in the sequence.
      */",
@@ -1415,7 +1415,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "update",
               "signature": "update: (value: number | undefined) => void;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 2320,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2320",
@@ -1424,9 +1424,9 @@ Object {
               "type": "(value: number | undefined) => void",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [
+          "properties": [
+            {
+              "docs": [
                 "/** The maximum value observed. Initialized to \`Number.NEGATIVE_INFINITY\`. */",
               ],
               "id": "Statistics.max",
@@ -1434,7 +1434,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "max",
               "signature": "max: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 2298,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2298",
@@ -1442,8 +1442,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** The mean (average) of the values observed. */",
               ],
               "id": "Statistics.mean",
@@ -1451,7 +1451,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "mean",
               "signature": "mean: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 2306,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2306",
@@ -1459,8 +1459,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** The minimum value observed. Initialized to \`Number.POSITIVE_INFINITY\`. */",
               ],
               "id": "Statistics.min",
@@ -1468,7 +1468,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "min",
               "signature": "min: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 2300,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2300",
@@ -1476,8 +1476,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** The number of decimal places to print in {@link Statistics.toString} */",
               ],
               "id": "Statistics.printFixedPrecision",
@@ -1485,7 +1485,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "printFixedPrecision",
               "signature": "protected printFixedPrecision: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 2294,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2294",
@@ -1493,8 +1493,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** Number of values observed. */",
               ],
               "id": "Statistics.samples",
@@ -1502,7 +1502,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "samples",
               "signature": "samples: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 2296,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2296",
@@ -1510,8 +1510,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** The standard deviation of the values observed. */",
               ],
               "id": "Statistics.stdev",
@@ -1519,7 +1519,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "stdev",
               "signature": "stdev: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 2304,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2304",
@@ -1527,8 +1527,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** The variance of the values observed. */",
               ],
               "id": "Statistics.variance",
@@ -1536,7 +1536,7 @@ Object {
               "kind": "ClassPropertyDeclaration",
               "name": "variance",
               "signature": "variance: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 2302,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2302",
@@ -1548,7 +1548,7 @@ Object {
         },
         "name": "Statistics",
         "signature": "class Statistics {}",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 2292,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2292",
@@ -1556,9 +1556,9 @@ Object {
         },
       },
     ],
-    "enums": Array [
-      Object {
-        "docs": Array [
+    "enums": [
+      {
+        "docs": [
           "/**
  * Possible FaastError names. See {@link FaastError}. To test for errors
  * matching these names, use the static method
@@ -1569,16 +1569,16 @@ Object {
         "id": "FaastErrorNames",
         "isConst": false,
         "kind": "EnumDeclaration",
-        "members": Array [
-          Object {
-            "docs": Array [
+        "members": [
+          {
+            "docs": [
               "/** The function invocation was cancelled by user request. */",
             ],
             "id": "FaastErrorNames.ECANCEL",
             "kind": "EnumMemberDeclaration",
             "name": "ECANCEL",
             "signature": "ECANCEL = 'FaastCancelError'",
-            "source": Object {
+            "source": {
               "filename": "dist/faastjs.d.ts",
               "line": 1396,
               "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1396",
@@ -1586,15 +1586,15 @@ Object {
             },
             "value": "FaastCancelError",
           },
-          Object {
-            "docs": Array [
+          {
+            "docs": [
               "/** Could not create the remote cloud function or supporting infrastructure. */",
             ],
             "id": "FaastErrorNames.ECREATE",
             "kind": "EnumMemberDeclaration",
             "name": "ECREATE",
             "signature": "ECREATE = 'FaastCreateFunctionError'",
-            "source": Object {
+            "source": {
               "filename": "dist/faastjs.d.ts",
               "line": 1400,
               "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1400",
@@ -1602,15 +1602,15 @@ Object {
             },
             "value": "FaastCreateFunctionError",
           },
-          Object {
-            "docs": Array [
+          {
+            "docs": [
               "/** The exception was thrown by user's remote code, not by faast.js or the cloud provider. */",
             ],
             "id": "FaastErrorNames.EEXCEPTION",
             "kind": "EnumMemberDeclaration",
             "name": "EEXCEPTION",
             "signature": "EEXCEPTION = 'UserException'",
-            "source": Object {
+            "source": {
               "filename": "dist/faastjs.d.ts",
               "line": 1398,
               "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1398",
@@ -1618,15 +1618,15 @@ Object {
             },
             "value": "UserException",
           },
-          Object {
-            "docs": Array [
+          {
+            "docs": [
               "/** Generic error. See {@link FaastError}. */",
             ],
             "id": "FaastErrorNames.EGENERIC",
             "kind": "EnumMemberDeclaration",
             "name": "EGENERIC",
             "signature": "EGENERIC = 'VError'",
-            "source": Object {
+            "source": {
               "filename": "dist/faastjs.d.ts",
               "line": 1388,
               "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1388",
@@ -1634,15 +1634,15 @@ Object {
             },
             "value": "VError",
           },
-          Object {
-            "docs": Array [
+          {
+            "docs": [
               "/** The remote cloud function exceeded memory limits. */",
             ],
             "id": "FaastErrorNames.EMEMORY",
             "kind": "EnumMemberDeclaration",
             "name": "EMEMORY",
             "signature": "EMEMORY = 'FaastOutOfMemoryError'",
-            "source": Object {
+            "source": {
               "filename": "dist/faastjs.d.ts",
               "line": 1394,
               "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1394",
@@ -1650,15 +1650,15 @@ Object {
             },
             "value": "FaastOutOfMemoryError",
           },
-          Object {
-            "docs": Array [
+          {
+            "docs": [
               "/** The arguments passed to the cloud function could not be serialized without losing information.  */",
             ],
             "id": "FaastErrorNames.ESERIALIZE",
             "kind": "EnumMemberDeclaration",
             "name": "ESERIALIZE",
             "signature": "ESERIALIZE = 'FaastSerializationError'",
-            "source": Object {
+            "source": {
               "filename": "dist/faastjs.d.ts",
               "line": 1390,
               "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1390",
@@ -1666,15 +1666,15 @@ Object {
             },
             "value": "FaastSerializationError",
           },
-          Object {
-            "docs": Array [
+          {
+            "docs": [
               "/** The remote cloud function timed out. */",
             ],
             "id": "FaastErrorNames.ETIMEOUT",
             "kind": "EnumMemberDeclaration",
             "name": "ETIMEOUT",
             "signature": "ETIMEOUT = 'FaastTimeoutError'",
-            "source": Object {
+            "source": {
               "filename": "dist/faastjs.d.ts",
               "line": 1392,
               "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1392",
@@ -1693,7 +1693,7 @@ Object {
     EEXCEPTION = 'UserException',
     ECREATE = 'FaastCreateFunctionError',
 }",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 1386,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1386",
@@ -1701,26 +1701,26 @@ Object {
         },
       },
     ],
-    "functions": Array [
-      Object {
-        "docs": Array [
+    "functions": [
+      {
+        "docs": [
           "/**
  * The main entry point for faast with any provider and only common options.
- * @param provider - One of \`\\"aws\\"\`, \`\\"google\\"\`, or \`\\"local\\"\`. See
+ * @param provider - One of \`"aws"\`, \`"google"\`, or \`"local"\`. See
  * {@link Provider}.
- * @param fmodule - A module imported with \`import * as X from \\"Y\\";\`. Using
+ * @param fmodule - A module imported with \`import * as X from "Y";\`. Using
  * \`require\` also works but loses type information.
  * @param options - See {@link CommonOptions}.
  * @returns See {@link FaastModule}.
  * @remarks
  * Example of usage:
  * \`\`\`typescript
- * import { faast } from \\"faastjs\\";
- * import * as mod from \\"./path/to/module\\";
+ * import { faast } from "faastjs";
+ * import * as mod from "./path/to/module";
  * (async () => {
- *     const faastModule = await faast(\\"aws\\", mod);
+ *     const faastModule = await faast("aws", mod);
  *     try {
- *         const result = await faastModule.functions.func(\\"arg\\");
+ *         const result = await faastModule.functions.func("arg");
  *     } finally {
  *         await faastModule.cleanup();
  *     }
@@ -1737,7 +1737,7 @@ Object {
     fmodule: M,
     options?: CommonOptions
 ) => Promise<FaastModule<M>>;",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 1331,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1331",
@@ -1745,11 +1745,11 @@ Object {
         },
         "type": "<M extends object>(provider: Provider, fmodule: M, options?: CommonOptions) => Promise<FaastModule<M>>",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * The main entry point for faast with AWS provider.
- * @param fmodule - A module imported with \`import * as X from \\"Y\\";\`. Using
+ * @param fmodule - A module imported with \`import * as X from "Y";\`. Using
  * \`require\` also works but loses type information.
  * @param options - Most common options are in {@link CommonOptions}.
  * Additional AWS-specific options are in {@link AwsOptions}.
@@ -1763,7 +1763,7 @@ Object {
     fmodule: M,
     options?: AwsOptions
 ) => Promise<AwsFaastModule<M>>;",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 1341,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1341",
@@ -1771,11 +1771,11 @@ Object {
         },
         "type": "<M extends object>(fmodule: M, options?: AwsOptions) => Promise<AwsFaastModule<M>>",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * The main entry point for faast with Google provider.
- * @param fmodule - A module imported with \`import * as X from \\"Y\\";\`. Using
+ * @param fmodule - A module imported with \`import * as X from "Y";\`. Using
  * \`require\` also works but loses type information.
  * @param options - Most common options are in {@link CommonOptions}.
  * Additional Google-specific options are in {@link GoogleOptions}.
@@ -1789,7 +1789,7 @@ Object {
     fmodule: M,
     options?: GoogleOptions
 ) => Promise<GoogleFaastModule<M>>;",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 1411,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1411",
@@ -1797,11 +1797,11 @@ Object {
         },
         "type": "<M extends object>(fmodule: M, options?: GoogleOptions) => Promise<GoogleFaastModule<M>>",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * The main entry point for faast with Local provider.
- * @param fmodule - A module imported with \`import * as X from \\"Y\\";\`. Using
+ * @param fmodule - A module imported with \`import * as X from "Y";\`. Using
  * \`require\` also works but loses type information.
  * @param options - Most common options are in {@link CommonOptions}.
  * Additional Local-specific options are in {@link LocalOptions}.
@@ -1816,7 +1816,7 @@ Object {
     fmodule: M,
     options?: LocalOptions
 ) => Promise<LocalFaastModule<M>>;",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 1422,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1422",
@@ -1824,8 +1824,8 @@ Object {
         },
         "type": "<M extends object>(fmodule: M, options?: LocalOptions) => Promise<LocalFaastModule<M>>",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * A decorator for rate limiting, concurrency limiting, retry, memoization, and
  * on-disk caching. See {@link Limits}.
@@ -1904,7 +1904,7 @@ Object {
     limits: Limits,
     fn: (...args: A) => Promise<R>
 ) => (...args: A) => Promise<R>;",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 2398,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2398",
@@ -1913,9 +1913,9 @@ Object {
         "type": "<A extends any[], R>(limits: Limits, fn: (...args: A) => Promise<R>) => (...args: A) => Promise<R>",
       },
     ],
-    "interfaces": Array [
-      Object {
-        "docs": Array [
+    "interfaces": [
+      {
+        "docs": [
           "/**
  * AWS-specific options for {@link faastAws}.
  * @public
@@ -1923,14 +1923,14 @@ Object {
         ],
         "id": "AwsOptions",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [
                 "/**
      * Additional options to pass to all AWS services. See
      * {@link https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Config.html | AWS.Config}.
@@ -1955,7 +1955,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "awsConfig",
               "signature": "awsConfig?: ConfigurationOptions;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 206,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L206",
@@ -1963,8 +1963,8 @@ Object {
               },
               "type": "ConfigurationOptions",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Additional options to pass to AWS Lambda creation. See
      * {@link https://docs.aws.amazon.com/lambda/latest/dg/API_CreateFunction.html | CreateFunction}.
@@ -1977,10 +1977,10 @@ Object {
      *   const request: aws.Lambda.CreateFunctionRequest = {
      *       FunctionName,
      *       Role,
-     *       Runtime: \\"nodejs12.x\\",
-     *       Handler: \\"index.trampoline\\",
+     *       Runtime: "nodejs12.x",
+     *       Handler: "index.trampoline",
      *       Code,
-     *       Description: \\"faast trampoline function\\",
+     *       Description: "faast trampoline function",
      *       Timeout,
      *       MemorySize,
      *       ...awsLambdaOptions
@@ -1994,7 +1994,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "awsLambdaOptions",
               "signature": "awsLambdaOptions?: Partial<Lambda.CreateFunctionRequest>;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 188,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L188",
@@ -2002,11 +2002,11 @@ Object {
               },
               "type": "Lambda.CreateFunctionRequest",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * The region to create resources in. Garbage collection is also limited to
-     * this region. Default: \`\\"us-west-2\\"\`.
+     * this region. Default: \`"us-west-2"\`.
      */",
               ],
               "id": "AwsOptions.region",
@@ -2015,7 +2015,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "region",
               "signature": "region?: AwsRegion;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 107,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L107",
@@ -2023,11 +2023,11 @@ Object {
               },
               "type": "AwsRegion",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * The role that the lambda function will assume when executing user code.
-     * Default: \`\\"faast-cached-lambda-role\\"\`. Rarely used.
+     * Default: \`"faast-cached-lambda-role"\`. Rarely used.
      * @remarks
      * When a lambda executes, it first assumes an
      * {@link https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html | execution role}
@@ -2048,17 +2048,17 @@ Object {
      * - Execution Role:
      * \`\`\`json
      *   {
-     *       \\"Version\\": \\"2012-10-17\\",
-     *       \\"Statement\\": [
+     *       "Version": "2012-10-17",
+     *       "Statement": [
      *           {
-     *               \\"Effect\\": \\"Allow\\",
-     *               \\"Action\\": [\\"logs:*\\"],
-     *               \\"Resource\\": \\"arn:aws:logs:*:*:log-group:faast-*\\"
+     *               "Effect": "Allow",
+     *               "Action": ["logs:*"],
+     *               "Resource": "arn:aws:logs:*:*:log-group:faast-*"
      *           },
      *           {
-     *               \\"Effect\\": \\"Allow\\",
-     *               \\"Action\\": [\\"sqs:*\\"],
-     *               \\"Resource\\": \\"arn:aws:sqs:*:*:faast-*\\"
+     *               "Effect": "Allow",
+     *               "Action": ["sqs:*"],
+     *               "Resource": "arn:aws:sqs:*:*:faast-*"
      *           }
      *       ]
      *   }
@@ -2068,14 +2068,14 @@ Object {
      *   SDK):
      * \`\`\`json
      *   {
-     *     \\"Version\\": \\"2012-10-17\\",
-     *     \\"Statement\\": [
+     *     "Version": "2012-10-17",
+     *     "Statement": [
      *       {
-     *         \\"Effect\\": \\"Allow\\",
-     *         \\"Principal\\": {
-     *           \\"Service\\": \\"lambda.amazonaws.com\\"
+     *         "Effect": "Allow",
+     *         "Principal": {
+     *           "Service": "lambda.amazonaws.com"
      *         },
-     *         \\"Action\\": \\"sts:AssumeRole\\"
+     *         "Action": "sts:AssumeRole"
      *       }
      *     ]
      *   }
@@ -2089,7 +2089,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "RoleName",
               "signature": "RoleName?: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 165,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L165",
@@ -2101,15 +2101,15 @@ Object {
         },
         "name": "AwsOptions",
         "signature": "interface AwsOptions extends CommonOptions {}",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 102,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L102",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L102",
         },
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Options that apply to the {@link FaastModule.cleanup} method.
  * @public
@@ -2117,14 +2117,14 @@ Object {
         ],
         "id": "CleanupOptions",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [
                 "/**
      * If true, delete cached resources. Default: false.
      * @remarks
@@ -2146,7 +2146,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "deleteCaches",
               "signature": "deleteCaches?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 310,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L310",
@@ -2154,8 +2154,8 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * If true, delete provider cloud resources. Default: true.
      * @remarks
@@ -2176,7 +2176,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "deleteResources",
               "signature": "deleteResources?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 295,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L295",
@@ -2188,15 +2188,15 @@ Object {
         },
         "name": "CleanupOptions",
         "signature": "interface CleanupOptions {}",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 281,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L281",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L281",
         },
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Options common across all faast.js providers. Used as argument to {@link faast}.
  * @remarks
@@ -2207,14 +2207,14 @@ Object {
         ],
         "id": "CommonOptions",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [
                 "/**
      * If true, create a child process to isolate user code from faast
      * scaffolding. Default: true.
@@ -2244,7 +2244,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "childProcess",
               "signature": "childProcess?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 343,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L343",
@@ -2252,8 +2252,8 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * The maximum number of concurrent invocations to allow. Default: 100,
      * except for the \`local\` provider, where the default is 10.
@@ -2270,7 +2270,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "concurrency",
               "signature": "concurrency?: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 353,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L353",
@@ -2278,8 +2278,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * A user-supplied description for this function, which may make it easier
      * to track different functions when multiple functions are created.
@@ -2291,7 +2291,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "description",
               "signature": "description?: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 358,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L358",
@@ -2299,11 +2299,11 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Environment variables available during serverless function execution.
-     * Default: \\\\{\\\\}.
+     * Default: \\{\\}.
      */",
               ],
               "id": "CommonOptions.env",
@@ -2314,7 +2314,7 @@ Object {
               "signature": "env?: {
     [key: string]: string;
 };",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 379,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L379",
@@ -2322,8 +2322,8 @@ Object {
               },
               "type": "{ [key: string]: string; }",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Exclude a subset of files included by {@link CommonOptions.include}.
      * @remarks
@@ -2337,7 +2337,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "exclude",
               "signature": "exclude?: string[];",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 365,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L365",
@@ -2345,19 +2345,19 @@ Object {
               },
               "type": "string[]",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
-     * Garbage collector mode. Default: \`\\"auto\\"\`.
+     * Garbage collector mode. Default: \`"auto"\`.
      * @remarks
      * Garbage collection deletes resources that were created by previous
      * instantiations of faast that were not cleaned up by
      * {@link FaastModule.cleanup}, either because it was not called or because
-     * the process terminated and did not execute this cleanup step. In \`\\"auto\\"\`
+     * the process terminated and did not execute this cleanup step. In \`"auto"\`
      * mode, garbage collection may be throttled to run up to once per hour no
-     * matter how many faast.js instances are created. In \`\\"force\\"\` mode,
+     * matter how many faast.js instances are created. In \`"force"\` mode,
      * garbage collection is run without regard to whether another gc has
-     * already been performed recently. In \`\\"off\\"\` mode, garbage collection is
+     * already been performed recently. In \`"off"\` mode, garbage collection is
      * skipped entirely. This can be useful for performance-sensitive tests, or
      * for more control over when gc is performed.
      *
@@ -2368,7 +2368,7 @@ Object {
      * circumstances take a significant amount of time even after all
      * invocations have returned.
      *
-     * It is generally recommended to leave garbage collection in \`\\"auto\\"\` mode,
+     * It is generally recommended to leave garbage collection in \`"auto"\` mode,
      * otherwise garbage resources may accumulate over time and you will
      * eventually hit resource limits on your account.
      *
@@ -2381,16 +2381,16 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "gc",
               "signature": "gc?: 'auto' | 'force' | 'off';",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 409,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L409",
                 "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L409",
               },
-              "type": "\\"auto\\" | \\"force\\" | \\"off\\"",
+              "type": ""auto" | "force" | "off"",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Include files to make available in the remote function. See
      * {@link IncludeOption}.
@@ -2399,8 +2399,8 @@ Object {
      * as relative or absolute paths. Relative paths are resolved relative to
      * the current working directory, or relative to the \`cwd\` option.
      *
-     * If the include entry is a directory \`\\"foo/bar\\"\`, the directory
-     * \`\\"./foo/bar\\"\` will be available in the cloud function. Directories are
+     * If the include entry is a directory \`"foo/bar"\`, the directory
+     * \`"./foo/bar"\` will be available in the cloud function. Directories are
      * recursively added.
      *
      * Glob patterns use the syntax of
@@ -2415,7 +2415,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "include",
               "signature": "include?: (string | IncludeOption)[];",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 427,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L427",
@@ -2423,8 +2423,8 @@ Object {
               },
               "type": "(string | IncludeOption)[]",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Maximum number of times that faast will retry each invocation. Default: 2
      * (invocations can therefore be attemped 3 times in total).
@@ -2443,7 +2443,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "maxRetries",
               "signature": "maxRetries?: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 439,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L439",
@@ -2451,8 +2451,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Memory limit for each function in MB. This setting has an effect on
      * pricing. Default varies by provider.
@@ -2474,7 +2474,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "memorySize",
               "signature": "memorySize?: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 454,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L454",
@@ -2482,10 +2482,10 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
-     * Specify invocation mode. Default: \`\\"auto\\"\`.
+     * Specify invocation mode. Default: \`"auto"\`.
      * @remarks
      * Modes specify how invocations are triggered. In https mode, the functions
      * are invoked through an https request or the provider's API. In queue
@@ -2496,13 +2496,13 @@ Object {
      *
      * The defaults are:
      *
-     * - aws: \`\\"auto\\"\` is \`\\"https\\"\`. In https mode, the AWS SDK api
+     * - aws: \`"auto"\` is \`"https"\`. In https mode, the AWS SDK api
      *   is used to invoke functions. In queue mode, an AWS SNS topic is created
      *   and triggers invocations. The AWS API Gateway service is never used by
      *   faast, as it incurs a higher cost and is not needed to trigger
      *   invocations.
      *
-     * - google: \`\\"auto\\"\` is \`\\"https\\"\`. In https mode, a PUT request is made to
+     * - google: \`"auto"\` is \`"https"\`. In https mode, a PUT request is made to
      *   invoke the cloud function. In queue mode, a PubSub topic is created to
      *   invoke functions.
      *
@@ -2510,7 +2510,7 @@ Object {
      *   internal asynchronous queue to schedule calls.
      *
      * Size limits are affected by the choice of mode. On AWS the limit is 256kb
-     * for arguments and return values in \`\\"queue\\"\` mode, and 6MB for \`\\"https\\"\`
+     * for arguments and return values in \`"queue"\` mode, and 6MB for \`"https"\`
      * mode. For Google the limit is 10MB regardless of mode. In Local mode
      * messages are sent via node's IPC and are subject to OS IPC limits.
      *
@@ -2525,16 +2525,16 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "mode",
               "signature": "mode?: 'https' | 'queue' | 'auto';",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 489,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L489",
                 "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L489",
               },
-              "type": "\\"auto\\" | \\"https\\" | \\"queue\\"",
+              "type": ""auto" | "https" | "queue"",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Specify a package.json file to include with the code package.
      * @remarks
@@ -2583,7 +2583,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "packageJson",
               "signature": "packageJson?: string | object;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 531,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L531",
@@ -2591,8 +2591,8 @@ Object {
               },
               "type": "string | object",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Rate limit invocations (invocations/sec). Default: no rate limit.
      * @remarks
@@ -2608,7 +2608,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "rate",
               "signature": "rate?: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 374,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L374",
@@ -2616,8 +2616,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Specify how many days to wait before reclaiming cloud garbage. Default:
      * 1.
@@ -2657,7 +2657,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "retentionInDays",
               "signature": "retentionInDays?: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 582,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L582",
@@ -2665,8 +2665,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Reduce tail latency by retrying invocations that take substantially
      * longer than other invocations of the same function. Default: 3.
@@ -2692,7 +2692,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "speculativeRetryThreshold",
               "signature": "speculativeRetryThreshold?: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 601,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L601",
@@ -2700,8 +2700,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Execution time limit for each invocation, in seconds. Default: 60.
      * @remarks
@@ -2733,7 +2733,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "timeout",
               "signature": "timeout?: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 626,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L626",
@@ -2741,8 +2741,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Cache installed dependencies from {@link CommonOptions.packageJson}. Only
      * applies to AWS. Default: true.
@@ -2767,7 +2767,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "useDependencyCaching",
               "signature": "useDependencyCaching?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 549,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L549",
@@ -2775,8 +2775,8 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Check arguments and return values from cloud functions are serializable
      * without losing information. Default: true.
@@ -2812,7 +2812,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "validateSerialization",
               "signature": "validateSerialization?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 699,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L699",
@@ -2820,8 +2820,8 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Extra webpack options to use to bundle the code package.
      * @remarks
@@ -2835,13 +2835,13 @@ Object {
      * \`\`\`typescript
      * const config: webpack.Configuration = merge({
      *     entry,
-     *     mode: \\"development\\",
+     *     mode: "development",
      *     output: {
-     *         path: \\"/\\",
+     *         path: "/",
      *         filename: outputFilename,
-     *         libraryTarget: \\"commonjs2\\"
+     *         libraryTarget: "commonjs2"
      *     },
-     *     target: \\"node\\",
+     *     target: "node",
      *     resolveLoader: { modules: [__dirname, \`\${__dirname}/dist}\`] },
      *     node: { global: true, __dirname: false, __filename: false }
      *   },
@@ -2856,8 +2856,8 @@ Object {
      *
      * Default:
      *
-     * - aws: \`{ externals: [new RegExp(\\"^aws-sdk/?\\")] }\`. In the lambda
-     *   environment \`\\"aws-sdk\\"\` is available in the ambient environment and
+     * - aws: \`{ externals: [new RegExp("^aws-sdk/?")] }\`. In the lambda
+     *   environment \`"aws-sdk"\` is available in the ambient environment and
      *   does not need to be bundled.
      *
      * - other providers: \`{}\`
@@ -2872,7 +2872,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "webpackOptions",
               "signature": "webpackOptions?: webpack.Configuration;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 670,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L670",
@@ -2884,15 +2884,15 @@ Object {
         },
         "name": "CommonOptions",
         "signature": "interface CommonOptions {}",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 320,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L320",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L320",
         },
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * A function return value with additional detailed information.
  * @public
@@ -2900,14 +2900,14 @@ Object {
         ],
         "id": "Detail",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [
                 "/**
      * If available, the provider-specific execution identifier for this
      * invocation.
@@ -2922,7 +2922,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "executionId",
               "signature": "executionId?: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1283,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1283",
@@ -2930,8 +2930,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * If available, the provider-specific instance identifier for this
      * invocation.
@@ -2947,7 +2947,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "instanceId",
               "signature": "instanceId?: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1292,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1292",
@@ -2955,8 +2955,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * The URL of the logs for the specific execution of this function call.
      * @remarks
@@ -2972,7 +2972,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "logUrl",
               "signature": "logUrl?: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1275,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1275",
@@ -2980,8 +2980,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * A Promise for the function's return value.
      */",
@@ -2992,7 +2992,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "value",
               "signature": "value: R;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1266,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1266",
@@ -3004,15 +3004,15 @@ Object {
         },
         "name": "Detail",
         "signature": "interface Detail<R> {}",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 1262,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1262",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L1262",
         },
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * The main interface for invoking, cleaning up, and managing faast.js cloud
  * functions. Returned by {@link faast}.
@@ -3021,13 +3021,13 @@ Object {
         ],
         "id": "FaastModule",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [
+            {
+              "docs": [
                 "/**
      * Stop the faast.js runtime for this cloud function and clean up ephemeral
      * cloud resources.
@@ -3039,7 +3039,7 @@ Object {
      * \`finally\` construct:
      *
      * \`\`\`typescript
-     * const faastModule = await faast(\\"aws\\", m);
+     * const faastModule = await faast("aws", m);
      * try {
      *     // Call faastModule.functions.*
      * } finally {
@@ -3084,7 +3084,7 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "cleanup",
               "signature": "cleanup: (options?: CleanupOptions) => Promise<void>;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1544,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1544",
@@ -3092,8 +3092,8 @@ Object {
               },
               "type": "(options?: CleanupOptions) => Promise<void>",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Get a near real-time cost estimate of cloud function invocations.
      * @returns a Promise for a {@link CostSnapshot}.
@@ -3109,7 +3109,7 @@ Object {
      * Code example:
      *
      * \`\`\`typescript
-     * const faastModule = await faast(\\"aws\\", m);
+     * const faastModule = await faast("aws", m);
      * try {
      *     // invoke cloud functions on faastModule.functions.*
      * } finally {
@@ -3124,7 +3124,7 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "costSnapshot",
               "signature": "costSnapshot: () => Promise<CostSnapshot>;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1602,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1602",
@@ -3132,8 +3132,8 @@ Object {
               },
               "type": "() => Promise<CostSnapshot>",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * The URL of logs generated by this cloud function.
      * @remarks
@@ -3150,7 +3150,7 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "logUrl",
               "signature": "logUrl: () => string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1556,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1556",
@@ -3158,8 +3158,8 @@ Object {
               },
               "type": "() => string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Deregister a callback for statistics events.
      * @remarks
@@ -3172,16 +3172,16 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "off",
               "signature": "off: (name: 'stats', listener: (statsEvent: FunctionStatsEvent) => void) => void;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1576,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1576",
                 "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L1576",
               },
-              "type": "(name: \\"stats\\", listener: (statsEvent: FunctionStatsEvent) => void) => void",
+              "type": "(name: "stats", listener: (statsEvent: FunctionStatsEvent) => void) => void",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Register a callback for statistics events.
      * @remarks
@@ -3190,7 +3190,7 @@ Object {
      * summarizing the statistics for each function. Typical usage:
      *
      * \`\`\`typescript
-     * faastModule.on(\\"stats\\", console.log);
+     * faastModule.on("stats", console.log);
      * \`\`\`
      */",
               ],
@@ -3198,16 +3198,16 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "on",
               "signature": "on: (name: 'stats', listener: (statsEvent: FunctionStatsEvent) => void) => void;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1568,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1568",
                 "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L1568",
               },
-              "type": "(name: \\"stats\\", listener: (statsEvent: FunctionStatsEvent) => void) => void",
+              "type": "(name: "stats", listener: (statsEvent: FunctionStatsEvent) => void) => void",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Statistics for a specific function or the entire faast.js module.
      *
@@ -3223,7 +3223,7 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "stats",
               "signature": "stats: (functionName?: string) => FunctionStats;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1613,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1613",
@@ -3232,9 +3232,9 @@ Object {
               "type": "(functionName?: string) => FunctionStats",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [
+          "properties": [
+            {
+              "docs": [
                 "/**
      * Each call of a cloud function creates a separate remote invocation.
      * @remarks
@@ -3292,7 +3292,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "functions",
               "signature": "functions: ProxyModule<M>;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1482,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1482",
@@ -3300,8 +3300,8 @@ Object {
               },
               "type": "ProxyModule<M>",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Similar to {@link FaastModule.functions} except each function returns a
      * {@link Detail} object
@@ -3318,7 +3318,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "functionsDetail",
               "signature": "functionsDetail: ProxyModuleDetail<M>;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1492,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1492",
@@ -3326,8 +3326,8 @@ Object {
               },
               "type": "ProxyModuleDetail<M>",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** See {@link Provider}.  */",
               ],
               "id": "FaastModule.provider",
@@ -3336,7 +3336,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "provider",
               "signature": "provider: Provider;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1431,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1431",
@@ -3348,15 +3348,15 @@ Object {
         },
         "name": "FaastModule",
         "signature": "interface FaastModule<M extends object> {}",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 1429,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1429",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L1429",
         },
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Google-specific options for {@link faastGoogle}.
  * @public
@@ -3364,14 +3364,14 @@ Object {
         ],
         "id": "GoogleOptions",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [
                 "/**
      * Additional options to pass to Google Cloud Function creation. See
      * {@link https://cloud.google.com/functions/docs/reference/rest/v1/projects.locations.functions#CloudFunction | projects.locations.functions}.
@@ -3383,11 +3383,11 @@ Object {
      * \`\`\`typescript
      *  const requestBody: CloudFunctions.Schema$CloudFunction = {
      *      name,
-     *      entryPoint: \\"trampoline\\",
+     *      entryPoint: "trampoline",
      *      timeout,
      *      availableMemoryMb,
      *      sourceUploadUrl,
-     *      runtime: \\"nodejs10\\",
+     *      runtime: "nodejs10",
      *      ...googleCloudFunctionOptions
      *  };
      * \`\`\`
@@ -3400,7 +3400,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "googleCloudFunctionOptions",
               "signature": "googleCloudFunctionOptions?: cloudfunctions_v1.Schema$CloudFunction;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1888,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1888",
@@ -3408,11 +3408,11 @@ Object {
               },
               "type": "cloudfunctions_v1.Schema$CloudFunction",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * The region to create resources in. Garbage collection is also limited to
-     * this region. Default: \`\\"us-central1\\"\`.
+     * this region. Default: \`"us-central1"\`.
      */",
               ],
               "id": "GoogleOptions.region",
@@ -3421,7 +3421,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "region",
               "signature": "region?: GoogleRegion;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1866,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1866",
@@ -3433,15 +3433,15 @@ Object {
         },
         "name": "GoogleOptions",
         "signature": "interface GoogleOptions extends CommonOptions {}",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 1861,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1861",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L1861",
         },
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Options for the {@link CommonOptions.include} option.
  * @public
@@ -3449,17 +3449,17 @@ Object {
         ],
         "id": "IncludeOption",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [
                 "/**
      * The working directory if \`path\` is relative. Defaults to \`process.cwd()\`.
-     * For example, if \`cwd\` is \`\\"foo\\"\` and \`path\` is \`\\"bar\\"\`, then the
+     * For example, if \`cwd\` is \`"foo"\` and \`path\` is \`"bar"\`, then the
      * contents of the directory \`foo/bar/\` will be added to the remote
      * function under the path \`bar/\`.
      */",
@@ -3470,7 +3470,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "cwd",
               "signature": "cwd?: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1947,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1947",
@@ -3478,8 +3478,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * The path to the directory or glob to add to the cloud function.
      */",
@@ -3490,7 +3490,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "path",
               "signature": "path: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1940,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1940",
@@ -3502,15 +3502,15 @@ Object {
         },
         "name": "IncludeOption",
         "signature": "interface IncludeOption {}",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 1936,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1936",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L1936",
         },
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Specify {@link throttle} limits. These limits shape the way throttle invokes
  * the underlying function.
@@ -3519,16 +3519,16 @@ Object {
         ],
         "id": "Limits",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [
                 "/**
-     * The maximum number of calls to the underlying function to \\"burst\\" -- e.g.
+     * The maximum number of calls to the underlying function to "burst" -- e.g.
      * the number that can be issued immediately as long as the rate limit is
      * not exceeded. For example, if rate is 5 and burst is 5, and 10 calls are
      * made to the throttled function, 5 calls are made immediately and then
@@ -3543,7 +3543,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "burst",
               "signature": "burst?: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1981,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1981",
@@ -3551,8 +3551,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Similar to \`memoize\` except the map from function arguments to results is
      * stored in a persistent cache on disk. This is useful to prevent redundant
@@ -3570,7 +3570,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "cache",
               "signature": "cache?: PersistentCache;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 2017,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2017",
@@ -3578,8 +3578,8 @@ Object {
               },
               "type": "PersistentCache",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * The maximum number of concurrent executions of the underlying function to
      * allow. Must be supplied, there is no default. Specifying \`0\` or
@@ -3592,7 +3592,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "concurrency",
               "signature": "concurrency: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1966,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1966",
@@ -3600,8 +3600,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * If \`memoize\` is \`true\`, then every call to the throttled function will be
      * saved as an entry in a map from arguments to return value. If same
@@ -3622,7 +3622,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "memoize",
               "signature": "memoize?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 2006,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2006",
@@ -3630,8 +3630,8 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * The maximum number of calls per second to allow to the underlying
      * function. Default: no rate limit.
@@ -3643,7 +3643,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "rate",
               "signature": "rate?: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1971,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1971",
@@ -3651,8 +3651,8 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Retry if the throttled function returns a rejected promise. \`retry\` can
      * be a number or a function. If it is a number \`N\`, then up to \`N\`
@@ -3670,7 +3670,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "retry",
               "signature": "retry?: number | ((err: any, retries: number) => boolean);",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 1992,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1992",
@@ -3682,15 +3682,15 @@ Object {
         },
         "name": "Limits",
         "signature": "interface Limits {}",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 1960,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1960",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L1960",
         },
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Local provider options for {@link faastLocal}.
  *
@@ -3699,16 +3699,16 @@ Object {
         ],
         "id": "LocalOptions",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [],
         },
         "name": "LocalOptions",
         "signature": "interface LocalOptions extends CommonOptions {}",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 2039,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2039",
@@ -3716,13 +3716,13 @@ Object {
         },
       },
     ],
-    "namespaces": Array [
-      Object {
-        "declarations": Object {
-          "classes": Array [
-            Object {
-              "constructors": Array [],
-              "docs": Array [
+    "namespaces": [
+      {
+        "declarations": {
+          "classes": [
+            {
+              "constructors": [],
+              "docs": [
                 "/**
      * Cost analyzer results for each workload and configuration.
      * @remarks
@@ -3734,10 +3734,10 @@ Object {
               "id": "CostAnalyzer.Result",
               "isAbstract": false,
               "kind": "ClassDeclaration",
-              "members": Object {
-                "methods": Array [
-                  Object {
-                    "docs": Array [
+              "members": {
+                "methods": [
+                  {
+                    "docs": [
                       "/**
          * Comma-separated output of cost analyzer. One line per cost analyzer
          * configuration.
@@ -3776,7 +3776,7 @@ Object {
                     "kind": "ClassMethodDeclaration",
                     "name": "csv",
                     "signature": "csv: () => string;",
-                    "source": Object {
+                    "source": {
                       "filename": "dist/faastjs.d.ts",
                       "line": 1033,
                       "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1033",
@@ -3785,9 +3785,9 @@ Object {
                     "type": "() => string",
                   },
                 ],
-                "properties": Array [
-                  Object {
-                    "docs": Array [
+                "properties": [
+                  {
+                    "docs": [
                       "/**
          * Cost estimates for each configuration of the workload. See
          * {@link CostAnalyzer.Estimate}.
@@ -3798,7 +3798,7 @@ Object {
                     "kind": "ClassPropertyDeclaration",
                     "name": "estimates",
                     "signature": "readonly estimates: Estimate<A>[];",
-                    "source": Object {
+                    "source": {
                       "filename": "dist/faastjs.d.ts",
                       "line": 991,
                       "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L991",
@@ -3806,8 +3806,8 @@ Object {
                     },
                     "type": "Estimate<A>[]",
                   },
-                  Object {
-                    "docs": Array [
+                  {
+                    "docs": [
                       "/** The workload analyzed. */",
                     ],
                     "id": "CostAnalyzer.Result.workload",
@@ -3815,7 +3815,7 @@ Object {
                     "kind": "ClassPropertyDeclaration",
                     "name": "workload",
                     "signature": "readonly workload: Required<Workload<T, A>>;",
-                    "source": Object {
+                    "source": {
                       "filename": "dist/faastjs.d.ts",
                       "line": 986,
                       "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L986",
@@ -3827,7 +3827,7 @@ Object {
               },
               "name": "Result",
               "signature": "class Result<T extends object, A extends string> {}",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 984,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L984",
@@ -3835,10 +3835,10 @@ Object {
               },
             },
           ],
-          "enums": Array [],
-          "functions": Array [
-            Object {
-              "docs": Array [
+          "enums": [],
+          "functions": [
+            {
+              "docs": [
                 "/**
      * Estimate the cost of a workload using multiple configurations and
      * providers.
@@ -3892,9 +3892,9 @@ Object {
      * }
      *
      * // cost-analyzer-example.ts
-     * import { writeFileSync } from \\"fs\\";
-     * import { CostAnalyzer, FaastModule } from \\"faastjs\\";
-     * import * as funcs from \\"./functions\\";
+     * import { writeFileSync } from "fs";
+     * import { CostAnalyzer, FaastModule } from "faastjs";
+     * import * as funcs from "./functions";
      *
      * async function work(faastModule: FaastModule<typeof funcs>) {
      *     await faastModule.functions.randomNumbers(100000000);
@@ -3902,7 +3902,7 @@ Object {
      *
      * async function main() {
      *     const results = await CostAnalyzer.analyze({ funcs, work });
-     *     writeFileSync(\\"cost.csv\\", results.csv());
+     *     writeFileSync("cost.csv", results.csv());
      * }
      *
      * main();
@@ -3929,7 +3929,7 @@ Object {
      * deviation (in seconds) of the execution time, and average estimated cost
      * for a single run of the workload.
      *
-     * The \\"execution time\\" referenced here is not wall clock time, but rather
+     * The "execution time" referenced here is not wall clock time, but rather
      * execution time in the cloud function. The execution time does not include
      * any time the workload spends waiting locally. If the workload invokes
      * multiple cloud functions, their execution times will be summed even if
@@ -3943,7 +3943,7 @@ Object {
               "signature": "analyze: <T extends object, A extends string>(
     userWorkload: Workload<T, A>
 ) => Promise<Result<T, A>>;",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 976,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L976",
@@ -3952,9 +3952,9 @@ Object {
               "type": "<T extends object, A extends string>(userWorkload: Workload<T, A>) => Promise<Result<T, A>>",
             },
           ],
-          "interfaces": Array [
-            Object {
-              "docs": Array [
+          "interfaces": [
+            {
+              "docs": [
                 "/**
      * A cost estimate result for a specific cost analyzer configuration.
      * @public
@@ -3962,14 +3962,14 @@ Object {
               ],
               "id": "CostAnalyzer.Estimate",
               "kind": "InterfaceDeclaration",
-              "members": Object {
-                "callSignatures": Array [],
-                "constructSignatures": Array [],
-                "indexSignatures": Array [],
-                "methods": Array [],
-                "properties": Array [
-                  Object {
-                    "docs": Array [
+              "members": {
+                "callSignatures": [],
+                "constructSignatures": [],
+                "indexSignatures": [],
+                "methods": [],
+                "properties": [
+                  {
+                    "docs": [
                       "/**
          * The worload configuration that was analyzed. See
          * {@link CostAnalyzer.Configuration}.
@@ -3981,7 +3981,7 @@ Object {
                     "kind": "InterfacePropertyDeclaration",
                     "name": "config",
                     "signature": "config: Configuration;",
-                    "source": Object {
+                    "source": {
                       "filename": "dist/faastjs.d.ts",
                       "line": 872,
                       "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L872",
@@ -3989,8 +3989,8 @@ Object {
                     },
                     "type": "Configuration",
                   },
-                  Object {
-                    "docs": Array [
+                  {
+                    "docs": [
                       "/**
          * The cost snapshot for the cost analysis of the specific (workload,
          * configuration) combination. See {@link CostSnapshot}.
@@ -4002,7 +4002,7 @@ Object {
                     "kind": "InterfacePropertyDeclaration",
                     "name": "costSnapshot",
                     "signature": "costSnapshot: CostSnapshot;",
-                    "source": Object {
+                    "source": {
                       "filename": "dist/faastjs.d.ts",
                       "line": 867,
                       "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L867",
@@ -4010,8 +4010,8 @@ Object {
                     },
                     "type": "CostSnapshot",
                   },
-                  Object {
-                    "docs": Array [
+                  {
+                    "docs": [
                       "/**
          * Additional workload metrics returned from the work function. See
          * {@link CostAnalyzer.WorkloadAttribute}.
@@ -4023,7 +4023,7 @@ Object {
                     "kind": "InterfacePropertyDeclaration",
                     "name": "extraMetrics",
                     "signature": "extraMetrics: WorkloadAttribute<A>;",
-                    "source": Object {
+                    "source": {
                       "filename": "dist/faastjs.d.ts",
                       "line": 877,
                       "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L877",
@@ -4035,15 +4035,15 @@ Object {
               },
               "name": "Estimate",
               "signature": "interface Estimate<A extends string> {}",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 862,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L862",
                 "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L862",
               },
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * A user-defined cost analyzer workload for {@link CostAnalyzer.analyze}.
      * @public
@@ -4052,14 +4052,14 @@ Object {
               ],
               "id": "CostAnalyzer.Workload",
               "kind": "InterfaceDeclaration",
-              "members": Object {
-                "callSignatures": Array [],
-                "constructSignatures": Array [],
-                "indexSignatures": Array [],
-                "methods": Array [],
-                "properties": Array [
-                  Object {
-                    "docs": Array [
+              "members": {
+                "callSignatures": [],
+                "constructSignatures": [],
+                "indexSignatures": [],
+                "methods": [],
+                "properties": [
+                  {
+                    "docs": [
                       "/**
          * The amount of concurrency to allow. Concurrency can arise from
          * multiple repetitions of the same configuration, or concurrenct
@@ -4074,7 +4074,7 @@ Object {
                     "kind": "InterfacePropertyDeclaration",
                     "name": "concurrency",
                     "signature": "concurrency?: number;",
-                    "source": Object {
+                    "source": {
                       "filename": "dist/faastjs.d.ts",
                       "line": 856,
                       "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L856",
@@ -4082,8 +4082,8 @@ Object {
                     },
                     "type": "number",
                   },
-                  Object {
-                    "docs": Array [
+                  {
+                    "docs": [
                       "/**
          * An array of configurations to run the work function against (see
          * {@link CostAnalyzer.Configuration}). For example, each entry in the
@@ -4097,7 +4097,7 @@ Object {
                     "kind": "InterfacePropertyDeclaration",
                     "name": "configurations",
                     "signature": "configurations?: Configuration[];",
-                    "source": Object {
+                    "source": {
                       "filename": "dist/faastjs.d.ts",
                       "line": 817,
                       "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L817",
@@ -4105,8 +4105,8 @@ Object {
                     },
                     "type": "Configuration[]",
                   },
-                  Object {
-                    "docs": Array [
+                  {
+                    "docs": [
                       "/**
          * Format an attribute value for console output. This is displayed by
          * the cost analyzer when all of the repetitions for a configuration
@@ -4120,7 +4120,7 @@ Object {
                     "kind": "InterfacePropertyDeclaration",
                     "name": "format",
                     "signature": "format?: (attr: A, value: number) => string;",
-                    "source": Object {
+                    "source": {
                       "filename": "dist/faastjs.d.ts",
                       "line": 831,
                       "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L831",
@@ -4128,8 +4128,8 @@ Object {
                     },
                     "type": "(attr: A, value: number) => string",
                   },
-                  Object {
-                    "docs": Array [
+                  {
+                    "docs": [
                       "/**
          * Format an attribute value for CSV. The default returns
          * \`value.toFixed(1)\`.
@@ -4141,7 +4141,7 @@ Object {
                     "kind": "InterfacePropertyDeclaration",
                     "name": "formatCSV",
                     "signature": "formatCSV?: (attr: A, value: number) => string;",
-                    "source": Object {
+                    "source": {
                       "filename": "dist/faastjs.d.ts",
                       "line": 836,
                       "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L836",
@@ -4149,8 +4149,8 @@ Object {
                     },
                     "type": "(attr: A, value: number) => string",
                   },
-                  Object {
-                    "docs": Array [
+                  {
+                    "docs": [
                       "/**
          * The imported module that contains the cloud functions to test.
          */",
@@ -4161,7 +4161,7 @@ Object {
                     "kind": "InterfacePropertyDeclaration",
                     "name": "funcs",
                     "signature": "funcs: T;",
-                    "source": Object {
+                    "source": {
                       "filename": "dist/faastjs.d.ts",
                       "line": 798,
                       "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L798",
@@ -4169,8 +4169,8 @@ Object {
                     },
                     "type": "{}",
                   },
-                  Object {
-                    "docs": Array [
+                  {
+                    "docs": [
                       "/**
          * The number of repetitions to run the workload for each cost analyzer
          * configuration. Higher repetitions help reduce the jitter in the
@@ -4184,7 +4184,7 @@ Object {
                     "kind": "InterfacePropertyDeclaration",
                     "name": "repetitions",
                     "signature": "repetitions?: number;",
-                    "source": Object {
+                    "source": {
                       "filename": "dist/faastjs.d.ts",
                       "line": 848,
                       "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L848",
@@ -4192,8 +4192,8 @@ Object {
                     },
                     "type": "number",
                   },
-                  Object {
-                    "docs": Array [
+                  {
+                    "docs": [
                       "/**
          * If true, do not output live results to the console. Can be useful for
          * running the cost analyzer as part of automated tests. Default: false.
@@ -4205,7 +4205,7 @@ Object {
                     "kind": "InterfacePropertyDeclaration",
                     "name": "silent",
                     "signature": "silent?: boolean;",
-                    "source": Object {
+                    "source": {
                       "filename": "dist/faastjs.d.ts",
                       "line": 841,
                       "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L841",
@@ -4213,8 +4213,8 @@ Object {
                     },
                     "type": "boolean",
                   },
-                  Object {
-                    "docs": Array [
+                  {
+                    "docs": [
                       "/**
          * Combine {@link CostAnalyzer.WorkloadAttribute} instances returned
          * from multiple workload executions (caused by value of
@@ -4228,7 +4228,7 @@ Object {
                     "kind": "InterfacePropertyDeclaration",
                     "name": "summarize",
                     "signature": "summarize?: (summaries: WorkloadAttribute<A>[]) => WorkloadAttribute<A>;",
-                    "source": Object {
+                    "source": {
                       "filename": "dist/faastjs.d.ts",
                       "line": 824,
                       "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L824",
@@ -4236,8 +4236,8 @@ Object {
                     },
                     "type": "(summaries: WorkloadAttribute<A>[]) => WorkloadAttribute<A>",
                   },
-                  Object {
-                    "docs": Array [
+                  {
+                    "docs": [
                       "/**
          * A function that executes cloud functions on
          * \`faastModule.functions.*\`. The work function should return \`void\` if
@@ -4256,7 +4256,7 @@ Object {
                     "kind": "InterfacePropertyDeclaration",
                     "name": "work",
                     "signature": "work: (faastModule: FaastModule<T>) => Promise<WorkloadAttribute<A> | void>;",
-                    "source": Object {
+                    "source": {
                       "filename": "dist/faastjs.d.ts",
                       "line": 810,
                       "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L810",
@@ -4268,7 +4268,7 @@ Object {
               },
               "name": "Workload",
               "signature": "interface Workload<T extends object, A extends string> {}",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 794,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L794",
@@ -4276,10 +4276,10 @@ Object {
               },
             },
           ],
-          "namespaces": Array [],
-          "typeAliases": Array [
-            Object {
-              "docs": Array [
+          "namespaces": [],
+          "typeAliases": [
+            {
+              "docs": [
                 "/**
      * An input to {@link CostAnalyzer.analyze}, specifying one
      * configuration of faast.js to run against a workload. See
@@ -4299,15 +4299,15 @@ Object {
           provider: 'google';
           options: GoogleOptions;
       };",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 720,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L720",
                 "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L720",
               },
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * User-defined custom metrics for a workload. These are automatically
      * summarized in the output; see {@link CostAnalyzer.Workload}.
@@ -4320,7 +4320,7 @@ Object {
               "signature": "type WorkloadAttribute<A extends string> = {
     [attr in A]: number;
 };",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 786,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L786",
@@ -4328,9 +4328,9 @@ Object {
               },
             },
           ],
-          "variables": Array [
-            Object {
-              "docs": Array [
+          "variables": [
+            {
+              "docs": [
                 "/**
      * Default AWS cost analyzer configurations include all memory sizes for AWS
      * Lambda.
@@ -4341,12 +4341,12 @@ Object {
      *
      * \`\`\`typescript
      * {
-     *     provider: \\"aws\\",
+     *     provider: "aws",
      *     options: {
-     *         mode: \\"https\\",
+     *         mode: "https",
      *         memorySize,
      *         timeout: 300,
-     *         gc: \\"off\\",
+     *         gc: "off",
      *         childProcess: true
      *     }
      * }
@@ -4366,7 +4366,7 @@ Object {
               "kind": "VariableDeclaration",
               "name": "awsConfigurations",
               "signature": "const awsConfigurations: Configuration[];",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 757,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L757",
@@ -4375,8 +4375,8 @@ Object {
               "type": "Configuration[]",
               "variableKind": "const",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Default Google Cloud Functions cost analyzer configurations include all
      * available memory sizes.
@@ -4385,12 +4385,12 @@ Object {
      *
      * \`\`\`typescript
      * {
-     *     provider: \\"google\\",
+     *     provider: "google",
      *     options: {
-     *         mode: \\"https\\",
+     *         mode: "https",
      *         memorySize,
      *         timeout: 300,
-     *         gc: \\"off\\",
+     *         gc: "off",
      *         childProcess: true
      *     }
      * }
@@ -4404,7 +4404,7 @@ Object {
               "kind": "VariableDeclaration",
               "name": "googleConfigurations",
               "signature": "const googleConfigurations: Configuration[];",
-              "source": Object {
+              "source": {
                 "filename": "dist/faastjs.d.ts",
                 "line": 780,
                 "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L780",
@@ -4415,7 +4415,7 @@ Object {
             },
           ],
         },
-        "docs": Array [
+        "docs": [
           "/**
  * Analyze the cost of a workload across many provider configurations.
  * @public
@@ -4425,7 +4425,7 @@ Object {
         "kind": "NamespaceDeclaration",
         "name": "CostAnalyzer",
         "signature": "namespace CostAnalyzer {}",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 713,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L713",
@@ -4433,9 +4433,9 @@ Object {
         },
       },
     ],
-    "typeAliases": Array [
-      Object {
-        "docs": Array [
+    "typeAliases": [
+      {
+        "docs": [
           "/**
  * \`Async<T>\` maps regular values to Promises and Iterators to AsyncIterators,
  * If \`T\` is already a Promise or an AsyncIterator, it remains the same. This
@@ -4454,15 +4454,15 @@ Object {
     : T extends Promise<infer R>
     ? Promise<R>
     : Promise<T>;",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 43,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L43",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L43",
         },
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * \`AsyncDetail<T>\` is similar to {@link Async} except it maps retun values R to
  * \`Detail<R>\`, which is the return value with additional information about each
@@ -4480,15 +4480,15 @@ Object {
     : T extends Promise<infer R>
     ? Promise<Detail<R>>
     : Promise<Detail<T>>;",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 51,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L51",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L51",
         },
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * The return type of {@link faastAws}. See {@link FaastModuleProxy}.
  * @public
@@ -4502,15 +4502,15 @@ Object {
     AwsOptions,
     AwsState
 >;",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 71,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L71",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L71",
         },
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Valid AWS
  * {@link https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html | regions}.
@@ -4538,15 +4538,15 @@ Object {
     | 'ap-southeast-2'
     | 'ap-south-1'
     | 'sa-east-1';",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 217,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L217",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L217",
         },
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * The return type of {@link faastGoogle}. See {@link FaastModuleProxy}.
  * @public
@@ -4560,15 +4560,15 @@ Object {
     GoogleOptions,
     GoogleState
 >;",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 1850,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1850",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L1850",
         },
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Valid Google Cloud
  * {@link https://cloud.google.com/compute/docs/regions-zones/ | regions}. Only
@@ -4600,15 +4600,15 @@ Object {
     | 'us-east4'
     | 'us-west1'
     | 'us-west2';",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 1900,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L1900",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L1900",
         },
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * The return type of {@link faastLocal}. See {@link FaastModuleProxy}.
  * @public
@@ -4622,15 +4622,15 @@ Object {
     LocalOptions,
     LocalState
 >;",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 2032,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2032",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L2032",
         },
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * The type of all supported cloud providers.
  * @public
@@ -4640,15 +4640,15 @@ Object {
         "kind": "TypeAliasDeclaration",
         "name": "Provider",
         "signature": "type Provider = 'aws' | 'google' | 'local';",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 2230,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2230",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L2230",
         },
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * \`ProxyModule<M>\` is the type of {@link FaastModule.functions}.
  * @remarks
@@ -4667,15 +4667,15 @@ Object {
         ? (...args: A) => Async<R>
         : never;
 };",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 2259,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2259",
           "url": "https://github.com/faastjs/faast.js/tree/a02f01970dedb7a300018c3abb1478c017eea20d/dist/faastjs.d.ts#L2259",
         },
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Similar to {@link ProxyModule} except each function returns a {@link Detail}
  * object.
@@ -4692,7 +4692,7 @@ Object {
         ? (...args: A) => AsyncDetail<R>
         : never;
 };",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 2270,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2270",
@@ -4700,9 +4700,9 @@ Object {
         },
       },
     ],
-    "variables": Array [
-      Object {
-        "docs": Array [
+    "variables": [
+      {
+        "docs": [
           "/**
  * Faast.js loggers.
  * @remarks
@@ -4717,7 +4717,7 @@ Object {
  *
  * Logs can also be enabled or disabled programmatically:
  * \`\`\`typescript
- * import { log } from \\"faastjs\\"
+ * import { log } from "faastjs"
  * log.info.enabled = true;
  * log.provider.enabled = true;
  * \`\`\`
@@ -4769,7 +4769,7 @@ Object {
     provider: debug_2.Debugger;
     awssdk: debug_2.Debugger;
 };",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 2115,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2115",
@@ -4778,8 +4778,8 @@ Object {
         "type": "{ info: debug_2.Debugger; minimal: debug_2.Debugger; warn: debug_2.Debugger; gc: debug_2.Debugger; leaks: debug_2.Debugger; calls: debug_2.Debugger; webpack: debug_2.Debugger; provider: debug_2.Debugger; awssdk: debug_2.Debugger; }",
         "variableKind": "const",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * An array of all available provider.
  * @public
@@ -4789,7 +4789,7 @@ Object {
         "kind": "VariableDeclaration",
         "name": "providers",
         "signature": "const providers: Provider[];",
-        "source": Object {
+        "source": {
           "filename": "dist/faastjs.d.ts",
           "line": 2248,
           "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts#L2248",
@@ -4800,8 +4800,8 @@ Object {
       },
     ],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "dist/faastjs.d.ts",
       "isIndexFile": true,
       "unpkgURL": "https://unpkg.com/browse/faastjs@5.3.8/dist/faastjs.d.ts",

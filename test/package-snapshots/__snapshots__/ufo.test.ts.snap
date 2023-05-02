@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ufo 0.5.4 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [
-      Object {
-        "constructors": Array [
-          Object {
-            "docs": Array [],
+{
+  "declarations": {
+    "classes": [
+      {
+        "constructors": [
+          {
+            "docs": [],
             "id": "$URL.0-constructor",
             "kind": "ClassConstructorDeclaration",
             "name": "constructor",
             "signature": "constructor(input?: string);",
-            "source": Object {
+            "source": {
               "filename": "dist/index.d.ts",
               "line": 92,
               "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L92",
@@ -20,20 +20,20 @@ Object {
             },
           },
         ],
-        "docs": Array [],
+        "docs": [],
         "id": "$URL",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "methods": [
+            {
+              "docs": [],
               "id": "$URL.append",
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "append",
               "signature": "append: (url: $URL) => void;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 105,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L105",
@@ -41,14 +41,14 @@ Object {
               },
               "type": "(url: $URL) => void",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "$URL.toJSON",
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "toJSON",
               "signature": "toJSON: () => string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 106,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L106",
@@ -56,14 +56,14 @@ Object {
               },
               "type": "() => string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "$URL.toString",
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "toString",
               "signature": "toString: () => string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 107,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L107",
@@ -72,15 +72,15 @@ Object {
               "type": "() => string",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+          "properties": [
+            {
+              "docs": [],
               "id": "$URL.auth",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "auth",
               "signature": "auth: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 88,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L88",
@@ -88,14 +88,14 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "$URL.encodedAuth",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "encodedAuth",
               "signature": "readonly encodedAuth: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 103,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L103",
@@ -103,14 +103,14 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "$URL.fullpath",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "fullpath",
               "signature": "readonly fullpath: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 102,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L102",
@@ -118,14 +118,14 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "$URL.hash",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "hash",
               "signature": "hash: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 91,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L91",
@@ -133,14 +133,14 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "$URL.hasProtocol",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "hasProtocol",
               "signature": "readonly hasProtocol: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 97,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L97",
@@ -148,14 +148,14 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "$URL.host",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "host",
               "signature": "host: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 87,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L87",
@@ -163,14 +163,14 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "$URL.hostname",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "hostname",
               "signature": "readonly hostname: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 93,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L93",
@@ -178,14 +178,14 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "$URL.href",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "href",
               "signature": "readonly href: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 104,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L104",
@@ -193,14 +193,14 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "$URL.isAbsolute",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "isAbsolute",
               "signature": "readonly isAbsolute: number | boolean;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 98,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L98",
@@ -208,14 +208,14 @@ Object {
               },
               "type": "number | boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "$URL.origin",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "origin",
               "signature": "readonly origin: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 101,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L101",
@@ -223,14 +223,14 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "$URL.password",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "password",
               "signature": "readonly password: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 96,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L96",
@@ -238,14 +238,14 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "$URL.pathname",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "pathname",
               "signature": "pathname: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 89,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L89",
@@ -253,14 +253,14 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "$URL.port",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "port",
               "signature": "readonly port: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 94,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L94",
@@ -268,14 +268,14 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "$URL.protocol",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "protocol",
               "signature": "protocol: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 86,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L86",
@@ -283,14 +283,14 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "$URL.query",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "query",
               "signature": "query: QueryObject;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 90,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L90",
@@ -298,14 +298,14 @@ Object {
               },
               "type": "QueryObject",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "$URL.search",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "search",
               "signature": "readonly search: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 99,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L99",
@@ -313,14 +313,14 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "$URL.searchParams",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "searchParams",
               "signature": "readonly searchParams: URLSearchParams;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 100,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L100",
@@ -328,14 +328,14 @@ Object {
               },
               "type": "URLSearchParams",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "$URL.username",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "username",
               "signature": "readonly username: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 95,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L95",
@@ -347,7 +347,7 @@ Object {
         },
         "name": "$URL",
         "signature": "class $URL implements URL {}",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 85,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L85",
@@ -355,15 +355,15 @@ Object {
         },
       },
     ],
-    "enums": Array [],
-    "functions": Array [
-      Object {
-        "docs": Array [],
+    "enums": [],
+    "functions": [
+      {
+        "docs": [],
         "id": "cleanDoubleSlashes",
         "kind": "FunctionDeclaration",
         "name": "cleanDoubleSlashes",
         "signature": "cleanDoubleSlashes: (input?: string) => string;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 115,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L115",
@@ -371,13 +371,13 @@ Object {
         },
         "type": "(input?: string) => string",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "createURL",
         "kind": "FunctionDeclaration",
         "name": "createURL",
         "signature": "createURL: (input: string) => $URL;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 119,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L119",
@@ -385,8 +385,8 @@ Object {
         },
         "type": "(input: string) => $URL",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Decode text using \`decodeURIComponent\`. Returns the original text if it
  * fails.
@@ -399,7 +399,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "decode",
         "signature": "decode: (text?: string | number) => string;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 54,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L54",
@@ -407,8 +407,8 @@ Object {
         },
         "type": "(text?: string | number) => string",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Encode characters that need to be encoded on the hash section of the URL.
  *
@@ -420,7 +420,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "encodeHash",
         "signature": "encodeHash: (text: string) => string;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 16,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L16",
@@ -428,13 +428,13 @@ Object {
         },
         "type": "(text: string) => string",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "encodeHost",
         "kind": "FunctionDeclaration",
         "name": "encodeHost",
         "signature": "encodeHost: (name?: string) => string;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 55,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L55",
@@ -442,8 +442,8 @@ Object {
         },
         "type": "(name?: string) => string",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Encode characters that need to be encoded on the path section of the URL as a
  * param. This function encodes everything {@link encodePath} does plus the
@@ -457,7 +457,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "encodeParam",
         "signature": "encodeParam: (text: string | number) => string;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 46,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L46",
@@ -465,8 +465,8 @@ Object {
         },
         "type": "(text: string | number) => string",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Encode characters that need to be encoded on the path section of the URL.
  *
@@ -478,7 +478,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "encodePath",
         "signature": "encodePath: (text: string | number) => string;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 37,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L37",
@@ -486,13 +486,13 @@ Object {
         },
         "type": "(text: string | number) => string",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "encodeQueryItem",
         "kind": "FunctionDeclaration",
         "name": "encodeQueryItem",
         "signature": "encodeQueryItem: (key: string, val: QueryValue) => string;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 82,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L82",
@@ -500,8 +500,8 @@ Object {
         },
         "type": "(key: string, val: QueryValue) => string",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Like \`encodeQueryValue\` but also encodes the \`=\` character.
  *
@@ -512,7 +512,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "encodeQueryKey",
         "signature": "encodeQueryKey: (text: string | number) => string;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 30,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L30",
@@ -520,8 +520,8 @@ Object {
         },
         "type": "(text: string | number) => string",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Encode characters that need to be encoded query values on the query
  * section of the URL.
@@ -534,7 +534,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "encodeQueryValue",
         "signature": "encodeQueryValue: (text: string | number) => string;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 24,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L24",
@@ -542,13 +542,13 @@ Object {
         },
         "type": "(text: string | number) => string",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "getQuery",
         "kind": "FunctionDeclaration",
         "name": "getQuery",
         "signature": "getQuery: (input: string) => QueryObject;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 117,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L117",
@@ -556,13 +556,13 @@ Object {
         },
         "type": "(input: string) => QueryObject",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "hasProtocol",
         "kind": "FunctionDeclaration",
         "name": "hasProtocol",
         "signature": "hasProtocol: (inputStr: string) => boolean;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 110,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L110",
@@ -570,13 +570,13 @@ Object {
         },
         "type": "(inputStr: string) => boolean",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "joinURL",
         "kind": "FunctionDeclaration",
         "name": "joinURL",
         "signature": "joinURL: (base: string, ...input: string[]) => string;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 118,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L118",
@@ -584,13 +584,13 @@ Object {
         },
         "type": "(base: string, ...input: string[]) => string",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "normalizeURL",
         "kind": "FunctionDeclaration",
         "name": "normalizeURL",
         "signature": "normalizeURL: (input: string) => string;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 120,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L120",
@@ -598,13 +598,13 @@ Object {
         },
         "type": "(input: string) => string",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "parseAuth",
         "kind": "FunctionDeclaration",
         "name": "parseAuth",
         "signature": "parseAuth: (input?: string) => ParsedAuth;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 75,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L75",
@@ -612,13 +612,13 @@ Object {
         },
         "type": "(input?: string) => ParsedAuth",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "parseHost",
         "kind": "FunctionDeclaration",
         "name": "parseHost",
         "signature": "parseHost: (input?: string) => ParsedHost;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 76,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L76",
@@ -626,13 +626,13 @@ Object {
         },
         "type": "(input?: string) => ParsedHost",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "parsePath",
         "kind": "FunctionDeclaration",
         "name": "parsePath",
         "signature": "parsePath: (input?: string) => ParsedURL;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 74,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L74",
@@ -640,13 +640,13 @@ Object {
         },
         "type": "(input?: string) => ParsedURL",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "parseQuery",
         "kind": "FunctionDeclaration",
         "name": "parseQuery",
         "signature": "parseQuery: (paramsStr?: string) => QueryObject;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 81,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L81",
@@ -654,13 +654,13 @@ Object {
         },
         "type": "(paramsStr?: string) => QueryObject",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "parseURL",
         "kind": "FunctionDeclaration",
         "name": "parseURL",
         "signature": "parseURL: (input?: string) => ParsedURL;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 73,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L73",
@@ -668,13 +668,13 @@ Object {
         },
         "type": "(input?: string) => ParsedURL",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "resolveURL",
         "kind": "FunctionDeclaration",
         "name": "resolveURL",
         "signature": "resolveURL: (base: string, ...input: string[]) => string;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 121,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L121",
@@ -682,13 +682,13 @@ Object {
         },
         "type": "(base: string, ...input: string[]) => string",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "stringifyParsedURL",
         "kind": "FunctionDeclaration",
         "name": "stringifyParsedURL",
         "signature": "stringifyParsedURL: (parsed: ParsedURL) => string;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 77,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L77",
@@ -696,13 +696,13 @@ Object {
         },
         "type": "(parsed: ParsedURL) => string",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "stringifyQuery",
         "kind": "FunctionDeclaration",
         "name": "stringifyQuery",
         "signature": "stringifyQuery: (query: QueryObject) => string;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 83,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L83",
@@ -710,13 +710,13 @@ Object {
         },
         "type": "(query: QueryObject) => string",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "withLeadingSlash",
         "kind": "FunctionDeclaration",
         "name": "withLeadingSlash",
         "signature": "withLeadingSlash: (input?: string) => string;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 114,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L114",
@@ -724,13 +724,13 @@ Object {
         },
         "type": "(input?: string) => string",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "withoutLeadingSlash",
         "kind": "FunctionDeclaration",
         "name": "withoutLeadingSlash",
         "signature": "withoutLeadingSlash: (input?: string) => string;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 113,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L113",
@@ -738,13 +738,13 @@ Object {
         },
         "type": "(input?: string) => string",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "withoutTrailingSlash",
         "kind": "FunctionDeclaration",
         "name": "withoutTrailingSlash",
         "signature": "withoutTrailingSlash: (input?: string) => string;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 111,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L111",
@@ -752,13 +752,13 @@ Object {
         },
         "type": "(input?: string) => string",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "withQuery",
         "kind": "FunctionDeclaration",
         "name": "withQuery",
         "signature": "withQuery: (input: string, query: QueryObject) => string;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 116,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L116",
@@ -766,13 +766,13 @@ Object {
         },
         "type": "(input: string, query: QueryObject) => string",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "withTrailingSlash",
         "kind": "FunctionDeclaration",
         "name": "withTrailingSlash",
         "signature": "withTrailingSlash: (input?: string) => string;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 112,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L112",
@@ -781,26 +781,26 @@ Object {
         "type": "(input?: string) => string",
       },
     ],
-    "interfaces": Array [
-      Object {
-        "docs": Array [],
+    "interfaces": [
+      {
+        "docs": [],
         "id": "ParsedAuth",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "ParsedAuth.password",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "password",
               "signature": "password: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 67,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L67",
@@ -808,15 +808,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ParsedAuth.username",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "username",
               "signature": "username: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 66,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L66",
@@ -828,32 +828,32 @@ Object {
         },
         "name": "ParsedAuth",
         "signature": "interface ParsedAuth {}",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 65,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L65",
           "url": "https://github.com/nuxt-contrib/ufo/tree/5c6b320efd7b843dcc82543dd164548462d976bf/dist/index.d.ts#L65",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "ParsedHost",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "ParsedHost.hostname",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "hostname",
               "signature": "hostname: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 70,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L70",
@@ -861,15 +861,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ParsedHost.port",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "port",
               "signature": "port: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 71,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L71",
@@ -881,32 +881,32 @@ Object {
         },
         "name": "ParsedHost",
         "signature": "interface ParsedHost {}",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 69,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L69",
           "url": "https://github.com/nuxt-contrib/ufo/tree/5c6b320efd7b843dcc82543dd164548462d976bf/dist/index.d.ts#L69",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "ParsedURL",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "ParsedURL.auth",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "auth",
               "signature": "auth?: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 60,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L60",
@@ -914,15 +914,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ParsedURL.hash",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "hash",
               "signature": "hash: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 62,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L62",
@@ -930,15 +930,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ParsedURL.host",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "host",
               "signature": "host?: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 59,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L59",
@@ -946,15 +946,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ParsedURL.pathname",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "pathname",
               "signature": "pathname: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 61,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L61",
@@ -962,15 +962,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ParsedURL.protocol",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "protocol",
               "signature": "protocol?: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 58,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L58",
@@ -978,15 +978,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ParsedURL.search",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "search",
               "signature": "search: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 63,
                 "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L63",
@@ -998,7 +998,7 @@ Object {
         },
         "name": "ParsedURL",
         "signature": "interface ParsedURL {}",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 57,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L57",
@@ -1006,28 +1006,28 @@ Object {
         },
       },
     ],
-    "namespaces": Array [],
-    "typeAliases": Array [
-      Object {
-        "docs": Array [],
+    "namespaces": [],
+    "typeAliases": [
+      {
+        "docs": [],
         "id": "QueryObject",
         "kind": "TypeAliasDeclaration",
         "name": "QueryObject",
         "signature": "type QueryObject = Record<string, QueryValue>;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 80,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L80",
           "url": "https://github.com/nuxt-contrib/ufo/tree/5c6b320efd7b843dcc82543dd164548462d976bf/dist/index.d.ts#L80",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "QueryValue",
         "kind": "TypeAliasDeclaration",
         "name": "QueryValue",
         "signature": "type QueryValue = string | string[] | undefined;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 79,
           "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts#L79",
@@ -1035,10 +1035,10 @@ Object {
         },
       },
     ],
-    "variables": Array [],
+    "variables": [],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "dist/index.d.ts",
       "isIndexFile": true,
       "unpkgURL": "https://unpkg.com/browse/ufo@0.5.4/dist/index.d.ts",

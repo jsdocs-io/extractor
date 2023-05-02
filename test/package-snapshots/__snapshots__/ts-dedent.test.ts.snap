@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ts-dedent 2.0.0 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [
-      Object {
-        "docs": Array [],
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [
+      {
+        "docs": [],
         "id": "dedent",
         "kind": "FunctionDeclaration",
         "name": "dedent",
         "signature": "dedent: (templ: TemplateStringsArray | string, ...values: unknown[]) => string;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 1,
           "unpkgURL": "https://unpkg.com/browse/ts-dedent@2.0.0/dist/index.d.ts#L1",
@@ -21,13 +21,13 @@ Object {
         "type": "(templ: TemplateStringsArray | string, ...values: unknown[]) => string",
       },
     ],
-    "interfaces": Array [],
-    "namespaces": Array [],
-    "typeAliases": Array [],
-    "variables": Array [],
+    "interfaces": [],
+    "namespaces": [],
+    "typeAliases": [],
+    "variables": [],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "dist/index.d.ts",
       "isIndexFile": true,
       "unpkgURL": "https://unpkg.com/browse/ts-dedent@2.0.0/dist/index.d.ts",

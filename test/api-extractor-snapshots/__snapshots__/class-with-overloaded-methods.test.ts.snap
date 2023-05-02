@@ -1,19 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`class-with-overloaded-methods snapshot 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [
-      Object {
-        "constructors": Array [],
-        "docs": Array [],
+{
+  "declarations": {
+    "classes": [
+      {
+        "constructors": [],
+        "docs": [],
         "id": "Class1",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "methods": [
+            {
+              "docs": [
                 "/** (A) foo */",
                 "/** (B) foo */",
               ],
@@ -22,7 +22,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "foo",
               "signature": "foo: { (a: string): number; (b: number): string };",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 3,
                 "unpkgURL": undefined,
@@ -31,11 +31,11 @@ Object {
               "type": "{ (a: string): number; (b: number): string; }",
             },
           ],
-          "properties": Array [],
+          "properties": [],
         },
         "name": "Class1",
         "signature": "class Class1 {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 1,
           "unpkgURL": undefined,
@@ -43,15 +43,15 @@ Object {
         },
       },
     ],
-    "enums": Array [],
-    "functions": Array [],
-    "interfaces": Array [],
-    "namespaces": Array [],
-    "typeAliases": Array [],
-    "variables": Array [],
+    "enums": [],
+    "functions": [],
+    "interfaces": [],
+    "namespaces": [],
+    "typeAliases": [],
+    "variables": [],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "index.d.ts",
       "isIndexFile": true,
       "unpkgURL": undefined,

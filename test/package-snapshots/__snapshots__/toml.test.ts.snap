@@ -1,25 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`toml 3.0.0 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [],
-    "interfaces": Array [],
-    "namespaces": Array [
-      Object {
-        "declarations": Object {
-          "classes": Array [],
-          "enums": Array [],
-          "functions": Array [
-            Object {
-              "docs": Array [],
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [],
+    "interfaces": [],
+    "namespaces": [
+      {
+        "declarations": {
+          "classes": [],
+          "enums": [],
+          "functions": [
+            {
+              "docs": [],
               "id": "toml.parse",
               "kind": "FunctionDeclaration",
               "name": "parse",
               "signature": "parse: (input: string) => any;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 2,
                 "unpkgURL": "https://unpkg.com/browse/toml@3.0.0/index.d.ts#L2",
@@ -28,17 +28,17 @@ Object {
               "type": "(input: string) => any",
             },
           ],
-          "interfaces": Array [],
-          "namespaces": Array [],
-          "typeAliases": Array [],
-          "variables": Array [],
+          "interfaces": [],
+          "namespaces": [],
+          "typeAliases": [],
+          "variables": [],
         },
-        "docs": Array [],
+        "docs": [],
         "id": "toml",
         "kind": "NamespaceDeclaration",
         "name": "toml",
         "signature": "module 'toml' {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 1,
           "unpkgURL": "https://unpkg.com/browse/toml@3.0.0/index.d.ts#L1",
@@ -46,11 +46,11 @@ Object {
         },
       },
     ],
-    "typeAliases": Array [],
-    "variables": Array [],
+    "typeAliases": [],
+    "variables": [],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "index.d.ts",
       "isIndexFile": true,
       "unpkgURL": "https://unpkg.com/browse/toml@3.0.0/index.d.ts",

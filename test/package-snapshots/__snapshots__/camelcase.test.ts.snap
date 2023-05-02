@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`camelcase 6.2.0 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [
-      Object {
-        "docs": Array [
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [
+      {
+        "docs": [
           "/**
 Convert a dash/dot/underscore/space separated string to camelCase or PascalCase: \`foo-bar\` → \`fooBar\`.
 
@@ -72,7 +72,7 @@ camelCase('lorem-ipsum', {locale: 'en-US'});
     input: string | readonly string[],
     options?: camelcase.Options
 ) => string;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 96,
           "unpkgURL": "https://unpkg.com/browse/camelcase@6.2.0/index.d.ts#L96",
@@ -81,19 +81,19 @@ camelCase('lorem-ipsum', {locale: 'en-US'});
         "type": "(input: string | readonly string[], options?: camelcase.Options) => string",
       },
     ],
-    "interfaces": Array [
-      Object {
-        "docs": Array [],
+    "interfaces": [
+      {
+        "docs": [],
         "id": "Options",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [
                 "/**
 		The locale parameter indicates the locale to be used to convert to upper/lower case according to any locale-specific case mappings. If multiple locales are given in an array, the best available locale is used.
 
@@ -120,7 +120,7 @@ camelCase('lorem-ipsum', {locale: 'en-US'});
               "kind": "InterfacePropertyDeclaration",
               "name": "locale",
               "signature": "readonly locale?: string | readonly string[];",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 36,
                 "unpkgURL": "https://unpkg.com/browse/camelcase@6.2.0/index.d.ts#L36",
@@ -128,8 +128,8 @@ camelCase('lorem-ipsum', {locale: 'en-US'});
               },
               "type": "string | readonly string[]",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Uppercase the first character: \`foo-bar\` → \`FooBar\`.
 
@@ -142,7 +142,7 @@ camelCase('lorem-ipsum', {locale: 'en-US'});
               "kind": "InterfacePropertyDeclaration",
               "name": "pascalCase",
               "signature": "readonly pascalCase?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 8,
                 "unpkgURL": "https://unpkg.com/browse/camelcase@6.2.0/index.d.ts#L8",
@@ -150,8 +150,8 @@ camelCase('lorem-ipsum', {locale: 'en-US'});
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Preserve the consecutive uppercase characters: \`foo-BAR\` → \`FooBAR\`.
 
@@ -164,7 +164,7 @@ camelCase('lorem-ipsum', {locale: 'en-US'});
               "kind": "InterfacePropertyDeclaration",
               "name": "preserveConsecutiveUppercase",
               "signature": "readonly preserveConsecutiveUppercase?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 15,
                 "unpkgURL": "https://unpkg.com/browse/camelcase@6.2.0/index.d.ts#L15",
@@ -176,7 +176,7 @@ camelCase('lorem-ipsum', {locale: 'en-US'});
         },
         "name": "Options",
         "signature": "interface Options {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 2,
           "unpkgURL": "https://unpkg.com/browse/camelcase@6.2.0/index.d.ts#L2",
@@ -184,12 +184,12 @@ camelCase('lorem-ipsum', {locale: 'en-US'});
         },
       },
     ],
-    "namespaces": Array [],
-    "typeAliases": Array [],
-    "variables": Array [],
+    "namespaces": [],
+    "typeAliases": [],
+    "variables": [],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "index.d.ts",
       "isIndexFile": true,
       "unpkgURL": "https://unpkg.com/browse/camelcase@6.2.0/index.d.ts",
