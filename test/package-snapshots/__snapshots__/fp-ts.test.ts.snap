@@ -76537,14 +76537,14 @@ exports[`fp-ts 2.9.3 1`] = `
               "id": "tuple.getApplicative",
               "kind": "FunctionDeclaration",
               "name": "getApplicative",
-              "signature": "getApplicative: <M>(M: Monoid<M>) => Applicative2C<'Tuple', M>;",
+              "signature": "getApplicative: <M>(M: Monoid<M>) => Applicative2C<URI, M>;",
               "source": {
                 "filename": "lib/Tuple.d.ts",
                 "line": 41,
                 "unpkgURL": "https://unpkg.com/browse/fp-ts@2.9.3/lib/Tuple.d.ts#L41",
                 "url": "https://github.com/gcanti/fp-ts/tree/v2.9.3/lib/Tuple.d.ts#L41",
               },
-              "type": "<M>(M: Monoid<M>) => Applicative2C<"Tuple", M>",
+              "type": "<M>(M: Monoid<M>) => Applicative2C<URI, M>",
             },
             {
               "docs": [
@@ -76556,14 +76556,14 @@ exports[`fp-ts 2.9.3 1`] = `
               "id": "tuple.getApply",
               "kind": "FunctionDeclaration",
               "name": "getApply",
-              "signature": "getApply: <S>(S: Semigroup<S>) => Apply2C<'Tuple', S>;",
+              "signature": "getApply: <S>(S: Semigroup<S>) => Apply2C<URI, S>;",
               "source": {
                 "filename": "lib/Tuple.d.ts",
                 "line": 36,
                 "unpkgURL": "https://unpkg.com/browse/fp-ts@2.9.3/lib/Tuple.d.ts#L36",
                 "url": "https://github.com/gcanti/fp-ts/tree/v2.9.3/lib/Tuple.d.ts#L36",
               },
-              "type": "<S>(S: Semigroup<S>) => Apply2C<"Tuple", S>",
+              "type": "<S>(S: Semigroup<S>) => Apply2C<URI, S>",
             },
             {
               "docs": [
@@ -76575,14 +76575,14 @@ exports[`fp-ts 2.9.3 1`] = `
               "id": "tuple.getChain",
               "kind": "FunctionDeclaration",
               "name": "getChain",
-              "signature": "getChain: <S>(S: Semigroup<S>) => Chain2C<'Tuple', S>;",
+              "signature": "getChain: <S>(S: Semigroup<S>) => Chain2C<URI, S>;",
               "source": {
                 "filename": "lib/Tuple.d.ts",
                 "line": 46,
                 "unpkgURL": "https://unpkg.com/browse/fp-ts@2.9.3/lib/Tuple.d.ts#L46",
                 "url": "https://github.com/gcanti/fp-ts/tree/v2.9.3/lib/Tuple.d.ts#L46",
               },
-              "type": "<S>(S: Semigroup<S>) => Chain2C<"Tuple", S>",
+              "type": "<S>(S: Semigroup<S>) => Chain2C<URI, S>",
             },
             {
               "docs": [
@@ -76594,14 +76594,14 @@ exports[`fp-ts 2.9.3 1`] = `
               "id": "tuple.getChainRec",
               "kind": "FunctionDeclaration",
               "name": "getChainRec",
-              "signature": "getChainRec: <M>(M: Monoid<M>) => ChainRec2C<'Tuple', M>;",
+              "signature": "getChainRec: <M>(M: Monoid<M>) => ChainRec2C<URI, M>;",
               "source": {
                 "filename": "lib/Tuple.d.ts",
                 "line": 56,
                 "unpkgURL": "https://unpkg.com/browse/fp-ts@2.9.3/lib/Tuple.d.ts#L56",
                 "url": "https://github.com/gcanti/fp-ts/tree/v2.9.3/lib/Tuple.d.ts#L56",
               },
-              "type": "<M>(M: Monoid<M>) => ChainRec2C<"Tuple", M>",
+              "type": "<M>(M: Monoid<M>) => ChainRec2C<URI, M>",
             },
             {
               "docs": [
@@ -76613,14 +76613,14 @@ exports[`fp-ts 2.9.3 1`] = `
               "id": "tuple.getMonad",
               "kind": "FunctionDeclaration",
               "name": "getMonad",
-              "signature": "getMonad: <M>(M: Monoid<M>) => Monad2C<'Tuple', M>;",
+              "signature": "getMonad: <M>(M: Monoid<M>) => Monad2C<URI, M>;",
               "source": {
                 "filename": "lib/Tuple.d.ts",
                 "line": 51,
                 "unpkgURL": "https://unpkg.com/browse/fp-ts@2.9.3/lib/Tuple.d.ts#L51",
                 "url": "https://github.com/gcanti/fp-ts/tree/v2.9.3/lib/Tuple.d.ts#L51",
               },
-              "type": "<M>(M: Monoid<M>) => Monad2C<"Tuple", M>",
+              "type": "<M>(M: Monoid<M>) => Monad2C<URI, M>",
             },
             {
               "docs": [
