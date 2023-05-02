@@ -18,8 +18,8 @@ jest.mock('../../src/api-extractor/extract-package-api', () => ({
     extractPackageAPI: jest.fn(),
 }));
 
-const mockedTryDownloadPackage = jest.mocked(tryDownloadPackage, true);
-const mockedExtractPackageAPI = jest.mocked(extractPackageAPI, true);
+const mockedTryDownloadPackage = jest.mocked(tryDownloadPackage);
+const mockedExtractPackageAPI = jest.mocked(extractPackageAPI);
 
 // See https://github.com/gribnoysup/setup-polly-jest/issues/23#issuecomment-890494186
 // Polly.register(NodeHttpAdapter);
