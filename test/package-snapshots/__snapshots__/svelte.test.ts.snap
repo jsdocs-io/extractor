@@ -1,29 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`svelte 3.31.2 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [],
-    "interfaces": Array [],
-    "namespaces": Array [
-      Object {
-        "declarations": Object {
-          "classes": Array [],
-          "enums": Array [],
-          "functions": Array [],
-          "interfaces": Array [],
-          "namespaces": Array [],
-          "typeAliases": Array [],
-          "variables": Array [],
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [],
+    "interfaces": [],
+    "namespaces": [
+      {
+        "declarations": {
+          "classes": [],
+          "enums": [],
+          "functions": [],
+          "interfaces": [],
+          "namespaces": [],
+          "typeAliases": [],
+          "variables": [],
         },
-        "docs": Array [],
+        "docs": [],
         "id": "*.svelte",
         "kind": "NamespaceDeclaration",
         "name": "*.svelte",
         "signature": "module '*.svelte' {}",
-        "source": Object {
+        "source": {
           "filename": "types/runtime/ambient.d.ts",
           "line": 1,
           "unpkgURL": "https://unpkg.com/browse/svelte@3.31.2/types/runtime/ambient.d.ts#L1",
@@ -31,16 +31,16 @@ Object {
         },
       },
     ],
-    "typeAliases": Array [],
-    "variables": Array [],
+    "typeAliases": [],
+    "variables": [],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "types/runtime/ambient.d.ts",
       "unpkgURL": "https://unpkg.com/browse/svelte@3.31.2/types/runtime/ambient.d.ts",
       "url": "https://github.com/sveltejs/svelte/tree/c758028cde56e2af4846240816dc9ceed57e97cd/types/runtime/ambient.d.ts",
     },
-    Object {
+    {
       "filename": "types/runtime/index.d.ts",
       "isIndexFile": true,
       "unpkgURL": "https://unpkg.com/browse/svelte@3.31.2/types/runtime/index.d.ts",

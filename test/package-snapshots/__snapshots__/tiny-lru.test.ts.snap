@@ -1,25 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`tiny-lru 7.0.6 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [],
-    "interfaces": Array [],
-    "namespaces": Array [
-      Object {
-        "declarations": Object {
-          "classes": Array [
-            Object {
-              "constructors": Array [
-                Object {
-                  "docs": Array [],
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [],
+    "interfaces": [],
+    "namespaces": [
+      {
+        "declarations": {
+          "classes": [
+            {
+              "constructors": [
+                {
+                  "docs": [],
                   "id": "tiny-lru.Lru.0-constructor",
                   "kind": "ClassConstructorDeclaration",
                   "name": "constructor",
                   "signature": "constructor(max?: number, ttl?: number);",
-                  "source": Object {
+                  "source": {
                     "filename": "tiny-lru.d.ts",
                     "line": 3,
                     "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts#L3",
@@ -27,20 +27,20 @@ Object {
                   },
                 },
               ],
-              "docs": Array [],
+              "docs": [],
               "id": "tiny-lru.Lru",
               "isAbstract": false,
               "kind": "ClassDeclaration",
-              "members": Object {
-                "methods": Array [
-                  Object {
-                    "docs": Array [],
+              "members": {
+                "methods": [
+                  {
+                    "docs": [],
                     "id": "tiny-lru.Lru.clear",
                     "isStatic": false,
                     "kind": "ClassMethodDeclaration",
                     "name": "clear",
                     "signature": "clear: () => this;",
-                    "source": Object {
+                    "source": {
                       "filename": "tiny-lru.d.ts",
                       "line": 8,
                       "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts#L8",
@@ -48,14 +48,14 @@ Object {
                     },
                     "type": "() => this",
                   },
-                  Object {
-                    "docs": Array [],
+                  {
+                    "docs": [],
                     "id": "tiny-lru.Lru.delete",
                     "isStatic": false,
                     "kind": "ClassMethodDeclaration",
                     "name": "delete",
                     "signature": "delete: (key: string) => this;",
-                    "source": Object {
+                    "source": {
                       "filename": "tiny-lru.d.ts",
                       "line": 9,
                       "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts#L9",
@@ -63,14 +63,14 @@ Object {
                     },
                     "type": "(key: string) => this",
                   },
-                  Object {
-                    "docs": Array [],
+                  {
+                    "docs": [],
                     "id": "tiny-lru.Lru.evict",
                     "isStatic": false,
                     "kind": "ClassMethodDeclaration",
                     "name": "evict",
                     "signature": "evict: () => this;",
-                    "source": Object {
+                    "source": {
                       "filename": "tiny-lru.d.ts",
                       "line": 10,
                       "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts#L10",
@@ -78,14 +78,14 @@ Object {
                     },
                     "type": "() => this",
                   },
-                  Object {
-                    "docs": Array [],
+                  {
+                    "docs": [],
                     "id": "tiny-lru.Lru.get",
                     "isStatic": false,
                     "kind": "ClassMethodDeclaration",
                     "name": "get",
                     "signature": "get: (key: string) => T | undefined;",
-                    "source": Object {
+                    "source": {
                       "filename": "tiny-lru.d.ts",
                       "line": 6,
                       "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts#L6",
@@ -93,14 +93,14 @@ Object {
                     },
                     "type": "(key: string) => T | undefined",
                   },
-                  Object {
-                    "docs": Array [],
+                  {
+                    "docs": [],
                     "id": "tiny-lru.Lru.has",
                     "isStatic": false,
                     "kind": "ClassMethodDeclaration",
                     "name": "has",
                     "signature": "has: (key: string) => boolean;",
-                    "source": Object {
+                    "source": {
                       "filename": "tiny-lru.d.ts",
                       "line": 5,
                       "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts#L5",
@@ -108,14 +108,14 @@ Object {
                     },
                     "type": "(key: string) => boolean",
                   },
-                  Object {
-                    "docs": Array [],
+                  {
+                    "docs": [],
                     "id": "tiny-lru.Lru.keys",
                     "isStatic": false,
                     "kind": "ClassMethodDeclaration",
                     "name": "keys",
                     "signature": "keys: () => string[];",
-                    "source": Object {
+                    "source": {
                       "filename": "tiny-lru.d.ts",
                       "line": 11,
                       "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts#L11",
@@ -123,14 +123,14 @@ Object {
                     },
                     "type": "() => string[]",
                   },
-                  Object {
-                    "docs": Array [],
+                  {
+                    "docs": [],
                     "id": "tiny-lru.Lru.set",
                     "isStatic": false,
                     "kind": "ClassMethodDeclaration",
                     "name": "set",
                     "signature": "set: (key: string, value: T, bypass?: boolean) => this;",
-                    "source": Object {
+                    "source": {
                       "filename": "tiny-lru.d.ts",
                       "line": 7,
                       "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts#L7",
@@ -139,11 +139,11 @@ Object {
                     "type": "(key: string, value: T, bypass?: boolean) => this",
                   },
                 ],
-                "properties": Array [],
+                "properties": [],
               },
               "name": "Lru",
               "signature": "class Lru<T = any> {}",
-              "source": Object {
+              "source": {
                 "filename": "tiny-lru.d.ts",
                 "line": 2,
                 "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts#L2",
@@ -151,15 +151,15 @@ Object {
               },
             },
           ],
-          "enums": Array [],
-          "functions": Array [
-            Object {
-              "docs": Array [],
+          "enums": [],
+          "functions": [
+            {
+              "docs": [],
               "id": "tiny-lru.factory",
               "kind": "FunctionDeclaration",
               "name": "factory",
               "signature": "factory: <T = any>(max?: number, ttl?: number) => Lru<T>;",
-              "source": Object {
+              "source": {
                 "filename": "tiny-lru.d.ts",
                 "line": 13,
                 "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts#L13",
@@ -168,17 +168,17 @@ Object {
               "type": "<T = any>(max?: number, ttl?: number) => Lru<T>",
             },
           ],
-          "interfaces": Array [],
-          "namespaces": Array [],
-          "typeAliases": Array [],
-          "variables": Array [],
+          "interfaces": [],
+          "namespaces": [],
+          "typeAliases": [],
+          "variables": [],
         },
-        "docs": Array [],
+        "docs": [],
         "id": "tiny-lru",
         "kind": "NamespaceDeclaration",
         "name": "tiny-lru",
         "signature": "module 'tiny-lru' {}",
-        "source": Object {
+        "source": {
           "filename": "tiny-lru.d.ts",
           "line": 1,
           "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts#L1",
@@ -186,11 +186,11 @@ Object {
         },
       },
     ],
-    "typeAliases": Array [],
-    "variables": Array [],
+    "typeAliases": [],
+    "variables": [],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "tiny-lru.d.ts",
       "isIndexFile": true,
       "unpkgURL": "https://unpkg.com/browse/tiny-lru@7.0.6/tiny-lru.d.ts",

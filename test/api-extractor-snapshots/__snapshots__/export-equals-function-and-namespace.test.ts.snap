@@ -1,20 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`export-equals-function-and-namespace snapshot 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [
-      Object {
-        "docs": Array [
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [
+      {
+        "docs": [
           "/** func1 function */",
         ],
         "id": "func1",
         "kind": "FunctionDeclaration",
         "name": "func1",
         "signature": "func1: typeof func1;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 10,
           "unpkgURL": undefined,
@@ -23,28 +23,28 @@ Object {
         "type": "typeof func1",
       },
     ],
-    "interfaces": Array [
-      Object {
-        "docs": Array [
+    "interfaces": [
+      {
+        "docs": [
           "/** Interface1 */",
         ],
         "id": "Interface1",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Interface1.foo",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "foo",
               "signature": "readonly foo: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 17,
                 "unpkgURL": undefined,
@@ -56,34 +56,34 @@ Object {
         },
         "name": "Interface1",
         "signature": "interface Interface1 {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 16,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/** Interface2 */",
         ],
         "id": "Interface2",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Interface2.bar",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "bar",
               "signature": "readonly bar: number;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 22,
                 "unpkgURL": undefined,
@@ -95,7 +95,7 @@ Object {
         },
         "name": "Interface2",
         "signature": "interface Interface2 {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 21,
           "unpkgURL": undefined,
@@ -103,18 +103,18 @@ Object {
         },
       },
     ],
-    "namespaces": Array [],
-    "typeAliases": Array [],
-    "variables": Array [
-      Object {
-        "docs": Array [
+    "namespaces": [],
+    "typeAliases": [],
+    "variables": [
+      {
+        "docs": [
           "/** var1 */",
         ],
         "id": "var1",
         "kind": "VariableDeclaration",
         "name": "var1",
         "signature": "const var1: string;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 26,
           "unpkgURL": undefined,
@@ -125,8 +125,8 @@ Object {
       },
     ],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "index.d.ts",
       "isIndexFile": true,
       "unpkgURL": undefined,

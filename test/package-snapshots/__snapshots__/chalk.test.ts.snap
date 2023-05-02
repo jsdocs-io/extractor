@@ -1,23 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`chalk 4.1.0 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [],
-    "interfaces": Array [
-      Object {
-        "docs": Array [],
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [],
+    "interfaces": [
+      {
+        "docs": [],
         "id": "Chalk",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [
+            {
+              "docs": [
                 "/**
 		Use a [Select/Set Graphic Rendition](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters) (SGR) [color code number](https://en.wikipedia.org/wiki/ANSI_escape_code#3/4_bit) to set text color.
 
@@ -29,7 +29,7 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "ansi",
               "signature": "ansi: (code: number) => Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 226,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L226",
@@ -37,8 +37,8 @@ Object {
               },
               "type": "(code: number) => Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Use a [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set text color.
 		*/",
@@ -47,7 +47,7 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "ansi256",
               "signature": "ansi256: (index: number) => Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 231,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L231",
@@ -55,8 +55,8 @@ Object {
               },
               "type": "(index: number) => Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Use a [Select/Set Graphic Rendition](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters) (SGR) [color code number](https://en.wikipedia.org/wiki/ANSI_escape_code#3/4_bit) to set background color.
 
@@ -69,7 +69,7 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "bgAnsi",
               "signature": "bgAnsi: (code: number) => Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 288,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L288",
@@ -77,8 +77,8 @@ Object {
               },
               "type": "(code: number) => Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Use a [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set background color.
 		*/",
@@ -87,7 +87,7 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "bgAnsi256",
               "signature": "bgAnsi256: (index: number) => Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 293,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L293",
@@ -95,8 +95,8 @@ Object {
               },
               "type": "(index: number) => Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Use HEX value to set background color.
 
@@ -114,7 +114,7 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "bgHex",
               "signature": "bgHex: (color: string) => Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 245,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L245",
@@ -122,8 +122,8 @@ Object {
               },
               "type": "(color: string) => Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Use HSL values to set background color.
 		*/",
@@ -132,7 +132,7 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "bgHsl",
               "signature": "bgHsl: (hue: number, saturation: number, lightness: number) => Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 269,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L269",
@@ -140,8 +140,8 @@ Object {
               },
               "type": "(hue: number, saturation: number, lightness: number) => Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Use HSV values to set background color.
 		*/",
@@ -150,7 +150,7 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "bgHsv",
               "signature": "bgHsv: (hue: number, saturation: number, value: number) => Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 274,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L274",
@@ -158,8 +158,8 @@ Object {
               },
               "type": "(hue: number, saturation: number, value: number) => Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Use HWB values to set background color.
 		*/",
@@ -168,7 +168,7 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "bgHwb",
               "signature": "bgHwb: (hue: number, whiteness: number, blackness: number) => Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 279,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L279",
@@ -176,8 +176,8 @@ Object {
               },
               "type": "(hue: number, whiteness: number, blackness: number) => Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Use keyword color value to set background color.
 
@@ -195,7 +195,7 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "bgKeyword",
               "signature": "bgKeyword: (color: string) => Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 259,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L259",
@@ -203,8 +203,8 @@ Object {
               },
               "type": "(color: string) => Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Use RGB values to set background color.
 		*/",
@@ -213,7 +213,7 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "bgRgb",
               "signature": "bgRgb: (red: number, green: number, blue: number) => Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 264,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L264",
@@ -221,8 +221,8 @@ Object {
               },
               "type": "(red: number, green: number, blue: number) => Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Use HEX value to set text color.
 
@@ -240,7 +240,7 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "hex",
               "signature": "hex: (color: string) => Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 184,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L184",
@@ -248,8 +248,8 @@ Object {
               },
               "type": "(color: string) => Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Use HSL values to set text color.
 		*/",
@@ -258,7 +258,7 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "hsl",
               "signature": "hsl: (hue: number, saturation: number, lightness: number) => Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 208,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L208",
@@ -266,8 +266,8 @@ Object {
               },
               "type": "(hue: number, saturation: number, lightness: number) => Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Use HSV values to set text color.
 		*/",
@@ -276,7 +276,7 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "hsv",
               "signature": "hsv: (hue: number, saturation: number, value: number) => Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 213,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L213",
@@ -284,8 +284,8 @@ Object {
               },
               "type": "(hue: number, saturation: number, value: number) => Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Use HWB values to set text color.
 		*/",
@@ -294,7 +294,7 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "hwb",
               "signature": "hwb: (hue: number, whiteness: number, blackness: number) => Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 218,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L218",
@@ -302,8 +302,8 @@ Object {
               },
               "type": "(hue: number, whiteness: number, blackness: number) => Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Use keyword color value to set text color.
 
@@ -321,7 +321,7 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "keyword",
               "signature": "keyword: (color: string) => Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 198,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L198",
@@ -329,8 +329,8 @@ Object {
               },
               "type": "(color: string) => Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Use RGB values to set text color.
 		*/",
@@ -339,7 +339,7 @@ Object {
               "kind": "InterfaceMethodDeclaration",
               "name": "rgb",
               "signature": "rgb: (red: number, green: number, blue: number) => Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 203,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L203",
@@ -348,16 +348,16 @@ Object {
               "type": "(red: number, green: number, blue: number) => Chalk",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Chalk.bgBlack",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "bgBlack",
               "signature": "readonly bgBlack: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 369,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L369",
@@ -365,15 +365,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.bgBlackBright",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "bgBlackBright",
               "signature": "readonly bgBlackBright: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 388,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L388",
@@ -381,15 +381,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.bgBlue",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "bgBlue",
               "signature": "readonly bgBlue: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 373,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L373",
@@ -397,15 +397,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.bgBlueBright",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "bgBlueBright",
               "signature": "readonly bgBlueBright: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 392,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L392",
@@ -413,15 +413,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.bgCyan",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "bgCyan",
               "signature": "readonly bgCyan: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 375,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L375",
@@ -429,15 +429,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.bgCyanBright",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "bgCyanBright",
               "signature": "readonly bgCyanBright: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 394,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L394",
@@ -445,15 +445,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.bgGray",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "bgGray",
               "signature": "readonly bgGray: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 381,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L381",
@@ -461,15 +461,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.bgGreen",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "bgGreen",
               "signature": "readonly bgGreen: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 371,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L371",
@@ -477,15 +477,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.bgGreenBright",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "bgGreenBright",
               "signature": "readonly bgGreenBright: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 390,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L390",
@@ -493,15 +493,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.bgGrey",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "bgGrey",
               "signature": "readonly bgGrey: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 386,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L386",
@@ -509,15 +509,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.bgMagenta",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "bgMagenta",
               "signature": "readonly bgMagenta: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 374,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L374",
@@ -525,15 +525,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.bgMagentaBright",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "bgMagentaBright",
               "signature": "readonly bgMagentaBright: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 393,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L393",
@@ -541,15 +541,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.bgRed",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "bgRed",
               "signature": "readonly bgRed: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 370,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L370",
@@ -557,15 +557,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.bgRedBright",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "bgRedBright",
               "signature": "readonly bgRedBright: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 389,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L389",
@@ -573,15 +573,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.bgWhite",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "bgWhite",
               "signature": "readonly bgWhite: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 376,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L376",
@@ -589,15 +589,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.bgWhiteBright",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "bgWhiteBright",
               "signature": "readonly bgWhiteBright: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 395,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L395",
@@ -605,15 +605,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.bgYellow",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "bgYellow",
               "signature": "readonly bgYellow: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 372,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L372",
@@ -621,15 +621,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.bgYellowBright",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "bgYellowBright",
               "signature": "readonly bgYellowBright: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 391,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L391",
@@ -637,15 +637,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.black",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "black",
               "signature": "readonly black: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 341,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L341",
@@ -653,15 +653,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.blackBright",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "blackBright",
               "signature": "readonly blackBright: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 360,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L360",
@@ -669,15 +669,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.blue",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "blue",
               "signature": "readonly blue: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 345,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L345",
@@ -685,15 +685,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.blueBright",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "blueBright",
               "signature": "readonly blueBright: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 364,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L364",
@@ -701,8 +701,8 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Modifier: Make text bold.
 		*/",
@@ -713,7 +713,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "bold",
               "signature": "readonly bold: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 303,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L303",
@@ -721,15 +721,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.cyan",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "cyan",
               "signature": "readonly cyan: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 347,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L347",
@@ -737,15 +737,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.cyanBright",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "cyanBright",
               "signature": "readonly cyanBright: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 366,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L366",
@@ -753,8 +753,8 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Modifier: Emitting only a small amount of light.
 		*/",
@@ -765,7 +765,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "dim",
               "signature": "readonly dim: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 308,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L308",
@@ -773,15 +773,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.gray",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "gray",
               "signature": "readonly gray: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 353,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L353",
@@ -789,15 +789,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.green",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "green",
               "signature": "readonly green: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 343,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L343",
@@ -805,15 +805,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.greenBright",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "greenBright",
               "signature": "readonly greenBright: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 362,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L362",
@@ -821,15 +821,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.grey",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "grey",
               "signature": "readonly grey: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 358,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L358",
@@ -837,8 +837,8 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Modifier: Prints the text, but makes it invisible.
 		*/",
@@ -849,7 +849,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "hidden",
               "signature": "readonly hidden: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 328,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L328",
@@ -857,8 +857,8 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Return a new Chalk instance.
 		*/",
@@ -869,7 +869,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "Instance",
               "signature": "Instance: Instance;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 157,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L157",
@@ -877,8 +877,8 @@ Object {
               },
               "type": "Instance",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Modifier: Inverse background and foreground colors.
 		*/",
@@ -889,7 +889,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "inverse",
               "signature": "readonly inverse: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 323,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L323",
@@ -897,8 +897,8 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Modifier: Make text italic. (Not widely supported)
 		*/",
@@ -909,7 +909,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "italic",
               "signature": "readonly italic: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 313,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L313",
@@ -917,8 +917,8 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		The color support for Chalk.
 
@@ -937,7 +937,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "level",
               "signature": "level: Level;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 170,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L170",
@@ -945,15 +945,15 @@ Object {
               },
               "type": "Level",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.magenta",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "magenta",
               "signature": "readonly magenta: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 346,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L346",
@@ -961,15 +961,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.magentaBright",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "magentaBright",
               "signature": "readonly magentaBright: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 365,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L365",
@@ -977,15 +977,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.red",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "red",
               "signature": "readonly red: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 342,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L342",
@@ -993,15 +993,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.redBright",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "redBright",
               "signature": "readonly redBright: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 361,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L361",
@@ -1009,8 +1009,8 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Modifier: Resets the current color chain.
 		*/",
@@ -1021,7 +1021,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "reset",
               "signature": "readonly reset: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 298,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L298",
@@ -1029,8 +1029,8 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Modifier: Puts a horizontal line through the center of the text. (Not widely supported)
 		*/",
@@ -1041,7 +1041,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "strikethrough",
               "signature": "readonly strikethrough: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 333,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L333",
@@ -1049,8 +1049,8 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Modifier: Make text underline. (Not widely supported)
 		*/",
@@ -1061,7 +1061,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "underline",
               "signature": "readonly underline: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 318,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L318",
@@ -1069,8 +1069,8 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Modifier: Prints the text only when Chalk has a color support level > 0.
 		Can be useful for things that are purely cosmetic.
@@ -1082,7 +1082,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "visible",
               "signature": "readonly visible: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 339,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L339",
@@ -1090,15 +1090,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.white",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "white",
               "signature": "readonly white: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 348,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L348",
@@ -1106,15 +1106,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.whiteBright",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "whiteBright",
               "signature": "readonly whiteBright: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 367,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L367",
@@ -1122,15 +1122,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.yellow",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "yellow",
               "signature": "readonly yellow: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 344,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L344",
@@ -1138,15 +1138,15 @@ Object {
               },
               "type": "Chalk",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Chalk.yellowBright",
               "isOptional": false,
               "isReadonly": true,
               "kind": "InterfacePropertyDeclaration",
               "name": "yellowBright",
               "signature": "readonly yellowBright: Chalk;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 363,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L363",
@@ -1158,21 +1158,21 @@ Object {
         },
         "name": "Chalk",
         "signature": "interface Chalk extends ChalkFunction {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 153,
           "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L153",
           "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L153",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "ChalkFunction",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "callSignatures": [
+            {
+              "docs": [
                 "/**
 		Use a template string.
 
@@ -1201,20 +1201,20 @@ Object {
               "kind": "InterfaceCallSignatureDeclaration",
               "name": "call signature",
               "signature": "(text: TemplateStringsArray, ...placeholders: unknown[]): string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 148,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L148",
                 "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L148",
               },
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "ChalkFunction.1-call-signature",
               "kind": "InterfaceCallSignatureDeclaration",
               "name": "call signature",
               "signature": "(...text: unknown[]): string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 150,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L150",
@@ -1222,36 +1222,36 @@ Object {
               },
             },
           ],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [],
         },
         "name": "ChalkFunction",
         "signature": "interface ChalkFunction {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 124,
           "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L124",
           "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L124",
         },
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
 	Detect whether the terminal supports color.
 	*/",
         ],
         "id": "ColorSupport",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [
                 "/**
 		Return whether Chalk supports Truecolor 16 million colors.
 		*/",
@@ -1262,7 +1262,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "has16m",
               "signature": "has16m: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 121,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L121",
@@ -1270,8 +1270,8 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Return whether Chalk supports ANSI 256 colors.
 		*/",
@@ -1282,7 +1282,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "has256",
               "signature": "has256: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 116,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L116",
@@ -1290,8 +1290,8 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		Return whether Chalk supports basic 16 colors.
 		*/",
@@ -1302,7 +1302,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "hasBasic",
               "signature": "hasBasic: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 111,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L111",
@@ -1310,8 +1310,8 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 		The color level used by Chalk.
 		*/",
@@ -1322,7 +1322,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "level",
               "signature": "level: Level;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 106,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L106",
@@ -1334,25 +1334,25 @@ Object {
         },
         "name": "ColorSupport",
         "signature": "interface ColorSupport {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 102,
           "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L102",
           "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L102",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Options",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [
                 "/**
 		Specify the color support for Chalk.
 
@@ -1371,7 +1371,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "level",
               "signature": "level?: Level;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 91,
                 "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L91",
@@ -1383,7 +1383,7 @@ Object {
         },
         "name": "Options",
         "signature": "interface Options {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 79,
           "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L79",
@@ -1391,10 +1391,10 @@ Object {
         },
       },
     ],
-    "namespaces": Array [],
-    "typeAliases": Array [
-      Object {
-        "docs": Array [
+    "namespaces": [],
+    "typeAliases": [
+      {
+        "docs": [
           "/**
 	Return a new Chalk instance.
 	*/",
@@ -1403,15 +1403,15 @@ Object {
         "kind": "TypeAliasDeclaration",
         "name": "Instance",
         "signature": "type Instance = new (options?: Options) => Chalk;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 97,
           "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L97",
           "url": "https://github.com/chalk/chalk/tree/4c3df8847256f9f2471f0af74100b21afc12949f/index.d.ts#L97",
         },
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
 	Levels:
 	- \`0\` - All colors disabled.
@@ -1424,7 +1424,7 @@ Object {
         "kind": "TypeAliasDeclaration",
         "name": "Level",
         "signature": "type Level = 0 | 1 | 2 | 3;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 77,
           "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L77",
@@ -1432,9 +1432,9 @@ Object {
         },
       },
     ],
-    "variables": Array [
-      Object {
-        "docs": Array [
+    "variables": [
+      {
+        "docs": [
           "/**
 Main Chalk object that allows to chain styles together.
 Call the last one as a method with a string argument.
@@ -1455,7 +1455,7 @@ This simply means that \`chalk.red.yellow.green\` is equivalent to \`chalk.green
         Modifiers: Modifiers;
         stderr: chalk.Chalk & { supportsColor: chalk.ColorSupport | false };
     };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 405,
           "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts#L405",
@@ -1466,8 +1466,8 @@ This simply means that \`chalk.red.yellow.green\` is equivalent to \`chalk.green
       },
     ],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "index.d.ts",
       "isIndexFile": true,
       "unpkgURL": "https://unpkg.com/browse/chalk@4.1.0/index.d.ts",

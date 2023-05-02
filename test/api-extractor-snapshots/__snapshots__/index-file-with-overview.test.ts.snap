@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`index-file-with-overview snapshot 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [],
-    "interfaces": Array [],
-    "namespaces": Array [],
-    "typeAliases": Array [],
-    "variables": Array [],
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [],
+    "interfaces": [],
+    "namespaces": [],
+    "typeAliases": [],
+    "variables": [],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "index.ts",
       "isIndexFile": true,
       "unpkgURL": undefined,

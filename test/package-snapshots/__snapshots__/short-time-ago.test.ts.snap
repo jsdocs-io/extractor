@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`short-time-ago 2.0.0 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [
-      Object {
-        "docs": Array [
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [
+      {
+        "docs": [
           "/**
  * \`timeAgo\` returns a string describing the time elapsed between
  * a given date and the current time at which the function is called.
@@ -75,7 +75,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "timeAgo",
         "signature": "timeAgo: (date: Date, now?: Date) => string;",
-        "source": Object {
+        "source": {
           "filename": "src/index.ts",
           "line": 71,
           "unpkgURL": "https://unpkg.com/browse/short-time-ago@2.0.0/src/index.ts#L71",
@@ -84,13 +84,13 @@ Object {
         "type": "(date: Date, now?: Date) => string",
       },
     ],
-    "interfaces": Array [],
-    "namespaces": Array [],
-    "typeAliases": Array [],
-    "variables": Array [],
+    "interfaces": [],
+    "namespaces": [],
+    "typeAliases": [],
+    "variables": [],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "src/index.ts",
       "isIndexFile": true,
       "unpkgURL": "https://unpkg.com/browse/short-time-ago@2.0.0/src/index.ts",

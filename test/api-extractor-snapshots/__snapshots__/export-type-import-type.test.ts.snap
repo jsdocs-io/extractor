@@ -1,38 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`export-type-import-type snapshot 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [],
-    "interfaces": Array [],
-    "namespaces": Array [
-      Object {
-        "declarations": Object {
-          "classes": Array [],
-          "enums": Array [],
-          "functions": Array [],
-          "interfaces": Array [],
-          "namespaces": Array [],
-          "typeAliases": Array [
-            Object {
-              "docs": Array [
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [],
+    "interfaces": [],
+    "namespaces": [
+      {
+        "declarations": {
+          "classes": [],
+          "enums": [],
+          "functions": [],
+          "interfaces": [],
+          "namespaces": [],
+          "typeAliases": [
+            {
+              "docs": [
                 "/** Type alias Foo1 */",
               ],
               "id": "Foo.Foo1",
               "kind": "TypeAliasDeclaration",
               "name": "Foo1",
               "signature": "type Foo1 = string | number;",
-              "source": Object {
+              "source": {
                 "filename": "foo.d.ts",
                 "line": 6,
                 "unpkgURL": undefined,
                 "url": undefined,
               },
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** Type alias Foo2 */",
               ],
               "id": "Foo.Foo2",
@@ -41,7 +41,7 @@ Object {
               "signature": "type Foo2 = {
     bar: boolean;
 };",
-              "source": Object {
+              "source": {
                 "filename": "foo.d.ts",
                 "line": 9,
                 "unpkgURL": undefined,
@@ -49,9 +49,9 @@ Object {
               },
             },
           ],
-          "variables": Array [],
+          "variables": [],
         },
-        "docs": Array [
+        "docs": [
           "/**
  * Module Foo.
  */",
@@ -60,7 +60,7 @@ Object {
         "kind": "NamespaceDeclaration",
         "name": "Foo",
         "signature": "module 'foo.d.ts' {}",
-        "source": Object {
+        "source": {
           "filename": "foo.d.ts",
           "line": 1,
           "unpkgURL": undefined,
@@ -68,16 +68,16 @@ Object {
         },
       },
     ],
-    "typeAliases": Array [],
-    "variables": Array [],
+    "typeAliases": [],
+    "variables": [],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "foo.d.ts",
       "unpkgURL": undefined,
       "url": undefined,
     },
-    Object {
+    {
       "filename": "index.d.ts",
       "isIndexFile": true,
       "unpkgURL": undefined,

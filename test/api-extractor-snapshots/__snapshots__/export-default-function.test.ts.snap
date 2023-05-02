@@ -1,20 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`export-default-function snapshot 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [
-      Object {
-        "docs": Array [
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [
+      {
+        "docs": [
           "/** func1 */",
         ],
         "id": "default",
         "kind": "FunctionDeclaration",
         "name": "default",
         "signature": "default: (a: number, b: number) => number;",
-        "source": Object {
+        "source": {
           "filename": "index.ts",
           "line": 2,
           "unpkgURL": undefined,
@@ -23,13 +23,13 @@ Object {
         "type": "(a: number, b: number) => number",
       },
     ],
-    "interfaces": Array [],
-    "namespaces": Array [],
-    "typeAliases": Array [],
-    "variables": Array [],
+    "interfaces": [],
+    "namespaces": [],
+    "typeAliases": [],
+    "variables": [],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "index.ts",
       "isIndexFile": true,
       "unpkgURL": undefined,

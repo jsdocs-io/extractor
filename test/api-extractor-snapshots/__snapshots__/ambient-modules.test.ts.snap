@@ -1,31 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ambient-modules snapshot 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [],
-    "interfaces": Array [],
-    "namespaces": Array [
-      Object {
-        "declarations": Object {
-          "classes": Array [],
-          "enums": Array [],
-          "functions": Array [],
-          "interfaces": Array [],
-          "namespaces": Array [],
-          "typeAliases": Array [],
-          "variables": Array [
-            Object {
-              "docs": Array [
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [],
+    "interfaces": [],
+    "namespaces": [
+      {
+        "declarations": {
+          "classes": [],
+          "enums": [],
+          "functions": [],
+          "interfaces": [],
+          "namespaces": [],
+          "typeAliases": [],
+          "variables": [
+            {
+              "docs": [
                 "/** Variable var1 */",
               ],
               "id": "bar.var1",
               "kind": "VariableDeclaration",
               "name": "var1",
               "signature": "const var1: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 7,
                 "unpkgURL": undefined,
@@ -34,15 +34,15 @@ Object {
               "type": "string",
               "variableKind": "const",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/** Variable var2 */",
               ],
               "id": "bar.var2",
               "kind": "VariableDeclaration",
               "name": "var2",
               "signature": "const var2: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 10,
                 "unpkgURL": undefined,
@@ -53,56 +53,56 @@ Object {
             },
           ],
         },
-        "docs": Array [
+        "docs": [
           "/** Module 'bar' */",
         ],
         "id": "bar",
         "kind": "NamespaceDeclaration",
         "name": "bar",
         "signature": "module 'bar' {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 5,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "declarations": Object {
-          "classes": Array [],
-          "enums": Array [],
-          "functions": Array [],
-          "interfaces": Array [],
-          "namespaces": Array [],
-          "typeAliases": Array [],
-          "variables": Array [],
+      {
+        "declarations": {
+          "classes": [],
+          "enums": [],
+          "functions": [],
+          "interfaces": [],
+          "namespaces": [],
+          "typeAliases": [],
+          "variables": [],
         },
-        "docs": Array [
+        "docs": [
           "/** Module 'foo' */",
         ],
         "id": "foo",
         "kind": "NamespaceDeclaration",
         "name": "foo",
         "signature": "module 'foo' {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 2,
           "unpkgURL": undefined,
           "url": undefined,
         },
       },
-      Object {
-        "declarations": Object {
-          "classes": Array [],
-          "enums": Array [],
-          "functions": Array [
-            Object {
-              "docs": Array [],
+      {
+        "declarations": {
+          "classes": [],
+          "enums": [],
+          "functions": [
+            {
+              "docs": [],
               "id": "foo_bar.sum",
               "kind": "FunctionDeclaration",
               "name": "sum",
               "signature": "sum: (a: number, b: number) => number;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 15,
                 "unpkgURL": undefined,
@@ -111,19 +111,19 @@ Object {
               "type": "(a: number, b: number) => number",
             },
           ],
-          "interfaces": Array [],
-          "namespaces": Array [],
-          "typeAliases": Array [],
-          "variables": Array [],
+          "interfaces": [],
+          "namespaces": [],
+          "typeAliases": [],
+          "variables": [],
         },
-        "docs": Array [
+        "docs": [
           "/** Module 'foo bar' */",
         ],
         "id": "foo_bar",
         "kind": "NamespaceDeclaration",
         "name": "foo_bar",
         "signature": "module 'foo bar' {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 14,
           "unpkgURL": undefined,
@@ -131,11 +131,11 @@ Object {
         },
       },
     ],
-    "typeAliases": Array [],
-    "variables": Array [],
+    "typeAliases": [],
+    "variables": [],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "index.d.ts",
       "isIndexFile": true,
       "unpkgURL": undefined,

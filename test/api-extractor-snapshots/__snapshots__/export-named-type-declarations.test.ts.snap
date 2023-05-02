@@ -1,24 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`export-named-type-declarations snapshot 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [
-      Object {
-        "constructors": Array [],
-        "docs": Array [
+{
+  "declarations": {
+    "classes": [
+      {
+        "constructors": [],
+        "docs": [
           "/** Class1 */",
         ],
         "id": "Class1",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "Class1",
         "signature": "class Class1 {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 18,
           "unpkgURL": undefined,
@@ -26,18 +26,18 @@ Object {
         },
       },
     ],
-    "enums": Array [
-      Object {
-        "docs": Array [
+    "enums": [
+      {
+        "docs": [
           "/** Enum1 */",
         ],
         "id": "Enum1",
         "isConst": false,
         "kind": "EnumDeclaration",
-        "members": Array [],
+        "members": [],
         "name": "Enum1",
         "signature": "enum Enum1 {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 24,
           "unpkgURL": undefined,
@@ -45,16 +45,16 @@ Object {
         },
       },
     ],
-    "functions": Array [
-      Object {
-        "docs": Array [
+    "functions": [
+      {
+        "docs": [
           "/** func1 */",
         ],
         "id": "func1",
         "kind": "FunctionDeclaration",
         "name": "func1",
         "signature": "func1: { (a: number, b: number): number; (a: string, b: string): string };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 11,
           "unpkgURL": undefined,
@@ -62,15 +62,15 @@ Object {
         },
         "type": "{ (a: number, b: number): number; (a: string, b: string): string; }",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/** func2 */",
         ],
         "id": "func2",
         "kind": "FunctionDeclaration",
         "name": "func2",
         "signature": "func2: (a: number, b: number) => number;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 15,
           "unpkgURL": undefined,
@@ -79,23 +79,23 @@ Object {
         "type": "(a: number, b: number) => number",
       },
     ],
-    "interfaces": Array [
-      Object {
-        "docs": Array [
+    "interfaces": [
+      {
+        "docs": [
           "/** Interface1 */",
         ],
         "id": "Interface1",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [],
         },
         "name": "Interface1",
         "signature": "interface Interface1 {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 21,
           "unpkgURL": undefined,
@@ -103,25 +103,25 @@ Object {
         },
       },
     ],
-    "namespaces": Array [
-      Object {
-        "declarations": Object {
-          "classes": Array [],
-          "enums": Array [],
-          "functions": Array [],
-          "interfaces": Array [],
-          "namespaces": Array [],
-          "typeAliases": Array [],
-          "variables": Array [],
+    "namespaces": [
+      {
+        "declarations": {
+          "classes": [],
+          "enums": [],
+          "functions": [],
+          "interfaces": [],
+          "namespaces": [],
+          "typeAliases": [],
+          "variables": [],
         },
-        "docs": Array [
+        "docs": [
           "/** Namespace1 */",
         ],
         "id": "Namespace1",
         "kind": "NamespaceDeclaration",
         "name": "Namespace1",
         "signature": "namespace Namespace1 {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 30,
           "unpkgURL": undefined,
@@ -129,16 +129,16 @@ Object {
         },
       },
     ],
-    "typeAliases": Array [
-      Object {
-        "docs": Array [
+    "typeAliases": [
+      {
+        "docs": [
           "/** TypeAlias1 */",
         ],
         "id": "TypeAlias1",
         "kind": "TypeAliasDeclaration",
         "name": "TypeAlias1",
         "signature": "type TypeAlias1 = number | string;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 27,
           "unpkgURL": undefined,
@@ -146,16 +146,16 @@ Object {
         },
       },
     ],
-    "variables": Array [
-      Object {
-        "docs": Array [
+    "variables": [
+      {
+        "docs": [
           "/** var1 */",
         ],
         "id": "var1",
         "kind": "VariableDeclaration",
         "name": "var1",
         "signature": "const var1: string;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 8,
           "unpkgURL": undefined,
@@ -166,8 +166,8 @@ Object {
       },
     ],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "index.d.ts",
       "isIndexFile": true,
       "unpkgURL": undefined,

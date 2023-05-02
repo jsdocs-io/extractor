@@ -1,24 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`export-default-class snapshot 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [
-      Object {
-        "constructors": Array [],
-        "docs": Array [
+{
+  "declarations": {
+    "classes": [
+      {
+        "constructors": [],
+        "docs": [
           "/** Class1 */",
         ],
         "id": "default",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "methods": [],
+          "properties": [],
         },
         "name": "default",
         "signature": "class {}",
-        "source": Object {
+        "source": {
           "filename": "index.ts",
           "line": 2,
           "unpkgURL": undefined,
@@ -26,15 +26,15 @@ Object {
         },
       },
     ],
-    "enums": Array [],
-    "functions": Array [],
-    "interfaces": Array [],
-    "namespaces": Array [],
-    "typeAliases": Array [],
-    "variables": Array [],
+    "enums": [],
+    "functions": [],
+    "interfaces": [],
+    "namespaces": [],
+    "typeAliases": [],
+    "variables": [],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "index.ts",
       "isIndexFile": true,
       "unpkgURL": undefined,

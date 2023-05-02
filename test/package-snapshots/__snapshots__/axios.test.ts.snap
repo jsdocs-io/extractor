@@ -1,25 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`axios 0.21.1 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [],
-    "interfaces": Array [
-      Object {
-        "docs": Array [],
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [],
+    "interfaces": [
+      {
+        "docs": [],
         "id": "AxiosAdapter",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [
+            {
+              "docs": [],
               "id": "AxiosAdapter.0-call-signature",
               "kind": "InterfaceCallSignatureDeclaration",
               "name": "call signature",
               "signature": "(config: AxiosRequestConfig): AxiosPromise<any>;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 6,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L6",
@@ -27,39 +27,39 @@ Object {
               },
             },
           ],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [],
         },
         "name": "AxiosAdapter",
         "signature": "interface AxiosAdapter {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 5,
           "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L5",
           "url": "https://github.com/axios/axios/tree/a64050a6cfbcc708a55a7dc8030d85b1c78cdf38/index.d.ts#L5",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "AxiosBasicCredentials",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "AxiosBasicCredentials.password",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "password",
               "signature": "password: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 11,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L11",
@@ -67,15 +67,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosBasicCredentials.username",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "username",
               "signature": "username: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 10,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L10",
@@ -87,32 +87,32 @@ Object {
         },
         "name": "AxiosBasicCredentials",
         "signature": "interface AxiosBasicCredentials {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 9,
           "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L9",
           "url": "https://github.com/axios/axios/tree/a64050a6cfbcc708a55a7dc8030d85b1c78cdf38/index.d.ts#L9",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "AxiosError",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "AxiosError.code",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "code",
               "signature": "code?: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 87,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L87",
@@ -120,15 +120,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosError.config",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "config",
               "signature": "config: AxiosRequestConfig;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 86,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L86",
@@ -136,15 +136,15 @@ Object {
               },
               "type": "AxiosRequestConfig",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosError.isAxiosError",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "isAxiosError",
               "signature": "isAxiosError: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 90,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L90",
@@ -152,15 +152,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosError.request",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "request",
               "signature": "request?: any;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 88,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L88",
@@ -168,15 +168,15 @@ Object {
               },
               "type": "any",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosError.response",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "response",
               "signature": "response?: AxiosResponse<T>;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 89,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L89",
@@ -184,15 +184,15 @@ Object {
               },
               "type": "AxiosResponse<T>",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosError.toJSON",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "toJSON",
               "signature": "toJSON: () => object;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 91,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L91",
@@ -204,39 +204,39 @@ Object {
         },
         "name": "AxiosError",
         "signature": "interface AxiosError<T = any> extends Error {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 85,
           "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L85",
           "url": "https://github.com/axios/axios/tree/a64050a6cfbcc708a55a7dc8030d85b1c78cdf38/index.d.ts#L85",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "AxiosInstance",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [
+            {
+              "docs": [],
               "id": "AxiosInstance.0-call-signature",
               "kind": "InterfaceCallSignatureDeclaration",
               "name": "call signature",
               "signature": "(config: AxiosRequestConfig): AxiosPromise;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 131,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L131",
                 "url": "https://github.com/axios/axios/tree/a64050a6cfbcc708a55a7dc8030d85b1c78cdf38/index.d.ts#L131",
               },
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosInstance.1-call-signature",
               "kind": "InterfaceCallSignatureDeclaration",
               "name": "call signature",
               "signature": "(url: string, config?: AxiosRequestConfig): AxiosPromise;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 132,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L132",
@@ -244,11 +244,11 @@ Object {
               },
             },
           ],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [
-            Object {
-              "docs": Array [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [
+            {
+              "docs": [],
               "id": "AxiosInstance.delete",
               "kind": "InterfaceMethodDeclaration",
               "name": "delete",
@@ -256,7 +256,7 @@ Object {
     url: string,
     config?: AxiosRequestConfig
 ) => Promise<R>;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 141,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L141",
@@ -264,8 +264,8 @@ Object {
               },
               "type": "<T = any, R = AxiosResponse<T>>(url: string, config?: AxiosRequestConfig) => Promise<R>",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosInstance.get",
               "kind": "InterfaceMethodDeclaration",
               "name": "get",
@@ -273,7 +273,7 @@ Object {
     url: string,
     config?: AxiosRequestConfig
 ) => Promise<R>;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 140,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L140",
@@ -281,13 +281,13 @@ Object {
               },
               "type": "<T = any, R = AxiosResponse<T>>(url: string, config?: AxiosRequestConfig) => Promise<R>",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosInstance.getUri",
               "kind": "InterfaceMethodDeclaration",
               "name": "getUri",
               "signature": "getUri: (config?: AxiosRequestConfig) => string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 138,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L138",
@@ -295,8 +295,8 @@ Object {
               },
               "type": "(config?: AxiosRequestConfig) => string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosInstance.head",
               "kind": "InterfaceMethodDeclaration",
               "name": "head",
@@ -304,7 +304,7 @@ Object {
     url: string,
     config?: AxiosRequestConfig
 ) => Promise<R>;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 142,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L142",
@@ -312,8 +312,8 @@ Object {
               },
               "type": "<T = any, R = AxiosResponse<T>>(url: string, config?: AxiosRequestConfig) => Promise<R>",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosInstance.options",
               "kind": "InterfaceMethodDeclaration",
               "name": "options",
@@ -321,7 +321,7 @@ Object {
     url: string,
     config?: AxiosRequestConfig
 ) => Promise<R>;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 143,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L143",
@@ -329,8 +329,8 @@ Object {
               },
               "type": "<T = any, R = AxiosResponse<T>>(url: string, config?: AxiosRequestConfig) => Promise<R>",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosInstance.patch",
               "kind": "InterfaceMethodDeclaration",
               "name": "patch",
@@ -339,7 +339,7 @@ Object {
     data?: any,
     config?: AxiosRequestConfig
 ) => Promise<R>;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 146,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L146",
@@ -347,8 +347,8 @@ Object {
               },
               "type": "<T = any, R = AxiosResponse<T>>(url: string, data?: any, config?: AxiosRequestConfig) => Promise<R>",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosInstance.post",
               "kind": "InterfaceMethodDeclaration",
               "name": "post",
@@ -357,7 +357,7 @@ Object {
     data?: any,
     config?: AxiosRequestConfig
 ) => Promise<R>;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 144,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L144",
@@ -365,8 +365,8 @@ Object {
               },
               "type": "<T = any, R = AxiosResponse<T>>(url: string, data?: any, config?: AxiosRequestConfig) => Promise<R>",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosInstance.put",
               "kind": "InterfaceMethodDeclaration",
               "name": "put",
@@ -375,7 +375,7 @@ Object {
     data?: any,
     config?: AxiosRequestConfig
 ) => Promise<R>;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 145,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L145",
@@ -383,15 +383,15 @@ Object {
               },
               "type": "<T = any, R = AxiosResponse<T>>(url: string, data?: any, config?: AxiosRequestConfig) => Promise<R>",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosInstance.request",
               "kind": "InterfaceMethodDeclaration",
               "name": "request",
               "signature": "request: <T = any, R = AxiosResponse<T>>(
     config: AxiosRequestConfig
 ) => Promise<R>;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 139,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L139",
@@ -400,16 +400,16 @@ Object {
               "type": "<T = any, R = AxiosResponse<T>>(config: AxiosRequestConfig) => Promise<R>",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+          "properties": [
+            {
+              "docs": [],
               "id": "AxiosInstance.defaults",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "defaults",
               "signature": "defaults: AxiosRequestConfig;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 133,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L133",
@@ -417,8 +417,8 @@ Object {
               },
               "type": "AxiosRequestConfig",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosInstance.interceptors",
               "isOptional": false,
               "isReadonly": false,
@@ -428,7 +428,7 @@ Object {
     request: AxiosInterceptorManager<AxiosRequestConfig>;
     response: AxiosInterceptorManager<AxiosResponse>;
 };",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 134,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L134",
@@ -440,29 +440,29 @@ Object {
         },
         "name": "AxiosInstance",
         "signature": "interface AxiosInstance {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 130,
           "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L130",
           "url": "https://github.com/axios/axios/tree/a64050a6cfbcc708a55a7dc8030d85b1c78cdf38/index.d.ts#L130",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "AxiosInterceptorManager",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [
+            {
+              "docs": [],
               "id": "AxiosInterceptorManager.eject",
               "kind": "InterfaceMethodDeclaration",
               "name": "eject",
               "signature": "eject: (id: number) => void;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 127,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L127",
@@ -470,8 +470,8 @@ Object {
               },
               "type": "(id: number) => void",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosInterceptorManager.use",
               "kind": "InterfaceMethodDeclaration",
               "name": "use",
@@ -479,7 +479,7 @@ Object {
     onFulfilled?: (value: V) => V | Promise<V>,
     onRejected?: (error: any) => any
 ) => number;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 126,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L126",
@@ -488,49 +488,49 @@ Object {
               "type": "(onFulfilled?: (value: V) => V | Promise<V>, onRejected?: (error: any) => any) => number",
             },
           ],
-          "properties": Array [],
+          "properties": [],
         },
         "name": "AxiosInterceptorManager",
         "signature": "interface AxiosInterceptorManager<V> {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 125,
           "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L125",
           "url": "https://github.com/axios/axios/tree/a64050a6cfbcc708a55a7dc8030d85b1c78cdf38/index.d.ts#L125",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "AxiosPromise",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [],
         },
         "name": "AxiosPromise",
         "signature": "interface AxiosPromise<T = any> extends Promise<AxiosResponse<T>> {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 94,
           "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L94",
           "url": "https://github.com/axios/axios/tree/a64050a6cfbcc708a55a7dc8030d85b1c78cdf38/index.d.ts#L94",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "AxiosProxyConfig",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "AxiosProxyConfig.auth",
               "isOptional": true,
               "isReadonly": false,
@@ -540,7 +540,7 @@ Object {
     username: string;
     password: string;
 };",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 17,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L17",
@@ -548,15 +548,15 @@ Object {
               },
               "type": "{ username: string; password: string; }",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosProxyConfig.host",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "host",
               "signature": "host: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 15,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L15",
@@ -564,15 +564,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosProxyConfig.port",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "port",
               "signature": "port: number;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 16,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L16",
@@ -580,15 +580,15 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosProxyConfig.protocol",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "protocol",
               "signature": "protocol?: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 21,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L21",
@@ -600,32 +600,32 @@ Object {
         },
         "name": "AxiosProxyConfig",
         "signature": "interface AxiosProxyConfig {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 14,
           "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L14",
           "url": "https://github.com/axios/axios/tree/a64050a6cfbcc708a55a7dc8030d85b1c78cdf38/index.d.ts#L14",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "AxiosRequestConfig",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.adapter",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "adapter",
               "signature": "adapter?: AxiosAdapter;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 57,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L57",
@@ -633,15 +633,15 @@ Object {
               },
               "type": "AxiosAdapter",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.auth",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "auth",
               "signature": "auth?: AxiosBasicCredentials;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 58,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L58",
@@ -649,15 +649,15 @@ Object {
               },
               "type": "AxiosBasicCredentials",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.baseURL",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "baseURL",
               "signature": "baseURL?: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 47,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L47",
@@ -665,15 +665,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.cancelToken",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "cancelToken",
               "signature": "cancelToken?: CancelToken;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 72,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L72",
@@ -681,15 +681,15 @@ Object {
               },
               "type": "CancelToken",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.data",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "data",
               "signature": "data?: any;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 53,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L53",
@@ -697,15 +697,15 @@ Object {
               },
               "type": "any",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.decompress",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "decompress",
               "signature": "decompress?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 73,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L73",
@@ -713,15 +713,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.headers",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "headers",
               "signature": "headers?: any;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 50,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L50",
@@ -729,15 +729,15 @@ Object {
               },
               "type": "any",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.httpAgent",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "httpAgent",
               "signature": "httpAgent?: any;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 69,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L69",
@@ -745,15 +745,15 @@ Object {
               },
               "type": "any",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.httpsAgent",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "httpsAgent",
               "signature": "httpsAgent?: any;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 70,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L70",
@@ -761,15 +761,15 @@ Object {
               },
               "type": "any",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.maxBodyLength",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "maxBodyLength",
               "signature": "maxBodyLength?: number;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 66,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L66",
@@ -777,15 +777,15 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.maxContentLength",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "maxContentLength",
               "signature": "maxContentLength?: number;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 64,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L64",
@@ -793,15 +793,15 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.maxRedirects",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "maxRedirects",
               "signature": "maxRedirects?: number;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 67,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L67",
@@ -809,15 +809,15 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.method",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "method",
               "signature": "method?: Method;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 46,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L46",
@@ -825,15 +825,15 @@ Object {
               },
               "type": "Method",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.onDownloadProgress",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "onDownloadProgress",
               "signature": "onDownloadProgress?: (progressEvent: any) => void;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 63,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L63",
@@ -841,15 +841,15 @@ Object {
               },
               "type": "(progressEvent: any) => void",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.onUploadProgress",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "onUploadProgress",
               "signature": "onUploadProgress?: (progressEvent: any) => void;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 62,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L62",
@@ -857,15 +857,15 @@ Object {
               },
               "type": "(progressEvent: any) => void",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.params",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "params",
               "signature": "params?: any;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 51,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L51",
@@ -873,15 +873,15 @@ Object {
               },
               "type": "any",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.paramsSerializer",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "paramsSerializer",
               "signature": "paramsSerializer?: (params: any) => string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 52,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L52",
@@ -889,15 +889,15 @@ Object {
               },
               "type": "(params: any) => string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.proxy",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "proxy",
               "signature": "proxy?: AxiosProxyConfig | false;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 71,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L71",
@@ -905,15 +905,15 @@ Object {
               },
               "type": "false | AxiosProxyConfig",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.responseType",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "responseType",
               "signature": "responseType?: ResponseType;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 59,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L59",
@@ -921,15 +921,15 @@ Object {
               },
               "type": "ResponseType",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.socketPath",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "socketPath",
               "signature": "socketPath?: string | null;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 68,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L68",
@@ -937,15 +937,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.timeout",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "timeout",
               "signature": "timeout?: number;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 54,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L54",
@@ -953,15 +953,15 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.timeoutErrorMessage",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "timeoutErrorMessage",
               "signature": "timeoutErrorMessage?: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 55,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L55",
@@ -969,15 +969,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.transformRequest",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "transformRequest",
               "signature": "transformRequest?: AxiosTransformer | AxiosTransformer[];",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 48,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L48",
@@ -985,15 +985,15 @@ Object {
               },
               "type": "AxiosTransformer | AxiosTransformer[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.transformResponse",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "transformResponse",
               "signature": "transformResponse?: AxiosTransformer | AxiosTransformer[];",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 49,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L49",
@@ -1001,15 +1001,15 @@ Object {
               },
               "type": "AxiosTransformer | AxiosTransformer[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.url",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "url",
               "signature": "url?: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 45,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L45",
@@ -1017,15 +1017,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.validateStatus",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "validateStatus",
               "signature": "validateStatus?: ((status: number) => boolean) | null;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 65,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L65",
@@ -1033,15 +1033,15 @@ Object {
               },
               "type": "(status: number) => boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.withCredentials",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "withCredentials",
               "signature": "withCredentials?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 56,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L56",
@@ -1049,15 +1049,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.xsrfCookieName",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "xsrfCookieName",
               "signature": "xsrfCookieName?: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 60,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L60",
@@ -1065,15 +1065,15 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosRequestConfig.xsrfHeaderName",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "xsrfHeaderName",
               "signature": "xsrfHeaderName?: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 61,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L61",
@@ -1085,32 +1085,32 @@ Object {
         },
         "name": "AxiosRequestConfig",
         "signature": "interface AxiosRequestConfig {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 44,
           "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L44",
           "url": "https://github.com/axios/axios/tree/a64050a6cfbcc708a55a7dc8030d85b1c78cdf38/index.d.ts#L44",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "AxiosResponse",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "AxiosResponse.config",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "config",
               "signature": "config: AxiosRequestConfig;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 81,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L81",
@@ -1118,15 +1118,15 @@ Object {
               },
               "type": "AxiosRequestConfig",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosResponse.data",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "data",
               "signature": "data: T;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 77,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L77",
@@ -1134,15 +1134,15 @@ Object {
               },
               "type": "{}",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosResponse.headers",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "headers",
               "signature": "headers: any;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 80,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L80",
@@ -1150,15 +1150,15 @@ Object {
               },
               "type": "any",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosResponse.request",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "request",
               "signature": "request?: any;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 82,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L82",
@@ -1166,15 +1166,15 @@ Object {
               },
               "type": "any",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosResponse.status",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "status",
               "signature": "status: number;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 78,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L78",
@@ -1182,15 +1182,15 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosResponse.statusText",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "statusText",
               "signature": "statusText: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 79,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L79",
@@ -1202,29 +1202,29 @@ Object {
         },
         "name": "AxiosResponse",
         "signature": "interface AxiosResponse<T = any> {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 76,
           "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L76",
           "url": "https://github.com/axios/axios/tree/a64050a6cfbcc708a55a7dc8030d85b1c78cdf38/index.d.ts#L76",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "AxiosStatic",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [
+            {
+              "docs": [],
               "id": "AxiosStatic.all",
               "kind": "InterfaceMethodDeclaration",
               "name": "all",
               "signature": "all: <T>(values: (T | Promise<T>)[]) => Promise<T[]>;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 154,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L154",
@@ -1232,13 +1232,13 @@ Object {
               },
               "type": "<T>(values: (T | Promise<T>)[]) => Promise<T[]>",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosStatic.create",
               "kind": "InterfaceMethodDeclaration",
               "name": "create",
               "signature": "create: (config?: AxiosRequestConfig) => AxiosInstance;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 150,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L150",
@@ -1246,13 +1246,13 @@ Object {
               },
               "type": "(config?: AxiosRequestConfig) => AxiosInstance",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosStatic.isAxiosError",
               "kind": "InterfaceMethodDeclaration",
               "name": "isAxiosError",
               "signature": "isAxiosError: (payload: any) => payload is AxiosError<any>;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 156,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L156",
@@ -1260,13 +1260,13 @@ Object {
               },
               "type": "(payload: any) => payload is AxiosError<any>",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosStatic.isCancel",
               "kind": "InterfaceMethodDeclaration",
               "name": "isCancel",
               "signature": "isCancel: (value: any) => boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 153,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L153",
@@ -1274,13 +1274,13 @@ Object {
               },
               "type": "(value: any) => boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosStatic.spread",
               "kind": "InterfaceMethodDeclaration",
               "name": "spread",
               "signature": "spread: <T, R>(callback: (...args: T[]) => R) => (array: T[]) => R;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 155,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L155",
@@ -1289,16 +1289,16 @@ Object {
               "type": "<T, R>(callback: (...args: T[]) => R) => (array: T[]) => R",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+          "properties": [
+            {
+              "docs": [],
               "id": "AxiosStatic.Cancel",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "Cancel",
               "signature": "Cancel: CancelStatic;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 151,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L151",
@@ -1306,15 +1306,15 @@ Object {
               },
               "type": "CancelStatic",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AxiosStatic.CancelToken",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "CancelToken",
               "signature": "CancelToken: CancelTokenStatic;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 152,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L152",
@@ -1326,26 +1326,26 @@ Object {
         },
         "name": "AxiosStatic",
         "signature": "interface AxiosStatic extends AxiosInstance {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 149,
           "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L149",
           "url": "https://github.com/axios/axios/tree/a64050a6cfbcc708a55a7dc8030d85b1c78cdf38/index.d.ts#L149",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "AxiosTransformer",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [
+            {
+              "docs": [],
               "id": "AxiosTransformer.0-call-signature",
               "kind": "InterfaceCallSignatureDeclaration",
               "name": "call signature",
               "signature": "(data: any, headers?: any): any;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 2,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L2",
@@ -1353,39 +1353,39 @@ Object {
               },
             },
           ],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [],
         },
         "name": "AxiosTransformer",
         "signature": "interface AxiosTransformer {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 1,
           "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L1",
           "url": "https://github.com/axios/axios/tree/a64050a6cfbcc708a55a7dc8030d85b1c78cdf38/index.d.ts#L1",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Cancel",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Cancel.message",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "message",
               "signature": "message: string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 102,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L102",
@@ -1397,26 +1397,26 @@ Object {
         },
         "name": "Cancel",
         "signature": "interface Cancel {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 101,
           "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L101",
           "url": "https://github.com/axios/axios/tree/a64050a6cfbcc708a55a7dc8030d85b1c78cdf38/index.d.ts#L101",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Canceler",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [
+            {
+              "docs": [],
               "id": "Canceler.0-call-signature",
               "kind": "InterfaceCallSignatureDeclaration",
               "name": "call signature",
               "signature": "(message?: string): void;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 106,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L106",
@@ -1424,34 +1424,34 @@ Object {
               },
             },
           ],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [],
         },
         "name": "Canceler",
         "signature": "interface Canceler {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 105,
           "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L105",
           "url": "https://github.com/axios/axios/tree/a64050a6cfbcc708a55a7dc8030d85b1c78cdf38/index.d.ts#L105",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "CancelStatic",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [
+            {
+              "docs": [],
               "id": "CancelStatic.0-construct-signature",
               "kind": "InterfaceConstructSignatureDeclaration",
               "name": "construct signature",
               "signature": "new (message?: string): Cancel;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 98,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L98",
@@ -1459,35 +1459,35 @@ Object {
               },
             },
           ],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [],
         },
         "name": "CancelStatic",
         "signature": "interface CancelStatic {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 97,
           "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L97",
           "url": "https://github.com/axios/axios/tree/a64050a6cfbcc708a55a7dc8030d85b1c78cdf38/index.d.ts#L97",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "CancelToken",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [
+            {
+              "docs": [],
               "id": "CancelToken.throwIfRequested",
               "kind": "InterfaceMethodDeclaration",
               "name": "throwIfRequested",
               "signature": "throwIfRequested: () => void;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 117,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L117",
@@ -1496,16 +1496,16 @@ Object {
               "type": "() => void",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+          "properties": [
+            {
+              "docs": [],
               "id": "CancelToken.promise",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "promise",
               "signature": "promise: Promise<Cancel>;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 115,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L115",
@@ -1513,15 +1513,15 @@ Object {
               },
               "type": "Promise<Cancel>",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "CancelToken.reason",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "reason",
               "signature": "reason?: Cancel;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 116,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L116",
@@ -1533,32 +1533,32 @@ Object {
         },
         "name": "CancelToken",
         "signature": "interface CancelToken {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 114,
           "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L114",
           "url": "https://github.com/axios/axios/tree/a64050a6cfbcc708a55a7dc8030d85b1c78cdf38/index.d.ts#L114",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "CancelTokenSource",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "CancelTokenSource.cancel",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "cancel",
               "signature": "cancel: Canceler;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 122,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L122",
@@ -1566,15 +1566,15 @@ Object {
               },
               "type": "Canceler",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "CancelTokenSource.token",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "token",
               "signature": "token: CancelToken;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 121,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L121",
@@ -1586,27 +1586,27 @@ Object {
         },
         "name": "CancelTokenSource",
         "signature": "interface CancelTokenSource {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 120,
           "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L120",
           "url": "https://github.com/axios/axios/tree/a64050a6cfbcc708a55a7dc8030d85b1c78cdf38/index.d.ts#L120",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "CancelTokenStatic",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [
+            {
+              "docs": [],
               "id": "CancelTokenStatic.0-construct-signature",
               "kind": "InterfaceConstructSignatureDeclaration",
               "name": "construct signature",
               "signature": "new (executor: (cancel: Canceler) => void): CancelToken;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 110,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L110",
@@ -1614,15 +1614,15 @@ Object {
               },
             },
           ],
-          "indexSignatures": Array [],
-          "methods": Array [
-            Object {
-              "docs": Array [],
+          "indexSignatures": [],
+          "methods": [
+            {
+              "docs": [],
               "id": "CancelTokenStatic.source",
               "kind": "InterfaceMethodDeclaration",
               "name": "source",
               "signature": "source: () => CancelTokenSource;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 111,
                 "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L111",
@@ -1631,11 +1631,11 @@ Object {
               "type": "() => CancelTokenSource",
             },
           ],
-          "properties": Array [],
+          "properties": [],
         },
         "name": "CancelTokenStatic",
         "signature": "interface CancelTokenStatic {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 109,
           "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L109",
@@ -1643,10 +1643,10 @@ Object {
         },
       },
     ],
-    "namespaces": Array [],
-    "typeAliases": Array [
-      Object {
-        "docs": Array [],
+    "namespaces": [],
+    "typeAliases": [
+      {
+        "docs": [],
         "id": "Method",
         "kind": "TypeAliasDeclaration",
         "name": "Method",
@@ -1671,20 +1671,20 @@ Object {
     | 'LINK'
     | 'unlink'
     | 'UNLINK';",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 24,
           "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L24",
           "url": "https://github.com/axios/axios/tree/a64050a6cfbcc708a55a7dc8030d85b1c78cdf38/index.d.ts#L24",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "ResponseType",
         "kind": "TypeAliasDeclaration",
         "name": "ResponseType",
         "signature": "type ResponseType = 'arraybuffer' | 'blob' | 'document' | 'json' | 'text' | 'stream';",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 36,
           "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L36",
@@ -1692,14 +1692,14 @@ Object {
         },
       },
     ],
-    "variables": Array [
-      Object {
-        "docs": Array [],
+    "variables": [
+      {
+        "docs": [],
         "id": "axios",
         "kind": "VariableDeclaration",
         "name": "axios",
         "signature": "const axios: AxiosStatic;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 159,
           "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts#L159",
@@ -1710,8 +1710,8 @@ Object {
       },
     ],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "index.d.ts",
       "isIndexFile": true,
       "unpkgURL": "https://unpkg.com/browse/axios@0.21.1/index.d.ts",

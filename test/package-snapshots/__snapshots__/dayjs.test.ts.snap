@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`dayjs 1.10.4 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [
-      Object {
-        "constructors": Array [
-          Object {
-            "docs": Array [],
+{
+  "declarations": {
+    "classes": [
+      {
+        "constructors": [
+          {
+            "docs": [],
             "id": "Dayjs.0-constructor",
             "kind": "ClassConstructorDeclaration",
             "name": "constructor",
             "signature": "constructor(config?: ConfigType);",
-            "source": Object {
+            "source": {
               "filename": "index.d.ts",
               "line": 28,
               "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L28",
@@ -20,14 +20,14 @@ Object {
             },
           },
         ],
-        "docs": Array [],
+        "docs": [],
         "id": "Dayjs",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "methods": [
+            {
+              "docs": [
                 "/**
      * Returns a cloned Day.js object with a specified amount of time added.
      * \`\`\`
@@ -43,7 +43,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "add",
               "signature": "add: (value: number, unit?: OpUnitType) => Dayjs;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 234,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L234",
@@ -51,8 +51,8 @@ Object {
               },
               "type": "(value: number, unit?: OpUnitType) => Dayjs",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * All Day.js objects are immutable. Still, \`dayjs#clone\` can create a clone of the current object if you need one.
      * \`\`\`
@@ -67,7 +67,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "clone",
               "signature": "clone: () => Dayjs;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 37,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L37",
@@ -75,8 +75,8 @@ Object {
               },
               "type": "() => Dayjs",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Get the date of the month.
      * \`\`\`
@@ -99,7 +99,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "date",
               "signature": "date: { (): number; (value: number): Dayjs };",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 91,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L91",
@@ -107,8 +107,8 @@ Object {
               },
               "type": "{ (): number; (value: number): Dayjs; }",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Get the day of the week.
      *
@@ -133,7 +133,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "day",
               "signature": "day: { (): number; (value: number): Dayjs };",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 111,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L111",
@@ -141,8 +141,8 @@ Object {
               },
               "type": "{ (): number; (value: number): Dayjs; }",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Get the number of days in the current month.
      * \`\`\`
@@ -156,7 +156,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "daysInMonth",
               "signature": "daysInMonth: () => number;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 324,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L324",
@@ -164,8 +164,8 @@ Object {
               },
               "type": "() => number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * This indicates the difference between two date-time in the specified unit.
      *
@@ -194,7 +194,7 @@ Object {
     unit?: QUnitType | OpUnitType,
     float?: boolean
 ) => number;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 295,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L295",
@@ -202,8 +202,8 @@ Object {
               },
               "type": "(date: ConfigType, unit?: QUnitType | OpUnitType, float?: boolean) => number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Returns a cloned Day.js object and set it to the end of a unit of time.
      * \`\`\`
@@ -219,7 +219,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "endOf",
               "signature": "endOf: (unit: OpUnitType) => Dayjs;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 264,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L264",
@@ -227,8 +227,8 @@ Object {
               },
               "type": "(unit: OpUnitType) => Dayjs",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Get the formatted date according to the string of tokens passed in.
      *
@@ -246,7 +246,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "format",
               "signature": "format: (template?: string) => string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 276,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L276",
@@ -254,8 +254,8 @@ Object {
               },
               "type": "(template?: string) => string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * String getter, returns the corresponding information getting from Day.js object.
      *
@@ -277,7 +277,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "get",
               "signature": "get: (unit: UnitType) => number;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 224,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L224",
@@ -285,8 +285,8 @@ Object {
               },
               "type": "(unit: UnitType) => number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Get the hour.
      * \`\`\`
@@ -309,7 +309,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "hour",
               "signature": "hour: { (): number; (value: number): Dayjs };",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 129,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L129",
@@ -317,8 +317,8 @@ Object {
               },
               "type": "{ (): number; (value: number): Dayjs; }",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * This indicates whether the Day.js object is after the other supplied date-time.
      * \`\`\`
@@ -338,7 +338,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "isAfter",
               "signature": "isAfter: (date: ConfigType, unit?: OpUnitType) => boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 403,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L403",
@@ -346,8 +346,8 @@ Object {
               },
               "type": "(date: ConfigType, unit?: OpUnitType) => boolean",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * This indicates whether the Day.js object is before the other supplied date-time.
      * \`\`\`
@@ -367,7 +367,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "isBefore",
               "signature": "isBefore: (date: ConfigType, unit?: OpUnitType) => boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 377,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L377",
@@ -375,8 +375,8 @@ Object {
               },
               "type": "(date: ConfigType, unit?: OpUnitType) => boolean",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * This indicates whether the Day.js object is the same as the other supplied date-time.
      * \`\`\`
@@ -394,7 +394,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "isSame",
               "signature": "isSame: (date: ConfigType, unit?: OpUnitType) => boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 389,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L389",
@@ -402,8 +402,8 @@ Object {
               },
               "type": "(date: ConfigType, unit?: OpUnitType) => boolean",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * This returns a \`boolean\` indicating whether the Day.js object contains a valid date or not.
      * \`\`\`
@@ -417,7 +417,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "isValid",
               "signature": "isValid: () => boolean;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 45,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L45",
@@ -425,8 +425,8 @@ Object {
               },
               "type": "() => boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Dayjs.locale",
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
@@ -435,7 +435,7 @@ Object {
     (): string;
     (preset: string | ILocale, object?: Partial<ILocale>): Dayjs;
 };",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 405,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L405",
@@ -443,8 +443,8 @@ Object {
               },
               "type": "{ (): string; (preset: string | ILocale, object?: Partial<ILocale>): Dayjs; }",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Get the milliseconds.
      * \`\`\`
@@ -467,7 +467,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "millisecond",
               "signature": "millisecond: { (): number; (value: number): Dayjs };",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 182,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L182",
@@ -475,8 +475,8 @@ Object {
               },
               "type": "{ (): number; (value: number): Dayjs; }",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Get the minutes.
      * \`\`\`
@@ -499,7 +499,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "minute",
               "signature": "minute: { (): number; (value: number): Dayjs };",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 147,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L147",
@@ -507,8 +507,8 @@ Object {
               },
               "type": "{ (): number; (value: number): Dayjs; }",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Get the month.
      *
@@ -535,7 +535,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "month",
               "signature": "month: { (): number; (value: number): Dayjs };",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 71,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L71",
@@ -543,8 +543,8 @@ Object {
               },
               "type": "{ (): number; (value: number): Dayjs; }",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Get the seconds.
      * \`\`\`
@@ -566,7 +566,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "second",
               "signature": "second: { (): number; (value: number): Dayjs };",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 165,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L165",
@@ -574,8 +574,8 @@ Object {
               },
               "type": "{ (): number; (value: number): Dayjs; }",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Generic setter, accepting unit as first argument, and value as second, returns a new instance with the applied changes.
      *
@@ -597,7 +597,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "set",
               "signature": "set: (unit: UnitType, value: number) => Dayjs;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 208,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L208",
@@ -605,8 +605,8 @@ Object {
               },
               "type": "(unit: UnitType, value: number) => Dayjs",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Returns a cloned Day.js object and set it to the start of a unit of time.
      * \`\`\`
@@ -622,7 +622,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "startOf",
               "signature": "startOf: (unit: OpUnitType) => Dayjs;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 254,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L254",
@@ -630,8 +630,8 @@ Object {
               },
               "type": "(unit: OpUnitType) => Dayjs",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Returns a cloned Day.js object with a specified amount of time subtracted.
      * \`\`\`
@@ -647,7 +647,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "subtract",
               "signature": "subtract: (value: number, unit?: OpUnitType) => Dayjs;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 244,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L244",
@@ -655,8 +655,8 @@ Object {
               },
               "type": "(value: number, unit?: OpUnitType) => Dayjs",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * To get a copy of the native \`Date\` object parsed from the Day.js object use \`dayjs#toDate\`.
      * \`\`\`
@@ -669,7 +669,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "toDate",
               "signature": "toDate: () => Date;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 331,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L331",
@@ -677,8 +677,8 @@ Object {
               },
               "type": "() => Date",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * To format as an ISO 8601 string.
      * \`\`\`
@@ -692,7 +692,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "toISOString",
               "signature": "toISOString: () => string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 347,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L347",
@@ -700,8 +700,8 @@ Object {
               },
               "type": "() => string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * To serialize as an ISO 8601 string.
      * \`\`\`
@@ -715,7 +715,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "toJSON",
               "signature": "toJSON: () => string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 339,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L339",
@@ -723,8 +723,8 @@ Object {
               },
               "type": "() => string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Returns a string representation of the date.
      * \`\`\`
@@ -738,7 +738,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "toString",
               "signature": "toString: () => string;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 355,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L355",
@@ -746,8 +746,8 @@ Object {
               },
               "type": "() => string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * This returns the Unix timestamp (the number of **seconds** since the Unix Epoch) of the Day.js object.
      * \`\`\`
@@ -763,7 +763,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "unix",
               "signature": "unix: () => number;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 316,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L316",
@@ -771,8 +771,8 @@ Object {
               },
               "type": "() => number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Get the UTC offset in minutes.
      * \`\`\`
@@ -786,7 +786,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "utcOffset",
               "signature": "utcOffset: () => number;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 363,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L363",
@@ -794,8 +794,8 @@ Object {
               },
               "type": "() => number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * This returns the number of **milliseconds** since the Unix Epoch of the Day.js object.
      * \`\`\`
@@ -812,7 +812,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "valueOf",
               "signature": "valueOf: () => number;",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 306,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L306",
@@ -820,8 +820,8 @@ Object {
               },
               "type": "() => number",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Get the year.
      * \`\`\`
@@ -842,7 +842,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "year",
               "signature": "year: { (): number; (value: number): Dayjs };",
-              "source": Object {
+              "source": {
                 "filename": "index.d.ts",
                 "line": 53,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L53",
@@ -851,11 +851,11 @@ Object {
               "type": "{ (): number; (value: number): Dayjs; }",
             },
           ],
-          "properties": Array [],
+          "properties": [],
         },
         "name": "Dayjs",
         "signature": "class Dayjs {}",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 27,
           "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L27",
@@ -863,15 +863,15 @@ Object {
         },
       },
     ],
-    "enums": Array [],
-    "functions": Array [
-      Object {
-        "docs": Array [],
+    "enums": [],
+    "functions": [
+      {
+        "docs": [],
         "id": "dayjs",
         "kind": "FunctionDeclaration",
         "name": "dayjs",
         "signature": "dayjs: typeof dayjs;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 5,
           "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L5",
@@ -879,13 +879,13 @@ Object {
         },
         "type": "typeof dayjs",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "extend",
         "kind": "FunctionDeclaration",
         "name": "extend",
         "signature": "extend: <T = unknown>(plugin: PluginFunc<T>, option?: T) => Dayjs;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 412,
           "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L412",
@@ -893,13 +893,13 @@ Object {
         },
         "type": "<T = unknown>(plugin: PluginFunc<T>, option?: T) => Dayjs",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "isDayjs",
         "kind": "FunctionDeclaration",
         "name": "isDayjs",
         "signature": "isDayjs: (d: any) => d is Dayjs;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 416,
           "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L416",
@@ -907,8 +907,8 @@ Object {
         },
         "type": "(d: any) => d is Dayjs",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "locale",
         "kind": "FunctionDeclaration",
         "name": "locale",
@@ -917,7 +917,7 @@ Object {
     object?: Partial<ILocale>,
     isLocal?: boolean
 ) => string;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 414,
           "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L414",
@@ -925,13 +925,13 @@ Object {
         },
         "type": "(preset?: string | ILocale, object?: Partial<ILocale>, isLocal?: boolean) => string",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "unix",
         "kind": "FunctionDeclaration",
         "name": "unix",
         "signature": "unix: (t: number) => Dayjs;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 418,
           "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L418",
@@ -940,28 +940,28 @@ Object {
         "type": "(t: number) => Dayjs",
       },
     ],
-    "interfaces": Array [],
-    "namespaces": Array [
-      Object {
-        "declarations": Object {
-          "classes": Array [],
-          "enums": Array [],
-          "functions": Array [],
-          "interfaces": Array [
-            Object {
-              "docs": Array [],
+    "interfaces": [],
+    "namespaces": [
+      {
+        "declarations": {
+          "classes": [],
+          "enums": [],
+          "functions": [],
+          "interfaces": [
+            {
+              "docs": [],
               "id": "dayjs/esm/locale/*.Locale",
               "kind": "InterfaceDeclaration",
-              "members": Object {
-                "callSignatures": Array [],
-                "constructSignatures": Array [],
-                "indexSignatures": Array [],
-                "methods": Array [],
-                "properties": Array [],
+              "members": {
+                "callSignatures": [],
+                "constructSignatures": [],
+                "indexSignatures": [],
+                "methods": [],
+                "properties": [],
               },
               "name": "Locale",
               "signature": "interface Locale extends ILocale {}",
-              "source": Object {
+              "source": {
                 "filename": "esm/locale/index.d.ts",
                 "line": 5,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/esm/locale/index.d.ts#L5",
@@ -969,16 +969,16 @@ Object {
               },
             },
           ],
-          "namespaces": Array [],
-          "typeAliases": Array [],
-          "variables": Array [
-            Object {
-              "docs": Array [],
+          "namespaces": [],
+          "typeAliases": [],
+          "variables": [
+            {
+              "docs": [],
               "id": "dayjs/esm/locale/*.locale",
               "kind": "VariableDeclaration",
               "name": "locale",
               "signature": "const locale: locale.Locale;",
-              "source": Object {
+              "source": {
                 "filename": "esm/locale/index.d.ts",
                 "line": 8,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/esm/locale/index.d.ts#L8",
@@ -989,38 +989,38 @@ Object {
             },
           ],
         },
-        "docs": Array [],
+        "docs": [],
         "id": "dayjs/esm/locale/*",
         "kind": "NamespaceDeclaration",
         "name": "dayjs/esm/locale/*",
         "signature": "module 'dayjs/esm/locale/*' {}",
-        "source": Object {
+        "source": {
           "filename": "esm/locale/index.d.ts",
           "line": 3,
           "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/esm/locale/index.d.ts#L3",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/esm/locale/index.d.ts#L3",
         },
       },
-      Object {
-        "declarations": Object {
-          "classes": Array [],
-          "enums": Array [],
-          "functions": Array [],
-          "interfaces": Array [
-            Object {
-              "docs": Array [],
+      {
+        "declarations": {
+          "classes": [],
+          "enums": [],
+          "functions": [],
+          "interfaces": [
+            {
+              "docs": [],
               "id": "dayjs/locale/*.Locale",
               "kind": "InterfaceDeclaration",
-              "members": Object {
-                "callSignatures": Array [],
-                "constructSignatures": Array [],
-                "indexSignatures": Array [],
-                "methods": Array [],
-                "properties": Array [],
+              "members": {
+                "callSignatures": [],
+                "constructSignatures": [],
+                "indexSignatures": [],
+                "methods": [],
+                "properties": [],
               },
               "name": "Locale",
               "signature": "interface Locale extends ILocale {}",
-              "source": Object {
+              "source": {
                 "filename": "locale/index.d.ts",
                 "line": 5,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/locale/index.d.ts#L5",
@@ -1028,16 +1028,16 @@ Object {
               },
             },
           ],
-          "namespaces": Array [],
-          "typeAliases": Array [],
-          "variables": Array [
-            Object {
-              "docs": Array [],
+          "namespaces": [],
+          "typeAliases": [],
+          "variables": [
+            {
+              "docs": [],
               "id": "dayjs/locale/*.locale",
               "kind": "VariableDeclaration",
               "name": "locale",
               "signature": "const locale: locale.Locale;",
-              "source": Object {
+              "source": {
                 "filename": "locale/index.d.ts",
                 "line": 8,
                 "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/locale/index.d.ts#L8",
@@ -1048,12 +1048,12 @@ Object {
             },
           ],
         },
-        "docs": Array [],
+        "docs": [],
         "id": "dayjs/locale/*",
         "kind": "NamespaceDeclaration",
         "name": "dayjs/locale/*",
         "signature": "module 'dayjs/locale/*' {}",
-        "source": Object {
+        "source": {
           "filename": "locale/index.d.ts",
           "line": 3,
           "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/locale/index.d.ts#L3",
@@ -1061,22 +1061,22 @@ Object {
         },
       },
     ],
-    "typeAliases": Array [
-      Object {
-        "docs": Array [],
+    "typeAliases": [
+      {
+        "docs": [],
         "id": "ConfigType",
         "kind": "TypeAliasDeclaration",
         "name": "ConfigType",
         "signature": "type ConfigType = string | number | Date | Dayjs;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 12,
           "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L12",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L12",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "OptionType",
         "kind": "TypeAliasDeclaration",
         "name": "OptionType",
@@ -1084,67 +1084,67 @@ Object {
     | { locale?: string; format?: string; utc?: boolean }
     | string
     | string[];",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 14,
           "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L14",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L14",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "OpUnitType",
         "kind": "TypeAliasDeclaration",
         "name": "OpUnitType",
         "signature": "type OpUnitType = UnitType | 'week' | 'weeks' | 'w';",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 24,
           "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L24",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L24",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "PluginFunc",
         "kind": "TypeAliasDeclaration",
         "name": "PluginFunc",
         "signature": "type PluginFunc<T = unknown> = (option: T, c: typeof Dayjs, d: typeof dayjs) => void;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 410,
           "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L410",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L410",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "QUnitType",
         "kind": "TypeAliasDeclaration",
         "name": "QUnitType",
         "signature": "type QUnitType = UnitType | 'quarter' | 'quarters' | 'Q';",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 25,
           "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L25",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L25",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "UnitType",
         "kind": "TypeAliasDeclaration",
         "name": "UnitType",
         "signature": "type UnitType = UnitTypeLong | UnitTypeLongPlural | UnitTypeShort;",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 22,
           "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L22",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L22",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "UnitTypeLong",
         "kind": "TypeAliasDeclaration",
         "name": "UnitTypeLong",
@@ -1157,15 +1157,15 @@ Object {
     | 'month'
     | 'year'
     | 'date';",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 18,
           "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L18",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L18",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "UnitTypeLongPlural",
         "kind": "TypeAliasDeclaration",
         "name": "UnitTypeLongPlural",
@@ -1178,20 +1178,20 @@ Object {
     | 'months'
     | 'years'
     | 'dates';",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 20,
           "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L20",
           "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts#L20",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "UnitTypeShort",
         "kind": "TypeAliasDeclaration",
         "name": "UnitTypeShort",
         "signature": "type UnitTypeShort = 'd' | 'M' | 'y' | 'h' | 'm' | 's' | 'ms';",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 16,
           "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L16",
@@ -1199,14 +1199,14 @@ Object {
         },
       },
     ],
-    "variables": Array [
-      Object {
-        "docs": Array [],
+    "variables": [
+      {
+        "docs": [],
         "id": "Ls",
         "kind": "VariableDeclaration",
         "name": "Ls",
         "signature": "const Ls: { [key: string]: ILocale };",
-        "source": Object {
+        "source": {
           "filename": "index.d.ts",
           "line": 420,
           "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts#L420",
@@ -1217,19 +1217,19 @@ Object {
       },
     ],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "esm/locale/index.d.ts",
       "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/esm/locale/index.d.ts",
       "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/esm/locale/index.d.ts",
     },
-    Object {
+    {
       "filename": "index.d.ts",
       "isIndexFile": true,
       "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/index.d.ts",
       "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/index.d.ts",
     },
-    Object {
+    {
       "filename": "locale/index.d.ts",
       "unpkgURL": "https://unpkg.com/browse/dayjs@1.10.4/locale/index.d.ts",
       "url": "https://github.com/iamkun/dayjs/tree/2ab64ac3e84375e167fe1b23cb2282c9fdb5c930/locale/index.d.ts",

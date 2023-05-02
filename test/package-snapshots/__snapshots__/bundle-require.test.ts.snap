@@ -1,20 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`bundle-require 2.1.2 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [],
-    "enums": Array [],
-    "functions": Array [
-      Object {
-        "docs": Array [],
+{
+  "declarations": {
+    "classes": [],
+    "enums": [],
+    "functions": [
+      {
+        "docs": [],
         "id": "bundleRequire",
         "kind": "FunctionDeclaration",
         "name": "bundleRequire",
         "signature": "bundleRequire: (
     options: Options
 ) => Promise<{ mod: any; dependencies: string[] }>;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 46,
           "unpkgURL": "https://unpkg.com/browse/bundle-require@2.1.2/dist/index.d.ts#L46",
@@ -23,19 +23,19 @@ Object {
         "type": "(options: Options) => Promise<{    mod: any;    dependencies: string[];}>",
       },
     ],
-    "interfaces": Array [
-      Object {
-        "docs": Array [],
+    "interfaces": [
+      {
+        "docs": [],
         "id": "Options",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [
                 "/**
      * esbuild options
      */",
@@ -46,7 +46,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "esbuildOptions",
               "signature": "esbuildOptions?: BuildOptions;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 31,
                 "unpkgURL": "https://unpkg.com/browse/bundle-require@2.1.2/dist/index.d.ts#L31",
@@ -54,8 +54,8 @@ Object {
               },
               "type": "BuildOptions",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * The filepath to bundle and require
      */",
@@ -66,7 +66,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "filepath",
               "signature": "filepath: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 21,
                 "unpkgURL": "https://unpkg.com/browse/bundle-require@2.1.2/dist/index.d.ts#L21",
@@ -74,8 +74,8 @@ Object {
               },
               "type": "string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Get the path to the output file
      * By default we simply replace the extension with \`.bundled.js\`
@@ -87,7 +87,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "getOutputFile",
               "signature": "getOutputFile?: (filepath: string) => string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 36,
                 "unpkgURL": "https://unpkg.com/browse/bundle-require@2.1.2/dist/index.d.ts#L36",
@@ -95,8 +95,8 @@ Object {
               },
               "type": "(filepath: string) => string",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Enable watching and call the callback after each rebuild
      */",
@@ -111,7 +111,7 @@ Object {
     mod?: any;
     dependencies?: string[];
 }) => void;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 40,
                 "unpkgURL": "https://unpkg.com/browse/bundle-require@2.1.2/dist/index.d.ts#L40",
@@ -119,8 +119,8 @@ Object {
               },
               "type": "(ctx: {    err?: BuildFailure;    mod?: any;    dependencies?: string[];}) => void",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * The \`require\` function that is used to load the output file
      * Default to the global \`require\` function
@@ -133,7 +133,7 @@ Object {
               "kind": "InterfacePropertyDeclaration",
               "name": "require",
               "signature": "require?: RequireFunction;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 27,
                 "unpkgURL": "https://unpkg.com/browse/bundle-require@2.1.2/dist/index.d.ts#L27",
@@ -145,7 +145,7 @@ Object {
         },
         "name": "Options",
         "signature": "interface Options {}",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 17,
           "unpkgURL": "https://unpkg.com/browse/bundle-require@2.1.2/dist/index.d.ts#L17",
@@ -153,10 +153,10 @@ Object {
         },
       },
     ],
-    "namespaces": Array [],
-    "typeAliases": Array [
-      Object {
-        "docs": Array [],
+    "namespaces": [],
+    "typeAliases": [
+      {
+        "docs": [],
         "id": "RequireFunction",
         "kind": "TypeAliasDeclaration",
         "name": "RequireFunction",
@@ -166,7 +166,7 @@ Object {
         format: 'cjs' | 'esm';
     }
 ) => any;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 14,
           "unpkgURL": "https://unpkg.com/browse/bundle-require@2.1.2/dist/index.d.ts#L14",
@@ -174,9 +174,9 @@ Object {
         },
       },
     ],
-    "variables": Array [
-      Object {
-        "docs": Array [
+    "variables": [
+      {
+        "docs": [
           "/**
  * Dynamically import files. It will make sure it's not being compiled away by TS/Rollup.
  *
@@ -191,7 +191,7 @@ Object {
         "kind": "VariableDeclaration",
         "name": "dynamicImport",
         "signature": "const dynamicImport: RequireFunction;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 12,
           "unpkgURL": "https://unpkg.com/browse/bundle-require@2.1.2/dist/index.d.ts#L12",
@@ -202,8 +202,8 @@ Object {
       },
     ],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "dist/index.d.ts",
       "isIndexFile": true,
       "unpkgURL": "https://unpkg.com/browse/bundle-require@2.1.2/dist/index.d.ts",

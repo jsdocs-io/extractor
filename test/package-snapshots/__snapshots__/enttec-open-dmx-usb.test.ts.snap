@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`enttec-open-dmx-usb 2.0.0 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [
-      Object {
-        "constructors": Array [
-          Object {
-            "docs": Array [
+{
+  "declarations": {
+    "classes": [
+      {
+        "constructors": [
+          {
+            "docs": [
               "/**
      * @param {string} path A path returned by {@link EnttecOpenDMXUSBDevice.listDevices} or
      * {@link EnttecOpenDMXUSBDevice.getFirstAvailableDevice}.
@@ -18,7 +18,7 @@ Object {
             "kind": "ClassConstructorDeclaration",
             "name": "constructor",
             "signature": "constructor(path: string, startSending?: boolean);",
-            "source": Object {
+            "source": {
               "filename": "dist-types/index.d.ts",
               "line": 15,
               "unpkgURL": "https://unpkg.com/browse/enttec-open-dmx-usb@2.0.0/dist-types/index.d.ts#L15",
@@ -26,14 +26,14 @@ Object {
             },
           },
         ],
-        "docs": Array [],
+        "docs": [],
         "id": "EnttecOpenDMXUSBDevice",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [
-            Object {
-              "docs": Array [
+        "members": {
+          "methods": [
+            {
+              "docs": [
                 "/**
      * Gets the path of the first available device found.
      * @throws Error when no device is found.
@@ -45,7 +45,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "getFirstAvailableDevice",
               "signature": "static getFirstAvailableDevice: () => Promise<string>;",
-              "source": Object {
+              "source": {
                 "filename": "dist-types/index.d.ts",
                 "line": 51,
                 "unpkgURL": "https://unpkg.com/browse/enttec-open-dmx-usb@2.0.0/dist-types/index.d.ts#L51",
@@ -53,8 +53,8 @@ Object {
               },
               "type": "() => Promise<string>",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Lists the paths of all available devices.
      * @returns {Promise<string[]>}
@@ -65,7 +65,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "listDevices",
               "signature": "static listDevices: () => Promise<string[]>;",
-              "source": Object {
+              "source": {
                 "filename": "dist-types/index.d.ts",
                 "line": 45,
                 "unpkgURL": "https://unpkg.com/browse/enttec-open-dmx-usb@2.0.0/dist-types/index.d.ts#L45",
@@ -73,8 +73,8 @@ Object {
               },
               "type": "() => Promise<string[]>",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Sets the channel values.
      * If channels is an Object, the keys are the channel numbers.
@@ -88,7 +88,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "setChannels",
               "signature": "setChannels: (channels: any, clear?: boolean) => void;",
-              "source": Object {
+              "source": {
                 "filename": "dist-types/index.d.ts",
                 "line": 33,
                 "unpkgURL": "https://unpkg.com/browse/enttec-open-dmx-usb@2.0.0/dist-types/index.d.ts#L33",
@@ -96,8 +96,8 @@ Object {
               },
               "type": "(channels: any, clear?: boolean) => void",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Starts sending.
      * @param {number} [interval=0] The time between each attempt to send.
@@ -109,7 +109,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "startSending",
               "signature": "startSending: (interval?: number) => void;",
-              "source": Object {
+              "source": {
                 "filename": "dist-types/index.d.ts",
                 "line": 21,
                 "unpkgURL": "https://unpkg.com/browse/enttec-open-dmx-usb@2.0.0/dist-types/index.d.ts#L21",
@@ -117,8 +117,8 @@ Object {
               },
               "type": "(interval?: number) => void",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
      * Stops sending.
      */",
@@ -128,7 +128,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "stopSending",
               "signature": "stopSending: () => void;",
-              "source": Object {
+              "source": {
                 "filename": "dist-types/index.d.ts",
                 "line": 25,
                 "unpkgURL": "https://unpkg.com/browse/enttec-open-dmx-usb@2.0.0/dist-types/index.d.ts#L25",
@@ -137,11 +137,11 @@ Object {
               "type": "() => void",
             },
           ],
-          "properties": Array [],
+          "properties": [],
         },
         "name": "EnttecOpenDMXUSBDevice",
         "signature": "class EnttecOpenDMXUSBDevice extends EventEmitter {}",
-        "source": Object {
+        "source": {
           "filename": "dist-types/index.d.ts",
           "line": 5,
           "unpkgURL": "https://unpkg.com/browse/enttec-open-dmx-usb@2.0.0/dist-types/index.d.ts#L5",
@@ -149,19 +149,19 @@ Object {
         },
       },
     ],
-    "enums": Array [],
-    "functions": Array [],
-    "interfaces": Array [],
-    "namespaces": Array [],
-    "typeAliases": Array [],
-    "variables": Array [
-      Object {
-        "docs": Array [],
+    "enums": [],
+    "functions": [],
+    "interfaces": [],
+    "namespaces": [],
+    "typeAliases": [],
+    "variables": [
+      {
+        "docs": [],
         "id": "PRODUCT_ID",
         "kind": "VariableDeclaration",
         "name": "PRODUCT_ID",
         "signature": "const PRODUCT_ID: string;",
-        "source": Object {
+        "source": {
           "filename": "dist-types/index.d.ts",
           "line": 4,
           "unpkgURL": "https://unpkg.com/browse/enttec-open-dmx-usb@2.0.0/dist-types/index.d.ts#L4",
@@ -170,13 +170,13 @@ Object {
         "type": "string",
         "variableKind": "const",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "VENDOR_ID",
         "kind": "VariableDeclaration",
         "name": "VENDOR_ID",
         "signature": "const VENDOR_ID: string;",
-        "source": Object {
+        "source": {
           "filename": "dist-types/index.d.ts",
           "line": 3,
           "unpkgURL": "https://unpkg.com/browse/enttec-open-dmx-usb@2.0.0/dist-types/index.d.ts#L3",
@@ -187,8 +187,8 @@ Object {
       },
     ],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "dist-types/index.d.ts",
       "isIndexFile": true,
       "unpkgURL": "https://unpkg.com/browse/enttec-open-dmx-usb@2.0.0/dist-types/index.d.ts",

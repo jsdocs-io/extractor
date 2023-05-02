@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`immer 8.0.1 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [
-      Object {
-        "constructors": Array [
-          Object {
-            "docs": Array [],
+{
+  "declarations": {
+    "classes": [
+      {
+        "constructors": [
+          {
+            "docs": [],
             "id": "Immer.0-constructor",
             "kind": "ClassConstructorDeclaration",
             "name": "constructor",
             "signature": "constructor(config?: { useProxies?: boolean; autoFreeze?: boolean });",
-            "source": Object {
+            "source": {
               "filename": "src/core/immerClass.ts",
               "line": 40,
               "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts#L40",
@@ -20,20 +20,20 @@ Object {
             },
           },
         ],
-        "docs": Array [],
+        "docs": [],
         "id": "Immer",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "methods": [
+            {
+              "docs": [],
               "id": "Immer.applyPatches",
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "applyPatches",
               "signature": "applyPatches: (base: Objectish, patches: Patch[]) => any;",
-              "source": Object {
+              "source": {
                 "filename": "src/core/immerClass.ts",
                 "line": 186,
                 "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts#L186",
@@ -41,14 +41,14 @@ Object {
               },
               "type": "(base: Objectish, patches: Patch[]) => any",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Immer.createDraft",
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "createDraft",
               "signature": "createDraft: <T extends Objectish>(base: T) => Draft<T>;",
-              "source": Object {
+              "source": {
                 "filename": "src/core/immerClass.ts",
                 "line": 140,
                 "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts#L140",
@@ -56,8 +56,8 @@ Object {
               },
               "type": "<T extends Objectish>(base: T) => Draft<T>",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Immer.finishDraft",
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
@@ -66,7 +66,7 @@ Object {
     draft: D,
     patchListener?: PatchListener
 ) => D extends Draft<infer T> ? T : never;",
-              "source": Object {
+              "source": {
                 "filename": "src/core/immerClass.ts",
                 "line": 150,
                 "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts#L150",
@@ -74,15 +74,15 @@ Object {
               },
               "type": "<D extends unknown>(draft: D, patchListener?: PatchListener) => D extends Draft<infer T> ? T : never",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
-	 * The \`produce\` function takes a value and a \\"recipe function\\" (whose
+	 * The \`produce\` function takes a value and a "recipe function" (whose
 	 * return value often depends on the base state). The recipe function is
 	 * free to mutate its first argument however it wants. All mutations are
 	 * only ever applied to a __copy__ of the base state.
 	 *
-	 * Pass only a function to create a \\"curried producer\\" which relieves you
+	 * Pass only a function to create a "curried producer" which relieves you
 	 * from passing the recipe function every time.
 	 *
 	 * Only plain objects and arrays are made mutable. All other objects are
@@ -101,7 +101,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "produce",
               "signature": "produce: (base: any, recipe?: any, patchListener?: any) => any;",
-              "source": Object {
+              "source": {
                 "filename": "src/core/immerClass.ts",
                 "line": 68,
                 "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts#L68",
@@ -109,14 +109,14 @@ Object {
               },
               "type": "(base: any, recipe?: any, patchListener?: any) => any",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Immer.produceWithPatches",
               "isStatic": false,
               "kind": "ClassMethodDeclaration",
               "name": "produceWithPatches",
               "signature": "produceWithPatches: (arg1: any, arg2?: any, arg3?: any) => any;",
-              "source": Object {
+              "source": {
                 "filename": "src/core/immerClass.ts",
                 "line": 126,
                 "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts#L126",
@@ -124,8 +124,8 @@ Object {
               },
               "type": "(arg1: any, arg2?: any, arg3?: any) => any",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 	 * Pass true to automatically freeze all copies created by Immer.
 	 *
@@ -137,7 +137,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "setAutoFreeze",
               "signature": "setAutoFreeze: (value: boolean) => void;",
-              "source": Object {
+              "source": {
                 "filename": "src/core/immerClass.ts",
                 "line": 169,
                 "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts#L169",
@@ -145,8 +145,8 @@ Object {
               },
               "type": "(value: boolean) => void",
             },
-            Object {
-              "docs": Array [
+            {
+              "docs": [
                 "/**
 	 * Pass true to use the ES2015 \`Proxy\` class when creating drafts, which is
 	 * always faster than using ES5 proxies.
@@ -159,7 +159,7 @@ Object {
               "kind": "ClassMethodDeclaration",
               "name": "setUseProxies",
               "signature": "setUseProxies: (value: boolean) => void;",
-              "source": Object {
+              "source": {
                 "filename": "src/core/immerClass.ts",
                 "line": 179,
                 "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts#L179",
@@ -168,15 +168,15 @@ Object {
               "type": "(value: boolean) => void",
             },
           ],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Immer.autoFreeze_",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "autoFreeze_",
               "signature": "autoFreeze_: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "src/core/immerClass.ts",
                 "line": 38,
                 "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts#L38",
@@ -184,14 +184,14 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Immer.useProxies_",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "useProxies_",
               "signature": "useProxies_: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "src/core/immerClass.ts",
                 "line": 36,
                 "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts#L36",
@@ -203,7 +203,7 @@ Object {
         },
         "name": "Immer",
         "signature": "class Immer implements ProducersFns {}",
-        "source": Object {
+        "source": {
           "filename": "src/core/immerClass.ts",
           "line": 35,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts#L35",
@@ -211,10 +211,10 @@ Object {
         },
       },
     ],
-    "enums": Array [],
-    "functions": Array [
-      Object {
-        "docs": Array [
+    "enums": [],
+    "functions": [
+      {
+        "docs": [
           "/**
  * This function is actually a no-op, but can be used to cast an immutable type
  * to an draft type and make TypeScript happy
@@ -226,7 +226,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "castDraft",
         "signature": "castDraft: <T>(value: T) => Draft<T>;",
-        "source": Object {
+        "source": {
           "filename": "src/immer.ts",
           "line": 99,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/immer.ts#L99",
@@ -234,8 +234,8 @@ Object {
         },
         "type": "<T>(value: T) => Draft<T>",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * This function is actually a no-op, but can be used to cast a mutable type
  * to an immutable type and make TypeScript happy
@@ -246,7 +246,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "castImmutable",
         "signature": "castImmutable: <T>(value: T) => Immutable<T>;",
-        "source": Object {
+        "source": {
           "filename": "src/immer.ts",
           "line": 108,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/immer.ts#L108",
@@ -254,15 +254,15 @@ Object {
         },
         "type": "<T>(value: T) => Immutable<T>",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/** Takes a snapshot of the current state of a draft and finalizes it (but without freezing). This is a great utility to print the current state during debugging (no Proxies in the way). The output of current can also be safely leaked outside the producer. */",
         ],
         "id": "current",
         "kind": "FunctionDeclaration",
         "name": "current",
         "signature": "current: <T>(value: T) => T;",
-        "source": Object {
+        "source": {
           "filename": "src/core/current.ts",
           "line": 19,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/current.ts#L19",
@@ -270,13 +270,13 @@ Object {
         },
         "type": "<T>(value: T) => T",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "enableAllPlugins",
         "kind": "FunctionDeclaration",
         "name": "enableAllPlugins",
         "signature": "enableAllPlugins: () => void;",
-        "source": Object {
+        "source": {
           "filename": "src/plugins/all.ts",
           "line": 5,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/plugins/all.ts#L5",
@@ -284,13 +284,13 @@ Object {
         },
         "type": "() => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "enableES5",
         "kind": "FunctionDeclaration",
         "name": "enableES5",
         "signature": "enableES5: () => void;",
-        "source": Object {
+        "source": {
           "filename": "src/plugins/es5.ts",
           "line": 26,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/plugins/es5.ts#L26",
@@ -298,13 +298,13 @@ Object {
         },
         "type": "() => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "enableMapSet",
         "kind": "FunctionDeclaration",
         "name": "enableMapSet",
         "signature": "enableMapSet: () => void;",
-        "source": Object {
+        "source": {
           "filename": "src/plugins/mapset.ts",
           "line": 22,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/plugins/mapset.ts#L22",
@@ -312,13 +312,13 @@ Object {
         },
         "type": "() => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "enablePatches",
         "kind": "FunctionDeclaration",
         "name": "enablePatches",
         "signature": "enablePatches: () => void;",
-        "source": Object {
+        "source": {
           "filename": "src/plugins/patches.ts",
           "line": 33,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/plugins/patches.ts#L33",
@@ -326,8 +326,8 @@ Object {
         },
         "type": "() => void",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Freezes draftable objects. Returns the original object.
  * By default freezes shallowly, but if the second argument is \`true\` it will freeze recursively.
@@ -340,7 +340,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "freeze",
         "signature": "freeze: <T>(obj: T, deep?: boolean) => T;",
-        "source": Object {
+        "source": {
           "filename": "src/utils/common.ts",
           "line": 190,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/utils/common.ts#L190",
@@ -348,15 +348,15 @@ Object {
         },
         "type": "<T>(obj: T, deep?: boolean) => T",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/** Returns true if the given value is an Immer draft */",
         ],
         "id": "isDraft",
         "kind": "FunctionDeclaration",
         "name": "isDraft",
         "signature": "isDraft: (value: any) => boolean;",
-        "source": Object {
+        "source": {
           "filename": "src/utils/common.ts",
           "line": 21,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/utils/common.ts#L21",
@@ -364,15 +364,15 @@ Object {
         },
         "type": "(value: any) => boolean",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/** Returns true if the given value can be drafted by Immer */",
         ],
         "id": "isDraftable",
         "kind": "FunctionDeclaration",
         "name": "isDraftable",
         "signature": "isDraftable: (value: any) => boolean;",
-        "source": Object {
+        "source": {
           "filename": "src/utils/common.ts",
           "line": 27,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/utils/common.ts#L27",
@@ -380,15 +380,15 @@ Object {
         },
         "type": "(value: any) => boolean",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/** Get the underlying object that is represented by the given draft */",
         ],
         "id": "original",
         "kind": "FunctionDeclaration",
         "name": "original",
         "signature": "original: <T>(value: T) => T;",
-        "source": Object {
+        "source": {
           "filename": "src/utils/common.ts",
           "line": 49,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/utils/common.ts#L49",
@@ -397,42 +397,42 @@ Object {
         "type": "<T>(value: T) => T",
       },
     ],
-    "interfaces": Array [
-      Object {
-        "docs": Array [],
+    "interfaces": [
+      {
+        "docs": [],
         "id": "Patch",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Patch.op",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "op",
               "signature": "op: 'replace' | 'remove' | 'add';",
-              "source": Object {
+              "source": {
                 "filename": "src/types/types-external.ts",
                 "line": 71,
                 "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/types/types-external.ts#L71",
                 "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/types/types-external.ts#L71",
               },
-              "type": "\\"replace\\" | \\"remove\\" | \\"add\\"",
+              "type": ""replace" | "remove" | "add"",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Patch.path",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "path",
               "signature": "path: (string | number)[];",
-              "source": Object {
+              "source": {
                 "filename": "src/types/types-external.ts",
                 "line": 72,
                 "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/types/types-external.ts#L72",
@@ -440,15 +440,15 @@ Object {
               },
               "type": "(string | number)[]",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Patch.value",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "value",
               "signature": "value?: any;",
-              "source": Object {
+              "source": {
                 "filename": "src/types/types-external.ts",
                 "line": 73,
                 "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/types/types-external.ts#L73",
@@ -460,7 +460,7 @@ Object {
         },
         "name": "Patch",
         "signature": "interface Patch {}",
-        "source": Object {
+        "source": {
           "filename": "src/types/types-external.ts",
           "line": 70,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/types/types-external.ts#L70",
@@ -468,10 +468,10 @@ Object {
         },
       },
     ],
-    "namespaces": Array [],
-    "typeAliases": Array [
-      Object {
-        "docs": Array [],
+    "namespaces": [],
+    "typeAliases": [
+      {
+        "docs": [],
         "id": "Draft",
         "kind": "TypeAliasDeclaration",
         "name": "Draft",
@@ -486,15 +486,15 @@ Object {
     : T extends object
     ? WritableDraft<T>
     : T;",
-        "source": Object {
+        "source": {
           "filename": "src/types/types-external.ts",
           "line": 45,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/types/types-external.ts#L45",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/types/types-external.ts#L45",
         },
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/** Convert a mutable type into a readonly type */",
         ],
         "id": "Immutable",
@@ -511,20 +511,20 @@ Object {
     : T extends object
     ? { readonly [K in keyof T]: Immutable<T[K]> }
     : T;",
-        "source": Object {
+        "source": {
           "filename": "src/types/types-external.ts",
           "line": 58,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/types/types-external.ts#L58",
           "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/types/types-external.ts#L58",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "PatchListener",
         "kind": "TypeAliasDeclaration",
         "name": "PatchListener",
         "signature": "type PatchListener = (patches: Patch[], inversePatches: Patch[]) => void;",
-        "source": Object {
+        "source": {
           "filename": "src/types/types-external.ts",
           "line": 76,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/types/types-external.ts#L76",
@@ -532,9 +532,9 @@ Object {
         },
       },
     ],
-    "variables": Array [
-      Object {
-        "docs": Array [
+    "variables": [
+      {
+        "docs": [
           "/**
  * Apply an array of Immer patches to the first argument.
  *
@@ -545,7 +545,7 @@ Object {
         "kind": "VariableDeclaration",
         "name": "applyPatches",
         "signature": "const applyPatches: any;",
-        "source": Object {
+        "source": {
           "filename": "src/immer.ts",
           "line": 75,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/immer.ts#L75",
@@ -554,8 +554,8 @@ Object {
         "type": "any",
         "variableKind": "const",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Create an Immer draft from the given base state, which may be a draft itself.
  * The draft can be modified until you finalize it with the \`finishDraft\` function.
@@ -565,7 +565,7 @@ Object {
         "kind": "VariableDeclaration",
         "name": "createDraft",
         "signature": "const createDraft: any;",
-        "source": Object {
+        "source": {
           "filename": "src/immer.ts",
           "line": 81,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/immer.ts#L81",
@@ -574,8 +574,8 @@ Object {
         "type": "any",
         "variableKind": "const",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Finalize an Immer draft from a \`createDraft\` call, returning the base state
  * (if no changes were made) or a modified copy. The draft must *not* be
@@ -589,7 +589,7 @@ Object {
         "kind": "VariableDeclaration",
         "name": "finishDraft",
         "signature": "const finishDraft: any;",
-        "source": Object {
+        "source": {
           "filename": "src/immer.ts",
           "line": 91,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/immer.ts#L91",
@@ -598,8 +598,8 @@ Object {
         "type": "any",
         "variableKind": "const",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * To let Immer treat your class instances as plain immutable objects
  * (albeit with a custom prototype), you must define either an instance property
@@ -613,7 +613,7 @@ Object {
         "kind": "VariableDeclaration",
         "name": "immerable",
         "signature": "const immerable: Symbol;",
-        "source": Object {
+        "source": {
           "filename": "src/utils/env.ts",
           "line": 30,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/utils/env.ts#L30",
@@ -622,8 +622,8 @@ Object {
         "type": "Symbol",
         "variableKind": "const",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * The sentinel value returned by producers to replace the draft with undefined.
  */",
@@ -632,7 +632,7 @@ Object {
         "kind": "VariableDeclaration",
         "name": "nothing",
         "signature": "const nothing: Nothing;",
-        "source": Object {
+        "source": {
           "filename": "src/utils/env.ts",
           "line": 18,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/utils/env.ts#L18",
@@ -641,15 +641,15 @@ Object {
         "type": "Nothing",
         "variableKind": "const",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
- * The \`produce\` function takes a value and a \\"recipe function\\" (whose
+ * The \`produce\` function takes a value and a "recipe function" (whose
  * return value often depends on the base state). The recipe function is
  * free to mutate its first argument however it wants. All mutations are
  * only ever applied to a __copy__ of the base state.
  *
- * Pass only a function to create a \\"curried producer\\" which relieves you
+ * Pass only a function to create a "curried producer" which relieves you
  * from passing the recipe function every time.
  *
  * Only plain objects and arrays are made mutable. All other objects are
@@ -667,7 +667,7 @@ Object {
         "kind": "VariableDeclaration",
         "name": "produce",
         "signature": "const produce: IProduce;",
-        "source": Object {
+        "source": {
           "filename": "src/immer.ts",
           "line": 44,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/immer.ts#L44",
@@ -676,8 +676,8 @@ Object {
         "type": "IProduce",
         "variableKind": "const",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Like \`produce\`, but \`produceWithPatches\` always returns a tuple
  * [nextState, patches, inversePatches] (instead of just the next state)
@@ -687,7 +687,7 @@ Object {
         "kind": "VariableDeclaration",
         "name": "produceWithPatches",
         "signature": "const produceWithPatches: IProduceWithPatches;",
-        "source": Object {
+        "source": {
           "filename": "src/immer.ts",
           "line": 51,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/immer.ts#L51",
@@ -696,8 +696,8 @@ Object {
         "type": "IProduceWithPatches",
         "variableKind": "const",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Pass true to automatically freeze all copies created by Immer.
  *
@@ -708,7 +708,7 @@ Object {
         "kind": "VariableDeclaration",
         "name": "setAutoFreeze",
         "signature": "const setAutoFreeze: any;",
-        "source": Object {
+        "source": {
           "filename": "src/immer.ts",
           "line": 60,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/immer.ts#L60",
@@ -717,8 +717,8 @@ Object {
         "type": "any",
         "variableKind": "const",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Pass true to use the ES2015 \`Proxy\` class when creating drafts, which is
  * always faster than using ES5 proxies.
@@ -730,7 +730,7 @@ Object {
         "kind": "VariableDeclaration",
         "name": "setUseProxies",
         "signature": "const setUseProxies: any;",
-        "source": Object {
+        "source": {
           "filename": "src/immer.ts",
           "line": 68,
           "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/immer.ts#L68",
@@ -741,54 +741,54 @@ Object {
       },
     ],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "src/core/current.ts",
       "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/current.ts",
       "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/current.ts",
     },
-    Object {
+    {
       "filename": "src/core/immerClass.ts",
       "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/core/immerClass.ts",
       "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/core/immerClass.ts",
     },
-    Object {
+    {
       "filename": "src/immer.ts",
       "isIndexFile": true,
       "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/immer.ts",
       "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/immer.ts",
     },
-    Object {
+    {
       "filename": "src/plugins/all.ts",
       "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/plugins/all.ts",
       "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/plugins/all.ts",
     },
-    Object {
+    {
       "filename": "src/plugins/es5.ts",
       "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/plugins/es5.ts",
       "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/plugins/es5.ts",
     },
-    Object {
+    {
       "filename": "src/plugins/mapset.ts",
       "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/plugins/mapset.ts",
       "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/plugins/mapset.ts",
     },
-    Object {
+    {
       "filename": "src/plugins/patches.ts",
       "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/plugins/patches.ts",
       "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/plugins/patches.ts",
     },
-    Object {
+    {
       "filename": "src/types/types-external.ts",
       "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/types/types-external.ts",
       "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/types/types-external.ts",
     },
-    Object {
+    {
       "filename": "src/utils/common.ts",
       "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/utils/common.ts",
       "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/utils/common.ts",
     },
-    Object {
+    {
       "filename": "src/utils/env.ts",
       "unpkgURL": "https://unpkg.com/browse/immer@8.0.1/src/utils/env.ts",
       "url": "https://github.com/immerjs/immer/tree/da2bd4fa0edc9335543089fe7d290d6a346c40c5/src/utils/env.ts",

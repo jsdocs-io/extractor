@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`h3 0.3.3 1`] = `
-Object {
-  "declarations": Object {
-    "classes": Array [
-      Object {
-        "constructors": Array [],
-        "docs": Array [
+{
+  "declarations": {
+    "classes": [
+      {
+        "constructors": [],
+        "docs": [
           "/**
  * H3 Runtime Error
  * @class
@@ -21,17 +21,17 @@ Object {
         "id": "H3Error",
         "isAbstract": false,
         "kind": "ClassDeclaration",
-        "members": Object {
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "H3Error.data",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "data",
               "signature": "data?: any;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 64,
                 "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L64",
@@ -39,14 +39,14 @@ Object {
               },
               "type": "any",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "H3Error.statusCode",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "statusCode",
               "signature": "statusCode: number;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 62,
                 "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L62",
@@ -54,14 +54,14 @@ Object {
               },
               "type": "number",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "H3Error.statusMessage",
               "isStatic": false,
               "kind": "ClassPropertyDeclaration",
               "name": "statusMessage",
               "signature": "statusMessage: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 63,
                 "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L63",
@@ -73,7 +73,7 @@ Object {
         },
         "name": "H3Error",
         "signature": "class H3Error extends Error {}",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 61,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L61",
@@ -81,15 +81,15 @@ Object {
         },
       },
     ],
-    "enums": Array [],
-    "functions": Array [
-      Object {
-        "docs": Array [],
+    "enums": [],
+    "functions": [
+      {
+        "docs": [],
         "id": "appendHeader",
         "kind": "FunctionDeclaration",
         "name": "appendHeader",
         "signature": "appendHeader: (res: ServerResponse, name: string, value: string) => void;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 233,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L233",
@@ -97,8 +97,8 @@ Object {
         },
         "type": "(res: ServerResponse, name: string, value: string) => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "callHandle",
         "kind": "FunctionDeclaration",
         "name": "callHandle",
@@ -107,7 +107,7 @@ Object {
     req: IncomingMessage,
     res: ServerResponse
 ) => Promise<unknown>;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 11,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L11",
@@ -115,13 +115,13 @@ Object {
         },
         "type": "(handle: Middleware, req: IncomingMessage, res: ServerResponse) => Promise<unknown>",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "createApp",
         "kind": "FunctionDeclaration",
         "name": "createApp",
         "signature": "createApp: (options?: AppOptions) => App;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 47,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L47",
@@ -129,8 +129,8 @@ Object {
         },
         "type": "(options?: AppOptions) => App",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Creates new \`Error\` that can be used to handle both internal and runtime errors.
  *
@@ -142,7 +142,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "createError",
         "signature": "createError: (input: Partial<H3Error>) => H3Error;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 72,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L72",
@@ -150,13 +150,13 @@ Object {
         },
         "type": "(input: Partial<H3Error>) => H3Error",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "createHandle",
         "kind": "FunctionDeclaration",
         "name": "createHandle",
         "signature": "createHandle: (stack: Stack, options: AppOptions) => PHandle;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 49,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L49",
@@ -164,13 +164,13 @@ Object {
         },
         "type": "(stack: Stack, options: AppOptions) => PHandle",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "defaultContentType",
         "kind": "FunctionDeclaration",
         "name": "defaultContentType",
         "signature": "defaultContentType: (res: ServerResponse, type?: string) => void;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 231,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L231",
@@ -178,13 +178,13 @@ Object {
         },
         "type": "(res: ServerResponse, type?: string) => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "lazyHandle",
         "kind": "FunctionDeclaration",
         "name": "lazyHandle",
         "signature": "lazyHandle: (handle: LazyHandle, promisify?: boolean) => PHandle;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 12,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L12",
@@ -192,13 +192,13 @@ Object {
         },
         "type": "(handle: LazyHandle, promisify?: boolean) => PHandle",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "promisifyHandle",
         "kind": "FunctionDeclaration",
         "name": "promisifyHandle",
         "signature": "promisifyHandle: (handle: Handle | Middleware) => PHandle;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 10,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L10",
@@ -206,13 +206,13 @@ Object {
         },
         "type": "(handle: Handle | Middleware) => PHandle",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "send",
         "kind": "FunctionDeclaration",
         "name": "send",
         "signature": "send: (res: ServerResponse, data: any, type?: string) => Promise<unknown>;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 230,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L230",
@@ -220,8 +220,8 @@ Object {
         },
         "type": "(res: ServerResponse, data: any, type?: string) => Promise<unknown>",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Recieve an error and return the corresponding response.<br>
  *  H3 internally uses this fucntion to handle unhandled errors.<br>
@@ -241,7 +241,7 @@ Object {
     error: Error | H3Error,
     debug?: boolean
 ) => void;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 83,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L83",
@@ -249,8 +249,8 @@ Object {
         },
         "type": "(res: ServerResponse, error: Error | H3Error, debug?: boolean) => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "sendRedirect",
         "kind": "FunctionDeclaration",
         "name": "sendRedirect",
@@ -259,7 +259,7 @@ Object {
     location: string,
     code?: number
 ) => Promise<unknown>;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 232,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L232",
@@ -267,8 +267,8 @@ Object {
         },
         "type": "(res: ServerResponse, location: string, code?: number) => Promise<unknown>",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Set a cookie value by name.
  * @param res {ServerResponse} A ServerResponse object created by [http.Server](https://nodejs.org/api/http.html#http_class_http_server)
@@ -289,7 +289,7 @@ Object {
     value: string,
     serializeOptions?: CookieSerializeOptions
 ) => void;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 226,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L226",
@@ -297,8 +297,8 @@ Object {
         },
         "type": "(res: ServerResponse, name: string, value: string, serializeOptions?: CookieSerializeOptions) => void",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "use",
         "kind": "FunctionDeclaration",
         "name": "use",
@@ -308,7 +308,7 @@ Object {
     arg2?: Handle | Partial<InputLayer> | Handle[] | Middleware | Middleware[],
     arg3?: Partial<InputLayer>
 ) => App;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 48,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L48",
@@ -316,13 +316,13 @@ Object {
         },
         "type": "(app: App, arg1: string | Handle | InputLayer | InputLayer[], arg2?: Handle | Partial<InputLayer> | Handle[] | Middleware | Middleware[], arg3?: Partial<InputLayer>) => App",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "useBase",
         "kind": "FunctionDeclaration",
         "name": "useBase",
         "signature": "useBase: (base: string, handle: PHandle) => PHandle;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 13,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L13",
@@ -330,12 +330,12 @@ Object {
         },
         "type": "(base: string, handle: PHandle) => PHandle",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Reads request body and try to safely parse using [destr](https://github.com/unjs/destr)
  * @param req {IncomingMessage} An IncomingMessage object created by [http.Server](https://nodejs.org/api/http.html#http_class_http_server)
- * @param encoding {Encoding} encoding=\\"utf-8\\" - The character encoding to use.
+ * @param encoding {Encoding} encoding="utf-8" - The character encoding to use.
  *
  * @return {*} The \`Object\`, \`Array\`, \`String\`, \`Number\`, \`Boolean\`, or \`null\` value corresponding to the request JSON body
  *
@@ -348,7 +348,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "useBody",
         "signature": "useBody: <T = any>(req: IncomingMessage) => Promise<T>;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 104,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L104",
@@ -356,8 +356,8 @@ Object {
         },
         "type": "<T = any>(req: IncomingMessage) => Promise<T>",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Get a cookie value by name.
  * @param req {IncomingMessage} An IncomingMessage object created by [http.Server](https://nodejs.org/api/http.html#http_class_http_server)
@@ -372,7 +372,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "useCookie",
         "signature": "useCookie: (req: IncomingMessage, name: string) => string | undefined;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 215,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L215",
@@ -380,8 +380,8 @@ Object {
         },
         "type": "(req: IncomingMessage, name: string) => string | undefined",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Parse the request to get HTTP Cookie header string and returning an object of all cookie name-value pairs.
  * @param req {IncomingMessage} An IncomingMessage object created by [http.Server](https://nodejs.org/api/http.html#http_class_http_server)
@@ -395,7 +395,7 @@ Object {
         "kind": "FunctionDeclaration",
         "name": "useCookies",
         "signature": "useCookies: (req: IncomingMessage) => Record<string, string>;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 205,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L205",
@@ -403,13 +403,13 @@ Object {
         },
         "type": "(req: IncomingMessage) => Record<string, string>",
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "useQuery",
         "kind": "FunctionDeclaration",
         "name": "useQuery",
         "signature": "useQuery: (req: IncomingMessage) => ufo.QueryObject;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 228,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L228",
@@ -417,12 +417,12 @@ Object {
         },
         "type": "(req: IncomingMessage) => ufo.QueryObject",
       },
-      Object {
-        "docs": Array [
+      {
+        "docs": [
           "/**
  * Reads body of the request and returns encoded raw string (default) or \`Buffer\` if encoding if falsy.
  * @param req {IncomingMessage} An IncomingMessage object is created by [http.Server](https://nodejs.org/api/http.html#http_class_http_server)
- * @param encoding {Encoding} encoding=\\"utf-8\\" - The character encoding to use.
+ * @param encoding {Encoding} encoding="utf-8" - The character encoding to use.
  *
  * @return {String|Buffer} Encoded raw string or raw Buffer of the body
  */",
@@ -434,7 +434,7 @@ Object {
     req: IncomingMessage,
     encoding?: Encoding
 ) => Encoding extends false ? Buffer : Promise<string>;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 92,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L92",
@@ -443,20 +443,20 @@ Object {
         "type": "(req: IncomingMessage, encoding?: Encoding) => Encoding extends false ? Buffer : Promise<string>",
       },
     ],
-    "interfaces": Array [
-      Object {
-        "docs": Array [],
+    "interfaces": [
+      {
+        "docs": [],
         "id": "App",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [
+            {
+              "docs": [],
               "id": "App.0-call-signature",
               "kind": "InterfaceCallSignatureDeclaration",
               "name": "call signature",
               "signature": "(req: IncomingMessage, res: ServerResponse): Promise<any>;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 38,
                 "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L38",
@@ -464,19 +464,19 @@ Object {
               },
             },
           ],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "App.stack",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "stack",
               "signature": "stack: Stack;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 39,
                 "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L39",
@@ -484,15 +484,15 @@ Object {
               },
               "type": "Stack",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "App.use",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "use",
               "signature": "use: AppUse;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 41,
                 "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L41",
@@ -504,32 +504,32 @@ Object {
         },
         "name": "App",
         "signature": "interface App {}",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 37,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L37",
           "url": "https://github.com/unjs/h3/tree/e4975dce995219529b7afa6ae3e67c2a4a4e84ba/dist/index.d.ts#L37",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "AppOptions",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "AppOptions.debug",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "debug",
               "signature": "debug?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 44,
                 "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L44",
@@ -537,15 +537,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AppOptions.onError",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "onError",
               "signature": "onError?: (error: Error, req: IncomingMessage, res: ServerResponse) => any;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 45,
                 "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L45",
@@ -557,21 +557,21 @@ Object {
         },
         "name": "AppOptions",
         "signature": "interface AppOptions {}",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 43,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L43",
           "url": "https://github.com/unjs/h3/tree/e4975dce995219529b7afa6ae3e67c2a4a4e84ba/dist/index.d.ts#L43",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "AppUse",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [
+            {
+              "docs": [],
               "id": "AppUse.0-call-signature",
               "kind": "InterfaceCallSignatureDeclaration",
               "name": "call signature",
@@ -580,15 +580,15 @@ Object {
     handle: Middleware | Middleware[],
     options?: Partial<InputLayer>
 ): App;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 31,
                 "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L31",
                 "url": "https://github.com/unjs/h3/tree/e4975dce995219529b7afa6ae3e67c2a4a4e84ba/dist/index.d.ts#L31",
               },
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AppUse.1-call-signature",
               "kind": "InterfaceCallSignatureDeclaration",
               "name": "call signature",
@@ -597,46 +597,46 @@ Object {
     handle: Handle | Handle[],
     options?: Partial<InputLayer>
 ): App;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 32,
                 "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L32",
                 "url": "https://github.com/unjs/h3/tree/e4975dce995219529b7afa6ae3e67c2a4a4e84ba/dist/index.d.ts#L32",
               },
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AppUse.2-call-signature",
               "kind": "InterfaceCallSignatureDeclaration",
               "name": "call signature",
               "signature": "(handle: Middleware | Middleware[], options?: Partial<InputLayer>): App;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 33,
                 "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L33",
                 "url": "https://github.com/unjs/h3/tree/e4975dce995219529b7afa6ae3e67c2a4a4e84ba/dist/index.d.ts#L33",
               },
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AppUse.3-call-signature",
               "kind": "InterfaceCallSignatureDeclaration",
               "name": "call signature",
               "signature": "(handle: Handle | Handle[], options?: Partial<InputLayer>): App;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 34,
                 "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L34",
                 "url": "https://github.com/unjs/h3/tree/e4975dce995219529b7afa6ae3e67c2a4a4e84ba/dist/index.d.ts#L34",
               },
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "AppUse.4-call-signature",
               "kind": "InterfaceCallSignatureDeclaration",
               "name": "call signature",
               "signature": "(options: InputLayer): App;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 35,
                 "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L35",
@@ -644,39 +644,39 @@ Object {
               },
             },
           ],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [],
         },
         "name": "AppUse",
         "signature": "interface AppUse {}",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 30,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L30",
           "url": "https://github.com/unjs/h3/tree/e4975dce995219529b7afa6ae3e67c2a4a4e84ba/dist/index.d.ts#L30",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "InputLayer",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "InputLayer.handle",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "handle",
               "signature": "handle: Handle | LazyHandle;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 24,
                 "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L24",
@@ -684,15 +684,15 @@ Object {
               },
               "type": "Handle<any> | LazyHandle",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "InputLayer.lazy",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "lazy",
               "signature": "lazy?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 25,
                 "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L25",
@@ -700,15 +700,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "InputLayer.match",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "match",
               "signature": "match?: Matcher;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 23,
                 "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L23",
@@ -716,15 +716,15 @@ Object {
               },
               "type": "Matcher",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "InputLayer.promisify",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "promisify",
               "signature": "promisify?: boolean;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 26,
                 "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L26",
@@ -732,15 +732,15 @@ Object {
               },
               "type": "boolean",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "InputLayer.route",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "route",
               "signature": "route?: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 22,
                 "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L22",
@@ -752,32 +752,32 @@ Object {
         },
         "name": "InputLayer",
         "signature": "interface InputLayer {}",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 21,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L21",
           "url": "https://github.com/unjs/h3/tree/e4975dce995219529b7afa6ae3e67c2a4a4e84ba/dist/index.d.ts#L21",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Layer",
         "kind": "InterfaceDeclaration",
-        "members": Object {
-          "callSignatures": Array [],
-          "constructSignatures": Array [],
-          "indexSignatures": Array [],
-          "methods": Array [],
-          "properties": Array [
-            Object {
-              "docs": Array [],
+        "members": {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "indexSignatures": [],
+          "methods": [],
+          "properties": [
+            {
+              "docs": [],
               "id": "Layer.handle",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "handle",
               "signature": "handle: Handle;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 18,
                 "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L18",
@@ -785,15 +785,15 @@ Object {
               },
               "type": "Handle<any>",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Layer.match",
               "isOptional": true,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "match",
               "signature": "match?: Matcher;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 17,
                 "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L17",
@@ -801,15 +801,15 @@ Object {
               },
               "type": "Matcher",
             },
-            Object {
-              "docs": Array [],
+            {
+              "docs": [],
               "id": "Layer.route",
               "isOptional": false,
               "isReadonly": false,
               "kind": "InterfacePropertyDeclaration",
               "name": "route",
               "signature": "route: string;",
-              "source": Object {
+              "source": {
                 "filename": "dist/index.d.ts",
                 "line": 16,
                 "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L16",
@@ -821,7 +821,7 @@ Object {
         },
         "name": "Layer",
         "signature": "interface Layer {}",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 15,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L15",
@@ -829,62 +829,62 @@ Object {
         },
       },
     ],
-    "namespaces": Array [],
-    "typeAliases": Array [
-      Object {
-        "docs": Array [],
+    "namespaces": [],
+    "typeAliases": [
+      {
+        "docs": [],
         "id": "Handle",
         "kind": "TypeAliasDeclaration",
         "name": "Handle",
         "signature": "type Handle<T = any> = (req: IncomingMessage, res: ServerResponse) => T;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 6,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L6",
           "url": "https://github.com/unjs/h3/tree/e4975dce995219529b7afa6ae3e67c2a4a4e84ba/dist/index.d.ts#L6",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "InputStack",
         "kind": "TypeAliasDeclaration",
         "name": "InputStack",
         "signature": "type InputStack = InputLayer[];",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 28,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L28",
           "url": "https://github.com/unjs/h3/tree/e4975dce995219529b7afa6ae3e67c2a4a4e84ba/dist/index.d.ts#L28",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "LazyHandle",
         "kind": "TypeAliasDeclaration",
         "name": "LazyHandle",
         "signature": "type LazyHandle = () => Handle | Promise<Handle>;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 9,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L9",
           "url": "https://github.com/unjs/h3/tree/e4975dce995219529b7afa6ae3e67c2a4a4e84ba/dist/index.d.ts#L9",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Matcher",
         "kind": "TypeAliasDeclaration",
         "name": "Matcher",
         "signature": "type Matcher = (url: string, req?: IncomingMessage) => boolean;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 29,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L29",
           "url": "https://github.com/unjs/h3/tree/e4975dce995219529b7afa6ae3e67c2a4a4e84ba/dist/index.d.ts#L29",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Middleware",
         "kind": "TypeAliasDeclaration",
         "name": "Middleware",
@@ -893,33 +893,33 @@ Object {
     res: ServerResponse,
     next: (err?: Error) => any
 ) => any;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 8,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L8",
           "url": "https://github.com/unjs/h3/tree/e4975dce995219529b7afa6ae3e67c2a4a4e84ba/dist/index.d.ts#L8",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "PHandle",
         "kind": "TypeAliasDeclaration",
         "name": "PHandle",
         "signature": "type PHandle = Handle<Promise<any>>;",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 7,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L7",
           "url": "https://github.com/unjs/h3/tree/e4975dce995219529b7afa6ae3e67c2a4a4e84ba/dist/index.d.ts#L7",
         },
       },
-      Object {
-        "docs": Array [],
+      {
+        "docs": [],
         "id": "Stack",
         "kind": "TypeAliasDeclaration",
         "name": "Stack",
         "signature": "type Stack = Layer[];",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 20,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L20",
@@ -927,14 +927,14 @@ Object {
         },
       },
     ],
-    "variables": Array [
-      Object {
-        "docs": Array [],
+    "variables": [
+      {
+        "docs": [],
         "id": "MIMES",
         "kind": "VariableDeclaration",
         "name": "MIMES",
         "signature": "const MIMES: { html: string; json: string };",
-        "source": Object {
+        "source": {
           "filename": "dist/index.d.ts",
           "line": 106,
           "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts#L106",
@@ -945,8 +945,8 @@ Object {
       },
     ],
   },
-  "files": Array [
-    Object {
+  "files": [
+    {
       "filename": "dist/index.d.ts",
       "isIndexFile": true,
       "unpkgURL": "https://unpkg.com/browse/h3@0.3.3/dist/index.d.ts",
