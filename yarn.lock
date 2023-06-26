@@ -5718,10 +5718,10 @@ fast-diff@^1.1.2:
   resolved "https://registry.yarnpkg.com/fast-diff/-/fast-diff-1.2.0.tgz#73ee11982d86caaf7959828d519cfe927fac5f03"
   integrity sha512-xJuoT5+L99XlZ8twedaRf6Ax2TgQVxvgZOYoPKqZufmJib0tL2tegPBOZb1pVNgIhlqDlA0eO0c3wBvQcmzx4w==
 
-fast-fifo@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/fast-fifo/-/fast-fifo-1.1.0.tgz#17d1a3646880b9891dfa0c54e69c5fef33cad779"
-  integrity sha512-Kl29QoNbNvn4nhDsLYjyIAaIqaJB6rBx5p3sL9VjaefJ+eMFBWVZiaoguaoZfzEKr5RhAti0UgM8703akGPJ6g==
+fast-fifo@^1.1.0, fast-fifo@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/fast-fifo/-/fast-fifo-1.2.0.tgz#2ee038da2468e8623066dee96958b0c1763aa55a"
+  integrity sha512-NcvQXt7Cky1cNau15FWy64IjuO8X0JijhTBBrJj1YlxlDfRkJXNaK9RFUjwpfDPzMdv7wB38jr53l9tkNLxnWg==
 
 fast-glob@3.2.12, fast-glob@^3.0.3, fast-glob@^3.2.11, fast-glob@^3.2.12, fast-glob@^3.2.9:
   version "3.2.12"
@@ -11280,11 +11280,12 @@ tachyons@^4.9.1:
   integrity sha512-2nA2IrYFy3raCM9fxJ2KODRGHVSZNTW3BR0YnlGsLUf1DA3pk3YfWZ/DdfbnZK6zLZS+jUenlUGJsKcA5fUiZg==
 
 tar-stream@^3.0.0:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/tar-stream/-/tar-stream-3.1.1.tgz#e21eabdddde8b2ba7007026aeac956b239acdf84"
-  integrity sha512-Y5wIzRqqz0k7UHHfW34YM//w2krbMFDPxOJEg5hnVuilaY6Onqdrw66dLNJFxLoiFSCPXUEeQOHVMQ9Rx8fkKw==
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/tar-stream/-/tar-stream-3.1.4.tgz#a06c3cefe558f8a5a6e88ddfbf6471782ad8dd42"
+  integrity sha512-IlHr7ZOW6XaVBCrSCokUJG4IqUuRcWW76B8XbrtCotbaDh6zVGE7WPCzaSz1CN+acFmWiwoa+cE4RZsom0RzXg==
   dependencies:
     b4a "^1.6.4"
+    fast-fifo "^1.2.0"
     streamx "^2.15.0"
 
 terminal-link@^3.0.0:
