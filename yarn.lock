@@ -11280,9 +11280,9 @@ tachyons@^4.9.1:
   integrity sha512-2nA2IrYFy3raCM9fxJ2KODRGHVSZNTW3BR0YnlGsLUf1DA3pk3YfWZ/DdfbnZK6zLZS+jUenlUGJsKcA5fUiZg==
 
 tar-stream@^3.0.0:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/tar-stream/-/tar-stream-3.1.5.tgz#cfff83145c4b1db204d4e44b0e975d1da964a49e"
-  integrity sha512-i+IP13ZyzEOOEkuPrvYokgzW3zcL3rdjmIk0O4veDoegHzySYG4xa2NzKb5pYc/8a8K49iBVMyavS6HT72VMSQ==
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/tar-stream/-/tar-stream-3.1.6.tgz#6520607b55a06f4a2e2e04db360ba7d338cc5bab"
+  integrity sha512-B/UyjYwPpMBv+PaFSWAmtYjwdrlEaZQEhMIBFNC5oEG8lpiW8XjcSdmEaClj28ArfKScKHs2nshz3k2le6crsg==
   dependencies:
     b4a "^1.6.4"
     fast-fifo "^1.2.0"
