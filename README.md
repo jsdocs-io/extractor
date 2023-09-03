@@ -1,10 +1,9 @@
 # @jsdocs-io/extractor
 
-[![Build status](https://img.shields.io/github/actions/workflow/status/jsdocs-io/extractor/main.yml?branch=main)](https://github.com/jsdocs-io/extractor/actions?query=workflow%3ACI)
+[![Build status](https://img.shields.io/github/actions/workflow/status/jsdocs-io/extractor/main.yml?branch=main)](https://github.com/jsdocs-io/extractor/actions/workflows/main.yml?query=workflow%3ACI)
 [![Coverage](https://img.shields.io/codecov/c/gh/jsdocs-io/extractor)](https://codecov.io/gh/jsdocs-io/extractor)
 [![jsDocs.io](https://img.shields.io/badge/jsDocs.io-reference-blue)](https://www.jsdocs.io/package/@jsdocs-io/extractor)
 ![Language](https://img.shields.io/github/languages/top/jsdocs-io/extractor)
-[![Dependencies](https://img.shields.io/david/jsdocs-io/extractor)](https://david-dm.org/jsdocs-io/extractor)
 [![npm](https://img.shields.io/npm/v/@jsdocs-io/extractor)](https://www.npmjs.com/package/@jsdocs-io/extractor)
 [![License](https://img.shields.io/github/license/jsdocs-io/extractor)](https://github.com/jsdocs-io/extractor/blob/main/LICENSE)
 
@@ -65,7 +64,7 @@ For more information, see the [debug package](https://www.npmjs.com/package/debu
 
     AGPL-3.0-or-later
 
-Copyright (C) 2021 Edoardo Scibona
+Copyright (C) 2021 Edoardo Scibona. See [LICENSE](LICENSE).
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
