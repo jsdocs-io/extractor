@@ -1,4 +1,4 @@
-// Set env var `DEBUG='@jsdocs-io/extractor'` and run with `yarn debug:analyze`
+// Set env var `DEBUG='@jsdocs-io/extractor'` and run with `pnpm debug:analyze`
 
 import { analyzeRegistryPackage } from '../dist';
 
