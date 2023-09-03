@@ -35,7 +35,7 @@
         "test:ci": "dts test --coverage --maxWorkers=2 --testTimeout=30000 --bail --ci",
         "lint": "dts lint src test",
         "lint:fix": "dts lint src test --fix",
-        "debug:analyze": "pnpm ts-node --skip-project scripts/debug-analyze.ts",
+        "debug:analyze": "pnpm tsx scripts/debug-analyze.ts",
         "prepare": "husky install && pnpm build",
         "pre-push": "pnpm i && pnpm lint && pnpm build && pnpm test:cov",
         "release": "np"
@@ -97,8 +97,8 @@
         "np": "8.0.4",
         "setup-polly-jest": "0.11.0",
         "ts-dedent": "2.2.0",
-        "ts-node": "10.9.1",
         "tslib": "2.6.2",
+        "tsx": "^3.12.8",
         "typescript": "5.2.2"
     }
 }
