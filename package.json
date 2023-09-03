@@ -61,15 +61,15 @@
         "jsdocs.io"
     ],
     "dependencies": {
-        "@microsoft/tsdoc": "^0.14.1",
+        "@microsoft/tsdoc": "^0.14.2",
         "concat-stream": "^2.0.0",
-        "debug": "^4.3.1",
-        "got": "^11.8.2",
+        "debug": "^4.3.4",
+        "got": "^11.8.6",
         "gunzip-maybe": "^1.4.2",
         "hosted-git-info": "^7.0.0",
-        "prettier": "^2.4.1",
-        "query-registry": "^2.0.0",
-        "tar-stream": "^3.0.0",
+        "prettier": "^2.8.8",
+        "query-registry": "^2.6.0",
+        "tar-stream": "^3.1.6",
         "ts-morph": "^19.0.0"
     },
     "devDependencies": {

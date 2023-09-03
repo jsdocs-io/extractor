@@ -6,16 +6,16 @@ settings:
 
 dependencies:
   '@microsoft/tsdoc':
-    specifier: ^0.14.1
+    specifier: ^0.14.2
     version: 0.14.2
   concat-stream:
     specifier: ^2.0.0
     version: 2.0.0
   debug:
-    specifier: ^4.3.1
+    specifier: ^4.3.4
     version: 4.3.4
   got:
-    specifier: ^11.8.2
+    specifier: ^11.8.6
     version: 11.8.6
   gunzip-maybe:
     specifier: ^1.4.2
@@ -24,13 +24,13 @@ dependencies:
     specifier: ^7.0.0
     version: 7.0.0
   prettier:
-    specifier: ^2.4.1
+    specifier: ^2.8.8
     version: 2.8.8
   query-registry:
-    specifier: ^2.0.0
+    specifier: ^2.6.0
     version: 2.6.0
   tar-stream:
-    specifier: ^3.0.0
+    specifier: ^3.1.6
     version: 3.1.6
   ts-morph:
     specifier: ^19.0.0
