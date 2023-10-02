@@ -74,8 +74,8 @@ devDependencies:
     specifier: 2.7.3
     version: 2.7.3
   '@types/setup-polly-jest':
-    specifier: 0.5.2
-    version: 0.5.2
+    specifier: 0.5.3
+    version: 0.5.3
   '@types/tar-stream':
     specifier: 3.1.0
     version: 3.1.0
@@ -2845,8 +2845,8 @@ packages:
       '@types/node': 20.5.9
     dev: true
 
-  /@types/setup-polly-jest@0.5.2:
-    resolution: {integrity: sha512-cvTA/xuf6WLjt7F8wSt6h5OU7c++ukXX6z959DPDnRwHq8rVcZPeqtq6lisKMaJP67Xkqn5vfCUftY2LphZntw==}
+  /@types/setup-polly-jest@0.5.3:
+    resolution: {integrity: sha512-Y5zUly7aFfCU0gXpKWN4V8kFGGUBL0SkdfzjUAqjIagZo1SSeYLjjZUzNoomsv1TIP9wSFNXEe6Ix8IiSYqK1w==}
     dependencies:
       '@pollyjs/adapter': 6.0.6
       '@pollyjs/core': 6.0.6
