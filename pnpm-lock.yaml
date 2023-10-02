@@ -77,8 +77,8 @@ devDependencies:
     specifier: 0.5.3
     version: 0.5.3
   '@types/tar-stream':
-    specifier: 3.1.0
-    version: 3.1.0
+    specifier: 3.1.1
+    version: 3.1.1
   clinic:
     specifier: 13.0.0
     version: 13.0.0
@@ -2857,8 +2857,8 @@ packages:
     resolution: {integrity: sha512-Hl219/BT5fLAaz6NDkSuhzasy49dwQS/DSdu4MdggFB8zcXv7vflBI3xp7FEmkmdDkBUI2bPUNeMttp2knYdxw==}
     dev: true
 
-  /@types/tar-stream@3.1.0:
-    resolution: {integrity: sha512-U05c7l6K5VdO1ZV+j3E0NJOX1hfJB497M1+QT2rXx2QqyMbEQJqBw3Utk9eUVnWPyLLqYKt5Ja1kPV1ejm6cZw==}
+  /@types/tar-stream@3.1.1:
+    resolution: {integrity: sha512-/1E+a09mAFQwhlEHqiS3LuNWIBiyrn0HqUWZk2IyGzodu9zkXbaT5vl94iGlZGnG2IONVFZd84SFhns3MhhAQQ==}
     dependencies:
       '@types/node': 20.5.9
     dev: true
