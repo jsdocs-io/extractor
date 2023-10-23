@@ -65,8 +65,8 @@ devDependencies:
     specifier: 1.4.0
     version: 1.4.0
   '@types/hosted-git-info':
-    specifier: 3.0.3
-    version: 3.0.3
+    specifier: 3.0.4
+    version: 3.0.4
   '@types/jest':
     specifier: ^29.5.4
     version: 29.5.5
@@ -2780,8 +2780,8 @@ packages:
       '@types/node': 20.5.9
     dev: true
 
-  /@types/hosted-git-info@3.0.3:
-    resolution: {integrity: sha512-fR6ios9PhvU0Y1uHiSDC0pZiSVrmtASO6e+NXMa87L+iFWVXR7yoZVX088wgEDqBWt2CySPQOK+12/uLq6/UcA==}
+  /@types/hosted-git-info@3.0.4:
+    resolution: {integrity: sha512-o2FiQWNs3m8jlJ77dsRlfXA8NvRHB4+hA/4iSqkWwjDezQwq84O73X5D2QyXflty9PtzuQl8PAPcxanSqkv9fg==}
     dev: true
 
   /@types/http-cache-semantics@4.0.1:
