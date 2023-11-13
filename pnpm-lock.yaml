@@ -59,8 +59,8 @@ devDependencies:
     specifier: 4.1.10
     version: 4.1.10
   '@types/fs-extra':
-    specifier: 11.0.3
-    version: 11.0.3
+    specifier: 11.0.4
+    version: 11.0.4
   '@types/gunzip-maybe':
     specifier: 1.4.1
     version: 1.4.1
@@ -2745,8 +2745,8 @@ packages:
     resolution: {integrity: sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==}
     dev: true
 
-  /@types/fs-extra@11.0.3:
-    resolution: {integrity: sha512-sF59BlXtUdzEAL1u0MSvuzWd7PdZvZEtnaVkzX5mjpdWTJ8brG0jUqve3jPCzSzvAKKMHTG8F8o/WMQLtleZdQ==}
+  /@types/fs-extra@11.0.4:
+    resolution: {integrity: sha512-yTbItCNreRooED33qjunPthRcSjERP1r4MqCZc7wv0u2sUkzTFp45tgUfS5+r7FrZPdmCCNflLhVSP/o+SemsQ==}
     dependencies:
       '@types/jsonfile': 6.1.1
       '@types/node': 20.5.9
