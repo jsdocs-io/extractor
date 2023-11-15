@@ -28,7 +28,7 @@ export function getWrapperSignature({
 }
 
 function isJSDocComment(node: tsm.Node): boolean {
-    return node.getKind() === tsm.SyntaxKind.JSDocComment;
+    return node.getKind() === tsm.SyntaxKind.JSDoc;
 }
 
 function isOpenBraceToken(node: tsm.Node): boolean {

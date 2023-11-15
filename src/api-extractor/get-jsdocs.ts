@@ -67,9 +67,7 @@ function getLastJSDoc({
     declaration: tsm.Node;
 }): string | undefined {
     // Get the doc closest to the declaration signature
-    const doc = declaration
-        .getLastChildByKind(tsm.SyntaxKind.JSDocComment)
-        ?.getText();
+    const doc = declaration.getLastChildByKind(tsm.SyntaxKind.JSDoc)?.getText();
     if (!doc) {
         return undefined;
     }

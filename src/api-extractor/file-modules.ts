@@ -49,7 +49,7 @@ function getFileModuleDocs({
     declaration: tsm.SourceFile;
 }): string[] {
     const doc = declaration
-        .getDescendantsOfKind(tsm.SyntaxKind.JSDocComment)[0]
+        .getDescendantsOfKind(tsm.SyntaxKind.JSDoc)[0]
         ?.getText();
 
     return doc ? [doc] : [];

@@ -8,6 +8,6 @@ export function getOverview({
     return indexFile
         .getDescendantsOfKind(tsm.SyntaxKind.JSDocTag)
         .find((tag) => tag.getTagName() === 'packageDocumentation')
-        ?.getParentIfKind(tsm.SyntaxKind.JSDocComment)
+        ?.getParentIfKind(tsm.SyntaxKind.JSDoc)
         ?.getText();
 }
