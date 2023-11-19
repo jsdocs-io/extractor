@@ -1,5 +1,6 @@
 import nock from 'nock';
 import * as path from 'path';
+import { afterAll, afterEach, describe, expect, it } from 'vitest';
 import { tryDownloadPackage } from '../../src/package-analyzer/try-download-package';
 
 const host = 'https://example.com';

@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`fastify 3.10.1 1`] = `
+exports[`fastify > 3.10.1 1`] = `
 {
   "declarations": {
     "classes": [],

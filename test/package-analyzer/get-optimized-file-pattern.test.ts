@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import { getOptimizedFilePattern } from '../../src/package-analyzer/get-optimized-file-pattern';
 
 describe('getOptimizedFilePattern', () => {

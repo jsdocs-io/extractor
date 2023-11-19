@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`query-registry 1.2.0 1`] = `
+exports[`query-registry > 1.2.0 1`] = `
 {
   "declarations": {
     "classes": [
@@ -4207,7 +4207,7 @@ exports[`query-registry 1.2.0 1`] = `
 }
 `;
 
-exports[`query-registry 2.0.0-0 1`] = `
+exports[`query-registry > 2.0.0-0 1`] = `
 {
   "declarations": {
     "classes": [

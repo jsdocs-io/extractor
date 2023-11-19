@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import { getRepositoryFileURLProvider } from '../../src/api-extractor/repository-file-url-provider';
 
 describe('getRepositoryFileURL', () => {

@@ -1,3 +1,4 @@
+import { describe, it } from 'vitest';
 import { expectPackageAPIToMatchSnapshot } from '../helpers/expect-package-api-to-match-snapshot';
 
 describe('chalk', () => {

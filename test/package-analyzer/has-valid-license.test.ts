@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import { hasValidLicense } from '../../src/package-analyzer/has-valid-license';
 
 describe('hasValidLicense', () => {

@@ -1,4 +1,5 @@
 import { npmRegistry, npmRegistryMirrors } from 'query-registry';
+import { expect } from 'vitest';
 import { analyzeRegistryPackage } from '../../src';
 
 const verdaccioRegistry = 'http://localhost:4873';

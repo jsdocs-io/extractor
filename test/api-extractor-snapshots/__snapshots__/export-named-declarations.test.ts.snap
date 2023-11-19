@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`export-named-declarations snapshot 1`] = `
+exports[`export-named-declarations > snapshot 1`] = `
 {
   "declarations": {
     "classes": [
@@ -1699,7 +1699,7 @@ exports[`export-named-declarations snapshot 1`] = `
 }
 `;
 
-exports[`export-named-declarations with repository snapshot 1`] = `
+exports[`export-named-declarations with repository > snapshot 1`] = `
 {
   "declarations": {
     "classes": [

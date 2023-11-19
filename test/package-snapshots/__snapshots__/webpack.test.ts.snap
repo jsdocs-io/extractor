@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`webpack 5.17.0 1`] = `
+exports[`webpack > 5.17.0 1`] = `
 {
   "declarations": {
     "classes": [

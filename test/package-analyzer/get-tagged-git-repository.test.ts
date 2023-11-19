@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import { getTaggedGitRepository } from '../../src/package-analyzer/get-tagged-git-repository';
 
 describe('getTaggedGitRepository', () => {

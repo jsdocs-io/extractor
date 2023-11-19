@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`bundle-require 2.1.2 1`] = `
+exports[`bundle-require > 2.1.2 1`] = `
 {
   "declarations": {
     "classes": [],

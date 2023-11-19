@@ -1,4 +1,5 @@
 import * as tsm from 'ts-morph';
+import { describe, expect, it } from 'vitest';
 import { extractPackageAPI } from '../../src/api-extractor/extract-package-api';
 import { getTestFileSystem } from '../helpers/get-test-file-system';
 

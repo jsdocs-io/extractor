@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import { getUnpkgFileURLProvider } from '../../src/api-extractor/unpkg-file-url-provider';
 
 describe('getUnpkgFileURL', () => {

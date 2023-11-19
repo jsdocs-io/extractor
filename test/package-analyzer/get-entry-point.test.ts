@@ -1,4 +1,5 @@
 import * as tsm from 'ts-morph';
+import { describe, expect, it } from 'vitest';
 import { getEntryPoint } from '../../src/package-analyzer/get-entry-point';
 
 describe('getEntryPoint', () => {

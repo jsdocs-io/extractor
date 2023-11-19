@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`overloaded-function-with-multiple-docs snapshot 1`] = `
+exports[`overloaded-function-with-multiple-docs > snapshot 1`] = `
 {
   "declarations": {
     "classes": [],

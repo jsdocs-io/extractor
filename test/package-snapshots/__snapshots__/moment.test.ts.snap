@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`moment 2.29.1 1`] = `
+exports[`moment > 2.29.1 1`] = `
 {
   "declarations": {
     "classes": [],
