@@ -26,7 +26,7 @@
     },
     "scripts": {
         "start": "dts watch --target node",
-        "build:check": "tsc --noEmit",
+        "check": "tsc --noEmit",
         "build": "tsc --noEmit && dts build --target node",
         "test": "vitest",
         "test:packages": "vitest run test/package-snapshots",
