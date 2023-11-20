@@ -9,5 +9,6 @@
         "tsdoc",
         "velut",
         "vitest"
-    ]
+    ],
+    "typescript.tsdk": "node_modules/typescript/lib"
 }
