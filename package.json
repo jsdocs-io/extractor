@@ -1,9 +1,33 @@
 {
     "name": "@jsdocs-io/extractor",
-    "description": "Analyze and extract the API from npm packages",
     "version": "0.4.0",
-    "author": "Edoardo Scibona (velut)",
+    "description": "The API extractor for npm packages powering jsdocs.io",
     "license": "AGPL-3.0-or-later",
+    "author": {
+        "name": "Edoardo Scibona",
+        "url": "http://github.com/velut"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jsdocs-io/extractor.git"
+    },
+    "bugs": {
+        "url": "https://github.com/jsdocs-io/extractor/issues"
+    },
+    "keywords": [
+        "npm",
+        "package",
+        "analyze",
+        "api",
+        "extractor",
+        "documentation",
+        "generator",
+        "typescript",
+        "javascript",
+        "jsdoc",
+        "tsdoc",
+        "jsdocs.io"
+    ],
     "source": "./src/index.ts",
     "main": "./dist/index.js",
     "module": "./dist/extractor.esm.js",
@@ -39,26 +63,6 @@
         "pre-push": "pnpm i && pnpm lint && pnpm build && pnpm test:cov",
         "release": "np"
     },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/jsdocs-io/extractor.git"
-    },
-    "bugs": {
-        "url": "https://github.com/jsdocs-io/extractor/issues"
-    },
-    "keywords": [
-        "npm",
-        "package",
-        "analyzer",
-        "analyze",
-        "info",
-        "api",
-        "extractor",
-        "typescript",
-        "javascript",
-        "jsdocs",
-        "jsdocs.io"
-    ],
     "dependencies": {
         "@microsoft/tsdoc": "^0.14.2",
         "concat-stream": "^2.0.0",
