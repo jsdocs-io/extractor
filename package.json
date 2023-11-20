@@ -70,7 +70,7 @@
         "got": "^11.8.6",
         "gunzip-maybe": "^1.4.2",
         "hosted-git-info": "^7.0.1",
-        "prettier": "^2.8.8",
+        "prettier": "^3.1.0",
         "query-registry": "^2.6.0",
         "tar-stream": "^3.1.6",
         "ts-morph": "^20.0.0"
@@ -87,7 +87,7 @@
         "@types/gunzip-maybe": "^1.4.2",
         "@types/hosted-git-info": "^3.0.5",
         "@types/jest": "^29.5.8",
-        "@types/prettier": "^2.7.3",
+        "@types/prettier": "^3.0.0",
         "@types/setup-polly-jest": "^0.5.5",
         "@types/tar-stream": "^3.1.3",
         "@vitest/coverage-v8": "^0.34.6",
