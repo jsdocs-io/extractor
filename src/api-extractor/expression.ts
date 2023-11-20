@@ -1,8 +1,5 @@
 import * as tsm from 'ts-morph';
-import {
-    DeclarationKinds,
-    VariableDeclaration,
-} from '../types/module-declarations';
+import { VariableDeclaration } from '../types/module-declarations';
 import { getApparentType } from './get-apparent-type';
 import { getJSDocs } from './get-jsdocs';
 import { SourceProvider } from './source-provider';
@@ -70,7 +67,6 @@ export function newExpression({
     declaration: tsm.Expression;
     getSource: SourceProvider;
 }): VariableDeclaration {
-    const kind = DeclarationKinds.VariableDeclaration;
     const docs = getJSDocs({ declaration });
     const source = getSource({ declaration });
     const variableKind = 'const';
@@ -78,7 +74,7 @@ export function newExpression({
     const signature = getVariableSignature({ variableKind, name, type });
 
     return {
-        kind,
+        kind: 'variable',
         id,
         name,
         docs,

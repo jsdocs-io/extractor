@@ -9,7 +9,7 @@ exports[`immer > 8.0.1 1`] = `
           {
             "docs": [],
             "id": "Immer.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(config?: { useProxies?: boolean; autoFreeze?: boolean });",
             "source": {
@@ -23,14 +23,14 @@ exports[`immer > 8.0.1 1`] = `
         "docs": [],
         "id": "Immer",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
               "docs": [],
               "id": "Immer.applyPatches",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "applyPatches",
               "signature": "applyPatches: (base: Objectish, patches: Patch[]) => any;",
               "source": {
@@ -45,7 +45,7 @@ exports[`immer > 8.0.1 1`] = `
               "docs": [],
               "id": "Immer.createDraft",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "createDraft",
               "signature": "createDraft: <T extends Objectish>(base: T) => Draft<T>;",
               "source": {
@@ -60,7 +60,7 @@ exports[`immer > 8.0.1 1`] = `
               "docs": [],
               "id": "Immer.finishDraft",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "finishDraft",
               "signature": "finishDraft: <D extends unknown>(
     draft: D,
@@ -98,7 +98,7 @@ exports[`immer > 8.0.1 1`] = `
               ],
               "id": "Immer.produce",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "produce",
               "signature": "produce: (base: any, recipe?: any, patchListener?: any) => any;",
               "source": {
@@ -113,7 +113,7 @@ exports[`immer > 8.0.1 1`] = `
               "docs": [],
               "id": "Immer.produceWithPatches",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "produceWithPatches",
               "signature": "produceWithPatches: (arg1: any, arg2?: any, arg3?: any) => any;",
               "source": {
@@ -134,7 +134,7 @@ exports[`immer > 8.0.1 1`] = `
               ],
               "id": "Immer.setAutoFreeze",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "setAutoFreeze",
               "signature": "setAutoFreeze: (value: boolean) => void;",
               "source": {
@@ -156,7 +156,7 @@ exports[`immer > 8.0.1 1`] = `
               ],
               "id": "Immer.setUseProxies",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "setUseProxies",
               "signature": "setUseProxies: (value: boolean) => void;",
               "source": {
@@ -173,7 +173,7 @@ exports[`immer > 8.0.1 1`] = `
               "docs": [],
               "id": "Immer.autoFreeze_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "autoFreeze_",
               "signature": "autoFreeze_: boolean;",
               "source": {
@@ -188,7 +188,7 @@ exports[`immer > 8.0.1 1`] = `
               "docs": [],
               "id": "Immer.useProxies_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "useProxies_",
               "signature": "useProxies_: boolean;",
               "source": {
@@ -223,7 +223,7 @@ exports[`immer > 8.0.1 1`] = `
  */",
         ],
         "id": "castDraft",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "castDraft",
         "signature": "castDraft: <T>(value: T) => Draft<T>;",
         "source": {
@@ -243,7 +243,7 @@ exports[`immer > 8.0.1 1`] = `
  */",
         ],
         "id": "castImmutable",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "castImmutable",
         "signature": "castImmutable: <T>(value: T) => Immutable<T>;",
         "source": {
@@ -259,7 +259,7 @@ exports[`immer > 8.0.1 1`] = `
           "/** Takes a snapshot of the current state of a draft and finalizes it (but without freezing). This is a great utility to print the current state during debugging (no Proxies in the way). The output of current can also be safely leaked outside the producer. */",
         ],
         "id": "current",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "current",
         "signature": "current: <T>(value: T) => T;",
         "source": {
@@ -273,7 +273,7 @@ exports[`immer > 8.0.1 1`] = `
       {
         "docs": [],
         "id": "enableAllPlugins",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "enableAllPlugins",
         "signature": "enableAllPlugins: () => void;",
         "source": {
@@ -287,7 +287,7 @@ exports[`immer > 8.0.1 1`] = `
       {
         "docs": [],
         "id": "enableES5",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "enableES5",
         "signature": "enableES5: () => void;",
         "source": {
@@ -301,7 +301,7 @@ exports[`immer > 8.0.1 1`] = `
       {
         "docs": [],
         "id": "enableMapSet",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "enableMapSet",
         "signature": "enableMapSet: () => void;",
         "source": {
@@ -315,7 +315,7 @@ exports[`immer > 8.0.1 1`] = `
       {
         "docs": [],
         "id": "enablePatches",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "enablePatches",
         "signature": "enablePatches: () => void;",
         "source": {
@@ -337,7 +337,7 @@ exports[`immer > 8.0.1 1`] = `
  */",
         ],
         "id": "freeze",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "freeze",
         "signature": "freeze: <T>(obj: T, deep?: boolean) => T;",
         "source": {
@@ -353,7 +353,7 @@ exports[`immer > 8.0.1 1`] = `
           "/** Returns true if the given value is an Immer draft */",
         ],
         "id": "isDraft",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "isDraft",
         "signature": "isDraft: (value: any) => boolean;",
         "source": {
@@ -369,7 +369,7 @@ exports[`immer > 8.0.1 1`] = `
           "/** Returns true if the given value can be drafted by Immer */",
         ],
         "id": "isDraftable",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "isDraftable",
         "signature": "isDraftable: (value: any) => boolean;",
         "source": {
@@ -385,7 +385,7 @@ exports[`immer > 8.0.1 1`] = `
           "/** Get the underlying object that is represented by the given draft */",
         ],
         "id": "original",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "original",
         "signature": "original: <T>(value: T) => T;",
         "source": {
@@ -401,7 +401,7 @@ exports[`immer > 8.0.1 1`] = `
       {
         "docs": [],
         "id": "Patch",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -413,7 +413,7 @@ exports[`immer > 8.0.1 1`] = `
               "id": "Patch.op",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "op",
               "signature": "op: 'replace' | 'remove' | 'add';",
               "source": {
@@ -429,7 +429,7 @@ exports[`immer > 8.0.1 1`] = `
               "id": "Patch.path",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "path",
               "signature": "path: (string | number)[];",
               "source": {
@@ -445,7 +445,7 @@ exports[`immer > 8.0.1 1`] = `
               "id": "Patch.value",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "value",
               "signature": "value?: any;",
               "source": {
@@ -473,7 +473,7 @@ exports[`immer > 8.0.1 1`] = `
       {
         "docs": [],
         "id": "Draft",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "Draft",
         "signature": "type Draft<T> = T extends AtomicObject
     ? T
@@ -498,7 +498,7 @@ exports[`immer > 8.0.1 1`] = `
           "/** Convert a mutable type into a readonly type */",
         ],
         "id": "Immutable",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "Immutable",
         "signature": "type Immutable<T> = T extends AtomicObject
     ? T
@@ -521,7 +521,7 @@ exports[`immer > 8.0.1 1`] = `
       {
         "docs": [],
         "id": "PatchListener",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "PatchListener",
         "signature": "type PatchListener = (patches: Patch[], inversePatches: Patch[]) => void;",
         "source": {
@@ -542,7 +542,7 @@ exports[`immer > 8.0.1 1`] = `
  */",
         ],
         "id": "applyPatches",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "applyPatches",
         "signature": "const applyPatches: any;",
         "source": {
@@ -562,7 +562,7 @@ exports[`immer > 8.0.1 1`] = `
  */",
         ],
         "id": "createDraft",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "createDraft",
         "signature": "const createDraft: any;",
         "source": {
@@ -586,7 +586,7 @@ exports[`immer > 8.0.1 1`] = `
  */",
         ],
         "id": "finishDraft",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "finishDraft",
         "signature": "const finishDraft: any;",
         "source": {
@@ -610,7 +610,7 @@ exports[`immer > 8.0.1 1`] = `
  */",
         ],
         "id": "immerable",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "immerable",
         "signature": "const immerable: Symbol;",
         "source": {
@@ -629,7 +629,7 @@ exports[`immer > 8.0.1 1`] = `
  */",
         ],
         "id": "nothing",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "nothing",
         "signature": "const nothing: Nothing;",
         "source": {
@@ -664,7 +664,7 @@ exports[`immer > 8.0.1 1`] = `
  */",
         ],
         "id": "produce",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "produce",
         "signature": "const produce: IProduce;",
         "source": {
@@ -684,7 +684,7 @@ exports[`immer > 8.0.1 1`] = `
  */",
         ],
         "id": "produceWithPatches",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "produceWithPatches",
         "signature": "const produceWithPatches: IProduceWithPatches;",
         "source": {
@@ -705,7 +705,7 @@ exports[`immer > 8.0.1 1`] = `
  */",
         ],
         "id": "setAutoFreeze",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "setAutoFreeze",
         "signature": "const setAutoFreeze: any;",
         "source": {
@@ -727,7 +727,7 @@ exports[`immer > 8.0.1 1`] = `
  */",
         ],
         "id": "setUseProxies",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "setUseProxies",
         "signature": "const setUseProxies: any;",
         "source": {

@@ -1,3 +1,5 @@
+import type { DeclarationKind } from './declaration-kind';
+
 /**
  * `ModuleDeclarations` contains the different kinds of declarations
  * exported by a module (for example, a package, a module (file) or a namespace).
@@ -17,7 +19,7 @@ export interface ModuleDeclarations {
  * (for example, `const myVar = ...`).
  */
 export interface VariableDeclaration extends Declaration {
-    readonly kind: DeclarationKinds.VariableDeclaration;
+    readonly kind: 'variable';
 
     /** Either `var`, `let`, or `const` */
     readonly variableKind: string;
@@ -34,7 +36,7 @@ export interface VariableDeclaration extends Declaration {
  * `const myFunc = function() {...}`).
  */
 export interface FunctionDeclaration extends Declaration {
-    readonly kind: DeclarationKinds.FunctionDeclaration;
+    readonly kind: 'function';
 
     /** Function type (for example, `() => string`) */
     readonly type: string;
@@ -45,7 +47,7 @@ export interface FunctionDeclaration extends Declaration {
  * (for example, `class MyClass {...}`).
  */
 export interface ClassDeclaration extends Declaration {
-    readonly kind: DeclarationKinds.ClassDeclaration;
+    readonly kind: 'class';
 
     /** If `true`, the class is abstract */
     readonly isAbstract: boolean;
@@ -62,7 +64,7 @@ export interface ClassDeclaration extends Declaration {
  * belonging to a class (for example, `constructor() {...}`).
  */
 export interface ClassConstructorDeclaration extends Declaration {
-    readonly kind: DeclarationKinds.ClassConstructorDeclaration;
+    readonly kind: 'classConstructor';
 }
 
 /**
@@ -79,7 +81,7 @@ export interface ClassMemberDeclarations {
  * or through an accessor (for example, `get foo(): string {...}`).
  */
 export interface ClassPropertyDeclaration extends Declaration {
-    readonly kind: DeclarationKinds.ClassPropertyDeclaration;
+    readonly kind: 'classProperty';
 
     /** If `true`, the property is static */
     readonly isStatic: boolean;
@@ -93,7 +95,7 @@ export interface ClassPropertyDeclaration extends Declaration {
  * (for example, `foo(): string {...}`).
  */
 export interface ClassMethodDeclaration extends Declaration {
-    readonly kind: DeclarationKinds.ClassMethodDeclaration;
+    readonly kind: 'classMethod';
 
     /** If `true`, the method is static */
     readonly isStatic: boolean;
@@ -107,7 +109,7 @@ export interface ClassMethodDeclaration extends Declaration {
  * (for example, `interface MyInterface {...}`).
  */
 export interface InterfaceDeclaration extends Declaration {
-    readonly kind: DeclarationKinds.InterfaceDeclaration;
+    readonly kind: 'interface';
 
     /** Interface members */
     readonly members: InterfaceMemberDeclarations;
@@ -129,7 +131,7 @@ export interface InterfaceMemberDeclarations {
  * (for example, `foo: string` in `interface MyInterface { foo: string }`).
  */
 export interface InterfacePropertyDeclaration extends Declaration {
-    readonly kind: DeclarationKinds.InterfacePropertyDeclaration;
+    readonly kind: 'interfaceProperty';
 
     /** If `true`, the property is `readonly` */
     readonly isReadonly: boolean;
@@ -146,7 +148,7 @@ export interface InterfacePropertyDeclaration extends Declaration {
  * (for example, `foo(): string` in `interface MyInterface { foo(): string }`).
  */
 export interface InterfaceMethodDeclaration extends Declaration {
-    readonly kind: DeclarationKinds.InterfaceMethodDeclaration;
+    readonly kind: 'interfaceMethod';
 
     /** Method signature type (for example, `() => string`) */
     readonly type: string;
@@ -157,7 +159,7 @@ export interface InterfaceMethodDeclaration extends Declaration {
  * defined in an interface (for example, `new (foo: string)`).
  */
 export interface InterfaceConstructSignatureDeclaration extends Declaration {
-    readonly kind: DeclarationKinds.InterfaceConstructSignatureDeclaration;
+    readonly kind: 'interfaceConstructSignature';
 }
 
 /**
@@ -165,7 +167,7 @@ export interface InterfaceConstructSignatureDeclaration extends Declaration {
  * defined in an interface (for example, `(foo: string): boolean`).
  */
 export interface InterfaceCallSignatureDeclaration extends Declaration {
-    readonly kind: DeclarationKinds.InterfaceCallSignatureDeclaration;
+    readonly kind: 'interfaceCallSignature';
 }
 
 /**
@@ -173,7 +175,7 @@ export interface InterfaceCallSignatureDeclaration extends Declaration {
  * defined in an interface (for example, `[index: number]: string`).
  */
 export interface InterfaceIndexSignatureDeclaration extends Declaration {
-    readonly kind: DeclarationKinds.InterfaceIndexSignatureDeclaration;
+    readonly kind: 'interfaceIndexSignature';
 }
 
 /**
@@ -181,7 +183,7 @@ export interface InterfaceIndexSignatureDeclaration extends Declaration {
  * (for example, `enum MyEnum {...}`).
  */
 export interface EnumDeclaration extends Declaration {
-    readonly kind: DeclarationKinds.EnumDeclaration;
+    readonly kind: 'enum';
 
     /** If `true`, the enum is a constant enum. */
     readonly isConst: boolean;
@@ -195,7 +197,7 @@ export interface EnumDeclaration extends Declaration {
  * (for example, `UP` in `enum MyEnum { UP, DOWN }`).
  */
 export interface EnumMemberDeclaration extends Declaration {
-    readonly kind: DeclarationKinds.EnumMemberDeclaration;
+    readonly kind: 'enumMember';
 
     /** Member's constant value */
     readonly value?: string | number;
@@ -206,7 +208,7 @@ export interface EnumMemberDeclaration extends Declaration {
  * (for example, `type myType = ...`).
  */
 export interface TypeAliasDeclaration extends Declaration {
-    readonly kind: DeclarationKinds.TypeAliasDeclaration;
+    readonly kind: 'typeAlias';
 }
 
 /**
@@ -214,7 +216,7 @@ export interface TypeAliasDeclaration extends Declaration {
  * (for example, `namespace MyNamespace {...}`).
  */
 export interface NamespaceDeclaration extends Declaration {
-    readonly kind: DeclarationKinds.NamespaceDeclaration;
+    readonly kind: 'namespace';
 
     /** Exported namespace declarations */
     readonly declarations: ModuleDeclarations;
@@ -225,7 +227,7 @@ export interface NamespaceDeclaration extends Declaration {
  */
 export interface Declaration {
     /** Declaration kind */
-    readonly kind: DeclarationKinds;
+    readonly kind: DeclarationKind;
 
     /** Declaration ID */
     readonly id: string;
@@ -241,28 +243,6 @@ export interface Declaration {
 
     /** Declaration's signature */
     readonly signature: string;
-}
-
-/**
- * `DeclarationKinds` lists the possible kinds of declarations
- */
-export enum DeclarationKinds {
-    VariableDeclaration = 'VariableDeclaration',
-    FunctionDeclaration = 'FunctionDeclaration',
-    ClassDeclaration = 'ClassDeclaration',
-    ClassConstructorDeclaration = 'ClassConstructorDeclaration',
-    ClassPropertyDeclaration = 'ClassPropertyDeclaration',
-    ClassMethodDeclaration = 'ClassMethodDeclaration',
-    InterfaceDeclaration = 'InterfaceDeclaration',
-    InterfacePropertyDeclaration = 'InterfacePropertyDeclaration',
-    InterfaceMethodDeclaration = 'InterfaceMethodDeclaration',
-    InterfaceConstructSignatureDeclaration = 'InterfaceConstructSignatureDeclaration',
-    InterfaceCallSignatureDeclaration = 'InterfaceCallSignatureDeclaration',
-    InterfaceIndexSignatureDeclaration = 'InterfaceIndexSignatureDeclaration',
-    EnumDeclaration = 'EnumDeclaration',
-    EnumMemberDeclaration = 'EnumMemberDeclaration',
-    TypeAliasDeclaration = 'TypeAliasDeclaration',
-    NamespaceDeclaration = 'NamespaceDeclaration',
 }
 
 /**

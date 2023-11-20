@@ -21,7 +21,7 @@ exports[`export-type-import-type > snapshot 1`] = `
                 "/** Type alias Foo1 */",
               ],
               "id": "Foo.Foo1",
-              "kind": "TypeAliasDeclaration",
+              "kind": "typeAlias",
               "name": "Foo1",
               "signature": "type Foo1 = string | number;",
               "source": {
@@ -36,7 +36,7 @@ exports[`export-type-import-type > snapshot 1`] = `
                 "/** Type alias Foo2 */",
               ],
               "id": "Foo.Foo2",
-              "kind": "TypeAliasDeclaration",
+              "kind": "typeAlias",
               "name": "Foo2",
               "signature": "type Foo2 = {
     bar: boolean;
@@ -57,7 +57,7 @@ exports[`export-type-import-type > snapshot 1`] = `
  */",
         ],
         "id": "Foo",
-        "kind": "NamespaceDeclaration",
+        "kind": "namespace",
         "name": "Foo",
         "signature": "module 'foo.d.ts' {}",
         "source": {

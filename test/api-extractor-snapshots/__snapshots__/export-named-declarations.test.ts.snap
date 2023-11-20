@@ -13,7 +13,7 @@ exports[`export-named-declarations > snapshot 1`] = `
         ],
         "id": "Class001",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -32,7 +32,7 @@ exports[`export-named-declarations > snapshot 1`] = `
         "docs": [],
         "id": "Class002",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -51,7 +51,7 @@ exports[`export-named-declarations > snapshot 1`] = `
         "docs": [],
         "id": "Class003",
         "isAbstract": true,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -70,7 +70,7 @@ exports[`export-named-declarations > snapshot 1`] = `
         "docs": [],
         "id": "Class004",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -89,7 +89,7 @@ exports[`export-named-declarations > snapshot 1`] = `
         "docs": [],
         "id": "Class005",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -108,7 +108,7 @@ exports[`export-named-declarations > snapshot 1`] = `
         "docs": [],
         "id": "Class006",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -127,7 +127,7 @@ exports[`export-named-declarations > snapshot 1`] = `
         "docs": [],
         "id": "Class007",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -150,7 +150,7 @@ exports[`export-named-declarations > snapshot 1`] = `
               "/** Constructor */",
             ],
             "id": "Class008.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(foo: any, bar: any);",
             "source": {
@@ -163,7 +163,7 @@ exports[`export-named-declarations > snapshot 1`] = `
           {
             "docs": [],
             "id": "Class008.1-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(foo: string, bar: number);",
             "source": {
@@ -177,7 +177,7 @@ exports[`export-named-declarations > snapshot 1`] = `
         "docs": [],
         "id": "Class008",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -196,7 +196,7 @@ exports[`export-named-declarations > snapshot 1`] = `
           {
             "docs": [],
             "id": "Class009.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "protected constructor(foo: string, bar: number);",
             "source": {
@@ -210,7 +210,7 @@ exports[`export-named-declarations > snapshot 1`] = `
         "docs": [],
         "id": "Class009",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -229,7 +229,7 @@ exports[`export-named-declarations > snapshot 1`] = `
         "docs": [],
         "id": "Class010",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -248,7 +248,7 @@ exports[`export-named-declarations > snapshot 1`] = `
         "docs": [],
         "id": "Class011",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -257,7 +257,7 @@ exports[`export-named-declarations > snapshot 1`] = `
               ],
               "id": "Class011.bar",
               "isStatic": true,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "bar",
               "signature": "static bar: () => number;",
               "source": {
@@ -276,7 +276,7 @@ exports[`export-named-declarations > snapshot 1`] = `
               ],
               "id": "Class011.bat",
               "isStatic": true,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "bat",
               "signature": "static readonly bat: string;",
               "source": {
@@ -293,7 +293,7 @@ exports[`export-named-declarations > snapshot 1`] = `
               ],
               "id": "Class011.baz",
               "isStatic": true,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "baz",
               "signature": "static baz: number;",
               "source": {
@@ -310,7 +310,7 @@ exports[`export-named-declarations > snapshot 1`] = `
               ],
               "id": "Class011.foo",
               "isStatic": true,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "foo",
               "signature": "static readonly foo: string;",
               "source": {
@@ -337,7 +337,7 @@ exports[`export-named-declarations > snapshot 1`] = `
         "docs": [],
         "id": "Class012",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -346,7 +346,7 @@ exports[`export-named-declarations > snapshot 1`] = `
               ],
               "id": "Class012.bar",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "bar",
               "signature": "bar: () => number;",
               "source": {
@@ -365,7 +365,7 @@ exports[`export-named-declarations > snapshot 1`] = `
               ],
               "id": "Class012.bat",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "bat",
               "signature": "readonly bat: string;",
               "source": {
@@ -382,7 +382,7 @@ exports[`export-named-declarations > snapshot 1`] = `
               ],
               "id": "Class012.baz",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "baz",
               "signature": "baz: number;",
               "source": {
@@ -399,7 +399,7 @@ exports[`export-named-declarations > snapshot 1`] = `
               ],
               "id": "Class012.foo",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "foo",
               "signature": "readonly foo: string;",
               "source": {
@@ -416,7 +416,7 @@ exports[`export-named-declarations > snapshot 1`] = `
               ],
               "id": "Class012.foobar",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "foobar",
               "signature": "foobar?: string;",
               "source": {
@@ -443,7 +443,7 @@ exports[`export-named-declarations > snapshot 1`] = `
           {
             "docs": [],
             "id": "Class013.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(
     foo?: string,
@@ -463,7 +463,7 @@ exports[`export-named-declarations > snapshot 1`] = `
         "docs": [],
         "id": "Class013",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [
@@ -473,7 +473,7 @@ exports[`export-named-declarations > snapshot 1`] = `
               ],
               "id": "Class013.bar",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "bar",
               "signature": "protected readonly bar: string;",
               "source": {
@@ -490,7 +490,7 @@ exports[`export-named-declarations > snapshot 1`] = `
               ],
               "id": "Class013.foo",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "foo",
               "signature": "readonly foo: string;",
               "source": {
@@ -517,7 +517,7 @@ exports[`export-named-declarations > snapshot 1`] = `
         "docs": [],
         "id": "Class014",
         "isAbstract": true,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -526,7 +526,7 @@ exports[`export-named-declarations > snapshot 1`] = `
               ],
               "id": "Class014.baz",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "baz",
               "signature": "abstract baz: () => number;",
               "source": {
@@ -545,7 +545,7 @@ exports[`export-named-declarations > snapshot 1`] = `
               ],
               "id": "Class014.bar",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "bar",
               "signature": "protected abstract bar: string;",
               "source": {
@@ -562,7 +562,7 @@ exports[`export-named-declarations > snapshot 1`] = `
               ],
               "id": "Class014.foo",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "foo",
               "signature": "abstract foo: string;",
               "source": {
@@ -589,7 +589,7 @@ exports[`export-named-declarations > snapshot 1`] = `
         "docs": [],
         "id": "Class016",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -613,12 +613,12 @@ exports[`export-named-declarations > snapshot 1`] = `
         ],
         "id": "Enum1",
         "isConst": true,
-        "kind": "EnumDeclaration",
+        "kind": "enum",
         "members": [
           {
             "docs": [],
             "id": "Enum1.No",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "No",
             "signature": "No",
             "source": {
@@ -634,7 +634,7 @@ exports[`export-named-declarations > snapshot 1`] = `
               "/** Positive */",
             ],
             "id": "Enum1.Yes",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Yes",
             "signature": "Yes",
             "source": {
@@ -662,12 +662,12 @@ exports[`export-named-declarations > snapshot 1`] = `
         "docs": [],
         "id": "Enum2",
         "isConst": false,
-        "kind": "EnumDeclaration",
+        "kind": "enum",
         "members": [
           {
             "docs": [],
             "id": "Enum2.Ko",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Ko",
             "signature": "Ko",
             "source": {
@@ -681,7 +681,7 @@ exports[`export-named-declarations > snapshot 1`] = `
           {
             "docs": [],
             "id": "Enum2.Ok",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Ok",
             "signature": "Ok = 1",
             "source": {
@@ -709,12 +709,12 @@ exports[`export-named-declarations > snapshot 1`] = `
         "docs": [],
         "id": "Enum3",
         "isConst": false,
-        "kind": "EnumDeclaration",
+        "kind": "enum",
         "members": [
           {
             "docs": [],
             "id": "Enum3.A",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "A",
             "signature": "A = 'A'",
             "source": {
@@ -728,7 +728,7 @@ exports[`export-named-declarations > snapshot 1`] = `
           {
             "docs": [],
             "id": "Enum3.B",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "B",
             "signature": "B = 'B'",
             "source": {
@@ -742,7 +742,7 @@ exports[`export-named-declarations > snapshot 1`] = `
           {
             "docs": [],
             "id": "Enum3.C",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "C",
             "signature": "C = 'C'",
             "source": {
@@ -771,7 +771,7 @@ exports[`export-named-declarations > snapshot 1`] = `
         "docs": [],
         "id": "Enum4",
         "isConst": false,
-        "kind": "EnumDeclaration",
+        "kind": "enum",
         "members": [],
         "name": "Enum4",
         "signature": "enum Enum4 {}",
@@ -786,12 +786,12 @@ exports[`export-named-declarations > snapshot 1`] = `
         "docs": [],
         "id": "Enum6",
         "isConst": false,
-        "kind": "EnumDeclaration",
+        "kind": "enum",
         "members": [
           {
             "docs": [],
             "id": "Enum6.A",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "A",
             "signature": "A",
             "source": {
@@ -825,7 +825,7 @@ exports[`export-named-declarations > snapshot 1`] = `
  */",
         ],
         "id": "func1",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "func1",
         "signature": "func1: (a: number, b: number) => number;",
         "source": {
@@ -845,7 +845,7 @@ exports[`export-named-declarations > snapshot 1`] = `
  */",
         ],
         "id": "func2",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "func2",
         "signature": "func2: ({ a, b }: { a: number; b: number }) => number;",
         "source": {
@@ -865,7 +865,7 @@ exports[`export-named-declarations > snapshot 1`] = `
  */",
         ],
         "id": "func3",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "func3",
         "signature": "func3: ({ a, b }: { a: number; b: number }) => number;",
         "source": {
@@ -883,7 +883,7 @@ exports[`export-named-declarations > snapshot 1`] = `
  */",
         ],
         "id": "func4",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "func4",
         "signature": "func4: { (a: number): number; (a: string): string };",
         "source": {
@@ -897,7 +897,7 @@ exports[`export-named-declarations > snapshot 1`] = `
       {
         "docs": [],
         "id": "func5",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "func5",
         "signature": "func5: () => Promise<void>;",
         "source": {
@@ -911,7 +911,7 @@ exports[`export-named-declarations > snapshot 1`] = `
       {
         "docs": [],
         "id": "func8",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "func8",
         "signature": "func8: (a: string) => number;",
         "source": {
@@ -931,7 +931,7 @@ exports[`export-named-declarations > snapshot 1`] = `
  */",
         ],
         "id": "Interface001",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -943,7 +943,7 @@ exports[`export-named-declarations > snapshot 1`] = `
               "id": "Interface001.x",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "x",
               "signature": "readonly x: number;",
               "source": {
@@ -959,7 +959,7 @@ exports[`export-named-declarations > snapshot 1`] = `
               "id": "Interface001.y",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "y",
               "signature": "readonly y: number;",
               "source": {
@@ -984,7 +984,7 @@ exports[`export-named-declarations > snapshot 1`] = `
       {
         "docs": [],
         "id": "Interface002",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -996,7 +996,7 @@ exports[`export-named-declarations > snapshot 1`] = `
               "id": "Interface002.z",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "z",
               "signature": "z?: number;",
               "source": {
@@ -1021,7 +1021,7 @@ exports[`export-named-declarations > snapshot 1`] = `
       {
         "docs": [],
         "id": "Interface003",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1041,13 +1041,13 @@ exports[`export-named-declarations > snapshot 1`] = `
       {
         "docs": [],
         "id": "Interface004",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "Interface004.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(a: string): string;",
               "source": {
@@ -1075,7 +1075,7 @@ exports[`export-named-declarations > snapshot 1`] = `
       {
         "docs": [],
         "id": "Interface005",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1083,7 +1083,7 @@ exports[`export-named-declarations > snapshot 1`] = `
             {
               "docs": [],
               "id": "Interface005.0-index-signature",
-              "kind": "InterfaceIndexSignatureDeclaration",
+              "kind": "interfaceIndexSignature",
               "name": "index signature",
               "signature": "readonly [index: string]: number | string;",
               "source": {
@@ -1109,7 +1109,7 @@ exports[`export-named-declarations > snapshot 1`] = `
       {
         "docs": [],
         "id": "Interface006",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1118,7 +1118,7 @@ exports[`export-named-declarations > snapshot 1`] = `
             {
               "docs": [],
               "id": "Interface006.getAny",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "getAny",
               "signature": "getAny: () => any;",
               "source": {
@@ -1136,7 +1136,7 @@ exports[`export-named-declarations > snapshot 1`] = `
               "id": "Interface006.something",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "something",
               "signature": "something: any;",
               "source": {
@@ -1161,14 +1161,14 @@ exports[`export-named-declarations > snapshot 1`] = `
       {
         "docs": [],
         "id": "Interface007",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [
             {
               "docs": [],
               "id": "Interface007.0-construct-signature",
-              "kind": "InterfaceConstructSignatureDeclaration",
+              "kind": "interfaceConstructSignature",
               "name": "construct signature",
               "signature": "new (): Interface006;",
               "source": {
@@ -1195,7 +1195,7 @@ exports[`export-named-declarations > snapshot 1`] = `
       {
         "docs": [],
         "id": "Interface008",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1215,7 +1215,7 @@ exports[`export-named-declarations > snapshot 1`] = `
       {
         "docs": [],
         "id": "Interface009",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1237,7 +1237,7 @@ exports[`export-named-declarations > snapshot 1`] = `
       {
         "docs": [],
         "id": "Interface011",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1249,7 +1249,7 @@ exports[`export-named-declarations > snapshot 1`] = `
               "id": "Interface011.baz",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "baz",
               "signature": "baz: boolean;",
               "source": {
@@ -1265,7 +1265,7 @@ exports[`export-named-declarations > snapshot 1`] = `
               "id": "Interface011.foo",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "foo",
               "signature": "foo: string;",
               "source": {
@@ -1290,7 +1290,7 @@ exports[`export-named-declarations > snapshot 1`] = `
       {
         "docs": [],
         "id": "Interface012",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1299,7 +1299,7 @@ exports[`export-named-declarations > snapshot 1`] = `
             {
               "docs": [],
               "id": "Interface012.foo",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "foo",
               "signature": "foo: (a: number) => string;",
               "source": {
@@ -1340,7 +1340,7 @@ exports[`export-named-declarations > snapshot 1`] = `
  */",
         ],
         "id": "Namespace1",
-        "kind": "NamespaceDeclaration",
+        "kind": "namespace",
         "name": "Namespace1",
         "signature": "namespace Namespace1 {}",
         "source": {
@@ -1376,7 +1376,7 @@ exports[`export-named-declarations > snapshot 1`] = `
                     },
                     "docs": [],
                     "id": "Namespace2.Namespace21.Namespace22",
-                    "kind": "NamespaceDeclaration",
+                    "kind": "namespace",
                     "name": "Namespace2.Namespace21.Namespace22",
                     "signature": "namespace Namespace2.Namespace21.Namespace22 {}",
                     "source": {
@@ -1392,7 +1392,7 @@ exports[`export-named-declarations > snapshot 1`] = `
                   {
                     "docs": [],
                     "id": "Namespace2.Namespace21.var2",
-                    "kind": "VariableDeclaration",
+                    "kind": "variable",
                     "name": "var2",
                     "signature": "const var2: string;",
                     "source": {
@@ -1408,7 +1408,7 @@ exports[`export-named-declarations > snapshot 1`] = `
               },
               "docs": [],
               "id": "Namespace2.Namespace21",
-              "kind": "NamespaceDeclaration",
+              "kind": "namespace",
               "name": "Namespace2.Namespace21",
               "signature": "namespace Namespace2.Namespace21 {}",
               "source": {
@@ -1426,7 +1426,7 @@ exports[`export-named-declarations > snapshot 1`] = `
                 "/** Var1 */",
               ],
               "id": "Namespace2.var1",
-              "kind": "VariableDeclaration",
+              "kind": "variable",
               "name": "var1",
               "signature": "const var1: number;",
               "source": {
@@ -1442,7 +1442,7 @@ exports[`export-named-declarations > snapshot 1`] = `
         },
         "docs": [],
         "id": "Namespace2",
-        "kind": "NamespaceDeclaration",
+        "kind": "namespace",
         "name": "Namespace2",
         "signature": "namespace Namespace2 {}",
         "source": {
@@ -1464,7 +1464,7 @@ exports[`export-named-declarations > snapshot 1`] = `
             {
               "docs": [],
               "id": "Namespace3.var1",
-              "kind": "VariableDeclaration",
+              "kind": "variable",
               "name": "var1",
               "signature": "const var1: number;",
               "source": {
@@ -1479,7 +1479,7 @@ exports[`export-named-declarations > snapshot 1`] = `
             {
               "docs": [],
               "id": "Namespace3.var2",
-              "kind": "VariableDeclaration",
+              "kind": "variable",
               "name": "var2",
               "signature": "const var2: string;",
               "source": {
@@ -1495,7 +1495,7 @@ exports[`export-named-declarations > snapshot 1`] = `
         },
         "docs": [],
         "id": "Namespace3",
-        "kind": "NamespaceDeclaration",
+        "kind": "namespace",
         "name": "Namespace3",
         "signature": "namespace Namespace3 {}",
         "source": {
@@ -1514,7 +1514,7 @@ exports[`export-named-declarations > snapshot 1`] = `
  */",
         ],
         "id": "TypeAlias1",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "TypeAlias1",
         "signature": "type TypeAlias1 = () => any;",
         "source": {
@@ -1527,7 +1527,7 @@ exports[`export-named-declarations > snapshot 1`] = `
       {
         "docs": [],
         "id": "TypeAlias2",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "TypeAlias2",
         "signature": "type TypeAlias2 = string;",
         "source": {
@@ -1540,7 +1540,7 @@ exports[`export-named-declarations > snapshot 1`] = `
       {
         "docs": [],
         "id": "TypeAlias3",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "TypeAlias3",
         "signature": "type TypeAlias3 = number | string;",
         "source": {
@@ -1559,7 +1559,7 @@ exports[`export-named-declarations > snapshot 1`] = `
  */",
         ],
         "id": "var1",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "var1",
         "signature": "const var1: string;",
         "source": {
@@ -1574,7 +1574,7 @@ exports[`export-named-declarations > snapshot 1`] = `
       {
         "docs": [],
         "id": "var2",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "var2",
         "signature": "let var2: number;",
         "source": {
@@ -1589,7 +1589,7 @@ exports[`export-named-declarations > snapshot 1`] = `
       {
         "docs": [],
         "id": "var3",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "var3",
         "signature": "var var3: (string | number)[];",
         "source": {
@@ -1604,7 +1604,7 @@ exports[`export-named-declarations > snapshot 1`] = `
       {
         "docs": [],
         "id": "var4",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "var4",
         "signature": "const var4: string;",
         "source": {
@@ -1619,7 +1619,7 @@ exports[`export-named-declarations > snapshot 1`] = `
       {
         "docs": [],
         "id": "var6",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "var6",
         "signature": "const var6: SomeType;",
         "source": {
@@ -1634,7 +1634,7 @@ exports[`export-named-declarations > snapshot 1`] = `
       {
         "docs": [],
         "id": "var7",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "var7",
         "signature": "let var7: string;",
         "source": {
@@ -1712,7 +1712,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
         ],
         "id": "Class001",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -1731,7 +1731,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
         "docs": [],
         "id": "Class002",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -1750,7 +1750,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
         "docs": [],
         "id": "Class003",
         "isAbstract": true,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -1769,7 +1769,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
         "docs": [],
         "id": "Class004",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -1788,7 +1788,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
         "docs": [],
         "id": "Class005",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -1807,7 +1807,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
         "docs": [],
         "id": "Class006",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -1826,7 +1826,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
         "docs": [],
         "id": "Class007",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -1849,7 +1849,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
               "/** Constructor */",
             ],
             "id": "Class008.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(foo: any, bar: any);",
             "source": {
@@ -1862,7 +1862,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
           {
             "docs": [],
             "id": "Class008.1-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(foo: string, bar: number);",
             "source": {
@@ -1876,7 +1876,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
         "docs": [],
         "id": "Class008",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -1895,7 +1895,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
           {
             "docs": [],
             "id": "Class009.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "protected constructor(foo: string, bar: number);",
             "source": {
@@ -1909,7 +1909,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
         "docs": [],
         "id": "Class009",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -1928,7 +1928,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
         "docs": [],
         "id": "Class010",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -1947,7 +1947,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
         "docs": [],
         "id": "Class011",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -1956,7 +1956,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
               ],
               "id": "Class011.bar",
               "isStatic": true,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "bar",
               "signature": "static bar: () => number;",
               "source": {
@@ -1975,7 +1975,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
               ],
               "id": "Class011.bat",
               "isStatic": true,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "bat",
               "signature": "static readonly bat: string;",
               "source": {
@@ -1992,7 +1992,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
               ],
               "id": "Class011.baz",
               "isStatic": true,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "baz",
               "signature": "static baz: number;",
               "source": {
@@ -2009,7 +2009,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
               ],
               "id": "Class011.foo",
               "isStatic": true,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "foo",
               "signature": "static readonly foo: string;",
               "source": {
@@ -2036,7 +2036,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
         "docs": [],
         "id": "Class012",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -2045,7 +2045,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
               ],
               "id": "Class012.bar",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "bar",
               "signature": "bar: () => number;",
               "source": {
@@ -2064,7 +2064,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
               ],
               "id": "Class012.bat",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "bat",
               "signature": "readonly bat: string;",
               "source": {
@@ -2081,7 +2081,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
               ],
               "id": "Class012.baz",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "baz",
               "signature": "baz: number;",
               "source": {
@@ -2098,7 +2098,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
               ],
               "id": "Class012.foo",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "foo",
               "signature": "readonly foo: string;",
               "source": {
@@ -2115,7 +2115,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
               ],
               "id": "Class012.foobar",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "foobar",
               "signature": "foobar?: string;",
               "source": {
@@ -2142,7 +2142,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
           {
             "docs": [],
             "id": "Class013.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(
     foo?: string,
@@ -2162,7 +2162,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
         "docs": [],
         "id": "Class013",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [
@@ -2172,7 +2172,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
               ],
               "id": "Class013.bar",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "bar",
               "signature": "protected readonly bar: string;",
               "source": {
@@ -2189,7 +2189,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
               ],
               "id": "Class013.foo",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "foo",
               "signature": "readonly foo: string;",
               "source": {
@@ -2216,7 +2216,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
         "docs": [],
         "id": "Class014",
         "isAbstract": true,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -2225,7 +2225,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
               ],
               "id": "Class014.baz",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "baz",
               "signature": "abstract baz: () => number;",
               "source": {
@@ -2244,7 +2244,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
               ],
               "id": "Class014.bar",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "bar",
               "signature": "protected abstract bar: string;",
               "source": {
@@ -2261,7 +2261,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
               ],
               "id": "Class014.foo",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "foo",
               "signature": "abstract foo: string;",
               "source": {
@@ -2288,7 +2288,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
         "docs": [],
         "id": "Class016",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -2312,12 +2312,12 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
         ],
         "id": "Enum1",
         "isConst": true,
-        "kind": "EnumDeclaration",
+        "kind": "enum",
         "members": [
           {
             "docs": [],
             "id": "Enum1.No",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "No",
             "signature": "No",
             "source": {
@@ -2333,7 +2333,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
               "/** Positive */",
             ],
             "id": "Enum1.Yes",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Yes",
             "signature": "Yes",
             "source": {
@@ -2361,12 +2361,12 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
         "docs": [],
         "id": "Enum2",
         "isConst": false,
-        "kind": "EnumDeclaration",
+        "kind": "enum",
         "members": [
           {
             "docs": [],
             "id": "Enum2.Ko",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Ko",
             "signature": "Ko",
             "source": {
@@ -2380,7 +2380,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
           {
             "docs": [],
             "id": "Enum2.Ok",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Ok",
             "signature": "Ok = 1",
             "source": {
@@ -2408,12 +2408,12 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
         "docs": [],
         "id": "Enum3",
         "isConst": false,
-        "kind": "EnumDeclaration",
+        "kind": "enum",
         "members": [
           {
             "docs": [],
             "id": "Enum3.A",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "A",
             "signature": "A = 'A'",
             "source": {
@@ -2427,7 +2427,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
           {
             "docs": [],
             "id": "Enum3.B",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "B",
             "signature": "B = 'B'",
             "source": {
@@ -2441,7 +2441,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
           {
             "docs": [],
             "id": "Enum3.C",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "C",
             "signature": "C = 'C'",
             "source": {
@@ -2470,7 +2470,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
         "docs": [],
         "id": "Enum4",
         "isConst": false,
-        "kind": "EnumDeclaration",
+        "kind": "enum",
         "members": [],
         "name": "Enum4",
         "signature": "enum Enum4 {}",
@@ -2485,12 +2485,12 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
         "docs": [],
         "id": "Enum6",
         "isConst": false,
-        "kind": "EnumDeclaration",
+        "kind": "enum",
         "members": [
           {
             "docs": [],
             "id": "Enum6.A",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "A",
             "signature": "A",
             "source": {
@@ -2524,7 +2524,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
  */",
         ],
         "id": "func1",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "func1",
         "signature": "func1: (a: number, b: number) => number;",
         "source": {
@@ -2544,7 +2544,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
  */",
         ],
         "id": "func2",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "func2",
         "signature": "func2: ({ a, b }: { a: number; b: number }) => number;",
         "source": {
@@ -2564,7 +2564,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
  */",
         ],
         "id": "func3",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "func3",
         "signature": "func3: ({ a, b }: { a: number; b: number }) => number;",
         "source": {
@@ -2582,7 +2582,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
  */",
         ],
         "id": "func4",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "func4",
         "signature": "func4: { (a: number): number; (a: string): string };",
         "source": {
@@ -2596,7 +2596,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
       {
         "docs": [],
         "id": "func5",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "func5",
         "signature": "func5: () => Promise<void>;",
         "source": {
@@ -2610,7 +2610,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
       {
         "docs": [],
         "id": "func8",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "func8",
         "signature": "func8: (a: string) => number;",
         "source": {
@@ -2630,7 +2630,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
  */",
         ],
         "id": "Interface001",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2642,7 +2642,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
               "id": "Interface001.x",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "x",
               "signature": "readonly x: number;",
               "source": {
@@ -2658,7 +2658,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
               "id": "Interface001.y",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "y",
               "signature": "readonly y: number;",
               "source": {
@@ -2683,7 +2683,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
       {
         "docs": [],
         "id": "Interface002",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2695,7 +2695,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
               "id": "Interface002.z",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "z",
               "signature": "z?: number;",
               "source": {
@@ -2720,7 +2720,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
       {
         "docs": [],
         "id": "Interface003",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2740,13 +2740,13 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
       {
         "docs": [],
         "id": "Interface004",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "Interface004.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(a: string): string;",
               "source": {
@@ -2774,7 +2774,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
       {
         "docs": [],
         "id": "Interface005",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2782,7 +2782,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
             {
               "docs": [],
               "id": "Interface005.0-index-signature",
-              "kind": "InterfaceIndexSignatureDeclaration",
+              "kind": "interfaceIndexSignature",
               "name": "index signature",
               "signature": "readonly [index: string]: number | string;",
               "source": {
@@ -2808,7 +2808,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
       {
         "docs": [],
         "id": "Interface006",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2817,7 +2817,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
             {
               "docs": [],
               "id": "Interface006.getAny",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "getAny",
               "signature": "getAny: () => any;",
               "source": {
@@ -2835,7 +2835,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
               "id": "Interface006.something",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "something",
               "signature": "something: any;",
               "source": {
@@ -2860,14 +2860,14 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
       {
         "docs": [],
         "id": "Interface007",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [
             {
               "docs": [],
               "id": "Interface007.0-construct-signature",
-              "kind": "InterfaceConstructSignatureDeclaration",
+              "kind": "interfaceConstructSignature",
               "name": "construct signature",
               "signature": "new (): Interface006;",
               "source": {
@@ -2894,7 +2894,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
       {
         "docs": [],
         "id": "Interface008",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2914,7 +2914,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
       {
         "docs": [],
         "id": "Interface009",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2936,7 +2936,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
       {
         "docs": [],
         "id": "Interface011",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2948,7 +2948,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
               "id": "Interface011.baz",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "baz",
               "signature": "baz: boolean;",
               "source": {
@@ -2964,7 +2964,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
               "id": "Interface011.foo",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "foo",
               "signature": "foo: string;",
               "source": {
@@ -2989,7 +2989,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
       {
         "docs": [],
         "id": "Interface012",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2998,7 +2998,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
             {
               "docs": [],
               "id": "Interface012.foo",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "foo",
               "signature": "foo: (a: number) => string;",
               "source": {
@@ -3039,7 +3039,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
  */",
         ],
         "id": "Namespace1",
-        "kind": "NamespaceDeclaration",
+        "kind": "namespace",
         "name": "Namespace1",
         "signature": "namespace Namespace1 {}",
         "source": {
@@ -3075,7 +3075,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
                     },
                     "docs": [],
                     "id": "Namespace2.Namespace21.Namespace22",
-                    "kind": "NamespaceDeclaration",
+                    "kind": "namespace",
                     "name": "Namespace2.Namespace21.Namespace22",
                     "signature": "namespace Namespace2.Namespace21.Namespace22 {}",
                     "source": {
@@ -3091,7 +3091,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
                   {
                     "docs": [],
                     "id": "Namespace2.Namespace21.var2",
-                    "kind": "VariableDeclaration",
+                    "kind": "variable",
                     "name": "var2",
                     "signature": "const var2: string;",
                     "source": {
@@ -3107,7 +3107,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
               },
               "docs": [],
               "id": "Namespace2.Namespace21",
-              "kind": "NamespaceDeclaration",
+              "kind": "namespace",
               "name": "Namespace2.Namespace21",
               "signature": "namespace Namespace2.Namespace21 {}",
               "source": {
@@ -3125,7 +3125,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
                 "/** Var1 */",
               ],
               "id": "Namespace2.var1",
-              "kind": "VariableDeclaration",
+              "kind": "variable",
               "name": "var1",
               "signature": "const var1: number;",
               "source": {
@@ -3141,7 +3141,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
         },
         "docs": [],
         "id": "Namespace2",
-        "kind": "NamespaceDeclaration",
+        "kind": "namespace",
         "name": "Namespace2",
         "signature": "namespace Namespace2 {}",
         "source": {
@@ -3163,7 +3163,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
             {
               "docs": [],
               "id": "Namespace3.var1",
-              "kind": "VariableDeclaration",
+              "kind": "variable",
               "name": "var1",
               "signature": "const var1: number;",
               "source": {
@@ -3178,7 +3178,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
             {
               "docs": [],
               "id": "Namespace3.var2",
-              "kind": "VariableDeclaration",
+              "kind": "variable",
               "name": "var2",
               "signature": "const var2: string;",
               "source": {
@@ -3194,7 +3194,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
         },
         "docs": [],
         "id": "Namespace3",
-        "kind": "NamespaceDeclaration",
+        "kind": "namespace",
         "name": "Namespace3",
         "signature": "namespace Namespace3 {}",
         "source": {
@@ -3213,7 +3213,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
  */",
         ],
         "id": "TypeAlias1",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "TypeAlias1",
         "signature": "type TypeAlias1 = () => any;",
         "source": {
@@ -3226,7 +3226,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
       {
         "docs": [],
         "id": "TypeAlias2",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "TypeAlias2",
         "signature": "type TypeAlias2 = string;",
         "source": {
@@ -3239,7 +3239,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
       {
         "docs": [],
         "id": "TypeAlias3",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "TypeAlias3",
         "signature": "type TypeAlias3 = number | string;",
         "source": {
@@ -3258,7 +3258,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
  */",
         ],
         "id": "var1",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "var1",
         "signature": "const var1: string;",
         "source": {
@@ -3273,7 +3273,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
       {
         "docs": [],
         "id": "var2",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "var2",
         "signature": "let var2: number;",
         "source": {
@@ -3288,7 +3288,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
       {
         "docs": [],
         "id": "var3",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "var3",
         "signature": "var var3: (string | number)[];",
         "source": {
@@ -3303,7 +3303,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
       {
         "docs": [],
         "id": "var4",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "var4",
         "signature": "const var4: string;",
         "source": {
@@ -3318,7 +3318,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
       {
         "docs": [],
         "id": "var6",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "var6",
         "signature": "const var6: SomeType;",
         "source": {
@@ -3333,7 +3333,7 @@ exports[`export-named-declarations with repository > snapshot 1`] = `
       {
         "docs": [],
         "id": "var7",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "var7",
         "signature": "let var7: string;",
         "source": {

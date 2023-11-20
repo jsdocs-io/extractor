@@ -22,7 +22,7 @@ exports[`export-all-as-namespace > snapshot 1`] = `
                 "/** Variable foo1 */",
               ],
               "id": "foo.foo1",
-              "kind": "VariableDeclaration",
+              "kind": "variable",
               "name": "foo1",
               "signature": "const foo1: string;",
               "source": {
@@ -42,7 +42,7 @@ exports[`export-all-as-namespace > snapshot 1`] = `
  */",
         ],
         "id": "foo",
-        "kind": "NamespaceDeclaration",
+        "kind": "namespace",
         "name": "foo",
         "signature": "module 'foo.d.ts' {}",
         "source": {

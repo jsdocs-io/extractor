@@ -21,7 +21,7 @@ exports[`verify-hcaptcha > 1.0.0 1`] = `
  */",
         ],
         "id": "rawVerifyHcaptchaToken",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "rawVerifyHcaptchaToken",
         "signature": "rawVerifyHcaptchaToken: ({
     token,
@@ -57,7 +57,7 @@ exports[`verify-hcaptcha > 1.0.0 1`] = `
  */",
         ],
         "id": "verifyHcaptchaToken",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "verifyHcaptchaToken",
         "signature": "verifyHcaptchaToken: ({
     token,
@@ -90,7 +90,7 @@ exports[`verify-hcaptcha > 1.0.0 1`] = `
  */",
         ],
         "id": "HcaptchaResponse",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -107,7 +107,7 @@ exports[`verify-hcaptcha > 1.0.0 1`] = `
               "id": "HcaptchaResponse.challengeTimestamp",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "challengeTimestamp",
               "signature": "readonly challengeTimestamp?: string;",
               "source": {
@@ -125,7 +125,7 @@ exports[`verify-hcaptcha > 1.0.0 1`] = `
               "id": "HcaptchaResponse.credit",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "credit",
               "signature": "readonly credit?: boolean;",
               "source": {
@@ -147,7 +147,7 @@ exports[`verify-hcaptcha > 1.0.0 1`] = `
               "id": "HcaptchaResponse.errorCodes",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "errorCodes",
               "signature": "readonly errorCodes?: HcaptchaError[];",
               "source": {
@@ -165,7 +165,7 @@ exports[`verify-hcaptcha > 1.0.0 1`] = `
               "id": "HcaptchaResponse.hostname",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "hostname",
               "signature": "readonly hostname?: string;",
               "source": {
@@ -183,7 +183,7 @@ exports[`verify-hcaptcha > 1.0.0 1`] = `
               "id": "HcaptchaResponse.score",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "score",
               "signature": "readonly score?: number;",
               "source": {
@@ -201,7 +201,7 @@ exports[`verify-hcaptcha > 1.0.0 1`] = `
               "id": "HcaptchaResponse.scoreReasons",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "scoreReasons",
               "signature": "readonly scoreReasons?: string[];",
               "source": {
@@ -222,7 +222,7 @@ exports[`verify-hcaptcha > 1.0.0 1`] = `
               "id": "HcaptchaResponse.success",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "success",
               "signature": "readonly success: boolean;",
               "source": {
@@ -255,7 +255,7 @@ exports[`verify-hcaptcha > 1.0.0 1`] = `
  */",
         ],
         "id": "RawHcaptchaResponse",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -267,7 +267,7 @@ exports[`verify-hcaptcha > 1.0.0 1`] = `
               "id": "RawHcaptchaResponse."error-codes"",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": ""error-codes"",
               "signature": "readonly 'error-codes'?: string[];",
               "source": {
@@ -283,7 +283,7 @@ exports[`verify-hcaptcha > 1.0.0 1`] = `
               "id": "RawHcaptchaResponse.challenge_ts",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "challenge_ts",
               "signature": "readonly challenge_ts?: string;",
               "source": {
@@ -299,7 +299,7 @@ exports[`verify-hcaptcha > 1.0.0 1`] = `
               "id": "RawHcaptchaResponse.credit",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "credit",
               "signature": "readonly credit?: boolean;",
               "source": {
@@ -315,7 +315,7 @@ exports[`verify-hcaptcha > 1.0.0 1`] = `
               "id": "RawHcaptchaResponse.hostname",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "hostname",
               "signature": "readonly hostname?: string;",
               "source": {
@@ -331,7 +331,7 @@ exports[`verify-hcaptcha > 1.0.0 1`] = `
               "id": "RawHcaptchaResponse.score",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "score",
               "signature": "readonly score?: number;",
               "source": {
@@ -347,7 +347,7 @@ exports[`verify-hcaptcha > 1.0.0 1`] = `
               "id": "RawHcaptchaResponse.score_reason",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "score_reason",
               "signature": "readonly score_reason?: string[];",
               "source": {
@@ -363,7 +363,7 @@ exports[`verify-hcaptcha > 1.0.0 1`] = `
               "id": "RawHcaptchaResponse.success",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "success",
               "signature": "readonly success: boolean;",
               "source": {
@@ -398,7 +398,7 @@ exports[`verify-hcaptcha > 1.0.0 1`] = `
  */",
         ],
         "id": "HcaptchaError",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "HcaptchaError",
         "signature": "type HcaptchaError =
     /** Secret key is missing */

@@ -1,6 +1,5 @@
 import { describe, expect, it } from 'vitest';
 import {
-    DeclarationKinds,
     isClassConstructorDeclaration,
     isClassDeclaration,
     isClassMethodDeclaration,
@@ -23,13 +22,13 @@ describe('isVariableDeclaration', () => {
     it('guards VariableDeclaration instances', () => {
         expect(
             isVariableDeclaration({
-                kind: DeclarationKinds.VariableDeclaration,
+                kind: 'variable',
             } as any)
         ).toBe(true);
 
         expect(
             isVariableDeclaration({
-                kind: DeclarationKinds.NamespaceDeclaration,
+                kind: 'namespace',
             } as any)
         ).toBe(false);
     });
@@ -39,13 +38,13 @@ describe('isFunctionDeclaration', () => {
     it('guards FunctionDeclaration instances', () => {
         expect(
             isFunctionDeclaration({
-                kind: DeclarationKinds.FunctionDeclaration,
+                kind: 'function',
             } as any)
         ).toBe(true);
 
         expect(
             isFunctionDeclaration({
-                kind: DeclarationKinds.NamespaceDeclaration,
+                kind: 'namespace',
             } as any)
         ).toBe(false);
     });
@@ -55,13 +54,13 @@ describe('isClassDeclaration', () => {
     it('guards ClassDeclaration instances', () => {
         expect(
             isClassDeclaration({
-                kind: DeclarationKinds.ClassDeclaration,
+                kind: 'class',
             } as any)
         ).toBe(true);
 
         expect(
             isClassDeclaration({
-                kind: DeclarationKinds.NamespaceDeclaration,
+                kind: 'namespace',
             } as any)
         ).toBe(false);
     });
@@ -71,13 +70,13 @@ describe('isClassConstructorDeclaration', () => {
     it('guards ClassConstructorDeclaration instances', () => {
         expect(
             isClassConstructorDeclaration({
-                kind: DeclarationKinds.ClassConstructorDeclaration,
+                kind: 'classConstructor',
             } as any)
         ).toBe(true);
 
         expect(
             isClassConstructorDeclaration({
-                kind: DeclarationKinds.NamespaceDeclaration,
+                kind: 'namespace',
             } as any)
         ).toBe(false);
     });
@@ -87,13 +86,13 @@ describe('isClassPropertyDeclaration', () => {
     it('guards ClassPropertyDeclaration instances', () => {
         expect(
             isClassPropertyDeclaration({
-                kind: DeclarationKinds.ClassPropertyDeclaration,
+                kind: 'classProperty',
             } as any)
         ).toBe(true);
 
         expect(
             isClassPropertyDeclaration({
-                kind: DeclarationKinds.NamespaceDeclaration,
+                kind: 'namespace',
             } as any)
         ).toBe(false);
     });
@@ -103,13 +102,13 @@ describe('isClassMethodDeclaration', () => {
     it('guards ClassMethodDeclaration instances', () => {
         expect(
             isClassMethodDeclaration({
-                kind: DeclarationKinds.ClassMethodDeclaration,
+                kind: 'classMethod',
             } as any)
         ).toBe(true);
 
         expect(
             isClassMethodDeclaration({
-                kind: DeclarationKinds.NamespaceDeclaration,
+                kind: 'namespace',
             } as any)
         ).toBe(false);
     });
@@ -119,13 +118,13 @@ describe('isInterfaceDeclaration', () => {
     it('guards InterfaceDeclaration instances', () => {
         expect(
             isInterfaceDeclaration({
-                kind: DeclarationKinds.InterfaceDeclaration,
+                kind: 'interface',
             } as any)
         ).toBe(true);
 
         expect(
             isInterfaceDeclaration({
-                kind: DeclarationKinds.NamespaceDeclaration,
+                kind: 'namespace',
             } as any)
         ).toBe(false);
     });
@@ -135,13 +134,13 @@ describe('isInterfacePropertyDeclaration', () => {
     it('guards InterfacePropertyDeclaration instances', () => {
         expect(
             isInterfacePropertyDeclaration({
-                kind: DeclarationKinds.InterfacePropertyDeclaration,
+                kind: 'interfaceProperty',
             } as any)
         ).toBe(true);
 
         expect(
             isInterfacePropertyDeclaration({
-                kind: DeclarationKinds.NamespaceDeclaration,
+                kind: 'namespace',
             } as any)
         ).toBe(false);
     });
@@ -151,13 +150,13 @@ describe('isInterfaceMethodDeclaration', () => {
     it('guards InterfaceMethodDeclaration instances', () => {
         expect(
             isInterfaceMethodDeclaration({
-                kind: DeclarationKinds.InterfaceMethodDeclaration,
+                kind: 'interfaceMethod',
             } as any)
         ).toBe(true);
 
         expect(
             isInterfaceMethodDeclaration({
-                kind: DeclarationKinds.NamespaceDeclaration,
+                kind: 'namespace',
             } as any)
         ).toBe(false);
     });
@@ -167,13 +166,13 @@ describe('isInterfaceConstructSignatureDeclaration', () => {
     it('guards InterfaceConstructSignatureDeclaration instances', () => {
         expect(
             isInterfaceConstructSignatureDeclaration({
-                kind: DeclarationKinds.InterfaceConstructSignatureDeclaration,
+                kind: 'interfaceConstructSignature',
             } as any)
         ).toBe(true);
 
         expect(
             isVariableDeclaration({
-                kind: DeclarationKinds.NamespaceDeclaration,
+                kind: 'namespace',
             } as any)
         ).toBe(false);
     });
@@ -183,13 +182,13 @@ describe('isInterfaceCallSignatureDeclaration', () => {
     it('guards InterfaceCallSignatureDeclaration instances', () => {
         expect(
             isInterfaceCallSignatureDeclaration({
-                kind: DeclarationKinds.InterfaceCallSignatureDeclaration,
+                kind: 'interfaceCallSignature',
             } as any)
         ).toBe(true);
 
         expect(
             isInterfaceCallSignatureDeclaration({
-                kind: DeclarationKinds.NamespaceDeclaration,
+                kind: 'namespace',
             } as any)
         ).toBe(false);
     });
@@ -199,13 +198,13 @@ describe('isInterfaceIndexSignatureDeclaration', () => {
     it('guards InterfaceIndexSignatureDeclaration instances', () => {
         expect(
             isInterfaceIndexSignatureDeclaration({
-                kind: DeclarationKinds.InterfaceIndexSignatureDeclaration,
+                kind: 'interfaceIndexSignature',
             } as any)
         ).toBe(true);
 
         expect(
             isInterfaceIndexSignatureDeclaration({
-                kind: DeclarationKinds.NamespaceDeclaration,
+                kind: 'namespace',
             } as any)
         ).toBe(false);
     });
@@ -215,13 +214,13 @@ describe('isEnumDeclaration', () => {
     it('guards EnumDeclaration instances', () => {
         expect(
             isEnumDeclaration({
-                kind: DeclarationKinds.EnumDeclaration,
+                kind: 'enum',
             } as any)
         ).toBe(true);
 
         expect(
             isEnumDeclaration({
-                kind: DeclarationKinds.NamespaceDeclaration,
+                kind: 'namespace',
             } as any)
         ).toBe(false);
     });
@@ -231,13 +230,13 @@ describe('isEnumMemberDeclaration', () => {
     it('guards EnumMemberDeclaration instances', () => {
         expect(
             isEnumMemberDeclaration({
-                kind: DeclarationKinds.EnumMemberDeclaration,
+                kind: 'enumMember',
             } as any)
         ).toBe(true);
 
         expect(
             isEnumMemberDeclaration({
-                kind: DeclarationKinds.NamespaceDeclaration,
+                kind: 'namespace',
             } as any)
         ).toBe(false);
     });
@@ -247,13 +246,13 @@ describe('isTypeAliasDeclaration', () => {
     it('guards TypeAliasDeclaration instances', () => {
         expect(
             isTypeAliasDeclaration({
-                kind: DeclarationKinds.TypeAliasDeclaration,
+                kind: 'typeAlias',
             } as any)
         ).toBe(true);
 
         expect(
             isTypeAliasDeclaration({
-                kind: DeclarationKinds.NamespaceDeclaration,
+                kind: 'namespace',
             } as any)
         ).toBe(false);
     });
@@ -263,13 +262,13 @@ describe('isNamespaceDeclaration', () => {
     it('guards NamespaceDeclaration instances', () => {
         expect(
             isNamespaceDeclaration({
-                kind: DeclarationKinds.NamespaceDeclaration,
+                kind: 'namespace',
             } as any)
         ).toBe(true);
 
         expect(
             isNamespaceDeclaration({
-                kind: DeclarationKinds.VariableDeclaration,
+                kind: 'variable',
             } as any)
         ).toBe(false);
     });

@@ -15,7 +15,7 @@ exports[`enttec-open-dmx-usb > 2.0.0 1`] = `
      */",
             ],
             "id": "EnttecOpenDMXUSBDevice.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(path: string, startSending?: boolean);",
             "source": {
@@ -29,7 +29,7 @@ exports[`enttec-open-dmx-usb > 2.0.0 1`] = `
         "docs": [],
         "id": "EnttecOpenDMXUSBDevice",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -42,7 +42,7 @@ exports[`enttec-open-dmx-usb > 2.0.0 1`] = `
               ],
               "id": "EnttecOpenDMXUSBDevice.getFirstAvailableDevice",
               "isStatic": true,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "getFirstAvailableDevice",
               "signature": "static getFirstAvailableDevice: () => Promise<string>;",
               "source": {
@@ -62,7 +62,7 @@ exports[`enttec-open-dmx-usb > 2.0.0 1`] = `
               ],
               "id": "EnttecOpenDMXUSBDevice.listDevices",
               "isStatic": true,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "listDevices",
               "signature": "static listDevices: () => Promise<string[]>;",
               "source": {
@@ -85,7 +85,7 @@ exports[`enttec-open-dmx-usb > 2.0.0 1`] = `
               ],
               "id": "EnttecOpenDMXUSBDevice.setChannels",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "setChannels",
               "signature": "setChannels: (channels: any, clear?: boolean) => void;",
               "source": {
@@ -106,7 +106,7 @@ exports[`enttec-open-dmx-usb > 2.0.0 1`] = `
               ],
               "id": "EnttecOpenDMXUSBDevice.startSending",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "startSending",
               "signature": "startSending: (interval?: number) => void;",
               "source": {
@@ -125,7 +125,7 @@ exports[`enttec-open-dmx-usb > 2.0.0 1`] = `
               ],
               "id": "EnttecOpenDMXUSBDevice.stopSending",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "stopSending",
               "signature": "stopSending: () => void;",
               "source": {
@@ -158,7 +158,7 @@ exports[`enttec-open-dmx-usb > 2.0.0 1`] = `
       {
         "docs": [],
         "id": "PRODUCT_ID",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "PRODUCT_ID",
         "signature": "const PRODUCT_ID: string;",
         "source": {
@@ -173,7 +173,7 @@ exports[`enttec-open-dmx-usb > 2.0.0 1`] = `
       {
         "docs": [],
         "id": "VENDOR_ID",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "VENDOR_ID",
         "signature": "const VENDOR_ID: string;",
         "source": {

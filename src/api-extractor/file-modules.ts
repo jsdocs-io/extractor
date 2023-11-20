@@ -1,6 +1,5 @@
 import * as tsm from 'ts-morph';
 import {
-    DeclarationKinds,
     ModuleDeclarations,
     NamespaceDeclaration,
 } from '../types/module-declarations';
@@ -27,13 +26,12 @@ export function newFileModule({
     declarations: ModuleDeclarations;
     getSource: SourceProvider;
 }): NamespaceDeclaration {
-    const kind = DeclarationKinds.NamespaceDeclaration;
     const docs = getFileModuleDocs({ declaration });
     const source = getSource({ declaration });
     const signature = getFileModuleSignature({ declaration });
 
     return {
-        kind,
+        kind: 'namespace',
         id,
         name,
         docs,

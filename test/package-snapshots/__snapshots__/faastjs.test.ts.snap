@@ -15,7 +15,7 @@ exports[`faastjs > 5.3.8 1`] = `
         ],
         "id": "CostMetric",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -27,7 +27,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "CostMetric.cost",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "cost",
               "signature": "cost: () => number;",
               "source": {
@@ -47,7 +47,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "CostMetric.describeCostOnly",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "describeCostOnly",
               "signature": "describeCostOnly: () => string;",
               "source": {
@@ -64,7 +64,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "CostMetric.toString",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "toString",
               "signature": "toString: () => string;",
               "source": {
@@ -86,7 +86,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "CostMetric.comment",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "comment",
               "signature": "readonly comment?: string;",
               "source": {
@@ -106,7 +106,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "CostMetric.informationalOnly",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "informationalOnly",
               "signature": "readonly informationalOnly?: boolean;",
               "source": {
@@ -123,7 +123,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "CostMetric.measured",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "measured",
               "signature": "readonly measured: number;",
               "source": {
@@ -140,7 +140,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "CostMetric.name",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "name",
               "signature": "readonly name: string;",
               "source": {
@@ -157,7 +157,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "CostMetric.pricing",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "pricing",
               "signature": "readonly pricing: number;",
               "source": {
@@ -174,7 +174,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "CostMetric.unit",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "unit",
               "signature": "readonly unit: string;",
               "source": {
@@ -195,7 +195,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "CostMetric.unitPlural",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "unitPlural",
               "signature": "readonly unitPlural?: string;",
               "source": {
@@ -325,7 +325,7 @@ exports[`faastjs > 5.3.8 1`] = `
         ],
         "id": "CostSnapshot",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -349,7 +349,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "CostSnapshot.csv",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "csv",
               "signature": "csv: () => string;",
               "source": {
@@ -369,7 +369,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "CostSnapshot.find",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "find",
               "signature": "find: (name: string) => CostMetric | undefined;",
               "source": {
@@ -386,7 +386,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "CostSnapshot.toString",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "toString",
               "signature": "toString: () => string;",
               "source": {
@@ -403,7 +403,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "CostSnapshot.total",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "total",
               "signature": "total: () => number;",
               "source": {
@@ -425,7 +425,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "CostSnapshot.costMetrics",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "costMetrics",
               "signature": "readonly costMetrics: CostMetric[];",
               "source": {
@@ -445,7 +445,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "CostSnapshot.options",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "options",
               "signature": "readonly options: CommonOptions | AwsOptions | GoogleOptions;",
               "source": {
@@ -462,7 +462,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "CostSnapshot.provider",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "provider",
               "signature": "readonly provider: string;",
               "source": {
@@ -479,7 +479,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "CostSnapshot.stats",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "stats",
               "signature": "readonly stats: FunctionStats;",
               "source": {
@@ -541,7 +541,7 @@ exports[`faastjs > 5.3.8 1`] = `
         ],
         "id": "FaastError",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -574,7 +574,7 @@ exports[`faastjs > 5.3.8 1`] = `
         ],
         "id": "FaastModuleProxy",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -583,7 +583,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FaastModuleProxy.cleanup",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "cleanup",
               "signature": "cleanup: (userCleanupOptions?: CleanupOptions) => Promise<void>;",
               "source": {
@@ -600,7 +600,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FaastModuleProxy.costSnapshot",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "costSnapshot",
               "signature": "costSnapshot: () => Promise<CostSnapshot>;",
               "source": {
@@ -617,7 +617,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FaastModuleProxy.logUrl",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "logUrl",
               "signature": "logUrl: () => string;",
               "source": {
@@ -634,7 +634,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FaastModuleProxy.off",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "off",
               "signature": "off: (name: 'stats', listener: (statsEvent: FunctionStatsEvent) => void) => void;",
               "source": {
@@ -651,7 +651,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FaastModuleProxy.on",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "on",
               "signature": "on: (name: 'stats', listener: (statsEvent: FunctionStatsEvent) => void) => void;",
               "source": {
@@ -668,7 +668,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FaastModuleProxy.stats",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "stats",
               "signature": "stats: (functionName?: string) => FunctionStats;",
               "source": {
@@ -687,7 +687,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FaastModuleProxy.functions",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "functions",
               "signature": "functions: ProxyModule<M>;",
               "source": {
@@ -704,7 +704,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FaastModuleProxy.functionsDetail",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "functionsDetail",
               "signature": "functionsDetail: ProxyModuleDetail<M>;",
               "source": {
@@ -721,7 +721,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FaastModuleProxy.options",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "options",
               "signature": "readonly options: Required<CommonOptions>;",
               "source": {
@@ -738,7 +738,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FaastModuleProxy.provider",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "provider",
               "signature": "provider: Provider;",
               "source": {
@@ -807,7 +807,7 @@ exports[`faastjs > 5.3.8 1`] = `
         ],
         "id": "FunctionStats",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -821,7 +821,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FunctionStats.toString",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "toString",
               "signature": "toString: () => string;",
               "source": {
@@ -842,7 +842,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FunctionStats.completed",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "completed",
               "signature": "completed: number;",
               "source": {
@@ -863,7 +863,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FunctionStats.errors",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "errors",
               "signature": "errors: number;",
               "source": {
@@ -884,7 +884,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FunctionStats.estimatedBilledTime",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "estimatedBilledTime",
               "signature": "estimatedBilledTime: Statistics;",
               "source": {
@@ -906,7 +906,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FunctionStats.executionTime",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "executionTime",
               "signature": "executionTime: Statistics;",
               "source": {
@@ -926,7 +926,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FunctionStats.invocations",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "invocations",
               "signature": "invocations: number;",
               "source": {
@@ -946,7 +946,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FunctionStats.localStartLatency",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "localStartLatency",
               "signature": "localStartLatency: Statistics;",
               "source": {
@@ -971,7 +971,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FunctionStats.remoteStartLatency",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "remoteStartLatency",
               "signature": "remoteStartLatency: Statistics;",
               "source": {
@@ -992,7 +992,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FunctionStats.retries",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "retries",
               "signature": "retries: number;",
               "source": {
@@ -1016,7 +1016,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FunctionStats.returnLatency",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "returnLatency",
               "signature": "returnLatency: Statistics;",
               "source": {
@@ -1036,7 +1036,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FunctionStats.sendResponseLatency",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "sendResponseLatency",
               "signature": "sendResponseLatency: Statistics;",
               "source": {
@@ -1068,7 +1068,7 @@ exports[`faastjs > 5.3.8 1`] = `
         ],
         "id": "FunctionStatsEvent",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -1083,7 +1083,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FunctionStatsEvent.toString",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "toString",
               "signature": "toString: () => string;",
               "source": {
@@ -1102,7 +1102,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FunctionStatsEvent.fn",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "fn",
               "signature": "readonly fn: string;",
               "source": {
@@ -1119,7 +1119,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "FunctionStatsEvent.stats",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "stats",
               "signature": "readonly stats: FunctionStats;",
               "source": {
@@ -1156,7 +1156,7 @@ exports[`faastjs > 5.3.8 1`] = `
      */",
             ],
             "id": "PersistentCache.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(dirRelativeToHomeDir: string, expiration?: number);",
             "source": {
@@ -1187,7 +1187,7 @@ exports[`faastjs > 5.3.8 1`] = `
         ],
         "id": "PersistentCache",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -1201,7 +1201,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "PersistentCache.clear",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "clear",
               "signature": "clear: ({
     leaveEmptyDir,
@@ -1224,7 +1224,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "PersistentCache.entries",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "entries",
               "signature": "entries: () => Promise<string[]>;",
               "source": {
@@ -1244,7 +1244,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "PersistentCache.get",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "get",
               "signature": "get: (key: string) => Promise<Buffer | undefined>;",
               "source": {
@@ -1264,7 +1264,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "PersistentCache.set",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "set",
               "signature": "set: (
     key: string,
@@ -1288,7 +1288,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "PersistentCache.dir",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "dir",
               "signature": "readonly dir: string;",
               "source": {
@@ -1309,7 +1309,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "PersistentCache.dirRelativeToHomeDir",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "dirRelativeToHomeDir",
               "signature": "readonly dirRelativeToHomeDir: string;",
               "source": {
@@ -1329,7 +1329,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "PersistentCache.expiration",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "expiration",
               "signature": "readonly expiration: number;",
               "source": {
@@ -1362,7 +1362,7 @@ exports[`faastjs > 5.3.8 1`] = `
      */",
             ],
             "id": "Statistics.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(printFixedPrecision?: number);",
             "source": {
@@ -1381,7 +1381,7 @@ exports[`faastjs > 5.3.8 1`] = `
         ],
         "id": "Statistics",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -1393,7 +1393,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "Statistics.toString",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "toString",
               "signature": "toString: () => string;",
               "source": {
@@ -1412,7 +1412,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "Statistics.update",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "update",
               "signature": "update: (value: number | undefined) => void;",
               "source": {
@@ -1431,7 +1431,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "Statistics.max",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "max",
               "signature": "max: number;",
               "source": {
@@ -1448,7 +1448,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "Statistics.mean",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "mean",
               "signature": "mean: number;",
               "source": {
@@ -1465,7 +1465,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "Statistics.min",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "min",
               "signature": "min: number;",
               "source": {
@@ -1482,7 +1482,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "Statistics.printFixedPrecision",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "printFixedPrecision",
               "signature": "protected printFixedPrecision: number;",
               "source": {
@@ -1499,7 +1499,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "Statistics.samples",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "samples",
               "signature": "samples: number;",
               "source": {
@@ -1516,7 +1516,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "Statistics.stdev",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "stdev",
               "signature": "stdev: number;",
               "source": {
@@ -1533,7 +1533,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "Statistics.variance",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "variance",
               "signature": "variance: number;",
               "source": {
@@ -1568,14 +1568,14 @@ exports[`faastjs > 5.3.8 1`] = `
         ],
         "id": "FaastErrorNames",
         "isConst": false,
-        "kind": "EnumDeclaration",
+        "kind": "enum",
         "members": [
           {
             "docs": [
               "/** The function invocation was cancelled by user request. */",
             ],
             "id": "FaastErrorNames.ECANCEL",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "ECANCEL",
             "signature": "ECANCEL = 'FaastCancelError'",
             "source": {
@@ -1591,7 +1591,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "/** Could not create the remote cloud function or supporting infrastructure. */",
             ],
             "id": "FaastErrorNames.ECREATE",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "ECREATE",
             "signature": "ECREATE = 'FaastCreateFunctionError'",
             "source": {
@@ -1607,7 +1607,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "/** The exception was thrown by user's remote code, not by faast.js or the cloud provider. */",
             ],
             "id": "FaastErrorNames.EEXCEPTION",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "EEXCEPTION",
             "signature": "EEXCEPTION = 'UserException'",
             "source": {
@@ -1623,7 +1623,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "/** Generic error. See {@link FaastError}. */",
             ],
             "id": "FaastErrorNames.EGENERIC",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "EGENERIC",
             "signature": "EGENERIC = 'VError'",
             "source": {
@@ -1639,7 +1639,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "/** The remote cloud function exceeded memory limits. */",
             ],
             "id": "FaastErrorNames.EMEMORY",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "EMEMORY",
             "signature": "EMEMORY = 'FaastOutOfMemoryError'",
             "source": {
@@ -1655,7 +1655,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "/** The arguments passed to the cloud function could not be serialized without losing information.  */",
             ],
             "id": "FaastErrorNames.ESERIALIZE",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "ESERIALIZE",
             "signature": "ESERIALIZE = 'FaastSerializationError'",
             "source": {
@@ -1671,7 +1671,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "/** The remote cloud function timed out. */",
             ],
             "id": "FaastErrorNames.ETIMEOUT",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "ETIMEOUT",
             "signature": "ETIMEOUT = 'FaastTimeoutError'",
             "source": {
@@ -1730,7 +1730,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "faast",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "faast",
         "signature": "faast: <M extends object>(
     provider: Provider,
@@ -1757,7 +1757,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "faastAws",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "faastAws",
         "signature": "faastAws: <M extends object>(
     fmodule: M,
@@ -1783,7 +1783,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "faastGoogle",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "faastGoogle",
         "signature": "faastGoogle: <M extends object>(
     fmodule: M,
@@ -1810,7 +1810,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "faastLocal",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "faastLocal",
         "signature": "faastLocal: <M extends object>(
     fmodule: M,
@@ -1898,7 +1898,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "throttle",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "throttle",
         "signature": "throttle: <A extends any[], R>(
     limits: Limits,
@@ -1922,7 +1922,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "AwsOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1952,7 +1952,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "AwsOptions.awsConfig",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "awsConfig",
               "signature": "awsConfig?: ConfigurationOptions;",
               "source": {
@@ -1991,7 +1991,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "AwsOptions.awsLambdaOptions",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "awsLambdaOptions",
               "signature": "awsLambdaOptions?: Partial<Lambda.CreateFunctionRequest>;",
               "source": {
@@ -2012,7 +2012,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "AwsOptions.region",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "region",
               "signature": "region?: AwsRegion;",
               "source": {
@@ -2086,7 +2086,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "AwsOptions.RoleName",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "RoleName",
               "signature": "RoleName?: string;",
               "source": {
@@ -2116,7 +2116,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "CleanupOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2143,7 +2143,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "CleanupOptions.deleteCaches",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "deleteCaches",
               "signature": "deleteCaches?: boolean;",
               "source": {
@@ -2173,7 +2173,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "CleanupOptions.deleteResources",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "deleteResources",
               "signature": "deleteResources?: boolean;",
               "source": {
@@ -2206,7 +2206,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "CommonOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2241,7 +2241,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "CommonOptions.childProcess",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "childProcess",
               "signature": "childProcess?: boolean;",
               "source": {
@@ -2267,7 +2267,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "CommonOptions.concurrency",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "concurrency",
               "signature": "concurrency?: number;",
               "source": {
@@ -2288,7 +2288,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "CommonOptions.description",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "description",
               "signature": "description?: string;",
               "source": {
@@ -2309,7 +2309,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "CommonOptions.env",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "env",
               "signature": "env?: {
     [key: string]: string;
@@ -2334,7 +2334,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "CommonOptions.exclude",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "exclude",
               "signature": "exclude?: string[];",
               "source": {
@@ -2378,7 +2378,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "CommonOptions.gc",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "gc",
               "signature": "gc?: 'auto' | 'force' | 'off';",
               "source": {
@@ -2412,7 +2412,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "CommonOptions.include",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "include",
               "signature": "include?: (string | IncludeOption)[];",
               "source": {
@@ -2440,7 +2440,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "CommonOptions.maxRetries",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "maxRetries",
               "signature": "maxRetries?: number;",
               "source": {
@@ -2471,7 +2471,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "CommonOptions.memorySize",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "memorySize",
               "signature": "memorySize?: number;",
               "source": {
@@ -2522,7 +2522,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "CommonOptions.mode",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "mode",
               "signature": "mode?: 'https' | 'queue' | 'auto';",
               "source": {
@@ -2580,7 +2580,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "CommonOptions.packageJson",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "packageJson",
               "signature": "packageJson?: string | object;",
               "source": {
@@ -2605,7 +2605,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "CommonOptions.rate",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "rate",
               "signature": "rate?: number;",
               "source": {
@@ -2654,7 +2654,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "CommonOptions.retentionInDays",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "retentionInDays",
               "signature": "retentionInDays?: number;",
               "source": {
@@ -2689,7 +2689,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "CommonOptions.speculativeRetryThreshold",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "speculativeRetryThreshold",
               "signature": "speculativeRetryThreshold?: number;",
               "source": {
@@ -2730,7 +2730,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "CommonOptions.timeout",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "timeout",
               "signature": "timeout?: number;",
               "source": {
@@ -2764,7 +2764,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "CommonOptions.useDependencyCaching",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "useDependencyCaching",
               "signature": "useDependencyCaching?: boolean;",
               "source": {
@@ -2809,7 +2809,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "CommonOptions.validateSerialization",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "validateSerialization",
               "signature": "validateSerialization?: boolean;",
               "source": {
@@ -2869,7 +2869,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "CommonOptions.webpackOptions",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "webpackOptions",
               "signature": "webpackOptions?: webpack.Configuration;",
               "source": {
@@ -2899,7 +2899,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "Detail",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2919,7 +2919,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "Detail.executionId",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "executionId",
               "signature": "executionId?: string;",
               "source": {
@@ -2944,7 +2944,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "Detail.instanceId",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "instanceId",
               "signature": "instanceId?: string;",
               "source": {
@@ -2969,7 +2969,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "Detail.logUrl",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "logUrl",
               "signature": "logUrl?: string;",
               "source": {
@@ -2989,7 +2989,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "Detail.value",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "value",
               "signature": "value: R;",
               "source": {
@@ -3020,7 +3020,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "FaastModule",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3081,7 +3081,7 @@ exports[`faastjs > 5.3.8 1`] = `
      */",
               ],
               "id": "FaastModule.cleanup",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "cleanup",
               "signature": "cleanup: (options?: CleanupOptions) => Promise<void>;",
               "source": {
@@ -3121,7 +3121,7 @@ exports[`faastjs > 5.3.8 1`] = `
      */",
               ],
               "id": "FaastModule.costSnapshot",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "costSnapshot",
               "signature": "costSnapshot: () => Promise<CostSnapshot>;",
               "source": {
@@ -3147,7 +3147,7 @@ exports[`faastjs > 5.3.8 1`] = `
      */",
               ],
               "id": "FaastModule.logUrl",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "logUrl",
               "signature": "logUrl: () => string;",
               "source": {
@@ -3169,7 +3169,7 @@ exports[`faastjs > 5.3.8 1`] = `
      */",
               ],
               "id": "FaastModule.off",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "off",
               "signature": "off: (name: 'stats', listener: (statsEvent: FunctionStatsEvent) => void) => void;",
               "source": {
@@ -3195,7 +3195,7 @@ exports[`faastjs > 5.3.8 1`] = `
      */",
               ],
               "id": "FaastModule.on",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "on",
               "signature": "on: (name: 'stats', listener: (statsEvent: FunctionStatsEvent) => void) => void;",
               "source": {
@@ -3220,7 +3220,7 @@ exports[`faastjs > 5.3.8 1`] = `
      */",
               ],
               "id": "FaastModule.stats",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "stats",
               "signature": "stats: (functionName?: string) => FunctionStats;",
               "source": {
@@ -3289,7 +3289,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "FaastModule.functions",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "functions",
               "signature": "functions: ProxyModule<M>;",
               "source": {
@@ -3315,7 +3315,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "FaastModule.functionsDetail",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "functionsDetail",
               "signature": "functionsDetail: ProxyModuleDetail<M>;",
               "source": {
@@ -3333,7 +3333,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "FaastModule.provider",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "provider",
               "signature": "provider: Provider;",
               "source": {
@@ -3363,7 +3363,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "GoogleOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3397,7 +3397,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "GoogleOptions.googleCloudFunctionOptions",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "googleCloudFunctionOptions",
               "signature": "googleCloudFunctionOptions?: cloudfunctions_v1.Schema$CloudFunction;",
               "source": {
@@ -3418,7 +3418,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "GoogleOptions.region",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "region",
               "signature": "region?: GoogleRegion;",
               "source": {
@@ -3448,7 +3448,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "IncludeOption",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3467,7 +3467,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "IncludeOption.cwd",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "cwd",
               "signature": "cwd?: string;",
               "source": {
@@ -3487,7 +3487,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "IncludeOption.path",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "path",
               "signature": "path: string;",
               "source": {
@@ -3518,7 +3518,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "Limits",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3540,7 +3540,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "Limits.burst",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "burst",
               "signature": "burst?: number;",
               "source": {
@@ -3567,7 +3567,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "Limits.cache",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "cache",
               "signature": "cache?: PersistentCache;",
               "source": {
@@ -3589,7 +3589,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "Limits.concurrency",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "concurrency",
               "signature": "concurrency: number;",
               "source": {
@@ -3619,7 +3619,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "Limits.memoize",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "memoize",
               "signature": "memoize?: boolean;",
               "source": {
@@ -3640,7 +3640,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "Limits.rate",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "rate",
               "signature": "rate?: number;",
               "source": {
@@ -3667,7 +3667,7 @@ exports[`faastjs > 5.3.8 1`] = `
               "id": "Limits.retry",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "retry",
               "signature": "retry?: number | ((err: any, retries: number) => boolean);",
               "source": {
@@ -3698,7 +3698,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "LocalOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3733,7 +3733,7 @@ exports[`faastjs > 5.3.8 1`] = `
               ],
               "id": "CostAnalyzer.Result",
               "isAbstract": false,
-              "kind": "ClassDeclaration",
+              "kind": "class",
               "members": {
                 "methods": [
                   {
@@ -3773,7 +3773,7 @@ exports[`faastjs > 5.3.8 1`] = `
                     ],
                     "id": "CostAnalyzer.Result.csv",
                     "isStatic": false,
-                    "kind": "ClassMethodDeclaration",
+                    "kind": "classMethod",
                     "name": "csv",
                     "signature": "csv: () => string;",
                     "source": {
@@ -3795,7 +3795,7 @@ exports[`faastjs > 5.3.8 1`] = `
                     ],
                     "id": "CostAnalyzer.Result.estimates",
                     "isStatic": false,
-                    "kind": "ClassPropertyDeclaration",
+                    "kind": "classProperty",
                     "name": "estimates",
                     "signature": "readonly estimates: Estimate<A>[];",
                     "source": {
@@ -3812,7 +3812,7 @@ exports[`faastjs > 5.3.8 1`] = `
                     ],
                     "id": "CostAnalyzer.Result.workload",
                     "isStatic": false,
-                    "kind": "ClassPropertyDeclaration",
+                    "kind": "classProperty",
                     "name": "workload",
                     "signature": "readonly workload: Required<Workload<T, A>>;",
                     "source": {
@@ -3938,7 +3938,7 @@ exports[`faastjs > 5.3.8 1`] = `
      */",
               ],
               "id": "CostAnalyzer.analyze",
-              "kind": "FunctionDeclaration",
+              "kind": "function",
               "name": "analyze",
               "signature": "analyze: <T extends object, A extends string>(
     userWorkload: Workload<T, A>
@@ -3961,7 +3961,7 @@ exports[`faastjs > 5.3.8 1`] = `
      */",
               ],
               "id": "CostAnalyzer.Estimate",
-              "kind": "InterfaceDeclaration",
+              "kind": "interface",
               "members": {
                 "callSignatures": [],
                 "constructSignatures": [],
@@ -3978,7 +3978,7 @@ exports[`faastjs > 5.3.8 1`] = `
                     "id": "CostAnalyzer.Estimate.config",
                     "isOptional": false,
                     "isReadonly": false,
-                    "kind": "InterfacePropertyDeclaration",
+                    "kind": "interfaceProperty",
                     "name": "config",
                     "signature": "config: Configuration;",
                     "source": {
@@ -3999,7 +3999,7 @@ exports[`faastjs > 5.3.8 1`] = `
                     "id": "CostAnalyzer.Estimate.costSnapshot",
                     "isOptional": false,
                     "isReadonly": false,
-                    "kind": "InterfacePropertyDeclaration",
+                    "kind": "interfaceProperty",
                     "name": "costSnapshot",
                     "signature": "costSnapshot: CostSnapshot;",
                     "source": {
@@ -4020,7 +4020,7 @@ exports[`faastjs > 5.3.8 1`] = `
                     "id": "CostAnalyzer.Estimate.extraMetrics",
                     "isOptional": false,
                     "isReadonly": false,
-                    "kind": "InterfacePropertyDeclaration",
+                    "kind": "interfaceProperty",
                     "name": "extraMetrics",
                     "signature": "extraMetrics: WorkloadAttribute<A>;",
                     "source": {
@@ -4051,7 +4051,7 @@ exports[`faastjs > 5.3.8 1`] = `
      */",
               ],
               "id": "CostAnalyzer.Workload",
-              "kind": "InterfaceDeclaration",
+              "kind": "interface",
               "members": {
                 "callSignatures": [],
                 "constructSignatures": [],
@@ -4071,7 +4071,7 @@ exports[`faastjs > 5.3.8 1`] = `
                     "id": "CostAnalyzer.Workload.concurrency",
                     "isOptional": true,
                     "isReadonly": false,
-                    "kind": "InterfacePropertyDeclaration",
+                    "kind": "interfaceProperty",
                     "name": "concurrency",
                     "signature": "concurrency?: number;",
                     "source": {
@@ -4094,7 +4094,7 @@ exports[`faastjs > 5.3.8 1`] = `
                     "id": "CostAnalyzer.Workload.configurations",
                     "isOptional": true,
                     "isReadonly": false,
-                    "kind": "InterfacePropertyDeclaration",
+                    "kind": "interfaceProperty",
                     "name": "configurations",
                     "signature": "configurations?: Configuration[];",
                     "source": {
@@ -4117,7 +4117,7 @@ exports[`faastjs > 5.3.8 1`] = `
                     "id": "CostAnalyzer.Workload.format",
                     "isOptional": true,
                     "isReadonly": false,
-                    "kind": "InterfacePropertyDeclaration",
+                    "kind": "interfaceProperty",
                     "name": "format",
                     "signature": "format?: (attr: A, value: number) => string;",
                     "source": {
@@ -4138,7 +4138,7 @@ exports[`faastjs > 5.3.8 1`] = `
                     "id": "CostAnalyzer.Workload.formatCSV",
                     "isOptional": true,
                     "isReadonly": false,
-                    "kind": "InterfacePropertyDeclaration",
+                    "kind": "interfaceProperty",
                     "name": "formatCSV",
                     "signature": "formatCSV?: (attr: A, value: number) => string;",
                     "source": {
@@ -4158,7 +4158,7 @@ exports[`faastjs > 5.3.8 1`] = `
                     "id": "CostAnalyzer.Workload.funcs",
                     "isOptional": false,
                     "isReadonly": false,
-                    "kind": "InterfacePropertyDeclaration",
+                    "kind": "interfaceProperty",
                     "name": "funcs",
                     "signature": "funcs: T;",
                     "source": {
@@ -4181,7 +4181,7 @@ exports[`faastjs > 5.3.8 1`] = `
                     "id": "CostAnalyzer.Workload.repetitions",
                     "isOptional": true,
                     "isReadonly": false,
-                    "kind": "InterfacePropertyDeclaration",
+                    "kind": "interfaceProperty",
                     "name": "repetitions",
                     "signature": "repetitions?: number;",
                     "source": {
@@ -4202,7 +4202,7 @@ exports[`faastjs > 5.3.8 1`] = `
                     "id": "CostAnalyzer.Workload.silent",
                     "isOptional": true,
                     "isReadonly": false,
-                    "kind": "InterfacePropertyDeclaration",
+                    "kind": "interfaceProperty",
                     "name": "silent",
                     "signature": "silent?: boolean;",
                     "source": {
@@ -4225,7 +4225,7 @@ exports[`faastjs > 5.3.8 1`] = `
                     "id": "CostAnalyzer.Workload.summarize",
                     "isOptional": true,
                     "isReadonly": false,
-                    "kind": "InterfacePropertyDeclaration",
+                    "kind": "interfaceProperty",
                     "name": "summarize",
                     "signature": "summarize?: (summaries: WorkloadAttribute<A>[]) => WorkloadAttribute<A>;",
                     "source": {
@@ -4253,7 +4253,7 @@ exports[`faastjs > 5.3.8 1`] = `
                     "id": "CostAnalyzer.Workload.work",
                     "isOptional": false,
                     "isReadonly": false,
-                    "kind": "InterfacePropertyDeclaration",
+                    "kind": "interfaceProperty",
                     "name": "work",
                     "signature": "work: (faastModule: FaastModule<T>) => Promise<WorkloadAttribute<A> | void>;",
                     "source": {
@@ -4288,7 +4288,7 @@ exports[`faastjs > 5.3.8 1`] = `
      */",
               ],
               "id": "CostAnalyzer.Configuration",
-              "kind": "TypeAliasDeclaration",
+              "kind": "typeAlias",
               "name": "Configuration",
               "signature": "type Configuration =
     | {
@@ -4315,7 +4315,7 @@ exports[`faastjs > 5.3.8 1`] = `
      */",
               ],
               "id": "CostAnalyzer.WorkloadAttribute",
-              "kind": "TypeAliasDeclaration",
+              "kind": "typeAlias",
               "name": "WorkloadAttribute",
               "signature": "type WorkloadAttribute<A extends string> = {
     [attr in A]: number;
@@ -4363,7 +4363,7 @@ exports[`faastjs > 5.3.8 1`] = `
      */",
               ],
               "id": "CostAnalyzer.awsConfigurations",
-              "kind": "VariableDeclaration",
+              "kind": "variable",
               "name": "awsConfigurations",
               "signature": "const awsConfigurations: Configuration[];",
               "source": {
@@ -4401,7 +4401,7 @@ exports[`faastjs > 5.3.8 1`] = `
      */",
               ],
               "id": "CostAnalyzer.googleConfigurations",
-              "kind": "VariableDeclaration",
+              "kind": "variable",
               "name": "googleConfigurations",
               "signature": "const googleConfigurations: Configuration[];",
               "source": {
@@ -4422,7 +4422,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "CostAnalyzer",
-        "kind": "NamespaceDeclaration",
+        "kind": "namespace",
         "name": "CostAnalyzer",
         "signature": "namespace CostAnalyzer {}",
         "source": {
@@ -4445,7 +4445,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "Async",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "Async",
         "signature": "type Async<T> = T extends AsyncGenerator<infer R>
     ? AsyncGenerator<R>
@@ -4471,7 +4471,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "AsyncDetail",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "AsyncDetail",
         "signature": "type AsyncDetail<T> = T extends AsyncGenerator<infer R>
     ? AsyncGenerator<Detail<R>>
@@ -4495,7 +4495,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "AwsFaastModule",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "AwsFaastModule",
         "signature": "type AwsFaastModule<M extends object = object> = FaastModuleProxy<
     M,
@@ -4519,7 +4519,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "AwsRegion",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "AwsRegion",
         "signature": "type AwsRegion =
     | 'us-east-1'
@@ -4553,7 +4553,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "GoogleFaastModule",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "GoogleFaastModule",
         "signature": "type GoogleFaastModule<M extends object = object> = FaastModuleProxy<
     M,
@@ -4578,7 +4578,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "GoogleRegion",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "GoogleRegion",
         "signature": "type GoogleRegion =
     | 'asia-east1'
@@ -4615,7 +4615,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "LocalFaastModule",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "LocalFaastModule",
         "signature": "type LocalFaastModule<M extends object = object> = FaastModuleProxy<
     M,
@@ -4637,7 +4637,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "Provider",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "Provider",
         "signature": "type Provider = 'aws' | 'google' | 'local';",
         "source": {
@@ -4660,7 +4660,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "ProxyModule",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "ProxyModule",
         "signature": "type ProxyModule<M> = {
     [K in keyof M]: M[K] extends (...args: infer A) => infer R
@@ -4685,7 +4685,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "ProxyModuleDetail",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "ProxyModuleDetail",
         "signature": "type ProxyModuleDetail<M> = {
     [K in keyof M]: M[K] extends (...args: infer A) => infer R
@@ -4756,7 +4756,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "log",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "log",
         "signature": "const log: {
     info: debug_2.Debugger;
@@ -4786,7 +4786,7 @@ exports[`faastjs > 5.3.8 1`] = `
  */",
         ],
         "id": "providers",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "providers",
         "signature": "const providers: Provider[];",
         "source": {

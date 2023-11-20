@@ -15,7 +15,7 @@ exports[`export-default-object > snapshot 1`] = `
           "/** obj1 */",
         ],
         "id": "default",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "default",
         "signature": "const default: { a: string; b: boolean; c: number; d: { e: string } };",
         "source": {

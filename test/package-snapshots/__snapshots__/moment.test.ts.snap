@@ -9,7 +9,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "calendarFormat",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "calendarFormat",
         "signature": "calendarFormat: (m: Moment, now: Moment) => string;",
         "source": {
@@ -23,7 +23,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "defineLocale",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "defineLocale",
         "signature": "defineLocale: (
     language: string,
@@ -40,7 +40,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "duration",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "duration",
         "signature": "duration: (inp?: DurationInputArg1, unit?: DurationInputArg2) => Duration;",
         "source": {
@@ -54,7 +54,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "invalid",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "invalid",
         "signature": "invalid: (flags?: MomentParsingFlagsOpt) => Moment;",
         "source": {
@@ -68,7 +68,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "isDate",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "isDate",
         "signature": "isDate: (m: any) => m is Date;",
         "source": {
@@ -82,7 +82,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "isDuration",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "isDuration",
         "signature": "isDuration: (d: any) => d is Duration;",
         "source": {
@@ -96,7 +96,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "isMoment",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "isMoment",
         "signature": "isMoment: (m: any) => m is Moment;",
         "source": {
@@ -114,7 +114,7 @@ exports[`moment > 2.29.1 1`] = `
    */",
         ],
         "id": "lang",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "lang",
         "signature": "lang: {
     (language?: string): string;
@@ -131,7 +131,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "locale",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "locale",
         "signature": "locale: {
     (language?: string): string;
@@ -149,7 +149,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "localeData",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "localeData",
         "signature": "localeData: (key?: string | string[]) => Locale;",
         "source": {
@@ -163,7 +163,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "locales",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "locales",
         "signature": "locales: () => string[];",
         "source": {
@@ -177,7 +177,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "max",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "max",
         "signature": "max: { (moments: Moment[]): Moment; (...moments: Moment[]): Moment };",
         "source": {
@@ -191,7 +191,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "min",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "min",
         "signature": "min: { (moments: Moment[]): Moment; (...moments: Moment[]): Moment };",
         "source": {
@@ -215,7 +215,7 @@ exports[`moment > 2.29.1 1`] = `
  */",
         ],
         "id": "moment",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "moment",
         "signature": "moment: typeof moment;",
         "source": {
@@ -229,7 +229,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "months",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "months",
         "signature": "months: {
     (): string[];
@@ -248,7 +248,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "monthsShort",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "monthsShort",
         "signature": "monthsShort: {
     (): string[];
@@ -267,7 +267,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "normalizeUnits",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "normalizeUnits",
         "signature": "normalizeUnits: (unit: unitOfTime.All) => string;",
         "source": {
@@ -285,7 +285,7 @@ exports[`moment > 2.29.1 1`] = `
    */",
         ],
         "id": "now",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "now",
         "signature": "now: () => number;",
         "source": {
@@ -299,7 +299,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "parseTwoDigitYear",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "parseTwoDigitYear",
         "signature": "parseTwoDigitYear: (input: string) => number;",
         "source": {
@@ -313,7 +313,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "parseZone",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "parseZone",
         "signature": "parseZone: {
     (
@@ -339,7 +339,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "relativeTimeRounding",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "relativeTimeRounding",
         "signature": "relativeTimeRounding: {
     (fn: (num: number) => number): boolean;
@@ -356,7 +356,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "relativeTimeThreshold",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "relativeTimeThreshold",
         "signature": "relativeTimeThreshold: {
     (threshold: string): number | boolean;
@@ -373,7 +373,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "unix",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "unix",
         "signature": "unix: (timestamp: number) => Moment;",
         "source": {
@@ -387,7 +387,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "updateLocale",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "updateLocale",
         "signature": "updateLocale: (
     language: string,
@@ -414,7 +414,7 @@ exports[`moment > 2.29.1 1`] = `
    */",
         ],
         "id": "utc",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "utc",
         "signature": "utc: {
     (inp?: MomentInput, strict?: boolean): Moment;
@@ -441,7 +441,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "weekdays",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "weekdays",
         "signature": "weekdays: {
     (): string[];
@@ -464,7 +464,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "weekdaysMin",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "weekdaysMin",
         "signature": "weekdaysMin: {
     (): string[];
@@ -487,7 +487,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "weekdaysShort",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "weekdaysShort",
         "signature": "weekdaysShort: {
     (): string[];
@@ -512,7 +512,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "argThresholdOpts",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -524,7 +524,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "argThresholdOpts.d",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "d",
               "signature": "d?: number;",
               "source": {
@@ -540,7 +540,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "argThresholdOpts.h",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "h",
               "signature": "h?: number;",
               "source": {
@@ -556,7 +556,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "argThresholdOpts.m",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "m",
               "signature": "m?: number;",
               "source": {
@@ -572,7 +572,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "argThresholdOpts.M",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "M",
               "signature": "M?: number;",
               "source": {
@@ -588,7 +588,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "argThresholdOpts.s",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "s",
               "signature": "s?: number;",
               "source": {
@@ -604,7 +604,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "argThresholdOpts.ss",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "ss",
               "signature": "ss?: number;",
               "source": {
@@ -620,7 +620,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "argThresholdOpts.w",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "w",
               "signature": "w?: number | void;",
               "source": {
@@ -645,7 +645,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "CalendarSpec",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -653,7 +653,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "CalendarSpec.6-index-signature",
-              "kind": "InterfaceIndexSignatureDeclaration",
+              "kind": "interfaceIndexSignature",
               "name": "index signature",
               "signature": "[x: string]: CalendarSpecVal | void;",
               "source": {
@@ -671,7 +671,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "CalendarSpec.lastDay",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "lastDay",
               "signature": "lastDay?: CalendarSpecVal;",
               "source": {
@@ -687,7 +687,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "CalendarSpec.lastWeek",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "lastWeek",
               "signature": "lastWeek?: CalendarSpecVal;",
               "source": {
@@ -703,7 +703,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "CalendarSpec.nextDay",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "nextDay",
               "signature": "nextDay?: CalendarSpecVal;",
               "source": {
@@ -719,7 +719,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "CalendarSpec.nextWeek",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "nextWeek",
               "signature": "nextWeek?: CalendarSpecVal;",
               "source": {
@@ -735,7 +735,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "CalendarSpec.sameDay",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "sameDay",
               "signature": "sameDay?: CalendarSpecVal;",
               "source": {
@@ -751,7 +751,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "CalendarSpec.sameElse",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "sameElse",
               "signature": "sameElse?: CalendarSpecVal;",
               "source": {
@@ -776,7 +776,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "Duration",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -785,7 +785,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.abs",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "abs",
               "signature": "abs: () => Duration;",
               "source": {
@@ -799,7 +799,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.add",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "add",
               "signature": "add: (inp?: DurationInputArg1, unit?: DurationInputArg2) => Duration;",
               "source": {
@@ -813,7 +813,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.as",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "as",
               "signature": "as: (units: unitOfTime.Base) => number;",
               "source": {
@@ -827,7 +827,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.asDays",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "asDays",
               "signature": "asDays: () => number;",
               "source": {
@@ -841,7 +841,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.asHours",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "asHours",
               "signature": "asHours: () => number;",
               "source": {
@@ -855,7 +855,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.asMilliseconds",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "asMilliseconds",
               "signature": "asMilliseconds: () => number;",
               "source": {
@@ -869,7 +869,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.asMinutes",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "asMinutes",
               "signature": "asMinutes: () => number;",
               "source": {
@@ -883,7 +883,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.asMonths",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "asMonths",
               "signature": "asMonths: () => number;",
               "source": {
@@ -897,7 +897,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.asSeconds",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "asSeconds",
               "signature": "asSeconds: () => number;",
               "source": {
@@ -911,7 +911,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.asWeeks",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "asWeeks",
               "signature": "asWeeks: () => number;",
               "source": {
@@ -925,7 +925,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.asYears",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "asYears",
               "signature": "asYears: () => number;",
               "source": {
@@ -939,7 +939,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.clone",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "clone",
               "signature": "clone: () => Duration;",
               "source": {
@@ -953,7 +953,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.days",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "days",
               "signature": "days: () => number;",
               "source": {
@@ -967,7 +967,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.get",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "get",
               "signature": "get: (units: unitOfTime.Base) => number;",
               "source": {
@@ -981,7 +981,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.hours",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "hours",
               "signature": "hours: () => number;",
               "source": {
@@ -995,7 +995,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.humanize",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "humanize",
               "signature": "humanize: {
     (argWithSuffix?: boolean, argThresholds?: argThresholdOpts): string;
@@ -1012,7 +1012,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.isValid",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "isValid",
               "signature": "isValid: () => boolean;",
               "source": {
@@ -1030,7 +1030,7 @@ exports[`moment > 2.29.1 1`] = `
      */",
               ],
               "id": "Duration.lang",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "lang",
               "signature": "lang: { (locale: LocaleSpecifier): Moment; (): Locale };",
               "source": {
@@ -1044,7 +1044,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.locale",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "locale",
               "signature": "locale: { (): string; (locale: LocaleSpecifier): Duration };",
               "source": {
@@ -1058,7 +1058,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.localeData",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "localeData",
               "signature": "localeData: () => Locale;",
               "source": {
@@ -1072,7 +1072,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.milliseconds",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "milliseconds",
               "signature": "milliseconds: () => number;",
               "source": {
@@ -1086,7 +1086,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.minutes",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "minutes",
               "signature": "minutes: () => number;",
               "source": {
@@ -1100,7 +1100,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.months",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "months",
               "signature": "months: () => number;",
               "source": {
@@ -1114,7 +1114,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.seconds",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "seconds",
               "signature": "seconds: () => number;",
               "source": {
@@ -1128,7 +1128,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.subtract",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "subtract",
               "signature": "subtract: (inp?: DurationInputArg1, unit?: DurationInputArg2) => Duration;",
               "source": {
@@ -1146,7 +1146,7 @@ exports[`moment > 2.29.1 1`] = `
      */",
               ],
               "id": "Duration.toIsoString",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "toIsoString",
               "signature": "toIsoString: () => string;",
               "source": {
@@ -1160,7 +1160,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.toISOString",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "toISOString",
               "signature": "toISOString: () => string;",
               "source": {
@@ -1174,7 +1174,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.toJSON",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "toJSON",
               "signature": "toJSON: () => string;",
               "source": {
@@ -1188,7 +1188,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.weeks",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "weeks",
               "signature": "weeks: () => number;",
               "source": {
@@ -1202,7 +1202,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Duration.years",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "years",
               "signature": "years: () => number;",
               "source": {
@@ -1228,7 +1228,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "DurationInputObject",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1240,7 +1240,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "DurationInputObject.Q",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "Q",
               "signature": "Q?: numberlike;",
               "source": {
@@ -1256,7 +1256,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "DurationInputObject.quarter",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "quarter",
               "signature": "quarter?: numberlike;",
               "source": {
@@ -1272,7 +1272,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "DurationInputObject.quarters",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "quarters",
               "signature": "quarters?: numberlike;",
               "source": {
@@ -1288,7 +1288,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "DurationInputObject.w",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "w",
               "signature": "w?: numberlike;",
               "source": {
@@ -1304,7 +1304,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "DurationInputObject.week",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "week",
               "signature": "week?: numberlike;",
               "source": {
@@ -1320,7 +1320,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "DurationInputObject.weeks",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "weeks",
               "signature": "weeks?: numberlike;",
               "source": {
@@ -1345,7 +1345,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "EraSpec",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1357,7 +1357,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "EraSpec.abbr",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "abbr",
               "signature": "abbr: string;",
               "source": {
@@ -1373,7 +1373,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "EraSpec.name",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "name: string;",
               "source": {
@@ -1389,7 +1389,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "EraSpec.narrow",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "narrow",
               "signature": "narrow: string;",
               "source": {
@@ -1405,7 +1405,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "EraSpec.offset",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "offset",
               "signature": "offset: number;",
               "source": {
@@ -1421,7 +1421,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "EraSpec.since",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "since",
               "signature": "since: string | number;",
               "source": {
@@ -1437,7 +1437,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "EraSpec.until",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "until",
               "signature": "until: string | number;",
               "source": {
@@ -1462,7 +1462,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "FromTo",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1474,7 +1474,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "FromTo.from",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "from",
               "signature": "from: MomentInput;",
               "source": {
@@ -1490,7 +1490,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "FromTo.to",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "to",
               "signature": "to: MomentInput;",
               "source": {
@@ -1515,7 +1515,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "Locale",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1524,7 +1524,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.calendar",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "calendar",
               "signature": "calendar: (key?: CalendarKey, m?: Moment, now?: Moment) => string;",
               "source": {
@@ -1538,7 +1538,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.firstDayOfWeek",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "firstDayOfWeek",
               "signature": "firstDayOfWeek: () => number;",
               "source": {
@@ -1552,7 +1552,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.firstDayOfYear",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "firstDayOfYear",
               "signature": "firstDayOfYear: () => number;",
               "source": {
@@ -1566,7 +1566,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.invalidDate",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "invalidDate",
               "signature": "invalidDate: () => string;",
               "source": {
@@ -1580,7 +1580,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.isPM",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "isPM",
               "signature": "isPM: (input: string) => boolean;",
               "source": {
@@ -1594,7 +1594,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.longDateFormat",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "longDateFormat",
               "signature": "longDateFormat: (key: LongDateFormatKey) => string;",
               "source": {
@@ -1608,7 +1608,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.meridiem",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "meridiem",
               "signature": "meridiem: (hour: number, minute: number, isLower: boolean) => string;",
               "source": {
@@ -1622,7 +1622,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.months",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "months",
               "signature": "months: { (): string[]; (m: Moment, format?: string): string };",
               "source": {
@@ -1636,7 +1636,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.monthsParse",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "monthsParse",
               "signature": "monthsParse: (monthName: string, format: string, strict: boolean) => number;",
               "source": {
@@ -1650,7 +1650,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.monthsRegex",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "monthsRegex",
               "signature": "monthsRegex: (strict: boolean) => RegExp;",
               "source": {
@@ -1664,7 +1664,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.monthsShort",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "monthsShort",
               "signature": "monthsShort: { (): string[]; (m: Moment, format?: string): string };",
               "source": {
@@ -1678,7 +1678,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.monthsShortRegex",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "monthsShortRegex",
               "signature": "monthsShortRegex: (strict: boolean) => RegExp;",
               "source": {
@@ -1692,7 +1692,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.ordinal",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "ordinal",
               "signature": "ordinal: (n: number) => string;",
               "source": {
@@ -1706,7 +1706,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.pastFuture",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "pastFuture",
               "signature": "pastFuture: (diff: number, absRelTime: string) => string;",
               "source": {
@@ -1720,7 +1720,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.postformat",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "postformat",
               "signature": "postformat: (inp: string) => string;",
               "source": {
@@ -1734,7 +1734,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.preparse",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "preparse",
               "signature": "preparse: (inp: string) => string;",
               "source": {
@@ -1748,7 +1748,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.relativeTime",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "relativeTime",
               "signature": "relativeTime: (
     n: number,
@@ -1767,7 +1767,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.set",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "set",
               "signature": "set: (config: Object) => void;",
               "source": {
@@ -1781,7 +1781,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.week",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "week",
               "signature": "week: (m: Moment) => number;",
               "source": {
@@ -1795,7 +1795,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.weekdays",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "weekdays",
               "signature": "weekdays: { (): string[]; (m: Moment, format?: string): string };",
               "source": {
@@ -1809,7 +1809,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.weekdaysMin",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "weekdaysMin",
               "signature": "weekdaysMin: { (): string[]; (m: Moment): string };",
               "source": {
@@ -1823,7 +1823,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.weekdaysMinRegex",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "weekdaysMinRegex",
               "signature": "weekdaysMinRegex: (strict: boolean) => RegExp;",
               "source": {
@@ -1837,7 +1837,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.weekdaysParse",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "weekdaysParse",
               "signature": "weekdaysParse: (weekdayName: string, format: string, strict: boolean) => number;",
               "source": {
@@ -1851,7 +1851,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.weekdaysRegex",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "weekdaysRegex",
               "signature": "weekdaysRegex: (strict: boolean) => RegExp;",
               "source": {
@@ -1865,7 +1865,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.weekdaysShort",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "weekdaysShort",
               "signature": "weekdaysShort: { (): string[]; (m: Moment): string };",
               "source": {
@@ -1879,7 +1879,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Locale.weekdaysShortRegex",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "weekdaysShortRegex",
               "signature": "weekdaysShortRegex: (strict: boolean) => RegExp;",
               "source": {
@@ -1905,7 +1905,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "LocaleSpecification",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1913,7 +1913,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "LocaleSpecification.16-index-signature",
-              "kind": "InterfaceIndexSignatureDeclaration",
+              "kind": "interfaceIndexSignature",
               "name": "index signature",
               "signature": "[x: string]: any;",
               "source": {
@@ -1931,7 +1931,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LocaleSpecification.calendar",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "calendar",
               "signature": "calendar?: CalendarSpec;",
               "source": {
@@ -1947,7 +1947,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LocaleSpecification.eras",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "eras",
               "signature": "eras?: EraSpec[];",
               "source": {
@@ -1963,7 +1963,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LocaleSpecification.invalidDate",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "invalidDate",
               "signature": "invalidDate?: string;",
               "source": {
@@ -1979,7 +1979,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LocaleSpecification.isPM",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "isPM",
               "signature": "isPM?: (input: string) => boolean;",
               "source": {
@@ -1995,7 +1995,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LocaleSpecification.longDateFormat",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "longDateFormat",
               "signature": "longDateFormat?: LongDateFormatSpec;",
               "source": {
@@ -2011,7 +2011,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LocaleSpecification.meridiem",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "meridiem",
               "signature": "meridiem?: (hour: number, minute: number, isLower: boolean) => string;",
               "source": {
@@ -2027,7 +2027,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LocaleSpecification.meridiemParse",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "meridiemParse",
               "signature": "meridiemParse?: RegExp;",
               "source": {
@@ -2043,7 +2043,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LocaleSpecification.months",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "months",
               "signature": "months?: string[] | StandaloneFormatSpec | MonthWeekdayFn;",
               "source": {
@@ -2059,7 +2059,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LocaleSpecification.monthsShort",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "monthsShort",
               "signature": "monthsShort?: string[] | StandaloneFormatSpec | MonthWeekdayFn;",
               "source": {
@@ -2075,7 +2075,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LocaleSpecification.ordinal",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "ordinal",
               "signature": "ordinal?: (n: number) => string;",
               "source": {
@@ -2091,7 +2091,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LocaleSpecification.ordinalParse",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "ordinalParse",
               "signature": "ordinalParse?: RegExp;",
               "source": {
@@ -2107,7 +2107,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LocaleSpecification.relativeTime",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "relativeTime",
               "signature": "relativeTime?: RelativeTimeSpec;",
               "source": {
@@ -2123,7 +2123,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LocaleSpecification.week",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "week",
               "signature": "week?: WeekSpec;",
               "source": {
@@ -2139,7 +2139,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LocaleSpecification.weekdays",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "weekdays",
               "signature": "weekdays?: string[] | StandaloneFormatSpec | MonthWeekdayFn;",
               "source": {
@@ -2155,7 +2155,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LocaleSpecification.weekdaysMin",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "weekdaysMin",
               "signature": "weekdaysMin?: string[] | StandaloneFormatSpec | WeekdaySimpleFn;",
               "source": {
@@ -2171,7 +2171,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LocaleSpecification.weekdaysShort",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "weekdaysShort",
               "signature": "weekdaysShort?: string[] | StandaloneFormatSpec | WeekdaySimpleFn;",
               "source": {
@@ -2196,7 +2196,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "LongDateFormatSpec",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2208,7 +2208,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LongDateFormatSpec.l",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "l",
               "signature": "l?: string;",
               "source": {
@@ -2224,7 +2224,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LongDateFormatSpec.L",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "L",
               "signature": "L: string;",
               "source": {
@@ -2240,7 +2240,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LongDateFormatSpec.ll",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "ll",
               "signature": "ll?: string;",
               "source": {
@@ -2256,7 +2256,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LongDateFormatSpec.LL",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "LL",
               "signature": "LL: string;",
               "source": {
@@ -2272,7 +2272,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LongDateFormatSpec.lll",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "lll",
               "signature": "lll?: string;",
               "source": {
@@ -2288,7 +2288,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LongDateFormatSpec.LLL",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "LLL",
               "signature": "LLL: string;",
               "source": {
@@ -2304,7 +2304,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LongDateFormatSpec.llll",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "llll",
               "signature": "llll?: string;",
               "source": {
@@ -2320,7 +2320,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LongDateFormatSpec.LLLL",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "LLLL",
               "signature": "LLLL: string;",
               "source": {
@@ -2336,7 +2336,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LongDateFormatSpec.lt",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "lt",
               "signature": "lt?: string;",
               "source": {
@@ -2352,7 +2352,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LongDateFormatSpec.LT",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "LT",
               "signature": "LT: string;",
               "source": {
@@ -2368,7 +2368,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LongDateFormatSpec.lts",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "lts",
               "signature": "lts?: string;",
               "source": {
@@ -2384,7 +2384,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "LongDateFormatSpec.LTS",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "LTS",
               "signature": "LTS: string;",
               "source": {
@@ -2409,7 +2409,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "Moment",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2422,7 +2422,7 @@ exports[`moment > 2.29.1 1`] = `
      */",
               ],
               "id": "Moment.add",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "add",
               "signature": "add: {
     (amount?: DurationInputArg1, unit?: DurationInputArg2): Moment;
@@ -2439,7 +2439,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.calendar",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "calendar",
               "signature": "calendar: {
     (): string;
@@ -2457,7 +2457,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.clone",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "clone",
               "signature": "clone: () => Moment;",
               "source": {
@@ -2471,7 +2471,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.creationData",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "creationData",
               "signature": "creationData: () => MomentCreationData;",
               "source": {
@@ -2485,7 +2485,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.date",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "date",
               "signature": "date: { (d: number): Moment; (): number };",
               "source": {
@@ -2506,7 +2506,7 @@ exports[`moment > 2.29.1 1`] = `
      */",
               ],
               "id": "Moment.dates",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "dates",
               "signature": "dates: { (d: number): Moment; (): number };",
               "source": {
@@ -2520,7 +2520,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.day",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "day",
               "signature": "day: { (d: number | string): Moment; (): number };",
               "source": {
@@ -2534,7 +2534,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.dayOfYear",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "dayOfYear",
               "signature": "dayOfYear: { (): number; (d: number): Moment };",
               "source": {
@@ -2548,7 +2548,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.days",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "days",
               "signature": "days: { (d: number | string): Moment; (): number };",
               "source": {
@@ -2562,7 +2562,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.daysInMonth",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "daysInMonth",
               "signature": "daysInMonth: () => number;",
               "source": {
@@ -2576,7 +2576,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.diff",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "diff",
               "signature": "diff: (
     b: MomentInput,
@@ -2594,7 +2594,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.endOf",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "endOf",
               "signature": "endOf: (unitOfTime: unitOfTime.StartOf) => Moment;",
               "source": {
@@ -2608,7 +2608,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.format",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "format",
               "signature": "format: (format?: string) => string;",
               "source": {
@@ -2622,7 +2622,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.from",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "from",
               "signature": "from: (inp: MomentInput, suffix?: boolean) => string;",
               "source": {
@@ -2636,7 +2636,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.fromNow",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "fromNow",
               "signature": "fromNow: (withoutSuffix?: boolean) => string;",
               "source": {
@@ -2650,7 +2650,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.get",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "get",
               "signature": "get: (unit: unitOfTime.All) => number;",
               "source": {
@@ -2664,7 +2664,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.hasAlignedHourOffset",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "hasAlignedHourOffset",
               "signature": "hasAlignedHourOffset: (other?: MomentInput) => boolean;",
               "source": {
@@ -2678,7 +2678,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.hour",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "hour",
               "signature": "hour: { (h: number): Moment; (): number };",
               "source": {
@@ -2692,7 +2692,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.hours",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "hours",
               "signature": "hours: { (h: number): Moment; (): number };",
               "source": {
@@ -2706,7 +2706,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.inspect",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "inspect",
               "signature": "inspect: () => string;",
               "source": {
@@ -2720,7 +2720,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.invalidAt",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "invalidAt",
               "signature": "invalidAt: () => number;",
               "source": {
@@ -2734,7 +2734,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.isAfter",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "isAfter",
               "signature": "isAfter: (inp?: MomentInput, granularity?: unitOfTime.StartOf) => boolean;",
               "source": {
@@ -2748,7 +2748,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.isBefore",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "isBefore",
               "signature": "isBefore: (inp?: MomentInput, granularity?: unitOfTime.StartOf) => boolean;",
               "source": {
@@ -2762,7 +2762,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.isBetween",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "isBetween",
               "signature": "isBetween: (
     a: MomentInput,
@@ -2781,7 +2781,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.isDST",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "isDST",
               "signature": "isDST: () => boolean;",
               "source": {
@@ -2799,7 +2799,7 @@ exports[`moment > 2.29.1 1`] = `
      */",
               ],
               "id": "Moment.isDSTShifted",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "isDSTShifted",
               "signature": "isDSTShifted: () => boolean;",
               "source": {
@@ -2813,7 +2813,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.isLeapYear",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "isLeapYear",
               "signature": "isLeapYear: () => boolean;",
               "source": {
@@ -2827,7 +2827,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.isLocal",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "isLocal",
               "signature": "isLocal: () => boolean;",
               "source": {
@@ -2841,7 +2841,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.isoWeek",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "isoWeek",
               "signature": "isoWeek: { (): number; (d: number): Moment };",
               "source": {
@@ -2855,7 +2855,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.isoWeekday",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "isoWeekday",
               "signature": "isoWeekday: { (): number; (d: string | number): Moment };",
               "source": {
@@ -2869,7 +2869,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.isoWeeks",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "isoWeeks",
               "signature": "isoWeeks: { (): number; (d: number): Moment };",
               "source": {
@@ -2883,7 +2883,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.isoWeeksInISOWeekYear",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "isoWeeksInISOWeekYear",
               "signature": "isoWeeksInISOWeekYear: () => number;",
               "source": {
@@ -2897,7 +2897,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.isoWeeksInYear",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "isoWeeksInYear",
               "signature": "isoWeeksInYear: () => number;",
               "source": {
@@ -2911,7 +2911,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.isoWeekYear",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "isoWeekYear",
               "signature": "isoWeekYear: { (): number; (d: number): Moment };",
               "source": {
@@ -2925,7 +2925,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.isSame",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "isSame",
               "signature": "isSame: (inp?: MomentInput, granularity?: unitOfTime.StartOf) => boolean;",
               "source": {
@@ -2939,7 +2939,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.isSameOrAfter",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "isSameOrAfter",
               "signature": "isSameOrAfter: (inp?: MomentInput, granularity?: unitOfTime.StartOf) => boolean;",
               "source": {
@@ -2953,7 +2953,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.isSameOrBefore",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "isSameOrBefore",
               "signature": "isSameOrBefore: (inp?: MomentInput, granularity?: unitOfTime.StartOf) => boolean;",
               "source": {
@@ -2971,7 +2971,7 @@ exports[`moment > 2.29.1 1`] = `
      */",
               ],
               "id": "Moment.isUtc",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "isUtc",
               "signature": "isUtc: () => boolean;",
               "source": {
@@ -2985,7 +2985,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.isUTC",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "isUTC",
               "signature": "isUTC: () => boolean;",
               "source": {
@@ -2999,7 +2999,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.isUtcOffset",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "isUtcOffset",
               "signature": "isUtcOffset: () => boolean;",
               "source": {
@@ -3013,7 +3013,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.isValid",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "isValid",
               "signature": "isValid: () => boolean;",
               "source": {
@@ -3031,7 +3031,7 @@ exports[`moment > 2.29.1 1`] = `
      */",
               ],
               "id": "Moment.lang",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "lang",
               "signature": "lang: { (language: LocaleSpecifier): Moment; (): Locale };",
               "source": {
@@ -3045,7 +3045,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.local",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "local",
               "signature": "local: (keepLocalTime?: boolean) => Moment;",
               "source": {
@@ -3059,7 +3059,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.locale",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "locale",
               "signature": "locale: { (): string; (locale: LocaleSpecifier): Moment };",
               "source": {
@@ -3073,7 +3073,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.localeData",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "localeData",
               "signature": "localeData: () => Locale;",
               "source": {
@@ -3091,7 +3091,7 @@ exports[`moment > 2.29.1 1`] = `
      */",
               ],
               "id": "Moment.max",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "max",
               "signature": "max: {
     (
@@ -3117,7 +3117,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.millisecond",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "millisecond",
               "signature": "millisecond: { (ms: number): Moment; (): number };",
               "source": {
@@ -3131,7 +3131,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.milliseconds",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "milliseconds",
               "signature": "milliseconds: { (ms: number): Moment; (): number };",
               "source": {
@@ -3149,7 +3149,7 @@ exports[`moment > 2.29.1 1`] = `
      */",
               ],
               "id": "Moment.min",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "min",
               "signature": "min: {
     (
@@ -3175,7 +3175,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.minute",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "minute",
               "signature": "minute: { (m: number): Moment; (): number };",
               "source": {
@@ -3189,7 +3189,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.minutes",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "minutes",
               "signature": "minutes: { (m: number): Moment; (): number };",
               "source": {
@@ -3203,7 +3203,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.month",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "month",
               "signature": "month: { (M: number | string): Moment; (): number };",
               "source": {
@@ -3224,7 +3224,7 @@ exports[`moment > 2.29.1 1`] = `
      */",
               ],
               "id": "Moment.months",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "months",
               "signature": "months: { (M: number | string): Moment; (): number };",
               "source": {
@@ -3238,7 +3238,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.parseZone",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "parseZone",
               "signature": "parseZone: () => Moment;",
               "source": {
@@ -3252,7 +3252,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.parsingFlags",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "parsingFlags",
               "signature": "parsingFlags: () => MomentParsingFlags;",
               "source": {
@@ -3266,7 +3266,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.quarter",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "quarter",
               "signature": "quarter: { (): number; (q: number): Moment };",
               "source": {
@@ -3280,7 +3280,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.quarters",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "quarters",
               "signature": "quarters: { (): number; (q: number): Moment };",
               "source": {
@@ -3294,7 +3294,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.second",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "second",
               "signature": "second: { (s: number): Moment; (): number };",
               "source": {
@@ -3308,7 +3308,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.seconds",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "seconds",
               "signature": "seconds: { (s: number): Moment; (): number };",
               "source": {
@@ -3322,7 +3322,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.set",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "set",
               "signature": "set: {
     (unit: unitOfTime.All, value: number): Moment;
@@ -3339,7 +3339,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.startOf",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "startOf",
               "signature": "startOf: (unitOfTime: unitOfTime.StartOf) => Moment;",
               "source": {
@@ -3357,7 +3357,7 @@ exports[`moment > 2.29.1 1`] = `
      */",
               ],
               "id": "Moment.subtract",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "subtract",
               "signature": "subtract: {
     (amount?: DurationInputArg1, unit?: DurationInputArg2): Moment;
@@ -3374,7 +3374,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.to",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "to",
               "signature": "to: (inp: MomentInput, suffix?: boolean) => string;",
               "source": {
@@ -3388,7 +3388,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.toArray",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "toArray",
               "signature": "toArray: () => number[];",
               "source": {
@@ -3402,7 +3402,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.toDate",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "toDate",
               "signature": "toDate: () => Date;",
               "source": {
@@ -3416,7 +3416,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.toISOString",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "toISOString",
               "signature": "toISOString: (keepOffset?: boolean) => string;",
               "source": {
@@ -3430,7 +3430,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.toJSON",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "toJSON",
               "signature": "toJSON: () => string;",
               "source": {
@@ -3444,7 +3444,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.toNow",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "toNow",
               "signature": "toNow: (withoutPrefix?: boolean) => string;",
               "source": {
@@ -3458,7 +3458,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.toObject",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "toObject",
               "signature": "toObject: () => MomentObjectOutput;",
               "source": {
@@ -3472,7 +3472,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.unix",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "unix",
               "signature": "unix: () => number;",
               "source": {
@@ -3486,7 +3486,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.utc",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "utc",
               "signature": "utc: (keepLocalTime?: boolean) => Moment;",
               "source": {
@@ -3500,7 +3500,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.utcOffset",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "utcOffset",
               "signature": "utcOffset: { (): number; (b: string | number, keepLocalTime?: boolean): Moment };",
               "source": {
@@ -3518,7 +3518,7 @@ exports[`moment > 2.29.1 1`] = `
      */",
               ],
               "id": "Moment.valueOf",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "valueOf",
               "signature": "valueOf: () => number;",
               "source": {
@@ -3532,7 +3532,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.week",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "week",
               "signature": "week: { (): number; (d: number): Moment };",
               "source": {
@@ -3546,7 +3546,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.weekday",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "weekday",
               "signature": "weekday: { (): number; (d: number): Moment };",
               "source": {
@@ -3560,7 +3560,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.weeks",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "weeks",
               "signature": "weeks: { (): number; (d: number): Moment };",
               "source": {
@@ -3574,7 +3574,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.weeksInWeekYear",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "weeksInWeekYear",
               "signature": "weeksInWeekYear: () => number;",
               "source": {
@@ -3588,7 +3588,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.weeksInYear",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "weeksInYear",
               "signature": "weeksInYear: () => number;",
               "source": {
@@ -3602,7 +3602,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.weekYear",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "weekYear",
               "signature": "weekYear: { (): number; (d: number): Moment };",
               "source": {
@@ -3616,7 +3616,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.year",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "year",
               "signature": "year: { (y: number): Moment; (): number };",
               "source": {
@@ -3637,7 +3637,7 @@ exports[`moment > 2.29.1 1`] = `
      */",
               ],
               "id": "Moment.years",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "years",
               "signature": "years: { (y: number): Moment; (): number };",
               "source": {
@@ -3655,7 +3655,7 @@ exports[`moment > 2.29.1 1`] = `
      */",
               ],
               "id": "Moment.zone",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "zone",
               "signature": "zone: { (): number; (b: string | number): Moment };",
               "source": {
@@ -3669,7 +3669,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.zoneAbbr",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "zoneAbbr",
               "signature": "zoneAbbr: () => string;",
               "source": {
@@ -3683,7 +3683,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "Moment.zoneName",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "zoneName",
               "signature": "zoneName: () => string;",
               "source": {
@@ -3709,7 +3709,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "MomentBuiltinFormat",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3729,7 +3729,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "MomentCreationData",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3741,7 +3741,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentCreationData.format",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "format",
               "signature": "format?: MomentFormatSpecification;",
               "source": {
@@ -3757,7 +3757,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentCreationData.input",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "input",
               "signature": "input: MomentInput;",
               "source": {
@@ -3773,7 +3773,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentCreationData.isUTC",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "isUTC",
               "signature": "isUTC: boolean;",
               "source": {
@@ -3789,7 +3789,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentCreationData.locale",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "locale",
               "signature": "locale: Locale;",
               "source": {
@@ -3805,7 +3805,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentCreationData.strict",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "strict",
               "signature": "strict?: boolean;",
               "source": {
@@ -3830,7 +3830,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "MomentInputObject",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3842,7 +3842,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.d",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "d",
               "signature": "d?: numberlike;",
               "source": {
@@ -3858,7 +3858,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.D",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "D",
               "signature": "D?: numberlike;",
               "source": {
@@ -3874,7 +3874,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.date",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "date",
               "signature": "date?: numberlike;",
               "source": {
@@ -3890,7 +3890,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.dates",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "dates",
               "signature": "dates?: numberlike;",
               "source": {
@@ -3906,7 +3906,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.day",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "day",
               "signature": "day?: numberlike;",
               "source": {
@@ -3922,7 +3922,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.days",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "days",
               "signature": "days?: numberlike;",
               "source": {
@@ -3938,7 +3938,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.h",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "h",
               "signature": "h?: numberlike;",
               "source": {
@@ -3954,7 +3954,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.hour",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "hour",
               "signature": "hour?: numberlike;",
               "source": {
@@ -3970,7 +3970,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.hours",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "hours",
               "signature": "hours?: numberlike;",
               "source": {
@@ -3986,7 +3986,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.m",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "m",
               "signature": "m?: numberlike;",
               "source": {
@@ -4002,7 +4002,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.M",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "M",
               "signature": "M?: numberlike;",
               "source": {
@@ -4018,7 +4018,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.millisecond",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "millisecond",
               "signature": "millisecond?: numberlike;",
               "source": {
@@ -4034,7 +4034,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.milliseconds",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "milliseconds",
               "signature": "milliseconds?: numberlike;",
               "source": {
@@ -4050,7 +4050,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.minute",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "minute",
               "signature": "minute?: numberlike;",
               "source": {
@@ -4066,7 +4066,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.minutes",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "minutes",
               "signature": "minutes?: numberlike;",
               "source": {
@@ -4082,7 +4082,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.month",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "month",
               "signature": "month?: numberlike;",
               "source": {
@@ -4098,7 +4098,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.months",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "months",
               "signature": "months?: numberlike;",
               "source": {
@@ -4114,7 +4114,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.ms",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "ms",
               "signature": "ms?: numberlike;",
               "source": {
@@ -4130,7 +4130,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.s",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "s",
               "signature": "s?: numberlike;",
               "source": {
@@ -4146,7 +4146,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.second",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "second",
               "signature": "second?: numberlike;",
               "source": {
@@ -4162,7 +4162,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.seconds",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "seconds",
               "signature": "seconds?: numberlike;",
               "source": {
@@ -4178,7 +4178,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.y",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "y",
               "signature": "y?: numberlike;",
               "source": {
@@ -4194,7 +4194,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.year",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "year",
               "signature": "year?: numberlike;",
               "source": {
@@ -4210,7 +4210,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentInputObject.years",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "years",
               "signature": "years?: numberlike;",
               "source": {
@@ -4235,7 +4235,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "MomentLongDateFormat",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -4247,7 +4247,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentLongDateFormat.l",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "l",
               "signature": "l?: string;",
               "source": {
@@ -4263,7 +4263,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentLongDateFormat.L",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "L",
               "signature": "L: string;",
               "source": {
@@ -4279,7 +4279,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentLongDateFormat.ll",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "ll",
               "signature": "ll?: string;",
               "source": {
@@ -4295,7 +4295,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentLongDateFormat.LL",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "LL",
               "signature": "LL: string;",
               "source": {
@@ -4311,7 +4311,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentLongDateFormat.lll",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "lll",
               "signature": "lll?: string;",
               "source": {
@@ -4327,7 +4327,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentLongDateFormat.LLL",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "LLL",
               "signature": "LLL: string;",
               "source": {
@@ -4343,7 +4343,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentLongDateFormat.llll",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "llll",
               "signature": "llll?: string;",
               "source": {
@@ -4359,7 +4359,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentLongDateFormat.LLLL",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "LLLL",
               "signature": "LLLL: string;",
               "source": {
@@ -4375,7 +4375,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentLongDateFormat.lt",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "lt",
               "signature": "lt?: string;",
               "source": {
@@ -4391,7 +4391,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentLongDateFormat.LT",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "LT",
               "signature": "LT: string;",
               "source": {
@@ -4407,7 +4407,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentLongDateFormat.lts",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "lts",
               "signature": "lts?: string;",
               "source": {
@@ -4423,7 +4423,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentLongDateFormat.LTS",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "LTS",
               "signature": "LTS: string;",
               "source": {
@@ -4448,7 +4448,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "MomentObjectOutput",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -4460,7 +4460,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentObjectOutput.date",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "date",
               "signature": "date: number;",
               "source": {
@@ -4476,7 +4476,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentObjectOutput.hours",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "hours",
               "signature": "hours: number;",
               "source": {
@@ -4492,7 +4492,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentObjectOutput.milliseconds",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "milliseconds",
               "signature": "milliseconds: number;",
               "source": {
@@ -4508,7 +4508,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentObjectOutput.minutes",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "minutes",
               "signature": "minutes: number;",
               "source": {
@@ -4524,7 +4524,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentObjectOutput.months",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "months",
               "signature": "months: number;",
               "source": {
@@ -4540,7 +4540,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentObjectOutput.seconds",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "seconds",
               "signature": "seconds: number;",
               "source": {
@@ -4556,7 +4556,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentObjectOutput.years",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "years",
               "signature": "years: number;",
               "source": {
@@ -4581,7 +4581,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "MomentParsingFlags",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -4593,7 +4593,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlags.charsLeftOver",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "charsLeftOver",
               "signature": "charsLeftOver: number;",
               "source": {
@@ -4609,7 +4609,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlags.empty",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "empty",
               "signature": "empty: boolean;",
               "source": {
@@ -4625,7 +4625,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlags.invalidFormat",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "invalidFormat",
               "signature": "invalidFormat: boolean;",
               "source": {
@@ -4641,7 +4641,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlags.invalidMonth",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "invalidMonth",
               "signature": "invalidMonth: string | void;",
               "source": {
@@ -4657,7 +4657,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlags.iso",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "iso",
               "signature": "iso: boolean;",
               "source": {
@@ -4673,7 +4673,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlags.meridiem",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "meridiem",
               "signature": "meridiem: string | void;",
               "source": {
@@ -4689,7 +4689,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlags.nullInput",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "nullInput",
               "signature": "nullInput: boolean;",
               "source": {
@@ -4705,7 +4705,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlags.overflow",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "overflow",
               "signature": "overflow: number;",
               "source": {
@@ -4721,7 +4721,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlags.parsedDateParts",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "parsedDateParts",
               "signature": "parsedDateParts: any[];",
               "source": {
@@ -4737,7 +4737,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlags.unusedInput",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "unusedInput",
               "signature": "unusedInput: string[];",
               "source": {
@@ -4753,7 +4753,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlags.unusedTokens",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "unusedTokens",
               "signature": "unusedTokens: string[];",
               "source": {
@@ -4769,7 +4769,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlags.userInvalidated",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "userInvalidated",
               "signature": "userInvalidated: boolean;",
               "source": {
@@ -4794,7 +4794,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "MomentParsingFlagsOpt",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -4806,7 +4806,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlagsOpt.charsLeftOver",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "charsLeftOver",
               "signature": "charsLeftOver?: number;",
               "source": {
@@ -4822,7 +4822,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlagsOpt.empty",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "empty",
               "signature": "empty?: boolean;",
               "source": {
@@ -4838,7 +4838,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlagsOpt.invalidFormat",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "invalidFormat",
               "signature": "invalidFormat?: boolean;",
               "source": {
@@ -4854,7 +4854,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlagsOpt.invalidMonth",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "invalidMonth",
               "signature": "invalidMonth?: string;",
               "source": {
@@ -4870,7 +4870,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlagsOpt.iso",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "iso",
               "signature": "iso?: boolean;",
               "source": {
@@ -4886,7 +4886,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlagsOpt.meridiem",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "meridiem",
               "signature": "meridiem?: string;",
               "source": {
@@ -4902,7 +4902,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlagsOpt.nullInput",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "nullInput",
               "signature": "nullInput?: boolean;",
               "source": {
@@ -4918,7 +4918,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlagsOpt.overflow",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "overflow",
               "signature": "overflow?: number;",
               "source": {
@@ -4934,7 +4934,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlagsOpt.parsedDateParts",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "parsedDateParts",
               "signature": "parsedDateParts?: any[];",
               "source": {
@@ -4950,7 +4950,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlagsOpt.unusedInput",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "unusedInput",
               "signature": "unusedInput?: string[];",
               "source": {
@@ -4966,7 +4966,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlagsOpt.unusedTokens",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "unusedTokens",
               "signature": "unusedTokens?: string[];",
               "source": {
@@ -4982,7 +4982,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentParsingFlagsOpt.userInvalidated",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "userInvalidated",
               "signature": "userInvalidated?: boolean;",
               "source": {
@@ -5007,7 +5007,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "MomentRelativeTime",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5019,7 +5019,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentRelativeTime.d",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "d",
               "signature": "d: any;",
               "source": {
@@ -5035,7 +5035,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentRelativeTime.dd",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "dd",
               "signature": "dd: any;",
               "source": {
@@ -5051,7 +5051,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentRelativeTime.future",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "future",
               "signature": "future: any;",
               "source": {
@@ -5067,7 +5067,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentRelativeTime.h",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "h",
               "signature": "h: any;",
               "source": {
@@ -5083,7 +5083,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentRelativeTime.hh",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "hh",
               "signature": "hh: any;",
               "source": {
@@ -5099,7 +5099,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentRelativeTime.m",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "m",
               "signature": "m: any;",
               "source": {
@@ -5115,7 +5115,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentRelativeTime.M",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "M",
               "signature": "M: any;",
               "source": {
@@ -5131,7 +5131,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentRelativeTime.mm",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "mm",
               "signature": "mm: any;",
               "source": {
@@ -5147,7 +5147,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentRelativeTime.MM",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "MM",
               "signature": "MM: any;",
               "source": {
@@ -5163,7 +5163,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentRelativeTime.past",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "past",
               "signature": "past: any;",
               "source": {
@@ -5179,7 +5179,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentRelativeTime.s",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "s",
               "signature": "s: any;",
               "source": {
@@ -5195,7 +5195,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentRelativeTime.ss",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "ss",
               "signature": "ss: any;",
               "source": {
@@ -5211,7 +5211,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentRelativeTime.y",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "y",
               "signature": "y: any;",
               "source": {
@@ -5227,7 +5227,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentRelativeTime.yy",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "yy",
               "signature": "yy: any;",
               "source": {
@@ -5252,7 +5252,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "MomentSetObject",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5264,7 +5264,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.dayOfYear",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "dayOfYear",
               "signature": "dayOfYear?: numberlike;",
               "source": {
@@ -5280,7 +5280,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.dayOfYears",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "dayOfYears",
               "signature": "dayOfYears?: numberlike;",
               "source": {
@@ -5296,7 +5296,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.DDD",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "DDD",
               "signature": "DDD?: numberlike;",
               "source": {
@@ -5312,7 +5312,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.e",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "e",
               "signature": "e?: numberlike;",
               "source": {
@@ -5328,7 +5328,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.E",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "E",
               "signature": "E?: numberlike;",
               "source": {
@@ -5344,7 +5344,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.gg",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "gg",
               "signature": "gg?: numberlike;",
               "source": {
@@ -5360,7 +5360,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.GG",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "GG",
               "signature": "GG?: numberlike;",
               "source": {
@@ -5376,7 +5376,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.isoWeek",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "isoWeek",
               "signature": "isoWeek?: numberlike;",
               "source": {
@@ -5392,7 +5392,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.isoWeekday",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "isoWeekday",
               "signature": "isoWeekday?: numberlike;",
               "source": {
@@ -5408,7 +5408,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.isoWeekdays",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "isoWeekdays",
               "signature": "isoWeekdays?: numberlike;",
               "source": {
@@ -5424,7 +5424,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.isoWeeks",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "isoWeeks",
               "signature": "isoWeeks?: numberlike;",
               "source": {
@@ -5440,7 +5440,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.isoWeekYear",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "isoWeekYear",
               "signature": "isoWeekYear?: numberlike;",
               "source": {
@@ -5456,7 +5456,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.isoWeekYears",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "isoWeekYears",
               "signature": "isoWeekYears?: numberlike;",
               "source": {
@@ -5472,7 +5472,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.Q",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "Q",
               "signature": "Q?: numberlike;",
               "source": {
@@ -5488,7 +5488,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.quarter",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "quarter",
               "signature": "quarter?: numberlike;",
               "source": {
@@ -5504,7 +5504,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.quarters",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "quarters",
               "signature": "quarters?: numberlike;",
               "source": {
@@ -5520,7 +5520,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.w",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "w",
               "signature": "w?: numberlike;",
               "source": {
@@ -5536,7 +5536,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.W",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "W",
               "signature": "W?: numberlike;",
               "source": {
@@ -5552,7 +5552,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.week",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "week",
               "signature": "week?: numberlike;",
               "source": {
@@ -5568,7 +5568,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.weekday",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "weekday",
               "signature": "weekday?: numberlike;",
               "source": {
@@ -5584,7 +5584,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.weekdays",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "weekdays",
               "signature": "weekdays?: numberlike;",
               "source": {
@@ -5600,7 +5600,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.weeks",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "weeks",
               "signature": "weeks?: numberlike;",
               "source": {
@@ -5616,7 +5616,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.weekYear",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "weekYear",
               "signature": "weekYear?: numberlike;",
               "source": {
@@ -5632,7 +5632,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "MomentSetObject.weekYears",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "weekYears",
               "signature": "weekYears?: numberlike;",
               "source": {
@@ -5657,7 +5657,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "RelativeTimeSpec",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5669,7 +5669,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "RelativeTimeSpec.d",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "d",
               "signature": "d?: RelativeTimeSpecVal;",
               "source": {
@@ -5685,7 +5685,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "RelativeTimeSpec.dd",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "dd",
               "signature": "dd?: RelativeTimeSpecVal;",
               "source": {
@@ -5701,7 +5701,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "RelativeTimeSpec.future",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "future",
               "signature": "future?: RelativeTimeFuturePastVal;",
               "source": {
@@ -5717,7 +5717,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "RelativeTimeSpec.h",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "h",
               "signature": "h?: RelativeTimeSpecVal;",
               "source": {
@@ -5733,7 +5733,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "RelativeTimeSpec.hh",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "hh",
               "signature": "hh?: RelativeTimeSpecVal;",
               "source": {
@@ -5749,7 +5749,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "RelativeTimeSpec.m",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "m",
               "signature": "m?: RelativeTimeSpecVal;",
               "source": {
@@ -5765,7 +5765,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "RelativeTimeSpec.M",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "M",
               "signature": "M?: RelativeTimeSpecVal;",
               "source": {
@@ -5781,7 +5781,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "RelativeTimeSpec.mm",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "mm",
               "signature": "mm?: RelativeTimeSpecVal;",
               "source": {
@@ -5797,7 +5797,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "RelativeTimeSpec.MM",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "MM",
               "signature": "MM?: RelativeTimeSpecVal;",
               "source": {
@@ -5813,7 +5813,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "RelativeTimeSpec.past",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "past",
               "signature": "past?: RelativeTimeFuturePastVal;",
               "source": {
@@ -5829,7 +5829,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "RelativeTimeSpec.s",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "s",
               "signature": "s?: RelativeTimeSpecVal;",
               "source": {
@@ -5845,7 +5845,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "RelativeTimeSpec.ss",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "ss",
               "signature": "ss?: RelativeTimeSpecVal;",
               "source": {
@@ -5861,7 +5861,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "RelativeTimeSpec.w",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "w",
               "signature": "w?: RelativeTimeSpecVal;",
               "source": {
@@ -5877,7 +5877,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "RelativeTimeSpec.ww",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "ww",
               "signature": "ww?: RelativeTimeSpecVal;",
               "source": {
@@ -5893,7 +5893,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "RelativeTimeSpec.y",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "y",
               "signature": "y?: RelativeTimeSpecVal;",
               "source": {
@@ -5909,7 +5909,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "RelativeTimeSpec.yy",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "yy",
               "signature": "yy?: RelativeTimeSpecVal;",
               "source": {
@@ -5934,7 +5934,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "StandaloneFormatSpec",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5946,7 +5946,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "StandaloneFormatSpec.format",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "format",
               "signature": "format: string[];",
               "source": {
@@ -5962,7 +5962,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "StandaloneFormatSpec.isFormat",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "isFormat",
               "signature": "isFormat?: RegExp;",
               "source": {
@@ -5978,7 +5978,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "StandaloneFormatSpec.standalone",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "standalone",
               "signature": "standalone: string[];",
               "source": {
@@ -6003,7 +6003,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "WeekSpec",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -6015,7 +6015,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "WeekSpec.dow",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "dow",
               "signature": "dow: number;",
               "source": {
@@ -6031,7 +6031,7 @@ exports[`moment > 2.29.1 1`] = `
               "id": "WeekSpec.doy",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "doy",
               "signature": "doy?: number;",
               "source": {
@@ -6066,7 +6066,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "unitOfTime.All",
-              "kind": "TypeAliasDeclaration",
+              "kind": "typeAlias",
               "name": "All",
               "signature": "type All =
     | Base
@@ -6098,7 +6098,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "unitOfTime.Base",
-              "kind": "TypeAliasDeclaration",
+              "kind": "typeAlias",
               "name": "Base",
               "signature": "type Base =
     | 'year'
@@ -6135,7 +6135,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "unitOfTime.Diff",
-              "kind": "TypeAliasDeclaration",
+              "kind": "typeAlias",
               "name": "Diff",
               "signature": "type Diff = Base | _quarter;",
               "source": {
@@ -6148,7 +6148,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "unitOfTime.DurationAs",
-              "kind": "TypeAliasDeclaration",
+              "kind": "typeAlias",
               "name": "DurationAs",
               "signature": "type DurationAs = Base;",
               "source": {
@@ -6161,7 +6161,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "unitOfTime.DurationConstructor",
-              "kind": "TypeAliasDeclaration",
+              "kind": "typeAlias",
               "name": "DurationConstructor",
               "signature": "type DurationConstructor = Base | _quarter | _isoWeek;",
               "source": {
@@ -6174,7 +6174,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "unitOfTime.MomentConstructor",
-              "kind": "TypeAliasDeclaration",
+              "kind": "typeAlias",
               "name": "MomentConstructor",
               "signature": "type MomentConstructor = Base | _date;",
               "source": {
@@ -6187,7 +6187,7 @@ exports[`moment > 2.29.1 1`] = `
             {
               "docs": [],
               "id": "unitOfTime.StartOf",
-              "kind": "TypeAliasDeclaration",
+              "kind": "typeAlias",
               "name": "StartOf",
               "signature": "type StartOf = Base | _quarter | _isoWeek | _date | void;",
               "source": {
@@ -6202,7 +6202,7 @@ exports[`moment > 2.29.1 1`] = `
         },
         "docs": [],
         "id": "unitOfTime",
-        "kind": "NamespaceDeclaration",
+        "kind": "namespace",
         "name": "unitOfTime",
         "signature": "namespace unitOfTime {}",
         "source": {
@@ -6217,7 +6217,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "CalendarKey",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "CalendarKey",
         "signature": "type CalendarKey =
     | 'sameDay'
@@ -6237,7 +6237,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "CalendarSpecVal",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "CalendarSpecVal",
         "signature": "type CalendarSpecVal = string | ((m?: MomentInput, now?: Moment) => string);",
         "source": {
@@ -6250,7 +6250,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "DurationInputArg1",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "DurationInputArg1",
         "signature": "type DurationInputArg1 =
     | Duration
@@ -6269,7 +6269,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "DurationInputArg2",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "DurationInputArg2",
         "signature": "type DurationInputArg2 = unitOfTime.DurationConstructor;",
         "source": {
@@ -6282,7 +6282,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "LocaleSpecifier",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "LocaleSpecifier",
         "signature": "type LocaleSpecifier = string | Moment | Duration | string[] | boolean;",
         "source": {
@@ -6295,7 +6295,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "LongDateFormatKey",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "LongDateFormatKey",
         "signature": "type LongDateFormatKey =
     | 'LTS'
@@ -6320,7 +6320,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "MomentFormatSpecification",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "MomentFormatSpecification",
         "signature": "type MomentFormatSpecification =
     | string
@@ -6336,7 +6336,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "MomentInput",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "MomentInput",
         "signature": "type MomentInput =
     | Moment
@@ -6356,7 +6356,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "MonthWeekdayFn",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "MonthWeekdayFn",
         "signature": "type MonthWeekdayFn = (momentToFormat: Moment, format?: string) => string;",
         "source": {
@@ -6369,7 +6369,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "numberlike",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "numberlike",
         "signature": "type numberlike = number | string;",
         "source": {
@@ -6382,7 +6382,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "RelativeTimeFuturePastVal",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "RelativeTimeFuturePastVal",
         "signature": "type RelativeTimeFuturePastVal = string | ((relTime: string) => string);",
         "source": {
@@ -6395,7 +6395,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "RelativeTimeKey",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "RelativeTimeKey",
         "signature": "type RelativeTimeKey =
     | 's'
@@ -6422,7 +6422,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "RelativeTimeSpecVal",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "RelativeTimeSpecVal",
         "signature": "type RelativeTimeSpecVal =
     | string
@@ -6442,7 +6442,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "WeekdaySimpleFn",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "WeekdaySimpleFn",
         "signature": "type WeekdaySimpleFn = (momentToFormat: Moment) => string;",
         "source": {
@@ -6457,7 +6457,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "defaultFormat",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "defaultFormat",
         "signature": "var defaultFormat: string;",
         "source": {
@@ -6472,7 +6472,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "defaultFormatUtc",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "defaultFormatUtc",
         "signature": "var defaultFormatUtc: string;",
         "source": {
@@ -6487,7 +6487,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "deprecationHandler",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "deprecationHandler",
         "signature": "var deprecationHandler: void | ((name: string | void, msg: string) => void);",
         "source": {
@@ -6502,7 +6502,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "fn",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "fn",
         "signature": "var fn: Moment;",
         "source": {
@@ -6517,7 +6517,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "HTML5_FMT",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "HTML5_FMT",
         "signature": "var HTML5_FMT: {
     DATETIME_LOCAL: string;
@@ -6546,7 +6546,7 @@ exports[`moment > 2.29.1 1`] = `
    */",
         ],
         "id": "ISO_8601",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "ISO_8601",
         "signature": "var ISO_8601: MomentBuiltinFormat;",
         "source": {
@@ -6561,7 +6561,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "RFC_2822",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "RFC_2822",
         "signature": "var RFC_2822: MomentBuiltinFormat;",
         "source": {
@@ -6576,7 +6576,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "suppressDeprecationWarnings",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "suppressDeprecationWarnings",
         "signature": "var suppressDeprecationWarnings: boolean;",
         "source": {
@@ -6591,7 +6591,7 @@ exports[`moment > 2.29.1 1`] = `
       {
         "docs": [],
         "id": "version",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "version",
         "signature": "var version: string;",
         "source": {

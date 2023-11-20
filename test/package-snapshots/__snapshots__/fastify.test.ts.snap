@@ -18,7 +18,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "fastify",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "fastify",
         "signature": "fastify: {
     <
@@ -75,13 +75,13 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "AddContentTypeParser",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "AddContentTypeParser.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     contentType: string | string[],
@@ -100,7 +100,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "AddContentTypeParser.1-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     contentType: string | string[],
@@ -116,7 +116,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "AddContentTypeParser.2-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "<parseAs extends string | Buffer>(
     contentType: string | string[],
@@ -154,13 +154,13 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "DoneFuncWithErrOrRes",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "DoneFuncWithErrOrRes.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(): void;",
               "source": {
@@ -173,7 +173,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "DoneFuncWithErrOrRes.1-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "<TError extends Error = FastifyError>(err: TError): void;",
               "source": {
@@ -186,7 +186,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "DoneFuncWithErrOrRes.2-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(err: null, res: unknown): void;",
               "source": {
@@ -218,7 +218,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "FastifyContext",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -230,7 +230,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyContext.config",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "config",
               "signature": "config: ContextConfig;",
               "source": {
@@ -259,7 +259,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "FastifyInstance",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -319,7 +319,7 @@ exports[`fastify > 3.10.1 1`] = `
   */",
               ],
               "id": "FastifyInstance.addHook",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "addHook",
               "signature": "addHook: {
     <
@@ -611,7 +611,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyInstance.addSchema",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "addSchema",
               "signature": "addSchema: (
     schema: unknown
@@ -627,7 +627,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyInstance.after",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "after",
               "signature": "after: {
     (): FastifyInstance<RawServer, RawRequest, RawReply, Logger> &
@@ -650,7 +650,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyInstance.close",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "close",
               "signature": "close: {
     (): FastifyInstance<RawServer, RawRequest, RawReply, Logger> &
@@ -673,7 +673,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyInstance.decorate",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "decorate",
               "signature": "decorate: (
     property: string | symbol,
@@ -691,7 +691,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyInstance.decorateReply",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "decorateReply",
               "signature": "decorateReply: (
     property: string | symbol,
@@ -709,7 +709,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyInstance.decorateRequest",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "decorateRequest",
               "signature": "decorateRequest: (
     property: string | symbol,
@@ -727,7 +727,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyInstance.getSchema",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "getSchema",
               "signature": "getSchema: (schemaId: string) => unknown;",
               "source": {
@@ -741,7 +741,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyInstance.getSchemas",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "getSchemas",
               "signature": "getSchemas: () => Record<string, unknown>;",
               "source": {
@@ -755,7 +755,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyInstance.hasDecorator",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "hasDecorator",
               "signature": "hasDecorator: (decorator: string | symbol) => boolean;",
               "source": {
@@ -769,7 +769,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyInstance.hasReplyDecorator",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "hasReplyDecorator",
               "signature": "hasReplyDecorator: (decorator: string | symbol) => boolean;",
               "source": {
@@ -783,7 +783,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyInstance.hasRequestDecorator",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "hasRequestDecorator",
               "signature": "hasRequestDecorator: (decorator: string | symbol) => boolean;",
               "source": {
@@ -797,7 +797,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyInstance.inject",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "inject",
               "signature": "inject: {
     (opts: InjectOptions | string, cb: LightMyRequestCallback): void;
@@ -815,7 +815,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyInstance.listen",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "listen",
               "signature": "listen: {
     (
@@ -855,7 +855,7 @@ exports[`fastify > 3.10.1 1`] = `
    */",
               ],
               "id": "FastifyInstance.printRoutes",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "printRoutes",
               "signature": "printRoutes: () => string;",
               "source": {
@@ -869,7 +869,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyInstance.ready",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "ready",
               "signature": "ready: {
     (): FastifyInstance<RawServer, RawRequest, RawReply> &
@@ -892,7 +892,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyInstance.route",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "route",
               "signature": "route: <
     RouteGeneric extends RouteGenericInterface = RouteGenericInterface,
@@ -921,7 +921,7 @@ exports[`fastify > 3.10.1 1`] = `
    */",
               ],
               "id": "FastifyInstance.setErrorHandler",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "setErrorHandler",
               "signature": "setErrorHandler: <
     TError extends Error = FastifyError,
@@ -949,7 +949,7 @@ exports[`fastify > 3.10.1 1`] = `
    */",
               ],
               "id": "FastifyInstance.setNotFoundHandler",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "setNotFoundHandler",
               "signature": "setNotFoundHandler: <
     RouteGeneric extends RouteGenericInterface = RouteGenericInterface
@@ -974,7 +974,7 @@ exports[`fastify > 3.10.1 1`] = `
   */",
               ],
               "id": "FastifyInstance.setReplySerializer",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "setReplySerializer",
               "signature": "setReplySerializer: (
     replySerializer: (payload: unknown, statusCode: number) => string
@@ -990,7 +990,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyInstance.setSchemaErrorFormatter",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "setSchemaErrorFormatter",
               "signature": "setSchemaErrorFormatter: (
     errorFormatter: (
@@ -1013,7 +1013,7 @@ exports[`fastify > 3.10.1 1`] = `
    */",
               ],
               "id": "FastifyInstance.setSerializerCompiler",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "setSerializerCompiler",
               "signature": "setSerializerCompiler: (
     schemaCompiler: FastifySerializerCompiler
@@ -1033,7 +1033,7 @@ exports[`fastify > 3.10.1 1`] = `
    */",
               ],
               "id": "FastifyInstance.setValidatorCompiler",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "setValidatorCompiler",
               "signature": "setValidatorCompiler: (
     schemaCompiler: FastifySchemaCompiler
@@ -1057,7 +1057,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyInstance.addContentTypeParser",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "addContentTypeParser",
               "signature": "addContentTypeParser: AddContentTypeParser<RawServer, RawRequest>;",
               "source": {
@@ -1073,7 +1073,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyInstance.all",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "all",
               "signature": "all: RouteShorthandMethod<RawServer, RawRequest, RawReply>;",
               "source": {
@@ -1089,7 +1089,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyInstance.delete",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "delete",
               "signature": "delete: RouteShorthandMethod<RawServer, RawRequest, RawReply>;",
               "source": {
@@ -1109,7 +1109,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyInstance.errorHandler",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "errorHandler",
               "signature": "errorHandler: (
     error: FastifyError,
@@ -1129,7 +1129,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyInstance.get",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "get",
               "signature": "get: RouteShorthandMethod<RawServer, RawRequest, RawReply>;",
               "source": {
@@ -1145,7 +1145,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyInstance.hasContentTypeParser",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "hasContentTypeParser",
               "signature": "hasContentTypeParser: hasContentTypeParser;",
               "source": {
@@ -1161,7 +1161,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyInstance.head",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "head",
               "signature": "head: RouteShorthandMethod<RawServer, RawRequest, RawReply>;",
               "source": {
@@ -1177,7 +1177,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyInstance.log",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "log",
               "signature": "log: Logger;",
               "source": {
@@ -1193,7 +1193,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyInstance.options",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "options",
               "signature": "options: RouteShorthandMethod<RawServer, RawRequest, RawReply>;",
               "source": {
@@ -1209,7 +1209,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyInstance.patch",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "patch",
               "signature": "patch: RouteShorthandMethod<RawServer, RawRequest, RawReply>;",
               "source": {
@@ -1225,7 +1225,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyInstance.post",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "post",
               "signature": "post: RouteShorthandMethod<RawServer, RawRequest, RawReply>;",
               "source": {
@@ -1241,7 +1241,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyInstance.prefix",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "prefix",
               "signature": "prefix: string;",
               "source": {
@@ -1257,7 +1257,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyInstance.put",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "put",
               "signature": "put: RouteShorthandMethod<RawServer, RawRequest, RawReply>;",
               "source": {
@@ -1273,7 +1273,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyInstance.register",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "register",
               "signature": "register: FastifyRegister<
     FastifyInstance<RawServer, RawRequest, RawReply, Logger> &
@@ -1292,7 +1292,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyInstance.server",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "server",
               "signature": "server: RawServer;",
               "source": {
@@ -1308,7 +1308,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyInstance.version",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "version",
               "signature": "version: string | undefined;",
               "source": {
@@ -1342,13 +1342,13 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "FastifyLogFn",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "FastifyLogFn.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(msg: string, ...args: unknown[]): void;",
               "source": {
@@ -1361,7 +1361,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyLogFn.1-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(obj: Record<string, unknown>, msg?: string, ...args: unknown[]): void;",
               "source": {
@@ -1389,7 +1389,7 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "FastifyLoggerInstance",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1398,7 +1398,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyLoggerInstance.child",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "child",
               "signature": "child: (bindings: Bindings) => FastifyLoggerInstance;",
               "source": {
@@ -1416,7 +1416,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyLoggerInstance.debug",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "debug",
               "signature": "debug: FastifyLogFn;",
               "source": {
@@ -1432,7 +1432,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyLoggerInstance.error",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "error",
               "signature": "error: FastifyLogFn;",
               "source": {
@@ -1448,7 +1448,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyLoggerInstance.fatal",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "fatal",
               "signature": "fatal: FastifyLogFn;",
               "source": {
@@ -1464,7 +1464,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyLoggerInstance.info",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "info",
               "signature": "info: FastifyLogFn;",
               "source": {
@@ -1480,7 +1480,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyLoggerInstance.trace",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "trace",
               "signature": "trace: FastifyLogFn;",
               "source": {
@@ -1496,7 +1496,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyLoggerInstance.warn",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "warn",
               "signature": "warn: FastifyLogFn;",
               "source": {
@@ -1527,7 +1527,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "FastifyLoggerOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1539,7 +1539,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyLoggerOptions.genReqId",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "genReqId",
               "signature": "genReqId?: <
     RequestGeneric extends RequestGenericInterface = RequestGenericInterface
@@ -1559,7 +1559,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyLoggerOptions.level",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "level",
               "signature": "level?: string;",
               "source": {
@@ -1575,7 +1575,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyLoggerOptions.prettyPrint",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "prettyPrint",
               "signature": "prettyPrint?: boolean | PrettyOptions;",
               "source": {
@@ -1591,7 +1591,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyLoggerOptions.serializers",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "serializers",
               "signature": "serializers?: {
     req?: (req: RawRequest) => {
@@ -1646,13 +1646,13 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "FastifyRegister",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "FastifyRegister.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "<Options extends FastifyPluginOptions>(
     plugin: FastifyPluginCallback<Options>,
@@ -1668,7 +1668,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyRegister.1-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "<Options extends FastifyPluginOptions>(
     plugin: FastifyPluginAsync<Options>,
@@ -1684,7 +1684,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyRegister.2-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "<Options extends FastifyPluginOptions>(
     plugin:
@@ -1724,7 +1724,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "FastifyReply",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1733,7 +1733,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyReply.callNotFound",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "callNotFound",
               "signature": "callNotFound: () => void;",
               "source": {
@@ -1747,7 +1747,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyReply.code",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "code",
               "signature": "code: (
     statusCode: number
@@ -1763,7 +1763,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyReply.getHeader",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "getHeader",
               "signature": "getHeader: (key: string) => string | undefined;",
               "source": {
@@ -1777,7 +1777,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyReply.getHeaders",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "getHeaders",
               "signature": "getHeaders: () => { [key: string]: string | number | string[] };",
               "source": {
@@ -1791,7 +1791,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyReply.getResponseTime",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "getResponseTime",
               "signature": "getResponseTime: () => number;",
               "source": {
@@ -1805,7 +1805,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyReply.hasHeader",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "hasHeader",
               "signature": "hasHeader: (key: string) => boolean;",
               "source": {
@@ -1819,7 +1819,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyReply.header",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "header",
               "signature": "header: (
     key: string,
@@ -1836,7 +1836,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyReply.headers",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "headers",
               "signature": "headers: (values: {
     [key: string]: any;
@@ -1852,7 +1852,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyReply.redirect",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "redirect",
               "signature": "redirect: {
     (statusCode: number, url: string): FastifyReply<
@@ -1881,7 +1881,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyReply.removeHeader",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "removeHeader",
               "signature": "removeHeader: (key: string) => void;",
               "source": {
@@ -1895,7 +1895,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyReply.send",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "send",
               "signature": "send: (
     payload?: RouteGeneric['Reply']
@@ -1911,7 +1911,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyReply.serialize",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "serialize",
               "signature": "serialize: (payload: any) => string;",
               "source": {
@@ -1925,7 +1925,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyReply.serializer",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "serializer",
               "signature": "serializer: (
     fn: (payload: any) => string
@@ -1941,7 +1941,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyReply.status",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "status",
               "signature": "status: (
     statusCode: number
@@ -1957,7 +1957,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyReply.then",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "then",
               "signature": "then: (fullfilled: () => void, rejected: (err: Error) => void) => void;",
               "source": {
@@ -1971,7 +1971,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "FastifyReply.type",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "type",
               "signature": "type: (
     contentType: string
@@ -1991,7 +1991,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyReply.context",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "context",
               "signature": "context: FastifyContext<ContextConfig>;",
               "source": {
@@ -2007,7 +2007,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyReply.log",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "log",
               "signature": "log: FastifyLoggerInstance;",
               "source": {
@@ -2023,7 +2023,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyReply.raw",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "raw",
               "signature": "raw: RawReply;",
               "source": {
@@ -2039,7 +2039,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyReply.request",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "request",
               "signature": "request: FastifyRequest<RouteGeneric, RawServer, RawRequest>;",
               "source": {
@@ -2055,7 +2055,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyReply.sent",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "sent",
               "signature": "sent: boolean;",
               "source": {
@@ -2071,7 +2071,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyReply.statusCode",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "statusCode",
               "signature": "statusCode: number;",
               "source": {
@@ -2102,7 +2102,7 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "FastifyReply",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2114,7 +2114,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyReply.testProp",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "testProp",
               "signature": "testProp: TestType;",
               "source": {
@@ -2144,7 +2144,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "FastifyRequest",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2156,7 +2156,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyRequest.body",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "body",
               "signature": "body: RouteGeneric['Body'];",
               "source": {
@@ -2172,7 +2172,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyRequest.connection",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "connection",
               "signature": "readonly connection: RawRequest['socket'];",
               "source": {
@@ -2188,7 +2188,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyRequest.headers",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "headers",
               "signature": "readonly headers: RawRequest['headers'] & RouteGeneric['Headers'];",
               "source": {
@@ -2204,7 +2204,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyRequest.hostname",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "hostname",
               "signature": "readonly hostname: string;",
               "source": {
@@ -2220,7 +2220,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyRequest.id",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "id",
               "signature": "id: any;",
               "source": {
@@ -2236,7 +2236,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyRequest.ip",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "ip",
               "signature": "readonly ip: string;",
               "source": {
@@ -2252,7 +2252,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyRequest.ips",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "ips",
               "signature": "readonly ips?: string[];",
               "source": {
@@ -2268,7 +2268,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyRequest.is404",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "is404",
               "signature": "readonly is404: boolean;",
               "source": {
@@ -2284,7 +2284,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyRequest.log",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "log",
               "signature": "log: FastifyLoggerInstance;",
               "source": {
@@ -2300,7 +2300,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyRequest.method",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "method",
               "signature": "readonly method: string;",
               "source": {
@@ -2316,7 +2316,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyRequest.params",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "params",
               "signature": "params: RouteGeneric['Params'];",
               "source": {
@@ -2332,7 +2332,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyRequest.protocol",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "protocol",
               "signature": "readonly protocol: 'http' | 'https';",
               "source": {
@@ -2348,7 +2348,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyRequest.query",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "query",
               "signature": "query: RouteGeneric['Querystring'];",
               "source": {
@@ -2364,7 +2364,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyRequest.raw",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "raw",
               "signature": "raw: RawRequest;",
               "source": {
@@ -2384,7 +2384,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyRequest.req",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "req",
               "signature": "readonly req: RawRequest;",
               "source": {
@@ -2400,7 +2400,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyRequest.routerMethod",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "routerMethod",
               "signature": "readonly routerMethod: string;",
               "source": {
@@ -2416,7 +2416,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyRequest.routerPath",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "routerPath",
               "signature": "readonly routerPath: string;",
               "source": {
@@ -2432,7 +2432,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyRequest.socket",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "socket",
               "signature": "readonly socket: RawRequest['socket'];",
               "source": {
@@ -2448,7 +2448,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyRequest.url",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "url",
               "signature": "readonly url: string;",
               "source": {
@@ -2466,7 +2466,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyRequest.validationError",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "validationError",
               "signature": "validationError?: Error & { validation: any; validationContext: string };",
               "source": {
@@ -2495,7 +2495,7 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "FastifyRequest",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2507,7 +2507,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifyRequest.testProp",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "testProp",
               "signature": "testProp: TestType;",
               "source": {
@@ -2539,7 +2539,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "FastifySchema",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2551,7 +2551,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifySchema.body",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "body",
               "signature": "body?: unknown;",
               "source": {
@@ -2567,7 +2567,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifySchema.headers",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "headers",
               "signature": "headers?: unknown;",
               "source": {
@@ -2583,7 +2583,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifySchema.params",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "params",
               "signature": "params?: unknown;",
               "source": {
@@ -2599,7 +2599,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifySchema.querystring",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "querystring",
               "signature": "querystring?: unknown;",
               "source": {
@@ -2615,7 +2615,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "FastifySchema.response",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "response",
               "signature": "response?: unknown;",
               "source": {
@@ -2640,13 +2640,13 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "FastifyServerFactory",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "FastifyServerFactory.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     handler: FastifyServerFactoryHandler<RawServer>,
@@ -2681,13 +2681,13 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "onCloseHookHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "onCloseHookHandler.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     instance: FastifyInstance<RawServer, RawRequest, RawReply, Logger>,
@@ -2723,13 +2723,13 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "onErrorAsyncHookHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "onErrorAsyncHookHandler.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     request: FastifyRequest<RouteGeneric, RawServer, RawRequest>,
@@ -2781,13 +2781,13 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "onErrorHookHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "onErrorHookHandler.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     request: FastifyRequest<RouteGeneric, RawServer, RawRequest>,
@@ -2833,13 +2833,13 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "onReadyAsyncHookHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "onReadyAsyncHookHandler.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(): Promise<unknown>;",
               "source": {
@@ -2871,13 +2871,13 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "onReadyHookHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "onReadyHookHandler.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(done: HookHandlerDoneFunction): void;",
               "source": {
@@ -2911,13 +2911,13 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "onRegisterHookHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "onRegisterHookHandler.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     instance: FastifyInstance<RawServer, RawRequest, RawReply, Logger>,
@@ -2953,13 +2953,13 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "onRequestAsyncHookHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "onRequestAsyncHookHandler.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     request: FastifyRequest<RouteGeneric, RawServer, RawRequest>,
@@ -3007,13 +3007,13 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "onRequestHookHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "onRequestHookHandler.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     request: FastifyRequest<RouteGeneric, RawServer, RawRequest>,
@@ -3057,13 +3057,13 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "onResponseAsyncHookHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "onResponseAsyncHookHandler.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     request: FastifyRequest<RouteGeneric, RawServer, RawRequest>,
@@ -3111,13 +3111,13 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "onResponseHookHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "onResponseHookHandler.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     request: FastifyRequest<RouteGeneric, RawServer, RawRequest>,
@@ -3165,13 +3165,13 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "onRouteHookHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "onRouteHookHandler.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     opts: RouteOptions<
@@ -3213,13 +3213,13 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "onSendAsyncHookHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "onSendAsyncHookHandler.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     request: FastifyRequest<RouteGeneric, RawServer, RawRequest>,
@@ -3269,13 +3269,13 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "onSendHookHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "onSendHookHandler.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     request: FastifyRequest<RouteGeneric, RawServer, RawRequest>,
@@ -3321,13 +3321,13 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "onTimeoutAsyncHookHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "onTimeoutAsyncHookHandler.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     request: FastifyRequest<RouteGeneric, RawServer, RawRequest>,
@@ -3375,13 +3375,13 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "onTimeoutHookHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "onTimeoutHookHandler.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     request: FastifyRequest<RouteGeneric, RawServer, RawRequest>,
@@ -3425,13 +3425,13 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "preHandlerAsyncHookHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "preHandlerAsyncHookHandler.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     request: FastifyRequest<RouteGeneric, RawServer, RawRequest>,
@@ -3478,13 +3478,13 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "preHandlerHookHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "preHandlerHookHandler.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     request: FastifyRequest<RouteGeneric, RawServer, RawRequest>,
@@ -3528,13 +3528,13 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "preParsingAsyncHookHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "preParsingAsyncHookHandler.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     request: FastifyRequest<RouteGeneric, RawServer, RawRequest>,
@@ -3583,13 +3583,13 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "preParsingHookHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "preParsingHookHandler.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     request: FastifyRequest<RouteGeneric, RawServer, RawRequest>,
@@ -3637,13 +3637,13 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "preSerializationAsyncHookHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "preSerializationAsyncHookHandler.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     request: FastifyRequest<RouteGeneric, RawServer, RawRequest>,
@@ -3693,13 +3693,13 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "preSerializationHookHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "preSerializationHookHandler.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     request: FastifyRequest<RouteGeneric, RawServer, RawRequest>,
@@ -3745,13 +3745,13 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "preValidationAsyncHookHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "preValidationAsyncHookHandler.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     request: FastifyRequest<RouteGeneric, RawServer, RawRequest>,
@@ -3798,13 +3798,13 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "preValidationHookHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "preValidationHookHandler.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     request: FastifyRequest<RouteGeneric, RawServer, RawRequest>,
@@ -3848,7 +3848,7 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "RegisterOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3860,7 +3860,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RegisterOptions.logLevel",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "logLevel",
               "signature": "logLevel?: LogLevel;",
               "source": {
@@ -3876,7 +3876,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RegisterOptions.logSerializers",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "logSerializers",
               "signature": "logSerializers?: Record<string, (value: any) => string>;",
               "source": {
@@ -3892,7 +3892,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RegisterOptions.prefix",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "prefix",
               "signature": "prefix?: string;",
               "source": {
@@ -3917,7 +3917,7 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "RequestGenericInterface",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3929,7 +3929,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RequestGenericInterface.Body",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "Body",
               "signature": "Body?: RequestBodyDefault;",
               "source": {
@@ -3945,7 +3945,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RequestGenericInterface.Headers",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "Headers",
               "signature": "Headers?: RequestHeadersDefault;",
               "source": {
@@ -3961,7 +3961,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RequestGenericInterface.Params",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "Params",
               "signature": "Params?: RequestParamsDefault;",
               "source": {
@@ -3977,7 +3977,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RequestGenericInterface.Querystring",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "Querystring",
               "signature": "Querystring?: RequestQuerystringDefault;",
               "source": {
@@ -4002,7 +4002,7 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "RequestPayload",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -4014,7 +4014,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RequestPayload.receivedEncodedLength",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "receivedEncodedLength",
               "signature": "receivedEncodedLength?: number;",
               "source": {
@@ -4043,7 +4043,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "RouteOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -4055,7 +4055,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteOptions.handler",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "handler",
               "signature": "handler: RouteHandlerMethod<
     RawServer,
@@ -4077,7 +4077,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteOptions.method",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "method",
               "signature": "method: HTTPMethods | HTTPMethods[];",
               "source": {
@@ -4093,7 +4093,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteOptions.url",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "url",
               "signature": "url: string;",
               "source": {
@@ -4134,13 +4134,13 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "RouteShorthandMethod",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "RouteShorthandMethod.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "<
     RouteGeneric extends RouteGenericInterface = RouteGenericInterface,
@@ -4172,7 +4172,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "RouteShorthandMethod.1-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "<
     RouteGeneric extends RouteGenericInterface = RouteGenericInterface,
@@ -4197,7 +4197,7 @@ exports[`fastify > 3.10.1 1`] = `
             {
               "docs": [],
               "id": "RouteShorthandMethod.2-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "<
     RouteGeneric extends RouteGenericInterface = RouteGenericInterface,
@@ -4245,7 +4245,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "RouteShorthandOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -4257,7 +4257,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteShorthandOptions.attachValidation",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "attachValidation",
               "signature": "attachValidation?: boolean;",
               "source": {
@@ -4273,7 +4273,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteShorthandOptions.bodyLimit",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bodyLimit",
               "signature": "bodyLimit?: number;",
               "source": {
@@ -4289,7 +4289,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteShorthandOptions.config",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "config",
               "signature": "config?: ContextConfig;",
               "source": {
@@ -4305,7 +4305,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteShorthandOptions.errorHandler",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "errorHandler",
               "signature": "errorHandler?: (
     this: FastifyInstance,
@@ -4326,7 +4326,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteShorthandOptions.exposeHeadRoute",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "exposeHeadRoute",
               "signature": "exposeHeadRoute?: boolean;",
               "source": {
@@ -4342,7 +4342,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteShorthandOptions.logLevel",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "logLevel",
               "signature": "logLevel?: LogLevel;",
               "source": {
@@ -4358,7 +4358,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteShorthandOptions.onError",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "onError",
               "signature": "onError?:
     | onErrorHookHandler<
@@ -4388,7 +4388,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteShorthandOptions.onRequest",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "onRequest",
               "signature": "onRequest?:
     | onRequestHookHandler<
@@ -4418,7 +4418,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteShorthandOptions.onResponse",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "onResponse",
               "signature": "onResponse?:
     | onResponseHookHandler<
@@ -4448,7 +4448,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteShorthandOptions.onSend",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "onSend",
               "signature": "onSend?:
     | onSendHookHandler<
@@ -4480,7 +4480,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteShorthandOptions.onTimeout",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "onTimeout",
               "signature": "onTimeout?:
     | onTimeoutHookHandler<
@@ -4510,7 +4510,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteShorthandOptions.prefixTrailingSlash",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "prefixTrailingSlash",
               "signature": "prefixTrailingSlash?: 'slash' | 'no-slash' | 'both';",
               "source": {
@@ -4526,7 +4526,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteShorthandOptions.preHandler",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "preHandler",
               "signature": "preHandler?:
     | preHandlerHookHandler<
@@ -4556,7 +4556,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteShorthandOptions.preParsing",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "preParsing",
               "signature": "preParsing?:
     | preParsingHookHandler<
@@ -4586,7 +4586,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteShorthandOptions.preSerialization",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "preSerialization",
               "signature": "preSerialization?:
     | preSerializationHookHandler<
@@ -4618,7 +4618,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteShorthandOptions.preValidation",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "preValidation",
               "signature": "preValidation?:
     | preValidationHookHandler<
@@ -4648,7 +4648,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteShorthandOptions.schema",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "schema",
               "signature": "schema?: FastifySchema;",
               "source": {
@@ -4664,7 +4664,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteShorthandOptions.schemaErrorFormatter",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "schemaErrorFormatter",
               "signature": "schemaErrorFormatter?: (
     errors: FastifySchemaValidationError[],
@@ -4683,7 +4683,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteShorthandOptions.serializerCompiler",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "serializerCompiler",
               "signature": "serializerCompiler?: FastifySerializerCompiler;",
               "source": {
@@ -4699,7 +4699,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteShorthandOptions.validatorCompiler",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "validatorCompiler",
               "signature": "validatorCompiler?: FastifySchemaCompiler;",
               "source": {
@@ -4715,7 +4715,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteShorthandOptions.version",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "version",
               "signature": "version?: string;",
               "source": {
@@ -4750,7 +4750,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "RouteShorthandOptionsWithHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -4762,7 +4762,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "RouteShorthandOptionsWithHandler.handler",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "handler",
               "signature": "handler: RouteHandlerMethod<
     RawServer,
@@ -4805,7 +4805,7 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "ValidationResult",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -4817,7 +4817,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "ValidationResult.dataPath",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "dataPath",
               "signature": "dataPath: string;",
               "source": {
@@ -4833,7 +4833,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "ValidationResult.keyword",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "keyword",
               "signature": "keyword: string;",
               "source": {
@@ -4849,7 +4849,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "ValidationResult.message",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "message",
               "signature": "message: string;",
               "source": {
@@ -4865,7 +4865,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "ValidationResult.params",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "params",
               "signature": "params: Record<string, string | string[]>;",
               "source": {
@@ -4881,7 +4881,7 @@ exports[`fastify > 3.10.1 1`] = `
               "id": "ValidationResult.schemaPath",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "schemaPath",
               "signature": "schemaPath: string;",
               "source": {
@@ -4909,7 +4909,7 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "ContextConfigDefault",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "ContextConfigDefault",
         "signature": "type ContextConfigDefault = unknown;",
         "source": {
@@ -4926,7 +4926,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "FastifyBodyParser",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "FastifyBodyParser",
         "signature": "type FastifyBodyParser<
     RawBody extends string | Buffer,
@@ -4957,7 +4957,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "FastifyContentTypeParser",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "FastifyContentTypeParser",
         "signature": "type FastifyContentTypeParser<
     RawServer extends RawServerBase = RawServerDefault,
@@ -4983,7 +4983,7 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "FastifyHttp2Options",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "FastifyHttp2Options",
         "signature": "type FastifyHttp2Options<
     Server extends http2.Http2Server,
@@ -5002,7 +5002,7 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "FastifyHttp2SecureOptions",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "FastifyHttp2SecureOptions",
         "signature": "type FastifyHttp2SecureOptions<
     Server extends http2.Http2SecureServer,
@@ -5021,7 +5021,7 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "FastifyHttpsOptions",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "FastifyHttpsOptions",
         "signature": "type FastifyHttpsOptions<
     Server extends https.Server,
@@ -5044,7 +5044,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "FastifyPlugin",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "FastifyPlugin",
         "signature": "type FastifyPlugin<Options extends FastifyPluginOptions = Record<never, never>> =
     | FastifyPluginCallback<Options>
@@ -5065,7 +5065,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "FastifyPluginAsync",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "FastifyPluginAsync",
         "signature": "type FastifyPluginAsync<
     Options extends FastifyPluginOptions = Record<never, never>,
@@ -5094,7 +5094,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "FastifyPluginCallback",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "FastifyPluginCallback",
         "signature": "type FastifyPluginCallback<
     Options extends FastifyPluginOptions = Record<never, never>,
@@ -5118,7 +5118,7 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "FastifyPluginOptions",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "FastifyPluginOptions",
         "signature": "type FastifyPluginOptions = Record<string, any>;",
         "source": {
@@ -5131,7 +5131,7 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "FastifyRegisterOptions",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "FastifyRegisterOptions",
         "signature": "type FastifyRegisterOptions<Options> =
     | (RegisterOptions & Options)
@@ -5150,7 +5150,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "FastifySchemaCompiler",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "FastifySchemaCompiler",
         "signature": "type FastifySchemaCompiler = (
     routeSchema: FastifyRouteSchemaDef
@@ -5165,7 +5165,7 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "FastifyServerFactoryHandler",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "FastifyServerFactoryHandler",
         "signature": "type FastifyServerFactoryHandler<
     RawServer extends RawServerBase = RawServerDefault,
@@ -5194,7 +5194,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "FastifyServerOptions",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "FastifyServerOptions",
         "signature": "type FastifyServerOptions<
     RawServer extends RawServerBase = RawServerDefault,
@@ -5275,7 +5275,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "hasContentTypeParser",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "hasContentTypeParser",
         "signature": "type hasContentTypeParser = (contentType: string) => boolean;",
         "source": {
@@ -5288,7 +5288,7 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "HookHandlerDoneFunction",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "HookHandlerDoneFunction",
         "signature": "type HookHandlerDoneFunction = <TError extends Error = FastifyError>(
     err?: TError
@@ -5307,7 +5307,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "HTTPMethods",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "HTTPMethods",
         "signature": "type HTTPMethods = 'DELETE' | 'GET' | 'HEAD' | 'PATCH' | 'POST' | 'PUT' | 'OPTIONS';",
         "source": {
@@ -5320,7 +5320,7 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "LogLevel",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "LogLevel",
         "signature": "type LogLevel = 'info' | 'error' | 'debug' | 'fatal' | 'warn' | 'trace';",
         "source": {
@@ -5337,7 +5337,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "RawReplyDefaultExpression",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "RawReplyDefaultExpression",
         "signature": "type RawReplyDefaultExpression<RawServer extends RawServerBase = RawServerDefault> =
     RawServer extends http.Server | https.Server
@@ -5359,7 +5359,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "RawRequestDefaultExpression",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "RawRequestDefaultExpression",
         "signature": "type RawRequestDefaultExpression<
     RawServer extends RawServerBase = RawServerDefault
@@ -5382,7 +5382,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "RawServerBase",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "RawServerBase",
         "signature": "type RawServerBase =
     | http.Server
@@ -5403,7 +5403,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "RawServerDefault",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "RawServerDefault",
         "signature": "type RawServerDefault = http.Server;",
         "source": {
@@ -5416,7 +5416,7 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "RequestBodyDefault",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "RequestBodyDefault",
         "signature": "type RequestBodyDefault = unknown;",
         "source": {
@@ -5429,7 +5429,7 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "RequestHeadersDefault",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "RequestHeadersDefault",
         "signature": "type RequestHeadersDefault = unknown;",
         "source": {
@@ -5442,7 +5442,7 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "RequestParamsDefault",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "RequestParamsDefault",
         "signature": "type RequestParamsDefault = unknown;",
         "source": {
@@ -5455,7 +5455,7 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "RequestQuerystringDefault",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "RequestQuerystringDefault",
         "signature": "type RequestQuerystringDefault = unknown;",
         "source": {
@@ -5468,7 +5468,7 @@ exports[`fastify > 3.10.1 1`] = `
       {
         "docs": [],
         "id": "RouteHandler",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "RouteHandler",
         "signature": "type RouteHandler<
     RouteGeneric extends RouteGenericInterface = RouteGenericInterface,
@@ -5495,7 +5495,7 @@ exports[`fastify > 3.10.1 1`] = `
  */",
         ],
         "id": "RouteHandlerMethod",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "RouteHandlerMethod",
         "signature": "type RouteHandlerMethod<
     RawServer extends RawServerBase = RawServerDefault,

@@ -20,7 +20,7 @@ exports[`h3 > 0.3.3 1`] = `
         ],
         "id": "H3Error",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [
@@ -28,7 +28,7 @@ exports[`h3 > 0.3.3 1`] = `
               "docs": [],
               "id": "H3Error.data",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "data",
               "signature": "data?: any;",
               "source": {
@@ -43,7 +43,7 @@ exports[`h3 > 0.3.3 1`] = `
               "docs": [],
               "id": "H3Error.statusCode",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "statusCode",
               "signature": "statusCode: number;",
               "source": {
@@ -58,7 +58,7 @@ exports[`h3 > 0.3.3 1`] = `
               "docs": [],
               "id": "H3Error.statusMessage",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "statusMessage",
               "signature": "statusMessage: string;",
               "source": {
@@ -86,7 +86,7 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "appendHeader",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "appendHeader",
         "signature": "appendHeader: (res: ServerResponse, name: string, value: string) => void;",
         "source": {
@@ -100,7 +100,7 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "callHandle",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "callHandle",
         "signature": "callHandle: (
     handle: Middleware,
@@ -118,7 +118,7 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "createApp",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "createApp",
         "signature": "createApp: (options?: AppOptions) => App;",
         "source": {
@@ -139,7 +139,7 @@ exports[`h3 > 0.3.3 1`] = `
  */",
         ],
         "id": "createError",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "createError",
         "signature": "createError: (input: Partial<H3Error>) => H3Error;",
         "source": {
@@ -153,7 +153,7 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "createHandle",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "createHandle",
         "signature": "createHandle: (stack: Stack, options: AppOptions) => PHandle;",
         "source": {
@@ -167,7 +167,7 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "defaultContentType",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "defaultContentType",
         "signature": "defaultContentType: (res: ServerResponse, type?: string) => void;",
         "source": {
@@ -181,7 +181,7 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "lazyHandle",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "lazyHandle",
         "signature": "lazyHandle: (handle: LazyHandle, promisify?: boolean) => PHandle;",
         "source": {
@@ -195,7 +195,7 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "promisifyHandle",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "promisifyHandle",
         "signature": "promisifyHandle: (handle: Handle | Middleware) => PHandle;",
         "source": {
@@ -209,7 +209,7 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "send",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "send",
         "signature": "send: (res: ServerResponse, data: any, type?: string) => Promise<unknown>;",
         "source": {
@@ -234,7 +234,7 @@ exports[`h3 > 0.3.3 1`] = `
  */",
         ],
         "id": "sendError",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "sendError",
         "signature": "sendError: (
     res: ServerResponse,
@@ -252,7 +252,7 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "sendRedirect",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "sendRedirect",
         "signature": "sendRedirect: (
     res: ServerResponse,
@@ -281,7 +281,7 @@ exports[`h3 > 0.3.3 1`] = `
  */",
         ],
         "id": "setCookie",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "setCookie",
         "signature": "setCookie: (
     res: ServerResponse,
@@ -300,7 +300,7 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "use",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "use",
         "signature": "use: (
     app: App,
@@ -319,7 +319,7 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "useBase",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "useBase",
         "signature": "useBase: (base: string, handle: PHandle) => PHandle;",
         "source": {
@@ -345,7 +345,7 @@ exports[`h3 > 0.3.3 1`] = `
  */",
         ],
         "id": "useBody",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "useBody",
         "signature": "useBody: <T = any>(req: IncomingMessage) => Promise<T>;",
         "source": {
@@ -369,7 +369,7 @@ exports[`h3 > 0.3.3 1`] = `
  */",
         ],
         "id": "useCookie",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "useCookie",
         "signature": "useCookie: (req: IncomingMessage, name: string) => string | undefined;",
         "source": {
@@ -392,7 +392,7 @@ exports[`h3 > 0.3.3 1`] = `
  */",
         ],
         "id": "useCookies",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "useCookies",
         "signature": "useCookies: (req: IncomingMessage) => Record<string, string>;",
         "source": {
@@ -406,7 +406,7 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "useQuery",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "useQuery",
         "signature": "useQuery: (req: IncomingMessage) => ufo.QueryObject;",
         "source": {
@@ -428,7 +428,7 @@ exports[`h3 > 0.3.3 1`] = `
  */",
         ],
         "id": "useRawBody",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "useRawBody",
         "signature": "useRawBody: (
     req: IncomingMessage,
@@ -447,13 +447,13 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "App",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "App.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(req: IncomingMessage, res: ServerResponse): Promise<any>;",
               "source": {
@@ -473,7 +473,7 @@ exports[`h3 > 0.3.3 1`] = `
               "id": "App.stack",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "stack",
               "signature": "stack: Stack;",
               "source": {
@@ -489,7 +489,7 @@ exports[`h3 > 0.3.3 1`] = `
               "id": "App.use",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "use",
               "signature": "use: AppUse;",
               "source": {
@@ -514,7 +514,7 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "AppOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -526,7 +526,7 @@ exports[`h3 > 0.3.3 1`] = `
               "id": "AppOptions.debug",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "debug",
               "signature": "debug?: boolean;",
               "source": {
@@ -542,7 +542,7 @@ exports[`h3 > 0.3.3 1`] = `
               "id": "AppOptions.onError",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "onError",
               "signature": "onError?: (error: Error, req: IncomingMessage, res: ServerResponse) => any;",
               "source": {
@@ -567,13 +567,13 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "AppUse",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "AppUse.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     route: string | string[],
@@ -590,7 +590,7 @@ exports[`h3 > 0.3.3 1`] = `
             {
               "docs": [],
               "id": "AppUse.1-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     route: string | string[],
@@ -607,7 +607,7 @@ exports[`h3 > 0.3.3 1`] = `
             {
               "docs": [],
               "id": "AppUse.2-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(handle: Middleware | Middleware[], options?: Partial<InputLayer>): App;",
               "source": {
@@ -620,7 +620,7 @@ exports[`h3 > 0.3.3 1`] = `
             {
               "docs": [],
               "id": "AppUse.3-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(handle: Handle | Handle[], options?: Partial<InputLayer>): App;",
               "source": {
@@ -633,7 +633,7 @@ exports[`h3 > 0.3.3 1`] = `
             {
               "docs": [],
               "id": "AppUse.4-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(options: InputLayer): App;",
               "source": {
@@ -661,7 +661,7 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "InputLayer",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -673,7 +673,7 @@ exports[`h3 > 0.3.3 1`] = `
               "id": "InputLayer.handle",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "handle",
               "signature": "handle: Handle | LazyHandle;",
               "source": {
@@ -689,7 +689,7 @@ exports[`h3 > 0.3.3 1`] = `
               "id": "InputLayer.lazy",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "lazy",
               "signature": "lazy?: boolean;",
               "source": {
@@ -705,7 +705,7 @@ exports[`h3 > 0.3.3 1`] = `
               "id": "InputLayer.match",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "match",
               "signature": "match?: Matcher;",
               "source": {
@@ -721,7 +721,7 @@ exports[`h3 > 0.3.3 1`] = `
               "id": "InputLayer.promisify",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "promisify",
               "signature": "promisify?: boolean;",
               "source": {
@@ -737,7 +737,7 @@ exports[`h3 > 0.3.3 1`] = `
               "id": "InputLayer.route",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "route",
               "signature": "route?: string;",
               "source": {
@@ -762,7 +762,7 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "Layer",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -774,7 +774,7 @@ exports[`h3 > 0.3.3 1`] = `
               "id": "Layer.handle",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "handle",
               "signature": "handle: Handle;",
               "source": {
@@ -790,7 +790,7 @@ exports[`h3 > 0.3.3 1`] = `
               "id": "Layer.match",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "match",
               "signature": "match?: Matcher;",
               "source": {
@@ -806,7 +806,7 @@ exports[`h3 > 0.3.3 1`] = `
               "id": "Layer.route",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "route",
               "signature": "route: string;",
               "source": {
@@ -834,7 +834,7 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "Handle",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "Handle",
         "signature": "type Handle<T = any> = (req: IncomingMessage, res: ServerResponse) => T;",
         "source": {
@@ -847,7 +847,7 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "InputStack",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "InputStack",
         "signature": "type InputStack = InputLayer[];",
         "source": {
@@ -860,7 +860,7 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "LazyHandle",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "LazyHandle",
         "signature": "type LazyHandle = () => Handle | Promise<Handle>;",
         "source": {
@@ -873,7 +873,7 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "Matcher",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "Matcher",
         "signature": "type Matcher = (url: string, req?: IncomingMessage) => boolean;",
         "source": {
@@ -886,7 +886,7 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "Middleware",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "Middleware",
         "signature": "type Middleware = (
     req: IncomingMessage,
@@ -903,7 +903,7 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "PHandle",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "PHandle",
         "signature": "type PHandle = Handle<Promise<any>>;",
         "source": {
@@ -916,7 +916,7 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "Stack",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "Stack",
         "signature": "type Stack = Layer[];",
         "source": {
@@ -931,7 +931,7 @@ exports[`h3 > 0.3.3 1`] = `
       {
         "docs": [],
         "id": "MIMES",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "MIMES",
         "signature": "const MIMES: { html: string; json: string };",
         "source": {

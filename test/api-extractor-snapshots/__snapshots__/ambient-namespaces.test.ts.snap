@@ -11,7 +11,7 @@ exports[`ambient-namespaces > snapshot 1`] = `
           "/** Global function foobar */",
         ],
         "id": "foobar",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "foobar",
         "signature": "foobar: (a: number, b: number) => number;",
         "source": {
@@ -36,7 +36,7 @@ exports[`ambient-namespaces > snapshot 1`] = `
                 "/** Interface Bar */",
               ],
               "id": "Foo.Bar",
-              "kind": "InterfaceDeclaration",
+              "kind": "interface",
               "members": {
                 "callSignatures": [],
                 "constructSignatures": [],
@@ -50,7 +50,7 @@ exports[`ambient-namespaces > snapshot 1`] = `
                     "id": "Foo.Bar.qux",
                     "isOptional": false,
                     "isReadonly": true,
-                    "kind": "InterfacePropertyDeclaration",
+                    "kind": "interfaceProperty",
                     "name": "qux",
                     "signature": "readonly qux: string;",
                     "source": {
@@ -81,7 +81,7 @@ exports[`ambient-namespaces > snapshot 1`] = `
                 "/** Variable baz */",
               ],
               "id": "Foo.baz",
-              "kind": "VariableDeclaration",
+              "kind": "variable",
               "name": "baz",
               "signature": "const baz: boolean;",
               "source": {
@@ -99,7 +99,7 @@ exports[`ambient-namespaces > snapshot 1`] = `
           "/** Ambient namespace Foo */",
         ],
         "id": "Foo",
-        "kind": "NamespaceDeclaration",
+        "kind": "namespace",
         "name": "Foo",
         "signature": "namespace Foo {}",
         "source": {
@@ -117,7 +117,7 @@ exports[`ambient-namespaces > snapshot 1`] = `
           "/** Global read-only variable bar */",
         ],
         "id": "bar",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "bar",
         "signature": "const bar: Foo.Bar;",
         "source": {
@@ -134,7 +134,7 @@ exports[`ambient-namespaces > snapshot 1`] = `
           "/** Global variable foo */",
         ],
         "id": "foo",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "foo",
         "signature": "var foo: Foo.Bar;",
         "source": {

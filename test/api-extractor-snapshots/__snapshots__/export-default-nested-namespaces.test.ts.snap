@@ -18,7 +18,7 @@ exports[`export-default-nested-namespaces > snapshot 1`] = `
                 "/** fooFunc doc */",
               ],
               "id": "foo.fooFunc",
-              "kind": "FunctionDeclaration",
+              "kind": "function",
               "name": "fooFunc",
               "signature": "fooFunc: (s: string) => string;",
               "source": {
@@ -42,7 +42,7 @@ exports[`export-default-nested-namespaces > snapshot 1`] = `
                       "/** foobarFunc doc */",
                     ],
                     "id": "foo.bar.foobarFunc",
-                    "kind": "FunctionDeclaration",
+                    "kind": "function",
                     "name": "foobarFunc",
                     "signature": "foobarFunc: (n: number) => number;",
                     "source": {
@@ -66,7 +66,7 @@ exports[`export-default-nested-namespaces > snapshot 1`] = `
                             "/** foobarbazFunc doc */",
                           ],
                           "id": "foo.bar.baz.foobarbazFunc",
-                          "kind": "FunctionDeclaration",
+                          "kind": "function",
                           "name": "foobarbazFunc",
                           "signature": "foobarbazFunc: (b: boolean) => boolean;",
                           "source": {
@@ -99,7 +99,7 @@ exports[`export-default-nested-namespaces > snapshot 1`] = `
                                 },
                                 "docs": [],
                                 "id": "foo.bar.baz.qux.xyz",
-                                "kind": "NamespaceDeclaration",
+                                "kind": "namespace",
                                 "name": "foo.bar.baz.qux.xyz",
                                 "signature": "namespace foo.bar.baz.qux.xyz {}",
                                 "source": {
@@ -115,7 +115,7 @@ exports[`export-default-nested-namespaces > snapshot 1`] = `
                           },
                           "docs": [],
                           "id": "foo.bar.baz.qux",
-                          "kind": "NamespaceDeclaration",
+                          "kind": "namespace",
                           "name": "foo.bar.baz.qux",
                           "signature": "namespace foo.bar.baz.qux {}",
                           "source": {
@@ -131,7 +131,7 @@ exports[`export-default-nested-namespaces > snapshot 1`] = `
                     },
                     "docs": [],
                     "id": "foo.bar.baz",
-                    "kind": "NamespaceDeclaration",
+                    "kind": "namespace",
                     "name": "foo.bar.baz",
                     "signature": "namespace foo.bar.baz {}",
                     "source": {
@@ -147,7 +147,7 @@ exports[`export-default-nested-namespaces > snapshot 1`] = `
               },
               "docs": [],
               "id": "foo.bar",
-              "kind": "NamespaceDeclaration",
+              "kind": "namespace",
               "name": "foo.bar",
               "signature": "namespace foo.bar {}",
               "source": {
@@ -165,7 +165,7 @@ exports[`export-default-nested-namespaces > snapshot 1`] = `
           "/** foo doc */",
         ],
         "id": "foo",
-        "kind": "NamespaceDeclaration",
+        "kind": "namespace",
         "name": "foo",
         "signature": "namespace foo {}",
         "source": {

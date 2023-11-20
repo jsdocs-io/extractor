@@ -22,7 +22,7 @@ exports[`ambient-modules > snapshot 1`] = `
                 "/** Variable var1 */",
               ],
               "id": "bar.var1",
-              "kind": "VariableDeclaration",
+              "kind": "variable",
               "name": "var1",
               "signature": "const var1: string;",
               "source": {
@@ -39,7 +39,7 @@ exports[`ambient-modules > snapshot 1`] = `
                 "/** Variable var2 */",
               ],
               "id": "bar.var2",
-              "kind": "VariableDeclaration",
+              "kind": "variable",
               "name": "var2",
               "signature": "const var2: boolean;",
               "source": {
@@ -57,7 +57,7 @@ exports[`ambient-modules > snapshot 1`] = `
           "/** Module 'bar' */",
         ],
         "id": "bar",
-        "kind": "NamespaceDeclaration",
+        "kind": "namespace",
         "name": "bar",
         "signature": "module 'bar' {}",
         "source": {
@@ -81,7 +81,7 @@ exports[`ambient-modules > snapshot 1`] = `
           "/** Module 'foo' */",
         ],
         "id": "foo",
-        "kind": "NamespaceDeclaration",
+        "kind": "namespace",
         "name": "foo",
         "signature": "module 'foo' {}",
         "source": {
@@ -99,7 +99,7 @@ exports[`ambient-modules > snapshot 1`] = `
             {
               "docs": [],
               "id": "foo_bar.sum",
-              "kind": "FunctionDeclaration",
+              "kind": "function",
               "name": "sum",
               "signature": "sum: (a: number, b: number) => number;",
               "source": {
@@ -120,7 +120,7 @@ exports[`ambient-modules > snapshot 1`] = `
           "/** Module 'foo bar' */",
         ],
         "id": "foo_bar",
-        "kind": "NamespaceDeclaration",
+        "kind": "namespace",
         "name": "foo_bar",
         "signature": "module 'foo bar' {}",
         "source": {

@@ -13,7 +13,7 @@ exports[`export-named-declaration-without-jsdoc > snapshot 1`] = `
       {
         "docs": [],
         "id": "var1",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "var1",
         "signature": "const var1: number;",
         "source": {

@@ -9,7 +9,7 @@ exports[`dayjs > 1.10.4 1`] = `
           {
             "docs": [],
             "id": "Dayjs.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(config?: ConfigType);",
             "source": {
@@ -23,7 +23,7 @@ exports[`dayjs > 1.10.4 1`] = `
         "docs": [],
         "id": "Dayjs",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -40,7 +40,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.add",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "add",
               "signature": "add: (value: number, unit?: OpUnitType) => Dayjs;",
               "source": {
@@ -64,7 +64,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.clone",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "clone",
               "signature": "clone: () => Dayjs;",
               "source": {
@@ -96,7 +96,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.date",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "date",
               "signature": "date: { (): number; (value: number): Dayjs };",
               "source": {
@@ -130,7 +130,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.day",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "day",
               "signature": "day: { (): number; (value: number): Dayjs };",
               "source": {
@@ -153,7 +153,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.daysInMonth",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "daysInMonth",
               "signature": "daysInMonth: () => number;",
               "source": {
@@ -187,7 +187,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.diff",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "diff",
               "signature": "diff: (
     date: ConfigType,
@@ -216,7 +216,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.endOf",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "endOf",
               "signature": "endOf: (unit: OpUnitType) => Dayjs;",
               "source": {
@@ -243,7 +243,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.format",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "format",
               "signature": "format: (template?: string) => string;",
               "source": {
@@ -274,7 +274,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.get",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "get",
               "signature": "get: (unit: UnitType) => number;",
               "source": {
@@ -306,7 +306,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.hour",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "hour",
               "signature": "hour: { (): number; (value: number): Dayjs };",
               "source": {
@@ -335,7 +335,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.isAfter",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "isAfter",
               "signature": "isAfter: (date: ConfigType, unit?: OpUnitType) => boolean;",
               "source": {
@@ -364,7 +364,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.isBefore",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "isBefore",
               "signature": "isBefore: (date: ConfigType, unit?: OpUnitType) => boolean;",
               "source": {
@@ -391,7 +391,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.isSame",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "isSame",
               "signature": "isSame: (date: ConfigType, unit?: OpUnitType) => boolean;",
               "source": {
@@ -414,7 +414,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.isValid",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "isValid",
               "signature": "isValid: () => boolean;",
               "source": {
@@ -429,7 +429,7 @@ exports[`dayjs > 1.10.4 1`] = `
               "docs": [],
               "id": "Dayjs.locale",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "locale",
               "signature": "locale: {
     (): string;
@@ -464,7 +464,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.millisecond",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "millisecond",
               "signature": "millisecond: { (): number; (value: number): Dayjs };",
               "source": {
@@ -496,7 +496,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.minute",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "minute",
               "signature": "minute: { (): number; (value: number): Dayjs };",
               "source": {
@@ -532,7 +532,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.month",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "month",
               "signature": "month: { (): number; (value: number): Dayjs };",
               "source": {
@@ -563,7 +563,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.second",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "second",
               "signature": "second: { (): number; (value: number): Dayjs };",
               "source": {
@@ -594,7 +594,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.set",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "set",
               "signature": "set: (unit: UnitType, value: number) => Dayjs;",
               "source": {
@@ -619,7 +619,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.startOf",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "startOf",
               "signature": "startOf: (unit: OpUnitType) => Dayjs;",
               "source": {
@@ -644,7 +644,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.subtract",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "subtract",
               "signature": "subtract: (value: number, unit?: OpUnitType) => Dayjs;",
               "source": {
@@ -666,7 +666,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.toDate",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "toDate",
               "signature": "toDate: () => Date;",
               "source": {
@@ -689,7 +689,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.toISOString",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "toISOString",
               "signature": "toISOString: () => string;",
               "source": {
@@ -712,7 +712,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.toJSON",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "toJSON",
               "signature": "toJSON: () => string;",
               "source": {
@@ -735,7 +735,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.toString",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "toString",
               "signature": "toString: () => string;",
               "source": {
@@ -760,7 +760,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.unix",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "unix",
               "signature": "unix: () => number;",
               "source": {
@@ -783,7 +783,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.utcOffset",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "utcOffset",
               "signature": "utcOffset: () => number;",
               "source": {
@@ -809,7 +809,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.valueOf",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "valueOf",
               "signature": "valueOf: () => number;",
               "source": {
@@ -839,7 +839,7 @@ exports[`dayjs > 1.10.4 1`] = `
               ],
               "id": "Dayjs.year",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "year",
               "signature": "year: { (): number; (value: number): Dayjs };",
               "source": {
@@ -868,7 +868,7 @@ exports[`dayjs > 1.10.4 1`] = `
       {
         "docs": [],
         "id": "dayjs",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "dayjs",
         "signature": "dayjs: typeof dayjs;",
         "source": {
@@ -882,7 +882,7 @@ exports[`dayjs > 1.10.4 1`] = `
       {
         "docs": [],
         "id": "extend",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "extend",
         "signature": "extend: <T = unknown>(plugin: PluginFunc<T>, option?: T) => Dayjs;",
         "source": {
@@ -896,7 +896,7 @@ exports[`dayjs > 1.10.4 1`] = `
       {
         "docs": [],
         "id": "isDayjs",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "isDayjs",
         "signature": "isDayjs: (d: any) => d is Dayjs;",
         "source": {
@@ -910,7 +910,7 @@ exports[`dayjs > 1.10.4 1`] = `
       {
         "docs": [],
         "id": "locale",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "locale",
         "signature": "locale: (
     preset?: string | ILocale,
@@ -928,7 +928,7 @@ exports[`dayjs > 1.10.4 1`] = `
       {
         "docs": [],
         "id": "unix",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "unix",
         "signature": "unix: (t: number) => Dayjs;",
         "source": {
@@ -951,7 +951,7 @@ exports[`dayjs > 1.10.4 1`] = `
             {
               "docs": [],
               "id": "dayjs/esm/locale/*.Locale",
-              "kind": "InterfaceDeclaration",
+              "kind": "interface",
               "members": {
                 "callSignatures": [],
                 "constructSignatures": [],
@@ -975,7 +975,7 @@ exports[`dayjs > 1.10.4 1`] = `
             {
               "docs": [],
               "id": "dayjs/esm/locale/*.locale",
-              "kind": "VariableDeclaration",
+              "kind": "variable",
               "name": "locale",
               "signature": "const locale: locale.Locale;",
               "source": {
@@ -991,7 +991,7 @@ exports[`dayjs > 1.10.4 1`] = `
         },
         "docs": [],
         "id": "dayjs/esm/locale/*",
-        "kind": "NamespaceDeclaration",
+        "kind": "namespace",
         "name": "dayjs/esm/locale/*",
         "signature": "module 'dayjs/esm/locale/*' {}",
         "source": {
@@ -1010,7 +1010,7 @@ exports[`dayjs > 1.10.4 1`] = `
             {
               "docs": [],
               "id": "dayjs/locale/*.Locale",
-              "kind": "InterfaceDeclaration",
+              "kind": "interface",
               "members": {
                 "callSignatures": [],
                 "constructSignatures": [],
@@ -1034,7 +1034,7 @@ exports[`dayjs > 1.10.4 1`] = `
             {
               "docs": [],
               "id": "dayjs/locale/*.locale",
-              "kind": "VariableDeclaration",
+              "kind": "variable",
               "name": "locale",
               "signature": "const locale: locale.Locale;",
               "source": {
@@ -1050,7 +1050,7 @@ exports[`dayjs > 1.10.4 1`] = `
         },
         "docs": [],
         "id": "dayjs/locale/*",
-        "kind": "NamespaceDeclaration",
+        "kind": "namespace",
         "name": "dayjs/locale/*",
         "signature": "module 'dayjs/locale/*' {}",
         "source": {
@@ -1065,7 +1065,7 @@ exports[`dayjs > 1.10.4 1`] = `
       {
         "docs": [],
         "id": "ConfigType",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "ConfigType",
         "signature": "type ConfigType = string | number | Date | Dayjs;",
         "source": {
@@ -1078,7 +1078,7 @@ exports[`dayjs > 1.10.4 1`] = `
       {
         "docs": [],
         "id": "OptionType",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "OptionType",
         "signature": "type OptionType =
     | { locale?: string; format?: string; utc?: boolean }
@@ -1094,7 +1094,7 @@ exports[`dayjs > 1.10.4 1`] = `
       {
         "docs": [],
         "id": "OpUnitType",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "OpUnitType",
         "signature": "type OpUnitType = UnitType | 'week' | 'weeks' | 'w';",
         "source": {
@@ -1107,7 +1107,7 @@ exports[`dayjs > 1.10.4 1`] = `
       {
         "docs": [],
         "id": "PluginFunc",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "PluginFunc",
         "signature": "type PluginFunc<T = unknown> = (option: T, c: typeof Dayjs, d: typeof dayjs) => void;",
         "source": {
@@ -1120,7 +1120,7 @@ exports[`dayjs > 1.10.4 1`] = `
       {
         "docs": [],
         "id": "QUnitType",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "QUnitType",
         "signature": "type QUnitType = UnitType | 'quarter' | 'quarters' | 'Q';",
         "source": {
@@ -1133,7 +1133,7 @@ exports[`dayjs > 1.10.4 1`] = `
       {
         "docs": [],
         "id": "UnitType",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "UnitType",
         "signature": "type UnitType = UnitTypeLong | UnitTypeLongPlural | UnitTypeShort;",
         "source": {
@@ -1146,7 +1146,7 @@ exports[`dayjs > 1.10.4 1`] = `
       {
         "docs": [],
         "id": "UnitTypeLong",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "UnitTypeLong",
         "signature": "type UnitTypeLong =
     | 'millisecond'
@@ -1167,7 +1167,7 @@ exports[`dayjs > 1.10.4 1`] = `
       {
         "docs": [],
         "id": "UnitTypeLongPlural",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "UnitTypeLongPlural",
         "signature": "type UnitTypeLongPlural =
     | 'milliseconds'
@@ -1188,7 +1188,7 @@ exports[`dayjs > 1.10.4 1`] = `
       {
         "docs": [],
         "id": "UnitTypeShort",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "UnitTypeShort",
         "signature": "type UnitTypeShort = 'd' | 'M' | 'y' | 'h' | 'm' | 's' | 'ms';",
         "source": {
@@ -1203,7 +1203,7 @@ exports[`dayjs > 1.10.4 1`] = `
       {
         "docs": [],
         "id": "Ls",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "Ls",
         "signature": "const Ls: { [key: string]: ILocale };",
         "source": {

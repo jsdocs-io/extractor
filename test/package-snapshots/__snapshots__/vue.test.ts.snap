@@ -10,7 +10,7 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "ComponentOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -19,7 +19,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "ComponentOptions.activated",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "activated",
               "signature": "activated: () => void;",
               "source": {
@@ -33,7 +33,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "ComponentOptions.beforeCreate",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "beforeCreate",
               "signature": "beforeCreate: (this: V) => void;",
               "source": {
@@ -47,7 +47,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "ComponentOptions.beforeDestroy",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "beforeDestroy",
               "signature": "beforeDestroy: () => void;",
               "source": {
@@ -61,7 +61,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "ComponentOptions.beforeMount",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "beforeMount",
               "signature": "beforeMount: () => void;",
               "source": {
@@ -75,7 +75,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "ComponentOptions.beforeUpdate",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "beforeUpdate",
               "signature": "beforeUpdate: () => void;",
               "source": {
@@ -89,7 +89,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "ComponentOptions.created",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "created",
               "signature": "created: () => void;",
               "source": {
@@ -103,7 +103,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "ComponentOptions.deactivated",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "deactivated",
               "signature": "deactivated: () => void;",
               "source": {
@@ -117,7 +117,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "ComponentOptions.destroyed",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "destroyed",
               "signature": "destroyed: () => void;",
               "source": {
@@ -131,7 +131,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "ComponentOptions.errorCaptured",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "errorCaptured",
               "signature": "errorCaptured: (err: Error, vm: Vue, info: string) => boolean | void;",
               "source": {
@@ -145,7 +145,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "ComponentOptions.mounted",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "mounted",
               "signature": "mounted: () => void;",
               "source": {
@@ -159,7 +159,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "ComponentOptions.render",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "render",
               "signature": "render: (createElement: CreateElement, hack: RenderContext<Props>) => VNode;",
               "source": {
@@ -173,7 +173,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "ComponentOptions.renderError",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "renderError",
               "signature": "renderError: (createElement: CreateElement, err: Error) => VNode;",
               "source": {
@@ -187,7 +187,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "ComponentOptions.serverPrefetch",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "serverPrefetch",
               "signature": "serverPrefetch: (this: V) => Promise<void>;",
               "source": {
@@ -201,7 +201,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "ComponentOptions.updated",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "updated",
               "signature": "updated: () => void;",
               "source": {
@@ -219,7 +219,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComponentOptions.comments",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "comments",
               "signature": "comments?: boolean;",
               "source": {
@@ -235,7 +235,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComponentOptions.components",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "components",
               "signature": "components?: {
     [key: string]:
@@ -255,7 +255,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComponentOptions.computed",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "computed",
               "signature": "computed?: Accessors<Computed>;",
               "source": {
@@ -271,7 +271,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComponentOptions.data",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "data",
               "signature": "data?: Data;",
               "source": {
@@ -287,7 +287,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComponentOptions.delimiters",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "delimiters",
               "signature": "delimiters?: [string, string];",
               "source": {
@@ -303,7 +303,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComponentOptions.directives",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "directives",
               "signature": "directives?: { [key: string]: DirectiveFunction | DirectiveOptions };",
               "source": {
@@ -319,7 +319,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComponentOptions.el",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "el",
               "signature": "el?: Element | string;",
               "source": {
@@ -335,7 +335,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComponentOptions.extends",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "extends",
               "signature": "extends?: ComponentOptions<Vue> | typeof Vue;",
               "source": {
@@ -351,7 +351,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComponentOptions.filters",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "filters",
               "signature": "filters?: { [key: string]: Function };",
               "source": {
@@ -367,7 +367,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComponentOptions.inheritAttrs",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "inheritAttrs",
               "signature": "inheritAttrs?: boolean;",
               "source": {
@@ -383,7 +383,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComponentOptions.inject",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "inject",
               "signature": "inject?: InjectOptions;",
               "source": {
@@ -399,7 +399,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComponentOptions.methods",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "methods",
               "signature": "methods?: Methods;",
               "source": {
@@ -415,7 +415,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComponentOptions.mixins",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "mixins",
               "signature": "mixins?: (ComponentOptions<Vue> | typeof Vue)[];",
               "source": {
@@ -431,7 +431,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComponentOptions.model",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "model",
               "signature": "model?: {
     prop?: string;
@@ -450,7 +450,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComponentOptions.name",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "name?: string;",
               "source": {
@@ -466,7 +466,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComponentOptions.parent",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "parent",
               "signature": "parent?: Vue;",
               "source": {
@@ -482,7 +482,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComponentOptions.props",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "props",
               "signature": "props?: PropsDef;",
               "source": {
@@ -498,7 +498,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComponentOptions.propsData",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "propsData",
               "signature": "propsData?: object;",
               "source": {
@@ -514,7 +514,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComponentOptions.provide",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "provide",
               "signature": "provide?: object | (() => object);",
               "source": {
@@ -530,7 +530,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComponentOptions.staticRenderFns",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "staticRenderFns",
               "signature": "staticRenderFns?: ((createElement: CreateElement) => VNode)[];",
               "source": {
@@ -546,7 +546,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComponentOptions.template",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "template",
               "signature": "template?: string;",
               "source": {
@@ -562,7 +562,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComponentOptions.transitions",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "transitions",
               "signature": "transitions?: { [key: string]: object };",
               "source": {
@@ -578,7 +578,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComponentOptions.watch",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "watch",
               "signature": "watch?: Record<
     string,
@@ -613,7 +613,7 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "ComputedOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -622,7 +622,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "ComputedOptions.get",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "get",
               "signature": "get: () => T;",
               "source": {
@@ -636,7 +636,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "ComputedOptions.set",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "set",
               "signature": "set: (value: T) => void;",
               "source": {
@@ -654,7 +654,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "ComputedOptions.cache",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "cache",
               "signature": "cache?: boolean;",
               "source": {
@@ -679,13 +679,13 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "CreateElement",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "CreateElement.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     tag?:
@@ -705,7 +705,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "CreateElement.1-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(
     tag?:
@@ -741,7 +741,7 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "DirectiveOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -753,7 +753,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "DirectiveOptions.bind",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bind",
               "signature": "bind?: DirectiveFunction;",
               "source": {
@@ -769,7 +769,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "DirectiveOptions.componentUpdated",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "componentUpdated",
               "signature": "componentUpdated?: DirectiveFunction;",
               "source": {
@@ -785,7 +785,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "DirectiveOptions.inserted",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "inserted",
               "signature": "inserted?: DirectiveFunction;",
               "source": {
@@ -801,7 +801,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "DirectiveOptions.unbind",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "unbind",
               "signature": "unbind?: DirectiveFunction;",
               "source": {
@@ -817,7 +817,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "DirectiveOptions.update",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "update",
               "signature": "update?: DirectiveFunction;",
               "source": {
@@ -842,7 +842,7 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "FunctionalComponentOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -851,7 +851,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "FunctionalComponentOptions.render",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "render",
               "signature": "render: (
     this: undefined,
@@ -873,7 +873,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "FunctionalComponentOptions.functional",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "functional",
               "signature": "functional: boolean;",
               "source": {
@@ -889,7 +889,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "FunctionalComponentOptions.inject",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "inject",
               "signature": "inject?: InjectOptions;",
               "source": {
@@ -905,7 +905,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "FunctionalComponentOptions.model",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "model",
               "signature": "model?: {
     prop?: string;
@@ -924,7 +924,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "FunctionalComponentOptions.name",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "name?: string;",
               "source": {
@@ -940,7 +940,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "FunctionalComponentOptions.props",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "props",
               "signature": "props?: PropDefs;",
               "source": {
@@ -968,7 +968,7 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "PluginObject",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -976,7 +976,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "PluginObject.1-index-signature",
-              "kind": "InterfaceIndexSignatureDeclaration",
+              "kind": "interfaceIndexSignature",
               "name": "index signature",
               "signature": "[key: string]: any;",
               "source": {
@@ -994,7 +994,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "PluginObject.install",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "install",
               "signature": "install: PluginFunction<T>;",
               "source": {
@@ -1019,7 +1019,7 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "PropOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1028,7 +1028,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "PropOptions.validator",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "validator",
               "signature": "validator: (value: T) => boolean;",
               "source": {
@@ -1046,7 +1046,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "PropOptions.default",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "default",
               "signature": "default?: T | null | undefined | (() => T | null | undefined);",
               "source": {
@@ -1062,7 +1062,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "PropOptions.required",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "required",
               "signature": "required?: boolean;",
               "source": {
@@ -1078,7 +1078,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "PropOptions.type",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "type",
               "signature": "type?: PropType<T>;",
               "source": {
@@ -1103,7 +1103,7 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "RenderContext",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1112,7 +1112,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "RenderContext.slots",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "slots",
               "signature": "slots: () => any;",
               "source": {
@@ -1130,7 +1130,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "RenderContext.children",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "children",
               "signature": "children: VNode[];",
               "source": {
@@ -1146,7 +1146,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "RenderContext.data",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "data",
               "signature": "data: VNodeData;",
               "source": {
@@ -1162,7 +1162,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "RenderContext.injections",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "injections",
               "signature": "injections: any;",
               "source": {
@@ -1178,7 +1178,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "RenderContext.listeners",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "listeners",
               "signature": "listeners: { [key: string]: Function | Function[] };",
               "source": {
@@ -1194,7 +1194,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "RenderContext.parent",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "parent",
               "signature": "parent: Vue;",
               "source": {
@@ -1210,7 +1210,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "RenderContext.props",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "props",
               "signature": "props: Props;",
               "source": {
@@ -1226,7 +1226,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "RenderContext.scopedSlots",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "scopedSlots",
               "signature": "scopedSlots: { [key: string]: NormalizedScopedSlot };",
               "source": {
@@ -1251,7 +1251,7 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "VNode",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1263,7 +1263,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNode.children",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "children",
               "signature": "children?: VNode[];",
               "source": {
@@ -1279,7 +1279,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNode.componentInstance",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "componentInstance",
               "signature": "componentInstance?: Vue;",
               "source": {
@@ -1295,7 +1295,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNode.componentOptions",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "componentOptions",
               "signature": "componentOptions?: VNodeComponentOptions;",
               "source": {
@@ -1311,7 +1311,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNode.context",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "context",
               "signature": "context?: Vue;",
               "source": {
@@ -1327,7 +1327,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNode.data",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "data",
               "signature": "data?: VNodeData;",
               "source": {
@@ -1343,7 +1343,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNode.elm",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "elm",
               "signature": "elm?: Node;",
               "source": {
@@ -1359,7 +1359,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNode.isComment",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "isComment",
               "signature": "isComment: boolean;",
               "source": {
@@ -1375,7 +1375,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNode.isRootInsert",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "isRootInsert",
               "signature": "isRootInsert: boolean;",
               "source": {
@@ -1391,7 +1391,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNode.isStatic",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "isStatic",
               "signature": "isStatic?: boolean;",
               "source": {
@@ -1407,7 +1407,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNode.key",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "key",
               "signature": "key?: string | number;",
               "source": {
@@ -1423,7 +1423,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNode.ns",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "ns",
               "signature": "ns?: string;",
               "source": {
@@ -1439,7 +1439,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNode.parent",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "parent",
               "signature": "parent?: VNode;",
               "source": {
@@ -1455,7 +1455,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNode.raw",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "raw",
               "signature": "raw?: boolean;",
               "source": {
@@ -1471,7 +1471,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNode.tag",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "tag",
               "signature": "tag?: string;",
               "source": {
@@ -1487,7 +1487,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNode.text",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "text",
               "signature": "text?: string;",
               "source": {
@@ -1512,7 +1512,7 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "VNodeChildrenArrayContents",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1532,7 +1532,7 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "VNodeComponentOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1544,7 +1544,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeComponentOptions.children",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "children",
               "signature": "children?: VNode[];",
               "source": {
@@ -1560,7 +1560,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeComponentOptions.Ctor",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "Ctor",
               "signature": "Ctor: typeof Vue;",
               "source": {
@@ -1576,7 +1576,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeComponentOptions.listeners",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "listeners",
               "signature": "listeners?: object;",
               "source": {
@@ -1592,7 +1592,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeComponentOptions.propsData",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "propsData",
               "signature": "propsData?: object;",
               "source": {
@@ -1608,7 +1608,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeComponentOptions.tag",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "tag",
               "signature": "tag?: string;",
               "source": {
@@ -1633,7 +1633,7 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "VNodeData",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1645,7 +1645,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeData.attrs",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "attrs",
               "signature": "attrs?: { [key: string]: any };",
               "source": {
@@ -1661,7 +1661,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeData.class",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "class",
               "signature": "class?: any;",
               "source": {
@@ -1677,7 +1677,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeData.directives",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "directives",
               "signature": "directives?: VNodeDirective[];",
               "source": {
@@ -1693,7 +1693,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeData.domProps",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "domProps",
               "signature": "domProps?: { [key: string]: any };",
               "source": {
@@ -1709,7 +1709,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeData.hook",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "hook",
               "signature": "hook?: { [key: string]: Function };",
               "source": {
@@ -1725,7 +1725,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeData.inlineTemplate",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "inlineTemplate",
               "signature": "inlineTemplate?: {
     render: Function;
@@ -1744,7 +1744,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeData.keepAlive",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "keepAlive",
               "signature": "keepAlive?: boolean;",
               "source": {
@@ -1760,7 +1760,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeData.key",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "key",
               "signature": "key?: string | number;",
               "source": {
@@ -1776,7 +1776,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeData.nativeOn",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "nativeOn",
               "signature": "nativeOn?: { [key: string]: Function | Function[] };",
               "source": {
@@ -1792,7 +1792,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeData.on",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "on",
               "signature": "on?: { [key: string]: Function | Function[] };",
               "source": {
@@ -1808,7 +1808,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeData.props",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "props",
               "signature": "props?: { [key: string]: any };",
               "source": {
@@ -1824,7 +1824,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeData.ref",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "ref",
               "signature": "ref?: string;",
               "source": {
@@ -1840,7 +1840,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeData.refInFor",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "refInFor",
               "signature": "refInFor?: boolean;",
               "source": {
@@ -1856,7 +1856,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeData.scopedSlots",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "scopedSlots",
               "signature": "scopedSlots?: { [key: string]: ScopedSlot | undefined };",
               "source": {
@@ -1872,7 +1872,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeData.show",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "show",
               "signature": "show?: boolean;",
               "source": {
@@ -1888,7 +1888,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeData.slot",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "slot",
               "signature": "slot?: string;",
               "source": {
@@ -1904,7 +1904,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeData.staticClass",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "staticClass",
               "signature": "staticClass?: string;",
               "source": {
@@ -1920,7 +1920,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeData.staticStyle",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "staticStyle",
               "signature": "staticStyle?: { [key: string]: any };",
               "source": {
@@ -1936,7 +1936,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeData.style",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "style",
               "signature": "style?: string | object[] | object;",
               "source": {
@@ -1952,7 +1952,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeData.tag",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "tag",
               "signature": "tag?: string;",
               "source": {
@@ -1968,7 +1968,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeData.transition",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "transition",
               "signature": "transition?: object;",
               "source": {
@@ -1993,7 +1993,7 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "VNodeDirective",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2005,7 +2005,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeDirective.arg",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "arg",
               "signature": "arg?: string;",
               "source": {
@@ -2021,7 +2021,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeDirective.expression",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "expression",
               "signature": "expression?: any;",
               "source": {
@@ -2037,7 +2037,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeDirective.modifiers",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "modifiers",
               "signature": "modifiers?: { [key: string]: boolean };",
               "source": {
@@ -2053,7 +2053,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeDirective.name",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "name: string;",
               "source": {
@@ -2069,7 +2069,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeDirective.oldArg",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "oldArg",
               "signature": "oldArg?: string;",
               "source": {
@@ -2085,7 +2085,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeDirective.oldValue",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "oldValue",
               "signature": "oldValue?: any;",
               "source": {
@@ -2101,7 +2101,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VNodeDirective.value",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "value",
               "signature": "value?: any;",
               "source": {
@@ -2126,7 +2126,7 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "Vue",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2135,7 +2135,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "Vue.$destroy",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "$destroy",
               "signature": "$destroy: () => void;",
               "source": {
@@ -2149,7 +2149,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "Vue.$emit",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "$emit",
               "signature": "$emit: (event: string, ...args: any[]) => this;",
               "source": {
@@ -2163,7 +2163,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "Vue.$forceUpdate",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "$forceUpdate",
               "signature": "$forceUpdate: () => void;",
               "source": {
@@ -2177,7 +2177,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "Vue.$mount",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "$mount",
               "signature": "$mount: (elementOrSelector?: Element | string, hydrating?: boolean) => this;",
               "source": {
@@ -2191,7 +2191,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "Vue.$nextTick",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "$nextTick",
               "signature": "$nextTick: { (callback: (this: this) => void): void; (): Promise<void> };",
               "source": {
@@ -2205,7 +2205,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "Vue.$off",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "$off",
               "signature": "$off: (event?: string | string[], callback?: Function) => this;",
               "source": {
@@ -2219,7 +2219,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "Vue.$on",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "$on",
               "signature": "$on: (event: string | string[], callback: Function) => this;",
               "source": {
@@ -2233,7 +2233,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "Vue.$once",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "$once",
               "signature": "$once: (event: string | string[], callback: Function) => this;",
               "source": {
@@ -2247,7 +2247,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "Vue.$watch",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "$watch",
               "signature": "$watch: {
     (
@@ -2276,7 +2276,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "Vue.$attrs",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "$attrs",
               "signature": "readonly $attrs: Record<string, string>;",
               "source": {
@@ -2292,7 +2292,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "Vue.$children",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "$children",
               "signature": "readonly $children: Vue[];",
               "source": {
@@ -2308,7 +2308,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "Vue.$createElement",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "$createElement",
               "signature": "$createElement: CreateElement;",
               "source": {
@@ -2324,7 +2324,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "Vue.$data",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "$data",
               "signature": "readonly $data: Record<string, any>;",
               "source": {
@@ -2340,7 +2340,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "Vue.$delete",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "$delete",
               "signature": "$delete: typeof Vue.delete;",
               "source": {
@@ -2356,7 +2356,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "Vue.$el",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "$el",
               "signature": "readonly $el: Element;",
               "source": {
@@ -2372,7 +2372,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "Vue.$isServer",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "$isServer",
               "signature": "readonly $isServer: boolean;",
               "source": {
@@ -2388,7 +2388,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "Vue.$listeners",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "$listeners",
               "signature": "readonly $listeners: Record<string, Function | Function[]>;",
               "source": {
@@ -2404,7 +2404,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "Vue.$options",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "$options",
               "signature": "readonly $options: ComponentOptions<Vue>;",
               "source": {
@@ -2420,7 +2420,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "Vue.$parent",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "$parent",
               "signature": "readonly $parent: Vue;",
               "source": {
@@ -2436,7 +2436,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "Vue.$props",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "$props",
               "signature": "readonly $props: Record<string, any>;",
               "source": {
@@ -2452,7 +2452,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "Vue.$refs",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "$refs",
               "signature": "readonly $refs: { [key: string]: Vue | Element | Vue[] | Element[] };",
               "source": {
@@ -2468,7 +2468,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "Vue.$root",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "$root",
               "signature": "readonly $root: Vue;",
               "source": {
@@ -2484,7 +2484,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "Vue.$scopedSlots",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "$scopedSlots",
               "signature": "readonly $scopedSlots: { [key: string]: NormalizedScopedSlot | undefined };",
               "source": {
@@ -2500,7 +2500,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "Vue.$set",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "$set",
               "signature": "$set: typeof Vue.set;",
               "source": {
@@ -2516,7 +2516,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "Vue.$slots",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "$slots",
               "signature": "readonly $slots: { [key: string]: VNode[] | undefined };",
               "source": {
@@ -2532,7 +2532,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "Vue.$ssrContext",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "$ssrContext",
               "signature": "readonly $ssrContext: any;",
               "source": {
@@ -2548,7 +2548,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "Vue.$vnode",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "$vnode",
               "signature": "readonly $vnode: VNode;",
               "source": {
@@ -2573,14 +2573,14 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "VueConstructor",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [
             {
               "docs": [],
               "id": "VueConstructor.0-construct-signature",
-              "kind": "InterfaceConstructSignatureDeclaration",
+              "kind": "interfaceConstructSignature",
               "name": "construct signature",
               "signature": "new <
     Data = object,
@@ -2606,7 +2606,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "VueConstructor.1-construct-signature",
-              "kind": "InterfaceConstructSignatureDeclaration",
+              "kind": "interfaceConstructSignature",
               "name": "construct signature",
               "signature": "new <Data = object, Methods = object, Computed = object, Props = object>(
     options?: ThisTypedComponentOptionsWithRecordProps<
@@ -2627,7 +2627,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "VueConstructor.2-construct-signature",
-              "kind": "InterfaceConstructSignatureDeclaration",
+              "kind": "interfaceConstructSignature",
               "name": "construct signature",
               "signature": "new (options?: ComponentOptions<V>): CombinedVueInstance<
     V,
@@ -2649,7 +2649,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "VueConstructor.compile",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "compile",
               "signature": "compile: (template: string) => {
     render(createElement: typeof Vue.prototype.$createElement): VNode;
@@ -2666,7 +2666,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "VueConstructor.component",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "component",
               "signature": "component: {
     (id: string): VueConstructor;
@@ -2732,7 +2732,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "VueConstructor.delete",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "delete",
               "signature": "delete: {
     (object: object, key: string | number): void;
@@ -2749,7 +2749,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "VueConstructor.directive",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "directive",
               "signature": "directive: (
     id: string,
@@ -2766,7 +2766,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "VueConstructor.extend",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "extend",
               "signature": "extend: {
     <Data, Methods, Computed, PropNames extends string = never>(
@@ -2821,7 +2821,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "VueConstructor.filter",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "filter",
               "signature": "filter: (id: string, definition?: Function) => Function;",
               "source": {
@@ -2835,7 +2835,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "VueConstructor.mixin",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "mixin",
               "signature": "mixin: (mixin: VueConstructor | ComponentOptions<Vue>) => VueConstructor<V>;",
               "source": {
@@ -2849,7 +2849,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "VueConstructor.nextTick",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "nextTick",
               "signature": "nextTick: {
     <T>(callback: (this: T) => void, context?: T): void;
@@ -2866,7 +2866,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "VueConstructor.observable",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "observable",
               "signature": "observable: <T>(obj: T) => T;",
               "source": {
@@ -2880,7 +2880,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "VueConstructor.set",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "set",
               "signature": "set: {
     <T>(object: object, key: string | number, value: T): T;
@@ -2897,7 +2897,7 @@ exports[`vue > 2.6.12 1`] = `
             {
               "docs": [],
               "id": "VueConstructor.use",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "use",
               "signature": "use: {
     <T>(
@@ -2924,7 +2924,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VueConstructor.config",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "config",
               "signature": "config: VueConfiguration;",
               "source": {
@@ -2940,7 +2940,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "VueConstructor.version",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "version",
               "signature": "version: string;",
               "source": {
@@ -2965,7 +2965,7 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "WatchOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2977,7 +2977,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "WatchOptions.deep",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "deep",
               "signature": "deep?: boolean;",
               "source": {
@@ -2993,7 +2993,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "WatchOptions.immediate",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "immediate",
               "signature": "immediate?: boolean;",
               "source": {
@@ -3018,7 +3018,7 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "WatchOptionsWithHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3030,7 +3030,7 @@ exports[`vue > 2.6.12 1`] = `
               "id": "WatchOptionsWithHandler.handler",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "handler",
               "signature": "handler: WatchHandler<T>;",
               "source": {
@@ -3058,7 +3058,7 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "AsyncComponent",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "AsyncComponent",
         "signature": "type AsyncComponent<
     Data = DefaultData<never>,
@@ -3078,7 +3078,7 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "Component",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "Component",
         "signature": "type Component<
     Data = DefaultData<never>,
@@ -3099,7 +3099,7 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "DirectiveFunction",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "DirectiveFunction",
         "signature": "type DirectiveFunction = (
     el: HTMLElement,
@@ -3117,7 +3117,7 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "PluginFunction",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "PluginFunction",
         "signature": "type PluginFunction<T> = (Vue: typeof _Vue, options?: T) => void;",
         "source": {
@@ -3130,7 +3130,7 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "PropType",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "PropType",
         "signature": "type PropType<T> = Prop<T> | Prop<T>[];",
         "source": {
@@ -3143,7 +3143,7 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "VNodeChildren",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "VNodeChildren",
         "signature": "type VNodeChildren =
     | VNodeChildrenArrayContents
@@ -3162,7 +3162,7 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "WatchHandler",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "WatchHandler",
         "signature": "type WatchHandler<T> = (val: T, oldVal: T) => void;",
         "source": {
@@ -3177,7 +3177,7 @@ exports[`vue > 2.6.12 1`] = `
       {
         "docs": [],
         "id": "Vue",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "Vue",
         "signature": "const Vue: VueConstructor<Vue>;",
         "source": {

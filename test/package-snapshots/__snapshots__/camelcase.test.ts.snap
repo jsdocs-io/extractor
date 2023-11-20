@@ -66,7 +66,7 @@ camelCase('lorem-ipsum', {locale: 'en-US'});
 */",
         ],
         "id": "camelcase",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "camelcase",
         "signature": "camelcase: (
     input: string | readonly string[],
@@ -85,7 +85,7 @@ camelCase('lorem-ipsum', {locale: 'en-US'});
       {
         "docs": [],
         "id": "Options",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -117,7 +117,7 @@ camelCase('lorem-ipsum', {locale: 'en-US'});
               "id": "Options.locale",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "locale",
               "signature": "readonly locale?: string | readonly string[];",
               "source": {
@@ -139,7 +139,7 @@ camelCase('lorem-ipsum', {locale: 'en-US'});
               "id": "Options.pascalCase",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "pascalCase",
               "signature": "readonly pascalCase?: boolean;",
               "source": {
@@ -161,7 +161,7 @@ camelCase('lorem-ipsum', {locale: 'en-US'});
               "id": "Options.preserveConsecutiveUppercase",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "preserveConsecutiveUppercase",
               "signature": "readonly preserveConsecutiveUppercase?: boolean;",
               "source": {

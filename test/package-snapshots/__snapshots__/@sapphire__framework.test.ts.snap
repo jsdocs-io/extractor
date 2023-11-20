@@ -9,7 +9,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Args.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(message: Message, command: Command<Args>, parser: Args$1);",
             "source": {
@@ -27,7 +27,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         ],
         "id": "Args",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -48,7 +48,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Args.error",
               "isStatic": true,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "error",
               "signature": "static error: {
     <T>(
@@ -92,7 +92,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Args.getFlags",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "getFlags",
               "signature": "getFlags: (...keys: readonly string[]) => boolean;",
               "source": {
@@ -124,7 +124,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Args.getOption",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "getOption",
               "signature": "getOption: (...keys: readonly string[]) => string | null;",
               "source": {
@@ -156,7 +156,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Args.getOptions",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "getOptions",
               "signature": "getOptions: (...keys: readonly string[]) => string[] | null;",
               "source": {
@@ -176,7 +176,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Args.make",
               "isStatic": true,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "make",
               "signature": "static make: <T>(cb: IArgument<T>['run'], name?: string) => IArgument<T>;",
               "source": {
@@ -218,7 +218,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Args.next",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "next",
               "signature": "next: { (): string; <T>(cb: ArgsNextCallback<T>): T };",
               "source": {
@@ -261,7 +261,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Args.nextMaybe",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "nextMaybe",
               "signature": "nextMaybe: { (): Maybe<string>; <T>(cb: ArgsNextCallback<T>): any };",
               "source": {
@@ -335,7 +335,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Args.peek",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "peek",
               "signature": "peek: {
     <T>(type: () => ArgumentResult<T>): Promise<T>;
@@ -414,7 +414,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Args.peekResult",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "peekResult",
               "signature": "peekResult: {
     <T>(type: () => ArgumentResult<T>): Promise<Result<T, UserError>>;
@@ -466,7 +466,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Args.pick",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "pick",
               "signature": "pick: {
     <T>(type: IArgument<T>, options?: ArgOptions): Promise<T>;
@@ -521,7 +521,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Args.pickResult",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "pickResult",
               "signature": "pickResult: {
     <T>(type: IArgument<T>, options?: ArgOptions): Promise<Result<T, UserError>>;
@@ -563,7 +563,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Args.repeat",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "repeat",
               "signature": "repeat: {
     <T>(type: IArgument<T>, options?: RepeatArgOptions): Promise<T[]>;
@@ -611,7 +611,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Args.repeatResult",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "repeatResult",
               "signature": "repeatResult: {
     <T>(type: IArgument<T>, options?: RepeatArgOptions): Promise<
@@ -656,7 +656,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Args.rest",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "rest",
               "signature": "rest: {
     <T>(type: IArgument<T>, options?: ArgOptions): Promise<T>;
@@ -681,7 +681,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Args.restore",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "restore",
               "signature": "restore: () => void;",
               "source": {
@@ -727,7 +727,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Args.restResult",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "restResult",
               "signature": "restResult: {
     <T>(type: IArgument<T>, options?: ArgOptions): Promise<Result<T, UserError>>;
@@ -750,7 +750,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Args.save",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "save",
               "signature": "save: () => void;",
               "source": {
@@ -769,7 +769,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Args.start",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "start",
               "signature": "start: () => Args;",
               "source": {
@@ -790,7 +790,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Args.command",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "command",
               "signature": "readonly command: Command<Args>;",
               "source": {
@@ -809,7 +809,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Args.finished",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "finished",
               "signature": "readonly finished: boolean;",
               "source": {
@@ -828,7 +828,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Args.message",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "message",
               "signature": "readonly message: Message;",
               "source": {
@@ -912,7 +912,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         ],
         "id": "Argument",
         "isAbstract": true,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -931,7 +931,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Argument.error",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "error",
               "signature": "error: {
     (parameter: string, message: string): Awaited<any>;
@@ -954,7 +954,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Argument.ok",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "ok",
               "signature": "ok: (value: T) => Awaited<any>;",
               "source": {
@@ -969,7 +969,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "Argument.run",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "run",
               "signature": "abstract run: (argument: string, context: ArgumentContext) => Awaited<any>;",
               "source": {
@@ -997,7 +997,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "ArgumentError.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(
     argument: IArgument<T>,
@@ -1021,7 +1021,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         ],
         "id": "ArgumentError",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [
@@ -1029,7 +1029,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "ArgumentError.argument",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "argument",
               "signature": "readonly argument: IArgument<T>;",
               "source": {
@@ -1044,7 +1044,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "ArgumentError.parameter",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "parameter",
               "signature": "readonly parameter: string;",
               "source": {
@@ -1071,7 +1071,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "ArgumentStore.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor();",
             "source": {
@@ -1085,7 +1085,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         "docs": [],
         "id": "ArgumentStore",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -1110,7 +1110,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
             ],
             "id": "Command.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "protected constructor(
     context: PieceContext,
@@ -1127,7 +1127,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         "docs": [],
         "id": "Command",
         "isAbstract": true,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -1140,7 +1140,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Command.preParse",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "preParse",
               "signature": "preParse: (message: Message, parameters: string) => Awaited<T>;",
               "source": {
@@ -1161,7 +1161,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Command.run",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "run",
               "signature": "abstract run: (
     message: Message,
@@ -1184,7 +1184,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Command.toJSON",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "toJSON",
               "signature": "toJSON: () => Record<string, any>;",
               "source": {
@@ -1206,7 +1206,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Command.description",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "description",
               "signature": "description: string;",
               "source": {
@@ -1226,7 +1226,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Command.detailedDescription",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "detailedDescription",
               "signature": "detailedDescription: string;",
               "source": {
@@ -1246,7 +1246,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Command.preconditions",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "preconditions",
               "signature": "preconditions: IPreconditionContainer;",
               "source": {
@@ -1266,7 +1266,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Command.strategy",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "strategy",
               "signature": "strategy: UnorderedStrategy;",
               "source": {
@@ -1293,7 +1293,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "CommandStore.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor();",
             "source": {
@@ -1312,7 +1312,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         ],
         "id": "CommandStore",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -1331,7 +1331,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Event.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(context: PieceContext, options?: EventOptions);",
             "source": {
@@ -1385,14 +1385,14 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         ],
         "id": "Event",
         "isAbstract": true,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
               "docs": [],
               "id": "Event.onLoad",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "onLoad",
               "signature": "onLoad: () => void;",
               "source": {
@@ -1407,7 +1407,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "Event.onUnload",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "onUnload",
               "signature": "onUnload: () => void;",
               "source": {
@@ -1422,7 +1422,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "Event.run",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "run",
               "signature": "abstract run: (
     ...args: E extends keyof ClientEvents ? ClientEvents[E] : unknown[]
@@ -1439,7 +1439,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "Event.toJSON",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "toJSON",
               "signature": "toJSON: () => Record<PropertyKey, unknown>;",
               "source": {
@@ -1456,7 +1456,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "Event.emitter",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "emitter",
               "signature": "readonly emitter: any;",
               "source": {
@@ -1471,7 +1471,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "Event.event",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "event",
               "signature": "readonly event: string;",
               "source": {
@@ -1486,7 +1486,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "Event.once",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "once",
               "signature": "readonly once: boolean;",
               "source": {
@@ -1513,7 +1513,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "EventStore.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor();",
             "source": {
@@ -1527,7 +1527,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         "docs": [],
         "id": "EventStore",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -1546,7 +1546,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "ExtendedArgument.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(context: PieceContext, options: ExtendedArgumentOptions<K>);",
             "source": {
@@ -1607,14 +1607,14 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         ],
         "id": "ExtendedArgument",
         "isAbstract": true,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
               "docs": [],
               "id": "ExtendedArgument.handle",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "handle",
               "signature": "abstract handle: (
     parsed: ArgType[K],
@@ -1632,7 +1632,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "ExtendedArgument.run",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "run",
               "signature": "run: (argument: string, context: ArgumentContext) => AsyncArgumentResult<T>;",
               "source": {
@@ -1654,7 +1654,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "ExtendedArgument.base",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "base",
               "signature": "readonly base: IArgument<ArgType[K]>;",
               "source": {
@@ -1669,7 +1669,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "ExtendedArgument.baseArgument",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "baseArgument",
               "signature": "baseArgument: keyof ArgType;",
               "source": {
@@ -1696,7 +1696,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Logger.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(level: LogLevel);",
             "source": {
@@ -1710,14 +1710,14 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         "docs": [],
         "id": "Logger",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
               "docs": [],
               "id": "Logger.debug",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "debug",
               "signature": "debug: (...values: readonly unknown[]) => void;",
               "source": {
@@ -1732,7 +1732,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "Logger.error",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "error",
               "signature": "error: (...values: readonly unknown[]) => void;",
               "source": {
@@ -1747,7 +1747,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "Logger.fatal",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "fatal",
               "signature": "fatal: (...values: readonly unknown[]) => void;",
               "source": {
@@ -1762,7 +1762,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "Logger.info",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "info",
               "signature": "info: (...values: readonly unknown[]) => void;",
               "source": {
@@ -1777,7 +1777,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "Logger.trace",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "trace",
               "signature": "trace: (...values: readonly unknown[]) => void;",
               "source": {
@@ -1792,7 +1792,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "Logger.warn",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "warn",
               "signature": "warn: (...values: readonly unknown[]) => void;",
               "source": {
@@ -1807,7 +1807,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "Logger.write",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "write",
               "signature": "write: (level: LogLevel, ...values: readonly unknown[]) => void;",
               "source": {
@@ -1824,7 +1824,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "Logger.level",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "level",
               "signature": "level: LogLevel;",
               "source": {
@@ -1839,7 +1839,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "Logger.levels",
               "isStatic": true,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "levels",
               "signature": "protected static readonly levels: Map<LogLevel, LogMethods>;",
               "source": {
@@ -1871,7 +1871,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
             ],
             "id": "PermissionsPrecondition.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(permissions: PermissionResolvable);",
             "source": {
@@ -1907,7 +1907,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         ],
         "id": "PermissionsPrecondition",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [
@@ -1915,7 +1915,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "PermissionsPrecondition.context",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "context",
               "signature": "context: PreconditionContext;",
               "source": {
@@ -1930,7 +1930,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "PermissionsPrecondition.name",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "name",
               "signature": "name: string;",
               "source": {
@@ -1957,7 +1957,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         "docs": [],
         "id": "Plugin",
         "isAbstract": true,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [
@@ -1965,7 +1965,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "Plugin.[postInitialization]",
               "isStatic": true,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "[postInitialization]",
               "signature": "static [postInitialization]?: (
     this: SapphireClient,
@@ -1983,7 +1983,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "Plugin.[postLogin]",
               "isStatic": true,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "[postLogin]",
               "signature": "static [postLogin]?: (
     this: SapphireClient,
@@ -2001,7 +2001,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "Plugin.[preGenericsInitialization]",
               "isStatic": true,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "[preGenericsInitialization]",
               "signature": "static [preGenericsInitialization]?: (
     this: SapphireClient,
@@ -2019,7 +2019,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "Plugin.[preInitialization]",
               "isStatic": true,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "[preInitialization]",
               "signature": "static [preInitialization]?: (
     this: SapphireClient,
@@ -2037,7 +2037,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "Plugin.[preLogin]",
               "isStatic": true,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "[preLogin]",
               "signature": "static [preLogin]?: (
     this: SapphireClient,
@@ -2067,14 +2067,14 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         "docs": [],
         "id": "PluginManager",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
               "docs": [],
               "id": "PluginManager.registerHook",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "registerHook",
               "signature": "registerHook: {
     (hook: SapphirePluginHook, type: SyncPluginHooks, name?: string): this;
@@ -2092,7 +2092,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "PluginManager.registerPostInitializationHook",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "registerPostInitializationHook",
               "signature": "registerPostInitializationHook: (
     hook: SapphirePluginHook,
@@ -2110,7 +2110,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "PluginManager.registerPostLoginHook",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "registerPostLoginHook",
               "signature": "registerPostLoginHook: (hook: SapphirePluginAsyncHook, name?: string) => this;",
               "source": {
@@ -2125,7 +2125,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "PluginManager.registerPreGenericsInitializationHook",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "registerPreGenericsInitializationHook",
               "signature": "registerPreGenericsInitializationHook: (
     hook: SapphirePluginHook,
@@ -2143,7 +2143,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "PluginManager.registerPreInitializationHook",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "registerPreInitializationHook",
               "signature": "registerPreInitializationHook: (hook: SapphirePluginHook, name?: string) => this;",
               "source": {
@@ -2158,7 +2158,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "PluginManager.registerPreLoginHook",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "registerPreLoginHook",
               "signature": "registerPreLoginHook: (hook: SapphirePluginAsyncHook, name?: string) => this;",
               "source": {
@@ -2173,7 +2173,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "PluginManager.use",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "use",
               "signature": "use: (plugin: typeof Plugin) => this;",
               "source": {
@@ -2188,7 +2188,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "PluginManager.values",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "values",
               "signature": "values: {
     (): Generator<SapphirePluginHookEntry, void, unknown>;
@@ -2217,7 +2217,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "PluginManager.registry",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "registry",
               "signature": "readonly registry: Set<
     SapphirePluginHookEntry<SapphirePluginAsyncHook | SapphirePluginHook>
@@ -2246,7 +2246,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         "docs": [],
         "id": "Precondition",
         "isAbstract": true,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -2263,7 +2263,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "Precondition.error",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "error",
               "signature": "error: {
     (message: string, extras?: PreconditionErrorExtras): Awaited<any>;
@@ -2281,7 +2281,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "Precondition.ok",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "ok",
               "signature": "ok: () => Awaited<any>;",
               "source": {
@@ -2296,7 +2296,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "Precondition.run",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "run",
               "signature": "abstract run: (
     message: Message,
@@ -2328,7 +2328,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "PreconditionContainerArray.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(
     data?: PreconditionArrayResolvable,
@@ -2365,7 +2365,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         ],
         "id": "PreconditionContainerArray",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -2378,7 +2378,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "PreconditionContainerArray.add",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "add",
               "signature": "add: (entry: IPreconditionContainer) => this;",
               "source": {
@@ -2399,7 +2399,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "PreconditionContainerArray.parse",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "parse",
               "signature": "protected parse: (entries: Iterable<PreconditionEntryResolvable>) => this;",
               "source": {
@@ -2421,7 +2421,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "PreconditionContainerArray.run",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "run",
               "signature": "run: (message: Message, command: Command) => Awaited<any>;",
               "source": {
@@ -2443,7 +2443,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "PreconditionContainerArray.condition",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "condition",
               "signature": "readonly condition: IPreconditionCondition;",
               "source": {
@@ -2480,7 +2480,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "PreconditionContainerArray.conditions",
               "isStatic": true,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "conditions",
               "signature": "protected static readonly conditions: Collection<
     PreconditionRunCondition,
@@ -2503,7 +2503,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "PreconditionContainerArray.entries",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "entries",
               "signature": "readonly entries: IPreconditionContainer[];",
               "source": {
@@ -2523,7 +2523,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "PreconditionContainerArray.mode",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "mode",
               "signature": "readonly mode: PreconditionRunMode;",
               "source": {
@@ -2543,7 +2543,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "PreconditionContainerArray.runCondition",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "runCondition",
               "signature": "readonly runCondition: PreconditionRunCondition;",
               "source": {
@@ -2570,7 +2570,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "PreconditionContainerSingle.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(data: PreconditionSingleResolvable);",
             "source": {
@@ -2589,7 +2589,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         ],
         "id": "PreconditionContainerSingle",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -2603,7 +2603,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "PreconditionContainerSingle.run",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "run",
               "signature": "run: (message: Message, command: Command) => Awaited<any>;",
               "source": {
@@ -2627,7 +2627,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "PreconditionContainerSingle.context",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "context",
               "signature": "readonly context: PreconditionContext;",
               "source": {
@@ -2647,7 +2647,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "PreconditionContainerSingle.name",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "name",
               "signature": "readonly name: string;",
               "source": {
@@ -2674,7 +2674,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "PreconditionError.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(argument: Precondition, type: string, message: string, extras?: {});",
             "source": {
@@ -2693,7 +2693,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         ],
         "id": "PreconditionError",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [
@@ -2701,7 +2701,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "PreconditionError.extras",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "extras",
               "signature": "readonly extras: {};",
               "source": {
@@ -2716,7 +2716,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "PreconditionError.precondition",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "precondition",
               "signature": "readonly precondition: Precondition;",
               "source": {
@@ -2743,7 +2743,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "PreconditionStore.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor();",
             "source": {
@@ -2757,7 +2757,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         "docs": [],
         "id": "PreconditionStore",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [],
@@ -2776,7 +2776,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "SapphireClient.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(options?: ClientOptions);",
             "source": {
@@ -2835,7 +2835,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         ],
         "id": "SapphireClient",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -2848,7 +2848,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "SapphireClient.deregisterStore",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "deregisterStore",
               "signature": "deregisterStore: <T extends Piece>(store: Store<T>) => this;",
               "source": {
@@ -2870,7 +2870,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "SapphireClient.login",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "login",
               "signature": "login: (token?: string) => Promise<string>;",
               "source": {
@@ -2890,7 +2890,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "SapphireClient.registerStore",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "registerStore",
               "signature": "registerStore: <T extends Piece>(store: Store<T>) => this;",
               "source": {
@@ -2929,7 +2929,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "SapphireClient.registerUserDirectories",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "registerUserDirectories",
               "signature": "registerUserDirectories: (rootDirectory?: string) => void;",
               "source": {
@@ -2944,7 +2944,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "SapphireClient.use",
               "isStatic": true,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "use",
               "signature": "static use: (plugin: typeof Plugin) => typeof SapphireClient;",
               "source": {
@@ -2966,7 +2966,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "SapphireClient.arguments",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "arguments",
               "signature": "arguments: ArgumentStore;",
               "source": {
@@ -2986,7 +2986,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "SapphireClient.commands",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "commands",
               "signature": "commands: CommandStore;",
               "source": {
@@ -3006,7 +3006,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "SapphireClient.events",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "events",
               "signature": "events: EventStore;",
               "source": {
@@ -3050,7 +3050,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "SapphireClient.fetchPrefix",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "fetchPrefix",
               "signature": "fetchPrefix: SapphirePrefixHook;",
               "source": {
@@ -3070,7 +3070,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "SapphireClient.id",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "id",
               "signature": "id: string;",
               "source": {
@@ -3091,7 +3091,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "SapphireClient.logger",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "logger",
               "signature": "logger: ILogger;",
               "source": {
@@ -3106,7 +3106,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "docs": [],
               "id": "SapphireClient.plugins",
               "isStatic": true,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "plugins",
               "signature": "static plugins: PluginManager;",
               "source": {
@@ -3126,7 +3126,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "SapphireClient.preconditions",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "preconditions",
               "signature": "preconditions: PreconditionStore;",
               "source": {
@@ -3146,7 +3146,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "SapphireClient.stores",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "stores",
               "signature": "stores: Set<Store<Piece>>;",
               "source": {
@@ -3179,7 +3179,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
             ],
             "id": "UserError.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(type: string, message: string);",
             "source": {
@@ -3198,7 +3198,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         ],
         "id": "UserError",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [
@@ -3210,7 +3210,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               ],
               "id": "UserError.identifier",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "identifier",
               "signature": "readonly identifier: string;",
               "source": {
@@ -3242,7 +3242,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         ],
         "id": "BucketType",
         "isConst": true,
-        "kind": "EnumDeclaration",
+        "kind": "enum",
         "members": [
           {
             "docs": [
@@ -3251,7 +3251,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
             ],
             "id": "BucketType.Channel",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Channel",
             "signature": "Channel = 0",
             "source": {
@@ -3269,7 +3269,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
             ],
             "id": "BucketType.Global",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Global",
             "signature": "Global = 1",
             "source": {
@@ -3287,7 +3287,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
             ],
             "id": "BucketType.Guild",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Guild",
             "signature": "Guild = 2",
             "source": {
@@ -3305,7 +3305,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
             ],
             "id": "BucketType.User",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "User",
             "signature": "User = 3",
             "source": {
@@ -3335,12 +3335,12 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         "docs": [],
         "id": "CooldownLevel",
         "isConst": true,
-        "kind": "EnumDeclaration",
+        "kind": "enum",
         "members": [
           {
             "docs": [],
             "id": "CooldownLevel.Author",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Author",
             "signature": "Author = 'author'",
             "source": {
@@ -3354,7 +3354,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "CooldownLevel.Channel",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Channel",
             "signature": "Channel = 'channel'",
             "source": {
@@ -3368,7 +3368,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "CooldownLevel.Guild",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Guild",
             "signature": "Guild = 'guild'",
             "source": {
@@ -3397,12 +3397,12 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         "docs": [],
         "id": "Events",
         "isConst": false,
-        "kind": "EnumDeclaration",
+        "kind": "enum",
         "members": [
           {
             "docs": [],
             "id": "Events.ChannelCreate",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "ChannelCreate",
             "signature": "ChannelCreate = 'channelCreate'",
             "source": {
@@ -3416,7 +3416,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.ChannelDelete",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "ChannelDelete",
             "signature": "ChannelDelete = 'channelDelete'",
             "source": {
@@ -3430,7 +3430,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.ChannelPinsUpdate",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "ChannelPinsUpdate",
             "signature": "ChannelPinsUpdate = 'channelPinsUpdate'",
             "source": {
@@ -3444,7 +3444,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.ChannelUpdate",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "ChannelUpdate",
             "signature": "ChannelUpdate = 'channelUpdate'",
             "source": {
@@ -3458,7 +3458,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.CommandAccepted",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "CommandAccepted",
             "signature": "CommandAccepted = 'commandAccepted'",
             "source": {
@@ -3472,7 +3472,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.CommandDenied",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "CommandDenied",
             "signature": "CommandDenied = 'commandDenied'",
             "source": {
@@ -3486,7 +3486,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.CommandError",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "CommandError",
             "signature": "CommandError = 'commandError'",
             "source": {
@@ -3500,7 +3500,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.CommandFinish",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "CommandFinish",
             "signature": "CommandFinish = 'commandFinish'",
             "source": {
@@ -3514,7 +3514,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.CommandRun",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "CommandRun",
             "signature": "CommandRun = 'commandRun'",
             "source": {
@@ -3528,7 +3528,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.CommandSuccess",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "CommandSuccess",
             "signature": "CommandSuccess = 'commandSuccess'",
             "source": {
@@ -3542,7 +3542,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.Debug",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Debug",
             "signature": "Debug = 'debug'",
             "source": {
@@ -3556,7 +3556,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.Disconnect",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Disconnect",
             "signature": "Disconnect = 'disconnect'",
             "source": {
@@ -3570,7 +3570,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.EmojiCreate",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "EmojiCreate",
             "signature": "EmojiCreate = 'emojiCreate'",
             "source": {
@@ -3584,7 +3584,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.EmojiDelete",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "EmojiDelete",
             "signature": "EmojiDelete = 'emojiDelete'",
             "source": {
@@ -3598,7 +3598,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.EmojiUpdate",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "EmojiUpdate",
             "signature": "EmojiUpdate = 'emojiUpdate'",
             "source": {
@@ -3612,7 +3612,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.Error",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Error",
             "signature": "Error = 'error'",
             "source": {
@@ -3626,7 +3626,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.EventError",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "EventError",
             "signature": "EventError = 'eventError'",
             "source": {
@@ -3640,7 +3640,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.GuildBanAdd",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "GuildBanAdd",
             "signature": "GuildBanAdd = 'guildBanAdd'",
             "source": {
@@ -3654,7 +3654,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.GuildBanRemove",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "GuildBanRemove",
             "signature": "GuildBanRemove = 'guildBanRemove'",
             "source": {
@@ -3668,7 +3668,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.GuildCreate",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "GuildCreate",
             "signature": "GuildCreate = 'guildCreate'",
             "source": {
@@ -3682,7 +3682,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.GuildDelete",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "GuildDelete",
             "signature": "GuildDelete = 'guildDelete'",
             "source": {
@@ -3696,7 +3696,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.GuildIntegrationsUpdate",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "GuildIntegrationsUpdate",
             "signature": "GuildIntegrationsUpdate = 'guildIntegrationsUpdate'",
             "source": {
@@ -3710,7 +3710,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.GuildMemberAdd",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "GuildMemberAdd",
             "signature": "GuildMemberAdd = 'guildMemberAdd'",
             "source": {
@@ -3724,7 +3724,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.GuildMemberAvailable",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "GuildMemberAvailable",
             "signature": "GuildMemberAvailable = 'guildMemberAvailable'",
             "source": {
@@ -3738,7 +3738,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.GuildMemberRemove",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "GuildMemberRemove",
             "signature": "GuildMemberRemove = 'guildMemberRemove'",
             "source": {
@@ -3752,7 +3752,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.GuildMembersChunk",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "GuildMembersChunk",
             "signature": "GuildMembersChunk = 'guildMembersChunk'",
             "source": {
@@ -3766,7 +3766,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.GuildMemberSpeaking",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "GuildMemberSpeaking",
             "signature": "GuildMemberSpeaking = 'guildMemberSpeaking'",
             "source": {
@@ -3780,7 +3780,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.GuildMemberUpdate",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "GuildMemberUpdate",
             "signature": "GuildMemberUpdate = 'guildMemberUpdate'",
             "source": {
@@ -3794,7 +3794,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.GuildUnavailable",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "GuildUnavailable",
             "signature": "GuildUnavailable = 'guildUnavailable'",
             "source": {
@@ -3808,7 +3808,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.GuildUpdate",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "GuildUpdate",
             "signature": "GuildUpdate = 'guildUpdate'",
             "source": {
@@ -3822,7 +3822,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.Invalidated",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Invalidated",
             "signature": "Invalidated = 'invalidated'",
             "source": {
@@ -3836,7 +3836,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.InviteCreate",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "InviteCreate",
             "signature": "InviteCreate = 'inviteCreate'",
             "source": {
@@ -3850,7 +3850,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.InviteDelete",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "InviteDelete",
             "signature": "InviteDelete = 'inviteDelete'",
             "source": {
@@ -3864,7 +3864,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.MentionPrefixOnly",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "MentionPrefixOnly",
             "signature": "MentionPrefixOnly = 'mentionPrefixOnly'",
             "source": {
@@ -3878,7 +3878,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.Message",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Message",
             "signature": "Message = 'message'",
             "source": {
@@ -3892,7 +3892,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.MessageDelete",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "MessageDelete",
             "signature": "MessageDelete = 'messageDelete'",
             "source": {
@@ -3906,7 +3906,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.MessageDeleteBulk",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "MessageDeleteBulk",
             "signature": "MessageDeleteBulk = 'messageDeleteBulk'",
             "source": {
@@ -3920,7 +3920,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.MessageReactionAdd",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "MessageReactionAdd",
             "signature": "MessageReactionAdd = 'messageReactionAdd'",
             "source": {
@@ -3934,7 +3934,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.MessageReactionRemove",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "MessageReactionRemove",
             "signature": "MessageReactionRemove = 'messageReactionRemove'",
             "source": {
@@ -3948,7 +3948,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.MessageReactionRemoveAll",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "MessageReactionRemoveAll",
             "signature": "MessageReactionRemoveAll = 'messageReactionRemoveAll'",
             "source": {
@@ -3962,7 +3962,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.MessageReactionRemoveEmoji",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "MessageReactionRemoveEmoji",
             "signature": "MessageReactionRemoveEmoji = 'messageReactionRemoveEmoji'",
             "source": {
@@ -3976,7 +3976,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.MessageUpdate",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "MessageUpdate",
             "signature": "MessageUpdate = 'messageUpdate'",
             "source": {
@@ -3990,7 +3990,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.PiecePostLoad",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "PiecePostLoad",
             "signature": "PiecePostLoad = 'piecePostLoad'",
             "source": {
@@ -4004,7 +4004,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.PieceUnload",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "PieceUnload",
             "signature": "PieceUnload = 'pieceUnload'",
             "source": {
@@ -4018,7 +4018,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.PluginLoaded",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "PluginLoaded",
             "signature": "PluginLoaded = 'pluginLoaded'",
             "source": {
@@ -4032,7 +4032,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.PreCommandRun",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "PreCommandRun",
             "signature": "PreCommandRun = 'preCommandRun'",
             "source": {
@@ -4046,7 +4046,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.PrefixedMessage",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "PrefixedMessage",
             "signature": "PrefixedMessage = 'prefixedMessage'",
             "source": {
@@ -4060,7 +4060,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.PresenceUpdate",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "PresenceUpdate",
             "signature": "PresenceUpdate = 'presenceUpdate'",
             "source": {
@@ -4074,7 +4074,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.RateLimit",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "RateLimit",
             "signature": "RateLimit = 'rateLimit'",
             "source": {
@@ -4088,7 +4088,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.Ready",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Ready",
             "signature": "Ready = 'ready'",
             "source": {
@@ -4102,7 +4102,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.RoleCreate",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "RoleCreate",
             "signature": "RoleCreate = 'roleCreate'",
             "source": {
@@ -4116,7 +4116,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.RoleDelete",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "RoleDelete",
             "signature": "RoleDelete = 'roleDelete'",
             "source": {
@@ -4130,7 +4130,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.RoleUpdate",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "RoleUpdate",
             "signature": "RoleUpdate = 'roleUpdate'",
             "source": {
@@ -4144,7 +4144,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.ShardDisconnect",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "ShardDisconnect",
             "signature": "ShardDisconnect = 'shardDisconnect'",
             "source": {
@@ -4158,7 +4158,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.ShardError",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "ShardError",
             "signature": "ShardError = 'shardError'",
             "source": {
@@ -4172,7 +4172,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.ShardReady",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "ShardReady",
             "signature": "ShardReady = 'shardReady'",
             "source": {
@@ -4186,7 +4186,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.ShardReconnecting",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "ShardReconnecting",
             "signature": "ShardReconnecting = 'shardReconnecting'",
             "source": {
@@ -4200,7 +4200,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.ShardResume",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "ShardResume",
             "signature": "ShardResume = 'shardResume'",
             "source": {
@@ -4214,7 +4214,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.TypingsStart",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "TypingsStart",
             "signature": "TypingsStart = 'typingStart'",
             "source": {
@@ -4228,7 +4228,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.UnknownCommand",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "UnknownCommand",
             "signature": "UnknownCommand = 'unknownCommand'",
             "source": {
@@ -4242,7 +4242,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.UnknownCommandName",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "UnknownCommandName",
             "signature": "UnknownCommandName = 'unknownCommandName'",
             "source": {
@@ -4256,7 +4256,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.UserUpdate",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "UserUpdate",
             "signature": "UserUpdate = 'userUpdate'",
             "source": {
@@ -4270,7 +4270,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.VoiceStateUpdate",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "VoiceStateUpdate",
             "signature": "VoiceStateUpdate = 'voiceStateUpdate'",
             "source": {
@@ -4284,7 +4284,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.Warn",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Warn",
             "signature": "Warn = 'warn'",
             "source": {
@@ -4298,7 +4298,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "Events.WebhookUpdate",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "WebhookUpdate",
             "signature": "WebhookUpdate = 'webhookUpdate'",
             "source": {
@@ -4393,7 +4393,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         ],
         "id": "LogLevel",
         "isConst": true,
-        "kind": "EnumDeclaration",
+        "kind": "enum",
         "members": [
           {
             "docs": [
@@ -4402,7 +4402,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
             ],
             "id": "LogLevel.Debug",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Debug",
             "signature": "Debug = 20",
             "source": {
@@ -4420,7 +4420,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
             ],
             "id": "LogLevel.Error",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Error",
             "signature": "Error = 50",
             "source": {
@@ -4438,7 +4438,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
             ],
             "id": "LogLevel.Fatal",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Fatal",
             "signature": "Fatal = 60",
             "source": {
@@ -4456,7 +4456,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
             ],
             "id": "LogLevel.Info",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Info",
             "signature": "Info = 30",
             "source": {
@@ -4474,7 +4474,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
             ],
             "id": "LogLevel.None",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "None",
             "signature": "None = 100",
             "source": {
@@ -4492,7 +4492,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
             ],
             "id": "LogLevel.Trace",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Trace",
             "signature": "Trace = 10",
             "source": {
@@ -4510,7 +4510,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
             ],
             "id": "LogLevel.Warn",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Warn",
             "signature": "Warn = 40",
             "source": {
@@ -4543,12 +4543,12 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         "docs": [],
         "id": "PluginHook",
         "isConst": true,
-        "kind": "EnumDeclaration",
+        "kind": "enum",
         "members": [
           {
             "docs": [],
             "id": "PluginHook.PostInitialization",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "PostInitialization",
             "signature": "PostInitialization = 'postInitialization'",
             "source": {
@@ -4562,7 +4562,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "PluginHook.PostLogin",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "PostLogin",
             "signature": "PostLogin = 'postLogin'",
             "source": {
@@ -4576,7 +4576,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "PluginHook.PreGenericsInitialization",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "PreGenericsInitialization",
             "signature": "PreGenericsInitialization = 'preGenericsInitialization'",
             "source": {
@@ -4590,7 +4590,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "PluginHook.PreInitialization",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "PreInitialization",
             "signature": "PreInitialization = 'preInitialization'",
             "source": {
@@ -4604,7 +4604,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
           {
             "docs": [],
             "id": "PluginHook.PreLogin",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "PreLogin",
             "signature": "PreLogin = 'preLogin'",
             "source": {
@@ -4639,7 +4639,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         ],
         "id": "PreconditionRunCondition",
         "isConst": false,
-        "kind": "EnumDeclaration",
+        "kind": "enum",
         "members": [
           {
             "docs": [
@@ -4649,7 +4649,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
             ],
             "id": "PreconditionRunCondition.And",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "And",
             "signature": "And = 0",
             "source": {
@@ -4668,7 +4668,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
             ],
             "id": "PreconditionRunCondition.Or",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Or",
             "signature": "Or = 1",
             "source": {
@@ -4701,7 +4701,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
         ],
         "id": "PreconditionRunMode",
         "isConst": true,
-        "kind": "EnumDeclaration",
+        "kind": "enum",
         "members": [
           {
             "docs": [
@@ -4712,7 +4712,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
             ],
             "id": "PreconditionRunMode.Parallel",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Parallel",
             "signature": "Parallel = 1",
             "source": {
@@ -4732,7 +4732,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
             ],
             "id": "PreconditionRunMode.Sequential",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Sequential",
             "signature": "Sequential = 0",
             "source": {
@@ -4772,7 +4772,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "err",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "err",
         "signature": "err: { (): Err$1<E>; <E>(x: E): Err$1<E> };",
         "source": {
@@ -4792,7 +4792,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "isErr",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "isErr",
         "signature": "isErr: <T, E>(x: Result<T, E>) => x is Err$1<E>;",
         "source": {
@@ -4815,7 +4815,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "isMaybe",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "isMaybe",
         "signature": "isMaybe: { <T>(x: Maybe<T>): true; <T>(x: unknown): x is any };",
         "source": {
@@ -4834,7 +4834,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "isNone",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "isNone",
         "signature": "isNone: <T>(x: Maybe<T>) => x is option.None;",
         "source": {
@@ -4854,7 +4854,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "isOk",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "isOk",
         "signature": "isOk: <T, E>(x: Result<T, E>) => x is Ok$1<T>;",
         "source": {
@@ -4873,7 +4873,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "isSome",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "isSome",
         "signature": "isSome: <T>(x: Maybe<T>) => x is option.Some<T>;",
         "source": {
@@ -4904,7 +4904,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "maybe",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "maybe",
         "signature": "maybe: {
     <T, V extends unknown>(value: V): V;
@@ -4928,7 +4928,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "none",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "none",
         "signature": "none: () => option.None;",
         "source": {
@@ -4953,7 +4953,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "ok",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "ok",
         "signature": "ok: { (): Ok$1<T>; <T>(x: T): Ok$1<T> };",
         "source": {
@@ -4978,7 +4978,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "some",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "some",
         "signature": "some: { (): option.Some<T>; <T>(x: T): option.Some<T> };",
         "source": {
@@ -4994,7 +4994,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "ArgOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5018,7 +5018,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "ArgsNextCallback",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
@@ -5028,7 +5028,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
               ],
               "id": "ArgsNextCallback.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(value: string): Maybe<T>;",
               "source": {
@@ -5056,7 +5056,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "ArgType",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5068,7 +5068,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ArgType.boolean",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "boolean",
               "signature": "boolean: boolean;",
               "source": {
@@ -5084,7 +5084,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ArgType.channel",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "channel",
               "signature": "channel: Channel;",
               "source": {
@@ -5100,7 +5100,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ArgType.date",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "date",
               "signature": "date: Date;",
               "source": {
@@ -5116,7 +5116,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ArgType.dmChannel",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "dmChannel",
               "signature": "dmChannel: DMChannel;",
               "source": {
@@ -5132,7 +5132,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ArgType.float",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "float",
               "signature": "float: number;",
               "source": {
@@ -5148,7 +5148,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ArgType.guildChannel",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "guildChannel",
               "signature": "guildChannel: GuildChannel;",
               "source": {
@@ -5164,7 +5164,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ArgType.hyperlink",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "hyperlink",
               "signature": "hyperlink: URL;",
               "source": {
@@ -5180,7 +5180,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ArgType.integer",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "integer",
               "signature": "integer: number;",
               "source": {
@@ -5196,7 +5196,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ArgType.member",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "member",
               "signature": "member: GuildMember;",
               "source": {
@@ -5212,7 +5212,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ArgType.message",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "message",
               "signature": "message: Message;",
               "source": {
@@ -5228,7 +5228,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ArgType.newsChannel",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "newsChannel",
               "signature": "newsChannel: NewsChannel;",
               "source": {
@@ -5244,7 +5244,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ArgType.number",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "number",
               "signature": "number: number;",
               "source": {
@@ -5260,7 +5260,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ArgType.role",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "role",
               "signature": "role: Role;",
               "source": {
@@ -5276,7 +5276,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ArgType.string",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "string",
               "signature": "string: string;",
               "source": {
@@ -5292,7 +5292,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ArgType.textChannel",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "textChannel",
               "signature": "textChannel: TextChannel;",
               "source": {
@@ -5308,7 +5308,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ArgType.user",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "user",
               "signature": "user: User;",
               "source": {
@@ -5324,7 +5324,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ArgType.voiceChannel",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "voiceChannel",
               "signature": "voiceChannel: VoiceChannel;",
               "source": {
@@ -5349,7 +5349,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "ArgumentContext",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5361,7 +5361,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ArgumentContext.command",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "command",
               "signature": "command: Command;",
               "source": {
@@ -5377,7 +5377,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ArgumentContext.inclusive",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "inclusive",
               "signature": "inclusive?: boolean;",
               "source": {
@@ -5393,7 +5393,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ArgumentContext.maximum",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "maximum",
               "signature": "maximum?: number;",
               "source": {
@@ -5409,7 +5409,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ArgumentContext.message",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "message",
               "signature": "message: Message;",
               "source": {
@@ -5425,7 +5425,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ArgumentContext.minimum",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "minimum",
               "signature": "minimum?: number;",
               "source": {
@@ -5450,7 +5450,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "ArgumentOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5470,7 +5470,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "ClientLoggerOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5482,7 +5482,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ClientLoggerOptions.instance",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "instance",
               "signature": "instance?: ILogger;",
               "source": {
@@ -5498,7 +5498,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ClientLoggerOptions.level",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "level",
               "signature": "level?: LogLevel;",
               "source": {
@@ -5523,7 +5523,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "CommandAcceptedPayload",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5535,7 +5535,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "CommandAcceptedPayload.context",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "context",
               "signature": "context: CommandContext;",
               "source": {
@@ -5551,7 +5551,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "CommandAcceptedPayload.parameters",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "parameters",
               "signature": "parameters: string;",
               "source": {
@@ -5576,7 +5576,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "CommandContext",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5592,7 +5592,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "CommandContext.commandName",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "commandName",
               "signature": "commandName: string;",
               "source": {
@@ -5612,7 +5612,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "CommandContext.prefix",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "prefix",
               "signature": "prefix: string;",
               "source": {
@@ -5637,7 +5637,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "CommandDeniedPayload",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5649,7 +5649,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "CommandDeniedPayload.context",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "context",
               "signature": "context: CommandContext;",
               "source": {
@@ -5665,7 +5665,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "CommandDeniedPayload.parameters",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "parameters",
               "signature": "parameters: string;",
               "source": {
@@ -5690,7 +5690,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "CommandErrorPayload",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5702,7 +5702,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "CommandErrorPayload.message",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "message",
               "signature": "message: Message;",
               "source": {
@@ -5718,7 +5718,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "CommandErrorPayload.piece",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "piece",
               "signature": "piece: Command;",
               "source": {
@@ -5748,7 +5748,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "CommandOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5766,7 +5766,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "CommandOptions.description",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "description",
               "signature": "description?: string;",
               "source": {
@@ -5788,7 +5788,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "CommandOptions.detailedDescription",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "detailedDescription",
               "signature": "detailedDescription?: string;",
               "source": {
@@ -5811,7 +5811,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "CommandOptions.preconditions",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "preconditions",
               "signature": "preconditions?: PreconditionArrayResolvable;",
               "source": {
@@ -5838,7 +5838,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "CommandOptions.quotes",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "quotes",
               "signature": "quotes?: [string, string][];",
               "source": {
@@ -5860,7 +5860,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "CommandOptions.strategyOptions",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "strategyOptions",
               "signature": "strategyOptions?: FlagStrategyOptions;",
               "source": {
@@ -5885,7 +5885,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "CommandSuccessPayload",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5897,7 +5897,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "CommandSuccessPayload.parameters",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "parameters",
               "signature": "parameters: string;",
               "source": {
@@ -5913,7 +5913,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "CommandSuccessPayload.result",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "result",
               "signature": "result: unknown;",
               "source": {
@@ -5938,7 +5938,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "EventErrorPayload",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5950,7 +5950,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "EventErrorPayload.piece",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "piece",
               "signature": "piece: Event;",
               "source": {
@@ -5975,7 +5975,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "EventOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5987,7 +5987,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "EventOptions.emitter",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "emitter",
               "signature": "readonly emitter?: keyof Client | EventEmitter;",
               "source": {
@@ -6003,7 +6003,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "EventOptions.event",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "event",
               "signature": "readonly event?: string;",
               "source": {
@@ -6019,7 +6019,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "EventOptions.once",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "once",
               "signature": "readonly once?: boolean;",
               "source": {
@@ -6044,7 +6044,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "ExtendedArgumentContext",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -6065,7 +6065,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ExtendedArgumentContext.argument",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "argument",
               "signature": "argument: string;",
               "source": {
@@ -6090,7 +6090,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "ExtendedArgumentOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -6107,7 +6107,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ExtendedArgumentOptions.baseArgument",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "baseArgument",
               "signature": "baseArgument: K;",
               "source": {
@@ -6132,7 +6132,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "IArgument",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -6147,7 +6147,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
               ],
               "id": "IArgument.run",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "run",
               "signature": "run: (argument: string, context: ArgumentContext) => Awaited<any>;",
               "source": {
@@ -6169,7 +6169,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "IArgument.name",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "readonly name: string;",
               "source": {
@@ -6194,7 +6194,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "ICommandPayload",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -6206,7 +6206,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ICommandPayload.command",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "command",
               "signature": "command: Command;",
               "source": {
@@ -6222,7 +6222,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "ICommandPayload.message",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "message",
               "signature": "message: Message;",
               "source": {
@@ -6247,7 +6247,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "ILogger",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -6261,7 +6261,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
               ],
               "id": "ILogger.debug",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "debug",
               "signature": "debug: (...values: readonly unknown[]) => void;",
               "source": {
@@ -6280,7 +6280,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
               ],
               "id": "ILogger.error",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "error",
               "signature": "error: (...values: readonly unknown[]) => void;",
               "source": {
@@ -6299,7 +6299,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
               ],
               "id": "ILogger.fatal",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "fatal",
               "signature": "fatal: (...values: readonly unknown[]) => void;",
               "source": {
@@ -6318,7 +6318,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
               ],
               "id": "ILogger.info",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "info",
               "signature": "info: (...values: readonly unknown[]) => void;",
               "source": {
@@ -6337,7 +6337,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
               ],
               "id": "ILogger.trace",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "trace",
               "signature": "trace: (...values: readonly unknown[]) => void;",
               "source": {
@@ -6356,7 +6356,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
               ],
               "id": "ILogger.warn",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "warn",
               "signature": "warn: (...values: readonly unknown[]) => void;",
               "source": {
@@ -6376,7 +6376,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
               ],
               "id": "ILogger.write",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "write",
               "signature": "write: (level: LogLevel, ...values: readonly unknown[]) => void;",
               "source": {
@@ -6402,7 +6402,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "IPieceError",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -6414,7 +6414,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "IPieceError.piece",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "piece",
               "signature": "piece: Piece;",
               "source": {
@@ -6444,7 +6444,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "IPreconditionCondition",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -6462,7 +6462,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
               ],
               "id": "IPreconditionCondition.parallel",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "parallel",
               "signature": "parallel: (
     message: Message,
@@ -6489,7 +6489,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
               ],
               "id": "IPreconditionCondition.sequential",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "sequential",
               "signature": "sequential: (
     message: Message,
@@ -6524,7 +6524,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "IPreconditionContainer",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -6540,7 +6540,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
      */",
               ],
               "id": "IPreconditionContainer.run",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "run",
               "signature": "run: (message: Message, command: Command) => Awaited<any>;",
               "source": {
@@ -6566,7 +6566,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "PreCommandRunPayload",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -6592,7 +6592,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "PreconditionArrayResolvableDetails",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -6609,7 +6609,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "PreconditionArrayResolvableDetails.entries",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "entries",
               "signature": "entries: readonly PreconditionEntryResolvable[];",
               "source": {
@@ -6630,7 +6630,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "PreconditionArrayResolvableDetails.mode",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "mode",
               "signature": "mode: PreconditionRunMode;",
               "source": {
@@ -6655,7 +6655,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "PreconditionContext",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -6681,7 +6681,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "PreconditionSingleResolvableDetails",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -6698,7 +6698,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "PreconditionSingleResolvableDetails.context",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "context",
               "signature": "context: PreconditionContext;",
               "source": {
@@ -6719,7 +6719,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "PreconditionSingleResolvableDetails.name",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "name: string;",
               "source": {
@@ -6744,7 +6744,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "RepeatArgOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -6761,7 +6761,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "RepeatArgOptions.times",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "times",
               "signature": "times?: number;",
               "source": {
@@ -6786,7 +6786,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "SapphireClientOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -6806,7 +6806,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "SapphireClientOptions.baseUserDirectory",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "baseUserDirectory",
               "signature": "baseUserDirectory?: string | null;",
               "source": {
@@ -6828,7 +6828,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "SapphireClientOptions.caseInsensitiveCommands",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "caseInsensitiveCommands",
               "signature": "caseInsensitiveCommands?: boolean | null;",
               "source": {
@@ -6850,7 +6850,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "SapphireClientOptions.defaultPrefix",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "defaultPrefix",
               "signature": "defaultPrefix?: SapphirePrefix;",
               "source": {
@@ -6872,7 +6872,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "SapphireClientOptions.fetchPrefix",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "fetchPrefix",
               "signature": "fetchPrefix?: SapphirePrefixHook;",
               "source": {
@@ -6894,7 +6894,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "SapphireClientOptions.id",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "id",
               "signature": "id?: string;",
               "source": {
@@ -6916,7 +6916,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "SapphireClientOptions.logger",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "logger",
               "signature": "logger?: ClientLoggerOptions;",
               "source": {
@@ -6941,13 +6941,13 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "SapphirePluginAsyncHook",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "SapphirePluginAsyncHook.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(this: SapphireClient, options: ClientOptions): Awaited<unknown>;",
               "source": {
@@ -6975,13 +6975,13 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "SapphirePluginHook",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "SapphirePluginHook.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(this: SapphireClient, options: ClientOptions): unknown;",
               "source": {
@@ -7009,7 +7009,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "SapphirePluginHookEntry",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -7021,7 +7021,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "SapphirePluginHookEntry.hook",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "hook",
               "signature": "hook: T;",
               "source": {
@@ -7037,7 +7037,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "SapphirePluginHookEntry.name",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "name?: string;",
               "source": {
@@ -7053,7 +7053,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
               "id": "SapphirePluginHookEntry.type",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "type",
               "signature": "type: PluginHook;",
               "source": {
@@ -7080,13 +7080,13 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "SapphirePrefixHook",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "SapphirePrefixHook.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(message: Message): Awaited<SapphirePrefix>;",
               "source": {
@@ -7121,7 +7121,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "ArgumentResult",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "ArgumentResult",
         "signature": "type ArgumentResult<T> = Awaited<Result<T, UserError>>;",
         "source": {
@@ -7138,7 +7138,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "AsyncArgumentResult",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "AsyncArgumentResult",
         "signature": "type AsyncArgumentResult<T> = Promise<Result<T, UserError>>;",
         "source": {
@@ -7151,7 +7151,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "AsyncPluginHooks",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "AsyncPluginHooks",
         "signature": "type AsyncPluginHooks = PluginHook.PreLogin | PluginHook.PostLogin;",
         "source": {
@@ -7169,7 +7169,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "AsyncPreconditionContainerReturn",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "AsyncPreconditionContainerReturn",
         "signature": "type AsyncPreconditionContainerReturn = Promise<PreconditionContainerResult>;",
         "source": {
@@ -7182,7 +7182,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "AsyncPreconditionResult",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "AsyncPreconditionResult",
         "signature": "type AsyncPreconditionResult = Promise<Result<unknown, UserError>>;",
         "source": {
@@ -7200,7 +7200,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "Err",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "Err",
         "signature": "type Err<E> = Err$1<E>;",
         "source": {
@@ -7213,7 +7213,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "LogMethods",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "LogMethods",
         "signature": "type LogMethods = 'trace' | 'debug' | 'info' | 'warn' | 'error';",
         "source": {
@@ -7231,7 +7231,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "Maybe",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "Maybe",
         "signature": "type Maybe<T> = Some<T> | None;",
         "source": {
@@ -7248,7 +7248,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "None",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "None",
         "signature": "type None = option.None;",
         "source": {
@@ -7266,7 +7266,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "Ok",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "Ok",
         "signature": "type Ok<T> = Ok$1<T>;",
         "source": {
@@ -7284,7 +7284,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "PreconditionArrayResolvable",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "PreconditionArrayResolvable",
         "signature": "type PreconditionArrayResolvable =
     | readonly PreconditionEntryResolvable[]
@@ -7304,7 +7304,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "PreconditionContainerResult",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "PreconditionContainerResult",
         "signature": "type PreconditionContainerResult = Result<unknown, UserError>;",
         "source": {
@@ -7322,7 +7322,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "PreconditionContainerReturn",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "PreconditionContainerReturn",
         "signature": "type PreconditionContainerReturn = Awaited<PreconditionContainerResult>;",
         "source": {
@@ -7342,7 +7342,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "PreconditionEntryResolvable",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "PreconditionEntryResolvable",
         "signature": "type PreconditionEntryResolvable =
     | PreconditionSingleResolvable
@@ -7357,7 +7357,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "PreconditionErrorExtras",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "PreconditionErrorExtras",
         "signature": "type PreconditionErrorExtras = object | null;",
         "source": {
@@ -7370,7 +7370,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "PreconditionResult",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "PreconditionResult",
         "signature": "type PreconditionResult = Awaited<Result<unknown, UserError>>;",
         "source": {
@@ -7388,7 +7388,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "PreconditionSingleResolvable",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "PreconditionSingleResolvable",
         "signature": "type PreconditionSingleResolvable = string | PreconditionSingleResolvableDetails;",
         "source": {
@@ -7407,7 +7407,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "Result",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "Result",
         "signature": "type Result<T, E> = Ok<T> | Err<E>;",
         "source": {
@@ -7427,7 +7427,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "SapphirePrefix",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "SapphirePrefix",
         "signature": "type SapphirePrefix = string | readonly string[] | null;",
         "source": {
@@ -7445,7 +7445,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "Some",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "Some",
         "signature": "type Some<T> = option.Some<T>;",
         "source": {
@@ -7458,7 +7458,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "SyncPluginHooks",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "SyncPluginHooks",
         "signature": "type SyncPluginHooks = Exclude<PluginHook, AsyncPluginHooks>;",
         "source": {
@@ -7473,7 +7473,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "postInitialization",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "postInitialization",
         "signature": "const postInitialization: Symbol;",
         "source": {
@@ -7488,7 +7488,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "postLogin",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "postLogin",
         "signature": "const postLogin: Symbol;",
         "source": {
@@ -7508,7 +7508,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "PreconditionConditionAnd",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "PreconditionConditionAnd",
         "signature": "const PreconditionConditionAnd: IPreconditionCondition;",
         "source": {
@@ -7528,7 +7528,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
  */",
         ],
         "id": "PreconditionConditionOr",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "PreconditionConditionOr",
         "signature": "const PreconditionConditionOr: IPreconditionCondition;",
         "source": {
@@ -7543,7 +7543,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "preGenericsInitialization",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "preGenericsInitialization",
         "signature": "const preGenericsInitialization: Symbol;",
         "source": {
@@ -7558,7 +7558,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "preInitialization",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "preInitialization",
         "signature": "const preInitialization: Symbol;",
         "source": {
@@ -7573,7 +7573,7 @@ exports[`@sapphire/framework > 1.0.0-alpha.3 1`] = `
       {
         "docs": [],
         "id": "preLogin",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "preLogin",
         "signature": "const preLogin: Symbol;",
         "source": {

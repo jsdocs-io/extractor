@@ -11,14 +11,14 @@ exports[`export-named-class-with-private-field > snapshot 1`] = `
         ],
         "id": "Class1",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
               "docs": [],
               "id": "Class1.qux",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "qux",
               "signature": "qux: () => string;",
               "source": {
@@ -35,7 +35,7 @@ exports[`export-named-class-with-private-field > snapshot 1`] = `
               "docs": [],
               "id": "Class1.bar",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "bar",
               "signature": "bar: number;",
               "source": {

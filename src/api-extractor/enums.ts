@@ -1,7 +1,6 @@
 import * as tsm from 'ts-morph';
 import {
     Declaration,
-    DeclarationKinds,
     EnumDeclaration,
     EnumMemberDeclaration,
 } from '../types/module-declarations';
@@ -29,7 +28,6 @@ export function newEnum({
     declaration: tsm.EnumDeclaration;
     getSource: SourceProvider;
 }): EnumDeclaration {
-    const kind = DeclarationKinds.EnumDeclaration;
     const docs = getJSDocs({ declaration });
     const source = getSource({ declaration });
     const isConst = declaration.isConstEnum();
@@ -44,7 +42,7 @@ export function newEnum({
     members.sort(sortByID);
 
     return {
-        kind,
+        kind: 'enum',
         id,
         name,
         docs,
@@ -70,7 +68,6 @@ function getEnumMembers({
             return [];
         }
 
-        const kind = DeclarationKinds.EnumMemberDeclaration;
         const id = toID(enumID, name);
         const docs = getJSDocs({ declaration });
         const source = getSource({ declaration });
@@ -78,7 +75,7 @@ function getEnumMembers({
         const value = declaration.getValue();
 
         return {
-            kind,
+            kind: 'enumMember',
             id,
             name,
             docs,

@@ -20,7 +20,7 @@ exports[`export-named-import-all > snapshot 1`] = `
             {
               "docs": [],
               "id": "bar.baz",
-              "kind": "VariableDeclaration",
+              "kind": "variable",
               "name": "baz",
               "signature": "const baz: boolean;",
               "source": {
@@ -36,7 +36,7 @@ exports[`export-named-import-all > snapshot 1`] = `
         },
         "docs": [],
         "id": "bar",
-        "kind": "NamespaceDeclaration",
+        "kind": "namespace",
         "name": "bar",
         "signature": "module 'bar.d.ts' {}",
         "source": {
@@ -56,7 +56,7 @@ exports[`export-named-import-all > snapshot 1`] = `
                 "/** Function bar2 */",
               ],
               "id": "foo.bar2",
-              "kind": "FunctionDeclaration",
+              "kind": "function",
               "name": "bar2",
               "signature": "bar2: (a: number, b: number) => number;",
               "source": {
@@ -74,7 +74,7 @@ exports[`export-named-import-all > snapshot 1`] = `
                 "/** Interface Bar3 */",
               ],
               "id": "foo.Bar3",
-              "kind": "InterfaceDeclaration",
+              "kind": "interface",
               "members": {
                 "callSignatures": [],
                 "constructSignatures": [],
@@ -86,7 +86,7 @@ exports[`export-named-import-all > snapshot 1`] = `
                     "id": "foo.Bar3.baz",
                     "isOptional": false,
                     "isReadonly": true,
-                    "kind": "InterfacePropertyDeclaration",
+                    "kind": "interfaceProperty",
                     "name": "baz",
                     "signature": "readonly baz: <U>(t: T, u: U) => boolean;",
                     "source": {
@@ -117,7 +117,7 @@ exports[`export-named-import-all > snapshot 1`] = `
                 "/** Variable bar1 */",
               ],
               "id": "foo.bar1",
-              "kind": "VariableDeclaration",
+              "kind": "variable",
               "name": "bar1",
               "signature": "const bar1: string;",
               "source": {
@@ -137,7 +137,7 @@ exports[`export-named-import-all > snapshot 1`] = `
  */",
         ],
         "id": "foo",
-        "kind": "NamespaceDeclaration",
+        "kind": "namespace",
         "name": "foo",
         "signature": "module 'foo.d.ts' {}",
         "source": {

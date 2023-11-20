@@ -9,14 +9,14 @@ exports[`@types/workerpool > 6.0.0 1`] = `
         "docs": [],
         "id": "Promise",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
               "docs": [],
               "id": "Promise.all",
               "isStatic": true,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "all",
               "signature": "static all: (promises: Array<Promise<any, any>>) => Promise<any[], any>;",
               "source": {
@@ -31,7 +31,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
               "docs": [],
               "id": "Promise.always",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "always",
               "signature": "always: <TT>(handler: () => Promise<TT>) => Promise<TT>;",
               "source": {
@@ -46,7 +46,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
               "docs": [],
               "id": "Promise.cancel",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "cancel",
               "signature": "cancel: () => this;",
               "source": {
@@ -61,7 +61,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
               "docs": [],
               "id": "Promise.catch",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "catch",
               "signature": "catch: <TT>(err: (error: E) => TT) => Promise<T | TT>;",
               "source": {
@@ -76,7 +76,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
               "docs": [],
               "id": "Promise.then",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "then",
               "signature": "then: <TT, TE = never>(
     result: (r: T) => TT,
@@ -94,7 +94,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
               "docs": [],
               "id": "Promise.timeout",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "timeout",
               "signature": "timeout: (delay: number) => this;",
               "source": {
@@ -111,7 +111,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
               "docs": [],
               "id": "Promise.pending",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "pending",
               "signature": "readonly pending: boolean;",
               "source": {
@@ -126,7 +126,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
               "docs": [],
               "id": "Promise.rejected",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "rejected",
               "signature": "readonly rejected: boolean;",
               "source": {
@@ -141,7 +141,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
               "docs": [],
               "id": "Promise.resolved",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "resolved",
               "signature": "readonly resolved: boolean;",
               "source": {
@@ -182,7 +182,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
  */",
         ],
         "id": "pool",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "pool",
         "signature": "pool: {
     (pathToScript?: string, options?: WorkerPoolOptions): WorkerPool;
@@ -204,7 +204,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
  */",
         ],
         "id": "worker",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "worker",
         "signature": "worker: (methods?: { [k: string]: (...args: any[]) => any }) => any;",
         "source": {
@@ -220,7 +220,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
       {
         "docs": [],
         "id": "WorkerPool",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -239,7 +239,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
      */",
               ],
               "id": "WorkerPool.exec",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "exec",
               "signature": "exec: <T extends (...args: any[]) => any>(
     method: T | string,
@@ -262,7 +262,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
      */",
               ],
               "id": "WorkerPool.proxy",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "proxy",
               "signature": "proxy: <T extends { [k: string]: (...args: any[]) => any }>() => Promise<
     Proxy<T>
@@ -280,7 +280,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
                 "/** Retrieve statistics on workers, and active and pending tasks. */",
               ],
               "id": "WorkerPool.stats",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "stats",
               "signature": "stats: () => WorkerPoolStats;",
               "source": {
@@ -300,7 +300,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
      */",
               ],
               "id": "WorkerPool.terminate",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "terminate",
               "signature": "terminate: (force?: boolean, timeout?: number) => Promise<any[]>;",
               "source": {
@@ -326,7 +326,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
       {
         "docs": [],
         "id": "WorkerPoolOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -340,7 +340,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
               "id": "WorkerPoolOptions.forkArgs",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "forkArgs",
               "signature": "forkArgs?: string[];",
               "source": {
@@ -356,7 +356,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
               "id": "WorkerPoolOptions.forkOpts",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "forkOpts",
               "signature": "forkOpts?: cp.ForkOptions;",
               "source": {
@@ -377,7 +377,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
               "id": "WorkerPoolOptions.maxWorkers",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "maxWorkers",
               "signature": "maxWorkers?: number;",
               "source": {
@@ -398,7 +398,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
               "id": "WorkerPoolOptions.minWorkers",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "minWorkers",
               "signature": "minWorkers?: number | 'max';",
               "source": {
@@ -424,7 +424,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
               "id": "WorkerPoolOptions.workerType",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "workerType",
               "signature": "workerType?: 'auto' | 'web' | 'process' | 'thread';",
               "source": {
@@ -449,7 +449,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
       {
         "docs": [],
         "id": "WorkerPoolStats",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -461,7 +461,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
               "id": "WorkerPoolStats.activeTasks",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "activeTasks",
               "signature": "activeTasks: number;",
               "source": {
@@ -477,7 +477,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
               "id": "WorkerPoolStats.busyWorkers",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "busyWorkers",
               "signature": "busyWorkers: number;",
               "source": {
@@ -493,7 +493,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
               "id": "WorkerPoolStats.idleWorkers",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "idleWorkers",
               "signature": "idleWorkers: number;",
               "source": {
@@ -509,7 +509,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
               "id": "WorkerPoolStats.pendingTasks",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "pendingTasks",
               "signature": "pendingTasks: number;",
               "source": {
@@ -525,7 +525,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
               "id": "WorkerPoolStats.totalWorkers",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "totalWorkers",
               "signature": "totalWorkers: number;",
               "source": {
@@ -557,7 +557,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
               "docs": [],
               "id": "Promise.CancellationError",
               "isAbstract": false,
-              "kind": "ClassDeclaration",
+              "kind": "class",
               "members": {
                 "methods": [],
                 "properties": [
@@ -565,7 +565,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
                     "docs": [],
                     "id": "Promise.CancellationError.name",
                     "isStatic": false,
-                    "kind": "ClassPropertyDeclaration",
+                    "kind": "classProperty",
                     "name": "name",
                     "signature": "name: string;",
                     "source": {
@@ -592,7 +592,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
               "docs": [],
               "id": "Promise.TimeoutError",
               "isAbstract": false,
-              "kind": "ClassDeclaration",
+              "kind": "class",
               "members": {
                 "methods": [],
                 "properties": [
@@ -600,7 +600,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
                     "docs": [],
                     "id": "Promise.TimeoutError.name",
                     "isStatic": false,
-                    "kind": "ClassPropertyDeclaration",
+                    "kind": "classProperty",
                     "name": "name",
                     "signature": "name: string;",
                     "source": {
@@ -632,7 +632,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
         },
         "docs": [],
         "id": "Promise",
-        "kind": "NamespaceDeclaration",
+        "kind": "namespace",
         "name": "Promise",
         "signature": "namespace Promise {}",
         "source": {
@@ -647,7 +647,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
       {
         "docs": [],
         "id": "Proxy",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "Proxy",
         "signature": "type Proxy<T extends { [k: string]: (...args: any[]) => any }> = {
     [M in keyof T]: (...args: Parameters<T[M]>) => Promise<ReturnType<T[M]>>;
@@ -664,7 +664,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
       {
         "docs": [],
         "id": "cpus",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "cpus",
         "signature": "const cpus: number;",
         "source": {
@@ -679,7 +679,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
       {
         "docs": [],
         "id": "isMainThread",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "isMainThread",
         "signature": "const isMainThread: boolean;",
         "source": {
@@ -694,7 +694,7 @@ exports[`@types/workerpool > 6.0.0 1`] = `
       {
         "docs": [],
         "id": "platform",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "platform",
         "signature": "const platform: 'node' | 'browser';",
         "source": {

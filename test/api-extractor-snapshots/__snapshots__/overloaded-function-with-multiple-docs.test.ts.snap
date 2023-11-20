@@ -12,7 +12,7 @@ exports[`overloaded-function-with-multiple-docs > snapshot 1`] = `
           "/** (B) string to number */",
         ],
         "id": "func1",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "func1",
         "signature": "func1: { (a: number): string; (b: string): number };",
         "source": {

@@ -11,7 +11,7 @@ exports[`export-default-function > snapshot 1`] = `
           "/** func1 */",
         ],
         "id": "default",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "default",
         "signature": "default: (a: number, b: number) => number;",
         "source": {

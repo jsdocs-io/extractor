@@ -9,7 +9,7 @@ exports[`ts-dedent > 2.0.0 1`] = `
       {
         "docs": [],
         "id": "dedent",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "dedent",
         "signature": "dedent: (templ: TemplateStringsArray | string, ...values: unknown[]) => string;",
         "source": {

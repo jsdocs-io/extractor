@@ -15,7 +15,7 @@ exports[`export-default-expression > snapshot 1`] = `
           "/** expr1 */",
         ],
         "id": "default",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "default",
         "signature": "const default: any;",
         "source": {

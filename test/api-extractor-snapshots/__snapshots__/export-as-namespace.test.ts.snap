@@ -11,7 +11,7 @@ exports[`export-as-namespace > snapshot 1`] = `
           "/** func1 */",
         ],
         "id": "func1",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "func1",
         "signature": "func1: (a: number, b: number) => number;",
         "source": {

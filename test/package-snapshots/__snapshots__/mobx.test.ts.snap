@@ -9,7 +9,7 @@ exports[`mobx > 6.0.5 1`] = `
           {
             "docs": [],
             "id": "ObservableMap.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(
     initialData?: IObservableMapInitialValues<K, V>,
@@ -27,14 +27,14 @@ exports[`mobx > 6.0.5 1`] = `
         "docs": [],
         "id": "ObservableMap",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
               "docs": [],
               "id": "ObservableMap.[Symbol.iterator]",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "[Symbol.iterator]",
               "signature": "[Symbol.iterator]: () => IterableIterator<IMapEntry<K, V>>;",
               "source": {
@@ -49,7 +49,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.clear",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "clear",
               "signature": "clear: () => void;",
               "source": {
@@ -64,7 +64,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.delete",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "delete",
               "signature": "delete: (key: K) => boolean;",
               "source": {
@@ -79,7 +79,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.entries",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "entries",
               "signature": "entries: () => IterableIterator<IMapEntry<K, V>>;",
               "source": {
@@ -94,7 +94,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.forEach",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "forEach",
               "signature": "forEach: (
     callback: (value: V, key: K, object: Map<K, V>) => void,
@@ -112,7 +112,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.get",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "get",
               "signature": "get: (key: K) => V | undefined;",
               "source": {
@@ -127,7 +127,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.has",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "has",
               "signature": "has: (key: K) => boolean;",
               "source": {
@@ -142,7 +142,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.intercept_",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "intercept_",
               "signature": "intercept_: (handler: IInterceptor<IMapWillChange<K, V>>) => Lambda;",
               "source": {
@@ -157,7 +157,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.keys",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "keys",
               "signature": "keys: () => IterableIterator<K>;",
               "source": {
@@ -174,7 +174,7 @@ exports[`mobx > 6.0.5 1`] = `
               ],
               "id": "ObservableMap.merge",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "merge",
               "signature": "merge: (
     other: ObservableMap<K, V> | IKeyValueMap<V> | any
@@ -197,7 +197,7 @@ exports[`mobx > 6.0.5 1`] = `
               ],
               "id": "ObservableMap.observe_",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "observe_",
               "signature": "observe_: (
     listener: (changes: IMapDidChange<K, V>) => void,
@@ -215,7 +215,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.replace",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "replace",
               "signature": "replace: (
     values: ObservableMap<K, V> | IKeyValueMap<V> | any
@@ -232,7 +232,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.set",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "set",
               "signature": "set: (key: K, value: V) => this;",
               "source": {
@@ -247,7 +247,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.toJSON",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "toJSON",
               "signature": "toJSON: () => [K, V][];",
               "source": {
@@ -262,7 +262,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.toString",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "toString",
               "signature": "toString: () => string;",
               "source": {
@@ -277,7 +277,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.values",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "values",
               "signature": "values: () => IterableIterator<V>;",
               "source": {
@@ -294,7 +294,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.[$mobx]",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "[$mobx]",
               "signature": "[$mobx]: {};",
               "source": {
@@ -309,7 +309,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.[Symbol.toStringTag]",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "[Symbol.toStringTag]",
               "signature": "readonly [Symbol.toStringTag]: string;",
               "source": {
@@ -324,7 +324,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.changeListeners_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "changeListeners_",
               "signature": "changeListeners_: any;",
               "source": {
@@ -339,7 +339,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.data_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "data_",
               "signature": "data_: Map<K, ObservableValue<V>>;",
               "source": {
@@ -354,7 +354,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.dehancer",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "dehancer",
               "signature": "dehancer: any;",
               "source": {
@@ -369,7 +369,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.enhancer_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "enhancer_",
               "signature": "enhancer_: IEnhancer<V>;",
               "source": {
@@ -384,7 +384,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.hasMap_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "hasMap_",
               "signature": "hasMap_: Map<K, ObservableValue<boolean>>;",
               "source": {
@@ -399,7 +399,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.interceptors_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "interceptors_",
               "signature": "interceptors_: any;",
               "source": {
@@ -414,7 +414,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.keysAtom_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "keysAtom_",
               "signature": "keysAtom_: IAtom;",
               "source": {
@@ -429,7 +429,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.name_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "name_",
               "signature": "name_: string;",
               "source": {
@@ -444,7 +444,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableMap.size",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "size",
               "signature": "readonly size: number;",
               "source": {
@@ -472,7 +472,7 @@ exports[`mobx > 6.0.5 1`] = `
           {
             "docs": [],
             "id": "ObservableSet.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(
     initialData?: IObservableSetInitialValues<T>,
@@ -490,14 +490,14 @@ exports[`mobx > 6.0.5 1`] = `
         "docs": [],
         "id": "ObservableSet",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
               "docs": [],
               "id": "ObservableSet.[Symbol.iterator]",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "[Symbol.iterator]",
               "signature": "[Symbol.iterator]: () => IterableIterator<T>;",
               "source": {
@@ -512,7 +512,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableSet.add",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "add",
               "signature": "add: (value: T) => this;",
               "source": {
@@ -527,7 +527,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableSet.clear",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "clear",
               "signature": "clear: () => void;",
               "source": {
@@ -542,7 +542,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableSet.delete",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "delete",
               "signature": "delete: (value: any) => boolean;",
               "source": {
@@ -557,7 +557,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableSet.entries",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "entries",
               "signature": "entries: () => IterableIterator<[T, T]>;",
               "source": {
@@ -572,7 +572,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableSet.forEach",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "forEach",
               "signature": "forEach: (
     callbackFn: (value: T, value2: T, set: Set<T>) => void,
@@ -590,7 +590,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableSet.has",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "has",
               "signature": "has: (value: any) => boolean;",
               "source": {
@@ -605,7 +605,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableSet.intercept_",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "intercept_",
               "signature": "intercept_: (handler: IInterceptor<ISetWillChange<T>>) => Lambda;",
               "source": {
@@ -620,7 +620,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableSet.keys",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "keys",
               "signature": "keys: () => IterableIterator<T>;",
               "source": {
@@ -635,7 +635,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableSet.observe_",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "observe_",
               "signature": "observe_: (
     listener: (changes: ISetDidChange<T>) => void,
@@ -653,7 +653,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableSet.replace",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "replace",
               "signature": "replace: (
     other: ObservableSet<T> | IObservableSetInitialValues<T>
@@ -670,7 +670,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableSet.toJSON",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "toJSON",
               "signature": "toJSON: () => T[];",
               "source": {
@@ -685,7 +685,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableSet.toString",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "toString",
               "signature": "toString: () => string;",
               "source": {
@@ -700,7 +700,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableSet.values",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "values",
               "signature": "values: () => IterableIterator<T>;",
               "source": {
@@ -717,7 +717,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableSet.[$mobx]",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "[$mobx]",
               "signature": "[$mobx]: {};",
               "source": {
@@ -732,7 +732,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableSet.[Symbol.toStringTag]",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "[Symbol.toStringTag]",
               "signature": "readonly [Symbol.toStringTag]: string;",
               "source": {
@@ -747,7 +747,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableSet.changeListeners_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "changeListeners_",
               "signature": "changeListeners_: any;",
               "source": {
@@ -762,7 +762,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableSet.dehancer",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "dehancer",
               "signature": "dehancer: any;",
               "source": {
@@ -777,7 +777,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableSet.enhancer_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "enhancer_",
               "signature": "enhancer_: (newV: any, oldV: any | undefined) => any;",
               "source": {
@@ -792,7 +792,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableSet.interceptors_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "interceptors_",
               "signature": "interceptors_: any;",
               "source": {
@@ -807,7 +807,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableSet.name_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "name_",
               "signature": "name_: string;",
               "source": {
@@ -822,7 +822,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "ObservableSet.size",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "size",
               "signature": "readonly size: number;",
               "source": {
@@ -850,7 +850,7 @@ exports[`mobx > 6.0.5 1`] = `
           {
             "docs": [],
             "id": "Reaction.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(
     name_?: string,
@@ -869,14 +869,14 @@ exports[`mobx > 6.0.5 1`] = `
         "docs": [],
         "id": "Reaction",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
               "docs": [],
               "id": "Reaction.dispose",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "dispose",
               "signature": "dispose: () => void;",
               "source": {
@@ -891,7 +891,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "Reaction.getDisposer_",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "getDisposer_",
               "signature": "getDisposer_: () => IReactionDisposer;",
               "source": {
@@ -906,7 +906,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "Reaction.isScheduled",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "isScheduled",
               "signature": "isScheduled: () => boolean;",
               "source": {
@@ -921,7 +921,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "Reaction.onBecomeStale_",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "onBecomeStale_",
               "signature": "onBecomeStale_: () => void;",
               "source": {
@@ -936,7 +936,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "Reaction.reportExceptionInDerivation_",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "reportExceptionInDerivation_",
               "signature": "reportExceptionInDerivation_: (error: any) => void;",
               "source": {
@@ -955,7 +955,7 @@ exports[`mobx > 6.0.5 1`] = `
               ],
               "id": "Reaction.runReaction_",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "runReaction_",
               "signature": "runReaction_: () => void;",
               "source": {
@@ -970,7 +970,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "Reaction.schedule_",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "schedule_",
               "signature": "schedule_: () => void;",
               "source": {
@@ -985,7 +985,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "Reaction.toString",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "toString",
               "signature": "toString: () => string;",
               "source": {
@@ -1000,7 +1000,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "Reaction.trace",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "trace",
               "signature": "trace: (enterBreakPoint?: boolean) => void;",
               "source": {
@@ -1015,7 +1015,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "Reaction.track",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "track",
               "signature": "track: (fn: () => void) => void;",
               "source": {
@@ -1032,7 +1032,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "Reaction.dependenciesState_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "dependenciesState_",
               "signature": "dependenciesState_: IDerivationState_;",
               "source": {
@@ -1047,7 +1047,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "Reaction.diffValue_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "diffValue_",
               "signature": "diffValue_: number;",
               "source": {
@@ -1062,7 +1062,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "Reaction.isDisposed_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "isDisposed_",
               "signature": "isDisposed_: boolean;",
               "source": {
@@ -1077,7 +1077,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "Reaction.isRunning_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "isRunning_",
               "signature": "isRunning_: boolean;",
               "source": {
@@ -1092,7 +1092,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "Reaction.isScheduled_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "isScheduled_",
               "signature": "isScheduled_: boolean;",
               "source": {
@@ -1107,7 +1107,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "Reaction.isTracing_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "isTracing_",
               "signature": "isTracing_: TraceMode;",
               "source": {
@@ -1122,7 +1122,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "Reaction.isTrackPending_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "isTrackPending_",
               "signature": "isTrackPending_: boolean;",
               "source": {
@@ -1137,7 +1137,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "Reaction.mapid_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "mapid_",
               "signature": "mapid_: string;",
               "source": {
@@ -1152,7 +1152,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "Reaction.name_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "name_",
               "signature": "name_: string;",
               "source": {
@@ -1167,7 +1167,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "Reaction.newObserving_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "newObserving_",
               "signature": "newObserving_: IObservable[];",
               "source": {
@@ -1182,7 +1182,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "Reaction.observing_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "observing_",
               "signature": "observing_: IObservable[];",
               "source": {
@@ -1197,7 +1197,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "Reaction.requiresObservable_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "requiresObservable_",
               "signature": "requiresObservable_: boolean;",
               "source": {
@@ -1212,7 +1212,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "Reaction.runId_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "runId_",
               "signature": "runId_: number;",
               "source": {
@@ -1227,7 +1227,7 @@ exports[`mobx > 6.0.5 1`] = `
               "docs": [],
               "id": "Reaction.unboundDepsCount_",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "unboundDepsCount_",
               "signature": "unboundDepsCount_: number;",
               "source": {
@@ -1262,7 +1262,7 @@ exports[`mobx > 6.0.5 1`] = `
  */",
         ],
         "id": "autorun",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "autorun",
         "signature": "autorun: (
     view: (r: IReactionPublic) => any,
@@ -1279,7 +1279,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "configure",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "configure",
         "signature": "configure: (options: {
     enforceActions?: 'never' | 'always' | 'observed';
@@ -1302,7 +1302,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "createAtom",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "createAtom",
         "signature": "createAtom: (
     name: string,
@@ -1320,7 +1320,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "entries",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "entries",
         "signature": "entries: {
     <K, T>(map: ObservableMap<K, T>): readonly [K, T][];
@@ -1339,7 +1339,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "extendObservable",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "extendObservable",
         "signature": "extendObservable: <A extends Object, B extends Object>(
     target: A,
@@ -1358,7 +1358,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "FlowCancellationError",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "FlowCancellationError",
         "signature": "FlowCancellationError: typeof FlowCancellationError;",
         "source": {
@@ -1372,7 +1372,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "flowResult",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "flowResult",
         "signature": "flowResult: <T>(
     result: T
@@ -1392,7 +1392,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "get",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "get",
         "signature": "get: {
     <K, V>(obj: ObservableMap<K, V>, key: K): V;
@@ -1410,7 +1410,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "getAtom",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "getAtom",
         "signature": "getAtom: (thing: any, property?: string) => IDepTreeNode;",
         "source": {
@@ -1424,7 +1424,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "getDebugName",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "getDebugName",
         "signature": "getDebugName: (thing: any, property?: string) => string;",
         "source": {
@@ -1438,7 +1438,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "getDependencyTree",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "getDependencyTree",
         "signature": "getDependencyTree: (thing: any, property?: string) => IDependencyTree;",
         "source": {
@@ -1452,7 +1452,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "getObserverTree",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "getObserverTree",
         "signature": "getObserverTree: (thing: any, property?: string) => IObserverTree;",
         "source": {
@@ -1466,7 +1466,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "has",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "has",
         "signature": "has: {
     <K>(obj: ObservableMap<K, any>, key: K): boolean;
@@ -1485,7 +1485,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "intercept",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "intercept",
         "signature": "intercept: {
     <T>(
@@ -1527,7 +1527,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "isAction",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "isAction",
         "signature": "isAction: (thing: any) => boolean;",
         "source": {
@@ -1541,7 +1541,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "isComputed",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "isComputed",
         "signature": "isComputed: (value: any) => boolean;",
         "source": {
@@ -1555,7 +1555,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "isComputedProp",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "isComputedProp",
         "signature": "isComputedProp: (value: any, propName: string) => boolean;",
         "source": {
@@ -1569,7 +1569,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "isFlowCancellationError",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "isFlowCancellationError",
         "signature": "isFlowCancellationError: (error: Error) => boolean;",
         "source": {
@@ -1583,7 +1583,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "isObservable",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "isObservable",
         "signature": "isObservable: (value: any) => boolean;",
         "source": {
@@ -1597,7 +1597,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "isObservableArray",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "isObservableArray",
         "signature": "isObservableArray: (thing: any) => thing is IObservableArray<any>;",
         "source": {
@@ -1611,7 +1611,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "isObservableObject",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "isObservableObject",
         "signature": "isObservableObject: (thing: any) => boolean;",
         "source": {
@@ -1625,7 +1625,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "isObservableProp",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "isObservableProp",
         "signature": "isObservableProp: (value: any, propName: string) => boolean;",
         "source": {
@@ -1639,7 +1639,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "keys",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "keys",
         "signature": "keys: {
     <K>(map: ObservableMap<K, any>): readonly K[];
@@ -1658,7 +1658,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "makeAutoObservable",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "makeAutoObservable",
         "signature": "makeAutoObservable: <
     T extends Object,
@@ -1679,7 +1679,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "makeObservable",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "makeObservable",
         "signature": "makeObservable: <T, AdditionalKeys extends PropertyKey = never>(
     target: T,
@@ -1697,7 +1697,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "observe",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "observe",
         "signature": "observe: {
     <T>(
@@ -1749,7 +1749,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "onBecomeObserved",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "onBecomeObserved",
         "signature": "onBecomeObserved: {
     (
@@ -1779,7 +1779,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "onBecomeUnobserved",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "onBecomeUnobserved",
         "signature": "onBecomeUnobserved: {
     (
@@ -1809,7 +1809,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "onReactionError",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "onReactionError",
         "signature": "onReactionError: (
     handler: (error: any, derivation: IDerivation) => void
@@ -1825,7 +1825,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "reaction",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "reaction",
         "signature": "reaction: <T>(
     expression: (r: IReactionPublic) => T,
@@ -1843,7 +1843,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "remove",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "remove",
         "signature": "remove: {
     <K, V>(obj: ObservableMap<K, V>, key: K): any;
@@ -1862,7 +1862,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "runInAction",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "runInAction",
         "signature": "runInAction: <T>(fn: () => T) => T;",
         "source": {
@@ -1876,7 +1876,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "set",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "set",
         "signature": "set: {
     <V>(obj: ObservableMap<PropertyKey, V>, values: { [key: string]: V }): any;
@@ -1897,7 +1897,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "spy",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "spy",
         "signature": "spy: (listener: (change: SpyEvent) => void) => Lambda;",
         "source": {
@@ -1915,7 +1915,7 @@ exports[`mobx > 6.0.5 1`] = `
  */",
         ],
         "id": "toJS",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "toJS",
         "signature": "toJS: <T>(source: T, options?: any) => T;",
         "source": {
@@ -1929,7 +1929,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "trace",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "trace",
         "signature": "trace: {
     (thing?: any, prop?: string, enterBreakPoint?: boolean): void;
@@ -1955,7 +1955,7 @@ exports[`mobx > 6.0.5 1`] = `
  */",
         ],
         "id": "transaction",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "transaction",
         "signature": "transaction: <T>(action: () => T, thisArg?: any) => T;",
         "source": {
@@ -1969,7 +1969,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "untracked",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "untracked",
         "signature": "untracked: <T>(action: () => T) => T;",
         "source": {
@@ -1983,7 +1983,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "values",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "values",
         "signature": "values: {
     <K, T>(map: ObservableMap<K, T>): readonly T[];
@@ -2002,7 +2002,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "when",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "when",
         "signature": "when: {
     (predicate: () => boolean, opts?: IWhenOptions): Promise<void> & {
@@ -2027,13 +2027,13 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IActionFactory",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "IActionFactory.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "<T extends Function | undefined | null>(fn: T): T;",
               "source": {
@@ -2046,7 +2046,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IActionFactory.1-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "<T extends Function | undefined | null>(name: string, fn: T): T;",
               "source": {
@@ -2059,7 +2059,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IActionFactory.2-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(customName: string): PropertyDecorator & Annotation;",
               "source": {
@@ -2079,7 +2079,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IActionFactory.bound",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bound",
               "signature": "bound: IBoundActionFactory;",
               "source": {
@@ -2104,7 +2104,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IActionRunInfo",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2116,7 +2116,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IActionRunInfo.actionId_",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "actionId_",
               "signature": "actionId_: number;",
               "source": {
@@ -2132,7 +2132,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IActionRunInfo.error_",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "error_",
               "signature": "error_?: any;",
               "source": {
@@ -2148,7 +2148,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IActionRunInfo.notifySpy_",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "notifySpy_",
               "signature": "notifySpy_: boolean;",
               "source": {
@@ -2164,7 +2164,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IActionRunInfo.parentActionId_",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "parentActionId_",
               "signature": "parentActionId_: number;",
               "source": {
@@ -2180,7 +2180,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IActionRunInfo.prevAllowStateChanges_",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "prevAllowStateChanges_",
               "signature": "prevAllowStateChanges_: boolean;",
               "source": {
@@ -2196,7 +2196,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IActionRunInfo.prevAllowStateReads_",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "prevAllowStateReads_",
               "signature": "prevAllowStateReads_: boolean;",
               "source": {
@@ -2212,7 +2212,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IActionRunInfo.prevDerivation_",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "prevDerivation_",
               "signature": "prevDerivation_: IDerivation | null;",
               "source": {
@@ -2228,7 +2228,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IActionRunInfo.runAsAction_",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "runAsAction_",
               "signature": "runAsAction_?: boolean;",
               "source": {
@@ -2244,7 +2244,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IActionRunInfo.startTime_",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "startTime_",
               "signature": "startTime_: number;",
               "source": {
@@ -2269,7 +2269,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IArraySplice",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2281,7 +2281,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IArraySplice.added",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "added",
               "signature": "added: T[];",
               "source": {
@@ -2297,7 +2297,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IArraySplice.addedCount",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "addedCount",
               "signature": "addedCount: number;",
               "source": {
@@ -2313,7 +2313,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IArraySplice.removed",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "removed",
               "signature": "removed: T[];",
               "source": {
@@ -2329,7 +2329,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IArraySplice.removedCount",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "removedCount",
               "signature": "removedCount: number;",
               "source": {
@@ -2345,7 +2345,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IArraySplice.type",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "type",
               "signature": "type: 'splice';",
               "source": {
@@ -2370,7 +2370,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IArrayUpdate",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2382,7 +2382,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IArrayUpdate.newValue",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "newValue",
               "signature": "newValue: T;",
               "source": {
@@ -2398,7 +2398,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IArrayUpdate.oldValue",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "oldValue",
               "signature": "oldValue: T;",
               "source": {
@@ -2414,7 +2414,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IArrayUpdate.type",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "type",
               "signature": "type: 'update';",
               "source": {
@@ -2439,7 +2439,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IArrayWillChange",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2451,7 +2451,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IArrayWillChange.index",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "index",
               "signature": "index: number;",
               "source": {
@@ -2467,7 +2467,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IArrayWillChange.newValue",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "newValue",
               "signature": "newValue: T;",
               "source": {
@@ -2483,7 +2483,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IArrayWillChange.object",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "object",
               "signature": "object: IObservableArray<T>;",
               "source": {
@@ -2499,7 +2499,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IArrayWillChange.type",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "type",
               "signature": "type: 'update';",
               "source": {
@@ -2524,7 +2524,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IArrayWillSplice",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2536,7 +2536,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IArrayWillSplice.added",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "added",
               "signature": "added: T[];",
               "source": {
@@ -2552,7 +2552,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IArrayWillSplice.index",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "index",
               "signature": "index: number;",
               "source": {
@@ -2568,7 +2568,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IArrayWillSplice.object",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "object",
               "signature": "object: IObservableArray<T>;",
               "source": {
@@ -2584,7 +2584,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IArrayWillSplice.removedCount",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "removedCount",
               "signature": "removedCount: number;",
               "source": {
@@ -2600,7 +2600,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IArrayWillSplice.type",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "type",
               "signature": "type: 'splice';",
               "source": {
@@ -2625,7 +2625,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IAtom",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2634,7 +2634,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IAtom.reportChanged",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "reportChanged",
               "signature": "reportChanged: () => any;",
               "source": {
@@ -2648,7 +2648,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IAtom.reportObserved",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "reportObserved",
               "signature": "reportObserved: () => any;",
               "source": {
@@ -2674,7 +2674,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IAutorunOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2686,7 +2686,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IAutorunOptions.delay",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "delay",
               "signature": "delay?: number;",
               "source": {
@@ -2702,7 +2702,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IAutorunOptions.name",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "name?: string;",
               "source": {
@@ -2718,7 +2718,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IAutorunOptions.onError",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "onError",
               "signature": "onError?: (error: any) => void;",
               "source": {
@@ -2739,7 +2739,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IAutorunOptions.requiresObservable",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "requiresObservable",
               "signature": "requiresObservable?: boolean;",
               "source": {
@@ -2755,7 +2755,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IAutorunOptions.scheduler",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "scheduler",
               "signature": "scheduler?: (callback: () => void) => any;",
               "source": {
@@ -2780,7 +2780,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IComputedValue",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2789,7 +2789,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IComputedValue.get",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "get",
               "signature": "get: () => T;",
               "source": {
@@ -2803,7 +2803,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IComputedValue.observe_",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "observe_",
               "signature": "observe_: (
     listener: (change: IComputedDidChange<T>) => void,
@@ -2820,7 +2820,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IComputedValue.set",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "set",
               "signature": "set: (value: T) => void;",
               "source": {
@@ -2846,7 +2846,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IComputedValueOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2858,7 +2858,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IComputedValueOptions.context",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "context",
               "signature": "context?: any;",
               "source": {
@@ -2874,7 +2874,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IComputedValueOptions.equals",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "equals",
               "signature": "equals?: IEqualsComparer<T>;",
               "source": {
@@ -2890,7 +2890,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IComputedValueOptions.get",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "get",
               "signature": "get?: () => T;",
               "source": {
@@ -2906,7 +2906,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IComputedValueOptions.keepAlive",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "keepAlive",
               "signature": "keepAlive?: boolean;",
               "source": {
@@ -2922,7 +2922,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IComputedValueOptions.name",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "name?: string;",
               "source": {
@@ -2938,7 +2938,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IComputedValueOptions.requiresReaction",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "requiresReaction",
               "signature": "requiresReaction?: boolean;",
               "source": {
@@ -2954,7 +2954,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IComputedValueOptions.set",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "set",
               "signature": "set?: (value: T) => void;",
               "source": {
@@ -2979,7 +2979,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IDependencyTree",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2991,7 +2991,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IDependencyTree.dependencies",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "dependencies",
               "signature": "dependencies?: IDependencyTree[];",
               "source": {
@@ -3007,7 +3007,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IDependencyTree.name",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "name: string;",
               "source": {
@@ -3032,7 +3032,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IDepTreeNode",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3044,7 +3044,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IDepTreeNode.name_",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name_",
               "signature": "name_: string;",
               "source": {
@@ -3060,7 +3060,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IDepTreeNode.observing_",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "observing_",
               "signature": "observing_?: IObservable[];",
               "source": {
@@ -3085,13 +3085,13 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IEnhancer",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "IEnhancer.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(newValue: T, oldValue: T | undefined, name: string): T;",
               "source": {
@@ -3119,13 +3119,13 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IEqualsComparer",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "IEqualsComparer.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(a: T, b: T): boolean;",
               "source": {
@@ -3153,7 +3153,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IInterceptable",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3165,7 +3165,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IInterceptable.interceptors_",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "interceptors_",
               "signature": "interceptors_: IInterceptor<T>[] | undefined;",
               "source": {
@@ -3190,7 +3190,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IKeyValueMap",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3198,7 +3198,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IKeyValueMap.0-index-signature",
-              "kind": "InterfaceIndexSignatureDeclaration",
+              "kind": "interfaceIndexSignature",
               "name": "index signature",
               "signature": "[key: string]: V;",
               "source": {
@@ -3224,7 +3224,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IListenable",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3236,7 +3236,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IListenable.changeListeners_",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "changeListeners_",
               "signature": "changeListeners_: Function[] | undefined;",
               "source": {
@@ -3261,7 +3261,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IMapWillChange",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3273,7 +3273,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IMapWillChange.name",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "name: K;",
               "source": {
@@ -3289,7 +3289,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IMapWillChange.newValue",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "newValue",
               "signature": "newValue?: V;",
               "source": {
@@ -3305,7 +3305,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IMapWillChange.object",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "object",
               "signature": "object: ObservableMap<K, V>;",
               "source": {
@@ -3321,7 +3321,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IMapWillChange.type",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "type",
               "signature": "type: 'update' | 'add' | 'delete';",
               "source": {
@@ -3346,7 +3346,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IObservable",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3355,7 +3355,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IObservable.onBO",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "onBO",
               "signature": "onBO: () => void;",
               "source": {
@@ -3369,7 +3369,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IObservable.onBUO",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "onBUO",
               "signature": "onBUO: () => void;",
               "source": {
@@ -3387,7 +3387,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IObservable.diffValue_",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "diffValue_",
               "signature": "diffValue_: number;",
               "source": {
@@ -3403,7 +3403,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IObservable.isBeingObserved_",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "isBeingObserved_",
               "signature": "isBeingObserved_: boolean;",
               "source": {
@@ -3419,7 +3419,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IObservable.isPendingUnobservation_",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "isPendingUnobservation_",
               "signature": "isPendingUnobservation_: boolean;",
               "source": {
@@ -3441,7 +3441,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IObservable.lastAccessedBy_",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "lastAccessedBy_",
               "signature": "lastAccessedBy_: number;",
               "source": {
@@ -3457,7 +3457,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IObservable.lowestObserverState_",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "lowestObserverState_",
               "signature": "lowestObserverState_: IDerivationState_;",
               "source": {
@@ -3473,7 +3473,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IObservable.observers_",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "observers_",
               "signature": "observers_: Set<IDerivation>;",
               "source": {
@@ -3489,7 +3489,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IObservable.onBOL",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "onBOL",
               "signature": "onBOL: Set<Lambda> | undefined;",
               "source": {
@@ -3505,7 +3505,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IObservable.onBUOL",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "onBUOL",
               "signature": "onBUOL: Set<Lambda> | undefined;",
               "source": {
@@ -3530,7 +3530,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IObservableArray",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3539,7 +3539,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IObservableArray.clear",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "clear",
               "signature": "clear: () => T[];",
               "source": {
@@ -3553,7 +3553,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IObservableArray.remove",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "remove",
               "signature": "remove: (value: T) => boolean;",
               "source": {
@@ -3567,7 +3567,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IObservableArray.replace",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "replace",
               "signature": "replace: (newItems: T[]) => T[];",
               "source": {
@@ -3581,7 +3581,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IObservableArray.spliceWithArray",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "spliceWithArray",
               "signature": "spliceWithArray: (index: number, deleteCount?: number, newItems?: T[]) => T[];",
               "source": {
@@ -3595,7 +3595,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IObservableArray.toJSON",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "toJSON",
               "signature": "toJSON: () => T[];",
               "source": {
@@ -3621,13 +3621,13 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IObservableFactory",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "IObservableFactory.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "<T = any>(value: T[], options?: CreateObservableOptions): IObservableArray<T>;",
               "source": {
@@ -3640,7 +3640,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IObservableFactory.1-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "<T = any>(value: Set<T>, options?: CreateObservableOptions): ObservableSet<T>;",
               "source": {
@@ -3653,7 +3653,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IObservableFactory.2-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "<K = any, V = any>(
     value: Map<K, V>,
@@ -3669,7 +3669,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IObservableFactory.3-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "<T extends Object>(
     value: T,
@@ -3693,7 +3693,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IObservableFactory.array",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "array",
               "signature": "array: <T = any>(
     initialValues?: T[],
@@ -3712,7 +3712,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IObservableFactory.box",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "box",
               "signature": "box: <T = any>(
     value?: T,
@@ -3731,7 +3731,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IObservableFactory.deep",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "deep",
               "signature": "deep: Annotation & PropertyDecorator;",
               "source": {
@@ -3747,7 +3747,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IObservableFactory.map",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "map",
               "signature": "map: <K = any, V = any>(
     initialValues?: IObservableMapInitialValues<K, V>,
@@ -3766,7 +3766,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IObservableFactory.object",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "object",
               "signature": "object: <T = any>(
     props: T,
@@ -3790,7 +3790,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IObservableFactory.ref",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "ref",
               "signature": "ref: Annotation & PropertyDecorator;",
               "source": {
@@ -3806,7 +3806,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IObservableFactory.set",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "set",
               "signature": "set: <T = any>(
     initialValues?: IObservableSetInitialValues<T>,
@@ -3829,7 +3829,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IObservableFactory.shallow",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "shallow",
               "signature": "shallow: Annotation & PropertyDecorator;",
               "source": {
@@ -3845,7 +3845,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IObservableFactory.struct",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "struct",
               "signature": "struct: Annotation & PropertyDecorator;",
               "source": {
@@ -3870,7 +3870,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IObservableValue",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3879,7 +3879,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IObservableValue.get",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "get",
               "signature": "get: () => T;",
               "source": {
@@ -3893,7 +3893,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IObservableValue.intercept_",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "intercept_",
               "signature": "intercept_: (handler: IInterceptor<IValueWillChange<T>>) => Lambda;",
               "source": {
@@ -3907,7 +3907,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IObservableValue.observe_",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "observe_",
               "signature": "observe_: (
     listener: (change: IValueDidChange<T>) => void,
@@ -3924,7 +3924,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IObservableValue.set",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "set",
               "signature": "set: (value: T) => void;",
               "source": {
@@ -3950,7 +3950,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IObserverTree",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3962,7 +3962,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IObserverTree.name",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "name: string;",
               "source": {
@@ -3978,7 +3978,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IObserverTree.observers",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "observers",
               "signature": "observers?: IObserverTree[];",
               "source": {
@@ -4003,13 +4003,13 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IReactionDisposer",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "IReactionDisposer.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(): void;",
               "source": {
@@ -4029,7 +4029,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IReactionDisposer.$mobx",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "$mobx",
               "signature": "$mobx: Reaction;",
               "source": {
@@ -4073,7 +4073,7 @@ exports[`mobx > 6.0.5 1`] = `
  */",
         ],
         "id": "IReactionPublic",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -4082,7 +4082,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IReactionPublic.dispose",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "dispose",
               "signature": "dispose: () => void;",
               "source": {
@@ -4096,7 +4096,7 @@ exports[`mobx > 6.0.5 1`] = `
             {
               "docs": [],
               "id": "IReactionPublic.trace",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "trace",
               "signature": "trace: (enterBreakPoint?: boolean) => void;",
               "source": {
@@ -4122,7 +4122,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IValueWillChange",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -4134,7 +4134,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IValueWillChange.newValue",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "newValue",
               "signature": "newValue: T;",
               "source": {
@@ -4150,7 +4150,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IValueWillChange.object",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "object",
               "signature": "object: IObservableValue<T>;",
               "source": {
@@ -4166,7 +4166,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IValueWillChange.type",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "type",
               "signature": "type: 'update';",
               "source": {
@@ -4191,7 +4191,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IWhenOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -4203,7 +4203,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IWhenOptions.name",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "name?: string;",
               "source": {
@@ -4219,7 +4219,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IWhenOptions.onError",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "onError",
               "signature": "onError?: (error: any) => void;",
               "source": {
@@ -4235,7 +4235,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "IWhenOptions.timeout",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "timeout",
               "signature": "timeout?: number;",
               "source": {
@@ -4260,13 +4260,13 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "Lambda",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
               "docs": [],
               "id": "Lambda.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(): void;",
               "source": {
@@ -4286,7 +4286,7 @@ exports[`mobx > 6.0.5 1`] = `
               "id": "Lambda.name",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "name?: string;",
               "source": {
@@ -4314,7 +4314,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "AnnotationMapEntry",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "AnnotationMapEntry",
         "signature": "type AnnotationMapEntry =
     | Annotation
@@ -4330,7 +4330,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "AnnotationsMap",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "AnnotationsMap",
         "signature": "type AnnotationsMap<T, AdditionalFields extends PropertyKey> = {
     [P in Exclude<keyof T, 'toString'>]?: AnnotationMapEntry;
@@ -4345,7 +4345,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "CreateObservableOptions",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "CreateObservableOptions",
         "signature": "type CreateObservableOptions = {
     name?: string;
@@ -4365,7 +4365,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IArrayDidChange",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "IArrayDidChange",
         "signature": "type IArrayDidChange<T = any> = IArrayUpdate<T> | IArraySplice<T>;",
         "source": {
@@ -4378,7 +4378,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IInterceptor",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "IInterceptor",
         "signature": "type IInterceptor<T> = (change: T) => T | null;",
         "source": {
@@ -4391,7 +4391,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IMapDidChange",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "IMapDidChange",
         "signature": "type IMapDidChange<K = any, V = any> = {
     observableKind: 'map';
@@ -4427,7 +4427,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IMapEntries",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "IMapEntries",
         "signature": "type IMapEntries<K = any, V = any> = IMapEntry<K, V>[];",
         "source": {
@@ -4440,7 +4440,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IMapEntry",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "IMapEntry",
         "signature": "type IMapEntry<K = any, V = any> = [K, V];",
         "source": {
@@ -4453,7 +4453,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IObjectDidChange",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "IObjectDidChange",
         "signature": "type IObjectDidChange<T = any> = {
     observableKind: 'object';
@@ -4485,7 +4485,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IObjectWillChange",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "IObjectWillChange",
         "signature": "type IObjectWillChange<T = any> =
     | {
@@ -4509,7 +4509,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IObservableMapInitialValues",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "IObservableMapInitialValues",
         "signature": "type IObservableMapInitialValues<K = any, V = any> =
     | IMapEntries<K, V>
@@ -4525,7 +4525,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IObservableSetInitialValues",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "IObservableSetInitialValues",
         "signature": "type IObservableSetInitialValues<T> = Set<T> | readonly T[];",
         "source": {
@@ -4538,7 +4538,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IReactionOptions",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "IReactionOptions",
         "signature": "type IReactionOptions = IAutorunOptions & {
     fireImmediately?: boolean;
@@ -4554,7 +4554,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "ISetDidChange",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "ISetDidChange",
         "signature": "type ISetDidChange<T = any> =
     | {
@@ -4581,7 +4581,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "ISetWillChange",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "ISetWillChange",
         "signature": "type ISetWillChange<T = any> =
     | {
@@ -4604,7 +4604,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "IValueDidChange",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "IValueDidChange",
         "signature": "type IValueDidChange<T = any> = {
     type: 'update';
@@ -4626,7 +4626,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "$mobx",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "$mobx",
         "signature": "const $mobx: Symbol;",
         "source": {
@@ -4641,7 +4641,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "action",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "action",
         "signature": "const action: IActionFactory;",
         "source": {
@@ -4656,7 +4656,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "comparer",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "comparer",
         "signature": "const comparer: {
     identity: (a: any, b: any) => boolean;
@@ -4681,7 +4681,7 @@ exports[`mobx > 6.0.5 1`] = `
  */",
         ],
         "id": "computed",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "computed",
         "signature": "const computed: IComputedFactory;",
         "source": {
@@ -4696,7 +4696,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "flow",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "flow",
         "signature": "const flow: Flow;",
         "source": {
@@ -4711,7 +4711,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "FlowCancellationError",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "FlowCancellationError",
         "signature": "const FlowCancellationError: typeof FlowCancellationError;",
         "source": {
@@ -4726,7 +4726,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "isBoxedObservable",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "isBoxedObservable",
         "signature": "const isBoxedObservable: (x: any) => x is IObservableValue<any>;",
         "source": {
@@ -4741,7 +4741,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "isObservableMap",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "isObservableMap",
         "signature": "var isObservableMap: (thing: any) => thing is ObservableMap<any, any>;",
         "source": {
@@ -4756,7 +4756,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "isObservableSet",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "isObservableSet",
         "signature": "var isObservableSet: (thing: any) => thing is ObservableSet<any>;",
         "source": {
@@ -4771,7 +4771,7 @@ exports[`mobx > 6.0.5 1`] = `
       {
         "docs": [],
         "id": "observable",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "observable",
         "signature": "var observable: IObservableFactory;",
         "source": {

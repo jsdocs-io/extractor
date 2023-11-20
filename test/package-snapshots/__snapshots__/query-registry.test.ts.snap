@@ -31,7 +31,7 @@ exports[`query-registry > 1.2.0 1`] = `
      */",
             ],
             "id": "Registry.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor({ registry, mirrors, api, suggestionsAPI, cache }?: RegistryConfig);",
             "source": {
@@ -51,7 +51,7 @@ exports[`query-registry > 1.2.0 1`] = `
         ],
         "id": "Registry",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -67,7 +67,7 @@ exports[`query-registry > 1.2.0 1`] = `
               ],
               "id": "Registry.getDailyPackageDownloads",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "getDailyPackageDownloads",
               "signature": "getDailyPackageDownloads: (
     name: string,
@@ -93,7 +93,7 @@ exports[`query-registry > 1.2.0 1`] = `
               ],
               "id": "Registry.getDailyRegistryDownloads",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "getDailyRegistryDownloads",
               "signature": "getDailyRegistryDownloads: (period?: DownloadPeriod) => Promise<DailyDownloads>;",
               "source": {
@@ -112,7 +112,7 @@ exports[`query-registry > 1.2.0 1`] = `
               ],
               "id": "Registry.getMetadata",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "getMetadata",
               "signature": "getMetadata: () => Promise<RegistryMetadata>;",
               "source": {
@@ -136,7 +136,7 @@ exports[`query-registry > 1.2.0 1`] = `
               ],
               "id": "Registry.getPackageDownloads",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "getPackageDownloads",
               "signature": "getPackageDownloads: (
     name: string,
@@ -162,7 +162,7 @@ exports[`query-registry > 1.2.0 1`] = `
               ],
               "id": "Registry.getPackageManifest",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "getPackageManifest",
               "signature": "getPackageManifest: (name: string, version?: string) => Promise<PackageManifest>;",
               "source": {
@@ -184,7 +184,7 @@ exports[`query-registry > 1.2.0 1`] = `
               ],
               "id": "Registry.getPackageSuggestions",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "getPackageSuggestions",
               "signature": "getPackageSuggestions: (query: string) => Promise<PackageSearchResult[]>;",
               "source": {
@@ -206,7 +206,7 @@ exports[`query-registry > 1.2.0 1`] = `
               ],
               "id": "Registry.getPackument",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "getPackument",
               "signature": "getPackument: (name: string) => Promise<Packument>;",
               "source": {
@@ -229,7 +229,7 @@ exports[`query-registry > 1.2.0 1`] = `
               ],
               "id": "Registry.getRawPackageManifest",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "getRawPackageManifest",
               "signature": "getRawPackageManifest: (
     name: string,
@@ -254,7 +254,7 @@ exports[`query-registry > 1.2.0 1`] = `
               ],
               "id": "Registry.getRawPackument",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "getRawPackument",
               "signature": "getRawPackument: (name: string) => Promise<PackumentRaw>;",
               "source": {
@@ -277,7 +277,7 @@ exports[`query-registry > 1.2.0 1`] = `
               ],
               "id": "Registry.getRegistryDownloads",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "getRegistryDownloads",
               "signature": "getRegistryDownloads: (period?: DownloadPeriod) => Promise<Downloads>;",
               "source": {
@@ -301,7 +301,7 @@ exports[`query-registry > 1.2.0 1`] = `
               ],
               "id": "Registry.queryAPI",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "queryAPI",
               "signature": "queryAPI: <T>(endpoint: string, query?: QueryParameters) => Promise<T>;",
               "source": {
@@ -326,7 +326,7 @@ exports[`query-registry > 1.2.0 1`] = `
               ],
               "id": "Registry.queryRegistry",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "queryRegistry",
               "signature": "queryRegistry: <T>(endpoint: string, query?: QueryParameters) => Promise<T>;",
               "source": {
@@ -348,7 +348,7 @@ exports[`query-registry > 1.2.0 1`] = `
               ],
               "id": "Registry.searchPackages",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "searchPackages",
               "signature": "searchPackages: (searchOptions: SearchOptions) => Promise<SearchResults>;",
               "source": {
@@ -382,7 +382,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "BugTracker",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -394,7 +394,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "BugTracker.email",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "email",
               "signature": "readonly email?: string;",
               "source": {
@@ -410,7 +410,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "BugTracker.url",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "url",
               "signature": "readonly url?: string;",
               "source": {
@@ -443,7 +443,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "DailyDownloads",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -457,7 +457,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "DailyDownloads.downloads",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "downloads",
               "signature": "readonly downloads: DownloadsPerDay[];",
               "source": {
@@ -475,7 +475,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "DailyDownloads.end",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "end",
               "signature": "readonly end: string;",
               "source": {
@@ -493,7 +493,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "DailyDownloads.start",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "start",
               "signature": "readonly start: string;",
               "source": {
@@ -530,7 +530,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "DateRange",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -544,7 +544,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "DateRange.end",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "end",
               "signature": "readonly end: Date;",
               "source": {
@@ -562,7 +562,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "DateRange.start",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "start",
               "signature": "readonly start: Date;",
               "source": {
@@ -592,7 +592,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "DistInfo",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -606,7 +606,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "DistInfo.'npm-signature'",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "'npm-signature'",
               "signature": "readonly 'npm-signature'?: string;",
               "source": {
@@ -624,7 +624,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "DistInfo.fileCount",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "fileCount",
               "signature": "readonly fileCount?: number;",
               "source": {
@@ -642,7 +642,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "DistInfo.integrity",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "integrity",
               "signature": "readonly integrity?: string;",
               "source": {
@@ -660,7 +660,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "DistInfo.shasum",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "shasum",
               "signature": "readonly shasum: string;",
               "source": {
@@ -678,7 +678,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "DistInfo.tarball",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "tarball",
               "signature": "readonly tarball: string;",
               "source": {
@@ -696,7 +696,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "DistInfo.unpackedSize",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "unpackedSize",
               "signature": "readonly unpackedSize?: number;",
               "source": {
@@ -725,7 +725,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "DistTags",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -735,7 +735,7 @@ exports[`query-registry > 1.2.0 1`] = `
                 "/** Custom distribution tags to version numbers */",
               ],
               "id": "DistTags.1-index-signature",
-              "kind": "InterfaceIndexSignatureDeclaration",
+              "kind": "interfaceIndexSignature",
               "name": "index signature",
               "signature": "readonly [key: string]: string;",
               "source": {
@@ -755,7 +755,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "DistTags.latest",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "latest",
               "signature": "readonly latest: string;",
               "source": {
@@ -786,7 +786,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "Downloads",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -800,7 +800,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "Downloads.downloads",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "downloads",
               "signature": "readonly downloads: number;",
               "source": {
@@ -818,7 +818,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "Downloads.end",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "end",
               "signature": "readonly end: string;",
               "source": {
@@ -836,7 +836,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "Downloads.start",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "start",
               "signature": "readonly start: string;",
               "source": {
@@ -865,7 +865,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "DownloadsPerDay",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -879,7 +879,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "DownloadsPerDay.day",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "day",
               "signature": "readonly day: string;",
               "source": {
@@ -897,7 +897,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "DownloadsPerDay.downloads",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "downloads",
               "signature": "readonly downloads: number;",
               "source": {
@@ -922,7 +922,7 @@ exports[`query-registry > 1.2.0 1`] = `
       {
         "docs": [],
         "id": "NpmOperationalInternal",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -934,7 +934,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "NpmOperationalInternal.host",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "host",
               "signature": "readonly host: string;",
               "source": {
@@ -950,7 +950,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "NpmOperationalInternal.tmp",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "tmp",
               "signature": "readonly tmp: string;",
               "source": {
@@ -983,7 +983,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "PackageDailyDownloads",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -997,7 +997,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageDailyDownloads.package",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "package",
               "signature": "readonly package: string;",
               "source": {
@@ -1030,7 +1030,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "PackageDownloads",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1044,7 +1044,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageDownloads.package",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "package",
               "signature": "readonly package: string;",
               "source": {
@@ -1073,7 +1073,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "PackageFlags",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1087,7 +1087,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageFlags.insecure",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "insecure",
               "signature": "readonly insecure?: boolean;",
               "source": {
@@ -1105,7 +1105,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageFlags.unstable",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "unstable",
               "signature": "readonly unstable?: boolean;",
               "source": {
@@ -1134,7 +1134,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "PackageJSON",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1144,7 +1144,7 @@ exports[`query-registry > 1.2.0 1`] = `
                 "/** Other fields */",
               ],
               "id": "PackageJSON.38-index-signature",
-              "kind": "InterfaceIndexSignatureDeclaration",
+              "kind": "interfaceIndexSignature",
               "name": "index signature",
               "signature": "readonly [key: string]: unknown;",
               "source": {
@@ -1167,7 +1167,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.author",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "author",
               "signature": "readonly author?: Person;",
               "source": {
@@ -1185,7 +1185,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.bin",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bin",
               "signature": "readonly bin?: string | Record<string, string>;",
               "source": {
@@ -1203,7 +1203,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.browser",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "browser",
               "signature": "readonly browser?: string;",
               "source": {
@@ -1224,7 +1224,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.bugs",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bugs",
               "signature": "readonly bugs?: BugTracker;",
               "source": {
@@ -1242,7 +1242,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.bundledDependencies",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bundledDependencies",
               "signature": "readonly bundledDependencies?: string[];",
               "source": {
@@ -1260,7 +1260,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.bundleDependencies",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bundleDependencies",
               "signature": "readonly bundleDependencies?: string[];",
               "source": {
@@ -1278,7 +1278,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.config",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "config",
               "signature": "readonly config?: Record<string, string>;",
               "source": {
@@ -1299,7 +1299,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.contributors",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "contributors",
               "signature": "readonly contributors?: Person[];",
               "source": {
@@ -1317,7 +1317,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.cpu",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "cpu",
               "signature": "readonly cpu?: string[];",
               "source": {
@@ -1335,7 +1335,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.dependencies",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "dependencies",
               "signature": "readonly dependencies?: Record<string, string>;",
               "source": {
@@ -1353,7 +1353,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.deprecated",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "deprecated",
               "signature": "readonly deprecated?: string;",
               "source": {
@@ -1371,7 +1371,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.description",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "description",
               "signature": "readonly description?: string;",
               "source": {
@@ -1389,7 +1389,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.devDependencies",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "devDependencies",
               "signature": "readonly devDependencies?: Record<string, string>;",
               "source": {
@@ -1407,7 +1407,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.directories",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "directories",
               "signature": "readonly directories?: Record<string, string>;",
               "source": {
@@ -1425,7 +1425,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.engines",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "engines",
               "signature": "readonly engines?: Record<string, string>;",
               "source": {
@@ -1443,7 +1443,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.files",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "files",
               "signature": "readonly files?: string[];",
               "source": {
@@ -1461,7 +1461,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.homepage",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "homepage",
               "signature": "readonly homepage?: string;",
               "source": {
@@ -1479,7 +1479,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.keywords",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "keywords",
               "signature": "readonly keywords?: string[];",
               "source": {
@@ -1497,7 +1497,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.license",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "license",
               "signature": "readonly license?: string;",
               "source": {
@@ -1515,7 +1515,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.licenseText",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "licenseText",
               "signature": "readonly licenseText?: string;",
               "source": {
@@ -1533,7 +1533,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.main",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "main",
               "signature": "readonly main?: string;",
               "source": {
@@ -1554,7 +1554,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.maintainers",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "maintainers",
               "signature": "readonly maintainers?: Person[];",
               "source": {
@@ -1572,7 +1572,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.man",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "man",
               "signature": "readonly man?: string | string[];",
               "source": {
@@ -1590,7 +1590,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.module",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "module",
               "signature": "readonly module?: string;",
               "source": {
@@ -1608,7 +1608,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.name",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "readonly name: string;",
               "source": {
@@ -1626,7 +1626,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.optionalDependencies",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "optionalDependencies",
               "signature": "readonly optionalDependencies?: Record<string, string>;",
               "source": {
@@ -1644,7 +1644,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.os",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "os",
               "signature": "readonly os?: string[];",
               "source": {
@@ -1662,7 +1662,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.peerDependencies",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "peerDependencies",
               "signature": "readonly peerDependencies?: Record<string, string>;",
               "source": {
@@ -1680,7 +1680,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.private",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "private",
               "signature": "readonly private?: boolean;",
               "source": {
@@ -1698,7 +1698,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.publishConfig",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "publishConfig",
               "signature": "readonly publishConfig?: Record<string, string>;",
               "source": {
@@ -1716,7 +1716,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.readme",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "readme",
               "signature": "readonly readme?: string;",
               "source": {
@@ -1734,7 +1734,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.readmeFilename",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "readmeFilename",
               "signature": "readonly readmeFilename?: string;",
               "source": {
@@ -1755,7 +1755,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.repository",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "repository",
               "signature": "readonly repository?: Repository;",
               "source": {
@@ -1773,7 +1773,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.scripts",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "scripts",
               "signature": "readonly scripts?: Record<string, string>;",
               "source": {
@@ -1791,7 +1791,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.source",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "source",
               "signature": "readonly source?: string;",
               "source": {
@@ -1809,7 +1809,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.types",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "types",
               "signature": "readonly types?: string;",
               "source": {
@@ -1827,7 +1827,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.typings",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "typings",
               "signature": "readonly typings?: string;",
               "source": {
@@ -1845,7 +1845,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageJSON.version",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "version",
               "signature": "readonly version: string;",
               "source": {
@@ -1874,7 +1874,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "PackageLinks",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1882,7 +1882,7 @@ exports[`query-registry > 1.2.0 1`] = `
             {
               "docs": [],
               "id": "PackageLinks.4-index-signature",
-              "kind": "InterfaceIndexSignatureDeclaration",
+              "kind": "interfaceIndexSignature",
               "name": "index signature",
               "signature": "readonly [key: string]: string | undefined;",
               "source": {
@@ -1900,7 +1900,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageLinks.bugs",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bugs",
               "signature": "readonly bugs?: string;",
               "source": {
@@ -1916,7 +1916,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageLinks.homepage",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "homepage",
               "signature": "readonly homepage?: string;",
               "source": {
@@ -1932,7 +1932,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageLinks.npm",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "npm",
               "signature": "readonly npm?: string;",
               "source": {
@@ -1948,7 +1948,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageLinks.repository",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "repository",
               "signature": "readonly repository?: string;",
               "source": {
@@ -1981,7 +1981,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "PackageManifest",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2006,7 +2006,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "PackageManifestCustom",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2020,7 +2020,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageManifestCustom.createdAt",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "createdAt",
               "signature": "readonly createdAt: string;",
               "source": {
@@ -2038,7 +2038,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageManifestCustom.definitelyTypedName",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "definitelyTypedName",
               "signature": "readonly definitelyTypedName?: string;",
               "source": {
@@ -2056,7 +2056,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageManifestCustom.id",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "id",
               "signature": "readonly id: string;",
               "source": {
@@ -2077,7 +2077,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageManifestCustom.publisher",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "publisher",
               "signature": "readonly publisher: Person;",
               "source": {
@@ -2095,7 +2095,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageManifestCustom.untypedName",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "untypedName",
               "signature": "readonly untypedName?: string;",
               "source": {
@@ -2126,7 +2126,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "PackageManifestRaw",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2143,7 +2143,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageManifestRaw.dist",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "dist",
               "signature": "readonly dist: DistInfo;",
               "source": {
@@ -2161,7 +2161,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageManifestRaw.gitHead",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "gitHead",
               "signature": "readonly gitHead?: string;",
               "source": {
@@ -2191,7 +2191,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "PackageSearchResult",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2208,7 +2208,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageSearchResult.author",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "author",
               "signature": "readonly author?: Person;",
               "source": {
@@ -2226,7 +2226,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageSearchResult.date",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "date",
               "signature": "readonly date: string;",
               "source": {
@@ -2244,7 +2244,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageSearchResult.description",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "description",
               "signature": "readonly description?: string;",
               "source": {
@@ -2262,7 +2262,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageSearchResult.keywords",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "keywords",
               "signature": "readonly keywords?: string[];",
               "source": {
@@ -2283,7 +2283,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageSearchResult.links",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "links",
               "signature": "readonly links: PackageLinks;",
               "source": {
@@ -2304,7 +2304,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageSearchResult.maintainers",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "maintainers",
               "signature": "readonly maintainers?: Person[];",
               "source": {
@@ -2322,7 +2322,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageSearchResult.name",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "readonly name: string;",
               "source": {
@@ -2343,7 +2343,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageSearchResult.publisher",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "publisher",
               "signature": "readonly publisher: Person;",
               "source": {
@@ -2361,7 +2361,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageSearchResult.scope",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "scope",
               "signature": "readonly scope: string;",
               "source": {
@@ -2379,7 +2379,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackageSearchResult.version",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "version",
               "signature": "readonly version: string;",
               "source": {
@@ -2413,7 +2413,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "Packument",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2438,7 +2438,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "PackumentCustom",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2455,7 +2455,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackumentCustom.distTags",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "distTags",
               "signature": "readonly distTags: DistTags;",
               "source": {
@@ -2473,7 +2473,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackumentCustom.id",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "id",
               "signature": "readonly id: string;",
               "source": {
@@ -2491,7 +2491,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackumentCustom.versionsTimestamps",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "versionsTimestamps",
               "signature": "readonly versionsTimestamps: Record<string, string>;",
               "source": {
@@ -2522,7 +2522,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "PackumentRaw",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2539,7 +2539,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackumentRaw.'dist-tags'",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "'dist-tags'",
               "signature": "readonly 'dist-tags': DistTags;",
               "source": {
@@ -2560,7 +2560,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackumentRaw.time",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "time",
               "signature": "readonly time: TimestampsByVersion;",
               "source": {
@@ -2578,7 +2578,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackumentRaw.users",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "users",
               "signature": "readonly users?: Record<string, boolean>;",
               "source": {
@@ -2599,7 +2599,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "PackumentRaw.versions",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "versions",
               "signature": "readonly versions: Record<string, PackageManifestRaw>;",
               "source": {
@@ -2628,7 +2628,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "Person",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2640,7 +2640,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "Person.email",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "email",
               "signature": "readonly email?: string;",
               "source": {
@@ -2656,7 +2656,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "Person.name",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "readonly name?: string;",
               "source": {
@@ -2672,7 +2672,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "Person.url",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "url",
               "signature": "readonly url?: string;",
               "source": {
@@ -2688,7 +2688,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "Person.username",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "username",
               "signature": "readonly username?: string;",
               "source": {
@@ -2718,7 +2718,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "Registry",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2745,7 +2745,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "RegistryConfig",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2759,7 +2759,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryConfig.api",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "api",
               "signature": "readonly api?: string;",
               "source": {
@@ -2777,7 +2777,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryConfig.cache",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "cache",
               "signature": "readonly cache?: Cache;",
               "source": {
@@ -2795,7 +2795,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryConfig.mirrors",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "mirrors",
               "signature": "readonly mirrors?: string[];",
               "source": {
@@ -2813,7 +2813,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryConfig.registry",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "registry",
               "signature": "readonly registry?: string;",
               "source": {
@@ -2831,7 +2831,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryConfig.suggestionsAPI",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "suggestionsAPI",
               "signature": "readonly suggestionsAPI?: string;",
               "source": {
@@ -2864,7 +2864,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "RegistryMetadata",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2876,7 +2876,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryMetadata.committed_update_seq",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "committed_update_seq",
               "signature": "readonly committed_update_seq: number;",
               "source": {
@@ -2892,7 +2892,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryMetadata.compact_running",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "compact_running",
               "signature": "readonly compact_running: boolean;",
               "source": {
@@ -2908,7 +2908,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryMetadata.compacted_seq",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "compacted_seq",
               "signature": "readonly compacted_seq: number;",
               "source": {
@@ -2924,7 +2924,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryMetadata.data_size",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "data_size",
               "signature": "readonly data_size: number;",
               "source": {
@@ -2942,7 +2942,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryMetadata.db_name",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "db_name",
               "signature": "readonly db_name: string;",
               "source": {
@@ -2958,7 +2958,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryMetadata.disk_format_version",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "disk_format_version",
               "signature": "readonly disk_format_version: number;",
               "source": {
@@ -2974,7 +2974,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryMetadata.disk_size",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "disk_size",
               "signature": "readonly disk_size: number;",
               "source": {
@@ -2990,7 +2990,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryMetadata.doc_count",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "doc_count",
               "signature": "readonly doc_count: number;",
               "source": {
@@ -3006,7 +3006,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryMetadata.doc_del_count",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "doc_del_count",
               "signature": "readonly doc_del_count: number;",
               "source": {
@@ -3022,7 +3022,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryMetadata.instance_start_time",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "instance_start_time",
               "signature": "readonly instance_start_time: string;",
               "source": {
@@ -3038,7 +3038,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryMetadata.other",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "other",
               "signature": "readonly other: RegistryMetadataOther;",
               "source": {
@@ -3054,7 +3054,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryMetadata.purge_seq",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "purge_seq",
               "signature": "readonly purge_seq: number;",
               "source": {
@@ -3070,7 +3070,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryMetadata.sizes",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "sizes",
               "signature": "readonly sizes: RegistryMetadataSizes;",
               "source": {
@@ -3086,7 +3086,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryMetadata.update_seq",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "update_seq",
               "signature": "readonly update_seq: number;",
               "source": {
@@ -3102,7 +3102,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryMetadata.uuid",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "uuid",
               "signature": "readonly uuid: string;",
               "source": {
@@ -3127,7 +3127,7 @@ exports[`query-registry > 1.2.0 1`] = `
       {
         "docs": [],
         "id": "RegistryMetadataOther",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3139,7 +3139,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryMetadataOther.data_size",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "data_size",
               "signature": "readonly data_size: number;",
               "source": {
@@ -3164,7 +3164,7 @@ exports[`query-registry > 1.2.0 1`] = `
       {
         "docs": [],
         "id": "RegistryMetadataSizes",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3176,7 +3176,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryMetadataSizes.active",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "active",
               "signature": "readonly active: number;",
               "source": {
@@ -3192,7 +3192,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryMetadataSizes.external",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "external",
               "signature": "readonly external: number;",
               "source": {
@@ -3208,7 +3208,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "RegistryMetadataSizes.file",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "file",
               "signature": "readonly file: number;",
               "source": {
@@ -3239,7 +3239,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "Repository",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3256,7 +3256,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "Repository.directory",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "directory",
               "signature": "readonly directory?: string;",
               "source": {
@@ -3274,7 +3274,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "Repository.type",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "type",
               "signature": "readonly type: string;",
               "source": {
@@ -3292,7 +3292,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "Repository.url",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "url",
               "signature": "readonly url: string;",
               "source": {
@@ -3323,7 +3323,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "SearchOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3337,7 +3337,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "SearchOptions.from",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "from",
               "signature": "readonly from?: number;",
               "source": {
@@ -3355,7 +3355,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "SearchOptions.maintenance",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "maintenance",
               "signature": "readonly maintenance?: number;",
               "source": {
@@ -3373,7 +3373,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "SearchOptions.popularity",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "popularity",
               "signature": "readonly popularity?: number;",
               "source": {
@@ -3391,7 +3391,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "SearchOptions.quality",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "quality",
               "signature": "readonly quality?: number;",
               "source": {
@@ -3409,7 +3409,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "SearchOptions.size",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "size",
               "signature": "readonly size?: number;",
               "source": {
@@ -3453,7 +3453,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "SearchOptions.text",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "text",
               "signature": "readonly text?: string;",
               "source": {
@@ -3482,7 +3482,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "SearchResult",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3499,7 +3499,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "SearchResult.flags",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "flags",
               "signature": "readonly flags?: PackageFlags;",
               "source": {
@@ -3520,7 +3520,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "SearchResult.package",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "package",
               "signature": "readonly package: PackageSearchResult;",
               "source": {
@@ -3541,7 +3541,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "SearchResult.score",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "score",
               "signature": "readonly score: SearchScore;",
               "source": {
@@ -3559,7 +3559,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "SearchResult.searchScore",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "searchScore",
               "signature": "readonly searchScore: number;",
               "source": {
@@ -3590,7 +3590,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "SearchResults",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3607,7 +3607,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "SearchResults.objects",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "objects",
               "signature": "readonly objects: SearchResult[];",
               "source": {
@@ -3625,7 +3625,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "SearchResults.time",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "time",
               "signature": "readonly time: string;",
               "source": {
@@ -3646,7 +3646,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "SearchResults.total",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "total",
               "signature": "readonly total: number;",
               "source": {
@@ -3675,7 +3675,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "SearchScore",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3692,7 +3692,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "SearchScore.detail",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "detail",
               "signature": "readonly detail: SearchScoreDetail;",
               "source": {
@@ -3710,7 +3710,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "SearchScore.final",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "final",
               "signature": "readonly final: number;",
               "source": {
@@ -3740,7 +3740,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "SearchScoreDetail",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3754,7 +3754,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "SearchScoreDetail.maintenance",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "maintenance",
               "signature": "readonly maintenance: number;",
               "source": {
@@ -3772,7 +3772,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "SearchScoreDetail.popularity",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "popularity",
               "signature": "readonly popularity: number;",
               "source": {
@@ -3790,7 +3790,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "SearchScoreDetail.quality",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "quality",
               "signature": "readonly quality: number;",
               "source": {
@@ -3820,7 +3820,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "TimestampsByVersion",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3830,7 +3830,7 @@ exports[`query-registry > 1.2.0 1`] = `
                 "/** Version numbers to publishing timestamps */",
               ],
               "id": "TimestampsByVersion.2-index-signature",
-              "kind": "InterfaceIndexSignatureDeclaration",
+              "kind": "interfaceIndexSignature",
               "name": "index signature",
               "signature": "readonly [key: string]: string;",
               "source": {
@@ -3850,7 +3850,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "TimestampsByVersion.created",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "created",
               "signature": "readonly created: string;",
               "source": {
@@ -3868,7 +3868,7 @@ exports[`query-registry > 1.2.0 1`] = `
               "id": "TimestampsByVersion.modified",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "modified",
               "signature": "readonly modified: string;",
               "source": {
@@ -3904,7 +3904,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "Cache",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "Cache",
         "signature": "type Cache = string | CacheableRequest.StorageAdapter | false;",
         "source": {
@@ -3922,7 +3922,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "DefaultDownloadPeriod",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "DefaultDownloadPeriod",
         "signature": "type DefaultDownloadPeriod = 'last-day' | 'last-week' | 'last-month' | 'last-year';",
         "source": {
@@ -3952,7 +3952,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "DownloadPeriod",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "DownloadPeriod",
         "signature": "type DownloadPeriod = DefaultDownloadPeriod | Date | DateRange;",
         "source": {
@@ -3969,7 +3969,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "QueryParameters",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "QueryParameters",
         "signature": "type QueryParameters = Record<
     string,
@@ -3996,7 +3996,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "InvalidPackageNameError",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "InvalidPackageNameError",
         "signature": "const InvalidPackageNameError: makeError.Constructor<makeError.BaseError>;",
         "source": {
@@ -4017,7 +4017,7 @@ exports[`query-registry > 1.2.0 1`] = `
  */",
         ],
         "id": "InvalidPackageVersionError",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "InvalidPackageVersionError",
         "signature": "const InvalidPackageVersionError: makeError.Constructor<makeError.BaseError>;",
         "source": {
@@ -4216,7 +4216,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
           {
             "docs": [],
             "id": "FetchError.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(url: string, response: Response);",
             "source": {
@@ -4236,7 +4236,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
         ],
         "id": "FetchError",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [
@@ -4246,7 +4246,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               ],
               "id": "FetchError.response",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "response",
               "signature": "readonly response: Response;",
               "source": {
@@ -4263,7 +4263,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               ],
               "id": "FetchError.url",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "url",
               "signature": "readonly url: string;",
               "source": {
@@ -4340,7 +4340,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "getDailyPackageDownloads",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "getDailyPackageDownloads",
         "signature": "getDailyPackageDownloads: ({
     name,
@@ -4406,7 +4406,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "getDailyRegistryDownloads",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "getDailyRegistryDownloads",
         "signature": "getDailyRegistryDownloads: ({
     period: rawDownloadPeriod,
@@ -4477,7 +4477,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "getPackageDownloads",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "getPackageDownloads",
         "signature": "getPackageDownloads: ({
     name,
@@ -4548,7 +4548,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "getPackageManifest",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "getPackageManifest",
         "signature": "getPackageManifest: ({
     name,
@@ -4603,7 +4603,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "getPackument",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "getPackument",
         "signature": "getPackument: ({
     name,
@@ -4675,7 +4675,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "getRawPackageManifest",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "getRawPackageManifest",
         "signature": "getRawPackageManifest: ({
     name,
@@ -4731,7 +4731,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "getRawPackument",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "getRawPackument",
         "signature": "getRawPackument: ({
     name,
@@ -4797,7 +4797,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "getRegistryDownloads",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "getRegistryDownloads",
         "signature": "getRegistryDownloads: ({
     period: rawDownloadPeriod,
@@ -4854,7 +4854,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "getRegistryMetadata",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "getRegistryMetadata",
         "signature": "getRegistryMetadata: ({
     registry,
@@ -4902,7 +4902,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "searchPackages",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "searchPackages",
         "signature": "searchPackages: ({
     query: rawSearchCriteria,
@@ -4932,7 +4932,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "BugTracker",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -4944,7 +4944,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "BugTracker.email",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "email",
               "signature": "readonly email?: string;",
               "source": {
@@ -4960,7 +4960,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "BugTracker.url",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "url",
               "signature": "readonly url?: string;",
               "source": {
@@ -4993,7 +4993,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "DailyPackageDownloads",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5007,7 +5007,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "DailyPackageDownloads.package",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "package",
               "signature": "readonly package: string;",
               "source": {
@@ -5040,7 +5040,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "DailyRegistryDownloads",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5054,7 +5054,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "DailyRegistryDownloads.downloads",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "downloads",
               "signature": "readonly downloads: DownloadsPerDay[];",
               "source": {
@@ -5072,7 +5072,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "DailyRegistryDownloads.end",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "end",
               "signature": "readonly end: string;",
               "source": {
@@ -5090,7 +5090,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "DailyRegistryDownloads.start",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "start",
               "signature": "readonly start: string;",
               "source": {
@@ -5130,7 +5130,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "DateRange",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5144,7 +5144,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "DateRange.end",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "end",
               "signature": "readonly end: Date;",
               "source": {
@@ -5162,7 +5162,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "DateRange.start",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "start",
               "signature": "readonly start: Date;",
               "source": {
@@ -5193,7 +5193,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "DistInfo",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5207,7 +5207,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "DistInfo.'npm-signature'",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "'npm-signature'",
               "signature": "readonly 'npm-signature'?: string;",
               "source": {
@@ -5225,7 +5225,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "DistInfo.fileCount",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "fileCount",
               "signature": "readonly fileCount?: number;",
               "source": {
@@ -5243,7 +5243,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "DistInfo.integrity",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "integrity",
               "signature": "readonly integrity?: string;",
               "source": {
@@ -5261,7 +5261,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "DistInfo.shasum",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "shasum",
               "signature": "readonly shasum: string;",
               "source": {
@@ -5279,7 +5279,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "DistInfo.tarball",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "tarball",
               "signature": "readonly tarball: string;",
               "source": {
@@ -5297,7 +5297,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "DistInfo.unpackedSize",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "unpackedSize",
               "signature": "readonly unpackedSize?: number;",
               "source": {
@@ -5326,7 +5326,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "DistTags",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5336,7 +5336,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
                 "/** Mapping of distribution tags to version numbers */",
               ],
               "id": "DistTags.1-index-signature",
-              "kind": "InterfaceIndexSignatureDeclaration",
+              "kind": "interfaceIndexSignature",
               "name": "index signature",
               "signature": "readonly [key: string]: string;",
               "source": {
@@ -5356,7 +5356,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "DistTags.latest",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "latest",
               "signature": "readonly latest: string;",
               "source": {
@@ -5385,7 +5385,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "DownloadsPerDay",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5399,7 +5399,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "DownloadsPerDay.day",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "day",
               "signature": "readonly day: string;",
               "source": {
@@ -5417,7 +5417,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "DownloadsPerDay.downloads",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "downloads",
               "signature": "readonly downloads: number;",
               "source": {
@@ -5449,7 +5449,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "GitRepository",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5466,7 +5466,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "GitRepository.directory",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "directory",
               "signature": "readonly directory?: string;",
               "source": {
@@ -5484,7 +5484,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "GitRepository.type",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "type",
               "signature": "readonly type: 'git';",
               "source": {
@@ -5502,7 +5502,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "GitRepository.url",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "url",
               "signature": "readonly url: string;",
               "source": {
@@ -5527,7 +5527,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
       {
         "docs": [],
         "id": "NpmOperationalInternal",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5539,7 +5539,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "NpmOperationalInternal.host",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "host",
               "signature": "readonly host: string;",
               "source": {
@@ -5555,7 +5555,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "NpmOperationalInternal.tmp",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "tmp",
               "signature": "readonly tmp: string;",
               "source": {
@@ -5588,7 +5588,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "PackageDownloads",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5602,7 +5602,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageDownloads.package",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "package",
               "signature": "readonly package: string;",
               "source": {
@@ -5631,7 +5631,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "PackageFlags",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5645,7 +5645,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageFlags.insecure",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "insecure",
               "signature": "readonly insecure?: boolean;",
               "source": {
@@ -5663,7 +5663,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageFlags.unstable",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "unstable",
               "signature": "readonly unstable?: boolean;",
               "source": {
@@ -5699,7 +5699,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "PackageJSON",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -5709,7 +5709,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
                 "/** Other fields */",
               ],
               "id": "PackageJSON.39-index-signature",
-              "kind": "InterfaceIndexSignatureDeclaration",
+              "kind": "interfaceIndexSignature",
               "name": "index signature",
               "signature": "readonly [key: string]: unknown;",
               "source": {
@@ -5733,7 +5733,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.author",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "author",
               "signature": "readonly author?: Person;",
               "source": {
@@ -5751,7 +5751,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.bin",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bin",
               "signature": "readonly bin?: string | Record<string, string>;",
               "source": {
@@ -5769,7 +5769,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.browser",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "browser",
               "signature": "readonly browser?: string;",
               "source": {
@@ -5791,7 +5791,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.bugs",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bugs",
               "signature": "readonly bugs?: BugTracker;",
               "source": {
@@ -5809,7 +5809,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.bundledDependencies",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bundledDependencies",
               "signature": "readonly bundledDependencies?: string[];",
               "source": {
@@ -5827,7 +5827,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.bundleDependencies",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bundleDependencies",
               "signature": "readonly bundleDependencies?: string[];",
               "source": {
@@ -5845,7 +5845,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.config",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "config",
               "signature": "readonly config?: Record<string, string>;",
               "source": {
@@ -5867,7 +5867,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.contributors",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "contributors",
               "signature": "readonly contributors?: Person[];",
               "source": {
@@ -5885,7 +5885,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.cpu",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "cpu",
               "signature": "readonly cpu?: string[];",
               "source": {
@@ -5903,7 +5903,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.dependencies",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "dependencies",
               "signature": "readonly dependencies?: Record<string, string>;",
               "source": {
@@ -5921,7 +5921,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.deprecated",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "deprecated",
               "signature": "readonly deprecated?: string;",
               "source": {
@@ -5939,7 +5939,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.description",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "description",
               "signature": "readonly description?: string;",
               "source": {
@@ -5957,7 +5957,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.devDependencies",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "devDependencies",
               "signature": "readonly devDependencies?: Record<string, string>;",
               "source": {
@@ -5975,7 +5975,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.directories",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "directories",
               "signature": "readonly directories?: Record<string, string>;",
               "source": {
@@ -5993,7 +5993,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.engines",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "engines",
               "signature": "readonly engines?: Record<string, string>;",
               "source": {
@@ -6015,7 +6015,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.exports",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "exports",
               "signature": "readonly exports?: string | Record<string, unknown>;",
               "source": {
@@ -6033,7 +6033,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.files",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "files",
               "signature": "readonly files?: string[];",
               "source": {
@@ -6051,7 +6051,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.homepage",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "homepage",
               "signature": "readonly homepage?: string;",
               "source": {
@@ -6069,7 +6069,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.keywords",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "keywords",
               "signature": "readonly keywords?: string[];",
               "source": {
@@ -6087,7 +6087,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.license",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "license",
               "signature": "readonly license?: string;",
               "source": {
@@ -6105,7 +6105,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.licenseText",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "licenseText",
               "signature": "readonly licenseText?: string;",
               "source": {
@@ -6123,7 +6123,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.main",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "main",
               "signature": "readonly main?: string;",
               "source": {
@@ -6145,7 +6145,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.maintainers",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "maintainers",
               "signature": "readonly maintainers?: Person[];",
               "source": {
@@ -6163,7 +6163,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.man",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "man",
               "signature": "readonly man?: string | string[];",
               "source": {
@@ -6181,7 +6181,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.module",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "module",
               "signature": "readonly module?: string;",
               "source": {
@@ -6199,7 +6199,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.name",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "readonly name: string;",
               "source": {
@@ -6217,7 +6217,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.optionalDependencies",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "optionalDependencies",
               "signature": "readonly optionalDependencies?: Record<string, string>;",
               "source": {
@@ -6235,7 +6235,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.os",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "os",
               "signature": "readonly os?: string[];",
               "source": {
@@ -6253,7 +6253,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.peerDependencies",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "peerDependencies",
               "signature": "readonly peerDependencies?: Record<string, string>;",
               "source": {
@@ -6271,7 +6271,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.private",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "private",
               "signature": "readonly private?: boolean;",
               "source": {
@@ -6289,7 +6289,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.publishConfig",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "publishConfig",
               "signature": "readonly publishConfig?: Record<string, string>;",
               "source": {
@@ -6307,7 +6307,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.readme",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "readme",
               "signature": "readonly readme?: string;",
               "source": {
@@ -6325,7 +6325,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.readmeFilename",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "readmeFilename",
               "signature": "readonly readmeFilename?: string;",
               "source": {
@@ -6347,7 +6347,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.repository",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "repository",
               "signature": "readonly repository?: string | Repository;",
               "source": {
@@ -6365,7 +6365,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.scripts",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "scripts",
               "signature": "readonly scripts?: Record<string, string>;",
               "source": {
@@ -6383,7 +6383,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.source",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "source",
               "signature": "readonly source?: string;",
               "source": {
@@ -6401,7 +6401,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.types",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "types",
               "signature": "readonly types?: string;",
               "source": {
@@ -6419,7 +6419,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.typings",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "typings",
               "signature": "readonly typings?: string;",
               "source": {
@@ -6437,7 +6437,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageJSON.version",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "version",
               "signature": "readonly version: string;",
               "source": {
@@ -6466,7 +6466,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "PackageLinks",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -6474,7 +6474,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
             {
               "docs": [],
               "id": "PackageLinks.4-index-signature",
-              "kind": "InterfaceIndexSignatureDeclaration",
+              "kind": "interfaceIndexSignature",
               "name": "index signature",
               "signature": "readonly [key: string]: string | undefined;",
               "source": {
@@ -6492,7 +6492,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageLinks.bugs",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bugs",
               "signature": "readonly bugs?: string;",
               "source": {
@@ -6508,7 +6508,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageLinks.homepage",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "homepage",
               "signature": "readonly homepage?: string;",
               "source": {
@@ -6524,7 +6524,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageLinks.npm",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "npm",
               "signature": "readonly npm?: string;",
               "source": {
@@ -6540,7 +6540,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageLinks.repository",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "repository",
               "signature": "readonly repository?: string;",
               "source": {
@@ -6576,7 +6576,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "PackageManifest",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -6590,7 +6590,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageManifest.createdAt",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "createdAt",
               "signature": "readonly createdAt: string;",
               "source": {
@@ -6608,7 +6608,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageManifest.definitelyTypedName",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "definitelyTypedName",
               "signature": "readonly definitelyTypedName?: string;",
               "source": {
@@ -6626,7 +6626,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageManifest.gitRepository",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "gitRepository",
               "signature": "readonly gitRepository?: GitRepository;",
               "source": {
@@ -6644,7 +6644,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageManifest.id",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "id",
               "signature": "readonly id: string;",
               "source": {
@@ -6662,7 +6662,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageManifest.license",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "license",
               "signature": "readonly license?: string;",
               "source": {
@@ -6684,7 +6684,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageManifest.publisher",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "publisher",
               "signature": "readonly publisher: Person;",
               "source": {
@@ -6702,7 +6702,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageManifest.untypedName",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "untypedName",
               "signature": "readonly untypedName?: string;",
               "source": {
@@ -6735,7 +6735,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "PackageSearchResult",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -6753,7 +6753,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageSearchResult.author",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "author",
               "signature": "readonly author?: Person;",
               "source": {
@@ -6771,7 +6771,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageSearchResult.date",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "date",
               "signature": "readonly date: string;",
               "source": {
@@ -6789,7 +6789,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageSearchResult.description",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "description",
               "signature": "readonly description?: string;",
               "source": {
@@ -6807,7 +6807,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageSearchResult.keywords",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "keywords",
               "signature": "readonly keywords?: string[];",
               "source": {
@@ -6829,7 +6829,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageSearchResult.links",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "links",
               "signature": "readonly links: PackageLinks;",
               "source": {
@@ -6851,7 +6851,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageSearchResult.maintainers",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "maintainers",
               "signature": "readonly maintainers?: Person[];",
               "source": {
@@ -6869,7 +6869,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageSearchResult.name",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "readonly name: string;",
               "source": {
@@ -6891,7 +6891,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageSearchResult.publisher",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "publisher",
               "signature": "readonly publisher: Person;",
               "source": {
@@ -6909,7 +6909,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageSearchResult.scope",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "scope",
               "signature": "readonly scope: string;",
               "source": {
@@ -6927,7 +6927,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "PackageSearchResult.version",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "version",
               "signature": "readonly version: string;",
               "source": {
@@ -6963,7 +6963,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "Packument",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -6982,7 +6982,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "Packument.distTags",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "distTags",
               "signature": "readonly distTags: DistTags;",
               "source": {
@@ -7000,7 +7000,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "Packument.gitRepository",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "gitRepository",
               "signature": "readonly gitRepository?: GitRepository;",
               "source": {
@@ -7021,7 +7021,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "Packument.id",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "id",
               "signature": "readonly id: string;",
               "source": {
@@ -7039,7 +7039,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "Packument.license",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "license",
               "signature": "readonly license?: string;",
               "source": {
@@ -7063,7 +7063,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "Packument.versionsToTimestamps",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "versionsToTimestamps",
               "signature": "readonly versionsToTimestamps: Record<string, string>;",
               "source": {
@@ -7092,7 +7092,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "Person",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -7104,7 +7104,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "Person.email",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "email",
               "signature": "readonly email?: string;",
               "source": {
@@ -7120,7 +7120,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "Person.name",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "readonly name?: string;",
               "source": {
@@ -7136,7 +7136,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "Person.url",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "url",
               "signature": "readonly url?: string;",
               "source": {
@@ -7152,7 +7152,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "Person.username",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "username",
               "signature": "readonly username?: string;",
               "source": {
@@ -7192,7 +7192,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "RawPackageManifest",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -7210,7 +7210,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RawPackageManifest.dist",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "dist",
               "signature": "readonly dist: DistInfo;",
               "source": {
@@ -7228,7 +7228,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RawPackageManifest.gitHead",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "gitHead",
               "signature": "readonly gitHead?: string;",
               "source": {
@@ -7246,7 +7246,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RawPackageManifest.name",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "readonly name: string;",
               "source": {
@@ -7264,7 +7264,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RawPackageManifest.version",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "version",
               "signature": "readonly version: string;",
               "source": {
@@ -7303,7 +7303,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "RawPackument",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -7321,7 +7321,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RawPackument.'dist-tags'",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "'dist-tags'",
               "signature": "readonly 'dist-tags': DistTags;",
               "source": {
@@ -7339,7 +7339,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RawPackument.name",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "readonly name: string;",
               "source": {
@@ -7361,7 +7361,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RawPackument.time",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "time",
               "signature": "readonly time: VersionsToTimestamps;",
               "source": {
@@ -7379,7 +7379,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RawPackument.users",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "users",
               "signature": "readonly users?: Record<string, boolean>;",
               "source": {
@@ -7401,7 +7401,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RawPackument.versions",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "versions",
               "signature": "readonly versions: Record<string, RawPackageManifest>;",
               "source": {
@@ -7433,7 +7433,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "RegistryDownloads",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -7447,7 +7447,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RegistryDownloads.downloads",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "downloads",
               "signature": "readonly downloads: number;",
               "source": {
@@ -7465,7 +7465,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RegistryDownloads.end",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "end",
               "signature": "readonly end: string;",
               "source": {
@@ -7483,7 +7483,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RegistryDownloads.start",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "start",
               "signature": "readonly start: string;",
               "source": {
@@ -7517,7 +7517,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "RegistryMetadata",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -7529,7 +7529,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RegistryMetadata.committed_update_seq",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "committed_update_seq",
               "signature": "readonly committed_update_seq: number;",
               "source": {
@@ -7545,7 +7545,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RegistryMetadata.compact_running",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "compact_running",
               "signature": "readonly compact_running: boolean;",
               "source": {
@@ -7561,7 +7561,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RegistryMetadata.compacted_seq",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "compacted_seq",
               "signature": "readonly compacted_seq: number;",
               "source": {
@@ -7577,7 +7577,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RegistryMetadata.data_size",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "data_size",
               "signature": "readonly data_size: number;",
               "source": {
@@ -7595,7 +7595,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RegistryMetadata.db_name",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "db_name",
               "signature": "readonly db_name: string;",
               "source": {
@@ -7611,7 +7611,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RegistryMetadata.disk_format_version",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "disk_format_version",
               "signature": "readonly disk_format_version: number;",
               "source": {
@@ -7627,7 +7627,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RegistryMetadata.disk_size",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "disk_size",
               "signature": "readonly disk_size: number;",
               "source": {
@@ -7643,7 +7643,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RegistryMetadata.doc_count",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "doc_count",
               "signature": "readonly doc_count: number;",
               "source": {
@@ -7659,7 +7659,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RegistryMetadata.doc_del_count",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "doc_del_count",
               "signature": "readonly doc_del_count: number;",
               "source": {
@@ -7675,7 +7675,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RegistryMetadata.instance_start_time",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "instance_start_time",
               "signature": "readonly instance_start_time: string;",
               "source": {
@@ -7691,7 +7691,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RegistryMetadata.other",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "other",
               "signature": "readonly other: RegistryMetadataOther;",
               "source": {
@@ -7707,7 +7707,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RegistryMetadata.purge_seq",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "purge_seq",
               "signature": "readonly purge_seq: number;",
               "source": {
@@ -7723,7 +7723,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RegistryMetadata.sizes",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "sizes",
               "signature": "readonly sizes: RegistryMetadataSizes;",
               "source": {
@@ -7739,7 +7739,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RegistryMetadata.update_seq",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "update_seq",
               "signature": "readonly update_seq: number;",
               "source": {
@@ -7755,7 +7755,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RegistryMetadata.uuid",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "uuid",
               "signature": "readonly uuid: string;",
               "source": {
@@ -7780,7 +7780,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
       {
         "docs": [],
         "id": "RegistryMetadataOther",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -7792,7 +7792,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RegistryMetadataOther.data_size",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "data_size",
               "signature": "readonly data_size: number;",
               "source": {
@@ -7817,7 +7817,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
       {
         "docs": [],
         "id": "RegistryMetadataSizes",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -7829,7 +7829,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RegistryMetadataSizes.active",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "active",
               "signature": "readonly active: number;",
               "source": {
@@ -7845,7 +7845,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RegistryMetadataSizes.external",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "external",
               "signature": "readonly external: number;",
               "source": {
@@ -7861,7 +7861,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "RegistryMetadataSizes.file",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "file",
               "signature": "readonly file: number;",
               "source": {
@@ -7893,7 +7893,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "Repository",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -7910,7 +7910,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "Repository.directory",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "directory",
               "signature": "readonly directory?: string;",
               "source": {
@@ -7928,7 +7928,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "Repository.type",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "type",
               "signature": "readonly type?: string;",
               "source": {
@@ -7946,7 +7946,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "Repository.url",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "url",
               "signature": "readonly url: string;",
               "source": {
@@ -7977,7 +7977,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "SearchCriteria",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -7991,7 +7991,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "SearchCriteria.from",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "from",
               "signature": "readonly from?: number;",
               "source": {
@@ -8009,7 +8009,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "SearchCriteria.maintenance",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "maintenance",
               "signature": "readonly maintenance?: number;",
               "source": {
@@ -8027,7 +8027,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "SearchCriteria.popularity",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "popularity",
               "signature": "readonly popularity?: number;",
               "source": {
@@ -8045,7 +8045,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "SearchCriteria.quality",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "quality",
               "signature": "readonly quality?: number;",
               "source": {
@@ -8063,7 +8063,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "SearchCriteria.size",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "size",
               "signature": "readonly size?: number;",
               "source": {
@@ -8108,7 +8108,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "SearchCriteria.text",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "text",
               "signature": "readonly text?: string;",
               "source": {
@@ -8142,7 +8142,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "SearchResult",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -8160,7 +8160,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "SearchResult.flags",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "flags",
               "signature": "readonly flags?: PackageFlags;",
               "source": {
@@ -8182,7 +8182,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "SearchResult.package",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "package",
               "signature": "readonly package: PackageSearchResult;",
               "source": {
@@ -8204,7 +8204,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "SearchResult.score",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "score",
               "signature": "readonly score: SearchScore;",
               "source": {
@@ -8222,7 +8222,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "SearchResult.searchScore",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "searchScore",
               "signature": "readonly searchScore: number;",
               "source": {
@@ -8254,7 +8254,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "SearchResults",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -8272,7 +8272,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "SearchResults.objects",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "objects",
               "signature": "readonly objects: SearchResult[];",
               "source": {
@@ -8290,7 +8290,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "SearchResults.time",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "time",
               "signature": "readonly time: string;",
               "source": {
@@ -8311,7 +8311,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "SearchResults.total",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "total",
               "signature": "readonly total: number;",
               "source": {
@@ -8342,7 +8342,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "SearchScore",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -8360,7 +8360,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "SearchScore.detail",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "detail",
               "signature": "readonly detail: SearchScoreDetail;",
               "source": {
@@ -8378,7 +8378,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "SearchScore.final",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "final",
               "signature": "readonly final: number;",
               "source": {
@@ -8408,7 +8408,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "SearchScoreDetail",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -8422,7 +8422,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "SearchScoreDetail.maintenance",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "maintenance",
               "signature": "readonly maintenance: number;",
               "source": {
@@ -8440,7 +8440,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "SearchScoreDetail.popularity",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "popularity",
               "signature": "readonly popularity: number;",
               "source": {
@@ -8458,7 +8458,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "SearchScoreDetail.quality",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "quality",
               "signature": "readonly quality: number;",
               "source": {
@@ -8487,7 +8487,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "VersionsToTimestamps",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -8497,7 +8497,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
                 "/** Mapping of version numbers to publishing timestamps */",
               ],
               "id": "VersionsToTimestamps.2-index-signature",
-              "kind": "InterfaceIndexSignatureDeclaration",
+              "kind": "interfaceIndexSignature",
               "name": "index signature",
               "signature": "readonly [key: string]: string;",
               "source": {
@@ -8517,7 +8517,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "VersionsToTimestamps.created",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "created",
               "signature": "readonly created: string;",
               "source": {
@@ -8535,7 +8535,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
               "id": "VersionsToTimestamps.modified",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "modified",
               "signature": "readonly modified: string;",
               "source": {
@@ -8568,7 +8568,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "DefaultDownloadPeriod",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "DefaultDownloadPeriod",
         "signature": "type DefaultDownloadPeriod = 'last-day' | 'last-week' | 'last-month' | 'last-year';",
         "source": {
@@ -8599,7 +8599,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "DownloadPeriod",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "DownloadPeriod",
         "signature": "type DownloadPeriod = DefaultDownloadPeriod | Date | DateRange;",
         "source": {
@@ -8625,7 +8625,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "HoistedPackageJSON",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "HoistedPackageJSON",
         "signature": "type HoistedPackageJSON = Pick<
     PackageJSON,
@@ -8660,7 +8660,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "cloudflareRegistry",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "cloudflareRegistry",
         "signature": "const cloudflareRegistry: string;",
         "source": {
@@ -8684,7 +8684,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "InvalidPackageNameError",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "InvalidPackageNameError",
         "signature": "const InvalidPackageNameError: any;",
         "source": {
@@ -8705,7 +8705,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "InvalidPackageVersionError",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "InvalidPackageVersionError",
         "signature": "const InvalidPackageVersionError: any;",
         "source": {
@@ -8726,7 +8726,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "npmRegistry",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "npmRegistry",
         "signature": "const npmRegistry: string;",
         "source": {
@@ -8747,7 +8747,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "npmRegistryDownloadsAPI",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "npmRegistryDownloadsAPI",
         "signature": "const npmRegistryDownloadsAPI: string;",
         "source": {
@@ -8769,7 +8769,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "npmRegistryMirrors",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "npmRegistryMirrors",
         "signature": "const npmRegistryMirrors: string[];",
         "source": {
@@ -8790,7 +8790,7 @@ exports[`query-registry > 2.0.0-0 1`] = `
  */",
         ],
         "id": "yarnRegistry",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "yarnRegistry",
         "signature": "const yarnRegistry: string;",
         "source": {

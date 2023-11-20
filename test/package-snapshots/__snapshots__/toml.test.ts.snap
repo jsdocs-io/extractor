@@ -16,7 +16,7 @@ exports[`toml > 3.0.0 1`] = `
             {
               "docs": [],
               "id": "toml.parse",
-              "kind": "FunctionDeclaration",
+              "kind": "function",
               "name": "parse",
               "signature": "parse: (input: string) => any;",
               "source": {
@@ -35,7 +35,7 @@ exports[`toml > 3.0.0 1`] = `
         },
         "docs": [],
         "id": "toml",
-        "kind": "NamespaceDeclaration",
+        "kind": "namespace",
         "name": "toml",
         "signature": "module 'toml' {}",
         "source": {

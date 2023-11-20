@@ -20,7 +20,7 @@ exports[`svelte > 3.31.2 1`] = `
         },
         "docs": [],
         "id": "*.svelte",
-        "kind": "NamespaceDeclaration",
+        "kind": "namespace",
         "name": "*.svelte",
         "signature": "module '*.svelte' {}",
         "source": {

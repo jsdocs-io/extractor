@@ -9,7 +9,7 @@ exports[`class-with-overloaded-methods > snapshot 1`] = `
         "docs": [],
         "id": "Class1",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -19,7 +19,7 @@ exports[`class-with-overloaded-methods > snapshot 1`] = `
               ],
               "id": "Class1.foo",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "foo",
               "signature": "foo: { (a: string): number; (b: number): string };",
               "source": {

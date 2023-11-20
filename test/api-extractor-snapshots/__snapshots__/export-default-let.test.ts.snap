@@ -15,7 +15,7 @@ exports[`export-default-let > snapshot 1`] = `
           "/** var1 */",
         ],
         "id": "default",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "default",
         "signature": "let default: string;",
         "source": {

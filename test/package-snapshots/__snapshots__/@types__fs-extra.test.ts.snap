@@ -9,7 +9,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "access",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "access",
         "signature": "access: {
     (path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void;
@@ -31,7 +31,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "appendFile",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "appendFile",
         "signature": "appendFile: {
     (
@@ -58,7 +58,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "chmod",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "chmod",
         "signature": "chmod: {
     (
@@ -79,7 +79,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "chown",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "chown",
         "signature": "chown: {
     (path: PathLike, uid: number, gid: number): Promise<void>;
@@ -101,7 +101,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "close",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "close",
         "signature": "close: {
     (fd: number, callback: (err: NodeJS.ErrnoException) => void): void;
@@ -118,7 +118,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "copy",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "copy",
         "signature": "copy: {
     (src: string, dest: string, options?: CopyOptions): Promise<void>;
@@ -141,7 +141,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "copyFile",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "copyFile",
         "signature": "copyFile: {
     (src: string, dest: string, flags?: number): Promise<void>;
@@ -159,7 +159,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "copySync",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "copySync",
         "signature": "copySync: (src: string, dest: string, options?: CopyOptionsSync) => void;",
         "source": {
@@ -173,7 +173,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "createFile",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "createFile",
         "signature": "createFile: {
     (file: string): Promise<void>;
@@ -190,7 +190,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "createFileSync",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "createFileSync",
         "signature": "createFileSync: (file: string) => void;",
         "source": {
@@ -204,7 +204,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "createSymlink",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "createSymlink",
         "signature": "createSymlink: {
     (src: string, dest: string, type: SymlinkType): Promise<void>;
@@ -226,7 +226,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "createSymlinkSync",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "createSymlinkSync",
         "signature": "createSymlinkSync: (src: string, dest: string, type: SymlinkType) => void;",
         "source": {
@@ -240,7 +240,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "emptyDir",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "emptyDir",
         "signature": "emptyDir: {
     (path: string): Promise<void>;
@@ -257,7 +257,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "emptyDirSync",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "emptyDirSync",
         "signature": "emptyDirSync: (path: string) => void;",
         "source": {
@@ -271,7 +271,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "ensureDir",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "ensureDir",
         "signature": "ensureDir: {
     (path: string, options?: EnsureOptions | number): Promise<void>;
@@ -293,7 +293,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "ensureDirSync",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "ensureDirSync",
         "signature": "ensureDirSync: (path: string, options?: EnsureOptions | number) => void;",
         "source": {
@@ -307,7 +307,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "ensureFile",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "ensureFile",
         "signature": "ensureFile: {
     (path: string): Promise<void>;
@@ -324,7 +324,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "ensureFileSync",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "ensureFileSync",
         "signature": "ensureFileSync: (path: string) => void;",
         "source": {
@@ -338,7 +338,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "ensureLink",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "ensureLink",
         "signature": "ensureLink: {
     (src: string, dest: string): Promise<void>;
@@ -355,7 +355,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "ensureLinkSync",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "ensureLinkSync",
         "signature": "ensureLinkSync: (src: string, dest: string) => void;",
         "source": {
@@ -369,7 +369,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "ensureSymlink",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "ensureSymlink",
         "signature": "ensureSymlink: {
     (src: string, dest: string, type?: SymlinkType): Promise<void>;
@@ -392,7 +392,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "ensureSymlinkSync",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "ensureSymlinkSync",
         "signature": "ensureSymlinkSync: (src: string, dest: string, type?: SymlinkType) => void;",
         "source": {
@@ -406,7 +406,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "fchmod",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "fchmod",
         "signature": "fchmod: {
     (fd: number, mode: Mode, callback: (err: NodeJS.ErrnoException) => void): void;
@@ -423,7 +423,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "fchown",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "fchown",
         "signature": "fchown: {
     (
@@ -445,7 +445,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "fdatasync",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "fdatasync",
         "signature": "fdatasync: {
     (fd: number, callback: () => void): void;
@@ -462,7 +462,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "fstat",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "fstat",
         "signature": "fstat: {
     (fd: number, callback: (err: NodeJS.ErrnoException, stats: Stats) => any): void;
@@ -479,7 +479,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "fsync",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "fsync",
         "signature": "fsync: {
     (fd: number, callback: (err: NodeJS.ErrnoException) => void): void;
@@ -496,7 +496,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "ftruncate",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "ftruncate",
         "signature": "ftruncate: {
     (fd: number, callback: (err: NodeJS.ErrnoException) => void): void;
@@ -514,7 +514,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "futimes",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "futimes",
         "signature": "futimes: {
     (
@@ -543,7 +543,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "lchown",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "lchown",
         "signature": "lchown: {
     (
@@ -565,7 +565,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "link",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "link",
         "signature": "link: {
     (
@@ -586,7 +586,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "lstat",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "lstat",
         "signature": "lstat: {
     (
@@ -612,7 +612,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
  */",
         ],
         "id": "mkdir",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "mkdir",
         "signature": "mkdir: {
     (path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void;
@@ -634,7 +634,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "mkdirp",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "mkdirp",
         "signature": "mkdirp: {
     (dir: string): Promise<void>;
@@ -651,7 +651,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "mkdirpSync",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "mkdirpSync",
         "signature": "mkdirpSync: (dir: string) => void;",
         "source": {
@@ -665,7 +665,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "mkdirs",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "mkdirs",
         "signature": "mkdirs: {
     (dir: string): Promise<void>;
@@ -682,7 +682,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "mkdirsSync",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "mkdirsSync",
         "signature": "mkdirsSync: (dir: string) => void;",
         "source": {
@@ -696,7 +696,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "mkdirSync",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "mkdirSync",
         "signature": "mkdirSync: (
     path: PathLike,
@@ -719,7 +719,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
  */",
         ],
         "id": "mkdtemp",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "mkdtemp",
         "signature": "mkdtemp: {
     (prefix: string): Promise<string>;
@@ -739,7 +739,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "move",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "move",
         "signature": "move: {
     (src: string, dest: string, options?: MoveOptions): Promise<void>;
@@ -762,7 +762,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "moveSync",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "moveSync",
         "signature": "moveSync: (src: string, dest: string, options?: MoveOptions) => void;",
         "source": {
@@ -776,7 +776,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "open",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "open",
         "signature": "open: {
     (
@@ -803,7 +803,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "opendir",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "opendir",
         "signature": "opendir: {
     (
@@ -828,7 +828,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "outputFile",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "outputFile",
         "signature": "outputFile: {
     (file: string, data: any, options?: WriteFileOptions | string): Promise<void>;
@@ -851,7 +851,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "outputFileSync",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "outputFileSync",
         "signature": "outputFileSync: (
     file: string,
@@ -869,7 +869,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "outputJson",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "outputJson",
         "signature": "outputJson: {
     (file: string, data: any, options?: WriteOptions): Promise<void>;
@@ -892,7 +892,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "outputJSON",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "outputJSON",
         "signature": "outputJSON: {
     (file: string, data: any, options?: WriteOptions): Promise<void>;
@@ -915,7 +915,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "outputJsonSync",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "outputJsonSync",
         "signature": "outputJsonSync: (file: string, data: any, options?: WriteOptions) => void;",
         "source": {
@@ -929,7 +929,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "outputJSONSync",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "outputJSONSync",
         "signature": "outputJSONSync: (file: string, data: any, options?: WriteOptions) => void;",
         "source": {
@@ -943,7 +943,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "pathExists",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "pathExists",
         "signature": "pathExists: {
     (path: string): Promise<boolean>;
@@ -960,7 +960,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "pathExistsSync",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "pathExistsSync",
         "signature": "pathExistsSync: (path: string) => boolean;",
         "source": {
@@ -974,7 +974,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "read",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "read",
         "signature": "read: {
     <TBuffer extends unknown>(
@@ -1008,7 +1008,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "readdir",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "readdir",
         "signature": "readdir: {
     (
@@ -1039,7 +1039,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "readFile",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "readFile",
         "signature": "readFile: {
     (
@@ -1074,7 +1074,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "readJson",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "readJson",
         "signature": "readJson: {
     (file: string, options?: ReadOptions): Promise<any>;
@@ -1096,7 +1096,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "readJSON",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "readJSON",
         "signature": "readJSON: {
     (file: string, options?: ReadOptions): Promise<any>;
@@ -1118,7 +1118,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "readJsonSync",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "readJsonSync",
         "signature": "readJsonSync: (file: string, options?: ReadOptions) => any;",
         "source": {
@@ -1132,7 +1132,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "readJSONSync",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "readJSONSync",
         "signature": "readJSONSync: (file: string, options?: ReadOptions) => any;",
         "source": {
@@ -1146,7 +1146,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "readlink",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "readlink",
         "signature": "readlink: {
     (
@@ -1166,7 +1166,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "realpath",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "realpath",
         "signature": "realpath: {
     (
@@ -1191,7 +1191,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "remove",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "remove",
         "signature": "remove: {
     (dir: string): Promise<void>;
@@ -1208,7 +1208,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "removeSync",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "removeSync",
         "signature": "removeSync: (dir: string) => void;",
         "source": {
@@ -1222,7 +1222,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "rename",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "rename",
         "signature": "rename: {
     (
@@ -1249,7 +1249,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
  */",
         ],
         "id": "rmdir",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "rmdir",
         "signature": "rmdir: {
     (path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void;
@@ -1266,7 +1266,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "stat",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "stat",
         "signature": "stat: {
     (
@@ -1286,7 +1286,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "symlink",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "symlink",
         "signature": "symlink: {
     (
@@ -1313,7 +1313,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "truncate",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "truncate",
         "signature": "truncate: {
     (path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void;
@@ -1341,7 +1341,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
  */",
         ],
         "id": "unlink",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "unlink",
         "signature": "unlink: {
     (path: PathLike, callback: (err: NodeJS.ErrnoException) => void): void;
@@ -1358,7 +1358,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "utimes",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "utimes",
         "signature": "utimes: {
     (
@@ -1387,7 +1387,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "write",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "write",
         "signature": "write: {
     <TBuffer extends unknown>(
@@ -1454,7 +1454,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "writeFile",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "writeFile",
         "signature": "writeFile: {
     (
@@ -1481,7 +1481,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "writeJson",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "writeJson",
         "signature": "writeJson: {
     (file: string, object: any, options?: WriteOptions): Promise<void>;
@@ -1504,7 +1504,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "writeJSON",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "writeJSON",
         "signature": "writeJSON: {
     (file: string, object: any, options?: WriteOptions): Promise<void>;
@@ -1527,7 +1527,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "writeJsonSync",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "writeJsonSync",
         "signature": "writeJsonSync: (file: string, object: any, options?: WriteOptions) => void;",
         "source": {
@@ -1541,7 +1541,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "writeJSONSync",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "writeJSONSync",
         "signature": "writeJSONSync: (file: string, object: any, options?: WriteOptions) => void;",
         "source": {
@@ -1555,7 +1555,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "writev",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "writev",
         "signature": "writev: {
     (
@@ -1596,7 +1596,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "CopyOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1608,7 +1608,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "CopyOptions.dereference",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "dereference",
               "signature": "dereference?: boolean;",
               "source": {
@@ -1624,7 +1624,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "CopyOptions.errorOnExist",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "errorOnExist",
               "signature": "errorOnExist?: boolean;",
               "source": {
@@ -1640,7 +1640,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "CopyOptions.filter",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "filter",
               "signature": "filter?: CopyFilterSync | CopyFilterAsync;",
               "source": {
@@ -1656,7 +1656,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "CopyOptions.overwrite",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "overwrite",
               "signature": "overwrite?: boolean;",
               "source": {
@@ -1672,7 +1672,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "CopyOptions.preserveTimestamps",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "preserveTimestamps",
               "signature": "preserveTimestamps?: boolean;",
               "source": {
@@ -1688,7 +1688,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "CopyOptions.recursive",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "recursive",
               "signature": "recursive?: boolean;",
               "source": {
@@ -1713,7 +1713,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "CopyOptionsSync",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1725,7 +1725,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "CopyOptionsSync.filter",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "filter",
               "signature": "filter?: CopyFilterSync;",
               "source": {
@@ -1750,7 +1750,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "EnsureOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1762,7 +1762,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "EnsureOptions.mode",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "mode",
               "signature": "mode?: number;",
               "source": {
@@ -1787,7 +1787,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "MoveOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1799,7 +1799,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "MoveOptions.limit",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "limit",
               "signature": "limit?: number;",
               "source": {
@@ -1815,7 +1815,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "MoveOptions.overwrite",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "overwrite",
               "signature": "overwrite?: boolean;",
               "source": {
@@ -1840,7 +1840,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "PathEntry",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1852,7 +1852,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "PathEntry.path",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "path",
               "signature": "path: string;",
               "source": {
@@ -1868,7 +1868,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "PathEntry.stats",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "stats",
               "signature": "stats: Stats;",
               "source": {
@@ -1893,7 +1893,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "PathEntryStream",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1902,7 +1902,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
             {
               "docs": [],
               "id": "PathEntryStream.read",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "read",
               "signature": "read: () => PathEntry | null;",
               "source": {
@@ -1928,7 +1928,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "ReadOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1940,7 +1940,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "ReadOptions.encoding",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "encoding",
               "signature": "encoding?: string;",
               "source": {
@@ -1956,7 +1956,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "ReadOptions.flag",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "flag",
               "signature": "flag?: string;",
               "source": {
@@ -1972,7 +1972,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "ReadOptions.fs",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "fs",
               "signature": "fs?: object;",
               "source": {
@@ -1988,7 +1988,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "ReadOptions.reviver",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "reviver",
               "signature": "reviver?: any;",
               "source": {
@@ -2004,7 +2004,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "ReadOptions.throws",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "throws",
               "signature": "throws?: boolean;",
               "source": {
@@ -2029,7 +2029,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "WriteFileOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2041,7 +2041,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "WriteFileOptions.encoding",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "encoding",
               "signature": "encoding?: string | null;",
               "source": {
@@ -2057,7 +2057,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "WriteFileOptions.flag",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "flag",
               "signature": "flag?: string;",
               "source": {
@@ -2073,7 +2073,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "WriteFileOptions.mode",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "mode",
               "signature": "mode?: number;",
               "source": {
@@ -2098,7 +2098,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "WriteOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2110,7 +2110,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "WriteOptions.EOL",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "EOL",
               "signature": "EOL?: string;",
               "source": {
@@ -2126,7 +2126,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "WriteOptions.fs",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "fs",
               "signature": "fs?: object;",
               "source": {
@@ -2142,7 +2142,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "WriteOptions.replacer",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "replacer",
               "signature": "replacer?: any;",
               "source": {
@@ -2158,7 +2158,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "WriteOptions.spaces",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "spaces",
               "signature": "spaces?: number | string;",
               "source": {
@@ -2183,7 +2183,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "WritevResult",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2195,7 +2195,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "WritevResult.buffers",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "buffers",
               "signature": "buffers: ArrayBufferView[];",
               "source": {
@@ -2211,7 +2211,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
               "id": "WritevResult.bytesWritten",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bytesWritten",
               "signature": "bytesWritten: number;",
               "source": {
@@ -2239,7 +2239,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "ArrayBufferView",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "ArrayBufferView",
         "signature": "type ArrayBufferView = NodeJS.TypedArray | DataView;",
         "source": {
@@ -2252,7 +2252,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "CopyFilterAsync",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "CopyFilterAsync",
         "signature": "type CopyFilterAsync = (src: string, dest: string) => Promise<boolean>;",
         "source": {
@@ -2265,7 +2265,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "CopyFilterSync",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "CopyFilterSync",
         "signature": "type CopyFilterSync = (src: string, dest: string) => boolean;",
         "source": {
@@ -2278,7 +2278,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "Mode",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "Mode",
         "signature": "type Mode = string | number;",
         "source": {
@@ -2291,7 +2291,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "SymlinkType",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "SymlinkType",
         "signature": "type SymlinkType = 'dir' | 'file' | 'junction';",
         "source": {
@@ -2306,7 +2306,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "createLink",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "createLink",
         "signature": "const createLink: {
     (src: string, dest: string): Promise<void>;
@@ -2324,7 +2324,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "createLinkSync",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "createLinkSync",
         "signature": "const createLinkSync: (src: string, dest: string) => void;",
         "source": {
@@ -2339,7 +2339,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "emptydir",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "emptydir",
         "signature": "const emptydir: {
     (path: string): Promise<void>;
@@ -2357,7 +2357,7 @@ exports[`@types/fs-extra > 9.0.6 1`] = `
       {
         "docs": [],
         "id": "emptydirSync",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "emptydirSync",
         "signature": "const emptydirSync: (path: string) => void;",
         "source": {

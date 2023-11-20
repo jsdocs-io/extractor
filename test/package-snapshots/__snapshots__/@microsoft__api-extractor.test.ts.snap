@@ -16,7 +16,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
         ],
         "id": "CompilerState",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -27,7 +27,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "CompilerState.create",
               "isStatic": true,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "create",
               "signature": "static create: (
     extractorConfig: ExtractorConfig,
@@ -51,7 +51,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "CompilerState.program",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "program",
               "signature": "readonly program: {};",
               "source": {
@@ -83,7 +83,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
         ],
         "id": "Extractor",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -94,7 +94,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "Extractor.invoke",
               "isStatic": true,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "invoke",
               "signature": "static invoke: (
     extractorConfig: ExtractorConfig,
@@ -116,7 +116,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "Extractor.loadConfigAndInvoke",
               "isStatic": true,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "loadConfigAndInvoke",
               "signature": "static loadConfigAndInvoke: (
     configFilePath: string,
@@ -140,7 +140,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "Extractor.packageName",
               "isStatic": true,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "packageName",
               "signature": "static readonly packageName: string;",
               "source": {
@@ -159,7 +159,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "Extractor.version",
               "isStatic": true,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "version",
               "signature": "static readonly version: string;",
               "source": {
@@ -191,7 +191,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
         ],
         "id": "ExtractorConfig",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -207,7 +207,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.getDiagnosticDump",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "getDiagnosticDump",
               "signature": "getDiagnosticDump: () => string;",
               "source": {
@@ -226,7 +226,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.hasDtsFileExtension",
               "isStatic": true,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "hasDtsFileExtension",
               "signature": "static hasDtsFileExtension: (filePath: string) => boolean;",
               "source": {
@@ -250,7 +250,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.loadFile",
               "isStatic": true,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "loadFile",
               "signature": "static loadFile: (jsonFilePath: string) => IConfigFile;",
               "source": {
@@ -275,7 +275,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.loadFileAndPrepare",
               "isStatic": true,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "loadFileAndPrepare",
               "signature": "static loadFileAndPrepare: (configJsonFilePath: string) => ExtractorConfig;",
               "source": {
@@ -296,7 +296,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.prepare",
               "isStatic": true,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "prepare",
               "signature": "static prepare: (options: IExtractorConfigPrepareOptions) => ExtractorConfig;",
               "source": {
@@ -330,7 +330,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.tryLoadForFolder",
               "isStatic": true,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "tryLoadForFolder",
               "signature": "static tryLoadForFolder: (
     options: IExtractorConfigLoadForFolderOptions
@@ -351,7 +351,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.apiJsonFilePath",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "apiJsonFilePath",
               "signature": "readonly apiJsonFilePath: string;",
               "source": {
@@ -368,7 +368,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.apiReportEnabled",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "apiReportEnabled",
               "signature": "readonly apiReportEnabled: boolean;",
               "source": {
@@ -385,7 +385,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.betaTrimmedFilePath",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "betaTrimmedFilePath",
               "signature": "readonly betaTrimmedFilePath: string;",
               "source": {
@@ -402,7 +402,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.bundledPackages",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "bundledPackages",
               "signature": "readonly bundledPackages: string[];",
               "source": {
@@ -419,7 +419,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.docModelEnabled",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "docModelEnabled",
               "signature": "readonly docModelEnabled: boolean;",
               "source": {
@@ -438,7 +438,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.FILENAME",
               "isStatic": true,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "FILENAME",
               "signature": "static readonly FILENAME: string;",
               "source": {
@@ -457,7 +457,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.jsonSchema",
               "isStatic": true,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "jsonSchema",
               "signature": "static readonly jsonSchema: JsonSchema;",
               "source": {
@@ -474,7 +474,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.mainEntryPointFilePath",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "mainEntryPointFilePath",
               "signature": "readonly mainEntryPointFilePath: string;",
               "source": {
@@ -491,7 +491,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.messages",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "messages",
               "signature": "readonly messages: IExtractorMessagesConfig;",
               "source": {
@@ -511,7 +511,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.newlineKind",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "newlineKind",
               "signature": "readonly newlineKind: NewlineKind;",
               "source": {
@@ -528,7 +528,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.omitTrimmingComments",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "omitTrimmingComments",
               "signature": "readonly omitTrimmingComments: boolean;",
               "source": {
@@ -545,7 +545,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.overrideTsconfig",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "overrideTsconfig",
               "signature": "readonly overrideTsconfig: {};",
               "source": {
@@ -565,7 +565,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.packageFolder",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "packageFolder",
               "signature": "readonly packageFolder: string;",
               "source": {
@@ -585,7 +585,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.packageJson",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "packageJson",
               "signature": "readonly packageJson: any;",
               "source": {
@@ -602,7 +602,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.projectFolder",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "projectFolder",
               "signature": "readonly projectFolder: string;",
               "source": {
@@ -619,7 +619,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.publicTrimmedFilePath",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "publicTrimmedFilePath",
               "signature": "readonly publicTrimmedFilePath: string;",
               "source": {
@@ -636,7 +636,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.reportFilePath",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "reportFilePath",
               "signature": "readonly reportFilePath: string;",
               "source": {
@@ -653,7 +653,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.reportTempFilePath",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "reportTempFilePath",
               "signature": "readonly reportTempFilePath: string;",
               "source": {
@@ -670,7 +670,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.rollupEnabled",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "rollupEnabled",
               "signature": "readonly rollupEnabled: boolean;",
               "source": {
@@ -687,7 +687,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.skipLibCheck",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "skipLibCheck",
               "signature": "readonly skipLibCheck: boolean;",
               "source": {
@@ -704,7 +704,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.testMode",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "testMode",
               "signature": "readonly testMode: boolean;",
               "source": {
@@ -721,7 +721,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.tsconfigFilePath",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "tsconfigFilePath",
               "signature": "readonly tsconfigFilePath: string;",
               "source": {
@@ -738,7 +738,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.tsdocMetadataEnabled",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "tsdocMetadataEnabled",
               "signature": "readonly tsdocMetadataEnabled: boolean;",
               "source": {
@@ -755,7 +755,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.tsdocMetadataFilePath",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "tsdocMetadataFilePath",
               "signature": "readonly tsdocMetadataFilePath: string;",
               "source": {
@@ -772,7 +772,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorConfig.untrimmedFilePath",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "untrimmedFilePath",
               "signature": "readonly untrimmedFilePath: string;",
               "source": {
@@ -805,7 +805,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
         ],
         "id": "ExtractorMessage",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
@@ -821,7 +821,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorMessage.formatMessageWithLocation",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "formatMessageWithLocation",
               "signature": "formatMessageWithLocation: (
     workingPackageFolderPath: string | undefined
@@ -838,7 +838,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "docs": [],
               "id": "ExtractorMessage.formatMessageWithoutLocation",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "formatMessageWithoutLocation",
               "signature": "formatMessageWithoutLocation: () => string;",
               "source": {
@@ -859,7 +859,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorMessage.category",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "category",
               "signature": "readonly category: ExtractorMessageCategory;",
               "source": {
@@ -887,7 +887,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorMessage.handled",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "handled",
               "signature": "handled: boolean;",
               "source": {
@@ -916,7 +916,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorMessage.logLevel",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "logLevel",
               "signature": "logLevel: ExtractorLogLevel;",
               "source": {
@@ -936,7 +936,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorMessage.messageId",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "messageId",
               "signature": "readonly messageId: any;",
               "source": {
@@ -956,7 +956,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorMessage.properties",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "properties",
               "signature": "readonly properties: IExtractorMessageProperties;",
               "source": {
@@ -976,7 +976,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorMessage.sourceFileColumn",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "sourceFileColumn",
               "signature": "readonly sourceFileColumn: number;",
               "source": {
@@ -996,7 +996,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorMessage.sourceFileLine",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "sourceFileLine",
               "signature": "readonly sourceFileLine: number;",
               "source": {
@@ -1015,7 +1015,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorMessage.sourceFilePath",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "sourceFilePath",
               "signature": "readonly sourceFilePath: string;",
               "source": {
@@ -1034,7 +1034,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorMessage.text",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "text",
               "signature": "readonly text: string;",
               "source": {
@@ -1067,7 +1067,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
         ],
         "id": "ExtractorResult",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [],
           "properties": [
@@ -1079,7 +1079,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorResult.apiReportChanged",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "apiReportChanged",
               "signature": "readonly apiReportChanged: boolean;",
               "source": {
@@ -1098,7 +1098,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorResult.compilerState",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "compilerState",
               "signature": "readonly compilerState: CompilerState;",
               "source": {
@@ -1120,7 +1120,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorResult.errorCount",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "errorCount",
               "signature": "readonly errorCount: number;",
               "source": {
@@ -1139,7 +1139,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorResult.extractorConfig",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "extractorConfig",
               "signature": "readonly extractorConfig: ExtractorConfig;",
               "source": {
@@ -1165,7 +1165,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorResult.succeeded",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "succeeded",
               "signature": "readonly succeeded: boolean;",
               "source": {
@@ -1187,7 +1187,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               ],
               "id": "ExtractorResult.warningCount",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "warningCount",
               "signature": "readonly warningCount: number;",
               "source": {
@@ -1226,7 +1226,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
         ],
         "id": "ConsoleMessageId",
         "isConst": true,
-        "kind": "EnumDeclaration",
+        "kind": "enum",
         "members": [
           {
             "docs": [
@@ -1235,7 +1235,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ConsoleMessageId.ApiReportCopied",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "ApiReportCopied",
             "signature": "ApiReportCopied = 'console-api-report-copied'",
             "source": {
@@ -1253,7 +1253,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ConsoleMessageId.ApiReportCreated",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "ApiReportCreated",
             "signature": "ApiReportCreated = 'console-api-report-created'",
             "source": {
@@ -1271,7 +1271,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ConsoleMessageId.ApiReportFolderMissing",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "ApiReportFolderMissing",
             "signature": "ApiReportFolderMissing = 'console-api-report-folder-missing'",
             "source": {
@@ -1297,7 +1297,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ConsoleMessageId.ApiReportNotCopied",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "ApiReportNotCopied",
             "signature": "ApiReportNotCopied = 'console-api-report-not-copied'",
             "source": {
@@ -1315,7 +1315,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ConsoleMessageId.ApiReportUnchanged",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "ApiReportUnchanged",
             "signature": "ApiReportUnchanged = 'console-api-report-unchanged'",
             "source": {
@@ -1334,7 +1334,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ConsoleMessageId.CompilerVersionNotice",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "CompilerVersionNotice",
             "signature": "CompilerVersionNotice = 'console-compiler-version-notice'",
             "source": {
@@ -1352,7 +1352,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ConsoleMessageId.Diagnostics",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Diagnostics",
             "signature": "Diagnostics = 'console-diagnostics'",
             "source": {
@@ -1370,7 +1370,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ConsoleMessageId.FoundTSDocMetadata",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "FoundTSDocMetadata",
             "signature": "FoundTSDocMetadata = 'console-found-tsdoc-metadata'",
             "source": {
@@ -1388,7 +1388,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ConsoleMessageId.Preamble",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Preamble",
             "signature": "Preamble = 'console-preamble'",
             "source": {
@@ -1406,7 +1406,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ConsoleMessageId.WritingDocModelFile",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "WritingDocModelFile",
             "signature": "WritingDocModelFile = 'console-writing-doc-model-file'",
             "source": {
@@ -1424,7 +1424,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ConsoleMessageId.WritingDtsRollup",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "WritingDtsRollup",
             "signature": "WritingDtsRollup = 'console-writing-dts-rollup'",
             "source": {
@@ -1470,7 +1470,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
         ],
         "id": "ExtractorLogLevel",
         "isConst": true,
-        "kind": "EnumDeclaration",
+        "kind": "enum",
         "members": [
           {
             "docs": [
@@ -1482,7 +1482,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorLogLevel.Error",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Error",
             "signature": "Error = 'error'",
             "source": {
@@ -1504,7 +1504,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorLogLevel.Info",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Info",
             "signature": "Info = 'info'",
             "source": {
@@ -1522,7 +1522,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorLogLevel.None",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "None",
             "signature": "None = 'none'",
             "source": {
@@ -1541,7 +1541,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorLogLevel.Verbose",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Verbose",
             "signature": "Verbose = 'verbose'",
             "source": {
@@ -1563,7 +1563,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorLogLevel.Warning",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Warning",
             "signature": "Warning = 'warning'",
             "source": {
@@ -1599,7 +1599,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
         ],
         "id": "ExtractorMessageCategory",
         "isConst": true,
-        "kind": "EnumDeclaration",
+        "kind": "enum",
         "members": [
           {
             "docs": [
@@ -1612,7 +1612,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorMessageCategory.Compiler",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Compiler",
             "signature": "Compiler = 'Compiler'",
             "source": {
@@ -1635,7 +1635,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorMessageCategory.Console",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Console",
             "signature": "Console = 'console'",
             "source": {
@@ -1657,7 +1657,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorMessageCategory.Extractor",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "Extractor",
             "signature": "Extractor = 'Extractor'",
             "source": {
@@ -1679,7 +1679,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorMessageCategory.TSDoc",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "TSDoc",
             "signature": "TSDoc = 'TSDoc'",
             "source": {
@@ -1720,7 +1720,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
         ],
         "id": "ExtractorMessageId",
         "isConst": true,
-        "kind": "EnumDeclaration",
+        "kind": "enum",
         "members": [
           {
             "docs": [
@@ -1729,7 +1729,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorMessageId.CyclicInheritDoc",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "CyclicInheritDoc",
             "signature": "CyclicInheritDoc = 'ae-cyclic-inherit-doc'",
             "source": {
@@ -1747,7 +1747,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorMessageId.DifferentReleaseTags",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "DifferentReleaseTags",
             "signature": "DifferentReleaseTags = 'ae-different-release-tags'",
             "source": {
@@ -1765,7 +1765,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorMessageId.ExtraReleaseTag",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "ExtraReleaseTag",
             "signature": "ExtraReleaseTag = 'ae-extra-release-tag'",
             "source": {
@@ -1783,7 +1783,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorMessageId.ForgottenExport",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "ForgottenExport",
             "signature": "ForgottenExport = 'ae-forgotten-export'",
             "source": {
@@ -1801,7 +1801,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorMessageId.IncompatibleReleaseTags",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "IncompatibleReleaseTags",
             "signature": "IncompatibleReleaseTags = 'ae-incompatible-release-tags'",
             "source": {
@@ -1819,7 +1819,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorMessageId.InternalMissingUnderscore",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "InternalMissingUnderscore",
             "signature": "InternalMissingUnderscore = 'ae-internal-missing-underscore'",
             "source": {
@@ -1837,7 +1837,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorMessageId.InternalMixedReleaseTag",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "InternalMixedReleaseTag",
             "signature": "InternalMixedReleaseTag = 'ae-internal-mixed-release-tag'",
             "source": {
@@ -1855,7 +1855,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorMessageId.MisplacedPackageTag",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "MisplacedPackageTag",
             "signature": "MisplacedPackageTag = 'ae-misplaced-package-tag'",
             "source": {
@@ -1873,7 +1873,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorMessageId.MissingGetter",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "MissingGetter",
             "signature": "MissingGetter = 'ae-missing-getter'",
             "source": {
@@ -1891,7 +1891,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorMessageId.MissingReleaseTag",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "MissingReleaseTag",
             "signature": "MissingReleaseTag = 'ae-missing-release-tag'",
             "source": {
@@ -1909,7 +1909,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorMessageId.PreapprovedBadReleaseTag",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "PreapprovedBadReleaseTag",
             "signature": "PreapprovedBadReleaseTag = 'ae-preapproved-bad-release-tag'",
             "source": {
@@ -1927,7 +1927,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorMessageId.PreapprovedUnsupportedType",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "PreapprovedUnsupportedType",
             "signature": "PreapprovedUnsupportedType = 'ae-preapproved-unsupported-type'",
             "source": {
@@ -1945,7 +1945,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorMessageId.SetterWithDocs",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "SetterWithDocs",
             "signature": "SetterWithDocs = 'ae-setter-with-docs'",
             "source": {
@@ -1968,7 +1968,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorMessageId.UnresolvedInheritDocBase",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "UnresolvedInheritDocBase",
             "signature": "UnresolvedInheritDocBase = 'ae-unresolved-inheritdoc-base'",
             "source": {
@@ -1986,7 +1986,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorMessageId.UnresolvedInheritDocReference",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "UnresolvedInheritDocReference",
             "signature": "UnresolvedInheritDocReference = 'ae-unresolved-inheritdoc-reference'",
             "source": {
@@ -2004,7 +2004,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
             ],
             "id": "ExtractorMessageId.UnresolvedLink",
-            "kind": "EnumMemberDeclaration",
+            "kind": "enumMember",
             "name": "UnresolvedLink",
             "signature": "UnresolvedLink = 'ae-unresolved-link'",
             "source": {
@@ -2053,7 +2053,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
  */",
         ],
         "id": "ICompilerStateCreateOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2069,7 +2069,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "ICompilerStateCreateOptions.additionalEntryPoints",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "additionalEntryPoints",
               "signature": "additionalEntryPoints?: string[];",
               "source": {
@@ -2087,7 +2087,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "ICompilerStateCreateOptions.typescriptCompilerFolder",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "typescriptCompilerFolder",
               "signature": "typescriptCompilerFolder?: string;",
               "source": {
@@ -2121,7 +2121,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
  */",
         ],
         "id": "IConfigApiReport",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2137,7 +2137,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigApiReport.enabled",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "enabled",
               "signature": "enabled: boolean;",
               "source": {
@@ -2161,7 +2161,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigApiReport.reportFileName",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "reportFileName",
               "signature": "reportFileName?: string;",
               "source": {
@@ -2189,7 +2189,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigApiReport.reportFolder",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "reportFolder",
               "signature": "reportFolder?: string;",
               "source": {
@@ -2217,7 +2217,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigApiReport.reportTempFolder",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "reportTempFolder",
               "signature": "reportTempFolder?: string;",
               "source": {
@@ -2251,7 +2251,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
  */",
         ],
         "id": "IConfigCompiler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2274,7 +2274,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigCompiler.overrideTsconfig",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "overrideTsconfig",
               "signature": "overrideTsconfig?: {};",
               "source": {
@@ -2300,7 +2300,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigCompiler.skipLibCheck",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "skipLibCheck",
               "signature": "skipLibCheck?: boolean;",
               "source": {
@@ -2326,7 +2326,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigCompiler.tsconfigFilePath",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "tsconfigFilePath",
               "signature": "tsconfigFilePath?: string;",
               "source": {
@@ -2360,7 +2360,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
  */",
         ],
         "id": "IConfigDocModel",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2380,7 +2380,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigDocModel.apiJsonFilePath",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "apiJsonFilePath",
               "signature": "apiJsonFilePath?: string;",
               "source": {
@@ -2400,7 +2400,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigDocModel.enabled",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "enabled",
               "signature": "enabled: boolean;",
               "source": {
@@ -2434,7 +2434,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
  */",
         ],
         "id": "IConfigDtsRollup",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2456,7 +2456,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigDtsRollup.betaTrimmedFilePath",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "betaTrimmedFilePath",
               "signature": "betaTrimmedFilePath?: string;",
               "source": {
@@ -2476,7 +2476,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigDtsRollup.enabled",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "enabled",
               "signature": "enabled: boolean;",
               "source": {
@@ -2498,7 +2498,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigDtsRollup.omitTrimmingComments",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "omitTrimmingComments",
               "signature": "omitTrimmingComments?: boolean;",
               "source": {
@@ -2526,7 +2526,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigDtsRollup.publicTrimmedFilePath",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "publicTrimmedFilePath",
               "signature": "publicTrimmedFilePath?: string;",
               "source": {
@@ -2554,7 +2554,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigDtsRollup.untrimmedFilePath",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "untrimmedFilePath",
               "signature": "untrimmedFilePath?: string;",
               "source": {
@@ -2586,7 +2586,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
  */",
         ],
         "id": "IConfigFile",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2602,7 +2602,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigFile.apiReport",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "apiReport",
               "signature": "apiReport?: IConfigApiReport;",
               "source": {
@@ -2636,7 +2636,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigFile.bundledPackages",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bundledPackages",
               "signature": "bundledPackages?: string[];",
               "source": {
@@ -2656,7 +2656,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigFile.compiler",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "compiler",
               "signature": "compiler?: IConfigCompiler;",
               "source": {
@@ -2676,7 +2676,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigFile.docModel",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "docModel",
               "signature": "docModel?: IConfigDocModel;",
               "source": {
@@ -2697,7 +2697,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigFile.dtsRollup",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "dtsRollup",
               "signature": "dtsRollup?: IConfigDtsRollup;",
               "source": {
@@ -2723,7 +2723,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigFile.extends",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "extends",
               "signature": "extends?: string;",
               "source": {
@@ -2749,7 +2749,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigFile.mainEntryPointFilePath",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "mainEntryPointFilePath",
               "signature": "mainEntryPointFilePath: string;",
               "source": {
@@ -2769,7 +2769,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigFile.messages",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "messages",
               "signature": "messages?: IExtractorMessagesConfig;",
               "source": {
@@ -2794,7 +2794,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigFile.newlineKind",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "newlineKind",
               "signature": "newlineKind?: 'crlf' | 'lf' | 'os';",
               "source": {
@@ -2829,7 +2829,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigFile.projectFolder",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "projectFolder",
               "signature": "projectFolder?: string;",
               "source": {
@@ -2852,7 +2852,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigFile.testMode",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "testMode",
               "signature": "testMode?: boolean;",
               "source": {
@@ -2873,7 +2873,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigFile.tsdocMetadata",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "tsdocMetadata",
               "signature": "tsdocMetadata?: IConfigTsdocMetadata;",
               "source": {
@@ -2907,7 +2907,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
  */",
         ],
         "id": "IConfigMessageReportingRule",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2925,7 +2925,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigMessageReportingRule.addToApiReportFile",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "addToApiReportFile",
               "signature": "addToApiReportFile?: boolean;",
               "source": {
@@ -2948,7 +2948,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigMessageReportingRule.logLevel",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "logLevel",
               "signature": "logLevel: ExtractorLogLevel;",
               "source": {
@@ -2983,7 +2983,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
  */",
         ],
         "id": "IConfigMessageReportingTable",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2997,7 +2997,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
      */",
               ],
               "id": "IConfigMessageReportingTable.0-index-signature",
-              "kind": "InterfaceIndexSignatureDeclaration",
+              "kind": "interfaceIndexSignature",
               "name": "index signature",
               "signature": "[messageId: string]: IConfigMessageReportingRule;",
               "source": {
@@ -3032,7 +3032,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
  */",
         ],
         "id": "IConfigTsdocMetadata",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3048,7 +3048,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigTsdocMetadata.enabled",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "enabled",
               "signature": "enabled: boolean;",
               "source": {
@@ -3076,7 +3076,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IConfigTsdocMetadata.tsdocMetadataFilePath",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "tsdocMetadataFilePath",
               "signature": "tsdocMetadataFilePath?: string;",
               "source": {
@@ -3107,7 +3107,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
  */",
         ],
         "id": "IExtractorConfigLoadForFolderOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3124,7 +3124,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IExtractorConfigLoadForFolderOptions.packageJsonLookup",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "packageJsonLookup",
               "signature": "packageJsonLookup?: PackageJsonLookup;",
               "source": {
@@ -3144,7 +3144,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IExtractorConfigLoadForFolderOptions.rigConfig",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "rigConfig",
               "signature": "rigConfig?: RigConfig;",
               "source": {
@@ -3164,7 +3164,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IExtractorConfigLoadForFolderOptions.startingFolder",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "startingFolder",
               "signature": "startingFolder: string;",
               "source": {
@@ -3195,7 +3195,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
  */",
         ],
         "id": "IExtractorConfigPrepareOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3211,7 +3211,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IExtractorConfigPrepareOptions.configObject",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "configObject",
               "signature": "configObject: IConfigFile;",
               "source": {
@@ -3237,7 +3237,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IExtractorConfigPrepareOptions.configObjectFullPath",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "configObjectFullPath",
               "signature": "configObjectFullPath: string | undefined;",
               "source": {
@@ -3262,7 +3262,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IExtractorConfigPrepareOptions.packageJson",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "packageJson",
               "signature": "packageJson?: INodePackageJson | undefined;",
               "source": {
@@ -3289,7 +3289,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IExtractorConfigPrepareOptions.packageJsonFullPath",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "packageJsonFullPath",
               "signature": "packageJsonFullPath: string | undefined;",
               "source": {
@@ -3316,7 +3316,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IExtractorConfigPrepareOptions.projectFolderLookupToken",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "projectFolderLookupToken",
               "signature": "projectFolderLookupToken?: string;",
               "source": {
@@ -3347,7 +3347,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
  */",
         ],
         "id": "IExtractorInvokeOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3364,7 +3364,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IExtractorInvokeOptions.compilerState",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "compilerState",
               "signature": "compilerState?: CompilerState;",
               "source": {
@@ -3391,7 +3391,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IExtractorInvokeOptions.localBuild",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "localBuild",
               "signature": "localBuild?: boolean;",
               "source": {
@@ -3416,7 +3416,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IExtractorInvokeOptions.messageCallback",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "messageCallback",
               "signature": "messageCallback?: (message: ExtractorMessage) => void;",
               "source": {
@@ -3440,7 +3440,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IExtractorInvokeOptions.showDiagnostics",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "showDiagnostics",
               "signature": "showDiagnostics?: boolean;",
               "source": {
@@ -3460,7 +3460,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IExtractorInvokeOptions.showVerboseMessages",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "showVerboseMessages",
               "signature": "showVerboseMessages?: boolean;",
               "source": {
@@ -3487,7 +3487,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IExtractorInvokeOptions.typescriptCompilerFolder",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "typescriptCompilerFolder",
               "signature": "typescriptCompilerFolder?: string;",
               "source": {
@@ -3518,7 +3518,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
  */",
         ],
         "id": "IExtractorMessageProperties",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3539,7 +3539,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IExtractorMessageProperties.exportName",
               "isOptional": true,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "exportName",
               "signature": "readonly exportName?: string;",
               "source": {
@@ -3573,7 +3573,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
  */",
         ],
         "id": "IExtractorMessagesConfig",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -3590,7 +3590,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IExtractorMessagesConfig.compilerMessageReporting",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "compilerMessageReporting",
               "signature": "compilerMessageReporting?: IConfigMessageReportingTable;",
               "source": {
@@ -3610,7 +3610,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IExtractorMessagesConfig.extractorMessageReporting",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "extractorMessageReporting",
               "signature": "extractorMessageReporting?: IConfigMessageReportingTable;",
               "source": {
@@ -3630,7 +3630,7 @@ exports[`@microsoft/api-extractor > 7.13.0 1`] = `
               "id": "IExtractorMessagesConfig.tsdocMessageReporting",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "tsdocMessageReporting",
               "signature": "tsdocMessageReporting?: IConfigMessageReportingTable;",
               "source": {

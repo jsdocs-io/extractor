@@ -1,8 +1,5 @@
 import * as tsm from 'ts-morph';
-import {
-    DeclarationKinds,
-    TypeAliasDeclaration,
-} from '../types/module-declarations';
+import { TypeAliasDeclaration } from '../types/module-declarations';
 import { formatText } from './format';
 import { getJSDocs } from './get-jsdocs';
 import { SourceProvider } from './source-provider';
@@ -24,13 +21,12 @@ export function newTypeAlias({
     declaration: tsm.TypeAliasDeclaration;
     getSource: SourceProvider;
 }): TypeAliasDeclaration {
-    const kind = DeclarationKinds.TypeAliasDeclaration;
     const docs = getJSDocs({ declaration });
     const source = getSource({ declaration });
     const signature = getTypeAliasSignature({ declaration });
 
     return {
-        kind,
+        kind: 'typeAlias',
         id,
         name,
         docs,

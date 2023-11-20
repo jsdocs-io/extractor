@@ -11,7 +11,7 @@ exports[`export-equals-function-and-namespace > snapshot 1`] = `
           "/** func1 function */",
         ],
         "id": "func1",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "func1",
         "signature": "func1: typeof func1;",
         "source": {
@@ -29,7 +29,7 @@ exports[`export-equals-function-and-namespace > snapshot 1`] = `
           "/** Interface1 */",
         ],
         "id": "Interface1",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -41,7 +41,7 @@ exports[`export-equals-function-and-namespace > snapshot 1`] = `
               "id": "Interface1.foo",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "foo",
               "signature": "readonly foo: string;",
               "source": {
@@ -68,7 +68,7 @@ exports[`export-equals-function-and-namespace > snapshot 1`] = `
           "/** Interface2 */",
         ],
         "id": "Interface2",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -80,7 +80,7 @@ exports[`export-equals-function-and-namespace > snapshot 1`] = `
               "id": "Interface2.bar",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bar",
               "signature": "readonly bar: number;",
               "source": {
@@ -111,7 +111,7 @@ exports[`export-equals-function-and-namespace > snapshot 1`] = `
           "/** var1 */",
         ],
         "id": "var1",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "var1",
         "signature": "const var1: string;",
         "source": {

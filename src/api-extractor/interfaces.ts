@@ -7,7 +7,6 @@ import {
     isInterfacePropertyDeclaration,
 } from '../types/declaration-type-guards';
 import {
-    DeclarationKinds,
     InterfaceCallSignatureDeclaration,
     InterfaceConstructSignatureDeclaration,
     InterfaceDeclaration,
@@ -45,7 +44,6 @@ export function newInterface({
     getSource: SourceProvider;
     getType: TypeChecker;
 }): InterfaceDeclaration {
-    const kind = DeclarationKinds.InterfaceDeclaration;
     const docs = getJSDocs({ declaration });
     const source = getSource({ declaration });
     const signature = getWrapperSignature({ declaration });
@@ -58,7 +56,7 @@ export function newInterface({
     });
 
     return {
-        kind,
+        kind: 'interface',
         id,
         name,
         docs,
@@ -191,7 +189,6 @@ function newProperty({
     declaration: tsm.PropertySignature;
     getSource: SourceProvider;
 }): InterfacePropertyDeclaration {
-    const kind = DeclarationKinds.InterfacePropertyDeclaration;
     const docs = getJSDocs({ declaration });
     const source = getSource({ declaration });
     const isReadonly = declaration.isReadonly();
@@ -200,7 +197,7 @@ function newProperty({
     const signature = formatInterfaceMember(declaration.getText());
 
     return {
-        kind,
+        kind: 'interfaceProperty',
         id,
         name,
         docs,
@@ -225,14 +222,13 @@ function newMethod({
     getSource: SourceProvider;
     getType: TypeChecker;
 }): InterfaceMethodDeclaration {
-    const kind = DeclarationKinds.InterfaceMethodDeclaration;
     const docs = getJSDocs({ declaration });
     const source = getSource({ declaration });
     const type = getType({ declaration });
     const signature = formatInterfaceMember(`${name}: ${type}`);
 
     return {
-        kind,
+        kind: 'interfaceMethod',
         id,
         name,
         docs,
@@ -253,13 +249,12 @@ function newConstructSignature({
     declaration: tsm.ConstructSignatureDeclaration;
     getSource: SourceProvider;
 }): InterfaceConstructSignatureDeclaration {
-    const kind = DeclarationKinds.InterfaceConstructSignatureDeclaration;
     const docs = getJSDocs({ declaration });
     const source = getSource({ declaration });
     const signature = formatInterfaceMember(declaration.getText());
 
     return {
-        kind,
+        kind: 'interfaceConstructSignature',
         id,
         name,
         docs,
@@ -279,13 +274,12 @@ function newCallSignature({
     declaration: tsm.CallSignatureDeclaration;
     getSource: SourceProvider;
 }): InterfaceCallSignatureDeclaration {
-    const kind = DeclarationKinds.InterfaceCallSignatureDeclaration;
     const docs = getJSDocs({ declaration });
     const source = getSource({ declaration });
     const signature = formatInterfaceMember(declaration.getText());
 
     return {
-        kind,
+        kind: 'interfaceCallSignature',
         id,
         name,
         docs,
@@ -305,13 +299,12 @@ function newIndexSignature({
     declaration: tsm.IndexSignatureDeclaration;
     getSource: SourceProvider;
 }): InterfaceIndexSignatureDeclaration {
-    const kind = DeclarationKinds.InterfaceIndexSignatureDeclaration;
     const docs = getJSDocs({ declaration });
     const source = getSource({ declaration });
     const signature = formatInterfaceMember(declaration.getText());
 
     return {
-        kind,
+        kind: 'interfaceIndexSignature',
         id,
         name,
         docs,

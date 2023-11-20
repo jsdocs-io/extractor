@@ -10,7 +10,7 @@ exports[`interface-with-overloaded-methods > snapshot 1`] = `
       {
         "docs": [],
         "id": "Interface1",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -22,7 +22,7 @@ exports[`interface-with-overloaded-methods > snapshot 1`] = `
                 "/** (B) foo */",
               ],
               "id": "Interface1.foo",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "foo",
               "signature": "foo: { (a: string): number; (b: number): string };",
               "source": {

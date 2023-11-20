@@ -10,7 +10,7 @@ exports[`chalk > 4.1.0 1`] = `
       {
         "docs": [],
         "id": "Chalk",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -26,7 +26,7 @@ exports[`chalk > 4.1.0 1`] = `
 		*/",
               ],
               "id": "Chalk.ansi",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "ansi",
               "signature": "ansi: (code: number) => Chalk;",
               "source": {
@@ -44,7 +44,7 @@ exports[`chalk > 4.1.0 1`] = `
 		*/",
               ],
               "id": "Chalk.ansi256",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "ansi256",
               "signature": "ansi256: (index: number) => Chalk;",
               "source": {
@@ -66,7 +66,7 @@ exports[`chalk > 4.1.0 1`] = `
 		*/",
               ],
               "id": "Chalk.bgAnsi",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "bgAnsi",
               "signature": "bgAnsi: (code: number) => Chalk;",
               "source": {
@@ -84,7 +84,7 @@ exports[`chalk > 4.1.0 1`] = `
 		*/",
               ],
               "id": "Chalk.bgAnsi256",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "bgAnsi256",
               "signature": "bgAnsi256: (index: number) => Chalk;",
               "source": {
@@ -111,7 +111,7 @@ exports[`chalk > 4.1.0 1`] = `
 		*/",
               ],
               "id": "Chalk.bgHex",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "bgHex",
               "signature": "bgHex: (color: string) => Chalk;",
               "source": {
@@ -129,7 +129,7 @@ exports[`chalk > 4.1.0 1`] = `
 		*/",
               ],
               "id": "Chalk.bgHsl",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "bgHsl",
               "signature": "bgHsl: (hue: number, saturation: number, lightness: number) => Chalk;",
               "source": {
@@ -147,7 +147,7 @@ exports[`chalk > 4.1.0 1`] = `
 		*/",
               ],
               "id": "Chalk.bgHsv",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "bgHsv",
               "signature": "bgHsv: (hue: number, saturation: number, value: number) => Chalk;",
               "source": {
@@ -165,7 +165,7 @@ exports[`chalk > 4.1.0 1`] = `
 		*/",
               ],
               "id": "Chalk.bgHwb",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "bgHwb",
               "signature": "bgHwb: (hue: number, whiteness: number, blackness: number) => Chalk;",
               "source": {
@@ -192,7 +192,7 @@ exports[`chalk > 4.1.0 1`] = `
 		*/",
               ],
               "id": "Chalk.bgKeyword",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "bgKeyword",
               "signature": "bgKeyword: (color: string) => Chalk;",
               "source": {
@@ -210,7 +210,7 @@ exports[`chalk > 4.1.0 1`] = `
 		*/",
               ],
               "id": "Chalk.bgRgb",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "bgRgb",
               "signature": "bgRgb: (red: number, green: number, blue: number) => Chalk;",
               "source": {
@@ -237,7 +237,7 @@ exports[`chalk > 4.1.0 1`] = `
 		*/",
               ],
               "id": "Chalk.hex",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "hex",
               "signature": "hex: (color: string) => Chalk;",
               "source": {
@@ -255,7 +255,7 @@ exports[`chalk > 4.1.0 1`] = `
 		*/",
               ],
               "id": "Chalk.hsl",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "hsl",
               "signature": "hsl: (hue: number, saturation: number, lightness: number) => Chalk;",
               "source": {
@@ -273,7 +273,7 @@ exports[`chalk > 4.1.0 1`] = `
 		*/",
               ],
               "id": "Chalk.hsv",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "hsv",
               "signature": "hsv: (hue: number, saturation: number, value: number) => Chalk;",
               "source": {
@@ -291,7 +291,7 @@ exports[`chalk > 4.1.0 1`] = `
 		*/",
               ],
               "id": "Chalk.hwb",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "hwb",
               "signature": "hwb: (hue: number, whiteness: number, blackness: number) => Chalk;",
               "source": {
@@ -318,7 +318,7 @@ exports[`chalk > 4.1.0 1`] = `
 		*/",
               ],
               "id": "Chalk.keyword",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "keyword",
               "signature": "keyword: (color: string) => Chalk;",
               "source": {
@@ -336,7 +336,7 @@ exports[`chalk > 4.1.0 1`] = `
 		*/",
               ],
               "id": "Chalk.rgb",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "rgb",
               "signature": "rgb: (red: number, green: number, blue: number) => Chalk;",
               "source": {
@@ -354,7 +354,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.bgBlack",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bgBlack",
               "signature": "readonly bgBlack: Chalk;",
               "source": {
@@ -370,7 +370,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.bgBlackBright",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bgBlackBright",
               "signature": "readonly bgBlackBright: Chalk;",
               "source": {
@@ -386,7 +386,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.bgBlue",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bgBlue",
               "signature": "readonly bgBlue: Chalk;",
               "source": {
@@ -402,7 +402,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.bgBlueBright",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bgBlueBright",
               "signature": "readonly bgBlueBright: Chalk;",
               "source": {
@@ -418,7 +418,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.bgCyan",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bgCyan",
               "signature": "readonly bgCyan: Chalk;",
               "source": {
@@ -434,7 +434,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.bgCyanBright",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bgCyanBright",
               "signature": "readonly bgCyanBright: Chalk;",
               "source": {
@@ -450,7 +450,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.bgGray",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bgGray",
               "signature": "readonly bgGray: Chalk;",
               "source": {
@@ -466,7 +466,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.bgGreen",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bgGreen",
               "signature": "readonly bgGreen: Chalk;",
               "source": {
@@ -482,7 +482,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.bgGreenBright",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bgGreenBright",
               "signature": "readonly bgGreenBright: Chalk;",
               "source": {
@@ -498,7 +498,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.bgGrey",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bgGrey",
               "signature": "readonly bgGrey: Chalk;",
               "source": {
@@ -514,7 +514,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.bgMagenta",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bgMagenta",
               "signature": "readonly bgMagenta: Chalk;",
               "source": {
@@ -530,7 +530,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.bgMagentaBright",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bgMagentaBright",
               "signature": "readonly bgMagentaBright: Chalk;",
               "source": {
@@ -546,7 +546,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.bgRed",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bgRed",
               "signature": "readonly bgRed: Chalk;",
               "source": {
@@ -562,7 +562,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.bgRedBright",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bgRedBright",
               "signature": "readonly bgRedBright: Chalk;",
               "source": {
@@ -578,7 +578,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.bgWhite",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bgWhite",
               "signature": "readonly bgWhite: Chalk;",
               "source": {
@@ -594,7 +594,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.bgWhiteBright",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bgWhiteBright",
               "signature": "readonly bgWhiteBright: Chalk;",
               "source": {
@@ -610,7 +610,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.bgYellow",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bgYellow",
               "signature": "readonly bgYellow: Chalk;",
               "source": {
@@ -626,7 +626,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.bgYellowBright",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bgYellowBright",
               "signature": "readonly bgYellowBright: Chalk;",
               "source": {
@@ -642,7 +642,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.black",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "black",
               "signature": "readonly black: Chalk;",
               "source": {
@@ -658,7 +658,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.blackBright",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "blackBright",
               "signature": "readonly blackBright: Chalk;",
               "source": {
@@ -674,7 +674,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.blue",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "blue",
               "signature": "readonly blue: Chalk;",
               "source": {
@@ -690,7 +690,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.blueBright",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "blueBright",
               "signature": "readonly blueBright: Chalk;",
               "source": {
@@ -710,7 +710,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.bold",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "bold",
               "signature": "readonly bold: Chalk;",
               "source": {
@@ -726,7 +726,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.cyan",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "cyan",
               "signature": "readonly cyan: Chalk;",
               "source": {
@@ -742,7 +742,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.cyanBright",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "cyanBright",
               "signature": "readonly cyanBright: Chalk;",
               "source": {
@@ -762,7 +762,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.dim",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "dim",
               "signature": "readonly dim: Chalk;",
               "source": {
@@ -778,7 +778,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.gray",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "gray",
               "signature": "readonly gray: Chalk;",
               "source": {
@@ -794,7 +794,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.green",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "green",
               "signature": "readonly green: Chalk;",
               "source": {
@@ -810,7 +810,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.greenBright",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "greenBright",
               "signature": "readonly greenBright: Chalk;",
               "source": {
@@ -826,7 +826,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.grey",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "grey",
               "signature": "readonly grey: Chalk;",
               "source": {
@@ -846,7 +846,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.hidden",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "hidden",
               "signature": "readonly hidden: Chalk;",
               "source": {
@@ -866,7 +866,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.Instance",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "Instance",
               "signature": "Instance: Instance;",
               "source": {
@@ -886,7 +886,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.inverse",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "inverse",
               "signature": "readonly inverse: Chalk;",
               "source": {
@@ -906,7 +906,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.italic",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "italic",
               "signature": "readonly italic: Chalk;",
               "source": {
@@ -934,7 +934,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.level",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "level",
               "signature": "level: Level;",
               "source": {
@@ -950,7 +950,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.magenta",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "magenta",
               "signature": "readonly magenta: Chalk;",
               "source": {
@@ -966,7 +966,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.magentaBright",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "magentaBright",
               "signature": "readonly magentaBright: Chalk;",
               "source": {
@@ -982,7 +982,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.red",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "red",
               "signature": "readonly red: Chalk;",
               "source": {
@@ -998,7 +998,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.redBright",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "redBright",
               "signature": "readonly redBright: Chalk;",
               "source": {
@@ -1018,7 +1018,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.reset",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "reset",
               "signature": "readonly reset: Chalk;",
               "source": {
@@ -1038,7 +1038,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.strikethrough",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "strikethrough",
               "signature": "readonly strikethrough: Chalk;",
               "source": {
@@ -1058,7 +1058,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.underline",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "underline",
               "signature": "readonly underline: Chalk;",
               "source": {
@@ -1079,7 +1079,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.visible",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "visible",
               "signature": "readonly visible: Chalk;",
               "source": {
@@ -1095,7 +1095,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.white",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "white",
               "signature": "readonly white: Chalk;",
               "source": {
@@ -1111,7 +1111,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.whiteBright",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "whiteBright",
               "signature": "readonly whiteBright: Chalk;",
               "source": {
@@ -1127,7 +1127,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.yellow",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "yellow",
               "signature": "readonly yellow: Chalk;",
               "source": {
@@ -1143,7 +1143,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Chalk.yellowBright",
               "isOptional": false,
               "isReadonly": true,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "yellowBright",
               "signature": "readonly yellowBright: Chalk;",
               "source": {
@@ -1168,7 +1168,7 @@ exports[`chalk > 4.1.0 1`] = `
       {
         "docs": [],
         "id": "ChalkFunction",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [
             {
@@ -1198,7 +1198,7 @@ exports[`chalk > 4.1.0 1`] = `
 		*/",
               ],
               "id": "ChalkFunction.0-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(text: TemplateStringsArray, ...placeholders: unknown[]): string;",
               "source": {
@@ -1211,7 +1211,7 @@ exports[`chalk > 4.1.0 1`] = `
             {
               "docs": [],
               "id": "ChalkFunction.1-call-signature",
-              "kind": "InterfaceCallSignatureDeclaration",
+              "kind": "interfaceCallSignature",
               "name": "call signature",
               "signature": "(...text: unknown[]): string;",
               "source": {
@@ -1243,7 +1243,7 @@ exports[`chalk > 4.1.0 1`] = `
 	*/",
         ],
         "id": "ColorSupport",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1259,7 +1259,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "ColorSupport.has16m",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "has16m",
               "signature": "has16m: boolean;",
               "source": {
@@ -1279,7 +1279,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "ColorSupport.has256",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "has256",
               "signature": "has256: boolean;",
               "source": {
@@ -1299,7 +1299,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "ColorSupport.hasBasic",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "hasBasic",
               "signature": "hasBasic: boolean;",
               "source": {
@@ -1319,7 +1319,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "ColorSupport.level",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "level",
               "signature": "level: Level;",
               "source": {
@@ -1344,7 +1344,7 @@ exports[`chalk > 4.1.0 1`] = `
       {
         "docs": [],
         "id": "Options",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1368,7 +1368,7 @@ exports[`chalk > 4.1.0 1`] = `
               "id": "Options.level",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "level",
               "signature": "level?: Level;",
               "source": {
@@ -1400,7 +1400,7 @@ exports[`chalk > 4.1.0 1`] = `
 	*/",
         ],
         "id": "Instance",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "Instance",
         "signature": "type Instance = new (options?: Options) => Chalk;",
         "source": {
@@ -1421,7 +1421,7 @@ exports[`chalk > 4.1.0 1`] = `
 	*/",
         ],
         "id": "Level",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "Level",
         "signature": "type Level = 0 | 1 | 2 | 3;",
         "source": {
@@ -1443,7 +1443,7 @@ This simply means that \`chalk.red.yellow.green\` is equivalent to \`chalk.green
 */",
         ],
         "id": "chalk",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "chalk",
         "signature": "const chalk: chalk.Chalk &
     chalk.ChalkFunction & {

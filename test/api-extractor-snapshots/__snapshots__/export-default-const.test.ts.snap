@@ -15,7 +15,7 @@ exports[`export-default-const > snapshot 1`] = `
           "/** var1 */",
         ],
         "id": "var1",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "var1",
         "signature": "const var1: string;",
         "source": {

@@ -1,8 +1,5 @@
 import * as tsm from 'ts-morph';
-import {
-    DeclarationKinds,
-    FunctionDeclaration,
-} from '../types/module-declarations';
+import { FunctionDeclaration } from '../types/module-declarations';
 import { formatFunctionSignature } from './format';
 import { getJSDocs } from './get-jsdocs';
 import { hasFunctionLikeType } from './has-function-like-type';
@@ -31,14 +28,13 @@ export function newFunction({
     getSource: SourceProvider;
     getType: TypeChecker;
 }): FunctionDeclaration {
-    const kind = DeclarationKinds.FunctionDeclaration;
     const docs = getJSDocs({ declaration });
     const source = getSource({ declaration });
     const type = getType({ declaration });
     const signature = getFunctionSignature({ name, type });
 
     return {
-        kind,
+        kind: 'function',
         id,
         name,
         docs,
@@ -70,14 +66,13 @@ export function newFunctionExpression({
     getSource: SourceProvider;
     getType: TypeChecker;
 }): FunctionDeclaration {
-    const kind = DeclarationKinds.FunctionDeclaration;
     const docs = getJSDocs({ declaration });
     const source = getSource({ declaration });
     const type = getType({ declaration });
     const signature = getFunctionSignature({ name, type });
 
     return {
-        kind,
+        kind: 'function',
         id,
         name,
         docs,

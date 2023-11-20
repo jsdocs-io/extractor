@@ -9,7 +9,6 @@ import {
     ClassMemberDeclarations,
     ClassMethodDeclaration,
     ClassPropertyDeclaration,
-    DeclarationKinds,
 } from '../types/module-declarations';
 import { formatClassMember } from './format';
 import { getApparentType } from './get-apparent-type';
@@ -41,7 +40,6 @@ export function newClass({
     getSource: SourceProvider;
     getType: TypeChecker;
 }): ClassDeclaration {
-    const kind = DeclarationKinds.ClassDeclaration;
     const docs = getJSDocs({ declaration });
     const source = getSource({ declaration });
     const isAbstract = declaration.isAbstract();
@@ -61,7 +59,7 @@ export function newClass({
     });
 
     return {
-        kind,
+        kind: 'class',
         id,
         name,
         docs,
@@ -102,7 +100,6 @@ function getClassConstructors({
             return [];
         }
 
-        const kind = DeclarationKinds.ClassConstructorDeclaration;
         const name = 'constructor';
         const id = toID(classID, `${index}-${name}`);
         const docs = getJSDocs({ declaration });
@@ -110,7 +107,7 @@ function getClassConstructors({
         const signature = getClassConstructorSignature({ declaration });
 
         return {
-            kind,
+            kind: 'classConstructor',
             id,
             name,
             docs,
@@ -213,7 +210,6 @@ function newProperty({
     declaration: tsm.PropertyDeclaration | tsm.ParameterDeclaration;
     getSource: SourceProvider;
 }): ClassPropertyDeclaration {
-    const kind = DeclarationKinds.ClassPropertyDeclaration;
     const docs = getJSDocs({ declaration });
     const source = getSource({ declaration });
     const modifiersText = getModifiersText({ declaration });
@@ -227,7 +223,7 @@ function newProperty({
     );
 
     return {
-        kind,
+        kind: 'classProperty',
         id,
         name,
         docs,
@@ -249,7 +245,6 @@ function newGetAccessor({
     declaration: tsm.GetAccessorDeclaration;
     getSource: SourceProvider;
 }): ClassPropertyDeclaration {
-    const kind = DeclarationKinds.ClassPropertyDeclaration;
     const docs = getJSDocs({ declaration });
     const source = getSource({ declaration });
     const isStatic = declaration.isStatic();
@@ -262,7 +257,7 @@ function newGetAccessor({
     );
 
     return {
-        kind,
+        kind: 'classProperty',
         id,
         name,
         docs,
@@ -286,7 +281,6 @@ function newMethod({
     getSource: SourceProvider;
     getType: TypeChecker;
 }): ClassMethodDeclaration {
-    const kind = DeclarationKinds.ClassMethodDeclaration;
     const docs = getJSDocs({ declaration });
     const source = getSource({ declaration });
     const isStatic = declaration.isStatic();
@@ -295,7 +289,7 @@ function newMethod({
     const signature = formatClassMember(`${modifiersText} ${name}: ${type}`);
 
     return {
-        kind,
+        kind: 'classMethod',
         id,
         name,
         docs,

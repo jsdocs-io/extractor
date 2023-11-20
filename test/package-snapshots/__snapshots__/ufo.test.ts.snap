@@ -9,7 +9,7 @@ exports[`ufo > 0.5.4 1`] = `
           {
             "docs": [],
             "id": "$URL.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(input?: string);",
             "source": {
@@ -23,14 +23,14 @@ exports[`ufo > 0.5.4 1`] = `
         "docs": [],
         "id": "$URL",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
               "docs": [],
               "id": "$URL.append",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "append",
               "signature": "append: (url: $URL) => void;",
               "source": {
@@ -45,7 +45,7 @@ exports[`ufo > 0.5.4 1`] = `
               "docs": [],
               "id": "$URL.toJSON",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "toJSON",
               "signature": "toJSON: () => string;",
               "source": {
@@ -60,7 +60,7 @@ exports[`ufo > 0.5.4 1`] = `
               "docs": [],
               "id": "$URL.toString",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "toString",
               "signature": "toString: () => string;",
               "source": {
@@ -77,7 +77,7 @@ exports[`ufo > 0.5.4 1`] = `
               "docs": [],
               "id": "$URL.auth",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "auth",
               "signature": "auth: string;",
               "source": {
@@ -92,7 +92,7 @@ exports[`ufo > 0.5.4 1`] = `
               "docs": [],
               "id": "$URL.encodedAuth",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "encodedAuth",
               "signature": "readonly encodedAuth: string;",
               "source": {
@@ -107,7 +107,7 @@ exports[`ufo > 0.5.4 1`] = `
               "docs": [],
               "id": "$URL.fullpath",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "fullpath",
               "signature": "readonly fullpath: string;",
               "source": {
@@ -122,7 +122,7 @@ exports[`ufo > 0.5.4 1`] = `
               "docs": [],
               "id": "$URL.hash",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "hash",
               "signature": "hash: string;",
               "source": {
@@ -137,7 +137,7 @@ exports[`ufo > 0.5.4 1`] = `
               "docs": [],
               "id": "$URL.hasProtocol",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "hasProtocol",
               "signature": "readonly hasProtocol: number;",
               "source": {
@@ -152,7 +152,7 @@ exports[`ufo > 0.5.4 1`] = `
               "docs": [],
               "id": "$URL.host",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "host",
               "signature": "host: string;",
               "source": {
@@ -167,7 +167,7 @@ exports[`ufo > 0.5.4 1`] = `
               "docs": [],
               "id": "$URL.hostname",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "hostname",
               "signature": "readonly hostname: string;",
               "source": {
@@ -182,7 +182,7 @@ exports[`ufo > 0.5.4 1`] = `
               "docs": [],
               "id": "$URL.href",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "href",
               "signature": "readonly href: string;",
               "source": {
@@ -197,7 +197,7 @@ exports[`ufo > 0.5.4 1`] = `
               "docs": [],
               "id": "$URL.isAbsolute",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "isAbsolute",
               "signature": "readonly isAbsolute: number | boolean;",
               "source": {
@@ -212,7 +212,7 @@ exports[`ufo > 0.5.4 1`] = `
               "docs": [],
               "id": "$URL.origin",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "origin",
               "signature": "readonly origin: string;",
               "source": {
@@ -227,7 +227,7 @@ exports[`ufo > 0.5.4 1`] = `
               "docs": [],
               "id": "$URL.password",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "password",
               "signature": "readonly password: string;",
               "source": {
@@ -242,7 +242,7 @@ exports[`ufo > 0.5.4 1`] = `
               "docs": [],
               "id": "$URL.pathname",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "pathname",
               "signature": "pathname: string;",
               "source": {
@@ -257,7 +257,7 @@ exports[`ufo > 0.5.4 1`] = `
               "docs": [],
               "id": "$URL.port",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "port",
               "signature": "readonly port: string;",
               "source": {
@@ -272,7 +272,7 @@ exports[`ufo > 0.5.4 1`] = `
               "docs": [],
               "id": "$URL.protocol",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "protocol",
               "signature": "protocol: string;",
               "source": {
@@ -287,7 +287,7 @@ exports[`ufo > 0.5.4 1`] = `
               "docs": [],
               "id": "$URL.query",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "query",
               "signature": "query: QueryObject;",
               "source": {
@@ -302,7 +302,7 @@ exports[`ufo > 0.5.4 1`] = `
               "docs": [],
               "id": "$URL.search",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "search",
               "signature": "readonly search: string;",
               "source": {
@@ -317,7 +317,7 @@ exports[`ufo > 0.5.4 1`] = `
               "docs": [],
               "id": "$URL.searchParams",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "searchParams",
               "signature": "readonly searchParams: URLSearchParams;",
               "source": {
@@ -332,7 +332,7 @@ exports[`ufo > 0.5.4 1`] = `
               "docs": [],
               "id": "$URL.username",
               "isStatic": false,
-              "kind": "ClassPropertyDeclaration",
+              "kind": "classProperty",
               "name": "username",
               "signature": "readonly username: string;",
               "source": {
@@ -360,7 +360,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "cleanDoubleSlashes",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "cleanDoubleSlashes",
         "signature": "cleanDoubleSlashes: (input?: string) => string;",
         "source": {
@@ -374,7 +374,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "createURL",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "createURL",
         "signature": "createURL: (input: string) => $URL;",
         "source": {
@@ -396,7 +396,7 @@ exports[`ufo > 0.5.4 1`] = `
  */",
         ],
         "id": "decode",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "decode",
         "signature": "decode: (text?: string | number) => string;",
         "source": {
@@ -417,7 +417,7 @@ exports[`ufo > 0.5.4 1`] = `
  */",
         ],
         "id": "encodeHash",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "encodeHash",
         "signature": "encodeHash: (text: string) => string;",
         "source": {
@@ -431,7 +431,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "encodeHost",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "encodeHost",
         "signature": "encodeHost: (name?: string) => string;",
         "source": {
@@ -454,7 +454,7 @@ exports[`ufo > 0.5.4 1`] = `
  */",
         ],
         "id": "encodeParam",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "encodeParam",
         "signature": "encodeParam: (text: string | number) => string;",
         "source": {
@@ -475,7 +475,7 @@ exports[`ufo > 0.5.4 1`] = `
  */",
         ],
         "id": "encodePath",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "encodePath",
         "signature": "encodePath: (text: string | number) => string;",
         "source": {
@@ -489,7 +489,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "encodeQueryItem",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "encodeQueryItem",
         "signature": "encodeQueryItem: (key: string, val: QueryValue) => string;",
         "source": {
@@ -509,7 +509,7 @@ exports[`ufo > 0.5.4 1`] = `
  */",
         ],
         "id": "encodeQueryKey",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "encodeQueryKey",
         "signature": "encodeQueryKey: (text: string | number) => string;",
         "source": {
@@ -531,7 +531,7 @@ exports[`ufo > 0.5.4 1`] = `
  */",
         ],
         "id": "encodeQueryValue",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "encodeQueryValue",
         "signature": "encodeQueryValue: (text: string | number) => string;",
         "source": {
@@ -545,7 +545,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "getQuery",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "getQuery",
         "signature": "getQuery: (input: string) => QueryObject;",
         "source": {
@@ -559,7 +559,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "hasProtocol",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "hasProtocol",
         "signature": "hasProtocol: (inputStr: string) => boolean;",
         "source": {
@@ -573,7 +573,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "joinURL",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "joinURL",
         "signature": "joinURL: (base: string, ...input: string[]) => string;",
         "source": {
@@ -587,7 +587,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "normalizeURL",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "normalizeURL",
         "signature": "normalizeURL: (input: string) => string;",
         "source": {
@@ -601,7 +601,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "parseAuth",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "parseAuth",
         "signature": "parseAuth: (input?: string) => ParsedAuth;",
         "source": {
@@ -615,7 +615,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "parseHost",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "parseHost",
         "signature": "parseHost: (input?: string) => ParsedHost;",
         "source": {
@@ -629,7 +629,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "parsePath",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "parsePath",
         "signature": "parsePath: (input?: string) => ParsedURL;",
         "source": {
@@ -643,7 +643,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "parseQuery",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "parseQuery",
         "signature": "parseQuery: (paramsStr?: string) => QueryObject;",
         "source": {
@@ -657,7 +657,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "parseURL",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "parseURL",
         "signature": "parseURL: (input?: string) => ParsedURL;",
         "source": {
@@ -671,7 +671,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "resolveURL",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "resolveURL",
         "signature": "resolveURL: (base: string, ...input: string[]) => string;",
         "source": {
@@ -685,7 +685,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "stringifyParsedURL",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "stringifyParsedURL",
         "signature": "stringifyParsedURL: (parsed: ParsedURL) => string;",
         "source": {
@@ -699,7 +699,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "stringifyQuery",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "stringifyQuery",
         "signature": "stringifyQuery: (query: QueryObject) => string;",
         "source": {
@@ -713,7 +713,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "withLeadingSlash",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "withLeadingSlash",
         "signature": "withLeadingSlash: (input?: string) => string;",
         "source": {
@@ -727,7 +727,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "withoutLeadingSlash",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "withoutLeadingSlash",
         "signature": "withoutLeadingSlash: (input?: string) => string;",
         "source": {
@@ -741,7 +741,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "withoutTrailingSlash",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "withoutTrailingSlash",
         "signature": "withoutTrailingSlash: (input?: string) => string;",
         "source": {
@@ -755,7 +755,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "withQuery",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "withQuery",
         "signature": "withQuery: (input: string, query: QueryObject) => string;",
         "source": {
@@ -769,7 +769,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "withTrailingSlash",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "withTrailingSlash",
         "signature": "withTrailingSlash: (input?: string) => string;",
         "source": {
@@ -785,7 +785,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "ParsedAuth",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -797,7 +797,7 @@ exports[`ufo > 0.5.4 1`] = `
               "id": "ParsedAuth.password",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "password",
               "signature": "password: string;",
               "source": {
@@ -813,7 +813,7 @@ exports[`ufo > 0.5.4 1`] = `
               "id": "ParsedAuth.username",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "username",
               "signature": "username: string;",
               "source": {
@@ -838,7 +838,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "ParsedHost",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -850,7 +850,7 @@ exports[`ufo > 0.5.4 1`] = `
               "id": "ParsedHost.hostname",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "hostname",
               "signature": "hostname: string;",
               "source": {
@@ -866,7 +866,7 @@ exports[`ufo > 0.5.4 1`] = `
               "id": "ParsedHost.port",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "port",
               "signature": "port: string;",
               "source": {
@@ -891,7 +891,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "ParsedURL",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -903,7 +903,7 @@ exports[`ufo > 0.5.4 1`] = `
               "id": "ParsedURL.auth",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "auth",
               "signature": "auth?: string;",
               "source": {
@@ -919,7 +919,7 @@ exports[`ufo > 0.5.4 1`] = `
               "id": "ParsedURL.hash",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "hash",
               "signature": "hash: string;",
               "source": {
@@ -935,7 +935,7 @@ exports[`ufo > 0.5.4 1`] = `
               "id": "ParsedURL.host",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "host",
               "signature": "host?: string;",
               "source": {
@@ -951,7 +951,7 @@ exports[`ufo > 0.5.4 1`] = `
               "id": "ParsedURL.pathname",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "pathname",
               "signature": "pathname: string;",
               "source": {
@@ -967,7 +967,7 @@ exports[`ufo > 0.5.4 1`] = `
               "id": "ParsedURL.protocol",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "protocol",
               "signature": "protocol?: string;",
               "source": {
@@ -983,7 +983,7 @@ exports[`ufo > 0.5.4 1`] = `
               "id": "ParsedURL.search",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "search",
               "signature": "search: string;",
               "source": {
@@ -1011,7 +1011,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "QueryObject",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "QueryObject",
         "signature": "type QueryObject = Record<string, QueryValue>;",
         "source": {
@@ -1024,7 +1024,7 @@ exports[`ufo > 0.5.4 1`] = `
       {
         "docs": [],
         "id": "QueryValue",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "QueryValue",
         "signature": "type QueryValue = string | string[] | undefined;",
         "source": {

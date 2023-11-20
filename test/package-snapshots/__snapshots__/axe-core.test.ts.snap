@@ -13,7 +13,7 @@ exports[`axe-core > 4.1.1 1`] = `
 	 */",
         ],
         "id": "cleanup",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "cleanup",
         "signature": "cleanup: () => void;",
         "source": {
@@ -33,7 +33,7 @@ exports[`axe-core > 4.1.1 1`] = `
 	 */",
         ],
         "id": "configure",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "configure",
         "signature": "configure: (spec: Spec) => void;",
         "source": {
@@ -53,7 +53,7 @@ exports[`axe-core > 4.1.1 1`] = `
 	 */",
         ],
         "id": "getRules",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "getRules",
         "signature": "getRules: (tags?: string[]) => RuleMetadata[];",
         "source": {
@@ -72,7 +72,7 @@ exports[`axe-core > 4.1.1 1`] = `
 	 */",
         ],
         "id": "registerPlugin",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "registerPlugin",
         "signature": "registerPlugin: (plugin: AxePlugin) => void;",
         "source": {
@@ -90,7 +90,7 @@ exports[`axe-core > 4.1.1 1`] = `
 	 */",
         ],
         "id": "reset",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "reset",
         "signature": "reset: () => void;",
         "source": {
@@ -113,7 +113,7 @@ exports[`axe-core > 4.1.1 1`] = `
 	 */",
         ],
         "id": "run",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "run",
         "signature": "run: {
     (context?: ElementContext): Promise<AxeResults>;
@@ -137,7 +137,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "AriaAttrs",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -149,7 +149,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AriaAttrs.allowEmpty",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "allowEmpty",
               "signature": "allowEmpty?: boolean;",
               "source": {
@@ -165,7 +165,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AriaAttrs.global",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "global",
               "signature": "global?: boolean;",
               "source": {
@@ -181,7 +181,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AriaAttrs.type",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "type",
               "signature": "type: AriaAttrsType;",
               "source": {
@@ -197,7 +197,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AriaAttrs.unsupported",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "unsupported",
               "signature": "unsupported?: boolean;",
               "source": {
@@ -213,7 +213,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AriaAttrs.values",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "values",
               "signature": "values?: string[];",
               "source": {
@@ -238,7 +238,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "AriaRoles",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -250,7 +250,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AriaRoles.allowedAttrs",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "allowedAttrs",
               "signature": "allowedAttrs?: string[];",
               "source": {
@@ -266,7 +266,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AriaRoles.nameFromContent",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "nameFromContent",
               "signature": "nameFromContent?: boolean;",
               "source": {
@@ -282,7 +282,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AriaRoles.requiredAttrs",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "requiredAttrs",
               "signature": "requiredAttrs?: string[];",
               "source": {
@@ -298,7 +298,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AriaRoles.requiredContext",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "requiredContext",
               "signature": "requiredContext?: string[];",
               "source": {
@@ -314,7 +314,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AriaRoles.requiredOwned",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "requiredOwned",
               "signature": "requiredOwned?: string[];",
               "source": {
@@ -330,7 +330,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AriaRoles.type",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "type",
               "signature": "type: AriaRolesType | DpubRolesType;",
               "source": {
@@ -346,7 +346,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AriaRoles.unsupported",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "unsupported",
               "signature": "unsupported?: boolean;",
               "source": {
@@ -371,7 +371,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "AxePlugin",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -380,7 +380,7 @@ exports[`axe-core > 4.1.1 1`] = `
             {
               "docs": [],
               "id": "AxePlugin.cleanup",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "cleanup",
               "signature": "cleanup: (callback: Function) => void;",
               "source": {
@@ -394,7 +394,7 @@ exports[`axe-core > 4.1.1 1`] = `
             {
               "docs": [],
               "id": "AxePlugin.run",
-              "kind": "InterfaceMethodDeclaration",
+              "kind": "interfaceMethod",
               "name": "run",
               "signature": "run: (...args: any[]) => any;",
               "source": {
@@ -412,7 +412,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AxePlugin.commands",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "commands",
               "signature": "commands: {
     id: string;
@@ -431,7 +431,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AxePlugin.id",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "id",
               "signature": "id: string;",
               "source": {
@@ -456,7 +456,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "AxeResults",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -468,7 +468,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AxeResults.inapplicable",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "inapplicable",
               "signature": "inapplicable: Result[];",
               "source": {
@@ -484,7 +484,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AxeResults.incomplete",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "incomplete",
               "signature": "incomplete: Result[];",
               "source": {
@@ -500,7 +500,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AxeResults.passes",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "passes",
               "signature": "passes: Result[];",
               "source": {
@@ -516,7 +516,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AxeResults.testEngine",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "testEngine",
               "signature": "testEngine: TestEngine;",
               "source": {
@@ -532,7 +532,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AxeResults.testEnvironment",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "testEnvironment",
               "signature": "testEnvironment: TestEnvironment;",
               "source": {
@@ -548,7 +548,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AxeResults.testRunner",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "testRunner",
               "signature": "testRunner: TestRunner;",
               "source": {
@@ -564,7 +564,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AxeResults.timestamp",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "timestamp",
               "signature": "timestamp: string;",
               "source": {
@@ -580,7 +580,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AxeResults.toolOptions",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "toolOptions",
               "signature": "toolOptions: RunOptions;",
               "source": {
@@ -596,7 +596,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AxeResults.url",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "url",
               "signature": "url: string;",
               "source": {
@@ -612,7 +612,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "AxeResults.violations",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "violations",
               "signature": "violations: Result[];",
               "source": {
@@ -637,7 +637,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "Check",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -649,7 +649,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Check.after",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "after",
               "signature": "after?: Function | string;",
               "source": {
@@ -665,7 +665,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Check.enabled",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "enabled",
               "signature": "enabled?: boolean;",
               "source": {
@@ -681,7 +681,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Check.evaluate",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "evaluate",
               "signature": "evaluate: Function | string;",
               "source": {
@@ -697,7 +697,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Check.id",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "id",
               "signature": "id: string;",
               "source": {
@@ -713,7 +713,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Check.matches",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "matches",
               "signature": "matches?: string;",
               "source": {
@@ -729,7 +729,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Check.options",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "options",
               "signature": "options?: any;",
               "source": {
@@ -754,7 +754,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "CheckLocale",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -762,7 +762,7 @@ exports[`axe-core > 4.1.1 1`] = `
             {
               "docs": [],
               "id": "CheckLocale.0-index-signature",
-              "kind": "InterfaceIndexSignatureDeclaration",
+              "kind": "interfaceIndexSignature",
               "name": "index signature",
               "signature": "[key: string]: {
     pass: string | { [key: string]: string };
@@ -792,7 +792,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "CheckResult",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -804,7 +804,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "CheckResult.data",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "data",
               "signature": "data: any;",
               "source": {
@@ -820,7 +820,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "CheckResult.id",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "id",
               "signature": "id: string;",
               "source": {
@@ -836,7 +836,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "CheckResult.impact",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "impact",
               "signature": "impact: string;",
               "source": {
@@ -852,7 +852,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "CheckResult.message",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "message",
               "signature": "message: string;",
               "source": {
@@ -868,7 +868,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "CheckResult.relatedNodes",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "relatedNodes",
               "signature": "relatedNodes?: RelatedNode[];",
               "source": {
@@ -893,7 +893,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "HtmlElms",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -905,7 +905,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "HtmlElms.variant",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "variant",
               "signature": "variant?: { [key: string]: HtmlElmsVariant };",
               "source": {
@@ -930,7 +930,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "HtmlElmsVariant",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -942,7 +942,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "HtmlElmsVariant.allowedRoles",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "allowedRoles",
               "signature": "allowedRoles: boolean | string[];",
               "source": {
@@ -958,7 +958,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "HtmlElmsVariant.contentTypes",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "contentTypes",
               "signature": "contentTypes?: HtmlContentTypes[];",
               "source": {
@@ -974,7 +974,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "HtmlElmsVariant.implicitAttrs",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "implicitAttrs",
               "signature": "implicitAttrs?: { [key: string]: string };",
               "source": {
@@ -990,7 +990,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "HtmlElmsVariant.namingMethods",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "namingMethods",
               "signature": "namingMethods?: string[];",
               "source": {
@@ -1006,7 +1006,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "HtmlElmsVariant.noAriaAttrs",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "noAriaAttrs",
               "signature": "noAriaAttrs?: boolean;",
               "source": {
@@ -1022,7 +1022,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "HtmlElmsVariant.shadowRoot",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "shadowRoot",
               "signature": "shadowRoot?: boolean;",
               "source": {
@@ -1047,7 +1047,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "Locale",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1059,7 +1059,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Locale.checks",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "checks",
               "signature": "checks?: CheckLocale;",
               "source": {
@@ -1075,7 +1075,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Locale.lang",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "lang",
               "signature": "lang?: string;",
               "source": {
@@ -1091,7 +1091,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Locale.rules",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "rules",
               "signature": "rules?: RuleLocale;",
               "source": {
@@ -1116,7 +1116,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "NodeResult",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1128,7 +1128,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "NodeResult.all",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "all",
               "signature": "all: CheckResult[];",
               "source": {
@@ -1144,7 +1144,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "NodeResult.ancestry",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "ancestry",
               "signature": "ancestry?: string[];",
               "source": {
@@ -1160,7 +1160,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "NodeResult.any",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "any",
               "signature": "any: CheckResult[];",
               "source": {
@@ -1176,7 +1176,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "NodeResult.element",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "element",
               "signature": "element?: HTMLElement;",
               "source": {
@@ -1192,7 +1192,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "NodeResult.failureSummary",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "failureSummary",
               "signature": "failureSummary?: string;",
               "source": {
@@ -1208,7 +1208,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "NodeResult.html",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "html",
               "signature": "html: string;",
               "source": {
@@ -1224,7 +1224,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "NodeResult.impact",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "impact",
               "signature": "impact?: ImpactValue;",
               "source": {
@@ -1240,7 +1240,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "NodeResult.none",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "none",
               "signature": "none: CheckResult[];",
               "source": {
@@ -1256,7 +1256,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "NodeResult.target",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "target",
               "signature": "target: string[];",
               "source": {
@@ -1272,7 +1272,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "NodeResult.xpath",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "xpath",
               "signature": "xpath?: string[];",
               "source": {
@@ -1297,7 +1297,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "RelatedNode",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1309,7 +1309,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "RelatedNode.html",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "html",
               "signature": "html: string;",
               "source": {
@@ -1325,7 +1325,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "RelatedNode.target",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "target",
               "signature": "target: string[];",
               "source": {
@@ -1350,7 +1350,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "Result",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1362,7 +1362,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Result.description",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "description",
               "signature": "description: string;",
               "source": {
@@ -1378,7 +1378,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Result.help",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "help",
               "signature": "help: string;",
               "source": {
@@ -1394,7 +1394,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Result.helpUrl",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "helpUrl",
               "signature": "helpUrl: string;",
               "source": {
@@ -1410,7 +1410,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Result.id",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "id",
               "signature": "id: string;",
               "source": {
@@ -1426,7 +1426,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Result.impact",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "impact",
               "signature": "impact?: ImpactValue;",
               "source": {
@@ -1442,7 +1442,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Result.nodes",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "nodes",
               "signature": "nodes: NodeResult[];",
               "source": {
@@ -1458,7 +1458,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Result.tags",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "tags",
               "signature": "tags: TagValue[];",
               "source": {
@@ -1483,7 +1483,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "Rule",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1495,7 +1495,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Rule.all",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "all",
               "signature": "all?: string[];",
               "source": {
@@ -1511,7 +1511,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Rule.any",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "any",
               "signature": "any?: string[];",
               "source": {
@@ -1527,7 +1527,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Rule.enabled",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "enabled",
               "signature": "enabled?: boolean;",
               "source": {
@@ -1543,7 +1543,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Rule.excludeHidden",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "excludeHidden",
               "signature": "excludeHidden?: boolean;",
               "source": {
@@ -1559,7 +1559,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Rule.id",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "id",
               "signature": "id: string;",
               "source": {
@@ -1575,7 +1575,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Rule.impact",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "impact",
               "signature": "impact?: ImpactValue;",
               "source": {
@@ -1591,7 +1591,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Rule.matches",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "matches",
               "signature": "matches?: string;",
               "source": {
@@ -1607,7 +1607,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Rule.none",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "none",
               "signature": "none?: string[];",
               "source": {
@@ -1623,7 +1623,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Rule.pageLevel",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "pageLevel",
               "signature": "pageLevel?: boolean;",
               "source": {
@@ -1639,7 +1639,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Rule.selector",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "selector",
               "signature": "selector?: string;",
               "source": {
@@ -1655,7 +1655,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Rule.tags",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "tags",
               "signature": "tags?: string[];",
               "source": {
@@ -1680,7 +1680,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "RuleLocale",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1688,7 +1688,7 @@ exports[`axe-core > 4.1.1 1`] = `
             {
               "docs": [],
               "id": "RuleLocale.0-index-signature",
-              "kind": "InterfaceIndexSignatureDeclaration",
+              "kind": "interfaceIndexSignature",
               "name": "index signature",
               "signature": "[key: string]: {
     description: string;
@@ -1717,7 +1717,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "RuleMetadata",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1729,7 +1729,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "RuleMetadata.description",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "description",
               "signature": "description: string;",
               "source": {
@@ -1745,7 +1745,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "RuleMetadata.help",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "help",
               "signature": "help: string;",
               "source": {
@@ -1761,7 +1761,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "RuleMetadata.helpUrl",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "helpUrl",
               "signature": "helpUrl: string;",
               "source": {
@@ -1777,7 +1777,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "RuleMetadata.ruleId",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "ruleId",
               "signature": "ruleId: string;",
               "source": {
@@ -1793,7 +1793,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "RuleMetadata.tags",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "tags",
               "signature": "tags: string[];",
               "source": {
@@ -1818,7 +1818,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "RuleObject",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1826,7 +1826,7 @@ exports[`axe-core > 4.1.1 1`] = `
             {
               "docs": [],
               "id": "RuleObject.0-index-signature",
-              "kind": "InterfaceIndexSignatureDeclaration",
+              "kind": "interfaceIndexSignature",
               "name": "index signature",
               "signature": "[key: string]: {
     enabled: boolean;
@@ -1854,7 +1854,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "RunOnly",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1866,7 +1866,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "RunOnly.type",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "type",
               "signature": "type: RunOnlyType;",
               "source": {
@@ -1882,7 +1882,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "RunOnly.values",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "values",
               "signature": "values: TagValue[] | string[];",
               "source": {
@@ -1907,7 +1907,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "RunOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -1919,7 +1919,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "RunOptions.absolutePaths",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "absolutePaths",
               "signature": "absolutePaths?: boolean;",
               "source": {
@@ -1935,7 +1935,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "RunOptions.ancestry",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "ancestry",
               "signature": "ancestry?: boolean;",
               "source": {
@@ -1951,7 +1951,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "RunOptions.elementRef",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "elementRef",
               "signature": "elementRef?: boolean;",
               "source": {
@@ -1967,7 +1967,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "RunOptions.frameWaitTime",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "frameWaitTime",
               "signature": "frameWaitTime?: number;",
               "source": {
@@ -1983,7 +1983,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "RunOptions.iframes",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "iframes",
               "signature": "iframes?: boolean;",
               "source": {
@@ -1999,7 +1999,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "RunOptions.performanceTimer",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "performanceTimer",
               "signature": "performanceTimer?: boolean;",
               "source": {
@@ -2015,7 +2015,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "RunOptions.preload",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "preload",
               "signature": "preload?: boolean;",
               "source": {
@@ -2031,7 +2031,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "RunOptions.reporter",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "reporter",
               "signature": "reporter?: ReporterVersion;",
               "source": {
@@ -2047,7 +2047,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "RunOptions.resultTypes",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "resultTypes",
               "signature": "resultTypes?: resultGroups[];",
               "source": {
@@ -2063,7 +2063,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "RunOptions.rules",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "rules",
               "signature": "rules?: RuleObject;",
               "source": {
@@ -2079,7 +2079,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "RunOptions.runOnly",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "runOnly",
               "signature": "runOnly?: RunOnly | TagValue[] | string[];",
               "source": {
@@ -2095,7 +2095,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "RunOptions.selectors",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "selectors",
               "signature": "selectors?: boolean;",
               "source": {
@@ -2111,7 +2111,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "RunOptions.xpath",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "xpath",
               "signature": "xpath?: boolean;",
               "source": {
@@ -2136,7 +2136,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "Spec",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2148,7 +2148,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Spec.axeVersion",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "axeVersion",
               "signature": "axeVersion?: string;",
               "source": {
@@ -2164,7 +2164,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Spec.branding",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "branding",
               "signature": "branding?: {
     brand?: string;
@@ -2183,7 +2183,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Spec.checks",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "checks",
               "signature": "checks?: Check[];",
               "source": {
@@ -2199,7 +2199,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Spec.disableOtherRules",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "disableOtherRules",
               "signature": "disableOtherRules?: boolean;",
               "source": {
@@ -2215,7 +2215,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Spec.locale",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "locale",
               "signature": "locale?: Locale;",
               "source": {
@@ -2231,7 +2231,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Spec.reporter",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "reporter",
               "signature": "reporter?: ReporterVersion;",
               "source": {
@@ -2247,7 +2247,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Spec.rules",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "rules",
               "signature": "rules?: Rule[];",
               "source": {
@@ -2263,7 +2263,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Spec.standards",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "standards",
               "signature": "standards?: Standards;",
               "source": {
@@ -2279,7 +2279,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Spec.ver",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "ver",
               "signature": "ver?: string;",
               "source": {
@@ -2304,7 +2304,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "Standards",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2316,7 +2316,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Standards.ariaAttrs",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "ariaAttrs",
               "signature": "ariaAttrs?: { [key: string]: AriaAttrs };",
               "source": {
@@ -2332,7 +2332,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Standards.ariaRoles",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "ariaRoles",
               "signature": "ariaRoles?: { [key: string]: AriaRoles };",
               "source": {
@@ -2348,7 +2348,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Standards.cssColors",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "cssColors",
               "signature": "cssColors?: { [key: string]: number[] };",
               "source": {
@@ -2364,7 +2364,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "Standards.htmlElms",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "htmlElms",
               "signature": "htmlElms?: { [key: string]: HtmlElms };",
               "source": {
@@ -2389,7 +2389,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "TestEngine",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2401,7 +2401,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "TestEngine.name",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "name: string;",
               "source": {
@@ -2417,7 +2417,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "TestEngine.version",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "version",
               "signature": "version: string;",
               "source": {
@@ -2442,7 +2442,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "TestEnvironment",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2454,7 +2454,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "TestEnvironment.orientationAngle",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "orientationAngle",
               "signature": "orientationAngle?: number;",
               "source": {
@@ -2470,7 +2470,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "TestEnvironment.orientationType",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "orientationType",
               "signature": "orientationType?: string;",
               "source": {
@@ -2486,7 +2486,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "TestEnvironment.userAgent",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "userAgent",
               "signature": "userAgent: string;",
               "source": {
@@ -2502,7 +2502,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "TestEnvironment.windowHeight",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "windowHeight",
               "signature": "windowHeight: number;",
               "source": {
@@ -2518,7 +2518,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "TestEnvironment.windowWidth",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "windowWidth",
               "signature": "windowWidth: number;",
               "source": {
@@ -2543,7 +2543,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "TestRunner",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -2555,7 +2555,7 @@ exports[`axe-core > 4.1.1 1`] = `
               "id": "TestRunner.name",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "name",
               "signature": "name: string;",
               "source": {
@@ -2583,7 +2583,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "AriaAttrsType",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "AriaAttrsType",
         "signature": "type AriaAttrsType =
     | 'boolean'
@@ -2604,7 +2604,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "AriaRolesType",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "AriaRolesType",
         "signature": "type AriaRolesType = 'abstract' | 'widget' | 'structure' | 'landmark';",
         "source": {
@@ -2617,7 +2617,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "ContextObject",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "ContextObject",
         "signature": "type ContextObject = {
     include?: string[] | string[][];
@@ -2633,7 +2633,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "DpubRolesType",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "DpubRolesType",
         "signature": "type DpubRolesType =
     | 'section'
@@ -2656,7 +2656,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "ElementContext",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "ElementContext",
         "signature": "type ElementContext = Node | string | ContextObject;",
         "source": {
@@ -2669,7 +2669,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "HtmlContentTypes",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "HtmlContentTypes",
         "signature": "type HtmlContentTypes =
     | 'flow'
@@ -2688,7 +2688,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "ImpactValue",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "ImpactValue",
         "signature": "type ImpactValue = 'minor' | 'moderate' | 'serious' | 'critical' | null;",
         "source": {
@@ -2701,7 +2701,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "ReporterVersion",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "ReporterVersion",
         "signature": "type ReporterVersion = 'v1' | 'v2' | 'raw' | 'raw-env' | 'no-passes';",
         "source": {
@@ -2714,7 +2714,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "resultGroups",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "resultGroups",
         "signature": "type resultGroups = 'inapplicable' | 'passes' | 'incomplete' | 'violations';",
         "source": {
@@ -2727,7 +2727,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "RunCallback",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "RunCallback",
         "signature": "type RunCallback = (error: Error, results: AxeResults) => void;",
         "source": {
@@ -2740,7 +2740,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "RunOnlyType",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "RunOnlyType",
         "signature": "type RunOnlyType = 'rule' | 'rules' | 'tag' | 'tags';",
         "source": {
@@ -2753,7 +2753,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "TagValue",
-        "kind": "TypeAliasDeclaration",
+        "kind": "typeAlias",
         "name": "TagValue",
         "signature": "type TagValue = string;",
         "source": {
@@ -2772,7 +2772,7 @@ exports[`axe-core > 4.1.1 1`] = `
 	 */",
         ],
         "id": "AxeResults",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "AxeResults",
         "signature": "var AxeResults: AxeResults;",
         "source": {
@@ -2787,7 +2787,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "plugins",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "plugins",
         "signature": "let plugins: any;",
         "source": {
@@ -2806,7 +2806,7 @@ exports[`axe-core > 4.1.1 1`] = `
 	 */",
         ],
         "id": "source",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "source",
         "signature": "let source: string;",
         "source": {
@@ -2821,7 +2821,7 @@ exports[`axe-core > 4.1.1 1`] = `
       {
         "docs": [],
         "id": "version",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "version",
         "signature": "let version: string;",
         "source": {

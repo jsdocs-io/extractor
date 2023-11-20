@@ -16,7 +16,7 @@ exports[`tiny-lru > 7.0.6 1`] = `
                 {
                   "docs": [],
                   "id": "tiny-lru.Lru.0-constructor",
-                  "kind": "ClassConstructorDeclaration",
+                  "kind": "classConstructor",
                   "name": "constructor",
                   "signature": "constructor(max?: number, ttl?: number);",
                   "source": {
@@ -30,14 +30,14 @@ exports[`tiny-lru > 7.0.6 1`] = `
               "docs": [],
               "id": "tiny-lru.Lru",
               "isAbstract": false,
-              "kind": "ClassDeclaration",
+              "kind": "class",
               "members": {
                 "methods": [
                   {
                     "docs": [],
                     "id": "tiny-lru.Lru.clear",
                     "isStatic": false,
-                    "kind": "ClassMethodDeclaration",
+                    "kind": "classMethod",
                     "name": "clear",
                     "signature": "clear: () => this;",
                     "source": {
@@ -52,7 +52,7 @@ exports[`tiny-lru > 7.0.6 1`] = `
                     "docs": [],
                     "id": "tiny-lru.Lru.delete",
                     "isStatic": false,
-                    "kind": "ClassMethodDeclaration",
+                    "kind": "classMethod",
                     "name": "delete",
                     "signature": "delete: (key: string) => this;",
                     "source": {
@@ -67,7 +67,7 @@ exports[`tiny-lru > 7.0.6 1`] = `
                     "docs": [],
                     "id": "tiny-lru.Lru.evict",
                     "isStatic": false,
-                    "kind": "ClassMethodDeclaration",
+                    "kind": "classMethod",
                     "name": "evict",
                     "signature": "evict: () => this;",
                     "source": {
@@ -82,7 +82,7 @@ exports[`tiny-lru > 7.0.6 1`] = `
                     "docs": [],
                     "id": "tiny-lru.Lru.get",
                     "isStatic": false,
-                    "kind": "ClassMethodDeclaration",
+                    "kind": "classMethod",
                     "name": "get",
                     "signature": "get: (key: string) => T | undefined;",
                     "source": {
@@ -97,7 +97,7 @@ exports[`tiny-lru > 7.0.6 1`] = `
                     "docs": [],
                     "id": "tiny-lru.Lru.has",
                     "isStatic": false,
-                    "kind": "ClassMethodDeclaration",
+                    "kind": "classMethod",
                     "name": "has",
                     "signature": "has: (key: string) => boolean;",
                     "source": {
@@ -112,7 +112,7 @@ exports[`tiny-lru > 7.0.6 1`] = `
                     "docs": [],
                     "id": "tiny-lru.Lru.keys",
                     "isStatic": false,
-                    "kind": "ClassMethodDeclaration",
+                    "kind": "classMethod",
                     "name": "keys",
                     "signature": "keys: () => string[];",
                     "source": {
@@ -127,7 +127,7 @@ exports[`tiny-lru > 7.0.6 1`] = `
                     "docs": [],
                     "id": "tiny-lru.Lru.set",
                     "isStatic": false,
-                    "kind": "ClassMethodDeclaration",
+                    "kind": "classMethod",
                     "name": "set",
                     "signature": "set: (key: string, value: T, bypass?: boolean) => this;",
                     "source": {
@@ -156,7 +156,7 @@ exports[`tiny-lru > 7.0.6 1`] = `
             {
               "docs": [],
               "id": "tiny-lru.factory",
-              "kind": "FunctionDeclaration",
+              "kind": "function",
               "name": "factory",
               "signature": "factory: <T = any>(max?: number, ttl?: number) => Lru<T>;",
               "source": {
@@ -175,7 +175,7 @@ exports[`tiny-lru > 7.0.6 1`] = `
         },
         "docs": [],
         "id": "tiny-lru",
-        "kind": "NamespaceDeclaration",
+        "kind": "namespace",
         "name": "tiny-lru",
         "signature": "module 'tiny-lru' {}",
         "source": {

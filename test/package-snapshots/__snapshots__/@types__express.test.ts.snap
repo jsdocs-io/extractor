@@ -13,7 +13,7 @@ exports[`@types/express > 4.17.11 1`] = `
  */",
         ],
         "id": "e",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "e",
         "signature": "e: typeof e;",
         "source": {
@@ -31,7 +31,7 @@ exports[`@types/express > 4.17.11 1`] = `
      */",
         ],
         "id": "query",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "query",
         "signature": "query: (options: qs.IParseOptions | typeof qs.parse) => Handler;",
         "source": {
@@ -45,7 +45,7 @@ exports[`@types/express > 4.17.11 1`] = `
       {
         "docs": [],
         "id": "Router",
-        "kind": "FunctionDeclaration",
+        "kind": "function",
         "name": "Router",
         "signature": "Router: (options?: RouterOptions) => core.Router;",
         "source": {
@@ -61,7 +61,7 @@ exports[`@types/express > 4.17.11 1`] = `
       {
         "docs": [],
         "id": "Application",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -81,7 +81,7 @@ exports[`@types/express > 4.17.11 1`] = `
       {
         "docs": [],
         "id": "CookieOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -101,7 +101,7 @@ exports[`@types/express > 4.17.11 1`] = `
       {
         "docs": [],
         "id": "Errback",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -121,7 +121,7 @@ exports[`@types/express > 4.17.11 1`] = `
       {
         "docs": [],
         "id": "ErrorRequestHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -147,7 +147,7 @@ exports[`@types/express > 4.17.11 1`] = `
       {
         "docs": [],
         "id": "Express",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -167,7 +167,7 @@ exports[`@types/express > 4.17.11 1`] = `
       {
         "docs": [],
         "id": "Handler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -187,7 +187,7 @@ exports[`@types/express > 4.17.11 1`] = `
       {
         "docs": [],
         "id": "IRoute",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -207,7 +207,7 @@ exports[`@types/express > 4.17.11 1`] = `
       {
         "docs": [],
         "id": "IRouter",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -227,7 +227,7 @@ exports[`@types/express > 4.17.11 1`] = `
       {
         "docs": [],
         "id": "IRouterHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -247,7 +247,7 @@ exports[`@types/express > 4.17.11 1`] = `
       {
         "docs": [],
         "id": "IRouterMatcher",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -267,7 +267,7 @@ exports[`@types/express > 4.17.11 1`] = `
       {
         "docs": [],
         "id": "MediaType",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -287,7 +287,7 @@ exports[`@types/express > 4.17.11 1`] = `
       {
         "docs": [],
         "id": "NextFunction",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -307,7 +307,7 @@ exports[`@types/express > 4.17.11 1`] = `
       {
         "docs": [],
         "id": "Request",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -333,7 +333,7 @@ exports[`@types/express > 4.17.11 1`] = `
       {
         "docs": [],
         "id": "RequestHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -359,7 +359,7 @@ exports[`@types/express > 4.17.11 1`] = `
       {
         "docs": [],
         "id": "RequestParamHandler",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -379,7 +379,7 @@ exports[`@types/express > 4.17.11 1`] = `
       {
         "docs": [],
         "id": "Response",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -402,7 +402,7 @@ exports[`@types/express > 4.17.11 1`] = `
       {
         "docs": [],
         "id": "Router",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -422,7 +422,7 @@ exports[`@types/express > 4.17.11 1`] = `
       {
         "docs": [],
         "id": "RouterOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -438,7 +438,7 @@ exports[`@types/express > 4.17.11 1`] = `
               "id": "RouterOptions.caseSensitive",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "caseSensitive",
               "signature": "caseSensitive?: boolean;",
               "source": {
@@ -462,7 +462,7 @@ exports[`@types/express > 4.17.11 1`] = `
               "id": "RouterOptions.mergeParams",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "mergeParams",
               "signature": "mergeParams?: boolean;",
               "source": {
@@ -482,7 +482,7 @@ exports[`@types/express > 4.17.11 1`] = `
               "id": "RouterOptions.strict",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "strict",
               "signature": "strict?: boolean;",
               "source": {
@@ -507,7 +507,7 @@ exports[`@types/express > 4.17.11 1`] = `
       {
         "docs": [],
         "id": "Send",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -535,7 +535,7 @@ exports[`@types/express > 4.17.11 1`] = `
      */",
         ],
         "id": "application",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "application",
         "signature": "var application: Application;",
         "source": {
@@ -555,7 +555,7 @@ exports[`@types/express > 4.17.11 1`] = `
      */",
         ],
         "id": "json",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "json",
         "signature": "var json: any;",
         "source": {
@@ -575,7 +575,7 @@ exports[`@types/express > 4.17.11 1`] = `
      */",
         ],
         "id": "raw",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "raw",
         "signature": "var raw: any;",
         "source": {
@@ -590,7 +590,7 @@ exports[`@types/express > 4.17.11 1`] = `
       {
         "docs": [],
         "id": "request",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "request",
         "signature": "var request: Request<
     core.ParamsDictionary,
@@ -611,7 +611,7 @@ exports[`@types/express > 4.17.11 1`] = `
       {
         "docs": [],
         "id": "response",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "response",
         "signature": "var response: Response<any, Record<string, any>>;",
         "source": {
@@ -630,7 +630,7 @@ exports[`@types/express > 4.17.11 1`] = `
      */",
         ],
         "id": "static",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "static",
         "signature": "var static: serveStatic.RequestHandlerConstructor<
     Response<any, Record<string, any>>
@@ -652,7 +652,7 @@ exports[`@types/express > 4.17.11 1`] = `
      */",
         ],
         "id": "text",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "text",
         "signature": "var text: any;",
         "source": {
@@ -672,7 +672,7 @@ exports[`@types/express > 4.17.11 1`] = `
      */",
         ],
         "id": "urlencoded",
-        "kind": "VariableDeclaration",
+        "kind": "variable",
         "name": "urlencoded",
         "signature": "var urlencoded: any;",
         "source": {

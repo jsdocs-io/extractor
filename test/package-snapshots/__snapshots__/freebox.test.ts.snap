@@ -13,7 +13,7 @@ exports[`freebox > 1.3.3 1`] = `
 		*/",
             ],
             "id": "Freebox.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(appRegistered: AppRegistered);",
             "source": {
@@ -27,14 +27,14 @@ exports[`freebox > 1.3.3 1`] = `
         "docs": [],
         "id": "Freebox",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
               "docs": [],
               "id": "Freebox.getChallenge",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "getChallenge",
               "signature": "getChallenge: () => AxiosResponse;",
               "source": {
@@ -55,7 +55,7 @@ exports[`freebox > 1.3.3 1`] = `
               ],
               "id": "Freebox.login",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "login",
               "signature": "login: (challenge?: string) => Session;",
               "source": {
@@ -76,7 +76,7 @@ exports[`freebox > 1.3.3 1`] = `
               ],
               "id": "Freebox.logout",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "logout",
               "signature": "logout: () => AxiosResponse;",
               "source": {
@@ -91,7 +91,7 @@ exports[`freebox > 1.3.3 1`] = `
               "docs": [],
               "id": "Freebox.openSession",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "openSession",
               "signature": "openSession: (sessionStart: SessionStart) => AxiosResponse;",
               "source": {
@@ -112,7 +112,7 @@ exports[`freebox > 1.3.3 1`] = `
               ],
               "id": "Freebox.request",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "request",
               "signature": "request: (requestConfig: AxiosRequestConfig) => AxiosResponse;",
               "source": {
@@ -140,7 +140,7 @@ exports[`freebox > 1.3.3 1`] = `
           {
             "docs": [],
             "id": "FreeboxRegister.0-constructor",
-            "kind": "ClassConstructorDeclaration",
+            "kind": "classConstructor",
             "name": "constructor",
             "signature": "constructor(appIdentity?: AppIdentity);",
             "source": {
@@ -154,14 +154,14 @@ exports[`freebox > 1.3.3 1`] = `
         "docs": [],
         "id": "FreeboxRegister",
         "isAbstract": false,
-        "kind": "ClassDeclaration",
+        "kind": "class",
         "members": {
           "methods": [
             {
               "docs": [],
               "id": "FreeboxRegister.discovery",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "discovery",
               "signature": "discovery: () => AxiosResponse;",
               "source": {
@@ -176,7 +176,7 @@ exports[`freebox > 1.3.3 1`] = `
               "docs": [],
               "id": "FreeboxRegister.getAuthorizationStatus",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "getAuthorizationStatus",
               "signature": "getAuthorizationStatus: (track_id: number | string) => boolean | AxiosError;",
               "source": {
@@ -196,7 +196,7 @@ exports[`freebox > 1.3.3 1`] = `
               ],
               "id": "FreeboxRegister.register",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "register",
               "signature": "register: (options?: RegisterOptions) => AppRegistered;",
               "source": {
@@ -211,7 +211,7 @@ exports[`freebox > 1.3.3 1`] = `
               "docs": [],
               "id": "FreeboxRegister.request",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "request",
               "signature": "request: (requestConfig: AxiosRequestConfig) => AxiosResponse;",
               "source": {
@@ -226,7 +226,7 @@ exports[`freebox > 1.3.3 1`] = `
               "docs": [],
               "id": "FreeboxRegister.requestAuthorization",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "requestAuthorization",
               "signature": "requestAuthorization: () => AxiosResponse;",
               "source": {
@@ -241,7 +241,7 @@ exports[`freebox > 1.3.3 1`] = `
               "docs": [],
               "id": "FreeboxRegister.trackAuthorizationProgress",
               "isStatic": false,
-              "kind": "ClassMethodDeclaration",
+              "kind": "classMethod",
               "name": "trackAuthorizationProgress",
               "signature": "trackAuthorizationProgress: (track_id: number | string) => AxiosResponse;",
               "source": {
@@ -271,7 +271,7 @@ exports[`freebox > 1.3.3 1`] = `
       {
         "docs": [],
         "id": "AppIdentity",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -289,7 +289,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "AppIdentity.app_id",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "app_id",
               "signature": "app_id?: string;",
               "source": {
@@ -311,7 +311,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "AppIdentity.app_name",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "app_name",
               "signature": "app_name?: string;",
               "source": {
@@ -333,7 +333,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "AppIdentity.app_version",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "app_version",
               "signature": "app_version?: string;",
               "source": {
@@ -355,7 +355,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "AppIdentity.device_name",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "device_name",
               "signature": "device_name?: string;",
               "source": {
@@ -380,7 +380,7 @@ exports[`freebox > 1.3.3 1`] = `
       {
         "docs": [],
         "id": "AppRegistered",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -398,7 +398,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "AppRegistered.api_base_url",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "api_base_url",
               "signature": "api_base_url?: string;",
               "source": {
@@ -420,7 +420,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "AppRegistered.api_domain",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "api_domain",
               "signature": "api_domain?: string;",
               "source": {
@@ -440,7 +440,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "AppRegistered.api_version",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "api_version",
               "signature": "api_version: string;",
               "source": {
@@ -460,7 +460,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "AppRegistered.app_id",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "app_id",
               "signature": "app_id: string;",
               "source": {
@@ -481,7 +481,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "AppRegistered.app_token",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "app_token",
               "signature": "app_token: string;",
               "source": {
@@ -501,7 +501,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "AppRegistered.app_version",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "app_version",
               "signature": "app_version?: string;",
               "source": {
@@ -521,7 +521,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "AppRegistered.https_port",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "https_port",
               "signature": "https_port?: number;",
               "source": {
@@ -546,7 +546,7 @@ exports[`freebox > 1.3.3 1`] = `
       {
         "docs": [],
         "id": "Permissions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -562,7 +562,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "Permissions.calls",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "calls",
               "signature": "calls?: boolean;",
               "source": {
@@ -582,7 +582,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "Permissions.contacts",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "contacts",
               "signature": "contacts?: boolean;",
               "source": {
@@ -602,7 +602,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "Permissions.downloader",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "downloader",
               "signature": "downloader?: boolean;",
               "source": {
@@ -622,7 +622,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "Permissions.explorer",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "explorer",
               "signature": "explorer?: boolean;",
               "source": {
@@ -642,7 +642,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "Permissions.parental",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "parental",
               "signature": "parental?: boolean;",
               "source": {
@@ -658,7 +658,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "Permissions.pvr",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "pvr",
               "signature": "pvr?: boolean;",
               "source": {
@@ -678,7 +678,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "Permissions.settings",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "settings",
               "signature": "settings?: boolean;",
               "source": {
@@ -703,7 +703,7 @@ exports[`freebox > 1.3.3 1`] = `
       {
         "docs": [],
         "id": "RegisterOptions",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -721,7 +721,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "RegisterOptions.silent",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "silent",
               "signature": "silent?: boolean;",
               "source": {
@@ -746,7 +746,7 @@ exports[`freebox > 1.3.3 1`] = `
       {
         "docs": [],
         "id": "Session",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -758,7 +758,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "Session.permissions",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "permissions",
               "signature": "permissions: Permissions;",
               "source": {
@@ -778,7 +778,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "Session.session_token",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "session_token",
               "signature": "session_token: string;",
               "source": {
@@ -803,7 +803,7 @@ exports[`freebox > 1.3.3 1`] = `
       {
         "docs": [],
         "id": "SessionStart",
-        "kind": "InterfaceDeclaration",
+        "kind": "interface",
         "members": {
           "callSignatures": [],
           "constructSignatures": [],
@@ -815,7 +815,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "SessionStart.app_id",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "app_id",
               "signature": "app_id: string;",
               "source": {
@@ -831,7 +831,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "SessionStart.app_version",
               "isOptional": true,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "app_version",
               "signature": "app_version?: string;",
               "source": {
@@ -847,7 +847,7 @@ exports[`freebox > 1.3.3 1`] = `
               "id": "SessionStart.password",
               "isOptional": false,
               "isReadonly": false,
-              "kind": "InterfacePropertyDeclaration",
+              "kind": "interfaceProperty",
               "name": "password",
               "signature": "password: string;",
               "source": {
