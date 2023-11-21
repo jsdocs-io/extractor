@@ -55,12 +55,12 @@
         "test": "vitest",
         "test:packages": "vitest run test/package-snapshots",
         "test:cov": "vitest run --coverage",
-        "test:ci": "vitest --coverage --bail 1",
+        "test:ci": "vitest run --coverage --bail 1",
         "lint": "dts lint src test",
         "lint:fix": "dts lint src test --fix",
         "debug:analyze": "pnpm tsx scripts/debug-analyze.ts",
         "prepare": "husky install && pnpm build",
-        "pre-push": "pnpm i && pnpm lint && pnpm build && pnpm test:cov",
+        "pre-push": "pnpm i && pnpm lint && pnpm build && pnpm test:ci",
         "release": "np"
     },
     "dependencies": {
