@@ -28,21 +28,17 @@
         "tsdoc",
         "jsdocs.io"
     ],
-    "source": "./src/index.ts",
-    "main": "./dist/index.js",
-    "module": "./dist/extractor.esm.js",
-    "types": "./dist/index.d.ts",
     "sideEffects": false,
+    "type": "module",
+    "types": "./dist/index.d.ts",
     "exports": {
         ".": {
-            "require": "./dist/index.js",
-            "import": "./dist/extractor.esm.js",
-            "default": "./dist/index.js"
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js"
         },
         "./package.json": "./package.json"
     },
     "files": [
-        "src",
         "dist"
     ],
     "engines": {
@@ -51,7 +47,8 @@
     "scripts": {
         "start": "dts watch --target node",
         "check": "tsc --noEmit",
-        "build": "tsc --noEmit && dts build --target node",
+        "build": "tsc --noEmit && tsup",
+        "attw":"attw --pack . --ignore-rules cjs-resolves-to-esm",
         "test": "vitest",
         "test:packages": "vitest run test/package-snapshots",
         "test:cov": "vitest run --coverage",
@@ -76,6 +73,7 @@
         "ts-morph": "^20.0.0"
     },
     "devDependencies": {
+        "@arethetypeswrong/cli": "^0.13.1",
         "@commitlint/cli": "^18.4.2",
         "@commitlint/config-conventional": "^18.4.2",
         "@pollyjs/adapter-node-http": "^6.0.6",
@@ -102,6 +100,7 @@
         "setup-polly-jest": "^0.11.0",
         "ts-dedent": "^2.2.0",
         "tslib": "^2.6.2",
+        "tsup": "^8.0.1",
         "tsx": "^4.1.4",
         "typescript": "^5.3.2",
         "verdaccio": "^5.27.0",
