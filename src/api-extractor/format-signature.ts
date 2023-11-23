@@ -3,7 +3,7 @@ import type { DeclarationKind } from "../types/declaration-kind";
 
 export const formatSignature = async (
   kind: DeclarationKind,
-  signature: string
+  signature: string,
 ): Promise<string> => {
   const s = signature
     .trim()

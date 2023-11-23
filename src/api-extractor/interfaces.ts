@@ -6,7 +6,7 @@ import {
   isInterfaceMethodDeclaration,
   isInterfacePropertyDeclaration,
 } from "../types/declaration-type-guards";
-import {
+import type {
   InterfaceCallSignatureDeclaration,
   InterfaceConstructSignatureDeclaration,
   InterfaceDeclaration,
@@ -15,15 +15,14 @@ import {
   InterfaceMethodDeclaration,
   InterfacePropertyDeclaration,
 } from "../types/module-declarations";
-import { formatInterfaceMember } from "./format";
 import { getApparentType } from "./get-apparent-type";
 import { getJSDocs } from "./get-jsdocs";
 import { getWrapperSignature } from "./get-wrapper-signature";
 import { isInternalDeclaration } from "./is-internal-declaration";
 import { sortByID } from "./sort-by-id";
-import { SourceProvider } from "./source-provider";
+import type { SourceProvider } from "./source-provider";
 import { toID } from "./to-id";
-import { TypeChecker } from "./type-checker";
+import type { TypeChecker } from "./type-checker";
 
 export function isInterface(
   declaration: tsm.Node,
@@ -194,7 +193,7 @@ function newProperty({
   const isReadonly = declaration.isReadonly();
   const isOptional = declaration.hasQuestionToken();
   const type = getApparentType({ declaration });
-  const signature = formatInterfaceMember(declaration.getText());
+  const signature = declaration.getText();
 
   return {
     kind: "interfaceProperty",
@@ -225,7 +224,7 @@ function newMethod({
   const docs = getJSDocs({ declaration });
   const source = getSource({ declaration });
   const type = getType({ declaration });
-  const signature = formatInterfaceMember(`${name}: ${type}`);
+  const signature = `${name}: ${type}`;
 
   return {
     kind: "interfaceMethod",
@@ -251,7 +250,7 @@ function newConstructSignature({
 }): InterfaceConstructSignatureDeclaration {
   const docs = getJSDocs({ declaration });
   const source = getSource({ declaration });
-  const signature = formatInterfaceMember(declaration.getText());
+  const signature = declaration.getText();
 
   return {
     kind: "interfaceConstructSignature",
@@ -276,7 +275,7 @@ function newCallSignature({
 }): InterfaceCallSignatureDeclaration {
   const docs = getJSDocs({ declaration });
   const source = getSource({ declaration });
-  const signature = formatInterfaceMember(declaration.getText());
+  const signature = declaration.getText();
 
   return {
     kind: "interfaceCallSignature",
@@ -301,7 +300,7 @@ function newIndexSignature({
 }): InterfaceIndexSignatureDeclaration {
   const docs = getJSDocs({ declaration });
   const source = getSource({ declaration });
-  const signature = formatInterfaceMember(declaration.getText());
+  const signature = declaration.getText();
 
   return {
     kind: "interfaceIndexSignature",

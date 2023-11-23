@@ -1,8 +1,7 @@
 import * as tsm from "ts-morph";
-import { TypeAliasDeclaration } from "../types/module-declarations";
-import { formatText } from "./format";
+import type { TypeAliasDeclaration } from "../types/module-declarations";
 import { getJSDocs } from "./get-jsdocs";
-import { SourceProvider } from "./source-provider";
+import type { SourceProvider } from "./source-provider";
 
 export function isTypeAlias(
   declaration: tsm.Node,
@@ -41,5 +40,5 @@ function getTypeAliasSignature({
   declaration: tsm.TypeAliasDeclaration;
 }): string {
   const signature = declaration.getText();
-  return formatText(signature);
+  return signature;
 }

@@ -1,6 +1,6 @@
 import { performance } from "perf_hooks";
 import { getPackageManifest } from "query-registry";
-import { RegistryPackageInfo } from "../types/registry-package-info";
+import type { RegistryPackageInfo } from "../types/registry-package-info";
 import { log } from "../utils/log";
 import { tryGetPackageAPI } from "./try-get-package-api";
 

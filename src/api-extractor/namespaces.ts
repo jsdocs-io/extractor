@@ -1,11 +1,10 @@
 import * as tsm from "ts-morph";
-import {
+import type {
   ModuleDeclarations,
   NamespaceDeclaration,
 } from "../types/module-declarations";
-import { formatText } from "./format";
 import { getJSDocs } from "./get-jsdocs";
-import { SourceProvider } from "./source-provider";
+import type { SourceProvider } from "./source-provider";
 
 export function isNamespace(
   declaration: tsm.Node,
@@ -51,7 +50,7 @@ function getNamespaceSignature({
   const signature = isAmbientModule({ name })
     ? `module ${name} {}`
     : `namespace ${id} {}`;
-  return formatText(signature);
+  return signature;
 }
 
 function isAmbientModule({ name }: { name: string }): boolean {

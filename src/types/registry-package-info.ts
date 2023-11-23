@@ -1,5 +1,5 @@
-import { PackageManifest } from "query-registry";
-import { PackageAPI } from "./package-api";
+import type { PackageManifest } from "query-registry";
+import type { PackageAPI } from "./package-api";
 
 /**
  * `RegistryPackageInfo` contains the data extracted from a package

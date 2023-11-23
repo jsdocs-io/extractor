@@ -1,8 +1,8 @@
 import * as tsm from "ts-morph";
-import { VariableDeclaration } from "../types/module-declarations";
+import type { VariableDeclaration } from "../types/module-declarations";
 import { getApparentType } from "./get-apparent-type";
 import { getJSDocs } from "./get-jsdocs";
-import { SourceProvider } from "./source-provider";
+import type { SourceProvider } from "./source-provider";
 import { getVariableSignature, newVariable } from "./variables";
 
 export function isVariableAssignmentExpression(

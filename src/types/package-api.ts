@@ -1,5 +1,5 @@
-import { ModuleDeclarations } from "./module-declarations";
-import { PackageFile } from "./package-file";
+import type { ModuleDeclarations } from "./module-declarations";
+import type { PackageFile } from "./package-file";
 
 /**
  * `PackageAPI` represents the public API exported by a package.

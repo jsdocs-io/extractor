@@ -1,5 +1,4 @@
 import * as tsm from "ts-morph";
-import { formatText } from "./format";
 
 export function getWrapperSignature({
   declaration,
@@ -24,7 +23,7 @@ export function getWrapperSignature({
   parts.push("{}");
   const signature = parts.join(" ");
 
-  return formatText(signature);
+  return signature;
 }
 
 function isJSDocComment(node: tsm.Node): boolean {

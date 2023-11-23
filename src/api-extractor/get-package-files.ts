@@ -1,10 +1,13 @@
 import * as tsm from "ts-morph";
 import { isNamespaceDeclaration } from "../types/declaration-type-guards";
-import { Declaration, ModuleDeclarations } from "../types/module-declarations";
-import { PackageFile } from "../types/package-file";
+import type {
+  Declaration,
+  ModuleDeclarations,
+} from "../types/module-declarations";
+import type { PackageFile } from "../types/package-file";
 import { getFilename } from "./get-filename";
-import { RepositoryFileURLProvider } from "./repository-file-url-provider";
-import { UnpkgFileURLProvider } from "./unpkg-file-url-provider";
+import type { RepositoryFileURLProvider } from "./repository-file-url-provider";
+import type { UnpkgFileURLProvider } from "./unpkg-file-url-provider";
 
 export function getPackageFiles({
   indexFile,

@@ -1,10 +1,9 @@
 import * as tsm from "ts-morph";
-import { FunctionDeclaration } from "../types/module-declarations";
-import { formatFunctionSignature } from "./format";
+import type { FunctionDeclaration } from "../types/module-declarations";
 import { getJSDocs } from "./get-jsdocs";
 import { hasFunctionLikeType } from "./has-function-like-type";
-import { SourceProvider } from "./source-provider";
-import { TypeChecker } from "./type-checker";
+import type { SourceProvider } from "./source-provider";
+import type { TypeChecker } from "./type-checker";
 
 export function isFunction(
   declaration: tsm.Node,
@@ -90,5 +89,5 @@ function getFunctionSignature({
   type: string;
 }): string {
   const signature = `${name}: ${type}`;
-  return formatFunctionSignature(signature);
+  return signature;
 }

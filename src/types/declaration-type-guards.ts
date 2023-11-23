@@ -1,4 +1,4 @@
-import {
+import type {
   ClassConstructorDeclaration,
   ClassDeclaration,
   ClassMethodDeclaration,

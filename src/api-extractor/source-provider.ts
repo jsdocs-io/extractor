@@ -1,9 +1,9 @@
 import * as tsm from "ts-morph";
-import { DeclarationSource } from "../types/module-declarations";
+import type { DeclarationSource } from "../types/module-declarations";
 import { getFilename } from "./get-filename";
 import { getStartLineNumber } from "./get-start-line-number";
-import { RepositoryFileURLProvider } from "./repository-file-url-provider";
-import { UnpkgFileURLProvider } from "./unpkg-file-url-provider";
+import type { RepositoryFileURLProvider } from "./repository-file-url-provider";
+import type { UnpkgFileURLProvider } from "./unpkg-file-url-provider";
 
 export type SourceProvider = ({
   declaration,

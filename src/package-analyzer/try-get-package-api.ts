@@ -1,6 +1,6 @@
-import { PackageManifest } from "query-registry";
+import type { PackageManifest } from "query-registry";
 import { extractPackageAPI } from "../api-extractor/extract-package-api";
-import { PackageAPI } from "../types/package-api";
+import type { PackageAPI } from "../types/package-api";
 import { log } from "../utils/log";
 import { getEntryPoint } from "./get-entry-point";
 import { getOptimizedFilePattern } from "./get-optimized-file-pattern";

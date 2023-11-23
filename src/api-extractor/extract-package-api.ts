@@ -1,7 +1,7 @@
 import { performance } from "perf_hooks";
 import * as tsm from "ts-morph";
-import { PackageAPI } from "../types/package-api";
-import { TaggedGitRepository } from "../types/tagged-git-repository";
+import type { PackageAPI } from "../types/package-api";
+import type { TaggedGitRepository } from "../types/tagged-git-repository";
 import { log } from "../utils/log";
 import { getOverview } from "./get-overview";
 import { getPackageDeclarations } from "./get-package-declarations";

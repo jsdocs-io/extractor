@@ -1,6 +1,6 @@
 import HostedGitInfo from "hosted-git-info";
 import * as path from "path";
-import { TaggedGitRepository } from "../types/tagged-git-repository";
+import type { TaggedGitRepository } from "../types/tagged-git-repository";
 import { toForwardSlashes } from "../utils/to-forward-slashes";
 
 export type RepositoryFileURLProvider = ({

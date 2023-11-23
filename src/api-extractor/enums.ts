@@ -1,14 +1,13 @@
 import * as tsm from "ts-morph";
-import {
+import type {
   Declaration,
   EnumDeclaration,
   EnumMemberDeclaration,
 } from "../types/module-declarations";
-import { formatEnumMember, formatText } from "./format";
 import { getJSDocs } from "./get-jsdocs";
 import { isInternalDeclaration } from "./is-internal-declaration";
 import { sortByID } from "./sort-by-id";
-import { SourceProvider } from "./source-provider";
+import type { SourceProvider } from "./source-provider";
 import { toID } from "./to-id";
 
 export function isEnum(
@@ -71,7 +70,7 @@ function getEnumMembers({
     const id = toID(enumID, name);
     const docs = getJSDocs({ declaration });
     const source = getSource({ declaration });
-    const signature = formatEnumMember(declaration.getText());
+    const signature = declaration.getText();
     const value = declaration.getValue();
 
     return {
@@ -98,5 +97,5 @@ function getEnumSignature({
   const kind = isConst ? "const enum" : "enum";
   const membersText = members.map(({ signature }) => signature).join();
   const signature = `${kind} ${name} { ${membersText} }`;
-  return formatText(signature);
+  return signature;
 }

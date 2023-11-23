@@ -3,23 +3,22 @@ import {
   isClassMethodDeclaration,
   isClassPropertyDeclaration,
 } from "../types/declaration-type-guards";
-import {
+import type {
   ClassConstructorDeclaration,
   ClassDeclaration,
   ClassMemberDeclarations,
   ClassMethodDeclaration,
   ClassPropertyDeclaration,
 } from "../types/module-declarations";
-import { formatClassMember } from "./format";
 import { getApparentType } from "./get-apparent-type";
 import { getJSDocs } from "./get-jsdocs";
 import { getModifiersText } from "./get-modifiers-text";
 import { getWrapperSignature } from "./get-wrapper-signature";
 import { isInternalDeclaration } from "./is-internal-declaration";
 import { sortByID } from "./sort-by-id";
-import { SourceProvider } from "./source-provider";
+import type { SourceProvider } from "./source-provider";
 import { toID } from "./to-id";
-import { TypeChecker } from "./type-checker";
+import type { TypeChecker } from "./type-checker";
 
 export function isClass(
   declaration: tsm.Node,
@@ -141,7 +140,7 @@ function getClassConstructorSignature({
     .join(",");
 
   const signature = `${modifiers} constructor(${params});`;
-  return formatClassMember(signature);
+  return signature;
 }
 
 function getClassMembers({
@@ -218,10 +217,7 @@ function newProperty({
   const isOptional = declaration.hasQuestionToken();
   const optionalText = isOptional ? "?" : "";
   const type = getApparentType({ declaration });
-  const signature = formatClassMember(
-    `${modifiersText} ${name} ${optionalText}: ${type}`,
-  );
-
+  const signature = `${modifiersText} ${name} ${optionalText}: ${type}`;
   return {
     kind: "classProperty",
     id,
@@ -252,10 +248,7 @@ function newGetAccessor({
   const type = getApparentType({ declaration: declaration });
   const staticText = isStatic ? "static" : "";
   const readonlyText = isReadonly ? "readonly" : "";
-  const signature = formatClassMember(
-    `${staticText} ${readonlyText} ${name}: ${type}`,
-  );
-
+  const signature = `${staticText} ${readonlyText} ${name}: ${type}`;
   return {
     kind: "classProperty",
     id,
@@ -286,8 +279,7 @@ function newMethod({
   const isStatic = declaration.isStatic();
   const modifiersText = getModifiersText({ declaration });
   const type = getType({ declaration });
-  const signature = formatClassMember(`${modifiersText} ${name}: ${type}`);
-
+  const signature = `${modifiersText} ${name}: ${type}`;
   return {
     kind: "classMethod",
     id,

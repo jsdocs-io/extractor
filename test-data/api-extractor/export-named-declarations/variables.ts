@@ -1,4 +1,4 @@
-import { SomeType } from "./internal";
+import type { SomeType } from "./internal";
 
 export const var4 = "last variable";
 

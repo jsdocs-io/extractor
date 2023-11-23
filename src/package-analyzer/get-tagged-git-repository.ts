@@ -1,5 +1,5 @@
-import { GitRepository } from "query-registry";
-import { TaggedGitRepository } from "../types/tagged-git-repository";
+import type { GitRepository } from "query-registry";
+import type { TaggedGitRepository } from "../types/tagged-git-repository";
 
 export function getTaggedGitRepository({
   id,

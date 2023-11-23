@@ -1,10 +1,9 @@
 import * as tsm from "ts-morph";
-import { VariableDeclaration } from "../types/module-declarations";
-import { formatVariableSignature } from "./format";
+import type { VariableDeclaration } from "../types/module-declarations";
 import { getApparentType } from "./get-apparent-type";
 import { getJSDocs } from "./get-jsdocs";
 import { hasVarLikeType } from "./has-var-like-type";
-import { SourceProvider } from "./source-provider";
+import type { SourceProvider } from "./source-provider";
 
 export function isVariable(
   declaration: tsm.Node,
@@ -77,5 +76,5 @@ export function getVariableSignature({
   type: string;
 }): string {
   const signature = `${variableKind} ${name}: ${type}`;
-  return formatVariableSignature(signature);
+  return signature;
 }

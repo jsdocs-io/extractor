@@ -8,7 +8,7 @@ import {
   isTypeAliasDeclaration,
   isVariableDeclaration,
 } from "../types/declaration-type-guards";
-import { ModuleDeclarations } from "../types/module-declarations";
+import type { ModuleDeclarations } from "../types/module-declarations";
 import { log } from "../utils/log";
 import { isClass, newClass } from "./classes";
 import { isEnum, newEnum } from "./enums";
@@ -32,10 +32,10 @@ import { isGlobalDeclaration } from "./is-global-declaration";
 import { isInternalDeclaration } from "./is-internal-declaration";
 import { isNamespace, newNamespace } from "./namespaces";
 import { sortByID } from "./sort-by-id";
-import { SourceProvider } from "./source-provider";
+import type { SourceProvider } from "./source-provider";
 import { toID } from "./to-id";
 import { isTypeAlias, newTypeAlias } from "./type-aliases";
-import { TypeChecker } from "./type-checker";
+import type { TypeChecker } from "./type-checker";
 import { isVariable, newVariable } from "./variables";
 
 type Module = tsm.SourceFile | tsm.ModuleDeclaration;

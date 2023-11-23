@@ -1,11 +1,10 @@
 import * as tsm from "ts-morph";
-import {
+import type {
   ModuleDeclarations,
   NamespaceDeclaration,
 } from "../types/module-declarations";
-import { formatText } from "./format";
 import { getFilename } from "./get-filename";
-import { SourceProvider } from "./source-provider";
+import type { SourceProvider } from "./source-provider";
 
 export function isFileModule(
   declaration: tsm.Node,
@@ -60,5 +59,5 @@ function getFileModuleSignature({
 }): string {
   const filename = getFilename({ declaration });
   const signature = `module '${filename}' {}`;
-  return formatText(signature);
+  return signature;
 }
