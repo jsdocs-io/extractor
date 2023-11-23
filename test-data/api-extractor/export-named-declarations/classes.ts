@@ -136,7 +136,10 @@ export class Class016 {
     _quux:string;
 
     /** @internal */
-    constructor() {}
+    constructor() {
+        this._quux = 'quux';
+        this.bar = 0;
+    }
 
     /** @internal */
     bar: number;

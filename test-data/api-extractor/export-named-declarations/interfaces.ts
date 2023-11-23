@@ -29,7 +29,7 @@ interface Interface007 {
     new (): Interface006;
 }
 
-export { Interface007 };
+export type { Interface007 };
 
 export interface Interface008<T> {}
 

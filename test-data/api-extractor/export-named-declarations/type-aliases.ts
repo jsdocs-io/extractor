@@ -7,7 +7,7 @@ export type TypeAlias2 = string;
 
 type TypeAlias3 = number | string;
 
-export { TypeAlias3 };
+export type { TypeAlias3 };
 
 /** @internal */
 export type TypeAlias4 = string;

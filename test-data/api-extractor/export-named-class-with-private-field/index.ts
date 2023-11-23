@@ -9,4 +9,10 @@ export class Class1 {
     qux() {
         return `${this.#foo} or ${this.bar}`;
     }
+
+    /** @internal */
+    constructor(foo: string, bar: number) {
+        this.#foo = foo;
+        this.bar = bar;
+    }
 }
