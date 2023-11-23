@@ -1,8 +1,8 @@
-import { performance } from 'perf_hooks';
-import { getPackageManifest } from 'query-registry';
-import { RegistryPackageInfo } from '../types/registry-package-info';
-import { log } from '../utils/log';
-import { tryGetPackageAPI } from './try-get-package-api';
+import { performance } from "perf_hooks";
+import { getPackageManifest } from "query-registry";
+import { RegistryPackageInfo } from "../types/registry-package-info";
+import { log } from "../utils/log";
+import { tryGetPackageAPI } from "./try-get-package-api";
 
 /**
  * `analyzeRegistryPackage` analyzes a package hosted on a registry and
@@ -36,60 +36,60 @@ import { tryGetPackageAPI } from './try-get-package-api';
  * @see {@link RegistryPackageInfo}
  */
 export async function analyzeRegistryPackage({
+  name,
+  version,
+  registry,
+  mirrors,
+  ignoreLicense,
+  ignoreFilePatternOptimizations,
+  skipAPIExtraction = false,
+}: {
+  name: string;
+  version?: string;
+  registry?: string;
+  mirrors?: string[];
+  ignoreLicense?: boolean;
+  ignoreFilePatternOptimizations?: boolean;
+  skipAPIExtraction?: boolean;
+}): Promise<RegistryPackageInfo> {
+  const start = performance.now();
+  log("analyzeRegistryPackage: analyzing package: %O", { name, version });
+
+  const manifest = await getPackageManifest({
     name,
     version,
     registry,
     mirrors,
+  });
+  const { id } = manifest;
+  log("analyzeRegistryPackage: got manifest: %O", { id, manifest });
+
+  if (skipAPIExtraction) {
+    log("analyzeRegistryPackage: skipping API extraction: %O", { id });
+    return {
+      id,
+      manifest,
+      api: undefined,
+      elapsed: Math.round(performance.now() - start),
+      createdAt: new Date().toISOString(),
+    };
+  }
+
+  const api = await tryGetPackageAPI({
+    manifest,
     ignoreLicense,
     ignoreFilePatternOptimizations,
-    skipAPIExtraction = false,
-}: {
-    name: string;
-    version?: string;
-    registry?: string;
-    mirrors?: string[];
-    ignoreLicense?: boolean;
-    ignoreFilePatternOptimizations?: boolean;
-    skipAPIExtraction?: boolean;
-}): Promise<RegistryPackageInfo> {
-    const start = performance.now();
-    log('analyzeRegistryPackage: analyzing package: %O', { name, version });
+  });
+  log("analyzeRegistryPackage: extracted API: %O", { id, api });
 
-    const manifest = await getPackageManifest({
-        name,
-        version,
-        registry,
-        mirrors,
-    });
-    const { id } = manifest;
-    log('analyzeRegistryPackage: got manifest: %O', { id, manifest });
+  const elapsed = Math.round(performance.now() - start);
+  log("analyzeRegistryPackage: performance (ms): %O", { id, elapsed });
 
-    if (skipAPIExtraction) {
-        log('analyzeRegistryPackage: skipping API extraction: %O', { id });
-        return {
-            id,
-            manifest,
-            api: undefined,
-            elapsed: Math.round(performance.now() - start),
-            createdAt: new Date().toISOString(),
-        };
-    }
-
-    const api = await tryGetPackageAPI({
-        manifest,
-        ignoreLicense,
-        ignoreFilePatternOptimizations,
-    });
-    log('analyzeRegistryPackage: extracted API: %O', { id, api });
-
-    const elapsed = Math.round(performance.now() - start);
-    log('analyzeRegistryPackage: performance (ms): %O', { id, elapsed });
-
-    return {
-        id,
-        manifest,
-        api,
-        elapsed,
-        createdAt: new Date().toISOString(),
-    };
+  return {
+    id,
+    manifest,
+    api,
+    elapsed,
+    createdAt: new Date().toISOString(),
+  };
 }

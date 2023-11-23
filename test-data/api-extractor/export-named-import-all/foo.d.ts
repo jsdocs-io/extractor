@@ -10,5 +10,5 @@ export function bar2(a: number, b: number): number;
 
 /** Interface Bar3 */
 export interface Bar3<T> {
-    readonly baz: <U>(t: T, u: U) => boolean;
+  readonly baz: <U>(t: T, u: U) => boolean;
 }

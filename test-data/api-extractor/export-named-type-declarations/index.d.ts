@@ -5,7 +5,7 @@
  */
 
 /** var1 */
-export declare const var1 = 'var1';
+export declare const var1 = "var1";
 
 /** func1 */
 export declare function func1(a: number, b: number): number;

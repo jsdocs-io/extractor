@@ -1,3 +1,3 @@
-import debug from 'debug';
+import debug from "debug";
 
-export const log = debug('@jsdocs-io/extractor');
+export const log = debug("@jsdocs-io/extractor");

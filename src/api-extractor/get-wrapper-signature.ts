@@ -1,36 +1,36 @@
-import * as tsm from 'ts-morph';
-import { formatText } from './format';
+import * as tsm from "ts-morph";
+import { formatText } from "./format";
 
 export function getWrapperSignature({
-    declaration,
+  declaration,
 }: {
-    declaration: tsm.ClassDeclaration | tsm.InterfaceDeclaration;
+  declaration: tsm.ClassDeclaration | tsm.InterfaceDeclaration;
 }): string {
-    const parts: string[] = [];
+  const parts: string[] = [];
 
-    for (const child of declaration.getChildren()) {
-        // Ignore documentation comments
-        if (isJSDocComment(child)) {
-            continue;
-        }
-
-        // Stop at body start (e.g., the first opening bracket of a class).
-        if (isOpenBraceToken(child)) {
-            break;
-        }
-
-        parts.push(child.getText());
+  for (const child of declaration.getChildren()) {
+    // Ignore documentation comments
+    if (isJSDocComment(child)) {
+      continue;
     }
-    parts.push('{}');
-    const signature = parts.join(' ');
 
-    return formatText(signature);
+    // Stop at body start (e.g., the first opening bracket of a class).
+    if (isOpenBraceToken(child)) {
+      break;
+    }
+
+    parts.push(child.getText());
+  }
+  parts.push("{}");
+  const signature = parts.join(" ");
+
+  return formatText(signature);
 }
 
 function isJSDocComment(node: tsm.Node): boolean {
-    return node.getKind() === tsm.SyntaxKind.JSDoc;
+  return node.getKind() === tsm.SyntaxKind.JSDoc;
 }
 
 function isOpenBraceToken(node: tsm.Node): boolean {
-    return node.getKind() === tsm.SyntaxKind.OpenBraceToken;
+  return node.getKind() === tsm.SyntaxKind.OpenBraceToken;
 }

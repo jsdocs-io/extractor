@@ -1,23 +1,23 @@
-import { npmRegistry, npmRegistryMirrors } from 'query-registry';
-import { expect } from 'vitest';
-import { analyzeRegistryPackage } from '../../src';
+import { npmRegistry, npmRegistryMirrors } from "query-registry";
+import { expect } from "vitest";
+import { analyzeRegistryPackage } from "../../src";
 
-const verdaccioRegistry = 'http://localhost:4873';
+const verdaccioRegistry = "http://localhost:4873";
 
 export async function expectPackageAPIToMatchSnapshot({
+  name,
+  version,
+}: {
+  name: string;
+  version: string;
+}) {
+  expect.assertions(1);
+
+  const { api } = await analyzeRegistryPackage({
     name,
     version,
-}: {
-    name: string;
-    version: string;
-}) {
-    expect.assertions(1);
-
-    const { api } = await analyzeRegistryPackage({
-        name,
-        version,
-        registry: verdaccioRegistry,
-        mirrors: [npmRegistry, ...npmRegistryMirrors],
-    });
-    expect(api).toMatchSnapshot();
+    registry: verdaccioRegistry,
+    mirrors: [npmRegistry, ...npmRegistryMirrors],
+  });
+  expect(api).toMatchSnapshot();
 }

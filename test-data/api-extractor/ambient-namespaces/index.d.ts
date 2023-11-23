@@ -1,13 +1,13 @@
 /** Ambient namespace Foo */
 declare namespace Foo {
-    /** Interface Bar */
-    export interface Bar {
-        /** Property qux */
-        readonly qux: string;
-    }
+  /** Interface Bar */
+  export interface Bar {
+    /** Property qux */
+    readonly qux: string;
+  }
 
-    /** Variable baz */
-    const baz: boolean;
+  /** Variable baz */
+  const baz: boolean;
 }
 
 /** Global variable foo */

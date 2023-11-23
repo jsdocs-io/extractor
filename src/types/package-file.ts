@@ -2,15 +2,15 @@
  * `PackageFile` represents a file belonging to a package.
  */
 export interface PackageFile {
-    /** Filename */
-    readonly filename: string;
+  /** Filename */
+  readonly filename: string;
 
-    /** If `true`, this file is the entry point to the package */
-    readonly isIndexFile?: boolean;
+  /** If `true`, this file is the entry point to the package */
+  readonly isIndexFile?: boolean;
 
-    /** URL in a remote repository linking to the file */
-    readonly url?: string;
+  /** URL in a remote repository linking to the file */
+  readonly url?: string;
 
-    /** URL on unpkg.com linking to the file */
-    readonly unpkgURL?: string;
+  /** URL on unpkg.com linking to the file */
+  readonly unpkgURL?: string;
 }

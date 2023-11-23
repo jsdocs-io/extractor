@@ -4,7 +4,7 @@
  * @internal
  */
 export interface TaggedGitRepository {
-    readonly url: string;
-    readonly tag?: string;
-    readonly dir?: string;
+  readonly url: string;
+  readonly tag?: string;
+  readonly dir?: string;
 }

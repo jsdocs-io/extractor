@@ -6,20 +6,20 @@
 
 /** foo doc */
 declare namespace foo {
-    /** fooFunc doc */
-    function fooFunc(s: string): string;
+  /** fooFunc doc */
+  function fooFunc(s: string): string;
 }
 
 /** foo.bar doc */
 declare namespace foo.bar {
-    /** foobarFunc doc */
-    function foobarFunc(n: number): number;
+  /** foobarFunc doc */
+  function foobarFunc(n: number): number;
 }
 
 /** foo.bar.baz doc */
 declare namespace foo.bar.baz {
-    /** foobarbazFunc doc */
-    function foobarbazFunc(b: boolean): boolean;
+  /** foobarbazFunc doc */
+  function foobarbazFunc(b: boolean): boolean;
 }
 
 // Namespace `abc` is at depth 6 and should not be extracted

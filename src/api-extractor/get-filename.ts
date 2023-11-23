@@ -1,10 +1,10 @@
-import * as tsm from 'ts-morph';
+import * as tsm from "ts-morph";
 
 export function getFilename({
-    declaration,
+  declaration,
 }: {
-    declaration: tsm.Node;
+  declaration: tsm.Node;
 }): string {
-    // Remove leading `/` from filepath
-    return declaration.getSourceFile().getFilePath().replace(/^\//, '');
+  // Remove leading `/` from filepath
+  return declaration.getSourceFile().getFilePath().replace(/^\//, "");
 }

@@ -17,133 +17,134 @@ export { Class005 };
 
 export class Class006<T> {}
 
-export class Class007<T extends object, U, V extends keyof T> extends Class003
-    implements A, B {}
+export class Class007<T extends object, U, V extends keyof T>
+  extends Class003
+  implements A, B {}
 
 export class Class008 {
-    /** Constructor */
-    constructor(foo: any, bar: any);
-    constructor(foo: string, bar: number) {
-        foo as unknown;
-        bar as unknown;
-    }
+  /** Constructor */
+  constructor(foo: any, bar: any);
+  constructor(foo: string, bar: number) {
+    foo as unknown;
+    bar as unknown;
+  }
 }
 
 export class Class009 {
-    protected constructor(foo: string, bar: number) {
-        foo as unknown;
-        bar as unknown;
-    }
+  protected constructor(foo: string, bar: number) {
+    foo as unknown;
+    bar as unknown;
+  }
 }
 
 export class Class010 {
-    private constructor(foo: string, bar: number) {
-        foo as unknown;
-        bar as unknown;
-    }
+  private constructor(foo: string, bar: number) {
+    foo as unknown;
+    bar as unknown;
+  }
 }
 
 export class Class011 {
-    private static qux = 'qux';
+  private static qux = "qux";
 
-    /** Foo */
-    static readonly foo = 'foo';
+  /** Foo */
+  static readonly foo = "foo";
 
-    /** Bar */
-    static bar(): number {
-        return 0;
-    }
+  /** Bar */
+  static bar(): number {
+    return 0;
+  }
 
-    /** Get baz */
-    static get baz() {
-        return 0;
-    }
+  /** Get baz */
+  static get baz() {
+    return 0;
+  }
 
-    /** Set baz */
-    static set baz(value: number) {
-        value as unknown;
-        this.qux as unknown;
-    }
+  /** Set baz */
+  static set baz(value: number) {
+    value as unknown;
+    this.qux as unknown;
+  }
 
-    /** Get bat */
-    static get bat() {
-        return '';
-    }
+  /** Get bat */
+  static get bat() {
+    return "";
+  }
 }
 
 export class Class012 {
-    private qux = 'qux';
+  private qux = "qux";
 
-    /** Foo */
-    readonly foo = 'foo';
+  /** Foo */
+  readonly foo = "foo";
 
-    /** Foobar */
-    public foobar?: string;
+  /** Foobar */
+  public foobar?: string;
 
-    /** Bar */
-    bar(): number {
-        return 0;
-    }
+  /** Bar */
+  bar(): number {
+    return 0;
+  }
 
-    /** Get baz */
-    get baz() {
-        return 0;
-    }
+  /** Get baz */
+  get baz() {
+    return 0;
+  }
 
-    /** Set baz */
-    set baz(value: number) {
-        value as unknown;
-        this.qux as unknown;
-    }
+  /** Set baz */
+  set baz(value: number) {
+    value as unknown;
+    this.qux as unknown;
+  }
 
-    /** Get bat */
-    get bat() {
-        return '';
-    }
+  /** Get bat */
+  get bat() {
+    return "";
+  }
 }
 
 export class Class013 {
-    constructor(
-        /** Foo */
-        readonly foo: string = 'foo',
-        /** Bar */
-        protected readonly bar: string,
-        private baz: string,
-        qux: string,
-        ...rest: number[]
-    ) {}
+  constructor(
+    /** Foo */
+    readonly foo: string = "foo",
+    /** Bar */
+    protected readonly bar: string,
+    private baz: string,
+    qux: string,
+    ...rest: number[]
+  ) {}
 }
 
 export abstract class Class014 {
-    /** Foo */
-    abstract foo: string;
+  /** Foo */
+  abstract foo: string;
 
-    /** Bar */
-    protected abstract bar: string;
+  /** Bar */
+  protected abstract bar: string;
 
-    /** Baz */
-    abstract baz(): number;
+  /** Baz */
+  abstract baz(): number;
 }
 
 /** @internal */
 export class Class015 {}
 
 export class Class016 {
-    /** @internal */
-    static foo = 'foo';
+  /** @internal */
+  static foo = "foo";
 
-    // Starts with underscore
-    _quux:string;
+  // Starts with underscore
+  _quux: string;
 
-    /** @internal */
-    constructor() {
-        this._quux = 'quux';
-        this.bar = 0;
-    }
+  /** @internal */
+  constructor() {
+    this._quux = "quux";
+    this.bar = 0;
+  }
 
-    /** @internal */
-    bar: number;
+  /** @internal */
+  bar: number;
 
-    /** @internal */
-    baz() {}
+  /** @internal */
+  baz() {}
 }

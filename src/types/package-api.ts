@@ -1,5 +1,5 @@
-import { ModuleDeclarations } from './module-declarations';
-import { PackageFile } from './package-file';
+import { ModuleDeclarations } from "./module-declarations";
+import { PackageFile } from "./package-file";
 
 /**
  * `PackageAPI` represents the public API exported by a package.
@@ -8,12 +8,12 @@ import { PackageFile } from './package-file';
  * @see {@link PackageFile}
  */
 export interface PackageAPI {
-    /** Main documentation comment describing the package */
-    readonly overview?: string;
+  /** Main documentation comment describing the package */
+  readonly overview?: string;
 
-    /** Exported package declarations */
-    readonly declarations: ModuleDeclarations;
+  /** Exported package declarations */
+  readonly declarations: ModuleDeclarations;
 
-    /** Files containing the exported package declarations */
-    readonly files: PackageFile[];
+  /** Files containing the exported package declarations */
+  readonly files: PackageFile[];
 }

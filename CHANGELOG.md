@@ -9,33 +9,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
--   String union type `DeclarationKind` replaces enum `DeclarationKinds`.
--   Support only Node >= 20.
+- String union type `DeclarationKind` replaces enum `DeclarationKinds`.
+- Support only Node >= 20.
 
 ## [0.4.0] - 2022-08-15
 
 ### Changed
 
--   Updated dependencies
+- Updated dependencies
 
 ## [0.3.0] - 2022-01-17
 
 ### Changed
 
--   Updated dependencies
--   Better type inference and signatures formatting thanks to TypeScript and Prettier updates
+- Updated dependencies
+- Better type inference and signatures formatting thanks to TypeScript and Prettier updates
 
 ## [0.2.0] - 2021-04-23
 
 ### Added
 
--   Skip API extraction from packages with `skipAPIExtraction` option in `analyzeRegistryPackage`
+- Skip API extraction from packages with `skipAPIExtraction` option in `analyzeRegistryPackage`
 
 ## [0.1.0] - 2021-04-20
 
 ### Added
 
--   Initial release
+- Initial release
 
 [unreleased]: https://github.com/jsdocs-io/extractor/compare/v0.4.0...HEAD
 [0.4.0]: https://github.com/jsdocs-io/extractor/compare/v0.3.0...v0.4.0

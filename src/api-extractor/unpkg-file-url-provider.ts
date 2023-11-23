@@ -1,26 +1,26 @@
 export type UnpkgFileURLProvider = ({
-    filename,
-    line,
+  filename,
+  line,
 }: {
-    filename: string;
-    line?: number;
+  filename: string;
+  line?: number;
 }) => string | undefined;
 
 export function getUnpkgFileURLProvider({
-    id,
+  id,
 }: {
-    id?: string;
+  id?: string;
 }): UnpkgFileURLProvider {
-    if (!id) {
-        return () => undefined;
+  if (!id) {
+    return () => undefined;
+  }
+
+  return ({ filename, line }) => {
+    const fileURL = `https://unpkg.com/browse/${id}/${filename}`;
+    if (!line) {
+      return fileURL;
     }
 
-    return ({ filename, line }) => {
-        const fileURL = `https://unpkg.com/browse/${id}/${filename}`;
-        if (!line) {
-            return fileURL;
-        }
-
-        return `${fileURL}#L${line}`;
-    };
+    return `${fileURL}#L${line}`;
+  };
 }

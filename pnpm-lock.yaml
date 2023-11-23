@@ -24,8 +24,8 @@ dependencies:
     specifier: ^7.0.1
     version: 7.0.1
   prettier:
-    specifier: ^2.8.8
-    version: 2.8.8
+    specifier: ^3.1.0
+    version: 3.1.0
   query-registry:
     specifier: ^2.6.0
     version: 2.6.0
@@ -73,9 +73,6 @@ devDependencies:
   '@types/jest':
     specifier: ^29.5.8
     version: 29.5.8
-  '@types/prettier':
-    specifier: ^2.7.3
-    version: 2.7.3
   '@types/setup-polly-jest':
     specifier: ^0.5.5
     version: 0.5.5
@@ -93,7 +90,7 @@ devDependencies:
     version: 2.0.3(@babel/plugin-syntax-flow@7.23.3)(@babel/plugin-transform-react-jsx@7.23.4)(@types/node@20.9.2)(esbuild@0.19.6)
   eslint-plugin-prettier:
     specifier: ^4.2.1
-    version: 4.2.1(eslint-config-prettier@8.10.0)(eslint@8.54.0)(prettier@2.8.8)
+    version: 4.2.1(eslint@8.54.0)(prettier@3.1.0)
   fast-glob:
     specifier: ^3.3.2
     version: 3.3.2
@@ -3171,10 +3168,6 @@ packages:
 
   /@types/parse-json@4.0.2:
     resolution: {integrity: sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==}
-    dev: true
-
-  /@types/prettier@2.7.3:
-    resolution: {integrity: sha512-+68kP9yzs4LMp7VNh8gdzMSPZFL44MLGqiHWvttYJe+6qnuVr4Ek9wSBQoveqY/r+LwjCcU29kNVkidwim+kYA==}
     dev: true
 
   /@types/resolve@1.20.2:
@@ -6678,6 +6671,22 @@ packages:
       eslint: 8.54.0
       eslint-config-prettier: 8.10.0(eslint@8.54.0)
       prettier: 2.8.8
+      prettier-linter-helpers: 1.0.0
+    dev: true
+
+  /eslint-plugin-prettier@4.2.1(eslint@8.54.0)(prettier@3.1.0):
+    resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      eslint: '>=7.28.0'
+      eslint-config-prettier: '*'
+      prettier: '>=2.0.0'
+    peerDependenciesMeta:
+      eslint-config-prettier:
+        optional: true
+    dependencies:
+      eslint: 8.54.0
+      prettier: 3.1.0
       prettier-linter-helpers: 1.0.0
     dev: true
 
@@ -11324,6 +11333,12 @@ packages:
   /prettier@2.8.8:
     resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
     engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
+
+  /prettier@3.1.0:
+    resolution: {integrity: sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw==}
+    engines: {node: '>=14'}
     hasBin: true
 
   /pretty-bytes@5.6.0:

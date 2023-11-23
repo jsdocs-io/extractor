@@ -1,63 +1,61 @@
-import nock from 'nock';
-import * as path from 'path';
-import { afterAll, afterEach, describe, expect, it } from 'vitest';
-import { tryDownloadPackage } from '../../src/package-analyzer/try-download-package';
+import nock from "nock";
+import * as path from "path";
+import { afterAll, afterEach, describe, expect, it } from "vitest";
+import { tryDownloadPackage } from "../../src/package-analyzer/try-download-package";
 
-const host = 'https://example.com';
+const host = "https://example.com";
 const tarball = `${host}/tarball.tar.gz`;
 
 const invalidTarballFile = path.join(
-    __dirname,
-    '../../test-data/tarballs/invalid.tar.gz'
+  __dirname,
+  "../../test-data/tarballs/invalid.tar.gz",
 );
 
 const validTarballFile = path.join(
-    __dirname,
-    '../../test-data/tarballs/valid.tar.gz'
+  __dirname,
+  "../../test-data/tarballs/valid.tar.gz",
 );
 
-describe('tryDownloadPackage', () => {
-    afterEach(async () => {
-        nock.cleanAll();
-    });
+describe("tryDownloadPackage", () => {
+  afterEach(async () => {
+    nock.cleanAll();
+  });
 
-    afterAll(() => {
-        nock.restore();
-    });
+  afterAll(() => {
+    nock.restore();
+  });
 
-    it('returns undefined when the download fails', async () => {
-        expect.assertions(1);
+  it("returns undefined when the download fails", async () => {
+    expect.assertions(1);
 
-        nock(host)
-            .get(() => true)
-            .reply(404);
+    nock(host)
+      .get(() => true)
+      .reply(404);
 
-        expect(await tryDownloadPackage({ tarball })).toBeUndefined();
-    });
+    expect(await tryDownloadPackage({ tarball })).toBeUndefined();
+  });
 
-    it('returns undefined when the tarball extraction fails', async () => {
-        expect.assertions(1);
+  it("returns undefined when the tarball extraction fails", async () => {
+    expect.assertions(1);
 
-        nock(host)
-            .get(() => true)
-            .replyWithFile(200, invalidTarballFile);
+    nock(host)
+      .get(() => true)
+      .replyWithFile(200, invalidTarballFile);
 
-        expect(await tryDownloadPackage({ tarball })).toBeUndefined();
-    });
+    expect(await tryDownloadPackage({ tarball })).toBeUndefined();
+  });
 
-    it('returns a file system with package contents when the download succeeds', async () => {
-        expect.assertions(3);
+  it("returns a file system with package contents when the download succeeds", async () => {
+    expect.assertions(3);
 
-        nock(host)
-            .get(() => true)
-            .replyWithFile(200, validTarballFile);
+    nock(host)
+      .get(() => true)
+      .replyWithFile(200, validTarballFile);
 
-        const fs = await tryDownloadPackage({ tarball });
+    const fs = await tryDownloadPackage({ tarball });
 
-        expect(fs).toBeDefined();
-        expect(fs?.fileExistsSync('/index.ts')).toBeTruthy();
-        expect(fs?.readFileSync('/index.ts')).toEqual(
-            'export const foo = 42;\n'
-        );
-    });
+    expect(fs).toBeDefined();
+    expect(fs?.fileExistsSync("/index.ts")).toBeTruthy();
+    expect(fs?.readFileSync("/index.ts")).toEqual("export const foo = 42;\n");
+  });
 });

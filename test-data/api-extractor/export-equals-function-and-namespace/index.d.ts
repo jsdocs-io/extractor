@@ -12,18 +12,18 @@ declare function func1(n: number): func1.Interface2;
 
 /** func1 namespace */
 declare namespace func1 {
-    /** Interface1 */
-    interface Interface1 {
-        readonly foo: string;
-    }
+  /** Interface1 */
+  interface Interface1 {
+    readonly foo: string;
+  }
 
-    /** Interface2 */
-    interface Interface2 {
-        readonly bar: number;
-    }
+  /** Interface2 */
+  interface Interface2 {
+    readonly bar: number;
+  }
 
-    /** var1 */
-    const var1: string;
+  /** var1 */
+  const var1: string;
 }
 
 export = func1;

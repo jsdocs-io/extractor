@@ -4,7 +4,7 @@
  * @param b - the second number
  */
 export function func1(a: number, b: number): number {
-    return a + b;
+  return a + b;
 }
 
 /**
@@ -20,7 +20,7 @@ export const func2 = ({ a, b }: { a: number; b: number }): number => a + b;
  * @param b - the second number
  */
 export const func3 = function ({ a, b }: { a: number; b: number }) {
-    return a + b;
+  return a + b;
 };
 
 /**
@@ -29,7 +29,7 @@ export const func3 = function ({ a, b }: { a: number; b: number }) {
 function func4(a: number): number;
 function func4(a: string): string;
 function func4(a: any): any {
-    return a;
+  return a;
 }
 
 export { func4 };

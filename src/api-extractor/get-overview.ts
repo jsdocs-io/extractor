@@ -1,13 +1,13 @@
-import * as tsm from 'ts-morph';
+import * as tsm from "ts-morph";
 
 export function getOverview({
-    indexFile,
+  indexFile,
 }: {
-    indexFile: tsm.SourceFile;
+  indexFile: tsm.SourceFile;
 }): string | undefined {
-    return indexFile
-        .getDescendantsOfKind(tsm.SyntaxKind.JSDocTag)
-        .find((tag) => tag.getTagName() === 'packageDocumentation')
-        ?.getParentIfKind(tsm.SyntaxKind.JSDoc)
-        ?.getText();
+  return indexFile
+    .getDescendantsOfKind(tsm.SyntaxKind.JSDocTag)
+    .find((tag) => tag.getTagName() === "packageDocumentation")
+    ?.getParentIfKind(tsm.SyntaxKind.JSDoc)
+    ?.getText();
 }

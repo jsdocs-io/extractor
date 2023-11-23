@@ -4,7 +4,7 @@
  * @packageDocumentation
  */
 
-import * as bar from './bar';
-import * as foo from './foo';
+import * as bar from "./bar";
+import * as foo from "./foo";
 
 export { foo, bar };

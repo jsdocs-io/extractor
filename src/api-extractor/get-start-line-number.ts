@@ -1,13 +1,13 @@
-import * as tsm from 'ts-morph';
+import * as tsm from "ts-morph";
 
 export function getStartLineNumber({
-    declaration,
+  declaration,
 }: {
-    declaration: tsm.Node;
+  declaration: tsm.Node;
 }): number {
-    if (tsm.Node.isSourceFile(declaration)) {
-        return 1;
-    }
+  if (tsm.Node.isSourceFile(declaration)) {
+    return 1;
+  }
 
-    return declaration.getStartLineNumber();
+  return declaration.getStartLineNumber();
 }

@@ -4,6 +4,6 @@
  * @packageDocumentation
  */
 
-import type * as Foo from './foo';
+import type * as Foo from "./foo";
 
 export type { Foo };

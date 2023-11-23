@@ -1,24 +1,24 @@
 {
-    // See https://www.totaltypescript.com/tsconfig-cheat-sheet.
-    "compilerOptions": {
-        /* Base Options: */
-        "esModuleInterop": true,
-        "skipLibCheck": true,
-        "target": "es2022",
-        "allowJs": true,
-        "resolveJsonModule": true,
-        "moduleDetection": "force",
-        "isolatedModules": true,
-        /* Strictness */
-        "strict": true,
-        "noUncheckedIndexedAccess": true,
-        /* If you're building for a library: */
-        "declaration": true,
-        /* If NOT transpiling with TypeScript: */
-        "moduleResolution": "bundler",
-        "module": "esnext",
-        "noEmit": true,
-        /* If your code doesn't run in the DOM: */
-        "lib": ["es2022"]
-    }
+  // See https://www.totaltypescript.com/tsconfig-cheat-sheet.
+  "compilerOptions": {
+    /* Base Options: */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    /* Strictness */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    /* If you're building for a library: */
+    "declaration": true,
+    /* If NOT transpiling with TypeScript: */
+    "moduleResolution": "bundler",
+    "module": "esnext",
+    "noEmit": true,
+    /* If your code doesn't run in the DOM: */
+    "lib": ["es2022"]
+  }
 }
