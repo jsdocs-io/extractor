@@ -37,5 +37,8 @@ jobs:
             - name: Build
               run: pnpm build
 
+            - name: Are the types wrong
+              run: pnpm attw
+
             - name: CodeCov
               uses: codecov/codecov-action@v3.1.4
