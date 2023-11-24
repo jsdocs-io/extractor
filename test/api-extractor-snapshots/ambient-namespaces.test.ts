@@ -6,10 +6,10 @@ import { getTestFileSystem } from "../helpers/get-test-file-system";
 describe("ambient-namespaces", () => {
   let api: PackageAPI;
 
-  beforeAll(() => {
+  beforeAll(async () => {
     const name = "ambient-namespaces";
     const fileSystem = getTestFileSystem({ name });
-    api = extractPackageAPI({ fileSystem, entryPoint: "index.d.ts" });
+    api = await extractPackageAPI({ fileSystem, entryPoint: "index.d.ts" });
   });
 
   it("snapshot", () => {

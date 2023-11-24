@@ -7,10 +7,10 @@ import { getTestFileSystem } from "../helpers/get-test-file-system";
 describe("export-named-type-declarations", () => {
   let api: PackageAPI;
 
-  beforeAll(() => {
+  beforeAll(async () => {
     const name = "export-named-type-declarations";
     const fileSystem = getTestFileSystem({ name });
-    api = extractPackageAPI({ fileSystem, entryPoint: "index.d.ts" });
+    api = await extractPackageAPI({ fileSystem, entryPoint: "index.d.ts" });
   });
 
   it("snapshot", () => {

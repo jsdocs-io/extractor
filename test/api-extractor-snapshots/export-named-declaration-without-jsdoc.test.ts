@@ -7,10 +7,10 @@ import { getTestFileSystem } from "../helpers/get-test-file-system";
 describe("export-named-declaration-without-jsdoc", () => {
   let api: PackageAPI;
 
-  beforeAll(() => {
+  beforeAll(async () => {
     const name = "export-named-declaration-without-jsdoc";
     const fileSystem = getTestFileSystem({ name });
-    api = extractPackageAPI({
+    api = await extractPackageAPI({
       fileSystem,
       entryPoint: "index.ts",
     });

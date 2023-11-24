@@ -73,7 +73,7 @@ export async function tryGetPackageAPI({
   });
 
   try {
-    return extractPackageAPI({
+    return await extractPackageAPI({
       fileSystem,
       entryPoint,
       id,

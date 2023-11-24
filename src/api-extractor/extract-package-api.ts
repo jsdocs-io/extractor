@@ -24,7 +24,7 @@ import { getUnpkgFileURLProvider } from "./unpkg-file-url-provider";
  *
  * @see {@link PackageAPI}
  */
-export function extractPackageAPI({
+export async function extractPackageAPI({
   fileSystem,
   entryPoint,
   maxDepth,
@@ -38,7 +38,7 @@ export function extractPackageAPI({
   pattern?: string;
   repository?: TaggedGitRepository;
   id?: string;
-}): PackageAPI {
+}): Promise<PackageAPI> {
   const start = performance.now();
   log("extractPackageAPI: extracting API: %O", {
     id,

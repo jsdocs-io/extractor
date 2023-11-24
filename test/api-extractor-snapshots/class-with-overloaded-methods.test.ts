@@ -7,10 +7,10 @@ import { getTestFileSystem } from "../helpers/get-test-file-system";
 describe("class-with-overloaded-methods", () => {
   let api: PackageAPI;
 
-  beforeAll(() => {
+  beforeAll(async () => {
     const name = "class-with-overloaded-methods";
     const fileSystem = getTestFileSystem({ name });
-    api = extractPackageAPI({ fileSystem, entryPoint: "index.d.ts" });
+    api = await extractPackageAPI({ fileSystem, entryPoint: "index.d.ts" });
   });
 
   it("snapshot", () => {

@@ -7,10 +7,10 @@ import { getTestFileSystem } from "../helpers/get-test-file-system";
 describe("export-named-declarations", () => {
   let api: PackageAPI;
 
-  beforeAll(() => {
+  beforeAll(async () => {
     const name = "export-named-declarations";
     const fileSystem = getTestFileSystem({ name });
-    api = extractPackageAPI({ fileSystem, entryPoint: "index.ts" });
+    api = await extractPackageAPI({ fileSystem, entryPoint: "index.ts" });
   });
 
   it("snapshot", () => {
@@ -21,7 +21,7 @@ describe("export-named-declarations", () => {
 describe("export-named-declarations with repository", () => {
   let api: PackageAPI;
 
-  beforeAll(() => {
+  beforeAll(async () => {
     const name = "export-named-declarations";
     const fileSystem = getTestFileSystem({ name });
     const repository = {
@@ -29,7 +29,7 @@ describe("export-named-declarations with repository", () => {
       shortcut: "",
       tarball: "",
     };
-    api = extractPackageAPI({
+    api = await extractPackageAPI({
       fileSystem,
       entryPoint: "index.ts",
       repository,

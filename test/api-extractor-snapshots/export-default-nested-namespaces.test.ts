@@ -7,10 +7,10 @@ import { getTestFileSystem } from "../helpers/get-test-file-system";
 describe("export-default-nested-namespaces", () => {
   let api: PackageAPI;
 
-  beforeAll(() => {
+  beforeAll(async () => {
     const name = "export-default-nested-namespaces";
     const fileSystem = getTestFileSystem({ name });
-    api = extractPackageAPI({
+    api = await extractPackageAPI({
       fileSystem,
       entryPoint: "index.d.ts",
     });

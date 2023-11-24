@@ -4,23 +4,23 @@ import { extractPackageAPI } from "../../src/api-extractor/extract-package-api";
 import { getTestFileSystem } from "../helpers/get-test-file-system";
 
 describe("extractPackageAPI", () => {
-  it("throws when when no index file is found", () => {
+  it("throws when when no index file is found", async () => {
     expect.assertions(1);
 
     const fileSystem = new tsm.InMemoryFileSystemHost();
     try {
-      extractPackageAPI({ fileSystem, entryPoint: "invalid.ts" });
+      await extractPackageAPI({ fileSystem, entryPoint: "invalid.ts" });
     } catch (err) {
       expect(err).toBeDefined();
     }
   });
 
-  it("resolves when it finds an index file, even if empty", () => {
+  it("resolves when it finds an index file, even if empty", async () => {
     expect.assertions(1);
 
     const name = "empty-index-file";
     const fileSystem = getTestFileSystem({ name });
-    const api = extractPackageAPI({
+    const api = await extractPackageAPI({
       fileSystem,
       entryPoint: "index.ts",
       pattern: "**/index.ts",
@@ -29,7 +29,7 @@ describe("extractPackageAPI", () => {
     expect(api).toBeDefined();
   });
 
-  it("ignores ambient modules in `node_modules`", () => {
+  it("ignores ambient modules in `node_modules`", async () => {
     expect.assertions(1);
 
     const fileSystem = new tsm.InMemoryFileSystemHost();
@@ -39,7 +39,10 @@ describe("extractPackageAPI", () => {
       'declare module "foo" { export const x: string; }',
     );
 
-    const api = extractPackageAPI({ fileSystem, entryPoint: "index.d.ts" });
+    const api = await extractPackageAPI({
+      fileSystem,
+      entryPoint: "index.d.ts",
+    });
     expect(api.declarations.namespaces).toEqual([]);
   });
 });
