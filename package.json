@@ -56,7 +56,6 @@
     "lint": "prettier --check .",
     "format": "prettier --write .",
     "debug:analyze": "pnpm tsx scripts/debug-analyze.ts",
-    "prepare": "husky install && pnpm build",
     "pre-push": "pnpm i && pnpm lint && pnpm build && pnpm test:ci",
     "release": "np"
   },
@@ -74,8 +73,6 @@
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.13.2",
-    "@commitlint/cli": "^18.4.3",
-    "@commitlint/config-conventional": "^18.4.3",
     "@pollyjs/adapter-node-http": "^6.0.6",
     "@pollyjs/core": "^6.0.6",
     "@pollyjs/persister-fs": "^6.0.6",
@@ -93,7 +90,6 @@
     "eslint-plugin-prettier": "^4.2.1",
     "fast-glob": "^3.3.2",
     "fs-extra": "^11.1.1",
-    "husky": "^8.0.3",
     "nock": "^13.3.8",
     "np": "^8.0.4",
     "setup-polly-jest": "^0.11.0",
