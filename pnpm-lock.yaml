@@ -89,8 +89,8 @@ devDependencies:
     specifier: ^3.3.2
     version: 3.3.2
   fs-extra:
-    specifier: ^11.1.1
-    version: 11.1.1
+    specifier: ^11.2.0
+    version: 11.2.0
   nock:
     specifier: ^13.3.8
     version: 13.3.8
@@ -1575,7 +1575,7 @@ packages:
       d3-array: 2.12.1
       d3-fg: 6.14.0
       d3-selection: 1.4.2
-      fs-extra: 11.1.1
+      fs-extra: 11.2.0
       lodash.debounce: 4.0.8
       on-net-listen: 1.1.2
       pump: 3.0.0
@@ -7035,8 +7035,8 @@ packages:
       universalify: 2.0.1
     dev: true
 
-  /fs-extra@11.1.1:
-    resolution: {integrity: sha512-MGIE4HOvQCeUCzmlHs0vXpih4ysz4wg9qiSAu6cd42lVwPbTM1TjV7RusoyQqMmk/95gdQZX72u+YW+c3eEpFQ==}
+  /fs-extra@11.2.0:
+    resolution: {integrity: sha512-PmDi3uwK5nFuXh7XDTlVnS17xJS7vW36is2+w3xcv8SVxiB4NyATf4ctkVY5bkSjX0Y4nbvZCq1/EjtEyr9ktw==}
     engines: {node: '>=14.14'}
     dependencies:
       graceful-fs: 4.2.11
