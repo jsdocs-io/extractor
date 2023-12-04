@@ -75,7 +75,7 @@ devDependencies:
     version: 3.1.3
   '@vitest/coverage-v8':
     specifier: ^0.34.6
-    version: 0.34.6(vitest@1.0.0-beta.5)
+    version: 0.34.6(vitest@1.0.0-beta.6)
   clinic:
     specifier: ^13.0.0
     version: 13.0.0
@@ -119,8 +119,8 @@ devDependencies:
     specifier: ^5.27.0
     version: 5.27.0(typanion@3.14.0)
   vitest:
-    specifier: 1.0.0-beta.5
-    version: 1.0.0-beta.5(@types/node@20.9.2)
+    specifier: 1.0.0-beta.6
+    version: 1.0.0-beta.6(@types/node@20.9.2)
 
 packages:
 
@@ -3356,7 +3356,7 @@ packages:
       semver: 7.5.4
     dev: true
 
-  /@vitest/coverage-v8@0.34.6(vitest@1.0.0-beta.5):
+  /@vitest/coverage-v8@0.34.6(vitest@1.0.0-beta.6):
     resolution: {integrity: sha512-fivy/OK2d/EsJFoEoxHFEnNGTg+MmdZBAVK9Ka4qhXR2K3J0DS08vcGVwzDtXSuUMabLv4KtPcpSKkcMXFDViw==}
     peerDependencies:
       vitest: '>=0.32.0 <1'
@@ -3372,43 +3372,43 @@ packages:
       std-env: 3.5.0
       test-exclude: 6.0.0
       v8-to-istanbul: 9.1.3
-      vitest: 1.0.0-beta.5(@types/node@20.9.2)
+      vitest: 1.0.0-beta.6(@types/node@20.9.2)
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@vitest/expect@1.0.0-beta.5:
-    resolution: {integrity: sha512-q/TPdbXuEZZNFKILEVicojSWEq1y8qPLcAiZRQD8DsYUAV2cIjsD5lJWYaAjjUAV4lzovSci3KeISQdjUdfxQQ==}
+  /@vitest/expect@1.0.0-beta.6:
+    resolution: {integrity: sha512-leCesYErICeBQEz0Tzaopad1cnCUBfR1gDk2nFxHCChv7gdYTezcC2YRlPCwA8TuWGCXs8cdyTFO5R6QhUfY9A==}
     dependencies:
-      '@vitest/spy': 1.0.0-beta.5
-      '@vitest/utils': 1.0.0-beta.5
+      '@vitest/spy': 1.0.0-beta.6
+      '@vitest/utils': 1.0.0-beta.6
       chai: 4.3.10
     dev: true
 
-  /@vitest/runner@1.0.0-beta.5:
-    resolution: {integrity: sha512-o/6ZqQoKCIdI4dmdc4Yb1u3n56dU69SABXyO5yhFZTDjEMJs1DdCQ68JK+UcrpJMQndr6q5lTFrfHEhj4XJy6w==}
+  /@vitest/runner@1.0.0-beta.6:
+    resolution: {integrity: sha512-pcFo7XRaALk44ck8LpcjtIsr2Ue4jFNfaq5MDlHupAekkJdDdFrAAfOmsE/LnIqeUsnd/6IaKvLX1oRnCkz6kg==}
     dependencies:
-      '@vitest/utils': 1.0.0-beta.5
+      '@vitest/utils': 1.0.0-beta.6
       p-limit: 5.0.0
       pathe: 1.1.1
     dev: true
 
-  /@vitest/snapshot@1.0.0-beta.5:
-    resolution: {integrity: sha512-fsWoc/mokLawqrLFqK9MHEyzJaGeDzU5gAgky2yZJR58VSsSvW+cesvmdv9ch39xHlTzFTRPgrWkNsmbdm2gbg==}
+  /@vitest/snapshot@1.0.0-beta.6:
+    resolution: {integrity: sha512-znkf7R67aanWHjAfx+/Yj5VwIdUHU1I1akJFL8lguiu5C6C12D4ICHeMjRBc7e7BrIguBWZFfqPx/ZUSxqMTfA==}
     dependencies:
       magic-string: 0.30.5
       pathe: 1.1.1
       pretty-format: 29.7.0
     dev: true
 
-  /@vitest/spy@1.0.0-beta.5:
-    resolution: {integrity: sha512-B5dx87eCiJidWGdURMS/etHE9P3JRdFEQj8HQRGI3OhMy5XcSrdAwg5oEADoqXm32GUGc7bC8Dw/q9PiCJSBIQ==}
+  /@vitest/spy@1.0.0-beta.6:
+    resolution: {integrity: sha512-AaR9a/ecsJ4lMeC5ZdsTfXqBVxA7ZrmT3q/ooUGXYvAtSxETn39gWC6h7wxUCtKwTLClq+5FmA03Co5/zmGMBw==}
     dependencies:
       tinyspy: 2.2.0
     dev: true
 
-  /@vitest/utils@1.0.0-beta.5:
-    resolution: {integrity: sha512-5ippiVcc6KjnAZiMc5Gz5g1tWTG+21g5scr+cedYC+YxAjqZzOG/ncJuM/Eqq9a+/MAJJc5zOGBcDYl27x62jg==}
+  /@vitest/utils@1.0.0-beta.6:
+    resolution: {integrity: sha512-PyUf4dTFRLfq6YAdAab39i32O/qhpeCVM7cUpN1au7BrvYI/e43ZDhhHdwbt8zP14l06PNrXd5nTSZPFQwmsVw==}
     dependencies:
       diff-sequences: 29.6.3
       loupe: 2.3.7
@@ -13483,8 +13483,8 @@ packages:
       extsprintf: 1.3.0
     dev: true
 
-  /vite-node@1.0.0-beta.5(@types/node@20.9.2):
-    resolution: {integrity: sha512-iXm+GTJbR9R6V/bCM1+LQqIohL/tncZVNGIcTtzpYThBD8yiTkDPvEjy1Mf7KFACtG3qY/0VDMrkuMtqG/JFhg==}
+  /vite-node@1.0.0-beta.6(@types/node@20.9.2):
+    resolution: {integrity: sha512-cDRdVdirWxw8AODIGzdM0uI5J4Ts7evXzelFAQgngSyblaQG84PUsVHeMIhNWWM5L1K0hst+R2ecJzPUgI6tCw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     dependencies:
@@ -13540,8 +13540,8 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitest@1.0.0-beta.5(@types/node@20.9.2):
-    resolution: {integrity: sha512-wmrGmXMKysR+JBvIwy0COgLrRSsZTR00dN+IpWBxGC4ACF5Mt/uYyrPLJZ0ixK4P3bxI16vd92JXMsuGnm9gQQ==}
+  /vitest@1.0.0-beta.6(@types/node@20.9.2):
+    resolution: {integrity: sha512-yahr45sIcSq8SaY9FUcmWLrsDMAL3mCd/vC890uymiZhrZ5VQrqMmOT0FcB7vtC4kh327p6IXWqHHLr7B0hRug==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -13566,11 +13566,11 @@ packages:
         optional: true
     dependencies:
       '@types/node': 20.9.2
-      '@vitest/expect': 1.0.0-beta.5
-      '@vitest/runner': 1.0.0-beta.5
-      '@vitest/snapshot': 1.0.0-beta.5
-      '@vitest/spy': 1.0.0-beta.5
-      '@vitest/utils': 1.0.0-beta.5
+      '@vitest/expect': 1.0.0-beta.6
+      '@vitest/runner': 1.0.0-beta.6
+      '@vitest/snapshot': 1.0.0-beta.6
+      '@vitest/spy': 1.0.0-beta.6
+      '@vitest/utils': 1.0.0-beta.6
       acorn-walk: 8.3.0
       cac: 6.7.14
       chai: 4.3.10
@@ -13585,7 +13585,7 @@ packages:
       tinybench: 2.5.1
       tinypool: 0.8.1
       vite: 5.0.0(@types/node@20.9.2)
-      vite-node: 1.0.0-beta.5(@types/node@20.9.2)
+      vite-node: 1.0.0-beta.6(@types/node@20.9.2)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
