@@ -1,5 +1,4 @@
 import { $ } from "execa";
-import { chdir, cwd } from "node:process";
 import { readPackage } from "read-pkg";
 import { temporaryDirectoryTask } from "tempy";
 import { nameFromPackage } from "./name-from-package";
@@ -8,22 +7,25 @@ import { resolveTypes } from "./resolve-types";
 export const extractApiFromPackage = async (
   pkg: string,
   pkgSubpath = ".",
-): Promise<unknown> => {
+): Promise<unknown | undefined> => {
   const pkgName = nameFromPackage(pkg);
-  const startDir = cwd();
+  const startDir = process.cwd();
   const api = await temporaryDirectoryTask(async (dir: string) => {
-    chdir(dir);
-    console.log(cwd());
+    process.chdir(dir);
+    console.log(process.cwd());
     await $`bun add ${pkg}`;
     const pkgJson = await readPackage({ cwd: `./node_modules/${pkgName}` });
     const entryPoint = resolveTypes(pkgJson, pkgSubpath);
+    if (!entryPoint) {
+      return undefined;
+    }
     console.log({ entryPoint });
 
     // await new Promise((r) => setTimeout(r, 60000));
 
     return { entryPoint };
   });
-  chdir(startDir);
+  process.chdir(startDir);
   return api;
 };
 
