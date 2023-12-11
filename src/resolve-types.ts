@@ -3,11 +3,11 @@ import { exports, type Exports } from "resolve.exports";
 
 export const resolveTypes = (
   pkgJson: Partial<NormalizedPackageJson>,
-  subpath: string,
+  pkgSubpath: string,
 ): string | undefined => {
-  const isRootSubpath = [".", pkgJson.name].includes(subpath);
+  const isRootSubpath = [".", pkgJson.name].includes(pkgSubpath);
   return [
-    resolveExportsSafe(pkgJson, subpath),
+    resolveExportsSafe(pkgJson, pkgSubpath),
     ...(isRootSubpath ? [pkgJson.types] : []),
     ...(isRootSubpath ? [pkgJson.typings] : []),
   ].find((resolved) => resolved && isTypesFile(resolved));

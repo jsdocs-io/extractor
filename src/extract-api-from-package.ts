@@ -7,7 +7,7 @@ import { resolveTypes } from "./resolve-types";
 
 export const extractApiFromPackage = async (
   pkg: string,
-  subpath = ".",
+  pkgSubpath = ".",
 ): Promise<unknown> => {
   const pkgName = nameFromPackage(pkg);
   const startDir = cwd();
@@ -16,7 +16,7 @@ export const extractApiFromPackage = async (
     console.log(cwd());
     await $`bun add ${pkg}`;
     const pkgJson = await readPackage({ cwd: `./node_modules/${pkgName}` });
-    const entryPoint = resolveTypes(pkgJson, subpath);
+    const entryPoint = resolveTypes(pkgJson, pkgSubpath);
     console.log({ entryPoint });
 
     // await new Promise((r) => setTimeout(r, 60000));
