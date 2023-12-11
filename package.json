@@ -63,12 +63,16 @@
     "@microsoft/tsdoc": "^0.14.2",
     "concat-stream": "^2.0.0",
     "debug": "^4.3.4",
+    "execa": "^8.0.1",
     "got": "^11.8.6",
     "gunzip-maybe": "^1.4.2",
     "hosted-git-info": "^7.0.1",
     "prettier": "^3.1.0",
     "query-registry": "^2.6.0",
+    "read-pkg": "^9.0.1",
+    "resolve.exports": "^2.0.2",
     "tar-stream": "^3.1.6",
+    "tempy": "^3.1.0",
     "ts-morph": "^20.0.0"
   },
   "devDependencies": {
