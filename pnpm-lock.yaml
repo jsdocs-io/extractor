@@ -26,6 +26,12 @@ dependencies:
   hosted-git-info:
     specifier: ^7.0.1
     version: 7.0.1
+  neverthrow:
+    specifier: ^6.1.0
+    version: 6.1.0
+  pathe:
+    specifier: ^1.1.1
+    version: 1.1.1
   prettier:
     specifier: ^3.1.1
     version: 3.1.1
@@ -109,6 +115,9 @@ devDependencies:
   np:
     specifier: ^9.2.0
     version: 9.2.0(typescript@5.3.3)
+  open:
+    specifier: ^9.1.0
+    version: 9.1.0
   setup-polly-jest:
     specifier: ^0.11.0
     version: 0.11.0(@pollyjs/core@6.0.6)
@@ -10120,6 +10129,10 @@ packages:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: true
 
+  /neverthrow@6.1.0:
+    resolution: {integrity: sha512-xNbNjp/6M5vUV+mststgneJN9eJeJCDSYSBTaf3vxgvcKooP+8L0ATFpM8DGfmH7UWKJeoa24Qi33tBP9Ya3zA==}
+    dev: false
+
   /new-github-release-url@2.0.0:
     resolution: {integrity: sha512-NHDDGYudnvRutt/VhKFlX26IotXe1w0cmkDm6JGquh5bz/bDTw0LufSmH/GxTjEdpHEO+bVKFTwdrcGa/9XlKQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
@@ -10813,7 +10826,6 @@ packages:
 
   /pathe@1.1.1:
     resolution: {integrity: sha512-d+RQGp0MAYTIaDBIMmOfMwz3E+LOZnxx1HZd5R18mmCZY0QBlK0LDZfPc8FW8Ed2DlvsuE6PRjroDY+wg4+j/Q==}
-    dev: true
 
   /pathval@1.1.1:
     resolution: {integrity: sha512-Dp6zGqpTdETdR63lehJYPeIOqpiNBNtc7BpWSLrOje7UaIsE5aY92r/AunQA7rsXvet3lrJ3JnZX29UPTKXyKQ==}
