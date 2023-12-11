@@ -76,7 +76,7 @@
     "ts-morph": "^21.0.1"
   },
   "devDependencies": {
-    "@arethetypeswrong/cli": "^0.13.2",
+    "@arethetypeswrong/cli": "^0.13.3",
     "@pollyjs/adapter-node-http": "^6.0.6",
     "@pollyjs/core": "^6.0.6",
     "@pollyjs/persister-fs": "^6.0.6",
@@ -95,7 +95,7 @@
     "fast-glob": "^3.3.2",
     "fs-extra": "^11.2.0",
     "nock": "^13.4.0",
-    "np": "^9.0.0",
+    "np": "^9.2.0",
     "setup-polly-jest": "^0.11.0",
     "ts-dedent": "^2.2.0",
     "tslib": "^2.6.2",
