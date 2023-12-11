@@ -29,7 +29,5 @@ const resolveExportsSafe = (
 };
 
 const isTypesFile = (filepath: string): boolean => {
-  return [".d.ts", ".d.mts", ".d.cts", ".ts", ".mts", ".cts"].some((ext) =>
-    filepath.endsWith(ext),
-  );
+  return [".d.ts", ".d.mts", ".d.cts"].some((ext) => filepath.endsWith(ext));
 };
