@@ -2,11 +2,11 @@ import { expect, test } from "vitest";
 import { resolveTypes } from "./resolve-types";
 
 test("no types", () => {
-  expect(resolveTypes({}, ".")).toBeUndefined();
+  expect(resolveTypes({}, ".").isErr()).toBe(true);
 });
 
 test("not types", () => {
-  expect(resolveTypes({ types: "foo.wrong" }, ".")).toBeUndefined();
+  expect(resolveTypes({ types: "foo.wrong" }, ".").isErr()).toBe(true);
 });
 
 test("no subpath", () => {
@@ -19,8 +19,8 @@ test("no subpath", () => {
         },
       },
       "custom",
-    ),
-  ).toBeUndefined();
+    ).isErr(),
+  ).toBe(true);
 });
 
 test("from exports", () => {
@@ -33,7 +33,7 @@ test("from exports", () => {
         },
       },
       ".",
-    ),
+    )._unsafeUnwrap(),
   ).toBe("index.d.ts");
 });
 
@@ -48,16 +48,20 @@ test("from exports subpath", () => {
         },
       },
       "custom",
-    ),
+    )._unsafeUnwrap(),
   ).toBe("custom.d.ts");
 });
 
 test("from types", () => {
-  expect(resolveTypes({ types: "index.d.ts" }, ".")).toBe("index.d.ts");
+  expect(resolveTypes({ types: "index.d.ts" }, ".")._unsafeUnwrap()).toBe(
+    "index.d.ts",
+  );
 });
 
 test("from typings", () => {
-  expect(resolveTypes({ typings: "index.d.ts" }, ".")).toBe("index.d.ts");
+  expect(resolveTypes({ typings: "index.d.ts" }, ".")._unsafeUnwrap()).toBe(
+    "index.d.ts",
+  );
 });
 
 test("not from default", () => {
@@ -71,7 +75,7 @@ test("not from default", () => {
         },
       },
       ".",
-    ),
+    )._unsafeUnwrap(),
   ).toBe("index.d.ts");
 });
 
@@ -86,6 +90,6 @@ test("not from types if no subpath", () => {
         },
       },
       "custom",
-    ),
-  ).toBeUndefined();
+    ).isErr(),
+  ).toBe(true);
 });

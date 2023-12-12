@@ -1,33 +1,48 @@
-import type { NormalizedPackageJson } from "read-pkg";
-import { exports, type Exports } from "resolve.exports";
+import { err, ok, Result } from "neverthrow";
+import { type NormalizedPackageJson } from "read-pkg";
+import { exports } from "resolve.exports";
 
 export const resolveTypes = (
   pkgJson: Partial<NormalizedPackageJson>,
   pkgSubpath: string,
-): string | undefined => {
+): Result<string, Error> => {
   const isRootSubpath = [".", pkgJson.name].includes(pkgSubpath);
-  return [
-    resolveExportsSafe(pkgJson, pkgSubpath),
-    ...(isRootSubpath ? [pkgJson.types] : []),
-    ...(isRootSubpath ? [pkgJson.typings] : []),
-  ].find((resolved) => resolved && isTypesFile(resolved));
+  const resolvedTypes = resolveTypesExports(pkgJson, pkgSubpath);
+  if (!isRootSubpath || resolvedTypes.isOk()) {
+    return resolvedTypes;
+  }
+  if (pkgJson.types && isTypesFile(pkgJson.types)) {
+    return ok(pkgJson.types);
+  }
+  if (pkgJson.typings && isTypesFile(pkgJson.typings)) {
+    return ok(pkgJson.typings);
+  }
+  return err(new Error("resolveTypes: failed to resolve types"));
 };
 
-const resolveExportsSafe = (
+const resolveTypesExports = (
   pkgJson: Partial<NormalizedPackageJson>,
   subpath: string,
-): string | undefined => {
+): Result<string, Error> => {
   try {
     const resolved = exports(pkgJson, subpath, {
       conditions: ["types"],
       unsafe: true,
-    }) as Exports.Output;
-    return resolved[0];
-  } catch {
-    return undefined;
+    });
+    if (!Array.isArray(resolved)) {
+      return err(new Error("resolveTypesExports: not an array"));
+    }
+    const resolvedPath = resolved[0];
+    if (!resolvedPath || !isTypesFile(resolvedPath)) {
+      return err(new Error("resolveTypesExports: not a types file"));
+    }
+    return ok(resolvedPath);
+  } catch (e) {
+    return err(
+      new Error(`resolveTypesExports: failed to resolve types exports: ${e}`),
+    );
   }
 };
 
-const isTypesFile = (filepath: string): boolean => {
-  return [".d.ts", ".d.mts", ".d.cts"].some((ext) => filepath.endsWith(ext));
-};
+const isTypesFile = (filepath: string): boolean =>
+  [".d.ts", ".d.mts", ".d.cts"].some((ext) => filepath.endsWith(ext));
