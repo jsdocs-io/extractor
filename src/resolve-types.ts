@@ -7,7 +7,9 @@ export const resolveTypes = (
   pkgSubpath: string,
 ): Result<string, Error> => {
   const isRootSubpath = [".", pkgJson.name].includes(pkgSubpath);
-  const resolvedTypes = resolveTypesExports(pkgJson, pkgSubpath);
+  const resolvedTypes = resolveTypesExports(pkgJson, pkgSubpath).mapErr(
+    (e) => new Error(`resolveTypes: failed to resolve types: ${e}`),
+  );
   if (!isRootSubpath || resolvedTypes.isOk()) {
     return resolvedTypes;
   }
