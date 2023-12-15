@@ -1,59 +1,93 @@
-import { $ } from "execa";
-import { Result, ResultAsync, ok } from "neverthrow";
-import { readPackage } from "read-pkg";
-import { temporaryDirectoryTask } from "tempy";
+import { ResultAsync, okAsync } from "neverthrow";
+import { join } from "pathe";
 import { createProject } from "./create-project";
-import { nameFromPackage } from "./name-from-package";
+import {
+  errChangeDirFailed,
+  errCreateProjectFailed,
+  errCurrentDirFailed,
+  errInstallPackageFailed,
+  errInvalidPackageName,
+  errReadPackageJsonFailed,
+  errResolveTypesFailed,
+  errTemporaryDirFailed,
+  type ExtractorError,
+} from "./errors";
+import { installPackage } from "./install-package";
+import { packageName } from "./package-name";
+import { changeDir, currentDir } from "./process";
+import { readPackageJson } from "./read-package-json";
 import { resolveTypes } from "./resolve-types";
+import { tempDir } from "./temp-dir";
 
-export const extractApiFromPackage = async (
+export const extractApiFromPackage = (
   pkg: string,
   pkgSubpath = ".",
-): Promise<unknown | undefined> => {
-  const pkgName = nameFromPackage(pkg);
-  const startDir = process.cwd();
-  const api = await temporaryDirectoryTask(async (dir: string) => {
-    const result = await changeDir(dir)
-      .asyncAndThen(() => installPackage(pkg))
-      .andThen(() => readPackageJson(`./node_modules/${pkgName}`))
-      .andThen((pkgJson) => resolveTypes(pkgJson, pkgSubpath))
-      .andThen((entryPoint) =>
-        createProject(`./node_modules/${pkgName}/${entryPoint}`),
-      )
-      .andThen((project) => {
-        // Debug
-        const sfs = project
-          .getSourceFiles()
-          .map((sf) => sf.getFilePath().replace(`${dir}/node_modules/`, ""));
-        console.log(JSON.stringify(sfs, null, 2));
-        return ok(null);
-      });
-    console.log({ result });
-
-    // await new Promise((r) => setTimeout(r, 60000));
-
-    return {};
-  });
-  changeDir(startDir);
-  return api;
+): ResultAsync<unknown, ExtractorError> => {
+  return okAsync({ pkg, pkgSubpath })
+    .andThen((ctx) =>
+      packageName(ctx.pkg)
+        .map((pkgName) => ({ pkgName, ...ctx }))
+        .mapErr(errInvalidPackageName),
+    )
+    .andThen((ctx) =>
+      currentDir()
+        .map((startDir) => ({ startDir, ...ctx }))
+        .mapErr(errCurrentDirFailed),
+    )
+    .andThen((ctx) =>
+      tempDir()
+        .map((projectDir) => ({
+          projectDir,
+          pkgDir: join(projectDir, "node_modules", ctx.pkgName),
+          ...ctx,
+        }))
+        .mapErr(errTemporaryDirFailed),
+    )
+    .andThen((ctx) =>
+      changeDir(ctx.projectDir)
+        .map(() => ctx)
+        .mapErr(errChangeDirFailed),
+    )
+    .andThen((ctx) =>
+      installPackage(ctx.pkg)
+        .map(() => ctx)
+        .mapErr(errInstallPackageFailed),
+    )
+    .andThen((ctx) =>
+      readPackageJson(ctx.pkgDir)
+        .map((pkgJson) => ({ pkgJson, ...ctx }))
+        .mapErr(errReadPackageJsonFailed),
+    )
+    .andThen((ctx) =>
+      resolveTypes(ctx.pkgJson, ctx.pkgSubpath)
+        .map((entryPoint) => ({ entryPoint, ...ctx }))
+        .mapErr(errResolveTypesFailed),
+    )
+    .andThen((ctx) =>
+      createProject(join(ctx.pkgDir, ctx.entryPoint))
+        .map((project) => ({
+          project,
+          ...ctx,
+        }))
+        .mapErr(errCreateProjectFailed),
+    )
+    .andThen((ctx) => {
+      // Debug
+      const sfs = ctx.project
+        .getSourceFiles()
+        .map((sf) =>
+          sf.getFilePath().replace(`${ctx.projectDir}/node_modules/`, ""),
+        );
+      console.log(ctx.entryPoint);
+      console.log(JSON.stringify(sfs, null, 2));
+      return okAsync(ctx);
+    })
+    .andThen((ctx) =>
+      changeDir(ctx.startDir)
+        .map(() => ctx)
+        .mapErr(errChangeDirFailed),
+    );
 };
-
-const changeDir = Result.fromThrowable(
-  process.chdir,
-  (e) => new Error(`changeDir: failed to change directory: ${e}`),
-);
-
-const installPackage = (pkg: string) =>
-  ResultAsync.fromPromise(
-    $`bun add ${pkg}`,
-    (e) => new Error(`installPackage: failed to install package: ${e}`),
-  );
-
-const readPackageJson = (cwd: string) =>
-  ResultAsync.fromPromise(
-    readPackage({ cwd }),
-    (e) => new Error(`readPackageJson: failed to read package.json: ${e}`),
-  );
 
 // await extractApiFromPackage("query-registry");
 // await extractApiFromPackage("preact", "hooks");
