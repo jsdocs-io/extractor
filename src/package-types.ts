@@ -3,12 +3,12 @@ import { type NormalizedPackageJson } from "read-pkg";
 import { exports } from "resolve.exports";
 import { PackageTypesError } from "./errors";
 
-export const resolveTypes = (
+export const packageTypes = (
   pkgJson: Partial<NormalizedPackageJson>,
   pkgSubpath: string,
 ): Result<string, PackageTypesError> => {
   const isRootSubpath = [".", pkgJson.name].includes(pkgSubpath);
-  const resolvedTypes = resolveTypesExports(pkgJson, pkgSubpath);
+  const resolvedTypes = resolveTypes(pkgJson, pkgSubpath);
   if (!isRootSubpath || resolvedTypes.isOk()) {
     return resolvedTypes;
   }
@@ -21,7 +21,7 @@ export const resolveTypes = (
   return err(new PackageTypesError("no types files in exports or fallbacks"));
 };
 
-const resolveTypesExports = (
+const resolveTypes = (
   pkgJson: Partial<NormalizedPackageJson>,
   subpath: string,
 ): Result<string, PackageTypesError> => {

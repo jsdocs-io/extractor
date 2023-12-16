@@ -1,21 +1,21 @@
 import { expect, test } from "vitest";
 import { PackageTypesError } from "./errors";
-import { resolveTypes } from "./resolve-types";
+import { packageTypes } from "./package-types";
 
 test("no types", () => {
-  expect(resolveTypes({}, ".").isErr()).toBe(true);
+  expect(packageTypes({}, ".").isErr()).toBe(true);
   expect(
-    resolveTypes({}, ".")._unsafeUnwrapErr() instanceof PackageTypesError,
+    packageTypes({}, ".")._unsafeUnwrapErr() instanceof PackageTypesError,
   ).toBe(true);
 });
 
 test("not types", () => {
-  expect(resolveTypes({ types: "foo.wrong" }, ".").isErr()).toBe(true);
+  expect(packageTypes({ types: "foo.wrong" }, ".").isErr()).toBe(true);
 });
 
 test("no subpath", () => {
   expect(
-    resolveTypes(
+    packageTypes(
       {
         name: "foo",
         exports: {
@@ -29,7 +29,7 @@ test("no subpath", () => {
 
 test("from exports", () => {
   expect(
-    resolveTypes(
+    packageTypes(
       {
         name: "foo",
         exports: {
@@ -43,7 +43,7 @@ test("from exports", () => {
 
 test("from exports subpath", () => {
   expect(
-    resolveTypes(
+    packageTypes(
       {
         name: "foo",
         exports: {
@@ -57,20 +57,20 @@ test("from exports subpath", () => {
 });
 
 test("from types", () => {
-  expect(resolveTypes({ types: "index.d.ts" }, ".")._unsafeUnwrap()).toBe(
+  expect(packageTypes({ types: "index.d.ts" }, ".")._unsafeUnwrap()).toBe(
     "index.d.ts",
   );
 });
 
 test("from typings", () => {
-  expect(resolveTypes({ typings: "index.d.ts" }, ".")._unsafeUnwrap()).toBe(
+  expect(packageTypes({ typings: "index.d.ts" }, ".")._unsafeUnwrap()).toBe(
     "index.d.ts",
   );
 });
 
 test("not from default", () => {
   expect(
-    resolveTypes(
+    packageTypes(
       {
         name: "foo",
         types: "index.d.ts",
@@ -85,7 +85,7 @@ test("not from default", () => {
 
 test("not from types if no subpath", () => {
   expect(
-    resolveTypes(
+    packageTypes(
       {
         name: "foo",
         types: "index.d.ts",

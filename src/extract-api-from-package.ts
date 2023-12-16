@@ -5,8 +5,8 @@ import type { ExtractorError } from "./errors";
 import { installPackage } from "./install-package";
 import { packageJson } from "./package-json";
 import { packageName } from "./package-name";
+import { packageTypes } from "./package-types";
 import { changeDir, currentDir } from "./process";
-import { resolveTypes } from "./resolve-types";
 import { tempDir } from "./temp-dir";
 
 export const extractApiFromPackage = (
@@ -51,7 +51,7 @@ export const extractApiFromPackage = (
       })),
     )
     .andThen((ctx) =>
-      resolveTypes(ctx.pkgJson, ctx.pkgSubpath).map((pkgTypes) => ({
+      packageTypes(ctx.pkgJson, ctx.pkgSubpath).map((pkgTypes) => ({
         ...ctx,
         pkgTypes,
         typesFilePath: join(ctx.pkgDir, pkgTypes),
