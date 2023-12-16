@@ -1,7 +1,9 @@
 import { Result, err, ok } from "neverthrow";
 import { Project } from "ts-morph";
 
-export const createProject = (entryPoint: string): Result<Project, Error> => {
+export const createProject = (
+  indexFilePath: string,
+): Result<Project, Error> => {
   try {
     const project = new Project({
       compilerOptions: {
@@ -10,7 +12,7 @@ export const createProject = (entryPoint: string): Result<Project, Error> => {
         lib: ["lib.esnext.full.d.ts"],
       },
     });
-    project.addSourceFileAtPath(entryPoint);
+    project.addSourceFileAtPath(indexFilePath);
     project.resolveSourceFileDependencies();
     return ok(project);
   } catch (error) {

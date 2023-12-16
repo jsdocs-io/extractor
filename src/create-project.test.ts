@@ -3,7 +3,7 @@ import { temporaryDirectoryTask } from "tempy";
 import { expect, test } from "vitest";
 import { createProject } from "./create-project";
 
-test("no entry point", async () => {
+test("no index file", async () => {
   await temporaryDirectoryTask(async (dir) => {
     process.chdir(dir);
     const project = createProject("./no-such-file.ts");
@@ -11,7 +11,7 @@ test("no entry point", async () => {
   });
 });
 
-test("with entry point", async () => {
+test("with index file", async () => {
   await temporaryDirectoryTask(async (dir) => {
     process.chdir(dir);
     await fs.writeFile("./index.ts", "export {};");
@@ -26,7 +26,7 @@ test("with entry point", async () => {
   });
 });
 
-test("with entry point and other file", async () => {
+test("with index file and other file", async () => {
   await temporaryDirectoryTask(async (dir) => {
     process.chdir(dir);
     await fs.writeFile("./index.ts", "export * from './other';");
