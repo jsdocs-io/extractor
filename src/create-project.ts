@@ -1,10 +1,16 @@
 import { Result, err, ok } from "neverthrow";
-import { Project } from "ts-morph";
+import { Project, SourceFile } from "ts-morph";
 import { ProjectError } from "./errors";
+
+export type ProjectContainer = {
+  project: Project;
+  indexFile: SourceFile;
+  sourceFiles: SourceFile[];
+};
 
 export const createProject = (
   indexFilePath: string,
-): Result<Project, ProjectError> => {
+): Result<ProjectContainer, ProjectError> => {
   try {
     const project = new Project({
       compilerOptions: {
@@ -13,9 +19,14 @@ export const createProject = (
         lib: ["lib.esnext.full.d.ts"],
       },
     });
-    project.addSourceFileAtPath(indexFilePath);
+    const indexFile = project.addSourceFileAtPath(indexFilePath);
     project.resolveSourceFileDependencies();
-    return ok(project);
+    const sourceFiles = project.getSourceFiles();
+    return ok({
+      project,
+      indexFile,
+      sourceFiles,
+    });
   } catch (e) {
     return err(new ProjectError("failed to create project", { cause: e }));
   }

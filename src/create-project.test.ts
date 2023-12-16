@@ -20,10 +20,7 @@ test("with index file", async () => {
     const project = createProject("./index.ts");
     expect(project.isOk()).toBe(true);
     expect(
-      project
-        ._unsafeUnwrap()
-        .getSourceFiles()
-        .map((sf) => sf.getBaseName()),
+      project._unsafeUnwrap().sourceFiles.map((sf) => sf.getBaseName()),
     ).toStrictEqual(["index.ts"]);
   });
 });
@@ -36,10 +33,7 @@ test("with index file and other file", async () => {
     const project = createProject("./index.ts");
     expect(project.isOk()).toBe(true);
     expect(
-      project
-        ._unsafeUnwrap()
-        .getSourceFiles()
-        .map((sf) => sf.getBaseName()),
+      project._unsafeUnwrap().sourceFiles.map((sf) => sf.getBaseName()),
     ).toStrictEqual(["index.ts", "other.ts"]);
   });
 });

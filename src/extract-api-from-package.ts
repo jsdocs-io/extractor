@@ -58,20 +58,25 @@ export const extractApiFromPackage = (
       })),
     )
     .andThen((ctx) =>
-      createProject(ctx.typesFilePath).map((project) => ({
-        ...ctx,
-        project,
-      })),
+      createProject(ctx.typesFilePath).map(
+        ({ project, indexFile, sourceFiles }) => ({
+          ...ctx,
+          project,
+          indexFile,
+          sourceFiles,
+        }),
+      ),
     )
     .andThen((ctx) => {
       // Debug
-      const sourceFiles = ctx.project
-        .getSourceFiles()
-        .map((sf) => sf.getFilePath().replace(ctx.nodeModulesDir, ""));
-      const indexFile = ctx.project.getSourceFileOrThrow(ctx.typesFilePath);
+      const sourceFiles = ctx.sourceFiles
+        .map((sf) => sf.getFilePath().replace(ctx.nodeModulesDir, ""))
+        .sort();
+      const indexFile = ctx.indexFile;
       const referencedFiles = indexFile
         .getReferencedSourceFiles()
-        .map((sf) => sf.getFilePath().replace(ctx.nodeModulesDir, ""));
+        .map((sf) => sf.getFilePath().replace(ctx.nodeModulesDir, ""))
+        .sort();
       console.log(
         JSON.stringify(
           {
