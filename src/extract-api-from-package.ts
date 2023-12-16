@@ -36,21 +36,21 @@ export const extractApiFromPackage = (
     )
     .andThen((ctx) =>
       tempDir()
-        .map((projectDir) => ({
-          projectDir,
-          pkgDir: join(projectDir, "node_modules", ctx.pkgName),
-          ...ctx,
-        }))
+        .map((rootDir) => ({ rootDir, ...ctx }))
         .mapErr(errTemporaryDirFailed),
     )
     .andThen((ctx) =>
-      changeDir(ctx.projectDir)
+      changeDir(ctx.rootDir)
         .map(() => ctx)
         .mapErr(errChangeDirFailed),
     )
     .andThen((ctx) =>
       installPackage(ctx.pkg)
-        .map(() => ctx)
+        .map(() => ({
+          nodeModulesDir: join(ctx.rootDir, "node_modules"),
+          pkgDir: join(ctx.rootDir, "node_modules", ctx.pkgName),
+          ...ctx,
+        }))
         .mapErr(errInstallPackageFailed),
     )
     .andThen((ctx) =>
@@ -60,11 +60,15 @@ export const extractApiFromPackage = (
     )
     .andThen((ctx) =>
       resolveTypes(ctx.pkgJson, ctx.pkgSubpath)
-        .map((entryPoint) => ({ entryPoint, ...ctx }))
+        .map((pkgTypes) => ({
+          pkgTypes,
+          typesFilePath: join(ctx.pkgDir, pkgTypes),
+          ...ctx,
+        }))
         .mapErr(errResolveTypesFailed),
     )
     .andThen((ctx) =>
-      createProject(join(ctx.pkgDir, ctx.entryPoint))
+      createProject(ctx.typesFilePath)
         .map((project) => ({
           project,
           ...ctx,
@@ -73,13 +77,38 @@ export const extractApiFromPackage = (
     )
     .andThen((ctx) => {
       // Debug
-      const sfs = ctx.project
+      const sourceFiles = ctx.project
         .getSourceFiles()
-        .map((sf) =>
-          sf.getFilePath().replace(`${ctx.projectDir}/node_modules/`, ""),
+        .map((sf) => sf.getFilePath().replace(ctx.nodeModulesDir, ""));
+      const indexFile = ctx.project.getSourceFileOrThrow(ctx.typesFilePath);
+      const referencedFiles = indexFile
+        .getReferencedSourceFiles()
+        .map((sf) => sf.getFilePath().replace(ctx.nodeModulesDir, ""));
+      console.log(
+        JSON.stringify(
+          {
+            indexFile: indexFile.getFilePath().replace(ctx.nodeModulesDir, ""),
+            sourceFiles,
+            referencedFiles,
+          },
+          null,
+          2,
+        ),
+      );
+      for (const [name, declarations] of indexFile.getExportedDeclarations()) {
+        console.log(
+          `${name}: ${declarations
+            .map(
+              (d) =>
+                `https://unpkg.com/browse/${d
+                  .getSourceFile()
+                  .getFilePath()
+                  .replace(ctx.nodeModulesDir, "")
+                  .replace("/", "")}#L${d.getStartLineNumber()}`,
+            )
+            .join(", ")}`,
         );
-      console.log(ctx.entryPoint);
-      console.log(JSON.stringify(sfs, null, 2));
+      }
       return okAsync(ctx);
     })
     .andThen((ctx) =>
