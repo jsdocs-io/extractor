@@ -1,9 +1,10 @@
 import { Result, err, ok } from "neverthrow";
 import { Project } from "ts-morph";
+import { ProjectError } from "./errors";
 
 export const createProject = (
   indexFilePath: string,
-): Result<Project, Error> => {
+): Result<Project, ProjectError> => {
   try {
     const project = new Project({
       compilerOptions: {
@@ -15,7 +16,7 @@ export const createProject = (
     project.addSourceFileAtPath(indexFilePath);
     project.resolveSourceFileDependencies();
     return ok(project);
-  } catch (error) {
-    return err(new Error(`createProject: failed to create project: ${error}`));
+  } catch (e) {
+    return err(new ProjectError("failed to create project", { cause: e }));
   }
 };

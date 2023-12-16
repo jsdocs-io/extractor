@@ -1,8 +1,9 @@
 import { $ } from "execa";
 import { ResultAsync } from "neverthrow";
+import { InstallPackageError } from "./errors";
 
 export const installPackage = (pkg: string) =>
   ResultAsync.fromPromise(
     $`bun add ${pkg}`,
-    (e) => new Error(`installPackage: failed to install package: ${e}`),
+    (e) => new InstallPackageError("failed to install package", { cause: e }),
   );

@@ -1,5 +1,6 @@
 import { Result, err, ok } from "neverthrow";
 import validate from "validate-npm-package-name";
+import { InvalidPackageNameError } from "./errors";
 
 export const packageName = (pkg: string): Result<string, Error> => {
   const versionMarker = pkg.lastIndexOf("@");
@@ -7,5 +8,9 @@ export const packageName = (pkg: string): Result<string, Error> => {
   if (validate(name).validForNewPackages) {
     return ok(name);
   }
-  return err(new Error(`packageName: invalid package name: ${name}`));
+  return err(
+    new InvalidPackageNameError("invalid name for npm package", {
+      cause: { name },
+    }),
+  );
 };

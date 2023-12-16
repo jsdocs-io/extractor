@@ -1,28 +1,61 @@
 export type ExtractorError =
-  | "InvalidPackageName"
-  | "CurrentDirFailed"
-  | "TemporaryDirFailed"
-  | "ChangeDirFailed"
-  | "InstallPackageFailed"
-  | "ReadPackageJsonFailed"
-  | "ResolveTypesFailed"
-  | "CreateProjectFailed";
+  | OsError
+  | FsError
+  | InvalidPackageNameError
+  | InstallPackageError
+  | PackageJsonError
+  | PackageTypesError
+  | ProjectError;
 
-export const errInvalidPackageName = (): ExtractorError => "InvalidPackageName";
+export class InvalidPackageNameError extends Error {
+  constructor(message: string, options?: ErrorOptions) {
+    // For all errors see the following links:
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#differentiate_between_similar_errors
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/cause
+    // https://stackoverflow.com/questions/1382107/whats-a-good-way-to-extend-error-in-javascript
+    super(message, options);
+    this.name = this.constructor.name;
+  }
+}
 
-export const errCurrentDirFailed = (): ExtractorError => "CurrentDirFailed";
+export class OsError extends Error {
+  constructor(message: string, options?: ErrorOptions) {
+    super(message, options);
+    this.name = this.constructor.name;
+  }
+}
 
-export const errTemporaryDirFailed = (): ExtractorError => "TemporaryDirFailed";
+export class FsError extends Error {
+  constructor(message: string, options?: ErrorOptions) {
+    super(message, options);
+    this.name = this.constructor.name;
+  }
+}
 
-export const errChangeDirFailed = (): ExtractorError => "ChangeDirFailed";
+export class InstallPackageError extends Error {
+  constructor(message: string, options?: ErrorOptions) {
+    super(message, options);
+    this.name = this.constructor.name;
+  }
+}
 
-export const errInstallPackageFailed = (): ExtractorError =>
-  "InstallPackageFailed";
+export class PackageJsonError extends Error {
+  constructor(message: string, options?: ErrorOptions) {
+    super(message, options);
+    this.name = this.constructor.name;
+  }
+}
 
-export const errReadPackageJsonFailed = (): ExtractorError =>
-  "ReadPackageJsonFailed";
+export class PackageTypesError extends Error {
+  constructor(message: string, options?: ErrorOptions) {
+    super(message, options);
+    this.name = this.constructor.name;
+  }
+}
 
-export const errResolveTypesFailed = (): ExtractorError => "ResolveTypesFailed";
-
-export const errCreateProjectFailed = (): ExtractorError =>
-  "CreateProjectFailed";
+export class ProjectError extends Error {
+  constructor(message: string, options?: ErrorOptions) {
+    super(message, options);
+    this.name = this.constructor.name;
+  }
+}
