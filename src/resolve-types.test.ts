@@ -1,8 +1,12 @@
 import { expect, test } from "vitest";
+import { PackageTypesError } from "./errors";
 import { resolveTypes } from "./resolve-types";
 
 test("no types", () => {
   expect(resolveTypes({}, ".").isErr()).toBe(true);
+  expect(
+    resolveTypes({}, ".")._unsafeUnwrapErr() instanceof PackageTypesError,
+  ).toBe(true);
 });
 
 test("not types", () => {

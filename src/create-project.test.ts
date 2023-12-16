@@ -2,12 +2,14 @@ import fs from "fs-extra";
 import { temporaryDirectoryTask } from "tempy";
 import { expect, test } from "vitest";
 import { createProject } from "./create-project";
+import { ProjectError } from "./errors";
 
 test("no index file", async () => {
   await temporaryDirectoryTask(async (dir) => {
     process.chdir(dir);
     const project = createProject("./no-such-file.ts");
     expect(project.isErr()).toBe(true);
+    expect(project._unsafeUnwrapErr() instanceof ProjectError).toBe(true);
   });
 });
 
