@@ -15,32 +15,52 @@ export const extractApiFromPackage = (
 ): ResultAsync<unknown, ExtractorError> => {
   return okAsync({ pkg, pkgSubpath })
     .andThen((ctx) =>
-      packageName(ctx.pkg).map((pkgName) => ({ pkgName, ...ctx })),
+      packageName(ctx.pkg).map((pkgName) => ({
+        ...ctx,
+        pkgName,
+      })),
     )
-    .andThen((ctx) => currentDir().map((startDir) => ({ startDir, ...ctx })))
-    .andThen((ctx) => tempDir().map((rootDir) => ({ rootDir, ...ctx })))
-    .andThen((ctx) => changeDir(ctx.rootDir).map(() => ctx))
     .andThen((ctx) =>
-      installPackage(ctx.pkg).map(() => ({
-        nodeModulesDir: join(ctx.rootDir, "node_modules"),
-        pkgDir: join(ctx.rootDir, "node_modules", ctx.pkgName),
+      currentDir().map((startDir) => ({
+        ...ctx,
+        startDir,
+      })),
+    )
+    .andThen((ctx) =>
+      tempDir().map((rootDir) => ({
+        ...ctx,
+        rootDir,
+      })),
+    )
+    .andThen((ctx) =>
+      changeDir(ctx.rootDir).map(() => ({
         ...ctx,
       })),
     )
     .andThen((ctx) =>
-      readPackageJson(ctx.pkgDir).map((pkgJson) => ({ pkgJson, ...ctx })),
+      installPackage(ctx.pkg).map(() => ({
+        ...ctx,
+        nodeModulesDir: join(ctx.rootDir, "node_modules"),
+        pkgDir: join(ctx.rootDir, "node_modules", ctx.pkgName),
+      })),
+    )
+    .andThen((ctx) =>
+      readPackageJson(ctx.pkgDir).map((pkgJson) => ({
+        ...ctx,
+        pkgJson,
+      })),
     )
     .andThen((ctx) =>
       resolveTypes(ctx.pkgJson, ctx.pkgSubpath).map((pkgTypes) => ({
+        ...ctx,
         pkgTypes,
         typesFilePath: join(ctx.pkgDir, pkgTypes),
-        ...ctx,
       })),
     )
     .andThen((ctx) =>
       createProject(ctx.typesFilePath).map((project) => ({
-        project,
         ...ctx,
+        project,
       })),
     )
     .andThen((ctx) => {
@@ -79,7 +99,11 @@ export const extractApiFromPackage = (
       }
       return okAsync(ctx);
     })
-    .andThen((ctx) => changeDir(ctx.startDir).map(() => ctx));
+    .andThen((ctx) =>
+      changeDir(ctx.startDir).map(() => ({
+        ...ctx,
+      })),
+    );
 };
 
 // await extractApiFromPackage("query-registry");
