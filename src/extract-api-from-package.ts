@@ -3,9 +3,9 @@ import { join } from "pathe";
 import { createProject } from "./create-project";
 import type { ExtractorError } from "./errors";
 import { installPackage } from "./install-package";
+import { packageJson } from "./package-json";
 import { packageName } from "./package-name";
 import { changeDir, currentDir } from "./process";
-import { readPackageJson } from "./read-package-json";
 import { resolveTypes } from "./resolve-types";
 import { tempDir } from "./temp-dir";
 
@@ -45,7 +45,7 @@ export const extractApiFromPackage = (
       })),
     )
     .andThen((ctx) =>
-      readPackageJson(ctx.pkgDir).map((pkgJson) => ({
+      packageJson(ctx.pkgDir).map((pkgJson) => ({
         ...ctx,
         pkgJson,
       })),
