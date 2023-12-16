@@ -1,3 +1,4 @@
+import { ok } from "neverthrow";
 import { expect, test } from "vitest";
 import { PackageTypesError } from "./errors";
 import { packageTypes } from "./package-types";
@@ -37,8 +38,8 @@ test("from exports", () => {
         },
       },
       ".",
-    )._unsafeUnwrap(),
-  ).toBe("index.d.ts");
+    ),
+  ).toStrictEqual(ok("index.d.ts"));
 });
 
 test("from exports subpath", () => {
@@ -52,19 +53,19 @@ test("from exports subpath", () => {
         },
       },
       "custom",
-    )._unsafeUnwrap(),
-  ).toBe("custom.d.ts");
+    ),
+  ).toStrictEqual(ok("custom.d.ts"));
 });
 
 test("from types", () => {
-  expect(packageTypes({ types: "index.d.ts" }, ".")._unsafeUnwrap()).toBe(
-    "index.d.ts",
+  expect(packageTypes({ types: "index.d.ts" }, ".")).toStrictEqual(
+    ok("index.d.ts"),
   );
 });
 
 test("from typings", () => {
-  expect(packageTypes({ typings: "index.d.ts" }, ".")._unsafeUnwrap()).toBe(
-    "index.d.ts",
+  expect(packageTypes({ typings: "index.d.ts" }, ".")).toStrictEqual(
+    ok("index.d.ts"),
   );
 });
 
@@ -79,8 +80,8 @@ test("not from default", () => {
         },
       },
       ".",
-    )._unsafeUnwrap(),
-  ).toBe("index.d.ts");
+    ),
+  ).toStrictEqual(ok("index.d.ts"));
 });
 
 test("not from types if no subpath", () => {
