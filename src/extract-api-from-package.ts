@@ -1,10 +1,11 @@
-import { ResultAsync, okAsync } from "neverthrow";
+import { ResultAsync, ok, okAsync } from "neverthrow";
 import { join } from "pathe";
 import { createProject } from "./create-project";
 import type { ExtractorError } from "./errors";
 import { installPackage } from "./install-package";
 import { packageJson } from "./package-json";
 import { packageName } from "./package-name";
+import { packageOverview } from "./package-overview";
 import { packageTypes } from "./package-types";
 import { changeDir, currentDir } from "./process";
 import { tempDir } from "./temp-dir";
@@ -67,6 +68,12 @@ export const extractApiFromPackage = (
         }),
       ),
     )
+    .andThen((ctx) =>
+      ok(packageOverview(ctx.indexFile)).map((pkgOverview) => ({
+        ...ctx,
+        pkgOverview,
+      })),
+    )
     .andThen((ctx) => {
       // Debug
       const sourceFiles = ctx.sourceFiles
@@ -83,6 +90,7 @@ export const extractApiFromPackage = (
             indexFile: indexFile.getFilePath().replace(ctx.nodeModulesDir, ""),
             sourceFiles,
             referencedFiles,
+            pkgOverview: ctx.pkgOverview,
           },
           null,
           2,
