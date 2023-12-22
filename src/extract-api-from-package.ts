@@ -39,10 +39,11 @@ export const extractApiFromPackage = (
       })),
     )
     .andThen((ctx) =>
-      installPackage(ctx.pkg).map(() => ({
+      installPackage(ctx.pkg).map((installedPackages) => ({
         ...ctx,
         nodeModulesDir: join(ctx.rootDir, "node_modules"),
         pkgDir: join(ctx.rootDir, "node_modules", ctx.pkgName),
+        installedPackages,
       })),
     )
     .andThen((ctx) =>
@@ -87,6 +88,7 @@ export const extractApiFromPackage = (
       console.log(
         JSON.stringify(
           {
+            installedPackages: ctx.installedPackages,
             indexFile: indexFile.getFilePath().replace(ctx.nodeModulesDir, ""),
             sourceFiles,
             referencedFiles,
