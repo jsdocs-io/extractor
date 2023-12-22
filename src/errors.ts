@@ -1,13 +1,13 @@
 export type ExtractorError =
   | OsError
   | FsError
-  | InvalidPackageNameError
+  | PackageNameError
   | InstallPackageError
   | PackageJsonError
   | PackageTypesError
   | ProjectError;
 
-export class InvalidPackageNameError extends Error {
+export class PackageNameError extends Error {
   constructor(message: string, options?: ErrorOptions) {
     // For all errors see the following links:
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#differentiate_between_similar_errors

@@ -1,13 +1,13 @@
 import { ok } from "neverthrow";
 import { expect, test } from "vitest";
-import { InvalidPackageNameError } from "./errors";
+import { PackageNameError } from "./errors";
 import { packageName } from "./package-name";
 
 test("no name", () => {
   expect(packageName("").isErr()).toBe(true);
-  expect(
-    packageName("")._unsafeUnwrapErr() instanceof InvalidPackageNameError,
-  ).toBe(true);
+  expect(packageName("")._unsafeUnwrapErr() instanceof PackageNameError).toBe(
+    true,
+  );
 });
 
 test("no name with version", () => {
