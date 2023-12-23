@@ -10,10 +10,15 @@ import { packageTypes } from "./package-types";
 import { changeDir, currentDir } from "./process";
 import { tempDir } from "./temp-dir";
 
-export const extractApiFromPackage = (
-  pkg: string,
+export type ExtractApiFromPackageOptions = {
+  pkg: string;
+  pkgSubpath?: string;
+};
+
+export const extractApiFromPackage = ({
+  pkg,
   pkgSubpath = ".",
-): ResultAsync<unknown, ExtractorError> => {
+}: ExtractApiFromPackageOptions): ResultAsync<unknown, ExtractorError> => {
   return okAsync({ pkg, pkgSubpath })
     .andThen((ctx) =>
       packageName(ctx.pkg).map((pkgName) => ({
@@ -121,10 +126,9 @@ export const extractApiFromPackage = (
     );
 };
 
-// await extractApiFromPackage("query-registry");
-// await extractApiFromPackage("preact", "hooks");
-// await extractApiFromPackage("exome");
-// await extractApiFromPackage("exome", "vue");
-// await extractApiFromPackage("highlight-words");
-// await extractApiFromPackage("short-time-ago");
-// await extractApiFromPackage("short-time-ago", "foo"); // Expected Error
+// await extractApiFromPackage({ pkg: "query-registry" });
+// await extractApiFromPackage({ pkg: "preact", pkgSubpath: "hooks" });
+// await extractApiFromPackage({ pkg: "exome", pkgSubpath: "vue" });
+// await extractApiFromPackage({ pkg: "highlight-words" });
+// await extractApiFromPackage({ pkg: "short-time-ago" });
+// await extractApiFromPackage({ pkg: "short-time-ago", pkgSubpath: "foo" }); // Expected Error
