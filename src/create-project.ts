@@ -1,5 +1,11 @@
 import { Result, err, ok } from "neverthrow";
-import { Project, SourceFile } from "ts-morph";
+import {
+  ModuleKind,
+  ModuleResolutionKind,
+  Project,
+  ScriptTarget,
+  SourceFile,
+} from "ts-morph";
 import { ProjectError } from "./errors";
 
 export type ProjectContainer = {
@@ -17,6 +23,9 @@ export const createProject = (
         // See https://github.com/dsherret/ts-morph/issues/938
         // and https://github.com/microsoft/TypeScript/blob/master/lib/lib.esnext.full.d.ts
         lib: ["lib.esnext.full.d.ts"],
+        target: ScriptTarget.ESNext,
+        module: ModuleKind.ESNext,
+        moduleResolution: ModuleResolutionKind.Bundler,
       },
     });
     const indexFile = project.addSourceFileAtPath(indexFilePath);
