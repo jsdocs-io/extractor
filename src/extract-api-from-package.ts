@@ -18,8 +18,8 @@ export type ExtractApiFromPackageOptions = {
 export const extractApiFromPackage = ({
   pkg,
   pkgSubpath = ".",
-}: ExtractApiFromPackageOptions): ResultAsync<unknown, ExtractorError> => {
-  return okAsync({ pkg, pkgSubpath })
+}: ExtractApiFromPackageOptions): ResultAsync<unknown, ExtractorError> =>
+  okAsync({ pkg, pkgSubpath })
     .andThen((ctx) =>
       packageName(ctx.pkg).map((pkgName) => ({
         ...ctx,
@@ -124,7 +124,6 @@ export const extractApiFromPackage = ({
         ...ctx,
       })),
     );
-};
 
 // await extractApiFromPackage({ pkg: "query-registry" });
 // await extractApiFromPackage({ pkg: "preact", pkgSubpath: "hooks" });
