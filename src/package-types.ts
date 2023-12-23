@@ -18,7 +18,11 @@ export const packageTypes = (
   if (pkgJson.typings && isTypesFile(pkgJson.typings)) {
     return ok(pkgJson.typings);
   }
-  return err(new PackageTypesError("no types files in exports or fallbacks"));
+  return err(
+    new PackageTypesError(
+      "no types files in `exports` field or fallback fields",
+    ),
+  );
 };
 
 const resolveTypes = (
@@ -44,7 +48,7 @@ const resolveTypes = (
     return ok(resolvedPath);
   } catch (e) {
     return err(
-      new PackageTypesError("failed to resolve types from exports", {
+      new PackageTypesError("failed to resolve types from `exports` field", {
         cause: e,
       }),
     );
