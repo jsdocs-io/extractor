@@ -13,13 +13,15 @@ import { tempDir } from "./temp-dir";
 export type ExtractApiFromPackageOptions = {
   pkg: string;
   pkgSubpath?: string;
+  maxDepth?: number;
 };
 
 export const extractApiFromPackage = ({
   pkg,
   pkgSubpath = ".",
+  maxDepth = 5,
 }: ExtractApiFromPackageOptions): ResultAsync<unknown, ExtractorError> =>
-  okAsync({ pkg, pkgSubpath })
+  okAsync({ pkg, pkgSubpath, maxDepth })
     .andThen((ctx) =>
       packageName(ctx.pkg).map((pkgName) => ({
         ...ctx,
