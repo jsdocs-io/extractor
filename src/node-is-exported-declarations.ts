@@ -10,4 +10,5 @@ export const nodeIsExportedDeclarations = (
   Node.isEnumDeclaration(node) ||
   Node.isTypeAliasDeclaration(node) ||
   Node.isModuleDeclaration(node) ||
-  Node.isExpression(node);
+  Node.isExpression(node) ||
+  Node.isSourceFile(node);
