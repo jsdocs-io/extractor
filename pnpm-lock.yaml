@@ -110,8 +110,8 @@ devDependencies:
     specifier: ^2.0.3
     version: 2.0.3(@babel/plugin-syntax-flow@7.23.3)(@babel/plugin-transform-react-jsx@7.23.4)(@types/node@20.10.4)(esbuild@0.19.9)
   eslint-plugin-prettier:
-    specifier: ^5.0.1
-    version: 5.0.1(eslint@8.55.0)(prettier@3.1.1)
+    specifier: ^5.1.2
+    version: 5.1.2(eslint@8.55.0)(prettier@3.1.1)
   fast-glob:
     specifier: ^3.3.2
     version: 3.3.2
@@ -6498,8 +6498,8 @@ packages:
       prettier-linter-helpers: 1.0.0
     dev: true
 
-  /eslint-plugin-prettier@5.0.1(eslint@8.55.0)(prettier@3.1.1):
-    resolution: {integrity: sha512-m3u5RnR56asrwV/lDC4GHorlW75DsFfmUcjfCYylTUs85dBRnB7VM6xG8eCMJdeDRnppzmxZVf1GEPJvl1JmNg==}
+  /eslint-plugin-prettier@5.1.2(eslint@8.55.0)(prettier@3.1.1):
+    resolution: {integrity: sha512-dhlpWc9vOwohcWmClFcA+HjlvUpuyynYs0Rf+L/P6/0iQE6vlHW9l5bkfzN62/Stm9fbq8ku46qzde76T1xlSg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       '@types/eslint': '>=8.0.0'
