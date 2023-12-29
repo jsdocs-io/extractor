@@ -2,6 +2,7 @@ import { Node, SyntaxKind } from "ts-morph";
 import type { DeclarationsContainer } from "./container-declarations";
 import { isExportedDeclarations } from "./is-exported-declarations";
 import { isHidden } from "./is-hidden";
+import { isNamespace } from "./is-namespace";
 
 export const exportEqualsDeclarations = (
   container: DeclarationsContainer,
@@ -28,7 +29,7 @@ export const exportEqualsDeclarations = (
       // Skip internal, private or unsupported declarations.
       return [];
     }
-    if (Node.isModuleDeclaration(declaration)) {
+    if (isNamespace(declaration)) {
       // Skip namespaces since `exportDeclarations` already extracts
       // the inner declarations of an export equals namespace as
       // non-namespaced declarations belonging to the parent container.
