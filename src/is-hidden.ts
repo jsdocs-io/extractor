@@ -8,7 +8,7 @@ export const isHidden = (node: Node): boolean =>
 
 const isPrivateProperty = (node: Node): boolean =>
   // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_properties.
-  node.getFirstDescendantByKind(SyntaxKind.PrivateIdentifier) !== undefined;
+  Node.hasName(node) && Node.isPrivateIdentifier(node.getNameNode());
 
 const hasPrivateModifier = (node: Node): boolean =>
   // See https://www.typescriptlang.org/docs/handbook/2/classes.html#private.
