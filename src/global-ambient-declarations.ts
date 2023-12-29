@@ -1,6 +1,6 @@
 import { Node } from "ts-morph";
 import type { DeclarationsContainer } from "./container-declarations";
-import { isGlobalDeclaration } from "./is-global-declaration";
+import { isGlobal } from "./is-global";
 import { isHidden } from "./is-hidden";
 
 export const globalAmbientDeclarations = (
@@ -22,10 +22,7 @@ export const globalAmbientDeclarations = (
   for (const declaration of globalCandidates) {
     // Global ambient functions must have a name
     const exportName = declaration.getName()!;
-    if (
-      !isGlobalDeclaration(declaration) ||
-      isHidden(declaration, exportName)
-    ) {
+    if (!isGlobal(declaration) || isHidden(declaration, exportName)) {
       continue;
     }
     globalAmbientDeclarations.push({ containerName, exportName, declaration });
