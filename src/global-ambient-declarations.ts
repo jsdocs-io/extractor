@@ -22,7 +22,7 @@ export const globalAmbientDeclarations = (
   for (const declaration of globalCandidates) {
     // Global ambient functions must have a name
     const exportName = declaration.getName()!;
-    if (!isGlobal(declaration) || isHidden(declaration, exportName)) {
+    if (isHidden(declaration, exportName) || !isGlobal(declaration)) {
       continue;
     }
     globalAmbientDeclarations.push({ containerName, exportName, declaration });
