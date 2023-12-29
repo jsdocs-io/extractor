@@ -12,7 +12,7 @@ export const exportedDeclarations = (
   ] of container.getExportedDeclarations()) {
     for (const declaration of declarations) {
       if (isHidden(declaration, exportName)) {
-        // Skip internal and private declarations.
+        // Skip exported declarations that are `private` or `@internal`.
         continue;
       }
       exportedDeclarations.push({ containerName, exportName, declaration });
