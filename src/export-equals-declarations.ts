@@ -21,10 +21,7 @@ export const exportEqualsDeclarations = (
   const exportName = exportIdentifier.getText();
   const exportEqualsDeclarations = [];
   for (const declaration of exportIdentifier.getDefinitionNodes()) {
-    if (
-      isHidden(declaration, exportName) ||
-      !isExportedDeclarations(declaration)
-    ) {
+    if (isHidden(declaration) || !isExportedDeclarations(declaration)) {
       // Skip internal, private or unsupported declarations.
       return [];
     }

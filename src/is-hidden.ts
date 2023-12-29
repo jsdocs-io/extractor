@@ -2,16 +2,20 @@ import { Node, SyntaxKind } from "ts-morph";
 import { nodeDocs } from "./node-docs";
 import { parseDocComment } from "./parse-doc-comment";
 
-export const isHidden = (node: Node, name = ""): boolean =>
-  name.startsWith("_") ||
-  name.startsWith("#") ||
-  hasPrivateModifier(node) ||
-  hasDocWithInternalTag(node);
+export const isHidden = (node: Node): boolean =>
+  // Check if a declaration is part of a package's private API.
+  isPrivateProperty(node) || hasPrivateModifier(node) || hasInternalTag(node);
+
+const isPrivateProperty = (node: Node): boolean =>
+  // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_properties.
+  node.getFirstDescendantByKind(SyntaxKind.PrivateIdentifier) !== undefined;
 
 const hasPrivateModifier = (node: Node): boolean =>
+  // See https://www.typescriptlang.org/docs/handbook/2/classes.html#private.
   Node.isModifierable(node) && node.hasModifier(SyntaxKind.PrivateKeyword);
 
-const hasDocWithInternalTag = (node: Node): boolean =>
+const hasInternalTag = (node: Node): boolean =>
+  // See https://tsdoc.org/pages/tags/internal.
   nodeDocs(node).some((doc) =>
     parseDocComment(doc).modifierTagSet.isInternal(),
   );
