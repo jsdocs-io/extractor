@@ -1,16 +1,15 @@
-import { Node, SyntaxKind } from "ts-morph";
+import { SyntaxKind } from "ts-morph";
 import type { DeclarationsContainer } from "./declarations-container";
 import { isExportedDeclarations } from "./is-exported-declarations";
 import { isHidden } from "./is-hidden";
 import { isNamespace } from "./is-namespace";
+import { isShorthandAmbientModule } from "./is-shorthand-ambient-module";
 
 export const exportEqualsDeclarations = (
   container: DeclarationsContainer,
   containerName: string,
 ) => {
-  if (Node.isModuleDeclaration(container) && !container.hasBody()) {
-    // Skip shorthand ambient modules without body
-    // (e.g., `declare module 'foo';`).
+  if (isShorthandAmbientModule(container)) {
     return [];
   }
   const exportIdentifier = container
