@@ -2,7 +2,7 @@ import { Node, SyntaxKind } from "ts-morph";
 import { nodeDocs } from "./node-docs";
 import { parseDocComment } from "./parse-doc-comment";
 
-export const isInternalNode = (node: Node, name = ""): boolean =>
+export const isHidden = (node: Node, name = ""): boolean =>
   name.startsWith("_") ||
   name.startsWith("#") ||
   hasPrivateModifier(node) ||

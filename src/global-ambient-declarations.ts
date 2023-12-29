@@ -1,7 +1,7 @@
 import { Node } from "ts-morph";
 import type { DeclarationsContainer } from "./container-declarations";
 import { isGlobalDeclaration } from "./is-global-declaration";
-import { isInternalNode } from "./is-internal-node";
+import { isHidden } from "./is-hidden";
 
 export const globalAmbientDeclarations = (
   container: DeclarationsContainer,
@@ -24,7 +24,7 @@ export const globalAmbientDeclarations = (
     const exportName = declaration.getName()!;
     if (
       !isGlobalDeclaration(declaration) ||
-      isInternalNode(declaration, exportName)
+      isHidden(declaration, exportName)
     ) {
       continue;
     }

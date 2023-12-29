@@ -1,5 +1,5 @@
 import type { DeclarationsContainer } from "./container-declarations";
-import { isInternalNode } from "./is-internal-node";
+import { isHidden } from "./is-hidden";
 
 export const exportedDeclarations = (
   container: DeclarationsContainer,
@@ -11,7 +11,7 @@ export const exportedDeclarations = (
     declarations,
   ] of container.getExportedDeclarations()) {
     for (const declaration of declarations) {
-      if (isInternalNode(declaration, exportName)) {
+      if (isHidden(declaration, exportName)) {
         // Skip internal and private declarations.
         continue;
       }
