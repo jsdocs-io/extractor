@@ -1,4 +1,4 @@
-import type { DeclarationsContainer } from "./container-declarations";
+import type { DeclarationsContainer } from "./declarations-container";
 import { isHidden } from "./is-hidden";
 
 export const exportedDeclarations = (

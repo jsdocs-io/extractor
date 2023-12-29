@@ -1,5 +1,5 @@
 import { Node, SyntaxKind } from "ts-morph";
-import type { DeclarationsContainer } from "./container-declarations";
+import type { DeclarationsContainer } from "./declarations-container";
 import { isExportedDeclarations } from "./is-exported-declarations";
 import { isHidden } from "./is-hidden";
 import { isNamespace } from "./is-namespace";

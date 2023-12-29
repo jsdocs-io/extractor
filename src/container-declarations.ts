@@ -1,9 +1,6 @@
-import {
-  type ModuleDeclaration,
-  type Project,
-  type SourceFile,
-} from "ts-morph";
+import type { Project } from "ts-morph";
 import { ambientModulesDeclarations } from "./ambient-modules-declarations";
+import type { DeclarationsContainer } from "./declarations-container";
 import { exportEqualsDeclarations } from "./export-equals-declarations";
 import { exportedDeclarations } from "./exported-declarations";
 import { globalAmbientDeclarations } from "./global-ambient-declarations";
@@ -25,8 +22,6 @@ export type ContainerDeclarationsOptions = {
   containerName: string;
   maxDepth: number;
 };
-
-export type DeclarationsContainer = SourceFile | ModuleDeclaration;
 
 export const containerDeclarations = ({
   project,

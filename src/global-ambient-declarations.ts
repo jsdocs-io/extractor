@@ -1,5 +1,5 @@
 import { Node } from "ts-morph";
-import type { DeclarationsContainer } from "./container-declarations";
+import type { DeclarationsContainer } from "./declarations-container";
 import { isGlobal } from "./is-global";
 import { isHidden } from "./is-hidden";
 
