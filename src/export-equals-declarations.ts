@@ -1,7 +1,7 @@
 import { Node, SyntaxKind } from "ts-morph";
 import type { DeclarationsContainer } from "./container-declarations";
+import { isExportedDeclarations } from "./is-exported-declarations";
 import { isHidden } from "./is-hidden";
-import { nodeIsExportedDeclarations } from "./node-is-exported-declarations";
 
 export const exportEqualsDeclarations = (
   container: DeclarationsContainer,
@@ -23,7 +23,7 @@ export const exportEqualsDeclarations = (
   for (const declaration of exportIdentifier.getDefinitionNodes()) {
     if (
       isHidden(declaration, exportName) ||
-      !nodeIsExportedDeclarations(declaration)
+      !isExportedDeclarations(declaration)
     ) {
       // Skip internal, private or unsupported declarations.
       return [];
