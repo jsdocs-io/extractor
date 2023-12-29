@@ -5,6 +5,7 @@ export const isFunctionExpression = (node: Node): node is VariableDeclaration =>
 
 const hasFunctionLikeType = (declaration: VariableDeclaration): boolean => {
   if (declaration.getTypeNode()?.getKind() === SyntaxKind.FunctionType) {
+    // Check type signature after `:` (e.g., `const foo: () => void;`).
     return true;
   }
   const initializer = declaration.getInitializer();
