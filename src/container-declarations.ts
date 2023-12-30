@@ -1,4 +1,9 @@
-import type { ModuleDeclaration, Project, SourceFile } from "ts-morph";
+import {
+  Node,
+  type ModuleDeclaration,
+  type Project,
+  type SourceFile,
+} from "ts-morph";
 import { ambientModulesDeclarations } from "./ambient-modules-declarations";
 import { exportEqualsDeclarations } from "./export-equals-declarations";
 import { exportedDeclarations } from "./exported-declarations";
@@ -33,7 +38,9 @@ export const containerDeclarations = ({
     ...exportedDeclarations(container, containerName),
     ...exportEqualsDeclarations(container, containerName),
     ...ambientModulesDeclarations(project),
-    ...globalAmbientDeclarations(container, containerName),
+    ...(Node.isSourceFile(container)
+      ? globalAmbientDeclarations(container, containerName)
+      : []),
   ]) {
     switch (true) {
       case isVariable(declaration): {
