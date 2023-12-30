@@ -17,4 +17,5 @@ export const packageDeclarations = ({
     container: indexFile,
     containerName: "",
     maxDepth,
+    extractAmbientModules: true,
   });

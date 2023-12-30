@@ -25,6 +25,7 @@ export type ContainerDeclarationsOptions = {
   container: SourceFile | ModuleDeclaration;
   containerName: string;
   maxDepth: number;
+  extractAmbientModules?: boolean;
 };
 
 export const containerDeclarations = ({
@@ -32,12 +33,15 @@ export const containerDeclarations = ({
   container,
   containerName,
   maxDepth,
+  extractAmbientModules = false,
 }: ContainerDeclarationsOptions) => {
   const out: unknown[] = [];
   for (const { declaration } of [
     ...exportedDeclarations(container, containerName),
     ...exportEqualsDeclarations(container, containerName),
-    ...ambientModulesDeclarations(project),
+    ...(extractAmbientModules
+      ? ambientModulesDeclarations(project, containerName)
+      : []),
     ...(Node.isSourceFile(container)
       ? globalAmbientDeclarations(container, containerName)
       : []),
