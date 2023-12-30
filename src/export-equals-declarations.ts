@@ -12,7 +12,7 @@ import { isShorthandAmbientModule } from "./is-shorthand-ambient-module";
 export type ExportEqualsDeclarationsReturn = {
   containerName: string;
   exportName: string;
-  declaration: ExportedDeclarations;
+  declaration: Exclude<ExportedDeclarations, ModuleDeclaration>;
 }[];
 
 export const exportEqualsDeclarations = (
