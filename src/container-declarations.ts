@@ -35,8 +35,7 @@ export const containerDeclarations = ({
   maxDepth,
   extractAmbientModules = false,
 }: ContainerDeclarationsOptions) => {
-  const out: unknown[] = [];
-  for (const { declaration } of [
+  const foundDeclarations = [
     ...exportedDeclarations(container, containerName),
     ...exportEqualsDeclarations(container, containerName),
     ...(extractAmbientModules
@@ -45,7 +44,9 @@ export const containerDeclarations = ({
     ...(Node.isSourceFile(container)
       ? globalAmbientDeclarations(container, containerName)
       : []),
-  ]) {
+  ];
+  const containerDeclarations: unknown[] = [];
+  for (const { containerName, exportName, declaration } of foundDeclarations) {
     switch (true) {
       case isVariable(declaration): {
       }
@@ -73,5 +74,5 @@ export const containerDeclarations = ({
       }
     }
   }
-  return out;
+  return containerDeclarations;
 };
