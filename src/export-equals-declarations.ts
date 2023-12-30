@@ -20,6 +20,8 @@ export const exportEqualsDeclarations = (
   containerName: string,
 ): ExportEqualsDeclarationsReturn => {
   if (isShorthandAmbientModule(container)) {
+    // Export equals declarations may exist inside the body of ambient modules.
+    // However, this is impossible for shorthand ambient modules with no body.
     return [];
   }
   const exportIdentifier = container
