@@ -33,7 +33,7 @@ export const exportEqualsDeclarations = (
   const exportName = exportIdentifier.getText();
   const exportEqualsDeclarations = [];
   for (const declaration of exportIdentifier.getDefinitionNodes()) {
-    if (isHidden(declaration)) {
+    if (isHidden(declaration) || !isExportedDeclarations(declaration)) {
       continue;
     }
     if (isNamespace(declaration)) {
@@ -43,9 +43,7 @@ export const exportEqualsDeclarations = (
       // See snapshot for `export-equals-function-and-namespace.test.ts`.
       continue;
     }
-    if (isExportedDeclarations(declaration)) {
-      exportEqualsDeclarations.push({ containerName, exportName, declaration });
-    }
+    exportEqualsDeclarations.push({ containerName, exportName, declaration });
   }
   return exportEqualsDeclarations;
 };
