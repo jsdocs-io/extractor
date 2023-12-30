@@ -1,12 +1,11 @@
-import { SyntaxKind } from "ts-morph";
-import type { DeclarationsContainer } from "./declarations-container";
+import { ModuleDeclaration, SourceFile, SyntaxKind } from "ts-morph";
 import { isExportedDeclarations } from "./is-exported-declarations";
 import { isHidden } from "./is-hidden";
 import { isNamespace } from "./is-namespace";
 import { isShorthandAmbientModule } from "./is-shorthand-ambient-module";
 
 export const exportEqualsDeclarations = (
-  container: DeclarationsContainer,
+  container: SourceFile | ModuleDeclaration,
   containerName: string,
 ) => {
   if (isShorthandAmbientModule(container)) {

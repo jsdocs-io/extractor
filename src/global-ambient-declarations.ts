@@ -1,10 +1,9 @@
-import { Node } from "ts-morph";
-import type { DeclarationsContainer } from "./declarations-container";
+import { ModuleDeclaration, Node, SourceFile } from "ts-morph";
 import { isGlobal } from "./is-global";
 import { isHidden } from "./is-hidden";
 
 export const globalAmbientDeclarations = (
-  container: DeclarationsContainer,
+  container: SourceFile | ModuleDeclaration,
   containerName: string,
 ) => {
   if (!Node.isSourceFile(container)) {

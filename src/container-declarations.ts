@@ -1,6 +1,5 @@
-import type { Project } from "ts-morph";
+import type { ModuleDeclaration, Project, SourceFile } from "ts-morph";
 import { ambientModulesDeclarations } from "./ambient-modules-declarations";
-import type { DeclarationsContainer } from "./declarations-container";
 import { exportEqualsDeclarations } from "./export-equals-declarations";
 import { exportedDeclarations } from "./exported-declarations";
 import { globalAmbientDeclarations } from "./global-ambient-declarations";
@@ -18,7 +17,7 @@ import { isVariableAssignmentExpression } from "./is-variable-assignment-express
 
 export type ContainerDeclarationsOptions = {
   project: Project;
-  container: DeclarationsContainer;
+  container: SourceFile | ModuleDeclaration;
   containerName: string;
   maxDepth: number;
 };

@@ -1,8 +1,8 @@
-import type { DeclarationsContainer } from "./declarations-container";
+import type { ModuleDeclaration, SourceFile } from "ts-morph";
 import { isHidden } from "./is-hidden";
 
 export const exportedDeclarations = (
-  container: DeclarationsContainer,
+  container: SourceFile | ModuleDeclaration,
   containerName: string,
 ) => {
   const exportedDeclarations = [];
