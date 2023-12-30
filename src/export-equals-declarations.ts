@@ -1,13 +1,24 @@
-import { ModuleDeclaration, SourceFile, SyntaxKind } from "ts-morph";
+import {
+  ModuleDeclaration,
+  SourceFile,
+  SyntaxKind,
+  type ExportedDeclarations,
+} from "ts-morph";
 import { isExportedDeclarations } from "./is-exported-declarations";
 import { isHidden } from "./is-hidden";
 import { isNamespace } from "./is-namespace";
 import { isShorthandAmbientModule } from "./is-shorthand-ambient-module";
 
+export type ExportEqualsDeclarationsReturn = {
+  containerName: string;
+  exportName: string;
+  declaration: ExportedDeclarations;
+}[];
+
 export const exportEqualsDeclarations = (
   container: SourceFile | ModuleDeclaration,
   containerName: string,
-) => {
+): ExportEqualsDeclarationsReturn => {
   if (isShorthandAmbientModule(container)) {
     return [];
   }
@@ -20,18 +31,19 @@ export const exportEqualsDeclarations = (
   const exportName = exportIdentifier.getText();
   const exportEqualsDeclarations = [];
   for (const declaration of exportIdentifier.getDefinitionNodes()) {
-    if (isHidden(declaration) || !isExportedDeclarations(declaration)) {
-      // Skip internal, private or unsupported declarations.
-      return [];
+    if (isHidden(declaration)) {
+      continue;
     }
     if (isNamespace(declaration)) {
-      // Skip namespaces since `exportDeclarations` already extracts
+      // Skip namespaces since `exportedDeclarations()` already extracts
       // the inner declarations of an export equals namespace as
       // non-namespaced declarations belonging to the parent container.
       // See snapshot for `export-equals-function-and-namespace.test.ts`.
-      return [];
+      continue;
     }
-    exportEqualsDeclarations.push({ containerName, exportName, declaration });
+    if (isExportedDeclarations(declaration)) {
+      exportEqualsDeclarations.push({ containerName, exportName, declaration });
+    }
   }
   return exportEqualsDeclarations;
 };
