@@ -125,8 +125,8 @@ devDependencies:
     specifier: ^9.2.0
     version: 9.2.0(typescript@5.3.3)
   open:
-    specifier: ^10.0.1
-    version: 10.0.1
+    specifier: ^10.0.2
+    version: 10.0.2
   setup-polly-jest:
     specifier: ^0.11.0
     version: 0.11.0(@pollyjs/core@6.0.6)
@@ -5661,8 +5661,8 @@ packages:
       titleize: 3.0.0
     dev: true
 
-  /default-browser@5.2.0:
-    resolution: {integrity: sha512-EviRCeDkniKC30N3uKNHIaIsBZEo00ZOrxDZQmJwJeY2q6Uli5SwfmQ6wSf5aezcBS3PDHoQJl/XuAHEfMCJFg==}
+  /default-browser@5.2.1:
+    resolution: {integrity: sha512-WY/3TUME0x3KPYdRRxEJJvXRHV4PyPoUsxtZa78lwItwRQRHhd2U9xOscaT/YTf8uCXIAjeJOFBVEh/7FtD8Xg==}
     engines: {node: '>=18'}
     dependencies:
       bundle-name: 4.1.0
@@ -10545,11 +10545,11 @@ packages:
       mimic-function: 5.0.0
     dev: true
 
-  /open@10.0.1:
-    resolution: {integrity: sha512-+BCGXjtXs4qlmImA8X1AhSU2XyBqD8tJC/PNgWYbcEvNphnw2nyCvNEhAXYk9V+55h1B8M64oXind989YcWANw==}
+  /open@10.0.2:
+    resolution: {integrity: sha512-GnYLdE+E3K8NeSE23N0g67/9q9AXRph5oTUbz6IbIgElPigEnQ2aHuqRge3y0JUr67qoc84xME5kF03fDc3fcA==}
     engines: {node: '>=18'}
     dependencies:
-      default-browser: 5.2.0
+      default-browser: 5.2.1
       define-lazy-prop: 3.0.0
       is-inside-container: 1.0.0
       is-wsl: 3.1.0
