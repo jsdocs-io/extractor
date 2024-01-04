@@ -9,12 +9,10 @@ const hasFunctionLikeType = (declaration: VariableDeclaration): boolean => {
     return true;
   }
   const initializer = declaration.getInitializer();
-  if (
-    initializer &&
-    (Node.isArrowFunction(initializer) ||
-      Node.isFunctionExpression(initializer))
-  ) {
-    return true;
+  if (!initializer) {
+    return false;
   }
-  return false;
+  return (
+    Node.isArrowFunction(initializer) || Node.isFunctionExpression(initializer)
+  );
 };
