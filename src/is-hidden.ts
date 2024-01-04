@@ -1,5 +1,5 @@
 import { Node, SyntaxKind } from "ts-morph";
-import { nodeDocs } from "./node-docs";
+import { docs } from "./docs";
 import { parseDocComment } from "./parse-doc-comment";
 
 export const isHidden = (node: Node): boolean =>
@@ -16,6 +16,4 @@ const hasPrivateModifier = (node: Node): boolean =>
 
 const hasInternalTag = (node: Node): boolean =>
   // See https://tsdoc.org/pages/tags/internal.
-  nodeDocs(node).some((doc) =>
-    parseDocComment(doc).modifierTagSet.isInternal(),
-  );
+  docs(node).some((doc) => parseDocComment(doc).modifierTagSet.isInternal());
