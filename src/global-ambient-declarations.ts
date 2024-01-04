@@ -25,12 +25,15 @@ export const globalAmbientDeclarations = (
   ];
   const globalAmbientDeclarations = [];
   for (const declaration of globalCandidates) {
-    // Global ambient functions must have a name.
-    const exportName = declaration.getName()!;
     if (isHidden(declaration) || !isGlobal(declaration)) {
       continue;
     }
-    globalAmbientDeclarations.push({ containerName, exportName, declaration });
+    globalAmbientDeclarations.push({
+      containerName,
+      // Global ambient functions must have a name.
+      exportName: declaration.getName()!,
+      declaration,
+    });
   }
   return globalAmbientDeclarations;
 };
