@@ -3,7 +3,7 @@ import { apparentType } from "./apparent-type";
 import { docs } from "./docs";
 import { type ExtractedVariable } from "./extract-variable";
 import { formatSignature } from "./format-signature";
-import { itemId } from "./item-id";
+import { id } from "./id";
 
 export const extractVariableAssignmentExpression = async (
   containerName: string,
@@ -16,7 +16,7 @@ export const extractVariableAssignmentExpression = async (
     .getDeclarations()[0] as VariableDeclaration;
   return {
     kind: "variable",
-    id: itemId(containerName, "variable", exportName),
+    id: id(containerName, "variable", exportName),
     name: exportName,
     docs: docs(variableDeclaration),
     file: variableDeclaration.getSourceFile().getFilePath() as string,

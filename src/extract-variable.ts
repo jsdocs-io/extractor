@@ -2,7 +2,7 @@ import type { VariableDeclaration } from "ts-morph";
 import { apparentType } from "./apparent-type";
 import { docs } from "./docs";
 import { formatSignature } from "./format-signature";
-import { itemId } from "./item-id";
+import { id } from "./id";
 
 export type ExtractedVariable = {
   kind: "variable";
@@ -20,7 +20,7 @@ export const extractVariable = async (
   declaration: VariableDeclaration,
 ): Promise<ExtractedVariable> => ({
   kind: "variable",
-  id: itemId(containerName, "variable", exportName),
+  id: id(containerName, "variable", exportName),
   name: exportName,
   docs: docs(declaration),
   file: declaration.getSourceFile().getFilePath() as string,
