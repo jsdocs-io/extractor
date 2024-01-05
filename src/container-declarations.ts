@@ -8,6 +8,7 @@ import {
 import { ambientModulesDeclarations } from "./ambient-modules-declarations";
 import { exportEqualsDeclarations } from "./export-equals-declarations";
 import { exportedDeclarations } from "./exported-declarations";
+import { extractExpression } from "./extract-expression";
 import { extractVariable } from "./extract-variable";
 import { extractVariableAssignmentExpression } from "./extract-variable-assignment-expression";
 import { globalAmbientDeclarations } from "./global-ambient-declarations";
@@ -80,6 +81,7 @@ const extractDeclaration = (
       );
     }
     case isExpression(declaration): {
+      return extractExpression(containerName, exportName, declaration);
     }
     case isFunction(declaration): {
     }
