@@ -1,0 +1,17 @@
+export type ExtractedDeclarationKind =
+  | "variable"
+  | "function"
+  | "class"
+  | "class-constructor"
+  | "class-property"
+  | "class-method"
+  | "interface"
+  | "interface-property"
+  | "interface-method"
+  | "interface-construct-signature"
+  | "interface-call-signature"
+  | "interface-index-signature"
+  | "enum"
+  | "enum-member"
+  | "type-alias"
+  | "namespace";
