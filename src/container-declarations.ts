@@ -1,5 +1,6 @@
 import {
   Node,
+  type ExportedDeclarations,
   type ModuleDeclaration,
   type Project,
   type SourceFile,
@@ -7,6 +8,8 @@ import {
 import { ambientModulesDeclarations } from "./ambient-modules-declarations";
 import { exportEqualsDeclarations } from "./export-equals-declarations";
 import { exportedDeclarations } from "./exported-declarations";
+import { extractVariable } from "./extract-variable";
+import { extractVariableAssignmentExpression } from "./extract-variable-assignment-expression";
 import { globalAmbientDeclarations } from "./global-ambient-declarations";
 import { isClass } from "./is-class";
 import { isEnum } from "./is-enum";
@@ -28,7 +31,7 @@ export type ContainerDeclarationsOptions = {
   extractAmbientModules?: boolean;
 };
 
-export const containerDeclarations = ({
+export const containerDeclarations = async ({
   project,
   container,
   containerName,
@@ -45,34 +48,56 @@ export const containerDeclarations = ({
       ? globalAmbientDeclarations(container, containerName)
       : []),
   ];
-  const containerDeclarations: unknown[] = [];
+  const containerDeclarations = [];
   for (const { containerName, exportName, declaration } of foundDeclarations) {
-    switch (true) {
-      case isVariable(declaration): {
-      }
-      case isVariableAssignmentExpression(declaration): {
-      }
-      case isExpression(declaration): {
-      }
-      case isFunction(declaration): {
-      }
-      case isFunctionExpression(declaration): {
-      }
-      case isClass(declaration): {
-      }
-      case isInterface(declaration): {
-      }
-      case isEnum(declaration): {
-      }
-      case isTypeAlias(declaration): {
-      }
-      case isNamespace(declaration) && maxDepth > 0: {
-      }
-      case isModule(declaration) && maxDepth > 0: {
-      }
-      default: {
-      }
-    }
+    containerDeclarations.push(
+      await extractDeclaration(
+        containerName,
+        exportName,
+        declaration,
+        maxDepth,
+      ),
+    );
   }
   return containerDeclarations;
+};
+
+const extractDeclaration = (
+  containerName: string,
+  exportName: string,
+  declaration: ExportedDeclarations,
+  maxDepth: number,
+) => {
+  switch (true) {
+    case isVariable(declaration): {
+      return extractVariable(containerName, exportName, declaration);
+    }
+    case isVariableAssignmentExpression(declaration): {
+      return extractVariableAssignmentExpression(
+        containerName,
+        exportName,
+        declaration,
+      );
+    }
+    case isExpression(declaration): {
+    }
+    case isFunction(declaration): {
+    }
+    case isFunctionExpression(declaration): {
+    }
+    case isClass(declaration): {
+    }
+    case isInterface(declaration): {
+    }
+    case isEnum(declaration): {
+    }
+    case isTypeAlias(declaration): {
+    }
+    case isNamespace(declaration) && maxDepth > 0: {
+    }
+    case isModule(declaration) && maxDepth > 0: {
+    }
+    default: {
+    }
+  }
 };
