@@ -11,7 +11,7 @@ export const extractExpression = async (
   declaration: Expression,
 ): Promise<ExtractedVariable> => ({
   kind: "variable",
-  id: itemId(containerName, exportName),
+  id: itemId(containerName, "variable", exportName),
   name: exportName,
   docs: docs(declaration),
   file: declaration.getSourceFile().getFilePath() as string,
