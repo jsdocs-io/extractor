@@ -22,8 +22,11 @@ const nodesWithDocs = (node: Node): Node[] => {
       // into one item, we need this item to share the docs of all overloads.
       // Constructors can also be overloaded but they are excluded because
       // one item is returned per constructor each with its own docs.
-      const impl = node.getImplementation();
-      return [...node.getOverloads(), ...(impl ? [impl] : [])];
+      const implementation = node.getImplementation();
+      return [
+        ...node.getOverloads(),
+        ...(implementation ? [implementation] : []),
+      ];
     }
     case Node.isMethodSignature(node) &&
       node.getParent().getKind() === SyntaxKind.InterfaceDeclaration: {
