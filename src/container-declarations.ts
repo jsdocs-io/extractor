@@ -11,6 +11,7 @@ import { exportedDeclarations } from "./exported-declarations";
 import { extractExpression } from "./extract-expression";
 import { extractFunction } from "./extract-function";
 import { extractFunctionExpression } from "./extract-function-expression";
+import { extractTypeAlias } from "./extract-type-alias";
 import { extractVariable } from "./extract-variable";
 import { extractVariableAssignmentExpression } from "./extract-variable-assignment-expression";
 import { globalAmbientDeclarations } from "./global-ambient-declarations";
@@ -92,18 +93,25 @@ const extractDeclaration = (
       return extractFunctionExpression(containerName, exportName, declaration);
     }
     case isClass(declaration): {
+      return undefined;
     }
     case isInterface(declaration): {
+      return undefined;
     }
     case isEnum(declaration): {
+      return undefined;
     }
     case isTypeAlias(declaration): {
+      return extractTypeAlias(containerName, exportName, declaration);
     }
     case isNamespace(declaration) && maxDepth > 0: {
+      return undefined;
     }
     case isModule(declaration) && maxDepth > 0: {
+      return undefined;
     }
     default: {
+      return undefined;
     }
   }
 };
