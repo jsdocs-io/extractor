@@ -72,46 +72,41 @@ const extractDeclaration = (
   declaration: ExportedDeclarations,
   maxDepth: number,
 ) => {
-  switch (true) {
-    case isVariable(declaration): {
-      return extractVariable(containerName, exportName, declaration);
-    }
-    case isVariableAssignmentExpression(declaration): {
-      return extractVariableAssignmentExpression(
-        containerName,
-        exportName,
-        declaration,
-      );
-    }
-    case isExpression(declaration): {
-      return extractExpression(containerName, exportName, declaration);
-    }
-    case isFunction(declaration): {
-      return extractFunction(containerName, exportName, declaration);
-    }
-    case isFunctionExpression(declaration): {
-      return extractFunctionExpression(containerName, exportName, declaration);
-    }
-    case isClass(declaration): {
-      return undefined;
-    }
-    case isInterface(declaration): {
-      return undefined;
-    }
-    case isEnum(declaration): {
-      return undefined;
-    }
-    case isTypeAlias(declaration): {
-      return extractTypeAlias(containerName, exportName, declaration);
-    }
-    case isNamespace(declaration) && maxDepth > 0: {
-      return undefined;
-    }
-    case isModule(declaration) && maxDepth > 0: {
-      return undefined;
-    }
-    default: {
-      return undefined;
-    }
+  if (isVariable(declaration)) {
+    return extractVariable(containerName, exportName, declaration);
+  }
+  if (isVariableAssignmentExpression(declaration)) {
+    return extractVariableAssignmentExpression(
+      containerName,
+      exportName,
+      declaration,
+    );
+  }
+  if (isExpression(declaration)) {
+    return extractExpression(containerName, exportName, declaration);
+  }
+  if (isFunction(declaration)) {
+    return extractFunction(containerName, exportName, declaration);
+  }
+  if (isFunctionExpression(declaration)) {
+    return extractFunctionExpression(containerName, exportName, declaration);
+  }
+  if (isClass(declaration)) {
+    return undefined;
+  }
+  if (isInterface(declaration)) {
+    return undefined;
+  }
+  if (isEnum(declaration)) {
+    return undefined;
+  }
+  if (isTypeAlias(declaration)) {
+    return extractTypeAlias(containerName, exportName, declaration);
+  }
+  if (isNamespace(declaration) && maxDepth > 0) {
+    return undefined;
+  }
+  if (isModule(declaration) && maxDepth > 0) {
+    return undefined;
   }
 };
