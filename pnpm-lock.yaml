@@ -125,8 +125,8 @@ devDependencies:
     specifier: ^9.2.0
     version: 9.2.0(typescript@5.3.3)
   open:
-    specifier: ^10.0.2
-    version: 10.0.2
+    specifier: ^10.0.3
+    version: 10.0.3
   setup-polly-jest:
     specifier: ^0.11.0
     version: 0.11.0(@pollyjs/core@6.0.6)
@@ -10545,8 +10545,8 @@ packages:
       mimic-function: 5.0.0
     dev: true
 
-  /open@10.0.2:
-    resolution: {integrity: sha512-GnYLdE+E3K8NeSE23N0g67/9q9AXRph5oTUbz6IbIgElPigEnQ2aHuqRge3y0JUr67qoc84xME5kF03fDc3fcA==}
+  /open@10.0.3:
+    resolution: {integrity: sha512-dtbI5oW7987hwC9qjJTyABldTaa19SuyJse1QboWv3b0qCcrrLNVDqBx1XgELAjh9QTVQaP/C5b1nhQebd1H2A==}
     engines: {node: '>=18'}
     dependencies:
       default-browser: 5.2.1
