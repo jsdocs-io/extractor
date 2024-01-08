@@ -8,6 +8,7 @@ import {
 import { ambientModulesDeclarations } from "./ambient-modules-declarations";
 import { exportEqualsDeclarations } from "./export-equals-declarations";
 import { exportedDeclarations } from "./exported-declarations";
+import { extractClass } from "./extract-class";
 import { extractExpression } from "./extract-expression";
 import { extractFunction } from "./extract-function";
 import { extractFunctionExpression } from "./extract-function-expression";
@@ -92,7 +93,7 @@ const extractDeclaration = (
     return extractFunctionExpression(containerName, exportName, declaration);
   }
   if (isClass(declaration)) {
-    return undefined;
+    return extractClass(containerName, exportName, declaration);
   }
   if (isInterface(declaration)) {
     return undefined;
