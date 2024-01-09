@@ -121,10 +121,7 @@ const extractClassConstructors = async (
 const classConstructorSignature = (
   declaration: ConstructorDeclaration,
 ): Promise<string> => {
-  const modifiers = declaration
-    .getModifiers()
-    .map((modifier) => modifier.getText())
-    .join(" ");
+  const modifiers = modifiersText(declaration);
   const params = declaration
     .getParameters()
     .map((param) => {
