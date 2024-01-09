@@ -2,6 +2,7 @@ import type { FunctionDeclaration } from "ts-morph";
 import { docs } from "./docs";
 import { formatSignature } from "./format-signature";
 import { id } from "./id";
+import { sourceFilePath } from "./source-file-path";
 import { typeCheckerType } from "./type-checker-type";
 
 export type ExtractedFunction = {
@@ -23,7 +24,7 @@ export const extractFunction = async (
   id: id(containerName, "function", exportName),
   name: exportName,
   docs: docs(declaration),
-  file: declaration.getSourceFile().getFilePath() as string,
+  file: sourceFilePath(declaration),
   line: declaration.getStartLineNumber(),
   signature: await functionSignature(exportName, declaration),
 });

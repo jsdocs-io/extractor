@@ -2,6 +2,7 @@ import type { TypeAliasDeclaration } from "ts-morph";
 import { docs } from "./docs";
 import { formatSignature } from "./format-signature";
 import { id } from "./id";
+import { sourceFilePath } from "./source-file-path";
 
 export type ExtractedTypeAlias = {
   kind: "type-alias";
@@ -22,7 +23,7 @@ export const extractTypeAlias = async (
   id: id(containerName, "type-alias", exportName),
   name: exportName,
   docs: docs(declaration),
-  file: declaration.getSourceFile().getFilePath() as string,
+  file: sourceFilePath(declaration),
   line: declaration.getStartLineNumber(),
   signature: await typeAliasSignature(declaration),
 });

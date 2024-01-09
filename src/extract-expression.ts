@@ -4,6 +4,7 @@ import { docs } from "./docs";
 import type { ExtractedVariable } from "./extract-variable";
 import { formatSignature } from "./format-signature";
 import { id } from "./id";
+import { sourceFilePath } from "./source-file-path";
 
 export const extractExpression = async (
   containerName: string,
@@ -14,7 +15,7 @@ export const extractExpression = async (
   id: id(containerName, "variable", exportName),
   name: exportName,
   docs: docs(declaration),
-  file: declaration.getSourceFile().getFilePath() as string,
+  file: sourceFilePath(declaration),
   line: declaration.getStartLineNumber(),
   signature: await expressionSignature(exportName, declaration),
 });

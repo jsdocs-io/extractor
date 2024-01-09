@@ -15,6 +15,7 @@ import { headText } from "./head-text";
 import { id } from "./id";
 import { isHidden } from "./is-hidden";
 import { modifiersText } from "./modifiers-text";
+import { sourceFilePath } from "./source-file-path";
 import { typeCheckerType } from "./type-checker-type";
 
 export type ExtractedClass = {
@@ -71,7 +72,7 @@ export const extractClass = async (
     id: classId,
     name: exportName,
     docs: docs(declaration),
-    file: declaration.getSourceFile().getFilePath() as string,
+    file: sourceFilePath(declaration),
     line: declaration.getStartLineNumber(),
     signature: await classSignature(declaration),
     constructors: await extractClassConstructors(classId, declaration),
@@ -112,7 +113,7 @@ const extractClassConstructors = async (
       id: id(classId, "constructor", index > 0 ? `${index}` : ""),
       name: "constructor",
       docs: docs(declaration),
-      file: declaration.getSourceFile().getFilePath() as string,
+      file: sourceFilePath(declaration),
       line: declaration.getStartLineNumber(),
       signature: await classConstructorSignature(declaration),
     });
@@ -159,7 +160,7 @@ const extractClassProperties = async (
       id: id(classId, "property", name),
       name,
       docs: docs(declaration),
-      file: declaration.getSourceFile().getFilePath() as string,
+      file: sourceFilePath(declaration),
       line: declaration.getStartLineNumber(),
       signature: await classPropertySignature(name, declaration),
     });
@@ -220,7 +221,7 @@ const extractClassMethods = async (
       id: id(classId, "method", name),
       name,
       docs: docs(declaration),
-      file: declaration.getSourceFile().getFilePath() as string,
+      file: sourceFilePath(declaration),
       line: declaration.getStartLineNumber(),
       signature: await classMethodSignature(name, declaration),
     });

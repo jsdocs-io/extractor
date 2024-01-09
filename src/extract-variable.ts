@@ -3,6 +3,7 @@ import { apparentType } from "./apparent-type";
 import { docs } from "./docs";
 import { formatSignature } from "./format-signature";
 import { id } from "./id";
+import { sourceFilePath } from "./source-file-path";
 
 export type ExtractedVariable = {
   kind: "variable";
@@ -23,7 +24,7 @@ export const extractVariable = async (
   id: id(containerName, "variable", exportName),
   name: exportName,
   docs: docs(declaration),
-  file: declaration.getSourceFile().getFilePath() as string,
+  file: sourceFilePath(declaration),
   line: declaration.getStartLineNumber(),
   signature: await variableSignature(exportName, declaration),
 });
