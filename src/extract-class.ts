@@ -8,12 +8,14 @@ import {
   type ConstructorDeclaration,
 } from "ts-morph";
 import { apparentType } from "./apparent-type";
+import { compareId } from "./compare-id";
 import { docs } from "./docs";
 import { formatSignature } from "./format-signature";
 import { headText } from "./head-text";
 import { id } from "./id";
 import { isHidden } from "./is-hidden";
 import { modifiersText } from "./modifiers-text";
+import { typeCheckerType } from "./type-checker-type";
 
 export type ExtractedClass = {
   kind: "class";
@@ -159,19 +161,19 @@ const extractClassProperties = async (
       docs: docs(declaration),
       file: declaration.getSourceFile().getFilePath() as string,
       line: declaration.getStartLineNumber(),
-      signature: await classPropertySignature(declaration),
+      signature: await classPropertySignature(name, declaration),
     });
   }
-  return properties;
+  return properties.sort(compareId);
 };
 
 const classPropertySignature = (
+  name: string,
   declaration:
     | ParameterDeclaration
     | PropertyDeclaration
     | GetAccessorDeclaration,
 ): Promise<string> => {
-  const name = declaration.getName();
   const type = apparentType(declaration);
   if (
     Node.isParameterDeclaration(declaration) ||
@@ -197,11 +199,40 @@ const extractClassMethods = async (
   classId: string,
   classDeclaration: ClassDeclaration,
 ): Promise<ExtractedClassMethod[]> => {
-  throw new Error("not implemented");
+  const methodsDeclarations = [
+    ...classDeclaration.getInstanceMethods(),
+    ...classDeclaration.getStaticMethods(),
+  ];
+  const methods = [];
+  const seenMethods = new Set<string>();
+  for (const declaration of methodsDeclarations) {
+    if (isHidden(declaration)) {
+      continue;
+    }
+    const name = declaration.getName();
+    if (seenMethods.has(name)) {
+      // Skip overloaded methods.
+      continue;
+    }
+    seenMethods.add(name);
+    methods.push({
+      kind: "class-method" as const,
+      id: id(classId, "method", name),
+      name,
+      docs: docs(declaration),
+      file: declaration.getSourceFile().getFilePath() as string,
+      line: declaration.getStartLineNumber(),
+      signature: await classMethodSignature(name, declaration),
+    });
+  }
+  return methods.sort(compareId);
 };
 
 const classMethodSignature = (
+  name: string,
   declaration: MethodDeclaration,
 ): Promise<string> => {
-  throw new Error("not implemented");
+  const modifiers = modifiersText(declaration);
+  const type = typeCheckerType(declaration);
+  return formatSignature("class-method", `${modifiers} ${name}: ${type}`);
 };
