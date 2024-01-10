@@ -12,6 +12,7 @@ import { extractClass } from "./extract-class";
 import { extractExpression } from "./extract-expression";
 import { extractFunction } from "./extract-function";
 import { extractFunctionExpression } from "./extract-function-expression";
+import { extractInterface } from "./extract-interface";
 import { extractTypeAlias } from "./extract-type-alias";
 import { extractVariable } from "./extract-variable";
 import { extractVariableAssignmentExpression } from "./extract-variable-assignment-expression";
@@ -96,7 +97,7 @@ const extractDeclaration = (
     return extractClass(containerName, exportName, declaration);
   }
   if (isInterface(declaration)) {
-    return undefined;
+    return extractInterface(containerName, exportName, declaration);
   }
   if (isEnum(declaration)) {
     return undefined;

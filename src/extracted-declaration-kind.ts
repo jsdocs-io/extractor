@@ -11,6 +11,8 @@ export type ExtractedDeclarationKind =
   | "interface-construct-signature"
   | "interface-call-signature"
   | "interface-index-signature"
+  | "interface-get-accessor"
+  | "interface-set-accessor"
   | "enum"
   | "enum-member"
   | "type-alias"

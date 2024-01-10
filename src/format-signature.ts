@@ -41,6 +41,8 @@ export const formatSignature = async (
     case "interface-construct-signature":
     case "interface-call-signature":
     case "interface-index-signature":
+    case "interface-get-accessor":
+    case "interface-set-accessor":
     case "enum-member": {
       // Temporarily wrap members in their parent declaration for formatting.
       const parentKind = kind.split("-")[0]!;
