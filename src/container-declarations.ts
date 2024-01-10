@@ -6,6 +6,7 @@ import {
   type SourceFile,
 } from "ts-morph";
 import { ambientModulesDeclarations } from "./ambient-modules-declarations";
+import { compareId } from "./compare-id";
 import { exportEqualsDeclarations } from "./export-equals-declarations";
 import { exportedDeclarations } from "./exported-declarations";
 import { extractClass } from "./extract-class";
@@ -65,7 +66,7 @@ export const containerDeclarations = async ({
       ),
     );
   }
-  return containerDeclarations;
+  return containerDeclarations.sort(compareId);
 };
 
 const extractDeclaration = (
@@ -100,15 +101,16 @@ const extractDeclaration = (
     return extractInterface(containerName, exportName, declaration);
   }
   if (isEnum(declaration)) {
-    return undefined;
+    return { id: "TODO:" };
   }
   if (isTypeAlias(declaration)) {
     return extractTypeAlias(containerName, exportName, declaration);
   }
   if (isNamespace(declaration) && maxDepth > 0) {
-    return undefined;
+    return { id: "TODO:" };
   }
   if (isModule(declaration) && maxDepth > 0) {
-    return undefined;
+    return { id: "TODO:" };
   }
+  return { id: "TODO:" };
 };
