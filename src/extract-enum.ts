@@ -40,15 +40,12 @@ export const extractEnum = async (
     docs: docs(declaration),
     file: sourceFilePath(declaration),
     line: declaration.getStartLineNumber(),
-    signature: await enumSignature(exportName, declaration),
+    signature: await enumSignature(declaration),
     members: await extractEnumMembers(enumId, declaration),
   };
 };
 
-const enumSignature = (
-  name: string,
-  declaration: EnumDeclaration,
-): Promise<string> => {
+const enumSignature = (declaration: EnumDeclaration): Promise<string> => {
   const signature = headText(declaration);
   return formatSignature("enum", signature);
 };
