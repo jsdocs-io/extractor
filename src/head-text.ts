@@ -1,12 +1,17 @@
 import {
   EnumDeclaration,
+  ModuleDeclaration,
   SyntaxKind,
   type ClassDeclaration,
   type InterfaceDeclaration,
 } from "ts-morph";
 
 export const headText = (
-  declaration: ClassDeclaration | InterfaceDeclaration | EnumDeclaration,
+  declaration:
+    | ClassDeclaration
+    | InterfaceDeclaration
+    | EnumDeclaration
+    | ModuleDeclaration,
 ): string => {
   const parts = [];
   for (const node of declaration.getChildren()) {

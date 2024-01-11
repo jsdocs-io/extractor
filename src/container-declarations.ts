@@ -15,6 +15,7 @@ import { extractExpression } from "./extract-expression";
 import { extractFunction } from "./extract-function";
 import { extractFunctionExpression } from "./extract-function-expression";
 import { extractInterface } from "./extract-interface";
+import { extractNamespace } from "./extract-namespace";
 import { extractTypeAlias } from "./extract-type-alias";
 import { extractVariable } from "./extract-variable";
 import { extractVariableAssignmentExpression } from "./extract-variable-assignment-expression";
@@ -108,7 +109,15 @@ const extractDeclaration = (
     return extractTypeAlias(containerName, exportName, declaration);
   }
   if (isNamespace(declaration) && maxDepth > 0) {
-    return { id: "TODO:" };
+    // TODO: // Skip merged or nested namespace declarations
+    // TODO: extract inner declarations
+    const innerDeclarations: unknown[] = [];
+    return extractNamespace(
+      containerName,
+      exportName,
+      declaration,
+      innerDeclarations,
+    );
   }
   if (isModule(declaration) && maxDepth > 0) {
     return { id: "TODO:" };
