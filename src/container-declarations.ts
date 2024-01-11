@@ -10,6 +10,7 @@ import { compareId } from "./compare-id";
 import { exportEqualsDeclarations } from "./export-equals-declarations";
 import { exportedDeclarations } from "./exported-declarations";
 import { extractClass } from "./extract-class";
+import { extractEnum } from "./extract-enum";
 import { extractExpression } from "./extract-expression";
 import { extractFunction } from "./extract-function";
 import { extractFunctionExpression } from "./extract-function-expression";
@@ -101,7 +102,7 @@ const extractDeclaration = (
     return extractInterface(containerName, exportName, declaration);
   }
   if (isEnum(declaration)) {
-    return { id: "TODO:" };
+    return extractEnum(containerName, exportName, declaration);
   }
   if (isTypeAlias(declaration)) {
     return extractTypeAlias(containerName, exportName, declaration);
