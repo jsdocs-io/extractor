@@ -12,6 +12,7 @@ import { exportedDeclarations } from "./exported-declarations";
 import { extractClass } from "./extract-class";
 import { extractEnum } from "./extract-enum";
 import { extractExpression } from "./extract-expression";
+import { extractFileModule } from "./extract-file-module";
 import { extractFunction } from "./extract-function";
 import { extractFunctionExpression } from "./extract-function-expression";
 import { extractInterface } from "./extract-interface";
@@ -23,10 +24,10 @@ import { globalAmbientDeclarations } from "./global-ambient-declarations";
 import { isClass } from "./is-class";
 import { isEnum } from "./is-enum";
 import { isExpression } from "./is-expression";
+import { isFileModule } from "./is-file-module";
 import { isFunction } from "./is-function";
 import { isFunctionExpression } from "./is-function-expression";
 import { isInterface } from "./is-interface";
-import { isModule } from "./is-module";
 import { isNamespace } from "./is-namespace";
 import { isTypeAlias } from "./is-type-alias";
 import { isVariable } from "./is-variable";
@@ -119,8 +120,17 @@ const extractDeclaration = (
       innerDeclarations,
     );
   }
-  if (isModule(declaration) && maxDepth > 0) {
-    return { id: "TODO:" };
+  if (isFileModule(declaration) && maxDepth > 0) {
+    // From `import * as ns from module; export { ns };`
+    // or from `export * as ns from module`.
+    // TODO: extract inner declarations
+    const innerDeclarations: unknown[] = [];
+    return extractFileModule(
+      containerName,
+      exportName,
+      declaration,
+      innerDeclarations,
+    );
   }
   return { id: "TODO:" };
 };
