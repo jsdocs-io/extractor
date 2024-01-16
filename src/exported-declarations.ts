@@ -13,8 +13,8 @@ export type ExportedDeclarationsReturn = {
 }[];
 
 export const exportedDeclarations = (
-  container: SourceFile | ModuleDeclaration,
   containerName: string,
+  container: SourceFile | ModuleDeclaration,
 ): ExportedDeclarationsReturn => {
   const exportedDeclarations = [];
   for (const [

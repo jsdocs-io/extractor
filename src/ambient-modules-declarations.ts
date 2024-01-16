@@ -8,8 +8,8 @@ export type AmbientModulesDeclarationsReturn = {
 }[];
 
 export const ambientModulesDeclarations = (
-  project: Project,
   containerName: string,
+  project: Project,
 ): AmbientModulesDeclarationsReturn => {
   const ambientModulesDeclarations = [];
   for (const symbol of project.getAmbientModules()) {

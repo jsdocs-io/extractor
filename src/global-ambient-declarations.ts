@@ -14,8 +14,8 @@ export type GlobalAmbientDeclarationsReturn = {
 }[];
 
 export const globalAmbientDeclarations = (
-  container: SourceFile,
   containerName: string,
+  container: SourceFile,
 ): GlobalAmbientDeclarationsReturn => {
   // See https://www.typescriptlang.org/docs/handbook/declaration-files/by-example.html#global-variables.
   const globalCandidates = [

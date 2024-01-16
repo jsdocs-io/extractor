@@ -16,8 +16,8 @@ export type ExportEqualsDeclarationsReturn = {
 }[];
 
 export const exportEqualsDeclarations = (
-  container: SourceFile | ModuleDeclaration,
   containerName: string,
+  container: SourceFile | ModuleDeclaration,
 ): ExportEqualsDeclarationsReturn => {
   if (isShorthandAmbientModule(container)) {
     // Export equals declarations may exist inside the body of ambient modules.

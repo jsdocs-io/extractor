@@ -49,13 +49,13 @@ export const containerDeclarations = async ({
   extractAmbientModules = false,
 }: ContainerDeclarationsOptions) => {
   const foundDeclarations = [
-    ...exportedDeclarations(container, containerName),
-    ...exportEqualsDeclarations(container, containerName),
+    ...exportedDeclarations(containerName, container),
+    ...exportEqualsDeclarations(containerName, container),
     ...(extractAmbientModules
-      ? ambientModulesDeclarations(project, containerName)
+      ? ambientModulesDeclarations(containerName, project)
       : []),
     ...(Node.isSourceFile(container)
-      ? globalAmbientDeclarations(container, containerName)
+      ? globalAmbientDeclarations(containerName, container)
       : []),
   ];
   const containerDeclarations = [];
