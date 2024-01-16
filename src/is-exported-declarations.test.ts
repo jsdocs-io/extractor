@@ -46,3 +46,28 @@ test("is exported declarations", () => {
     }
   }
 });
+
+test("arrow function expression", () => {
+  const project = new Project({
+    useInMemoryFileSystem: true,
+    compilerOptions: {
+      lib: ["lib.esnext.full.d.ts"],
+      target: ScriptTarget.ESNext,
+      module: ModuleKind.ESNext,
+      moduleResolution: ModuleResolutionKind.Bundler,
+    },
+  });
+  const indexFile = project.createSourceFile(
+    "index.ts",
+    dedent`
+    export default () => {}
+    `,
+  );
+  const exportedDeclarations = indexFile.getExportedDeclarations();
+  expect(exportedDeclarations.size).toBe(1);
+  for (const [, declarations] of exportedDeclarations) {
+    for (const declaration of declarations) {
+      expect(isExportedDeclarations(declaration)).toBe(true);
+    }
+  }
+});
