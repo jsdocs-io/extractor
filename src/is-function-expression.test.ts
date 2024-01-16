@@ -6,7 +6,7 @@ import {
   ScriptTarget,
 } from "ts-morph";
 import { expect, test } from "vitest";
-import { isFunctionExpression } from "./api-extractor/functions";
+import { isFunctionExpression } from "./is-function-expression";
 
 test("is function expression", () => {
   const project = new Project({
