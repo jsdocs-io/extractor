@@ -1,51 +1,41 @@
-import fs from "fs-extra";
-import { temporaryDirectoryTask } from "tempy";
 import dedent from "ts-dedent";
-import { Node } from "ts-morph";
+import {
+  ModuleKind,
+  ModuleResolutionKind,
+  Project,
+  ScriptTarget,
+} from "ts-morph";
 import { expect, test } from "vitest";
-import { createProject } from "./create-project";
-import { isFunctionExpression } from "./is-function-expression";
+import { isFunctionExpression } from "./api-extractor/functions";
 
-test("not function expression", async () => {
-  await temporaryDirectoryTask(async (dir) => {
-    process.chdir(dir);
-    await fs.writeFile(
-      "./index.ts",
-      dedent`
-      export function foo() {}
-    `,
-    );
-    const project = createProject("./index.ts");
-    expect(project.isOk()).toBe(true);
-    const { indexFile } = project._unsafeUnwrap();
-    const foo = indexFile.getExportedDeclarations().get("foo")?.at(0)!;
-    expect(Node.isFunctionDeclaration(foo)).toBe(true);
-    expect(isFunctionExpression(foo)).toBe(false);
+test("is function expression", () => {
+  const project = new Project({
+    useInMemoryFileSystem: true,
+    compilerOptions: {
+      lib: ["lib.esnext.full.d.ts"],
+      target: ScriptTarget.ESNext,
+      module: ModuleKind.ESNext,
+      moduleResolution: ModuleResolutionKind.Bundler,
+    },
   });
-});
+  const indexFile = project.createSourceFile(
+    "index.ts",
+    dedent`
+    export function foo() {}
 
-test("function expression", async () => {
-  await temporaryDirectoryTask(async (dir) => {
-    process.chdir(dir);
-    await fs.writeFile(
-      "./index.ts",
-      dedent`
-      export const foo = () => {};
-      export const bar = function() {}
-      export const baz: () => void;
+    export const bar = () => {};
+    export const baz = function() {};
+    export const qux: () => void;
     `,
-    );
-    const project = createProject("./index.ts");
-    expect(project.isOk()).toBe(true);
-    const { indexFile } = project._unsafeUnwrap();
-    const foo = indexFile.getExportedDeclarations().get("foo")?.at(0)!;
-    const bar = indexFile.getExportedDeclarations().get("bar")?.at(0)!;
-    const baz = indexFile.getExportedDeclarations().get("baz")?.at(0)!;
-    expect(Node.isVariableDeclaration(foo)).toBe(true);
-    expect(Node.isVariableDeclaration(bar)).toBe(true);
-    expect(Node.isVariableDeclaration(baz)).toBe(true);
-    expect(isFunctionExpression(foo)).toBe(true);
-    expect(isFunctionExpression(bar)).toBe(true);
-    expect(isFunctionExpression(baz)).toBe(true);
-  });
+  );
+  expect(isFunctionExpression(indexFile.getFunctionOrThrow("foo"))).toBe(false);
+  expect(
+    isFunctionExpression(indexFile.getVariableDeclarationOrThrow("bar")),
+  ).toBe(true);
+  expect(
+    isFunctionExpression(indexFile.getVariableDeclarationOrThrow("baz")),
+  ).toBe(true);
+  expect(
+    isFunctionExpression(indexFile.getVariableDeclarationOrThrow("qux")),
+  ).toBe(true);
 });

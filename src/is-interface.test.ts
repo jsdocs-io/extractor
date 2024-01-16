@@ -1,43 +1,31 @@
-import fs from "fs-extra";
-import { temporaryDirectoryTask } from "tempy";
 import dedent from "ts-dedent";
-import { Node } from "ts-morph";
+import {
+  ModuleKind,
+  ModuleResolutionKind,
+  Project,
+  ScriptTarget,
+} from "ts-morph";
 import { expect, test } from "vitest";
-import { createProject } from "./create-project";
 import { isInterface } from "./is-interface";
 
-test("not interface", async () => {
-  await temporaryDirectoryTask(async (dir) => {
-    process.chdir(dir);
-    await fs.writeFile(
-      "./index.ts",
-      dedent`
-      export function foo() {}
-    `,
-    );
-    const project = createProject("./index.ts");
-    expect(project.isOk()).toBe(true);
-    const { indexFile } = project._unsafeUnwrap();
-    const foo = indexFile.getExportedDeclarations().get("foo")?.at(0)!;
-    expect(Node.isFunctionDeclaration(foo)).toBe(true);
-    expect(isInterface(foo)).toBe(false);
+test("is interface", () => {
+  const project = new Project({
+    useInMemoryFileSystem: true,
+    compilerOptions: {
+      lib: ["lib.esnext.full.d.ts"],
+      target: ScriptTarget.ESNext,
+      module: ModuleKind.ESNext,
+      moduleResolution: ModuleResolutionKind.Bundler,
+    },
   });
-});
+  const indexFile = project.createSourceFile(
+    "index.ts",
+    dedent`
+    export function foo() {}
 
-test("interface", async () => {
-  await temporaryDirectoryTask(async (dir) => {
-    process.chdir(dir);
-    await fs.writeFile(
-      "./index.ts",
-      dedent`
-      export interface Foo {};
+    export interface Foo {}
     `,
-    );
-    const project = createProject("./index.ts");
-    expect(project.isOk()).toBe(true);
-    const { indexFile } = project._unsafeUnwrap();
-    const foo = indexFile.getExportedDeclarations().get("Foo")?.at(0)!;
-    expect(Node.isInterfaceDeclaration(foo)).toBe(true);
-    expect(isInterface(foo)).toBe(true);
-  });
+  );
+  expect(isInterface(indexFile.getFunctionOrThrow("foo"))).toBe(false);
+  expect(isInterface(indexFile.getInterfaceOrThrow("Foo"))).toBe(true);
 });
