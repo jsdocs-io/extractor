@@ -21,7 +21,11 @@ export const headText = (
     }
     if (node.getKind() === SyntaxKind.OpenBraceToken) {
       // Stop at body start, marked by the first `{`
-      // found in a class or interface declaration.
+      // found in a class, interface or enum declaration.
+      break;
+    }
+    if (node.getKind() === SyntaxKind.ModuleBlock) {
+      // Stop at module body start, found in a namespace declaration.
       break;
     }
     parts.push(node.getText());
