@@ -73,6 +73,9 @@ devDependencies:
   '@pollyjs/persister-fs':
     specifier: ^6.0.6
     version: 6.0.6
+  '@total-typescript/shoehorn':
+    specifier: ^0.1.1
+    version: 0.1.1
   '@types/concat-stream':
     specifier: ^2.0.3
     version: 2.0.3
@@ -2873,6 +2876,10 @@ packages:
   /@tootallnate/once@2.0.0:
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
     engines: {node: '>= 10'}
+    dev: true
+
+  /@total-typescript/shoehorn@0.1.1:
+    resolution: {integrity: sha512-XSPcazQsC2Cr7eCiAI+M2bTmMziBvFWYTYMgUDKLbU6i+7m3I2BF5gXF5vKDO8577fONs9CvmTvVa7+nMHMfxg==}
     dev: true
 
   /@ts-morph/common@0.22.0:
