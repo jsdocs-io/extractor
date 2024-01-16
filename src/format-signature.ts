@@ -53,7 +53,7 @@ export const formatSignature = async (
         .split("\n")
         .slice(1, -1)
         // Remove indentation.
-        .map((line) => line.replace(/^\s{4}/, ""))
+        .map((line) => line.replace(/^\s{2}/, ""))
         .join("\n")
         // Remove trailing comma in enum member signature.
         .replace(/,$/, "");
