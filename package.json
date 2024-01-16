@@ -52,7 +52,7 @@
     "test": "vitest",
     "test:packages": "vitest run test/package-snapshots",
     "test:cov": "vitest run --coverage",
-    "test:ci": "vitest run --coverage --bail 1",
+    "test:ci": "vitest run src --coverage --bail 1",
     "lint": "prettier --check .",
     "format": "prettier --write .",
     "debug:analyze": "pnpm tsx scripts/debug-analyze.ts",
