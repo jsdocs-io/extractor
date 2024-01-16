@@ -1,3 +1,4 @@
+import { orderBy } from "natural-orderby";
 import {
   GetAccessorDeclaration,
   MethodDeclaration,
@@ -8,7 +9,6 @@ import {
   type ConstructorDeclaration,
 } from "ts-morph";
 import { apparentType } from "./apparent-type";
-import { compareId } from "./compare-id";
 import { docs } from "./docs";
 import { formatSignature } from "./format-signature";
 import { headText } from "./head-text";
@@ -165,7 +165,7 @@ const extractClassProperties = async (
       signature: await classPropertySignature(name, declaration),
     });
   }
-  return properties.sort(compareId);
+  return orderBy(properties, "id");
 };
 
 const classPropertySignature = (
@@ -226,7 +226,7 @@ const extractClassMethods = async (
       signature: await classMethodSignature(name, declaration),
     });
   }
-  return methods.sort(compareId);
+  return orderBy(methods, "id");
 };
 
 const classMethodSignature = (

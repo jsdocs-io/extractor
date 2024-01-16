@@ -29,6 +29,9 @@ dependencies:
   memoize:
     specifier: ^10.0.0
     version: 10.0.0
+  natural-orderby:
+    specifier: ^3.0.2
+    version: 3.0.2
   neverthrow:
     specifier: ^6.1.0
     version: 6.1.0
@@ -10136,6 +10139,11 @@ packages:
   /natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
+
+  /natural-orderby@3.0.2:
+    resolution: {integrity: sha512-x7ZdOwBxZCEm9MM7+eQCjkrNLrW3rkBKNHVr78zbtqnMGVNlnDi6C/eUEYgxHNrcbu0ymvjzcwIL/6H1iHri9g==}
+    engines: {node: '>=18'}
+    dev: false
 
   /ncp@2.0.0:
     resolution: {integrity: sha512-zIdGUrPRFTUELUvr3Gmc7KZ2Sw/h1PiVM0Af/oHB6zgnV1ikqSfRk+TOufi79aHYCW3NiOXmr1BP5nWbzojLaA==}

@@ -1,3 +1,4 @@
+import { orderBy } from "natural-orderby";
 import {
   CallSignatureDeclaration,
   ConstructSignatureDeclaration,
@@ -8,7 +9,6 @@ import {
   PropertySignature,
   SetAccessorDeclaration,
 } from "ts-morph";
-import { compareId } from "./compare-id";
 import { docs } from "./docs";
 import { formatSignature } from "./format-signature";
 import { headText } from "./head-text";
@@ -164,7 +164,7 @@ const extractInterfaceProperties = async (
       signature: await interfacePropertySignature(declaration),
     });
   }
-  return properties.sort(compareId);
+  return orderBy(properties, "id");
 };
 
 const interfacePropertySignature = (
@@ -200,7 +200,7 @@ const extractInterfaceMethods = async (
       signature: await interfaceMethodSignature(name, declaration),
     });
   }
-  return methods.sort(compareId);
+  return orderBy(methods, "id");
 };
 
 const interfaceMethodSignature = (
@@ -232,7 +232,7 @@ const extractInterfaceConstructSignatures = async (
       signature: await interfaceConstructSignatureSignature(declaration),
     });
   }
-  return constructSignatures.sort(compareId);
+  return orderBy(constructSignatures, "id");
 };
 
 const interfaceConstructSignatureSignature = (
@@ -263,7 +263,7 @@ const extractInterfaceCallSignatures = async (
       signature: await interfaceCallSignatureSignature(declaration),
     });
   }
-  return callSignatures.sort(compareId);
+  return orderBy(callSignatures, "id");
 };
 
 const interfaceCallSignatureSignature = (
@@ -294,7 +294,7 @@ const extractInterfaceIndexSignatures = async (
       signature: await interfaceIndexSignatureSignature(declaration),
     });
   }
-  return indexSignatures.sort(compareId);
+  return orderBy(indexSignatures, "id");
 };
 
 const interfaceIndexSignatureSignature = (
@@ -324,7 +324,7 @@ const extractInterfaceGetAccessors = async (
       signature: await interfaceGetAccessorSignature(declaration),
     });
   }
-  return getAccessors.sort(compareId);
+  return orderBy(getAccessors, "id");
 };
 
 const interfaceGetAccessorSignature = (
@@ -354,7 +354,7 @@ const extractInterfaceSetAccessors = async (
       signature: await interfaceSetAccessorSignature(declaration),
     });
   }
-  return setAccessors.sort(compareId);
+  return orderBy(setAccessors, "id");
 };
 
 const interfaceSetAccessorSignature = (

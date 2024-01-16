@@ -1,3 +1,4 @@
+import { orderBy } from "natural-orderby";
 import {
   Node,
   type ExportedDeclarations,
@@ -6,7 +7,6 @@ import {
   type SourceFile,
 } from "ts-morph";
 import { ambientModulesDeclarations } from "./ambient-modules-declarations";
-import { compareId } from "./compare-id";
 import { exportEqualsDeclarations } from "./export-equals-declarations";
 import { exportedDeclarations } from "./exported-declarations";
 import { extractClass } from "./extract-class";
@@ -69,7 +69,7 @@ export const containerDeclarations = async ({
       ),
     );
   }
-  return containerDeclarations.sort(compareId);
+  return orderBy(containerDeclarations, "id");
 };
 
 const extractDeclaration = (
