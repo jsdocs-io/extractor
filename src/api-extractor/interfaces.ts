@@ -114,7 +114,13 @@ function getInterfaceMembers({
         return newCallSignature({ id, name, declaration, getSource });
       }
 
-      return newIndexSignature({ id, name, declaration, getSource });
+      return newIndexSignature({
+        id,
+        name,
+        // TODO: temporary fix, use extract-interface.ts instead.
+        declaration: declaration as any,
+        getSource,
+      });
     })
     .sort(sortByID);
 
