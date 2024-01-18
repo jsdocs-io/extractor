@@ -9,16 +9,19 @@ import {
 import { ambientModulesDeclarations } from "./ambient-modules-declarations";
 import { exportEqualsDeclarations } from "./export-equals-declarations";
 import { exportedDeclarations } from "./exported-declarations";
-import { extractClass } from "./extract-class";
-import { extractEnum } from "./extract-enum";
+import { extractClass, type ExtractedClass } from "./extract-class";
+import { extractEnum, type ExtractedEnum } from "./extract-enum";
 import { extractExpression } from "./extract-expression";
 import { extractFileModule } from "./extract-file-module";
-import { extractFunction } from "./extract-function";
+import { extractFunction, type ExtractedFunction } from "./extract-function";
 import { extractFunctionExpression } from "./extract-function-expression";
-import { extractInterface } from "./extract-interface";
-import { extractNamespace } from "./extract-namespace";
-import { extractTypeAlias } from "./extract-type-alias";
-import { extractVariable } from "./extract-variable";
+import { extractInterface, type ExtractedInterface } from "./extract-interface";
+import { extractNamespace, type ExtractedNamespace } from "./extract-namespace";
+import {
+  extractTypeAlias,
+  type ExtractedTypeAlias,
+} from "./extract-type-alias";
+import { extractVariable, type ExtractedVariable } from "./extract-variable";
 import { extractVariableAssignmentExpression } from "./extract-variable-assignment-expression";
 import { globalAmbientDeclarations } from "./global-ambient-declarations";
 import { isClass } from "./is-class";
@@ -41,13 +44,25 @@ export type ContainerDeclarationsOptions = {
   extractAmbientModules?: boolean;
 };
 
+export type ExtractedContainerDeclaration =
+  | ExtractedVariable
+  | ExtractedFunction
+  | ExtractedClass
+  | ExtractedInterface
+  | ExtractedEnum
+  | ExtractedTypeAlias
+  | ExtractedNamespace;
+
+export type ExtractedContainerDeclarationKind =
+  ExtractedContainerDeclaration["kind"];
+
 export const containerDeclarations = async ({
   project,
   container,
   containerName,
   maxDepth,
   extractAmbientModules = false,
-}: ContainerDeclarationsOptions) => {
+}: ContainerDeclarationsOptions): Promise<ExtractedContainerDeclaration[]> => {
   const foundDeclarations = [
     ...exportedDeclarations(containerName, container),
     ...exportEqualsDeclarations(containerName, container),
@@ -60,24 +75,26 @@ export const containerDeclarations = async ({
   ];
   const containerDeclarations = [];
   for (const { containerName, exportName, declaration } of foundDeclarations) {
-    containerDeclarations.push(
-      await extractDeclaration(
-        containerName,
-        exportName,
-        declaration,
-        maxDepth,
-      ),
+    const extractedDeclaration = await extractDeclaration(
+      containerName,
+      exportName,
+      declaration,
+      maxDepth,
     );
+    if (!extractedDeclaration) {
+      continue;
+    }
+    containerDeclarations.push(extractedDeclaration);
   }
   return orderBy(containerDeclarations, "id");
 };
 
-const extractDeclaration = (
+const extractDeclaration = async (
   containerName: string,
   exportName: string,
   declaration: ExportedDeclarations,
   maxDepth: number,
-) => {
+): Promise<ExtractedContainerDeclaration | undefined> => {
   if (isVariable(declaration)) {
     return extractVariable(containerName, exportName, declaration);
   }
@@ -112,7 +129,7 @@ const extractDeclaration = (
   if (isNamespace(declaration) && maxDepth > 0) {
     // TODO: // Skip merged or nested namespace declarations
     // TODO: extract inner declarations
-    const innerDeclarations: unknown[] = [];
+    const innerDeclarations: ExtractedContainerDeclaration[] = [];
     return extractNamespace(
       containerName,
       exportName,
@@ -124,7 +141,7 @@ const extractDeclaration = (
     // From `import * as ns from module; export { ns };`
     // or from `export * as ns from module`.
     // TODO: extract inner declarations
-    const innerDeclarations: unknown[] = [];
+    const innerDeclarations: ExtractedContainerDeclaration[] = [];
     return extractFileModule(
       containerName,
       exportName,
@@ -132,5 +149,5 @@ const extractDeclaration = (
       innerDeclarations,
     );
   }
-  return { id: "TODO:" };
+  return undefined;
 };

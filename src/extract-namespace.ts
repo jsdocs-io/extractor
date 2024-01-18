@@ -1,4 +1,5 @@
 import { ModuleDeclaration } from "ts-morph";
+import type { ExtractedContainerDeclaration } from "./container-declarations";
 import { docs } from "./docs";
 import { formatSignature } from "./format-signature";
 import { headText } from "./head-text";
@@ -13,16 +14,14 @@ export type ExtractedNamespace = {
   file: string;
   line: number;
   signature: string;
-  // TODO:
-  declarations: unknown[];
+  declarations: ExtractedContainerDeclaration[];
 };
 
 export const extractNamespace = async (
   containerName: string,
   exportName: string,
   declaration: ModuleDeclaration,
-  // TODO:
-  declarations: unknown[],
+  declarations: ExtractedContainerDeclaration[],
 ): Promise<ExtractedNamespace> => ({
   kind: "namespace",
   id: id(containerName, "namespace", exportName),
