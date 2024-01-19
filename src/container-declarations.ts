@@ -24,6 +24,7 @@ import {
 import { extractVariable, type ExtractedVariable } from "./extract-variable";
 import { extractVariableAssignmentExpression } from "./extract-variable-assignment-expression";
 import { globalAmbientDeclarations } from "./global-ambient-declarations";
+import { id } from "./id";
 import { isClass } from "./is-class";
 import { isEnum } from "./is-enum";
 import { isExpression } from "./is-expression";
@@ -37,11 +38,10 @@ import { isVariable } from "./is-variable";
 import { isVariableAssignmentExpression } from "./is-variable-assignment-expression";
 
 export type ContainerDeclarationsOptions = {
-  project: Project;
-  container: SourceFile | ModuleDeclaration;
   containerName: string;
+  container: SourceFile | ModuleDeclaration;
   maxDepth: number;
-  extractAmbientModules?: boolean;
+  project?: Project;
 };
 
 export type ExtractedContainerDeclaration =
@@ -57,18 +57,15 @@ export type ExtractedContainerDeclarationKind =
   ExtractedContainerDeclaration["kind"];
 
 export const containerDeclarations = async ({
-  project,
-  container,
   containerName,
+  container,
   maxDepth,
-  extractAmbientModules = false,
+  project,
 }: ContainerDeclarationsOptions): Promise<ExtractedContainerDeclaration[]> => {
   const foundDeclarations = [
     ...exportedDeclarations(containerName, container),
     ...exportEqualsDeclarations(containerName, container),
-    ...(extractAmbientModules
-      ? ambientModulesDeclarations(containerName, project)
-      : []),
+    ...(project ? ambientModulesDeclarations(containerName, project) : []),
     ...(Node.isSourceFile(container)
       ? globalAmbientDeclarations(containerName, container)
       : []),
@@ -128,8 +125,11 @@ const extractDeclaration = async (
   }
   if (isNamespace(declaration) && maxDepth > 0) {
     // TODO: // Skip merged or nested namespace declarations
-    // TODO: extract inner declarations
-    const innerDeclarations: ExtractedContainerDeclaration[] = [];
+    const innerDeclarations = await containerDeclarations({
+      containerName: id(containerName, "namespace", exportName),
+      container: declaration,
+      maxDepth: maxDepth - 1,
+    });
     return extractNamespace(
       containerName,
       exportName,
@@ -140,8 +140,11 @@ const extractDeclaration = async (
   if (isFileModule(declaration) && maxDepth > 0) {
     // From `import * as ns from module; export { ns };`
     // or from `export * as ns from module`.
-    // TODO: extract inner declarations
-    const innerDeclarations: ExtractedContainerDeclaration[] = [];
+    const innerDeclarations = await containerDeclarations({
+      containerName: id(containerName, "namespace", exportName),
+      container: declaration,
+      maxDepth: maxDepth - 1,
+    });
     return extractFileModule(
       containerName,
       exportName,

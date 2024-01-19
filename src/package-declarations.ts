@@ -13,9 +13,8 @@ export const packageDeclarations = ({
   maxDepth,
 }: PackageDeclarationsOptions) =>
   containerDeclarations({
-    project,
-    container: indexFile,
     containerName: "",
+    container: indexFile,
     maxDepth,
-    extractAmbientModules: true,
+    project,
   });
