@@ -138,8 +138,9 @@ const extractDeclaration = async (
     );
   }
   if (isFileModule(declaration) && maxDepth > 0) {
-    // From `import * as ns from module; export { ns };`
-    // or from `export * as ns from module`.
+    // A file module declaration happens with the following export forms:
+    // `import * as ns from module; export { ns };` or
+    // `export * as ns from module`.
     const innerDeclarations = await containerDeclarations({
       containerName: id(containerName, "namespace", exportName),
       container: declaration,
