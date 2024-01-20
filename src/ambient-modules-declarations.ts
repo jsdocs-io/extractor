@@ -1,5 +1,6 @@
 import { ModuleDeclaration, Node, type Project } from "ts-morph";
 import { isHidden } from "./is-hidden";
+import { sourceFilePath } from "./source-file-path";
 
 export type AmbientModulesDeclarationsReturn = {
   containerName: string;
@@ -10,6 +11,7 @@ export type AmbientModulesDeclarationsReturn = {
 export const ambientModulesDeclarations = (
   containerName: string,
   project: Project,
+  pkgName?: string,
 ): AmbientModulesDeclarationsReturn => {
   const ambientModulesDeclarations = [];
   for (const symbol of project.getAmbientModules()) {
@@ -17,9 +19,8 @@ export const ambientModulesDeclarations = (
       if (isHidden(declaration) || !Node.isModuleDeclaration(declaration)) {
         continue;
       }
-      // TODO: add only from analyzed package
-      const filepath = declaration.getSourceFile().getFilePath();
-      if (filepath.startsWith("/node_modules")) {
+      if (pkgName && !sourceFilePath(declaration).startsWith(`/${pkgName}`)) {
+        // Ignore ambient modules that are not from the analyzed package.
         continue;
       }
       const exportName = declaration.getName();

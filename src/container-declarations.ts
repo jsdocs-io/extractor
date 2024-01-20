@@ -42,6 +42,7 @@ export type ContainerDeclarationsOptions = {
   container: SourceFile | ModuleDeclaration;
   maxDepth: number;
   project?: Project;
+  pkgName?: string;
 };
 
 export type ExtractedContainerDeclaration =
@@ -61,11 +62,14 @@ export const containerDeclarations = async ({
   container,
   maxDepth,
   project,
+  pkgName,
 }: ContainerDeclarationsOptions): Promise<ExtractedContainerDeclaration[]> => {
   const foundDeclarations = [
     ...exportedDeclarations(containerName, container),
     ...exportEqualsDeclarations(containerName, container),
-    ...(project ? ambientModulesDeclarations(containerName, project) : []),
+    ...(project
+      ? ambientModulesDeclarations(containerName, project, pkgName)
+      : []),
     ...(Node.isSourceFile(container)
       ? globalAmbientDeclarations(containerName, container)
       : []),
