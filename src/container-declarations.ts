@@ -74,14 +74,18 @@ export const containerDeclarations = async ({
       ? globalAmbientDeclarations(containerName, container)
       : []),
   ];
+  const seenFunctions = new Set<string>();
+  const seenNamespaces = new Set<string>();
   const containerDeclarations = [];
   for (const { containerName, exportName, declaration } of foundDeclarations) {
-    const extractedDeclaration = await extractDeclaration(
+    const extractedDeclaration = await extractDeclaration({
       containerName,
       exportName,
       declaration,
       maxDepth,
-    );
+      seenFunctions,
+      seenNamespaces,
+    });
     if (!extractedDeclaration) {
       continue;
     }
@@ -90,12 +94,25 @@ export const containerDeclarations = async ({
   return orderBy(containerDeclarations, "id");
 };
 
-const extractDeclaration = async (
-  containerName: string,
-  exportName: string,
-  declaration: ExportedDeclarations,
-  maxDepth: number,
-): Promise<ExtractedContainerDeclaration | undefined> => {
+type ExtractDeclarationOptions = {
+  containerName: string;
+  exportName: string;
+  declaration: ExportedDeclarations;
+  maxDepth: number;
+  seenFunctions: Set<string>;
+  seenNamespaces: Set<string>;
+};
+
+const extractDeclaration = async ({
+  containerName,
+  exportName,
+  declaration,
+  maxDepth,
+  seenFunctions,
+  seenNamespaces,
+}: ExtractDeclarationOptions): Promise<
+  ExtractedContainerDeclaration | undefined
+> => {
   if (isVariable(declaration)) {
     return extractVariable(containerName, exportName, declaration);
   }
@@ -110,6 +127,12 @@ const extractDeclaration = async (
     return extractExpression(containerName, exportName, declaration);
   }
   if (isFunction(declaration)) {
+    if (seenFunctions.has(exportName)) {
+      // Skip function overloads, since an extracted function already contains
+      // the docs and signatures of the implementation and all the overloads.
+      return undefined;
+    }
+    seenFunctions.add(exportName);
     return extractFunction(containerName, exportName, declaration);
   }
   if (isFunctionExpression(declaration)) {
@@ -128,7 +151,12 @@ const extractDeclaration = async (
     return extractTypeAlias(containerName, exportName, declaration);
   }
   if (isNamespace(declaration) && maxDepth > 0) {
-    // TODO: // Skip merged or nested namespace declarations
+    if (seenNamespaces.has(exportName)) {
+      // Skip merged or nested namespaces, since an extracted namespace already
+      // contains all the declarations found in the same namespace.
+      return undefined;
+    }
+    seenNamespaces.add(exportName);
     const innerDeclarations = await containerDeclarations({
       containerName: id(containerName, "namespace", exportName),
       container: declaration,
