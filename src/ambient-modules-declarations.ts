@@ -24,12 +24,6 @@ export const ambientModulesDeclarations = (
         continue;
       }
       const exportName = declaration.getName();
-      // TODO:
-      // Remove surrounding quotes and eventual spaces
-      // const exportID = exportName
-      //   .replace(/"|'/g, "")
-      //   .replace(/\s/g, "_")
-      //   .trim();
       ambientModulesDeclarations.push({
         containerName,
         exportName,
