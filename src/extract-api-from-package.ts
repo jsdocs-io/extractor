@@ -3,6 +3,7 @@ import { join } from "pathe";
 import { createProject } from "./create-project";
 import type { ExtractorError } from "./errors";
 import { installPackage } from "./install-package";
+import { packageDeclarations } from "./package-declarations";
 import { packageJson } from "./package-json";
 import { packageName } from "./package-name";
 import { packageOverview } from "./package-overview";
@@ -80,6 +81,17 @@ export const extractApiFromPackage = ({
       ok(packageOverview(ctx.indexFile)).map((pkgOverview) => ({
         ...ctx,
         pkgOverview,
+      })),
+    )
+    .andThen((ctx) =>
+      packageDeclarations({
+        pkgName: ctx.pkgName,
+        project: ctx.project,
+        indexFile: ctx.indexFile,
+        maxDepth: ctx.maxDepth,
+      }).map((pkgDeclarations) => ({
+        ...ctx,
+        pkgDeclarations,
       })),
     )
     .andThen((ctx) => {

@@ -5,6 +5,7 @@ export type ExtractorError =
   | PackageNameError
   | PackageJsonError
   | PackageTypesError
+  | PackageDeclarationsError
   | ProjectError;
 
 export class OsError extends Error {
@@ -47,6 +48,13 @@ export class PackageJsonError extends Error {
 }
 
 export class PackageTypesError extends Error {
+  constructor(message: string, options?: ErrorOptions) {
+    super(message, options);
+    this.name = this.constructor.name;
+  }
+}
+
+export class PackageDeclarationsError extends Error {
   constructor(message: string, options?: ErrorOptions) {
     super(message, options);
     this.name = this.constructor.name;
