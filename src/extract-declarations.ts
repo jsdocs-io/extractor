@@ -37,7 +37,7 @@ import { isTypeAlias } from "./is-type-alias";
 import { isVariable } from "./is-variable";
 import { isVariableAssignmentExpression } from "./is-variable-assignment-expression";
 
-export type ContainerDeclarationsOptions = {
+export type ExtractDeclarationsOptions = {
   containerName: string;
   container: SourceFile | ModuleDeclaration;
   maxDepth: number;
@@ -45,7 +45,7 @@ export type ContainerDeclarationsOptions = {
   pkgName?: string;
 };
 
-export type ExtractedContainerDeclaration =
+export type ExtractedDeclaration =
   | ExtractedVariable
   | ExtractedFunction
   | ExtractedClass
@@ -54,16 +54,15 @@ export type ExtractedContainerDeclaration =
   | ExtractedTypeAlias
   | ExtractedNamespace;
 
-export type ExtractedContainerDeclarationKind =
-  ExtractedContainerDeclaration["kind"];
+export type ExtractedDeclarationKind = ExtractedDeclaration["kind"];
 
-export const containerDeclarations = async ({
+export const extractDeclarations = async ({
   containerName,
   container,
   maxDepth,
   project,
   pkgName,
-}: ContainerDeclarationsOptions): Promise<ExtractedContainerDeclaration[]> => {
+}: ExtractDeclarationsOptions): Promise<ExtractedDeclaration[]> => {
   const foundDeclarations = [
     ...exportedDeclarations(containerName, container),
     ...exportEqualsDeclarations(containerName, container),
@@ -76,7 +75,7 @@ export const containerDeclarations = async ({
   ];
   const seenFunctions = new Set<string>();
   const seenNamespaces = new Set<string>();
-  const containerDeclarations = [];
+  const extractedDeclarations = [];
   for (const { containerName, exportName, declaration } of foundDeclarations) {
     const extractedDeclaration = await extractDeclaration({
       containerName,
@@ -89,9 +88,9 @@ export const containerDeclarations = async ({
     if (!extractedDeclaration) {
       continue;
     }
-    containerDeclarations.push(extractedDeclaration);
+    extractedDeclarations.push(extractedDeclaration);
   }
-  return orderBy(containerDeclarations, "id");
+  return orderBy(extractedDeclarations, "id");
 };
 
 type ExtractDeclarationOptions = {
@@ -110,9 +109,7 @@ const extractDeclaration = async ({
   maxDepth,
   seenFunctions,
   seenNamespaces,
-}: ExtractDeclarationOptions): Promise<
-  ExtractedContainerDeclaration | undefined
-> => {
+}: ExtractDeclarationOptions): Promise<ExtractedDeclaration | undefined> => {
   if (isVariable(declaration)) {
     return extractVariable(containerName, exportName, declaration);
   }
@@ -157,7 +154,7 @@ const extractDeclaration = async ({
       return undefined;
     }
     seenNamespaces.add(exportName);
-    const innerDeclarations = await containerDeclarations({
+    const innerDeclarations = await extractDeclarations({
       containerName: id(containerName, "namespace", exportName),
       container: declaration,
       maxDepth: maxDepth - 1,
@@ -173,7 +170,7 @@ const extractDeclaration = async ({
     // A file module declaration happens with the following export forms:
     // `import * as ns from module; export { ns };` or
     // `export * as ns from module`.
-    const innerDeclarations = await containerDeclarations({
+    const innerDeclarations = await extractDeclarations({
       containerName: id(containerName, "namespace", exportName),
       container: declaration,
       maxDepth: maxDepth - 1,

@@ -6,7 +6,7 @@ import {
   ScriptTarget,
 } from "ts-morph";
 import { expect, test } from "vitest";
-import { containerDeclarations } from "./container-declarations";
+import { extractDeclarations } from "./extract-declarations";
 
 test("no declarations", async () => {
   const project = new Project({
@@ -25,7 +25,7 @@ test("no declarations", async () => {
     `,
   );
   expect(
-    await containerDeclarations({
+    await extractDeclarations({
       containerName: "",
       container: indexFile,
       maxDepth: 5,
@@ -51,7 +51,7 @@ test("no declarations, no project", async () => {
     `,
   );
   expect(
-    await containerDeclarations({
+    await extractDeclarations({
       containerName: "",
       container: indexFile,
       maxDepth: 5,
@@ -89,7 +89,7 @@ test("multiple declarations", async () => {
     export default 42;
     `,
   );
-  const extractedDeclarations = await containerDeclarations({
+  const extractedDeclarations = await extractDeclarations({
     containerName: "",
     container: indexFile,
     maxDepth: 5,
@@ -114,7 +114,7 @@ test("module container", async () => {
     `,
   );
 
-  const extractedDeclarations = await containerDeclarations({
+  const extractedDeclarations = await extractDeclarations({
     containerName: "",
     container: indexFile.getModuleOrThrow('"foo"'),
     maxDepth: 5,
@@ -143,7 +143,7 @@ test("overloaded function", async () => {
     `,
   );
 
-  const extractedDeclarations = await containerDeclarations({
+  const extractedDeclarations = await extractDeclarations({
     containerName: "",
     container: indexFile,
     maxDepth: 5,
@@ -168,7 +168,7 @@ test("function expression", async () => {
     `,
   );
 
-  const extractedDeclarations = await containerDeclarations({
+  const extractedDeclarations = await extractDeclarations({
     containerName: "",
     container: indexFile,
     maxDepth: 5,
@@ -194,7 +194,7 @@ test("merged namespace", async () => {
     `,
   );
 
-  const extractedDeclarations = await containerDeclarations({
+  const extractedDeclarations = await extractDeclarations({
     containerName: "",
     container: indexFile,
     maxDepth: 5,

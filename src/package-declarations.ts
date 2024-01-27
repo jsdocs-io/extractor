@@ -1,10 +1,10 @@
 import { ResultAsync } from "neverthrow";
 import type { Project, SourceFile } from "ts-morph";
-import {
-  containerDeclarations,
-  type ExtractedContainerDeclaration,
-} from "./container-declarations";
 import { PackageDeclarationsError } from "./errors";
+import {
+  extractDeclarations,
+  type ExtractedDeclaration,
+} from "./extract-declarations";
 
 export type PackageDeclarationsOptions = {
   pkgName: string;
@@ -19,11 +19,11 @@ export const packageDeclarations = ({
   indexFile,
   maxDepth,
 }: PackageDeclarationsOptions): ResultAsync<
-  ExtractedContainerDeclaration[],
+  ExtractedDeclaration[],
   PackageDeclarationsError
 > =>
   ResultAsync.fromPromise(
-    containerDeclarations({
+    extractDeclarations({
       containerName: "",
       container: indexFile,
       maxDepth,

@@ -1,5 +1,5 @@
 import { SourceFile, SyntaxKind } from "ts-morph";
-import type { ExtractedContainerDeclaration } from "./container-declarations";
+import type { ExtractedDeclaration } from "./extract-declarations";
 import type { ExtractedNamespace } from "./extract-namespace";
 import { formatSignature } from "./format-signature";
 import { id } from "./id";
@@ -9,7 +9,7 @@ export const extractFileModule = async (
   containerName: string,
   exportName: string,
   declaration: SourceFile,
-  declarations: ExtractedContainerDeclaration[],
+  declarations: ExtractedDeclaration[],
 ): Promise<ExtractedNamespace> => ({
   kind: "namespace",
   id: id(containerName, "namespace", exportName),
