@@ -20,7 +20,7 @@ import type { ExtractedNamespace } from "./extract-namespace";
 import type { ExtractedTypeAlias } from "./extract-type-alias";
 import type { ExtractedVariable } from "./extract-variable";
 
-export type ExtractedDeclaration =
+export type AllExtractedDeclaration =
   | ExtractedVariable
   | ExtractedFunction
   | ExtractedClass
@@ -40,4 +40,4 @@ export type ExtractedDeclaration =
   | ExtractedTypeAlias
   | ExtractedNamespace;
 
-export type ExtractedDeclarationKind = ExtractedDeclaration["kind"];
+export type AllExtractedDeclarationKind = AllExtractedDeclaration["kind"];

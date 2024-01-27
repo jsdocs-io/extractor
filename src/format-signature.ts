@@ -1,8 +1,8 @@
 import { format } from "prettier";
-import type { ExtractedDeclarationKind } from "./extracted-declaration";
+import type { AllExtractedDeclarationKind } from "./all-extracted-declaration";
 
 export const formatSignature = async (
-  kind: ExtractedDeclarationKind,
+  kind: AllExtractedDeclarationKind,
   signature: string,
 ): Promise<string> => {
   const s = signature
