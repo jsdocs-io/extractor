@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`export default let typed 1`] = `
+[
+  {
+    "docs": [
+      "/** var1 */",
+    ],
+    "file": "/index.ts",
+    "id": "variable.default",
+    "kind": "variable",
+    "line": 2,
+    "name": "default",
+    "signature": "let default: string;",
+  },
+]
+`;
