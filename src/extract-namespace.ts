@@ -33,6 +33,10 @@ export const extractNamespace = async (
 });
 
 const namespaceSignature = (exportName: string): Promise<string> => {
-  const signature = `namespace ${exportName} {}`;
+  const containerKeyword =
+    exportName.startsWith('"') || exportName.startsWith("'")
+      ? "module"
+      : "namespace";
+  const signature = `${containerKeyword} ${exportName} {}`;
   return formatSignature("namespace", signature);
 };
