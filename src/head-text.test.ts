@@ -39,17 +39,6 @@ test("return text from declaration before body without JSDoc", () => {
       Bar,
       Baz
     }
-
-    /** Docs for FooNamespace */
-    namespace FooNamespace {
-      /** Docs for FooNamespaceClass */
-      class FooNamespaceClass {
-        bar;
-        constructor() {
-          this.bar = 1;
-        }
-      }
-    }
     `,
   );
   expect(headText(indexFile.getInterfaceOrThrow("FooInterface"))).toBe(
@@ -59,7 +48,4 @@ test("return text from declaration before body without JSDoc", () => {
     "class FooClass extends FooInterface {}",
   );
   expect(headText(indexFile.getEnumOrThrow("FooEnum"))).toBe("enum FooEnum {}");
-  expect(headText(indexFile.getModuleOrThrow("FooNamespace"))).toBe(
-    "namespace FooNamespace {}",
-  );
 });

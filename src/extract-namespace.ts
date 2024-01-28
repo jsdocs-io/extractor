@@ -2,7 +2,6 @@ import { ModuleDeclaration } from "ts-morph";
 import { docs } from "./docs";
 import type { ExtractedDeclaration } from "./extract-declarations";
 import { formatSignature } from "./format-signature";
-import { headText } from "./head-text";
 import { id } from "./id";
 import { sourceFilePath } from "./source-file-path";
 
@@ -29,13 +28,11 @@ export const extractNamespace = async (
   docs: docs(declaration),
   file: sourceFilePath(declaration),
   line: declaration.getStartLineNumber(),
-  signature: await namespaceSignature(declaration),
+  signature: await namespaceSignature(exportName),
   declarations,
 });
 
-const namespaceSignature = (
-  declaration: ModuleDeclaration,
-): Promise<string> => {
-  const signature = headText(declaration);
+const namespaceSignature = (exportName: string): Promise<string> => {
+  const signature = `namespace ${exportName} {}`;
   return formatSignature("namespace", signature);
 };
