@@ -1,0 +1,18 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`overloaded function with multiple docs 1`] = `
+[
+  {
+    "docs": [
+      "/** (A) number to string */",
+      "/** (B) string to number */",
+    ],
+    "file": "/index.d.ts",
+    "id": "function.func1",
+    "kind": "function",
+    "line": 2,
+    "name": "func1",
+    "signature": "func1: { (a: number): string; (b: string): number };",
+  },
+]
+`;

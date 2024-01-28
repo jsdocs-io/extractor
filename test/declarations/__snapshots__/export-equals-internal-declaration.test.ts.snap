@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`export equals internal declaration 1`] = `
+[
+  {
+    "docs": [],
+    "file": "/index.d.ts",
+    "id": "variable._foo",
+    "kind": "variable",
+    "line": 1,
+    "name": "_foo",
+    "signature": "const _foo: number;",
+  },
+]
+`;

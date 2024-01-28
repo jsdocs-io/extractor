@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`export default function 1`] = `
+[
+  {
+    "docs": [
+      "/** func1 */",
+    ],
+    "file": "/index.ts",
+    "id": "function.default",
+    "kind": "function",
+    "line": 2,
+    "name": "default",
+    "signature": "default: (a: number, b: number) => number;",
+  },
+]
+`;

@@ -1,0 +1,32 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`export all as namespace 1`] = `
+[
+  {
+    "declarations": [
+      {
+        "docs": [
+          "/** Variable foo1 */",
+        ],
+        "file": "/foo.d.ts",
+        "id": "namespace.foo.variable.foo1",
+        "kind": "variable",
+        "line": 6,
+        "name": "foo1",
+        "signature": "const foo1: string;",
+      },
+    ],
+    "docs": [
+      "/**
+ * Module Foo
+ */",
+    ],
+    "file": "/foo.d.ts",
+    "id": "namespace.foo",
+    "kind": "namespace",
+    "line": 6,
+    "name": "foo",
+    "signature": "module "foo.d.ts" {}",
+  },
+]
+`;

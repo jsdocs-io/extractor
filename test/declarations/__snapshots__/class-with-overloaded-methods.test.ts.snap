@@ -1,0 +1,31 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`class with overloaded methods 1`] = `
+[
+  {
+    "constructors": [],
+    "docs": [],
+    "file": "/index.d.ts",
+    "id": "class.Class1",
+    "kind": "class",
+    "line": 1,
+    "methods": [
+      {
+        "docs": [
+          "/** (A) foo */",
+          "/** (B) foo */",
+        ],
+        "file": "/index.d.ts",
+        "id": "class.Class1.method.foo",
+        "kind": "class-method",
+        "line": 3,
+        "name": "foo",
+        "signature": "foo: { (a: string): number; (b: number): string };",
+      },
+    ],
+    "name": "Class1",
+    "properties": [],
+    "signature": "class Class1 {}",
+  },
+]
+`;

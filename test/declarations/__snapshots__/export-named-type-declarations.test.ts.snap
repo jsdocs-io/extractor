@@ -1,0 +1,106 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`export named type declarations 1`] = `
+[
+  {
+    "constructors": [],
+    "docs": [
+      "/** Class1 */",
+    ],
+    "file": "/index.d.ts",
+    "id": "class.Class1",
+    "kind": "class",
+    "line": 18,
+    "methods": [],
+    "name": "Class1",
+    "properties": [],
+    "signature": "class Class1 {}",
+  },
+  {
+    "docs": [
+      "/** Enum1 */",
+    ],
+    "file": "/index.d.ts",
+    "id": "enum.Enum1",
+    "kind": "enum",
+    "line": 24,
+    "members": [],
+    "name": "Enum1",
+    "signature": "enum Enum1 {}",
+  },
+  {
+    "docs": [
+      "/** func1 */",
+    ],
+    "file": "/index.d.ts",
+    "id": "function.func1",
+    "kind": "function",
+    "line": 11,
+    "name": "func1",
+    "signature": "func1: { (a: number, b: number): number; (a: string, b: string): string };",
+  },
+  {
+    "docs": [
+      "/** func2 */",
+    ],
+    "file": "/index.d.ts",
+    "id": "function.func2",
+    "kind": "function",
+    "line": 15,
+    "name": "func2",
+    "signature": "func2: (a: number, b: number) => number;",
+  },
+  {
+    "callSignatures": [],
+    "constructSignatures": [],
+    "docs": [
+      "/** Interface1 */",
+    ],
+    "file": "/index.d.ts",
+    "getAccessors": [],
+    "id": "interface.Interface1",
+    "indexSignatures": [],
+    "kind": "interface",
+    "line": 21,
+    "methods": [],
+    "name": "Interface1",
+    "properties": [],
+    "setAccessors": [],
+    "signature": "interface Interface1 {}",
+  },
+  {
+    "declarations": [],
+    "docs": [
+      "/** Namespace1 */",
+    ],
+    "file": "/index.d.ts",
+    "id": "namespace.Namespace1",
+    "kind": "namespace",
+    "line": 30,
+    "name": "Namespace1",
+    "signature": "namespace Namespace1 {}",
+  },
+  {
+    "docs": [
+      "/** TypeAlias1 */",
+    ],
+    "file": "/index.d.ts",
+    "id": "type-alias.TypeAlias1",
+    "kind": "type-alias",
+    "line": 27,
+    "name": "TypeAlias1",
+    "signature": "type TypeAlias1 = number | string;",
+  },
+  {
+    "docs": [
+      "/** var1 */",
+    ],
+    "file": "/index.d.ts",
+    "id": "variable.var1",
+    "kind": "variable",
+    "line": 8,
+    "name": "var1",
+    "signature": "const var1: string;",
+  },
+]
+`;

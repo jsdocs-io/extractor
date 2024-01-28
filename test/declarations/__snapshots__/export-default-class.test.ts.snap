@@ -1,0 +1,20 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`export default class 1`] = `
+[
+  {
+    "constructors": [],
+    "docs": [
+      "/** Class1 */",
+    ],
+    "file": "/index.ts",
+    "id": "class.default",
+    "kind": "class",
+    "line": 2,
+    "methods": [],
+    "name": "default",
+    "properties": [],
+    "signature": "class {}",
+  },
+]
+`;

@@ -1,0 +1,35 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`interface with overloaded methods 1`] = `
+[
+  {
+    "callSignatures": [],
+    "constructSignatures": [],
+    "docs": [],
+    "file": "/index.d.ts",
+    "getAccessors": [],
+    "id": "interface.Interface1",
+    "indexSignatures": [],
+    "kind": "interface",
+    "line": 1,
+    "methods": [
+      {
+        "docs": [
+          "/** (A) foo */",
+          "/** (B) foo */",
+        ],
+        "file": "/index.d.ts",
+        "id": "interface.Interface1.method.foo",
+        "kind": "interface-method",
+        "line": 3,
+        "name": "foo",
+        "signature": "foo: { (a: string): number; (b: number): string };",
+      },
+    ],
+    "name": "Interface1",
+    "properties": [],
+    "setAccessors": [],
+    "signature": "interface Interface1 {}",
+  },
+]
+`;

@@ -1,0 +1,75 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ambient modules 1`] = `
+[
+  {
+    "declarations": [
+      {
+        "docs": [
+          "/** Variable var1 */",
+        ],
+        "file": "/index.d.ts",
+        "id": "namespace."bar".variable.var1",
+        "kind": "variable",
+        "line": 7,
+        "name": "var1",
+        "signature": "const var1: string;",
+      },
+      {
+        "docs": [
+          "/** Variable var2 */",
+        ],
+        "file": "/index.d.ts",
+        "id": "namespace."bar".variable.var2",
+        "kind": "variable",
+        "line": 10,
+        "name": "var2",
+        "signature": "const var2: boolean;",
+      },
+    ],
+    "docs": [
+      "/** Module 'bar' */",
+    ],
+    "file": "/index.d.ts",
+    "id": "namespace."bar"",
+    "kind": "namespace",
+    "line": 5,
+    "name": ""bar"",
+    "signature": "module "bar" {}",
+  },
+  {
+    "declarations": [
+      {
+        "docs": [],
+        "file": "/index.d.ts",
+        "id": "namespace."foo bar".function.default",
+        "kind": "function",
+        "line": 15,
+        "name": "default",
+        "signature": "default: (a: number, b: number) => number;",
+      },
+    ],
+    "docs": [
+      "/** Module 'foo bar' */",
+    ],
+    "file": "/index.d.ts",
+    "id": "namespace."foo bar"",
+    "kind": "namespace",
+    "line": 14,
+    "name": ""foo bar"",
+    "signature": "module "foo bar" {}",
+  },
+  {
+    "declarations": [],
+    "docs": [
+      "/** Module 'foo' */",
+    ],
+    "file": "/index.d.ts",
+    "id": "namespace."foo"",
+    "kind": "namespace",
+    "line": 2,
+    "name": ""foo"",
+    "signature": "module "foo" {}",
+  },
+]
+`;

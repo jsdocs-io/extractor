@@ -1,0 +1,84 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`export equals function and namespace 1`] = `
+[
+  {
+    "docs": [
+      "/** func1 function */",
+    ],
+    "file": "/index.d.ts",
+    "id": "function.func1",
+    "kind": "function",
+    "line": 10,
+    "name": "func1",
+    "signature": "func1: typeof func1;",
+  },
+  {
+    "callSignatures": [],
+    "constructSignatures": [],
+    "docs": [
+      "/** Interface1 */",
+    ],
+    "file": "/index.d.ts",
+    "getAccessors": [],
+    "id": "interface.Interface1",
+    "indexSignatures": [],
+    "kind": "interface",
+    "line": 16,
+    "methods": [],
+    "name": "Interface1",
+    "properties": [
+      {
+        "docs": [],
+        "file": "/index.d.ts",
+        "id": "interface.Interface1.property.foo",
+        "kind": "interface-property",
+        "line": 17,
+        "name": "foo",
+        "signature": "readonly foo: string;",
+      },
+    ],
+    "setAccessors": [],
+    "signature": "interface Interface1 {}",
+  },
+  {
+    "callSignatures": [],
+    "constructSignatures": [],
+    "docs": [
+      "/** Interface2 */",
+    ],
+    "file": "/index.d.ts",
+    "getAccessors": [],
+    "id": "interface.Interface2",
+    "indexSignatures": [],
+    "kind": "interface",
+    "line": 21,
+    "methods": [],
+    "name": "Interface2",
+    "properties": [
+      {
+        "docs": [],
+        "file": "/index.d.ts",
+        "id": "interface.Interface2.property.bar",
+        "kind": "interface-property",
+        "line": 22,
+        "name": "bar",
+        "signature": "readonly bar: number;",
+      },
+    ],
+    "setAccessors": [],
+    "signature": "interface Interface2 {}",
+  },
+  {
+    "docs": [
+      "/** var1 */",
+    ],
+    "file": "/index.d.ts",
+    "id": "variable.var1",
+    "kind": "variable",
+    "line": 26,
+    "name": "var1",
+    "signature": "const var1: string;",
+  },
+]
+`;

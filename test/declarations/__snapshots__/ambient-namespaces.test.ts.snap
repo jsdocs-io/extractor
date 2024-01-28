@@ -1,0 +1,93 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ambient namespaces 1`] = `
+[
+  {
+    "docs": [
+      "/** Global function foobar */",
+    ],
+    "file": "/index.d.ts",
+    "id": "function.foobar",
+    "kind": "function",
+    "line": 20,
+    "name": "foobar",
+    "signature": "foobar: (a: number, b: number) => number;",
+  },
+  {
+    "declarations": [
+      {
+        "callSignatures": [],
+        "constructSignatures": [],
+        "docs": [
+          "/** Interface Bar */",
+        ],
+        "file": "/index.d.ts",
+        "getAccessors": [],
+        "id": "namespace.Foo.interface.Bar",
+        "indexSignatures": [],
+        "kind": "interface",
+        "line": 4,
+        "methods": [],
+        "name": "Bar",
+        "properties": [
+          {
+            "docs": [
+              "/** Property qux */",
+            ],
+            "file": "/index.d.ts",
+            "id": "namespace.Foo.interface.Bar.property.qux",
+            "kind": "interface-property",
+            "line": 6,
+            "name": "qux",
+            "signature": "readonly qux: string;",
+          },
+        ],
+        "setAccessors": [],
+        "signature": "interface Bar {}",
+      },
+      {
+        "docs": [
+          "/** Variable baz */",
+        ],
+        "file": "/index.d.ts",
+        "id": "namespace.Foo.variable.baz",
+        "kind": "variable",
+        "line": 10,
+        "name": "baz",
+        "signature": "const baz: boolean;",
+      },
+    ],
+    "docs": [
+      "/** Ambient namespace Foo */",
+    ],
+    "file": "/index.d.ts",
+    "id": "namespace.Foo",
+    "kind": "namespace",
+    "line": 2,
+    "name": "Foo",
+    "signature": "namespace Foo {}",
+  },
+  {
+    "docs": [
+      "/** Global read-only variable bar */",
+    ],
+    "file": "/index.d.ts",
+    "id": "variable.bar",
+    "kind": "variable",
+    "line": 17,
+    "name": "bar",
+    "signature": "const bar: Foo.Bar;",
+  },
+  {
+    "docs": [
+      "/** Global variable foo */",
+    ],
+    "file": "/index.d.ts",
+    "id": "variable.foo",
+    "kind": "variable",
+    "line": 14,
+    "name": "foo",
+    "signature": "var foo: Foo.Bar;",
+  },
+]
+`;

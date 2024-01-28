@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`export named declaration without jsdoc 1`] = `
+[
+  {
+    "docs": [],
+    "file": "/index.ts",
+    "id": "variable.var1",
+    "kind": "variable",
+    "line": 7,
+    "name": "var1",
+    "signature": "const var1: number;",
+  },
+]
+`;

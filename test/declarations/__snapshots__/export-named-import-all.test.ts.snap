@@ -1,0 +1,91 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`export named import all 1`] = `
+[
+  {
+    "declarations": [
+      {
+        "docs": [],
+        "file": "/bar.d.ts",
+        "id": "namespace.bar.variable.baz",
+        "kind": "variable",
+        "line": 1,
+        "name": "baz",
+        "signature": "const baz: boolean;",
+      },
+    ],
+    "docs": [],
+    "file": "/bar.d.ts",
+    "id": "namespace.bar",
+    "kind": "namespace",
+    "line": 1,
+    "name": "bar",
+    "signature": "module "bar.d.ts" {}",
+  },
+  {
+    "declarations": [
+      {
+        "docs": [
+          "/** Function bar2 */",
+        ],
+        "file": "/foo.d.ts",
+        "id": "namespace.foo.function.bar2",
+        "kind": "function",
+        "line": 9,
+        "name": "bar2",
+        "signature": "bar2: (a: number, b: number) => number;",
+      },
+      {
+        "callSignatures": [],
+        "constructSignatures": [],
+        "docs": [
+          "/** Interface Bar3 */",
+        ],
+        "file": "/foo.d.ts",
+        "getAccessors": [],
+        "id": "namespace.foo.interface.Bar3",
+        "indexSignatures": [],
+        "kind": "interface",
+        "line": 12,
+        "methods": [],
+        "name": "Bar3",
+        "properties": [
+          {
+            "docs": [],
+            "file": "/foo.d.ts",
+            "id": "namespace.foo.interface.Bar3.property.baz",
+            "kind": "interface-property",
+            "line": 13,
+            "name": "baz",
+            "signature": "readonly baz: <U>(t: T, u: U) => boolean;",
+          },
+        ],
+        "setAccessors": [],
+        "signature": "interface Bar3<T> {}",
+      },
+      {
+        "docs": [
+          "/** Variable bar1 */",
+        ],
+        "file": "/foo.d.ts",
+        "id": "namespace.foo.variable.bar1",
+        "kind": "variable",
+        "line": 6,
+        "name": "bar1",
+        "signature": "const bar1: string;",
+      },
+    ],
+    "docs": [
+      "/**
+ * Foo module
+ */",
+    ],
+    "file": "/foo.d.ts",
+    "id": "namespace.foo",
+    "kind": "namespace",
+    "line": 6,
+    "name": "foo",
+    "signature": "module "foo.d.ts" {}",
+  },
+]
+`;

@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`export default expression 1`] = `
+[
+  {
+    "docs": [
+      "/** expr1 */",
+    ],
+    "file": "/index.ts",
+    "id": "variable.default",
+    "kind": "variable",
+    "line": 2,
+    "name": "default",
+    "signature": "const default: any;",
+  },
+]
+`;

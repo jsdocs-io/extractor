@@ -1,0 +1,95 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`export default nested namespaces 1`] = `
+[
+  {
+    "declarations": [
+      {
+        "docs": [
+          "/** fooFunc doc */",
+        ],
+        "file": "/index.d.ts",
+        "id": "namespace.default.function.fooFunc",
+        "kind": "function",
+        "line": 10,
+        "name": "fooFunc",
+        "signature": "fooFunc: (s: string) => string;",
+      },
+      {
+        "declarations": [
+          {
+            "docs": [
+              "/** foobarFunc doc */",
+            ],
+            "file": "/index.d.ts",
+            "id": "namespace.default.namespace.bar.function.foobarFunc",
+            "kind": "function",
+            "line": 16,
+            "name": "foobarFunc",
+            "signature": "foobarFunc: (n: number) => number;",
+          },
+          {
+            "declarations": [
+              {
+                "docs": [
+                  "/** foobarbazFunc doc */",
+                ],
+                "file": "/index.d.ts",
+                "id": "namespace.default.namespace.bar.namespace.baz.function.foobarbazFunc",
+                "kind": "function",
+                "line": 22,
+                "name": "foobarbazFunc",
+                "signature": "foobarbazFunc: (b: boolean) => boolean;",
+              },
+              {
+                "declarations": [
+                  {
+                    "declarations": [],
+                    "docs": [],
+                    "file": "/index.d.ts",
+                    "id": "namespace.default.namespace.bar.namespace.baz.namespace.qux.namespace.xyz",
+                    "kind": "namespace",
+                    "line": 26,
+                    "name": "xyz",
+                    "signature": "namespace xyz {}",
+                  },
+                ],
+                "docs": [],
+                "file": "/index.d.ts",
+                "id": "namespace.default.namespace.bar.namespace.baz.namespace.qux",
+                "kind": "namespace",
+                "line": 26,
+                "name": "qux",
+                "signature": "namespace qux {}",
+              },
+            ],
+            "docs": [],
+            "file": "/index.d.ts",
+            "id": "namespace.default.namespace.bar.namespace.baz",
+            "kind": "namespace",
+            "line": 20,
+            "name": "baz",
+            "signature": "namespace baz {}",
+          },
+        ],
+        "docs": [],
+        "file": "/index.d.ts",
+        "id": "namespace.default.namespace.bar",
+        "kind": "namespace",
+        "line": 14,
+        "name": "bar",
+        "signature": "namespace bar {}",
+      },
+    ],
+    "docs": [
+      "/** foo doc */",
+    ],
+    "file": "/index.d.ts",
+    "id": "namespace.default",
+    "kind": "namespace",
+    "line": 8,
+    "name": "default",
+    "signature": "namespace default {}",
+  },
+]
+`;

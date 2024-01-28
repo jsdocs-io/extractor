@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`export as namespace 1`] = `
+[
+  {
+    "docs": [
+      "/** func1 */",
+    ],
+    "file": "/index.d.ts",
+    "id": "function.func1",
+    "kind": "function",
+    "line": 2,
+    "name": "func1",
+    "signature": "func1: (a: number, b: number) => number;",
+  },
+]
+`;

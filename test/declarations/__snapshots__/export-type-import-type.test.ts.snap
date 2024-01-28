@@ -1,0 +1,45 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`export type import type 1`] = `
+[
+  {
+    "declarations": [
+      {
+        "docs": [
+          "/** Type alias Foo1 */",
+        ],
+        "file": "/foo.d.ts",
+        "id": "namespace.Foo.type-alias.Foo1",
+        "kind": "type-alias",
+        "line": 6,
+        "name": "Foo1",
+        "signature": "type Foo1 = string | number;",
+      },
+      {
+        "docs": [
+          "/** Type alias Foo2 */",
+        ],
+        "file": "/foo.d.ts",
+        "id": "namespace.Foo.type-alias.Foo2",
+        "kind": "type-alias",
+        "line": 9,
+        "name": "Foo2",
+        "signature": "type Foo2 = {
+  bar: boolean;
+};",
+      },
+    ],
+    "docs": [
+      "/**
+ * Module Foo.
+ */",
+    ],
+    "file": "/foo.d.ts",
+    "id": "namespace.Foo",
+    "kind": "namespace",
+    "line": 6,
+    "name": "Foo",
+    "signature": "module "foo.d.ts" {}",
+  },
+]
+`;
