@@ -317,6 +317,50 @@ test("export named declarations", async () => {
     export interface Interface012 {
       foo?(a: number): string;
     }
+
+    export interface Interface013 {
+      /** @internal */
+      new (): Interface006;
+
+      /** @internal */
+      someMethod()
+
+      /** @internal */
+      (a: string): string;
+
+      /** @internal */
+      readonly [index: string]: any;
+
+      /** @internal */
+      get foo(): any;
+
+      /** @internal */
+      set foo(value: any);
+    }
+
+    export interface Interface014 {
+      /** This is a get accessor */
+      get foo(): any;
+
+      /** This is a set accessor */
+      set foo(value: any);
+    }
+
+    export interface Interface015 {
+      (a: string): string;
+      (a: number): number;
+      (a: boolean): boolean;
+    }
+
+    export interface Interface016 {
+      new (): Interface006;
+      new (): Interface006;
+    }
+
+    export interface Interface017 {
+      readonly [index: string]: any;
+      readonly [index: number]: any;
+    }
     `,
   );
   project.createSourceFile(
