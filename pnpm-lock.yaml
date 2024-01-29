@@ -125,8 +125,8 @@ devDependencies:
     specifier: ^11.2.0
     version: 11.2.0
   nock:
-    specifier: ^13.5.0
-    version: 13.5.0
+    specifier: ^13.5.1
+    version: 13.5.1
   np:
     specifier: ^9.2.0
     version: 9.2.0(typescript@5.3.3)
@@ -2484,7 +2484,7 @@ packages:
       '@pollyjs/adapter': 6.0.6
       '@pollyjs/utils': 6.0.6
       lodash-es: 4.17.21
-      nock: 13.5.0
+      nock: 13.5.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -10256,8 +10256,8 @@ packages:
     engines: {node: '>=12.0.0'}
     dev: true
 
-  /nock@13.5.0:
-    resolution: {integrity: sha512-9hc1eCS2HtOz+sE9W7JQw/tXJktg0zoPSu48s/pYe73e25JW9ywiowbqnUSd7iZPeVawLcVpPZeZS312fwSY+g==}
+  /nock@13.5.1:
+    resolution: {integrity: sha512-+s7b73fzj5KnxbKH4Oaqz07tQ8degcMilU4rrmnKvI//b0JMBU4wEXFQ8zqr+3+L4eWSfU3H/UoIVGUV0tue1Q==}
     engines: {node: '>= 10.13'}
     dependencies:
       debug: 4.3.4
