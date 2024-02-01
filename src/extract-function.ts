@@ -1,4 +1,4 @@
-import type { FunctionDeclaration } from "ts-morph";
+import type { ArrowFunction, FunctionDeclaration } from "ts-morph";
 import { docs } from "./docs";
 import { formatSignature } from "./format-signature";
 import { id } from "./id";
@@ -18,7 +18,7 @@ export type ExtractedFunction = {
 export const extractFunction = async (
   containerName: string,
   exportName: string,
-  declaration: FunctionDeclaration,
+  declaration: FunctionDeclaration | ArrowFunction,
 ): Promise<ExtractedFunction> => ({
   kind: "function",
   id: id(containerName, "function", exportName),
@@ -31,7 +31,7 @@ export const extractFunction = async (
 
 const functionSignature = (
   name: string,
-  declaration: FunctionDeclaration,
+  declaration: FunctionDeclaration | ArrowFunction,
 ): Promise<string> => {
   const type = typeCheckerType(declaration);
   return formatSignature("function", `${name}: ${type}`);
