@@ -32,7 +32,7 @@ export const extractNamespace = async (
   declarations,
 });
 
-const namespaceSignature = (exportName: string): Promise<string> => {
+const namespaceSignature = async (exportName: string): Promise<string> => {
   const containerKeyword =
     exportName.startsWith('"') || exportName.startsWith("'")
       ? "module"

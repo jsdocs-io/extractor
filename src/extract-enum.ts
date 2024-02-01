@@ -45,7 +45,7 @@ export const extractEnum = async (
   };
 };
 
-const enumSignature = (declaration: EnumDeclaration): Promise<string> => {
+const enumSignature = async (declaration: EnumDeclaration): Promise<string> => {
   const signature = headText(declaration);
   return formatSignature("enum", signature);
 };
@@ -73,7 +73,9 @@ const extractEnumMembers = async (
   return members;
 };
 
-const enumMemberSignature = (declaration: EnumMember): Promise<string> => {
+const enumMemberSignature = async (
+  declaration: EnumMember,
+): Promise<string> => {
   const signature = declaration.getText();
   return formatSignature("enum-member", signature);
 };

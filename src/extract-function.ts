@@ -29,7 +29,7 @@ export const extractFunction = async (
   signature: await functionSignature(exportName, declaration),
 });
 
-const functionSignature = (
+const functionSignature = async (
   name: string,
   declaration: FunctionDeclaration | ArrowFunction,
 ): Promise<string> => {

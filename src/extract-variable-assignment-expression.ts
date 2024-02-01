@@ -30,7 +30,7 @@ export const extractVariableAssignmentExpression = async (
   };
 };
 
-const variableAssignmentExpressionSignature = (
+const variableAssignmentExpressionSignature = async (
   name: string,
   declaration: BinaryExpression,
   variableDeclaration: VariableDeclaration,

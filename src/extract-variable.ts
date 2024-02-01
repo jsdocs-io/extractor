@@ -29,7 +29,7 @@ export const extractVariable = async (
   signature: await variableSignature(exportName, declaration),
 });
 
-const variableSignature = (
+const variableSignature = async (
   name: string,
   declaration: VariableDeclaration,
 ): Promise<string> => {

@@ -137,7 +137,7 @@ export const extractInterface = async (
   };
 };
 
-const interfaceSignature = (
+const interfaceSignature = async (
   declaration: InterfaceDeclaration,
 ): Promise<string> => {
   const signature = headText(declaration);
@@ -167,7 +167,7 @@ const extractInterfaceProperties = async (
   return orderBy(properties, "id");
 };
 
-const interfacePropertySignature = (
+const interfacePropertySignature = async (
   declaration: PropertySignature,
 ): Promise<string> => {
   const signature = declaration.getText();
@@ -203,7 +203,7 @@ const extractInterfaceMethods = async (
   return orderBy(methods, "id");
 };
 
-const interfaceMethodSignature = (
+const interfaceMethodSignature = async (
   name: string,
   declaration: MethodSignature,
 ): Promise<string> => {
@@ -235,7 +235,7 @@ const extractInterfaceConstructSignatures = async (
   return orderBy(constructSignatures, "id");
 };
 
-const interfaceConstructSignatureSignature = (
+const interfaceConstructSignatureSignature = async (
   declaration: ConstructSignatureDeclaration,
 ): Promise<string> => {
   const signature = declaration.getText();
@@ -266,7 +266,7 @@ const extractInterfaceCallSignatures = async (
   return orderBy(callSignatures, "id");
 };
 
-const interfaceCallSignatureSignature = (
+const interfaceCallSignatureSignature = async (
   declaration: CallSignatureDeclaration,
 ): Promise<string> => {
   const signature = declaration.getText();
@@ -297,7 +297,7 @@ const extractInterfaceIndexSignatures = async (
   return orderBy(indexSignatures, "id");
 };
 
-const interfaceIndexSignatureSignature = (
+const interfaceIndexSignatureSignature = async (
   declaration: IndexSignatureDeclaration,
 ): Promise<string> => {
   const signature = declaration.getText();
@@ -327,7 +327,7 @@ const extractInterfaceGetAccessors = async (
   return orderBy(getAccessors, "id");
 };
 
-const interfaceGetAccessorSignature = (
+const interfaceGetAccessorSignature = async (
   declaration: GetAccessorDeclaration,
 ): Promise<string> => {
   const signature = declaration.getText();
@@ -357,7 +357,7 @@ const extractInterfaceSetAccessors = async (
   return orderBy(setAccessors, "id");
 };
 
-const interfaceSetAccessorSignature = (
+const interfaceSetAccessorSignature = async (
   declaration: SetAccessorDeclaration,
 ): Promise<string> => {
   const signature = declaration.getText();

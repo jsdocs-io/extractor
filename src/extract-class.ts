@@ -81,7 +81,9 @@ export const extractClass = async (
   };
 };
 
-const classSignature = (declaration: ClassDeclaration): Promise<string> => {
+const classSignature = async (
+  declaration: ClassDeclaration,
+): Promise<string> => {
   const signature = headText(declaration);
   return formatSignature("class", signature);
 };
@@ -121,7 +123,7 @@ const extractClassConstructors = async (
   return constructors;
 };
 
-const classConstructorSignature = (
+const classConstructorSignature = async (
   declaration: ConstructorDeclaration,
 ): Promise<string> => {
   const modifiers = modifiersText(declaration);
@@ -175,7 +177,7 @@ const extractClassProperties = async (
   return orderBy(properties, "id");
 };
 
-const classPropertySignature = (
+const classPropertySignature = async (
   name: string,
   declaration:
     | ParameterDeclaration
@@ -233,7 +235,7 @@ const extractClassMethods = async (
   return orderBy(methods, "id");
 };
 
-const classMethodSignature = (
+const classMethodSignature = async (
   name: string,
   declaration: MethodDeclaration,
 ): Promise<string> => {

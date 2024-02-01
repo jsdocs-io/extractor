@@ -28,7 +28,7 @@ export const extractTypeAlias = async (
   signature: await typeAliasSignature(declaration),
 });
 
-const typeAliasSignature = (
+const typeAliasSignature = async (
   declaration: TypeAliasDeclaration,
 ): Promise<string> => {
   const signature = declaration.getText();

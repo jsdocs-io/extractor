@@ -20,7 +20,7 @@ export const extractFunctionExpression = async (
   signature: await functionExpressionSignature(exportName, declaration),
 });
 
-const functionExpressionSignature = (
+const functionExpressionSignature = async (
   name: string,
   declaration: VariableDeclaration,
 ): Promise<string> => {
