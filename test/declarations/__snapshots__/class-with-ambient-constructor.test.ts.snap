@@ -1,0 +1,28 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`class with ambient constructor 1`] = `
+[
+  {
+    "constructors": [
+      {
+        "docs": [],
+        "file": "/index.d.ts",
+        "id": "class.Class1.constructor",
+        "kind": "class-constructor",
+        "line": 2,
+        "name": "constructor",
+        "signature": "constructor();",
+      },
+    ],
+    "docs": [],
+    "file": "/index.d.ts",
+    "id": "class.Class1",
+    "kind": "class",
+    "line": 1,
+    "methods": [],
+    "name": "Class1",
+    "properties": [],
+    "signature": "class Class1 {}",
+  },
+]
+`;
