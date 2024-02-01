@@ -151,7 +151,14 @@ const extractClassProperties = async (
   ];
   const properties = [];
   for (const declaration of propertiesDeclarations) {
-    if (isHidden(declaration) || Node.isSetAccessorDeclaration(declaration)) {
+    if (
+      isHidden(declaration) ||
+      !(
+        Node.isParameterDeclaration(declaration) ||
+        Node.isPropertyDeclaration(declaration) ||
+        Node.isGetAccessorDeclaration(declaration)
+      )
+    ) {
       continue;
     }
     const name = declaration.getName();
@@ -185,15 +192,12 @@ const classPropertySignature = (
     const signature = `${modifiers} ${name}${optional}: ${type}`;
     return formatSignature("class-property", signature);
   }
-  if (Node.isGetAccessorDeclaration(declaration)) {
-    const staticKeyword = declaration.isStatic() ? "static" : "";
-    const readonlyKeyword =
-      declaration.getSetAccessor() === undefined ? "readonly" : "";
-    const signature = `${staticKeyword} ${readonlyKeyword} ${name}: ${type}`;
-    return formatSignature("class-property", signature);
-  }
-  const unreachable: never = declaration;
-  throw new Error("unreachable", { cause: unreachable });
+  // GetAccessorDeclaration.
+  const staticKeyword = declaration.isStatic() ? "static" : "";
+  const readonlyKeyword =
+    declaration.getSetAccessor() === undefined ? "readonly" : "";
+  const signature = `${staticKeyword} ${readonlyKeyword} ${name}: ${type}`;
+  return formatSignature("class-property", signature);
 };
 
 const extractClassMethods = async (
