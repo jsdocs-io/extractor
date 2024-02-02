@@ -1,0 +1,24 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`export variable and type with identical name 1`] = `
+[
+  {
+    "docs": [],
+    "file": "/index.ts",
+    "id": "type-alias.foo",
+    "kind": "type-alias",
+    "line": 2,
+    "name": "foo",
+    "signature": "type foo = string | number;",
+  },
+  {
+    "docs": [],
+    "file": "/index.ts",
+    "id": "variable.foo",
+    "kind": "variable",
+    "line": 3,
+    "name": "foo",
+    "signature": "const foo: { a: number };",
+  },
+]
+`;
