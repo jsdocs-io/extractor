@@ -264,7 +264,7 @@ test("export const object destructure", async () => {
 
 // TODO: Wait for `ExportedDeclarations` to include `BindingElement`.
 // See https://github.com/dsherret/ts-morph/issues/1499.
-test.only("export const array destructure", async () => {
+test("export const array destructure", async () => {
   const project = new Project({
     useInMemoryFileSystem: true,
     compilerOptions: {
