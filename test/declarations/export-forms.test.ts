@@ -219,7 +219,8 @@ test("export named generator function", async () => {
   ).toMatchSnapshot();
 });
 
-// TODO:
+// TODO: Wait for `ExportedDeclarations` to include `BindingElement`.
+// See https://github.com/dsherret/ts-morph/issues/1499.
 test("export const object destructure", async () => {
   const project = new Project({
     useInMemoryFileSystem: true,
@@ -233,7 +234,22 @@ test("export const object destructure", async () => {
   const indexFile = project.createSourceFile(
     "index.ts",
     dedent`
-    export const { foo, bar: baz } = { foo: 1, bar: 2 };
+    export const {
+      // Normal
+      foo,
+      // Renamed
+      bar: baz,
+      // Function
+      bat,
+      // Default
+      bak = "hello",
+      // Rest
+      ...qux
+    } = { foo: "hello", bar: 42, bat: () => {}, quxA: 1, quxB: 2, quxC: 3 };
+
+    // Computed
+    const key = "bar";
+    export const { [key]: foo } = { bar: "bar" };
     `,
   );
   expect(
@@ -246,8 +262,9 @@ test("export const object destructure", async () => {
   ).toMatchSnapshot();
 });
 
-// TODO:
-test("export const array destructure", async () => {
+// TODO: Wait for `ExportedDeclarations` to include `BindingElement`.
+// See https://github.com/dsherret/ts-morph/issues/1499.
+test.only("export const array destructure", async () => {
   const project = new Project({
     useInMemoryFileSystem: true,
     compilerOptions: {
@@ -260,7 +277,11 @@ test("export const array destructure", async () => {
   const indexFile = project.createSourceFile(
     "index.ts",
     dedent`
-    export const [foo, bar] = [1, 2];
+    // Normal, normal, omitted, rest
+    export const [foo, bar,, ...baz] = [1, 2, 3, 4, 5] as const;
+
+    // Normal, normal, rest(nested)
+    export const [a, b, ...[c, d]] = [1, 2, 3, 4] as const;
     `,
   );
   expect(
