@@ -37,6 +37,7 @@ import { isTypeAlias } from "./is-type-alias";
 import { isVariable } from "./is-variable";
 import { isVariableAssignmentExpression } from "./is-variable-assignment-expression";
 
+/** @internal */
 export type ExtractDeclarationsOptions = {
   containerName: string;
   container: SourceFile | ModuleDeclaration;
@@ -56,6 +57,7 @@ export type ExtractedDeclaration =
 
 export type ExtractedDeclarationKind = ExtractedDeclaration["kind"];
 
+/** @internal */
 export const extractDeclarations = async ({
   containerName,
   container,

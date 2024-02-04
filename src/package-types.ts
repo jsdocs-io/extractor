@@ -3,6 +3,7 @@ import { type NormalizedPackageJson } from "read-pkg";
 import { exports } from "resolve.exports";
 import { PackageTypesError } from "./errors";
 
+/** @internal */
 export const packageTypes = (
   pkgJson: Partial<NormalizedPackageJson>,
   pkgSubpath: string,
