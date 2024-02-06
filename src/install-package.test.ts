@@ -33,7 +33,7 @@ test("package with some production dependencies", async () => {
         "make-error@1.3.6",
         "node-fetch@2.7.0",
         "query-registry@2.6.0",
-        "semver@7.5.4",
+        "semver@7.6.0",
         "tiny-lru@8.0.2",
         "tr46@0.0.3",
         "unfetch@4.2.0",
