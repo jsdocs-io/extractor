@@ -5,7 +5,7 @@ import { id } from "./id";
 import { sourceFilePath } from "./source-file-path";
 
 export type ExtractedTypeAlias = {
-  kind: "type-alias";
+  kind: "type";
   id: string;
   name: string;
   docs: string[];
@@ -19,8 +19,8 @@ export const extractTypeAlias = async (
   exportName: string,
   declaration: TypeAliasDeclaration,
 ): Promise<ExtractedTypeAlias> => ({
-  kind: "type-alias",
-  id: id(containerName, "type-alias", exportName),
+  kind: "type",
+  id: id(containerName, "type", exportName),
   name: exportName,
   docs: docs(declaration),
   file: sourceFilePath(declaration),
@@ -32,5 +32,5 @@ const typeAliasSignature = async (
   declaration: TypeAliasDeclaration,
 ): Promise<string> => {
   const signature = declaration.getText();
-  return formatSignature("type-alias", signature);
+  return formatSignature("type", signature);
 };

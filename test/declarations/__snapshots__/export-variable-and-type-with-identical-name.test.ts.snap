@@ -5,8 +5,8 @@ exports[`export variable and type with identical name 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "type-alias.foo",
-    "kind": "type-alias",
+    "id": "type.foo",
+    "kind": "type",
     "line": 2,
     "name": "foo",
     "signature": "type foo = string | number;",

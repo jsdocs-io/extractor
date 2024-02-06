@@ -27,7 +27,7 @@ export const formatSignature = async (
     case "class":
     case "interface":
     case "enum":
-    case "type-alias":
+    case "type":
     case "namespace": {
       // Just format the signature as-is.
       const formatted = await formatWithPrettier(s);
