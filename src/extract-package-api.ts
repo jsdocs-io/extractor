@@ -12,9 +12,43 @@ import { packageTypes } from "./package-types";
 import { changeDir, currentDir } from "./process";
 import { tempDir } from "./temp-dir";
 
+/**
+`ExtractPackageApiOptions` contains all the options
+for calling {@link extractPackageApi}.
+*/
 export type ExtractPackageApiOptions = {
+  /**
+  Package to extract the API from.
+
+  This can be either a package name (e.g., `foo`) or any other query
+  that can be passed to `bun add` (e.g., `foo@1.0.0`).
+
+  @see {@link https://bun.sh/docs/cli/add | Bun docs}
+  */
   pkg: string;
-  pkgSubpath?: string;
+
+  /**
+  Specific subpath to consider in a package.
+
+  If a package has multiple entrypoints listed in the `exports` property
+  of its `package.json`, use `subpath` to select a specific one by its name
+  (e.g., `someFeature`).
+
+  @defaultValue `.` (package root)
+
+  @see {@link https://nodejs.org/api/packages.html#subpath-exports | Node.js docs}
+  @see {@link https://github.com/lukeed/resolve.exports | resolve.exports docs}
+  */
+  subpath?: string;
+
+  /**
+  Packages can have deeply nested modules and namespaces.
+
+  Use `maxDepth` to limit the depth of the extraction.
+  Declarations nested at levels deeper than this value will be ignored.
+
+  @defaultValue 5
+  */
   maxDepth?: number;
 };
 
@@ -29,13 +63,15 @@ export type PackageApi = {
   version: string;
 
   /**
-  Package subpath selected when extracting the API (e.g., `.`, `custom`).
+  Package subpath selected when extracting the API (e.g., `.`, `someFeature`).
+
+  @see {@link ExtractPackageApiOptions.subpath}
   @see {@link https://nodejs.org/api/packages.html#subpath-exports | Node.js docs}
   */
   subpath: string;
 
   /**
-  Type declarations file, resolved from the selected subpath,
+  Type declarations file, resolved from the selected `subpath`,
   that acts as the entrypoint for the package (e.g., `index.d.ts`).
   */
   types: string;
@@ -51,6 +87,7 @@ export type PackageApi = {
 
   /**
   All packages resolved and installed when installing the package (included).
+
   @example
   ```ts
   ["foo@1.0.0", "bar@2.0.0", "baz@3.0.0"]
@@ -59,12 +96,44 @@ export type PackageApi = {
   packages: string[];
 };
 
+/**
+`extractPackageApi` extracts the API from a package.
+
+`extractPackageApi` returns a {@link https://github.com/supermacro/neverthrow?tab=readme-ov-file#asynchronous-api-resultasync | `ResultAsync`}
+which can be `await`ed to get a {@link https://github.com/supermacro/neverthrow?tab=readme-ov-file#synchronous-api-result | `Result`}.
+If the extraction succeeds, the `Result` will be `Ok` and contain the data described in {@link PackageApi}.
+Otherwise, the `Result` will be `Err` and contain an {@link ExtractorError}.
+
+Warning: The extraction process is slow and blocks the main thread, using workers is recommended.
+
+@example
+```ts
+const result = await extractPackageApi({
+  pkg: "foo",   // Extract API from package `foo` [Required]
+  subpath: ".", // Select subpath `.` (root subpath) [Optional]
+  maxDepth: 5,  // Maximum depth for analyzing nested namespaces [Optional]
+});
+
+if (result.isOk()) {
+  const packageApi = result.value; // Successfully extracted API
+  console.log(JSON.stringify(packageApi, null, 2));
+} else {
+  const extractorError = result.error; // Error extracting API
+  console.error(extractorError);
+}
+```
+
+@param options {@link ExtractPackageApiOptions}
+
+@see {@link https://github.com/supermacro/neverthrow/wiki/Accessing-The-Value-Inside-A-Result | Accessing the value inside a Result}
+@see {@link https://github.com/supermacro/neverthrow/wiki/Basic-Usage-Examples#asynchronous-api | Result and ResultAsync usage}
+*/
 export const extractPackageApi = ({
   pkg,
-  pkgSubpath = ".",
+  subpath = ".",
   maxDepth = 5,
 }: ExtractPackageApiOptions): ResultAsync<PackageApi, ExtractorError> =>
-  okAsync({ pkg, pkgSubpath, maxDepth })
+  okAsync({ pkg, pkgSubpath: subpath, maxDepth })
     .andThen((ctx) =>
       packageName(ctx.pkg).map((pkgName) => ({
         ...ctx,
@@ -83,11 +152,7 @@ export const extractPackageApi = ({
         rootDir,
       })),
     )
-    .andThen((ctx) =>
-      changeDir(ctx.rootDir).map(() => ({
-        ...ctx,
-      })),
-    )
+    .andThen((ctx) => changeDir(ctx.rootDir).map(() => ctx))
     .andThen((ctx) =>
       installPackage(ctx.pkg).map((installedPackages) => ({
         ...ctx,
@@ -136,11 +201,7 @@ export const extractPackageApi = ({
         pkgDeclarations,
       })),
     )
-    .andThen((ctx) =>
-      changeDir(ctx.startDir).map(() => ({
-        ...ctx,
-      })),
-    )
+    .andThen((ctx) => changeDir(ctx.startDir).map(() => ctx))
     .andThen((ctx) =>
       ok({
         name: ctx.pkgJson.name,
