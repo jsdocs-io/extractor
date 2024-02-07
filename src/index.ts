@@ -41,6 +41,7 @@ export { type ExtractedNamespace } from "./extract-namespace";
 export {
   extractPackageApi,
   type ExtractPackageApiOptions,
+  type PackageApi,
 } from "./extract-package-api";
 export { type ExtractedTypeAlias } from "./extract-type-alias";
 export { type ExtractedVariable } from "./extract-variable";

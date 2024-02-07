@@ -2,6 +2,7 @@ import { ResultAsync, ok, okAsync } from "neverthrow";
 import { join } from "pathe";
 import { createProject } from "./create-project";
 import type { ExtractorError } from "./errors";
+import type { ExtractedDeclaration } from "./extract-declarations";
 import { installPackage } from "./install-package";
 import { packageDeclarations } from "./package-declarations";
 import { packageJson } from "./package-json";
@@ -17,11 +18,52 @@ export type ExtractPackageApiOptions = {
   maxDepth?: number;
 };
 
+/**
+PackageApi` contains all the information extracted from a package.
+*/
+export type PackageApi = {
+  /** Package name (e.g., `foo`). */
+  name: string;
+
+  /** Package version number (e.g., `1.0.0`). */
+  version: string;
+
+  /**
+  Package subpath selected when extracting the API (e.g., `.`, `custom`).
+  @see {@link https://nodejs.org/api/packages.html#subpath-exports | Node.js docs}
+  */
+  subpath: string;
+
+  /**
+  Type declarations file, resolved from the selected subpath,
+  that acts as the entrypoint for the package (e.g., `index.d.ts`).
+  */
+  types: string;
+
+  /**
+  Package description extracted from the `types` file if a
+  JSDoc comment with the `@packageDocumentation` tag is found.
+  */
+  overview: string | undefined;
+
+  /** Declarations exported (or re-exported) by the package. */
+  declarations: ExtractedDeclaration[];
+
+  /**
+  All packages resolved and installed when installing the package (included).
+  @example
+  ```ts
+  ["foo@1.0.0", "bar@2.0.0", "baz@3.0.0"]
+  ```
+  */
+  packages: string[];
+};
+
 export const extractPackageApi = ({
   pkg,
   pkgSubpath = ".",
   maxDepth = 5,
-}: ExtractPackageApiOptions): ResultAsync<unknown, ExtractorError> =>
+}: ExtractPackageApiOptions): ResultAsync<PackageApi, ExtractorError> =>
   okAsync({ pkg, pkgSubpath, maxDepth })
     .andThen((ctx) =>
       packageName(ctx.pkg).map((pkgName) => ({
@@ -94,54 +136,19 @@ export const extractPackageApi = ({
         pkgDeclarations,
       })),
     )
-    .andThen((ctx) => {
-      // Debug
-      const sourceFiles = ctx.sourceFiles
-        .map((sf) => sf.getFilePath().replace(ctx.nodeModulesDir, ""))
-        .sort();
-      const indexFile = ctx.indexFile;
-      const referencedFiles = indexFile
-        .getReferencedSourceFiles()
-        .map((sf) => sf.getFilePath().replace(ctx.nodeModulesDir, ""))
-        .sort();
-      console.log(
-        JSON.stringify(
-          {
-            installedPackages: ctx.installedPackages,
-            indexFile: indexFile.getFilePath().replace(ctx.nodeModulesDir, ""),
-            sourceFiles,
-            referencedFiles,
-            pkgOverview: ctx.pkgOverview,
-          },
-          null,
-          2,
-        ),
-      );
-      for (const [name, declarations] of indexFile.getExportedDeclarations()) {
-        console.log(
-          `${name}: ${declarations
-            .map(
-              (d) =>
-                `https://unpkg.com/browse/${d
-                  .getSourceFile()
-                  .getFilePath()
-                  .replace(ctx.nodeModulesDir, "")
-                  .replace("/", "")}#L${d.getStartLineNumber()}`,
-            )
-            .join(", ")}`,
-        );
-      }
-      return okAsync(ctx);
-    })
     .andThen((ctx) =>
       changeDir(ctx.startDir).map(() => ({
         ...ctx,
       })),
+    )
+    .andThen((ctx) =>
+      ok({
+        name: ctx.pkgJson.name,
+        version: ctx.pkgJson.version,
+        subpath: ctx.pkgSubpath,
+        types: ctx.pkgTypes,
+        overview: ctx.pkgOverview,
+        declarations: ctx.pkgDeclarations,
+        packages: ctx.installedPackages,
+      }),
     );
-
-// await extractApiFromPackage({ pkg: "query-registry" });
-// await extractApiFromPackage({ pkg: "preact", pkgSubpath: "hooks" });
-// await extractApiFromPackage({ pkg: "exome", pkgSubpath: "vue" });
-// await extractApiFromPackage({ pkg: "highlight-words" });
-// await extractApiFromPackage({ pkg: "short-time-ago" });
-// await extractApiFromPackage({ pkg: "short-time-ago", pkgSubpath: "foo" }); // Expected Error
