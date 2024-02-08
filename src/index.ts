@@ -1,6 +1,6 @@
-export {
-  type AllExtractedDeclaration,
-  type AllExtractedDeclarationKind,
+export type {
+  AllExtractedDeclaration,
+  AllExtractedDeclarationKind,
 } from "./all-extracted-declaration";
 export {
   FsError,
@@ -13,11 +13,11 @@ export {
   ProjectError,
   type ExtractorError,
 } from "./errors";
-export {
-  type ExtractedClass,
-  type ExtractedClassConstructor,
-  type ExtractedClassMethod,
-  type ExtractedClassProperty,
+export type {
+  ExtractedClass,
+  ExtractedClassConstructor,
+  ExtractedClassMethod,
+  ExtractedClassProperty,
 } from "./extract-class";
 export {
   extractDeclarations,
@@ -25,25 +25,25 @@ export {
   type ExtractedDeclaration,
   type ExtractedDeclarationKind,
 } from "./extract-declarations";
-export { type ExtractedEnum, type ExtractedEnumMember } from "./extract-enum";
-export { type ExtractedFunction } from "./extract-function";
-export {
-  type ExtractedInterface,
-  type ExtractedInterfaceCallSignature,
-  type ExtractedInterfaceConstructSignature,
-  type ExtractedInterfaceGetAccessor,
-  type ExtractedInterfaceIndexSignature,
-  type ExtractedInterfaceMethod,
-  type ExtractedInterfaceProperty,
-  type ExtractedInterfaceSetAccessor,
+export type { ExtractedEnum, ExtractedEnumMember } from "./extract-enum";
+export type { ExtractedFunction } from "./extract-function";
+export type {
+  ExtractedInterface,
+  ExtractedInterfaceCallSignature,
+  ExtractedInterfaceConstructSignature,
+  ExtractedInterfaceGetAccessor,
+  ExtractedInterfaceIndexSignature,
+  ExtractedInterfaceMethod,
+  ExtractedInterfaceProperty,
+  ExtractedInterfaceSetAccessor,
 } from "./extract-interface";
-export { type ExtractedNamespace } from "./extract-namespace";
+export type { ExtractedNamespace } from "./extract-namespace";
 export {
   extractPackageApi,
   type ExtractPackageApiOptions,
   type PackageApi,
 } from "./extract-package-api";
-export { type ExtractedTypeAlias } from "./extract-type-alias";
-export { type ExtractedVariable } from "./extract-variable";
+export type { ExtractedTypeAlias } from "./extract-type-alias";
+export type { ExtractedVariable } from "./extract-variable";
 export { packageTypes } from "./package-types";
 export { parseDocComment } from "./parse-doc-comment";
