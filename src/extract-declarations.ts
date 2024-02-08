@@ -37,15 +37,40 @@ import { isTypeAlias } from "./is-type-alias";
 import { isVariable } from "./is-variable";
 import { isVariableAssignmentExpression } from "./is-variable-assignment-expression";
 
-/** @internal */
+/**
+`ExtractDeclarationsOptions` contains all the options
+for calling {@link extractDeclarations}.
+
+@internal
+*/
 export type ExtractDeclarationsOptions = {
+  /**
+  Name of the container that contains the top-level declarations
+  (e.g., a namespace's name). This is used to generate declaration IDs.
+  */
   containerName: string;
+
+  /** Container that contains the top-level declarations. */
   container: SourceFile | ModuleDeclaration;
+
+  /** Maximum extraction depth for nested namespaces. */
   maxDepth: number;
+
+  /**
+  Instance of a  `ts-morph` `Project`. This is used to find ambient modules.
+  */
   project?: Project;
+
+  /**
+  Name of the package being analyzed. This is used to filter ambient modules.
+  */
   pkgName?: string;
 };
 
+/**
+`ExtractedDeclaration` is the union of all possible top-level declarations
+that can be extracted from a package, module or namespace.
+*/
 export type ExtractedDeclaration =
   | ExtractedVariable
   | ExtractedFunction
@@ -55,9 +80,20 @@ export type ExtractedDeclaration =
   | ExtractedTypeAlias
   | ExtractedNamespace;
 
+/**
+`ExtractedDeclarationKind` is the union of all discriminators
+used to detect the kind of top-level declaration.
+*/
 export type ExtractedDeclarationKind = ExtractedDeclaration["kind"];
 
-/** @internal */
+/**
+`extractDeclarations` extracts the top-level declarations found in a container
+and/or a project.
+
+@param options - {@link ExtractDeclarationsOptions}
+
+@internal
+*/
 export const extractDeclarations = async ({
   containerName,
   container,

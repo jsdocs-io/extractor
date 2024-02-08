@@ -1,3 +1,7 @@
+/**
+`ExtractorError` is the union of all possible errors that can happen when
+analyzing a package and extracting its API.
+*/
 export type ExtractorError =
   | OsError
   | FsError
@@ -8,6 +12,9 @@ export type ExtractorError =
   | PackageDeclarationsError
   | ProjectError;
 
+/**
+`OsError` is thrown when an operation involving `process` fails.
+*/
 export class OsError extends Error {
   constructor(message: string, options?: ErrorOptions) {
     // For all errors see the following links:
@@ -19,6 +26,9 @@ export class OsError extends Error {
   }
 }
 
+/**
+`FsError` is thrown when an operation involving the file system fails.
+*/
 export class FsError extends Error {
   constructor(message: string, options?: ErrorOptions) {
     super(message, options);
@@ -26,6 +36,9 @@ export class FsError extends Error {
   }
 }
 
+/**
+`InstallPackageError` is thrown when installing a package fails.
+*/
 export class InstallPackageError extends Error {
   constructor(message: string, options?: ErrorOptions) {
     super(message, options);
@@ -33,6 +46,9 @@ export class InstallPackageError extends Error {
   }
 }
 
+/**
+`PackageNameError` is thrown when a package name is not valid.
+*/
 export class PackageNameError extends Error {
   constructor(message: string, options?: ErrorOptions) {
     super(message, options);
@@ -40,6 +56,9 @@ export class PackageNameError extends Error {
   }
 }
 
+/**
+`PackageJsonError` is thrown when reading `package.json` fails.
+*/
 export class PackageJsonError extends Error {
   constructor(message: string, options?: ErrorOptions) {
     super(message, options);
@@ -47,6 +66,9 @@ export class PackageJsonError extends Error {
   }
 }
 
+/**
+`PackageTypesError` is thrown when resolving the types entrypoint file fails.
+*/
 export class PackageTypesError extends Error {
   constructor(message: string, options?: ErrorOptions) {
     super(message, options);
@@ -54,6 +76,9 @@ export class PackageTypesError extends Error {
   }
 }
 
+/**
+`PackageDeclarationsError` is thrown when extracting declarations fails.
+*/
 export class PackageDeclarationsError extends Error {
   constructor(message: string, options?: ErrorOptions) {
     super(message, options);
@@ -61,6 +86,9 @@ export class PackageDeclarationsError extends Error {
   }
 }
 
+/**
+`ProjectError` is thrown when creating a TypeScript project fails.
+*/
 export class ProjectError extends Error {
   constructor(message: string, options?: ErrorOptions) {
     super(message, options);

@@ -123,7 +123,7 @@ if (result.isOk()) {
 }
 ```
 
-@param options {@link ExtractPackageApiOptions}
+@param options - {@link ExtractPackageApiOptions}
 
 @see {@link https://github.com/supermacro/neverthrow/wiki/Accessing-The-Value-Inside-A-Result | Accessing the value inside a Result}
 @see {@link https://github.com/supermacro/neverthrow/wiki/Basic-Usage-Examples#asynchronous-api | Result and ResultAsync usage}

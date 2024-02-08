@@ -3,7 +3,14 @@ import { type NormalizedPackageJson } from "read-pkg";
 import { exports } from "resolve.exports";
 import { PackageTypesError } from "./errors";
 
-/** @internal */
+/**
+`packageTypes` resolves the types entrypoint file (e.g., `index.d.ts`).
+
+@param pkgJson - the contents of `package.json`
+@param pkgSubpath - the selected subpath from the `exports` property of `package.json`
+
+@internal
+*/
 export const packageTypes = (
   pkgJson: Partial<NormalizedPackageJson>,
   pkgSubpath: string,
