@@ -8,5 +8,9 @@ test("@luxass/utils@1.1.0", async () => {
         pkg: "@luxass/utils@1.1.0",
       })
     )._unsafeUnwrap(),
-  ).toMatchSnapshot();
+  ).toMatchSnapshot({
+    analyzedAt: expect.any(String),
+    analyzedIn: expect.any(Number),
+    packages: expect.any(Array),
+  });
 });

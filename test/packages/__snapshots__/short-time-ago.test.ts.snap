@@ -2,6 +2,8 @@
 
 exports[`short-time-ago@2.0.0 1`] = `
 {
+  "analyzedAt": Any<String>,
+  "analyzedIn": Any<Number>,
   "declarations": [
     {
       "docs": [
@@ -84,9 +86,7 @@ exports[`short-time-ago@2.0.0 1`] = `
  *
  * @packageDocumentation
  */",
-  "packages": [
-    "short-time-ago@2.0.0",
-  ],
+  "packages": Any<Array>,
   "subpath": ".",
   "types": "./dist/index.d.ts",
   "version": "2.0.0",

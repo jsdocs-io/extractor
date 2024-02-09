@@ -8,5 +8,9 @@ test("@supeffective/dataset@2.2.2", async () => {
         pkg: "@supeffective/dataset@2.2.2",
       })
     )._unsafeUnwrap(),
-  ).toMatchSnapshot();
+  ).toMatchSnapshot({
+    analyzedAt: expect.any(String),
+    analyzedIn: expect.any(Number),
+    packages: expect.any(Array),
+  });
 });

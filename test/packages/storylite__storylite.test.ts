@@ -8,5 +8,9 @@ test("@storylite/storylite@0.14.0", async () => {
         pkg: "@storylite/storylite@0.14.0",
       })
     )._unsafeUnwrap(),
-  ).toMatchSnapshot();
+  ).toMatchSnapshot({
+    analyzedAt: expect.any(String),
+    analyzedIn: expect.any(Number),
+    packages: expect.any(Array),
+  });
 });

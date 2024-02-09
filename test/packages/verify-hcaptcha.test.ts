@@ -8,5 +8,9 @@ test("verify-hcaptcha@1.0.0", async () => {
         pkg: "verify-hcaptcha@1.0.0",
       })
     )._unsafeUnwrap(),
-  ).toMatchSnapshot();
+  ).toMatchSnapshot({
+    analyzedAt: expect.any(String),
+    analyzedIn: expect.any(Number),
+    packages: expect.any(Array),
+  });
 });

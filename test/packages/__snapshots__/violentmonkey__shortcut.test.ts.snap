@@ -2,6 +2,8 @@
 
 exports[`@violentmonkey/shortcut@1.4.1 1`] = `
 {
+  "analyzedAt": Any<String>,
+  "analyzedIn": Any<Number>,
   "declarations": [
     {
       "constructors": [
@@ -611,11 +613,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
   ],
   "name": "@violentmonkey/shortcut",
   "overview": undefined,
-  "packages": [
-    "@babel/runtime@7.23.9",
-    "@violentmonkey/shortcut@1.4.1",
-    "regenerator-runtime@0.14.1",
-  ],
+  "packages": Any<Array>,
   "subpath": ".",
   "types": "types/index.d.ts",
   "version": "1.4.1",

@@ -8,5 +8,9 @@ test("h3@1.10.1", async () => {
         pkg: "h3@1.10.1",
       })
     )._unsafeUnwrap(),
-  ).toMatchSnapshot();
+  ).toMatchSnapshot({
+    analyzedAt: expect.any(String),
+    analyzedIn: expect.any(Number),
+    packages: expect.any(Array),
+  });
 });

@@ -8,5 +8,9 @@ test("enttec-open-dmx-usb@4.0.1", async () => {
         pkg: "enttec-open-dmx-usb@4.0.1",
       })
     )._unsafeUnwrap(),
-  ).toMatchSnapshot();
+  ).toMatchSnapshot({
+    analyzedAt: expect.any(String),
+    analyzedIn: expect.any(Number),
+    packages: expect.any(Array),
+  });
 });

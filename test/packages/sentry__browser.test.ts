@@ -8,5 +8,9 @@ test("@sentry/browser@7.100.1", async () => {
         pkg: "@sentry/browser@7.100.1",
       })
     )._unsafeUnwrap(),
-  ).toMatchSnapshot();
+  ).toMatchSnapshot({
+    analyzedAt: expect.any(String),
+    analyzedIn: expect.any(Number),
+    packages: expect.any(Array),
+  });
 });

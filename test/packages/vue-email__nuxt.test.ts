@@ -8,5 +8,9 @@ test("@vue-email/nuxt@0.8.13", async () => {
         pkg: "@vue-email/nuxt@0.8.13",
       })
     )._unsafeUnwrap(),
-  ).toMatchSnapshot();
+  ).toMatchSnapshot({
+    analyzedAt: expect.any(String),
+    analyzedIn: expect.any(Number),
+    packages: expect.any(Array),
+  });
 });

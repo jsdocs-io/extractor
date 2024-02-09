@@ -8,5 +8,9 @@ test("magicast@0.3.3", async () => {
         pkg: "magicast@0.3.3",
       })
     )._unsafeUnwrap(),
-  ).toMatchSnapshot();
+  ).toMatchSnapshot({
+    analyzedAt: expect.any(String),
+    analyzedIn: expect.any(Number),
+    packages: expect.any(Array),
+  });
 });

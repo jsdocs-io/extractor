@@ -8,5 +8,9 @@ test("twoslash@0.2.1", async () => {
         pkg: "twoslash@0.2.1",
       })
     )._unsafeUnwrap(),
-  ).toMatchSnapshot();
+  ).toMatchSnapshot({
+    analyzedAt: expect.any(String),
+    analyzedIn: expect.any(Number),
+    packages: expect.any(Array),
+  });
 });

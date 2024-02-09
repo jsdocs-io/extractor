@@ -2,6 +2,8 @@
 
 exports[`@sentry/browser@7.100.1 1`] = `
 {
+  "analyzedAt": Any<String>,
+  "analyzedIn": Any<Number>,
   "declarations": [
     {
       "constructors": [
@@ -6392,16 +6394,7 @@ exports[`@sentry/browser@7.100.1 1`] = `
   ],
   "name": "@sentry/browser",
   "overview": undefined,
-  "packages": [
-    "@sentry-internal/feedback@7.100.1",
-    "@sentry-internal/replay-canvas@7.100.1",
-    "@sentry-internal/tracing@7.100.1",
-    "@sentry/browser@7.100.1",
-    "@sentry/core@7.100.1",
-    "@sentry/replay@7.100.1",
-    "@sentry/types@7.100.1",
-    "@sentry/utils@7.100.1",
-  ],
+  "packages": Any<Array>,
   "subpath": ".",
   "types": "types/index.d.ts",
   "version": "7.100.1",

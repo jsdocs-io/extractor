@@ -2,6 +2,8 @@
 
 exports[`tinyargs@0.1.4 1`] = `
 {
+  "analyzedAt": Any<String>,
+  "analyzedIn": Any<Number>,
   "declarations": [
     {
       "docs": [
@@ -206,9 +208,7 @@ exports[`tinyargs@0.1.4 1`] = `
   ],
   "name": "tinyargs",
   "overview": undefined,
-  "packages": [
-    "tinyargs@0.1.4",
-  ],
+  "packages": Any<Array>,
   "subpath": ".",
   "types": "./dist/index.d.ts",
   "version": "0.1.4",

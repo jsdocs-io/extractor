@@ -8,5 +8,9 @@ test("@microsoft/api-extractor@7.13.0", async () => {
         pkg: "@microsoft/api-extractor@7.13.0",
       })
     )._unsafeUnwrap(),
-  ).toMatchSnapshot();
+  ).toMatchSnapshot({
+    analyzedAt: expect.any(String),
+    analyzedIn: expect.any(Number),
+    packages: expect.any(Array),
+  });
 });

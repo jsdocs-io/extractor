@@ -8,7 +8,11 @@ test("exome@2.4.0", async () => {
         pkg: "exome@2.4.0",
       })
     )._unsafeUnwrap(),
-  ).toMatchSnapshot();
+  ).toMatchSnapshot({
+    analyzedAt: expect.any(String),
+    analyzedIn: expect.any(Number),
+    packages: expect.any(Array),
+  });
 });
 
 test("exome@2.4.0@ghost", async () => {
@@ -19,5 +23,9 @@ test("exome@2.4.0@ghost", async () => {
         subpath: "ghost",
       })
     )._unsafeUnwrap(),
-  ).toMatchSnapshot();
+  ).toMatchSnapshot({
+    analyzedAt: expect.any(String),
+    analyzedIn: expect.any(Number),
+    packages: expect.any(Array),
+  });
 });

@@ -2,6 +2,8 @@
 
 exports[`twoslash@0.2.1 1`] = `
 {
+  "analyzedAt": Any<String>,
+  "analyzedIn": Any<Number>,
   "declarations": [
     {
       "constructors": [
@@ -1891,14 +1893,7 @@ exports[`twoslash@0.2.1 1`] = `
   ],
   "name": "twoslash",
   "overview": undefined,
-  "packages": [
-    "@typescript/vfs@1.5.0",
-    "debug@4.3.4",
-    "ms@2.1.2",
-    "twoslash@0.2.1",
-    "twoslash-protocol@0.2.1",
-    "typescript@5.3.3",
-  ],
+  "packages": Any<Array>,
   "subpath": ".",
   "types": "dist/index.d.mts",
   "version": "0.2.1",

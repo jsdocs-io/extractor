@@ -8,5 +8,9 @@ test("bundle-require@4.0.2", async () => {
         pkg: "bundle-require@4.0.2",
       })
     )._unsafeUnwrap(),
-  ).toMatchSnapshot();
+  ).toMatchSnapshot({
+    analyzedAt: expect.any(String),
+    analyzedIn: expect.any(Number),
+    packages: expect.any(Array),
+  });
 });

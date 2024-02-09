@@ -8,5 +8,9 @@ test("@violentmonkey/shortcut@1.4.1", async () => {
         pkg: "@violentmonkey/shortcut@1.4.1",
       })
     )._unsafeUnwrap(),
-  ).toMatchSnapshot();
+  ).toMatchSnapshot({
+    analyzedAt: expect.any(String),
+    analyzedIn: expect.any(Number),
+    packages: expect.any(Array),
+  });
 });

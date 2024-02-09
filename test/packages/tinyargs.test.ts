@@ -8,5 +8,9 @@ test("tinyargs@0.1.4", async () => {
         pkg: "tinyargs@0.1.4",
       })
     )._unsafeUnwrap(),
-  ).toMatchSnapshot();
+  ).toMatchSnapshot({
+    analyzedAt: expect.any(String),
+    analyzedIn: expect.any(Number),
+    packages: expect.any(Array),
+  });
 });

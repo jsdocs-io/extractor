@@ -2,6 +2,8 @@
 
 exports[`verify-hcaptcha@1.0.0 1`] = `
 {
+  "analyzedAt": Any<String>,
+  "analyzedIn": Any<Number>,
   "declarations": [
     {
       "docs": [
@@ -359,9 +361,7 @@ exports[`verify-hcaptcha@1.0.0 1`] = `
  *
  * @packageDocumentation
  */",
-  "packages": [
-    "verify-hcaptcha@1.0.0",
-  ],
+  "packages": Any<Array>,
   "subpath": ".",
   "types": "dist/index.d.ts",
   "version": "1.0.0",

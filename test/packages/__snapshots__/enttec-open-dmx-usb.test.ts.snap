@@ -2,6 +2,8 @@
 
 exports[`enttec-open-dmx-usb@4.0.1 1`] = `
 {
+  "analyzedAt": Any<String>,
+  "analyzedIn": Any<Number>,
   "declarations": [
     {
       "constructors": [
@@ -143,31 +145,7 @@ exports[`enttec-open-dmx-usb@4.0.1 1`] = `
   ],
   "name": "enttec-open-dmx-usb",
   "overview": undefined,
-  "packages": [
-    "@serialport/binding-mock@10.2.2",
-    "@serialport/bindings-cpp@11.0.3",
-    "@serialport/bindings-interface@1.2.2",
-    "@serialport/parser-byte-length@11.0.1",
-    "@serialport/parser-cctalk@11.0.1",
-    "@serialport/parser-delimiter@11.0.0",
-    "@serialport/parser-delimiter@11.0.1",
-    "@serialport/parser-inter-byte-timeout@11.0.1",
-    "@serialport/parser-packet-length@11.0.1",
-    "@serialport/parser-readline@11.0.0",
-    "@serialport/parser-readline@11.0.1",
-    "@serialport/parser-ready@11.0.1",
-    "@serialport/parser-regex@11.0.1",
-    "@serialport/parser-slip-encoder@11.0.1",
-    "@serialport/parser-spacepacket@11.0.1",
-    "@serialport/stream@11.0.1",
-    "debug@4.3.4",
-    "enttec-open-dmx-usb@4.0.1",
-    "eventemitter3@5.0.1",
-    "ms@2.1.2",
-    "node-addon-api@6.1.0",
-    "node-gyp-build@4.6.0",
-    "serialport@11.0.1",
-  ],
+  "packages": Any<Array>,
   "subpath": ".",
   "types": "dist/index.d.ts",
   "version": "4.0.1",

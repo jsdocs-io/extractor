@@ -8,5 +8,9 @@ test("faastjs@8.0.64", async () => {
         pkg: "faastjs@8.0.64",
       })
     )._unsafeUnwrap(),
-  ).toMatchSnapshot();
+  ).toMatchSnapshot({
+    analyzedAt: expect.any(String),
+    analyzedIn: expect.any(Number),
+    packages: expect.any(Array),
+  });
 });

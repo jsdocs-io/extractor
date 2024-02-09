@@ -2,6 +2,8 @@
 
 exports[`@luxass/utils@1.1.0 1`] = `
 {
+  "analyzedAt": Any<String>,
+  "analyzedIn": Any<Number>,
   "declarations": [
     {
       "docs": [
@@ -367,9 +369,7 @@ exports[`@luxass/utils@1.1.0 1`] = `
   ],
   "name": "@luxass/utils",
   "overview": undefined,
-  "packages": [
-    "@luxass/utils@1.1.0",
-  ],
+  "packages": Any<Array>,
   "subpath": ".",
   "types": "./dist/index.d.ts",
   "version": "1.1.0",

@@ -2,6 +2,8 @@
 
 exports[`exome@2.4.0 1`] = `
 {
+  "analyzedAt": Any<String>,
+  "analyzedIn": Any<Number>,
   "declarations": [
     {
       "constructors": [
@@ -148,9 +150,7 @@ exports[`exome@2.4.0 1`] = `
   ],
   "name": "exome",
   "overview": undefined,
-  "packages": [
-    "exome@2.4.0",
-  ],
+  "packages": Any<Array>,
   "subpath": ".",
   "types": "./exome.d.ts",
   "version": "2.4.0",
@@ -159,6 +159,8 @@ exports[`exome@2.4.0 1`] = `
 
 exports[`exome@2.4.0@ghost 1`] = `
 {
+  "analyzedAt": Any<String>,
+  "analyzedIn": Any<Number>,
   "declarations": [
     {
       "constructors": [],
@@ -175,9 +177,7 @@ exports[`exome@2.4.0@ghost 1`] = `
   ],
   "name": "exome",
   "overview": undefined,
-  "packages": [
-    "exome@2.4.0",
-  ],
+  "packages": Any<Array>,
   "subpath": "ghost",
   "types": "./ghost.d.ts",
   "version": "2.4.0",

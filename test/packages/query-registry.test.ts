@@ -8,5 +8,9 @@ test("query-registry@2.6.0", async () => {
         pkg: "query-registry@2.6.0",
       })
     )._unsafeUnwrap(),
-  ).toMatchSnapshot();
+  ).toMatchSnapshot({
+    analyzedAt: expect.any(String),
+    analyzedIn: expect.any(Number),
+    packages: expect.any(Array),
+  });
 });
