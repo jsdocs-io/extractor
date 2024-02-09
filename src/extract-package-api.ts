@@ -94,6 +94,12 @@ export type PackageApi = {
   ```
   */
   packages: string[];
+
+  /** Timestamp of when the package was analyzed. */
+  analyzedAt: string;
+
+  /** Package analysis duration in milliseconds. */
+  analyzedIn: number;
 };
 
 /**
@@ -133,7 +139,7 @@ export const extractPackageApi = ({
   subpath = ".",
   maxDepth = 5,
 }: ExtractPackageApiOptions): ResultAsync<PackageApi, ExtractorError> =>
-  okAsync({ pkg, pkgSubpath: subpath, maxDepth })
+  okAsync({ pkg, pkgSubpath: subpath, maxDepth, startTime: performance.now() })
     .andThen((ctx) =>
       packageName(ctx.pkg).map((pkgName) => ({
         ...ctx,
@@ -211,5 +217,7 @@ export const extractPackageApi = ({
         overview: ctx.pkgOverview,
         declarations: ctx.pkgDeclarations,
         packages: ctx.installedPackages,
+        analyzedAt: new Date().toISOString(),
+        analyzedIn: Math.round(performance.now() - ctx.startTime),
       }),
     );
