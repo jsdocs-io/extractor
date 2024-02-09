@@ -1,0 +1,1602 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`preact@10.19.4 1`] = `
+{
+  "declarations": [
+    {
+      "constructors": [
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "class.Component.constructor",
+          "kind": "class-constructor",
+          "line": 141,
+          "name": "constructor",
+          "signature": "constructor(props?: {}, context?: any);",
+        },
+      ],
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "class.Component",
+      "kind": "class",
+      "line": 140,
+      "methods": [
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "class.Component.method.forceUpdate",
+          "kind": "class-method",
+          "line": 177,
+          "name": "forceUpdate",
+          "signature": "forceUpdate: (callback?: () => void) => void;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "class.Component.method.getDerivedStateFromError",
+          "kind": "class-method",
+          "line": 157,
+          "name": "getDerivedStateFromError",
+          "signature": "static getDerivedStateFromError: (error: any) => object | null;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "class.Component.method.getDerivedStateFromProps",
+          "kind": "class-method",
+          "line": 153,
+          "name": "getDerivedStateFromProps",
+          "signature": "static getDerivedStateFromProps: (
+  props: Readonly<object>,
+  state: Readonly<object>,
+) => object | null;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "class.Component.method.render",
+          "kind": "class-method",
+          "line": 179,
+          "name": "render",
+          "signature": "abstract render: (
+  props?: RenderableProps<P>,
+  state?: Readonly<S>,
+  context?: any,
+) => ComponentChild;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "class.Component.method.setState",
+          "kind": "class-method",
+          "line": 167,
+          "name": "setState",
+          "signature": "setState: <K extends keyof S>(
+  state:
+    | ((
+        prevState: Readonly<S>,
+        props: Readonly<P>,
+      ) => Pick<S, K> | Partial<S> | null)
+    | Pick<S, K>
+    | Partial<S>,
+  callback?: () => void,
+) => void;",
+        },
+      ],
+      "name": "Component",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "class.Component.property.base",
+          "kind": "class-property",
+          "line": 162,
+          "name": "base",
+          "signature": "base?: Element | Text;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "class.Component.property.context",
+          "kind": "class-property",
+          "line": 161,
+          "name": "context",
+          "signature": "context: any;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "class.Component.property.contextType",
+          "kind": "class-property",
+          "line": 145,
+          "name": "contextType",
+          "signature": "static contextType?: Context<any>;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "class.Component.property.defaultProps",
+          "kind": "class-property",
+          "line": 144,
+          "name": "defaultProps",
+          "signature": "static defaultProps?: any;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "class.Component.property.displayName",
+          "kind": "class-property",
+          "line": 143,
+          "name": "displayName",
+          "signature": "static displayName?: string;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "class.Component.property.props",
+          "kind": "class-property",
+          "line": 160,
+          "name": "props",
+          "signature": "props: Readonly<
+  Attributes & { children?: ComponentChildren; ref?: Ref<any> }
+>;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "class.Component.property.state",
+          "kind": "class-property",
+          "line": 159,
+          "name": "state",
+          "signature": "state: Readonly<S>;",
+        },
+      ],
+      "signature": "abstract class Component<P, S> {}",
+    },
+    {
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "function.cloneElement",
+      "kind": "function",
+      "line": 313,
+      "name": "cloneElement",
+      "signature": "cloneElement: {
+  (
+    vnode: VNode<any>,
+    props?: any,
+    ...children: ComponentChildren[]
+  ): VNode<any>;
+  <P>(vnode: VNode<P>, props?: any, ...children: ComponentChildren[]): VNode<P>;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "function.createContext",
+      "kind": "function",
+      "line": 397,
+      "name": "createContext",
+      "signature": "createContext: <T>(defaultValue: T) => Context<T>;",
+    },
+    {
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "function.createElement",
+      "kind": "function",
+      "line": 190,
+      "name": "createElement",
+      "signature": "createElement: typeof createElement;",
+    },
+    {
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "function.createRef",
+      "kind": "function",
+      "line": 365,
+      "name": "createRef",
+      "signature": "createRef: <T = any>() => RefObject<T>;",
+    },
+    {
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "function.h",
+      "kind": "function",
+      "line": 237,
+      "name": "h",
+      "signature": "h: typeof h;",
+    },
+    {
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "function.hydrate",
+      "kind": "function",
+      "line": 312,
+      "name": "hydrate",
+      "signature": "hydrate: (vnode: ComponentChild, parent: ContainerNode) => void;",
+    },
+    {
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "function.isValidElement",
+      "kind": "function",
+      "line": 369,
+      "name": "isValidElement",
+      "signature": "isValidElement: (vnode: any) => vnode is VNode<{}>;",
+    },
+    {
+      "docs": [
+        "/**
+ * @deprecated Will be removed in v11.
+ *
+ * Replacement Preact 10+ implementation can be found here: https://gist.github.com/developit/f4c67a2ede71dc2fab7f357f39cff28c
+ */",
+      ],
+      "file": "/preact/src/index.d.ts",
+      "id": "function.render",
+      "kind": "function",
+      "line": 301,
+      "name": "render",
+      "signature": "render: {
+  (vnode: ComponentChild, parent: ContainerNode): void;
+  (
+    vnode: ComponentChild,
+    parent: ContainerNode,
+    replaceNode?: Element | Text,
+  ): void;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "function.toChildArray",
+      "kind": "function",
+      "line": 366,
+      "name": "toChildArray",
+      "signature": "toChildArray: (
+  children: ComponentChildren,
+) => Array<VNode | string | number>;",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.Attributes",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 55,
+      "methods": [],
+      "name": "Attributes",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Attributes.property.jsx",
+          "kind": "interface-property",
+          "line": 57,
+          "name": "jsx",
+          "signature": "jsx?: boolean | undefined;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Attributes.property.key",
+          "kind": "interface-property",
+          "line": 56,
+          "name": "key",
+          "signature": "key?: Key | undefined;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface Attributes {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.ClassAttributes",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 60,
+      "methods": [],
+      "name": "ClassAttributes",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.ClassAttributes.property.ref",
+          "kind": "interface-property",
+          "line": 61,
+          "name": "ref",
+          "signature": "ref?: Ref<T>;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface ClassAttributes<T> extends Attributes {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.Component",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 115,
+      "methods": [
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Component.method.componentDidCatch",
+          "kind": "interface-method",
+          "line": 137,
+          "name": "componentDidCatch",
+          "signature": "componentDidCatch: (error: any, errorInfo: ErrorInfo) => void;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Component.method.componentDidMount",
+          "kind": "interface-method",
+          "line": 117,
+          "name": "componentDidMount",
+          "signature": "componentDidMount: () => void;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Component.method.componentDidUpdate",
+          "kind": "interface-method",
+          "line": 132,
+          "name": "componentDidUpdate",
+          "signature": "componentDidUpdate: (
+  previousProps: Readonly<P>,
+  previousState: Readonly<S>,
+  snapshot: any,
+) => void;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Component.method.componentWillMount",
+          "kind": "interface-method",
+          "line": 116,
+          "name": "componentWillMount",
+          "signature": "componentWillMount: () => void;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Component.method.componentWillReceiveProps",
+          "kind": "interface-method",
+          "line": 120,
+          "name": "componentWillReceiveProps",
+          "signature": "componentWillReceiveProps: (nextProps: Readonly<P>, nextContext: any) => void;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Component.method.componentWillUnmount",
+          "kind": "interface-method",
+          "line": 118,
+          "name": "componentWillUnmount",
+          "signature": "componentWillUnmount: () => void;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Component.method.componentWillUpdate",
+          "kind": "interface-method",
+          "line": 126,
+          "name": "componentWillUpdate",
+          "signature": "componentWillUpdate: (
+  nextProps: Readonly<P>,
+  nextState: Readonly<S>,
+  nextContext: any,
+) => void;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Component.method.getChildContext",
+          "kind": "interface-method",
+          "line": 119,
+          "name": "getChildContext",
+          "signature": "getChildContext: () => object;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Component.method.getSnapshotBeforeUpdate",
+          "kind": "interface-method",
+          "line": 131,
+          "name": "getSnapshotBeforeUpdate",
+          "signature": "getSnapshotBeforeUpdate: (
+  oldProps: Readonly<P>,
+  oldState: Readonly<S>,
+) => any;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Component.method.shouldComponentUpdate",
+          "kind": "interface-method",
+          "line": 121,
+          "name": "shouldComponentUpdate",
+          "signature": "shouldComponentUpdate: (
+  nextProps: Readonly<P>,
+  nextState: Readonly<S>,
+  nextContext: any,
+) => boolean;",
+        },
+      ],
+      "name": "Component",
+      "properties": [],
+      "setAccessors": [],
+      "signature": "interface Component<P = {}, S = {}> {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.ComponentClass.construct-signature",
+          "kind": "interface-construct-signature",
+          "line": 97,
+          "name": "construct-signature",
+          "signature": "new (props: P, context?: any): Component<P, S>;",
+        },
+      ],
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.ComponentClass",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 96,
+      "methods": [
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.ComponentClass.method.getDerivedStateFromError",
+          "kind": "interface-method",
+          "line": 105,
+          "name": "getDerivedStateFromError",
+          "signature": "getDerivedStateFromError: (error: any) => Partial<S> | null;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.ComponentClass.method.getDerivedStateFromProps",
+          "kind": "interface-method",
+          "line": 101,
+          "name": "getDerivedStateFromProps",
+          "signature": "getDerivedStateFromProps: (
+  props: Readonly<P>,
+  state: Readonly<S>,
+) => Partial<S> | null;",
+        },
+      ],
+      "name": "ComponentClass",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.ComponentClass.property.contextType",
+          "kind": "interface-property",
+          "line": 100,
+          "name": "contextType",
+          "signature": "contextType?: Context<any>;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.ComponentClass.property.defaultProps",
+          "kind": "interface-property",
+          "line": 99,
+          "name": "defaultProps",
+          "signature": "defaultProps?: Partial<P>;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.ComponentClass.property.displayName",
+          "kind": "interface-property",
+          "line": 98,
+          "name": "displayName",
+          "signature": "displayName?: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface ComponentClass<P = {}, S = {}> {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.ComponentConstructor",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 107,
+      "methods": [],
+      "name": "ComponentConstructor",
+      "properties": [],
+      "setAccessors": [],
+      "signature": "interface ComponentConstructor<P = {}, S = {}> extends ComponentClass<P, S> {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.Consumer",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 374,
+      "methods": [],
+      "name": "Consumer",
+      "properties": [],
+      "setAccessors": [],
+      "signature": "interface Consumer<T>
+  extends FunctionComponent<{
+    children: (value: T) => ComponentChildren;
+  }> {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.ContainerNode",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 290,
+      "methods": [
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.ContainerNode.method.appendChild",
+          "kind": "interface-method",
+          "line": 297,
+          "name": "appendChild",
+          "signature": "appendChild: (node: ContainerNode) => ContainerNode;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.ContainerNode.method.insertBefore",
+          "kind": "interface-method",
+          "line": 296,
+          "name": "insertBefore",
+          "signature": "insertBefore: (
+  node: ContainerNode,
+  child: ContainerNode | null,
+) => ContainerNode;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.ContainerNode.method.removeChild",
+          "kind": "interface-method",
+          "line": 298,
+          "name": "removeChild",
+          "signature": "removeChild: (child: ContainerNode) => ContainerNode;",
+        },
+      ],
+      "name": "ContainerNode",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.ContainerNode.property.childNodes",
+          "kind": "interface-property",
+          "line": 294,
+          "name": "childNodes",
+          "signature": "readonly childNodes: ArrayLike<ContainerNode>;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.ContainerNode.property.firstChild",
+          "kind": "interface-property",
+          "line": 293,
+          "name": "firstChild",
+          "signature": "readonly firstChild: ContainerNode | null;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.ContainerNode.property.nodeType",
+          "kind": "interface-property",
+          "line": 291,
+          "name": "nodeType",
+          "signature": "readonly nodeType: number;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.ContainerNode.property.parentNode",
+          "kind": "interface-property",
+          "line": 292,
+          "name": "parentNode",
+          "signature": "readonly parentNode: ContainerNode | null;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface ContainerNode {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.Context",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 390,
+      "methods": [],
+      "name": "Context",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Context.property.Consumer",
+          "kind": "interface-property",
+          "line": 391,
+          "name": "Consumer",
+          "signature": "Consumer: Consumer<T>;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Context.property.displayName",
+          "kind": "interface-property",
+          "line": 393,
+          "name": "displayName",
+          "signature": "displayName?: string;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Context.property.Provider",
+          "kind": "interface-property",
+          "line": 392,
+          "name": "Provider",
+          "signature": "Provider: Provider<T>;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface Context<T> {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.ErrorInfo",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 71,
+      "methods": [],
+      "name": "ErrorInfo",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.ErrorInfo.property.componentStack",
+          "kind": "interface-property",
+          "line": 72,
+          "name": "componentStack",
+          "signature": "componentStack?: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface ErrorInfo {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.FunctionalComponent",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 94,
+      "methods": [],
+      "name": "FunctionalComponent",
+      "properties": [],
+      "setAccessors": [],
+      "signature": "interface FunctionalComponent<P = {}> extends FunctionComponent<P> {}",
+    },
+    {
+      "callSignatures": [
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.FunctionComponent.call-signature",
+          "kind": "interface-call-signature",
+          "line": 90,
+          "name": "call-signature",
+          "signature": "(props: RenderableProps<P>, context?: any): VNode<any> | null;",
+        },
+      ],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.FunctionComponent",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 89,
+      "methods": [],
+      "name": "FunctionComponent",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.FunctionComponent.property.defaultProps",
+          "kind": "interface-property",
+          "line": 92,
+          "name": "defaultProps",
+          "signature": "defaultProps?: Partial<P> | undefined;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.FunctionComponent.property.displayName",
+          "kind": "interface-property",
+          "line": 91,
+          "name": "displayName",
+          "signature": "displayName?: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface FunctionComponent<P = {}> {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Global options for preact
+ */",
+      ],
+      "file": "/preact/src/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.Options",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 338,
+      "methods": [
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Options.method.__suspenseDidResolve",
+          "kind": "interface-method",
+          "line": 350,
+          "name": "__suspenseDidResolve",
+          "signature": "__suspenseDidResolve: (vnode: VNode, cb: () => void) => void;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Options.method._addHookName",
+          "kind": "interface-method",
+          "line": 349,
+          "name": "_addHookName",
+          "signature": "_addHookName: (name: string | number) => void;",
+        },
+        {
+          "docs": [
+            "/**
+	 * Customize attribute serialization when a precompiled JSX transform
+	 * is used.
+	 */",
+          ],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Options.method.attr",
+          "kind": "interface-method",
+          "line": 357,
+          "name": "attr",
+          "signature": "attr: (name: string, value: any) => string | void;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Options.method.debounceRendering",
+          "kind": "interface-method",
+          "line": 347,
+          "name": "debounceRendering",
+          "signature": "debounceRendering: (cb: () => void) => void;",
+        },
+        {
+          "docs": [
+            "/** Attach a hook that is invoked after a vnode has rendered. */",
+          ],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Options.method.diffed",
+          "kind": "interface-method",
+          "line": 344,
+          "name": "diffed",
+          "signature": "diffed: (vnode: VNode) => void;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Options.method.event",
+          "kind": "interface-method",
+          "line": 345,
+          "name": "event",
+          "signature": "event: (e: Event) => any;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Options.method.requestAnimationFrame",
+          "kind": "interface-method",
+          "line": 346,
+          "name": "requestAnimationFrame",
+          "signature": "requestAnimationFrame: (callback: () => void) => void;",
+        },
+        {
+          "docs": [
+            "/** Attach a hook that is invoked immediately before a vnode is unmounted. */",
+          ],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Options.method.unmount",
+          "kind": "interface-method",
+          "line": 342,
+          "name": "unmount",
+          "signature": "unmount: (vnode: VNode) => void;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Options.method.useDebugValue",
+          "kind": "interface-method",
+          "line": 348,
+          "name": "useDebugValue",
+          "signature": "useDebugValue: (value: string | number) => void;",
+        },
+        {
+          "docs": [
+            "/** Attach a hook that is invoked whenever a VNode is created. */",
+          ],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.Options.method.vnode",
+          "kind": "interface-method",
+          "line": 340,
+          "name": "vnode",
+          "signature": "vnode: (vnode: VNode) => void;",
+        },
+      ],
+      "name": "Options",
+      "properties": [],
+      "setAccessors": [],
+      "signature": "interface Options {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.PreactConsumer",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 378,
+      "methods": [],
+      "name": "PreactConsumer",
+      "properties": [],
+      "setAccessors": [],
+      "signature": "interface PreactConsumer<T> extends Consumer<T> {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.PreactContext",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 395,
+      "methods": [],
+      "name": "PreactContext",
+      "properties": [],
+      "setAccessors": [],
+      "signature": "interface PreactContext<T> extends Context<T> {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.PreactDOMAttributes",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 64,
+      "methods": [],
+      "name": "PreactDOMAttributes",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.PreactDOMAttributes.property.children",
+          "kind": "interface-property",
+          "line": 65,
+          "name": "children",
+          "signature": "children?: ComponentChildren;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.PreactDOMAttributes.property.dangerouslySetInnerHTML",
+          "kind": "interface-property",
+          "line": 66,
+          "name": "dangerouslySetInnerHTML",
+          "signature": "dangerouslySetInnerHTML?: {
+  __html: string;
+};",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface PreactDOMAttributes {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.PreactProvider",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 385,
+      "methods": [],
+      "name": "PreactProvider",
+      "properties": [],
+      "setAccessors": [],
+      "signature": "interface PreactProvider<T> extends Provider<T> {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.Provider",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 380,
+      "methods": [],
+      "name": "Provider",
+      "properties": [],
+      "setAccessors": [],
+      "signature": "interface Provider<T>
+  extends FunctionComponent<{
+    value: T;
+    children?: ComponentChildren;
+  }> {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.VNode",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 11,
+      "methods": [],
+      "name": "VNode",
+      "properties": [
+        {
+          "docs": [
+            "/**
+	 * The time that the rendering of this \`vnode\` was completed. Will only be
+	 * set when the devtools are attached.
+	 * Default value: \`-1\`
+	 */",
+          ],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.VNode.property.endTime",
+          "kind": "interface-property",
+          "line": 31,
+          "name": "endTime",
+          "signature": "endTime?: number;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.VNode.property.key",
+          "kind": "interface-property",
+          "line": 14,
+          "name": "key",
+          "signature": "key: Key;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.VNode.property.props",
+          "kind": "interface-property",
+          "line": 13,
+          "name": "props",
+          "signature": "props: P & { children: ComponentChildren };",
+        },
+        {
+          "docs": [
+            "/**
+	 * ref is not guaranteed by React.ReactElement, for compatibility reasons
+	 * with popular react libs we define it as optional too
+	 */",
+          ],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.VNode.property.ref",
+          "kind": "interface-property",
+          "line": 19,
+          "name": "ref",
+          "signature": "ref?: Ref<any> | null;",
+        },
+        {
+          "docs": [
+            "/**
+	 * The time this \`vnode\` started rendering. Will only be set when
+	 * the devtools are attached.
+	 * Default value: \`0\`
+	 */",
+          ],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.VNode.property.startTime",
+          "kind": "interface-property",
+          "line": 25,
+          "name": "startTime",
+          "signature": "startTime?: number;",
+        },
+        {
+          "docs": [],
+          "file": "/preact/src/index.d.ts",
+          "id": "interface.VNode.property.type",
+          "kind": "interface-property",
+          "line": 12,
+          "name": "type",
+          "signature": "type: ComponentType<P> | string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface VNode<P = {}> {}",
+    },
+    {
+      "declarations": [],
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "namespace.createElement",
+      "kind": "namespace",
+      "line": 233,
+      "name": "createElement",
+      "signature": "namespace createElement {}",
+    },
+    {
+      "declarations": [],
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "namespace.h",
+      "kind": "namespace",
+      "line": 283,
+      "name": "h",
+      "signature": "namespace h {}",
+    },
+    {
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "type.AnyComponent",
+      "kind": "type",
+      "line": 111,
+      "name": "AnyComponent",
+      "signature": "type AnyComponent<P = {}, S = {}> = FunctionComponent<P> | Component<P, S>;",
+    },
+    {
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "type.ComponentChild",
+      "kind": "type",
+      "line": 44,
+      "name": "ComponentChild",
+      "signature": "type ComponentChild =
+  | VNode<any>
+  | object
+  | string
+  | number
+  | bigint
+  | boolean
+  | null
+  | undefined;",
+    },
+    {
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "type.ComponentChildren",
+      "kind": "type",
+      "line": 53,
+      "name": "ComponentChildren",
+      "signature": "type ComponentChildren = ComponentChild[] | ComponentChild;",
+    },
+    {
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "type.ComponentFactory",
+      "kind": "type",
+      "line": 79,
+      "name": "ComponentFactory",
+      "signature": "type ComponentFactory<P = {}> = ComponentType<P>;",
+    },
+    {
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "type.ComponentProps",
+      "kind": "type",
+      "line": 81,
+      "name": "ComponentProps",
+      "signature": "type ComponentProps<
+  C extends ComponentType<any> | keyof JSXInternal.IntrinsicElements,
+> =
+  C extends ComponentType<infer P>
+    ? P
+    : C extends keyof JSXInternal.IntrinsicElements
+      ? JSXInternal.IntrinsicElements[C]
+      : never;",
+    },
+    {
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "type.ComponentType",
+      "kind": "type",
+      "line": 78,
+      "name": "ComponentType",
+      "signature": "type ComponentType<P = {}> = ComponentClass<P> | FunctionComponent<P>;",
+    },
+    {
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "type.ContextType",
+      "kind": "type",
+      "line": 386,
+      "name": "ContextType",
+      "signature": "type ContextType<C extends Context<any>> =
+  C extends Context<infer T> ? T : never;",
+    },
+    {
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "type.Key",
+      "kind": "type",
+      "line": 38,
+      "name": "Key",
+      "signature": "type Key = string | number | any;",
+    },
+    {
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "type.Ref",
+      "kind": "type",
+      "line": 42,
+      "name": "Ref",
+      "signature": "type Ref<T> = RefObject<T> | RefCallback<T> | null;",
+    },
+    {
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "type.RefCallback",
+      "kind": "type",
+      "line": 41,
+      "name": "RefCallback",
+      "signature": "type RefCallback<T> = (instance: T | null) => void;",
+    },
+    {
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "type.RefObject",
+      "kind": "type",
+      "line": 40,
+      "name": "RefObject",
+      "signature": "type RefObject<T> = { current: T | null };",
+    },
+    {
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "type.RenderableProps",
+      "kind": "type",
+      "line": 75,
+      "name": "RenderableProps",
+      "signature": "type RenderableProps<P, RefType = any> = P &
+  Readonly<Attributes & { children?: ComponentChildren; ref?: Ref<RefType> }>;",
+    },
+    {
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "variable.Fragment",
+      "kind": "variable",
+      "line": 329,
+      "name": "Fragment",
+      "signature": "const Fragment: FunctionComponent<{}>;",
+    },
+    {
+      "docs": [],
+      "file": "/preact/src/index.d.ts",
+      "id": "variable.options",
+      "kind": "variable",
+      "line": 360,
+      "name": "options",
+      "signature": "const options: Options;",
+    },
+  ],
+  "name": "preact",
+  "overview": undefined,
+  "packages": [
+    "preact@10.19.4",
+  ],
+  "subpath": ".",
+  "types": "./src/index.d.ts",
+  "version": "10.19.4",
+}
+`;
+
+exports[`preact@10.19.4@hooks 1`] = `
+{
+  "declarations": [
+    {
+      "docs": [
+        "/**
+ * Returns a memoized version of the callback that only changes if one of the \`inputs\`
+ * has changed (using ===).
+ */",
+      ],
+      "file": "/preact/hooks/src/index.d.ts",
+      "id": "function.useCallback",
+      "kind": "function",
+      "line": 111,
+      "name": "useCallback",
+      "signature": "useCallback: <T extends Function>(callback: T, inputs: Inputs) => T;",
+    },
+    {
+      "docs": [
+        "/**
+ * Returns the current context value, as given by the nearest context provider for the given context.
+ * When the provider updates, this Hook will trigger a rerender with the latest context value.
+ *
+ * @param context The context you want to use
+ */",
+      ],
+      "file": "/preact/hooks/src/index.d.ts",
+      "id": "function.useContext",
+      "kind": "function",
+      "line": 128,
+      "name": "useContext",
+      "signature": "useContext: <T>(context: PreactContext<T>) => T;",
+    },
+    {
+      "docs": [
+        "/**
+ * Customize the displayed value in the devtools panel.
+ *
+ * @param value Custom hook name or object that is passed to formatter
+ * @param formatter Formatter to modify value before sending it to the devtools
+ */",
+      ],
+      "file": "/preact/hooks/src/index.d.ts",
+      "id": "function.useDebugValue",
+      "kind": "function",
+      "line": 136,
+      "name": "useDebugValue",
+      "signature": "useDebugValue: <T>(value: T, formatter?: (value: T) => any) => void;",
+    },
+    {
+      "docs": [
+        "/**
+ * Accepts a function that contains imperative, possibly effectful code.
+ * The effects run after browser paint, without blocking it.
+ *
+ * @param effect Imperative function that can return a cleanup function
+ * @param inputs If present, effect will only activate if the values in the list change (using ===).
+ */",
+      ],
+      "file": "/preact/hooks/src/index.d.ts",
+      "id": "function.useEffect",
+      "kind": "function",
+      "line": 80,
+      "name": "useEffect",
+      "signature": "useEffect: (effect: EffectCallback, inputs?: Inputs) => void;",
+    },
+    {
+      "docs": [],
+      "file": "/preact/hooks/src/index.d.ts",
+      "id": "function.useErrorBoundary",
+      "kind": "function",
+      "line": 138,
+      "name": "useErrorBoundary",
+      "signature": "useErrorBoundary: (
+  callback?: (error: any, errorInfo: ErrorInfo) => Promise<void> | void,
+) => [any, () => void];",
+    },
+    {
+      "docs": [],
+      "file": "/preact/hooks/src/index.d.ts",
+      "id": "function.useId",
+      "kind": "function",
+      "line": 142,
+      "name": "useId",
+      "signature": "useId: () => string;",
+    },
+    {
+      "docs": [
+        "/**
+ * @param ref The ref that will be mutated
+ * @param create The function that will be executed to get the value that will be attached to
+ * ref.current
+ * @param inputs If present, effect will only activate if the values in the list change (using ===).
+ */",
+      ],
+      "file": "/preact/hooks/src/index.d.ts",
+      "id": "function.useImperativeHandle",
+      "kind": "function",
+      "line": 90,
+      "name": "useImperativeHandle",
+      "signature": "useImperativeHandle: <T, R extends T>(
+  ref: PreactRef<T>,
+  create: () => R,
+  inputs?: Inputs,
+) => void;",
+    },
+    {
+      "docs": [
+        "/**
+ * Accepts a function that contains imperative, possibly effectful code.
+ * Use this to read layout from the DOM and synchronously re-render.
+ * Updates scheduled inside \`useLayoutEffect\` will be flushed synchronously, after all DOM mutations but before the browser has a chance to paint.
+ * Prefer the standard \`useEffect\` hook when possible to avoid blocking visual updates.
+ *
+ * @param effect Imperative function that can return a cleanup function
+ * @param inputs If present, effect will only activate if the values in the list change (using ===).
+ */",
+      ],
+      "file": "/preact/hooks/src/index.d.ts",
+      "id": "function.useLayoutEffect",
+      "kind": "function",
+      "line": 105,
+      "name": "useLayoutEffect",
+      "signature": "useLayoutEffect: (effect: EffectCallback, inputs?: Inputs) => void;",
+    },
+    {
+      "docs": [
+        "/**
+ * Pass a factory function and an array of inputs.
+ * useMemo will only recompute the memoized value when one of the inputs has changed.
+ * This optimization helps to avoid expensive calculations on every render.
+ * If no array is provided, a new value will be computed whenever a new function instance is passed as the first argument.
+ */",
+      ],
+      "file": "/preact/hooks/src/index.d.ts",
+      "id": "function.useMemo",
+      "kind": "function",
+      "line": 120,
+      "name": "useMemo",
+      "signature": "useMemo: <T>(factory: () => T, inputs: Inputs | undefined) => T;",
+    },
+    {
+      "docs": [
+        "/**
+ * An alternative to \`useState\`.
+ *
+ * \`useReducer\` is usually preferable to \`useState\` when you have complex state logic that involves
+ * multiple sub-values. It also lets you optimize performance for components that trigger deep
+ * updates because you can pass \`dispatch\` down instead of callbacks.
+ * @param reducer Given the current state and an action, returns the new state
+ * @param initialState The initial value to store as state
+ */",
+        "/**
+ * An alternative to \`useState\`.
+ *
+ * \`useReducer\` is usually preferable to \`useState\` when you have complex state logic that involves
+ * multiple sub-values. It also lets you optimize performance for components that trigger deep
+ * updates because you can pass \`dispatch\` down instead of callbacks.
+ * @param reducer Given the current state and an action, returns the new state
+ * @param initialArg The initial argument to pass to the \`init\` function
+ * @param init A function that, given the \`initialArg\`, returns the initial value to store as state
+ */",
+      ],
+      "file": "/preact/hooks/src/index.d.ts",
+      "id": "function.useReducer",
+      "kind": "function",
+      "line": 28,
+      "name": "useReducer",
+      "signature": "useReducer: {
+  <S, A>(reducer: Reducer<S, A>, initialState: S): [S, Dispatch<A>];
+  <S, A, I>(
+    reducer: Reducer<S, A>,
+    initialArg: I,
+    init: (arg: I) => S,
+  ): [S, Dispatch<A>];
+};",
+    },
+    {
+      "docs": [
+        "/**
+ * \`useRef\` returns a mutable ref object whose \`.current\` property is initialized to the passed argument
+ * (\`initialValue\`). The returned object will persist for the full lifetime of the component.
+ *
+ * Note that \`useRef()\` is useful for more than the \`ref\` attribute. It’s handy for keeping any mutable
+ * value around similar to how you’d use instance fields in classes.
+ *
+ * @param initialValue the initial value to store in the ref object
+ */",
+      ],
+      "file": "/preact/hooks/src/index.d.ts",
+      "id": "function.useRef",
+      "kind": "function",
+      "line": 68,
+      "name": "useRef",
+      "signature": "useRef: {
+  <T>(initialValue: T): MutableRef<T>;
+  <T>(initialValue: T): Ref<T>;
+  <T = undefined>(): MutableRef<T>;
+};",
+    },
+    {
+      "docs": [
+        "/**
+ * Returns a stateful value, and a function to update it.
+ * @param initialState The initial value (or a function that returns the initial value)
+ */",
+      ],
+      "file": "/preact/hooks/src/index.d.ts",
+      "id": "function.useState",
+      "kind": "function",
+      "line": 10,
+      "name": "useState",
+      "signature": "useState: {
+  <S>(initialState: S | (() => S)): [S, StateUpdater<S>];
+  <S = undefined>(): [S, StateUpdater<S>];
+};",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/preact/hooks/src/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.MutableRef",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 55,
+      "methods": [],
+      "name": "MutableRef",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/preact/hooks/src/index.d.ts",
+          "id": "interface.MutableRef.property.current",
+          "kind": "interface-property",
+          "line": 56,
+          "name": "current",
+          "signature": "current: T;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface MutableRef<T> {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/preact/hooks/src/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.Ref",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 51,
+      "methods": [],
+      "name": "Ref",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/preact/hooks/src/index.d.ts",
+          "id": "interface.Ref.property.current",
+          "kind": "interface-property",
+          "line": 52,
+          "name": "current",
+          "signature": "readonly current: T | null;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface Ref<T> {}",
+    },
+    {
+      "docs": [],
+      "file": "/preact/hooks/src/index.d.ts",
+      "id": "type.CreateHandle",
+      "kind": "type",
+      "line": 82,
+      "name": "CreateHandle",
+      "signature": "type CreateHandle = () => object;",
+    },
+    {
+      "docs": [],
+      "file": "/preact/hooks/src/index.d.ts",
+      "id": "type.Dispatch",
+      "kind": "type",
+      "line": 18,
+      "name": "Dispatch",
+      "signature": "type Dispatch<A> = (action: A) => void;",
+    },
+    {
+      "docs": [],
+      "file": "/preact/hooks/src/index.d.ts",
+      "id": "type.EffectCallback",
+      "kind": "type",
+      "line": 72,
+      "name": "EffectCallback",
+      "signature": "type EffectCallback = () => void | (() => void);",
+    },
+    {
+      "docs": [],
+      "file": "/preact/hooks/src/index.d.ts",
+      "id": "type.Inputs",
+      "kind": "type",
+      "line": 3,
+      "name": "Inputs",
+      "signature": "type Inputs = ReadonlyArray<unknown>;",
+    },
+    {
+      "docs": [
+        "/** @deprecated Use the \`Ref\` type instead. */",
+      ],
+      "file": "/preact/hooks/src/index.d.ts",
+      "id": "type.PropRef",
+      "kind": "type",
+      "line": 50,
+      "name": "PropRef",
+      "signature": "type PropRef<T> = MutableRef<T>;",
+    },
+    {
+      "docs": [],
+      "file": "/preact/hooks/src/index.d.ts",
+      "id": "type.Reducer",
+      "kind": "type",
+      "line": 17,
+      "name": "Reducer",
+      "signature": "type Reducer<S, A> = (prevState: S, action: A) => S;",
+    },
+    {
+      "docs": [],
+      "file": "/preact/hooks/src/index.d.ts",
+      "id": "type.StateUpdater",
+      "kind": "type",
+      "line": 5,
+      "name": "StateUpdater",
+      "signature": "type StateUpdater<S> = (value: S | ((prevState: S) => S)) => void;",
+    },
+  ],
+  "name": "preact",
+  "overview": undefined,
+  "packages": [
+    "preact@10.19.4",
+  ],
+  "subpath": "hooks",
+  "types": "./hooks/src/index.d.ts",
+  "version": "10.19.4",
+}
+`;

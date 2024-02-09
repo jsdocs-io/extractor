@@ -1,0 +1,1906 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`twoslash@0.2.1 1`] = `
+{
+  "declarations": [
+    {
+      "constructors": [
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "class.TwoslashError.constructor",
+          "kind": "class-constructor",
+          "line": 206,
+          "name": "constructor",
+          "signature": "constructor(
+  title: string,
+  description: string,
+  recommendation: string,
+  code?: string,
+);",
+        },
+      ],
+      "docs": [],
+      "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+      "id": "class.TwoslashError",
+      "kind": "class",
+      "line": 201,
+      "methods": [],
+      "name": "TwoslashError",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "class.TwoslashError.property.code",
+          "kind": "class-property",
+          "line": 205,
+          "name": "code",
+          "signature": "code: string;",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "class.TwoslashError.property.description",
+          "kind": "class-property",
+          "line": 203,
+          "name": "description",
+          "signature": "description: string;",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "class.TwoslashError.property.recommendation",
+          "kind": "class-property",
+          "line": 204,
+          "name": "recommendation",
+          "signature": "recommendation: string;",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "class.TwoslashError.property.title",
+          "kind": "class-property",
+          "line": 202,
+          "name": "title",
+          "signature": "title: string;",
+        },
+      ],
+      "signature": "class TwoslashError extends Error {}",
+    },
+    {
+      "docs": [],
+      "file": "/twoslash/dist/index.d.mts",
+      "id": "function.convertLegacyOptions",
+      "kind": "function",
+      "line": 98,
+      "name": "convertLegacyOptions",
+      "signature": "convertLegacyOptions: <T extends TwoslashOptionsLegacy>(
+  opts: T,
+) => Omit<T, "defaultOptions" | "defaultCompilerOptions">;",
+    },
+    {
+      "docs": [
+        "/**
+ * Covert the new return type to the old one
+ */",
+      ],
+      "file": "/twoslash/dist/index.d.mts",
+      "id": "function.convertLegacyReturn",
+      "kind": "function",
+      "line": 102,
+      "name": "convertLegacyReturn",
+      "signature": "convertLegacyReturn: (result: TwoslashReturn) => TwoslashReturnLegacy;",
+    },
+    {
+      "docs": [
+        "/**
+ * Create a Twoslash instance with cached TS environments
+ */",
+      ],
+      "file": "/twoslash/dist/index.d.mts",
+      "id": "function.createTwoslasher",
+      "kind": "function",
+      "line": 107,
+      "name": "createTwoslasher",
+      "signature": "createTwoslasher: (opts?: TwoslashOptions) => TwoslashInstance;",
+    },
+    {
+      "docs": [],
+      "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+      "id": "function.findCutNotations",
+      "kind": "function",
+      "line": 214,
+      "name": "findCutNotations",
+      "signature": "findCutNotations: (
+  code: string,
+  meta: Pick<TwoslashReturnMeta, "removals">,
+) => Range[];",
+    },
+    {
+      "docs": [],
+      "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+      "id": "function.findFlagNotations",
+      "kind": "function",
+      "line": 213,
+      "name": "findFlagNotations",
+      "signature": "findFlagNotations: (
+  code: string,
+  customTags: string[],
+  tsOptionDeclarations: CompilerOptionDeclaration[],
+) => ParsedFlagNotation[];",
+    },
+    {
+      "docs": [],
+      "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+      "id": "function.findQueryMarkers",
+      "kind": "function",
+      "line": 215,
+      "name": "findQueryMarkers",
+      "signature": "findQueryMarkers: (
+  code: string,
+  meta: Pick<
+    TwoslashReturnMeta,
+    | "positionQueries"
+    | "positionCompletions"
+    | "positionHighlights"
+    | "removals"
+  >,
+  pc: ReturnType<typeof createPositionConverter>,
+) => Pick<
+  TwoslashReturnMeta,
+  "positionQueries" | "positionCompletions" | "positionHighlights" | "removals"
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+      "id": "function.getObjectHash",
+      "kind": "function",
+      "line": 212,
+      "name": "getObjectHash",
+      "signature": "getObjectHash: (obj: any) => string;",
+    },
+    {
+      "docs": [
+        "/**
+ * A fallback function to strip out twoslash annotations from a string and does nothing else.
+ *
+ * This function does not returns the meta information about the removals.
+ * It's designed to be used as a fallback when Twoslash fails.
+ */",
+      ],
+      "file": "/twoslash/dist/fallback.d.mts",
+      "id": "function.removeTwoslashNotations",
+      "kind": "function",
+      "line": 7,
+      "name": "removeTwoslashNotations",
+      "signature": "removeTwoslashNotations: (code: string, customTags?: string[]) => string;",
+    },
+    {
+      "docs": [
+        "/**
+ * Get type results from a code sample
+ */",
+      ],
+      "file": "/twoslash/dist/index.d.mts",
+      "id": "function.twoslasher",
+      "kind": "function",
+      "line": 111,
+      "name": "twoslasher",
+      "signature": "twoslasher: (
+  code: string,
+  lang: string,
+  opts?: TwoslashOptions,
+) => TwoslashReturn;",
+    },
+    {
+      "docs": [
+        "/**
+ * Compatability wrapper to align with \`@typescript/twoslash\`'s input/output
+ *
+ * @deprecated migrate to \`twoslasher\` instead
+ */",
+      ],
+      "file": "/twoslash/dist/index.d.mts",
+      "id": "function.twoslasherLegacy",
+      "kind": "function",
+      "line": 117,
+      "name": "twoslasherLegacy",
+      "signature": "twoslasherLegacy: (
+  code: string,
+  lang: string,
+  opts?: TwoslashOptionsLegacy,
+) => TwoslashReturnLegacy;",
+    },
+    {
+      "docs": [
+        "/** To ensure that errors are matched up right */",
+      ],
+      "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+      "id": "function.validateCodeForErrors",
+      "kind": "function",
+      "line": 218,
+      "name": "validateCodeForErrors",
+      "signature": "validateCodeForErrors: (
+  relevantErrors: NodeErrorWithoutPosition[],
+  handbookOptions: { errors: number[] },
+  vfsRoot: string,
+) => void;",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+      "getAccessors": [],
+      "id": "interface.CompilerOptionDeclaration",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 118,
+      "methods": [],
+      "name": "CompilerOptionDeclaration",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.CompilerOptionDeclaration.property.element",
+          "kind": "interface-property",
+          "line": 121,
+          "name": "element",
+          "signature": "element?: CompilerOptionDeclaration;",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.CompilerOptionDeclaration.property.name",
+          "kind": "interface-property",
+          "line": 119,
+          "name": "name",
+          "signature": "name: string;",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.CompilerOptionDeclaration.property.type",
+          "kind": "interface-property",
+          "line": 120,
+          "name": "type",
+          "signature": "type: "list" | "boolean" | "number" | "string" | Map<string, any>;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface CompilerOptionDeclaration {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/twoslash-protocol/dist/types.d.mts",
+      "getAccessors": [],
+      "id": "interface.CompletionEntry",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 31,
+      "methods": [],
+      "name": "CompletionEntry",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.CompletionEntry.property.kind",
+          "kind": "interface-property",
+          "line": 33,
+          "name": "kind",
+          "signature": "kind?: string;",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.CompletionEntry.property.name",
+          "kind": "interface-property",
+          "line": 32,
+          "name": "name",
+          "signature": "name: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface CompletionEntry {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+      "getAccessors": [],
+      "id": "interface.CreateTwoslashOptions",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 161,
+      "methods": [],
+      "name": "CreateTwoslashOptions",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Cache the ts envs based on compiler options, defaults to true
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.CreateTwoslashOptions.property.cache",
+          "kind": "interface-property",
+          "line": 186,
+          "name": "cache",
+          "signature": "cache?: boolean | Map<string, VirtualTypeScriptEnvironment>;",
+        },
+        {
+          "docs": [
+            "/**
+     * Allows applying custom transformers to the emit result, only useful with the showEmit output
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.CreateTwoslashOptions.property.customTransformers",
+          "kind": "interface-property",
+          "line": 165,
+          "name": "customTransformers",
+          "signature": "customTransformers?: CustomTransformers;",
+        },
+        {
+          "docs": [
+            "/**
+     * An optional Map object which is passed into @typescript/vfs - if you are using twoslash on the
+     * web then you'll need this to set up your lib *.d.ts files. If missing, it will use your fs.
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.CreateTwoslashOptions.property.fsMap",
+          "kind": "interface-property",
+          "line": 178,
+          "name": "fsMap",
+          "signature": "fsMap?: Map<string, string>;",
+        },
+        {
+          "docs": [
+            "/**
+     * Absolute path to the directory to look up built-in TypeScript .d.ts files.
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.CreateTwoslashOptions.property.tsLibDirectory",
+          "kind": "interface-property",
+          "line": 173,
+          "name": "tsLibDirectory",
+          "signature": "tsLibDirectory?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * An optional copy of the TypeScript import, if missing it will be require'd.
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.CreateTwoslashOptions.property.tsModule",
+          "kind": "interface-property",
+          "line": 169,
+          "name": "tsModule",
+          "signature": "tsModule?: TS;",
+        },
+        {
+          "docs": [
+            "/**
+     * The cwd for the folder which the virtual fs should be overlaid on top of when using local fs, opts to process.cwd() if not present
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.CreateTwoslashOptions.property.vfsRoot",
+          "kind": "interface-property",
+          "line": 182,
+          "name": "vfsRoot",
+          "signature": "vfsRoot?: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface CreateTwoslashOptions extends TwoslashExecuteOptions {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Available inline flags which are not compiler flags
+ */",
+      ],
+      "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+      "getAccessors": [],
+      "id": "interface.HandbookOptions",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 9,
+      "methods": [],
+      "name": "HandbookOptions",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * An array of TS error codes, which you write as space separated - this is so the tool can know about unexpected errors
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.HandbookOptions.property.errors",
+          "kind": "interface-property",
+          "line": 13,
+          "name": "errors",
+          "signature": "errors: number[];",
+        },
+        {
+          "docs": [
+            "/**
+     * Do not remove twoslash notations from output code, the nodes will have the position of the input code.
+     * @default false
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.HandbookOptions.property.keepNotations",
+          "kind": "interface-property",
+          "line": 41,
+          "name": "keepNotations",
+          "signature": "keepNotations: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * Suppress errors for diagnostics and display
+     *
+     * Setting true to suppress all errors, or an array of error codes to suppress
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.HandbookOptions.property.noErrors",
+          "kind": "interface-property",
+          "line": 19,
+          "name": "noErrors",
+          "signature": "noErrors: boolean | number[];",
+        },
+        {
+          "docs": [
+            "/**
+     * Do not check errors in the cutted code.
+     * @default false
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.HandbookOptions.property.noErrorsCutted",
+          "kind": "interface-property",
+          "line": 46,
+          "name": "noErrorsCutted",
+          "signature": "noErrorsCutted: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * Declare that you don't need to validate that errors have corresponding annotations, defaults to false
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.HandbookOptions.property.noErrorValidation",
+          "kind": "interface-property",
+          "line": 23,
+          "name": "noErrorValidation",
+          "signature": "noErrorValidation: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * Whether to disable the pre-cache of LSP calls for interesting identifiers, defaults to false
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.HandbookOptions.property.noStaticSemanticInfo",
+          "kind": "interface-property",
+          "line": 27,
+          "name": "noStaticSemanticInfo",
+          "signature": "noStaticSemanticInfo: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * Shows the JS equivalent of the TypeScript code instead
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.HandbookOptions.property.showEmit",
+          "kind": "interface-property",
+          "line": 31,
+          "name": "showEmit",
+          "signature": "showEmit: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * Must be used with showEmit, lets you choose the file to present instead of the source - defaults to index.js which
+     * means when you just use \`showEmit\` above it shows the transpiled JS.
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.HandbookOptions.property.showEmittedFile",
+          "kind": "interface-property",
+          "line": 36,
+          "name": "showEmittedFile",
+          "signature": "showEmittedFile?: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface HandbookOptions {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/twoslash-protocol/dist/types.d.mts",
+      "getAccessors": [],
+      "id": "interface.NodeBase",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 10,
+      "methods": [],
+      "name": "NodeBase",
+      "properties": [],
+      "setAccessors": [],
+      "signature": "interface NodeBase extends NodeStartLength, Position {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/twoslash-protocol/dist/types.d.mts",
+      "getAccessors": [],
+      "id": "interface.NodeCompletion",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 35,
+      "methods": [],
+      "name": "NodeCompletion",
+      "properties": [
+        {
+          "docs": [
+            "/** Results for completions at a particular point */",
+          ],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.NodeCompletion.property.completions",
+          "kind": "interface-property",
+          "line": 38,
+          "name": "completions",
+          "signature": "completions: CompletionEntry[];",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.NodeCompletion.property.completionsPrefix",
+          "kind": "interface-property",
+          "line": 39,
+          "name": "completionsPrefix",
+          "signature": "completionsPrefix: string;",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.NodeCompletion.property.type",
+          "kind": "interface-property",
+          "line": 36,
+          "name": "type",
+          "signature": "type: "completion";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface NodeCompletion extends NodeBase {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/twoslash-protocol/dist/types.d.mts",
+      "getAccessors": [],
+      "id": "interface.NodeError",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 42,
+      "methods": [],
+      "name": "NodeError",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Error code
+     */",
+          ],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.NodeError.property.code",
+          "kind": "interface-property",
+          "line": 53,
+          "name": "code",
+          "signature": "code?: number | string;",
+        },
+        {
+          "docs": [
+            "/**
+     * The filename of the file the error is in
+     */",
+          ],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.NodeError.property.filename",
+          "kind": "interface-property",
+          "line": 61,
+          "name": "filename",
+          "signature": "filename?: string;",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.NodeError.property.id",
+          "kind": "interface-property",
+          "line": 44,
+          "name": "id",
+          "signature": "id?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Error level
+     * When not provided, defaults to 'error'
+     */",
+          ],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.NodeError.property.level",
+          "kind": "interface-property",
+          "line": 49,
+          "name": "level",
+          "signature": "level?: ErrorLevel;",
+        },
+        {
+          "docs": [
+            "/**
+     * Error message
+     */",
+          ],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.NodeError.property.text",
+          "kind": "interface-property",
+          "line": 57,
+          "name": "text",
+          "signature": "text: string;",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.NodeError.property.type",
+          "kind": "interface-property",
+          "line": 43,
+          "name": "type",
+          "signature": "type: "error";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface NodeError extends NodeBase {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/twoslash-protocol/dist/types.d.mts",
+      "getAccessors": [],
+      "id": "interface.NodeHighlight",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 23,
+      "methods": [],
+      "name": "NodeHighlight",
+      "properties": [
+        {
+          "docs": [
+            "/** The annotation message */",
+          ],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.NodeHighlight.property.text",
+          "kind": "interface-property",
+          "line": 26,
+          "name": "text",
+          "signature": "text?: string;",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.NodeHighlight.property.type",
+          "kind": "interface-property",
+          "line": 24,
+          "name": "type",
+          "signature": "type: "highlight";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface NodeHighlight extends NodeBase {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/twoslash-protocol/dist/types.d.mts",
+      "getAccessors": [],
+      "id": "interface.NodeHover",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 12,
+      "methods": [],
+      "name": "NodeHover",
+      "properties": [
+        {
+          "docs": [
+            "/** Attached JSDoc info */",
+          ],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.NodeHover.property.docs",
+          "kind": "interface-property",
+          "line": 19,
+          "name": "docs",
+          "signature": "docs?: string;",
+        },
+        {
+          "docs": [
+            "/** JSDoc tags */",
+          ],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.NodeHover.property.tags",
+          "kind": "interface-property",
+          "line": 21,
+          "name": "tags",
+          "signature": "tags?: [name: string, text: string | undefined][];",
+        },
+        {
+          "docs": [
+            "/** The string content of the node this represents (mainly for debugging) */",
+          ],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.NodeHover.property.target",
+          "kind": "interface-property",
+          "line": 15,
+          "name": "target",
+          "signature": "target: string;",
+        },
+        {
+          "docs": [
+            "/** The base LSP response (the type) */",
+          ],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.NodeHover.property.text",
+          "kind": "interface-property",
+          "line": 17,
+          "name": "text",
+          "signature": "text: string;",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.NodeHover.property.type",
+          "kind": "interface-property",
+          "line": 13,
+          "name": "type",
+          "signature": "type: "hover";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface NodeHover extends NodeBase {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/twoslash-protocol/dist/types.d.mts",
+      "getAccessors": [],
+      "id": "interface.NodeQuery",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 28,
+      "methods": [],
+      "name": "NodeQuery",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.NodeQuery.property.type",
+          "kind": "interface-property",
+          "line": 29,
+          "name": "type",
+          "signature": "type: "query";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface NodeQuery extends Omit<NodeHover, "type"> {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Basic node with start and length to represent a range in the code
+ */",
+      ],
+      "file": "/twoslash-protocol/dist/types.d.mts",
+      "getAccessors": [],
+      "id": "interface.NodeStartLength",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 4,
+      "methods": [],
+      "name": "NodeStartLength",
+      "properties": [
+        {
+          "docs": [
+            "/** The length of the node */",
+          ],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.NodeStartLength.property.length",
+          "kind": "interface-property",
+          "line": 8,
+          "name": "length",
+          "signature": "length: number;",
+        },
+        {
+          "docs": [
+            "/** 0-indexed position of the node in the file */",
+          ],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.NodeStartLength.property.start",
+          "kind": "interface-property",
+          "line": 6,
+          "name": "start",
+          "signature": "start: number;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface NodeStartLength {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/twoslash-protocol/dist/types.d.mts",
+      "getAccessors": [],
+      "id": "interface.NodeTag",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 63,
+      "methods": [],
+      "name": "NodeTag",
+      "properties": [
+        {
+          "docs": [
+            "/** What was the name of the tag */",
+          ],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.NodeTag.property.name",
+          "kind": "interface-property",
+          "line": 66,
+          "name": "name",
+          "signature": "name: string;",
+        },
+        {
+          "docs": [
+            "/** What was the text after the \`// @tag: \` string  (optional because you could do // @tag on it's own line without the ':') */",
+          ],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.NodeTag.property.text",
+          "kind": "interface-property",
+          "line": 68,
+          "name": "text",
+          "signature": "text?: string;",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.NodeTag.property.type",
+          "kind": "interface-property",
+          "line": 64,
+          "name": "type",
+          "signature": "type: "tag";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface NodeTag extends NodeBase {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+      "getAccessors": [],
+      "id": "interface.ParsedFlagNotation",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 99,
+      "methods": [],
+      "name": "ParsedFlagNotation",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.ParsedFlagNotation.property.end",
+          "kind": "interface-property",
+          "line": 104,
+          "name": "end",
+          "signature": "end: number;",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.ParsedFlagNotation.property.name",
+          "kind": "interface-property",
+          "line": 101,
+          "name": "name",
+          "signature": "name: string;",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.ParsedFlagNotation.property.start",
+          "kind": "interface-property",
+          "line": 103,
+          "name": "start",
+          "signature": "start: number;",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.ParsedFlagNotation.property.type",
+          "kind": "interface-property",
+          "line": 100,
+          "name": "type",
+          "signature": "type: "compilerOptions" | "handbookOptions" | "tag" | "unknown";",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.ParsedFlagNotation.property.value",
+          "kind": "interface-property",
+          "line": 102,
+          "name": "value",
+          "signature": "value: any;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface ParsedFlagNotation {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/twoslash-protocol/dist/types.d.mts",
+      "getAccessors": [],
+      "id": "interface.Position",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 73,
+      "methods": [],
+      "name": "Position",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * 0-indexed column number
+     */",
+          ],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.Position.property.character",
+          "kind": "interface-property",
+          "line": 81,
+          "name": "character",
+          "signature": "character: number;",
+        },
+        {
+          "docs": [
+            "/**
+     * 0-indexed line number
+     */",
+          ],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.Position.property.line",
+          "kind": "interface-property",
+          "line": 77,
+          "name": "line",
+          "signature": "line: number;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface Position {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Options for twoslash instance
+ */",
+      ],
+      "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+      "getAccessors": [],
+      "id": "interface.TwoslashExecuteOptions",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 131,
+      "methods": [],
+      "name": "TwoslashExecuteOptions",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Allows setting any of the compiler options from outside the function
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashExecuteOptions.property.compilerOptions",
+          "kind": "interface-property",
+          "line": 139,
+          "name": "compilerOptions",
+          "signature": "compilerOptions?: CompilerOptions;",
+        },
+        {
+          "docs": [
+            "/**
+     * A set of known \`// @[tags]\` tags to extract and not treat as a comment
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashExecuteOptions.property.customTags",
+          "kind": "interface-property",
+          "line": 143,
+          "name": "customTags",
+          "signature": "customTags?: string[];",
+        },
+        {
+          "docs": [
+            "/**
+     * Extra files to to added to the virtual file system, or prepended/appended to existing files
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashExecuteOptions.property.extraFiles",
+          "kind": "interface-property",
+          "line": 155,
+          "name": "extraFiles",
+          "signature": "extraFiles?: ExtraFiles;",
+        },
+        {
+          "docs": [
+            "/**
+     * A custom predicate to filter out nodes for further processing
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashExecuteOptions.property.filterNode",
+          "kind": "interface-property",
+          "line": 151,
+          "name": "filterNode",
+          "signature": "filterNode?: (node: NodeWithoutPosition) => boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * Allows setting any of the handbook options from outside the function, useful if you don't want LSP identifiers
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashExecuteOptions.property.handbookOptions",
+          "kind": "interface-property",
+          "line": 135,
+          "name": "handbookOptions",
+          "signature": "handbookOptions?: Partial<HandbookOptions>;",
+        },
+        {
+          "docs": [
+            "/**
+     * A custom hook to filter out hover info for certain identifiers
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashExecuteOptions.property.shouldGetHoverInfo",
+          "kind": "interface-property",
+          "line": 147,
+          "name": "shouldGetHoverInfo",
+          "signature": "shouldGetHoverInfo?: (
+  identifier: string,
+  start: number,
+  filename: string,
+) => boolean;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface TwoslashExecuteOptions
+  extends Partial<
+    Pick<
+      TwoslashReturnMeta,
+      "positionQueries" | "positionCompletions" | "positionHighlights"
+    >
+  > {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/twoslash-protocol/dist/types.d.mts",
+      "getAccessors": [],
+      "id": "interface.TwoslashGenericResult",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 85,
+      "methods": [],
+      "name": "TwoslashGenericResult",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * The output code, could be TypeScript, but could also be a JS/JSON/d.ts
+     */",
+          ],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.TwoslashGenericResult.property.code",
+          "kind": "interface-property",
+          "line": 89,
+          "name": "code",
+          "signature": "code: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Extension of the output code
+     */",
+          ],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.TwoslashGenericResult.property.extension",
+          "kind": "interface-property",
+          "line": 93,
+          "name": "extension",
+          "signature": "extension?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Nodes containing various bits of information about the code
+     */",
+          ],
+          "file": "/twoslash-protocol/dist/types.d.mts",
+          "id": "interface.TwoslashGenericResult.property.nodes",
+          "kind": "interface-property",
+          "line": 97,
+          "name": "nodes",
+          "signature": "nodes: TwoslashNode[];",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface TwoslashGenericResult {}",
+    },
+    {
+      "callSignatures": [
+        {
+          "docs": [
+            "/**
+     * Run Twoslash on a string of code, with a particular extension
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashInstance.call-signature",
+          "kind": "interface-call-signature",
+          "line": 194,
+          "name": "call-signature",
+          "signature": "(
+  code: string,
+  extension?: string,
+  options?: TwoslashExecuteOptions,
+): TwoslashReturn;",
+        },
+      ],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+      "getAccessors": [],
+      "id": "interface.TwoslashInstance",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 190,
+      "methods": [],
+      "name": "TwoslashInstance",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Get the internal cache map
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashInstance.property.getCacheMap",
+          "kind": "interface-property",
+          "line": 198,
+          "name": "getCacheMap",
+          "signature": "getCacheMap: () => Map<string, VirtualTypeScriptEnvironment> | undefined;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface TwoslashInstance {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Options for the \`twoslasher\` function
+ */",
+      ],
+      "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+      "getAccessors": [],
+      "id": "interface.TwoslashOptions",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 126,
+      "methods": [],
+      "name": "TwoslashOptions",
+      "properties": [],
+      "setAccessors": [],
+      "signature": "interface TwoslashOptions
+  extends CreateTwoslashOptions,
+    TwoslashExecuteOptions {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/twoslash/dist/index.d.mts",
+      "getAccessors": [],
+      "id": "interface.TwoslashOptionsLegacy",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 10,
+      "methods": [],
+      "name": "TwoslashOptionsLegacy",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * @deprecated, use \`compilerOptions\` instead
+     */",
+          ],
+          "file": "/twoslash/dist/index.d.mts",
+          "id": "interface.TwoslashOptionsLegacy.property.defaultCompilerOptions",
+          "kind": "interface-property",
+          "line": 18,
+          "name": "defaultCompilerOptions",
+          "signature": "defaultCompilerOptions?: CompilerOptions;",
+        },
+        {
+          "docs": [
+            "/**
+     * @deprecated, use \`handbookOptions\` instead
+     */",
+          ],
+          "file": "/twoslash/dist/index.d.mts",
+          "id": "interface.TwoslashOptionsLegacy.property.defaultOptions",
+          "kind": "interface-property",
+          "line": 14,
+          "name": "defaultOptions",
+          "signature": "defaultOptions?: Partial<HandbookOptions>;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface TwoslashOptionsLegacy extends TwoslashExecuteOptions {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+      "getAccessors": [
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashReturn.get-accessor.completions",
+          "kind": "interface-get-accessor",
+          "line": 55,
+          "name": "completions",
+          "signature": "get completions(): NodeCompletion[];",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashReturn.get-accessor.errors",
+          "kind": "interface-get-accessor",
+          "line": 56,
+          "name": "errors",
+          "signature": "get errors(): NodeError[];",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashReturn.get-accessor.highlights",
+          "kind": "interface-get-accessor",
+          "line": 57,
+          "name": "highlights",
+          "signature": "get highlights(): NodeHighlight[];",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashReturn.get-accessor.hovers",
+          "kind": "interface-get-accessor",
+          "line": 58,
+          "name": "hovers",
+          "signature": "get hovers(): NodeHover[];",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashReturn.get-accessor.queries",
+          "kind": "interface-get-accessor",
+          "line": 54,
+          "name": "queries",
+          "signature": "get queries(): NodeQuery[];",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashReturn.get-accessor.tags",
+          "kind": "interface-get-accessor",
+          "line": 59,
+          "name": "tags",
+          "signature": "get tags(): NodeTag[];",
+        },
+      ],
+      "id": "interface.TwoslashReturn",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 49,
+      "methods": [],
+      "name": "TwoslashReturn",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * The meta information the twoslash run
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashReturn.property.meta",
+          "kind": "interface-property",
+          "line": 53,
+          "name": "meta",
+          "signature": "meta: TwoslashReturnMeta;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface TwoslashReturn extends TwoslashGenericResult {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/twoslash/dist/index.d.mts",
+      "getAccessors": [],
+      "id": "interface.TwoslashReturnLegacy",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 20,
+      "methods": [],
+      "name": "TwoslashReturnLegacy",
+      "properties": [
+        {
+          "docs": [
+            "/** The output code, could be TypeScript, but could also be a JS/JSON/d.ts */",
+          ],
+          "file": "/twoslash/dist/index.d.mts",
+          "id": "interface.TwoslashReturnLegacy.property.code",
+          "kind": "interface-property",
+          "line": 22,
+          "name": "code",
+          "signature": "code: string;",
+        },
+        {
+          "docs": [
+            "/** Diagnostic error messages which came up when creating the program */",
+          ],
+          "file": "/twoslash/dist/index.d.mts",
+          "id": "interface.TwoslashReturnLegacy.property.errors",
+          "kind": "interface-property",
+          "line": 85,
+          "name": "errors",
+          "signature": "errors: {
+  renderedMessage: string;
+  id: string;
+  category: 0 | 1 | 2 | 3;
+  code: number;
+  start: number | undefined;
+  length: number | undefined;
+  line: number | undefined;
+  character: number | undefined;
+}[];",
+        },
+        {
+          "docs": [
+            "/** The new extension type for the code, potentially changed if they've requested emitted results */",
+          ],
+          "file": "/twoslash/dist/index.d.mts",
+          "id": "interface.TwoslashReturnLegacy.property.extension",
+          "kind": "interface-property",
+          "line": 24,
+          "name": "extension",
+          "signature": "extension: string;",
+        },
+        {
+          "docs": [
+            "/** Requests to highlight a particular part of the code */",
+          ],
+          "file": "/twoslash/dist/index.d.mts",
+          "id": "interface.TwoslashReturnLegacy.property.highlights",
+          "kind": "interface-property",
+          "line": 26,
+          "name": "highlights",
+          "signature": "highlights: {
+  kind: "highlight";
+  /** The index of the text in the file */
+  start: number;
+  /** What line is the highlighted identifier on? */
+  line: number;
+  /** At what index in the line does the caret represent  */
+  offset: number;
+  /** The text of the token which is highlighted */
+  text?: string;
+  /** The length of the token */
+  length: number;
+}[];",
+        },
+        {
+          "docs": [
+            "/** The URL for this sample in the playground */",
+          ],
+          "file": "/twoslash/dist/index.d.mts",
+          "id": "interface.TwoslashReturnLegacy.property.playgroundURL",
+          "kind": "interface-property",
+          "line": 96,
+          "name": "playgroundURL",
+          "signature": "playgroundURL: string;",
+        },
+        {
+          "docs": [
+            "/** Requests to use the LSP to get info for a particular symbol in the source */",
+          ],
+          "file": "/twoslash/dist/index.d.mts",
+          "id": "interface.TwoslashReturnLegacy.property.queries",
+          "kind": "interface-property",
+          "line": 57,
+          "name": "queries",
+          "signature": "queries: {
+  kind: "query" | "completions";
+  /** What line is the highlighted identifier on? */
+  line: number;
+  /** At what index in the line does the caret represent  */
+  offset: number;
+  /** The text of the node which is highlighted */
+  text?: string;
+  /** Any attached JSDocs */
+  docs?: string | undefined;
+  /** The node start which the query indicates  */
+  start: number;
+  /** The length of the node */
+  length: number;
+  /** Results for completions at a particular point */
+  completions?: typescript.CompletionEntry[];
+  completionsPrefix?: string;
+}[];",
+        },
+        {
+          "docs": [
+            "/** An array of LSP responses identifiers in the sample  */",
+          ],
+          "file": "/twoslash/dist/index.d.mts",
+          "id": "interface.TwoslashReturnLegacy.property.staticQuickInfos",
+          "kind": "interface-property",
+          "line": 40,
+          "name": "staticQuickInfos",
+          "signature": "staticQuickInfos: {
+  /** The string content of the node this represents (mainly for debugging) */
+  targetString: string;
+  /** The base LSP response (the type) */
+  text: string;
+  /** Attached JSDoc info */
+  docs: string | undefined;
+  /** The index of the text in the file */
+  start: number;
+  /** how long the identifier */
+  length: number;
+  /** line number where this is found */
+  line: number;
+  /** The character on the line */
+  character: number;
+}[];",
+        },
+        {
+          "docs": [
+            "/** The extracted twoslash commands for any custom tags passed in via customTags */",
+          ],
+          "file": "/twoslash/dist/index.d.mts",
+          "id": "interface.TwoslashReturnLegacy.property.tags",
+          "kind": "interface-property",
+          "line": 76,
+          "name": "tags",
+          "signature": "tags: {
+  /** What was the name of the tag */
+  name: string;
+  /** Where was it located in the original source file */
+  line: number;
+  /** What was the text after the \`// @tag: \` string  (optional because you could do // @tag on it's own line without the ':') */
+  annotation?: string;
+}[];",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface TwoslashReturnLegacy {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+      "getAccessors": [],
+      "id": "interface.TwoslashReturnMeta",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 61,
+      "methods": [],
+      "name": "TwoslashReturnMeta",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Resolved compiler options
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashReturnMeta.property.compilerOptions",
+          "kind": "interface-property",
+          "line": 73,
+          "name": "compilerOptions",
+          "signature": "compilerOptions: CompilerOptions;",
+        },
+        {
+          "docs": [
+            "/**
+     * The new extension type for the code, potentially changed if they've requested emitted results
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashReturnMeta.property.extension",
+          "kind": "interface-property",
+          "line": 65,
+          "name": "extension",
+          "signature": "extension: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Flags which were parsed from the code
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashReturnMeta.property.flagNotations",
+          "kind": "interface-property",
+          "line": 81,
+          "name": "flagNotations",
+          "signature": "flagNotations: ParsedFlagNotation[];",
+        },
+        {
+          "docs": [
+            "/**
+     * Resolved handbook options
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashReturnMeta.property.handbookOptions",
+          "kind": "interface-property",
+          "line": 77,
+          "name": "handbookOptions",
+          "signature": "handbookOptions: HandbookOptions;",
+        },
+        {
+          "docs": [
+            "/**
+     * Positions of completions in the code
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashReturnMeta.property.positionCompletions",
+          "kind": "interface-property",
+          "line": 93,
+          "name": "positionCompletions",
+          "signature": "positionCompletions: number[];",
+        },
+        {
+          "docs": [
+            "/**
+     * Positions of errors in the code
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashReturnMeta.property.positionHighlights",
+          "kind": "interface-property",
+          "line": 97,
+          "name": "positionHighlights",
+          "signature": "positionHighlights: [start: number, end: number, text?: string][];",
+        },
+        {
+          "docs": [
+            "/**
+     * Positions of queries in the code
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashReturnMeta.property.positionQueries",
+          "kind": "interface-property",
+          "line": 89,
+          "name": "positionQueries",
+          "signature": "positionQueries: number[];",
+        },
+        {
+          "docs": [
+            "/**
+     * Ranges of text which should be removed from the output
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashReturnMeta.property.removals",
+          "kind": "interface-property",
+          "line": 69,
+          "name": "removals",
+          "signature": "removals: Range[];",
+        },
+        {
+          "docs": [
+            "/**
+     * The virtual files which were created
+     */",
+          ],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.TwoslashReturnMeta.property.virtualFiles",
+          "kind": "interface-property",
+          "line": 85,
+          "name": "virtualFiles",
+          "signature": "virtualFiles: VirtualFile[];",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface TwoslashReturnMeta {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+      "getAccessors": [],
+      "id": "interface.VirtualFile",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 106,
+      "methods": [],
+      "name": "VirtualFile",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.VirtualFile.property.append",
+          "kind": "interface-property",
+          "line": 114,
+          "name": "append",
+          "signature": "append?: string;",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.VirtualFile.property.content",
+          "kind": "interface-property",
+          "line": 110,
+          "name": "content",
+          "signature": "content: string;",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.VirtualFile.property.extension",
+          "kind": "interface-property",
+          "line": 111,
+          "name": "extension",
+          "signature": "extension: string;",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.VirtualFile.property.filename",
+          "kind": "interface-property",
+          "line": 108,
+          "name": "filename",
+          "signature": "filename: string;",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.VirtualFile.property.filepath",
+          "kind": "interface-property",
+          "line": 109,
+          "name": "filepath",
+          "signature": "filepath: string;",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.VirtualFile.property.offset",
+          "kind": "interface-property",
+          "line": 107,
+          "name": "offset",
+          "signature": "offset: number;",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.VirtualFile.property.prepend",
+          "kind": "interface-property",
+          "line": 113,
+          "name": "prepend",
+          "signature": "prepend?: string;",
+        },
+        {
+          "docs": [],
+          "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+          "id": "interface.VirtualFile.property.supportLsp",
+          "kind": "interface-property",
+          "line": 112,
+          "name": "supportLsp",
+          "signature": "supportLsp?: boolean;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface VirtualFile {}",
+    },
+    {
+      "docs": [],
+      "file": "/twoslash-protocol/dist/types.d.mts",
+      "id": "type.ErrorLevel",
+      "kind": "type",
+      "line": 41,
+      "name": "ErrorLevel",
+      "signature": "type ErrorLevel = "warning" | "error" | "suggestion" | "message";",
+    },
+    {
+      "docs": [],
+      "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+      "id": "type.ExtraFiles",
+      "kind": "type",
+      "line": 157,
+      "name": "ExtraFiles",
+      "signature": "type ExtraFiles = Record<
+  string,
+  | string
+  | {
+      prepend?: string;
+      append?: string;
+    }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/twoslash-protocol/dist/types.d.mts",
+      "id": "type.NodeErrorWithoutPosition",
+      "kind": "type",
+      "line": 72,
+      "name": "NodeErrorWithoutPosition",
+      "signature": "type NodeErrorWithoutPosition = Omit<NodeError, keyof Position>;",
+    },
+    {
+      "docs": [],
+      "file": "/twoslash-protocol/dist/types.d.mts",
+      "id": "type.NodeWithoutPosition",
+      "kind": "type",
+      "line": 71,
+      "name": "NodeWithoutPosition",
+      "signature": "type NodeWithoutPosition =
+  | Omit<NodeHighlight, keyof Position>
+  | Omit<NodeHover, keyof Position>
+  | Omit<NodeQuery, keyof Position>
+  | Omit<NodeCompletion, keyof Position>
+  | Omit<NodeError, keyof Position>
+  | Omit<NodeTag, keyof Position>;",
+    },
+    {
+      "docs": [],
+      "file": "/twoslash-protocol/dist/types.d.mts",
+      "id": "type.Range",
+      "kind": "type",
+      "line": 83,
+      "name": "Range",
+      "signature": "type Range = [start: number, end: number];",
+    },
+    {
+      "docs": [],
+      "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+      "id": "type.TS",
+      "kind": "type",
+      "line": 117,
+      "name": "TS",
+      "signature": "type TS = typeof typescript;",
+    },
+    {
+      "docs": [],
+      "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+      "id": "type.TwoslashFunction",
+      "kind": "type",
+      "line": 189,
+      "name": "TwoslashFunction",
+      "signature": "type TwoslashFunction = (
+  code: string,
+  extension?: string,
+  options?: TwoslashExecuteOptions,
+) => TwoslashReturn;",
+    },
+    {
+      "docs": [],
+      "file": "/twoslash-protocol/dist/types.d.mts",
+      "id": "type.TwoslashGenericFunction",
+      "kind": "type",
+      "line": 99,
+      "name": "TwoslashGenericFunction",
+      "signature": "type TwoslashGenericFunction<Options = never> = (
+  code: string,
+  filename?: string,
+  options?: Options,
+) => TwoslashGenericResult;",
+    },
+    {
+      "docs": [],
+      "file": "/twoslash-protocol/dist/types.d.mts",
+      "id": "type.TwoslashNode",
+      "kind": "type",
+      "line": 70,
+      "name": "TwoslashNode",
+      "signature": "type TwoslashNode =
+  | NodeHighlight
+  | NodeHover
+  | NodeQuery
+  | NodeCompletion
+  | NodeError
+  | NodeTag;",
+    },
+    {
+      "docs": [],
+      "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+      "id": "variable.defaultCompilerOptions",
+      "kind": "variable",
+      "line": 209,
+      "name": "defaultCompilerOptions",
+      "signature": "const defaultCompilerOptions: typescript.CompilerOptions;",
+    },
+    {
+      "docs": [],
+      "file": "/twoslash/dist/shared/twoslash.5646abec.d.mts",
+      "id": "variable.defaultHandbookOptions",
+      "kind": "variable",
+      "line": 210,
+      "name": "defaultHandbookOptions",
+      "signature": "const defaultHandbookOptions: HandbookOptions;",
+    },
+  ],
+  "name": "twoslash",
+  "overview": undefined,
+  "packages": [
+    "@typescript/vfs@1.5.0",
+    "debug@4.3.4",
+    "ms@2.1.2",
+    "twoslash@0.2.1",
+    "twoslash-protocol@0.2.1",
+    "typescript@5.3.3",
+  ],
+  "subpath": ".",
+  "types": "dist/index.d.mts",
+  "version": "0.2.1",
+}
+`;

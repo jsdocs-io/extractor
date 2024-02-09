@@ -1,0 +1,369 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`verify-hcaptcha@1.0.0 1`] = `
+{
+  "declarations": [
+    {
+      "docs": [
+        "/**
+ * \`rawVerifyHcaptchaToken\` verifies with the hCaptcha API that the response token
+ * obtained from a captcha challenge is valid and returns the raw hCaptcha response.
+ *
+ * @param token - required: the token obtained from a user with a captcha challenge
+ * @param secretKey - required: the secret key for your account
+ * @param siteKey - optional but recommended: the site key for the website hosting the captcha challenge
+ * @param remoteIp - optional: the IP address of the user submitting the challenge
+ *
+ * @returns a {@link RawHcaptchaResponse} with the verification result
+ */",
+      ],
+      "file": "/verify-hcaptcha/dist/index.d.ts",
+      "id": "function.rawVerifyHcaptchaToken",
+      "kind": "function",
+      "line": 161,
+      "name": "rawVerifyHcaptchaToken",
+      "signature": "rawVerifyHcaptchaToken: ({
+  token,
+  secretKey,
+  siteKey,
+  remoteIp,
+}: {
+  token: string;
+  secretKey: string;
+  siteKey?: string;
+  remoteIp?: string;
+}) => Promise<RawHcaptchaResponse>;",
+    },
+    {
+      "docs": [
+        "/**
+ * \`verifyHcaptchaToken\` verifies with the hCaptcha API that the response token
+ * obtained from a captcha challenge is valid.
+ *
+ * @param token - required: the token obtained from a user with a captcha challenge
+ * @param secretKey - required: the secret key for your account
+ * @param siteKey - optional but recommended: the site key for the website hosting the captcha challenge
+ * @param remoteIp - optional: the IP address of the user submitting the challenge
+ *
+ * @returns a {@link HcaptchaResponse} with the verification result
+ */",
+      ],
+      "file": "/verify-hcaptcha/dist/index.d.ts",
+      "id": "function.verifyHcaptchaToken",
+      "kind": "function",
+      "line": 144,
+      "name": "verifyHcaptchaToken",
+      "signature": "verifyHcaptchaToken: ({
+  token,
+  secretKey,
+  siteKey,
+  remoteIp,
+}: {
+  token: string;
+  secretKey: string;
+  siteKey?: string;
+  remoteIp?: string;
+}) => Promise<HcaptchaResponse>;",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`HcaptchaResponse\` represents the response to the verification challenge
+ * performed by calling {@link verifyHcaptchaToken}.
+ *
+ * @see {@link https://docs.hcaptcha.com/#verify-the-user-response-server-side}
+ */",
+      ],
+      "file": "/verify-hcaptcha/dist/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.HcaptchaResponse",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 62,
+      "methods": [],
+      "name": "HcaptchaResponse",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Optional: UTC timestamp of the challenge in ISO 8601 format
+     * (for example, \`2021-10-02T18:12:10.149Z\`)
+     */",
+          ],
+          "file": "/verify-hcaptcha/dist/index.d.ts",
+          "id": "interface.HcaptchaResponse.property.challengeTimestamp",
+          "kind": "interface-property",
+          "line": 72,
+          "name": "challengeTimestamp",
+          "signature": "readonly challengeTimestamp?: string;",
+        },
+        {
+          "docs": [
+            "/** Optional: true if the response will be credited */",
+          ],
+          "file": "/verify-hcaptcha/dist/index.d.ts",
+          "id": "interface.HcaptchaResponse.property.credit",
+          "kind": "interface-property",
+          "line": 76,
+          "name": "credit",
+          "signature": "readonly credit?: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * Optional: list of error codes
+     *
+     * @see {@link HcaptchaError}
+     */",
+          ],
+          "file": "/verify-hcaptcha/dist/index.d.ts",
+          "id": "interface.HcaptchaResponse.property.errorCodes",
+          "kind": "interface-property",
+          "line": 82,
+          "name": "errorCodes",
+          "signature": "readonly errorCodes?: HcaptchaError[];",
+        },
+        {
+          "docs": [
+            "/** Optional: hostname of the website where the challenge was solved */",
+          ],
+          "file": "/verify-hcaptcha/dist/index.d.ts",
+          "id": "interface.HcaptchaResponse.property.hostname",
+          "kind": "interface-property",
+          "line": 74,
+          "name": "hostname",
+          "signature": "readonly hostname?: string;",
+        },
+        {
+          "docs": [
+            "/** Enterprise-only feature: score for malicious activity */",
+          ],
+          "file": "/verify-hcaptcha/dist/index.d.ts",
+          "id": "interface.HcaptchaResponse.property.score",
+          "kind": "interface-property",
+          "line": 84,
+          "name": "score",
+          "signature": "readonly score?: number;",
+        },
+        {
+          "docs": [
+            "/** Enterprise-only feature: list of reasons for the malicious activity score */",
+          ],
+          "file": "/verify-hcaptcha/dist/index.d.ts",
+          "id": "interface.HcaptchaResponse.property.scoreReasons",
+          "kind": "interface-property",
+          "line": 86,
+          "name": "scoreReasons",
+          "signature": "readonly scoreReasons?: string[];",
+        },
+        {
+          "docs": [
+            "/**
+     * True if the token is valid and meets the specified security criteria
+     * (for example, if the site key is associated to the secret key)
+     */",
+          ],
+          "file": "/verify-hcaptcha/dist/index.d.ts",
+          "id": "interface.HcaptchaResponse.property.success",
+          "kind": "interface-property",
+          "line": 67,
+          "name": "success",
+          "signature": "readonly success: boolean;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface HcaptchaResponse {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`RawHcaptchaResponse\` represents the raw response to the verification challenge
+ * obtained by directly calling the hCaptcha API endpoint
+ * with {@link rawVerifyHcaptchaToken}.
+ *
+ * @see {@link https://docs.hcaptcha.com/#verify-the-user-response-server-side}
+ */",
+      ],
+      "file": "/verify-hcaptcha/dist/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.RawHcaptchaResponse",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 124,
+      "methods": [],
+      "name": "RawHcaptchaResponse",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/verify-hcaptcha/dist/index.d.ts",
+          "id": "interface.RawHcaptchaResponse.property."error-codes"",
+          "kind": "interface-property",
+          "line": 129,
+          "name": ""error-codes"",
+          "signature": "readonly "error-codes"?: string[];",
+        },
+        {
+          "docs": [],
+          "file": "/verify-hcaptcha/dist/index.d.ts",
+          "id": "interface.RawHcaptchaResponse.property.challenge_ts",
+          "kind": "interface-property",
+          "line": 126,
+          "name": "challenge_ts",
+          "signature": "readonly challenge_ts?: string;",
+        },
+        {
+          "docs": [],
+          "file": "/verify-hcaptcha/dist/index.d.ts",
+          "id": "interface.RawHcaptchaResponse.property.credit",
+          "kind": "interface-property",
+          "line": 128,
+          "name": "credit",
+          "signature": "readonly credit?: boolean;",
+        },
+        {
+          "docs": [],
+          "file": "/verify-hcaptcha/dist/index.d.ts",
+          "id": "interface.RawHcaptchaResponse.property.hostname",
+          "kind": "interface-property",
+          "line": 127,
+          "name": "hostname",
+          "signature": "readonly hostname?: string;",
+        },
+        {
+          "docs": [],
+          "file": "/verify-hcaptcha/dist/index.d.ts",
+          "id": "interface.RawHcaptchaResponse.property.score",
+          "kind": "interface-property",
+          "line": 130,
+          "name": "score",
+          "signature": "readonly score?: number;",
+        },
+        {
+          "docs": [],
+          "file": "/verify-hcaptcha/dist/index.d.ts",
+          "id": "interface.RawHcaptchaResponse.property.score_reason",
+          "kind": "interface-property",
+          "line": 131,
+          "name": "score_reason",
+          "signature": "readonly score_reason?: string[];",
+        },
+        {
+          "docs": [],
+          "file": "/verify-hcaptcha/dist/index.d.ts",
+          "id": "interface.RawHcaptchaResponse.property.success",
+          "kind": "interface-property",
+          "line": 125,
+          "name": "success",
+          "signature": "readonly success: boolean;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface RawHcaptchaResponse {}",
+    },
+    {
+      "docs": [
+        "/**
+ * \`HcaptchaError\` collects the errors explaining why a verification challenge failed.
+ *
+ * @see {@link HcaptchaResponse}
+ * @see {@link https://docs.hcaptcha.com/#siteverify-error-codes-table}
+ */",
+      ],
+      "file": "/verify-hcaptcha/dist/index.d.ts",
+      "id": "type.HcaptchaError",
+      "kind": "type",
+      "line": 94,
+      "name": "HcaptchaError",
+      "signature": "type HcaptchaError =
+  /** Secret key is missing */
+  | "missing-input-secret"
+  /** Secret key is invalid */
+  | "invalid-input-secret"
+  /** User response token is missing */
+  | "missing-input-response"
+  /** User response token is invalid */
+  | "invalid-input-response"
+  /** Site key is invalid */
+  | "invalid-sitekey"
+  /** Remote user IP is invalid */
+  | "invalid-remoteip"
+  /** Request is invalid */
+  | "bad-request"
+  /** User response token is invalid or has already been checked */
+  | "invalid-or-already-seen-response"
+  /** Must use the test site key when using a test verification token */
+  | "not-using-dummy-passcode"
+  /** Must use the test secret key when using a test verification token */
+  | "not-using-dummy-secret"
+  /** The site key is not associated to the secret key */
+  | "sitekey-secret-mismatch";",
+    },
+  ],
+  "name": "verify-hcaptcha",
+  "overview": "/**
+ *
+ * A no dependencies, fully typed library to verify hCaptcha tokens
+ * submitted by users when solving CAPTCHA challenges.
+ *
+ * @remarks
+ *
+ * Note: this is an unofficial library; we are not affiliated with hCaptcha.com
+ *
+ * @example
+ *
+ * Verify a token submitted by a user:
+ *
+ * \`\`\`typescript
+ * import { verifyHcaptchaToken } from 'verify-hcaptcha';
+ *
+ * (async () => {
+ *     const result = await verifyHcaptchaToken({
+ *       token: "USER-SUBMITTED-RESPONSE-TOKEN",
+ *       secretKey: "YOUR-SECRET-KEY",
+ *       siteKey: "YOUR-SITE-KEY",
+ *     });
+ *
+ *     if (result.success) {
+ *       console.log("User is human");
+ *     } else {
+ *       console.log("User is robot");
+ *     }
+ * })();
+ * \`\`\`
+ *
+ * @example
+ *
+ * Verify a token submitted by a user and get the raw response from hCaptcha:
+ *
+ * \`\`\`typescript
+ * import { rawVerifyHcaptchaToken } from 'verify-hcaptcha';
+ *
+ * (async () => {
+ *     const result = await rawVerifyHcaptchaToken({
+ *       token: "USER-SUBMITTED-RESPONSE-TOKEN",
+ *       secretKey: "YOUR-SECRET-KEY",
+ *       siteKey: "YOUR-SITE-KEY",
+ *     });
+ *
+ *     if (result.success) {
+ *       console.log("User is human");
+ *     } else {
+ *       console.log("User is robot");
+ *     }
+ * })();
+ * \`\`\`
+ *
+ * @packageDocumentation
+ */",
+  "packages": [
+    "verify-hcaptcha@1.0.0",
+  ],
+  "subpath": ".",
+  "types": "dist/index.d.ts",
+  "version": "1.0.0",
+}
+`;

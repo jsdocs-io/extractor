@@ -1,0 +1,167 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`@violentmonkey/dom@2.1.5 1`] = `
+{
+  "declarations": [
+    {
+      "docs": [],
+      "file": "/@gera2ld/jsx-dom/types/h.d.ts",
+      "id": "function.createElement",
+      "kind": "function",
+      "line": 6,
+      "name": "createElement",
+      "signature": "createElement: (
+  type: string | VFunction,
+  props: VProps,
+  ...children: VChildren[]
+) => VNode;",
+    },
+    {
+      "docs": [],
+      "file": "/@gera2ld/jsx-dom/types/h.d.ts",
+      "id": "function.Fragment",
+      "kind": "function",
+      "line": 9,
+      "name": "Fragment",
+      "signature": "Fragment: (props: VProps) => VChildren;",
+    },
+    {
+      "docs": [
+        "/**
+ * Return all elements that match the given \`xpath\` as an array.
+ */",
+      ],
+      "file": "/@violentmonkey/dom/types/index.d.ts",
+      "id": "function.getElementsByXPath",
+      "kind": "function",
+      "line": 8,
+      "name": "getElementsByXPath",
+      "signature": "getElementsByXPath: (xpath: string, context?: Node) => Node[];",
+    },
+    {
+      "docs": [
+        "/**
+ * Walk a node tree and return all text contents in an array.
+ */",
+      ],
+      "file": "/@violentmonkey/dom/types/index.d.ts",
+      "id": "function.getTextValues",
+      "kind": "function",
+      "line": 12,
+      "name": "getTextValues",
+      "signature": "getTextValues: (node: HTMLElement) => any;",
+    },
+    {
+      "docs": [],
+      "file": "/@gera2ld/jsx-dom/types/h.d.ts",
+      "id": "function.h",
+      "kind": "function",
+      "line": 6,
+      "name": "h",
+      "signature": "h: (
+  type: string | VFunction,
+  props: VProps,
+  ...children: VChildren[]
+) => VNode;",
+    },
+    {
+      "docs": [
+        "/**
+ * Render and mount without returning VirtualDOM, useful when you don't need SVG support.
+ */",
+      ],
+      "file": "/@gera2ld/jsx-dom/types/mount.d.ts",
+      "id": "function.hm",
+      "kind": "function",
+      "line": 13,
+      "name": "hm",
+      "signature": "hm: (
+  type: string | VFunction,
+  props: VProps,
+  ...children: VChildren[]
+) => Node;",
+    },
+    {
+      "docs": [
+        "/**
+ * Mount vdom as real DOM nodes.
+ */",
+      ],
+      "file": "/@gera2ld/jsx-dom/types/mount.d.ts",
+      "id": "function.m",
+      "kind": "function",
+      "line": 9,
+      "name": "m",
+      "signature": "m: (vnode: VChild) => Node;",
+    },
+    {
+      "docs": [
+        "/**
+ * Mount vdom as real DOM nodes.
+ */",
+      ],
+      "file": "/@gera2ld/jsx-dom/types/mount.d.ts",
+      "id": "function.mountDom",
+      "kind": "function",
+      "line": 9,
+      "name": "mountDom",
+      "signature": "mountDom: (vnode: VChild) => Node;",
+    },
+    {
+      "docs": [
+        "/**
+ * Observe an existing \`node\` until \`callback\` returns \`true\`.
+ * The returned function can be called explicitly to disconnect the observer.
+ *
+ * \`\`\`js
+ * VM.observe(document.body, () => {
+ *   const node = document.querySelector('.profile');
+ *   if (node) {
+ *     console.log('It\\'s there!');
+ *     return true;
+ *   }
+ * });
+ * \`\`\`
+ */",
+      ],
+      "file": "/@violentmonkey/dom/types/index.d.ts",
+      "id": "function.observe",
+      "kind": "function",
+      "line": 27,
+      "name": "observe",
+      "signature": "observe: (
+  node: Node,
+  callback: (
+    mutations: MutationRecord[],
+    observer: MutationObserver,
+  ) => boolean | void,
+  options?: MutationObserverInit,
+) => () => void;",
+    },
+    {
+      "docs": [],
+      "file": "/@violentmonkey/dom/types/index.d.ts",
+      "id": "variable.versions",
+      "kind": "variable",
+      "line": 2,
+      "name": "versions",
+      "signature": "const versions: Record<string, string> & { dom: string };",
+    },
+  ],
+  "name": "@violentmonkey/dom",
+  "overview": undefined,
+  "packages": [
+    "@babel/runtime@7.23.9",
+    "@gera2ld/jsx-dom@2.2.2",
+    "@violentmonkey/dom@2.1.5",
+    "csstype@3.1.3",
+    "regenerator-runtime@0.14.1",
+    "seroval@1.0.4",
+    "seroval-plugins@1.0.4",
+    "solid-js@1.8.14",
+  ],
+  "subpath": ".",
+  "types": "types/index.d.ts",
+  "version": "2.1.5",
+}
+`;

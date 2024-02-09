@@ -1,0 +1,3768 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`query-registry@2.6.0 1`] = `
+{
+  "declarations": [
+    {
+      "constructors": [
+        {
+          "docs": [],
+          "file": "/query-registry/dist/utils/errors.d.ts",
+          "id": "class.FetchError.constructor",
+          "kind": "class-constructor",
+          "line": 12,
+          "name": "constructor",
+          "signature": "constructor(url: string, response: Response);",
+        },
+      ],
+      "docs": [
+        "/**
+ * \`FetchError\` represents an error that happened when fetching a URL.
+ *
+ * The \`instanceof\` operator can be used to check for this error.
+ */",
+      ],
+      "file": "/query-registry/dist/utils/errors.d.ts",
+      "id": "class.FetchError",
+      "kind": "class",
+      "line": 7,
+      "methods": [],
+      "name": "FetchError",
+      "properties": [
+        {
+          "docs": [
+            "/** Response received */",
+          ],
+          "file": "/query-registry/dist/utils/errors.d.ts",
+          "id": "class.FetchError.property.response",
+          "kind": "class-property",
+          "line": 11,
+          "name": "response",
+          "signature": "readonly response: Response;",
+        },
+        {
+          "docs": [
+            "/** URL originally fetched */",
+          ],
+          "file": "/query-registry/dist/utils/errors.d.ts",
+          "id": "class.FetchError.property.url",
+          "kind": "class-property",
+          "line": 9,
+          "name": "url",
+          "signature": "readonly url: string;",
+        },
+      ],
+      "signature": "class FetchError extends BaseError {}",
+    },
+    {
+      "docs": [
+        "/**
+ * \`getAbbreviatedPackument\` returns the abbreviated packument (package document)
+ * containing only the metadata necessary to install a package present on the registry.
+ *
+ * @remarks
+ * To get all the metadata (full packument) about a package see {@link getPackument}.
+ *
+ * @param name - package name
+ * @param registry - URL of the registry (default: npm registry)
+ * @param mirrors - URLs of the registry mirrors (default: npm registry mirrors)
+ * @param cached - accept cached responses (default: \`true\`)
+ *
+ * @example
+ * Get the abbreviated packument for package \`query-registry\` from the npm registry:
+ *
+ * \`\`\`typescript
+ * import { getAbbreviatedPackument } from 'query-registry';
+ *
+ * (async () => {
+ *     const packument = await getAbbreviatedPackument({ name: 'query-registry' });
+ *
+ *     // Output: 'query-registry'
+ *     console.log(packument.name);
+ * })();
+ * \`\`\`
+ *
+ * @see {@link AbbreviatedPackument}
+ * @see {@link RawAbbreviatedPackument}
+ * @see {@link npmRegistry}
+ * @see {@link npmRegistryMirrors}
+ */",
+      ],
+      "file": "/query-registry/dist/endpoints/get-abbreviated-packument.d.ts",
+      "id": "function.getAbbreviatedPackument",
+      "kind": "function",
+      "line": 33,
+      "name": "getAbbreviatedPackument",
+      "signature": "getAbbreviatedPackument: ({
+  name,
+  registry,
+  mirrors,
+  cached,
+}: {
+  name: string;
+  registry?: string;
+  mirrors?: string[];
+  cached?: boolean;
+}) => Promise<AbbreviatedPackument>;",
+    },
+    {
+      "docs": [
+        "/**
+ * \`getDailyPackageDownloads\` returns the number of downloads for a package
+ * for each day in a given time period.
+ *
+ * @param name - package name
+ * @param period - time period in which downloads happened (default: \`last-week\`)
+ * @param registryDownloadsAPI - URL of the registry's downloads API (default: npm registry)
+ * @param cached - accept cached responses (default: \`true\`)
+ *
+ * @example
+ * Get the day by day weekly downloads for package \`query-registry\` from the npm registry:
+ *
+ * \`\`\`typescript
+ * import { getDailyPackageDownloads } from 'query-registry';
+ *
+ * (async () => {
+ *     const downloads = await getDailyPackageDownloads({ name: 'query-registry' });
+ *
+ *     // Output: 'query-registry'
+ *     console.log(downloads.package);
+ *
+ *     // Output: 'number'
+ *     console.log(typeof downloads.downloads[0].downloads);
+ * })();
+ * \`\`\`
+ *
+ * @example
+ * Get the day by day monthly downloads for package \`query-registry\` from the npm registry:
+ *
+ * \`\`\`typescript
+ * import { getDailyPackageDownloads } from 'query-registry';
+ *
+ * (async () => {
+ *     const downloads = await getDailyPackageDownloads({ name: 'query-registry', period: 'last-month' });
+ *
+ *     // Output: 'query-registry'
+ *     console.log(downloads.package);
+ *
+ *     // Output: 'number'
+ *     console.log(typeof downloads.downloads[0].downloads);
+ * })();
+ * \`\`\`
+ *
+ * @see {@link DailyPackageDownloads}
+ * @see {@link DownloadPeriod}
+ * @see {@link npmRegistryDownloadsAPI}
+ * @see {@link https://github.com/npm/registry/blob/master/docs/download-counts.md#ranges}
+ */",
+      ],
+      "file": "/query-registry/dist/endpoints/get-daily-package-downloads.d.ts",
+      "id": "function.getDailyPackageDownloads",
+      "kind": "function",
+      "line": 51,
+      "name": "getDailyPackageDownloads",
+      "signature": "getDailyPackageDownloads: ({
+  name,
+  period: rawDownloadPeriod,
+  registryDownloadsAPI,
+  cached,
+}: {
+  name: string;
+  period?: DownloadPeriod;
+  registryDownloadsAPI?: string;
+  cached?: boolean;
+}) => Promise<DailyPackageDownloads>;",
+    },
+    {
+      "docs": [
+        "/**
+ * \`getDailyRegistryDownloads\` returns the number of downloads for all registry packages
+ * for each day in a given time period.
+ *
+ * @param period - time period in which downloads happened (default: \`last-week\`)
+ * @param registryDownloadsAPI - URL of the registry's downloads API (default: npm registry)
+ * @param cached - accept cached responses (default: \`true\`)
+ *
+ * @example
+ * Get the day by day weekly downloads for the npm registry:
+ *
+ * \`\`\`typescript
+ * import { getDailyRegistryDownloads } from 'query-registry';
+ *
+ * (async () => {
+ *     const downloads = await getDailyRegistryDownloads();
+ *
+ *     // Output: 'number'
+ *     console.log(typeof downloads.downloads[0].downloads);
+ * })();
+ * \`\`\`
+ *
+ * @example
+ * Get the day by day monthly downloads for the npm registry:
+ *
+ * \`\`\`typescript
+ * import { getDailyRegistryDownloads } from 'query-registry';
+ *
+ * (async () => {
+ *     const downloads = await getDailyRegistryDownloads({ period: 'last-month' });
+ *
+ *     // Output: 'number'
+ *     console.log(typeof downloads.downloads[0].downloads);
+ * })();
+ * \`\`\`
+ *
+ * @see {@link DailyRegistryDownloads}
+ * @see {@link DownloadPeriod}
+ * @see {@link npmRegistryDownloadsAPI}
+ * @see {@link https://github.com/npm/registry/blob/master/docs/download-counts.md#ranges}
+ */",
+      ],
+      "file": "/query-registry/dist/endpoints/get-daily-registry-downloads.d.ts",
+      "id": "function.getDailyRegistryDownloads",
+      "kind": "function",
+      "line": 44,
+      "name": "getDailyRegistryDownloads",
+      "signature": "getDailyRegistryDownloads: ({
+  period: rawDownloadPeriod,
+  registryDownloadsAPI,
+  cached,
+}?: {
+  period?: DownloadPeriod;
+  registryDownloadsAPI?: string;
+  cached?: boolean;
+}) => Promise<DailyRegistryDownloads>;",
+    },
+    {
+      "docs": [
+        "/**
+ * \`getPackageDownloads\` returns the number of downloads for a package
+ * in a given time period.
+ *
+ * @param name - package name
+ * @param period - time period in which downloads happened (default: \`last-week\`)
+ * @param registryDownloadsAPI - URL of the registry's downloads API (default: npm registry)
+ * @param cached - accept cached responses (default: \`true\`)
+ *
+ * @example
+ * Get the weekly downloads for package \`query-registry\` from the npm registry:
+ *
+ * \`\`\`typescript
+ * import { getPackageDownloads } from 'query-registry';
+ *
+ * (async () => {
+ *     const downloads = await getPackageDownloads({ name: 'query-registry' });
+ *
+ *     // Output: 'query-registry'
+ *     console.log(downloads.package);
+ *
+ *     // Output: 'number'
+ *     console.log(typeof downloads.downloads);
+ * })();
+ * \`\`\`
+ *
+ * @example
+ * Get the monthly downloads for package \`query-registry\` from the npm registry:
+ *
+ * \`\`\`typescript
+ * import { getPackageDownloads } from 'query-registry';
+ *
+ * (async () => {
+ *     const downloads = await getPackageDownloads({ name: 'query-registry', period: 'last-month' });
+ *
+ *     // Output: 'query-registry'
+ *     console.log(downloads.package);
+ *
+ *     // Output: 'number'
+ *     console.log(typeof downloads.downloads);
+ * })();
+ * \`\`\`
+ *
+ * @see {@link PackageDownloads}
+ * @see {@link DownloadPeriod}
+ * @see {@link npmRegistryDownloadsAPI}
+ * @see {@link https://github.com/npm/registry/blob/master/docs/download-counts.md#point-values}
+ */",
+      ],
+      "file": "/query-registry/dist/endpoints/get-package-downloads.d.ts",
+      "id": "function.getPackageDownloads",
+      "kind": "function",
+      "line": 51,
+      "name": "getPackageDownloads",
+      "signature": "getPackageDownloads: ({
+  name,
+  period: rawDownloadPeriod,
+  registryDownloadsAPI,
+  cached,
+}: {
+  name: string;
+  period?: DownloadPeriod;
+  registryDownloadsAPI?: string;
+  cached?: boolean;
+}) => Promise<PackageDownloads>;",
+    },
+    {
+      "docs": [
+        "/**
+ * \`getPackageManifest\` returns the manifest describing
+ * a specific version of a package.
+ *
+ * @param name - package name
+ * @param version - package version (default: \`latest\`)
+ * @param registry - URL of the registry (default: npm registry)
+ * @param mirrors - URLs of the registry mirrors (default: npm registry mirrors)
+ * @param cached - accept cached responses (default: \`true\`)
+ *
+ * @example
+ * Get the latest manifest for package \`query-registry\` from the npm registry:
+ *
+ * \`\`\`typescript
+ * import { getPackageManifest } from 'query-registry';
+ *
+ * (async () => {
+ *     const manifest = await getPackageManifest({ name: 'query-registry' });
+ *
+ *     // Output: 'query-registry'
+ *     console.log(manifest.name);
+ * })();
+ * \`\`\`
+ *
+ * @example
+ * Get the manifest for package \`query-registry@1.0.0\` from the npm registry:
+ *
+ * \`\`\`typescript
+ * import { getPackageManifest } from 'query-registry';
+ *
+ * (async () => {
+ *     const manifest = await getPackageManifest({ name: 'query-registry', version: '1.0.0' });
+ *
+ *     // Output: 'query-registry'
+ *     console.log(manifest.name);
+ *
+ *     // Output: '1.0.0'
+ *     console.log(manifest.version);
+ * })();
+ * \`\`\`
+ *
+ * @see {@link PackageManifest}
+ * @see {@link RawPackageManifest}
+ * @see {@link npmRegistry}
+ * @see {@link npmRegistryMirrors}
+ */",
+      ],
+      "file": "/query-registry/dist/endpoints/get-package-manifest.d.ts",
+      "id": "function.getPackageManifest",
+      "kind": "function",
+      "line": 48,
+      "name": "getPackageManifest",
+      "signature": "getPackageManifest: ({
+  name,
+  version,
+  registry,
+  mirrors,
+  cached,
+}: {
+  name: string;
+  version?: string;
+  registry?: string;
+  mirrors?: string[];
+  cached?: boolean;
+}) => Promise<PackageManifest>;",
+    },
+    {
+      "docs": [
+        "/**
+ * \`getPackument\` returns the packument (package document) containing
+ * all the metadata about a package present on the registry.
+ *
+ * @param name - package name
+ * @param registry - URL of the registry (default: npm registry)
+ * @param mirrors - URLs of the registry mirrors (default: npm registry mirrors)
+ * @param cached - accept cached responses (default: \`true\`)
+ *
+ * @example
+ * Get the packument for package \`query-registry\` from the npm registry:
+ *
+ * \`\`\`typescript
+ * import { getPackument } from 'query-registry';
+ *
+ * (async () => {
+ *     const packument = await getPackument({ name: 'query-registry' });
+ *
+ *     // Output: 'query-registry'
+ *     console.log(packument.name);
+ * })();
+ * \`\`\`
+ *
+ * @see {@link Packument}
+ * @see {@link RawPackument}
+ * @see {@link npmRegistry}
+ * @see {@link npmRegistryMirrors}
+ */",
+      ],
+      "file": "/query-registry/dist/endpoints/get-packument.d.ts",
+      "id": "function.getPackument",
+      "kind": "function",
+      "line": 30,
+      "name": "getPackument",
+      "signature": "getPackument: ({
+  name,
+  registry,
+  mirrors,
+  cached,
+}: {
+  name: string;
+  registry?: string;
+  mirrors?: string[];
+  cached?: boolean;
+}) => Promise<Packument>;",
+    },
+    {
+      "docs": [
+        "/**
+ * \`getRawAbbreviatedPackument\` returns the abbreviated packument (package document)
+ * containing only the metadata necessary to install a package present on the registry.
+ *
+ * Note: the abbreviated packument is returned as retrieved from the registry.
+ *
+ * @param name - package name
+ * @param registry - URL of the registry (default: npm registry)
+ * @param mirrors - URLs of the registry mirrors (default: npm registry mirrors)
+ * @param cached - accept cached responses (default: \`true\`)
+ *
+ * @example
+ * Get the abbreviated packument for package \`query-registry\` from the npm registry:
+ *
+ * \`\`\`typescript
+ * import { getRawAbbreviatedPackument } from 'query-registry';
+ *
+ * (async () => {
+ *     const packument = await getRawAbbreviatedPackument({ name: 'query-registry' });
+ *
+ *     // Output: 'query-registry'
+ *     console.log(packument.name);
+ * })();
+ * \`\`\`
+ *
+ * @see {@link RawAbbreviatedPackument}
+ * @see {@link npmRegistry}
+ * @see {@link npmRegistryMirrors}
+ */",
+      ],
+      "file": "/query-registry/dist/endpoints/get-raw-abbreviated-packument.d.ts",
+      "id": "function.getRawAbbreviatedPackument",
+      "kind": "function",
+      "line": 31,
+      "name": "getRawAbbreviatedPackument",
+      "signature": "getRawAbbreviatedPackument: ({
+  name,
+  registry,
+  mirrors,
+  cached,
+}: {
+  name: string;
+  registry?: string;
+  mirrors?: string[];
+  cached?: boolean;
+}) => Promise<RawAbbreviatedPackument>;",
+    },
+    {
+      "docs": [
+        "/**
+ * \`getRawPackageManifest\` returns the manifest describing
+ * a specific version of a package.
+ *
+ * Note: the manifest is returned as retrieved from the registry.
+ *
+ * @param name - package name
+ * @param version - package version (default: \`latest\`)
+ * @param registry - URL of the registry (default: npm registry)
+ * @param mirrors - URLs of the registry mirrors (default: npm registry mirrors)
+ * @param cached - accept cached responses (default: \`true\`)
+ *
+ * @example
+ * Get the latest manifest for package \`query-registry\` from the npm registry:
+ *
+ * \`\`\`typescript
+ * import { getRawPackageManifest } from 'query-registry';
+ *
+ * (async () => {
+ *     const manifest = await getRawPackageManifest({ name: 'query-registry' });
+ *
+ *     // Output: 'query-registry'
+ *     console.log(manifest.name);
+ * })();
+ * \`\`\`
+ *
+ * @example
+ * Get the manifest for package \`query-registry@1.0.0\` from the npm registry:
+ *
+ * \`\`\`typescript
+ * import { getRawPackageManifest } from 'query-registry';
+ *
+ * (async () => {
+ *     const manifest = await getRawPackageManifest({ name: 'query-registry', version: '1.0.0' });
+ *
+ *     // Output: 'query-registry'
+ *     console.log(manifest.name);
+ *
+ *     // Output: '1.0.0'
+ *     console.log(manifest.version);
+ * })();
+ * \`\`\`
+ *
+ * @see {@link RawPackageManifest}
+ * @see {@link npmRegistry}
+ * @see {@link npmRegistryMirrors}
+ */",
+      ],
+      "file": "/query-registry/dist/endpoints/get-raw-package-manifest.d.ts",
+      "id": "function.getRawPackageManifest",
+      "kind": "function",
+      "line": 49,
+      "name": "getRawPackageManifest",
+      "signature": "getRawPackageManifest: ({
+  name,
+  version,
+  registry,
+  mirrors,
+  cached,
+}: {
+  name: string;
+  version?: string;
+  registry?: string;
+  mirrors?: string[];
+  cached?: boolean;
+}) => Promise<RawPackageManifest>;",
+    },
+    {
+      "docs": [
+        "/**
+ * \`getRawPackument\` returns the packument (package document) containing
+ * all the metadata about a package present on the registry.
+ *
+ * Note: the packument is returned as retrieved from the registry.
+ *
+ * @param name - package name
+ * @param registry - URL of the registry (default: npm registry)
+ * @param mirrors - URLs of the registry mirrors (default: npm registry mirrors)
+ * @param cached - accept cached responses (default: \`true\`)
+ *
+ * @example
+ * Get the packument for package \`query-registry\` from the npm registry:
+ *
+ * \`\`\`typescript
+ * import { getRawPackument } from 'query-registry';
+ *
+ * (async () => {
+ *     const packument = await getRawPackument({ name: 'query-registry' });
+ *
+ *     // Output: 'query-registry'
+ *     console.log(packument.name);
+ * })();
+ * \`\`\`
+ *
+ * @see {@link RawPackument}
+ * @see {@link npmRegistry}
+ * @see {@link npmRegistryMirrors}
+ */",
+      ],
+      "file": "/query-registry/dist/endpoints/get-raw-packument.d.ts",
+      "id": "function.getRawPackument",
+      "kind": "function",
+      "line": 31,
+      "name": "getRawPackument",
+      "signature": "getRawPackument: ({
+  name,
+  registry,
+  mirrors,
+  cached,
+}: {
+  name: string;
+  registry?: string;
+  mirrors?: string[];
+  cached?: boolean;
+}) => Promise<RawPackument>;",
+    },
+    {
+      "docs": [
+        "/**
+ * \`getRegistryDownloads\` returns the number of downloads for all registry packages
+ * in a given time period.
+ *
+ * @param period - time period in which downloads happened (default: \`last-week\`)
+ * @param registryDownloadsAPI - URL of the registry's downloads API (default: npm registry)
+ * @param cached - accept cached responses (default: \`true\`)
+ *
+ * @example
+ * Get the weekly downloads for the npm registry:
+ *
+ * \`\`\`typescript
+ * import { getRegistryDownloads } from 'query-registry';
+ *
+ * (async () => {
+ *     const downloads = await getRegistryDownloads();
+ *
+ *     // Output: 'number'
+ *     console.log(typeof downloads.downloads);
+ * })();
+ * \`\`\`
+ *
+ * @example
+ * Get the monthly downloads for the npm registry:
+ *
+ * \`\`\`typescript
+ * import { getRegistryDownloads } from 'query-registry';
+ *
+ * (async () => {
+ *     const downloads = await getRegistryDownloads({ period: 'last-month' });
+ *
+ *     // Output: 'number'
+ *     console.log(typeof downloads.downloads);
+ * })();
+ * \`\`\`
+ *
+ * @see {@link RegistryDownloads}
+ * @see {@link DownloadPeriod}
+ * @see {@link npmRegistryDownloadsAPI}
+ * @see {@link https://github.com/npm/registry/blob/master/docs/download-counts.md#point-values}
+ */",
+      ],
+      "file": "/query-registry/dist/endpoints/get-registry-downloads.d.ts",
+      "id": "function.getRegistryDownloads",
+      "kind": "function",
+      "line": 44,
+      "name": "getRegistryDownloads",
+      "signature": "getRegistryDownloads: ({
+  period: rawDownloadPeriod,
+  registryDownloadsAPI,
+  cached,
+}?: {
+  period?: DownloadPeriod;
+  registryDownloadsAPI?: string;
+  cached?: boolean;
+}) => Promise<RegistryDownloads>;",
+    },
+    {
+      "docs": [
+        "/**
+ * \`getRegistryMetadata\` returns the metadata describing the registry itself.
+ *
+ * @param registry - URL of the registry (default: npm registry)
+ * @param cached - accept cached responses (default: \`true\`)
+ *
+ * @example
+ * Get the metadata for the npm registry:
+ *
+ * \`\`\`typescript
+ * import { getRegistryMetadata } from 'query-registry';
+ *
+ * (async () => {
+ *     const metadata = await getRegistryMetadata();
+ *
+ *     // Output: 'registry'
+ *     console.log(metadata.db_name);
+ * })();
+ * \`\`\`
+ *
+ * @example
+ * Get the metadata for a custom registry:
+ *
+ * \`\`\`typescript
+ * import { getRegistryMetadata } from 'query-registry';
+ *
+ * (async () => {
+ *     const metadata = await getRegistryMetadata({ registry: 'https://example.com' });
+ * })();
+ * \`\`\`
+ *
+ * @see {@link RegistryMetadata}
+ * @see {@link npmRegistry}
+ */",
+      ],
+      "file": "/query-registry/dist/endpoints/get-registry-metadata.d.ts",
+      "id": "function.getRegistryMetadata",
+      "kind": "function",
+      "line": 36,
+      "name": "getRegistryMetadata",
+      "signature": "getRegistryMetadata: ({
+  registry,
+  cached,
+}?: {
+  registry?: string;
+  cached?: boolean;
+}) => Promise<RegistryMetadata>;",
+    },
+    {
+      "docs": [
+        "/**
+ * \`searchPackages\` returns the packages corresponding to a given query.
+ *
+ * @param query - one or more search criteria
+ * @param registry - URL of the registry (default: npm registry)
+ * @param mirrors - URLs of the registry mirrors (default: npm registry mirrors)
+ * @param cached - accept cached responses (default: \`true\`)
+ *
+ * @example
+ * Get the search results for text query \`query-registry\` from the npm registry:
+ *
+ * \`\`\`typescript
+ * import { searchPackages } from 'query-registry';
+ *
+ * (async () => {
+ *     const results = await searchPackages({ query: { text: 'query-registry' } });
+ *
+ *     // Output: 'query-registry'
+ *     console.log(results.objects[0].package.name);
+ * })();
+ * \`\`\`
+ *
+ * @see {@link SearchResults}
+ * @see {@link SearchCriteria}
+ * @see {@link npmRegistry}
+ * @see {@link npmRegistryMirrors}
+ */",
+      ],
+      "file": "/query-registry/dist/endpoints/search-packages.d.ts",
+      "id": "function.searchPackages",
+      "kind": "function",
+      "line": 30,
+      "name": "searchPackages",
+      "signature": "searchPackages: ({
+  query: rawSearchCriteria,
+  registry,
+  mirrors,
+  cached,
+}: {
+  query: SearchCriteria;
+  registry?: string;
+  mirrors?: string[];
+  cached?: boolean;
+}) => Promise<SearchResults>;",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`AbbreviatedPackument\` represents a packument (package document)
+ * containing only the metadata necessary to install a package.
+ *
+ * @see {@link RawAbbreviatedPackument}
+ */",
+      ],
+      "file": "/query-registry/dist/types/abbreviated-packument.d.ts",
+      "getAccessors": [],
+      "id": "interface.AbbreviatedPackument",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 9,
+      "methods": [],
+      "name": "AbbreviatedPackument",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Mapping of distribution tags to version numbers
+     * (alias to \`dist-tags\`)
+     *
+     * @see {@link DistTags}
+     */",
+          ],
+          "file": "/query-registry/dist/types/abbreviated-packument.d.ts",
+          "id": "interface.AbbreviatedPackument.property.distTags",
+          "kind": "interface-property",
+          "line": 24,
+          "name": "distTags",
+          "signature": "readonly distTags: DistTags;",
+        },
+        {
+          "docs": [
+            "/** Unique package name (for example, \`foo\` or \`@bar/baz\`) */",
+          ],
+          "file": "/query-registry/dist/types/abbreviated-packument.d.ts",
+          "id": "interface.AbbreviatedPackument.property.id",
+          "kind": "interface-property",
+          "line": 11,
+          "name": "id",
+          "signature": "readonly id: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Timestamp of when the package was last modified
+     * in ISO 8601 format (for example, \`2021-11-23T19:12:24.006Z\`);
+     * (alias to \`modified\`)
+     */",
+          ],
+          "file": "/query-registry/dist/types/abbreviated-packument.d.ts",
+          "id": "interface.AbbreviatedPackument.property.modifiedAt",
+          "kind": "interface-property",
+          "line": 17,
+          "name": "modifiedAt",
+          "signature": "readonly modifiedAt: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface AbbreviatedPackument extends RawAbbreviatedPackument {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`BugTracker\` represents the bug tracking methods.
+ */",
+      ],
+      "file": "/query-registry/dist/types/bug-tracker.d.ts",
+      "getAccessors": [],
+      "id": "interface.BugTracker",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 4,
+      "methods": [],
+      "name": "BugTracker",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/bug-tracker.d.ts",
+          "id": "interface.BugTracker.property.email",
+          "kind": "interface-property",
+          "line": 6,
+          "name": "email",
+          "signature": "readonly email?: string;",
+        },
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/bug-tracker.d.ts",
+          "id": "interface.BugTracker.property.url",
+          "kind": "interface-property",
+          "line": 5,
+          "name": "url",
+          "signature": "readonly url?: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface BugTracker {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`DailyPackageDownloads\` lists the number of downloads for a package
+ * for each day in a given time period.
+ *
+ * @see {@link DailyRegistryDownloads}
+ * @see {@link https://github.com/npm/registry/blob/master/docs/download-counts.md#ranges}
+ */",
+      ],
+      "file": "/query-registry/dist/types/downloads.d.ts",
+      "getAccessors": [],
+      "id": "interface.DailyPackageDownloads",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 33,
+      "methods": [],
+      "name": "DailyPackageDownloads",
+      "properties": [
+        {
+          "docs": [
+            "/** Package name */",
+          ],
+          "file": "/query-registry/dist/types/downloads.d.ts",
+          "id": "interface.DailyPackageDownloads.property.package",
+          "kind": "interface-property",
+          "line": 35,
+          "name": "package",
+          "signature": "readonly package: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface DailyPackageDownloads extends DailyRegistryDownloads {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`DailyRegistryDownloads\` lists the number of downloads for the registry
+ * for each day in a given time period.
+ *
+ * @see {@link DownloadsPerDay}
+ * @see {@link https://github.com/npm/registry/blob/master/docs/download-counts.md#ranges}
+ */",
+      ],
+      "file": "/query-registry/dist/types/downloads.d.ts",
+      "getAccessors": [],
+      "id": "interface.DailyRegistryDownloads",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 44,
+      "methods": [],
+      "name": "DailyRegistryDownloads",
+      "properties": [
+        {
+          "docs": [
+            "/** Download counts per day */",
+          ],
+          "file": "/query-registry/dist/types/downloads.d.ts",
+          "id": "interface.DailyRegistryDownloads.property.downloads",
+          "kind": "interface-property",
+          "line": 46,
+          "name": "downloads",
+          "signature": "readonly downloads: DownloadsPerDay[];",
+        },
+        {
+          "docs": [
+            "/** Date of the last day (inclusive) */",
+          ],
+          "file": "/query-registry/dist/types/downloads.d.ts",
+          "id": "interface.DailyRegistryDownloads.property.end",
+          "kind": "interface-property",
+          "line": 50,
+          "name": "end",
+          "signature": "readonly end: string;",
+        },
+        {
+          "docs": [
+            "/** Date of the first day (inclusive) */",
+          ],
+          "file": "/query-registry/dist/types/downloads.d.ts",
+          "id": "interface.DailyRegistryDownloads.property.start",
+          "kind": "interface-property",
+          "line": 48,
+          "name": "start",
+          "signature": "readonly start: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface DailyRegistryDownloads {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`DateRange\` represents a time period between two days
+ * where the \`start\` and \`end\` dates are inclusive.
+ *
+ * @example
+ * \`\`\`typescript
+ * const dateRange = {
+ *     start: new Date('2019-01-01'),
+ *     end: new Date('2020-01-01'),
+ * };
+ * \`\`\`
+ *
+ * @see {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date}
+ */",
+      ],
+      "file": "/query-registry/dist/types/download-period.d.ts",
+      "getAccessors": [],
+      "id": "interface.DateRange",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 38,
+      "methods": [],
+      "name": "DateRange",
+      "properties": [
+        {
+          "docs": [
+            "/** Date of the last day (inclusive) */",
+          ],
+          "file": "/query-registry/dist/types/download-period.d.ts",
+          "id": "interface.DateRange.property.end",
+          "kind": "interface-property",
+          "line": 42,
+          "name": "end",
+          "signature": "readonly end: Date;",
+        },
+        {
+          "docs": [
+            "/** Date of the first day (inclusive) */",
+          ],
+          "file": "/query-registry/dist/types/download-period.d.ts",
+          "id": "interface.DateRange.property.start",
+          "kind": "interface-property",
+          "line": 40,
+          "name": "start",
+          "signature": "readonly start: Date;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface DateRange {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`DistInfo\` contains data describing the distributed package.
+ *
+ * @see {@link https://github.com/npm/registry/blob/master/docs/responses/package-metadata.md#dist}
+ */",
+      ],
+      "file": "/query-registry/dist/types/dist-info.d.ts",
+      "getAccessors": [],
+      "id": "interface.DistInfo",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 6,
+      "methods": [],
+      "name": "DistInfo",
+      "properties": [
+        {
+          "docs": [
+            "/** npm PGP signature */",
+          ],
+          "file": "/query-registry/dist/types/dist-info.d.ts",
+          "id": "interface.DistInfo.property.'npm-signature'",
+          "kind": "interface-property",
+          "line": 18,
+          "name": "'npm-signature'",
+          "signature": "readonly "npm-signature"?: string;",
+        },
+        {
+          "docs": [
+            "/** Number of files in the tarball */",
+          ],
+          "file": "/query-registry/dist/types/dist-info.d.ts",
+          "id": "interface.DistInfo.property.fileCount",
+          "kind": "interface-property",
+          "line": 14,
+          "name": "fileCount",
+          "signature": "readonly fileCount?: number;",
+        },
+        {
+          "docs": [
+            "/** Usually, SHA512 sum of the tarball preceded by \`sha512-\` */",
+          ],
+          "file": "/query-registry/dist/types/dist-info.d.ts",
+          "id": "interface.DistInfo.property.integrity",
+          "kind": "interface-property",
+          "line": 12,
+          "name": "integrity",
+          "signature": "readonly integrity?: string;",
+        },
+        {
+          "docs": [
+            "/** SHA1 sum of the tarball */",
+          ],
+          "file": "/query-registry/dist/types/dist-info.d.ts",
+          "id": "interface.DistInfo.property.shasum",
+          "kind": "interface-property",
+          "line": 10,
+          "name": "shasum",
+          "signature": "readonly shasum: string;",
+        },
+        {
+          "docs": [
+            "/** Tarball URL */",
+          ],
+          "file": "/query-registry/dist/types/dist-info.d.ts",
+          "id": "interface.DistInfo.property.tarball",
+          "kind": "interface-property",
+          "line": 8,
+          "name": "tarball",
+          "signature": "readonly tarball: string;",
+        },
+        {
+          "docs": [
+            "/** Total size in bytes of the unpacked files in the tarball */",
+          ],
+          "file": "/query-registry/dist/types/dist-info.d.ts",
+          "id": "interface.DistInfo.property.unpackedSize",
+          "kind": "interface-property",
+          "line": 16,
+          "name": "unpackedSize",
+          "signature": "readonly unpackedSize?: number;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface DistInfo {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`DistTags\` maps distribution tags to version numbers.
+ */",
+      ],
+      "file": "/query-registry/dist/types/dist-tags.d.ts",
+      "getAccessors": [],
+      "id": "interface.DistTags",
+      "indexSignatures": [
+        {
+          "docs": [
+            "/** Mapping of distribution tags to version numbers */",
+          ],
+          "file": "/query-registry/dist/types/dist-tags.d.ts",
+          "id": "interface.DistTags.index-signature",
+          "kind": "interface-index-signature",
+          "line": 8,
+          "name": "index-signature",
+          "signature": "readonly [key: string]: string;",
+        },
+      ],
+      "kind": "interface",
+      "line": 4,
+      "methods": [],
+      "name": "DistTags",
+      "properties": [
+        {
+          "docs": [
+            "/** Latest version number */",
+          ],
+          "file": "/query-registry/dist/types/dist-tags.d.ts",
+          "id": "interface.DistTags.property.latest",
+          "kind": "interface-property",
+          "line": 6,
+          "name": "latest",
+          "signature": "readonly latest: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface DistTags {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`DownloadsPerDay\` lists the number of downloads in a given day.
+ */",
+      ],
+      "file": "/query-registry/dist/types/downloads.d.ts",
+      "getAccessors": [],
+      "id": "interface.DownloadsPerDay",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 55,
+      "methods": [],
+      "name": "DownloadsPerDay",
+      "properties": [
+        {
+          "docs": [
+            "/** Day date */",
+          ],
+          "file": "/query-registry/dist/types/downloads.d.ts",
+          "id": "interface.DownloadsPerDay.property.day",
+          "kind": "interface-property",
+          "line": 59,
+          "name": "day",
+          "signature": "readonly day: string;",
+        },
+        {
+          "docs": [
+            "/** Total number of downloads in the day */",
+          ],
+          "file": "/query-registry/dist/types/downloads.d.ts",
+          "id": "interface.DownloadsPerDay.property.downloads",
+          "kind": "interface-property",
+          "line": 57,
+          "name": "downloads",
+          "signature": "readonly downloads: number;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface DownloadsPerDay {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`GitRepository\` represents a git repository hosting
+ * the source code of a package.
+ *
+ * @see {@link Repository}
+ */",
+      ],
+      "file": "/query-registry/dist/types/git-repository.d.ts",
+      "getAccessors": [],
+      "id": "interface.GitRepository",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 7,
+      "methods": [],
+      "name": "GitRepository",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Specific directory in the repository
+     * (for example, a directory in a monorepo)
+     */",
+          ],
+          "file": "/query-registry/dist/types/git-repository.d.ts",
+          "id": "interface.GitRepository.property.directory",
+          "kind": "interface-property",
+          "line": 16,
+          "name": "directory",
+          "signature": "readonly directory?: string;",
+        },
+        {
+          "docs": [
+            "/** Repository type, always \`git\` */",
+          ],
+          "file": "/query-registry/dist/types/git-repository.d.ts",
+          "id": "interface.GitRepository.property.type",
+          "kind": "interface-property",
+          "line": 9,
+          "name": "type",
+          "signature": "readonly type: "git";",
+        },
+        {
+          "docs": [
+            "/** Repository URL */",
+          ],
+          "file": "/query-registry/dist/types/git-repository.d.ts",
+          "id": "interface.GitRepository.property.url",
+          "kind": "interface-property",
+          "line": 11,
+          "name": "url",
+          "signature": "readonly url: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface GitRepository {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/query-registry/dist/types/npm-operational-internal.d.ts",
+      "getAccessors": [],
+      "id": "interface.NpmOperationalInternal",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 1,
+      "methods": [],
+      "name": "NpmOperationalInternal",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/npm-operational-internal.d.ts",
+          "id": "interface.NpmOperationalInternal.property.host",
+          "kind": "interface-property",
+          "line": 2,
+          "name": "host",
+          "signature": "readonly host: string;",
+        },
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/npm-operational-internal.d.ts",
+          "id": "interface.NpmOperationalInternal.property.tmp",
+          "kind": "interface-property",
+          "line": 3,
+          "name": "tmp",
+          "signature": "readonly tmp: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface NpmOperationalInternal {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`PackageDownloads\` lists the number of downloads for a package
+ * in a given time period.
+ *
+ * @see {@link RegistryDownloads}
+ * @see {@link https://github.com/npm/registry/blob/master/docs/download-counts.md#point-values}
+ */",
+      ],
+      "file": "/query-registry/dist/types/downloads.d.ts",
+      "getAccessors": [],
+      "id": "interface.PackageDownloads",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 8,
+      "methods": [],
+      "name": "PackageDownloads",
+      "properties": [
+        {
+          "docs": [
+            "/** Package name */",
+          ],
+          "file": "/query-registry/dist/types/downloads.d.ts",
+          "id": "interface.PackageDownloads.property.package",
+          "kind": "interface-property",
+          "line": 10,
+          "name": "package",
+          "signature": "readonly package: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface PackageDownloads extends RegistryDownloads {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`PackageFlags\` contains flag attributes categorizing the package.
+ */",
+      ],
+      "file": "/query-registry/dist/types/search-results.d.ts",
+      "getAccessors": [],
+      "id": "interface.PackageFlags",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 138,
+      "methods": [],
+      "name": "PackageFlags",
+      "properties": [
+        {
+          "docs": [
+            "/** If true, package is insecure or has vulnerable dependencies */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.PackageFlags.property.insecure",
+          "kind": "interface-property",
+          "line": 142,
+          "name": "insecure",
+          "signature": "readonly insecure?: boolean;",
+        },
+        {
+          "docs": [
+            "/** If true, package version is \`<1.0.0\` */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.PackageFlags.property.unstable",
+          "kind": "interface-property",
+          "line": 140,
+          "name": "unstable",
+          "signature": "readonly unstable?: boolean;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface PackageFlags {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`PackageJSON\` contains the package metadata
+ * usually found in \`package.json\` files.
+ *
+ * @remarks
+ * For some packages, especially legacy ones,
+ * the properties may be mistyped due to incorrect data present on the registry.
+ *
+ * @see {@link https://docs.npmjs.com/cli/v6/configuring-npm/package-json}
+ */",
+      ],
+      "file": "/query-registry/dist/types/package-json.d.ts",
+      "getAccessors": [],
+      "id": "interface.PackageJSON",
+      "indexSignatures": [
+        {
+          "docs": [
+            "/** Other fields */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.index-signature",
+          "kind": "interface-index-signature",
+          "line": 118,
+          "name": "index-signature",
+          "signature": "readonly [key: string]: unknown;",
+        },
+      ],
+      "kind": "interface",
+      "line": 14,
+      "methods": [],
+      "name": "PackageJSON",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Author of the package
+     *
+     * @see {@link Person}
+     */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.author",
+          "kind": "interface-property",
+          "line": 34,
+          "name": "author",
+          "signature": "readonly author?: Person;",
+        },
+        {
+          "docs": [
+            "/** Executable files */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.bin",
+          "kind": "interface-property",
+          "line": 92,
+          "name": "bin",
+          "signature": "readonly bin?: string | Record<string, string>;",
+        },
+        {
+          "docs": [
+            "/** Main file (Browser) */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.browser",
+          "kind": "interface-property",
+          "line": 76,
+          "name": "browser",
+          "signature": "readonly browser?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Bug tracker
+     *
+     * @see {@link BugTracker}
+     */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.bugs",
+          "kind": "interface-property",
+          "line": 58,
+          "name": "bugs",
+          "signature": "readonly bugs?: BugTracker;",
+        },
+        {
+          "docs": [
+            "/** Bundled dependencies (alias) */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.bundledDependencies",
+          "kind": "interface-property",
+          "line": 70,
+          "name": "bundledDependencies",
+          "signature": "readonly bundledDependencies?: string[];",
+        },
+        {
+          "docs": [
+            "/** Bundled dependencies */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.bundleDependencies",
+          "kind": "interface-property",
+          "line": 68,
+          "name": "bundleDependencies",
+          "signature": "readonly bundleDependencies?: string[];",
+        },
+        {
+          "docs": [
+            "/** npm config */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.config",
+          "kind": "interface-property",
+          "line": 100,
+          "name": "config",
+          "signature": "readonly config?: Record<string, string>;",
+        },
+        {
+          "docs": [
+            "/**
+     * Contributors to the package
+     *
+     * @see {@link Person}
+     */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.contributors",
+          "kind": "interface-property",
+          "line": 46,
+          "name": "contributors",
+          "signature": "readonly contributors?: Person[];",
+        },
+        {
+          "docs": [
+            "/** CPU compatibility */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.cpu",
+          "kind": "interface-property",
+          "line": 106,
+          "name": "cpu",
+          "signature": "readonly cpu?: string[];",
+        },
+        {
+          "docs": [
+            "/** Runtime dependencies */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.dependencies",
+          "kind": "interface-property",
+          "line": 60,
+          "name": "dependencies",
+          "signature": "readonly dependencies?: Record<string, string>;",
+        },
+        {
+          "docs": [
+            "/** Deprecation message */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.deprecated",
+          "kind": "interface-property",
+          "line": 112,
+          "name": "deprecated",
+          "signature": "readonly deprecated?: string;",
+        },
+        {
+          "docs": [
+            "/** Package description */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.description",
+          "kind": "interface-property",
+          "line": 20,
+          "name": "description",
+          "signature": "readonly description?: string;",
+        },
+        {
+          "docs": [
+            "/** Development dependencies */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.devDependencies",
+          "kind": "interface-property",
+          "line": 62,
+          "name": "devDependencies",
+          "signature": "readonly devDependencies?: Record<string, string>;",
+        },
+        {
+          "docs": [
+            "/** Directories describing the package's structure */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.directories",
+          "kind": "interface-property",
+          "line": 96,
+          "name": "directories",
+          "signature": "readonly directories?: Record<string, string>;",
+        },
+        {
+          "docs": [
+            "/** Node compatibility */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.engines",
+          "kind": "interface-property",
+          "line": 102,
+          "name": "engines",
+          "signature": "readonly engines?: Record<string, string>;",
+        },
+        {
+          "docs": [
+            "/**
+     * Export map
+     *
+     * @see {@link https://nodejs.org/api/packages.html#packages_subpath_exports}
+     */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.exports",
+          "kind": "interface-property",
+          "line": 88,
+          "name": "exports",
+          "signature": "readonly exports?: string | Record<string, unknown>;",
+        },
+        {
+          "docs": [
+            "/** File patterns included in the package */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.files",
+          "kind": "interface-property",
+          "line": 90,
+          "name": "files",
+          "signature": "readonly files?: string[];",
+        },
+        {
+          "docs": [
+            "/** Homepage URL */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.homepage",
+          "kind": "interface-property",
+          "line": 22,
+          "name": "homepage",
+          "signature": "readonly homepage?: string;",
+        },
+        {
+          "docs": [
+            "/** Keywords describing the package */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.keywords",
+          "kind": "interface-property",
+          "line": 28,
+          "name": "keywords",
+          "signature": "readonly keywords?: string[];",
+        },
+        {
+          "docs": [
+            "/** SPDX license identifier */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.license",
+          "kind": "interface-property",
+          "line": 24,
+          "name": "license",
+          "signature": "readonly license?: string;",
+        },
+        {
+          "docs": [
+            "/** Text of the license */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.licenseText",
+          "kind": "interface-property",
+          "line": 26,
+          "name": "licenseText",
+          "signature": "readonly licenseText?: string;",
+        },
+        {
+          "docs": [
+            "/** Main file (Node) */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.main",
+          "kind": "interface-property",
+          "line": 74,
+          "name": "main",
+          "signature": "readonly main?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Maintainers of the package
+     *
+     * @see {@link Person}
+     */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.maintainers",
+          "kind": "interface-property",
+          "line": 40,
+          "name": "maintainers",
+          "signature": "readonly maintainers?: Person[];",
+        },
+        {
+          "docs": [
+            "/** Man pages */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.man",
+          "kind": "interface-property",
+          "line": 94,
+          "name": "man",
+          "signature": "readonly man?: string | string[];",
+        },
+        {
+          "docs": [
+            "/** Main file (Modules) */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.module",
+          "kind": "interface-property",
+          "line": 78,
+          "name": "module",
+          "signature": "readonly module?: string;",
+        },
+        {
+          "docs": [
+            "/** Package name */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.name",
+          "kind": "interface-property",
+          "line": 16,
+          "name": "name",
+          "signature": "readonly name: string;",
+        },
+        {
+          "docs": [
+            "/** Optional dependencies */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.optionalDependencies",
+          "kind": "interface-property",
+          "line": 66,
+          "name": "optionalDependencies",
+          "signature": "readonly optionalDependencies?: Record<string, string>;",
+        },
+        {
+          "docs": [
+            "/** OS compatibility */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.os",
+          "kind": "interface-property",
+          "line": 104,
+          "name": "os",
+          "signature": "readonly os?: string[];",
+        },
+        {
+          "docs": [
+            "/** Peer dependencies */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.peerDependencies",
+          "kind": "interface-property",
+          "line": 64,
+          "name": "peerDependencies",
+          "signature": "readonly peerDependencies?: Record<string, string>;",
+        },
+        {
+          "docs": [
+            "/** Prevent publishing */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.private",
+          "kind": "interface-property",
+          "line": 108,
+          "name": "private",
+          "signature": "readonly private?: boolean;",
+        },
+        {
+          "docs": [
+            "/** Publishing configuration */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.publishConfig",
+          "kind": "interface-property",
+          "line": 110,
+          "name": "publishConfig",
+          "signature": "readonly publishConfig?: Record<string, string>;",
+        },
+        {
+          "docs": [
+            "/** README contents */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.readme",
+          "kind": "interface-property",
+          "line": 114,
+          "name": "readme",
+          "signature": "readonly readme?: string;",
+        },
+        {
+          "docs": [
+            "/** Name of the README file */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.readmeFilename",
+          "kind": "interface-property",
+          "line": 116,
+          "name": "readmeFilename",
+          "signature": "readonly readmeFilename?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Repository containing the package's source
+     *
+     * @see {@link Repository}
+     */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.repository",
+          "kind": "interface-property",
+          "line": 52,
+          "name": "repository",
+          "signature": "readonly repository?: string | Repository;",
+        },
+        {
+          "docs": [
+            "/** npm scripts */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.scripts",
+          "kind": "interface-property",
+          "line": 98,
+          "name": "scripts",
+          "signature": "readonly scripts?: Record<string, string>;",
+        },
+        {
+          "docs": [
+            "/** Main source file */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.source",
+          "kind": "interface-property",
+          "line": 72,
+          "name": "source",
+          "signature": "readonly source?: string;",
+        },
+        {
+          "docs": [
+            "/** Type declarations file */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.types",
+          "kind": "interface-property",
+          "line": 80,
+          "name": "types",
+          "signature": "readonly types?: string;",
+        },
+        {
+          "docs": [
+            "/** Type declarations file (alias) */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.typings",
+          "kind": "interface-property",
+          "line": 82,
+          "name": "typings",
+          "signature": "readonly typings?: string;",
+        },
+        {
+          "docs": [
+            "/** Package version number */",
+          ],
+          "file": "/query-registry/dist/types/package-json.d.ts",
+          "id": "interface.PackageJSON.property.version",
+          "kind": "interface-property",
+          "line": 18,
+          "name": "version",
+          "signature": "readonly version: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface PackageJSON {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`PackageLinks\` contains a collection of links of pages associated to the package.
+ */",
+      ],
+      "file": "/query-registry/dist/types/search-results.d.ts",
+      "getAccessors": [],
+      "id": "interface.PackageLinks",
+      "indexSignatures": [
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.PackageLinks.index-signature",
+          "kind": "interface-index-signature",
+          "line": 106,
+          "name": "index-signature",
+          "signature": "readonly [key: string]: string | undefined;",
+        },
+      ],
+      "kind": "interface",
+      "line": 101,
+      "methods": [],
+      "name": "PackageLinks",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.PackageLinks.property.bugs",
+          "kind": "interface-property",
+          "line": 105,
+          "name": "bugs",
+          "signature": "readonly bugs?: string;",
+        },
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.PackageLinks.property.homepage",
+          "kind": "interface-property",
+          "line": 103,
+          "name": "homepage",
+          "signature": "readonly homepage?: string;",
+        },
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.PackageLinks.property.npm",
+          "kind": "interface-property",
+          "line": 102,
+          "name": "npm",
+          "signature": "readonly npm?: string;",
+        },
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.PackageLinks.property.repository",
+          "kind": "interface-property",
+          "line": 104,
+          "name": "repository",
+          "signature": "readonly repository?: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface PackageLinks {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`PackageManifest\` represents the manifest describing a specific version
+ *  of a package.
+ *
+ * @remarks
+ * For some packages, especially legacy ones,
+ * the properties may be mistyped due to incorrect data present on the registry.
+ *
+ * @see {@link RawPackageManifest}
+ */",
+      ],
+      "file": "/query-registry/dist/types/package-manifest.d.ts",
+      "getAccessors": [],
+      "id": "interface.PackageManifest",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 14,
+      "methods": [],
+      "name": "PackageManifest",
+      "properties": [
+        {
+          "docs": [
+            "/** Publishing timestamp */",
+          ],
+          "file": "/query-registry/dist/types/package-manifest.d.ts",
+          "id": "interface.PackageManifest.property.createdAt",
+          "kind": "interface-property",
+          "line": 18,
+          "name": "createdAt",
+          "signature": "readonly createdAt: string;",
+        },
+        {
+          "docs": [
+            "/** Name of the corresponding DefinitelyTyped package, if any */",
+          ],
+          "file": "/query-registry/dist/types/package-manifest.d.ts",
+          "id": "interface.PackageManifest.property.definitelyTypedName",
+          "kind": "interface-property",
+          "line": 30,
+          "name": "definitelyTypedName",
+          "signature": "readonly definitelyTypedName?: string;",
+        },
+        {
+          "docs": [
+            "/** Normalized git repository */",
+          ],
+          "file": "/query-registry/dist/types/package-manifest.d.ts",
+          "id": "interface.PackageManifest.property.gitRepository",
+          "kind": "interface-property",
+          "line": 28,
+          "name": "gitRepository",
+          "signature": "readonly gitRepository?: GitRepository;",
+        },
+        {
+          "docs": [
+            "/** Package version ID (for example, \`foo@1.0.0\` or \`@bar/baz@1.0.0\`) */",
+          ],
+          "file": "/query-registry/dist/types/package-manifest.d.ts",
+          "id": "interface.PackageManifest.property.id",
+          "kind": "interface-property",
+          "line": 16,
+          "name": "id",
+          "signature": "readonly id: string;",
+        },
+        {
+          "docs": [
+            "/** Normalized license */",
+          ],
+          "file": "/query-registry/dist/types/package-manifest.d.ts",
+          "id": "interface.PackageManifest.property.license",
+          "kind": "interface-property",
+          "line": 26,
+          "name": "license",
+          "signature": "readonly license?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * User who published this version of the package
+     *
+     * @see {@link Person}
+     */",
+          ],
+          "file": "/query-registry/dist/types/package-manifest.d.ts",
+          "id": "interface.PackageManifest.property.publisher",
+          "kind": "interface-property",
+          "line": 24,
+          "name": "publisher",
+          "signature": "readonly publisher: Person;",
+        },
+        {
+          "docs": [
+            "/** Name of the corresponding untyped package (w.r.t. DefinitelyTyped) */",
+          ],
+          "file": "/query-registry/dist/types/package-manifest.d.ts",
+          "id": "interface.PackageManifest.property.untypedName",
+          "kind": "interface-property",
+          "line": 32,
+          "name": "untypedName",
+          "signature": "readonly untypedName?: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface PackageManifest extends RawPackageManifest {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`PackageSearchResult\` contains abbreviated package metadata returned
+ * by searching the registry for packages.
+ *
+ * @see {@link Person}
+ * @see {@link PackageLinks}
+ */",
+      ],
+      "file": "/query-registry/dist/types/search-results.d.ts",
+      "getAccessors": [],
+      "id": "interface.PackageSearchResult",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 60,
+      "methods": [],
+      "name": "PackageSearchResult",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Package author
+     *
+     * @see {@link Person}
+     */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.PackageSearchResult.property.author",
+          "kind": "interface-property",
+          "line": 90,
+          "name": "author",
+          "signature": "readonly author?: Person;",
+        },
+        {
+          "docs": [
+            "/** Publishing timestamp for the latest version */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.PackageSearchResult.property.date",
+          "kind": "interface-property",
+          "line": 68,
+          "name": "date",
+          "signature": "readonly date: string;",
+        },
+        {
+          "docs": [
+            "/** Package description */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.PackageSearchResult.property.description",
+          "kind": "interface-property",
+          "line": 82,
+          "name": "description",
+          "signature": "readonly description?: string;",
+        },
+        {
+          "docs": [
+            "/** Keywords describing the package */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.PackageSearchResult.property.keywords",
+          "kind": "interface-property",
+          "line": 84,
+          "name": "keywords",
+          "signature": "readonly keywords?: string[];",
+        },
+        {
+          "docs": [
+            "/**
+     * Links for pages associated to the package
+     *
+     * @see {@link PackageLinks}
+     */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.PackageSearchResult.property.links",
+          "kind": "interface-property",
+          "line": 80,
+          "name": "links",
+          "signature": "readonly links: PackageLinks;",
+        },
+        {
+          "docs": [
+            "/**
+     * Package maintainers
+     *
+     * @see {@link Person}
+     */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.PackageSearchResult.property.maintainers",
+          "kind": "interface-property",
+          "line": 96,
+          "name": "maintainers",
+          "signature": "readonly maintainers?: Person[];",
+        },
+        {
+          "docs": [
+            "/** Package name */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.PackageSearchResult.property.name",
+          "kind": "interface-property",
+          "line": 62,
+          "name": "name",
+          "signature": "readonly name: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Package publisher
+     *
+     * @see {@link Person}
+     */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.PackageSearchResult.property.publisher",
+          "kind": "interface-property",
+          "line": 74,
+          "name": "publisher",
+          "signature": "readonly publisher: Person;",
+        },
+        {
+          "docs": [
+            "/** Package scope; either \`unscoped\` or the package's scope */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.PackageSearchResult.property.scope",
+          "kind": "interface-property",
+          "line": 66,
+          "name": "scope",
+          "signature": "readonly scope: string;",
+        },
+        {
+          "docs": [
+            "/** Latest package version number */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.PackageSearchResult.property.version",
+          "kind": "interface-property",
+          "line": 64,
+          "name": "version",
+          "signature": "readonly version: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface PackageSearchResult {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`Packument\` represents a packument (package document)
+ * containing all the data about a package.
+ *
+ * @remarks
+ * For some packages, especially legacy ones,
+ * the properties may be mistyped due to incorrect data present on the registry.
+ *
+ * @see {@link RawPackument}
+ */",
+      ],
+      "file": "/query-registry/dist/types/packument.d.ts",
+      "getAccessors": [],
+      "id": "interface.Packument",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 14,
+      "methods": [],
+      "name": "Packument",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Mapping of distribution tags to version numbers
+     * (alias to \`dist-tags\`)
+     *
+     * @see {@link DistTags}
+     */",
+          ],
+          "file": "/query-registry/dist/types/packument.d.ts",
+          "id": "interface.Packument.property.distTags",
+          "kind": "interface-property",
+          "line": 26,
+          "name": "distTags",
+          "signature": "readonly distTags: DistTags;",
+        },
+        {
+          "docs": [
+            "/** Normalized git repository */",
+          ],
+          "file": "/query-registry/dist/types/packument.d.ts",
+          "id": "interface.Packument.property.gitRepository",
+          "kind": "interface-property",
+          "line": 38,
+          "name": "gitRepository",
+          "signature": "readonly gitRepository?: GitRepository;",
+        },
+        {
+          "docs": [
+            "/**
+     * Unique package name (for example, \`foo\` or \`@bar/baz\`;
+     * alias to \`_id\`)
+     */",
+          ],
+          "file": "/query-registry/dist/types/packument.d.ts",
+          "id": "interface.Packument.property.id",
+          "kind": "interface-property",
+          "line": 19,
+          "name": "id",
+          "signature": "readonly id: string;",
+        },
+        {
+          "docs": [
+            "/** Normalized license */",
+          ],
+          "file": "/query-registry/dist/types/packument.d.ts",
+          "id": "interface.Packument.property.license",
+          "kind": "interface-property",
+          "line": 36,
+          "name": "license",
+          "signature": "readonly license?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Mapping of version numbers to publishing timestamps
+     * without the \`created\` or \`modified\` properties
+     * present in the \`time\` property
+     *
+     * @see {@link VersionsToTimestamps}
+     */",
+          ],
+          "file": "/query-registry/dist/types/packument.d.ts",
+          "id": "interface.Packument.property.versionsToTimestamps",
+          "kind": "interface-property",
+          "line": 34,
+          "name": "versionsToTimestamps",
+          "signature": "readonly versionsToTimestamps: Record<string, string>;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface Packument extends RawPackument {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`Person\` represents a person associated to a package.
+ */",
+      ],
+      "file": "/query-registry/dist/types/person.d.ts",
+      "getAccessors": [],
+      "id": "interface.Person",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 4,
+      "methods": [],
+      "name": "Person",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/person.d.ts",
+          "id": "interface.Person.property.email",
+          "kind": "interface-property",
+          "line": 7,
+          "name": "email",
+          "signature": "readonly email?: string;",
+        },
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/person.d.ts",
+          "id": "interface.Person.property.name",
+          "kind": "interface-property",
+          "line": 5,
+          "name": "name",
+          "signature": "readonly name?: string;",
+        },
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/person.d.ts",
+          "id": "interface.Person.property.url",
+          "kind": "interface-property",
+          "line": 8,
+          "name": "url",
+          "signature": "readonly url?: string;",
+        },
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/person.d.ts",
+          "id": "interface.Person.property.username",
+          "kind": "interface-property",
+          "line": 6,
+          "name": "username",
+          "signature": "readonly username?: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface Person {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`RawAbbreviatedPackument\` represents an abbreviated packument (package document),
+ * as returned from the registry, containing only the metadata necessary to install a package.
+ *
+ * @see {@link https://github.com/npm/registry/blob/master/docs/responses/package-metadata.md#abbreviated-metadata-format}
+ */",
+      ],
+      "file": "/query-registry/dist/types/raw-abbreviated-packument.d.ts",
+      "getAccessors": [],
+      "id": "interface.RawAbbreviatedPackument",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 9,
+      "methods": [],
+      "name": "RawAbbreviatedPackument",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Mapping of distribution tags to version numbers
+     *
+     * @see {@link DistTags}
+     */",
+          ],
+          "file": "/query-registry/dist/types/raw-abbreviated-packument.d.ts",
+          "id": "interface.RawAbbreviatedPackument.property.'dist-tags'",
+          "kind": "interface-property",
+          "line": 22,
+          "name": "'dist-tags'",
+          "signature": "readonly "dist-tags": DistTags;",
+        },
+        {
+          "docs": [
+            "/**
+     * Timestamp of when the package was last modified
+     * in ISO 8601 format (for example, \`2021-11-23T19:12:24.006Z\`)
+     */",
+          ],
+          "file": "/query-registry/dist/types/raw-abbreviated-packument.d.ts",
+          "id": "interface.RawAbbreviatedPackument.property.modified",
+          "kind": "interface-property",
+          "line": 16,
+          "name": "modified",
+          "signature": "readonly modified: string;",
+        },
+        {
+          "docs": [
+            "/** Package name */",
+          ],
+          "file": "/query-registry/dist/types/raw-abbreviated-packument.d.ts",
+          "id": "interface.RawAbbreviatedPackument.property.name",
+          "kind": "interface-property",
+          "line": 11,
+          "name": "name",
+          "signature": "readonly name: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Mapping of version numbers to package manifests
+     *
+     * @see {@link RawPackageManifest}
+     */",
+          ],
+          "file": "/query-registry/dist/types/raw-abbreviated-packument.d.ts",
+          "id": "interface.RawAbbreviatedPackument.property.versions",
+          "kind": "interface-property",
+          "line": 28,
+          "name": "versions",
+          "signature": "readonly versions: Record<
+  string,
+  Pick<
+    RawPackageManifest,
+    | "name"
+    | "version"
+    | "dist"
+    | "deprecated"
+    | "dependencies"
+    | "optionalDependencies"
+    | "devDependencies"
+    | "bundleDependencies"
+    | "peerDependencies"
+    | "bin"
+    | "directories"
+    | "engines"
+    | "_hasShrinkwrap"
+  >
+>;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface RawAbbreviatedPackument {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`RawPackageManifest\` represents the manifest, as returned by the registry,
+ * describing a specific version of a package.
+ *
+ * @remarks
+ * For some packages, especially legacy ones,
+ * the properties may be mistyped due to incorrect data present on the registry.
+ *
+ * @see {@link https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md#getpackageversion}
+ * @see {@link https://github.com/npm/registry/blob/master/docs/responses/package-metadata.md#abbreviated-version-object}
+ * @see {@link https://github.com/npm/registry/blob/master/docs/responses/package-metadata.md#full-metadata-format}
+ * @see {@link https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md#version}
+ * @see {@link PackageJSON}
+ */",
+      ],
+      "file": "/query-registry/dist/types/raw-package-manifest.d.ts",
+      "getAccessors": [],
+      "id": "interface.RawPackageManifest",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 19,
+      "methods": [],
+      "name": "RawPackageManifest",
+      "properties": [
+        {
+          "docs": [
+            "/** True if the package has a shrinkwrap file */",
+          ],
+          "file": "/query-registry/dist/types/raw-package-manifest.d.ts",
+          "id": "interface.RawPackageManifest.property._hasShrinkwrap",
+          "kind": "interface-property",
+          "line": 51,
+          "name": "_hasShrinkwrap",
+          "signature": "readonly _hasShrinkwrap?: boolean;",
+        },
+        {
+          "docs": [
+            "/** Package version ID (for example, \`foo@1.0.0\` or \`@bar/baz@1.0.0\`) */",
+          ],
+          "file": "/query-registry/dist/types/raw-package-manifest.d.ts",
+          "id": "interface.RawPackageManifest.property._id",
+          "kind": "interface-property",
+          "line": 21,
+          "name": "_id",
+          "signature": "readonly _id: string;",
+        },
+        {
+          "docs": [
+            "/** Node version used when publishing */",
+          ],
+          "file": "/query-registry/dist/types/raw-package-manifest.d.ts",
+          "id": "interface.RawPackageManifest.property._nodeVersion",
+          "kind": "interface-property",
+          "line": 41,
+          "name": "_nodeVersion",
+          "signature": "readonly _nodeVersion?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Internal npm data
+     *
+     * @see {@link NpmOperationalInternal}
+     */",
+          ],
+          "file": "/query-registry/dist/types/raw-package-manifest.d.ts",
+          "id": "interface.RawPackageManifest.property._npmOperationalInternal",
+          "kind": "interface-property",
+          "line": 49,
+          "name": "_npmOperationalInternal",
+          "signature": "readonly _npmOperationalInternal?: NpmOperationalInternal;",
+        },
+        {
+          "docs": [
+            "/**
+     * User who published this package version
+     *
+     * @see {@link Person}
+     */",
+          ],
+          "file": "/query-registry/dist/types/raw-package-manifest.d.ts",
+          "id": "interface.RawPackageManifest.property._npmUser",
+          "kind": "interface-property",
+          "line": 39,
+          "name": "_npmUser",
+          "signature": "readonly _npmUser: Person;",
+        },
+        {
+          "docs": [
+            "/** npm version used when publishing */",
+          ],
+          "file": "/query-registry/dist/types/raw-package-manifest.d.ts",
+          "id": "interface.RawPackageManifest.property._npmVersion",
+          "kind": "interface-property",
+          "line": 43,
+          "name": "_npmVersion",
+          "signature": "readonly _npmVersion?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Distribution data from the registry
+     *
+     * @see {@link DistInfo}
+     */",
+          ],
+          "file": "/query-registry/dist/types/raw-package-manifest.d.ts",
+          "id": "interface.RawPackageManifest.property.dist",
+          "kind": "interface-property",
+          "line": 31,
+          "name": "dist",
+          "signature": "readonly dist: DistInfo;",
+        },
+        {
+          "docs": [
+            "/** Commit hash corresponding to the published version */",
+          ],
+          "file": "/query-registry/dist/types/raw-package-manifest.d.ts",
+          "id": "interface.RawPackageManifest.property.gitHead",
+          "kind": "interface-property",
+          "line": 33,
+          "name": "gitHead",
+          "signature": "readonly gitHead?: string;",
+        },
+        {
+          "docs": [
+            "/** Package name */",
+          ],
+          "file": "/query-registry/dist/types/raw-package-manifest.d.ts",
+          "id": "interface.RawPackageManifest.property.name",
+          "kind": "interface-property",
+          "line": 23,
+          "name": "name",
+          "signature": "readonly name: string;",
+        },
+        {
+          "docs": [
+            "/** Package version number */",
+          ],
+          "file": "/query-registry/dist/types/raw-package-manifest.d.ts",
+          "id": "interface.RawPackageManifest.property.version",
+          "kind": "interface-property",
+          "line": 25,
+          "name": "version",
+          "signature": "readonly version: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface RawPackageManifest extends PackageJSON {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`RawPackument\` represents a packument (package document), as returned
+ * from the registry, containing all the data about a package .
+ *
+ * @remarks
+ * For some packages, especially legacy ones,
+ * the properties may be mistyped due to incorrect data present on the registry.
+ *
+ * @see {@link https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md#getpackage}
+ * @see {@link https://github.com/npm/registry/blob/master/docs/responses/package-metadata.md#full-metadata-format}
+ * @see {@link https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md#package}
+ * @see {@link HoistedPackageJSON}
+ */",
+      ],
+      "file": "/query-registry/dist/types/raw-packument.d.ts",
+      "getAccessors": [],
+      "id": "interface.RawPackument",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 18,
+      "methods": [],
+      "name": "RawPackument",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Mapping of distribution tags to version numbers
+     *
+     * @see {@link DistTags}
+     */",
+          ],
+          "file": "/query-registry/dist/types/raw-packument.d.ts",
+          "id": "interface.RawPackument.property.'dist-tags'",
+          "kind": "interface-property",
+          "line": 30,
+          "name": "'dist-tags'",
+          "signature": "readonly "dist-tags": DistTags;",
+        },
+        {
+          "docs": [
+            "/** Unique package name (for example, \`foo\` or \`@bar/baz\`) */",
+          ],
+          "file": "/query-registry/dist/types/raw-packument.d.ts",
+          "id": "interface.RawPackument.property._id",
+          "kind": "interface-property",
+          "line": 20,
+          "name": "_id",
+          "signature": "readonly _id: string;",
+        },
+        {
+          "docs": [
+            "/** Latest revision ID in CouchDB */",
+          ],
+          "file": "/query-registry/dist/types/raw-packument.d.ts",
+          "id": "interface.RawPackument.property._rev",
+          "kind": "interface-property",
+          "line": 22,
+          "name": "_rev",
+          "signature": "readonly _rev: string;",
+        },
+        {
+          "docs": [
+            "/** Package name */",
+          ],
+          "file": "/query-registry/dist/types/raw-packument.d.ts",
+          "id": "interface.RawPackument.property.name",
+          "kind": "interface-property",
+          "line": 24,
+          "name": "name",
+          "signature": "readonly name: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Mapping of version numbers to publishing timestamps
+     *
+     * @see {@link VersionsToTimestamps}
+     */",
+          ],
+          "file": "/query-registry/dist/types/raw-packument.d.ts",
+          "id": "interface.RawPackument.property.time",
+          "kind": "interface-property",
+          "line": 36,
+          "name": "time",
+          "signature": "readonly time: VersionsToTimestamps;",
+        },
+        {
+          "docs": [
+            "/** Names of the npm users who starred the package */",
+          ],
+          "file": "/query-registry/dist/types/raw-packument.d.ts",
+          "id": "interface.RawPackument.property.users",
+          "kind": "interface-property",
+          "line": 44,
+          "name": "users",
+          "signature": "readonly users?: Record<string, boolean>;",
+        },
+        {
+          "docs": [
+            "/**
+     * Mapping of version numbers to package manifests
+     *
+     * @see {@link RawPackageManifest}
+     */",
+          ],
+          "file": "/query-registry/dist/types/raw-packument.d.ts",
+          "id": "interface.RawPackument.property.versions",
+          "kind": "interface-property",
+          "line": 42,
+          "name": "versions",
+          "signature": "readonly versions: Record<string, RawPackageManifest>;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface RawPackument extends HoistedPackageJSON {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`RegistryDownloads\` lists the number of downloads for the registry
+ *  in a given time period.
+ *
+ * @see {@link https://github.com/npm/registry/blob/master/docs/download-counts.md#point-values}
+ */",
+      ],
+      "file": "/query-registry/dist/types/downloads.d.ts",
+      "getAccessors": [],
+      "id": "interface.RegistryDownloads",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 18,
+      "methods": [],
+      "name": "RegistryDownloads",
+      "properties": [
+        {
+          "docs": [
+            "/** Total number of downloads */",
+          ],
+          "file": "/query-registry/dist/types/downloads.d.ts",
+          "id": "interface.RegistryDownloads.property.downloads",
+          "kind": "interface-property",
+          "line": 20,
+          "name": "downloads",
+          "signature": "readonly downloads: number;",
+        },
+        {
+          "docs": [
+            "/** Date of the last day (inclusive) */",
+          ],
+          "file": "/query-registry/dist/types/downloads.d.ts",
+          "id": "interface.RegistryDownloads.property.end",
+          "kind": "interface-property",
+          "line": 24,
+          "name": "end",
+          "signature": "readonly end: string;",
+        },
+        {
+          "docs": [
+            "/** Date of the first day (inclusive) */",
+          ],
+          "file": "/query-registry/dist/types/downloads.d.ts",
+          "id": "interface.RegistryDownloads.property.start",
+          "kind": "interface-property",
+          "line": 22,
+          "name": "start",
+          "signature": "readonly start: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface RegistryDownloads {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`RegistryMetadata\` contains information about the registry itself.
+ *
+ * @see {@link https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md#registry}
+ * @see {@link https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md#get}
+ * @see {@link RegistryMetadataOther}
+ * @see {@link RegistryMetadataSizes}
+ */",
+      ],
+      "file": "/query-registry/dist/types/registry-metadata.d.ts",
+      "getAccessors": [],
+      "id": "interface.RegistryMetadata",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 9,
+      "methods": [],
+      "name": "RegistryMetadata",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/registry-metadata.d.ts",
+          "id": "interface.RegistryMetadata.property.committed_update_seq",
+          "kind": "interface-property",
+          "line": 21,
+          "name": "committed_update_seq",
+          "signature": "readonly committed_update_seq: number;",
+        },
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/registry-metadata.d.ts",
+          "id": "interface.RegistryMetadata.property.compact_running",
+          "kind": "interface-property",
+          "line": 16,
+          "name": "compact_running",
+          "signature": "readonly compact_running: boolean;",
+        },
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/registry-metadata.d.ts",
+          "id": "interface.RegistryMetadata.property.compacted_seq",
+          "kind": "interface-property",
+          "line": 22,
+          "name": "compacted_seq",
+          "signature": "readonly compacted_seq: number;",
+        },
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/registry-metadata.d.ts",
+          "id": "interface.RegistryMetadata.property.data_size",
+          "kind": "interface-property",
+          "line": 18,
+          "name": "data_size",
+          "signature": "readonly data_size: number;",
+        },
+        {
+          "docs": [
+            "/** Database name, usually \`registry\` */",
+          ],
+          "file": "/query-registry/dist/types/registry-metadata.d.ts",
+          "id": "interface.RegistryMetadata.property.db_name",
+          "kind": "interface-property",
+          "line": 11,
+          "name": "db_name",
+          "signature": "readonly db_name: string;",
+        },
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/registry-metadata.d.ts",
+          "id": "interface.RegistryMetadata.property.disk_format_version",
+          "kind": "interface-property",
+          "line": 20,
+          "name": "disk_format_version",
+          "signature": "readonly disk_format_version: number;",
+        },
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/registry-metadata.d.ts",
+          "id": "interface.RegistryMetadata.property.disk_size",
+          "kind": "interface-property",
+          "line": 17,
+          "name": "disk_size",
+          "signature": "readonly disk_size: number;",
+        },
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/registry-metadata.d.ts",
+          "id": "interface.RegistryMetadata.property.doc_count",
+          "kind": "interface-property",
+          "line": 12,
+          "name": "doc_count",
+          "signature": "readonly doc_count: number;",
+        },
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/registry-metadata.d.ts",
+          "id": "interface.RegistryMetadata.property.doc_del_count",
+          "kind": "interface-property",
+          "line": 13,
+          "name": "doc_del_count",
+          "signature": "readonly doc_del_count: number;",
+        },
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/registry-metadata.d.ts",
+          "id": "interface.RegistryMetadata.property.instance_start_time",
+          "kind": "interface-property",
+          "line": 19,
+          "name": "instance_start_time",
+          "signature": "readonly instance_start_time: string;",
+        },
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/registry-metadata.d.ts",
+          "id": "interface.RegistryMetadata.property.other",
+          "kind": "interface-property",
+          "line": 24,
+          "name": "other",
+          "signature": "readonly other: RegistryMetadataOther;",
+        },
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/registry-metadata.d.ts",
+          "id": "interface.RegistryMetadata.property.purge_seq",
+          "kind": "interface-property",
+          "line": 15,
+          "name": "purge_seq",
+          "signature": "readonly purge_seq: number;",
+        },
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/registry-metadata.d.ts",
+          "id": "interface.RegistryMetadata.property.sizes",
+          "kind": "interface-property",
+          "line": 25,
+          "name": "sizes",
+          "signature": "readonly sizes: RegistryMetadataSizes;",
+        },
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/registry-metadata.d.ts",
+          "id": "interface.RegistryMetadata.property.update_seq",
+          "kind": "interface-property",
+          "line": 14,
+          "name": "update_seq",
+          "signature": "readonly update_seq: number;",
+        },
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/registry-metadata.d.ts",
+          "id": "interface.RegistryMetadata.property.uuid",
+          "kind": "interface-property",
+          "line": 23,
+          "name": "uuid",
+          "signature": "readonly uuid: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface RegistryMetadata {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/query-registry/dist/types/registry-metadata.d.ts",
+      "getAccessors": [],
+      "id": "interface.RegistryMetadataOther",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 27,
+      "methods": [],
+      "name": "RegistryMetadataOther",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/registry-metadata.d.ts",
+          "id": "interface.RegistryMetadataOther.property.data_size",
+          "kind": "interface-property",
+          "line": 28,
+          "name": "data_size",
+          "signature": "readonly data_size: number;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface RegistryMetadataOther {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/query-registry/dist/types/registry-metadata.d.ts",
+      "getAccessors": [],
+      "id": "interface.RegistryMetadataSizes",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 30,
+      "methods": [],
+      "name": "RegistryMetadataSizes",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/registry-metadata.d.ts",
+          "id": "interface.RegistryMetadataSizes.property.active",
+          "kind": "interface-property",
+          "line": 32,
+          "name": "active",
+          "signature": "readonly active: number;",
+        },
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/registry-metadata.d.ts",
+          "id": "interface.RegistryMetadataSizes.property.external",
+          "kind": "interface-property",
+          "line": 33,
+          "name": "external",
+          "signature": "readonly external: number;",
+        },
+        {
+          "docs": [],
+          "file": "/query-registry/dist/types/registry-metadata.d.ts",
+          "id": "interface.RegistryMetadataSizes.property.file",
+          "kind": "interface-property",
+          "line": 31,
+          "name": "file",
+          "signature": "readonly file: number;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface RegistryMetadataSizes {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`Repository\` represents a remote repository hosting
+ * the source code of a package.
+ *
+ * @see {@link https://docs.npmjs.com/cli/v6/configuring-npm/package-json#repository}.
+ */",
+      ],
+      "file": "/query-registry/dist/types/repository.d.ts",
+      "getAccessors": [],
+      "id": "interface.Repository",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 7,
+      "methods": [],
+      "name": "Repository",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Specific directory in the repository containing the package
+     * (for example, a directory in a monorepo)
+     */",
+          ],
+          "file": "/query-registry/dist/types/repository.d.ts",
+          "id": "interface.Repository.property.directory",
+          "kind": "interface-property",
+          "line": 16,
+          "name": "directory",
+          "signature": "readonly directory?: string;",
+        },
+        {
+          "docs": [
+            "/** Repository type (for example, \`git\`) */",
+          ],
+          "file": "/query-registry/dist/types/repository.d.ts",
+          "id": "interface.Repository.property.type",
+          "kind": "interface-property",
+          "line": 9,
+          "name": "type",
+          "signature": "readonly type?: string;",
+        },
+        {
+          "docs": [
+            "/** Repository's URL */",
+          ],
+          "file": "/query-registry/dist/types/repository.d.ts",
+          "id": "interface.Repository.property.url",
+          "kind": "interface-property",
+          "line": 11,
+          "name": "url",
+          "signature": "readonly url: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface Repository {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`SearchCriteria\` represents the available search criteria.
+ *
+ * @see {@link https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md#get-v1search}
+ */",
+      ],
+      "file": "/query-registry/dist/types/search-criteria.d.ts",
+      "getAccessors": [],
+      "id": "interface.SearchCriteria",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 6,
+      "methods": [],
+      "name": "SearchCriteria",
+      "properties": [
+        {
+          "docs": [
+            "/** Return results from this offset */",
+          ],
+          "file": "/query-registry/dist/types/search-criteria.d.ts",
+          "id": "interface.SearchCriteria.property.from",
+          "kind": "interface-property",
+          "line": 39,
+          "name": "from",
+          "signature": "readonly from?: number;",
+        },
+        {
+          "docs": [
+            "/** Package maintenance influence on results (from \`0.0\` to \`1.0\`) */",
+          ],
+          "file": "/query-registry/dist/types/search-criteria.d.ts",
+          "id": "interface.SearchCriteria.property.maintenance",
+          "kind": "interface-property",
+          "line": 45,
+          "name": "maintenance",
+          "signature": "readonly maintenance?: number;",
+        },
+        {
+          "docs": [
+            "/** Package popularity influence on results (from \`0.0\` to \`1.0\`) */",
+          ],
+          "file": "/query-registry/dist/types/search-criteria.d.ts",
+          "id": "interface.SearchCriteria.property.popularity",
+          "kind": "interface-property",
+          "line": 43,
+          "name": "popularity",
+          "signature": "readonly popularity?: number;",
+        },
+        {
+          "docs": [
+            "/** Package quality influence on results (from \`0.0\` to \`1.0\`) */",
+          ],
+          "file": "/query-registry/dist/types/search-criteria.d.ts",
+          "id": "interface.SearchCriteria.property.quality",
+          "kind": "interface-property",
+          "line": 41,
+          "name": "quality",
+          "signature": "readonly quality?: number;",
+        },
+        {
+          "docs": [
+            "/** Number of results to return (from \`0\` to \`250\`; default: \`20\` on the npm registry) */",
+          ],
+          "file": "/query-registry/dist/types/search-criteria.d.ts",
+          "id": "interface.SearchCriteria.property.size",
+          "kind": "interface-property",
+          "line": 37,
+          "name": "size",
+          "signature": "readonly size?: number;",
+        },
+        {
+          "docs": [
+            "/**
+     * Query text
+     *
+     * @remarks
+     * The following special text attributes can be used to refine results:
+     *
+     * - \`author:<name>\`: show packages from the given author
+     *   (for example, \`author:someone\`)
+     *
+     * - \`maintainer:<name>\`: show packages with the given maintainer
+     *   (for example, \`maintainer:someone\`)
+     *
+     * - \`keywords:<keyword list>\`: show packages matching the given keyword(s);
+     *   separators \`,\`, \`+\` and \`,-\` mean respectively \`OR\`, \`AND\` and \`NOT\`
+     *   (for example, use \`keywords:foo,bar+baz,-quux\` to include keywords \`foo\`
+     *   or \`bar\` and \`baz\` but not \`quux\`)
+     *
+     * - \`not:unstable\`: exclude unstable packages (version \`<1.0.0\`)
+     *
+     * - \`not:insecure\`: exclude insecure packages
+     *
+     * - \`is:unstable\`: include only unstable packages (version \`<1.0.0\`)
+     *
+     * - \`is:insecure\`: include only insecure packages
+     *
+     * - \`boost-exact:<true/false>\`: boost packages with exact name match
+     *   (default: \`true\`)
+     */",
+          ],
+          "file": "/query-registry/dist/types/search-criteria.d.ts",
+          "id": "interface.SearchCriteria.property.text",
+          "kind": "interface-property",
+          "line": 35,
+          "name": "text",
+          "signature": "readonly text?: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface SearchCriteria {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`SearchResult\` contains the search result for a single package
+ *  and its search score.
+ *
+ * @see {@link PackageSearchResult}
+ * @see {@link SearchScore}
+ * @see {@link PackageFlags}
+ */",
+      ],
+      "file": "/query-registry/dist/types/search-results.d.ts",
+      "getAccessors": [],
+      "id": "interface.SearchResult",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 31,
+      "methods": [],
+      "name": "SearchResult",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Flag attributes for the package
+     *
+     * @see {@link PackageFlags}
+     */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.SearchResult.property.flags",
+          "kind": "interface-property",
+          "line": 51,
+          "name": "flags",
+          "signature": "readonly flags?: PackageFlags;",
+        },
+        {
+          "docs": [
+            "/**
+     * Abbreviated package metadata
+     *
+     * @see {@link PackageSearchResult}
+     */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.SearchResult.property.package",
+          "kind": "interface-property",
+          "line": 37,
+          "name": "package",
+          "signature": "readonly package: PackageSearchResult;",
+        },
+        {
+          "docs": [
+            "/**
+     * Final and detailed search score values
+     *
+     * @see {@link SearchScore}
+     */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.SearchResult.property.score",
+          "kind": "interface-property",
+          "line": 43,
+          "name": "score",
+          "signature": "readonly score: SearchScore;",
+        },
+        {
+          "docs": [
+            "/** Search score value; may be different from \`score.final\` */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.SearchResult.property.searchScore",
+          "kind": "interface-property",
+          "line": 45,
+          "name": "searchScore",
+          "signature": "readonly searchScore: number;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface SearchResult {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`SearchResults\` contains the results returned by the registry for a query.
+ *
+ * @see {@link SearchResult}
+ * @see {@link https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md#get-v1search}
+ */",
+      ],
+      "file": "/query-registry/dist/types/search-results.d.ts",
+      "getAccessors": [],
+      "id": "interface.SearchResults",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 8,
+      "methods": [],
+      "name": "SearchResults",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * List of search results
+     *
+     * @see {@link SearchResult}
+     */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.SearchResults.property.objects",
+          "kind": "interface-property",
+          "line": 14,
+          "name": "objects",
+          "signature": "readonly objects: SearchResult[];",
+        },
+        {
+          "docs": [
+            "/** Date at which the search happened */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.SearchResults.property.time",
+          "kind": "interface-property",
+          "line": 21,
+          "name": "time",
+          "signature": "readonly time: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Total number of search results corresponding to a query;
+     * may be higher than the number of \`objects\`
+     */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.SearchResults.property.total",
+          "kind": "interface-property",
+          "line": 19,
+          "name": "total",
+          "signature": "readonly total: number;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface SearchResults {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`SearchScore\` contains the final and detailed search score values.
+ *
+ * @see {@link SearchScoreDetail}
+ */",
+      ],
+      "file": "/query-registry/dist/types/search-results.d.ts",
+      "getAccessors": [],
+      "id": "interface.SearchScore",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 113,
+      "methods": [],
+      "name": "SearchScore",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Detailed search score values
+     *
+     * @see {@link SearchScoreDetail}
+     */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.SearchScore.property.detail",
+          "kind": "interface-property",
+          "line": 121,
+          "name": "detail",
+          "signature": "readonly detail: SearchScoreDetail;",
+        },
+        {
+          "docs": [
+            "/** Final search score value, computed from the detailed scores */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.SearchScore.property.final",
+          "kind": "interface-property",
+          "line": 115,
+          "name": "final",
+          "signature": "readonly final: number;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface SearchScore {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`SearchScoreDetail\` contains the search score values for the
+ * quality, popularity and maintenance categories.
+ */",
+      ],
+      "file": "/query-registry/dist/types/search-results.d.ts",
+      "getAccessors": [],
+      "id": "interface.SearchScoreDetail",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 127,
+      "methods": [],
+      "name": "SearchScoreDetail",
+      "properties": [
+        {
+          "docs": [
+            "/** Package maintenance score value */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.SearchScoreDetail.property.maintenance",
+          "kind": "interface-property",
+          "line": 133,
+          "name": "maintenance",
+          "signature": "readonly maintenance: number;",
+        },
+        {
+          "docs": [
+            "/** Package popularity score value */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.SearchScoreDetail.property.popularity",
+          "kind": "interface-property",
+          "line": 131,
+          "name": "popularity",
+          "signature": "readonly popularity: number;",
+        },
+        {
+          "docs": [
+            "/** Package quality score value */",
+          ],
+          "file": "/query-registry/dist/types/search-results.d.ts",
+          "id": "interface.SearchScoreDetail.property.quality",
+          "kind": "interface-property",
+          "line": 129,
+          "name": "quality",
+          "signature": "readonly quality: number;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface SearchScoreDetail {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`VersionsToTimestamps\` maps version numbers to their publishing timestamps.
+ */",
+      ],
+      "file": "/query-registry/dist/types/versions-to-timestamps.d.ts",
+      "getAccessors": [],
+      "id": "interface.VersionsToTimestamps",
+      "indexSignatures": [
+        {
+          "docs": [
+            "/** Mapping of version numbers to publishing timestamps */",
+          ],
+          "file": "/query-registry/dist/types/versions-to-timestamps.d.ts",
+          "id": "interface.VersionsToTimestamps.index-signature",
+          "kind": "interface-index-signature",
+          "line": 10,
+          "name": "index-signature",
+          "signature": "readonly [key: string]: string;",
+        },
+      ],
+      "kind": "interface",
+      "line": 4,
+      "methods": [],
+      "name": "VersionsToTimestamps",
+      "properties": [
+        {
+          "docs": [
+            "/** Package creation time */",
+          ],
+          "file": "/query-registry/dist/types/versions-to-timestamps.d.ts",
+          "id": "interface.VersionsToTimestamps.property.created",
+          "kind": "interface-property",
+          "line": 6,
+          "name": "created",
+          "signature": "readonly created: string;",
+        },
+        {
+          "docs": [
+            "/** Last package update time */",
+          ],
+          "file": "/query-registry/dist/types/versions-to-timestamps.d.ts",
+          "id": "interface.VersionsToTimestamps.property.modified",
+          "kind": "interface-property",
+          "line": 8,
+          "name": "modified",
+          "signature": "readonly modified: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface VersionsToTimestamps {}",
+    },
+    {
+      "docs": [
+        "/**
+ * \`DefaultDownloadPeriod\` represents the default time periods
+ * supported by the npm registry.
+ */",
+      ],
+      "file": "/query-registry/dist/types/download-period.d.ts",
+      "id": "type.DefaultDownloadPeriod",
+      "kind": "type",
+      "line": 23,
+      "name": "DefaultDownloadPeriod",
+      "signature": "type DefaultDownloadPeriod =
+  | "last-day"
+  | "last-week"
+  | "last-month"
+  | "last-year";",
+    },
+    {
+      "docs": [
+        "/**
+ * \`DownloadPeriod\` represents a time period
+ * for which downloads should be counted.
+ *
+ * @remarks
+ * The following time periods are supported:
+ *
+ * - a {@link DefaultDownloadPeriod} (for example, \`last-week\`)
+ *
+ * - a date for a single day (for example, \`new Date('2020-01-01')\`)
+ *
+ * - a {@link DateRange}
+ *
+ * @see {@link DefaultDownloadPeriod}
+ * @see {@link DateRange}
+ * @see {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date}
+ */",
+      ],
+      "file": "/query-registry/dist/types/download-period.d.ts",
+      "id": "type.DownloadPeriod",
+      "kind": "type",
+      "line": 18,
+      "name": "DownloadPeriod",
+      "signature": "type DownloadPeriod = DefaultDownloadPeriod | Date | DateRange;",
+    },
+    {
+      "docs": [
+        "/**
+ * \`HoistedPackageJSON\` contains the data hoisted
+ * from the latest package version into the packument.
+ *
+ * @remarks
+ * For some packages, especially legacy ones,
+ * the properties may be mistyped due to incorrect data present on the registry.
+ *
+ * @see {@link PackageJSON}
+ * @see {@link RawPackument}
+ * @see {@link https://github.com/npm/registry/blob/master/docs/responses/package-metadata.md#full-metadata-format}
+ */",
+      ],
+      "file": "/query-registry/dist/types/raw-packument.d.ts",
+      "id": "type.HoistedPackageJSON",
+      "kind": "type",
+      "line": 58,
+      "name": "HoistedPackageJSON",
+      "signature": "type HoistedPackageJSON = Pick<
+  PackageJSON,
+  | "author"
+  | "bugs"
+  | "contributors"
+  | "description"
+  | "homepage"
+  | "keywords"
+  | "license"
+  | "maintainers"
+  | "readme"
+  | "readmeFilename"
+  | "repository"
+>;",
+    },
+    {
+      "docs": [
+        "/**
+ * npm registry mirror by Cloudflare
+ *
+ * @remarks
+ * This registry has CORS enabled and can be used to retrieve
+ * package manifests and packuments in the browser.
+ *
+ * @see {@link https://npmjs.cf}
+ * @see {@link https://registry.npmjs.cf}
+ */",
+      ],
+      "file": "/query-registry/dist/data/registries.d.ts",
+      "id": "variable.cloudflareRegistry",
+      "kind": "variable",
+      "line": 17,
+      "name": "cloudflareRegistry",
+      "signature": "const cloudflareRegistry: string;",
+    },
+    {
+      "docs": [
+        "/**
+ * \`InvalidPackageNameError\` is thrown when the name of a package
+ * is not valid according to the npm registry naming rules.
+ *
+ * The \`instanceof\` operator can be used to check for this error.
+ *
+ * @see {@link https://www.npmjs.com/package/validate-npm-package-name}
+ */",
+      ],
+      "file": "/query-registry/dist/utils/errors.d.ts",
+      "id": "variable.InvalidPackageNameError",
+      "kind": "variable",
+      "line": 26,
+      "name": "InvalidPackageNameError",
+      "signature": "const InvalidPackageNameError: makeError.Constructor<makeError.BaseError>;",
+    },
+    {
+      "docs": [
+        "/**
+ * \`InvalidPackageVersionError\` is thrown when a package's version does not exist.
+ *
+ * The \`instanceof\` operator can be used to check for this error.
+ */",
+      ],
+      "file": "/query-registry/dist/utils/errors.d.ts",
+      "id": "variable.InvalidPackageVersionError",
+      "kind": "variable",
+      "line": 32,
+      "name": "InvalidPackageVersionError",
+      "signature": "const InvalidPackageVersionError: makeError.Constructor<makeError.BaseError>;",
+    },
+    {
+      "docs": [
+        "/**
+ * npm registry
+ *
+ * @see {@link https://registry.npmjs.org}
+ */",
+      ],
+      "file": "/query-registry/dist/data/registries.d.ts",
+      "id": "variable.npmRegistry",
+      "kind": "variable",
+      "line": 6,
+      "name": "npmRegistry",
+      "signature": "const npmRegistry: string;",
+    },
+    {
+      "docs": [
+        "/**
+ * Downloads API for the npm registry
+ *
+ * @see {@link https://api.npmjs.org}
+ */",
+      ],
+      "file": "/query-registry/dist/data/registries.d.ts",
+      "id": "variable.npmRegistryDownloadsAPI",
+      "kind": "variable",
+      "line": 36,
+      "name": "npmRegistryDownloadsAPI",
+      "signature": "const npmRegistryDownloadsAPI: string;",
+    },
+    {
+      "docs": [
+        "/**
+ * Mirrors of the npm registry.
+ *
+ * @see {@link cloudflareRegistry}
+ * @see {@link yarnRegistry}
+ */",
+      ],
+      "file": "/query-registry/dist/data/registries.d.ts",
+      "id": "variable.npmRegistryMirrors",
+      "kind": "variable",
+      "line": 30,
+      "name": "npmRegistryMirrors",
+      "signature": "const npmRegistryMirrors: string[];",
+    },
+    {
+      "docs": [
+        "/**
+ * npm registry mirror by Yarn
+ *
+ * @see {@link https://registry.yarnpkg.com}
+ */",
+      ],
+      "file": "/query-registry/dist/data/registries.d.ts",
+      "id": "variable.yarnRegistry",
+      "kind": "variable",
+      "line": 23,
+      "name": "yarnRegistry",
+      "signature": "const yarnRegistry: string;",
+    },
+  ],
+  "name": "query-registry",
+  "overview": "/**
+ * This package exports several functions to query
+ * the {@link https://www.npmjs.com | npm registry}
+ * (or one of its mirrors) through one of its
+ * {@link https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md | endpoints}.
+ *
+ * @example
+ * Get the metadata for the npm registry:
+ *
+ * \`\`\`typescript
+ * import { getRegistryMetadata } from 'query-registry';
+ *
+ * (async () => {
+ *     const metadata = await getRegistryMetadata();
+ *
+ *     // Output: 'registry'
+ *     console.log(metadata.db_name);
+ * })();
+ * \`\`\`
+ *
+ * @example
+ * Get the latest manifest for package \`query-registry\` from the npm registry:
+ *
+ * \`\`\`typescript
+ * import { getPackageManifest } from 'query-registry';
+ *
+ * (async () => {
+ *     const manifest = await getPackageManifest({ name: 'query-registry' });
+ *
+ *     // Output: 'query-registry'
+ *     console.log(manifest.name);
+ * })();
+ * \`\`\`
+ *
+ * @example
+ * Get the abbreviated packument for package \`query-registry\` from the npm registry:
+ *
+ * \`\`\`typescript
+ * import { getAbbreviatedPackument } from 'query-registry';
+ *
+ * (async () => {
+ *     const packument = await getAbbreviatedPackument({ name: 'query-registry' });
+ *
+ *     // Output: 'query-registry'
+ *     console.log(manifest.name);
+ * })();
+ * \`\`\`
+ *
+ * @example
+ * Get the weekly downloads for package \`query-registry\` from the npm registry:
+ *
+ * \`\`\`typescript
+ * import { getPackageDownloads } from 'query-registry';
+ *
+ * (async () => {
+ *     const downloads = await getPackageDownloads({ name: 'query-registry' });
+ *
+ *     // Output: 'query-registry'
+ *     console.log(downloads.package);
+ *
+ *     // Output: 'number'
+ *     console.log(typeof downloads.downloads);
+ * })();
+ * \`\`\`
+ *
+ * @example
+ * Get the search results for text query \`query-registry\` from the npm registry:
+ *
+ * \`\`\`typescript
+ * import { searchPackages } from 'query-registry';
+ *
+ * (async () => {
+ *     const results = await searchPackages({ query: { text: 'query-registry' } });
+ *
+ *     // Output: 'query-registry'
+ *     console.log(results.objects[0].package.name);
+ * })();
+ * \`\`\`
+ *
+ * @example
+ * Enable {@link https://www.npmjs.com/package/debug | debug messages}
+ * by setting the \`DEBUG\` environment variable to \`query-registry\`
+ * (available only in non production environments):
+ *
+ * \`\`\`bash
+ * $ DEBUG="query-registry"
+ * \`\`\`
+ *
+ * @packageDocumentation
+ */",
+  "packages": [
+    "builtins@5.0.1",
+    "isomorphic-unfetch@3.1.0",
+    "lru-cache@6.0.0",
+    "make-error@1.3.6",
+    "node-fetch@2.7.0",
+    "query-registry@2.6.0",
+    "semver@7.6.0",
+    "tiny-lru@8.0.2",
+    "tr46@0.0.3",
+    "unfetch@4.2.0",
+    "url-join@4.0.1",
+    "validate-npm-package-name@4.0.0",
+    "webidl-conversions@3.0.1",
+    "whatwg-url@5.0.0",
+    "yallist@4.0.0",
+  ],
+  "subpath": ".",
+  "types": "./dist/index.d.ts",
+  "version": "2.6.0",
+}
+`;

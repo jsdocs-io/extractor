@@ -1,0 +1,94 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`short-time-ago@2.0.0 1`] = `
+{
+  "declarations": [
+    {
+      "docs": [
+        "/**
+ * \`timeAgo\` returns a string describing the time elapsed between
+ * a given date and the current time at which the function is called.
+ *
+ * @remarks
+ * \`timeAgo\` only supports the \`en_US\` locale.
+ *
+ * The following table describes \`timeAgo\`'s output.
+ *
+ * \`\`\`
+ * | Time elapsed          | Past output       | Future output    |
+ * | --------------------- | ----------------- | ---------------- |
+ * | < 1 second            | \`just now\`        | \`just now\`       |
+ * | < 1 minute            | \`N second(s) ago\` | \`in N second(s)\` |
+ * | < 1 hour              | \`N minute(s) ago\` | \`in N minute(s)\` |
+ * | < 1 day               | \`N hour(s) ago\`   | \`in N hour(s)\`   |
+ * | < 1 month (30.5 days) | \`N day(s) ago\`    | \`in N day(s)\`    |
+ * | < 1 year (365 days)   | \`N month(s) ago\`  | \`in N month(s)\`  |
+ * | > 1 year              | \`N year(s) ago\`   | \`in N year(s)\`   |
+ * \`\`\`
+ *
+ * @example
+ * Basic usage:
+ *
+ * \`\`\`typescript
+ * import { timeAgo } from 'short-time-ago';
+ *
+ * const myDate = new Date();
+ * const description = timeAgo(myDate);
+ *
+ * // Output: \`just now\`.
+ * console.log(description);
+ * \`\`\`
+ *
+ * @example
+ * Specifying a custom current date with the \`now\` parameter:
+ *
+ * \`\`\`typescript
+ * import { timeAgo } from 'short-time-ago';
+ *
+ * const myDate = new Date('2019-01-01T00:00:00.000Z');
+ * const now = new Date('2019-01-01T00:01:00.000Z');
+ * const description = timeAgo(myDate, now);
+ *
+ * // Output: \`1 minute ago\`.
+ * console.log(description);
+ * \`\`\`
+ *
+ * \`\`\`typescript
+ * import { timeAgo } from 'short-time-ago';
+ *
+ * const myDate = new Date('2019-01-02T00:00:00.000Z');
+ * const now = new Date('2019-01-01T00:00:00.000Z');
+ * const description = timeAgo(myDate, now);
+ *
+ * // Output: \`in 1 day\`.
+ * console.log(description);
+ * \`\`\`
+ *
+ * @param date - a {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date | Date}
+ * @param now - the current date (optional, defaults to \`new Date()\`)
+ */",
+      ],
+      "file": "/short-time-ago/dist/index.d.ts",
+      "id": "function.timeAgo",
+      "kind": "function",
+      "line": 70,
+      "name": "timeAgo",
+      "signature": "timeAgo: (date: Date, now?: Date) => string;",
+    },
+  ],
+  "name": "short-time-ago",
+  "overview": "/**
+ * This package exports a single function, {@link timeAgo},
+ * which describes the time elapsed between a given date and the current date
+ * in a human readable format (for example, \`10 minutes ago\`, \`in 3 seconds\`).
+ *
+ * @packageDocumentation
+ */",
+  "packages": [
+    "short-time-ago@2.0.0",
+  ],
+  "subpath": ".",
+  "types": "./dist/index.d.ts",
+  "version": "2.0.0",
+}
+`;

@@ -1,0 +1,216 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`tinyargs@0.1.4 1`] = `
+{
+  "declarations": [
+    {
+      "docs": [
+        "/**
+ * Parse command line arguments with give option config
+ *
+ * Not that if you're using \`process.argv\`, you should always omit the first two elements,
+ * i.e. pass \`process.argv.slice(2)\` to this function
+ */",
+      ],
+      "file": "/tinyargs/dist/index.d.ts",
+      "id": "function.parse",
+      "kind": "function",
+      "line": 88,
+      "name": "parse",
+      "signature": "parse: <TMeta>(args: string[], options: Option<TMeta>[]) => Parsed;",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/tinyargs/dist/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.Option",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 1,
+      "methods": [],
+      "name": "Option",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * By default we only capture flags that match the option \`name\`
+     * But you can use \`flags\` to capture flags that match any of the specified values
+     *
+     */",
+          ],
+          "file": "/tinyargs/dist/index.d.ts",
+          "id": "interface.Option.property.flags",
+          "kind": "interface-property",
+          "line": 13,
+          "name": "flags",
+          "signature": "flags?: string[];",
+        },
+        {
+          "docs": [
+            "/**
+     * Use this to store information about the option
+     * Useful for building help message
+     */",
+          ],
+          "file": "/tinyargs/dist/index.d.ts",
+          "id": "interface.Option.property.meta",
+          "kind": "interface-property",
+          "line": 75,
+          "name": "meta",
+          "signature": "meta?: TMeta;",
+        },
+        {
+          "docs": [
+            "/**
+     * Allow multiple flags or positional arguments
+     *
+     * For flags, this means that the flag can be repeated.
+     * @example
+     * \`\`\`
+     * $ node cli.js --foo --foo --foo
+     * {foo: [true, true, true]}
+     * $ node cli.js --foo 1 --foo 2 --foo 3
+     * {foo: ['1', '2', '3']}
+     * \`\`\`
+     *
+     * For positional arguments, you can provide multiple values.
+     * It only captures non-flag value (not starting with a dash \`-\`) by default
+     * but you can set it to \`include-flags\` to capture all values
+     * @example
+     * \`\`\`
+     * $ node cli.js a b c
+     * {some_optiona: ['a', 'b', 'c']}
+     * \`\`\`
+     */",
+          ],
+          "file": "/tinyargs/dist/index.d.ts",
+          "id": "interface.Option.property.multiple",
+          "kind": "interface-property",
+          "line": 41,
+          "name": "multiple",
+          "signature": "multiple?: boolean | "include-flags";",
+        },
+        {
+          "docs": [
+            "/**
+     * The flag or positional argument's name
+     *
+     * For example, \`name: 'file'\` will capture the value of flag \`--file\`
+     */",
+          ],
+          "file": "/tinyargs/dist/index.d.ts",
+          "id": "interface.Option.property.name",
+          "kind": "interface-property",
+          "line": 7,
+          "name": "name",
+          "signature": "name: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Allow optional value
+     *
+     * For a non-boolean flag, this means that the flag value can be omitted
+     * @example
+     * \`\`\`bash
+     * node cli.js --config
+     * # \`config\` will be \`true\` instead of throwing an error
+     * \`\`\`
+     *
+     * For a positional argument, this means it could be \`undefined\` in the returned object
+     */",
+          ],
+          "file": "/tinyargs/dist/index.d.ts",
+          "id": "interface.Option.property.optionalValue",
+          "kind": "interface-property",
+          "line": 64,
+          "name": "optionalValue",
+          "signature": "optionalValue?: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * Mark this optional as a positional argument
+     */",
+          ],
+          "file": "/tinyargs/dist/index.d.ts",
+          "id": "interface.Option.property.positional",
+          "kind": "interface-property",
+          "line": 45,
+          "name": "positional",
+          "signature": "positional?: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * Stop parsing remaining arguments after current option
+     *
+     * The remaining arguments will be added to the \`_\` key
+     */",
+          ],
+          "file": "/tinyargs/dist/index.d.ts",
+          "id": "interface.Option.property.stop",
+          "kind": "interface-property",
+          "line": 51,
+          "name": "stop",
+          "signature": "stop?: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * Option type
+     *
+     * We use the function to coerce the value
+     */",
+          ],
+          "file": "/tinyargs/dist/index.d.ts",
+          "id": "interface.Option.property.type",
+          "kind": "interface-property",
+          "line": 19,
+          "name": "type",
+          "signature": "type: OptionSimpleType;",
+        },
+        {
+          "docs": [
+            "/**
+     * Only add this option if this function returns true
+     *
+     * Already parsed options will be passed to the function
+     */",
+          ],
+          "file": "/tinyargs/dist/index.d.ts",
+          "id": "interface.Option.property.when",
+          "kind": "interface-property",
+          "line": 70,
+          "name": "when",
+          "signature": "when?: (parsed: Parsed) => boolean;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface Option<TMeta> {}",
+    },
+    {
+      "docs": [],
+      "file": "/tinyargs/dist/index.d.ts",
+      "id": "type.Parsed",
+      "kind": "type",
+      "line": 78,
+      "name": "Parsed",
+      "signature": "type Parsed = {
+  _: string[];
+  [key: string]: any;
+};",
+    },
+  ],
+  "name": "tinyargs",
+  "overview": undefined,
+  "packages": [
+    "tinyargs@0.1.4",
+  ],
+  "subpath": ".",
+  "types": "./dist/index.d.ts",
+  "version": "0.1.4",
+}
+`;

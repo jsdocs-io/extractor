@@ -1,0 +1,377 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`@luxass/utils@1.1.0 1`] = `
+{
+  "declarations": [
+    {
+      "docs": [
+        "/**
+ * First letter uppercase, other lowercase
+ * @param {string} str - The string to capitalize
+ * @returns {string} The capitalized string
+ * @throws {TypeError} If \`str\` is not string
+ *
+ * @example
+ * \`\`\`ts
+ * capitalize("hello")
+ * // "Hello"
+ * \`\`\`
+ */",
+      ],
+      "file": "/@luxass/utils/dist/string.d.ts",
+      "id": "function.capitalize",
+      "kind": "function",
+      "line": 13,
+      "name": "capitalize",
+      "signature": "capitalize: (str: string) => string;",
+    },
+    {
+      "docs": [
+        "/**
+ * Clamp a value between a min and max value.
+ * @param {number} value
+ * @param {number} min
+ * @param {number} max
+ * @returns {number} the clamped value
+ *
+ * @example
+ * \`\`\`ts
+ * clamp(5, 0, 10)
+ * // 5
+ *
+ * clamp(5, 10, 20)
+ * // 10
+ *
+ * clamp(5, 0, 4)
+ * // 4
+ * \`\`\`
+ */",
+      ],
+      "file": "/@luxass/utils/dist/number.d.ts",
+      "id": "function.clamp",
+      "kind": "function",
+      "line": 20,
+      "name": "clamp",
+      "signature": "clamp: (value: number, min: number, max: number) => number;",
+    },
+    {
+      "docs": [
+        "/**
+ * Checks if a value is not null.
+ *
+ * @template T - The type of the input value.
+ * @param {T | null} v - The value to check for not being null.
+ * @returns {v is Exclude<T, null>} True if the value is not null, false otherwise.
+ *
+ * @example
+ * \`\`\`ts
+ * [true, false, 0, 1, "", "hello", null, undefined].filter(isNotNull)
+ * // [true, false, 0, 1, "", "hello", undefined]
+ * \`\`\`
+ */",
+      ],
+      "file": "/@luxass/utils/dist/guards.d.ts",
+      "id": "function.isNotNull",
+      "kind": "function",
+      "line": 28,
+      "name": "isNotNull",
+      "signature": "isNotNull: <T>(v: T | null) => v is Exclude<T, null>;",
+    },
+    {
+      "docs": [
+        "/**
+ * Checks if a value is not null or undefined.
+ *
+ * @template T - The type of the input value.
+ * @param {T | null | undefined} v - The value to check for not being null or undefined.
+ * @returns {v is NonNullable<T>} - True if the value is not null or undefined, false otherwise.
+ *
+ * @example
+ * \`\`\`ts
+ * [true, false, 0, 1, "", "hello", null, undefined].filter(isNotNullish)
+ * // [true, false, 0, 1, "", "hello"]
+ * \`\`\`
+ */",
+      ],
+      "file": "/@luxass/utils/dist/guards.d.ts",
+      "id": "function.isNotNullish",
+      "kind": "function",
+      "line": 14,
+      "name": "isNotNullish",
+      "signature": "isNotNullish: <T>(v: T | null | undefined) => v is NonNullable<T>;",
+    },
+    {
+      "docs": [
+        "/**
+ * Checks if a value is defined.
+ *
+ * @template T - The type of the input value.
+ * @param {T} v - The value to check for being defined.
+ * @returns {v is Exclude<T, undefined>} True if the value is defined, false otherwise.
+ *
+ * @example
+ * \`\`\`ts
+ * [true, false, 0, 1, "", "hello", null, undefined].filter(isDefined)
+ * // [true, false, 0, 1, "", "hello", null]
+ * \`\`\`
+ */",
+      ],
+      "file": "/@luxass/utils/dist/guards.d.ts",
+      "id": "function.isNotUndefined",
+      "kind": "function",
+      "line": 42,
+      "name": "isNotUndefined",
+      "signature": "isNotUndefined: <T>(v: T) => v is Exclude<T, undefined>;",
+    },
+    {
+      "docs": [
+        "/**
+ * Checks if a value is truthy, excluding null and undefined.
+ *
+ * @template T - The type of the input value.
+ * @param {T} v - The value to check for truthiness.
+ * @returns {v is NonNullable<T>} True if the value is truthy, false otherwise.
+ *
+ * @example
+ * \`\`\`ts
+ * [true, false, 0, 1, "", "hello", null, undefined].filter(isTruthy)
+ * // [true, 1, "hello"]
+ * \`\`\`
+ */",
+      ],
+      "file": "/@luxass/utils/dist/guards.d.ts",
+      "id": "function.isTruthy",
+      "kind": "function",
+      "line": 56,
+      "name": "isTruthy",
+      "signature": "isTruthy: <T>(v: T) => v is NonNullable<T>;",
+    },
+    {
+      "docs": [
+        "/**
+ * Converts a string to camel case.
+ * @param {string} str - The input string to be converted.
+ * @returns {string} The camel cased string.
+ * @throws {TypeError} If the input is not a string.
+ *
+ * @example
+ * \`\`\`ts
+ * toCamelCase("some_text_here")
+ * // "someTextHere"
+ *
+ * toCamelCase("another-Example")
+ * // "anotherExample"
+ * \`\`\`
+ */",
+      ],
+      "file": "/@luxass/utils/dist/string.d.ts",
+      "id": "function.toCamelCase",
+      "kind": "function",
+      "line": 29,
+      "name": "toCamelCase",
+      "signature": "toCamelCase: (str: string) => string;",
+    },
+    {
+      "docs": [
+        "/**
+ * Converts a string to kebab case.
+ * @param {string} str - The input string to be converted.
+ * @returns {string} The kebab cased string.
+ * @throws {TypeError} If the input is not a string.
+ *
+ * @example
+ * \`\`\`ts
+ * toKebabCase("someTextHere")
+ * // "some-text-here"
+ *
+ * toKebabCase("anotherExample")
+ * // "another-example"
+ * \`\`\`
+ */",
+      ],
+      "file": "/@luxass/utils/dist/string.d.ts",
+      "id": "function.toKebabCase",
+      "kind": "function",
+      "line": 45,
+      "name": "toKebabCase",
+      "signature": "toKebabCase: (str: string) => string;",
+    },
+    {
+      "docs": [
+        "/**
+ * Converts a string to pascal case.
+ * @param {string} str - The input string to be converted.
+ * @returns {string} The pascal cased string.
+ * @throws {TypeError} If the input is not a string.
+ *
+ * @example
+ * \`\`\`ts
+ * toPascalCase("some_text_here")
+ * // "SomeTextHere"
+ *
+ * toPascalCase("another-Example")
+ * // "AnotherExample"
+ * \`\`\`
+ */",
+      ],
+      "file": "/@luxass/utils/dist/string.d.ts",
+      "id": "function.toPascalCase",
+      "kind": "function",
+      "line": 61,
+      "name": "toPascalCase",
+      "signature": "toPascalCase: (str: string) => string;",
+    },
+    {
+      "docs": [
+        "/**
+ * Converts a string to snake case.
+ * @param {string} str - The input string to be converted.
+ * @returns {string} The snake cased string.
+ * @throws {TypeError} If the input is not a string.
+ *
+ * @example
+ * \`\`\`ts
+ * toSnakeCase("someTextHere")
+ * // "some_text_here"
+ *
+ * toSnakeCase("anotherExample")
+ * // "another_example"
+ * \`\`\`
+ */",
+      ],
+      "file": "/@luxass/utils/dist/string.d.ts",
+      "id": "function.toSnakeCase",
+      "kind": "function",
+      "line": 77,
+      "name": "toSnakeCase",
+      "signature": "toSnakeCase: (str: string) => string;",
+    },
+    {
+      "docs": [
+        "/**
+ * Array, or not yet
+ */",
+      ],
+      "file": "/@luxass/utils/dist/types.d.ts",
+      "id": "type.Arrayable",
+      "kind": "type",
+      "line": 40,
+      "name": "Arrayable",
+      "signature": "type Arrayable<T> = T | Array<T>;",
+    },
+    {
+      "docs": [
+        "/**
+ * Whatever type, or Promise of that type
+ * @param T - Type
+ * @returns T or Promise<T>
+ *
+ * @example
+ * \`\`\`ts
+ * type A = Awaitable<string>
+ * // string | Promise<string>
+ * \`\`\`
+ */",
+      ],
+      "file": "/@luxass/utils/dist/types.d.ts",
+      "id": "type.Awaitable",
+      "kind": "type",
+      "line": 12,
+      "name": "Awaitable",
+      "signature": "type Awaitable<T> = T | PromiseLike<T>;",
+    },
+    {
+      "docs": [
+        "/**
+ * Infers the element type of an array
+ * @param T - Array type
+ * @returns The inferred element type
+ *
+ * @example
+ * \`\`\`ts
+ * type A = ElementOf<string[]>
+ * // string
+ * \`\`\`
+ */",
+      ],
+      "file": "/@luxass/utils/dist/types.d.ts",
+      "id": "type.ElementOf",
+      "kind": "type",
+      "line": 52,
+      "name": "ElementOf",
+      "signature": "type ElementOf<T> = T extends (infer E)[] ? E : never;",
+    },
+    {
+      "docs": [
+        "/**
+ * Infers the arguments type of a function
+ * @param T - Function type
+ * @returns The inferred arguments type
+ *
+ * @example
+ * \`\`\`ts
+ * type A = InferArguments<(a: string, b: number) => void>
+ * // [string, number]
+ * \`\`\`
+ */",
+      ],
+      "file": "/@luxass/utils/dist/types.d.ts",
+      "id": "type.InferArguments",
+      "kind": "type",
+      "line": 64,
+      "name": "InferArguments",
+      "signature": "type InferArguments<T> = T extends (...args: infer A) => any ? A : never;",
+    },
+    {
+      "docs": [
+        "/**
+ * Whatever type, or null
+ * @param T - Type
+ * @returns T or null
+ *
+ * @example
+ * \`\`\`ts
+ * type A = Nullable<string>
+ * // string | null
+ * \`\`\`
+ */",
+      ],
+      "file": "/@luxass/utils/dist/types.d.ts",
+      "id": "type.Nullable",
+      "kind": "type",
+      "line": 24,
+      "name": "Nullable",
+      "signature": "type Nullable<T> = T | null;",
+    },
+    {
+      "docs": [
+        "/**
+ * Whatever type, null or undefined
+ * @param T - Type
+ * @returns T, undefined or null
+ *
+ * @example
+ * \`\`\`ts
+ * type A = Nullish<string>
+ * // string | null | undefined
+ * \`\`\`
+ */",
+      ],
+      "file": "/@luxass/utils/dist/types.d.ts",
+      "id": "type.Nullish",
+      "kind": "type",
+      "line": 36,
+      "name": "Nullish",
+      "signature": "type Nullish<T> = T | null | undefined;",
+    },
+  ],
+  "name": "@luxass/utils",
+  "overview": undefined,
+  "packages": [
+    "@luxass/utils@1.1.0",
+  ],
+  "subpath": ".",
+  "types": "./dist/index.d.ts",
+  "version": "1.1.0",
+}
+`;

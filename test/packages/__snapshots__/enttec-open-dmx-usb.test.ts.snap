@@ -1,0 +1,175 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`enttec-open-dmx-usb@4.0.1 1`] = `
+{
+  "declarations": [
+    {
+      "constructors": [
+        {
+          "docs": [
+            "/**
+     * @param path A path returned by {@link EnttecOpenDMXUSBDevice.listDevices} or
+     * {@link EnttecOpenDMXUSBDevice.getFirstAvailableDevice}.
+     * @param [startSending=true] Whether the device should start sending as soon as it is ready.
+     * @param [usleep=null] A function blocking the event loop for \`n\` microseconds. See the README.md for more information.
+     */",
+          ],
+          "file": "/enttec-open-dmx-usb/dist/index.d.ts",
+          "id": "class.EnttecOpenDMXUSBDevice.constructor",
+          "kind": "class-constructor",
+          "line": 22,
+          "name": "constructor",
+          "signature": "constructor(path: string, startSending?: boolean, usleep?: Usleep);",
+        },
+      ],
+      "docs": [],
+      "file": "/enttec-open-dmx-usb/dist/index.d.ts",
+      "id": "class.EnttecOpenDMXUSBDevice",
+      "kind": "class",
+      "line": 10,
+      "methods": [
+        {
+          "docs": [
+            "/**
+     * @returns A Promise resolved when the whole universe was sent.
+     * @private
+     */",
+          ],
+          "file": "/enttec-open-dmx-usb/dist/index.d.ts",
+          "id": "class.EnttecOpenDMXUSBDevice.method._sendUniverse",
+          "kind": "class-method",
+          "line": 45,
+          "name": "_sendUniverse",
+          "signature": "_sendUniverse: () => Promise<void>;",
+        },
+        {
+          "docs": [
+            "/**
+     * Get the path of the first available device.
+     * @throws When no device is found.
+     */",
+          ],
+          "file": "/enttec-open-dmx-usb/dist/index.d.ts",
+          "id": "class.EnttecOpenDMXUSBDevice.method.getFirstAvailableDevice",
+          "kind": "class-method",
+          "line": 54,
+          "name": "getFirstAvailableDevice",
+          "signature": "static getFirstAvailableDevice: () => Promise<string>;",
+        },
+        {
+          "docs": [
+            "/**
+     * Get the paths of all available devices.
+     */",
+          ],
+          "file": "/enttec-open-dmx-usb/dist/index.d.ts",
+          "id": "class.EnttecOpenDMXUSBDevice.method.listDevices",
+          "kind": "class-method",
+          "line": 49,
+          "name": "listDevices",
+          "signature": "static listDevices: () => Promise<string[]>;",
+        },
+        {
+          "docs": [
+            "/**
+     * Set channel values.
+     * If channels is an Object, the keys are the channel numbers.
+     *
+     * @param channels
+     * @param [clear=false] Whether all previously assigned channels should be set to \`0\`
+     */",
+          ],
+          "file": "/enttec-open-dmx-usb/dist/index.d.ts",
+          "id": "class.EnttecOpenDMXUSBDevice.method.setChannels",
+          "kind": "class-method",
+          "line": 40,
+          "name": "setChannels",
+          "signature": "setChannels: (
+  channels: Buffer | number[] | Record<number, number>,
+  clear?: boolean,
+) => void;",
+        },
+        {
+          "docs": [
+            "/**
+     * Start sending.
+     * @param [interval=0] The milliseconds between each attempt to send. Most of the time \`0\` works fine.
+     * @throws When the device is not ready yet.
+     */",
+          ],
+          "file": "/enttec-open-dmx-usb/dist/index.d.ts",
+          "id": "class.EnttecOpenDMXUSBDevice.method.startSending",
+          "kind": "class-method",
+          "line": 28,
+          "name": "startSending",
+          "signature": "startSending: (interval?: number) => void;",
+        },
+        {
+          "docs": [
+            "/**
+     * Stop sending.
+     */",
+          ],
+          "file": "/enttec-open-dmx-usb/dist/index.d.ts",
+          "id": "class.EnttecOpenDMXUSBDevice.method.stopSending",
+          "kind": "class-method",
+          "line": 32,
+          "name": "stopSending",
+          "signature": "stopSending: () => void;",
+        },
+      ],
+      "name": "EnttecOpenDMXUSBDevice",
+      "properties": [],
+      "signature": "class EnttecOpenDMXUSBDevice extends EventEmitter<Events> {}",
+    },
+    {
+      "docs": [],
+      "file": "/enttec-open-dmx-usb/dist/index.d.ts",
+      "id": "variable.PRODUCT_ID",
+      "kind": "variable",
+      "line": 4,
+      "name": "PRODUCT_ID",
+      "signature": "const PRODUCT_ID: string;",
+    },
+    {
+      "docs": [],
+      "file": "/enttec-open-dmx-usb/dist/index.d.ts",
+      "id": "variable.VENDOR_ID",
+      "kind": "variable",
+      "line": 3,
+      "name": "VENDOR_ID",
+      "signature": "const VENDOR_ID: string;",
+    },
+  ],
+  "name": "enttec-open-dmx-usb",
+  "overview": undefined,
+  "packages": [
+    "@serialport/binding-mock@10.2.2",
+    "@serialport/bindings-cpp@11.0.3",
+    "@serialport/bindings-interface@1.2.2",
+    "@serialport/parser-byte-length@11.0.1",
+    "@serialport/parser-cctalk@11.0.1",
+    "@serialport/parser-delimiter@11.0.0",
+    "@serialport/parser-delimiter@11.0.1",
+    "@serialport/parser-inter-byte-timeout@11.0.1",
+    "@serialport/parser-packet-length@11.0.1",
+    "@serialport/parser-readline@11.0.0",
+    "@serialport/parser-readline@11.0.1",
+    "@serialport/parser-ready@11.0.1",
+    "@serialport/parser-regex@11.0.1",
+    "@serialport/parser-slip-encoder@11.0.1",
+    "@serialport/parser-spacepacket@11.0.1",
+    "@serialport/stream@11.0.1",
+    "debug@4.3.4",
+    "enttec-open-dmx-usb@4.0.1",
+    "eventemitter3@5.0.1",
+    "ms@2.1.2",
+    "node-addon-api@6.1.0",
+    "node-gyp-build@4.6.0",
+    "serialport@11.0.1",
+  ],
+  "subpath": ".",
+  "types": "dist/index.d.ts",
+  "version": "4.0.1",
+}
+`;

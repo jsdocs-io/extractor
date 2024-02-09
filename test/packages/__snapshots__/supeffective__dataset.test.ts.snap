@@ -1,0 +1,4122 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`@supeffective/dataset@2.2.2 1`] = `
+{
+  "declarations": [
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.createDataUrlResolver",
+      "kind": "function",
+      "line": 1653,
+      "name": "createDataUrlResolver",
+      "signature": "createDataUrlResolver: (baseUrl: string) => AssetUrlResolver;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.createImageUrlResolver",
+      "kind": "function",
+      "line": 1654,
+      "name": "createImageUrlResolver",
+      "signature": "createImageUrlResolver: (baseUrl: string) => ImageUrlResolver;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.createPlaceholderPokemon",
+      "kind": "function",
+      "line": 1608,
+      "name": "createPlaceholderPokemon",
+      "signature": "createPlaceholderPokemon: () => Pokemon;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.createSearchIndex",
+      "kind": "function",
+      "line": 1600,
+      "name": "createSearchIndex",
+      "signature": "createSearchIndex: <R extends Entity>(
+  tokenSeparator?: string,
+) => SearchEngineIndex<R>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.fetchBoxPreset",
+      "kind": "function",
+      "line": 1493,
+      "name": "fetchBoxPreset",
+      "signature": "fetchBoxPreset: (
+  id: string,
+  gameSetId: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<BoxPreset>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.fetchBoxPresetIndex",
+      "kind": "function",
+      "line": 1492,
+      "name": "fetchBoxPresetIndex",
+      "signature": "fetchBoxPresetIndex: (
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<BoxPresetIndexItem[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.fetchCollection",
+      "kind": "function",
+      "line": 1649,
+      "name": "fetchCollection",
+      "signature": "fetchCollection: <R extends Entity = Entity>(
+  relativePath: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Array<R>>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.fetchCollectionWithCache",
+      "kind": "function",
+      "line": 1650,
+      "name": "fetchCollectionWithCache",
+      "signature": "fetchCollectionWithCache: <R extends Entity = Entity>(
+  cache: InMemoryCache<R>,
+  relativePath: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<R[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.fetchPokedex",
+      "kind": "function",
+      "line": 1530,
+      "name": "fetchPokedex",
+      "signature": "fetchPokedex: (
+  id: string,
+  regionId: string | null | undefined,
+  baseUrl: string,
+) => Promise<Pokedex>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.fetchPokedexIndex",
+      "kind": "function",
+      "line": 1529,
+      "name": "fetchPokedexIndex",
+      "signature": "fetchPokedexIndex: (baseUrl: string) => Promise<PokedexIndexItem[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.fetchPokemon",
+      "kind": "function",
+      "line": 1607,
+      "name": "fetchPokemon",
+      "signature": "fetchPokemon: (
+  id: string,
+  regionId: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Pokemon>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.fetchPokemonIndex",
+      "kind": "function",
+      "line": 1606,
+      "name": "fetchPokemonIndex",
+      "signature": "fetchPokemonIndex: (
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<PokemonIndexItem[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.fetchResource",
+      "kind": "function",
+      "line": 1651,
+      "name": "fetchResource",
+      "signature": "fetchResource: <R extends Entity = Entity>(
+  relativePath: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<R>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findAbilitiesByIds",
+      "kind": "function",
+      "line": 1486,
+      "name": "findAbilitiesByIds",
+      "signature": "findAbilitiesByIds: (
+  ids: Array<string>,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Ability[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findAbilityById",
+      "kind": "function",
+      "line": 1484,
+      "name": "findAbilityById",
+      "signature": "findAbilityById: (
+  id: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Ability | undefined>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findBoxPresetById",
+      "kind": "function",
+      "line": 1490,
+      "name": "findBoxPresetById",
+      "signature": "findBoxPresetById: (
+  id: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<BoxPreset | undefined>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findBoxPresetsByIds",
+      "kind": "function",
+      "line": 1491,
+      "name": "findBoxPresetsByIds",
+      "signature": "findBoxPresetsByIds: (
+  ids: Array<string>,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<BoxPreset[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findCharacterById",
+      "kind": "function",
+      "line": 1497,
+      "name": "findCharacterById",
+      "signature": "findCharacterById: (
+  id: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Character | undefined>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findCharactersByIds",
+      "kind": "function",
+      "line": 1498,
+      "name": "findCharactersByIds",
+      "signature": "findCharactersByIds: (
+  ids: Array<string>,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Character[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findGameById",
+      "kind": "function",
+      "line": 1502,
+      "name": "findGameById",
+      "signature": "findGameById: (id: string, baseUrl: string) => Promise<Game | undefined>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findGamesByIds",
+      "kind": "function",
+      "line": 1503,
+      "name": "findGamesByIds",
+      "signature": "findGamesByIds: (ids: Array<string>, baseUrl: string) => Promise<Game[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findItemById",
+      "kind": "function",
+      "line": 1507,
+      "name": "findItemById",
+      "signature": "findItemById: (
+  id: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Item | undefined>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findItemsByIds",
+      "kind": "function",
+      "line": 1508,
+      "name": "findItemsByIds",
+      "signature": "findItemsByIds: (
+  ids: Array<string>,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Item[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findLocationById",
+      "kind": "function",
+      "line": 1512,
+      "name": "findLocationById",
+      "signature": "findLocationById: (
+  id: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Location | undefined>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findLocationsByIds",
+      "kind": "function",
+      "line": 1513,
+      "name": "findLocationsByIds",
+      "signature": "findLocationsByIds: (
+  ids: Array<string>,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Location[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findMarkById",
+      "kind": "function",
+      "line": 1517,
+      "name": "findMarkById",
+      "signature": "findMarkById: (
+  id: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Mark | undefined>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findMarksByIds",
+      "kind": "function",
+      "line": 1518,
+      "name": "findMarksByIds",
+      "signature": "findMarksByIds: (
+  ids: Array<string>,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Mark[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findMoveById",
+      "kind": "function",
+      "line": 1522,
+      "name": "findMoveById",
+      "signature": "findMoveById: (
+  id: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Move | undefined>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findMovesByIds",
+      "kind": "function",
+      "line": 1523,
+      "name": "findMovesByIds",
+      "signature": "findMovesByIds: (
+  ids: Array<string>,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Move[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findPokedexById",
+      "kind": "function",
+      "line": 1527,
+      "name": "findPokedexById",
+      "signature": "findPokedexById: (
+  id: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Pokedex | undefined>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findPokedexesByIds",
+      "kind": "function",
+      "line": 1528,
+      "name": "findPokedexesByIds",
+      "signature": "findPokedexesByIds: (
+  ids: Array<string>,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Pokedex[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findPokemonById",
+      "kind": "function",
+      "line": 1604,
+      "name": "findPokemonById",
+      "signature": "findPokemonById: (
+  id: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Pokemon | undefined>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findPokemonByIds",
+      "kind": "function",
+      "line": 1605,
+      "name": "findPokemonByIds",
+      "signature": "findPokemonByIds: (
+  ids: Array<string>,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Pokemon[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findResource",
+      "kind": "function",
+      "line": 1480,
+      "name": "findResource",
+      "signature": "findResource: <R extends Entity = Entity>(
+  dirName: string,
+  groupId: string | null | undefined,
+  id: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<R | undefined>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findResourceByField",
+      "kind": "function",
+      "line": 1475,
+      "name": "findResourceByField",
+      "signature": "findResourceByField: <R extends Entity = Entity>(
+  collection: Array<R>,
+  field: keyof R,
+  value: string | number | boolean | undefined | null,
+) => R | undefined;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findResourceById",
+      "kind": "function",
+      "line": 1476,
+      "name": "findResourceById",
+      "signature": "findResourceById: <R extends Entity = Entity>(
+  collection: Array<R>,
+  id: string,
+) => R | undefined;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findResourcesByIds",
+      "kind": "function",
+      "line": 1477,
+      "name": "findResourcesByIds",
+      "signature": "findResourcesByIds: <R extends Entity = Entity>(
+  collection: Array<R>,
+  ids: Array<string>,
+) => Array<R>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findRibbonById",
+      "kind": "function",
+      "line": 1614,
+      "name": "findRibbonById",
+      "signature": "findRibbonById: (
+  id: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Ribbon | undefined>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.findRibbonsByIds",
+      "kind": "function",
+      "line": 1615,
+      "name": "findRibbonsByIds",
+      "signature": "findRibbonsByIds: (
+  ids: Array<string>,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Ribbon[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getAbilityById",
+      "kind": "function",
+      "line": 1485,
+      "name": "getAbilityById",
+      "signature": "getAbilityById: (
+  id: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Ability>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getAllAbilities",
+      "kind": "function",
+      "line": 1483,
+      "name": "getAllAbilities",
+      "signature": "getAllAbilities: (
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Ability[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getAllBoxPresets",
+      "kind": "function",
+      "line": 1488,
+      "name": "getAllBoxPresets",
+      "signature": "getAllBoxPresets: (
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<BoxPreset[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getAllCharacters",
+      "kind": "function",
+      "line": 1495,
+      "name": "getAllCharacters",
+      "signature": "getAllCharacters: (
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Character[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getAllGames",
+      "kind": "function",
+      "line": 1500,
+      "name": "getAllGames",
+      "signature": "getAllGames: (_baseUrl: string) => Promise<Game[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getAllItems",
+      "kind": "function",
+      "line": 1505,
+      "name": "getAllItems",
+      "signature": "getAllItems: (
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Item[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getAllLocations",
+      "kind": "function",
+      "line": 1510,
+      "name": "getAllLocations",
+      "signature": "getAllLocations: (
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Location[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getAllMarks",
+      "kind": "function",
+      "line": 1515,
+      "name": "getAllMarks",
+      "signature": "getAllMarks: (
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Mark[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getAllMoves",
+      "kind": "function",
+      "line": 1520,
+      "name": "getAllMoves",
+      "signature": "getAllMoves: (
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Move[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getAllPokedexes",
+      "kind": "function",
+      "line": 1525,
+      "name": "getAllPokedexes",
+      "signature": "getAllPokedexes: (
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Pokedex[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getAllPokemon",
+      "kind": "function",
+      "line": 1602,
+      "name": "getAllPokemon",
+      "signature": "getAllPokemon: (
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Pokemon[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getAllRibbons",
+      "kind": "function",
+      "line": 1612,
+      "name": "getAllRibbons",
+      "signature": "getAllRibbons: (
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Ribbon[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getBoxPresetById",
+      "kind": "function",
+      "line": 1489,
+      "name": "getBoxPresetById",
+      "signature": "getBoxPresetById: (
+  id: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<BoxPreset>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getCharacterById",
+      "kind": "function",
+      "line": 1496,
+      "name": "getCharacterById",
+      "signature": "getCharacterById: (
+  id: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Character>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getGameById",
+      "kind": "function",
+      "line": 1501,
+      "name": "getGameById",
+      "signature": "getGameById: (id: string, baseUrl: string) => Promise<Game>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getItemById",
+      "kind": "function",
+      "line": 1506,
+      "name": "getItemById",
+      "signature": "getItemById: (
+  id: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Item>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getLocationById",
+      "kind": "function",
+      "line": 1511,
+      "name": "getLocationById",
+      "signature": "getLocationById: (
+  id: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Location>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getMarkById",
+      "kind": "function",
+      "line": 1516,
+      "name": "getMarkById",
+      "signature": "getMarkById: (
+  id: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Mark>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getMoveById",
+      "kind": "function",
+      "line": 1521,
+      "name": "getMoveById",
+      "signature": "getMoveById: (
+  id: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Move>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getPokedexById",
+      "kind": "function",
+      "line": 1526,
+      "name": "getPokedexById",
+      "signature": "getPokedexById: (
+  id: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Pokedex>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getPokemonById",
+      "kind": "function",
+      "line": 1603,
+      "name": "getPokemonById",
+      "signature": "getPokemonById: (
+  id: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Pokemon>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getResource",
+      "kind": "function",
+      "line": 1481,
+      "name": "getResource",
+      "signature": "getResource: <R extends Entity = Entity>(
+  dirName: string,
+  groupId: string | null | undefined,
+  id: string,
+  baseUrl: string,
+  title?: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<R>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getResourceByField",
+      "kind": "function",
+      "line": 1478,
+      "name": "getResourceByField",
+      "signature": "getResourceByField: <R extends Entity = Entity>(
+  collection: Array<R>,
+  field: keyof R,
+  id: string,
+  title?: string,
+) => R;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getResourceById",
+      "kind": "function",
+      "line": 1479,
+      "name": "getResourceById",
+      "signature": "getResourceById: <R extends Entity = Entity>(
+  collection: Array<R>,
+  id: string,
+  title?: string,
+) => R;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getRibbonById",
+      "kind": "function",
+      "line": 1613,
+      "name": "getRibbonById",
+      "signature": "getRibbonById: (
+  id: string,
+  baseUrl: string,
+  params?: NextCompatibleRequestInit,
+) => Promise<Ribbon>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.getSiblingEntities",
+      "kind": "function",
+      "line": 1471,
+      "name": "getSiblingEntities",
+      "signature": "getSiblingEntities: <R extends Entity = Entity>(
+  collection: R[],
+  id: string,
+) => { prev: R | null; next: R | null };",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.hydratePokemonSearchIndex",
+      "kind": "function",
+      "line": 1610,
+      "name": "hydratePokemonSearchIndex",
+      "signature": "hydratePokemonSearchIndex: <
+  K extends
+    | {
+        id: string;
+        name: string;
+        generation: number;
+        color: string;
+        region: string;
+        isGmax: boolean;
+        dexNum: number;
+        isForm: boolean;
+        nid: string;
+        formId: string;
+        formName: string;
+        type1: string;
+        type2: string;
+        teraType: string;
+        abilities: { primary: string; secondary: string; hidden: string };
+        isDefault: boolean;
+        isLegendary: boolean;
+        isMythical: boolean;
+        isUltraBeast: boolean;
+        ultraBeastCode: string;
+        isSpecialAbilityForm: boolean;
+        isCosmeticForm: boolean;
+        isFemaleForm: boolean;
+        hasGenderDifferences: boolean;
+        isBattleOnlyForm: boolean;
+        isSwitchableForm: boolean;
+        isFusion: boolean;
+        fusedWith: string[];
+        isMega: boolean;
+        isPrimal: boolean;
+        isRegional: boolean;
+        canGmax: boolean;
+        canDynamax: boolean;
+        canBeAlpha: boolean;
+        debutIn: string;
+        obtainableIn: string[];
+        versionExclusiveIn: string[];
+        eventOnlyIn: string[];
+        storableIn: string[];
+        registrableIn: string[];
+        shinyReleased: boolean;
+        shinyBase: string;
+        baseStats: {
+          hp: number;
+          atk: number;
+          def: number;
+          spa: number;
+          spd: number;
+          spe: number;
+        };
+        weight: number;
+        height: number;
+        maleRate: number;
+        femaleRate: number;
+        baseSpecies: string;
+        baseForms: string[];
+        forms: string[];
+        evolvesFrom: {
+          pokemon?: string;
+          level?: number;
+          item?: string;
+          move?: string;
+          type?: string;
+          region?: string;
+          ability?: string;
+          condition?: string;
+        };
+        refs: {
+          smogon: string;
+          showdown: string;
+          showdownName: string;
+          serebii: string;
+          bulbapedia: string;
+        };
+        isParadox?: boolean;
+        paradoxSpecies?: string[];
+        isConvergent?: boolean;
+        convergentSpecies?: string[];
+        family?: string;
+      }
+    | {
+        id: string;
+        name: string;
+        generation: number;
+        color: string;
+        region: string;
+        dexNum: number;
+        isForm: boolean;
+        nid: string;
+        formId: string;
+        formName: string;
+        type1: string;
+        type2: string;
+        isDefault: boolean;
+        isSpecialAbilityForm: boolean;
+        isCosmeticForm: boolean;
+        isFemaleForm: boolean;
+        storableIn: string[];
+        baseSpecies: string;
+      },
+>(
+  entities: K[],
+  searchIndex: SearchEngineIndex<K>,
+) => Promise<void>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "function.isPlaceholderPokemon",
+      "kind": "function",
+      "line": 1609,
+      "name": "isPlaceholderPokemon",
+      "signature": "isPlaceholderPokemon: (pkm: Pokemon | CompactPokemon) => boolean;",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.AssetUrlResolver",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 1635,
+      "methods": [
+        {
+          "docs": [],
+          "file": "/@supeffective/dataset/dist/index.d.ts",
+          "id": "interface.AssetUrlResolver.method.resolveUri",
+          "kind": "interface-method",
+          "line": 1637,
+          "name": "resolveUri",
+          "signature": "resolveUri: (relativePath: string) => string;",
+        },
+      ],
+      "name": "AssetUrlResolver",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/@supeffective/dataset/dist/index.d.ts",
+          "id": "interface.AssetUrlResolver.property.baseUri",
+          "kind": "interface-property",
+          "line": 1636,
+          "name": "baseUri",
+          "signature": "baseUri: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface AssetUrlResolver {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.Entity",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 1466,
+      "methods": [],
+      "name": "Entity",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/@supeffective/dataset/dist/index.d.ts",
+          "id": "interface.Entity.property.id",
+          "kind": "interface-property",
+          "line": 1467,
+          "name": "id",
+          "signature": "id: string;",
+        },
+        {
+          "docs": [],
+          "file": "/@supeffective/dataset/dist/index.d.ts",
+          "id": "interface.Entity.property.name",
+          "kind": "interface-property",
+          "line": 1468,
+          "name": "name",
+          "signature": "name: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface Entity {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.ImageUrlResolver",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 1639,
+      "methods": [
+        {
+          "docs": [],
+          "file": "/@supeffective/dataset/dist/index.d.ts",
+          "id": "interface.ImageUrlResolver.method.gameImg",
+          "kind": "interface-method",
+          "line": 1641,
+          "name": "gameImg",
+          "signature": "gameImg: (id: string, variant?: string) => string;",
+        },
+        {
+          "docs": [],
+          "file": "/@supeffective/dataset/dist/index.d.ts",
+          "id": "interface.ImageUrlResolver.method.itemImg",
+          "kind": "interface-method",
+          "line": 1642,
+          "name": "itemImg",
+          "signature": "itemImg: (id: string, variant?: string) => string;",
+        },
+        {
+          "docs": [],
+          "file": "/@supeffective/dataset/dist/index.d.ts",
+          "id": "interface.ImageUrlResolver.method.markImg",
+          "kind": "interface-method",
+          "line": 1644,
+          "name": "markImg",
+          "signature": "markImg: (id: string, variant?: string) => string;",
+        },
+        {
+          "docs": [],
+          "file": "/@supeffective/dataset/dist/index.d.ts",
+          "id": "interface.ImageUrlResolver.method.originMarkImg",
+          "kind": "interface-method",
+          "line": 1646,
+          "name": "originMarkImg",
+          "signature": "originMarkImg: (id: string) => string;",
+        },
+        {
+          "docs": [],
+          "file": "/@supeffective/dataset/dist/index.d.ts",
+          "id": "interface.ImageUrlResolver.method.pokemonImg",
+          "kind": "interface-method",
+          "line": 1640,
+          "name": "pokemonImg",
+          "signature": "pokemonImg: (nid: string, variant?: string, shiny?: boolean) => string;",
+        },
+        {
+          "docs": [],
+          "file": "/@supeffective/dataset/dist/index.d.ts",
+          "id": "interface.ImageUrlResolver.method.ribbonImg",
+          "kind": "interface-method",
+          "line": 1643,
+          "name": "ribbonImg",
+          "signature": "ribbonImg: (id: string, variant?: string) => string;",
+        },
+        {
+          "docs": [],
+          "file": "/@supeffective/dataset/dist/index.d.ts",
+          "id": "interface.ImageUrlResolver.method.typeImg",
+          "kind": "interface-method",
+          "line": 1645,
+          "name": "typeImg",
+          "signature": "typeImg: (id: string, variant?: string, withBg?: boolean) => string;",
+        },
+      ],
+      "name": "ImageUrlResolver",
+      "properties": [],
+      "setAccessors": [],
+      "signature": "interface ImageUrlResolver extends AssetUrlResolver {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * @deprecated
+ */",
+      ],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.LegacyRepository",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 1535,
+      "methods": [
+        {
+          "docs": [],
+          "file": "/@supeffective/dataset/dist/index.d.ts",
+          "id": "interface.LegacyRepository.method.findById",
+          "kind": "interface-method",
+          "line": 1539,
+          "name": "findById",
+          "signature": "findById: (id: string) => Promise<R | undefined>;",
+        },
+        {
+          "docs": [],
+          "file": "/@supeffective/dataset/dist/index.d.ts",
+          "id": "interface.LegacyRepository.method.getAll",
+          "kind": "interface-method",
+          "line": 1537,
+          "name": "getAll",
+          "signature": "getAll: () => Promise<Array<R>>;",
+        },
+        {
+          "docs": [],
+          "file": "/@supeffective/dataset/dist/index.d.ts",
+          "id": "interface.LegacyRepository.method.getById",
+          "kind": "interface-method",
+          "line": 1538,
+          "name": "getById",
+          "signature": "getById: (id: string) => Promise<R>;",
+        },
+        {
+          "docs": [],
+          "file": "/@supeffective/dataset/dist/index.d.ts",
+          "id": "interface.LegacyRepository.method.getManyByIds",
+          "kind": "interface-method",
+          "line": 1540,
+          "name": "getManyByIds",
+          "signature": "getManyByIds: (ids: Array<string>) => Promise<Array<R>>;",
+        },
+      ],
+      "name": "LegacyRepository",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/@supeffective/dataset/dist/index.d.ts",
+          "id": "interface.LegacyRepository.property.id",
+          "kind": "interface-property",
+          "line": 1536,
+          "name": "id",
+          "signature": "id: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface LegacyRepository<R extends Entity> {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.SearchEngine",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 1557,
+      "methods": [
+        {
+          "docs": [],
+          "file": "/@supeffective/dataset/dist/index.d.ts",
+          "id": "interface.SearchEngine.method.search",
+          "kind": "interface-method",
+          "line": 1559,
+          "name": "search",
+          "signature": "search: (
+  q: string | SearchQuery<R>,
+  limit?: number,
+  offset?: number,
+  sortBy?: keyof R,
+  sortDir?: "asc" | "desc",
+) => Promise<Array<R>>;",
+        },
+      ],
+      "name": "SearchEngine",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/@supeffective/dataset/dist/index.d.ts",
+          "id": "interface.SearchEngine.property.id",
+          "kind": "interface-property",
+          "line": 1558,
+          "name": "id",
+          "signature": "id: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface SearchEngine<R extends Entity> {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.SearchFilter",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 1542,
+      "methods": [],
+      "name": "SearchFilter",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/@supeffective/dataset/dist/index.d.ts",
+          "id": "interface.SearchFilter.property.field",
+          "kind": "interface-property",
+          "line": 1543,
+          "name": "field",
+          "signature": "field: keyof R;",
+        },
+        {
+          "docs": [],
+          "file": "/@supeffective/dataset/dist/index.d.ts",
+          "id": "interface.SearchFilter.property.operator",
+          "kind": "interface-property",
+          "line": 1545,
+          "name": "operator",
+          "signature": "operator:
+  | "neq"
+  | "eq"
+  | "gt"
+  | "lt"
+  | "gte"
+  | "lte"
+  | "in"
+  | "notin"
+  | "ends"
+  | "starts"
+  | "contains"
+  | "ncontains"
+  | "isnull"
+  | "notnull";",
+        },
+        {
+          "docs": [],
+          "file": "/@supeffective/dataset/dist/index.d.ts",
+          "id": "interface.SearchFilter.property.value",
+          "kind": "interface-property",
+          "line": 1544,
+          "name": "value",
+          "signature": "value?: string | number | boolean | string[] | number[];",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface SearchFilter<R extends Entity> {}",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.Ability",
+      "kind": "type",
+      "line": 25,
+      "name": "Ability",
+      "signature": "type Ability = z.infer<typeof abilitySchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.BaseEntity",
+      "kind": "type",
+      "line": 320,
+      "name": "BaseEntity",
+      "signature": "type BaseEntity = z$1.infer<typeof baseEntitySchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.BoxPreset",
+      "kind": "type",
+      "line": 253,
+      "name": "BoxPreset",
+      "signature": "type BoxPreset = z.infer<typeof boxPresetSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.BoxPresetBox",
+      "kind": "type",
+      "line": 252,
+      "name": "BoxPresetBox",
+      "signature": "type BoxPresetBox = z.infer<typeof boxPresetBoxSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.BoxPresetBoxPokemon",
+      "kind": "type",
+      "line": 251,
+      "name": "BoxPresetBoxPokemon",
+      "signature": "type BoxPresetBoxPokemon = z.infer<typeof boxPresetBoxPokemonSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.BoxPresetIndexItem",
+      "kind": "type",
+      "line": 43,
+      "name": "BoxPresetIndexItem",
+      "signature": "type BoxPresetIndexItem = z.infer<typeof boxPresetIndexItemSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.BoxPresetMap",
+      "kind": "type",
+      "line": 254,
+      "name": "BoxPresetMap",
+      "signature": "type BoxPresetMap = Map<string, Map<string, BoxPreset>>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.BoxPresetRecord",
+      "kind": "type",
+      "line": 255,
+      "name": "BoxPresetRecord",
+      "signature": "type BoxPresetRecord = Record<string, Record<string, BoxPreset>>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.Character",
+      "kind": "type",
+      "line": 267,
+      "name": "Character",
+      "signature": "type Character = z.infer<typeof characterSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.Characteristic",
+      "kind": "type",
+      "line": 285,
+      "name": "Characteristic",
+      "signature": "type Characteristic = z.infer<typeof characteristicSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.Color",
+      "kind": "type",
+      "line": 300,
+      "name": "Color",
+      "signature": "type Color = z.infer<typeof colorSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.CompactPokemon",
+      "kind": "type",
+      "line": 1237,
+      "name": "CompactPokemon",
+      "signature": "type CompactPokemon = z.infer<typeof pokemonCompactSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.DatasetClientConfig",
+      "kind": "type",
+      "line": 1628,
+      "name": "DatasetClientConfig",
+      "signature": "type DatasetClientConfig = {
+  baseDataUrl: string;
+  baseImageUrl: string;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.Game",
+      "kind": "type",
+      "line": 468,
+      "name": "Game",
+      "signature": "type Game = z.infer<typeof gameSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.GameFeature",
+      "kind": "type",
+      "line": 332,
+      "name": "GameFeature",
+      "signature": "type GameFeature = z.infer<typeof gameFeatureSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.IDType",
+      "kind": "type",
+      "line": 309,
+      "name": "IDType",
+      "signature": "type IDType = string;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.InMemoryCache",
+      "kind": "type",
+      "line": 1632,
+      "name": "InMemoryCache",
+      "signature": "type InMemoryCache<R extends Entity> = {
+  collection: Map<string, R[]>;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.Item",
+      "kind": "type",
+      "line": 497,
+      "name": "Item",
+      "signature": "type Item = z.infer<typeof itemSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.ItemCategory",
+      "kind": "type",
+      "line": 471,
+      "name": "ItemCategory",
+      "signature": "type ItemCategory = z.infer<typeof itemCategorySchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.Language",
+      "kind": "type",
+      "line": 518,
+      "name": "Language",
+      "signature": "type Language = z.infer<typeof languageSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.LegacyPokemon",
+      "kind": "type",
+      "line": 1238,
+      "name": "LegacyPokemon",
+      "signature": "type LegacyPokemon = {
+  id: string;
+  nid: string;
+  dexNum: number;
+  formId: string | null;
+  name: string;
+  formName: string | null;
+  region: string;
+  generation: number;
+  type1: string;
+  type2: string | null;
+  /**
+   * Forced tera type (e.g. for Ogerpon and Terapagos)
+   */
+  teraType: string | null;
+  color: string;
+  isDefault: boolean;
+  isForm: boolean;
+  isSpecialAbilityForm: boolean;
+  isCosmeticForm: boolean;
+  isFemaleForm: boolean;
+  hasGenderDifferences: boolean;
+  maleRate: number;
+  femaleRate: number;
+  isBattleOnlyForm: boolean;
+  isSwitchableForm: boolean;
+  isMega: boolean;
+  isPrimal: boolean;
+  isGmax: boolean;
+  canGmax: boolean;
+  canDynamax: boolean;
+  canBeAlpha: boolean;
+  debutIn: string;
+  obtainableIn: string[];
+  versionExclusiveIn: string[];
+  eventOnlyIn: string[];
+  storableIn: string[];
+  shinyReleased: boolean;
+  shinyBase: string | null;
+  baseSpecies: string | null;
+  forms: string[] | null;
+  refs: {
+    /**
+     * Bulbapedia URL slug, without \`_(Pokémon)\` at the end
+     */
+    bulbapedia: string | null;
+    /**
+     * Serebii URL slug
+     */
+    serebii: string | null;
+    /**
+     * Smogon URL slug
+     */
+    smogon: string | null;
+    /**
+     * Showdown! Internal ID
+     */
+    showdown: string | null;
+    /**
+     * Showdown! Name for the Showdown! Markup Language (team builder)
+     */
+    showdownName: string | null;
+  };
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.Location",
+      "kind": "type",
+      "line": 533,
+      "name": "Location",
+      "signature": "type Location = z.infer<typeof locationSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.Mark",
+      "kind": "type",
+      "line": 563,
+      "name": "Mark",
+      "signature": "type Mark = z.infer<typeof markSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.Move",
+      "kind": "type",
+      "line": 611,
+      "name": "Move",
+      "signature": "type Move = z.infer<typeof moveSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.Nature",
+      "kind": "type",
+      "line": 632,
+      "name": "Nature",
+      "signature": "type Nature = z.infer<typeof natureSchema>;",
+    },
+    {
+      "docs": [
+        "/**
+ * Native RequestInit, compatible with Next.js revalidate tags.
+ *
+ * @see https://nextjs.org/docs/api-reference/next.config.js/headers
+ */",
+      ],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.NextCompatibleRequestInit",
+      "kind": "type",
+      "line": 1622,
+      "name": "NextCompatibleRequestInit",
+      "signature": "type NextCompatibleRequestInit = RequestInit & {
+  next?: {
+    tags?: Array<string>;
+    revalidate?: number;
+  };
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.OriginMark",
+      "kind": "type",
+      "line": 644,
+      "name": "OriginMark",
+      "signature": "type OriginMark = z.infer<typeof originMarkSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.Pokedex",
+      "kind": "type",
+      "line": 727,
+      "name": "Pokedex",
+      "signature": "type Pokedex = z.infer<typeof pokedexSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.PokedexEntry",
+      "kind": "type",
+      "line": 728,
+      "name": "PokedexEntry",
+      "signature": "type PokedexEntry = z.infer<typeof pokedexEntrySchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.PokedexIndexItem",
+      "kind": "type",
+      "line": 665,
+      "name": "PokedexIndexItem",
+      "signature": "type PokedexIndexItem = z.infer<typeof pokedexItemIndexSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.Pokemon",
+      "kind": "type",
+      "line": 1058,
+      "name": "Pokemon",
+      "signature": "type Pokemon = z.infer<typeof pokemonSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.PokemonIndexItem",
+      "kind": "type",
+      "line": 749,
+      "name": "PokemonIndexItem",
+      "signature": "type PokemonIndexItem = z.infer<typeof pokemonIndexItemSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.PokeType",
+      "kind": "type",
+      "line": 1359,
+      "name": "PokeType",
+      "signature": "type PokeType = z.infer<typeof pokeTypeSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.PokeTypeId",
+      "kind": "type",
+      "line": 1360,
+      "name": "PokeTypeId",
+      "signature": "type PokeTypeId = z.infer<typeof pokeTypeIdSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.Region",
+      "kind": "type",
+      "line": 1316,
+      "name": "Region",
+      "signature": "type Region = z.infer<typeof regionSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.Ribbon",
+      "kind": "type",
+      "line": 1340,
+      "name": "Ribbon",
+      "signature": "type Ribbon = z.infer<typeof ribbonSchema>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.SearchEngineIndex",
+      "kind": "type",
+      "line": 1562,
+      "name": "SearchEngineIndex",
+      "signature": "type SearchEngineIndex<R extends Entity> = {
+  /**
+   * Index the given entities
+   * @param entities Entities to index
+   * @param tokens Array of [fieldName, tokenizer] tuples
+   * @returns Promise
+   * @example
+   * const entities = [{ id: '1', name: 'John Doe' }, { id: '2', name: 'Jane Doe' }]
+   * const tokens = [['name', (item) => item.name.split(' ')]]
+   * await searchEngine.index(entities, tokens)
+   * // Now you can search for entities matching 'John' or 'Doe'
+   * const results = await searchEngine.search('John Doe')
+   * // results = Set(['1', '2'])
+   * const results = await searchEngine.searchWith(entities, 'Jane')
+   * // results = [{ id: '2', name: 'Jane Doe' }]
+   **/
+  index: (
+    entities: R[],
+    tokens: Array<[keyof R | string, (entity: R) => string[] | string | null]>,
+  ) => Promise<void>;
+  /**
+   * @returns Number of indexed entities
+   */
+  size: () => Promise<number>;
+  /**
+   * Search for entities matching the given text
+   * @param text Full text search query
+   * @returns Set of ids of matching entities
+   */
+  searchIds: (text: string) => Promise<Set<string>>;
+  /**
+   * Search for entities matching the given text
+   * @param entities Entities to search in
+   * @param text Full text search query
+   * @returns The matching entities
+   */
+  search: (text: string, entities: R[]) => Promise<R[]>;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.SearchEngineIndexHydrator",
+      "kind": "type",
+      "line": 1561,
+      "name": "SearchEngineIndexHydrator",
+      "signature": "type SearchEngineIndexHydrator<R extends Entity> = (
+  entities: R[],
+  searchEngine: SearchEngineIndex<R>,
+  repository: LegacyRepository<R>,
+) => Promise<void>;",
+    },
+    {
+      "docs": [
+        "/**
+ * SearchQuery is a 2D array of SearchFilter.
+ * The first level (root) are OR conditions, the second level (nested arrays) are AND.
+ *
+ * e.g.: [ // people with name John OR age equal to 18 AND lastname equal to Smith:
+ *  [{ field: 'name', value: 'John', operator: 'eq' }],
+ *  [{ field: 'age', value: 18, operator: 'eq' }, { field: 'lastname', value: 'Smith', operator: 'eq' }]
+ * ]
+ */",
+      ],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "type.SearchQuery",
+      "kind": "type",
+      "line": 1556,
+      "name": "SearchQuery",
+      "signature": "type SearchQuery<R extends Entity> = Array<SearchFilter<R>[]>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.abilitySchema",
+      "kind": "variable",
+      "line": 3,
+      "name": "abilitySchema",
+      "signature": "const abilitySchema: z.ZodObject<
+  {
+    id: z.ZodString;
+    name: z.ZodString;
+    psName: z.ZodString;
+    generation: z.ZodNumber;
+    desc: z.ZodNullable<z.ZodString>;
+    shortDesc: z.ZodString;
+  },
+  "strip",
+  z.ZodTypeAny,
+  {
+    id: string;
+    name: string;
+    psName: string;
+    generation: number;
+    desc: string | null;
+    shortDesc: string;
+  },
+  {
+    id: string;
+    name: string;
+    psName: string;
+    generation: number;
+    desc: string | null;
+    shortDesc: string;
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.baseEntitySchema",
+      "kind": "variable",
+      "line": 310,
+      "name": "baseEntitySchema",
+      "signature": "const baseEntitySchema: z.ZodObject<
+  { id: z$1.ZodString; name: z$1.ZodString },
+  "strip",
+  z.ZodTypeAny,
+  { id: string; name: string },
+  { id: string; name: string }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.boxPresetBoxPokemonSchema",
+      "kind": "variable",
+      "line": 44,
+      "name": "boxPresetBoxPokemonSchema",
+      "signature": "const boxPresetBoxPokemonSchema: z.ZodUnion<
+  [
+    z.ZodNullable<z.ZodString>,
+    z.ZodObject<
+      {
+        pid: z.ZodString;
+        gmax: z.ZodOptional<z.ZodBoolean>;
+        shinyLocked: z.ZodOptional<z.ZodBoolean>;
+        shiny: z.ZodOptional<z.ZodBoolean>;
+      },
+      "strip",
+      z.ZodTypeAny,
+      {
+        pid: string;
+        gmax?: boolean | undefined;
+        shinyLocked?: boolean | undefined;
+        shiny?: boolean | undefined;
+      },
+      {
+        pid: string;
+        gmax?: boolean | undefined;
+        shinyLocked?: boolean | undefined;
+        shiny?: boolean | undefined;
+      }
+    >,
+  ]
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.boxPresetBoxSchema",
+      "kind": "variable",
+      "line": 60,
+      "name": "boxPresetBoxSchema",
+      "signature": "const boxPresetBoxSchema: z.ZodObject<
+  {
+    title: z.ZodOptional<z.ZodString>;
+    pokemon: z.ZodArray<
+      z.ZodUnion<
+        [
+          z.ZodNullable<z.ZodString>,
+          z.ZodObject<
+            {
+              pid: z.ZodString;
+              gmax: z.ZodOptional<z.ZodBoolean>;
+              shinyLocked: z.ZodOptional<z.ZodBoolean>;
+              shiny: z.ZodOptional<z.ZodBoolean>;
+            },
+            "strip",
+            z.ZodTypeAny,
+            {
+              pid: string;
+              gmax?: boolean | undefined;
+              shinyLocked?: boolean | undefined;
+              shiny?: boolean | undefined;
+            },
+            {
+              pid: string;
+              gmax?: boolean | undefined;
+              shinyLocked?: boolean | undefined;
+              shiny?: boolean | undefined;
+            }
+          >,
+        ]
+      >,
+      "many"
+    >;
+  },
+  "strip",
+  z.ZodTypeAny,
+  {
+    pokemon: (
+      | string
+      | {
+          pid: string;
+          gmax?: boolean | undefined;
+          shinyLocked?: boolean | undefined;
+          shiny?: boolean | undefined;
+        }
+      | null
+    )[];
+    title?: string | undefined;
+  },
+  {
+    pokemon: (
+      | string
+      | {
+          pid: string;
+          gmax?: boolean | undefined;
+          shinyLocked?: boolean | undefined;
+          shiny?: boolean | undefined;
+        }
+      | null
+    )[];
+    title?: string | undefined;
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.boxPresetIndexItemSchema",
+      "kind": "variable",
+      "line": 27,
+      "name": "boxPresetIndexItemSchema",
+      "signature": "const boxPresetIndexItemSchema: z.ZodObject<
+  {
+    id: z.ZodString;
+    gameSet: z.ZodString;
+    legacyId: z.ZodNullable<z.ZodString>;
+    name: z.ZodString;
+  },
+  "strict",
+  z.ZodTypeAny,
+  { id: string; name: string; gameSet: string; legacyId: string | null },
+  { id: string; name: string; gameSet: string; legacyId: string | null }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.boxPresetMapSchema",
+      "kind": "variable",
+      "line": 173,
+      "name": "boxPresetMapSchema",
+      "signature": "const boxPresetMapSchema: z.ZodRecord<
+  z.ZodString,
+  z.ZodRecord<
+    z.ZodString,
+    z.ZodObject<
+      {
+        id: z.ZodString;
+        legacyId: z.ZodString;
+        name: z.ZodString;
+        version: z.ZodNumber;
+        gameSet: z.ZodString;
+        description: z.ZodString;
+        boxes: z.ZodArray<
+          z.ZodObject<
+            {
+              title: z.ZodOptional<z.ZodString>;
+              pokemon: z.ZodArray<
+                z.ZodUnion<
+                  [
+                    z.ZodNullable<z.ZodString>,
+                    z.ZodObject<
+                      {
+                        pid: z.ZodString;
+                        gmax: z.ZodOptional<z.ZodBoolean>;
+                        shinyLocked: z.ZodOptional<z.ZodBoolean>;
+                        shiny: z.ZodOptional<z.ZodBoolean>;
+                      },
+                      "strip",
+                      z.ZodTypeAny,
+                      {
+                        pid: string;
+                        gmax?: boolean | undefined;
+                        shinyLocked?: boolean | undefined;
+                        shiny?: boolean | undefined;
+                      },
+                      {
+                        pid: string;
+                        gmax?: boolean | undefined;
+                        shinyLocked?: boolean | undefined;
+                        shiny?: boolean | undefined;
+                      }
+                    >,
+                  ]
+                >,
+                "many"
+              >;
+            },
+            "strip",
+            z.ZodTypeAny,
+            {
+              pokemon: (
+                | string
+                | {
+                    pid: string;
+                    gmax?: boolean | undefined;
+                    shinyLocked?: boolean | undefined;
+                    shiny?: boolean | undefined;
+                  }
+                | null
+              )[];
+              title?: string | undefined;
+            },
+            {
+              pokemon: (
+                | string
+                | {
+                    pid: string;
+                    gmax?: boolean | undefined;
+                    shinyLocked?: boolean | undefined;
+                    shiny?: boolean | undefined;
+                  }
+                | null
+              )[];
+              title?: string | undefined;
+            }
+          >,
+          "many"
+        >;
+        isHidden: z.ZodOptional<z.ZodBoolean>;
+      },
+      "strip",
+      z.ZodTypeAny,
+      {
+        id: string;
+        name: string;
+        gameSet: string;
+        legacyId: string;
+        version: number;
+        description: string;
+        boxes: {
+          pokemon: (
+            | string
+            | {
+                pid: string;
+                gmax?: boolean | undefined;
+                shinyLocked?: boolean | undefined;
+                shiny?: boolean | undefined;
+              }
+            | null
+          )[];
+          title?: string | undefined;
+        }[];
+        isHidden?: boolean | undefined;
+      },
+      {
+        id: string;
+        name: string;
+        gameSet: string;
+        legacyId: string;
+        version: number;
+        description: string;
+        boxes: {
+          pokemon: (
+            | string
+            | {
+                pid: string;
+                gmax?: boolean | undefined;
+                shinyLocked?: boolean | undefined;
+                shiny?: boolean | undefined;
+              }
+            | null
+          )[];
+          title?: string | undefined;
+        }[];
+        isHidden?: boolean | undefined;
+      }
+    >
+  >
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.boxPresetSchema",
+      "kind": "variable",
+      "line": 95,
+      "name": "boxPresetSchema",
+      "signature": "const boxPresetSchema: z.ZodObject<
+  {
+    id: z.ZodString;
+    legacyId: z.ZodString;
+    name: z.ZodString;
+    version: z.ZodNumber;
+    gameSet: z.ZodString;
+    description: z.ZodString;
+    boxes: z.ZodArray<
+      z.ZodObject<
+        {
+          title: z.ZodOptional<z.ZodString>;
+          pokemon: z.ZodArray<
+            z.ZodUnion<
+              [
+                z.ZodNullable<z.ZodString>,
+                z.ZodObject<
+                  {
+                    pid: z.ZodString;
+                    gmax: z.ZodOptional<z.ZodBoolean>;
+                    shinyLocked: z.ZodOptional<z.ZodBoolean>;
+                    shiny: z.ZodOptional<z.ZodBoolean>;
+                  },
+                  "strip",
+                  z.ZodTypeAny,
+                  {
+                    pid: string;
+                    gmax?: boolean | undefined;
+                    shinyLocked?: boolean | undefined;
+                    shiny?: boolean | undefined;
+                  },
+                  {
+                    pid: string;
+                    gmax?: boolean | undefined;
+                    shinyLocked?: boolean | undefined;
+                    shiny?: boolean | undefined;
+                  }
+                >,
+              ]
+            >,
+            "many"
+          >;
+        },
+        "strip",
+        z.ZodTypeAny,
+        {
+          pokemon: (
+            | string
+            | {
+                pid: string;
+                gmax?: boolean | undefined;
+                shinyLocked?: boolean | undefined;
+                shiny?: boolean | undefined;
+              }
+            | null
+          )[];
+          title?: string | undefined;
+        },
+        {
+          pokemon: (
+            | string
+            | {
+                pid: string;
+                gmax?: boolean | undefined;
+                shinyLocked?: boolean | undefined;
+                shiny?: boolean | undefined;
+              }
+            | null
+          )[];
+          title?: string | undefined;
+        }
+      >,
+      "many"
+    >;
+    isHidden: z.ZodOptional<z.ZodBoolean>;
+  },
+  "strip",
+  z.ZodTypeAny,
+  {
+    id: string;
+    name: string;
+    gameSet: string;
+    legacyId: string;
+    version: number;
+    description: string;
+    boxes: {
+      pokemon: (
+        | string
+        | {
+            pid: string;
+            gmax?: boolean | undefined;
+            shinyLocked?: boolean | undefined;
+            shiny?: boolean | undefined;
+          }
+        | null
+      )[];
+      title?: string | undefined;
+    }[];
+    isHidden?: boolean | undefined;
+  },
+  {
+    id: string;
+    name: string;
+    gameSet: string;
+    legacyId: string;
+    version: number;
+    description: string;
+    boxes: {
+      pokemon: (
+        | string
+        | {
+            pid: string;
+            gmax?: boolean | undefined;
+            shinyLocked?: boolean | undefined;
+            shiny?: boolean | undefined;
+          }
+        | null
+      )[];
+      title?: string | undefined;
+    }[];
+    isHidden?: boolean | undefined;
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.characteristics",
+      "kind": "variable",
+      "line": 1372,
+      "name": "characteristics",
+      "signature": "const characteristics: {
+  id: string;
+  description: string;
+  highestStat: "hp" | "atk" | "def" | "spa" | "spd" | "spe" | "acc" | "eva";
+  ivs: number[];
+}[];",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.characteristicSchema",
+      "kind": "variable",
+      "line": 269,
+      "name": "characteristicSchema",
+      "signature": "const characteristicSchema: z.ZodObject<
+  {
+    id: z.ZodString;
+    description: z.ZodString;
+    highestStat: z.ZodEnum<
+      ["hp", "atk", "def", "spa", "spd", "spe", "acc", "eva"]
+    >;
+    ivs: z.ZodArray<z.ZodNumber, "many">;
+  },
+  "strip",
+  z.ZodTypeAny,
+  {
+    id: string;
+    description: string;
+    highestStat: "hp" | "atk" | "def" | "spa" | "spd" | "spe" | "acc" | "eva";
+    ivs: number[];
+  },
+  {
+    id: string;
+    description: string;
+    highestStat: "hp" | "atk" | "def" | "spa" | "spd" | "spe" | "acc" | "eva";
+    ivs: number[];
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.characteristicsMap",
+      "kind": "variable",
+      "line": 1459,
+      "name": "characteristicsMap",
+      "signature": "const characteristicsMap: Map<
+  string,
+  {
+    id: string;
+    description: string;
+    highestStat: "hp" | "atk" | "def" | "spa" | "spd" | "spe" | "acc" | "eva";
+    ivs: number[];
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.characterSchema",
+      "kind": "variable",
+      "line": 257,
+      "name": "characterSchema",
+      "signature": "const characterSchema: z.ZodObject<
+  { id: z.ZodString; name: z.ZodString },
+  "strip",
+  z.ZodTypeAny,
+  { id: string; name: string },
+  { id: string; name: string }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.colorSchema",
+      "kind": "variable",
+      "line": 287,
+      "name": "colorSchema",
+      "signature": "const colorSchema: z.ZodObject<
+  { id: z.ZodString; name: z.ZodString; color: z.ZodString },
+  "strip",
+  z.ZodTypeAny,
+  { id: string; name: string; color: string },
+  { id: string; name: string; color: string }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.defaultSearchIndexHydrator",
+      "kind": "variable",
+      "line": 1598,
+      "name": "defaultSearchIndexHydrator",
+      "signature": "const defaultSearchIndexHydrator: SearchEngineIndexHydrator<Entity>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.descriptionSchema",
+      "kind": "variable",
+      "line": 305,
+      "name": "descriptionSchema",
+      "signature": "const descriptionSchema: z.ZodString;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.detailSchema",
+      "kind": "variable",
+      "line": 306,
+      "name": "detailSchema",
+      "signature": "const detailSchema: z.ZodNullable<z.ZodString>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.gameFeatures",
+      "kind": "variable",
+      "line": 1371,
+      "name": "gameFeatures",
+      "signature": "const gameFeatures: { id: string; name: string }[];",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.gameFeatureSchema",
+      "kind": "variable",
+      "line": 322,
+      "name": "gameFeatureSchema",
+      "signature": "const gameFeatureSchema: z.ZodObject<
+  { id: z.ZodString; name: z.ZodString },
+  "strip",
+  z.ZodTypeAny,
+  { id: string; name: string },
+  { id: string; name: string }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.gameFeaturesMap",
+      "kind": "variable",
+      "line": 1455,
+      "name": "gameFeaturesMap",
+      "signature": "const gameFeaturesMap: Map<string, { id: string; name: string }>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.gameSchema",
+      "kind": "variable",
+      "line": 334,
+      "name": "gameSchema",
+      "signature": "const gameSchema: z.ZodObject<
+  {
+    id: z.ZodString;
+    name: z.ZodString;
+    fullName: z.ZodOptional<z.ZodString>;
+    generation: z.ZodNumber;
+    type: z.ZodEnum<["superset", "set", "game", "dlc"]>;
+    gameSet: z.ZodNullable<z.ZodString>;
+    gameSuperSet: z.ZodNullable<z.ZodString>;
+    codename: z.ZodNullable<z.ZodString>;
+    releaseDate: z.ZodString;
+    platforms: z.ZodArray<
+      z.ZodEnum<["gb", "gbc", "gba", "nds", "3ds", "switch", "mobile"]>,
+      "many"
+    >;
+    region: z.ZodNullable<z.ZodString>;
+    originMark: z.ZodNullable<z.ZodString>;
+    pokedexes: z.ZodArray<z.ZodString, "many">;
+    features: z.ZodObject<
+      {
+        training: z.ZodBoolean;
+        shiny: z.ZodBoolean;
+        items: z.ZodBoolean;
+        gender: z.ZodBoolean;
+        nature: z.ZodBoolean;
+        ball: z.ZodBoolean;
+        mega: z.ZodBoolean;
+        zmove: z.ZodBoolean;
+        gmax: z.ZodBoolean;
+        alpha: z.ZodBoolean;
+        tera: z.ZodBoolean;
+        ribbons: z.ZodBoolean;
+        marks: z.ZodBoolean;
+      },
+      "strip",
+      z.ZodTypeAny,
+      {
+        gmax: boolean;
+        shiny: boolean;
+        training: boolean;
+        items: boolean;
+        gender: boolean;
+        nature: boolean;
+        ball: boolean;
+        mega: boolean;
+        zmove: boolean;
+        alpha: boolean;
+        tera: boolean;
+        ribbons: boolean;
+        marks: boolean;
+      },
+      {
+        gmax: boolean;
+        shiny: boolean;
+        training: boolean;
+        items: boolean;
+        gender: boolean;
+        nature: boolean;
+        ball: boolean;
+        mega: boolean;
+        zmove: boolean;
+        alpha: boolean;
+        tera: boolean;
+        ribbons: boolean;
+        marks: boolean;
+      }
+    >;
+    storage: z.ZodObject<
+      { numBoxes: z.ZodNumber; boxCapacity: z.ZodNumber },
+      "strip",
+      z.ZodTypeAny,
+      { numBoxes: number; boxCapacity: number },
+      { numBoxes: number; boxCapacity: number }
+    >;
+  },
+  "strip",
+  z.ZodTypeAny,
+  {
+    id: string;
+    name: string;
+    type: "set" | "superset" | "game" | "dlc";
+    generation: number;
+    gameSet: string | null;
+    gameSuperSet: string | null;
+    codename: string | null;
+    releaseDate: string;
+    platforms: ("gb" | "gbc" | "gba" | "nds" | "3ds" | "switch" | "mobile")[];
+    region: string | null;
+    originMark: string | null;
+    pokedexes: string[];
+    features: {
+      gmax: boolean;
+      shiny: boolean;
+      training: boolean;
+      items: boolean;
+      gender: boolean;
+      nature: boolean;
+      ball: boolean;
+      mega: boolean;
+      zmove: boolean;
+      alpha: boolean;
+      tera: boolean;
+      ribbons: boolean;
+      marks: boolean;
+    };
+    storage: { numBoxes: number; boxCapacity: number };
+    fullName?: string | undefined;
+  },
+  {
+    id: string;
+    name: string;
+    type: "set" | "superset" | "game" | "dlc";
+    generation: number;
+    gameSet: string | null;
+    gameSuperSet: string | null;
+    codename: string | null;
+    releaseDate: string;
+    platforms: ("gb" | "gbc" | "gba" | "nds" | "3ds" | "switch" | "mobile")[];
+    region: string | null;
+    originMark: string | null;
+    pokedexes: string[];
+    features: {
+      gmax: boolean;
+      shiny: boolean;
+      training: boolean;
+      items: boolean;
+      gender: boolean;
+      nature: boolean;
+      ball: boolean;
+      mega: boolean;
+      zmove: boolean;
+      alpha: boolean;
+      tera: boolean;
+      ribbons: boolean;
+      marks: boolean;
+    };
+    storage: { numBoxes: number; boxCapacity: number };
+    fullName?: string | undefined;
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.generationSchema",
+      "kind": "variable",
+      "line": 304,
+      "name": "generationSchema",
+      "signature": "const generationSchema: z.ZodNumber;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.hexColorSchema",
+      "kind": "variable",
+      "line": 307,
+      "name": "hexColorSchema",
+      "signature": "const hexColorSchema: z.ZodString;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.itemCategorySchema",
+      "kind": "variable",
+      "line": 470,
+      "name": "itemCategorySchema",
+      "signature": "const itemCategorySchema: z.ZodEnum<
+  [
+    "ball",
+    "medicine",
+    "battle",
+    "berry",
+    "holdable",
+    "evolution",
+    "machine",
+    "treasure",
+    "ingredient",
+    "key",
+    "other",
+  ]
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.itemSchema",
+      "kind": "variable",
+      "line": 472,
+      "name": "itemSchema",
+      "signature": "const itemSchema: z.ZodObject<
+  {
+    id: z.ZodString;
+    name: z.ZodString;
+    psName: z.ZodString;
+    generation: z.ZodNumber;
+    desc: z.ZodNullable<z.ZodString>;
+    shortDesc: z.ZodString;
+    category: z.ZodEnum<
+      [
+        "ball",
+        "medicine",
+        "battle",
+        "berry",
+        "holdable",
+        "evolution",
+        "machine",
+        "treasure",
+        "ingredient",
+        "key",
+        "other",
+      ]
+    >;
+  },
+  "strip",
+  z.ZodTypeAny,
+  {
+    id: string;
+    name: string;
+    psName: string;
+    generation: number;
+    desc: string | null;
+    shortDesc: string;
+    category:
+      | "ball"
+      | "medicine"
+      | "battle"
+      | "berry"
+      | "holdable"
+      | "evolution"
+      | "machine"
+      | "treasure"
+      | "ingredient"
+      | "key"
+      | "other";
+  },
+  {
+    id: string;
+    name: string;
+    psName: string;
+    generation: number;
+    desc: string | null;
+    shortDesc: string;
+    category:
+      | "ball"
+      | "medicine"
+      | "battle"
+      | "berry"
+      | "holdable"
+      | "evolution"
+      | "machine"
+      | "treasure"
+      | "ingredient"
+      | "key"
+      | "other";
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.languageSchema",
+      "kind": "variable",
+      "line": 499,
+      "name": "languageSchema",
+      "signature": "const languageSchema: z.ZodObject<
+  {
+    id: z.ZodString;
+    name: z.ZodString;
+    isoCode: z.ZodString;
+    locale: z.ZodNullable<z.ZodString>;
+    urlSlug: z.ZodString;
+  },
+  "strip",
+  z.ZodTypeAny,
+  {
+    id: string;
+    name: string;
+    isoCode: string;
+    locale: string | null;
+    urlSlug: string;
+  },
+  {
+    id: string;
+    name: string;
+    isoCode: string;
+    locale: string | null;
+    urlSlug: string;
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.locationSchema",
+      "kind": "variable",
+      "line": 520,
+      "name": "locationSchema",
+      "signature": "const locationSchema: z.ZodObject<
+  {
+    id: z.ZodString;
+    name: z.ZodString;
+    gameIds: z.ZodUnion<[z.ZodArray<z.ZodString, "many">, z.ZodLiteral<"*">]>;
+  },
+  "strip",
+  z.ZodTypeAny,
+  {
+    id: string;
+    name: string;
+    gameIds: (string[] | "*") & (string[] | "*" | undefined);
+  },
+  {
+    id: string;
+    name: string;
+    gameIds: (string[] | "*") & (string[] | "*" | undefined);
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.markSchema",
+      "kind": "variable",
+      "line": 535,
+      "name": "markSchema",
+      "signature": "const markSchema: z.ZodObject<
+  {
+    id: z.ZodString;
+    name: z.ZodString;
+    title: z.ZodString;
+    generation: z.ZodNumber;
+    desc: z.ZodString;
+    conditions: z.ZodString;
+    chance: z.ZodString;
+    chanceCharm: z.ZodString;
+  },
+  "strip",
+  z.ZodTypeAny,
+  {
+    id: string;
+    name: string;
+    generation: number;
+    desc: string;
+    title: string;
+    conditions: string;
+    chance: string;
+    chanceCharm: string;
+  },
+  {
+    id: string;
+    name: string;
+    generation: number;
+    desc: string;
+    title: string;
+    conditions: string;
+    chance: string;
+    chanceCharm: string;
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.moveSchema",
+      "kind": "variable",
+      "line": 565,
+      "name": "moveSchema",
+      "signature": "const moveSchema: z.ZodObject<
+  {
+    id: z.ZodString;
+    name: z.ZodString;
+    psName: z.ZodString;
+    generation: z.ZodNumber;
+    desc: z.ZodNullable<z.ZodString>;
+    shortDesc: z.ZodString;
+    type: z.ZodString;
+    power: z.ZodNumber;
+    accuracy: z.ZodNumber;
+    pp: z.ZodNumber;
+    category: z.ZodEnum<["physical", "special", "status"]>;
+    priority: z.ZodNumber;
+    isZ: z.ZodBoolean;
+    isGmax: z.ZodBoolean;
+  },
+  "strip",
+  z.ZodTypeAny,
+  {
+    id: string;
+    name: string;
+    type: string;
+    psName: string;
+    generation: number;
+    desc: string | null;
+    shortDesc: string;
+    category: "status" | "physical" | "special";
+    power: number;
+    accuracy: number;
+    pp: number;
+    priority: number;
+    isZ: boolean;
+    isGmax: boolean;
+  },
+  {
+    id: string;
+    name: string;
+    type: string;
+    psName: string;
+    generation: number;
+    desc: string | null;
+    shortDesc: string;
+    category: "status" | "physical" | "special";
+    power: number;
+    accuracy: number;
+    pp: number;
+    priority: number;
+    isZ: boolean;
+    isGmax: boolean;
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.nameSchema",
+      "kind": "variable",
+      "line": 302,
+      "name": "nameSchema",
+      "signature": "const nameSchema: z.ZodString;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.natureSchema",
+      "kind": "variable",
+      "line": 613,
+      "name": "natureSchema",
+      "signature": "const natureSchema: z.ZodObject<
+  {
+    id: z.ZodString;
+    name: z.ZodString;
+    raises: z.ZodNullable<
+      z.ZodEnum<["hp", "atk", "def", "spa", "spd", "spe", "acc", "eva"]>
+    >;
+    lowers: z.ZodNullable<
+      z.ZodEnum<["hp", "atk", "def", "spa", "spd", "spe", "acc", "eva"]>
+    >;
+    berry: z.ZodNullable<z.ZodString>;
+  },
+  "strip",
+  z.ZodTypeAny,
+  {
+    id: string;
+    name: string;
+    berry: string | null;
+    raises: "hp" | "atk" | "def" | "spa" | "spd" | "spe" | "acc" | "eva" | null;
+    lowers: "hp" | "atk" | "def" | "spa" | "spd" | "spe" | "acc" | "eva" | null;
+  },
+  {
+    id: string;
+    name: string;
+    berry: string | null;
+    raises: "hp" | "atk" | "def" | "spa" | "spd" | "spe" | "acc" | "eva" | null;
+    lowers: "hp" | "atk" | "def" | "spa" | "spd" | "spe" | "acc" | "eva" | null;
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.originMarkSchema",
+      "kind": "variable",
+      "line": 634,
+      "name": "originMarkSchema",
+      "signature": "const originMarkSchema: z.ZodObject<
+  { id: z.ZodString; name: z.ZodString },
+  "strip",
+  z.ZodTypeAny,
+  { id: string; name: string },
+  { id: string; name: string }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.PKM_LATEST_GAMESET",
+      "kind": "variable",
+      "line": 1657,
+      "name": "PKM_LATEST_GAMESET",
+      "signature": "const PKM_LATEST_GAMESET: string;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.PKM_LATEST_GENERATION",
+      "kind": "variable",
+      "line": 1656,
+      "name": "PKM_LATEST_GENERATION",
+      "signature": "const PKM_LATEST_GENERATION: number;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.PKM_LATEST_POKEDEX",
+      "kind": "variable",
+      "line": 1659,
+      "name": "PKM_LATEST_POKEDEX",
+      "signature": "const PKM_LATEST_POKEDEX: string;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.PKM_LATEST_REGION",
+      "kind": "variable",
+      "line": 1658,
+      "name": "PKM_LATEST_REGION",
+      "signature": "const PKM_LATEST_REGION: string;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.PKM_SWITCH_GAMESET_IDS",
+      "kind": "variable",
+      "line": 1660,
+      "name": "PKM_SWITCH_GAMESET_IDS",
+      "signature": "const PKM_SWITCH_GAMESET_IDS: string[];",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokedexEntrySchema",
+      "kind": "variable",
+      "line": 666,
+      "name": "pokedexEntrySchema",
+      "signature": "const pokedexEntrySchema: z.ZodObject<
+  { id: z.ZodString; dexNum: z.ZodOptional<z.ZodNumber>; isForm: z.ZodBoolean },
+  "strip",
+  z.ZodTypeAny,
+  { id: string; isForm: boolean; dexNum?: number | undefined },
+  { id: string; isForm: boolean; dexNum?: number | undefined }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokedexesIndex",
+      "kind": "variable",
+      "line": 1369,
+      "name": "pokedexesIndex",
+      "signature": "const pokedexesIndex: {
+  id: string;
+  name: string;
+  region: string;
+  baseDex: string;
+  pokeApiId?: number;
+}[];",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokedexesIndexMap",
+      "kind": "variable",
+      "line": 1441,
+      "name": "pokedexesIndexMap",
+      "signature": "const pokedexesIndexMap: Map<
+  string,
+  {
+    id: string;
+    name: string;
+    region: string | null;
+    baseDex: string | null;
+    pokeApiId?: number | undefined;
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokedexItemIndexSchema",
+      "kind": "variable",
+      "line": 646,
+      "name": "pokedexItemIndexSchema",
+      "signature": "const pokedexItemIndexSchema: z.ZodObject<
+  {
+    id: z.ZodString;
+    name: z.ZodString;
+    region: z.ZodNullable<z.ZodString>;
+    baseDex: z.ZodNullable<z.ZodString>;
+    pokeApiId: z.ZodOptional<z.ZodNumber>;
+  },
+  "strict",
+  z.ZodTypeAny,
+  {
+    id: string;
+    name: string;
+    region: string | null;
+    baseDex: string | null;
+    pokeApiId?: number | undefined;
+  },
+  {
+    id: string;
+    name: string;
+    region: string | null;
+    baseDex: string | null;
+    pokeApiId?: number | undefined;
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokedexSchema",
+      "kind": "variable",
+      "line": 679,
+      "name": "pokedexSchema",
+      "signature": "const pokedexSchema: z.ZodObject<
+  {
+    id: z.ZodString;
+    name: z.ZodString;
+    region: z.ZodNullable<z.ZodString>;
+    generation: z.ZodNumber;
+    gameIds: z.ZodArray<z.ZodString, "many">;
+    baseDex: z.ZodNullable<z.ZodString>;
+    pokeApiId: z.ZodOptional<z.ZodNumber>;
+    entries: z.ZodArray<
+      z.ZodObject<
+        {
+          id: z.ZodString;
+          dexNum: z.ZodOptional<z.ZodNumber>;
+          isForm: z.ZodBoolean;
+        },
+        "strip",
+        z.ZodTypeAny,
+        { id: string; isForm: boolean; dexNum?: number | undefined },
+        { id: string; isForm: boolean; dexNum?: number | undefined }
+      >,
+      "many"
+    >;
+  },
+  "strip",
+  z.ZodTypeAny,
+  {
+    id: string;
+    name: string;
+    entries: { id: string; isForm: boolean; dexNum?: number | undefined }[];
+    generation: number;
+    region: string | null;
+    gameIds: string[];
+    baseDex: string | null;
+    pokeApiId?: number | undefined;
+  },
+  {
+    id: string;
+    name: string;
+    entries: { id: string; isForm: boolean; dexNum?: number | undefined }[];
+    generation: number;
+    region: string | null;
+    gameIds: string[];
+    baseDex: string | null;
+    pokeApiId?: number | undefined;
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokemonColors",
+      "kind": "variable",
+      "line": 1362,
+      "name": "pokemonColors",
+      "signature": "const pokemonColors: { id: string; name: string; color: string }[];",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokemonColorsMap",
+      "kind": "variable",
+      "line": 1373,
+      "name": "pokemonColorsMap",
+      "signature": "const pokemonColorsMap: Map<
+  string,
+  { id: string; name: string; color: string }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokemonCompactSchema",
+      "kind": "variable",
+      "line": 1059,
+      "name": "pokemonCompactSchema",
+      "signature": "const pokemonCompactSchema: z.ZodObject<
+  Pick<
+    {
+      id: z.ZodString;
+      nid: z.ZodString;
+      dexNum: z.ZodNumber;
+      formId: z.ZodNullable<z.ZodString>;
+      name: z.ZodString;
+      formName: z.ZodNullable<z.ZodString>;
+      region: z.ZodString;
+      generation: z.ZodNumber;
+      type1: z.ZodString;
+      type2: z.ZodNullable<z.ZodString>;
+      teraType: z.ZodNullable<z.ZodString>;
+      color: z.ZodString;
+      abilities: z.ZodObject<
+        {
+          primary: z.ZodString;
+          secondary: z.ZodNullable<z.ZodString>;
+          hidden: z.ZodNullable<z.ZodString>;
+        },
+        "strict",
+        z.ZodTypeAny,
+        { primary: string; secondary: string | null; hidden: string | null },
+        { primary: string; secondary: string | null; hidden: string | null }
+      >;
+      isDefault: z.ZodBoolean;
+      isForm: z.ZodBoolean;
+      isLegendary: z.ZodBoolean;
+      isMythical: z.ZodBoolean;
+      isUltraBeast: z.ZodBoolean;
+      ultraBeastCode: z.ZodNullable<z.ZodString>;
+      isParadox: z.ZodOptional<z.ZodBoolean>;
+      paradoxSpecies: z.ZodOptional<
+        z.ZodNullable<z.ZodArray<z.ZodString, "many">>
+      >;
+      isConvergent: z.ZodOptional<z.ZodBoolean>;
+      convergentSpecies: z.ZodOptional<
+        z.ZodNullable<z.ZodArray<z.ZodString, "many">>
+      >;
+      isSpecialAbilityForm: z.ZodBoolean;
+      isCosmeticForm: z.ZodBoolean;
+      isFemaleForm: z.ZodBoolean;
+      hasGenderDifferences: z.ZodBoolean;
+      isBattleOnlyForm: z.ZodBoolean;
+      isSwitchableForm: z.ZodBoolean;
+      isFusion: z.ZodBoolean;
+      fusedWith: z.ZodNullable<z.ZodArray<z.ZodString, "many">>;
+      isMega: z.ZodBoolean;
+      isPrimal: z.ZodBoolean;
+      isGmax: z.ZodBoolean;
+      isRegional: z.ZodBoolean;
+      canGmax: z.ZodBoolean;
+      canDynamax: z.ZodBoolean;
+      canBeAlpha: z.ZodBoolean;
+      debutIn: z.ZodString;
+      obtainableIn: z.ZodArray<z.ZodString, "many">;
+      versionExclusiveIn: z.ZodArray<z.ZodString, "many">;
+      eventOnlyIn: z.ZodArray<z.ZodString, "many">;
+      storableIn: z.ZodArray<z.ZodString, "many">;
+      registrableIn: z.ZodArray<z.ZodString, "many">;
+      shinyReleased: z.ZodBoolean;
+      shinyBase: z.ZodNullable<z.ZodString>;
+      baseStats: z.ZodObject<
+        {
+          hp: z.ZodNumber;
+          atk: z.ZodNumber;
+          def: z.ZodNumber;
+          spa: z.ZodNumber;
+          spd: z.ZodNumber;
+          spe: z.ZodNumber;
+        },
+        "strict",
+        z.ZodTypeAny,
+        {
+          hp: number;
+          atk: number;
+          def: number;
+          spa: number;
+          spd: number;
+          spe: number;
+        },
+        {
+          hp: number;
+          atk: number;
+          def: number;
+          spa: number;
+          spd: number;
+          spe: number;
+        }
+      >;
+      weight: z.ZodNumber;
+      height: z.ZodNumber;
+      maleRate: z.ZodNumber;
+      femaleRate: z.ZodNumber;
+      baseSpecies: z.ZodNullable<z.ZodString>;
+      baseForms: z.ZodArray<z.ZodString, "many">;
+      forms: z.ZodArray<z.ZodString, "many">;
+      family: z.ZodOptional<z.ZodNullable<z.ZodString>>;
+      evolvesFrom: z.ZodNullable<
+        z.ZodObject<
+          {
+            pokemon: z.ZodOptional<z.ZodNullable<z.ZodString>>;
+            level: z.ZodOptional<z.ZodNumber>;
+            item: z.ZodOptional<z.ZodNullable<z.ZodString>>;
+            move: z.ZodOptional<z.ZodNullable<z.ZodString>>;
+            type: z.ZodOptional<z.ZodNullable<z.ZodString>>;
+            region: z.ZodOptional<z.ZodNullable<z.ZodString>>;
+            ability: z.ZodOptional<z.ZodNullable<z.ZodString>>;
+            condition: z.ZodOptional<z.ZodNullable<z.ZodString>>;
+          },
+          "strict",
+          z.ZodTypeAny,
+          {
+            pokemon?: string | null | undefined;
+            level?: number | undefined;
+            item?: string | null | undefined;
+            move?: string | null | undefined;
+            type?: string | null | undefined;
+            region?: string | null | undefined;
+            ability?: string | null | undefined;
+            condition?: string | null | undefined;
+          },
+          {
+            pokemon?: string | null | undefined;
+            level?: number | undefined;
+            item?: string | null | undefined;
+            move?: string | null | undefined;
+            type?: string | null | undefined;
+            region?: string | null | undefined;
+            ability?: string | null | undefined;
+            condition?: string | null | undefined;
+          }
+        >
+      >;
+      refs: z.ZodObject<
+        {
+          smogon: z.ZodString;
+          showdown: z.ZodString;
+          showdownName: z.ZodString;
+          serebii: z.ZodString;
+          bulbapedia: z.ZodString;
+        },
+        "strict",
+        z.ZodTypeAny,
+        {
+          smogon: string;
+          showdown: string;
+          showdownName: string;
+          serebii: string;
+          bulbapedia: string;
+        },
+        {
+          smogon: string;
+          showdown: string;
+          showdownName: string;
+          serebii: string;
+          bulbapedia: string;
+        }
+      >;
+    },
+    | "id"
+    | "name"
+    | "generation"
+    | "color"
+    | "region"
+    | "dexNum"
+    | "isForm"
+    | "nid"
+    | "formId"
+    | "formName"
+    | "type1"
+    | "type2"
+    | "isDefault"
+    | "isSpecialAbilityForm"
+    | "isCosmeticForm"
+    | "isFemaleForm"
+    | "storableIn"
+    | "baseSpecies"
+  >,
+  "strict",
+  z.ZodTypeAny,
+  {
+    id: string;
+    name: string;
+    generation: number;
+    color: string;
+    region: string;
+    dexNum: number;
+    isForm: boolean;
+    nid: string;
+    formId: string | null;
+    formName: string | null;
+    type1: string;
+    type2: string | null;
+    isDefault: boolean;
+    isSpecialAbilityForm: boolean;
+    isCosmeticForm: boolean;
+    isFemaleForm: boolean;
+    storableIn: string[];
+    baseSpecies: string | null;
+  },
+  {
+    id: string;
+    name: string;
+    generation: number;
+    color: string;
+    region: string;
+    dexNum: number;
+    isForm: boolean;
+    nid: string;
+    formId: string | null;
+    formName: string | null;
+    type1: string;
+    type2: string | null;
+    isDefault: boolean;
+    isSpecialAbilityForm: boolean;
+    isCosmeticForm: boolean;
+    isFemaleForm: boolean;
+    storableIn: string[];
+    baseSpecies: string | null;
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokemonGames",
+      "kind": "variable",
+      "line": 1368,
+      "name": "pokemonGames",
+      "signature": "const pokemonGames: {
+  id: string;
+  name: string;
+  type: "superset" | "set" | "game" | "dlc";
+  generation: number;
+  gameSet: string;
+  gameSuperSet: string;
+  codename: string;
+  releaseDate: string;
+  platforms: ("gb" | "gbc" | "gba" | "nds" | "3ds" | "switch" | "mobile")[];
+  region: string;
+  originMark: string;
+  pokedexes: string[];
+  features: {
+    gmax: boolean;
+    shiny: boolean;
+    training: boolean;
+    items: boolean;
+    gender: boolean;
+    nature: boolean;
+    ball: boolean;
+    mega: boolean;
+    zmove: boolean;
+    alpha: boolean;
+    tera: boolean;
+    ribbons: boolean;
+    marks: boolean;
+  };
+  storage: { numBoxes: number; boxCapacity: number };
+  fullName?: string;
+}[];",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokemonGamesMap",
+      "kind": "variable",
+      "line": 1407,
+      "name": "pokemonGamesMap",
+      "signature": "const pokemonGamesMap: Map<
+  string,
+  {
+    id: string;
+    name: string;
+    type: "set" | "superset" | "game" | "dlc";
+    generation: number;
+    gameSet: string | null;
+    gameSuperSet: string | null;
+    codename: string | null;
+    releaseDate: string;
+    platforms: ("gb" | "gbc" | "gba" | "nds" | "3ds" | "switch" | "mobile")[];
+    region: string | null;
+    originMark: string | null;
+    pokedexes: string[];
+    features: {
+      gmax: boolean;
+      shiny: boolean;
+      training: boolean;
+      items: boolean;
+      gender: boolean;
+      nature: boolean;
+      ball: boolean;
+      mega: boolean;
+      zmove: boolean;
+      alpha: boolean;
+      tera: boolean;
+      ribbons: boolean;
+      marks: boolean;
+    };
+    storage: { numBoxes: number; boxCapacity: number };
+    fullName?: string | undefined;
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokemonIndex",
+      "kind": "variable",
+      "line": 1370,
+      "name": "pokemonIndex",
+      "signature": "const pokemonIndex: {
+  id: string;
+  name: string;
+  region: string;
+  isForm: boolean;
+  nid: string;
+}[];",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokemonIndexItemSchema",
+      "kind": "variable",
+      "line": 730,
+      "name": "pokemonIndexItemSchema",
+      "signature": "const pokemonIndexItemSchema: z.ZodObject<
+  {
+    id: z.ZodString;
+    nid: z.ZodString;
+    name: z.ZodString;
+    region: z.ZodString;
+    isForm: z.ZodBoolean;
+  },
+  "strict",
+  z.ZodTypeAny,
+  { id: string; name: string; region: string; isForm: boolean; nid: string },
+  { id: string; name: string; region: string; isForm: boolean; nid: string }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokemonIndexMap",
+      "kind": "variable",
+      "line": 1448,
+      "name": "pokemonIndexMap",
+      "signature": "const pokemonIndexMap: Map<
+  string,
+  { id: string; name: string; region: string; isForm: boolean; nid: string }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokemonLanguages",
+      "kind": "variable",
+      "line": 1363,
+      "name": "pokemonLanguages",
+      "signature": "const pokemonLanguages: {
+  id: string;
+  name: string;
+  isoCode: string;
+  locale: string;
+  urlSlug: string;
+}[];",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokemonLanguagesMap",
+      "kind": "variable",
+      "line": 1378,
+      "name": "pokemonLanguagesMap",
+      "signature": "const pokemonLanguagesMap: Map<
+  string,
+  {
+    id: string;
+    name: string;
+    isoCode: string;
+    locale: string | null;
+    urlSlug: string;
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokemonNatures",
+      "kind": "variable",
+      "line": 1364,
+      "name": "pokemonNatures",
+      "signature": "const pokemonNatures: {
+  id: string;
+  name: string;
+  berry: string;
+  raises: "hp" | "atk" | "def" | "spa" | "spd" | "spe" | "acc" | "eva";
+  lowers: "hp" | "atk" | "def" | "spa" | "spd" | "spe" | "acc" | "eva";
+}[];",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokemonNaturesMap",
+      "kind": "variable",
+      "line": 1385,
+      "name": "pokemonNaturesMap",
+      "signature": "const pokemonNaturesMap: Map<
+  string,
+  {
+    id: string;
+    name: string;
+    berry: string | null;
+    raises: "hp" | "atk" | "def" | "spa" | "spd" | "spe" | "acc" | "eva" | null;
+    lowers: "hp" | "atk" | "def" | "spa" | "spd" | "spe" | "acc" | "eva" | null;
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokemonOriginMarks",
+      "kind": "variable",
+      "line": 1365,
+      "name": "pokemonOriginMarks",
+      "signature": "const pokemonOriginMarks: { id: string; name: string }[];",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokemonOriginMarksMap",
+      "kind": "variable",
+      "line": 1392,
+      "name": "pokemonOriginMarksMap",
+      "signature": "const pokemonOriginMarksMap: Map<string, { id: string; name: string }>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokemonRegions",
+      "kind": "variable",
+      "line": 1366,
+      "name": "pokemonRegions",
+      "signature": "const pokemonRegions: { id: string; name: string; generations: number[] }[];",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokemonRegionsMap",
+      "kind": "variable",
+      "line": 1396,
+      "name": "pokemonRegionsMap",
+      "signature": "const pokemonRegionsMap: Map<
+  string,
+  { id: string; name: string; generations: number[] }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokemonSchema",
+      "kind": "variable",
+      "line": 750,
+      "name": "pokemonSchema",
+      "signature": "const pokemonSchema: z.ZodObject<
+  {
+    id: z.ZodString;
+    nid: z.ZodString;
+    dexNum: z.ZodNumber;
+    formId: z.ZodNullable<z.ZodString>;
+    name: z.ZodString;
+    formName: z.ZodNullable<z.ZodString>;
+    region: z.ZodString;
+    generation: z.ZodNumber;
+    type1: z.ZodString;
+    type2: z.ZodNullable<z.ZodString>;
+    teraType: z.ZodNullable<z.ZodString>;
+    color: z.ZodString;
+    abilities: z.ZodObject<
+      {
+        primary: z.ZodString;
+        secondary: z.ZodNullable<z.ZodString>;
+        hidden: z.ZodNullable<z.ZodString>;
+      },
+      "strict",
+      z.ZodTypeAny,
+      { primary: string; secondary: string | null; hidden: string | null },
+      { primary: string; secondary: string | null; hidden: string | null }
+    >;
+    isDefault: z.ZodBoolean;
+    isForm: z.ZodBoolean;
+    isLegendary: z.ZodBoolean;
+    isMythical: z.ZodBoolean;
+    isUltraBeast: z.ZodBoolean;
+    ultraBeastCode: z.ZodNullable<z.ZodString>;
+    isParadox: z.ZodOptional<z.ZodBoolean>;
+    paradoxSpecies: z.ZodOptional<
+      z.ZodNullable<z.ZodArray<z.ZodString, "many">>
+    >;
+    isConvergent: z.ZodOptional<z.ZodBoolean>;
+    convergentSpecies: z.ZodOptional<
+      z.ZodNullable<z.ZodArray<z.ZodString, "many">>
+    >;
+    isSpecialAbilityForm: z.ZodBoolean;
+    isCosmeticForm: z.ZodBoolean;
+    isFemaleForm: z.ZodBoolean;
+    hasGenderDifferences: z.ZodBoolean;
+    isBattleOnlyForm: z.ZodBoolean;
+    isSwitchableForm: z.ZodBoolean;
+    isFusion: z.ZodBoolean;
+    fusedWith: z.ZodNullable<z.ZodArray<z.ZodString, "many">>;
+    isMega: z.ZodBoolean;
+    isPrimal: z.ZodBoolean;
+    isGmax: z.ZodBoolean;
+    isRegional: z.ZodBoolean;
+    canGmax: z.ZodBoolean;
+    canDynamax: z.ZodBoolean;
+    canBeAlpha: z.ZodBoolean;
+    debutIn: z.ZodString;
+    obtainableIn: z.ZodArray<z.ZodString, "many">;
+    versionExclusiveIn: z.ZodArray<z.ZodString, "many">;
+    eventOnlyIn: z.ZodArray<z.ZodString, "many">;
+    storableIn: z.ZodArray<z.ZodString, "many">;
+    registrableIn: z.ZodArray<z.ZodString, "many">;
+    shinyReleased: z.ZodBoolean;
+    shinyBase: z.ZodNullable<z.ZodString>;
+    baseStats: z.ZodObject<
+      {
+        hp: z.ZodNumber;
+        atk: z.ZodNumber;
+        def: z.ZodNumber;
+        spa: z.ZodNumber;
+        spd: z.ZodNumber;
+        spe: z.ZodNumber;
+      },
+      "strict",
+      z.ZodTypeAny,
+      {
+        hp: number;
+        atk: number;
+        def: number;
+        spa: number;
+        spd: number;
+        spe: number;
+      },
+      {
+        hp: number;
+        atk: number;
+        def: number;
+        spa: number;
+        spd: number;
+        spe: number;
+      }
+    >;
+    weight: z.ZodNumber;
+    height: z.ZodNumber;
+    maleRate: z.ZodNumber;
+    femaleRate: z.ZodNumber;
+    baseSpecies: z.ZodNullable<z.ZodString>;
+    baseForms: z.ZodArray<z.ZodString, "many">;
+    forms: z.ZodArray<z.ZodString, "many">;
+    family: z.ZodOptional<z.ZodNullable<z.ZodString>>;
+    evolvesFrom: z.ZodNullable<
+      z.ZodObject<
+        {
+          pokemon: z.ZodOptional<z.ZodNullable<z.ZodString>>;
+          level: z.ZodOptional<z.ZodNumber>;
+          item: z.ZodOptional<z.ZodNullable<z.ZodString>>;
+          move: z.ZodOptional<z.ZodNullable<z.ZodString>>;
+          type: z.ZodOptional<z.ZodNullable<z.ZodString>>;
+          region: z.ZodOptional<z.ZodNullable<z.ZodString>>;
+          ability: z.ZodOptional<z.ZodNullable<z.ZodString>>;
+          condition: z.ZodOptional<z.ZodNullable<z.ZodString>>;
+        },
+        "strict",
+        z.ZodTypeAny,
+        {
+          pokemon?: string | null | undefined;
+          level?: number | undefined;
+          item?: string | null | undefined;
+          move?: string | null | undefined;
+          type?: string | null | undefined;
+          region?: string | null | undefined;
+          ability?: string | null | undefined;
+          condition?: string | null | undefined;
+        },
+        {
+          pokemon?: string | null | undefined;
+          level?: number | undefined;
+          item?: string | null | undefined;
+          move?: string | null | undefined;
+          type?: string | null | undefined;
+          region?: string | null | undefined;
+          ability?: string | null | undefined;
+          condition?: string | null | undefined;
+        }
+      >
+    >;
+    refs: z.ZodObject<
+      {
+        smogon: z.ZodString;
+        showdown: z.ZodString;
+        showdownName: z.ZodString;
+        serebii: z.ZodString;
+        bulbapedia: z.ZodString;
+      },
+      "strict",
+      z.ZodTypeAny,
+      {
+        smogon: string;
+        showdown: string;
+        showdownName: string;
+        serebii: string;
+        bulbapedia: string;
+      },
+      {
+        smogon: string;
+        showdown: string;
+        showdownName: string;
+        serebii: string;
+        bulbapedia: string;
+      }
+    >;
+  },
+  "strict",
+  z.ZodTypeAny,
+  {
+    id: string;
+    name: string;
+    generation: number;
+    color: string;
+    region: string;
+    isGmax: boolean;
+    dexNum: number;
+    isForm: boolean;
+    nid: string;
+    formId: string | null;
+    formName: string | null;
+    type1: string;
+    type2: string | null;
+    teraType: string | null;
+    abilities: {
+      primary: string;
+      secondary: string | null;
+      hidden: string | null;
+    };
+    isDefault: boolean;
+    isLegendary: boolean;
+    isMythical: boolean;
+    isUltraBeast: boolean;
+    ultraBeastCode: string | null;
+    isSpecialAbilityForm: boolean;
+    isCosmeticForm: boolean;
+    isFemaleForm: boolean;
+    hasGenderDifferences: boolean;
+    isBattleOnlyForm: boolean;
+    isSwitchableForm: boolean;
+    isFusion: boolean;
+    fusedWith: string[] | null;
+    isMega: boolean;
+    isPrimal: boolean;
+    isRegional: boolean;
+    canGmax: boolean;
+    canDynamax: boolean;
+    canBeAlpha: boolean;
+    debutIn: string;
+    obtainableIn: string[];
+    versionExclusiveIn: string[];
+    eventOnlyIn: string[];
+    storableIn: string[];
+    registrableIn: string[];
+    shinyReleased: boolean;
+    shinyBase: string | null;
+    baseStats: {
+      hp: number;
+      atk: number;
+      def: number;
+      spa: number;
+      spd: number;
+      spe: number;
+    };
+    weight: number;
+    height: number;
+    maleRate: number;
+    femaleRate: number;
+    baseSpecies: string | null;
+    baseForms: string[];
+    forms: string[];
+    evolvesFrom: {
+      pokemon?: string | null | undefined;
+      level?: number | undefined;
+      item?: string | null | undefined;
+      move?: string | null | undefined;
+      type?: string | null | undefined;
+      region?: string | null | undefined;
+      ability?: string | null | undefined;
+      condition?: string | null | undefined;
+    } | null;
+    refs: {
+      smogon: string;
+      showdown: string;
+      showdownName: string;
+      serebii: string;
+      bulbapedia: string;
+    };
+    isParadox?: boolean | undefined;
+    paradoxSpecies?: string[] | null | undefined;
+    isConvergent?: boolean | undefined;
+    convergentSpecies?: string[] | null | undefined;
+    family?: string | null | undefined;
+  },
+  {
+    id: string;
+    name: string;
+    generation: number;
+    color: string;
+    region: string;
+    isGmax: boolean;
+    dexNum: number;
+    isForm: boolean;
+    nid: string;
+    formId: string | null;
+    formName: string | null;
+    type1: string;
+    type2: string | null;
+    teraType: string | null;
+    abilities: {
+      primary: string;
+      secondary: string | null;
+      hidden: string | null;
+    };
+    isDefault: boolean;
+    isLegendary: boolean;
+    isMythical: boolean;
+    isUltraBeast: boolean;
+    ultraBeastCode: string | null;
+    isSpecialAbilityForm: boolean;
+    isCosmeticForm: boolean;
+    isFemaleForm: boolean;
+    hasGenderDifferences: boolean;
+    isBattleOnlyForm: boolean;
+    isSwitchableForm: boolean;
+    isFusion: boolean;
+    fusedWith: string[] | null;
+    isMega: boolean;
+    isPrimal: boolean;
+    isRegional: boolean;
+    canGmax: boolean;
+    canDynamax: boolean;
+    canBeAlpha: boolean;
+    debutIn: string;
+    obtainableIn: string[];
+    versionExclusiveIn: string[];
+    eventOnlyIn: string[];
+    storableIn: string[];
+    registrableIn: string[];
+    shinyReleased: boolean;
+    shinyBase: string | null;
+    baseStats: {
+      hp: number;
+      atk: number;
+      def: number;
+      spa: number;
+      spd: number;
+      spe: number;
+    };
+    weight: number;
+    height: number;
+    maleRate: number;
+    femaleRate: number;
+    baseSpecies: string | null;
+    baseForms: string[];
+    forms: string[];
+    evolvesFrom: {
+      pokemon?: string | null | undefined;
+      level?: number | undefined;
+      item?: string | null | undefined;
+      move?: string | null | undefined;
+      type?: string | null | undefined;
+      region?: string | null | undefined;
+      ability?: string | null | undefined;
+      condition?: string | null | undefined;
+    } | null;
+    refs: {
+      smogon: string;
+      showdown: string;
+      showdownName: string;
+      serebii: string;
+      bulbapedia: string;
+    };
+    isParadox?: boolean | undefined;
+    paradoxSpecies?: string[] | null | undefined;
+    isConvergent?: boolean | undefined;
+    convergentSpecies?: string[] | null | undefined;
+    family?: string | null | undefined;
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokemonTypes",
+      "kind": "variable",
+      "line": 1367,
+      "name": "pokemonTypes",
+      "signature": "const pokemonTypes: {
+  id:
+    | "normal"
+    | "fire"
+    | "water"
+    | "electric"
+    | "grass"
+    | "ice"
+    | "fighting"
+    | "poison"
+    | "ground"
+    | "flying"
+    | "psychic"
+    | "bug"
+    | "rock"
+    | "ghost"
+    | "dragon"
+    | "dark"
+    | "steel"
+    | "fairy"
+    | "shadow"
+    | "stellar";
+  name: string;
+  color: string;
+  isCanonical: boolean;
+}[];",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokemonTypesMap",
+      "kind": "variable",
+      "line": 1401,
+      "name": "pokemonTypesMap",
+      "signature": "const pokemonTypesMap: Map<
+  string,
+  {
+    id:
+      | "normal"
+      | "fire"
+      | "water"
+      | "electric"
+      | "grass"
+      | "ice"
+      | "fighting"
+      | "poison"
+      | "ground"
+      | "flying"
+      | "psychic"
+      | "bug"
+      | "rock"
+      | "ghost"
+      | "dragon"
+      | "dark"
+      | "steel"
+      | "fairy"
+      | "shadow"
+      | "stellar";
+    name: string;
+    color: string;
+    isCanonical: boolean;
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokeTypeIdSchema",
+      "kind": "variable",
+      "line": 1342,
+      "name": "pokeTypeIdSchema",
+      "signature": "const pokeTypeIdSchema: z.ZodEnum<
+  [
+    "normal",
+    "fire",
+    "water",
+    "electric",
+    "grass",
+    "ice",
+    "fighting",
+    "poison",
+    "ground",
+    "flying",
+    "psychic",
+    "bug",
+    "rock",
+    "ghost",
+    "dragon",
+    "dark",
+    "steel",
+    "fairy",
+    "shadow",
+    "stellar",
+  ]
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.pokeTypeSchema",
+      "kind": "variable",
+      "line": 1343,
+      "name": "pokeTypeSchema",
+      "signature": "const pokeTypeSchema: z.ZodObject<
+  {
+    id: z.ZodEnum<
+      [
+        "normal",
+        "fire",
+        "water",
+        "electric",
+        "grass",
+        "ice",
+        "fighting",
+        "poison",
+        "ground",
+        "flying",
+        "psychic",
+        "bug",
+        "rock",
+        "ghost",
+        "dragon",
+        "dark",
+        "steel",
+        "fairy",
+        "shadow",
+        "stellar",
+      ]
+    >;
+    name: z.ZodString;
+    color: z.ZodString;
+    isCanonical: z.ZodBoolean;
+  },
+  "strip",
+  z.ZodTypeAny,
+  {
+    id:
+      | "normal"
+      | "fire"
+      | "water"
+      | "electric"
+      | "grass"
+      | "ice"
+      | "fighting"
+      | "poison"
+      | "ground"
+      | "flying"
+      | "psychic"
+      | "bug"
+      | "rock"
+      | "ghost"
+      | "dragon"
+      | "dark"
+      | "steel"
+      | "fairy"
+      | "shadow"
+      | "stellar";
+    name: string;
+    color: string;
+    isCanonical: boolean;
+  },
+  {
+    id:
+      | "normal"
+      | "fire"
+      | "water"
+      | "electric"
+      | "grass"
+      | "ice"
+      | "fighting"
+      | "poison"
+      | "ground"
+      | "flying"
+      | "psychic"
+      | "bug"
+      | "rock"
+      | "ghost"
+      | "dragon"
+      | "dark"
+      | "steel"
+      | "fairy"
+      | "shadow"
+      | "stellar";
+    name: string;
+    color: string;
+    isCanonical: boolean;
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.regionSchema",
+      "kind": "variable",
+      "line": 1303,
+      "name": "regionSchema",
+      "signature": "const regionSchema: z.ZodObject<
+  {
+    id: z.ZodString;
+    name: z.ZodString;
+    generations: z.ZodArray<z.ZodNumber, "many">;
+  },
+  "strip",
+  z.ZodTypeAny,
+  { id: string; name: string; generations: number[] },
+  { id: string; name: string; generations: number[] }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.ribbonSchema",
+      "kind": "variable",
+      "line": 1318,
+      "name": "ribbonSchema",
+      "signature": "const ribbonSchema: z.ZodObject<
+  {
+    id: z.ZodString;
+    name: z.ZodString;
+    title: z.ZodString;
+    generation: z.ZodNumber;
+    desc: z.ZodString;
+    category: z.ZodEnum<["league", "contest", "tower", "memory", "gift"]>;
+  },
+  "strip",
+  z.ZodTypeAny,
+  {
+    id: string;
+    name: string;
+    generation: number;
+    desc: string;
+    title: string;
+    category: "league" | "contest" | "tower" | "memory" | "gift";
+  },
+  {
+    id: string;
+    name: string;
+    generation: number;
+    desc: string;
+    title: string;
+    category: "league" | "contest" | "tower" | "memory" | "gift";
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.slugSchema",
+      "kind": "variable",
+      "line": 303,
+      "name": "slugSchema",
+      "signature": "const slugSchema: z.ZodString;",
+    },
+    {
+      "docs": [],
+      "file": "/@supeffective/dataset/dist/index.d.ts",
+      "id": "variable.statIdSchema",
+      "kind": "variable",
+      "line": 308,
+      "name": "statIdSchema",
+      "signature": "const statIdSchema: z.ZodEnum<
+  ["hp", "atk", "def", "spa", "spd", "spe", "acc", "eva"]
+>;",
+    },
+  ],
+  "name": "@supeffective/dataset",
+  "overview": undefined,
+  "packages": [
+    "@supeffective/dataset@2.2.2",
+    "asynckit@0.4.0",
+    "axios@1.6.7",
+    "axios-cache-interceptor@1.5.1",
+    "cache-parser@1.2.4",
+    "combined-stream@1.0.8",
+    "delayed-stream@1.0.0",
+    "fast-defer@1.1.8",
+    "follow-redirects@1.15.5",
+    "form-data@4.0.0",
+    "mime-db@1.52.0",
+    "mime-types@2.1.35",
+    "object-code@1.3.2",
+    "proxy-from-env@1.1.0",
+    "zod@3.22.4",
+  ],
+  "subpath": ".",
+  "types": "./dist/index.d.ts",
+  "version": "2.2.2",
+}
+`;

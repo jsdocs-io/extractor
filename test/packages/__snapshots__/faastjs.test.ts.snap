@@ -1,0 +1,4042 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`faastjs@8.0.64 1`] = `
+{
+  "declarations": [
+    {
+      "constructors": [],
+      "docs": [
+        "/**
+ * A line item in the cost estimate, including the resource usage metric
+ * measured and its pricing.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "class.CostMetric",
+      "kind": "class",
+      "line": 1028,
+      "methods": [
+        {
+          "docs": [
+            "/**
+     * The cost contribution of this cost metric. Equal to
+     * {@link CostMetric.pricing} * {@link CostMetric.measured}.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.CostMetric.method.cost",
+          "kind": "class-method",
+          "line": 1059,
+          "name": "cost",
+          "signature": "cost: () => number;",
+        },
+        {
+          "docs": [
+            "/**
+     * Return a string with the cost estimate for this metric, omitting
+     * comments.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.CostMetric.method.describeCostOnly",
+          "kind": "class-method",
+          "line": 1064,
+          "name": "describeCostOnly",
+          "signature": "describeCostOnly: () => string;",
+        },
+        {
+          "docs": [
+            "/** Describe this cost metric, including comments. */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.CostMetric.method.toString",
+          "kind": "class-method",
+          "line": 1066,
+          "name": "toString",
+          "signature": "toString: () => string;",
+        },
+      ],
+      "name": "CostMetric",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * An optional comment, usually providing a link to the provider's pricing
+     * page and other data.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.CostMetric.property.comment",
+          "kind": "class-property",
+          "line": 1047,
+          "name": "comment",
+          "signature": "readonly comment?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * True if this cost metric is only for informational purposes (e.g. AWS's
+     * \`logIngestion\`) and does not contribute cost.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.CostMetric.property.informationalOnly",
+          "kind": "class-property",
+          "line": 1052,
+          "name": "informationalOnly",
+          "signature": "readonly informationalOnly?: boolean;",
+        },
+        {
+          "docs": [
+            "/** The measured value of the cost metric, in units. */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.CostMetric.property.measured",
+          "kind": "class-property",
+          "line": 1036,
+          "name": "measured",
+          "signature": "readonly measured: number;",
+        },
+        {
+          "docs": [
+            "/** The name of the cost metric, e.g. \`functionCallDuration\` */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.CostMetric.property.name",
+          "kind": "class-property",
+          "line": 1030,
+          "name": "name",
+          "signature": "readonly name: string;",
+        },
+        {
+          "docs": [
+            "/** The price in USD per unit measured. */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.CostMetric.property.pricing",
+          "kind": "class-property",
+          "line": 1032,
+          "name": "pricing",
+          "signature": "readonly pricing: number;",
+        },
+        {
+          "docs": [
+            "/** The name of the units that pricing is measured in for this metric. */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.CostMetric.property.unit",
+          "kind": "class-property",
+          "line": 1034,
+          "name": "unit",
+          "signature": "readonly unit: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * The plural form of the unit name. By default the plural form will be the
+     * name of the unit with "s" appended at the end, unless the last letter is
+     * capitalized, in which case there is no plural form (e.g. "GB").
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.CostMetric.property.unitPlural",
+          "kind": "class-property",
+          "line": 1042,
+          "name": "unitPlural",
+          "signature": "readonly unitPlural?: string;",
+        },
+      ],
+      "signature": "class CostMetric {}",
+    },
+    {
+      "constructors": [],
+      "docs": [
+        "/**
+ * A summary of the costs incurred by a faast.js module at a point in time.
+ * Output of {@link FaastModule.costSnapshot}.
+ * @remarks
+ * Cost information provided by faast.js is an estimate. It is derived from
+ * internal faast.js measurements and not by consulting data provided by your
+ * cloud provider.
+ *
+ * **Faast.js does not guarantee the accuracy of cost estimates.**
+ *
+ * **Use at your own risk.**
+ *
+ * Example using AWS:
+ * \`\`\`typescript
+ * const faastModule = await faast("aws", m);
+ * try {
+ *     // Invoke faastModule.functions.*
+ * } finally {
+ *     await faastModule.cleanup();
+ *     console.log(\`Cost estimate:\`);
+ *     console.log(\`\${await faastModule.costSnapshot()}\`);
+ * }
+ * \`\`\`
+ *
+ * AWS example output:
+ * \`\`\`text
+ * Cost estimate:
+ * functionCallDuration  $0.00002813/second            0.6 second     $0.00001688    68.4%  [1]
+ * sqs                   $0.00000040/request             9 requests   $0.00000360    14.6%  [2]
+ * sns                   $0.00000050/request             5 requests   $0.00000250    10.1%  [3]
+ * functionCallRequests  $0.00000020/request             5 requests   $0.00000100     4.1%  [4]
+ * outboundDataTransfer  $0.09000000/GB         0.00000769 GB         $0.00000069     2.8%  [5]
+ * logIngestion          $0.50000000/GB                  0 GB         $0              0.0%  [6]
+ * ---------------------------------------------------------------------------------------
+ *                                                                    $0.00002467 (USD)
+ *
+ *   * Estimated using highest pricing tier for each service. Limitations apply.
+ *  ** Does not account for free tier.
+ * [1]: https://aws.amazon.com/lambda/pricing (rate = 0.00001667/(GB*second) * 1.6875 GB = 0.00002813/second)
+ * [2]: https://aws.amazon.com/sqs/pricing
+ * [3]: https://aws.amazon.com/sns/pricing
+ * [4]: https://aws.amazon.com/lambda/pricing
+ * [5]: https://aws.amazon.com/ec2/pricing/on-demand/#Data_Transfer
+ * [6]: https://aws.amazon.com/cloudwatch/pricing/ - Log ingestion costs not currently included.
+ * \`\`\`
+ *
+ * A cost snapshot contains several {@link CostMetric} values. Each \`CostMetric\`
+ * summarizes one component of the overall cost of executing the functions so
+ * far. Some cost metrics are common to all faast providers, and other metrics
+ * are provider-specific. The common metrics are:
+ *
+ * - \`functionCallDuration\`: the estimated billed CPU time (rounded to the next
+ *   100ms) consumed by completed cloud function calls. This is the metric that
+ *   usually dominates cost.
+ *
+ * - \`functionCallRequests\`: the number of invocation requests made. Most
+ *   providers charge for each invocation.
+ *
+ * Provider-specific metrics vary. For example, AWS has the following additional
+ * metrics:
+ *
+ * - \`sqs\`: AWS Simple Queueing Service. This metric captures the number of
+ *   queue requests made to insert and retrieve queued results (each 64kb chunk
+ *   is counted as an additional request). SQS is used even if
+ *   {@link CommonOptions.mode} is not set to \`"queue"\`, because it is necessary
+ *   for monitoring cloud function invocations.
+ *
+ * - \`sns\`: AWS Simple Notification Service. SNS is used to invoke Lambda
+ *   functions when {@link CommonOptions.mode} is \`"queue"\`.
+ *
+ * - \`outboundDataTransfer\`: an estimate of the network data transferred out
+ *   from the cloud provider for this faast.js module. This estimate only counts
+ *   data returned from cloud function invocations and infrastructure that
+ *   faast.js sets up. It does not count any outbound data sent by your cloud
+ *   functions that are not known to faast.js. Note that if you run faast.js on
+ *   EC2 in the same region (see {@link AwsOptions.region}), then the data
+ *   transfer costs will be zero (however, the cost snapshot will not include
+ *   EC2 costs). Also note that if your cloud function transfers data from/to S3
+ *   buckets in the same region, there is no cost as long as that data is not
+ *   returned from the function.
+ *
+ * - \`logIngestion\`: this cost metric is always zero for AWS. It is present to
+ *   remind the user that AWS charges for log data ingested by CloudWatch Logs
+ *   that are not measured by faast.js. Log entries may arrive significantly
+ *   after function execution completes, and there is no way for faast.js to
+ *   know exactly how long to wait, therefore it does not attempt to measure
+ *   this cost. In practice, if your cloud functions do not perform extensive
+ *   logging on all invocations, log ingestion costs from faast.js are likely to
+ *   be low or fall within the free tier.
+ *
+ * The Local provider has no extra metrics.
+ *
+ * Prices are retrieved dynamically from AWS and cached locally.
+ * Cached prices expire after 24h. For each cost metric, faast.js uses the
+ * highest price tier to compute estimated pricing.
+ *
+ * Cost estimates do not take free tiers into account.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "class.CostSnapshot",
+      "kind": "class",
+      "line": 1168,
+      "methods": [
+        {
+          "docs": [
+            "/**
+     * Comma separated value output for a cost snapshot.
+     * @remarks
+     * The format is "metric,unit,pricing,measured,cost,percentage,comment".
+     *
+     * Example output:
+     * \`\`\`text
+     * metric,unit,pricing,measured,cost,percentage,comment
+     * functionCallDuration,second,0.00002813,0.60000000,0.00001688,64.1% ,"https://aws.amazon.com/lambda/pricing (rate = 0.00001667/(GB*second) * 1.6875 GB = 0.00002813/second)"
+     * functionCallRequests,request,0.00000020,5,0.00000100,3.8% ,"https://aws.amazon.com/lambda/pricing"
+     * outboundDataTransfer,GB,0.09000000,0.00000844,0.00000076,2.9% ,"https://aws.amazon.com/ec2/pricing/on-demand/#Data_Transfer"
+     * sqs,request,0.00000040,13,0.00000520,19.7% ,"https://aws.amazon.com/sqs/pricing"
+     * sns,request,0.00000050,5,0.00000250,9.5% ,"https://aws.amazon.com/sns/pricing"
+     * logIngestion,GB,0.50000000,0,0,0.0% ,"https://aws.amazon.com/cloudwatch/pricing/ - Log ingestion costs not currently included."
+     * \`\`\`
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.CostSnapshot.method.csv",
+          "kind": "class-method",
+          "line": 1212,
+          "name": "csv",
+          "signature": "csv: () => string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Find a specific cost metric by name.
+     * @returns a {@link CostMetric} if found, otherwise \`undefined\`.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.CostSnapshot.method.find",
+          "kind": "class-method",
+          "line": 1219,
+          "name": "find",
+          "signature": "find: (name: string) => CostMetric | undefined;",
+        },
+        {
+          "docs": [
+            "/** A summary of all cost metrics and prices in this cost snapshot. */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.CostSnapshot.method.toString",
+          "kind": "class-method",
+          "line": 1195,
+          "name": "toString",
+          "signature": "toString: () => string;",
+        },
+        {
+          "docs": [
+            "/** Sum of cost metrics. */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.CostSnapshot.method.total",
+          "kind": "class-method",
+          "line": 1193,
+          "name": "total",
+          "signature": "total: () => number;",
+        },
+      ],
+      "name": "CostSnapshot",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * The cost metric components for this cost snapshot. See
+     * {@link CostMetric}.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.CostSnapshot.property.costMetrics",
+          "kind": "class-property",
+          "line": 1182,
+          "name": "costMetrics",
+          "signature": "readonly costMetrics: CostMetric[];",
+        },
+        {
+          "docs": [
+            "/**
+     * The options used to initialize the faast.js module where this cost
+     * snapshot was generated.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.CostSnapshot.property.options",
+          "kind": "class-property",
+          "line": 1175,
+          "name": "options",
+          "signature": "readonly options: CommonOptions | AwsOptions;",
+        },
+        {
+          "docs": [
+            "/** The {@link Provider}, e.g. "aws" */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.CostSnapshot.property.provider",
+          "kind": "class-property",
+          "line": 1170,
+          "name": "provider",
+          "signature": "readonly provider: string;",
+        },
+        {
+          "docs": [
+            "/** The function statistics that were used to compute prices. */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.CostSnapshot.property.stats",
+          "kind": "class-property",
+          "line": 1177,
+          "name": "stats",
+          "signature": "readonly stats: FunctionStats;",
+        },
+      ],
+      "signature": "class CostSnapshot {}",
+    },
+    {
+      "constructors": [],
+      "docs": [
+        "/**
+ * FaastError is a subclass of VError (https://github.com/joyent/node-verror).
+ * that is thrown by faast.js APIs and cloud function invocations.
+ * @remarks
+ * \`FaastError\` is a subclass of
+ * {@link https://github.com/joyent/node-verror | VError}, which provides an API
+ * for nested error handling. The main API is the same as the standard Error
+ * class, namely the err.message, err.name, and err.stack properties.
+ *
+ * Several static methods on {@link FaastError} are inherited from VError:
+ *
+ * FaastError.fullStack(err) - property provides a more detailed stack trace
+ * that include stack traces of causes in the causal chain.
+ *
+ * FaastError.info(err) - returns an object with fields \`functionName\`, \`args\`,
+ * and \`logUrl\`. The \`logUrl\` property is a URL pointing to the logs for a
+ * specific invocation that caused the error.\`logUrl\` will be surrounded by
+ * whitespace on both sides to ease parsing as a URL by IDEs.
+ *
+ * FaastError.hasCauseWithName(err, cause) - returns true if the FaastError or
+ * any of its causes includes an error with the given name, otherwise false. All
+ * of the available names are in the enum {@link FaastErrorNames}. For example,
+ * to detect if a FaastError was caused by a cloud function timeout:
+ *
+ * \`\`\`typescript
+ *   FaastError.hasCauseWithName(err, FaastErrorNames.ETIMEOUT)
+ * \`\`\`
+ *
+ * FaastError.findCauseByName(err, cause) - like FaastError.hasCauseWithName()
+ * except it returns the Error in the causal chain with the given name instead
+ * of a boolean, otherwise null.
+ *
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "class.FaastError",
+      "kind": "class",
+      "line": 1360,
+      "methods": [],
+      "name": "FaastError",
+      "properties": [],
+      "signature": "class FaastError extends VError {}",
+    },
+    {
+      "constructors": [],
+      "docs": [
+        "/**
+ * Implementation of {@link FaastModule}.
+ * @remarks
+ * \`FaastModuleProxy\` provides a unified developer experience for faast.js
+ * modules on top of provider-specific runtime APIs. Most users will not create
+ * \`FaastModuleProxy\` instances themselves; instead use {@link faast}, or
+ * {@link faastAws} or {@link faastLocal}.
+ * \`FaastModuleProxy\` implements the {@link FaastModule} interface, which is the
+ * preferred public interface for faast modules. \`FaastModuleProxy\` can be used
+ * to access provider-specific details and state, and is useful for deeper
+ * testing.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "class.FaastModuleProxy",
+      "kind": "class",
+      "line": 1598,
+      "methods": [
+        {
+          "docs": [
+            "/** {@inheritdoc FaastModule.cleanup} */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FaastModuleProxy.method.cleanup",
+          "kind": "class-method",
+          "line": 1635,
+          "name": "cleanup",
+          "signature": "cleanup: (userCleanupOptions?: CleanupOptions) => Promise<void>;",
+        },
+        {
+          "docs": [
+            "/** {@inheritdoc FaastModule.costSnapshot} */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FaastModuleProxy.method.costSnapshot",
+          "kind": "class-method",
+          "line": 1653,
+          "name": "costSnapshot",
+          "signature": "costSnapshot: () => Promise<CostSnapshot>;",
+        },
+        {
+          "docs": [
+            "/** {@inheritdoc FaastModule.logUrl} */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FaastModuleProxy.method.logUrl",
+          "kind": "class-method",
+          "line": 1637,
+          "name": "logUrl",
+          "signature": "logUrl: () => string;",
+        },
+        {
+          "docs": [
+            "/** {@inheritdoc FaastModule.off} */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FaastModuleProxy.method.off",
+          "kind": "class-method",
+          "line": 1643,
+          "name": "off",
+          "signature": "off: (
+  name: "stats",
+  listener: (statsEvent: FunctionStatsEvent) => void,
+) => void;",
+        },
+        {
+          "docs": [
+            "/** {@inheritdoc FaastModule.on} */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FaastModuleProxy.method.on",
+          "kind": "class-method",
+          "line": 1641,
+          "name": "on",
+          "signature": "on: (
+  name: "stats",
+  listener: (statsEvent: FunctionStatsEvent) => void,
+) => void;",
+        },
+        {
+          "docs": [
+            "/** {@inheritdoc FaastModule.stats} */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FaastModuleProxy.method.stats",
+          "kind": "class-method",
+          "line": 1655,
+          "name": "stats",
+          "signature": "stats: (functionName?: string) => FunctionStats;",
+        },
+      ],
+      "name": "FaastModuleProxy",
+      "properties": [
+        {
+          "docs": [
+            "/** {@inheritdoc FaastModule.functions} */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FaastModuleProxy.property.functions",
+          "kind": "class-property",
+          "line": 1609,
+          "name": "functions",
+          "signature": "functions: ProxyModule<M>;",
+        },
+        {
+          "docs": [
+            "/** {@inheritdoc FaastModule.functionsDetail} */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FaastModuleProxy.property.functionsDetail",
+          "kind": "class-property",
+          "line": 1611,
+          "name": "functionsDetail",
+          "signature": "functionsDetail: ProxyModuleDetail<M>;",
+        },
+        {
+          "docs": [
+            "/** The options set for this instance, which includes default values. */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FaastModuleProxy.property.options",
+          "kind": "class-property",
+          "line": 1605,
+          "name": "options",
+          "signature": "readonly options: Required<CommonOptions>;",
+        },
+        {
+          "docs": [
+            "/** The {@link Provider}, e.g. "aws". */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FaastModuleProxy.property.provider",
+          "kind": "class-property",
+          "line": 1607,
+          "name": "provider",
+          "signature": "provider: Provider;",
+        },
+      ],
+      "signature": "class FaastModuleProxy<M extends object, O extends CommonOptions, S>
+  implements FaastModule<M> {}",
+    },
+    {
+      "constructors": [],
+      "docs": [
+        "/**
+ * Summary statistics for function invocations.
+ * @remarks
+ * \`\`\`
+ *               localStartLatency      remoteStartLatency      executionTime
+ *             ◀──────────────────▶◁ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ▷◀──────────▶
+ *
+ * ┌───────────────────────────────────┬──────────────────────────────────────┐
+ * │                                   │                                      │
+ * │               Local               │            Cloud Provider            │
+ * │                                   │                                      │
+ * │                    ┌─────────┐    │   ┌──────────┐         ┌──────────┐  │
+ * │                    │         │    │   │          │         │          │  │
+ * │                    │  local  │    │   │ request  │         │          │  │
+ * │   invoke  ────────▶│  queue  │────┼──▶│  queue   ├────────▶│          │  │
+ * │                    │         │    │   │          │         │          │  │
+ * │                    └─────────┘    │   └──────────┘         │  cloud   │  │
+ * │                                   │                        │ function │  │
+ * │                    ┌─────────┐    │   ┌──────────┐         │          │  │
+ * │                    │         │    │   │          │         │          │  │
+ * │   result  ◀────────│  local  │◀───┼───│ response │◀────────│          │  │
+ * │                    │ polling │    │   │  queue   │         │          │  │
+ * │                    │         │    │   │          │         │          │  │
+ * │                    └─────────┘    │   └──────────┘         └──────────┘  │
+ * │                                   │                                      │
+ * └───────────────────────────────────┴──────────────────────────────────────┘
+ *
+ *             ◁ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ▷
+ *                      returnLatency                  ◀───────▶
+ *                                                     sendResponseLatency
+ * \`\`\`
+ *
+ * \`localStartLatency\` and \`executionTime\` are measured on one machine and are
+ * free of clock skew. \`remoteStartLatency\` and \`returnLatency\` are measured as
+ * time differences between machines and are subject to much more uncertainty,
+ * and effects like clock skew.
+ *
+ * All times are in milliseconds.
+ *
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "class.FunctionStats",
+      "kind": "class",
+      "line": 1713,
+      "methods": [
+        {
+          "docs": [
+            "/**
+     * Summarize the function stats as a string.
+     * @returns a string showing the value of completed, retries, errors, and
+     * mean execution time. This string excludes invocations by default because
+     * it is often fixed.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FunctionStats.method.toString",
+          "kind": "class-method",
+          "line": 1783,
+          "name": "toString",
+          "signature": "toString: () => string;",
+        },
+      ],
+      "name": "FunctionStats",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * The number of invocations that were successfully completed.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FunctionStats.property.completed",
+          "kind": "class-property",
+          "line": 1764,
+          "name": "completed",
+          "signature": "completed: number;",
+        },
+        {
+          "docs": [
+            "/**
+     * The number of invocations that resulted in an error. If an invocation is
+     * retried, an error is only counted once, no matter how many retries were
+     * attempted.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FunctionStats.property.errors",
+          "kind": "class-property",
+          "line": 1776,
+          "name": "errors",
+          "signature": "errors: number;",
+        },
+        {
+          "docs": [
+            "/**
+     * Statistics for amount of time billed. This is similar to
+     * {@link FunctionStats.executionTime} except each sampled time is rounded
+     * up to the next 100ms.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FunctionStats.property.estimatedBilledTime",
+          "kind": "class-property",
+          "line": 1755,
+          "name": "estimatedBilledTime",
+          "signature": "estimatedBilledTime: Statistics;",
+        },
+        {
+          "docs": [
+            "/**
+     * Statistics for function execution time in milliseconds.  This is measured
+     * as wall clock time inside the cloud function, and does not include the
+     * time taken to send the response to the response queue. Note that most
+     * cloud providers round up to the next 100ms for pricing.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FunctionStats.property.executionTime",
+          "kind": "class-property",
+          "line": 1735,
+          "name": "executionTime",
+          "signature": "executionTime: Statistics;",
+        },
+        {
+          "docs": [
+            "/**
+     * The number of invocations attempted. If an invocation is retried, this
+     * only counts the invocation once.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FunctionStats.property.invocations",
+          "kind": "class-property",
+          "line": 1760,
+          "name": "invocations",
+          "signature": "invocations: number;",
+        },
+        {
+          "docs": [
+            "/**
+     * Statistics for how long invocations stay in the local queue before being
+     * sent to the cloud provider.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FunctionStats.property.localStartLatency",
+          "kind": "class-property",
+          "line": 1718,
+          "name": "localStartLatency",
+          "signature": "localStartLatency: Statistics;",
+        },
+        {
+          "docs": [
+            "/**
+     * Statistics for how long requests take to start execution after being sent
+     * to the cloud provider. This typically includes remote queueing and cold
+     * start times. Because this measurement requires comparing timestamps from
+     * different machines, it is subject to clock skew and other effects, and
+     * should not be considered highly accurate. It can be useful for detecting
+     * excessively high latency problems. Faast.js attempt to correct for clock
+     * skew heuristically.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FunctionStats.property.remoteStartLatency",
+          "kind": "class-property",
+          "line": 1728,
+          "name": "remoteStartLatency",
+          "signature": "remoteStartLatency: Statistics;",
+        },
+        {
+          "docs": [
+            "/**
+     * The number of invocation retries attempted. This counts retries
+     * attempted by faast.js to recover from transient errors, but does not
+     * count retries by the cloud provider.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FunctionStats.property.retries",
+          "kind": "class-property",
+          "line": 1770,
+          "name": "retries",
+          "signature": "retries: number;",
+        },
+        {
+          "docs": [
+            "/**
+     * Statistics for how long it takes to return a response from the end of
+     * execution time to the receipt of the response locally. This measurement
+     * requires comparing timestamps from different machines, and is subject to
+     * clock skew and other effects. It should not be considered highly
+     * accurate. It can be useful for detecting excessively high latency
+     * problems. Faast.js attempts to correct for clock skew heuristically.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FunctionStats.property.returnLatency",
+          "kind": "class-property",
+          "line": 1749,
+          "name": "returnLatency",
+          "signature": "returnLatency: Statistics;",
+        },
+        {
+          "docs": [
+            "/**
+     * Statistics for how long it takes to send the response to the response
+     * queue.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FunctionStats.property.sendResponseLatency",
+          "kind": "class-property",
+          "line": 1740,
+          "name": "sendResponseLatency",
+          "signature": "sendResponseLatency: Statistics;",
+        },
+      ],
+      "signature": "class FunctionStats {}",
+    },
+    {
+      "constructors": [],
+      "docs": [
+        "/**
+ * Summarize statistics about cloud function invocations.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "class.FunctionStatsEvent",
+      "kind": "class",
+      "line": 1792,
+      "methods": [
+        {
+          "docs": [
+            "/**
+     * Returns a string summarizing the statistics event.
+     * @remarks
+     * The string includes number of completed calls, errors, and retries, and
+     * the mean execution time for the calls that completed within the last time
+     * interval (1s).
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FunctionStatsEvent.method.toString",
+          "kind": "class-method",
+          "line": 1812,
+          "name": "toString",
+          "signature": "toString: () => string;",
+        },
+      ],
+      "name": "FunctionStatsEvent",
+      "properties": [
+        {
+          "docs": [
+            "/** The name of the cloud function the statistics are about. */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FunctionStatsEvent.property.fn",
+          "kind": "class-property",
+          "line": 1794,
+          "name": "fn",
+          "signature": "readonly fn: string;",
+        },
+        {
+          "docs": [
+            "/** See {@link FunctionStats}. */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.FunctionStatsEvent.property.stats",
+          "kind": "class-property",
+          "line": 1796,
+          "name": "stats",
+          "signature": "readonly stats: FunctionStats;",
+        },
+      ],
+      "signature": "class FunctionStatsEvent {}",
+    },
+    {
+      "constructors": [
+        {
+          "docs": [
+            "/**
+     * Construct a new persistent cache, typically used with {@link Limits} as
+     * part of the arguments to {@link throttle}.
+     * @param dirRelativeToHomeDir - The directory under the user's home
+     * directory that will be used to store cached values. The directory will be
+     * created if it doesn't exist.
+     * @param expiration - The age (in ms) after which a cached entry is
+     * invalid. Default: \`24*3600*1000\` (1 day).
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.PersistentCache.constructor",
+          "kind": "class-constructor",
+          "line": 2055,
+          "name": "constructor",
+          "signature": "constructor(dirRelativeToHomeDir: string, expiration?: number);",
+        },
+      ],
+      "docs": [
+        "/**
+ * A simple persistent key-value store. Used to implement {@link Limits.cache}
+ * for {@link throttle}.
+ * @remarks
+ * Entries can be expired, but are not actually deleted individually. The entire
+ * cache can be deleted at once. Hence this cache is useful for storing results
+ * that are expensive to compute but do not change too often (e.g. the
+ * node_modules folder from an 'npm install' where 'package.json' is not
+ * expected to change too often).
+ *
+ * By default faast.js will use the directory \`~/.faastjs\` as a local cache to
+ * store data such as pricing retrieved from cloud APIs, and garbage collection
+ * information. This directory can be safely deleted if no faast.js instances
+ * are running.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "class.PersistentCache",
+      "kind": "class",
+      "line": 2028,
+      "methods": [
+        {
+          "docs": [
+            "/**
+     * Deletes all cached entries from disk.
+     * @param leaveEmptyDir - If true, leave the cache directory in place after
+     * deleting its contents. If false, the cache directory will be removed.
+     * Default: \`true\`.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.PersistentCache.method.clear",
+          "kind": "class-method",
+          "line": 2088,
+          "name": "clear",
+          "signature": "clear: ({
+  leaveEmptyDir,
+}?: {
+  leaveEmptyDir?: boolean | undefined;
+}) => Promise<void>;",
+        },
+        {
+          "docs": [
+            "/**
+     * Retrieve all keys stored in the cache, including expired entries.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.PersistentCache.method.entries",
+          "kind": "class-method",
+          "line": 2081,
+          "name": "entries",
+          "signature": "entries: () => Promise<string[]>;",
+        },
+        {
+          "docs": [
+            "/**
+     * Retrieves the value previously set for the given key, or undefined if the
+     * key is not found.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.PersistentCache.method.get",
+          "kind": "class-method",
+          "line": 2072,
+          "name": "get",
+          "signature": "get: (key: string) => Promise<Buffer | undefined>;",
+        },
+        {
+          "docs": [
+            "/**
+     * Set the cache key to the given value.
+     * @returns a Promise that resolves when the cache entry has been persisted.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.PersistentCache.method.set",
+          "kind": "class-method",
+          "line": 2077,
+          "name": "set",
+          "signature": "set: (key: string, value: Buffer | string | Uint8Array) => Promise<void>;",
+        },
+      ],
+      "name": "PersistentCache",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * The directory on disk where cached values are stored.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.PersistentCache.property.dir",
+          "kind": "class-property",
+          "line": 2045,
+          "name": "dir",
+          "signature": "readonly dir: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * The directory under the user's home directory that will be used to
+     * store cached values. The directory will be created if it doesn't
+     * exist.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.PersistentCache.property.dirRelativeToHomeDir",
+          "kind": "class-property",
+          "line": 2034,
+          "name": "dirRelativeToHomeDir",
+          "signature": "readonly dirRelativeToHomeDir: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * The age (in ms) after which a cached entry is invalid. Default:
+     * \`24*3600*1000\` (1 day).
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.PersistentCache.property.expiration",
+          "kind": "class-property",
+          "line": 2039,
+          "name": "expiration",
+          "signature": "readonly expiration: number;",
+        },
+      ],
+      "signature": "class PersistentCache {}",
+    },
+    {
+      "constructors": [
+        {
+          "docs": [
+            "/**
+     * Incrementally track mean, stdev, min, max, of a sequence of values.
+     * @param printFixedPrecision - The number of decimal places to print in
+     * {@link Statistics.toString}.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.Statistics.constructor",
+          "kind": "class-constructor",
+          "line": 2190,
+          "name": "constructor",
+          "signature": "constructor(printFixedPrecision?: number);",
+        },
+      ],
+      "docs": [
+        "/**
+ * Incrementally updated statistics on a set of values.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "class.Statistics",
+      "kind": "class",
+      "line": 2170,
+      "methods": [
+        {
+          "docs": [
+            "/**
+     * Print the mean of the observations seen, with the precision specified in
+     * the constructor.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.Statistics.method.toString",
+          "kind": "class-method",
+          "line": 2203,
+          "name": "toString",
+          "signature": "toString: () => string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Update statistics with a new value in the sequence.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.Statistics.method.update",
+          "kind": "class-method",
+          "line": 2198,
+          "name": "update",
+          "signature": "update: (value: number | undefined) => void;",
+        },
+      ],
+      "name": "Statistics",
+      "properties": [
+        {
+          "docs": [
+            "/** The maximum value observed. Initialized to \`Number.NEGATIVE_INFINITY\`. */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.Statistics.property.max",
+          "kind": "class-property",
+          "line": 2176,
+          "name": "max",
+          "signature": "max: number;",
+        },
+        {
+          "docs": [
+            "/** The mean (average) of the values observed. */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.Statistics.property.mean",
+          "kind": "class-property",
+          "line": 2184,
+          "name": "mean",
+          "signature": "mean: number;",
+        },
+        {
+          "docs": [
+            "/** The minimum value observed. Initialized to \`Number.POSITIVE_INFINITY\`. */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.Statistics.property.min",
+          "kind": "class-property",
+          "line": 2178,
+          "name": "min",
+          "signature": "min: number;",
+        },
+        {
+          "docs": [
+            "/** The number of decimal places to print in {@link Statistics.toString} */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.Statistics.property.printFixedPrecision",
+          "kind": "class-property",
+          "line": 2172,
+          "name": "printFixedPrecision",
+          "signature": "protected printFixedPrecision: number;",
+        },
+        {
+          "docs": [
+            "/** Number of values observed. */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.Statistics.property.samples",
+          "kind": "class-property",
+          "line": 2174,
+          "name": "samples",
+          "signature": "samples: number;",
+        },
+        {
+          "docs": [
+            "/** The standard deviation of the values observed. */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.Statistics.property.stdev",
+          "kind": "class-property",
+          "line": 2182,
+          "name": "stdev",
+          "signature": "stdev: number;",
+        },
+        {
+          "docs": [
+            "/** The variance of the values observed. */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "class.Statistics.property.variance",
+          "kind": "class-property",
+          "line": 2180,
+          "name": "variance",
+          "signature": "variance: number;",
+        },
+      ],
+      "signature": "class Statistics {}",
+    },
+    {
+      "docs": [
+        "/**
+ * Possible FaastError names. See {@link FaastError}. To test for errors
+ * matching these names, use the static method
+ * {@link FaastError}.hasCauseWithName().
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "enum.FaastErrorNames",
+      "kind": "enum",
+      "line": 1369,
+      "members": [
+        {
+          "docs": [
+            "/** Generic error. See {@link FaastError}. */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "enum.FaastErrorNames.member.EGENERIC",
+          "kind": "enum-member",
+          "line": 1371,
+          "name": "EGENERIC",
+          "signature": "EGENERIC = "VError"",
+        },
+        {
+          "docs": [
+            "/** The arguments passed to the cloud function could not be serialized without losing information.  */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "enum.FaastErrorNames.member.ESERIALIZE",
+          "kind": "enum-member",
+          "line": 1373,
+          "name": "ESERIALIZE",
+          "signature": "ESERIALIZE = "FaastSerializationError"",
+        },
+        {
+          "docs": [
+            "/** The remote cloud function timed out. */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "enum.FaastErrorNames.member.ETIMEOUT",
+          "kind": "enum-member",
+          "line": 1375,
+          "name": "ETIMEOUT",
+          "signature": "ETIMEOUT = "FaastTimeoutError"",
+        },
+        {
+          "docs": [
+            "/** The remote cloud function exceeded memory limits. */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "enum.FaastErrorNames.member.EMEMORY",
+          "kind": "enum-member",
+          "line": 1377,
+          "name": "EMEMORY",
+          "signature": "EMEMORY = "FaastOutOfMemoryError"",
+        },
+        {
+          "docs": [
+            "/** The function invocation was cancelled by user request. */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "enum.FaastErrorNames.member.ECANCEL",
+          "kind": "enum-member",
+          "line": 1379,
+          "name": "ECANCEL",
+          "signature": "ECANCEL = "FaastCancelError"",
+        },
+        {
+          "docs": [
+            "/** The exception was thrown by user's remote code, not by faast.js or the cloud provider. */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "enum.FaastErrorNames.member.EEXCEPTION",
+          "kind": "enum-member",
+          "line": 1381,
+          "name": "EEXCEPTION",
+          "signature": "EEXCEPTION = "UserException"",
+        },
+        {
+          "docs": [
+            "/** Could not create the remote cloud function or supporting infrastructure. */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "enum.FaastErrorNames.member.ECREATE",
+          "kind": "enum-member",
+          "line": 1383,
+          "name": "ECREATE",
+          "signature": "ECREATE = "FaastCreateFunctionError"",
+        },
+        {
+          "docs": [
+            "/** The remote cloud function failed to execute because of limited concurrency. */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "enum.FaastErrorNames.member.ECONCURRENCY",
+          "kind": "enum-member",
+          "line": 1385,
+          "name": "ECONCURRENCY",
+          "signature": "ECONCURRENCY = "FaastConcurrencyError"",
+        },
+      ],
+      "name": "FaastErrorNames",
+      "signature": "enum FaastErrorNames {}",
+    },
+    {
+      "docs": [
+        "/**
+ * The main entry point for faast with any provider and only common options.
+ * @param provider - One of \`"aws"\` or \`"local"\`. See
+ * {@link Provider}.
+ * @param fmodule - A module imported with \`import * as X from "Y";\`. Using
+ * \`require\` also works but loses type information.
+ * @param options - See {@link CommonOptions}.
+ * @returns See {@link FaastModule}.
+ * @remarks
+ * Example of usage:
+ * \`\`\`typescript
+ * import { faast } from "faastjs";
+ * import * as mod from "./path/to/module";
+ * (async () => {
+ *     const faastModule = await faast("aws", mod);
+ *     try {
+ *         const result = await faastModule.functions.func("arg");
+ *     } finally {
+ *         await faastModule.cleanup();
+ *     }
+ * })();
+ * \`\`\`
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "function.faast",
+      "kind": "function",
+      "line": 1314,
+      "name": "faast",
+      "signature": "faast: <M extends object>(
+  provider: Provider,
+  fmodule: M,
+  options?: CommonOptions,
+) => Promise<FaastModule<M>>;",
+    },
+    {
+      "docs": [
+        "/**
+ * The main entry point for faast with AWS provider.
+ * @param fmodule - A module imported with \`import * as X from "Y";\`. Using
+ * \`require\` also works but loses type information.
+ * @param options - Most common options are in {@link CommonOptions}.
+ * Additional AWS-specific options are in {@link AwsOptions}.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "function.faastAws",
+      "kind": "function",
+      "line": 1324,
+      "name": "faastAws",
+      "signature": "faastAws: <M extends object>(
+  fmodule: M,
+  options?: AwsOptions,
+) => Promise<AwsFaastModule<M>>;",
+    },
+    {
+      "docs": [
+        "/**
+ * The main entry point for faast with Local provider.
+ * @param fmodule - A module imported with \`import * as X from "Y";\`. Using
+ * \`require\` also works but loses type information.
+ * @param options - Most common options are in {@link CommonOptions}.
+ * Additional Local-specific options are in {@link LocalOptions}.
+ * @returns a Promise for {@link LocalFaastModule}.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "function.faastLocal",
+      "kind": "function",
+      "line": 1397,
+      "name": "faastLocal",
+      "signature": "faastLocal: <M extends object>(
+  fmodule: M,
+  options?: LocalOptions,
+) => Promise<LocalFaastModule<M>>;",
+    },
+    {
+      "docs": [
+        "/**
+ * A decorator for rate limiting, concurrency limiting, retry, memoization, and
+ * on-disk caching. See {@link Limits}.
+ * @remarks
+ * When programming against cloud services, databases, and other resources, it
+ * is often necessary to control the rate of request issuance to avoid
+ * overwhelming the service provider. In many cases the provider has built-in
+ * safeguards against abuse, which automatically fail requests if they are
+ * coming in too fast. Some systems don't have safeguards and precipitously
+ * degrade their service level or fail outright when faced with excessive load.
+ *
+ * With faast.js it becomes very easy to (accidentally) generate requests from
+ * thousands of cloud functions. The \`throttle\` function can help manage request
+ * flow without resorting to setting up a separate service. This is in keeping
+ * with faast.js' zero-ops philosophy.
+ *
+ * Usage is simple:
+ *
+ * \`\`\`typescript
+ * async function operation() { ... }
+ * const throttledOperation = throttle({ concurrency: 10, rate: 5 }, operation);
+ * for(let i = 0; i < 100; i++) {
+ *     // at most 10 concurrent executions at a rate of 5 invocations per second.
+ *     throttledOperation();
+ * }
+ * \`\`\`
+ *
+ * Note that each invocation to \`throttle\` creates a separate function with a
+ * separate limits. Therefore it is likely that you want to use \`throttle\` in a
+ * global context, not within a dynamic context:
+ *
+ * \`\`\`typescript
+ * async function operation() { ... }
+ * for(let i = 0; i < 100; i++) {
+ *     // WRONG - each iteration creates a separate throttled function that's only called once.
+ *     const throttledOperation = throttle({ concurrency: 10, rate: 5 }, operation);
+ *     throttledOperation();
+ * }
+ * \`\`\`
+ *
+ * A better way to use throttle avoids creating a named \`operation\` function
+ * altogether, ensuring it cannot be accidentally called without throttling:
+ *
+ * \`\`\`typescript
+ * const operation = throttle({ concurrency: 10, rate: 5 }, async () => {
+ *     ...
+ * });
+ * \`\`\`
+ *
+ * Throttle supports functions with arguments automatically infers the correct
+ * type for the returned function:
+ *
+ * \`\`\`typescript
+ * // \`operation\` inferred to have type (str: string) => Promise<string>
+ * const operation = throttle({ concurrency: 10, rate: 5 }, async (str: string) => {
+ *     return string;
+ * });
+ * \`\`\`
+ *
+ * In addition to limiting concurrency and invocation rate, \`throttle\` also
+ * supports retrying failed invocations, memoizing calls, and on-disk caching.
+ * See {@link Limits} for details.
+ *
+ * @param limits - see {@link Limits}.
+ * @param fn - The function to throttle. It can take any arguments, but must
+ * return a Promise (which includes \`async\` functions).
+ * @returns Returns a throttled function with the same signature as the argument
+ * \`fn\`.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "function.throttle",
+      "kind": "function",
+      "line": 2276,
+      "name": "throttle",
+      "signature": "throttle: <A extends any[], R>(
+  limits: Limits,
+  fn: (...args: A) => Promise<R>,
+) => (...args: A) => Promise<R>;",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Factory for AWS service clients, which allows for custom construction and configuration.
+ * {@link https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/index.html#configuration | AWS Configuration}.
+ * @public
+ * @remarks
+ * This is an advanced option. This provides a way for a faast.js client to
+ * instantiate AWS service objects for itself to provide custom options.
+ * Note that if you create a service object yourself, it won't have the
+ * default options that faast.js would use, which are:
+ *
+ * - maxAttempts (faast.js default: 6)
+ * - region (faast.js default: "us-west-2")
+ * - logger (faast.js default: log.awssdk)
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "getAccessors": [],
+      "id": "interface.AwsClientFactory",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 77,
+      "methods": [],
+      "name": "AwsClientFactory",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.AwsClientFactory.property.createCloudWatchLogs",
+          "kind": "interface-property",
+          "line": 78,
+          "name": "createCloudWatchLogs",
+          "signature": "createCloudWatchLogs?: () => CloudWatchLogs;",
+        },
+        {
+          "docs": [],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.AwsClientFactory.property.createIAM",
+          "kind": "interface-property",
+          "line": 79,
+          "name": "createIAM",
+          "signature": "createIAM?: () => IAM;",
+        },
+        {
+          "docs": [],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.AwsClientFactory.property.createLambda",
+          "kind": "interface-property",
+          "line": 80,
+          "name": "createLambda",
+          "signature": "createLambda?: () => Lambda;",
+        },
+        {
+          "docs": [
+            "/**
+     * A special AWS Lambda factory for creating lambda functions that are
+     * used for faast.js invocations. These special clients have the following
+     * options set by default in faast.js:
+     *
+     *  // Retries are handled by faast.js, not the sdk.
+     *  maxAttempts: 0,
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.AwsClientFactory.property.createLambdaForInvocations",
+          "kind": "interface-property",
+          "line": 89,
+          "name": "createLambdaForInvocations",
+          "signature": "createLambdaForInvocations?: () => Lambda;",
+        },
+        {
+          "docs": [],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.AwsClientFactory.property.createPricing",
+          "kind": "interface-property",
+          "line": 90,
+          "name": "createPricing",
+          "signature": "createPricing?: () => Pricing;",
+        },
+        {
+          "docs": [],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.AwsClientFactory.property.createS3",
+          "kind": "interface-property",
+          "line": 91,
+          "name": "createS3",
+          "signature": "createS3?: () => S3;",
+        },
+        {
+          "docs": [],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.AwsClientFactory.property.createSNS",
+          "kind": "interface-property",
+          "line": 92,
+          "name": "createSNS",
+          "signature": "createSNS?: () => SNS;",
+        },
+        {
+          "docs": [],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.AwsClientFactory.property.createSQS",
+          "kind": "interface-property",
+          "line": 93,
+          "name": "createSQS",
+          "signature": "createSQS?: () => SQS;",
+        },
+        {
+          "docs": [],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.AwsClientFactory.property.createSts",
+          "kind": "interface-property",
+          "line": 94,
+          "name": "createSts",
+          "signature": "createSts?: () => STS;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface AwsClientFactory {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * AWS-specific options for {@link faastAws}.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "getAccessors": [],
+      "id": "interface.AwsOptions",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 132,
+      "methods": [],
+      "name": "AwsOptions",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * AWS service factories. See {@link AwsClientFactory}.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.AwsOptions.property.awsClientFactory",
+          "kind": "interface-property",
+          "line": 222,
+          "name": "awsClientFactory",
+          "signature": "awsClientFactory?: AwsClientFactory;",
+        },
+        {
+          "docs": [
+            "/**
+     * Additional options to pass to AWS Lambda creation. See
+     * {@link https://docs.aws.amazon.com/lambda/latest/dg/API_CreateFunction.html | CreateFunction}.
+     * @remarks
+     * If you need specialized options, you can pass them to the AWS Lambda SDK
+     * directly. Note that if you override any settings set by faast.js, you may
+     * cause faast.js to not work:
+     *
+     * \`\`\`typescript
+     *   const request: aws.Lambda.CreateFunctionRequest = {
+     *       FunctionName,
+     *       Role,
+     *       Runtime: "nodejs18.x",
+     *       Handler: "index.trampoline",
+     *       Code,
+     *       Description: "faast trampoline function",
+     *       Timeout,
+     *       MemorySize,
+     *       ...awsLambdaOptions
+     *   };
+     * \`\`\`
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.AwsOptions.property.awsLambdaOptions",
+          "kind": "interface-property",
+          "line": 218,
+          "name": "awsLambdaOptions",
+          "signature": "awsLambdaOptions?: Partial<CreateFunctionRequest>;",
+        },
+        {
+          "docs": [
+            "/**
+     * The region to create resources in. Garbage collection is also limited to
+     * this region. Default: \`"us-west-2"\`.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.AwsOptions.property.region",
+          "kind": "interface-property",
+          "line": 137,
+          "name": "region",
+          "signature": "region?: AwsRegion;",
+        },
+        {
+          "docs": [
+            "/**
+     * The role that the lambda function will assume when executing user code.
+     * Default: \`"faast-cached-lambda-role"\`. Rarely used.
+     * @remarks
+     * When a lambda executes, it first assumes an
+     * {@link https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html | execution role}
+     * to grant access to resources.
+     *
+     * By default, faast.js creates this execution role for you and leaves it
+     * permanently in your account (the role is shared across all lambda
+     * functions created by faast.js). By default, faast.js grants administrator
+     * privileges to this role so your code can perform any AWS operation it
+     * requires.
+     *
+     * You can
+     * {@link https://console.aws.amazon.com/iam/home#/roles | create a custom role}
+     * that specifies more limited permissions if you prefer not to grant
+     * administrator privileges. Any role you assign for faast.js modules needs
+     * at least the following permissions:
+     *
+     * - Execution Role:
+     * \`\`\`json
+     *   {
+     *       "Version": "2012-10-17",
+     *       "Statement": [
+     *           {
+     *               "Effect": "Allow",
+     *               "Action": ["logs:*"],
+     *               "Resource": "arn:aws:logs:*:*:log-group:faast-*"
+     *           },
+     *           {
+     *               "Effect": "Allow",
+     *               "Action": ["sqs:*"],
+     *               "Resource": "arn:aws:sqs:*:*:faast-*"
+     *           }
+     *       ]
+     *   }
+     * \`\`\`
+     *
+     * - Trust relationship (also known as \`AssumeRolePolicyDocument\` in the AWS
+     *   SDK):
+     * \`\`\`json
+     *   {
+     *     "Version": "2012-10-17",
+     *     "Statement": [
+     *       {
+     *         "Effect": "Allow",
+     *         "Principal": {
+     *           "Service": "lambda.amazonaws.com"
+     *         },
+     *         "Action": "sts:AssumeRole"
+     *       }
+     *     ]
+     *   }
+     * \`\`\`
+     *
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.AwsOptions.property.RoleName",
+          "kind": "interface-property",
+          "line": 195,
+          "name": "RoleName",
+          "signature": "RoleName?: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface AwsOptions extends CommonOptions {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Options that apply to the {@link FaastModule.cleanup} method.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "getAccessors": [],
+      "id": "interface.CleanupOptions",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 294,
+      "methods": [],
+      "name": "CleanupOptions",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * If true, delete cached resources. Default: false.
+     * @remarks
+     * Some resources are cached persistently between calls for performance
+     * reasons. If this option is set to true, these cached resources are
+     * deleted when cleanup occurs, instead of being left behind for future use.
+     * For example, on AWS this includes the Lambda Layers that are created for
+     * {@link CommonOptions.packageJson} dependencies. Note that only the cached
+     * resources created by this instance of FaastModule are deleted, not cached
+     * resources from other FaastModules. This is similar to setting
+     * \`useCachedDependencies\` to \`false\` during function construction, except
+     * \`deleteCaches\` can be set at function cleanup time, and any other
+     * FaastModules created before cleanup may use the cached Layers.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.CleanupOptions.property.deleteCaches",
+          "kind": "interface-property",
+          "line": 323,
+          "name": "deleteCaches",
+          "signature": "deleteCaches?: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * If true, delete provider cloud resources. Default: true.
+     * @remarks
+     * The cleanup operation has two functions: stopping the faast.js runtime
+     * and deleting cloud resources that were instantiated. If \`deleteResources\`
+     * is false, then only the runtime is stopped and no cloud resources are
+     * deleted. This can be useful for debugging and examining the state of
+     * resources created by faast.js.
+     *
+     * It is supported to call {@link FaastModule.cleanup} twice: once with
+     * \`deleteResources\` set to \`false\`, which only stops the runtime, and then
+     * again set to \`true\` to delete resources. This can be useful for testing.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.CleanupOptions.property.deleteResources",
+          "kind": "interface-property",
+          "line": 308,
+          "name": "deleteResources",
+          "signature": "deleteResources?: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * Number of seconds to wait for garbage collection. Default: 10.
+     * @remarks
+     * Garbage collection can still be operating when cleanup is called; this
+     * option limits the amount of time faast waits for the garbage collector.
+     * If set to 0, the wait is unlimited.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.CleanupOptions.property.gcTimeout",
+          "kind": "interface-property",
+          "line": 331,
+          "name": "gcTimeout",
+          "signature": "gcTimeout?: number;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface CleanupOptions {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Options common across all faast.js providers. Used as argument to {@link faast}.
+ * @remarks
+ * There are also more specific options for each provider. See
+ * {@link AwsOptions} and {@link LocalOptions}.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "getAccessors": [],
+      "id": "interface.CommonOptions",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 341,
+      "methods": [],
+      "name": "CommonOptions",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * If true, create a child process to isolate user code from faast
+     * scaffolding. Default: true.
+     * @remarks
+     * If a child process is not created, faast runs in the same node instance
+     * as the user code and may not execute in a timely fashion because user
+     * code may
+     * {@link https://nodejs.org/en/docs/guides/dont-block-the-event-loop/ | block the event loop}.
+     * Creating a child process for user code allows faast.js to continue
+     * executing even if user code never yields. This provides better
+     * reliability and functionality:
+     *
+     * - Detect timeout errors more reliably, even if the function doesn't
+     *   relinquish the CPU. Not applicable to AWS, which sends separate failure
+     *   messages in case of timeout. See {@link CommonOptions.timeout}.
+     *
+     * - CPU metrics used for detecting invocations with high latency, which can
+     *   be used for automatically retrying calls to reduce tail latency.
+     *
+     * The cost of creating a child process is mainly in the memory overhead of
+     * creating another node process.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.CommonOptions.property.childProcess",
+          "kind": "interface-property",
+          "line": 364,
+          "name": "childProcess",
+          "signature": "childProcess?: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * When childProcess is true, the child process will be spawned with the
+     * value of this property as the setting for --max-old-space-size.
+     * @remarks
+     * This is useful if a function requires the node process to limit its
+     * memory so that another spawned process (e.g. a browser instance) can use
+     * the rest.
+     * @public
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.CommonOptions.property.childProcessMemoryMb",
+          "kind": "interface-property",
+          "line": 374,
+          "name": "childProcessMemoryMb",
+          "signature": "childProcessMemoryMb?: number;",
+        },
+        {
+          "docs": [
+            "/**
+     * The maximum number of concurrent invocations to allow. Default: 100,
+     * except for the \`local\` provider, where the default is 10.
+     * @remarks
+     * The concurrency limit applies to all invocations of all of the faast
+     * functions summed together. It is not a per-function limit. To apply a
+     * per-function limit, use {@link throttle}. A value of 0 is equivalent to
+     * Infinity. A value of 1 ensures mutually exclusive invocations.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.CommonOptions.property.concurrency",
+          "kind": "interface-property",
+          "line": 384,
+          "name": "concurrency",
+          "signature": "concurrency?: number;",
+        },
+        {
+          "docs": [
+            "/**
+     * A user-supplied description for this function, which may make it easier
+     * to track different functions when multiple functions are created.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.CommonOptions.property.description",
+          "kind": "interface-property",
+          "line": 389,
+          "name": "description",
+          "signature": "description?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Environment variables available during serverless function execution.
+     * Default: \\{\\}.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.CommonOptions.property.env",
+          "kind": "interface-property",
+          "line": 410,
+          "name": "env",
+          "signature": "env?: {
+  [key: string]: string;
+};",
+        },
+        {
+          "docs": [
+            "/**
+     * Exclude a subset of files included by {@link CommonOptions.include}.
+     * @remarks
+     * The exclusion can be a directory or glob. Exclusions apply to all included
+     * entries.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.CommonOptions.property.exclude",
+          "kind": "interface-property",
+          "line": 396,
+          "name": "exclude",
+          "signature": "exclude?: string[];",
+        },
+        {
+          "docs": [
+            "/**
+     * Garbage collector mode. Default: \`"auto"\`.
+     * @remarks
+     * Garbage collection deletes resources that were created by previous
+     * instantiations of faast that were not cleaned up by
+     * {@link FaastModule.cleanup}, either because it was not called or because
+     * the process terminated and did not execute this cleanup step. In \`"auto"\`
+     * mode, garbage collection may be throttled to run up to once per hour no
+     * matter how many faast.js instances are created. In \`"force"\` mode,
+     * garbage collection is run without regard to whether another gc has
+     * already been performed recently. In \`"off"\` mode, garbage collection is
+     * skipped entirely. This can be useful for performance-sensitive tests, or
+     * for more control over when gc is performed.
+     *
+     * Garbage collection is cloud-specific, but in general garbage collection
+     * should not interfere with the behavior or performance of faast cloud
+     * functions. When {@link FaastModule.cleanup} runs, it waits for garbage
+     * collection to complete. Therefore the cleanup step can in some
+     * circumstances take a significant amount of time even after all
+     * invocations have returned.
+     *
+     * It is generally recommended to leave garbage collection in \`"auto"\` mode,
+     * otherwise garbage resources may accumulate over time and you will
+     * eventually hit resource limits on your account.
+     *
+     * Also see {@link CommonOptions.retentionInDays}.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.CommonOptions.property.gc",
+          "kind": "interface-property",
+          "line": 440,
+          "name": "gc",
+          "signature": "gc?: "auto" | "force" | "off";",
+        },
+        {
+          "docs": [
+            "/**
+     * Include files to make available in the remote function. See
+     * {@link IncludeOption}.
+     * @remarks
+     * Each include entry is a directory or glob pattern. Paths can be specified
+     * as relative or absolute paths. Relative paths are resolved relative to
+     * the current working directory, or relative to the \`cwd\` option.
+     *
+     * If the include entry is a directory \`"foo/bar"\`, the directory
+     * \`"./foo/bar"\` will be available in the cloud function. Directories are
+     * recursively added.
+     *
+     * Glob patterns use the syntax of
+     * {@link https://github.com/isaacs/node-glob | node glob}.
+     *
+     * Also see {@link CommonOptions.exclude} for file exclusions.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.CommonOptions.property.include",
+          "kind": "interface-property",
+          "line": 458,
+          "name": "include",
+          "signature": "include?: (string | IncludeOption)[];",
+        },
+        {
+          "docs": [
+            "/**
+     * Maximum number of times that faast will retry each invocation. Default: 2
+     * (invocations can therefore be attemped 3 times in total).
+     * @remarks
+     * Retries are automatically attempted for transient infrastructure-level
+     * failures such as rate limits or netowrk failures. User-level exceptions
+     * are not retried automatically. In addition to retries performed by faast,
+     * some providers automatically attempt retries. These are not controllable
+     * by faast. But as a result, your function may be retried many more times
+     * than this setting suggests.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.CommonOptions.property.maxRetries",
+          "kind": "interface-property",
+          "line": 470,
+          "name": "maxRetries",
+          "signature": "maxRetries?: number;",
+        },
+        {
+          "docs": [
+            "/**
+     * Memory limit for each function in MB. This setting has an effect on
+     * pricing. Default varies by provider.
+     * @remarks
+     * Each provider has different settings for memory size, and performance
+     * varies depending on the setting. By default faast picks a likely optimal
+     * value for each provider.
+     *
+     * - aws: 1728MB
+     *
+     * - local: 512MB (however, memory size limits aren't reliable in local mode.)
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.CommonOptions.property.memorySize",
+          "kind": "interface-property",
+          "line": 483,
+          "name": "memorySize",
+          "signature": "memorySize?: number;",
+        },
+        {
+          "docs": [
+            "/**
+     * Specify invocation mode. Default: \`"auto"\`.
+     * @remarks
+     * Modes specify how invocations are triggered. In https mode, the functions
+     * are invoked through an https request or the provider's API. In queue
+     * mode, a provider-specific queue is used to invoke functions. Queue mode
+     * adds additional latency and (usually negligible) cost, but may scale
+     * better for some providers. In auto mode the best default is chosen for
+     * each provider depending on its particular performance characteristics.
+     *
+     * The defaults are:
+     *
+     * - aws: \`"auto"\` is \`"https"\`. In https mode, the AWS SDK api
+     *   is used to invoke functions. In queue mode, an AWS SNS topic is created
+     *   and triggers invocations. The AWS API Gateway service is never used by
+     *   faast, as it incurs a higher cost and is not needed to trigger
+     *   invocations.
+     *
+     * - local: The local provider ignores the mode setting and always uses an
+     *   internal asynchronous queue to schedule calls.
+     *
+     * Size limits are affected by the choice of mode. On AWS the limit is 256kb
+     * for arguments and return values in \`"queue"\` mode, and 6MB for \`"https"\`
+     * mode.
+     *
+     * Note that no matter which mode is selected, faast.js always creates a
+     * queue for sending back intermediate results for bookeeping and
+     * performance monitoring.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.CommonOptions.property.mode",
+          "kind": "interface-property",
+          "line": 513,
+          "name": "mode",
+          "signature": "mode?: "https" | "queue" | "auto";",
+        },
+        {
+          "docs": [
+            "/**
+     * Specify a package.json file to include with the code package.
+     * @remarks
+     * By default, faast.js will use webpack to bundle dependencies your remote
+     * module imports. In normal usage there is no need to specify a separate
+     * package.json, as webpack will statically analyze your imports and
+     * determine which files to bundle.
+     *
+     * However, there are some use cases where this is not enough. For example,
+     * some dependencies contain native code compiled during installation, and
+     * webpack cannot bundle these native modules. such as dependencies with
+     * native code.  or are specifically not designed to work with webpack. In
+     * these cases, you can create a separate \`package.json\` for these
+     * dependencies and pass the filename as the \`packageJson\` option. If
+     * \`packageJson\` is an \`object\`, it is assumed to be a parsed JSON object
+     * with the same structure as a package.json file (useful for specifying a
+     * synthetic \`package.json\` directly in code).
+     *
+     * The way the \`packageJson\` is handled varies by provider:
+     *
+     * - local: Runs \`npm install\` in a temporary directory it prepares for the
+     *   function.
+     *
+     * - aws: Recursively calls faast.js to run \`npm install\` inside a separate
+     *   lambda function specifically created for this purpose. Faast.js uses
+     *   lambda to install dependencies to ensure that native dependencies are
+     *   compiled in an environment that can produce binaries linked against
+     *   lambda's
+     *   {@link https://aws.amazon.com/blogs/compute/running-executables-in-aws-lambda/ | execution environment}.
+     *   Packages are saved in a Lambda Layer.
+     *
+     * For AWS, if {@link CommonOptions.useDependencyCaching} is \`true\` (which
+     * is the default), then the Lambda Layer created will be reused in future
+     * function creation requests if the contents of \`packageJson\` are the same.
+     *
+     * The \`FAAST_PACKAGE_DIR\` environment variable can be useful for debugging
+     * \`packageJson\` issues.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.CommonOptions.property.packageJson",
+          "kind": "interface-property",
+          "line": 552,
+          "name": "packageJson",
+          "signature": "packageJson?: string | object;",
+        },
+        {
+          "docs": [
+            "/**
+     * Rate limit invocations (invocations/sec). Default: no rate limit.
+     * @remarks
+     * Some services cannot handle more than a certain number of requests per
+     * second, and it is easy to overwhelm them with a large number of cloud
+     * functions. Specify a rate limit in invocation/second to restrict how
+     * faast.js issues requests.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.CommonOptions.property.rate",
+          "kind": "interface-property",
+          "line": 405,
+          "name": "rate",
+          "signature": "rate?: number;",
+        },
+        {
+          "docs": [
+            "/**
+     * Specify how many days to wait before reclaiming cloud garbage. Default:
+     * 1.
+     * @remarks
+     * Garbage collection only deletes resources after they age beyond a certain
+     * number of days. This option specifies how many days old a resource needs
+     * to be before being considered garbage by the collector. Note that this
+     * setting is not recorded when the resources are created. For example,
+     * suppose this is the sequence of events:
+     *
+     * - Day 0: \`faast()\` is called with \`retentionInDays\` set to 5. Then, the
+     *   function crashes (or omits the call to {@link FaastModule.cleanup}).
+     *
+     * - Day 1: \`faast()\` is called with \`retentionInDays\` set to 1.
+     *
+     * In this sequence of events, on Day 0 the garbage collector runs and
+     * removes resources with age older than 5 days. Then the function leaves
+     * new garbage behind because it crashed or did not complete cleanup. On Day
+     * 1, the garbage collector runs and deletes resources at least 1 day old,
+     * which includes garbage left behind from Day 0 (based on the creation
+     * timestamp of the resources). This deletion occurs even though retention
+     * was set to 5 days when resources were created on Day 0.
+     *
+     * Note that if \`retentionInDays\` is set to 0, garbage collection will
+     * remove all resources, even ones that may be in use by other running faast
+     * instances. Not recommended.
+     *
+     * See {@link CommonOptions.gc}.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.CommonOptions.property.retentionInDays",
+          "kind": "interface-property",
+          "line": 600,
+          "name": "retentionInDays",
+          "signature": "retentionInDays?: number;",
+        },
+        {
+          "docs": [
+            "/**
+     * Reduce tail latency by retrying invocations that take substantially
+     * longer than other invocations of the same function. Default: 3.
+     * @remarks
+     * faast.js automatically measures the mean and standard deviation (σ) of
+     * the time taken by invocations of each function. Retries are attempted
+     * when the time for an invocation exceeds the mean time by a certain
+     * threshold. \`speculativeRetryThreshold\` specifies how many multiples of σ
+     * an invocation needs to exceed the mean for a given function before retry
+     * is attempted.
+     *
+     * The default value of σ is 3. This means a call to a function is retried
+     * when the time to execute exceeds three standard deviations from the mean
+     * of all prior executions of the same function.
+     *
+     * This feature is experimental.
+     * @beta
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.CommonOptions.property.speculativeRetryThreshold",
+          "kind": "interface-property",
+          "line": 619,
+          "name": "speculativeRetryThreshold",
+          "signature": "speculativeRetryThreshold?: number;",
+        },
+        {
+          "docs": [
+            "/**
+     * Execution time limit for each invocation, in seconds. Default: 60.
+     * @remarks
+     * Each provider has a maximum time limit for how long invocations can run
+     * before being automatically terminated (or frozen). The following are the
+     * maximum time limits as of February 2019:
+     *
+     * - aws:
+     *   {@link https://docs.aws.amazon.com/lambda/latest/dg/limits.html | 15 minutes}
+     *
+     * - local: unlimited
+     *
+     * Faast.js has a proactive timeout detection feature. It automatically
+     * attempts to detect when the time limit is about to be reached and
+     * proactively sends a timeout exception. Faast does this because not all
+     * providers reliably send timely feedback when timeouts occur, leaving
+     * developers to look through cloud logs. In general faast.js' timeout will
+     * be up to 5s earlier than the timeout specified, in order to give time to
+     * allow faast.js to send a timeout message. Proactive timeout detection
+     * only works with {@link CommonOptions.childProcess} set to \`true\` (the
+     * default).
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.CommonOptions.property.timeout",
+          "kind": "interface-property",
+          "line": 642,
+          "name": "timeout",
+          "signature": "timeout?: number;",
+        },
+        {
+          "docs": [
+            "/**
+     * Cache installed dependencies from {@link CommonOptions.packageJson}. Only
+     * applies to AWS. Default: true.
+     * @remarks
+     * If \`useDependencyCaching\` is \`true\`, The resulting \`node_modules\` folder
+     * is cached in a Lambda Layer with the name \`faast-\${key}\`, where \`key\` is
+     * the SHA1 hash of the \`packageJson\` contents. These cache entries are
+     * removed by garbage collection, by default after 24h. Using caching
+     * reduces the need to install and upload dependencies every time a function
+     * is created. This is important for AWS because it creates an entirely
+     * separate lambda function to install dependencies remotely, which can
+     * substantially increase function deployment time.
+     *
+     * If \`useDependencyCaching\` is false, the lambda layer is created with the
+     * same name as the lambda function, and then is deleted when cleanup is
+     * run.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.CommonOptions.property.useDependencyCaching",
+          "kind": "interface-property",
+          "line": 570,
+          "name": "useDependencyCaching",
+          "signature": "useDependencyCaching?: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * Check arguments and return values from cloud functions are serializable
+     * without losing information. Default: true.
+     * @remarks
+     * Arguments to cloud functions are automatically serialized with
+     * \`JSON.stringify\` with a custom replacer that handles built-in JavaScript
+     * types such as \`Date\` and \`Buffer\`. Return values go through the same
+     * process. Some JavaScript objects cannot be serialized. By default
+     * \`validateSerialization\` will verify that every argument and return value
+     * can be serialized and deserialized without losing information. A
+     * \`FaastError\` will be thrown if faast.js detects a problem according to
+     * the following procedure:
+     *
+     * 1. Serialize arguments and return values with \`JSON.stringify\` using a
+     *    special \`replacer\` function.
+     *
+     * 2. Deserialize the values with \`JSON.parse\` with a special \`reviver\`
+     *    function.
+     *
+     * 3. Use
+     *    {@link https://nodejs.org/api/assert.html#assert_assert_deepstrictequal_actual_expected_message | assert.deepStringEqual}
+     *    to compare the original object with the deserialized object from step
+     *    2.
+     *
+     * There is some overhead to this process because each argument is
+     * serialized and deserialized, which can be costly if arguments or return
+     * values are large.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.CommonOptions.property.validateSerialization",
+          "kind": "interface-property",
+          "line": 715,
+          "name": "validateSerialization",
+          "signature": "validateSerialization?: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * Extra webpack options to use to bundle the code package.
+     * @remarks
+     * By default, faast.js uses webpack to bundle the code package. Webpack
+     * automatically handles finding and bundling dependencies, adding source
+     * mappings, etc. If you need specialized bundling, use this option to add
+     * or override the default webpack configuration. The library
+     * {@link https://github.com/survivejs/webpack-merge | webpack-merge} is
+     * used to combine configurations.
+     *
+     * \`\`\`typescript
+     * const config: webpack.Configuration = merge({
+     *     entry,
+     *     mode: "development",
+     *     output: {
+     *         path: "/",
+     *         filename: outputFilename,
+     *         libraryTarget: "commonjs2"
+     *     },
+     *     target: "node",
+     *     resolveLoader: { modules: [__dirname, \`\${__dirname}/dist\`] },
+     *     node: { global: true, __dirname: false, __filename: false }
+     *   },
+     *   webpackOptions);
+     * \`\`\`
+     *
+     * Take care when setting the values of \`entry\`, \`output\`, or
+     * \`resolveLoader\`. If these options are overwritten, faast.js may fail to
+     * bundle your code. In particular, setting \`entry\` to an array value will
+     * help \`webpack-merge\` to concatenate its value instead of replacing the
+     * value that faast.js inserts for you.
+     *
+     * Default:
+     *
+     * - aws: \`{ externals: [new RegExp("^aws-sdk/?")] }\`. In the lambda
+     *   environment \`"aws-sdk"\` is available in the ambient environment and
+     *   does not need to be bundled.
+     *
+     * - other providers: \`{}\`
+     *
+     * The \`FAAST_PACKAGE_DIR\` environment variable can be useful for debugging
+     * webpack issues.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.CommonOptions.property.webpackOptions",
+          "kind": "interface-property",
+          "line": 686,
+          "name": "webpackOptions",
+          "signature": "webpackOptions?: webpack.Configuration;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface CommonOptions {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * A function return value with additional detailed information.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "getAccessors": [],
+      "id": "interface.Detail",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 1245,
+      "methods": [],
+      "name": "Detail",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * If available, the provider-specific execution identifier for this
+     * invocation.
+     * @remarks
+     * This ID may be added to the log entries for this invocation by the cloud
+     * provider.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.Detail.property.executionId",
+          "kind": "interface-property",
+          "line": 1266,
+          "name": "executionId",
+          "signature": "executionId?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * If available, the provider-specific instance identifier for this
+     * invocation.
+     * @remarks
+     * This ID refers to the specific container or VM used to execute this
+     * function invocation. The instance may be reused across multiple
+     * invocations.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.Detail.property.instanceId",
+          "kind": "interface-property",
+          "line": 1275,
+          "name": "instanceId",
+          "signature": "instanceId?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * The URL of the logs for the specific execution of this function call.
+     * @remarks
+     * This is different from the general logUrl from
+     * {@link FaastModule.logUrl}, which provides a link to the logs for all
+     * invocations of all functions within that module. Whereas this logUrl is
+     * only for this specific invocation.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.Detail.property.logUrl",
+          "kind": "interface-property",
+          "line": 1258,
+          "name": "logUrl",
+          "signature": "logUrl?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * A Promise for the function's return value.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.Detail.property.value",
+          "kind": "interface-property",
+          "line": 1249,
+          "name": "value",
+          "signature": "value: R;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface Detail<R> {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * The main interface for invoking, cleaning up, and managing faast.js cloud
+ * functions. Returned by {@link faast}.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "getAccessors": [],
+      "id": "interface.FaastModule",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 1404,
+      "methods": [
+        {
+          "docs": [
+            "/**
+     * Stop the faast.js runtime for this cloud function and clean up ephemeral
+     * cloud resources.
+     * @returns a Promise that resolves when the \`FaastModule\` runtime stops and
+     * ephemeral resources have been deleted.
+     * @remarks
+     * It is best practice to always call \`cleanup\` when done with a cloud
+     * function. A typical way to ensure this in normal execution is to use the
+     * \`finally\` construct:
+     *
+     * \`\`\`typescript
+     * const faastModule = await faast("aws", m);
+     * try {
+     *     // Call faastModule.functions.*
+     * } finally {
+     *     // Note the \`await\`
+     *     await faastModule.cleanup();
+     * }
+     * \`\`\`
+     *
+     * After the cleanup promise resolves, the cloud function instance can no
+     * longer invoke new calls on {@link FaastModule.functions}. However, other
+     * methods on {@link FaastModule} are safe to call, such as
+     * {@link FaastModule.costSnapshot}.
+     *
+     * Cleanup also stops statistics events (See {@link FaastModule.off}).
+     *
+     * By default, cleanup will delete all ephemeral cloud resources but leave
+     * behind cached resources for use by future cloud functions. Deleted
+     * resources typically include cloud functions, queues, and queue
+     * subscriptions. Logs are not deleted by cleanup.
+     *
+     * Note that \`cleanup\` leaves behind some provider-specific resources:
+     *
+     * - AWS: Cloudwatch logs are preserved until the garbage collector in a
+     *   future cloud function instance deletes them. The default log expiration
+     *   time is 24h (or the value of {@link CommonOptions.retentionInDays}). In
+     *   addition, the AWS Lambda IAM role is not deleted by cleanup. This role
+     *   is shared across cloud function instances. Lambda layers are also not
+     *   cleaned up immediately on AWS when {@link CommonOptions.packageJson} is
+     *   used and {@link CommonOptions.useDependencyCaching} is true. Cached
+     *   layers are cleaned up by garbage collection. Also see
+     *   {@link CleanupOptions.deleteCaches}.
+     *
+     * - Local: Logs are preserved in a temporary directory on local disk.
+     *   Garbage collection in a future cloud function instance will delete logs
+     *   older than 24h.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.FaastModule.method.cleanup",
+          "kind": "interface-method",
+          "line": 1513,
+          "name": "cleanup",
+          "signature": "cleanup: (options?: CleanupOptions) => Promise<void>;",
+        },
+        {
+          "docs": [
+            "/**
+     * Get a near real-time cost estimate of cloud function invocations.
+     * @returns a Promise for a {@link CostSnapshot}.
+     * @remarks
+     * A cost snapshot provides a near real-time estimate of the costs of the
+     * cloud functions invoked. The cost estimate only includes the cost of
+     * successfully completed calls. Unsuccessful calls may lack the data
+     * required to provide cost information. Calls that are still in flight are
+     * not included in the cost snapshot. For this reason, it is typically a
+     * good idea to get a cost snapshot after awaiting the result of
+     * {@link FaastModule.cleanup}.
+     *
+     * Code example:
+     *
+     * \`\`\`typescript
+     * const faastModule = await faast("aws", m);
+     * try {
+     *     // invoke cloud functions on faastModule.functions.*
+     * } finally {
+     *      await faastModule.cleanup();
+     *      const costSnapshot = await faastModule.costSnapshot();
+     *      console.log(costSnapshot);
+     * }
+     * \`\`\`
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.FaastModule.method.costSnapshot",
+          "kind": "interface-method",
+          "line": 1571,
+          "name": "costSnapshot",
+          "signature": "costSnapshot: () => Promise<CostSnapshot>;",
+        },
+        {
+          "docs": [
+            "/**
+     * The URL of logs generated by this cloud function.
+     * @remarks
+     * Logs are not automatically downloaded because they cause outbound data
+     * transfer, which can be expensive. Also, logs may arrive at the logging
+     * service well after the cloud functions have completed. This log URL
+     * specifically filters the logs for this cloud function instance.
+     * Authentication is required to view cloud provider logs.
+     *
+     * The local provider returns a \`file://\` url pointing to a file for logs.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.FaastModule.method.logUrl",
+          "kind": "interface-method",
+          "line": 1525,
+          "name": "logUrl",
+          "signature": "logUrl: () => string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Deregister a callback for statistics events.
+     * @remarks
+     * Stops the callback listener from receiving future function statistics
+     * events. Calling {@link FaastModule.cleanup} also turns off statistics
+     * events.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.FaastModule.method.off",
+          "kind": "interface-method",
+          "line": 1545,
+          "name": "off",
+          "signature": "off: (
+  name: "stats",
+  listener: (statsEvent: FunctionStatsEvent) => void,
+) => void;",
+        },
+        {
+          "docs": [
+            "/**
+     * Register a callback for statistics events.
+     * @remarks
+     * The callback is invoked once for each cloud function that was invoked
+     * within the last 1s interval, with a {@link FunctionStatsEvent}
+     * summarizing the statistics for each function. Typical usage:
+     *
+     * \`\`\`typescript
+     * faastModule.on("stats", console.log);
+     * \`\`\`
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.FaastModule.method.on",
+          "kind": "interface-method",
+          "line": 1537,
+          "name": "on",
+          "signature": "on: (
+  name: "stats",
+  listener: (statsEvent: FunctionStatsEvent) => void,
+) => void;",
+        },
+        {
+          "docs": [
+            "/**
+     * Statistics for a specific function or the entire faast.js module.
+     *
+     * @param functionName - The name of the function to retrieve statistics
+     * for. If the function does not exist or has not been invoked, a new
+     * instance of {@link FunctionStats} is returned with zero values. If
+     * \`functionName\` omitted (undefined), then aggregate statistics are
+     * returned that summarize all cloud functions within this faast.js module.
+     * @returns an snapshot of {@link FunctionStats} at a point in time.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.FaastModule.method.stats",
+          "kind": "interface-method",
+          "line": 1582,
+          "name": "stats",
+          "signature": "stats: (functionName?: string) => FunctionStats;",
+        },
+      ],
+      "name": "FaastModule",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Each call of a cloud function creates a separate remote invocation.
+     * @remarks
+     * The module passed into {@link faast} or its provider-specific variants
+     * ({@link faastAws} and {@link faastLocal}) is mapped
+     * to a {@link ProxyModule} version of the module, which performs the
+     * following mapping:
+     *
+     * - All function exports that are generators are mapped to async
+     *   generators.
+     *
+     * - All function exports that return async generators are preserved as-is.
+     *
+     * - All function exports that return promises have their type signatures
+     *   preserved as-is.
+     *
+     * - All function exports that return type T, where T is not a Promise,
+     *   Generator, or AsyncGenerator, are mapped to functions that return
+     *   Promise<T>. Argument types are preserved as-is.
+     *
+     * - All non-function exports are omitted in the remote module.
+     *
+     * Arguments and return values are serialized with \`JSON.stringify\` when
+     * cloud functions are called, therefore what is received on the remote side
+     * might not match what was sent. Faast.js attempts to detect nonsupported
+     * arguments on a best effort basis.
+     *
+     * If the cloud function throws an exception or rejects its promise with an
+     * instance of \`Error\`, then the function will reject with
+     * {@link FaastError} on the local side. If the exception or rejection
+     * resolves to any value that is not an instance of \`Error\`, the remote
+     * function proxy will reject with the value of
+     * \`JSON.parse(JSON.stringify(err))\`.
+     *
+     * Arguments and return values have size limitations that vary by provider
+     * and mode:
+     *
+     * - AWS: 256KB in queue mode, 6MB arguments and 256KB return values in https mode. See
+     *   {@link https://docs.aws.amazon.com/lambda/latest/dg/limits.html | AWS Lambda Limits}.
+     *
+     * - Local: limited only by available memory and the limits of
+     *   {@link https://nodejs.org/api/child_process.html#child_process_subprocess_send_message_sendhandle_options_callback | childprocess.send}.
+     *
+     * Note that payloads may be base64 encoded for some providers and therefore
+     * different in size than the original payload. Also, some bookkeeping data
+     * are passed along with arguments and contribute to the size limit.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.FaastModule.property.functions",
+          "kind": "interface-property",
+          "line": 1454,
+          "name": "functions",
+          "signature": "functions: ProxyModule<M>;",
+        },
+        {
+          "docs": [
+            "/**
+     * Similar to {@link FaastModule.functions} except each function returns a
+     * {@link Detail} object
+     * @remarks
+     * Advanced users of faast.js may want more information about each function
+     * invocation than simply the result of the function call. For example, the
+     * specific logUrl for each invocation, to help with detailed debugging.
+     * This interface provides a way to get this detailed information.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.FaastModule.property.functionsDetail",
+          "kind": "interface-property",
+          "line": 1464,
+          "name": "functionsDetail",
+          "signature": "functionsDetail: ProxyModuleDetail<M>;",
+        },
+        {
+          "docs": [
+            "/** See {@link Provider}.  */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.FaastModule.property.provider",
+          "kind": "interface-property",
+          "line": 1406,
+          "name": "provider",
+          "signature": "provider: Provider;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface FaastModule<M extends object> {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Options for the {@link CommonOptions.include} option.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "getAccessors": [],
+      "id": "interface.IncludeOption",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 1819,
+      "methods": [],
+      "name": "IncludeOption",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * The working directory if \`path\` is relative. Defaults to \`process.cwd()\`.
+     * For example, if \`cwd\` is \`"foo"\` and \`path\` is \`"bar"\`, then the
+     * contents of the directory \`foo/bar/\` will be added to the remote
+     * function under the path \`bar/\`.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.IncludeOption.property.cwd",
+          "kind": "interface-property",
+          "line": 1830,
+          "name": "cwd",
+          "signature": "cwd?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * The path to the directory or glob to add to the cloud function.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.IncludeOption.property.path",
+          "kind": "interface-property",
+          "line": 1823,
+          "name": "path",
+          "signature": "path: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IncludeOption {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Specify {@link throttle} limits. These limits shape the way throttle invokes
+ * the underlying function.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "getAccessors": [],
+      "id": "interface.Limits",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 1843,
+      "methods": [],
+      "name": "Limits",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * The maximum number of calls to the underlying function to "burst" -- e.g.
+     * the number that can be issued immediately as long as the rate limit is
+     * not exceeded. For example, if rate is 5 and burst is 5, and 10 calls are
+     * made to the throttled function, 5 calls are made immediately and then
+     * after 1 second, another 5 calls are made immediately. Setting burst to 1
+     * means calls are issued uniformly every \`1/rate\` seconds. If \`rate\` is not
+     * specified, then \`burst\` does not apply. Default: 1.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.Limits.property.burst",
+          "kind": "interface-property",
+          "line": 1864,
+          "name": "burst",
+          "signature": "burst?: number;",
+        },
+        {
+          "docs": [
+            "/**
+     * Similar to \`memoize\` except the map from function arguments to results is
+     * stored in a persistent cache on disk. This is useful to prevent redundant
+     * calls to APIs which are expected to return the same results for the same
+     * arguments, and which are likely to be called across many faast.js module
+     * instantiations. This is used internally by faast.js for caching cloud
+     * prices for AWS, and for saving the last garbage collection
+     * date for AWS. Persistent cache entries expire after a period of time. See
+     * {@link PersistentCache}.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.Limits.property.cache",
+          "kind": "interface-property",
+          "line": 1900,
+          "name": "cache",
+          "signature": "cache?: PersistentCache;",
+        },
+        {
+          "docs": [
+            "/**
+     * The maximum number of concurrent executions of the underlying function to
+     * allow. Must be supplied, there is no default. Specifying \`0\` or
+     * \`Infinity\` is allowed and means there is no concurrency limit.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.Limits.property.concurrency",
+          "kind": "interface-property",
+          "line": 1849,
+          "name": "concurrency",
+          "signature": "concurrency: number;",
+        },
+        {
+          "docs": [
+            "/**
+     * If \`memoize\` is \`true\`, then every call to the throttled function will be
+     * saved as an entry in a map from arguments to return value. If same
+     * arguments are seen again in a future call, the return value is retrieved
+     * from the Map rather than calling the function again. This can be useful
+     * for avoiding redundant calls that are expected to return the same results
+     * given the same arguments.
+     *
+     * The arguments will be captured with \`JSON.stringify\`, therefore types
+     * that do not stringify uniquely won't be distinguished from each other.
+     * Care must be taken when specifying \`memoize\` to ensure avoid incorrect
+     * results.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.Limits.property.memoize",
+          "kind": "interface-property",
+          "line": 1889,
+          "name": "memoize",
+          "signature": "memoize?: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * The maximum number of calls per second to allow to the underlying
+     * function. Default: no rate limit.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.Limits.property.rate",
+          "kind": "interface-property",
+          "line": 1854,
+          "name": "rate",
+          "signature": "rate?: number;",
+        },
+        {
+          "docs": [
+            "/**
+     * Retry if the throttled function returns a rejected promise. \`retry\` can
+     * be a number or a function. If it is a number \`N\`, then up to \`N\`
+     * additional attempts are made in addition to the initial call. If retry is
+     * a function, it should return \`true\` if another retry attempt should be
+     * made, otherwise \`false\`. The first argument will be the value of the
+     * rejected promise from the previous call attempt, and the second argument
+     * will be the number of previous retry attempts (e.g. the first call will
+     * have value 0). Default: 0 (no retry attempts).
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "interface.Limits.property.retry",
+          "kind": "interface-property",
+          "line": 1875,
+          "name": "retry",
+          "signature": "retry?: number | ((err: any, retries: number) => boolean);",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface Limits {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Local provider options for {@link faastLocal}.
+ *
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "getAccessors": [],
+      "id": "interface.LocalOptions",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 1922,
+      "methods": [],
+      "name": "LocalOptions",
+      "properties": [],
+      "setAccessors": [],
+      "signature": "interface LocalOptions extends CommonOptions {}",
+    },
+    {
+      "declarations": [
+        {
+          "constructors": [],
+          "docs": [
+            "/**
+     * Cost analyzer results for each workload and configuration.
+     * @remarks
+     * The \`estimates\` property has the cost estimates for each configuration.
+     * See {@link CostAnalyzer.Estimate}.
+     * @public
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "namespace.CostAnalyzer.class.Result",
+          "kind": "class",
+          "line": 970,
+          "methods": [
+            {
+              "docs": [
+                "/**
+         * Comma-separated output of cost analyzer. One line per cost analyzer
+         * configuration.
+         * @remarks
+         * The columns are:
+         *
+         * - \`memory\`: The memory size allocated.
+         *
+         * - \`cloud\`: The cloud provider.
+         *
+         * - \`mode\`: See {@link CommonOptions.mode}.
+         *
+         * - \`options\`: A string summarizing other faast.js options applied to the
+         *   \`workload\`. See {@link CommonOptions}.
+         *
+         * - \`completed\`: Number of repetitions that successfully completed.
+         *
+         * - \`errors\`: Number of invocations that failed.
+         *
+         * - \`retries\`: Number of retries that were attempted.
+         *
+         * - \`cost\`: The average cost of executing the workload once.
+         *
+         * - \`executionTime\`: the aggregate time spent executing on the provider for
+         *   all cloud function invocations in the workload. This is averaged across
+         *   repetitions.
+         *
+         * - \`executionTimeStdev\`: The standard deviation of \`executionTime\`.
+         *
+         * - \`billedTime\`: the same as \`exectionTime\`, except rounded up to the next
+         *   100ms for each invocation. Usually very close to \`executionTime\`.
+         */",
+              ],
+              "file": "/faastjs/dist/faastjs.d.ts",
+              "id": "namespace.CostAnalyzer.class.Result.method.csv",
+              "kind": "class-method",
+              "line": 1019,
+              "name": "csv",
+              "signature": "csv: () => string;",
+            },
+          ],
+          "name": "Result",
+          "properties": [
+            {
+              "docs": [
+                "/**
+         * Cost estimates for each configuration of the workload. See
+         * {@link CostAnalyzer.Estimate}.
+         */",
+              ],
+              "file": "/faastjs/dist/faastjs.d.ts",
+              "id": "namespace.CostAnalyzer.class.Result.property.estimates",
+              "kind": "class-property",
+              "line": 977,
+              "name": "estimates",
+              "signature": "readonly estimates: Estimate<A>[];",
+            },
+            {
+              "docs": [
+                "/** The workload analyzed. */",
+              ],
+              "file": "/faastjs/dist/faastjs.d.ts",
+              "id": "namespace.CostAnalyzer.class.Result.property.workload",
+              "kind": "class-property",
+              "line": 972,
+              "name": "workload",
+              "signature": "readonly workload: Required<Workload<T, A>>;",
+            },
+          ],
+          "signature": "class Result<T extends object, A extends string> {}",
+        },
+        {
+          "docs": [
+            "/**
+     * Estimate the cost of a workload using multiple configurations and
+     * providers.
+     * @param userWorkload - a {@link CostAnalyzer.Workload} object specifying
+     * the workload to run and additional parameters.
+     * @returns A promise for a {@link CostAnalyzer.Result}
+     * @public
+     * @remarks
+     * It can be deceptively difficult to set optimal parameters for AWS Lambda
+     * and similar services. On the surface there appears to be only one
+     * parameter: memory size. Choosing more memory also gives more CPU
+     * performance, but it's unclear how much. It's also unclear where single
+     * core performance stops getting better. The workload cost analyzer solves
+     * these problems by making it easy to run cost experiments.
+     * \`\`\`text
+     *                                                      (AWS)
+     *                                                    ┌───────┐
+     *                                              ┌────▶│ 128MB │
+     *                                              │     └───────┘
+     *                                              │     ┌───────┐
+     *                      ┌─────────────────┐     ├────▶│ 256MB │
+     *  ┌──────────────┐    │                 │     │     └───────┘
+     *  │   workload   │───▶│                 │     │        ...
+     *  └──────────────┘    │                 │     │     ┌───────┐
+     *                      │  cost analyzer  │─────┼────▶│3008MB │
+     *  ┌──────────────┐    │                 │           └───────┘
+     *  │configurations│───▶│                 │
+     *  └──────────────┘    │                 │
+     *                      └─────────────────┘
+     *
+     * \`\`\`
+     * \`costAnalyzer\` is the entry point. It automatically runs this workload
+     * against multiple configurations in parallel. Then it uses faast.js' cost
+     * snapshot mechanism to automatically determine the price of running the
+     * workload with each configuration.
+     *
+     * Example:
+     *
+     * \`\`\`typescript
+     * // functions.ts
+     * export function randomNumbers(n: number) {
+     *     let sum = 0;
+     *     for (let i = 0; i < n; i++) {
+     *         sum += Math.random();
+     *     }
+     *     return sum;
+     * }
+     *
+     * // cost-analyzer-example.ts
+     * import { writeFileSync } from "fs";
+     * import { CostAnalyzer, FaastModule } from "faastjs";
+     * import * as funcs from "./functions";
+     *
+     * async function work(faastModule: FaastModule<typeof funcs>) {
+     *     await faastModule.functions.randomNumbers(100000000);
+     * }
+     *
+     * async function main() {
+     *     const results = await CostAnalyzer.analyze({ funcs, work });
+     *     writeFileSync("cost.csv", results.csv());
+     * }
+     *
+     * main();
+     * \`\`\`
+     *
+     * Example output (this is printed to \`console.log\` unless the
+     * {@link CostAnalyzer.Workload.silent} is \`true\`):
+     * \`\`\`text
+     *   ✔ aws 128MB queue 15.385s 0.274σ $0.00003921
+     *   ✔ aws 192MB queue 10.024s 0.230σ $0.00003576
+     *   ✔ aws 256MB queue 8.077s 0.204σ $0.00003779
+     *      ▲    ▲     ▲     ▲       ▲        ▲
+     *      │    │     │     │       │        │
+     *  provider │    mode   │     stdev     average
+     *           │           │   execution  estimated
+     *         memory        │     time       cost
+     *          size         │
+     *                 average cloud
+     *                 execution time
+     * \`\`\`
+     *
+     * The output lists the provider, memory size, ({@link CommonOptions.mode}),
+     * average time of a single execution of the workload, the standard
+     * deviation (in seconds) of the execution time, and average estimated cost
+     * for a single run of the workload.
+     *
+     * The "execution time" referenced here is not wall clock time, but rather
+     * execution time in the cloud function. The execution time does not include
+     * any time the workload spends waiting locally. If the workload invokes
+     * multiple cloud functions, their execution times will be summed even if
+     * they happen concurrently. This ensures the execution time and cost are
+     * aligned.
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "namespace.CostAnalyzer.function.analyze",
+          "kind": "function",
+          "line": 962,
+          "name": "analyze",
+          "signature": "analyze: <T extends object, A extends string>(
+  userWorkload: Workload<T, A>,
+) => Promise<Result<T, A>>;",
+        },
+        {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "docs": [
+            "/**
+     * A cost estimate result for a specific cost analyzer configuration.
+     * @public
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "getAccessors": [],
+          "id": "namespace.CostAnalyzer.interface.Estimate",
+          "indexSignatures": [],
+          "kind": "interface",
+          "line": 852,
+          "methods": [],
+          "name": "Estimate",
+          "properties": [
+            {
+              "docs": [
+                "/**
+         * The worload configuration that was analyzed. See
+         * {@link CostAnalyzer.Configuration}.
+         */",
+              ],
+              "file": "/faastjs/dist/faastjs.d.ts",
+              "id": "namespace.CostAnalyzer.interface.Estimate.property.config",
+              "kind": "interface-property",
+              "line": 862,
+              "name": "config",
+              "signature": "config: Configuration;",
+            },
+            {
+              "docs": [
+                "/**
+         * The cost snapshot for the cost analysis of the specific (workload,
+         * configuration) combination. See {@link CostSnapshot}.
+         */",
+              ],
+              "file": "/faastjs/dist/faastjs.d.ts",
+              "id": "namespace.CostAnalyzer.interface.Estimate.property.costSnapshot",
+              "kind": "interface-property",
+              "line": 857,
+              "name": "costSnapshot",
+              "signature": "costSnapshot: CostSnapshot;",
+            },
+            {
+              "docs": [
+                "/**
+         * Additional workload metrics returned from the work function. See
+         * {@link CostAnalyzer.WorkloadAttribute}.
+         */",
+              ],
+              "file": "/faastjs/dist/faastjs.d.ts",
+              "id": "namespace.CostAnalyzer.interface.Estimate.property.extraMetrics",
+              "kind": "interface-property",
+              "line": 867,
+              "name": "extraMetrics",
+              "signature": "extraMetrics: WorkloadAttribute<A>;",
+            },
+          ],
+          "setAccessors": [],
+          "signature": "interface Estimate<A extends string> {}",
+        },
+        {
+          "callSignatures": [],
+          "constructSignatures": [],
+          "docs": [
+            "/**
+     * A user-defined cost analyzer workload for {@link CostAnalyzer.analyze}.
+     * @public
+     * Example:
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "getAccessors": [],
+          "id": "namespace.CostAnalyzer.interface.Workload",
+          "indexSignatures": [],
+          "kind": "interface",
+          "line": 784,
+          "methods": [],
+          "name": "Workload",
+          "properties": [
+            {
+              "docs": [
+                "/**
+         * The amount of concurrency to allow. Concurrency can arise from
+         * multiple repetitions of the same configuration, or concurrenct
+         * executions of different configurations. This concurrency limit
+         * throttles the total number of concurrent workload executions across
+         * both of these sources of concurrency. Default: 64.
+         */",
+              ],
+              "file": "/faastjs/dist/faastjs.d.ts",
+              "id": "namespace.CostAnalyzer.interface.Workload.property.concurrency",
+              "kind": "interface-property",
+              "line": 846,
+              "name": "concurrency",
+              "signature": "concurrency?: number;",
+            },
+            {
+              "docs": [
+                "/**
+         * An array of configurations to run the work function against (see
+         * {@link CostAnalyzer.Configuration}). For example, each entry in the
+         * array may specify a provider, memory size, and other options.
+         * Default: {@link CostAnalyzer.awsConfigurations}.
+         */",
+              ],
+              "file": "/faastjs/dist/faastjs.d.ts",
+              "id": "namespace.CostAnalyzer.interface.Workload.property.configurations",
+              "kind": "interface-property",
+              "line": 807,
+              "name": "configurations",
+              "signature": "configurations?: Configuration[];",
+            },
+            {
+              "docs": [
+                "/**
+         * Format an attribute value for console output. This is displayed by
+         * the cost analyzer when all of the repetitions for a configuration
+         * have completed. The default returns
+         * \`\${attribute}:\${value.toFixed(1)}\`.
+         */",
+              ],
+              "file": "/faastjs/dist/faastjs.d.ts",
+              "id": "namespace.CostAnalyzer.interface.Workload.property.format",
+              "kind": "interface-property",
+              "line": 821,
+              "name": "format",
+              "signature": "format?: (attr: A, value: number) => string;",
+            },
+            {
+              "docs": [
+                "/**
+         * Format an attribute value for CSV. The default returns
+         * \`value.toFixed(1)\`.
+         */",
+              ],
+              "file": "/faastjs/dist/faastjs.d.ts",
+              "id": "namespace.CostAnalyzer.interface.Workload.property.formatCSV",
+              "kind": "interface-property",
+              "line": 826,
+              "name": "formatCSV",
+              "signature": "formatCSV?: (attr: A, value: number) => string;",
+            },
+            {
+              "docs": [
+                "/**
+         * The imported module that contains the cloud functions to test.
+         */",
+              ],
+              "file": "/faastjs/dist/faastjs.d.ts",
+              "id": "namespace.CostAnalyzer.interface.Workload.property.funcs",
+              "kind": "interface-property",
+              "line": 788,
+              "name": "funcs",
+              "signature": "funcs: T;",
+            },
+            {
+              "docs": [
+                "/**
+         * The number of repetitions to run the workload for each cost analyzer
+         * configuration. Higher repetitions help reduce the jitter in the
+         * results. Repetitions execute in the same FaastModule instance.
+         * Default: 10.
+         */",
+              ],
+              "file": "/faastjs/dist/faastjs.d.ts",
+              "id": "namespace.CostAnalyzer.interface.Workload.property.repetitions",
+              "kind": "interface-property",
+              "line": 838,
+              "name": "repetitions",
+              "signature": "repetitions?: number;",
+            },
+            {
+              "docs": [
+                "/**
+         * If true, do not output live results to the console. Can be useful for
+         * running the cost analyzer as part of automated tests. Default: false.
+         */",
+              ],
+              "file": "/faastjs/dist/faastjs.d.ts",
+              "id": "namespace.CostAnalyzer.interface.Workload.property.silent",
+              "kind": "interface-property",
+              "line": 831,
+              "name": "silent",
+              "signature": "silent?: boolean;",
+            },
+            {
+              "docs": [
+                "/**
+         * Combine {@link CostAnalyzer.WorkloadAttribute} instances returned
+         * from multiple workload executions (caused by value of
+         * {@link CostAnalyzer.Workload.repetitions}). The default is a function
+         * that takes the average of each attribute.
+         */",
+              ],
+              "file": "/faastjs/dist/faastjs.d.ts",
+              "id": "namespace.CostAnalyzer.interface.Workload.property.summarize",
+              "kind": "interface-property",
+              "line": 814,
+              "name": "summarize",
+              "signature": "summarize?: (summaries: WorkloadAttribute<A>[]) => WorkloadAttribute<A>;",
+            },
+            {
+              "docs": [
+                "/**
+         * A function that executes cloud functions on
+         * \`faastModule.functions.*\`. The work function should return \`void\` if
+         * there are no custom workload attributes. Otherwise, it should return
+         * a {@link CostAnalyzer.WorkloadAttribute} object which maps
+         * user-defined attribute names to numerical values for the workload.
+         * For example, this might measure bandwidth or some other metric not
+         * tracked by faast.js, but are relevant for evaluating the
+         * cost-performance tradeoff of the configurations analyzed by the cost
+         * analyzer.
+         */",
+              ],
+              "file": "/faastjs/dist/faastjs.d.ts",
+              "id": "namespace.CostAnalyzer.interface.Workload.property.work",
+              "kind": "interface-property",
+              "line": 800,
+              "name": "work",
+              "signature": "work: (faastModule: FaastModule<T>) => Promise<WorkloadAttribute<A> | void>;",
+            },
+          ],
+          "setAccessors": [],
+          "signature": "interface Workload<T extends object, A extends string> {}",
+        },
+        {
+          "docs": [
+            "/**
+     * An input to {@link CostAnalyzer.analyze}, specifying one
+     * configuration of faast.js to run against a workload. See
+     * {@link AwsOptions}.
+     * @public
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "namespace.CostAnalyzer.type.Configuration",
+          "kind": "type",
+          "line": 736,
+          "name": "Configuration",
+          "signature": "type Configuration = {
+  provider: "aws";
+  options: AwsOptions;
+};",
+        },
+        {
+          "docs": [
+            "/**
+     * User-defined custom metrics for a workload. These are automatically
+     * summarized in the output; see {@link CostAnalyzer.Workload}.
+     * @public
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "namespace.CostAnalyzer.type.WorkloadAttribute",
+          "kind": "type",
+          "line": 776,
+          "name": "WorkloadAttribute",
+          "signature": "type WorkloadAttribute<A extends string> = {
+  [attr in A]: number;
+};",
+        },
+        {
+          "docs": [
+            "/**
+     * Default AWS cost analyzer configurations include all memory sizes for AWS
+     * Lambda.
+     * @remarks
+     * The default AWS cost analyzer configurations include every memory size
+     * from 128MB to 3008MB in 64MB increments. Each configuration has the
+     * following settings:
+     *
+     * \`\`\`typescript
+     * {
+     *     provider: "aws",
+     *     options: {
+     *         mode: "https",
+     *         memorySize,
+     *         timeout: 300,
+     *         gc: "off",
+     *         childProcess: true
+     *     }
+     * }
+     * \`\`\`
+     *
+     * Use \`Array.map\` to change or \`Array.filter\` to remove some of these
+     * configurations. For example:
+     *
+     * \`\`\`typescript
+     * const configsWithAtLeast1GB = awsConfigurations.filter(c => c.memorySize > 1024)
+     * const shorterTimeout = awsConfigurations.map(c => ({...c, timeout: 60 }));
+     * \`\`\`
+     * @public
+     */",
+          ],
+          "file": "/faastjs/dist/faastjs.d.ts",
+          "id": "namespace.CostAnalyzer.variable.awsConfigurations",
+          "kind": "variable",
+          "line": 770,
+          "name": "awsConfigurations",
+          "signature": "const awsConfigurations: Configuration[];",
+        },
+      ],
+      "docs": [
+        "/**
+ * Analyze the cost of a workload across many provider configurations.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "namespace.CostAnalyzer",
+      "kind": "namespace",
+      "line": 729,
+      "name": "CostAnalyzer",
+      "signature": "namespace CostAnalyzer {}",
+    },
+    {
+      "docs": [
+        "/**
+ * \`Async<T>\` maps regular values to Promises and Iterators to AsyncIterators,
+ * If \`T\` is already a Promise or an AsyncIterator, it remains the same. This
+ * type is used to infer the return value of cloud functions from the types of
+ * the functions in the user's input module.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "type.Async",
+      "kind": "type",
+      "line": 39,
+      "name": "Async",
+      "signature": "type Async<T> =
+  T extends AsyncGenerator<infer R>
+    ? AsyncGenerator<R>
+    : T extends Generator<infer R>
+      ? AsyncGenerator<R>
+      : T extends Promise<infer R>
+        ? Promise<R>
+        : Promise<T>;",
+    },
+    {
+      "docs": [
+        "/**
+ * \`AsyncDetail<T>\` is similar to {@link Async} except it maps retun values R to
+ * \`Detail<R>\`, which is the return value with additional information about each
+ * cloud function invocation.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "type.AsyncDetail",
+      "kind": "type",
+      "line": 47,
+      "name": "AsyncDetail",
+      "signature": "type AsyncDetail<T> =
+  T extends AsyncGenerator<infer R>
+    ? AsyncGenerator<Detail<R>>
+    : T extends Generator<infer R>
+      ? AsyncGenerator<Detail<R>>
+      : T extends Promise<infer R>
+        ? Promise<Detail<R>>
+        : Promise<Detail<T>>;",
+    },
+    {
+      "docs": [
+        "/**
+ * The return type of {@link faastAws}. See {@link FaastModuleProxy}.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "type.AwsFaastModule",
+      "kind": "type",
+      "line": 101,
+      "name": "AwsFaastModule",
+      "signature": "type AwsFaastModule<M extends object = object> = FaastModuleProxy<
+  M,
+  AwsOptions,
+  AwsState
+>;",
+    },
+    {
+      "docs": [
+        "/**
+ * Valid AWS
+ * {@link https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html | regions}.
+ * Not all of these regions have Lambda support.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "type.AwsRegion",
+      "kind": "type",
+      "line": 233,
+      "name": "AwsRegion",
+      "signature": "type AwsRegion =
+  | "us-east-1"
+  | "us-east-2"
+  | "us-west-1"
+  | "us-west-2"
+  | "ca-central-1"
+  | "eu-central-1"
+  | "eu-west-1"
+  | "eu-west-2"
+  | "eu-west-3"
+  | "ap-northeast-1"
+  | "ap-northeast-2"
+  | "ap-northeast-3"
+  | "ap-southeast-1"
+  | "ap-southeast-2"
+  | "ap-south-1"
+  | "sa-east-1";",
+    },
+    {
+      "docs": [
+        "/**
+ * The return type of {@link faastLocal}. See {@link FaastModuleProxy}.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "type.LocalFaastModule",
+      "kind": "type",
+      "line": 1915,
+      "name": "LocalFaastModule",
+      "signature": "type LocalFaastModule<M extends object = object> = FaastModuleProxy<
+  M,
+  LocalOptions,
+  LocalState
+>;",
+    },
+    {
+      "docs": [
+        "/**
+ * The type of all supported cloud providers.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "type.Provider",
+      "kind": "type",
+      "line": 2108,
+      "name": "Provider",
+      "signature": "type Provider = "aws" | "local";",
+    },
+    {
+      "docs": [
+        "/**
+ * \`ProxyModule<M>\` is the type of {@link FaastModule.functions}.
+ * @remarks
+ * \`ProxyModule<M>\` maps an imported module's functions to promise-returning or
+ * async-iteratable versions of those functions. Non-function exports of the
+ * module are omitted. When invoked, the functions in a \`ProxyModule\` invoke a
+ * remote cloud function.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "type.ProxyModule",
+      "kind": "type",
+      "line": 2137,
+      "name": "ProxyModule",
+      "signature": "type ProxyModule<M> = {
+  [K in keyof M]: M[K] extends (...args: infer A) => infer R
+    ? (...args: A) => Async<R>
+    : never;
+};",
+    },
+    {
+      "docs": [
+        "/**
+ * Similar to {@link ProxyModule} except each function returns a {@link Detail}
+ * object.
+ * @remarks
+ * See {@link FaastModule.functionsDetail}.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "type.ProxyModuleDetail",
+      "kind": "type",
+      "line": 2148,
+      "name": "ProxyModuleDetail",
+      "signature": "type ProxyModuleDetail<M> = {
+  [K in keyof M]: M[K] extends (...args: infer A) => infer R
+    ? (...args: A) => AsyncDetail<R>
+    : never;
+};",
+    },
+    {
+      "docs": [
+        "/**
+ * Faast.js loggers.
+ * @remarks
+ * Unless otherwise specified, each log is disabled by default unless the value
+ * of the DEBUG environment variable is set to the corresponding value. For
+ * example:
+ *
+ * \`\`\`
+ *   $ DEBUG=faast:info,faast:provider <cmd>
+ *   $ DEBUG=faast:* <cmd>
+ * \`\`\`
+ *
+ * Logs can also be enabled or disabled programmatically:
+ * \`\`\`typescript
+ * import { log } from "faastjs"
+ * log.info.enabled = true;
+ * log.provider.enabled = true;
+ * \`\`\`
+ *
+ * Each log outputs specific information:
+ *
+ * \`info\` - General informational logging.
+ *
+ * \`minimal\` - Outputs only basic information like the function name created in
+ * the cloud.
+ *
+ * \`warn\` - Warnings. Enabled by default.
+ *
+ * \`gc\` - Garbage collection verbose logging.
+ *
+ * \`leaks\` - Memory leak detector warnings for the cloud function. Enabled by
+ * default.
+ *
+ * \`calls\` - Verbose logging of each faast.js enabled function invocation.
+ *
+ * \`webpack\` - Verbose logging from webpack and packaging details.
+ *
+ * \`provider\` - Verbose logging of each interaction between faast.js runtime and
+ * the provider-specific implementation.
+ *
+ * \`awssdk\` - Verbose logging of AWS SDK. This can be useful for identifying
+ * which API calls are failing, retrying, or encountering rate limits.
+ *
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "variable.log",
+      "kind": "variable",
+      "line": 1992,
+      "name": "log",
+      "signature": "const log: {
+  info: debug_2.Debugger;
+  minimal: debug_2.Debugger;
+  warn: debug_2.Debugger;
+  gc: debug_2.Debugger;
+  leaks: debug_2.Debugger;
+  calls: debug_2.Debugger;
+  webpack: debug_2.Debugger;
+  provider: debug_2.Debugger;
+  awssdk: debug_2.Debugger;
+};",
+    },
+    {
+      "docs": [
+        "/**
+ * An array of all available provider.
+ * @public
+ */",
+      ],
+      "file": "/faastjs/dist/faastjs.d.ts",
+      "id": "variable.providers",
+      "kind": "variable",
+      "line": 2126,
+      "name": "providers",
+      "signature": "const providers: Provider[];",
+    },
+  ],
+  "name": "faastjs",
+  "overview": "/**
+ * Faast.js transforms ordinary JavaScript modules into serverless cloud
+ * functions that can run on AWS Lambda.
+ *
+ * The main entry point to faast.js is the {@link faast} function, which returns
+ * an object that implements the {@link FaastModule} interface. The most common
+ * options are {@link CommonOptions}. Using faast.js requires writing two
+ * modules, one containing the functions to upload to the cloud, and the other
+ * that invokes faast.js and calls the resulting cloud functions.
+ * @packageDocumentation
+ */",
+  "packages": [
+    "@aws-crypto/crc32@3.0.0",
+    "@aws-crypto/crc32c@3.0.0",
+    "@aws-crypto/ie11-detection@3.0.0",
+    "@aws-crypto/sha1-browser@3.0.0",
+    "@aws-crypto/sha256-browser@3.0.0",
+    "@aws-crypto/sha256-js@3.0.0",
+    "@aws-crypto/supports-web-crypto@3.0.0",
+    "@aws-crypto/util@3.0.0",
+    "@aws-sdk/abort-controller@3.374.0",
+    "@aws-sdk/client-cloudwatch@3.509.0",
+    "@aws-sdk/client-cloudwatch-logs@3.509.0",
+    "@aws-sdk/client-iam@3.509.0",
+    "@aws-sdk/client-lambda@3.509.0",
+    "@aws-sdk/client-pricing@3.509.0",
+    "@aws-sdk/client-s3@3.509.0",
+    "@aws-sdk/client-sns@3.509.0",
+    "@aws-sdk/client-sqs@3.509.0",
+    "@aws-sdk/client-sso@3.507.0",
+    "@aws-sdk/client-sso-oidc@3.507.0",
+    "@aws-sdk/client-sts@3.507.0",
+    "@aws-sdk/core@3.496.0",
+    "@aws-sdk/credential-provider-env@3.502.0",
+    "@aws-sdk/credential-provider-http@3.503.1",
+    "@aws-sdk/credential-provider-ini@3.507.0",
+    "@aws-sdk/credential-provider-node@3.509.0",
+    "@aws-sdk/credential-provider-process@3.502.0",
+    "@aws-sdk/credential-provider-sso@3.507.0",
+    "@aws-sdk/credential-provider-web-identity@3.507.0",
+    "@aws-sdk/lib-storage@3.509.0",
+    "@aws-sdk/middleware-bucket-endpoint@3.502.0",
+    "@aws-sdk/middleware-expect-continue@3.502.0",
+    "@aws-sdk/middleware-flexible-checksums@3.502.0",
+    "@aws-sdk/middleware-host-header@3.502.0",
+    "@aws-sdk/middleware-location-constraint@3.502.0",
+    "@aws-sdk/middleware-logger@3.502.0",
+    "@aws-sdk/middleware-recursion-detection@3.502.0",
+    "@aws-sdk/middleware-sdk-s3@3.502.0",
+    "@aws-sdk/middleware-sdk-sqs@3.507.0",
+    "@aws-sdk/middleware-signing@3.502.0",
+    "@aws-sdk/middleware-ssec@3.502.0",
+    "@aws-sdk/middleware-user-agent@3.502.0",
+    "@aws-sdk/region-config-resolver@3.502.0",
+    "@aws-sdk/signature-v4-multi-region@3.502.0",
+    "@aws-sdk/token-providers@3.507.0",
+    "@aws-sdk/types@3.502.0",
+    "@aws-sdk/util-arn-parser@3.495.0",
+    "@aws-sdk/util-endpoints@3.502.0",
+    "@aws-sdk/util-locate-window@3.495.0",
+    "@aws-sdk/util-user-agent-browser@3.502.0",
+    "@aws-sdk/util-user-agent-node@3.502.0",
+    "@aws-sdk/util-utf8-browser@3.259.0",
+    "@aws-sdk/xml-builder@3.496.0",
+    "@jridgewell/gen-mapping@0.3.3",
+    "@jridgewell/resolve-uri@3.1.1",
+    "@jridgewell/set-array@1.1.2",
+    "@jridgewell/source-map@0.3.5",
+    "@jridgewell/sourcemap-codec@1.4.15",
+    "@jridgewell/trace-mapping@0.3.22",
+    "@samverschueren/stream-to-observable@0.3.1",
+    "@smithy/abort-controller@1.1.0",
+    "@smithy/abort-controller@2.1.1",
+    "@smithy/chunked-blob-reader@2.1.1",
+    "@smithy/chunked-blob-reader-native@2.1.1",
+    "@smithy/config-resolver@2.1.1",
+    "@smithy/core@1.3.2",
+    "@smithy/credential-provider-imds@2.2.1",
+    "@smithy/eventstream-codec@2.1.1",
+    "@smithy/eventstream-serde-browser@2.1.1",
+    "@smithy/eventstream-serde-config-resolver@2.1.1",
+    "@smithy/eventstream-serde-node@2.1.1",
+    "@smithy/eventstream-serde-universal@2.1.1",
+    "@smithy/fetch-http-handler@2.4.1",
+    "@smithy/hash-blob-browser@2.1.1",
+    "@smithy/hash-node@2.1.1",
+    "@smithy/hash-stream-node@2.1.1",
+    "@smithy/invalid-dependency@2.1.1",
+    "@smithy/is-array-buffer@2.1.1",
+    "@smithy/md5-js@2.1.1",
+    "@smithy/middleware-content-length@2.1.1",
+    "@smithy/middleware-endpoint@2.4.1",
+    "@smithy/middleware-retry@2.1.1",
+    "@smithy/middleware-serde@2.1.1",
+    "@smithy/middleware-stack@2.1.1",
+    "@smithy/node-config-provider@2.2.1",
+    "@smithy/node-http-handler@2.3.1",
+    "@smithy/property-provider@2.1.1",
+    "@smithy/protocol-http@3.1.1",
+    "@smithy/querystring-builder@2.1.1",
+    "@smithy/querystring-parser@2.1.1",
+    "@smithy/service-error-classification@2.1.1",
+    "@smithy/shared-ini-file-loader@2.3.1",
+    "@smithy/signature-v4@2.1.1",
+    "@smithy/smithy-client@2.3.1",
+    "@smithy/types@1.2.0",
+    "@smithy/types@2.9.1",
+    "@smithy/url-parser@2.1.1",
+    "@smithy/util-base64@2.1.1",
+    "@smithy/util-body-length-browser@2.1.1",
+    "@smithy/util-body-length-node@2.2.1",
+    "@smithy/util-buffer-from@2.1.1",
+    "@smithy/util-config-provider@2.2.1",
+    "@smithy/util-defaults-mode-browser@2.1.1",
+    "@smithy/util-defaults-mode-node@2.2.0",
+    "@smithy/util-endpoints@1.1.1",
+    "@smithy/util-hex-encoding@2.1.1",
+    "@smithy/util-middleware@2.1.1",
+    "@smithy/util-retry@2.1.1",
+    "@smithy/util-stream@2.1.1",
+    "@smithy/util-uri-escape@2.1.1",
+    "@smithy/util-utf8@2.1.1",
+    "@smithy/util-waiter@2.1.1",
+    "@types/debug@4.1.12",
+    "@types/eslint@8.56.2",
+    "@types/eslint-scope@3.7.7",
+    "@types/estree@1.0.5",
+    "@types/json-schema@7.0.15",
+    "@types/ms@0.7.34",
+    "@types/node@20.11.17",
+    "@types/verror@1.10.9",
+    "@types/webpack@5.28.5",
+    "@webassemblyjs/ast@1.11.6",
+    "@webassemblyjs/floating-point-hex-parser@1.11.6",
+    "@webassemblyjs/helper-api-error@1.11.6",
+    "@webassemblyjs/helper-buffer@1.11.6",
+    "@webassemblyjs/helper-numbers@1.11.6",
+    "@webassemblyjs/helper-wasm-bytecode@1.11.6",
+    "@webassemblyjs/helper-wasm-section@1.11.6",
+    "@webassemblyjs/ieee754@1.11.6",
+    "@webassemblyjs/leb128@1.11.6",
+    "@webassemblyjs/utf8@1.11.6",
+    "@webassemblyjs/wasm-edit@1.11.6",
+    "@webassemblyjs/wasm-gen@1.11.6",
+    "@webassemblyjs/wasm-opt@1.11.6",
+    "@webassemblyjs/wasm-parser@1.11.6",
+    "@webassemblyjs/wast-printer@1.11.6",
+    "@xtuc/ieee754@1.2.0",
+    "@xtuc/long@4.2.2",
+    "acorn@8.11.3",
+    "acorn-import-assertions@1.9.0",
+    "ajv@6.12.6",
+    "ajv-keywords@3.5.2",
+    "ansi-escapes@3.2.0",
+    "ansi-regex@2.1.1",
+    "ansi-regex@3.0.1",
+    "ansi-regex@5.0.1",
+    "ansi-styles@2.2.1",
+    "ansi-styles@3.2.1",
+    "ansi-styles@4.3.0",
+    "any-observable@0.3.0",
+    "archiver@6.0.1",
+    "archiver-utils@4.0.1",
+    "assert-plus@1.0.0",
+    "async@3.2.5",
+    "b4a@1.6.6",
+    "balanced-match@1.0.2",
+    "bare-events@2.2.0",
+    "base64-js@1.5.1",
+    "bl@4.1.0",
+    "bowser@2.11.0",
+    "brace-expansion@2.0.1",
+    "browserslist@4.22.3",
+    "buffer@5.6.0",
+    "buffer@5.7.1",
+    "buffer-crc32@0.2.13",
+    "buffer-from@1.1.2",
+    "caniuse-lite@1.0.30001585",
+    "chalk@1.1.3",
+    "chalk@2.4.2",
+    "chalk@4.1.2",
+    "chrome-trace-event@1.0.3",
+    "cli-cursor@2.1.0",
+    "cli-cursor@3.1.0",
+    "cli-spinners@2.9.2",
+    "cli-truncate@0.2.1",
+    "clone@1.0.4",
+    "clone-deep@4.0.1",
+    "code-point-at@1.1.0",
+    "color-convert@1.9.3",
+    "color-convert@2.0.1",
+    "color-name@1.1.3",
+    "color-name@1.1.4",
+    "commander@2.20.3",
+    "commander@12.0.0",
+    "compress-commons@5.0.1",
+    "core-util-is@1.0.2",
+    "crc-32@1.2.2",
+    "crc32-stream@5.0.0",
+    "date-fns@1.30.1",
+    "debug@4.3.4",
+    "defaults@1.0.4",
+    "electron-to-chromium@1.4.664",
+    "elegant-spinner@1.0.1",
+    "enhanced-resolve@5.15.0",
+    "errno@0.1.8",
+    "es-module-lexer@1.4.1",
+    "escalade@3.1.2",
+    "escape-string-regexp@1.0.5",
+    "eslint-scope@5.1.1",
+    "esrecurse@4.3.0",
+    "estraverse@4.3.0",
+    "estraverse@5.3.0",
+    "events@3.3.0",
+    "extsprintf@1.4.1",
+    "faastjs@8.0.64",
+    "fast-deep-equal@3.1.3",
+    "fast-fifo@1.3.2",
+    "fast-json-stable-stringify@2.1.0",
+    "fast-xml-parser@4.2.5",
+    "fd-slicer@1.1.0",
+    "figures@1.7.0",
+    "figures@2.0.0",
+    "flat@5.0.2",
+    "fs-extra@11.2.0",
+    "fs.realpath@1.0.0",
+    "glob@8.1.0",
+    "glob-to-regexp@0.4.1",
+    "graceful-fs@4.2.11",
+    "has-ansi@2.0.0",
+    "has-flag@3.0.0",
+    "has-flag@4.0.0",
+    "ieee754@1.2.1",
+    "indent-string@3.2.0",
+    "inflight@1.0.6",
+    "inherits@2.0.4",
+    "is-fullwidth-code-point@1.0.0",
+    "is-fullwidth-code-point@2.0.0",
+    "is-interactive@1.0.0",
+    "is-observable@1.1.0",
+    "is-plain-object@2.0.4",
+    "is-promise@2.2.2",
+    "is-stream@1.1.0",
+    "is-unicode-supported@0.1.0",
+    "isarray@1.0.0",
+    "isobject@3.0.1",
+    "jest-worker@27.5.1",
+    "json-parse-even-better-errors@2.3.1",
+    "json-schema-traverse@0.4.1",
+    "jsonfile@6.1.0",
+    "jsps@1.0.0",
+    "kind-of@6.0.3",
+    "lazystream@1.0.1",
+    "listr@0.14.3",
+    "listr-silent-renderer@1.1.1",
+    "listr-update-renderer@0.5.0",
+    "listr-verbose-renderer@0.5.0",
+    "loader-runner@4.3.0",
+    "lodash@4.17.21",
+    "log-symbols@1.0.2",
+    "log-symbols@4.1.0",
+    "log-update@2.3.0",
+    "memory-fs@0.5.0",
+    "merge-stream@2.0.0",
+    "mime-db@1.52.0",
+    "mime-types@2.1.35",
+    "mimic-fn@1.2.0",
+    "mimic-fn@2.1.0",
+    "minimatch@5.1.6",
+    "ms@2.1.2",
+    "neo-async@2.6.2",
+    "node-releases@2.0.14",
+    "normalize-path@3.0.0",
+    "number-is-nan@1.0.1",
+    "object-assign@4.1.1",
+    "once@1.4.0",
+    "onetime@2.0.1",
+    "onetime@5.1.2",
+    "ora@5.4.1",
+    "p-map@2.1.0",
+    "pend@1.2.0",
+    "picocolors@1.0.0",
+    "process-doctor@1.0.0",
+    "process-nextick-args@2.0.1",
+    "prr@1.0.1",
+    "punycode@2.3.1",
+    "queue-tick@1.0.1",
+    "randombytes@2.1.0",
+    "readable-stream@2.3.8",
+    "readable-stream@3.6.2",
+    "readdir-glob@1.1.3",
+    "restore-cursor@2.0.0",
+    "restore-cursor@3.1.0",
+    "rxjs@6.6.7",
+    "safe-buffer@5.1.2",
+    "schema-utils@3.3.0",
+    "serialize-javascript@6.0.2",
+    "shallow-clone@3.0.1",
+    "signal-exit@3.0.7",
+    "slice-ansi@0.0.4",
+    "source-map@0.6.1",
+    "source-map-support@0.5.21",
+    "stream-browserify@3.0.0",
+    "streamx@2.15.8",
+    "string-width@1.0.2",
+    "string-width@2.1.1",
+    "string_decoder@1.1.1",
+    "strip-ansi@3.0.1",
+    "strip-ansi@4.0.0",
+    "strip-ansi@6.0.1",
+    "strnum@1.0.5",
+    "supports-color@2.0.0",
+    "supports-color@5.5.0",
+    "supports-color@7.2.0",
+    "supports-color@8.1.1",
+    "symbol-observable@1.2.0",
+    "tapable@2.2.1",
+    "tar-stream@3.1.7",
+    "terser@5.27.0",
+    "terser-webpack-plugin@5.3.10",
+    "tslib@1.14.1",
+    "tslib@2.6.2",
+    "undici-types@5.26.5",
+    "universalify@2.0.1",
+    "update-browserslist-db@1.0.13",
+    "uri-js@4.4.1",
+    "util-deprecate@1.0.2",
+    "uuid@8.3.2",
+    "uuid@9.0.1",
+    "verror@1.10.1",
+    "watchpack@2.4.0",
+    "wcwidth@1.0.1",
+    "webpack@5.90.1",
+    "webpack-merge@5.10.0",
+    "webpack-node-externals@3.0.0",
+    "webpack-sources@3.2.3",
+    "wildcard@2.0.1",
+    "wrap-ansi@3.0.1",
+    "wrappy@1.0.2",
+    "yauzl@2.10.0",
+    "zip-stream@5.0.1",
+  ],
+  "subpath": ".",
+  "types": "dist/faastjs.d.ts",
+  "version": "8.0.64",
+}
+`;

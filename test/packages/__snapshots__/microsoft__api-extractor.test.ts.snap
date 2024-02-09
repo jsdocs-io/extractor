@@ -1,0 +1,2688 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`@microsoft/api-extractor@7.13.0 1`] = `
+{
+  "declarations": [
+    {
+      "constructors": [],
+      "docs": [
+        "/**
+ * This class represents the TypeScript compiler state.  This allows an optimization where multiple invocations
+ * of API Extractor can reuse the same TypeScript compiler analysis.
+ *
+ * @public
+ */",
+      ],
+      "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+      "id": "class.CompilerState",
+      "kind": "class",
+      "line": 22,
+      "methods": [
+        {
+          "docs": [
+            "/**
+     * Create a compiler state for use with the specified \`IExtractorInvokeOptions\`.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.CompilerState.method.create",
+          "kind": "class-method",
+          "line": 31,
+          "name": "create",
+          "signature": "static create: (
+  extractorConfig: ExtractorConfig,
+  options?: ICompilerStateCreateOptions,
+) => CompilerState;",
+        },
+      ],
+      "name": "CompilerState",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * The TypeScript compiler's \`Program\` object, which represents a complete scope of analysis.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.CompilerState.property.program",
+          "kind": "class-property",
+          "line": 26,
+          "name": "program",
+          "signature": "readonly program: {};",
+        },
+      ],
+      "signature": "class CompilerState {}",
+    },
+    {
+      "constructors": [],
+      "docs": [
+        "/**
+ * The starting point for invoking the API Extractor tool.
+ * @public
+ */",
+      ],
+      "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+      "id": "class.Extractor",
+      "kind": "class",
+      "line": 120,
+      "methods": [
+        {
+          "docs": [
+            "/**
+     * Invoke API Extractor using an already prepared \`ExtractorConfig\` object.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.Extractor.method.invoke",
+          "kind": "class-method",
+          "line": 137,
+          "name": "invoke",
+          "signature": "static invoke: (
+  extractorConfig: ExtractorConfig,
+  options?: IExtractorInvokeOptions,
+) => ExtractorResult;",
+        },
+        {
+          "docs": [
+            "/**
+     * Load the api-extractor.json config file from the specified path, and then invoke API Extractor.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.Extractor.method.loadConfigAndInvoke",
+          "kind": "class-method",
+          "line": 133,
+          "name": "loadConfigAndInvoke",
+          "signature": "static loadConfigAndInvoke: (
+  configFilePath: string,
+  options?: IExtractorInvokeOptions,
+) => ExtractorResult;",
+        },
+      ],
+      "name": "Extractor",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Returns the package name of the API Extractor NPM package.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.Extractor.property.packageName",
+          "kind": "class-property",
+          "line": 128,
+          "name": "packageName",
+          "signature": "static readonly packageName: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Returns the version number of the API Extractor NPM package.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.Extractor.property.version",
+          "kind": "class-property",
+          "line": 124,
+          "name": "version",
+          "signature": "static readonly version: string;",
+        },
+      ],
+      "signature": "class Extractor {}",
+    },
+    {
+      "constructors": [],
+      "docs": [
+        "/**
+ * The \`ExtractorConfig\` class loads, validates, interprets, and represents the api-extractor.json config file.
+ * @public
+ */",
+      ],
+      "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+      "id": "class.ExtractorConfig",
+      "kind": "class",
+      "line": 146,
+      "methods": [
+        {
+          "docs": [
+            "/**
+     * Returns a JSON-like string representing the \`ExtractorConfig\` state, which can be printed to a console
+     * for diagnostic purposes.
+     *
+     * @remarks
+     * This is used by the "--diagnostics" command-line option.  The string is not intended to be deserialized;
+     * its format may be changed at any time.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.method.getDiagnosticDump",
+          "kind": "class-method",
+          "line": 221,
+          "name": "getDiagnosticDump",
+          "signature": "getDiagnosticDump: () => string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Returns true if the specified file path has the ".d.ts" file extension.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.method.hasDtsFileExtension",
+          "kind": "class-method",
+          "line": 278,
+          "name": "hasDtsFileExtension",
+          "signature": "static hasDtsFileExtension: (filePath: string) => boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * Performs only the first half of {@link ExtractorConfig.loadFileAndPrepare}, providing an opportunity to
+     * modify the object before it is passed to {@link ExtractorConfig.prepare}.
+     *
+     * @remarks
+     * Loads the api-extractor.json config file from the specified file path.   If the "extends" field is present,
+     * the referenced file(s) will be merged.  For any omitted fields, the API Extractor default values are merged.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.method.loadFile",
+          "kind": "class-method",
+          "line": 264,
+          "name": "loadFile",
+          "signature": "static loadFile: (jsonFilePath: string) => IConfigFile;",
+        },
+        {
+          "docs": [
+            "/**
+     * Loads the api-extractor.json config file from the specified file path, and prepares an \`ExtractorConfig\` object.
+     *
+     * @remarks
+     * Loads the api-extractor.json config file from the specified file path.   If the "extends" field is present,
+     * the referenced file(s) will be merged.  For any omitted fields, the API Extractor default values are merged.
+     *
+     * The result is prepared using \`ExtractorConfig.prepare()\`.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.method.loadFileAndPrepare",
+          "kind": "class-method",
+          "line": 255,
+          "name": "loadFileAndPrepare",
+          "signature": "static loadFileAndPrepare: (configJsonFilePath: string) => ExtractorConfig;",
+        },
+        {
+          "docs": [
+            "/**
+     * Prepares an \`ExtractorConfig\` object using a configuration that is provided as a runtime object,
+     * rather than reading it from disk.  This allows configurations to be constructed programmatically,
+     * loaded from an alternate source, and/or customized after loading.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.method.prepare",
+          "kind": "class-method",
+          "line": 272,
+          "name": "prepare",
+          "signature": "static prepare: (options: IExtractorConfigPrepareOptions) => ExtractorConfig;",
+        },
+        {
+          "docs": [
+            "/**
+     * Searches for the api-extractor.json config file associated with the specified starting folder,
+     * and loads the file if found.  This lookup supports
+     * {@link https://www.npmjs.com/package/@rushstack/rig-package | rig packages}.
+     *
+     * @remarks
+     * The search will first look for a package.json file in a parent folder of the starting folder;
+     * if found, that will be used as the base folder instead of the starting folder.  If the config
+     * file is not found in \`<baseFolder>/api-extractor.json\` or \`<baseFolder>/config/api-extractor.json\`,
+     * then \`<baseFolder/config/rig.json\` will be checked to see whether a
+     * {@link https://www.npmjs.com/package/@rushstack/rig-package | rig package} is referenced; if so then
+     * the rig's api-extractor.json file will be used instead.  If a config file is found, it will be loaded
+     * and returned with the \`IExtractorConfigPrepareOptions\` object. Otherwise, \`undefined\` is returned
+     * to indicate that API Extractor does not appear to be configured for the specified folder.
+     *
+     * @returns An options object that can be passed to {@link ExtractorConfig.prepare}, or \`undefined\`
+     * if not api-extractor.json file was found.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.method.tryLoadForFolder",
+          "kind": "class-method",
+          "line": 245,
+          "name": "tryLoadForFolder",
+          "signature": "static tryLoadForFolder: (
+  options: IExtractorConfigLoadForFolderOptions,
+) => IExtractorConfigPrepareOptions | undefined;",
+        },
+      ],
+      "name": "ExtractorConfig",
+      "properties": [
+        {
+          "docs": [
+            "/** {@inheritDoc IConfigDocModel.apiJsonFilePath} */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.apiJsonFilePath",
+          "kind": "class-property",
+          "line": 188,
+          "name": "apiJsonFilePath",
+          "signature": "readonly apiJsonFilePath: string;",
+        },
+        {
+          "docs": [
+            "/** {@inheritDoc IConfigApiReport.enabled} */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.apiReportEnabled",
+          "kind": "class-property",
+          "line": 180,
+          "name": "apiReportEnabled",
+          "signature": "readonly apiReportEnabled: boolean;",
+        },
+        {
+          "docs": [
+            "/** {@inheritDoc IConfigDtsRollup.betaTrimmedFilePath} */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.betaTrimmedFilePath",
+          "kind": "class-property",
+          "line": 194,
+          "name": "betaTrimmedFilePath",
+          "signature": "readonly betaTrimmedFilePath: string;",
+        },
+        {
+          "docs": [
+            "/** {@inheritDoc IConfigFile.bundledPackages} */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.bundledPackages",
+          "kind": "class-property",
+          "line": 172,
+          "name": "bundledPackages",
+          "signature": "readonly bundledPackages: string[];",
+        },
+        {
+          "docs": [
+            "/** {@inheritDoc IConfigDocModel.enabled} */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.docModelEnabled",
+          "kind": "class-property",
+          "line": 186,
+          "name": "docModelEnabled",
+          "signature": "readonly docModelEnabled: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * The config file name "api-extractor.json".
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.FILENAME",
+          "kind": "class-property",
+          "line": 154,
+          "name": "FILENAME",
+          "signature": "static readonly FILENAME: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * The JSON Schema for API Extractor config file (api-extractor.schema.json).
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.jsonSchema",
+          "kind": "class-property",
+          "line": 150,
+          "name": "jsonSchema",
+          "signature": "static readonly jsonSchema: JsonSchema;",
+        },
+        {
+          "docs": [
+            "/** {@inheritDoc IConfigFile.mainEntryPointFilePath} */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.mainEntryPointFilePath",
+          "kind": "class-property",
+          "line": 170,
+          "name": "mainEntryPointFilePath",
+          "signature": "readonly mainEntryPointFilePath: string;",
+        },
+        {
+          "docs": [
+            "/** {@inheritDoc IConfigFile.messages} */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.messages",
+          "kind": "class-property",
+          "line": 209,
+          "name": "messages",
+          "signature": "readonly messages: IExtractorMessagesConfig;",
+        },
+        {
+          "docs": [
+            "/**
+     * Specifies what type of newlines API Extractor should use when writing output files.  By default, the output files
+     * will be written with Windows-style newlines.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.newlineKind",
+          "kind": "class-property",
+          "line": 207,
+          "name": "newlineKind",
+          "signature": "readonly newlineKind: NewlineKind;",
+        },
+        {
+          "docs": [
+            "/** {@inheritDoc IConfigDtsRollup.omitTrimmingComments} */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.omitTrimmingComments",
+          "kind": "class-property",
+          "line": 198,
+          "name": "omitTrimmingComments",
+          "signature": "readonly omitTrimmingComments: boolean;",
+        },
+        {
+          "docs": [
+            "/** {@inheritDoc IConfigCompiler.overrideTsconfig} */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.overrideTsconfig",
+          "kind": "class-property",
+          "line": 176,
+          "name": "overrideTsconfig",
+          "signature": "readonly overrideTsconfig: {};",
+        },
+        {
+          "docs": [
+            "/**
+     * The absolute path of the folder containing the package.json file for the working package, or undefined
+     * if API Extractor was invoked without a package.json file.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.packageFolder",
+          "kind": "class-property",
+          "line": 168,
+          "name": "packageFolder",
+          "signature": "readonly packageFolder: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * The parsed package.json file for the working package, or undefined if API Extractor was invoked without
+     * a package.json file.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.packageJson",
+          "kind": "class-property",
+          "line": 163,
+          "name": "packageJson",
+          "signature": "readonly packageJson: INodePackageJson;",
+        },
+        {
+          "docs": [
+            "/** {@inheritDoc IConfigFile.projectFolder} */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.projectFolder",
+          "kind": "class-property",
+          "line": 158,
+          "name": "projectFolder",
+          "signature": "readonly projectFolder: string;",
+        },
+        {
+          "docs": [
+            "/** {@inheritDoc IConfigDtsRollup.publicTrimmedFilePath} */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.publicTrimmedFilePath",
+          "kind": "class-property",
+          "line": 196,
+          "name": "publicTrimmedFilePath",
+          "signature": "readonly publicTrimmedFilePath: string;",
+        },
+        {
+          "docs": [
+            "/** The \`reportFolder\` path combined with the \`reportFileName\`. */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.reportFilePath",
+          "kind": "class-property",
+          "line": 182,
+          "name": "reportFilePath",
+          "signature": "readonly reportFilePath: string;",
+        },
+        {
+          "docs": [
+            "/** The \`reportTempFolder\` path combined with the \`reportFileName\`. */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.reportTempFilePath",
+          "kind": "class-property",
+          "line": 184,
+          "name": "reportTempFilePath",
+          "signature": "readonly reportTempFilePath: string;",
+        },
+        {
+          "docs": [
+            "/** {@inheritDoc IConfigDtsRollup.enabled} */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.rollupEnabled",
+          "kind": "class-property",
+          "line": 190,
+          "name": "rollupEnabled",
+          "signature": "readonly rollupEnabled: boolean;",
+        },
+        {
+          "docs": [
+            "/** {@inheritDoc IConfigCompiler.skipLibCheck} */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.skipLibCheck",
+          "kind": "class-property",
+          "line": 178,
+          "name": "skipLibCheck",
+          "signature": "readonly skipLibCheck: boolean;",
+        },
+        {
+          "docs": [
+            "/** {@inheritDoc IConfigFile.testMode} */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.testMode",
+          "kind": "class-property",
+          "line": 211,
+          "name": "testMode",
+          "signature": "readonly testMode: boolean;",
+        },
+        {
+          "docs": [
+            "/** {@inheritDoc IConfigCompiler.tsconfigFilePath} */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.tsconfigFilePath",
+          "kind": "class-property",
+          "line": 174,
+          "name": "tsconfigFilePath",
+          "signature": "readonly tsconfigFilePath: string;",
+        },
+        {
+          "docs": [
+            "/** {@inheritDoc IConfigTsdocMetadata.enabled} */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.tsdocMetadataEnabled",
+          "kind": "class-property",
+          "line": 200,
+          "name": "tsdocMetadataEnabled",
+          "signature": "readonly tsdocMetadataEnabled: boolean;",
+        },
+        {
+          "docs": [
+            "/** {@inheritDoc IConfigTsdocMetadata.tsdocMetadataFilePath} */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.tsdocMetadataFilePath",
+          "kind": "class-property",
+          "line": 202,
+          "name": "tsdocMetadataFilePath",
+          "signature": "readonly tsdocMetadataFilePath: string;",
+        },
+        {
+          "docs": [
+            "/** {@inheritDoc IConfigDtsRollup.untrimmedFilePath} */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorConfig.property.untrimmedFilePath",
+          "kind": "class-property",
+          "line": 192,
+          "name": "untrimmedFilePath",
+          "signature": "readonly untrimmedFilePath: string;",
+        },
+      ],
+      "signature": "class ExtractorConfig {}",
+    },
+    {
+      "constructors": [],
+      "docs": [
+        "/**
+ * This object is used to report an error or warning that occurred during API Extractor's analysis.
+ *
+ * @public
+ */",
+      ],
+      "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+      "id": "class.ExtractorMessage",
+      "kind": "class",
+      "line": 334,
+      "methods": [
+        {
+          "docs": [
+            "/**
+     * Returns the message formatted with its identifier and file position.
+     * @remarks
+     * Example:
+     * \`\`\`
+     * src/folder/File.ts:123:4 - (ae-extra-release-tag) The doc comment should not contain more than one release tag.
+     * \`\`\`
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorMessage.method.formatMessageWithLocation",
+          "kind": "class-method",
+          "line": 408,
+          "name": "formatMessageWithLocation",
+          "signature": "formatMessageWithLocation: (
+  workingPackageFolderPath: string | undefined,
+) => string;",
+        },
+        {
+          "docs": [],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorMessage.method.formatMessageWithoutLocation",
+          "kind": "class-method",
+          "line": 409,
+          "name": "formatMessageWithoutLocation",
+          "signature": "formatMessageWithoutLocation: () => string;",
+        },
+      ],
+      "name": "ExtractorMessage",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * The category of issue.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorMessage.property.category",
+          "kind": "class-property",
+          "line": 340,
+          "name": "category",
+          "signature": "readonly category: ExtractorMessageCategory;",
+        },
+        {
+          "docs": [
+            "/**
+     * If the {@link IExtractorInvokeOptions.messageCallback} sets this property to true, it will prevent the message
+     * from being displayed by API Extractor.
+     *
+     * @remarks
+     * If the \`messageCallback\` routes the message to a custom handler (e.g. a toolchain logger), it should
+     * assign \`handled = true\` to prevent API Extractor from displaying it.  Assigning \`handled = true\` for all messages
+     * would effectively disable all console output from the \`Extractor\` API.
+     *
+     * If \`handled\` is set to true, the message will still be included in the count of errors/warnings;
+     * to discard a message entirely, instead assign \`logLevel = none\`.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorMessage.property.handled",
+          "kind": "class-property",
+          "line": 383,
+          "name": "handled",
+          "signature": "handled: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * Specifies how the message should be reported.
+     *
+     * @remarks
+     * If the {@link IExtractorInvokeOptions.messageCallback} handles the message (i.e. sets \`handled = true\`),
+     * it can use the \`logLevel\` to determine how to display the message.
+     *
+     * Alternatively, if API Extractor is handling the message, the \`messageCallback\` could assign \`logLevel\` to change
+     * how it will be processed.  However, in general the recommended practice is to configure message routing
+     * using the \`messages\` section in api-extractor.json.
+     *
+     * To discard a message entirely, assign \`logLevel = none\`.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorMessage.property.logLevel",
+          "kind": "class-property",
+          "line": 398,
+          "name": "logLevel",
+          "signature": "logLevel: ExtractorLogLevel;",
+        },
+        {
+          "docs": [
+            "/**
+     * A text string that uniquely identifies the issue type.  This identifier can be used to suppress
+     * or configure the reporting of issues, and also to search for help about an issue.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorMessage.property.messageId",
+          "kind": "class-property",
+          "line": 345,
+          "name": "messageId",
+          "signature": "readonly messageId: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Additional contextual information about the message that may be useful when reporting errors.
+     * All properties are optional.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorMessage.property.properties",
+          "kind": "class-property",
+          "line": 368,
+          "name": "properties",
+          "signature": "readonly properties: IExtractorMessageProperties;",
+        },
+        {
+          "docs": [
+            "/**
+     * The column number where the issue occurred in the input source file.  This is not used if \`sourceFilePath\`
+     * is undefined.  The first column number is 1.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorMessage.property.sourceFileColumn",
+          "kind": "class-property",
+          "line": 363,
+          "name": "sourceFileColumn",
+          "signature": "readonly sourceFileColumn: number;",
+        },
+        {
+          "docs": [
+            "/**
+     * The line number where the issue occurred in the input source file.  This is not used if \`sourceFilePath\`
+     * is undefined.  The first line number is 1.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorMessage.property.sourceFileLine",
+          "kind": "class-property",
+          "line": 358,
+          "name": "sourceFileLine",
+          "signature": "readonly sourceFileLine: number;",
+        },
+        {
+          "docs": [
+            "/**
+     * The absolute path to the affected input source file, if there is one.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorMessage.property.sourceFilePath",
+          "kind": "class-property",
+          "line": 353,
+          "name": "sourceFilePath",
+          "signature": "readonly sourceFilePath: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * The text description of this issue.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorMessage.property.text",
+          "kind": "class-property",
+          "line": 349,
+          "name": "text",
+          "signature": "readonly text: string;",
+        },
+      ],
+      "signature": "class ExtractorMessage {}",
+    },
+    {
+      "constructors": [],
+      "docs": [
+        "/**
+ * This object represents the outcome of an invocation of API Extractor.
+ *
+ * @public
+ */",
+      ],
+      "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+      "id": "class.ExtractorResult",
+      "kind": "class",
+      "line": 539,
+      "methods": [],
+      "name": "ExtractorResult",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Returns true if the API report was found to have changed.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorResult.property.apiReportChanged",
+          "kind": "class-property",
+          "line": 562,
+          "name": "apiReportChanged",
+          "signature": "readonly apiReportChanged: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * The TypeScript compiler state that was used.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorResult.property.compilerState",
+          "kind": "class-property",
+          "line": 543,
+          "name": "compilerState",
+          "signature": "readonly compilerState: CompilerState;",
+        },
+        {
+          "docs": [
+            "/**
+     * Reports the number of errors encountered during analysis.
+     *
+     * @remarks
+     * This does not count exceptions, where unexpected issues prematurely abort the operation.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorResult.property.errorCount",
+          "kind": "class-property",
+          "line": 569,
+          "name": "errorCount",
+          "signature": "readonly errorCount: number;",
+        },
+        {
+          "docs": [
+            "/**
+     * The API Extractor configuration that was used.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorResult.property.extractorConfig",
+          "kind": "class-property",
+          "line": 547,
+          "name": "extractorConfig",
+          "signature": "readonly extractorConfig: ExtractorConfig;",
+        },
+        {
+          "docs": [
+            "/**
+     * Whether the invocation of API Extractor was successful.  For example, if \`succeeded\` is false, then the build task
+     * would normally return a nonzero process exit code, indicating that the operation failed.
+     *
+     * @remarks
+     *
+     * Normally the operation "succeeds" if \`errorCount\` and \`warningCount\` are both zero.  However if
+     * {@link IExtractorInvokeOptions.localBuild} is \`true\`, then the operation "succeeds" if \`errorCount\` is zero
+     * (i.e. warnings are ignored).
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorResult.property.succeeded",
+          "kind": "class-property",
+          "line": 558,
+          "name": "succeeded",
+          "signature": "readonly succeeded: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * Reports the number of warnings encountered during analysis.
+     *
+     * @remarks
+     * This does not count warnings that are emitted in the API report file.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "class.ExtractorResult.property.warningCount",
+          "kind": "class-property",
+          "line": 576,
+          "name": "warningCount",
+          "signature": "readonly warningCount: number;",
+        },
+      ],
+      "signature": "class ExtractorResult {}",
+    },
+    {
+      "docs": [
+        "/**
+ * Unique identifiers for console messages reported by API Extractor.
+ *
+ * @remarks
+ *
+ * These strings are possible values for the {@link ExtractorMessage.messageId} property
+ * when the \`ExtractorMessage.category\` is {@link ExtractorMessageCategory.Console}.
+ *
+ * @public
+ */",
+      ],
+      "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+      "id": "enum.ConsoleMessageId",
+      "kind": "enum",
+      "line": 60,
+      "members": [
+        {
+          "docs": [
+            "/**
+     * "Analysis will use the bundled TypeScript version ___"
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ConsoleMessageId.member.Preamble",
+          "kind": "enum-member",
+          "line": 64,
+          "name": "Preamble",
+          "signature": "Preamble = "console-preamble"",
+        },
+        {
+          "docs": [
+            "/**
+     * "The target project appears to use TypeScript ___ which is newer than the bundled compiler engine;
+     * consider upgrading API Extractor."
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ConsoleMessageId.member.CompilerVersionNotice",
+          "kind": "enum-member",
+          "line": 69,
+          "name": "CompilerVersionNotice",
+          "signature": "CompilerVersionNotice = "console-compiler-version-notice"",
+        },
+        {
+          "docs": [
+            "/**
+     * "Found metadata in ___"
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ConsoleMessageId.member.FoundTSDocMetadata",
+          "kind": "enum-member",
+          "line": 73,
+          "name": "FoundTSDocMetadata",
+          "signature": "FoundTSDocMetadata = "console-found-tsdoc-metadata"",
+        },
+        {
+          "docs": [
+            "/**
+     * "Writing: ___"
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ConsoleMessageId.member.WritingDocModelFile",
+          "kind": "enum-member",
+          "line": 77,
+          "name": "WritingDocModelFile",
+          "signature": "WritingDocModelFile = "console-writing-doc-model-file"",
+        },
+        {
+          "docs": [
+            "/**
+     * "Writing package typings: ___"
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ConsoleMessageId.member.WritingDtsRollup",
+          "kind": "enum-member",
+          "line": 81,
+          "name": "WritingDtsRollup",
+          "signature": "WritingDtsRollup = "console-writing-dts-rollup"",
+        },
+        {
+          "docs": [
+            "/**
+     * "You have changed the public API signature for this project.
+     * Please copy the file ___ to ___, or perform a local build (which does this automatically).
+     * See the Git repo documentation for more info."
+     *
+     * OR
+     *
+     * "The API report file is missing.
+     * Please copy the file ___ to ___, or perform a local build (which does this automatically).
+     * See the Git repo documentation for more info."
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ConsoleMessageId.member.ApiReportNotCopied",
+          "kind": "enum-member",
+          "line": 93,
+          "name": "ApiReportNotCopied",
+          "signature": "ApiReportNotCopied = "console-api-report-not-copied"",
+        },
+        {
+          "docs": [
+            "/**
+     * "You have changed the public API signature for this project.  Updating ___"
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ConsoleMessageId.member.ApiReportCopied",
+          "kind": "enum-member",
+          "line": 97,
+          "name": "ApiReportCopied",
+          "signature": "ApiReportCopied = "console-api-report-copied"",
+        },
+        {
+          "docs": [
+            "/**
+     * "The API report is up to date: ___"
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ConsoleMessageId.member.ApiReportUnchanged",
+          "kind": "enum-member",
+          "line": 101,
+          "name": "ApiReportUnchanged",
+          "signature": "ApiReportUnchanged = "console-api-report-unchanged"",
+        },
+        {
+          "docs": [
+            "/**
+     * "The API report file was missing, so a new file was created. Please add this file to Git: ___"
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ConsoleMessageId.member.ApiReportCreated",
+          "kind": "enum-member",
+          "line": 105,
+          "name": "ApiReportCreated",
+          "signature": "ApiReportCreated = "console-api-report-created"",
+        },
+        {
+          "docs": [
+            "/**
+     * "Unable to create the API report file. Please make sure the target folder exists: ___"
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ConsoleMessageId.member.ApiReportFolderMissing",
+          "kind": "enum-member",
+          "line": 109,
+          "name": "ApiReportFolderMissing",
+          "signature": "ApiReportFolderMissing = "console-api-report-folder-missing"",
+        },
+        {
+          "docs": [
+            "/**
+     * Used for the information printed when the "--diagnostics" flag is enabled.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ConsoleMessageId.member.Diagnostics",
+          "kind": "enum-member",
+          "line": 113,
+          "name": "Diagnostics",
+          "signature": "Diagnostics = "console-diagnostics"",
+        },
+      ],
+      "name": "ConsoleMessageId",
+      "signature": "const enum ConsoleMessageId {}",
+    },
+    {
+      "docs": [
+        "/**
+ * Used with {@link IConfigMessageReportingRule.logLevel} and {@link IExtractorInvokeOptions.messageCallback}.
+ *
+ * @remarks
+ * This is part of the {@link IConfigFile} structure.
+ *
+ * @public
+ */",
+      ],
+      "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+      "id": "enum.ExtractorLogLevel",
+      "kind": "enum",
+      "line": 294,
+      "members": [
+        {
+          "docs": [
+            "/**
+     * The message will be displayed as an error.
+     *
+     * @remarks
+     * Errors typically cause the build to fail and return a nonzero exit code.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorLogLevel.member.Error",
+          "kind": "enum-member",
+          "line": 301,
+          "name": "Error",
+          "signature": "Error = "error"",
+        },
+        {
+          "docs": [
+            "/**
+     * The message will be displayed as an warning.
+     *
+     * @remarks
+     * Warnings typically cause a production build fail and return a nonzero exit code.  For a non-production build
+     * (e.g. using the \`--local\` option with \`api-extractor run\`), the warning is displayed but the build will not fail.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorLogLevel.member.Warning",
+          "kind": "enum-member",
+          "line": 309,
+          "name": "Warning",
+          "signature": "Warning = "warning"",
+        },
+        {
+          "docs": [
+            "/**
+     * The message will be displayed as an informational message.
+     *
+     * @remarks
+     * Informational messages may contain newlines to ensure nice formatting of the output,
+     * however word-wrapping is the responsibility of the message handler.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorLogLevel.member.Info",
+          "kind": "enum-member",
+          "line": 317,
+          "name": "Info",
+          "signature": "Info = "info"",
+        },
+        {
+          "docs": [
+            "/**
+     * The message will be displayed only when "verbose" output is requested, e.g. using the \`--verbose\`
+     * command line option.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorLogLevel.member.Verbose",
+          "kind": "enum-member",
+          "line": 322,
+          "name": "Verbose",
+          "signature": "Verbose = "verbose"",
+        },
+        {
+          "docs": [
+            "/**
+     * The message will be discarded entirely.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorLogLevel.member.None",
+          "kind": "enum-member",
+          "line": 326,
+          "name": "None",
+          "signature": "None = "none"",
+        },
+      ],
+      "name": "ExtractorLogLevel",
+      "signature": "const enum ExtractorLogLevel {}",
+    },
+    {
+      "docs": [
+        "/**
+ * Specifies a category of messages for use with {@link ExtractorMessage}.
+ * @public
+ */",
+      ],
+      "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+      "id": "enum.ExtractorMessageCategory",
+      "kind": "enum",
+      "line": 416,
+      "members": [
+        {
+          "docs": [
+            "/**
+     * Messages originating from the TypeScript compiler.
+     *
+     * @remarks
+     * These strings begin with the prefix "TS" and have a numeric error code.
+     * Example: \`TS2551\`
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorMessageCategory.member.Compiler",
+          "kind": "enum-member",
+          "line": 424,
+          "name": "Compiler",
+          "signature": "Compiler = "Compiler"",
+        },
+        {
+          "docs": [
+            "/**
+     * Messages related to parsing of TSDoc comments.
+     *
+     * @remarks
+     * These strings begin with the prefix "tsdoc-".
+     * Example: \`tsdoc-link-tag-unescaped-text\`
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorMessageCategory.member.TSDoc",
+          "kind": "enum-member",
+          "line": 432,
+          "name": "TSDoc",
+          "signature": "TSDoc = "TSDoc"",
+        },
+        {
+          "docs": [
+            "/**
+     * Messages related to API Extractor's analysis.
+     *
+     * @remarks
+     * These strings begin with the prefix "ae-".
+     * Example: \`ae-extra-release-tag\`
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorMessageCategory.member.Extractor",
+          "kind": "enum-member",
+          "line": 440,
+          "name": "Extractor",
+          "signature": "Extractor = "Extractor"",
+        },
+        {
+          "docs": [
+            "/**
+     * Console messages communicate the progress of the overall operation.  They may include newlines to ensure
+     * nice formatting.  They are output in real time, and cannot be routed to the API Report file.
+     *
+     * @remarks
+     * These strings begin with the prefix "console-".
+     * Example: \`console-writing-typings-file\`
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorMessageCategory.member.Console",
+          "kind": "enum-member",
+          "line": 449,
+          "name": "Console",
+          "signature": "Console = "console"",
+        },
+      ],
+      "name": "ExtractorMessageCategory",
+      "signature": "const enum ExtractorMessageCategory {}",
+    },
+    {
+      "docs": [
+        "/**
+ * Unique identifiers for messages reported by API Extractor during its analysis.
+ *
+ * @remarks
+ *
+ * These strings are possible values for the {@link ExtractorMessage.messageId} property
+ * when the \`ExtractorMessage.category\` is {@link ExtractorMessageCategory.Extractor}.
+ *
+ * @public
+ */",
+      ],
+      "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+      "id": "enum.ExtractorMessageId",
+      "kind": "enum",
+      "line": 462,
+      "members": [
+        {
+          "docs": [
+            "/**
+     * "The doc comment should not contain more than one release tag."
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorMessageId.member.ExtraReleaseTag",
+          "kind": "enum-member",
+          "line": 466,
+          "name": "ExtraReleaseTag",
+          "signature": "ExtraReleaseTag = "ae-extra-release-tag"",
+        },
+        {
+          "docs": [
+            "/**
+     * "This symbol has another declaration with a different release tag."
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorMessageId.member.DifferentReleaseTags",
+          "kind": "enum-member",
+          "line": 470,
+          "name": "DifferentReleaseTags",
+          "signature": "DifferentReleaseTags = "ae-different-release-tags"",
+        },
+        {
+          "docs": [
+            "/**
+     * "The symbol ___ is marked as ___, but its signature references ___ which is marked as ___."
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorMessageId.member.IncompatibleReleaseTags",
+          "kind": "enum-member",
+          "line": 474,
+          "name": "IncompatibleReleaseTags",
+          "signature": "IncompatibleReleaseTags = "ae-incompatible-release-tags"",
+        },
+        {
+          "docs": [
+            "/**
+     * "___ is exported by the package, but it is missing a release tag (\`@alpha\`, \`@beta\`, \`@public\`, or \`@internal\`)."
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorMessageId.member.MissingReleaseTag",
+          "kind": "enum-member",
+          "line": 478,
+          "name": "MissingReleaseTag",
+          "signature": "MissingReleaseTag = "ae-missing-release-tag"",
+        },
+        {
+          "docs": [
+            "/**
+     * "The \`@packageDocumentation\` comment must appear at the top of entry point *.d.ts file."
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorMessageId.member.MisplacedPackageTag",
+          "kind": "enum-member",
+          "line": 482,
+          "name": "MisplacedPackageTag",
+          "signature": "MisplacedPackageTag = "ae-misplaced-package-tag"",
+        },
+        {
+          "docs": [
+            "/**
+     * "The symbol ___ needs to be exported by the entry point ___."
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorMessageId.member.ForgottenExport",
+          "kind": "enum-member",
+          "line": 486,
+          "name": "ForgottenExport",
+          "signature": "ForgottenExport = "ae-forgotten-export"",
+        },
+        {
+          "docs": [
+            "/**
+     * "The name ___ should be prefixed with an underscore because the declaration is marked as \`@internal\`."
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorMessageId.member.InternalMissingUnderscore",
+          "kind": "enum-member",
+          "line": 490,
+          "name": "InternalMissingUnderscore",
+          "signature": "InternalMissingUnderscore = "ae-internal-missing-underscore"",
+        },
+        {
+          "docs": [
+            "/**
+     * "Mixed release tags are not allowed for ___ because one of its declarations is marked as \`@internal\`."
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorMessageId.member.InternalMixedReleaseTag",
+          "kind": "enum-member",
+          "line": 494,
+          "name": "InternalMixedReleaseTag",
+          "signature": "InternalMixedReleaseTag = "ae-internal-mixed-release-tag"",
+        },
+        {
+          "docs": [
+            "/**
+     * "The \`@preapproved\` tag cannot be applied to ___ because it is not a supported declaration type."
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorMessageId.member.PreapprovedUnsupportedType",
+          "kind": "enum-member",
+          "line": 498,
+          "name": "PreapprovedUnsupportedType",
+          "signature": "PreapprovedUnsupportedType = "ae-preapproved-unsupported-type"",
+        },
+        {
+          "docs": [
+            "/**
+     * "The \`@preapproved\` tag cannot be applied to ___ without an \`@internal\` release tag."
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorMessageId.member.PreapprovedBadReleaseTag",
+          "kind": "enum-member",
+          "line": 502,
+          "name": "PreapprovedBadReleaseTag",
+          "signature": "PreapprovedBadReleaseTag = "ae-preapproved-bad-release-tag"",
+        },
+        {
+          "docs": [
+            "/**
+     * "The \`@inheritDoc\` reference could not be resolved."
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorMessageId.member.UnresolvedInheritDocReference",
+          "kind": "enum-member",
+          "line": 506,
+          "name": "UnresolvedInheritDocReference",
+          "signature": "UnresolvedInheritDocReference = "ae-unresolved-inheritdoc-reference"",
+        },
+        {
+          "docs": [
+            "/**
+     * "The \`@inheritDoc\` tag needs a TSDoc declaration reference; signature matching is not supported yet."
+     *
+     * @privateRemarks
+     * In the future, we will implement signature matching so that you can write \`{@inheritDoc}\` and API Extractor
+     * will find a corresponding member from a base class (or implemented interface).  Until then, the tag
+     * always needs an explicit declaration reference such as \`{@inhertDoc MyBaseClass.sameMethod}\`.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorMessageId.member.UnresolvedInheritDocBase",
+          "kind": "enum-member",
+          "line": 515,
+          "name": "UnresolvedInheritDocBase",
+          "signature": "UnresolvedInheritDocBase = "ae-unresolved-inheritdoc-base"",
+        },
+        {
+          "docs": [
+            "/**
+     * "The \`@inheritDoc\` tag for ___ refers to its own declaration."
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorMessageId.member.CyclicInheritDoc",
+          "kind": "enum-member",
+          "line": 519,
+          "name": "CyclicInheritDoc",
+          "signature": "CyclicInheritDoc = "ae-cyclic-inherit-doc"",
+        },
+        {
+          "docs": [
+            "/**
+     * "The \`@link\` reference could not be resolved."
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorMessageId.member.UnresolvedLink",
+          "kind": "enum-member",
+          "line": 523,
+          "name": "UnresolvedLink",
+          "signature": "UnresolvedLink = "ae-unresolved-link"",
+        },
+        {
+          "docs": [
+            "/**
+     * "The doc comment for the property ___ must appear on the getter, not the setter."
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorMessageId.member.SetterWithDocs",
+          "kind": "enum-member",
+          "line": 527,
+          "name": "SetterWithDocs",
+          "signature": "SetterWithDocs = "ae-setter-with-docs"",
+        },
+        {
+          "docs": [
+            "/**
+     * "The property ___ has a setter but no getter."
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "enum.ExtractorMessageId.member.MissingGetter",
+          "kind": "enum-member",
+          "line": 531,
+          "name": "MissingGetter",
+          "signature": "MissingGetter = "ae-missing-getter"",
+        },
+      ],
+      "name": "ExtractorMessageId",
+      "signature": "const enum ExtractorMessageId {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Options for {@link CompilerState.create}
+ * @public
+ */",
+      ],
+      "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+      "getAccessors": [],
+      "id": "interface.ICompilerStateCreateOptions",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 585,
+      "methods": [],
+      "name": "ICompilerStateCreateOptions",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Additional .d.ts files to include in the analysis.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.ICompilerStateCreateOptions.property.additionalEntryPoints",
+          "kind": "interface-property",
+          "line": 591,
+          "name": "additionalEntryPoints",
+          "signature": "additionalEntryPoints?: string[];",
+        },
+        {
+          "docs": [
+            "/** {@inheritDoc IExtractorInvokeOptions.typescriptCompilerFolder} */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.ICompilerStateCreateOptions.property.typescriptCompilerFolder",
+          "kind": "interface-property",
+          "line": 587,
+          "name": "typescriptCompilerFolder",
+          "signature": "typescriptCompilerFolder?: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface ICompilerStateCreateOptions {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Configures how the API report files (*.api.md) will be generated.
+ *
+ * @remarks
+ * This is part of the {@link IConfigFile} structure.
+ *
+ * @public
+ */",
+      ],
+      "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+      "getAccessors": [],
+      "id": "interface.IConfigApiReport",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 602,
+      "methods": [],
+      "name": "IConfigApiReport",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Whether to generate an API report.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigApiReport.property.enabled",
+          "kind": "interface-property",
+          "line": 606,
+          "name": "enabled",
+          "signature": "enabled: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * The filename for the API report files.  It will be combined with \`reportFolder\` or \`reportTempFolder\` to produce
+     * a full output filename.
+     *
+     * @remarks
+     * The file extension should be ".api.md", and the string should not contain a path separator such as \`\\\` or \`/\`.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigApiReport.property.reportFileName",
+          "kind": "interface-property",
+          "line": 614,
+          "name": "reportFileName",
+          "signature": "reportFileName?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Specifies the folder where the API report file is written.  The file name portion is determined by
+     * the \`reportFileName\` setting.
+     *
+     * @remarks
+     * The API report file is normally tracked by Git.  Changes to it can be used to trigger a branch policy,
+     * e.g. for an API review.
+     *
+     * The path is resolved relative to the folder of the config file that contains the setting; to change this,
+     * prepend a folder token such as \`<projectFolder>\`.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigApiReport.property.reportFolder",
+          "kind": "interface-property",
+          "line": 626,
+          "name": "reportFolder",
+          "signature": "reportFolder?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Specifies the folder where the temporary report file is written.  The file name portion is determined by
+     * the \`reportFileName\` setting.
+     *
+     * @remarks
+     * After the temporary file is written to disk, it is compared with the file in the \`reportFolder\`.
+     * If they are different, a production build will fail.
+     *
+     * The path is resolved relative to the folder of the config file that contains the setting; to change this,
+     * prepend a folder token such as \`<projectFolder>\`.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigApiReport.property.reportTempFolder",
+          "kind": "interface-property",
+          "line": 638,
+          "name": "reportTempFolder",
+          "signature": "reportTempFolder?: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IConfigApiReport {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Determines how the TypeScript compiler engine will be invoked by API Extractor.
+ *
+ * @remarks
+ * This is part of the {@link IConfigFile} structure.
+ *
+ * @public
+ */",
+      ],
+      "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+      "getAccessors": [],
+      "id": "interface.IConfigCompiler",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 649,
+      "methods": [],
+      "name": "IConfigCompiler",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Provides a compiler configuration that will be used instead of reading the tsconfig.json file from disk.
+     *
+     * @remarks
+     * The value must conform to the TypeScript tsconfig schema:
+     *
+     * http://json.schemastore.org/tsconfig
+     *
+     * If omitted, then the tsconfig.json file will instead be read from the projectFolder.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigCompiler.property.overrideTsconfig",
+          "kind": "interface-property",
+          "line": 670,
+          "name": "overrideTsconfig",
+          "signature": "overrideTsconfig?: {};",
+        },
+        {
+          "docs": [
+            "/**
+     * This option causes the compiler to be invoked with the \`--skipLibCheck\` option.
+     *
+     * @remarks
+     * This option is not recommended and may cause API Extractor to produce incomplete or incorrect declarations,
+     * but it may be required when dependencies contain declarations that are incompatible with the TypeScript engine
+     * that API Extractor uses for its analysis.  Where possible, the underlying issue should be fixed rather than
+     * relying on skipLibCheck.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigCompiler.property.skipLibCheck",
+          "kind": "interface-property",
+          "line": 680,
+          "name": "skipLibCheck",
+          "signature": "skipLibCheck?: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * Specifies the path to the tsconfig.json file to be used by API Extractor when analyzing the project.
+     *
+     * @remarks
+     * The path is resolved relative to the folder of the config file that contains the setting; to change this,
+     * prepend a folder token such as \`<projectFolder>\`.
+     *
+     * Note: This setting will be ignored if \`overrideTsconfig\` is used.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigCompiler.property.tsconfigFilePath",
+          "kind": "interface-property",
+          "line": 659,
+          "name": "tsconfigFilePath",
+          "signature": "tsconfigFilePath?: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IConfigCompiler {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Configures how the doc model file (*.api.json) will be generated.
+ *
+ * @remarks
+ * This is part of the {@link IConfigFile} structure.
+ *
+ * @public
+ */",
+      ],
+      "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+      "getAccessors": [],
+      "id": "interface.IConfigDocModel",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 691,
+      "methods": [],
+      "name": "IConfigDocModel",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * The output path for the doc model file.  The file extension should be ".api.json".
+     *
+     * @remarks
+     * The path is resolved relative to the folder of the config file that contains the setting; to change this,
+     * prepend a folder token such as \`<projectFolder>\`.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigDocModel.property.apiJsonFilePath",
+          "kind": "interface-property",
+          "line": 703,
+          "name": "apiJsonFilePath",
+          "signature": "apiJsonFilePath?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Whether to generate a doc model file.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigDocModel.property.enabled",
+          "kind": "interface-property",
+          "line": 695,
+          "name": "enabled",
+          "signature": "enabled: boolean;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IConfigDocModel {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Configures how the .d.ts rollup file will be generated.
+ *
+ * @remarks
+ * This is part of the {@link IConfigFile} structure.
+ *
+ * @public
+ */",
+      ],
+      "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+      "getAccessors": [],
+      "id": "interface.IConfigDtsRollup",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 714,
+      "methods": [],
+      "name": "IConfigDtsRollup",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Specifies the output path for a .d.ts rollup file to be generated with trimming for a "beta" release.
+     *
+     * @remarks
+     * This file will include only declarations that are marked as \`@public\` or \`@beta\`.
+     *
+     * The path is resolved relative to the folder of the config file that contains the setting; to change this,
+     * prepend a folder token such as \`<projectFolder>\`.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigDtsRollup.property.betaTrimmedFilePath",
+          "kind": "interface-property",
+          "line": 740,
+          "name": "betaTrimmedFilePath",
+          "signature": "betaTrimmedFilePath?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Whether to generate the .d.ts rollup file.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigDtsRollup.property.enabled",
+          "kind": "interface-property",
+          "line": 718,
+          "name": "enabled",
+          "signature": "enabled: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * When a declaration is trimmed, by default it will be replaced by a code comment such as
+     * "Excluded from this release type: exampleMember".  Set "omitTrimmingComments" to true to remove the
+     * declaration completely.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigDtsRollup.property.omitTrimmingComments",
+          "kind": "interface-property",
+          "line": 758,
+          "name": "omitTrimmingComments",
+          "signature": "omitTrimmingComments?: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * Specifies the output path for a .d.ts rollup file to be generated with trimming for a "public" release.
+     *
+     * @remarks
+     * This file will include only declarations that are marked as \`@public\`.
+     *
+     * If the path is an empty string, then this file will not be written.
+     *
+     * The path is resolved relative to the folder of the config file that contains the setting; to change this,
+     * prepend a folder token such as \`<projectFolder>\`.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigDtsRollup.property.publicTrimmedFilePath",
+          "kind": "interface-property",
+          "line": 752,
+          "name": "publicTrimmedFilePath",
+          "signature": "publicTrimmedFilePath?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Specifies the output path for a .d.ts rollup file to be generated without any trimming.
+     *
+     * @remarks
+     * This file will include all declarations that are exported by the main entry point.
+     *
+     * If the path is an empty string, then this file will not be written.
+     *
+     * The path is resolved relative to the folder of the config file that contains the setting; to change this,
+     * prepend a folder token such as \`<projectFolder>\`.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigDtsRollup.property.untrimmedFilePath",
+          "kind": "interface-property",
+          "line": 730,
+          "name": "untrimmedFilePath",
+          "signature": "untrimmedFilePath?: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IConfigDtsRollup {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Configuration options for the API Extractor tool.  These options can be constructed programmatically
+ * or loaded from the api-extractor.json config file using the {@link ExtractorConfig} class.
+ *
+ * @public
+ */",
+      ],
+      "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+      "getAccessors": [],
+      "id": "interface.IConfigFile",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 767,
+      "methods": [],
+      "name": "IConfigFile",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * {@inheritDoc IConfigApiReport}
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigFile.property.apiReport",
+          "kind": "interface-property",
+          "line": 832,
+          "name": "apiReport",
+          "signature": "apiReport?: IConfigApiReport;",
+        },
+        {
+          "docs": [
+            "/**
+     * A list of NPM package names whose exports should be treated as part of this package.
+     *
+     * @remarks
+     *
+     * For example, suppose that Webpack is used to generate a distributed bundle for the project \`library1\`,
+     * and another NPM package \`library2\` is embedded in this bundle.  Some types from \`library2\` may become part
+     * of the exported API for \`library1\`, but by default API Extractor would generate a .d.ts rollup that explicitly
+     * imports \`library2\`.  To avoid this, we can specify:
+     *
+     * \`\`\`js
+     *   "bundledPackages": [ "library2" ],
+     * \`\`\`
+     *
+     * This would direct API Extractor to embed those types directly in the .d.ts rollup, as if they had been
+     * local files for \`library1\`.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigFile.property.bundledPackages",
+          "kind": "interface-property",
+          "line": 824,
+          "name": "bundledPackages",
+          "signature": "bundledPackages?: string[];",
+        },
+        {
+          "docs": [
+            "/**
+     * {@inheritDoc IConfigCompiler}
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigFile.property.compiler",
+          "kind": "interface-property",
+          "line": 828,
+          "name": "compiler",
+          "signature": "compiler?: IConfigCompiler;",
+        },
+        {
+          "docs": [
+            "/**
+     * {@inheritDoc IConfigDocModel}
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigFile.property.docModel",
+          "kind": "interface-property",
+          "line": 836,
+          "name": "docModel",
+          "signature": "docModel?: IConfigDocModel;",
+        },
+        {
+          "docs": [
+            "/**
+     * {@inheritDoc IConfigDtsRollup}
+     * @beta
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigFile.property.dtsRollup",
+          "kind": "interface-property",
+          "line": 841,
+          "name": "dtsRollup",
+          "signature": "dtsRollup?: IConfigDtsRollup;",
+        },
+        {
+          "docs": [
+            "/**
+     * Optionally specifies another JSON config file that this file extends from.  This provides a way for
+     * standard settings to be shared across multiple projects.
+     *
+     * @remarks
+     * If the path starts with \`./\` or \`../\`, the path is resolved relative to the folder of the file that contains
+     * the \`extends\` field.  Otherwise, the first path segment is interpreted as an NPM package name, and will be
+     * resolved using NodeJS \`require()\`.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigFile.property.extends",
+          "kind": "interface-property",
+          "line": 777,
+          "name": "extends",
+          "signature": "extends?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Specifies the .d.ts file to be used as the starting point for analysis.  API Extractor
+     * analyzes the symbols exported by this module.
+     *
+     * @remarks
+     *
+     * The file extension must be ".d.ts" and not ".ts".
+     * The path is resolved relative to the "projectFolder" location.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigFile.property.mainEntryPointFilePath",
+          "kind": "interface-property",
+          "line": 806,
+          "name": "mainEntryPointFilePath",
+          "signature": "mainEntryPointFilePath: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * {@inheritDoc IExtractorMessagesConfig}
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigFile.property.messages",
+          "kind": "interface-property",
+          "line": 859,
+          "name": "messages",
+          "signature": "messages?: IExtractorMessagesConfig;",
+        },
+        {
+          "docs": [
+            "/**
+     * Specifies what type of newlines API Extractor should use when writing output files.
+     *
+     * @remarks
+     * By default, the output files will be written with Windows-style newlines.
+     * To use POSIX-style newlines, specify "lf" instead.
+     * To use the OS's default newline kind, specify "os".
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigFile.property.newlineKind",
+          "kind": "interface-property",
+          "line": 855,
+          "name": "newlineKind",
+          "signature": "newlineKind?: "crlf" | "lf" | "os";",
+        },
+        {
+          "docs": [
+            "/**
+     * Determines the \`<projectFolder>\` token that can be used with other config file settings.  The project folder
+     * typically contains the tsconfig.json and package.json config files, but the path is user-defined.
+     *
+     * @remarks
+     *
+     * The path is resolved relative to the folder of the config file that contains the setting.
+     *
+     * The default value for \`projectFolder\` is the token \`<lookup>\`, which means the folder is determined using
+     * the following heuristics:
+     *
+     * If the config/rig.json system is used (as defined by {@link https://www.npmjs.com/package/@rushstack/rig-package
+     * | @rushstack/rig-package}), then the \`<lookup>\` value will be the package folder that referenced the rig.
+     *
+     * Otherwise, the \`<lookup>\` value is determined by traversing parent folders, starting from the folder containing
+     * api-extractor.json, and stopping at the first folder that contains a tsconfig.json file.  If a tsconfig.json file
+     * cannot be found in this way, then an error will be reported.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigFile.property.projectFolder",
+          "kind": "interface-property",
+          "line": 796,
+          "name": "projectFolder",
+          "signature": "projectFolder?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Set to true when invoking API Extractor's test harness.
+     * @remarks
+     * When \`testMode\` is true, the \`toolVersion\` field in the .api.json file is assigned an empty string
+     * to prevent spurious diffs in output files tracked for tests.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigFile.property.testMode",
+          "kind": "interface-property",
+          "line": 866,
+          "name": "testMode",
+          "signature": "testMode?: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * {@inheritDoc IConfigTsdocMetadata}
+     * @beta
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigFile.property.tsdocMetadata",
+          "kind": "interface-property",
+          "line": 846,
+          "name": "tsdocMetadata",
+          "signature": "tsdocMetadata?: IConfigTsdocMetadata;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IConfigFile {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Configures reporting for a given message identifier.
+ *
+ * @remarks
+ * This is part of the {@link IConfigFile} structure.
+ *
+ * @public
+ */",
+      ],
+      "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+      "getAccessors": [],
+      "id": "interface.IConfigMessageReportingRule",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 877,
+      "methods": [],
+      "name": "IConfigMessageReportingRule",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * When \`addToApiReportFile\` is true:  If API Extractor is configured to write an API report file (.api.md),
+     * then the message will be written inside that file; otherwise, the message is instead logged according to
+     * the \`logLevel\` option.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigMessageReportingRule.property.addToApiReportFile",
+          "kind": "interface-property",
+          "line": 890,
+          "name": "addToApiReportFile",
+          "signature": "addToApiReportFile?: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * Specifies whether the message should be written to the the tool's output log.
+     *
+     * @remarks
+     * Note that the \`addToApiReportFile\` property may supersede this option.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigMessageReportingRule.property.logLevel",
+          "kind": "interface-property",
+          "line": 884,
+          "name": "logLevel",
+          "signature": "logLevel: ExtractorLogLevel;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IConfigMessageReportingRule {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Specifies a table of reporting rules for different message identifiers, and also the default rule used for
+ * identifiers that do not appear in the table.
+ *
+ * @remarks
+ * This is part of the {@link IConfigFile} structure.
+ *
+ * @public
+ */",
+      ],
+      "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+      "getAccessors": [],
+      "id": "interface.IConfigMessageReportingTable",
+      "indexSignatures": [
+        {
+          "docs": [
+            "/**
+     * The key is a message identifier for the associated type of message, or "default" to specify the default policy.
+     * For example, the key might be \`TS2551\` (a compiler message), \`tsdoc-link-tag-unescaped-text\` (a TSDOc message),
+     * or \`ae-extra-release-tag\` (a message related to the API Extractor analysis).
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigMessageReportingTable.index-signature",
+          "kind": "interface-index-signature",
+          "line": 908,
+          "name": "index-signature",
+          "signature": "[messageId: string]: IConfigMessageReportingRule;",
+        },
+      ],
+      "kind": "interface",
+      "line": 902,
+      "methods": [],
+      "name": "IConfigMessageReportingTable",
+      "properties": [],
+      "setAccessors": [],
+      "signature": "interface IConfigMessageReportingTable {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Configures how the tsdoc-metadata.json file will be generated.
+ *
+ * @remarks
+ * This is part of the {@link IConfigFile} structure.
+ *
+ * @public
+ */",
+      ],
+      "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+      "getAccessors": [],
+      "id": "interface.IConfigTsdocMetadata",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 919,
+      "methods": [],
+      "name": "IConfigTsdocMetadata",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Whether to generate the tsdoc-metadata.json file.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigTsdocMetadata.property.enabled",
+          "kind": "interface-property",
+          "line": 923,
+          "name": "enabled",
+          "signature": "enabled: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * Specifies where the TSDoc metadata file should be written.
+     *
+     * @remarks
+     * The path is resolved relative to the folder of the config file that contains the setting; to change this,
+     * prepend a folder token such as \`<projectFolder>\`.
+     *
+     * The default value is \`<lookup>\`, which causes the path to be automatically inferred from the \`tsdocMetadata\`,
+     * \`typings\` or \`main\` fields of the project's package.json.  If none of these fields are set, the lookup
+     * falls back to \`tsdoc-metadata.json\` in the package folder.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IConfigTsdocMetadata.property.tsdocMetadataFilePath",
+          "kind": "interface-property",
+          "line": 935,
+          "name": "tsdocMetadataFilePath",
+          "signature": "tsdocMetadataFilePath?: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IConfigTsdocMetadata {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Options for {@link ExtractorConfig.tryLoadForFolder}.
+ *
+ * @public
+ */",
+      ],
+      "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+      "getAccessors": [],
+      "id": "interface.IExtractorConfigLoadForFolderOptions",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 943,
+      "methods": [],
+      "name": "IExtractorConfigLoadForFolderOptions",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * An already constructed \`PackageJsonLookup\` cache object to use.  If omitted, a temporary one will
+     * be constructed.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IExtractorConfigLoadForFolderOptions.property.packageJsonLookup",
+          "kind": "interface-property",
+          "line": 952,
+          "name": "packageJsonLookup",
+          "signature": "packageJsonLookup?: PackageJsonLookup;",
+        },
+        {
+          "docs": [
+            "/**
+     * An already constructed \`RigConfig\` object.  If omitted, then a new \`RigConfig\` object will be constructed.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IExtractorConfigLoadForFolderOptions.property.rigConfig",
+          "kind": "interface-property",
+          "line": 956,
+          "name": "rigConfig",
+          "signature": "rigConfig?: RigConfig;",
+        },
+        {
+          "docs": [
+            "/**
+     * The folder path to start from when searching for api-extractor.json.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IExtractorConfigLoadForFolderOptions.property.startingFolder",
+          "kind": "interface-property",
+          "line": 947,
+          "name": "startingFolder",
+          "signature": "startingFolder: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IExtractorConfigLoadForFolderOptions {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Options for {@link ExtractorConfig.prepare}.
+ *
+ * @public
+ */",
+      ],
+      "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+      "getAccessors": [],
+      "id": "interface.IExtractorConfigPrepareOptions",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 964,
+      "methods": [],
+      "name": "IExtractorConfigPrepareOptions",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * A configuration object as returned by {@link ExtractorConfig.loadFile}.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IExtractorConfigPrepareOptions.property.configObject",
+          "kind": "interface-property",
+          "line": 968,
+          "name": "configObject",
+          "signature": "configObject: IConfigFile;",
+        },
+        {
+          "docs": [
+            "/**
+     * The absolute path of the file that the \`configObject\` object was loaded from.  This is used for error messages
+     * and when probing for \`tsconfig.json\`.
+     *
+     * @remarks
+     *
+     * If \`configObjectFullPath\` and \`projectFolderLookupToken\` are both unspecified, then the api-extractor.json
+     * config file must explicitly specify a \`projectFolder\` setting rather than relying on the \`<lookup>\` token.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IExtractorConfigPrepareOptions.property.configObjectFullPath",
+          "kind": "interface-property",
+          "line": 978,
+          "name": "configObjectFullPath",
+          "signature": "configObjectFullPath: string | undefined;",
+        },
+        {
+          "docs": [
+            "/**
+     * The parsed package.json file for the working package, or undefined if API Extractor was invoked without
+     * a package.json file.
+     *
+     * @remarks
+     *
+     * If omitted, then the \`<unscopedPackageName>\` and \`<packageName>\` tokens will have default values.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IExtractorConfigPrepareOptions.property.packageJson",
+          "kind": "interface-property",
+          "line": 987,
+          "name": "packageJson",
+          "signature": "packageJson?: INodePackageJson | undefined;",
+        },
+        {
+          "docs": [
+            "/**
+     * The absolute path of the file that the \`packageJson\` object was loaded from, or undefined if API Extractor
+     * was invoked without a package.json file.
+     *
+     * @remarks
+     *
+     * This is used for error messages and when resolving paths found in package.json.
+     *
+     * If \`packageJsonFullPath\` is specified but \`packageJson\` is omitted, the file will be loaded automatically.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IExtractorConfigPrepareOptions.property.packageJsonFullPath",
+          "kind": "interface-property",
+          "line": 998,
+          "name": "packageJsonFullPath",
+          "signature": "packageJsonFullPath: string | undefined;",
+        },
+        {
+          "docs": [
+            "/**
+     * The default value for the \`projectFolder\` setting is the \`<lookup>\` token, which uses a heuristic to guess
+     * an appropriate project folder.  Use \`projectFolderLookupValue\` to manually specify the \`<lookup>\` token value
+     * instead.
+     *
+     * @remarks
+     * If the \`projectFolder\` setting is explicitly specified in api-extractor.json file, it should take precedence
+     * over a value specified via the API.  Thus the \`projectFolderLookupToken\` option provides a way to override
+     * the default value for \`projectFolder\` setting while still honoring a manually specified value.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IExtractorConfigPrepareOptions.property.projectFolderLookupToken",
+          "kind": "interface-property",
+          "line": 1009,
+          "name": "projectFolderLookupToken",
+          "signature": "projectFolderLookupToken?: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IExtractorConfigPrepareOptions {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Runtime options for Extractor.
+ *
+ * @public
+ */",
+      ],
+      "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+      "getAccessors": [],
+      "id": "interface.IExtractorInvokeOptions",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 1017,
+      "methods": [],
+      "name": "IExtractorInvokeOptions",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * An optional TypeScript compiler state.  This allows an optimization where multiple invocations of API Extractor
+     * can reuse the same TypeScript compiler analysis.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IExtractorInvokeOptions.property.compilerState",
+          "kind": "interface-property",
+          "line": 1022,
+          "name": "compilerState",
+          "signature": "compilerState?: CompilerState;",
+        },
+        {
+          "docs": [
+            "/**
+     * Indicates that API Extractor is running as part of a local build, e.g. on developer's
+     * machine.
+     *
+     * @remarks
+     * This disables certain validation that would normally be performed for a ship/production build. For example,
+     * the *.api.md report file is automatically updated in a local build.
+     *
+     * The default value is false.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IExtractorInvokeOptions.property.localBuild",
+          "kind": "interface-property",
+          "line": 1033,
+          "name": "localBuild",
+          "signature": "localBuild?: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * An optional callback function that will be called for each \`ExtractorMessage\` before it is displayed by
+     * API Extractor.  The callback can customize the message, handle it, or discard it.
+     *
+     * @remarks
+     * If a \`messageCallback\` is not provided, then by default API Extractor will print the messages to
+     * the STDERR/STDOUT console.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IExtractorInvokeOptions.property.messageCallback",
+          "kind": "interface-property",
+          "line": 1065,
+          "name": "messageCallback",
+          "signature": "messageCallback?: (message: ExtractorMessage) => void;",
+        },
+        {
+          "docs": [
+            "/**
+     * If true, API Extractor will print diagnostic information used for troubleshooting problems.
+     * These messages will be included as {@link ExtractorLogLevel.Verbose} output.
+     *
+     * @remarks
+     * Setting \`showDiagnostics=true\` forces \`showVerboseMessages=true\`.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IExtractorInvokeOptions.property.showDiagnostics",
+          "kind": "interface-property",
+          "line": 1045,
+          "name": "showDiagnostics",
+          "signature": "showDiagnostics?: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * If true, API Extractor will include {@link ExtractorLogLevel.Verbose} messages in its output.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IExtractorInvokeOptions.property.showVerboseMessages",
+          "kind": "interface-property",
+          "line": 1037,
+          "name": "showVerboseMessages",
+          "signature": "showVerboseMessages?: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * Specifies an alternate folder path to be used when loading the TypeScript system typings.
+     *
+     * @remarks
+     * API Extractor uses its own TypeScript compiler engine to analyze your project.  If your project
+     * is built with a significantly different TypeScript version, sometimes API Extractor may report compilation
+     * errors due to differences in the system typings (e.g. lib.dom.d.ts).  You can use the "--typescriptCompilerFolder"
+     * option to specify the folder path where you installed the TypeScript package, and API Extractor's compiler will
+     * use those system typings instead.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IExtractorInvokeOptions.property.typescriptCompilerFolder",
+          "kind": "interface-property",
+          "line": 1056,
+          "name": "typescriptCompilerFolder",
+          "signature": "typescriptCompilerFolder?: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IExtractorInvokeOptions {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Used by {@link ExtractorMessage.properties}.
+ *
+ * @public
+ */",
+      ],
+      "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+      "getAccessors": [],
+      "id": "interface.IExtractorMessageProperties",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 1087,
+      "methods": [],
+      "name": "IExtractorMessageProperties",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * A declaration can have multiple names if it is exported more than once.
+     * If an \`ExtractorMessage\` applies to a specific export name, this property can indicate that.
+     *
+     * @remarks
+     *
+     * Used by {@link ExtractorMessageId.InternalMissingUnderscore}.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IExtractorMessageProperties.property.exportName",
+          "kind": "interface-property",
+          "line": 1096,
+          "name": "exportName",
+          "signature": "readonly exportName?: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IExtractorMessageProperties {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * Configures how API Extractor reports error and warning messages produced during analysis.
+ *
+ * @remarks
+ * This is part of the {@link IConfigFile} structure.
+ *
+ * @public
+ */",
+      ],
+      "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+      "getAccessors": [],
+      "id": "interface.IExtractorMessagesConfig",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 1107,
+      "methods": [],
+      "name": "IExtractorMessagesConfig",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Configures handling of diagnostic messages generating the TypeScript compiler while analyzing the
+     * input .d.ts files.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IExtractorMessagesConfig.property.compilerMessageReporting",
+          "kind": "interface-property",
+          "line": 1112,
+          "name": "compilerMessageReporting",
+          "signature": "compilerMessageReporting?: IConfigMessageReportingTable;",
+        },
+        {
+          "docs": [
+            "/**
+     * Configures handling of messages reported by API Extractor during its analysis.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IExtractorMessagesConfig.property.extractorMessageReporting",
+          "kind": "interface-property",
+          "line": 1116,
+          "name": "extractorMessageReporting",
+          "signature": "extractorMessageReporting?: IConfigMessageReportingTable;",
+        },
+        {
+          "docs": [
+            "/**
+     * Configures handling of messages reported by the TSDoc parser when analyzing code comments.
+     */",
+          ],
+          "file": "/@microsoft/api-extractor/dist/rollup.d.ts",
+          "id": "interface.IExtractorMessagesConfig.property.tsdocMessageReporting",
+          "kind": "interface-property",
+          "line": 1120,
+          "name": "tsdocMessageReporting",
+          "signature": "tsdocMessageReporting?: IConfigMessageReportingTable;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IExtractorMessagesConfig {}",
+    },
+  ],
+  "name": "@microsoft/api-extractor",
+  "overview": "/**
+ * API Extractor helps with validation, documentation, and reviewing of the exported API for a TypeScript library.
+ * The \`@microsoft/api-extractor\` package provides the command-line tool.  It also exposes a developer API that you
+ * can use to invoke API Extractor programmatically.
+ *
+ * @packageDocumentation
+ */",
+  "packages": [
+    "@microsoft/api-extractor@7.13.0",
+    "@microsoft/api-extractor-model@7.12.1",
+    "@microsoft/tsdoc@0.12.24",
+    "@rushstack/node-core-library@3.35.2",
+    "@rushstack/rig-package@0.2.9",
+    "@rushstack/ts-command-line@4.7.8",
+    "@types/argparse@1.0.38",
+    "@types/node@10.17.13",
+    "argparse@1.0.10",
+    "colors@1.2.5",
+    "commander@2.20.3",
+    "fs-extra@7.0.1",
+    "graceful-fs@4.2.11",
+    "import-lazy@4.0.0",
+    "jju@1.4.0",
+    "jsonfile@4.0.0",
+    "lodash@4.17.21",
+    "lodash.get@4.4.2",
+    "lodash.isequal@4.5.0",
+    "lru-cache@6.0.0",
+    "path-parse@1.0.7",
+    "resolve@1.17.0",
+    "semver@7.3.8",
+    "source-map@0.6.1",
+    "sprintf-js@1.0.3",
+    "string-argv@0.3.2",
+    "strip-json-comments@3.1.1",
+    "timsort@0.3.0",
+    "typescript@4.1.6",
+    "universalify@0.1.2",
+    "validator@8.2.0",
+    "yallist@4.0.0",
+    "z-schema@3.18.4",
+  ],
+  "subpath": ".",
+  "types": "dist/rollup.d.ts",
+  "version": "7.13.0",
+}
+`;

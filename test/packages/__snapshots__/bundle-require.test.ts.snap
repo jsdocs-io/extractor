@@ -1,0 +1,317 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`bundle-require@4.0.2 1`] = `
+{
+  "declarations": [
+    {
+      "docs": [],
+      "file": "/bundle-require/dist/index.d.ts",
+      "id": "function.bundleRequire",
+      "kind": "function",
+      "line": 83,
+      "name": "bundleRequire",
+      "signature": "bundleRequire: <T = any>(
+  options: Options,
+) => Promise<{ mod: T; dependencies: string[] }>;",
+    },
+    {
+      "docs": [
+        "/**
+ * An esbuild plugin to mark node_modules as external
+ */",
+      ],
+      "file": "/bundle-require/dist/index.d.ts",
+      "id": "function.externalPlugin",
+      "kind": "function",
+      "line": 78,
+      "name": "externalPlugin",
+      "signature": "externalPlugin: ({
+  external,
+  notExternal,
+}?: {
+  external?: (string | RegExp)[] | undefined;
+  notExternal?: (string | RegExp)[] | undefined;
+}) => Plugin;",
+    },
+    {
+      "docs": [],
+      "file": "/bundle-require/dist/index.d.ts",
+      "id": "function.injectFileScopePlugin",
+      "kind": "function",
+      "line": 82,
+      "name": "injectFileScopePlugin",
+      "signature": "injectFileScopePlugin: () => Plugin;",
+    },
+    {
+      "docs": [],
+      "file": "/bundle-require/dist/index.d.ts",
+      "id": "function.match",
+      "kind": "function",
+      "line": 74,
+      "name": "match",
+      "signature": "match: (id: string, patterns?: (string | RegExp)[]) => boolean;",
+    },
+    {
+      "docs": [],
+      "file": "/bundle-require/dist/index.d.ts",
+      "id": "function.tsconfigPathsToRegExp",
+      "kind": "function",
+      "line": 73,
+      "name": "tsconfigPathsToRegExp",
+      "signature": "tsconfigPathsToRegExp: (paths: Record<string, any>) => RegExp[];",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/bundle-require/dist/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.Options",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 22,
+      "methods": [],
+      "name": "Options",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/bundle-require/dist/index.d.ts",
+          "id": "interface.Options.property.cwd",
+          "kind": "interface-property",
+          "line": 23,
+          "name": "cwd",
+          "signature": "cwd?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * esbuild options
+     *
+     * @deprecated \`esbuildOptions.watch\` is deprecated, use \`onRebuild\` instead
+     */",
+          ],
+          "file": "/bundle-require/dist/index.d.ts",
+          "id": "interface.Options.property.esbuildOptions",
+          "kind": "interface-property",
+          "line": 39,
+          "name": "esbuildOptions",
+          "signature": "esbuildOptions?: BuildOptions & {
+  watch?:
+    | boolean
+    | {
+        onRebuild?: RebuildCallback;
+      };
+};",
+        },
+        {
+          "docs": [
+            "/** External packages */",
+          ],
+          "file": "/bundle-require/dist/index.d.ts",
+          "id": "interface.Options.property.external",
+          "kind": "interface-property",
+          "line": 58,
+          "name": "external",
+          "signature": "external?: (string | RegExp)[];",
+        },
+        {
+          "docs": [
+            "/**
+     * The filepath to bundle and require
+     */",
+          ],
+          "file": "/bundle-require/dist/index.d.ts",
+          "id": "interface.Options.property.filepath",
+          "kind": "interface-property",
+          "line": 27,
+          "name": "filepath",
+          "signature": "filepath: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Provide bundle format explicitly
+     * to skip the default format inference
+     */",
+          ],
+          "file": "/bundle-require/dist/index.d.ts",
+          "id": "interface.Options.property.format",
+          "kind": "interface-property",
+          "line": 70,
+          "name": "format",
+          "signature": "format?: "cjs" | "esm";",
+        },
+        {
+          "docs": [
+            "/**
+     * Get the path to the output file
+     * By default we simply replace the extension with \`.bundled_{randomId}.js\`
+     */",
+          ],
+          "file": "/bundle-require/dist/index.d.ts",
+          "id": "interface.Options.property.getOutputFile",
+          "kind": "interface-property",
+          "line": 48,
+          "name": "getOutputFile",
+          "signature": "getOutputFile?: GetOutputFile;",
+        },
+        {
+          "docs": [
+            "/**
+     * Enable watching and call the callback after each rebuild
+     */",
+          ],
+          "file": "/bundle-require/dist/index.d.ts",
+          "id": "interface.Options.property.onRebuild",
+          "kind": "interface-property",
+          "line": 52,
+          "name": "onRebuild",
+          "signature": "onRebuild?: (ctx: {
+  err?: Pick<BuildFailure, "errors" | "warnings">;
+  mod?: any;
+  dependencies?: string[];
+}) => void;",
+        },
+        {
+          "docs": [
+            "/**
+     * Preserve compiled temporary file for debugging
+     * Default to \`process.env.BUNDLE_REQUIRE_PRESERVE\`
+     */",
+          ],
+          "file": "/bundle-require/dist/index.d.ts",
+          "id": "interface.Options.property.preserveTemporaryFile",
+          "kind": "interface-property",
+          "line": 65,
+          "name": "preserveTemporaryFile",
+          "signature": "preserveTemporaryFile?: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * The \`require\` function that is used to load the output file
+     * Default to the global \`require\` function
+     * This function can be asynchronous, i.e. returns a Promise
+     */",
+          ],
+          "file": "/bundle-require/dist/index.d.ts",
+          "id": "interface.Options.property.require",
+          "kind": "interface-property",
+          "line": 33,
+          "name": "require",
+          "signature": "require?: RequireFunction;",
+        },
+        {
+          "docs": [
+            "/** A custom tsconfig path to read \`paths\` option */",
+          ],
+          "file": "/bundle-require/dist/index.d.ts",
+          "id": "interface.Options.property.tsconfig",
+          "kind": "interface-property",
+          "line": 60,
+          "name": "tsconfig",
+          "signature": "tsconfig?: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface Options {}",
+    },
+    {
+      "docs": [],
+      "file": "/bundle-require/dist/index.d.ts",
+      "id": "type.GetOutputFile",
+      "kind": "type",
+      "line": 20,
+      "name": "GetOutputFile",
+      "signature": "type GetOutputFile = (filepath: string, format: "esm" | "cjs") => string;",
+    },
+    {
+      "docs": [],
+      "file": "/bundle-require/dist/index.d.ts",
+      "id": "type.RebuildCallback",
+      "kind": "type",
+      "line": 21,
+      "name": "RebuildCallback",
+      "signature": "type RebuildCallback = (
+  error: Pick<BuildFailure, "errors" | "warnings"> | null,
+  result: BuildResult | null,
+) => void;",
+    },
+    {
+      "docs": [],
+      "file": "/bundle-require/dist/index.d.ts",
+      "id": "type.RequireFunction",
+      "kind": "type",
+      "line": 17,
+      "name": "RequireFunction",
+      "signature": "type RequireFunction = (
+  outfile: string,
+  ctx: {
+    format: "cjs" | "esm";
+  },
+) => any;",
+    },
+    {
+      "docs": [
+        "/**
+ * Dynamically import files.
+ *
+ * As a temporary workaround for Jest's lack of stable ESM support, we fallback to require
+ * if we're in a Jest environment.
+ * See https://github.com/vitejs/vite/pull/5197#issuecomment-938054077
+ *
+ * @param file File path to import.
+ */",
+      ],
+      "file": "/bundle-require/dist/index.d.ts",
+      "id": "variable.dynamicImport",
+      "kind": "variable",
+      "line": 13,
+      "name": "dynamicImport",
+      "signature": "const dynamicImport: RequireFunction;",
+    },
+    {
+      "docs": [],
+      "file": "/bundle-require/dist/index.d.ts",
+      "id": "variable.JS_EXT_RE",
+      "kind": "variable",
+      "line": 15,
+      "name": "JS_EXT_RE",
+      "signature": "const JS_EXT_RE: RegExp;",
+    },
+  ],
+  "name": "bundle-require",
+  "overview": undefined,
+  "packages": [
+    "@esbuild/aix-ppc64@0.20.0",
+    "@esbuild/android-arm@0.20.0",
+    "@esbuild/android-arm64@0.20.0",
+    "@esbuild/android-x64@0.20.0",
+    "@esbuild/darwin-arm64@0.20.0",
+    "@esbuild/darwin-x64@0.20.0",
+    "@esbuild/freebsd-arm64@0.20.0",
+    "@esbuild/freebsd-x64@0.20.0",
+    "@esbuild/linux-arm@0.20.0",
+    "@esbuild/linux-arm64@0.20.0",
+    "@esbuild/linux-ia32@0.20.0",
+    "@esbuild/linux-loong64@0.20.0",
+    "@esbuild/linux-mips64el@0.20.0",
+    "@esbuild/linux-ppc64@0.20.0",
+    "@esbuild/linux-riscv64@0.20.0",
+    "@esbuild/linux-s390x@0.20.0",
+    "@esbuild/linux-x64@0.20.0",
+    "@esbuild/netbsd-x64@0.20.0",
+    "@esbuild/openbsd-x64@0.20.0",
+    "@esbuild/sunos-x64@0.20.0",
+    "@esbuild/win32-arm64@0.20.0",
+    "@esbuild/win32-ia32@0.20.0",
+    "@esbuild/win32-x64@0.20.0",
+    "bundle-require@4.0.2",
+    "esbuild@0.20.0",
+    "load-tsconfig@0.2.5",
+  ],
+  "subpath": ".",
+  "types": "./dist/index.d.ts",
+  "version": "4.0.2",
+}
+`;

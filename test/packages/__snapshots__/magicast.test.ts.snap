@@ -1,0 +1,1011 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`magicast@0.3.3 1`] = `
+{
+  "declarations": [
+    {
+      "constructors": [
+        {
+          "docs": [],
+          "file": "/magicast/dist/index.d.ts",
+          "id": "class.MagicastError.constructor",
+          "kind": "class-constructor",
+          "line": 26,
+          "name": "constructor",
+          "signature": "constructor(message: string, options?: MagicastErrorOptions);",
+        },
+      ],
+      "docs": [],
+      "file": "/magicast/dist/index.d.ts",
+      "id": "class.MagicastError",
+      "kind": "class",
+      "line": 23,
+      "methods": [],
+      "name": "MagicastError",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/magicast/dist/index.d.ts",
+          "id": "class.MagicastError.property.options",
+          "kind": "class-property",
+          "line": 25,
+          "name": "options",
+          "signature": "options?: MagicastErrorOptions;",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/index.d.ts",
+          "id": "class.MagicastError.property.rawMessage",
+          "kind": "class-property",
+          "line": 24,
+          "name": "rawMessage",
+          "signature": "rawMessage: string;",
+        },
+      ],
+      "signature": "class MagicastError extends Error {}",
+    },
+    {
+      "docs": [],
+      "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+      "id": "function.detectCodeFormat",
+      "kind": "function",
+      "line": 159,
+      "name": "detectCodeFormat",
+      "signature": "detectCodeFormat: (
+  code: string,
+  userStyles?: CodeFormatOptions,
+) => CodeFormatOptions;",
+    },
+    {
+      "docs": [],
+      "file": "/magicast/dist/index.d.ts",
+      "id": "function.generateCode",
+      "kind": "function",
+      "line": 8,
+      "name": "generateCode",
+      "signature": "generateCode: (
+  node: { $ast: Node } | Node | ProxifiedModule<any>,
+  options?: GenerateOptions,
+) => { code: string; map?: any };",
+    },
+    {
+      "docs": [],
+      "file": "/magicast/dist/index.d.ts",
+      "id": "function.loadFile",
+      "kind": "function",
+      "line": 14,
+      "name": "loadFile",
+      "signature": "loadFile: <Exports extends object = any>(
+  filename: string,
+  options?: Options,
+) => Promise<ProxifiedModule<Exports>>;",
+    },
+    {
+      "docs": [],
+      "file": "/magicast/dist/index.d.ts",
+      "id": "function.parseExpression",
+      "kind": "function",
+      "line": 7,
+      "name": "parseExpression",
+      "signature": "parseExpression: <T>(code: string, options?: Options) => Proxified<T>;",
+    },
+    {
+      "docs": [],
+      "file": "/magicast/dist/index.d.ts",
+      "id": "function.parseModule",
+      "kind": "function",
+      "line": 6,
+      "name": "parseModule",
+      "signature": "parseModule: <Exports extends object = any>(
+  code: string,
+  options?: Options,
+) => ProxifiedModule<Exports>;",
+    },
+    {
+      "docs": [],
+      "file": "/magicast/dist/index.d.ts",
+      "id": "function.writeFile",
+      "kind": "function",
+      "line": 15,
+      "name": "writeFile",
+      "signature": "writeFile: (
+  node: { $ast: Node } | Node,
+  filename: string,
+  options?: Options,
+) => Promise<void>;",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+      "getAccessors": [],
+      "id": "interface.CodeFormatOptions",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 148,
+      "methods": [],
+      "name": "CodeFormatOptions",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.CodeFormatOptions.property.arrayBracketSpacing",
+          "kind": "interface-property",
+          "line": 154,
+          "name": "arrayBracketSpacing",
+          "signature": "arrayBracketSpacing?: boolean;",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.CodeFormatOptions.property.arrowParensAlways",
+          "kind": "interface-property",
+          "line": 156,
+          "name": "arrowParensAlways",
+          "signature": "arrowParensAlways?: boolean;",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.CodeFormatOptions.property.objectCurlySpacing",
+          "kind": "interface-property",
+          "line": 155,
+          "name": "objectCurlySpacing",
+          "signature": "objectCurlySpacing?: boolean;",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.CodeFormatOptions.property.quote",
+          "kind": "interface-property",
+          "line": 152,
+          "name": "quote",
+          "signature": "quote?: "single" | "double";",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.CodeFormatOptions.property.tabWidth",
+          "kind": "interface-property",
+          "line": 149,
+          "name": "tabWidth",
+          "signature": "tabWidth?: number;",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.CodeFormatOptions.property.trailingComma",
+          "kind": "interface-property",
+          "line": 153,
+          "name": "trailingComma",
+          "signature": "trailingComma?: boolean;",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.CodeFormatOptions.property.useSemi",
+          "kind": "interface-property",
+          "line": 157,
+          "name": "useSemi",
+          "signature": "useSemi?: boolean;",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.CodeFormatOptions.property.useTabs",
+          "kind": "interface-property",
+          "line": 150,
+          "name": "useTabs",
+          "signature": "useTabs?: boolean;",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.CodeFormatOptions.property.wrapColumn",
+          "kind": "interface-property",
+          "line": 151,
+          "name": "wrapColumn",
+          "signature": "wrapColumn?: number;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface CodeFormatOptions {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+      "getAccessors": [],
+      "id": "interface.ImportItemInput",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 225,
+      "methods": [],
+      "name": "ImportItemInput",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.ImportItemInput.property.from",
+          "kind": "interface-property",
+          "line": 228,
+          "name": "from",
+          "signature": "from: string;",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.ImportItemInput.property.imported",
+          "kind": "interface-property",
+          "line": 227,
+          "name": "imported",
+          "signature": "imported: string;",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.ImportItemInput.property.local",
+          "kind": "interface-property",
+          "line": 226,
+          "name": "local",
+          "signature": "local?: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface ImportItemInput {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+      "getAccessors": [],
+      "id": "interface.Loc",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 233,
+      "methods": [],
+      "name": "Loc",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.Loc.property.end",
+          "kind": "interface-property",
+          "line": 239,
+          "name": "end",
+          "signature": "end?: {
+  line?: number;
+  column?: number;
+  token?: number;
+};",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.Loc.property.lines",
+          "kind": "interface-property",
+          "line": 244,
+          "name": "lines",
+          "signature": "lines?: any;",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.Loc.property.start",
+          "kind": "interface-property",
+          "line": 234,
+          "name": "start",
+          "signature": "start?: {
+  line?: number;
+  column?: number;
+  token?: number;
+};",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface Loc {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/magicast/dist/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.MagicastErrorOptions",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 19,
+      "methods": [],
+      "name": "MagicastErrorOptions",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/magicast/dist/index.d.ts",
+          "id": "interface.MagicastErrorOptions.property.ast",
+          "kind": "interface-property",
+          "line": 20,
+          "name": "ast",
+          "signature": "ast?: Node;",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/index.d.ts",
+          "id": "interface.MagicastErrorOptions.property.code",
+          "kind": "interface-property",
+          "line": 21,
+          "name": "code",
+          "signature": "code?: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface MagicastErrorOptions {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+      "getAccessors": [],
+      "id": "interface.ParsedFileNode",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 251,
+      "methods": [],
+      "name": "ParsedFileNode",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.ParsedFileNode.property.comments",
+          "kind": "interface-property",
+          "line": 255,
+          "name": "comments",
+          "signature": "comments: null | any;",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.ParsedFileNode.property.loc",
+          "kind": "interface-property",
+          "line": 254,
+          "name": "loc",
+          "signature": "loc: Loc;",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.ParsedFileNode.property.program",
+          "kind": "interface-property",
+          "line": 253,
+          "name": "program",
+          "signature": "program: Program;",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.ParsedFileNode.property.type",
+          "kind": "interface-property",
+          "line": 252,
+          "name": "type",
+          "signature": "type: "file";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface ParsedFileNode {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+      "getAccessors": [],
+      "id": "interface.ProxifiedImportItem",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 217,
+      "methods": [],
+      "name": "ProxifiedImportItem",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.ProxifiedImportItem.property.$ast",
+          "kind": "interface-property",
+          "line": 219,
+          "name": "$ast",
+          "signature": "$ast: ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier;",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.ProxifiedImportItem.property.$declaration",
+          "kind": "interface-property",
+          "line": 220,
+          "name": "$declaration",
+          "signature": "$declaration: ImportDeclaration;",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.ProxifiedImportItem.property.$type",
+          "kind": "interface-property",
+          "line": 218,
+          "name": "$type",
+          "signature": "$type: "import";",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.ProxifiedImportItem.property.from",
+          "kind": "interface-property",
+          "line": 223,
+          "name": "from",
+          "signature": "from: string;",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.ProxifiedImportItem.property.imported",
+          "kind": "interface-property",
+          "line": 221,
+          "name": "imported",
+          "signature": "imported: string;",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.ProxifiedImportItem.property.local",
+          "kind": "interface-property",
+          "line": 222,
+          "name": "local",
+          "signature": "local: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface ProxifiedImportItem extends ProxyBase {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+      "getAccessors": [],
+      "id": "interface.ProxyBase",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 161,
+      "methods": [],
+      "name": "ProxyBase",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.ProxyBase.property.$ast",
+          "kind": "interface-property",
+          "line": 162,
+          "name": "$ast",
+          "signature": "$ast: Node;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface ProxyBase {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+      "getAccessors": [],
+      "id": "interface.Token",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 246,
+      "methods": [],
+      "name": "Token",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.Token.property.loc",
+          "kind": "interface-property",
+          "line": 249,
+          "name": "loc",
+          "signature": "loc?: Loc;",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.Token.property.type",
+          "kind": "interface-property",
+          "line": 247,
+          "name": "type",
+          "signature": "type: string;",
+        },
+        {
+          "docs": [],
+          "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+          "id": "interface.Token.property.value",
+          "kind": "interface-property",
+          "line": 248,
+          "name": "value",
+          "signature": "value: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface Token {}",
+    },
+    {
+      "docs": [],
+      "file": "/@babel/types/lib/index.d.ts",
+      "id": "type.ASTNode",
+      "kind": "type",
+      "line": 1490,
+      "name": "ASTNode",
+      "signature": "type Node =
+  | AnyTypeAnnotation
+  | ArgumentPlaceholder
+  | ArrayExpression
+  | ArrayPattern
+  | ArrayTypeAnnotation
+  | ArrowFunctionExpression
+  | AssignmentExpression
+  | AssignmentPattern
+  | AwaitExpression
+  | BigIntLiteral
+  | BinaryExpression
+  | BindExpression
+  | BlockStatement
+  | BooleanLiteral
+  | BooleanLiteralTypeAnnotation
+  | BooleanTypeAnnotation
+  | BreakStatement
+  | CallExpression
+  | CatchClause
+  | ClassAccessorProperty
+  | ClassBody
+  | ClassDeclaration
+  | ClassExpression
+  | ClassImplements
+  | ClassMethod
+  | ClassPrivateMethod
+  | ClassPrivateProperty
+  | ClassProperty
+  | ConditionalExpression
+  | ContinueStatement
+  | DebuggerStatement
+  | DecimalLiteral
+  | DeclareClass
+  | DeclareExportAllDeclaration
+  | DeclareExportDeclaration
+  | DeclareFunction
+  | DeclareInterface
+  | DeclareModule
+  | DeclareModuleExports
+  | DeclareOpaqueType
+  | DeclareTypeAlias
+  | DeclareVariable
+  | DeclaredPredicate
+  | Decorator
+  | Directive
+  | DirectiveLiteral
+  | DoExpression
+  | DoWhileStatement
+  | EmptyStatement
+  | EmptyTypeAnnotation
+  | EnumBooleanBody
+  | EnumBooleanMember
+  | EnumDeclaration
+  | EnumDefaultedMember
+  | EnumNumberBody
+  | EnumNumberMember
+  | EnumStringBody
+  | EnumStringMember
+  | EnumSymbolBody
+  | ExistsTypeAnnotation
+  | ExportAllDeclaration
+  | ExportDefaultDeclaration
+  | ExportDefaultSpecifier
+  | ExportNamedDeclaration
+  | ExportNamespaceSpecifier
+  | ExportSpecifier
+  | ExpressionStatement
+  | File
+  | ForInStatement
+  | ForOfStatement
+  | ForStatement
+  | FunctionDeclaration
+  | FunctionExpression
+  | FunctionTypeAnnotation
+  | FunctionTypeParam
+  | GenericTypeAnnotation
+  | Identifier
+  | IfStatement
+  | Import
+  | ImportAttribute
+  | ImportDeclaration
+  | ImportDefaultSpecifier
+  | ImportExpression
+  | ImportNamespaceSpecifier
+  | ImportSpecifier
+  | IndexedAccessType
+  | InferredPredicate
+  | InterfaceDeclaration
+  | InterfaceExtends
+  | InterfaceTypeAnnotation
+  | InterpreterDirective
+  | IntersectionTypeAnnotation
+  | JSXAttribute
+  | JSXClosingElement
+  | JSXClosingFragment
+  | JSXElement
+  | JSXEmptyExpression
+  | JSXExpressionContainer
+  | JSXFragment
+  | JSXIdentifier
+  | JSXMemberExpression
+  | JSXNamespacedName
+  | JSXOpeningElement
+  | JSXOpeningFragment
+  | JSXSpreadAttribute
+  | JSXSpreadChild
+  | JSXText
+  | LabeledStatement
+  | LogicalExpression
+  | MemberExpression
+  | MetaProperty
+  | MixedTypeAnnotation
+  | ModuleExpression
+  | NewExpression
+  | Noop
+  | NullLiteral
+  | NullLiteralTypeAnnotation
+  | NullableTypeAnnotation
+  | NumberLiteral
+  | NumberLiteralTypeAnnotation
+  | NumberTypeAnnotation
+  | NumericLiteral
+  | ObjectExpression
+  | ObjectMethod
+  | ObjectPattern
+  | ObjectProperty
+  | ObjectTypeAnnotation
+  | ObjectTypeCallProperty
+  | ObjectTypeIndexer
+  | ObjectTypeInternalSlot
+  | ObjectTypeProperty
+  | ObjectTypeSpreadProperty
+  | OpaqueType
+  | OptionalCallExpression
+  | OptionalIndexedAccessType
+  | OptionalMemberExpression
+  | ParenthesizedExpression
+  | PipelineBareFunction
+  | PipelinePrimaryTopicReference
+  | PipelineTopicExpression
+  | Placeholder
+  | PrivateName
+  | Program
+  | QualifiedTypeIdentifier
+  | RecordExpression
+  | RegExpLiteral
+  | RegexLiteral
+  | RestElement
+  | RestProperty
+  | ReturnStatement
+  | SequenceExpression
+  | SpreadElement
+  | SpreadProperty
+  | StaticBlock
+  | StringLiteral
+  | StringLiteralTypeAnnotation
+  | StringTypeAnnotation
+  | Super
+  | SwitchCase
+  | SwitchStatement
+  | SymbolTypeAnnotation
+  | TSAnyKeyword
+  | TSArrayType
+  | TSAsExpression
+  | TSBigIntKeyword
+  | TSBooleanKeyword
+  | TSCallSignatureDeclaration
+  | TSConditionalType
+  | TSConstructSignatureDeclaration
+  | TSConstructorType
+  | TSDeclareFunction
+  | TSDeclareMethod
+  | TSEnumDeclaration
+  | TSEnumMember
+  | TSExportAssignment
+  | TSExpressionWithTypeArguments
+  | TSExternalModuleReference
+  | TSFunctionType
+  | TSImportEqualsDeclaration
+  | TSImportType
+  | TSIndexSignature
+  | TSIndexedAccessType
+  | TSInferType
+  | TSInstantiationExpression
+  | TSInterfaceBody
+  | TSInterfaceDeclaration
+  | TSIntersectionType
+  | TSIntrinsicKeyword
+  | TSLiteralType
+  | TSMappedType
+  | TSMethodSignature
+  | TSModuleBlock
+  | TSModuleDeclaration
+  | TSNamedTupleMember
+  | TSNamespaceExportDeclaration
+  | TSNeverKeyword
+  | TSNonNullExpression
+  | TSNullKeyword
+  | TSNumberKeyword
+  | TSObjectKeyword
+  | TSOptionalType
+  | TSParameterProperty
+  | TSParenthesizedType
+  | TSPropertySignature
+  | TSQualifiedName
+  | TSRestType
+  | TSSatisfiesExpression
+  | TSStringKeyword
+  | TSSymbolKeyword
+  | TSThisType
+  | TSTupleType
+  | TSTypeAliasDeclaration
+  | TSTypeAnnotation
+  | TSTypeAssertion
+  | TSTypeLiteral
+  | TSTypeOperator
+  | TSTypeParameter
+  | TSTypeParameterDeclaration
+  | TSTypeParameterInstantiation
+  | TSTypePredicate
+  | TSTypeQuery
+  | TSTypeReference
+  | TSUndefinedKeyword
+  | TSUnionType
+  | TSUnknownKeyword
+  | TSVoidKeyword
+  | TaggedTemplateExpression
+  | TemplateElement
+  | TemplateLiteral
+  | ThisExpression
+  | ThisTypeAnnotation
+  | ThrowStatement
+  | TopicReference
+  | TryStatement
+  | TupleExpression
+  | TupleTypeAnnotation
+  | TypeAlias
+  | TypeAnnotation
+  | TypeCastExpression
+  | TypeParameter
+  | TypeParameterDeclaration
+  | TypeParameterInstantiation
+  | TypeofTypeAnnotation
+  | UnaryExpression
+  | UnionTypeAnnotation
+  | UpdateExpression
+  | V8IntrinsicIdentifier
+  | VariableDeclaration
+  | VariableDeclarator
+  | Variance
+  | VoidTypeAnnotation
+  | WhileStatement
+  | WithStatement
+  | YieldExpression;",
+    },
+    {
+      "docs": [],
+      "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+      "id": "type.GenerateOptions",
+      "kind": "type",
+      "line": 257,
+      "name": "GenerateOptions",
+      "signature": "type GenerateOptions = Options & {
+  format?: false | CodeFormatOptions;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+      "id": "type.Proxified",
+      "kind": "type",
+      "line": 193,
+      "name": "Proxified",
+      "signature": "type Proxified<T = any> = T extends
+  | number
+  | string
+  | null
+  | undefined
+  | boolean
+  | bigint
+  | symbol
+  ? T
+  : T extends any[]
+    ? {
+        [K in keyof T]: Proxified<T[K]>;
+      } & ProxyBase & {
+          $type: "array";
+        }
+    : T extends object
+      ? ProxyBase & {
+          [K in keyof T]: Proxified<T[K]>;
+        } & {
+          $type: "object";
+        }
+      : T;",
+    },
+    {
+      "docs": [],
+      "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+      "id": "type.ProxifiedArray",
+      "kind": "type",
+      "line": 164,
+      "name": "ProxifiedArray",
+      "signature": "type ProxifiedArray<T extends any[] = unknown[]> = {
+  [K in keyof T]: Proxified<T[K]>;
+} & ProxyBase & {
+    $type: "array";
+  };",
+    },
+    {
+      "docs": [],
+      "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+      "id": "type.ProxifiedArrowFunctionExpression",
+      "kind": "type",
+      "line": 179,
+      "name": "ProxifiedArrowFunctionExpression",
+      "signature": "type ProxifiedArrowFunctionExpression<Params extends any[] = unknown[]> =
+  ProxyBase & {
+    $type: "arrow-function-expression";
+    $params: ProxifiedArray<Params>;
+    $body: ProxifiedValue;
+  };",
+    },
+    {
+      "docs": [],
+      "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+      "id": "type.ProxifiedFunctionCall",
+      "kind": "type",
+      "line": 169,
+      "name": "ProxifiedFunctionCall",
+      "signature": "type ProxifiedFunctionCall<Args extends any[] = unknown[]> = ProxyBase & {
+  $type: "function-call";
+  $args: ProxifiedArray<Args>;
+  $callee: string;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+      "id": "type.ProxifiedIdentifier",
+      "kind": "type",
+      "line": 189,
+      "name": "ProxifiedIdentifier",
+      "signature": "type ProxifiedIdentifier = ProxyBase & {
+  $type: "identifier";
+  $name: string;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+      "id": "type.ProxifiedImportsMap",
+      "kind": "type",
+      "line": 212,
+      "name": "ProxifiedImportsMap",
+      "signature": "type ProxifiedImportsMap = Record<string, ProxifiedImportItem> &
+  ProxyBase & {
+    $type: "imports";
+    $add: (item: ImportItemInput) => void;
+    $items: ProxifiedImportItem[];
+  };",
+    },
+    {
+      "docs": [],
+      "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+      "id": "type.ProxifiedModule",
+      "kind": "type",
+      "line": 202,
+      "name": "ProxifiedModule",
+      "signature": "type ProxifiedModule<T extends object = Record<string, any>> = ProxyBase & {
+  $type: "module";
+  $code: string;
+  exports: ProxifiedObject<T>;
+  imports: ProxifiedImportsMap;
+  generate: (options?: GenerateOptions) => {
+    code: string;
+    map?: any;
+  };
+};",
+    },
+    {
+      "docs": [],
+      "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+      "id": "type.ProxifiedNewExpression",
+      "kind": "type",
+      "line": 174,
+      "name": "ProxifiedNewExpression",
+      "signature": "type ProxifiedNewExpression<Args extends any[] = unknown[]> = ProxyBase & {
+  $type: "new-expression";
+  $args: ProxifiedArray<Args>;
+  $callee: string;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+      "id": "type.ProxifiedObject",
+      "kind": "type",
+      "line": 184,
+      "name": "ProxifiedObject",
+      "signature": "type ProxifiedObject<T extends object = object> = {
+  [K in keyof T]: Proxified<T[K]>;
+} & ProxyBase & {
+    $type: "object";
+  };",
+    },
+    {
+      "docs": [],
+      "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+      "id": "type.ProxifiedValue",
+      "kind": "type",
+      "line": 230,
+      "name": "ProxifiedValue",
+      "signature": "type ProxifiedValue =
+  | ProxifiedArray
+  | ProxifiedFunctionCall
+  | ProxifiedNewExpression
+  | ProxifiedIdentifier
+  | ProxifiedObject
+  | ProxifiedModule
+  | ProxifiedImportsMap
+  | ProxifiedImportItem
+  | ProxifiedArrowFunctionExpression;",
+    },
+    {
+      "docs": [],
+      "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
+      "id": "type.ProxyType",
+      "kind": "type",
+      "line": 231,
+      "name": "ProxyType",
+      "signature": "type ProxyType = ProxifiedValue["$type"];",
+    },
+    {
+      "docs": [],
+      "file": "/magicast/dist/index.d.ts",
+      "id": "variable.builders",
+      "kind": "variable",
+      "line": 29,
+      "name": "builders",
+      "signature": "const builders: {
+  functionCall(callee: string, ...args: any[]): Proxified;
+  newExpression(callee: string, ...args: any[]): Proxified;
+  literal(value: any): Proxified;
+  raw(code: string): Proxified;
+};",
+    },
+  ],
+  "name": "magicast",
+  "overview": undefined,
+  "packages": [
+    "@babel/helper-string-parser@7.23.4",
+    "@babel/helper-validator-identifier@7.22.20",
+    "@babel/parser@7.23.9",
+    "@babel/types@7.23.9",
+    "magicast@0.3.3",
+    "source-map-js@1.0.2",
+    "to-fast-properties@2.0.0",
+  ],
+  "subpath": ".",
+  "types": "./dist/index.d.ts",
+  "version": "0.3.3",
+}
+`;

@@ -1,0 +1,1502 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`@storylite/storylite@0.14.0 1`] = `
+{
+  "declarations": [
+    {
+      "constructors": [
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "class.Router.constructor",
+          "kind": "class-constructor",
+          "line": 473,
+          "name": "constructor",
+          "signature": "constructor();",
+        },
+      ],
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "class.Router",
+      "kind": "class",
+      "line": 461,
+      "methods": [
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "class.Router.method.[Symbol.iterator]",
+          "kind": "class-method",
+          "line": 462,
+          "name": "[Symbol.iterator]",
+          "signature": "[Symbol.iterator]: () => Iterator<Route, any, undefined>;",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "class.Router.method.add",
+          "kind": "class-method",
+          "line": 480,
+          "name": "add",
+          "signature": "add: (pattern: string, component: React$1.FC) => void;",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "class.Router.method.back",
+          "kind": "class-method",
+          "line": 474,
+          "name": "back",
+          "signature": "back: () => void;",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "class.Router.method.forward",
+          "kind": "class-method",
+          "line": 475,
+          "name": "forward",
+          "signature": "forward: () => void;",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "class.Router.method.getFallback",
+          "kind": "class-method",
+          "line": 483,
+          "name": "getFallback",
+          "signature": "getFallback: () => React$1.FC | undefined;",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "class.Router.method.getMatches",
+          "kind": "class-method",
+          "line": 485,
+          "name": "getMatches",
+          "signature": "getMatches: (path: string) => Route[];",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "class.Router.method.isNotFound",
+          "kind": "class-method",
+          "line": 476,
+          "name": "isNotFound",
+          "signature": "isNotFound: () => boolean;",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "class.Router.method.matches",
+          "kind": "class-method",
+          "line": 484,
+          "name": "matches",
+          "signature": "matches: (path: string) => boolean;",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "class.Router.method.navigate",
+          "kind": "class-method",
+          "line": 477,
+          "name": "navigate",
+          "signature": "navigate: (
+  path: string,
+  query?: URLSearchParams | Record<string, string>,
+  replace?: boolean,
+) => void;",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "class.Router.method.refresh",
+          "kind": "class-method",
+          "line": 478,
+          "name": "refresh",
+          "signature": "refresh: (path: string) => void;",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "class.Router.method.register",
+          "kind": "class-method",
+          "line": 479,
+          "name": "register",
+          "signature": "register: (onUpdate?: (router: Router) => void) => () => void;",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "class.Router.method.remove",
+          "kind": "class-method",
+          "line": 481,
+          "name": "remove",
+          "signature": "remove: (pattern: string) => void;",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "class.Router.method.setFallback",
+          "kind": "class-method",
+          "line": 482,
+          "name": "setFallback",
+          "signature": "setFallback: (component: React$1.FC) => void;",
+        },
+      ],
+      "name": "Router",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "class.Router.property.currentRoute",
+          "kind": "class-property",
+          "line": 472,
+          "name": "currentRoute",
+          "signature": "readonly currentRoute: CurrentRoute;",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "class.Router.property.Hasbang",
+          "kind": "class-property",
+          "line": 463,
+          "name": "Hasbang",
+          "signature": "static readonly Hasbang: string;",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "class.Router.property.length",
+          "kind": "class-property",
+          "line": 467,
+          "name": "length",
+          "signature": "readonly length: number;",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "class.Router.property.params",
+          "kind": "class-property",
+          "line": 470,
+          "name": "params",
+          "signature": "readonly params: URLSearchParams;",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "class.Router.property.path",
+          "kind": "class-property",
+          "line": 469,
+          "name": "path",
+          "signature": "readonly path: string;",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "class.Router.property.query",
+          "kind": "class-property",
+          "line": 471,
+          "name": "query",
+          "signature": "readonly query: URLSearchParams;",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "class.Router.property.url",
+          "kind": "class-property",
+          "line": 468,
+          "name": "url",
+          "signature": "readonly url: URL;",
+        },
+      ],
+      "signature": "class Router implements Iterable<Route> {}",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "enum.SLColorScheme",
+      "kind": "enum",
+      "line": 216,
+      "members": [
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "enum.SLColorScheme.member.Light",
+          "kind": "enum-member",
+          "line": 217,
+          "name": "Light",
+          "signature": "Light = "light"",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "enum.SLColorScheme.member.Dark",
+          "kind": "enum-member",
+          "line": 218,
+          "name": "Dark",
+          "signature": "Dark = "dark"",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "enum.SLColorScheme.member.Auto",
+          "kind": "enum-member",
+          "line": 219,
+          "name": "Auto",
+          "signature": "Auto = "auto"",
+        },
+      ],
+      "name": "SLColorScheme",
+      "signature": "enum SLColorScheme {}",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "enum.SLCoreAddon",
+      "kind": "enum",
+      "line": 99,
+      "members": [
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "enum.SLCoreAddon.member.Grid",
+          "kind": "enum-member",
+          "line": 100,
+          "name": "Grid",
+          "signature": "Grid = "grid"",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "enum.SLCoreAddon.member.Outline",
+          "kind": "enum-member",
+          "line": 101,
+          "name": "Outline",
+          "signature": "Outline = "outline"",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "enum.SLCoreAddon.member.Responsive",
+          "kind": "enum-member",
+          "line": 102,
+          "name": "Responsive",
+          "signature": "Responsive = "responsive"",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "enum.SLCoreAddon.member.ColorScheme",
+          "kind": "enum-member",
+          "line": 103,
+          "name": "ColorScheme",
+          "signature": "ColorScheme = "theme"",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "enum.SLCoreAddon.member.Maximize",
+          "kind": "enum-member",
+          "line": 104,
+          "name": "Maximize",
+          "signature": "Maximize = "maximize"",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "enum.SLCoreAddon.member.OpenStory",
+          "kind": "enum-member",
+          "line": 105,
+          "name": "OpenStory",
+          "signature": "OpenStory = "open"",
+        },
+      ],
+      "name": "SLCoreAddon",
+      "signature": "enum SLCoreAddon {}",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "enum.SLPanel",
+      "kind": "enum",
+      "line": 209,
+      "members": [
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "enum.SLPanel.member.Sidebar",
+          "kind": "enum-member",
+          "line": 210,
+          "name": "Sidebar",
+          "signature": "Sidebar = "sidebar"",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "enum.SLPanel.member.Addons",
+          "kind": "enum-member",
+          "line": 211,
+          "name": "Addons",
+          "signature": "Addons = "addons"",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "enum.SLPanel.member.Canvas",
+          "kind": "enum-member",
+          "line": 212,
+          "name": "Canvas",
+          "signature": "Canvas = "canvas"",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "enum.SLPanel.member.Properties",
+          "kind": "enum-member",
+          "line": 213,
+          "name": "Properties",
+          "signature": "Properties = "properties"",
+        },
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "enum.SLPanel.member.Inspector",
+          "kind": "enum-member",
+          "line": 214,
+          "name": "Inspector",
+          "signature": "Inspector = "inspector"",
+        },
+      ],
+      "name": "SLPanel",
+      "signature": "enum SLPanel {}",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "function.createStoryLiteRouter",
+      "kind": "function",
+      "line": 488,
+      "name": "createStoryLiteRouter",
+      "signature": "createStoryLiteRouter: (
+  appRoutes: Record<string, RouterPage>,
+  errorPage: RouterPage,
+  defaultLayout: React.FC,
+) => Router;",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "function.getStoryLiteBasePath",
+      "kind": "function",
+      "line": 490,
+      "name": "getStoryLiteBasePath",
+      "signature": "getStoryLiteBasePath: () => any;",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "function.Link",
+      "kind": "function",
+      "line": 497,
+      "name": "Link",
+      "signature": "Link: ({
+  to,
+  children,
+  ...rest
+}: {
+  [key: string]: any;
+  to: string;
+  children?: React.ReactNode;
+}) => react_jsx_runtime.JSX.Element;",
+    },
+    {
+      "docs": [
+        "/**
+ * Use this method if you don't want to mount the StoryLite app component yourself.
+ */",
+      ],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "function.renderStoryLiteApp",
+      "kind": "function",
+      "line": 429,
+      "name": "renderStoryLiteApp",
+      "signature": "renderStoryLiteApp: (
+  root: HTMLElement,
+  stories: StoryModuleMap,
+  config?: Partial<SLAppComponentProps>,
+) => void;",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "function.RouteRenderer",
+      "kind": "function",
+      "line": 496,
+      "name": "RouteRenderer",
+      "signature": "RouteRenderer: ({
+  route,
+  fallback,
+  ...rest
+}: RouteRendererProps) => ReactNode;",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "function.StoryLiteApp",
+      "kind": "function",
+      "line": 424,
+      "name": "StoryLiteApp",
+      "signature": "StoryLiteApp: (props: StoryLiteAppProps) => react_jsx_runtime.JSX.Element;",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "function.useRouterParams",
+      "kind": "function",
+      "line": 519,
+      "name": "useRouterParams",
+      "signature": "useRouterParams: () => { [key: string]: string };",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "function.useRouterQuery",
+      "kind": "function",
+      "line": 522,
+      "name": "useRouterQuery",
+      "signature": "useRouterQuery: () => { [key: string]: string };",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "function.useStoryLiteIframe",
+      "kind": "function",
+      "line": 432,
+      "name": "useStoryLiteIframe",
+      "signature": "useStoryLiteIframe: () => {
+  iframe: HTMLIFrameElement | null;
+  loaded: boolean;
+  setIframe: (element: HTMLIFrameElement | null) => void;
+  window: Window | null;
+  document: Document | null;
+};",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.BaseStory",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 272,
+      "methods": [],
+      "name": "BaseStory",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * If true, represents the default export of the story file.
+     *
+     * This value should not be set manually, it is set by StoryLite's story collector.
+     */",
+          ],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "interface.BaseStory.property._isDefault",
+          "kind": "interface-property",
+          "line": 301,
+          "name": "_isDefault",
+          "signature": "readonly _isDefault?: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * The module ID of the story file.
+     *
+     * This value should not be set manually, it is set by StoryLite's story collector.
+     */",
+          ],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "interface.BaseStory.property._moduleId",
+          "kind": "interface-property",
+          "line": 307,
+          "name": "_moduleId",
+          "signature": "readonly _moduleId?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * The base component that this story is showcasing.
+     *
+     * This is also the component that will be used in the code examples and docs.
+     *
+     * To render more complex components in the canvas (e.g. with data fetching, state, etc),
+     * you can use the \`render\` function.
+     *
+     */",
+          ],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "interface.BaseStory.property.component",
+          "kind": "interface-property",
+          "line": 295,
+          "name": "component",
+          "signature": "component?: P;",
+        },
+        {
+          "docs": [
+            "/**
+     * Display name of the component in the UI.
+     *
+     * If not specified, the last segment of the \`title\` will be used as a fallback.
+     */",
+          ],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "interface.BaseStory.property.name",
+          "kind": "interface-property",
+          "line": 285,
+          "name": "name",
+          "signature": "name?: string;",
+        },
+        {
+          "docs": [
+            "/**
+     * Title and path of the story in the navigation UI.
+     * You can use "/" to organize stories into nested groups, if you provide a string.
+     *
+     * If not specified, defaults to the named export and the inferred path from the file name.
+     */",
+          ],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "interface.BaseStory.property.title",
+          "kind": "interface-property",
+          "line": 279,
+          "name": "title",
+          "signature": "title?: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface BaseStory<P extends SLFunctionComponent = SLFunctionComponent<{}>> {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * StoryLite Story Metadata object, *almost fully* compatible
+ * with Storybook Component Story Format (CSF) version 3.
+ *
+ * The default export defines metadata about your component, including the component itself,
+ * its title (where it will show up in the navigation UI story hierarchy), decorators,
+ * and parameters.
+ *
+ * All exported stories will inherit the metadata defined in this default export.
+ *
+ * The component field is required and used by addons for automatic prop table generation
+ * and display of other component metadata. The title field is optional and should be
+ * unique (i.e., not re-used across files).
+ *
+ * StoryLite will always use the named export to determine the story ID and URL,
+ * the \`title\` and \`name\` fields are optional and will be inferred from the named export
+ * if not specified.
+ */",
+      ],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.Story",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 327,
+      "methods": [],
+      "name": "Story",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Properties to pass to the component. The will show up in the UI knobs.
+     */",
+          ],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "interface.Story.property.args",
+          "kind": "interface-property",
+          "line": 331,
+          "name": "args",
+          "signature": "args?: SLComponentProps<P>;",
+        },
+        {
+          "docs": [
+            "/**
+     * Decorators to wrap the story in.
+     */",
+          ],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "interface.Story.property.decorators",
+          "kind": "interface-property",
+          "line": 347,
+          "name": "decorators",
+          "signature": "decorators?: SLDecorator<P>[];",
+        },
+        {
+          "docs": [
+            "/**
+     * SideBar options.
+     *
+     * This property is not inherited by the named story exports, when defined in the default export.
+     */",
+          ],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "interface.Story.property.navigation",
+          "kind": "interface-property",
+          "line": 391,
+          "name": "navigation",
+          "signature": "navigation?: {
+  /**
+   * Icon for the story in the SideBar.
+   * The \`iconExpanded\` icon is only used when the story has other nested stories.
+   */
+  icon?: SLNode;
+  iconExpanded?: SLNode;
+  /**
+   * Sorting order of the story in the SideBar.
+   */
+  order?: number;
+  /**
+   * If true, the story will be hidden in the SideBar.
+   * Useful for stories that are not intended to be directly accessible.
+   *
+   * @default false
+   */
+  hidden?: boolean;
+};",
+        },
+        {
+          "docs": [
+            "/**
+     * The story's static metadata, most commonly used to control StoryLite's
+     * behavior of features and addons.
+     */",
+          ],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "interface.Story.property.parameters",
+          "kind": "interface-property",
+          "line": 339,
+          "name": "parameters",
+          "signature": "parameters?: SLParametersConfig;",
+        },
+        {
+          "docs": [
+            "/**
+     * Render functions are a framework specific feature to allow you control on how the component renders.
+     *
+     * Define a custom render function for the story(ies). If not passed,
+     * the default render function of the framework will be used.
+     *
+     * Render functions are useful to write complex stories that shouldn't be part of
+     * the code snippets or documentation.
+     *
+     * @see https://storybook.js.org/docs/react/api/csf
+     */",
+          ],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "interface.Story.property.render",
+          "kind": "interface-property",
+          "line": 369,
+          "name": "render",
+          "signature": "render?: (args: SLComponentProps<P>, context?: SLStoryContext<P>) => SLNode;",
+        },
+        {
+          "docs": [
+            "/**
+     * Controls how the story is rendered inside the preview.
+     *
+     * - \`root\` renders the story in the same window / DOM tree as StoryLite's UI.
+     * - \`iframe\` renders the story in an iframe, in isolation from StoryLite's UI.
+     *
+     * > 💅 This is a StoryLite-only feature.
+     *
+     * @default 'iframe'
+     */",
+          ],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "interface.Story.property.renderFrame",
+          "kind": "interface-property",
+          "line": 380,
+          "name": "renderFrame",
+          "signature": "renderFrame?: "root" | "iframe";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface Story<P extends SLFunctionComponent = SLFunctionComponent<{}>>
+  extends BaseStory<P> {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "getAccessors": [],
+      "id": "interface.StoryWithId",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 411,
+      "methods": [],
+      "name": "StoryWithId",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/@storylite/storylite/dist/index.d.ts",
+          "id": "interface.StoryWithId.property.id",
+          "kind": "interface-property",
+          "line": 412,
+          "name": "id",
+          "signature": "id: string;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface StoryWithId<P extends SLFunctionComponent = SLFunctionComponent<{}>>
+  extends Story<P> {}",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.CurrentRoute",
+      "kind": "type",
+      "line": 451,
+      "name": "CurrentRoute",
+      "signature": "type CurrentRoute = Route & ParsedUri;",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.ParsedUri",
+      "kind": "type",
+      "line": 445,
+      "name": "ParsedUri",
+      "signature": "type ParsedUri = {
+  basePath?: string;
+  hashPath: string;
+  params: URLSearchParams;
+  query: URLSearchParams;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.Route",
+      "kind": "type",
+      "line": 440,
+      "name": "Route",
+      "signature": "type Route = {
+  pattern: string;
+  regex: RegExp;
+  component: React.FC;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.RouterContextState",
+      "kind": "type",
+      "line": 456,
+      "name": "RouterContextState",
+      "signature": "type RouterContextState = {
+  router: Router;
+  currentRoute?: CurrentRoute;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.RouteRendererProps",
+      "kind": "type",
+      "line": 492,
+      "name": "RouteRendererProps",
+      "signature": "type RouteRendererProps = {
+  route?: CurrentRoute;
+  fallback?: React.FC;
+} & HTMLAttributes<HTMLDivElement>;",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.RouterPage",
+      "kind": "type",
+      "line": 452,
+      "name": "RouterPage",
+      "signature": "type RouterPage = {
+  default?: React.FC<any>;
+  Layout?: React.FC<any>;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLAddonContext",
+      "kind": "type",
+      "line": 111,
+      "name": "SLAddonContext",
+      "signature": "type SLAddonContext = {
+  parameters: StoryLiteStore["parameters"];
+  currentStoryId?: StoryLiteStore["currentStoryId"];
+  setParameter: StoryLiteStore["setParameter"];
+  canvas: StoryLiteStore["canvas"];
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLAddonPanel",
+      "kind": "type",
+      "line": 221,
+      "name": "SLAddonPanel",
+      "signature": "type SLAddonPanel = SLPanel.Addons | SLPanel.Inspector;",
+    },
+    {
+      "docs": [
+        "/**
+ * StoryLite Addons API.
+ *
+ * These are the props that will be passed to the ToolbarAddon components.
+ */",
+      ],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLAddonProps",
+      "kind": "type",
+      "line": 122,
+      "name": "SLAddonProps",
+      "signature": "type SLAddonProps<Stateful = boolean> = {
+  /**
+   * Unique identifier for the addon.
+   * It will be used to store the state in the local storage sl_parameters.
+   */
+  id: SLCoreAddon | string;
+  /**
+   * HTML "title" attribute for the button.
+   */
+  tooltip?: string;
+  /**
+   * Children of the button when the addon is not active.
+   * If not provided, the render function will be used if defined, otherwise
+   * default icons will be used.
+   */
+  defaultContent?: SLNode;
+  /**
+   * Children of the button when the addon is active.
+   * If not provided, the render function will be used if defined, otherwise
+   * default icons will be used.
+   */
+  activeContent?: SLNode;
+  /**
+   * Children not allowed, use defaultContent and activeContent instead.
+   */
+  children?: never;
+  /**
+   * Whether the addon is stateful or not. If so, the functions will receive the state manager
+   * array as the second argument.
+   */
+  stateful: Stateful;
+  /**
+   * Whether the addon is persistent or not. If so, the state will be stored in the local storage.
+   * This option only works if the addon is also \`stateful\`.
+   */
+  persistent?: Stateful extends true ? boolean : never;
+  /**
+   * Default value for the state manager.
+   */
+  defaultValue?: Stateful extends true
+    ? SLNativeScalarType | (() => SLNativeScalarType)
+    : never;
+  /**
+   * Props to pass to the button element.
+   */
+  buttonProps?: BtnProps;
+  /**
+   * Where to place the addon in the toolbar.
+   */
+  placement?: "left" | "right";
+  /**
+   * Function to generate the href for the button (which will be a link)
+   */
+  getHref?: Stateful extends true
+    ? (context: SLAddonContext, state: SLAddonState) => string
+    : (context: SLAddonContext) => string;
+  /**
+   * Target for the button link.
+   */
+  hrefTarget?: string;
+  /**
+   * Function to determine whether the addon is visible.
+   */
+  isVisible?: Stateful extends true
+    ? (context: SLAddonContext, state: SLAddonState) => boolean
+    : (context: SLAddonContext) => boolean;
+  /**
+   * Function to determine whether the addon is active or not.
+   */
+  isActive?: Stateful extends true
+    ? (context: SLAddonContext, state: SLAddonState) => boolean
+    : (context: SLAddonContext) => boolean;
+  /**
+   * Custom render function for the button children.
+   * This will ignore the \`children\` prop, if set.
+   */
+  render?: Stateful extends true
+    ? (context: SLAddonContext, state: SLAddonState) => SLNode
+    : (context: SLAddonContext) => SLNode;
+  /**
+   * Function to call when the button is clicked.
+   * This is the place where you can change the state, if the addon is stateful.
+   */
+  onClick?: Stateful extends true
+    ? (context: SLAddonContext, state: SLAddonState) => void
+    : (context: SLAddonContext) => void;
+  /**
+   * Function to call when the iframe is ready and its window loaded.
+   */
+  onIFrameReady?: Stateful extends true
+    ? (context: SLAddonContext, state: SLAddonState) => void
+    : (context: SLAddonContext) => void;
+  onRender?: Stateful extends true
+    ? (context: SLAddonContext, state: SLAddonState) => void
+    : (context: SLAddonContext) => void;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLAddonPropsWithoutId",
+      "kind": "type",
+      "line": 202,
+      "name": "SLAddonPropsWithoutId",
+      "signature": "type SLAddonPropsWithoutId<T extends boolean> = Omit<SLAddonProps<T>, "id">;",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLAddonsMap",
+      "kind": "type",
+      "line": 204,
+      "name": "SLAddonsMap",
+      "signature": "type SLAddonsMap = Map<SLCoreAddon | string, SLAddonProps<boolean>>;",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLAddonsMapWithoutId",
+      "kind": "type",
+      "line": 203,
+      "name": "SLAddonsMapWithoutId",
+      "signature": "type SLAddonsMapWithoutId = Map<
+  SLCoreAddon | string,
+  SLAddonPropsWithoutId<boolean>
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLAddonState",
+      "kind": "type",
+      "line": 107,
+      "name": "SLAddonState",
+      "signature": "type SLAddonState = [
+  value: StoryLiteParamValue | undefined,
+  setValue: (
+    value: Parameters<SLAddonContext["setParameter"]>[1],
+    options?: Parameters<SLAddonContext["setParameter"]>[2],
+  ) => void,
+];",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLAppComponentProps",
+      "kind": "type",
+      "line": 223,
+      "name": "SLAppComponentProps",
+      "signature": "type SLAppComponentProps = {
+  title: SLNode;
+  defaultStory: string;
+  iframeProps?: Omit<Record<string, any>, "src">;
+  useIframeStyles?: boolean;
+  themeAttribute?: string;
+  localStorageKey?: string;
+  children?: SLNode;
+  addons?: SLUserDefinedAddons;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLArgTypes",
+      "kind": "type",
+      "line": 37,
+      "name": "SLArgTypes",
+      "signature": "type SLArgTypes<TArgs = SLObject> = {
+  [_name in keyof TArgs]: SLInputType;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLArrayType",
+      "kind": "type",
+      "line": 18,
+      "name": "SLArrayType",
+      "signature": "type SLArrayType = SLBaseType & {
+  name: "array";
+  value: SLNativeScalarType;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLBaseType",
+      "kind": "type",
+      "line": 9,
+      "name": "SLBaseType",
+      "signature": "type SLBaseType = {
+  required?: boolean;
+  nullable?: boolean;
+  raw?: string | ((value: any) => string);
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLComponentProps",
+      "kind": "type",
+      "line": 54,
+      "name": "SLComponentProps",
+      "signature": "type SLComponentProps<T> =
+  | (T extends React.ComponentType<infer P extends SLObject>
+      ? {
+          [key in keyof ComponentProps<SLFunctionComponent<P>>]: ComponentProps<
+            SLFunctionComponent<P>
+          >[key];
+        }
+      : never)
+  | (T extends React.Component<infer P extends SLObject>
+      ? {
+          [key in keyof ComponentProps<SLFunctionComponent<P>>]: ComponentProps<
+            SLFunctionComponent<P>
+          >[key];
+        }
+      : never);",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLDecorator",
+      "kind": "type",
+      "line": 271,
+      "name": "SLDecorator",
+      "signature": "type SLDecorator<P extends SLFunctionComponent = SLFunctionComponent<{}>> = (
+  story: P,
+  context?: SLDecoratorContext<P>,
+) => SLNode;",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLDecoratorContext",
+      "kind": "type",
+      "line": 264,
+      "name": "SLDecoratorContext",
+      "signature": "type SLDecoratorContext<
+  P extends SLFunctionComponent = SLFunctionComponent<{}>,
+> = SLStoryContext<P>;",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLElement",
+      "kind": "type",
+      "line": 47,
+      "name": "SLElement",
+      "signature": "type SLElement<P extends SLObject = {}> = {
+  type: string;
+  props: P;
+  key: string | number | null;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLEnumType",
+      "kind": "type",
+      "line": 22,
+      "name": "SLEnumType",
+      "signature": "type SLEnumType = SLBaseType & {
+  name: "enum";
+  value: (string | number)[];
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLFunctionComponent",
+      "kind": "type",
+      "line": 53,
+      "name": "SLFunctionComponent",
+      "signature": "type SLFunctionComponent<P = any> = React.FC<P>;",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLInputType",
+      "kind": "type",
+      "line": 29,
+      "name": "SLInputType",
+      "signature": "type SLInputType = {
+  name?: string;
+  description?: string;
+  defaultValue?: any;
+  type?: SLType | SLScalarType["name"];
+  if?: never;
+  [key: string]: any;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLNativeScalarType",
+      "kind": "type",
+      "line": 26,
+      "name": "SLNativeScalarType",
+      "signature": "type SLNativeScalarType = string | number | boolean;",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLNativeType",
+      "kind": "type",
+      "line": 27,
+      "name": "SLNativeType",
+      "signature": "type SLNativeType = SLNativeScalarType | null | undefined | SLObject | any[];",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLNode",
+      "kind": "type",
+      "line": 52,
+      "name": "SLNode",
+      "signature": "type SLNode = ReactNode;",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLObject",
+      "kind": "type",
+      "line": 6,
+      "name": "SLObject",
+      "signature": "type SLObject =
+  | {
+      [name: string]: any;
+    }
+  | Record<string, any>;",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLPageProps",
+      "kind": "type",
+      "line": 40,
+      "name": "SLPageProps",
+      "signature": "type SLPageProps = {
+  [name: string]: any;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLParameters",
+      "kind": "type",
+      "line": 239,
+      "name": "SLParameters",
+      "signature": "type SLParameters = {
+  [key: SLCoreAddon | \`\${SLCoreAddon}\` | string]: {
+    value: SLNativeType;
+  };
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLParametersConfig",
+      "kind": "type",
+      "line": 234,
+      "name": "SLParametersConfig",
+      "signature": "type SLParametersConfig = {
+  [key: SLCoreAddon | \`\${SLCoreAddon}\` | string]: {
+    value: SLNativeType;
+  };
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLPlayContext",
+      "kind": "type",
+      "line": 265,
+      "name": "SLPlayContext",
+      "signature": "type SLPlayContext<P extends SLFunctionComponent = SLFunctionComponent<{}>> =
+  SLStoryContext<P> & {
+    /**
+     * The DOM element that contains the rendered component.
+     */
+    canvasElement: HTMLElement;
+  };",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLScalarType",
+      "kind": "type",
+      "line": 14,
+      "name": "SLScalarType",
+      "signature": "type SLScalarType = SLBaseType & {
+  name: "string" | "number" | "boolean";
+  value: SLNativeScalarType;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLStoryContext",
+      "kind": "type",
+      "line": 245,
+      "name": "SLStoryContext",
+      "signature": "type SLStoryContext<P extends SLFunctionComponent = SLFunctionComponent<{}>> = {
+  /**
+   * The basic component data.
+   *
+   * > 💅 This is a StoryLite-only feature.
+   */
+  story: BaseStory<P> & {
+    id: string;
+    component: P;
+  };
+  args: Story<P>["args"];
+  parameters: Story<P>["parameters"];
+  /**
+   * A map containing all data (merged), loaded asynchronously by the configured data loaders.
+   */
+  loaded: {
+    [key: string]: any;
+  };
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLStoryPageProps",
+      "kind": "type",
+      "line": 43,
+      "name": "SLStoryPageProps",
+      "signature": "type SLStoryPageProps = {
+  storyId: string;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLType",
+      "kind": "type",
+      "line": 28,
+      "name": "SLType",
+      "signature": "type SLType = SLScalarType | SLEnumType | SLArrayType;",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.SLUserDefinedAddons",
+      "kind": "type",
+      "line": 205,
+      "name": "SLUserDefinedAddons",
+      "signature": "type SLUserDefinedAddons = [
+  id: SLCoreAddon | string,
+  config: Omit<SLAddonProps<boolean>, "id"> | false,
+][];",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.StoryLiteActions",
+      "kind": "type",
+      "line": 74,
+      "name": "StoryLiteActions",
+      "signature": "type StoryLiteActions = {
+  setParameter: (
+    key: string,
+    value: StoryLiteParamValue,
+    options?: {
+      persist?: boolean;
+      crossWindow?: boolean;
+    },
+  ) => void;
+  setParameters: (
+    data: SLParameters,
+    options?: {
+      persist?: boolean;
+      crossWindow?: boolean;
+    },
+  ) => void;
+  setCurrentStoryId: (storyId: string) => void;
+  setAddons: (addons: SLUserDefinedAddons) => void;
+  setStories: (stories: StoryModuleMap) => void;
+  setConfig: (config: Partial<SLAppComponentProps>) => void;
+  initialize: (
+    config: Partial<SLAppComponentProps>,
+    storyModules: StoryModuleMap,
+  ) => void;
+  setCanvasElement: (element: HTMLIFrameElement | null) => void;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.StoryLiteAppProps",
+      "kind": "type",
+      "line": 419,
+      "name": "StoryLiteAppProps",
+      "signature": "type StoryLiteAppProps = {
+  config?: Partial<SLAppComponentProps>;
+  stories: StoryModuleMap;
+  children?: React.ReactNode;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.StoryLiteCanvasState",
+      "kind": "type",
+      "line": 60,
+      "name": "StoryLiteCanvasState",
+      "signature": "type StoryLiteCanvasState = {
+  element: HTMLIFrameElement | null;
+  standalone: boolean;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.StoryLiteParamValue",
+      "kind": "type",
+      "line": 64,
+      "name": "StoryLiteParamValue",
+      "signature": "type StoryLiteParamValue =
+  | string
+  | string[]
+  | number
+  | number[]
+  | boolean
+  | undefined
+  | null;",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.StoryLiteState",
+      "kind": "type",
+      "line": 65,
+      "name": "StoryLiteState",
+      "signature": "type StoryLiteState = {
+  config: Required<SLAppComponentProps>;
+  canvas: StoryLiteCanvasState;
+  parameters: SLParameters;
+  addons: SLAddonsMap;
+  stories: StoryMap;
+  storyModuleMap: StoryModuleMap;
+  currentStoryId?: string;
+};",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.StoryLiteStore",
+      "kind": "type",
+      "line": 90,
+      "name": "StoryLiteStore",
+      "signature": "type StoryLiteStore = StoryLiteState & StoryLiteActions;",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.StoryMap",
+      "kind": "type",
+      "line": 414,
+      "name": "StoryMap",
+      "signature": "type StoryMap = Map<string, StoryWithId>;",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "type.StoryModuleMap",
+      "kind": "type",
+      "line": 415,
+      "name": "StoryModuleMap",
+      "signature": "type StoryModuleMap = Map<
+  string,
+  {
+    [key: string]: StoryWithId<SLFunctionComponent<any>>;
+  }
+>;",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "variable.useRouterStore",
+      "kind": "variable",
+      "line": 518,
+      "name": "useRouterStore",
+      "signature": "const useRouterStore: {
+  (): State & Actions;
+  <U>(
+    selector: (state: State & Actions) => U,
+    equalityFn?: (a: U, b: U) => boolean,
+  ): U;
+} & zustand_vanilla.StoreApi<State & Actions>;",
+    },
+    {
+      "docs": [],
+      "file": "/@storylite/storylite/dist/index.d.ts",
+      "id": "variable.useStoryLiteStore",
+      "kind": "variable",
+      "line": 431,
+      "name": "useStoryLiteStore",
+      "signature": "const useStoryLiteStore: {
+  (): StoryLiteState & StoryLiteActions;
+  <U>(
+    selector: (state: StoryLiteState & StoryLiteActions) => U,
+    equalityFn?: (a: U, b: U) => boolean,
+  ): U;
+} & zustand_vanilla.StoreApi<StoryLiteState & StoryLiteActions>;",
+    },
+  ],
+  "name": "@storylite/storylite",
+  "overview": undefined,
+  "packages": [
+    "@storylite/storylite@0.14.0",
+    "@types/node@20.11.17",
+    "@types/prop-types@15.7.11",
+    "@types/react@18.2.55",
+    "@types/react-dom@18.2.19",
+    "@types/scheduler@0.16.8",
+    "clsx@2.1.0",
+    "csstype@3.1.3",
+    "js-tokens@4.0.0",
+    "loose-envify@1.4.0",
+    "react@18.2.0",
+    "react-dom@18.2.0",
+    "scheduler@0.23.0",
+    "typescript@5.3.3",
+    "undici-types@5.26.5",
+    "use-sync-external-store@1.2.0",
+    "zustand@4.5.0",
+  ],
+  "subpath": ".",
+  "types": "./dist/index.d.ts",
+  "version": "0.14.0",
+}
+`;
