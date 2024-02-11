@@ -78,7 +78,7 @@
     "validate-npm-package-name": "^5.0.0"
   },
   "devDependencies": {
-    "@arethetypeswrong/cli": "^0.13.6",
+    "@arethetypeswrong/cli": "^0.13.8",
     "@pollyjs/adapter-node-http": "^6.0.6",
     "@pollyjs/core": "^6.0.6",
     "@pollyjs/persister-fs": "^6.0.6",
@@ -104,8 +104,8 @@
     "setup-polly-jest": "^0.11.0",
     "ts-dedent": "^2.2.0",
     "tslib": "^2.6.2",
-    "tsup": "^8.0.1",
-    "tsx": "^4.7.0",
+    "tsup": "^8.0.2",
+    "tsx": "^4.7.1",
     "typescript": "^5.3.3",
     "verdaccio": "^5.29.0",
     "vitest": "1.2.2"
