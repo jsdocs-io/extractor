@@ -45,7 +45,6 @@
     "node": ">=20"
   },
   "scripts": {
-    "start": "dts watch --target node",
     "check": "tsc --noEmit",
     "build": "tsc --noEmit && tsup",
     "attw": "attw --pack . --ignore-rules cjs-resolves-to-esm",
