@@ -12,6 +12,7 @@ import { packageJson } from "./package-json";
 import { packageName } from "./package-name";
 import { packageOverview } from "./package-overview";
 import { packageTypes } from "./package-types";
+import { removeDir } from "./remove-dir";
 import { tempDir } from "./temp-dir";
 
 /**
@@ -214,7 +215,16 @@ export const extractPackageApi = ({
         pkgDeclarations,
       })),
     )
-    .andThen((ctx) => changeDir(ctx.startDir).map(() => ctx))
+    .andThen((ctx) =>
+      changeDir(ctx.startDir)
+        .map(() => ctx)
+        .orElse(() => ok(ctx)),
+    )
+    .andThen((ctx) =>
+      removeDir(ctx.rootDir)
+        .map(() => ctx)
+        .orElse(() => ok(ctx)),
+    )
     .andThen((ctx) =>
       ok({
         name: ctx.pkgJson.name,
