@@ -1,5 +1,5 @@
-import fs from "fs-extra";
 import { ok } from "neverthrow";
+import fs from "node:fs/promises";
 import { temporaryDirectoryTask } from "tempy";
 import { expect, test } from "vitest";
 import { PackageJsonError } from "./errors";

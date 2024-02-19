@@ -1,4 +1,4 @@
-import fs from "fs-extra";
+import fs from "node:fs/promises";
 import { temporaryDirectoryTask } from "tempy";
 import { expect, test } from "vitest";
 import { createProject } from "./create-project";
