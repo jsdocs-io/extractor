@@ -1,7 +1,9 @@
 import { ResultAsync, ok, okAsync } from "neverthrow";
 import { performance } from "node:perf_hooks";
 import { join } from "pathe";
+import { changeDir } from "./change-dir";
 import { createProject } from "./create-project";
+import { currentDir } from "./current-dir";
 import type { ExtractorError } from "./errors";
 import type { ExtractedDeclaration } from "./extract-declarations";
 import { installPackage } from "./install-package";
@@ -10,7 +12,6 @@ import { packageJson } from "./package-json";
 import { packageName } from "./package-name";
 import { packageOverview } from "./package-overview";
 import { packageTypes } from "./package-types";
-import { changeDir, currentDir } from "./process";
 import { tempDir } from "./temp-dir";
 
 /**
