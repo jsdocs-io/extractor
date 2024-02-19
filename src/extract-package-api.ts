@@ -1,4 +1,5 @@
 import { ResultAsync, ok, okAsync } from "neverthrow";
+import { performance } from "node:perf_hooks";
 import { join } from "pathe";
 import { createProject } from "./create-project";
 import type { ExtractorError } from "./errors";
@@ -139,7 +140,12 @@ export const extractPackageApi = ({
   subpath = ".",
   maxDepth = 5,
 }: ExtractPackageApiOptions): ResultAsync<PackageApi, ExtractorError> =>
-  okAsync({ pkg, pkgSubpath: subpath, maxDepth, startTime: performance.now() })
+  okAsync({
+    pkg,
+    pkgSubpath: subpath,
+    maxDepth,
+    startTime: performance.now(),
+  })
     .andThen((ctx) =>
       packageName(ctx.pkg).map((pkgName) => ({
         ...ctx,
