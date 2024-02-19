@@ -7,7 +7,13 @@
 [![npm](https://img.shields.io/npm/v/@jsdocs-io/extractor)](https://www.npmjs.com/package/@jsdocs-io/extractor)
 [![License](https://img.shields.io/github/license/jsdocs-io/extractor)](https://github.com/jsdocs-io/extractor/blob/main/LICENSE)
 
-This package downloads npm packages and extracts their public API.
+This is the API extractor powering [**jsDocs.io**](https://www.jsdocs.io).
+
+It downloads packages from the npm registry and analyzes them to extract their public API.
+
+## Requirements
+
+- [Bun](https://bun.sh/) must be installed to resolve and install packages
 
 ## API & Package Info
 
@@ -16,55 +22,51 @@ This package downloads npm packages and extracts their public API.
 - View repository on [**GitHub**](https://github.com/jsdocs-io/extractor)
 - Read the changelog on [**GitHub**](https://github.com/jsdocs-io/extractor/blob/main/CHANGELOG.md)
 
-## Install
+## Usage Examples
 
-Using `npm`:
+> [!WARNING]
+> Analyzing packages is a blocking operation that requires some time, even seconds, to finish!
+> Using workers is recommended.
 
-```
-npm i @jsdocs-io/extractor
-```
+1. Analyze the latest version of the `preact` package from the npm registry:
 
-Using `yarn`:
-
-```
-yarn add @jsdocs-io/extractor
-```
-
-## Usage Example
-
-Analyze the latest version of the `query-registry` package from the npm registry:
-
-> **Warning**: analyzing packages is a blocking operation that requires some time (even seconds) to finish! Using a worker pool is recommended.
-
-```typescript
-import { analyzeRegistryPackage } from "@jsdocs-io/extractor";
+```ts
+import { extractPackageApi } from "@jsdocs-io/extractor";
 
 (async () => {
-  const info = await analyzeRegistryPackage({ name: "query-registry" });
-
-  // Output: 'query-registry'
-  console.log(info.manifest.name);
-
-  // Output: 'string'
-  console.log(typeof info.api?.overview);
+  const result = await extractPackageApi({ pkg: "preact" });
+  if (result.isOk()) {
+    const packageApi = result.value; // Successfully extracted API
+    console.log(JSON.stringify(packageApi, null, 2));
+  } else {
+    const extractorError = result.error; // Error extracting API
+    console.error(extractorError);
+  }
 })();
 ```
 
-## Debug
+2. Analyze a specific [subpath export](https://nodejs.org/api/packages.html#subpath-exports), like `preact/hooks`:
 
-Debug messages are available when the `DEBUG` environment variable is set to `@jsdocs-io/extractor`:
+```ts
+import { extractPackageApi } from "@jsdocs-io/extractor";
 
-```bash
-DEBUG="@jsdocs-io/extractor"
+(async () => {
+  const result = await extractPackageApi({ pkg: "preact", subpath: "hooks" });
+  if (result.isOk()) {
+    const packageApi = result.value; // Successfully extracted API
+    console.log(JSON.stringify(packageApi, null, 2));
+  } else {
+    const extractorError = result.error; // Error extracting API
+    console.error(extractorError);
+  }
+})();
 ```
-
-For more information, see the [debug package](https://www.npmjs.com/package/debug).
 
 ## License
 
     AGPL-3.0-or-later
 
-Copyright (C) 2021 Edoardo Scibona. See [LICENSE](LICENSE).
+Copyright (C) 2024 Edoardo Scibona. See [LICENSE](LICENSE).
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
