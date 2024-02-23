@@ -1,5 +1,5 @@
 import { err, ok, Result } from "neverthrow";
-import { type NormalizedPackageJson } from "read-pkg";
+import type { NormalizedPackageJson } from "read-pkg";
 import { exports } from "resolve.exports";
 import { PackageTypesError } from "./errors";
 
