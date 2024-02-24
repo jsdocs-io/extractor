@@ -4,9 +4,10 @@ import { InstallPackageError } from "./errors";
 
 export const installPackage = (
   pkg: string,
+  cwd: string,
 ): ResultAsync<string[], InstallPackageError> =>
   ResultAsync.fromPromise(
-    execa("bun", ["add", pkg, "--verbose"]),
+    execa("bun", ["add", pkg, "--verbose"], { cwd }),
     (e) => new InstallPackageError("failed to install package", { cause: e }),
   ).map(({ stdout }) => {
     // With verbose output on, bun prints one line per installed package
