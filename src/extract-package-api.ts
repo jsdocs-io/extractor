@@ -161,7 +161,6 @@ export const extractPackageApi = ({
     .andThen((ctx) =>
       installPackage(ctx.pkg, ctx.workDir).map((installedPackages) => ({
         ...ctx,
-        nodeModulesDir: join(ctx.workDir, "node_modules"),
         pkgDir: join(ctx.workDir, "node_modules", ctx.pkgName),
         installedPackages,
       })),
@@ -180,14 +179,11 @@ export const extractPackageApi = ({
       })),
     )
     .andThen((ctx) =>
-      createProject(ctx.typesFilePath).map(
-        ({ project, indexFile, sourceFiles }) => ({
-          ...ctx,
-          project,
-          indexFile,
-          sourceFiles,
-        }),
-      ),
+      createProject(ctx.typesFilePath).map(({ project, indexFile }) => ({
+        ...ctx,
+        project,
+        indexFile,
+      })),
     )
     .andThen((ctx) =>
       ok(packageOverview(ctx.indexFile)).map((pkgOverview) => ({
