@@ -1,4 +1,4 @@
-import { ResultAsync, ok, okAsync } from "neverthrow";
+import { ResultAsync, err, ok, okAsync } from "neverthrow";
 import { performance } from "node:perf_hooks";
 import { join } from "pathe";
 import { changeDir } from "./change-dir";
@@ -168,35 +168,53 @@ export const extractPackageApi = ({
     )
     .andThen((ctx) => changeDir(ctx.rootDir).map(() => ctx))
     .andThen((ctx) =>
-      installPackage(ctx.pkg).map((installedPackages) => ({
-        ...ctx,
-        nodeModulesDir: join(ctx.rootDir, "node_modules"),
-        pkgDir: join(ctx.rootDir, "node_modules", ctx.pkgName),
-        installedPackages,
-      })),
+      installPackage(ctx.pkg)
+        .map((installedPackages) => ({
+          ...ctx,
+          nodeModulesDir: join(ctx.rootDir, "node_modules"),
+          pkgDir: join(ctx.rootDir, "node_modules", ctx.pkgName),
+          installedPackages,
+        }))
+        .orElse((e) => {
+          changeDir(ctx.startDir);
+          return err(e);
+        }),
     )
     .andThen((ctx) =>
-      packageJson(ctx.pkgDir).map((pkgJson) => ({
-        ...ctx,
-        pkgJson,
-      })),
+      packageJson(ctx.pkgDir)
+        .map((pkgJson) => ({
+          ...ctx,
+          pkgJson,
+        }))
+        .orElse((e) => {
+          changeDir(ctx.startDir);
+          return err(e);
+        }),
     )
     .andThen((ctx) =>
-      packageTypes(ctx.pkgJson, ctx.pkgSubpath).map((pkgTypes) => ({
-        ...ctx,
-        pkgTypes,
-        typesFilePath: join(ctx.pkgDir, pkgTypes),
-      })),
+      packageTypes(ctx.pkgJson, ctx.pkgSubpath)
+        .map((pkgTypes) => ({
+          ...ctx,
+          pkgTypes,
+          typesFilePath: join(ctx.pkgDir, pkgTypes),
+        }))
+        .orElse((e) => {
+          changeDir(ctx.startDir);
+          return err(e);
+        }),
     )
     .andThen((ctx) =>
-      createProject(ctx.typesFilePath).map(
-        ({ project, indexFile, sourceFiles }) => ({
+      createProject(ctx.typesFilePath)
+        .map(({ project, indexFile, sourceFiles }) => ({
           ...ctx,
           project,
           indexFile,
           sourceFiles,
+        }))
+        .orElse((e) => {
+          changeDir(ctx.startDir);
+          return err(e);
         }),
-      ),
     )
     .andThen((ctx) =>
       ok(packageOverview(ctx.indexFile)).map((pkgOverview) => ({
@@ -210,10 +228,15 @@ export const extractPackageApi = ({
         project: ctx.project,
         indexFile: ctx.indexFile,
         maxDepth: ctx.maxDepth,
-      }).map((pkgDeclarations) => ({
-        ...ctx,
-        pkgDeclarations,
-      })),
+      })
+        .map((pkgDeclarations) => ({
+          ...ctx,
+          pkgDeclarations,
+        }))
+        .orElse((e) => {
+          changeDir(ctx.startDir);
+          return err(e);
+        }),
     )
     .andThen((ctx) =>
       changeDir(ctx.startDir)
