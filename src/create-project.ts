@@ -16,8 +16,15 @@ export type ProjectContainer = {
 
 export const createProject = (
   indexFilePath: string,
+  cwd: string,
 ): Result<ProjectContainer, ProjectError> => {
+  let startDir;
   try {
+    // By default, ts-morph creates the project in the current working directory.
+    // We must change it to the temporary directory where the packages are installed,
+    // otherwise TypeScript will pick up type definitions from our local `node_modules`.
+    startDir = process.cwd();
+    process.chdir(cwd);
     const project = new Project({
       compilerOptions: {
         // See https://github.com/dsherret/ts-morph/issues/938
@@ -38,5 +45,11 @@ export const createProject = (
     });
   } catch (e) {
     return err(new ProjectError("failed to create project", { cause: e }));
+  } finally {
+    try {
+      if (startDir) {
+        process.chdir(startDir);
+      }
+    } catch {}
   }
 };
