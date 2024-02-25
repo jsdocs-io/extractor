@@ -5,7 +5,6 @@ export type {
 export {
   FsError,
   InstallPackageError,
-  OsError,
   PackageDeclarationsError,
   PackageJsonError,
   PackageNameError,

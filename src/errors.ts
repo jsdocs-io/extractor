@@ -3,7 +3,6 @@
 analyzing a package and extracting its API.
 */
 export type ExtractorError =
-  | OsError
   | FsError
   | InstallPackageError
   | PackageNameError
@@ -12,19 +11,10 @@ export type ExtractorError =
   | PackageDeclarationsError
   | ProjectError;
 
-/**
-`OsError` is thrown when an operation involving `process` fails.
-*/
-export class OsError extends Error {
-  constructor(message: string, options?: ErrorOptions) {
-    // For all errors see the following links:
-    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#differentiate_between_similar_errors
-    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/cause
-    // https://stackoverflow.com/questions/1382107/whats-a-good-way-to-extend-error-in-javascript
-    super(message, options);
-    this.name = this.constructor.name;
-  }
-}
+// For all errors see the following links:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#differentiate_between_similar_errors
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/cause
+// https://stackoverflow.com/questions/1382107/whats-a-good-way-to-extend-error-in-javascript
 
 /**
 `FsError` is thrown when an operation involving the file system fails.
