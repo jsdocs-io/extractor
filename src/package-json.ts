@@ -3,9 +3,9 @@ import { readPackage, type NormalizedPackageJson } from "read-pkg";
 import { PackageJsonError } from "./errors";
 
 export const packageJson = (
-  cwd: string,
+  pkgDir: string,
 ): ResultAsync<NormalizedPackageJson, PackageJsonError> =>
   ResultAsync.fromPromise(
-    readPackage({ cwd }),
+    readPackage({ cwd: pkgDir }),
     (e) => new PackageJsonError("failed to read package.json", { cause: e }),
   );
