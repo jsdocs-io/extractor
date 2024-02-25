@@ -51,6 +51,14 @@ export type ExtractPackageApiOptions = {
   @defaultValue 5
   */
   maxDepth?: number;
+
+  /**
+  Absolute path to the `bun` executable.
+  Used to locate bun if it's not in `PATH`.
+
+  @defaultValue `bun`
+  */
+  bunPath?: string;
 };
 
 /**
@@ -139,12 +147,14 @@ export const extractPackageApi = ({
   pkg,
   subpath = ".",
   maxDepth = 5,
+  bunPath = "bun",
 }: ExtractPackageApiOptions): ResultAsync<PackageApi, ExtractorError> =>
   okAsync({
     pkg,
     pkgSubpath: subpath,
     maxDepth,
     startTime: performance.now(),
+    bunPath,
   })
     .andThen((ctx) =>
       packageName(ctx.pkg).map((pkgName) => ({
@@ -159,7 +169,11 @@ export const extractPackageApi = ({
       })),
     )
     .andThen((ctx) =>
-      installPackage(ctx.pkg, ctx.workDir).map((installedPackages) => ({
+      installPackage({
+        pkg: ctx.pkg,
+        cwd: ctx.workDir,
+        bunPath: ctx.bunPath,
+      }).map((installedPackages) => ({
         ...ctx,
         pkgDir: join(ctx.workDir, "node_modules", ctx.pkgName),
         installedPackages,

@@ -2,12 +2,19 @@ import { execa } from "execa";
 import { ResultAsync } from "neverthrow";
 import { InstallPackageError } from "./errors";
 
-export const installPackage = (
-  pkg: string,
-  cwd: string,
-): ResultAsync<string[], InstallPackageError> =>
+export type InstallPackageOptions = {
+  pkg: string;
+  cwd: string;
+  bunPath?: string;
+};
+
+export const installPackage = ({
+  pkg,
+  cwd,
+  bunPath = "bun",
+}: InstallPackageOptions): ResultAsync<string[], InstallPackageError> =>
   ResultAsync.fromPromise(
-    execa("bun", ["add", pkg, "--verbose"], { cwd }),
+    execa(bunPath, ["add", pkg, "--verbose"], { cwd }),
     (e) => new InstallPackageError("failed to install package", { cause: e }),
   ).map(({ stdout }) => {
     // With verbose output on, bun prints one line per installed package
