@@ -62,7 +62,7 @@ export type ExtractPackageApiOptions = {
 };
 
 /**
-PackageApi` contains all the information extracted from a package.
+`PackageApi` contains all the information extracted from a package.
 */
 export type PackageApi = {
   /** Package name (e.g., `foo`). */
