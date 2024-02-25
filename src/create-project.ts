@@ -16,7 +16,6 @@ export type CreateProjectOptions = {
 export type ProjectContainer = {
   project: Project;
   indexFile: SourceFile;
-  sourceFiles: SourceFile[];
 };
 
 export const createProject = ({
@@ -42,11 +41,9 @@ export const createProject = ({
     });
     const indexFile = project.addSourceFileAtPath(indexFilePath);
     project.resolveSourceFileDependencies();
-    const sourceFiles = project.getSourceFiles();
     return ok({
       project,
       indexFile,
-      sourceFiles,
     });
   } catch (e) {
     return err(new ProjectError("failed to create project", { cause: e }));
