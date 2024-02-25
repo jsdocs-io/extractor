@@ -22,7 +22,10 @@ test("with index file", async () => {
     const project = createProject({ indexFilePath: "./index.ts", cwd: dir });
     expect(project.isOk()).toBe(true);
     expect(
-      project._unsafeUnwrap().sourceFiles.map((sf) => sf.getBaseName()),
+      project
+        ._unsafeUnwrap()
+        .project.getSourceFiles()
+        .map((sf) => sf.getBaseName()),
     ).toStrictEqual(["index.ts"]);
   });
 });
@@ -34,7 +37,10 @@ test("with index file and other file", async () => {
     const project = createProject({ indexFilePath: "./index.ts", cwd: dir });
     expect(project.isOk()).toBe(true);
     expect(
-      project._unsafeUnwrap().sourceFiles.map((sf) => sf.getBaseName()),
+      project
+        ._unsafeUnwrap()
+        .project.getSourceFiles()
+        .map((sf) => sf.getBaseName()),
     ).toStrictEqual(["index.ts", "other.ts"]);
   });
 });

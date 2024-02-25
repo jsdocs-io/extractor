@@ -2,19 +2,12 @@ import { expect, test } from "vitest";
 import {
   FsError,
   InstallPackageError,
-  OsError,
   PackageDeclarationsError,
   PackageJsonError,
   PackageNameError,
   PackageTypesError,
   ProjectError,
 } from "./errors";
-
-test("os error", () => {
-  expect(() => {
-    throw new OsError("test");
-  }).toThrow();
-});
 
 test("fs error", () => {
   expect(() => {
