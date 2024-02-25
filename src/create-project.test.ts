@@ -7,7 +7,10 @@ import { ProjectError } from "./errors";
 
 test("no index file", async () => {
   await temporaryDirectoryTask(async (dir) => {
-    const project = createProject("./no-such-file.ts", dir);
+    const project = createProject({
+      indexFilePath: "./no-such-file.ts",
+      cwd: dir,
+    });
     expect(project.isErr()).toBe(true);
     expect(project._unsafeUnwrapErr() instanceof ProjectError).toBe(true);
   });
@@ -16,7 +19,7 @@ test("no index file", async () => {
 test("with index file", async () => {
   await temporaryDirectoryTask(async (dir) => {
     await fs.writeFile(join(dir, "./index.ts"), "export {};");
-    const project = createProject("./index.ts", dir);
+    const project = createProject({ indexFilePath: "./index.ts", cwd: dir });
     expect(project.isOk()).toBe(true);
     expect(
       project._unsafeUnwrap().sourceFiles.map((sf) => sf.getBaseName()),
@@ -28,7 +31,7 @@ test("with index file and other file", async () => {
   await temporaryDirectoryTask(async (dir) => {
     await fs.writeFile(join(dir, "./index.ts"), "export * from './other';");
     await fs.writeFile(join(dir, "./other.ts"), "export const a = 1;");
-    const project = createProject("./index.ts", dir);
+    const project = createProject({ indexFilePath: "./index.ts", cwd: dir });
     expect(project.isOk()).toBe(true);
     expect(
       project._unsafeUnwrap().sourceFiles.map((sf) => sf.getBaseName()),

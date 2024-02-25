@@ -8,16 +8,21 @@ import {
 } from "ts-morph";
 import { ProjectError } from "./errors";
 
+export type CreateProjectOptions = {
+  indexFilePath: string;
+  cwd: string;
+};
+
 export type ProjectContainer = {
   project: Project;
   indexFile: SourceFile;
   sourceFiles: SourceFile[];
 };
 
-export const createProject = (
-  indexFilePath: string,
-  cwd: string,
-): Result<ProjectContainer, ProjectError> => {
+export const createProject = ({
+  indexFilePath,
+  cwd,
+}: CreateProjectOptions): Result<ProjectContainer, ProjectError> => {
   let startDir;
   try {
     // By default, ts-morph creates the project in the current working directory.

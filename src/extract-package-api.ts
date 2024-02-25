@@ -193,13 +193,14 @@ export const extractPackageApi = ({
       })),
     )
     .andThen((ctx) =>
-      createProject(ctx.typesFilePath, ctx.workDir).map(
-        ({ project, indexFile }) => ({
-          ...ctx,
-          project,
-          indexFile,
-        }),
-      ),
+      createProject({
+        indexFilePath: ctx.typesFilePath,
+        cwd: ctx.workDir,
+      }).map(({ project, indexFile }) => ({
+        ...ctx,
+        project,
+        indexFile,
+      })),
     )
     .andThen((ctx) =>
       ok(packageOverview(ctx.indexFile)).map((pkgOverview) => ({
