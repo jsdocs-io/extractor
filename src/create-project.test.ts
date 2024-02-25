@@ -5,6 +5,17 @@ import { expect, test } from "vitest";
 import { createProject } from "./create-project";
 import { ProjectError } from "./errors";
 
+test("no cwd", async () => {
+  await temporaryDirectoryTask(async (dir) => {
+    const project = createProject({
+      indexFilePath: "./no-such-file.ts",
+      cwd: join(dir, "this-dir-does-not-exist"),
+    });
+    expect(project.isErr()).toBe(true);
+    expect(project._unsafeUnwrapErr() instanceof ProjectError).toBe(true);
+  });
+});
+
 test("no index file", async () => {
   await temporaryDirectoryTask(async (dir) => {
     const project = createProject({
