@@ -8,6 +8,9 @@ dependencies:
   '@microsoft/tsdoc':
     specifier: ^0.14.2
     version: 0.14.2
+  effect:
+    specifier: ^2.4.1
+    version: 2.4.1
   execa:
     specifier: ^8.0.1
     version: 8.0.1
@@ -17,9 +20,6 @@ dependencies:
   natural-orderby:
     specifier: ^3.0.2
     version: 3.0.2
-  neverthrow:
-    specifier: ^6.1.0
-    version: 6.1.0
   pathe:
     specifier: ^1.1.2
     version: 1.1.2
@@ -1377,6 +1377,10 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
 
+  /effect@2.4.1:
+    resolution: {integrity: sha512-YsoMB/EGCohGKFyTPYqaFe2B7UCU2MM303dkoowF8DNOdks/4q/00cyhTbBUmM/0FMDoUPmUi/AJ0Aj3E7vO1A==}
+    dev: false
+
   /elegant-spinner@1.0.1:
     resolution: {integrity: sha512-B+ZM+RXvRqQaAmkMlO/oSe5nMUOaUnyfGYCEHoR8wrXsZR2mA0XVibsxV1bvTwxdRWah1PkQqso2EzhILGHtEQ==}
     engines: {node: '>=0.10.0'}
@@ -2556,10 +2560,6 @@ packages:
   /natural-orderby@3.0.2:
     resolution: {integrity: sha512-x7ZdOwBxZCEm9MM7+eQCjkrNLrW3rkBKNHVr78zbtqnMGVNlnDi6C/eUEYgxHNrcbu0ymvjzcwIL/6H1iHri9g==}
     engines: {node: '>=18'}
-    dev: false
-
-  /neverthrow@6.1.0:
-    resolution: {integrity: sha512-xNbNjp/6M5vUV+mststgneJN9eJeJCDSYSBTaf3vxgvcKooP+8L0ATFpM8DGfmH7UWKJeoa24Qi33tBP9Ya3zA==}
     dev: false
 
   /new-github-release-url@2.0.0:

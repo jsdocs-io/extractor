@@ -3,11 +3,9 @@ import { extractPackageApi } from "../../src";
 
 test("@supeffective/dataset@2.2.2", async () => {
   expect(
-    (
-      await extractPackageApi({
-        pkg: "@supeffective/dataset@2.2.2",
-      })
-    )._unsafeUnwrap(),
+    await extractPackageApi({
+      pkg: "@supeffective/dataset@2.2.2",
+    }),
   ).toMatchSnapshot({
     analyzedAt: expect.any(String),
     analyzedIn: expect.any(Number),

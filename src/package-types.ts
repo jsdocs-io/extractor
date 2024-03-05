@@ -1,65 +1,53 @@
-import { err, ok, Result } from "neverthrow";
+import { Effect } from "effect";
 import type { NormalizedPackageJson } from "read-pkg";
 import { exports } from "resolve.exports";
-import { PackageTypesError } from "./errors";
+
+/** @internal */
+export class PackageTypesError {
+  readonly _tag = "PackageTypesError";
+}
 
 /**
 `packageTypes` resolves the types entrypoint file (e.g., `index.d.ts`).
 
 @param pkgJson - the contents of `package.json`
-@param pkgSubpath - the selected subpath from the `exports` property of `package.json`
+@param subpath - the selected subpath from the `exports` property of `package.json`
 
 @internal
 */
 export const packageTypes = (
   pkgJson: Partial<NormalizedPackageJson>,
-  pkgSubpath: string,
-): Result<string, PackageTypesError> => {
-  const isRootSubpath = [".", pkgJson.name].includes(pkgSubpath);
-  const resolvedTypes = resolveTypes(pkgJson, pkgSubpath);
-  if (!isRootSubpath || resolvedTypes.isOk()) {
-    return resolvedTypes;
-  }
-  if (pkgJson.types && isTypesFile(pkgJson.types)) {
-    return ok(pkgJson.types);
-  }
-  if (pkgJson.typings && isTypesFile(pkgJson.typings)) {
-    return ok(pkgJson.typings);
-  }
-  return err(
-    new PackageTypesError(
-      "no types files in `exports` field or fallback fields",
-    ),
-  );
-};
+  subpath: string,
+) =>
+  Effect.gen(function* (_) {
+    const resolvedPaths = yield* _(resolveExports(pkgJson, subpath));
+    const firstPath = resolvedPaths[0];
+    if (firstPath && isTypesFile(firstPath)) {
+      return firstPath;
+    }
+    const isRootSubpath = [".", pkgJson.name].includes(subpath);
+    if (isRootSubpath && pkgJson.types && isTypesFile(pkgJson.types)) {
+      return pkgJson.types;
+    }
+    if (isRootSubpath && pkgJson.typings && isTypesFile(pkgJson.typings)) {
+      return pkgJson.typings;
+    }
+    return yield* _(Effect.fail(new PackageTypesError()));
+  });
 
-const resolveTypes = (
+const resolveExports = (
   pkgJson: Partial<NormalizedPackageJson>,
   subpath: string,
-): Result<string, PackageTypesError> => {
+) => {
   try {
-    const resolved = exports(pkgJson, subpath, {
-      conditions: ["types"],
-      unsafe: true,
-    });
-    if (!Array.isArray(resolved)) {
-      return err(new PackageTypesError("resolved types are not an array"));
-    }
-    const resolvedPath = resolved[0];
-    if (!resolvedPath || !isTypesFile(resolvedPath)) {
-      return err(
-        new PackageTypesError("resolved types are not a types file", {
-          cause: { resolvedPath },
-        }),
-      );
-    }
-    return ok(resolvedPath);
-  } catch (e) {
-    return err(
-      new PackageTypesError("failed to resolve types from `exports` field", {
-        cause: e,
-      }),
-    );
+    const resolvedPaths =
+      exports(pkgJson, subpath, {
+        conditions: ["types"],
+        unsafe: true,
+      }) ?? [];
+    return Effect.succeed(resolvedPaths as string[]);
+  } catch {
+    return Effect.succeed([]);
   }
 };
 

@@ -3,11 +3,9 @@ import { extractPackageApi } from "../../src";
 
 test("query-registry@2.6.0", async () => {
   expect(
-    (
-      await extractPackageApi({
-        pkg: "query-registry@2.6.0",
-      })
-    )._unsafeUnwrap(),
+    await extractPackageApi({
+      pkg: "query-registry@2.6.0",
+    }),
   ).toMatchSnapshot({
     analyzedAt: expect.any(String),
     analyzedIn: expect.any(Number),

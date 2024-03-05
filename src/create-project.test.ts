@@ -1,57 +1,55 @@
+import { Effect } from "effect";
 import fs from "node:fs/promises";
 import { join } from "pathe";
 import { temporaryDirectoryTask } from "tempy";
 import { expect, test } from "vitest";
-import { createProject } from "./create-project";
-import { ProjectError } from "./errors";
+import { createProject, type CreateProjectOptions } from "./create-project";
+
+const _createProject = (options: CreateProjectOptions) =>
+  Effect.runPromise(createProject(options));
 
 test("no cwd", async () => {
   await temporaryDirectoryTask(async (dir) => {
-    const project = createProject({
-      indexFilePath: "./no-such-file.ts",
-      cwd: join(dir, "this-dir-does-not-exist"),
-    });
-    expect(project.isErr()).toBe(true);
-    expect(project._unsafeUnwrapErr() instanceof ProjectError).toBe(true);
+    await expect(
+      _createProject({
+        indexFilePath: "./this-file-does-not-exist.ts",
+        cwd: join(dir, "this-dir-does-not-exist"),
+      }),
+    ).rejects.toThrow();
   });
 });
 
 test("no index file", async () => {
   await temporaryDirectoryTask(async (dir) => {
-    const project = createProject({
-      indexFilePath: "./no-such-file.ts",
-      cwd: dir,
-    });
-    expect(project.isErr()).toBe(true);
-    expect(project._unsafeUnwrapErr() instanceof ProjectError).toBe(true);
+    await expect(
+      _createProject({
+        indexFilePath: "./this-file-does-not-exist.ts",
+        cwd: dir,
+      }),
+    ).rejects.toThrow();
   });
 });
 
 test("with index file", async () => {
   await temporaryDirectoryTask(async (dir) => {
-    await fs.writeFile(join(dir, "./index.ts"), "export {};");
-    const project = createProject({ indexFilePath: "./index.ts", cwd: dir });
-    expect(project.isOk()).toBe(true);
+    const indexFilePath = join(dir, "./index.ts");
+    await fs.writeFile(indexFilePath, "export {};");
+    const { project } = await _createProject({ indexFilePath, cwd: dir });
     expect(
-      project
-        ._unsafeUnwrap()
-        .project.getSourceFiles()
-        .map((sf) => sf.getBaseName()),
+      project.getSourceFiles().map((sf) => sf.getBaseName()),
     ).toStrictEqual(["index.ts"]);
   });
 });
 
 test("with index file and other file", async () => {
   await temporaryDirectoryTask(async (dir) => {
-    await fs.writeFile(join(dir, "./index.ts"), "export * from './other';");
-    await fs.writeFile(join(dir, "./other.ts"), "export const a = 1;");
-    const project = createProject({ indexFilePath: "./index.ts", cwd: dir });
-    expect(project.isOk()).toBe(true);
+    const indexFilePath = join(dir, "./index.ts");
+    const otherFilePath = join(dir, "./other.ts");
+    await fs.writeFile(indexFilePath, "export * from './other';");
+    await fs.writeFile(otherFilePath, "export const a = 1;");
+    const { project } = await _createProject({ indexFilePath, cwd: dir });
     expect(
-      project
-        ._unsafeUnwrap()
-        .project.getSourceFiles()
-        .map((sf) => sf.getBaseName()),
+      project.getSourceFiles().map((sf) => sf.getBaseName()),
     ).toStrictEqual(["index.ts", "other.ts"]);
   });
 });

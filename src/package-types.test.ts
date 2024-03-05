@@ -1,22 +1,38 @@
-import { ok } from "neverthrow";
+import { Effect } from "effect";
+import type { NormalizedPackageJson } from "read-pkg";
 import { expect, test } from "vitest";
-import { PackageTypesError } from "./errors";
 import { packageTypes } from "./package-types";
 
-test("no types", () => {
-  expect(packageTypes({}, ".").isErr()).toBe(true);
-  expect(
-    packageTypes({}, ".")._unsafeUnwrapErr() instanceof PackageTypesError,
-  ).toBe(true);
+const _packageTypes = (
+  pkgJson: Partial<NormalizedPackageJson>,
+  subpath: string,
+) => Effect.runPromise(packageTypes(pkgJson, subpath));
+
+test("no types", async () => {
+  await expect(_packageTypes({}, ".")).rejects.toThrow();
 });
 
-test("not types", () => {
-  expect(packageTypes({ types: "foo.wrong" }, ".").isErr()).toBe(true);
+test("not type definitions file", async () => {
+  await expect(_packageTypes({ types: "foo.wrong" }, ".")).rejects.toThrow();
 });
 
-test("no subpath", () => {
-  expect(
-    packageTypes(
+test("`default` subpath not found", async () => {
+  await expect(
+    _packageTypes(
+      {
+        name: "foo",
+        exports: {
+          ".": { types: "index.d.ts" },
+        },
+      },
+      "default",
+    ),
+  ).rejects.toThrow();
+});
+
+test("`custom` subpath not found", async () => {
+  await expect(
+    _packageTypes(
       {
         name: "foo",
         exports: {
@@ -24,13 +40,13 @@ test("no subpath", () => {
         },
       },
       "custom",
-    ).isErr(),
-  ).toBe(true);
+    ),
+  ).rejects.toThrow();
 });
 
-test("from exports", () => {
-  expect(
-    packageTypes(
+test("types from exports for root `.` subpath", async () => {
+  await expect(
+    _packageTypes(
       {
         name: "foo",
         exports: {
@@ -39,12 +55,26 @@ test("from exports", () => {
       },
       ".",
     ),
-  ).toStrictEqual(ok("index.d.ts"));
+  ).resolves.toBe("index.d.ts");
 });
 
-test("from exports subpath", () => {
-  expect(
-    packageTypes(
+test("types from exports for root `foo` subpath", async () => {
+  await expect(
+    _packageTypes(
+      {
+        name: "foo",
+        exports: {
+          ".": { types: "index.d.ts" },
+        },
+      },
+      "foo",
+    ),
+  ).resolves.toBe("index.d.ts");
+});
+
+test("types from `custom` subpath", async () => {
+  await expect(
+    _packageTypes(
       {
         name: "foo",
         exports: {
@@ -54,24 +84,24 @@ test("from exports subpath", () => {
       },
       "custom",
     ),
-  ).toStrictEqual(ok("custom.d.ts"));
+  ).resolves.toBe("custom.d.ts");
 });
 
-test("from types", () => {
-  expect(packageTypes({ types: "index.d.ts" }, ".")).toStrictEqual(
-    ok("index.d.ts"),
+test("types from `types` fallback", async () => {
+  await expect(_packageTypes({ types: "index.d.ts" }, ".")).resolves.toBe(
+    "index.d.ts",
   );
 });
 
-test("from typings", () => {
-  expect(packageTypes({ typings: "index.d.ts" }, ".")).toStrictEqual(
-    ok("index.d.ts"),
+test("types from `typings` fallback", async () => {
+  await expect(_packageTypes({ typings: "index.d.ts" }, ".")).resolves.toBe(
+    "index.d.ts",
   );
 });
 
-test("not from default", () => {
-  expect(
-    packageTypes(
+test("types from `types` fallback and not from default condition for root subpath", async () => {
+  await expect(
+    _packageTypes(
       {
         name: "foo",
         types: "index.d.ts",
@@ -81,12 +111,12 @@ test("not from default", () => {
       },
       ".",
     ),
-  ).toStrictEqual(ok("index.d.ts"));
+  ).resolves.toBe("index.d.ts");
 });
 
-test("not from types if no subpath", () => {
-  expect(
-    packageTypes(
+test("types not from `types` fallback if not root subpath", async () => {
+  await expect(
+    _packageTypes(
       {
         name: "foo",
         types: "index.d.ts",
@@ -95,6 +125,21 @@ test("not from types if no subpath", () => {
         },
       },
       "custom",
-    ).isErr(),
-  ).toBe(true);
+    ),
+  ).rejects.toThrow();
+});
+
+test("types not from `typings` fallback if not root subpath", async () => {
+  await expect(
+    _packageTypes(
+      {
+        name: "foo",
+        typings: "index.d.ts",
+        exports: {
+          ".": { default: "index.js" },
+        },
+      },
+      "custom",
+    ),
+  ).rejects.toThrow();
 });

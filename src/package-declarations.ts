@@ -1,10 +1,6 @@
-import { ResultAsync } from "neverthrow";
+import { Effect } from "effect";
 import type { Project, SourceFile } from "ts-morph";
-import { PackageDeclarationsError } from "./errors";
-import {
-  extractDeclarations,
-  type ExtractedDeclaration,
-} from "./extract-declarations";
+import { extractDeclarations } from "./extract-declarations";
 
 export type PackageDeclarationsOptions = {
   pkgName: string;
@@ -13,25 +9,26 @@ export type PackageDeclarationsOptions = {
   maxDepth: number;
 };
 
+/** @internal */
+export class PackageDeclarationsError {
+  readonly _tag = "PackageDeclarationsError";
+  constructor(readonly cause?: unknown) {}
+}
+
 export const packageDeclarations = ({
   pkgName,
   project,
   indexFile,
   maxDepth,
-}: PackageDeclarationsOptions): ResultAsync<
-  ExtractedDeclaration[],
-  PackageDeclarationsError
-> =>
-  ResultAsync.fromPromise(
-    extractDeclarations({
-      containerName: "",
-      container: indexFile,
-      maxDepth,
-      project,
-      pkgName,
-    }),
-    (e) =>
-      new PackageDeclarationsError("failed to extract package declarations", {
-        cause: e,
+}: PackageDeclarationsOptions) =>
+  Effect.tryPromise({
+    try: () =>
+      extractDeclarations({
+        containerName: "",
+        container: indexFile,
+        maxDepth,
+        project,
+        pkgName,
       }),
-  );
+    catch: (e) => new PackageDeclarationsError(e),
+  });

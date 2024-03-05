@@ -2,16 +2,7 @@ export type {
   AllExtractedDeclaration,
   AllExtractedDeclarationKind,
 } from "./all-extracted-declaration";
-export {
-  FsError,
-  InstallPackageError,
-  PackageDeclarationsError,
-  PackageJsonError,
-  PackageNameError,
-  PackageTypesError,
-  ProjectError,
-  type ExtractorError,
-} from "./errors";
+export { ProjectError } from "./create-project";
 export type {
   ExtractedClass,
   ExtractedClassConstructor,
@@ -42,7 +33,17 @@ export {
   type ExtractPackageApiOptions,
   type PackageApi,
 } from "./extract-package-api";
+export { extractPackageApiEffect } from "./extract-package-api-effect";
 export type { ExtractedTypeAlias } from "./extract-type-alias";
 export type { ExtractedVariable } from "./extract-variable";
-export { packageTypes } from "./package-types";
+export {
+  InstallPackageError,
+  installPackage,
+  type InstallPackageOptions,
+} from "./install-package";
+export { PackageDeclarationsError } from "./package-declarations";
+export { PackageJsonError, packageJson } from "./package-json";
+export { PackageNameError, packageName } from "./package-name";
+export { PackageTypesError, packageTypes } from "./package-types";
 export { parseDocComment } from "./parse-doc-comment";
+export { WorkDirError, workDir, type WorkDir } from "./work-dir";

@@ -1,55 +1,63 @@
-import { ok } from "neverthrow";
+import { Effect } from "effect";
 import { expect, test } from "vitest";
-import { PackageNameError } from "./errors";
 import { packageName } from "./package-name";
 
-test("no name", () => {
-  expect(packageName("").isErr()).toBe(true);
-  expect(packageName("")._unsafeUnwrapErr() instanceof PackageNameError).toBe(
-    true,
-  );
+const _packageName = (pkg: string) => Effect.runPromise(packageName(pkg));
+
+test("no name", async () => {
+  await expect(_packageName("")).rejects.toThrow();
 });
 
-test("no name with version", () => {
-  expect(packageName("@1.0.0").isErr()).toBe(true);
+test("whitespace", async () => {
+  await expect(_packageName(" ")).rejects.toThrow();
 });
 
-test("invalid name", () => {
-  expect(packageName("!").isErr()).toBe(true);
+test("at signs", async () => {
+  await expect(_packageName("@")).rejects.toThrow();
+  await expect(_packageName("@@")).rejects.toThrow();
+  await expect(_packageName("@@@")).rejects.toThrow();
 });
 
-test("invalid name with version", () => {
-  expect(packageName("!@1.0.0").isErr()).toBe(true);
+test("no name with version", async () => {
+  await expect(_packageName("@1.0.0")).rejects.toThrow();
 });
 
-test("bare package name", () => {
-  expect(packageName("foo")).toStrictEqual(ok("foo"));
+test("invalid name", async () => {
+  await expect(_packageName("!")).rejects.toThrow();
 });
 
-test("bare package name with version", () => {
-  expect(packageName("foo@1.0.0")).toStrictEqual(ok("foo"));
+test("invalid name with version", async () => {
+  await expect(_packageName("!@1.0.0")).rejects.toThrow();
 });
 
-test("bare package name with range", () => {
-  expect(packageName("foo@^1")).toStrictEqual(ok("foo"));
+test("bare package name", async () => {
+  await expect(_packageName("foo")).resolves.toBe("foo");
 });
 
-test("bare package name with tag", () => {
-  expect(packageName("foo@latest")).toStrictEqual(ok("foo"));
+test("bare package name with version", async () => {
+  await expect(_packageName("foo@1.0.0")).resolves.toBe("foo");
 });
 
-test("scoped package name", () => {
-  expect(packageName("@foo/bar")).toStrictEqual(ok("@foo/bar"));
+test("bare package name with range", async () => {
+  await expect(_packageName("foo@^1")).resolves.toBe("foo");
 });
 
-test("scoped package name with version", () => {
-  expect(packageName("@foo/bar@1.0.0")).toStrictEqual(ok("@foo/bar"));
+test("bare package name with tag", async () => {
+  await expect(_packageName("foo@latest")).resolves.toBe("foo");
 });
 
-test("scoped package name with range", () => {
-  expect(packageName("@foo/bar@^1")).toStrictEqual(ok("@foo/bar"));
+test("scoped package name", async () => {
+  await expect(_packageName("@foo/bar")).resolves.toBe("@foo/bar");
 });
 
-test("scoped package name with tag", () => {
-  expect(packageName("@foo/bar@latest")).toStrictEqual(ok("@foo/bar"));
+test("scoped package name with version", async () => {
+  await expect(_packageName("@foo/bar@1.0.0")).resolves.toBe("@foo/bar");
+});
+
+test("scoped package name with range", async () => {
+  await expect(_packageName("@foo/bar@^1.0.0")).resolves.toBe("@foo/bar");
+});
+
+test("scoped package name with tag", async () => {
+  await expect(_packageName("@foo/bar@latest")).resolves.toBe("@foo/bar");
 });

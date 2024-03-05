@@ -58,10 +58,10 @@
   },
   "dependencies": {
     "@microsoft/tsdoc": "^0.14.2",
+    "effect": "^2.4.1",
     "execa": "^8.0.1",
     "memoize": "^10.0.0",
     "natural-orderby": "^3.0.2",
-    "neverthrow": "^6.1.0",
     "pathe": "^1.1.2",
     "prettier": "^3.2.5",
     "read-pkg": "^9.0.1",

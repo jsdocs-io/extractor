@@ -1,4 +1,4 @@
-import { ok } from "neverthrow";
+import { Effect } from "effect";
 import dedent from "ts-dedent";
 import {
   ModuleKind,
@@ -8,7 +8,13 @@ import {
 } from "ts-morph";
 import { afterEach, expect, test, vi } from "vitest";
 import { extractDeclarations } from "./extract-declarations";
-import { packageDeclarations } from "./package-declarations";
+import {
+  packageDeclarations,
+  type PackageDeclarationsOptions,
+} from "./package-declarations";
+
+const _packageDeclarations = (options: PackageDeclarationsOptions) =>
+  Effect.runPromise(packageDeclarations(options));
 
 vi.mock("./extract-declarations", () => ({
   extractDeclarations: vi.fn(),
@@ -35,14 +41,14 @@ test("success", async () => {
     `,
   );
   vi.mocked(extractDeclarations).mockResolvedValue([]);
-  expect(
-    await packageDeclarations({
+  await expect(
+    _packageDeclarations({
       pkgName: "foo",
       project,
       indexFile,
       maxDepth: 5,
     }),
-  ).toStrictEqual(ok([]));
+  ).resolves.toStrictEqual([]);
 });
 
 test("failure", async () => {
@@ -62,14 +68,12 @@ test("failure", async () => {
     `,
   );
   vi.mocked(extractDeclarations).mockRejectedValue(new Error("test"));
-  expect(
-    (
-      await packageDeclarations({
-        pkgName: "foo",
-        project,
-        indexFile,
-        maxDepth: 5,
-      })
-    ).isErr(),
-  ).toBe(true);
+  await expect(
+    _packageDeclarations({
+      pkgName: "foo",
+      project,
+      indexFile,
+      maxDepth: 5,
+    }),
+  ).rejects.toThrow();
 });

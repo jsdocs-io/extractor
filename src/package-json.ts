@@ -1,11 +1,15 @@
-import { ResultAsync } from "neverthrow";
-import { readPackage, type NormalizedPackageJson } from "read-pkg";
-import { PackageJsonError } from "./errors";
+import { Effect } from "effect";
+import { readPackage } from "read-pkg";
 
-export const packageJson = (
-  pkgDir: string,
-): ResultAsync<NormalizedPackageJson, PackageJsonError> =>
-  ResultAsync.fromPromise(
-    readPackage({ cwd: pkgDir }),
-    (e) => new PackageJsonError("failed to read package.json", { cause: e }),
-  );
+/** @internal */
+export class PackageJsonError {
+  readonly _tag = "PackageJsonError";
+  constructor(readonly cause?: unknown) {}
+}
+
+/** @internal */
+export const packageJson = (pkgDir: string) =>
+  Effect.tryPromise({
+    try: () => readPackage({ cwd: pkgDir }),
+    catch: (e) => new PackageJsonError(e),
+  });

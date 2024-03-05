@@ -3,11 +3,9 @@ import { extractPackageApi } from "../../src";
 
 test("tinyargs@0.1.4", async () => {
   expect(
-    (
-      await extractPackageApi({
-        pkg: "tinyargs@0.1.4",
-      })
-    )._unsafeUnwrap(),
+    await extractPackageApi({
+      pkg: "tinyargs@0.1.4",
+    }),
   ).toMatchSnapshot({
     analyzedAt: expect.any(String),
     analyzedIn: expect.any(Number),
