@@ -1,10 +1,10 @@
 import { orderBy } from "natural-orderby";
 import {
-  Node,
-  type ExportedDeclarations,
-  type ModuleDeclaration,
-  type Project,
-  type SourceFile,
+	Node,
+	type ExportedDeclarations,
+	type ModuleDeclaration,
+	type Project,
+	type SourceFile,
 } from "ts-morph";
 import { ambientModulesDeclarations } from "./ambient-modules-declarations";
 import { exportEqualsDeclarations } from "./export-equals-declarations";
@@ -18,8 +18,8 @@ import { extractFunctionExpression } from "./extract-function-expression";
 import { extractInterface, type ExtractedInterface } from "./extract-interface";
 import { extractNamespace, type ExtractedNamespace } from "./extract-namespace";
 import {
-  extractTypeAlias,
-  type ExtractedTypeAlias,
+	extractTypeAlias,
+	type ExtractedTypeAlias,
 } from "./extract-type-alias";
 import { extractVariable, type ExtractedVariable } from "./extract-variable";
 import { extractVariableAssignmentExpression } from "./extract-variable-assignment-expression";
@@ -44,27 +44,27 @@ for calling {@link extractDeclarations}.
 @internal
 */
 export type ExtractDeclarationsOptions = {
-  /**
+	/**
   Name of the container that contains the top-level declarations
   (e.g., a namespace's name). This is used to generate declaration IDs.
   */
-  containerName: string;
+	containerName: string;
 
-  /** Container that contains the top-level declarations. */
-  container: SourceFile | ModuleDeclaration;
+	/** Container that contains the top-level declarations. */
+	container: SourceFile | ModuleDeclaration;
 
-  /** Maximum extraction depth for nested namespaces. */
-  maxDepth: number;
+	/** Maximum extraction depth for nested namespaces. */
+	maxDepth: number;
 
-  /**
+	/**
   Instance of a  `ts-morph` `Project`. This is used to find ambient modules.
   */
-  project?: Project;
+	project?: Project;
 
-  /**
+	/**
   Name of the package being analyzed. This is used to filter ambient modules.
   */
-  pkgName?: string;
+	pkgName?: string;
 };
 
 /**
@@ -72,13 +72,13 @@ export type ExtractDeclarationsOptions = {
 that can be extracted from a package, module or namespace.
 */
 export type ExtractedDeclaration =
-  | ExtractedVariable
-  | ExtractedFunction
-  | ExtractedClass
-  | ExtractedInterface
-  | ExtractedEnum
-  | ExtractedTypeAlias
-  | ExtractedNamespace;
+	| ExtractedVariable
+	| ExtractedFunction
+	| ExtractedClass
+	| ExtractedInterface
+	| ExtractedEnum
+	| ExtractedTypeAlias
+	| ExtractedNamespace;
 
 /**
 `ExtractedDeclarationKind` is the union of all discriminators
@@ -95,130 +95,130 @@ and/or a project.
 @internal
 */
 export const extractDeclarations = async ({
-  containerName,
-  container,
-  maxDepth,
-  project,
-  pkgName,
+	containerName,
+	container,
+	maxDepth,
+	project,
+	pkgName,
 }: ExtractDeclarationsOptions): Promise<ExtractedDeclaration[]> => {
-  const foundDeclarations = [
-    ...exportedDeclarations(containerName, container),
-    ...exportEqualsDeclarations(containerName, container),
-    ...(project
-      ? ambientModulesDeclarations(containerName, project, pkgName)
-      : []),
-    ...(Node.isSourceFile(container)
-      ? globalAmbientDeclarations(containerName, container)
-      : []),
-  ];
-  const seenFunctions = new Set<string>();
-  const seenNamespaces = new Set<string>();
-  const extractedDeclarations = [];
-  for (const { containerName, exportName, declaration } of foundDeclarations) {
-    const extractedDeclaration = await extractDeclaration({
-      containerName,
-      exportName,
-      declaration,
-      maxDepth,
-      seenFunctions,
-      seenNamespaces,
-    });
-    if (!extractedDeclaration) {
-      continue;
-    }
-    extractedDeclarations.push(extractedDeclaration);
-  }
-  return orderBy(extractedDeclarations, "id");
+	const foundDeclarations = [
+		...exportedDeclarations(containerName, container),
+		...exportEqualsDeclarations(containerName, container),
+		...(project
+			? ambientModulesDeclarations(containerName, project, pkgName)
+			: []),
+		...(Node.isSourceFile(container)
+			? globalAmbientDeclarations(containerName, container)
+			: []),
+	];
+	const seenFunctions = new Set<string>();
+	const seenNamespaces = new Set<string>();
+	const extractedDeclarations = [];
+	for (const { containerName, exportName, declaration } of foundDeclarations) {
+		const extractedDeclaration = await extractDeclaration({
+			containerName,
+			exportName,
+			declaration,
+			maxDepth,
+			seenFunctions,
+			seenNamespaces,
+		});
+		if (!extractedDeclaration) {
+			continue;
+		}
+		extractedDeclarations.push(extractedDeclaration);
+	}
+	return orderBy(extractedDeclarations, "id");
 };
 
 type ExtractDeclarationOptions = {
-  containerName: string;
-  exportName: string;
-  declaration: ExportedDeclarations;
-  maxDepth: number;
-  seenFunctions: Set<string>;
-  seenNamespaces: Set<string>;
+	containerName: string;
+	exportName: string;
+	declaration: ExportedDeclarations;
+	maxDepth: number;
+	seenFunctions: Set<string>;
+	seenNamespaces: Set<string>;
 };
 
 const extractDeclaration = async ({
-  containerName,
-  exportName,
-  declaration,
-  maxDepth,
-  seenFunctions,
-  seenNamespaces,
+	containerName,
+	exportName,
+	declaration,
+	maxDepth,
+	seenFunctions,
+	seenNamespaces,
 }: ExtractDeclarationOptions): Promise<ExtractedDeclaration | undefined> => {
-  if (isVariable(declaration)) {
-    return extractVariable(containerName, exportName, declaration);
-  }
-  if (isVariableAssignmentExpression(declaration)) {
-    return extractVariableAssignmentExpression(
-      containerName,
-      exportName,
-      declaration,
-    );
-  }
-  if (isExpression(declaration)) {
-    return extractExpression(containerName, exportName, declaration);
-  }
-  if (isFunction(declaration)) {
-    if (seenFunctions.has(exportName)) {
-      // Skip function overloads, since an extracted function already contains
-      // the docs and signatures of the implementation and all the overloads.
-      return undefined;
-    }
-    seenFunctions.add(exportName);
-    return extractFunction(containerName, exportName, declaration);
-  }
-  if (isFunctionExpression(declaration)) {
-    return extractFunctionExpression(containerName, exportName, declaration);
-  }
-  if (isClass(declaration)) {
-    return extractClass(containerName, exportName, declaration);
-  }
-  if (isInterface(declaration)) {
-    return extractInterface(containerName, exportName, declaration);
-  }
-  if (isEnum(declaration)) {
-    return extractEnum(containerName, exportName, declaration);
-  }
-  if (isTypeAlias(declaration)) {
-    return extractTypeAlias(containerName, exportName, declaration);
-  }
-  if (isNamespace(declaration) && maxDepth > 0) {
-    if (seenNamespaces.has(exportName)) {
-      // Skip merged or nested namespaces, since an extracted namespace already
-      // contains all the declarations found in the same namespace.
-      return undefined;
-    }
-    seenNamespaces.add(exportName);
-    const innerDeclarations = await extractDeclarations({
-      containerName: id(containerName, "namespace", exportName),
-      container: declaration,
-      maxDepth: maxDepth - 1,
-    });
-    return extractNamespace(
-      containerName,
-      exportName,
-      declaration,
-      innerDeclarations,
-    );
-  }
-  if (isFileModule(declaration) && maxDepth > 0) {
-    // A file module declaration happens with the following export forms:
-    // `import * as ns from module; export { ns };` or
-    // `export * as ns from module`.
-    const innerDeclarations = await extractDeclarations({
-      containerName: id(containerName, "namespace", exportName),
-      container: declaration,
-      maxDepth: maxDepth - 1,
-    });
-    return extractFileModule(
-      containerName,
-      exportName,
-      declaration,
-      innerDeclarations,
-    );
-  }
-  return undefined;
+	if (isVariable(declaration)) {
+		return extractVariable(containerName, exportName, declaration);
+	}
+	if (isVariableAssignmentExpression(declaration)) {
+		return extractVariableAssignmentExpression(
+			containerName,
+			exportName,
+			declaration,
+		);
+	}
+	if (isExpression(declaration)) {
+		return extractExpression(containerName, exportName, declaration);
+	}
+	if (isFunction(declaration)) {
+		if (seenFunctions.has(exportName)) {
+			// Skip function overloads, since an extracted function already contains
+			// the docs and signatures of the implementation and all the overloads.
+			return undefined;
+		}
+		seenFunctions.add(exportName);
+		return extractFunction(containerName, exportName, declaration);
+	}
+	if (isFunctionExpression(declaration)) {
+		return extractFunctionExpression(containerName, exportName, declaration);
+	}
+	if (isClass(declaration)) {
+		return extractClass(containerName, exportName, declaration);
+	}
+	if (isInterface(declaration)) {
+		return extractInterface(containerName, exportName, declaration);
+	}
+	if (isEnum(declaration)) {
+		return extractEnum(containerName, exportName, declaration);
+	}
+	if (isTypeAlias(declaration)) {
+		return extractTypeAlias(containerName, exportName, declaration);
+	}
+	if (isNamespace(declaration) && maxDepth > 0) {
+		if (seenNamespaces.has(exportName)) {
+			// Skip merged or nested namespaces, since an extracted namespace already
+			// contains all the declarations found in the same namespace.
+			return undefined;
+		}
+		seenNamespaces.add(exportName);
+		const innerDeclarations = await extractDeclarations({
+			containerName: id(containerName, "namespace", exportName),
+			container: declaration,
+			maxDepth: maxDepth - 1,
+		});
+		return extractNamespace(
+			containerName,
+			exportName,
+			declaration,
+			innerDeclarations,
+		);
+	}
+	if (isFileModule(declaration) && maxDepth > 0) {
+		// A file module declaration happens with the following export forms:
+		// `import * as ns from module; export { ns };` or
+		// `export * as ns from module`.
+		const innerDeclarations = await extractDeclarations({
+			containerName: id(containerName, "namespace", exportName),
+			container: declaration,
+			maxDepth: maxDepth - 1,
+		});
+		return extractFileModule(
+			containerName,
+			exportName,
+			declaration,
+			innerDeclarations,
+		);
+	}
+	return undefined;
 };

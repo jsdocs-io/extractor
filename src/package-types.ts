@@ -4,7 +4,7 @@ import { exports } from "resolve.exports";
 
 /** @internal */
 export class PackageTypesError {
-  readonly _tag = "PackageTypesError";
+	readonly _tag = "PackageTypesError";
 }
 
 /**
@@ -16,40 +16,40 @@ export class PackageTypesError {
 @internal
 */
 export const packageTypes = (
-  pkgJson: Partial<NormalizedPackageJson>,
-  subpath: string,
+	pkgJson: Partial<NormalizedPackageJson>,
+	subpath: string,
 ) =>
-  Effect.gen(function* (_) {
-    const resolvedPaths = yield* _(resolveExports(pkgJson, subpath));
-    const firstPath = resolvedPaths[0];
-    if (firstPath && isTypesFile(firstPath)) {
-      return firstPath;
-    }
-    const isRootSubpath = [".", pkgJson.name].includes(subpath);
-    if (isRootSubpath && pkgJson.types && isTypesFile(pkgJson.types)) {
-      return pkgJson.types;
-    }
-    if (isRootSubpath && pkgJson.typings && isTypesFile(pkgJson.typings)) {
-      return pkgJson.typings;
-    }
-    return yield* _(Effect.fail(new PackageTypesError()));
-  });
+	Effect.gen(function* (_) {
+		const resolvedPaths = yield* _(resolveExports(pkgJson, subpath));
+		const firstPath = resolvedPaths[0];
+		if (firstPath && isTypesFile(firstPath)) {
+			return firstPath;
+		}
+		const isRootSubpath = [".", pkgJson.name].includes(subpath);
+		if (isRootSubpath && pkgJson.types && isTypesFile(pkgJson.types)) {
+			return pkgJson.types;
+		}
+		if (isRootSubpath && pkgJson.typings && isTypesFile(pkgJson.typings)) {
+			return pkgJson.typings;
+		}
+		return yield* _(Effect.fail(new PackageTypesError()));
+	});
 
 const resolveExports = (
-  pkgJson: Partial<NormalizedPackageJson>,
-  subpath: string,
+	pkgJson: Partial<NormalizedPackageJson>,
+	subpath: string,
 ) => {
-  try {
-    const resolvedPaths =
-      exports(pkgJson, subpath, {
-        conditions: ["types"],
-        unsafe: true,
-      }) ?? [];
-    return Effect.succeed(resolvedPaths as string[]);
-  } catch {
-    return Effect.succeed([]);
-  }
+	try {
+		const resolvedPaths =
+			exports(pkgJson, subpath, {
+				conditions: ["types"],
+				unsafe: true,
+			}) ?? [];
+		return Effect.succeed(resolvedPaths as string[]);
+	} catch {
+		return Effect.succeed([]);
+	}
 };
 
 const isTypesFile = (filepath: string): boolean =>
-  [".d.ts", ".d.mts", ".d.cts"].some((ext) => filepath.endsWith(ext));
+	[".d.ts", ".d.mts", ".d.cts"].some((ext) => filepath.endsWith(ext));

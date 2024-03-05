@@ -6,37 +6,37 @@ import { id } from "./id";
 import { sourceFilePath } from "./source-file-path";
 
 export type ExtractedVariable = {
-  kind: "variable";
-  id: string;
-  name: string;
-  docs: string[];
-  file: string;
-  line: number;
-  signature: string;
+	kind: "variable";
+	id: string;
+	name: string;
+	docs: string[];
+	file: string;
+	line: number;
+	signature: string;
 };
 
 export const extractVariable = async (
-  containerName: string,
-  exportName: string,
-  declaration: VariableDeclaration,
+	containerName: string,
+	exportName: string,
+	declaration: VariableDeclaration,
 ): Promise<ExtractedVariable> => ({
-  kind: "variable",
-  id: id(containerName, "variable", exportName),
-  name: exportName,
-  docs: docs(declaration),
-  file: sourceFilePath(declaration),
-  line: declaration.getStartLineNumber(),
-  signature: await variableSignature(exportName, declaration),
+	kind: "variable",
+	id: id(containerName, "variable", exportName),
+	name: exportName,
+	docs: docs(declaration),
+	file: sourceFilePath(declaration),
+	line: declaration.getStartLineNumber(),
+	signature: await variableSignature(exportName, declaration),
 });
 
 const variableSignature = async (
-  name: string,
-  declaration: VariableDeclaration,
+	name: string,
+	declaration: VariableDeclaration,
 ): Promise<string> => {
-  const kind = declaration
-    .getVariableStatementOrThrow()
-    .getDeclarationKind()
-    .toString();
-  const type = apparentType(declaration);
-  return formatSignature("variable", `${kind} ${name}: ${type}`);
+	const kind = declaration
+		.getVariableStatementOrThrow()
+		.getDeclarationKind()
+		.toString();
+	const type = apparentType(declaration);
+	return formatSignature("variable", `${kind} ${name}: ${type}`);
 };

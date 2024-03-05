@@ -1,32 +1,32 @@
 import dedent from "ts-dedent";
 import {
-  ModuleKind,
-  ModuleResolutionKind,
-  Project,
-  ScriptTarget,
+	ModuleKind,
+	ModuleResolutionKind,
+	Project,
+	ScriptTarget,
 } from "ts-morph";
 import { expect, test } from "vitest";
 import { extractDeclarations } from "../../src";
 
 test("export named import all", async () => {
-  const project = new Project({
-    useInMemoryFileSystem: true,
-    compilerOptions: {
-      lib: ["lib.esnext.full.d.ts"],
-      target: ScriptTarget.ESNext,
-      module: ModuleKind.ESNext,
-      moduleResolution: ModuleResolutionKind.Bundler,
-    },
-  });
-  project.createSourceFile(
-    "bar.d.ts",
-    dedent`
+	const project = new Project({
+		useInMemoryFileSystem: true,
+		compilerOptions: {
+			lib: ["lib.esnext.full.d.ts"],
+			target: ScriptTarget.ESNext,
+			module: ModuleKind.ESNext,
+			moduleResolution: ModuleResolutionKind.Bundler,
+		},
+	});
+	project.createSourceFile(
+		"bar.d.ts",
+		dedent`
     export const baz: boolean;
     `,
-  );
-  project.createSourceFile(
-    "foo.d.ts",
-    dedent`
+	);
+	project.createSourceFile(
+		"foo.d.ts",
+		dedent`
     /**
      * Foo module
      */
@@ -42,10 +42,10 @@ test("export named import all", async () => {
       readonly baz: <U>(t: T, u: U) => boolean;
     }
     `,
-  );
-  const indexFile = project.createSourceFile(
-    "index.d.ts",
-    dedent`
+	);
+	const indexFile = project.createSourceFile(
+		"index.d.ts",
+		dedent`
     /**
      * This is similar to the structure of \`index.d.ts\` for \`fp-ts@2.9.3\`.
      *
@@ -57,13 +57,13 @@ test("export named import all", async () => {
 
     export { foo, bar };
     `,
-  );
-  expect(
-    await extractDeclarations({
-      containerName: "",
-      container: indexFile,
-      maxDepth: 5,
-      project,
-    }),
-  ).toMatchSnapshot();
+	);
+	expect(
+		await extractDeclarations({
+			containerName: "",
+			container: indexFile,
+			maxDepth: 5,
+			project,
+		}),
+	).toMatchSnapshot();
 });

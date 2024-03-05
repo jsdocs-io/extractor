@@ -7,7 +7,7 @@ import { extractPackageApiEffect } from "./extract-package-api-effect";
 for calling {@link extractPackageApi}.
 */
 export type ExtractPackageApiOptions = {
-  /**
+	/**
   Package to extract the API from.
 
   This can be either a package name (e.g., `foo`) or any other query
@@ -15,9 +15,9 @@ export type ExtractPackageApiOptions = {
 
   @see {@link https://bun.sh/docs/cli/add | Bun docs}
   */
-  pkg: string;
+	pkg: string;
 
-  /**
+	/**
   Specific subpath to consider in a package.
 
   If a package has multiple entrypoints listed in the `exports` property
@@ -29,9 +29,9 @@ export type ExtractPackageApiOptions = {
   @see {@link https://nodejs.org/api/packages.html#subpath-exports | Node.js docs}
   @see {@link https://github.com/lukeed/resolve.exports | resolve.exports docs}
   */
-  subpath?: string;
+	subpath?: string;
 
-  /**
+	/**
   Packages can have deeply nested modules and namespaces.
 
   Use `maxDepth` to limit the depth of the extraction.
@@ -39,51 +39,51 @@ export type ExtractPackageApiOptions = {
 
   @defaultValue 5
   */
-  maxDepth?: number;
+	maxDepth?: number;
 
-  /**
+	/**
   Absolute path to the `bun` executable.
   Used to locate bun if it's not in `PATH`.
 
   @defaultValue `bun`
   */
-  bunPath?: string;
+	bunPath?: string;
 };
 
 /**
 `PackageApi` contains all the information extracted from a package.
 */
 export type PackageApi = {
-  /** Package name (e.g., `foo`). */
-  name: string;
+	/** Package name (e.g., `foo`). */
+	name: string;
 
-  /** Package version number (e.g., `1.0.0`). */
-  version: string;
+	/** Package version number (e.g., `1.0.0`). */
+	version: string;
 
-  /**
+	/**
   Package subpath selected when extracting the API (e.g., `.`, `someFeature`).
 
   @see {@link ExtractPackageApiOptions.subpath}
   @see {@link https://nodejs.org/api/packages.html#subpath-exports | Node.js docs}
   */
-  subpath: string;
+	subpath: string;
 
-  /**
+	/**
   Type declarations file, resolved from the selected `subpath`,
   that acts as the entrypoint for the package (e.g., `index.d.ts`).
   */
-  types: string;
+	types: string;
 
-  /**
+	/**
   Package description extracted from the `types` file if a
   JSDoc comment with the `@packageDocumentation` tag is found.
   */
-  overview: string | undefined;
+	overview: string | undefined;
 
-  /** Declarations exported (or re-exported) by the package. */
-  declarations: ExtractedDeclaration[];
+	/** Declarations exported (or re-exported) by the package. */
+	declarations: ExtractedDeclaration[];
 
-  /**
+	/**
   All packages resolved and installed when installing the package (included).
 
   @example
@@ -91,13 +91,13 @@ export type PackageApi = {
   ["foo@1.0.0", "bar@2.0.0", "baz@3.0.0"]
   ```
   */
-  packages: string[];
+	packages: string[];
 
-  /** Timestamp of when the package was analyzed. */
-  analyzedAt: string;
+	/** Timestamp of when the package was analyzed. */
+	analyzedAt: string;
 
-  /** Package analysis duration in milliseconds. */
-  analyzedIn: number;
+	/** Package analysis duration in milliseconds. */
+	analyzedIn: number;
 };
 
 /**
@@ -124,11 +124,11 @@ console.log(JSON.stringify(packageApi, null, 2));
 @returns A {@link PackageApi} object
 */
 export const extractPackageApi = ({
-  pkg,
-  subpath = ".",
-  maxDepth = 5,
-  bunPath = "bun",
+	pkg,
+	subpath = ".",
+	maxDepth = 5,
+	bunPath = "bun",
 }: ExtractPackageApiOptions): Promise<PackageApi> =>
-  Effect.runPromise(
-    extractPackageApiEffect({ pkg, subpath, maxDepth, bunPath }),
-  );
+	Effect.runPromise(
+		extractPackageApiEffect({ pkg, subpath, maxDepth, bunPath }),
+	);

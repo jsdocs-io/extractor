@@ -34,14 +34,14 @@ It downloads packages from the npm registry and analyzes them to extract their p
 import { extractPackageApi } from "@jsdocs-io/extractor";
 
 (async () => {
-  const result = await extractPackageApi({ pkg: "preact" });
-  if (result.isOk()) {
-    const packageApi = result.value; // Successfully extracted API
-    console.log(JSON.stringify(packageApi, null, 2));
-  } else {
-    const extractorError = result.error; // Error extracting API
-    console.error(extractorError);
-  }
+	const result = await extractPackageApi({ pkg: "preact" });
+	if (result.isOk()) {
+		const packageApi = result.value; // Successfully extracted API
+		console.log(JSON.stringify(packageApi, null, 2));
+	} else {
+		const extractorError = result.error; // Error extracting API
+		console.error(extractorError);
+	}
 })();
 ```
 
@@ -51,14 +51,14 @@ import { extractPackageApi } from "@jsdocs-io/extractor";
 import { extractPackageApi } from "@jsdocs-io/extractor";
 
 (async () => {
-  const result = await extractPackageApi({ pkg: "preact", subpath: "hooks" });
-  if (result.isOk()) {
-    const packageApi = result.value; // Successfully extracted API
-    console.log(JSON.stringify(packageApi, null, 2));
-  } else {
-    const extractorError = result.error; // Error extracting API
-    console.error(extractorError);
-  }
+	const result = await extractPackageApi({ pkg: "preact", subpath: "hooks" });
+	if (result.isOk()) {
+		const packageApi = result.value; // Successfully extracted API
+		console.log(JSON.stringify(packageApi, null, 2));
+	} else {
+		const extractorError = result.error; // Error extracting API
+		console.error(extractorError);
+	}
 })();
 ```
 

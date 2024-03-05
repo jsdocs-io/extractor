@@ -11,6 +11,6 @@ Parsed comments are memoized.
 @internal
 */
 export const parseDocComment = memoize((s: string): DocComment => {
-  const parser = new TSDocParser();
-  return parser.parseString(s).docComment;
+	const parser = new TSDocParser();
+	return parser.parseString(s).docComment;
 });
