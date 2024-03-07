@@ -1,4 +1,4 @@
-import { Effect } from "effect";
+import { Data, Effect } from "effect";
 import type { Project, SourceFile } from "ts-morph";
 import { extractDeclarations } from "./extract-declarations";
 
@@ -10,10 +10,9 @@ export type PackageDeclarationsOptions = {
 };
 
 /** @internal */
-export class PackageDeclarationsError {
-	readonly _tag = "PackageDeclarationsError";
-	constructor(readonly cause?: unknown) {}
-}
+export class PackageDeclarationsError extends Data.TaggedError(
+	"PackageDeclarationsError",
+)<{ cause?: unknown }> {}
 
 export const packageDeclarations = ({
 	pkgName,
@@ -30,5 +29,5 @@ export const packageDeclarations = ({
 				project,
 				pkgName,
 			}),
-		catch: (e) => new PackageDeclarationsError(e),
+		catch: (e) => new PackageDeclarationsError({ cause: e }),
 	});

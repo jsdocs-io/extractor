@@ -1,4 +1,4 @@
-import { Effect } from "effect";
+import { Data, Effect } from "effect";
 import {
 	ModuleKind,
 	ModuleResolutionKind,
@@ -12,10 +12,9 @@ export type CreateProjectOptions = {
 };
 
 /** @internal */
-export class ProjectError {
-	readonly _tag = "ProjectError";
-	constructor(readonly cause?: unknown) {}
-}
+export class ProjectError extends Data.TaggedError("ProjectError")<{
+	readonly cause?: unknown;
+}> {}
 
 export const createProject = ({ indexFilePath, cwd }: CreateProjectOptions) =>
 	Effect.try({
@@ -40,5 +39,5 @@ export const createProject = ({ indexFilePath, cwd }: CreateProjectOptions) =>
 			project.resolveSourceFileDependencies();
 			return { project, indexFile };
 		},
-		catch: (e) => new ProjectError(e),
+		catch: (e) => new ProjectError({ cause: e }),
 	});

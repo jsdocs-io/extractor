@@ -1,11 +1,9 @@
-import { Effect } from "effect";
+import { Data, Effect } from "effect";
 import type { NormalizedPackageJson } from "read-pkg";
 import { exports } from "resolve.exports";
 
 /** @internal */
-export class PackageTypesError {
-	readonly _tag = "PackageTypesError";
-}
+export class PackageTypesError extends Data.TaggedError("PackageTypesError") {}
 
 /**
 `packageTypes` resolves the types entrypoint file (e.g., `index.d.ts`).
@@ -32,7 +30,7 @@ export const packageTypes = (
 		if (isRootSubpath && pkgJson.typings && isTypesFile(pkgJson.typings)) {
 			return pkgJson.typings;
 		}
-		return yield* _(Effect.fail(new PackageTypesError()));
+		return yield* _(new PackageTypesError());
 	});
 
 const resolveExports = (

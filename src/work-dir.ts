@@ -1,4 +1,4 @@
-import { Effect } from "effect";
+import { Data, Effect } from "effect";
 import { rm } from "node:fs/promises";
 import { temporaryDirectory } from "tempy";
 
@@ -9,10 +9,9 @@ export type WorkDir = {
 };
 
 /** @internal */
-export class WorkDirError {
-	readonly _tag = "WorkDirError";
-	constructor(readonly cause?: unknown) {}
-}
+export class WorkDirError extends Data.TaggedError("WorkDirError")<{
+	cause?: unknown;
+}> {}
 
 const acquire = Effect.try({
 	try: () => {
@@ -26,7 +25,7 @@ const acquire = Effect.try({
 			},
 		};
 	},
-	catch: (e) => new WorkDirError(e),
+	catch: (e) => new WorkDirError({ cause: e }),
 });
 
 const release = (workDir: WorkDir) => Effect.promise(() => workDir.close());

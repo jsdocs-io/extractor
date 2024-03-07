@@ -1,18 +1,20 @@
-import { Effect } from "effect";
+import { Data, Effect } from "effect";
 import validate from "validate-npm-package-name";
 
 /** @internal */
-export class PackageNameError {
-	readonly _tag = "PackageNameError";
-}
+export class PackageNameError extends Data.TaggedError("PackageNameError")<{
+	warnings?: string[];
+	errors?: string[];
+}> {}
 
 /** @internal */
 export const packageName = (pkg: string) =>
-	Effect.suspend(() => {
+	Effect.gen(function* (_) {
 		const versionMarker = pkg.lastIndexOf("@");
-		const name = pkg.slice(0, versionMarker > 0 ? versionMarker : undefined);
-		if (!validate(name).validForNewPackages) {
-			return Effect.fail(new PackageNameError());
+		const pkgName = pkg.slice(0, versionMarker > 0 ? versionMarker : undefined);
+		const { validForNewPackages, warnings, errors } = validate(pkgName);
+		if (!validForNewPackages) {
+			return yield* _(new PackageNameError({ warnings, errors }));
 		}
-		return Effect.succeed(name);
+		return pkgName;
 	});

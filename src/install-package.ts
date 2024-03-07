@@ -1,4 +1,4 @@
-import { Effect } from "effect";
+import { Data, Effect } from "effect";
 import { execa } from "execa";
 
 /** @internal */
@@ -9,10 +9,9 @@ export type InstallPackageOptions = {
 };
 
 /** @internal */
-export class InstallPackageError {
-	readonly _tag = "InstallPackageError";
-	constructor(readonly cause?: unknown) {}
-}
+export class InstallPackageError extends Data.TaggedError(
+	"InstallPackageError",
+)<{ cause?: unknown }> {}
 
 /** @internal */
 export const installPackage = ({
@@ -28,7 +27,7 @@ export const installPackage = ({
 const bunAdd = ({ pkg, cwd, bunPath }: Required<InstallPackageOptions>) =>
 	Effect.tryPromise({
 		try: () => execa(bunPath, ["add", pkg, "--verbose"], { cwd }),
-		catch: (e) => new InstallPackageError(e),
+		catch: (e) => new InstallPackageError({ cause: e }),
 	});
 
 const installedPackages = (stdout: string) => {
