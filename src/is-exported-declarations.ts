@@ -1,8 +1,6 @@
 import { Node, type ExportedDeclarations } from "ts-morph";
 
-export const isExportedDeclarations = (
-	node: Node,
-): node is ExportedDeclarations =>
+export const isExportedDeclarations = (node: Node): node is ExportedDeclarations =>
 	Node.isVariableDeclaration(node) ||
 	Node.isFunctionDeclaration(node) ||
 	Node.isClassDeclaration(node) ||

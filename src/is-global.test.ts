@@ -1,10 +1,5 @@
 import dedent from "ts-dedent";
-import {
-	ModuleKind,
-	ModuleResolutionKind,
-	Project,
-	ScriptTarget,
-} from "ts-morph";
+import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
 import { isGlobal } from "./is-global";
 

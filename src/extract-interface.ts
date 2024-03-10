@@ -120,26 +120,15 @@ export const extractInterface = async (
 		signature: await interfaceSignature(declaration),
 		properties: await extractInterfaceProperties(interfaceId, declaration),
 		methods: await extractInterfaceMethods(interfaceId, declaration),
-		constructSignatures: await extractInterfaceConstructSignatures(
-			interfaceId,
-			declaration,
-		),
-		callSignatures: await extractInterfaceCallSignatures(
-			interfaceId,
-			declaration,
-		),
-		indexSignatures: await extractInterfaceIndexSignatures(
-			interfaceId,
-			declaration,
-		),
+		constructSignatures: await extractInterfaceConstructSignatures(interfaceId, declaration),
+		callSignatures: await extractInterfaceCallSignatures(interfaceId, declaration),
+		indexSignatures: await extractInterfaceIndexSignatures(interfaceId, declaration),
 		getAccessors: await extractInterfaceGetAccessors(interfaceId, declaration),
 		setAccessors: await extractInterfaceSetAccessors(interfaceId, declaration),
 	};
 };
 
-const interfaceSignature = async (
-	declaration: InterfaceDeclaration,
-): Promise<string> => {
+const interfaceSignature = async (declaration: InterfaceDeclaration): Promise<string> => {
 	const signature = headText(declaration);
 	return formatSignature("interface", signature);
 };
@@ -167,9 +156,7 @@ const extractInterfaceProperties = async (
 	return orderBy(properties, "id");
 };
 
-const interfacePropertySignature = async (
-	declaration: PropertySignature,
-): Promise<string> => {
+const interfacePropertySignature = async (declaration: PropertySignature): Promise<string> => {
 	const signature = declaration.getText();
 	return formatSignature("interface-property", signature);
 };
@@ -216,9 +203,7 @@ const extractInterfaceConstructSignatures = async (
 	interfaceDeclaration: InterfaceDeclaration,
 ): Promise<ExtractedInterfaceConstructSignature[]> => {
 	const constructSignatures = [];
-	for (const [index, declaration] of interfaceDeclaration
-		.getConstructSignatures()
-		.entries()) {
+	for (const [index, declaration] of interfaceDeclaration.getConstructSignatures().entries()) {
 		if (isHidden(declaration)) {
 			continue;
 		}
@@ -247,9 +232,7 @@ const extractInterfaceCallSignatures = async (
 	interfaceDeclaration: InterfaceDeclaration,
 ): Promise<ExtractedInterfaceCallSignature[]> => {
 	const callSignatures = [];
-	for (const [index, declaration] of interfaceDeclaration
-		.getCallSignatures()
-		.entries()) {
+	for (const [index, declaration] of interfaceDeclaration.getCallSignatures().entries()) {
 		if (isHidden(declaration)) {
 			continue;
 		}
@@ -278,9 +261,7 @@ const extractInterfaceIndexSignatures = async (
 	interfaceDeclaration: InterfaceDeclaration,
 ): Promise<ExtractedInterfaceIndexSignature[]> => {
 	const indexSignatures = [];
-	for (const [index, declaration] of interfaceDeclaration
-		.getIndexSignatures()
-		.entries()) {
+	for (const [index, declaration] of interfaceDeclaration.getIndexSignatures().entries()) {
 		if (isHidden(declaration)) {
 			continue;
 		}

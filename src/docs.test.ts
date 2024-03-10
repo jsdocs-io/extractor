@@ -1,10 +1,5 @@
 import dedent from "ts-dedent";
-import {
-	ModuleKind,
-	ModuleResolutionKind,
-	Project,
-	ScriptTarget,
-} from "ts-morph";
+import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
 import { docs } from "./docs";
 
@@ -56,36 +51,26 @@ test("docs", () => {
     export type Qux = {};
     `,
 	);
-	expect(docs(indexFile.getVariableDeclarationOrThrow("foo"))).toStrictEqual(
-		[],
-	);
+	expect(docs(indexFile.getVariableDeclarationOrThrow("foo"))).toStrictEqual([]);
 	expect(docs(indexFile.getVariableDeclarationOrThrow("bar"))).toStrictEqual([
 		"/** Docs for bar */",
 	]);
-	expect(
-		docs(indexFile.getExportedDeclarations().get("default")?.at(0)!),
-	).toStrictEqual(["/** Docs for expression */"]);
+	expect(docs(indexFile.getExportedDeclarations().get("default")?.at(0)!)).toStrictEqual([
+		"/** Docs for expression */",
+	]);
 	expect(docs(indexFile.getFunctionOrThrow("fooFunc"))).toStrictEqual([
 		"/** Docs for function overloads 1 */",
 		"/** Docs for function overloads 2 */",
 	]);
-	expect(
-		docs(indexFile.getClassOrThrow("FooClass").getMethodOrThrow("fooMethod")),
-	).toStrictEqual([
+	expect(docs(indexFile.getClassOrThrow("FooClass").getMethodOrThrow("fooMethod"))).toStrictEqual([
 		"/** Docs for class method overloads 1 */",
 		"/** Docs for class method overloads 2 */",
 	]);
 	expect(
-		docs(
-			indexFile
-				.getInterfaceOrThrow("FooInterface")
-				.getMethodOrThrow("fooMethod"),
-		),
+		docs(indexFile.getInterfaceOrThrow("FooInterface").getMethodOrThrow("fooMethod")),
 	).toStrictEqual([
 		"/** Docs for interface method overloads 1 */",
 		"/** Docs for interface method overloads 2 */",
 	]);
-	expect(docs(indexFile.getTypeAliasOrThrow("Qux"))).toStrictEqual([
-		"/** Docs for Qux */",
-	]);
+	expect(docs(indexFile.getTypeAliasOrThrow("Qux"))).toStrictEqual(["/** Docs for Qux */"]);
 });

@@ -1,10 +1,5 @@
 import dedent from "ts-dedent";
-import {
-	ModuleKind,
-	ModuleResolutionKind,
-	Project,
-	ScriptTarget,
-} from "ts-morph";
+import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
 import { isVariable } from "./is-variable";
 
@@ -30,8 +25,6 @@ test("is variable", () => {
     `,
 	);
 	expect(isVariable(indexFile.getFunctionOrThrow("foo"))).toBe(false);
-	expect(isVariable(indexFile.getVariableDeclarationOrThrow("bar"))).toBe(
-		false,
-	);
+	expect(isVariable(indexFile.getVariableDeclarationOrThrow("bar"))).toBe(false);
 	expect(isVariable(indexFile.getVariableDeclarationOrThrow("baz"))).toBe(true);
 });

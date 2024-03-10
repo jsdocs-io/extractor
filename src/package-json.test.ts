@@ -15,10 +15,7 @@ test("no package.json", async () => {
 
 test("with package.json", async () => {
 	await temporaryDirectoryTask(async (dir) => {
-		await fs.writeFile(
-			join(dir, "package.json"),
-			'{ "name": "foo", "version": "1.0.0" }',
-		);
+		await fs.writeFile(join(dir, "package.json"), '{ "name": "foo", "version": "1.0.0" }');
 		await expect(_packageJson(dir)).resolves.toMatchInlineSnapshot(`
       {
         "_id": "foo@1.0.0",

@@ -3,10 +3,8 @@ import type { NormalizedPackageJson } from "read-pkg";
 import { expect, test } from "vitest";
 import { packageTypes } from "./package-types";
 
-const _packageTypes = (
-	pkgJson: Partial<NormalizedPackageJson>,
-	subpath: string,
-) => Effect.runPromise(packageTypes(pkgJson, subpath));
+const _packageTypes = (pkgJson: Partial<NormalizedPackageJson>, subpath: string) =>
+	Effect.runPromise(packageTypes(pkgJson, subpath));
 
 test("no types", async () => {
 	await expect(_packageTypes({}, ".")).rejects.toThrow();
@@ -88,15 +86,11 @@ test("types from `custom` subpath", async () => {
 });
 
 test("types from `types` fallback", async () => {
-	await expect(_packageTypes({ types: "index.d.ts" }, ".")).resolves.toBe(
-		"index.d.ts",
-	);
+	await expect(_packageTypes({ types: "index.d.ts" }, ".")).resolves.toBe("index.d.ts");
 });
 
 test("types from `typings` fallback", async () => {
-	await expect(_packageTypes({ typings: "index.d.ts" }, ".")).resolves.toBe(
-		"index.d.ts",
-	);
+	await expect(_packageTypes({ typings: "index.d.ts" }, ".")).resolves.toBe("index.d.ts");
 });
 
 test("types from `types` fallback and not from default condition for root subpath", async () => {

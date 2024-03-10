@@ -10,9 +10,9 @@ export type PackageDeclarationsOptions = {
 };
 
 /** @internal */
-export class PackageDeclarationsError extends Data.TaggedError(
-	"PackageDeclarationsError",
-)<{ cause?: unknown }> {}
+export class PackageDeclarationsError extends Data.TaggedError("PackageDeclarationsError")<{
+	cause?: unknown;
+}> {}
 
 export const packageDeclarations = ({
 	pkgName,

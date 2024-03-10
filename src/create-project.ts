@@ -1,10 +1,5 @@
 import { Data, Effect } from "effect";
-import {
-	ModuleKind,
-	ModuleResolutionKind,
-	Project,
-	ScriptTarget,
-} from "ts-morph";
+import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 
 export type CreateProjectOptions = {
 	indexFilePath: string;

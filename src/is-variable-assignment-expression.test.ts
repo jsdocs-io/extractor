@@ -1,10 +1,5 @@
 import dedent from "ts-dedent";
-import {
-	ModuleKind,
-	ModuleResolutionKind,
-	Project,
-	ScriptTarget,
-} from "ts-morph";
+import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
 import { isVariableAssignmentExpression } from "./is-variable-assignment-expression";
 
@@ -27,12 +22,8 @@ test("is variable assignment expression", () => {
     export default var1 = "var1";
     `,
 	);
+	expect(isVariableAssignmentExpression(indexFile.getFunctionOrThrow("foo"))).toBe(false);
 	expect(
-		isVariableAssignmentExpression(indexFile.getFunctionOrThrow("foo")),
-	).toBe(false);
-	expect(
-		isVariableAssignmentExpression(
-			indexFile.getExportedDeclarations().get("default")?.at(0)!,
-		),
+		isVariableAssignmentExpression(indexFile.getExportedDeclarations().get("default")?.at(0)!),
 	).toBe(true);
 });

@@ -5,8 +5,7 @@ import { temporaryDirectoryTask } from "tempy";
 import { expect, test } from "vitest";
 import { createProject, type CreateProjectOptions } from "./create-project";
 
-const _createProject = (options: CreateProjectOptions) =>
-	Effect.runPromise(createProject(options));
+const _createProject = (options: CreateProjectOptions) => Effect.runPromise(createProject(options));
 
 test("no cwd", async () => {
 	await temporaryDirectoryTask(async (dir) => {
@@ -35,9 +34,7 @@ test("with index file", async () => {
 		const indexFilePath = join(dir, "./index.ts");
 		await fs.writeFile(indexFilePath, "export {};");
 		const { project } = await _createProject({ indexFilePath, cwd: dir });
-		expect(
-			project.getSourceFiles().map((sf) => sf.getBaseName()),
-		).toStrictEqual(["index.ts"]);
+		expect(project.getSourceFiles().map((sf) => sf.getBaseName())).toStrictEqual(["index.ts"]);
 	});
 });
 
@@ -48,8 +45,9 @@ test("with index file and other file", async () => {
 		await fs.writeFile(indexFilePath, "export * from './other';");
 		await fs.writeFile(otherFilePath, "export const a = 1;");
 		const { project } = await _createProject({ indexFilePath, cwd: dir });
-		expect(
-			project.getSourceFiles().map((sf) => sf.getBaseName()),
-		).toStrictEqual(["index.ts", "other.ts"]);
+		expect(project.getSourceFiles().map((sf) => sf.getBaseName())).toStrictEqual([
+			"index.ts",
+			"other.ts",
+		]);
 	});
 });

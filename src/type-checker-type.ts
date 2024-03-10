@@ -7,8 +7,7 @@ export const typeCheckerType = (node: Node): string => {
 		return typeChecker.typeToString(
 			nodeType,
 			node.compilerNode,
-			ts.TypeFormatFlags.NoTruncation |
-				TypeFormatFlags.UseAliasDefinedOutsideCurrentScope,
+			ts.TypeFormatFlags.NoTruncation | TypeFormatFlags.UseAliasDefinedOutsideCurrentScope,
 		);
 	} catch {
 		return "any";

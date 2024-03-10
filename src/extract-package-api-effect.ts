@@ -2,10 +2,7 @@ import { Effect } from "effect";
 import { performance } from "node:perf_hooks";
 import { join } from "pathe";
 import { createProject } from "./create-project";
-import type {
-	ExtractPackageApiOptions,
-	PackageApi,
-} from "./extract-package-api";
+import type { ExtractPackageApiOptions, PackageApi } from "./extract-package-api";
 import { installPackage } from "./install-package";
 import { packageDeclarations } from "./package-declarations";
 import { packageJson } from "./package-json";
@@ -31,13 +28,9 @@ export const extractPackageApiEffect = ({
 			const pkgJson = yield* _(packageJson(pkgDir));
 			const types = yield* _(packageTypes(pkgJson, subpath));
 			const indexFilePath = join(pkgDir, types);
-			const { project, indexFile } = yield* _(
-				createProject({ indexFilePath, cwd }),
-			);
+			const { project, indexFile } = yield* _(createProject({ indexFilePath, cwd }));
 			const overview = packageOverview(indexFile);
-			const declarations = yield* _(
-				packageDeclarations({ pkgName, project, indexFile, maxDepth }),
-			);
+			const declarations = yield* _(packageDeclarations({ pkgName, project, indexFile, maxDepth }));
 			return {
 				name: pkgJson.name,
 				version: pkgJson.version,

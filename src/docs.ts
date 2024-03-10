@@ -22,10 +22,7 @@ const nodesWithDocs = (node: Node): Node[] => {
 		// Constructors can also be overloaded but they are excluded because
 		// one item is returned per constructor each with its own docs.
 		const implementation = node.getImplementation();
-		return [
-			...node.getOverloads(),
-			...(implementation ? [implementation] : []),
-		];
+		return [...node.getOverloads(), ...(implementation ? [implementation] : [])];
 	}
 	if (
 		Node.isMethodSignature(node) &&

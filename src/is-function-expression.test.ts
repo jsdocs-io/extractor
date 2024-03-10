@@ -1,10 +1,5 @@
 import dedent from "ts-dedent";
-import {
-	ModuleKind,
-	ModuleResolutionKind,
-	Project,
-	ScriptTarget,
-} from "ts-morph";
+import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
 import { isFunctionExpression } from "./is-function-expression";
 
@@ -29,13 +24,7 @@ test("is function expression", () => {
     `,
 	);
 	expect(isFunctionExpression(indexFile.getFunctionOrThrow("foo"))).toBe(false);
-	expect(
-		isFunctionExpression(indexFile.getVariableDeclarationOrThrow("bar")),
-	).toBe(true);
-	expect(
-		isFunctionExpression(indexFile.getVariableDeclarationOrThrow("baz")),
-	).toBe(true);
-	expect(
-		isFunctionExpression(indexFile.getVariableDeclarationOrThrow("qux")),
-	).toBe(true);
+	expect(isFunctionExpression(indexFile.getVariableDeclarationOrThrow("bar"))).toBe(true);
+	expect(isFunctionExpression(indexFile.getVariableDeclarationOrThrow("baz"))).toBe(true);
+	expect(isFunctionExpression(indexFile.getVariableDeclarationOrThrow("qux"))).toBe(true);
 });

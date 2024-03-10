@@ -20,10 +20,7 @@ export const extractExpression = async (
 	signature: await expressionSignature(exportName, declaration),
 });
 
-const expressionSignature = async (
-	name: string,
-	declaration: Expression,
-): Promise<string> => {
+const expressionSignature = async (name: string, declaration: Expression): Promise<string> => {
 	const kind = "const";
 	const type = apparentType(declaration);
 	return formatSignature("variable", `${kind} ${name}: ${type}`);

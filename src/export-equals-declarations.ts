@@ -1,9 +1,4 @@
-import {
-	ModuleDeclaration,
-	SourceFile,
-	SyntaxKind,
-	type ExportedDeclarations,
-} from "ts-morph";
+import { ModuleDeclaration, SourceFile, SyntaxKind, type ExportedDeclarations } from "ts-morph";
 import { isExportedDeclarations } from "./is-exported-declarations";
 import { isHidden } from "./is-hidden";
 import { isNamespace } from "./is-namespace";

@@ -35,10 +35,7 @@ const variableAssignmentExpressionSignature = async (
 	declaration: BinaryExpression,
 	variableDeclaration: VariableDeclaration,
 ): Promise<string> => {
-	const kind = variableDeclaration
-		.getVariableStatementOrThrow()
-		.getDeclarationKind()
-		.toString();
+	const kind = variableDeclaration.getVariableStatementOrThrow().getDeclarationKind().toString();
 	const variableType = apparentType(variableDeclaration);
 	const expressionType = apparentType(declaration);
 	const type = variableType !== "any" ? variableType : expressionType;

@@ -36,11 +36,7 @@ export {
 export { extractPackageApiEffect } from "./extract-package-api-effect";
 export type { ExtractedTypeAlias } from "./extract-type-alias";
 export type { ExtractedVariable } from "./extract-variable";
-export {
-	InstallPackageError,
-	installPackage,
-	type InstallPackageOptions,
-} from "./install-package";
+export { InstallPackageError, installPackage, type InstallPackageOptions } from "./install-package";
 export { PackageDeclarationsError } from "./package-declarations";
 export { PackageJsonError, packageJson } from "./package-json";
 export { PackageNameError, packageName } from "./package-name";

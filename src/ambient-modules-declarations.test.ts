@@ -1,10 +1,5 @@
 import dedent from "ts-dedent";
-import {
-	ModuleKind,
-	ModuleResolutionKind,
-	Project,
-	ScriptTarget,
-} from "ts-morph";
+import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
 import { ambientModulesDeclarations } from "./ambient-modules-declarations";
 
@@ -63,9 +58,7 @@ test("ambient module from another package", () => {
     declare module "foo";
     `,
 	);
-	expect(ambientModulesDeclarations("", project, "my-package")).toStrictEqual(
-		[],
-	);
+	expect(ambientModulesDeclarations("", project, "my-package")).toStrictEqual([]);
 });
 
 test("shorthand ambient module", () => {

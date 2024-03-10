@@ -1,10 +1,5 @@
 import dedent from "ts-dedent";
-import {
-	ModuleKind,
-	ModuleResolutionKind,
-	Project,
-	ScriptTarget,
-} from "ts-morph";
+import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
 import { isFunction } from "./is-function";
 
@@ -26,8 +21,6 @@ test("is function", () => {
     export function bar() {}
     `,
 	);
-	expect(isFunction(indexFile.getVariableDeclarationOrThrow("foo"))).toBe(
-		false,
-	);
+	expect(isFunction(indexFile.getVariableDeclarationOrThrow("foo"))).toBe(false);
 	expect(isFunction(indexFile.getFunctionOrThrow("bar"))).toBe(true);
 });

@@ -1,10 +1,5 @@
 import dedent from "ts-dedent";
-import {
-	ModuleKind,
-	ModuleResolutionKind,
-	Project,
-	ScriptTarget,
-} from "ts-morph";
+import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
 import { globalAmbientDeclarations } from "./global-ambient-declarations";
 
@@ -82,7 +77,5 @@ test("global declaration", () => {
     declare const foo: number;
     `,
 	);
-	expect(globalAmbientDeclarations("", indexFile).at(0)?.exportName).toBe(
-		"foo",
-	);
+	expect(globalAmbientDeclarations("", indexFile).at(0)?.exportName).toBe("foo");
 });

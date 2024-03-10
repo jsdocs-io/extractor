@@ -12,7 +12,5 @@ const hasFunctionLikeType = (declaration: VariableDeclaration): boolean => {
 	if (!initializer) {
 		return false;
 	}
-	return (
-		Node.isArrowFunction(initializer) || Node.isFunctionExpression(initializer)
-	);
+	return Node.isArrowFunction(initializer) || Node.isFunctionExpression(initializer);
 };

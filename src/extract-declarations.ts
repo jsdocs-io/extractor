@@ -17,10 +17,7 @@ import { extractFunction, type ExtractedFunction } from "./extract-function";
 import { extractFunctionExpression } from "./extract-function-expression";
 import { extractInterface, type ExtractedInterface } from "./extract-interface";
 import { extractNamespace, type ExtractedNamespace } from "./extract-namespace";
-import {
-	extractTypeAlias,
-	type ExtractedTypeAlias,
-} from "./extract-type-alias";
+import { extractTypeAlias, type ExtractedTypeAlias } from "./extract-type-alias";
 import { extractVariable, type ExtractedVariable } from "./extract-variable";
 import { extractVariableAssignmentExpression } from "./extract-variable-assignment-expression";
 import { globalAmbientDeclarations } from "./global-ambient-declarations";
@@ -104,12 +101,8 @@ export const extractDeclarations = async ({
 	const foundDeclarations = [
 		...exportedDeclarations(containerName, container),
 		...exportEqualsDeclarations(containerName, container),
-		...(project
-			? ambientModulesDeclarations(containerName, project, pkgName)
-			: []),
-		...(Node.isSourceFile(container)
-			? globalAmbientDeclarations(containerName, container)
-			: []),
+		...(project ? ambientModulesDeclarations(containerName, project, pkgName) : []),
+		...(Node.isSourceFile(container) ? globalAmbientDeclarations(containerName, container) : []),
 	];
 	const seenFunctions = new Set<string>();
 	const seenNamespaces = new Set<string>();
@@ -152,11 +145,7 @@ const extractDeclaration = async ({
 		return extractVariable(containerName, exportName, declaration);
 	}
 	if (isVariableAssignmentExpression(declaration)) {
-		return extractVariableAssignmentExpression(
-			containerName,
-			exportName,
-			declaration,
-		);
+		return extractVariableAssignmentExpression(containerName, exportName, declaration);
 	}
 	if (isExpression(declaration)) {
 		return extractExpression(containerName, exportName, declaration);
@@ -197,12 +186,7 @@ const extractDeclaration = async ({
 			container: declaration,
 			maxDepth: maxDepth - 1,
 		});
-		return extractNamespace(
-			containerName,
-			exportName,
-			declaration,
-			innerDeclarations,
-		);
+		return extractNamespace(containerName, exportName, declaration, innerDeclarations);
 	}
 	if (isFileModule(declaration) && maxDepth > 0) {
 		// A file module declaration happens with the following export forms:
@@ -213,12 +197,7 @@ const extractDeclaration = async ({
 			container: declaration,
 			maxDepth: maxDepth - 1,
 		});
-		return extractFileModule(
-			containerName,
-			exportName,
-			declaration,
-			innerDeclarations,
-		);
+		return extractFileModule(containerName, exportName, declaration, innerDeclarations);
 	}
 	return undefined;
 };

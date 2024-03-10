@@ -129,6 +129,4 @@ export const extractPackageApi = ({
 	maxDepth = 5,
 	bunPath = "bun",
 }: ExtractPackageApiOptions): Promise<PackageApi> =>
-	Effect.runPromise(
-		extractPackageApiEffect({ pkg, subpath, maxDepth, bunPath }),
-	);
+	Effect.runPromise(extractPackageApiEffect({ pkg, subpath, maxDepth, bunPath }));

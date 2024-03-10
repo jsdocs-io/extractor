@@ -1,10 +1,5 @@
 import dedent from "ts-dedent";
-import {
-	ModuleKind,
-	ModuleResolutionKind,
-	Project,
-	ScriptTarget,
-} from "ts-morph";
+import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
 import { headText } from "./head-text";
 
@@ -41,9 +36,7 @@ test("return text from declaration before body without JSDoc", () => {
     }
     `,
 	);
-	expect(headText(indexFile.getInterfaceOrThrow("FooInterface"))).toBe(
-		"interface FooInterface {}",
-	);
+	expect(headText(indexFile.getInterfaceOrThrow("FooInterface"))).toBe("interface FooInterface {}");
 	expect(headText(indexFile.getClassOrThrow("FooClass"))).toBe(
 		"class FooClass extends FooInterface {}",
 	);

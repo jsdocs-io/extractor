@@ -9,8 +9,7 @@ export const apparentType = (node: Node): string =>
 		.getApparentType()
 		.getText(
 			node,
-			ts.TypeFormatFlags.NoTruncation |
-				TypeFormatFlags.UseAliasDefinedOutsideCurrentScope,
+			ts.TypeFormatFlags.NoTruncation | TypeFormatFlags.UseAliasDefinedOutsideCurrentScope,
 		)
 		.replace(/^Number$/, "number")
 		.replace(/^Boolean$/, "boolean")

@@ -22,18 +22,14 @@ export const extractFileModule = async (
 });
 
 const fileModuleDocs = (declaration: SourceFile): string[] => {
-	const firstDoc = declaration
-		.getFirstDescendantByKind(SyntaxKind.JSDoc)
-		?.getText();
+	const firstDoc = declaration.getFirstDescendantByKind(SyntaxKind.JSDoc)?.getText();
 	if (!firstDoc) {
 		return [];
 	}
 	return [firstDoc];
 };
 
-const fileModuleSignature = async (
-	declaration: SourceFile,
-): Promise<string> => {
+const fileModuleSignature = async (declaration: SourceFile): Promise<string> => {
 	const filename = declaration.getSourceFile().getBaseName();
 	return formatSignature("namespace", `module "${filename}" {}`);
 };

@@ -22,8 +22,8 @@ test("package with no production dependencies", async () => {
 
 test("package with some production dependencies", async () => {
 	await temporaryDirectoryTask(async (dir) => {
-		await expect(
-			_installPackage({ pkg: "query-registry@2.6.0", cwd: dir }),
-		).resolves.toContain("query-registry@2.6.0");
+		await expect(_installPackage({ pkg: "query-registry@2.6.0", cwd: dir })).resolves.toContain(
+			"query-registry@2.6.0",
+		);
 	});
 });

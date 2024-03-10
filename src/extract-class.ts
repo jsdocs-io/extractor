@@ -81,9 +81,7 @@ export const extractClass = async (
 	};
 };
 
-const classSignature = async (
-	declaration: ClassDeclaration,
-): Promise<string> => {
+const classSignature = async (declaration: ClassDeclaration): Promise<string> => {
 	const signature = headText(declaration);
 	return formatSignature("class", signature);
 };
@@ -123,9 +121,7 @@ const extractClassConstructors = async (
 	return constructors;
 };
 
-const classConstructorSignature = async (
-	declaration: ConstructorDeclaration,
-): Promise<string> => {
+const classConstructorSignature = async (declaration: ConstructorDeclaration): Promise<string> => {
 	const modifiers = modifiersText(declaration);
 	const params = declaration
 		.getParameters()
@@ -179,16 +175,10 @@ const extractClassProperties = async (
 
 const classPropertySignature = async (
 	name: string,
-	declaration:
-		| ParameterDeclaration
-		| PropertyDeclaration
-		| GetAccessorDeclaration,
+	declaration: ParameterDeclaration | PropertyDeclaration | GetAccessorDeclaration,
 ): Promise<string> => {
 	const type = apparentType(declaration);
-	if (
-		Node.isParameterDeclaration(declaration) ||
-		Node.isPropertyDeclaration(declaration)
-	) {
+	if (Node.isParameterDeclaration(declaration) || Node.isPropertyDeclaration(declaration)) {
 		const modifiers = modifiersText(declaration);
 		const optional = declaration.hasQuestionToken() ? "?" : "";
 		const signature = `${modifiers} ${name}${optional}: ${type}`;
@@ -196,8 +186,7 @@ const classPropertySignature = async (
 	}
 	// GetAccessorDeclaration.
 	const staticKeyword = declaration.isStatic() ? "static" : "";
-	const readonlyKeyword =
-		declaration.getSetAccessor() === undefined ? "readonly" : "";
+	const readonlyKeyword = declaration.getSetAccessor() === undefined ? "readonly" : "";
 	const signature = `${staticKeyword} ${readonlyKeyword} ${name}: ${type}`;
 	return formatSignature("class-property", signature);
 };

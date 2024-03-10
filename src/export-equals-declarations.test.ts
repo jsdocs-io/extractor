@@ -1,10 +1,5 @@
 import dedent from "ts-dedent";
-import {
-	ModuleKind,
-	ModuleResolutionKind,
-	Project,
-	ScriptTarget,
-} from "ts-morph";
+import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
 import { exportEqualsDeclarations } from "./export-equals-declarations";
 
@@ -24,9 +19,7 @@ test("shorthand ambient module", () => {
     declare module 'foo';
     `,
 	);
-	expect(
-		exportEqualsDeclarations("", indexFile.getModuleOrThrow("'foo'")),
-	).toStrictEqual([]);
+	expect(exportEqualsDeclarations("", indexFile.getModuleOrThrow("'foo'"))).toStrictEqual([]);
 });
 
 test("export default", () => {
