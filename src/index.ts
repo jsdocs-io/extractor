@@ -2,6 +2,7 @@ export type {
 	AllExtractedDeclaration,
 	AllExtractedDeclarationKind,
 } from "./all-extracted-declaration";
+export { bunPackageManager } from "./bun-package-manager";
 export { ProjectError } from "./create-project";
 export type {
 	ExtractedClass,
@@ -36,9 +37,9 @@ export {
 export { extractPackageApiEffect } from "./extract-package-api-effect";
 export type { ExtractedTypeAlias } from "./extract-type-alias";
 export type { ExtractedVariable } from "./extract-variable";
-export { InstallPackageError, installPackage, type InstallPackageOptions } from "./install-package";
 export { PackageDeclarationsError } from "./package-declarations";
 export { PackageJsonError, packageJson } from "./package-json";
+export { InstallPackageError, PackageManager, type InstallPackageOptions } from "./package-manager";
 export { PackageNameError, packageName } from "./package-name";
 export { PackageTypesError, packageTypes } from "./package-types";
 export { parseDocComment } from "./parse-doc-comment";

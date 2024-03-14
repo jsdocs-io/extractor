@@ -1,6 +1,8 @@
 import { Effect } from "effect";
+import { bunPackageManager } from "./bun-package-manager";
 import type { ExtractedDeclaration } from "./extract-declarations";
 import { extractPackageApiEffect } from "./extract-package-api-effect";
+import { PackageManager } from "./package-manager";
 
 /**
 `ExtractPackageApiOptions` contains all the options
@@ -129,4 +131,8 @@ export const extractPackageApi = ({
 	maxDepth = 5,
 	bunPath = "bun",
 }: ExtractPackageApiOptions): Promise<PackageApi> =>
-	Effect.runPromise(Effect.scoped(extractPackageApiEffect({ pkg, subpath, maxDepth, bunPath })));
+	extractPackageApiEffect({ pkg, subpath, maxDepth }).pipe(
+		Effect.scoped,
+		Effect.provideService(PackageManager, bunPackageManager(bunPath)),
+		Effect.runPromise,
+	);
