@@ -16,7 +16,7 @@ export const extractPackageApiEffect = ({
 	pkg,
 	subpath = ".",
 	maxDepth = 5,
-}: ExtractPackageApiOptions) =>
+}: Omit<ExtractPackageApiOptions, "bunPath">) =>
 	Effect.gen(function* (_) {
 		const startTime = performance.now();
 		const pkgName = yield* _(packageName(pkg));
