@@ -10,7 +10,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/index.d.ts",
-          "id": "class.KeyboardService.constructor",
+          "id": "+class.KeyboardService.constructor",
           "kind": "class-constructor",
           "line": 16,
           "name": "constructor",
@@ -19,14 +19,14 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
       ],
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/index.d.ts",
-      "id": "class.KeyboardService",
+      "id": "+class.KeyboardService",
       "kind": "class",
       "line": 6,
       "methods": [
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/index.d.ts",
-          "id": "class.KeyboardService.method.disable",
+          "id": "+class.KeyboardService.+method.disable",
           "kind": "class-method",
           "line": 25,
           "name": "disable",
@@ -35,7 +35,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/index.d.ts",
-          "id": "class.KeyboardService.method.enable",
+          "id": "+class.KeyboardService.+method.enable",
           "kind": "class-method",
           "line": 24,
           "name": "enable",
@@ -44,7 +44,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/index.d.ts",
-          "id": "class.KeyboardService.method.handleKeyOnce",
+          "id": "+class.KeyboardService.+method.handleKeyOnce",
           "kind": "class-method",
           "line": 28,
           "name": "handleKeyOnce",
@@ -53,7 +53,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/index.d.ts",
-          "id": "class.KeyboardService.method.register",
+          "id": "+class.KeyboardService.+method.register",
           "kind": "class-method",
           "line": 26,
           "name": "register",
@@ -66,7 +66,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/index.d.ts",
-          "id": "class.KeyboardService.method.setContext",
+          "id": "+class.KeyboardService.+method.setContext",
           "kind": "class-method",
           "line": 27,
           "name": "setContext",
@@ -78,7 +78,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/index.d.ts",
-          "id": "class.KeyboardService.property.defaultOptions",
+          "id": "+class.KeyboardService.+property.defaultOptions",
           "kind": "class-property",
           "line": 14,
           "name": "defaultOptions",
@@ -87,7 +87,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/index.d.ts",
-          "id": "class.KeyboardService.property.handleKey",
+          "id": "+class.KeyboardService.+property.handleKey",
           "kind": "class-property",
           "line": 29,
           "name": "handleKey",
@@ -96,7 +96,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/index.d.ts",
-          "id": "class.KeyboardService.property.options",
+          "id": "+class.KeyboardService.+property.options",
           "kind": "class-property",
           "line": 15,
           "name": "options",
@@ -105,7 +105,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/index.d.ts",
-          "id": "class.KeyboardService.property.sequence",
+          "id": "+class.KeyboardService.+property.sequence",
           "kind": "class-property",
           "line": 12,
           "name": "sequence",
@@ -117,7 +117,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
     {
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/util.d.ts",
-      "id": "function.buildKey",
+      "id": "+function.buildKey",
       "kind": "function",
       "line": 2,
       "name": "buildKey",
@@ -126,7 +126,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
     {
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/index.d.ts",
-      "id": "function.disable",
+      "id": "+function.disable",
       "kind": "function",
       "line": 34,
       "name": "disable",
@@ -135,7 +135,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
     {
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/index.d.ts",
-      "id": "function.enable",
+      "id": "+function.enable",
       "kind": "function",
       "line": 33,
       "name": "enable",
@@ -144,7 +144,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
     {
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/index.d.ts",
-      "id": "function.getService",
+      "id": "+function.getService",
       "kind": "function",
       "line": 31,
       "name": "getService",
@@ -153,7 +153,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
     {
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/index.d.ts",
-      "id": "function.handleKey",
+      "id": "+function.handleKey",
       "kind": "function",
       "line": 35,
       "name": "handleKey",
@@ -162,7 +162,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
     {
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/util.d.ts",
-      "id": "function.normalizeSequence",
+      "id": "+function.normalizeSequence",
       "kind": "function",
       "line": 4,
       "name": "normalizeSequence",
@@ -174,7 +174,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
     {
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/util.d.ts",
-      "id": "function.parseCondition",
+      "id": "+function.parseCondition",
       "kind": "function",
       "line": 5,
       "name": "parseCondition",
@@ -183,7 +183,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
     {
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/util.d.ts",
-      "id": "function.parseKey",
+      "id": "+function.parseKey",
       "kind": "function",
       "line": 3,
       "name": "parseKey",
@@ -192,7 +192,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
     {
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/index.d.ts",
-      "id": "function.register",
+      "id": "+function.register",
       "kind": "function",
       "line": 32,
       "name": "register",
@@ -205,7 +205,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
     {
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/util.d.ts",
-      "id": "function.reprKey",
+      "id": "+function.reprKey",
       "kind": "function",
       "line": 6,
       "name": "reprKey",
@@ -214,7 +214,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
     {
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/util.d.ts",
-      "id": "function.reprShortcut",
+      "id": "+function.reprShortcut",
       "kind": "function",
       "line": 7,
       "name": "reprShortcut",
@@ -226,7 +226,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
       "getAccessors": [],
-      "id": "interface.IKeyNode",
+      "id": "+interface.IKeyNode",
       "indexSignatures": [],
       "kind": "interface",
       "line": 18,
@@ -236,7 +236,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
-          "id": "interface.IKeyNode.property.children",
+          "id": "+interface.IKeyNode.+property.children",
           "kind": "interface-property",
           "line": 20,
           "name": "children",
@@ -245,7 +245,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
-          "id": "interface.IKeyNode.property.shortcuts",
+          "id": "+interface.IKeyNode.+property.shortcuts",
           "kind": "interface-property",
           "line": 19,
           "name": "shortcuts",
@@ -261,7 +261,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
       "getAccessors": [],
-      "id": "interface.IShortcut",
+      "id": "+interface.IShortcut",
       "indexSignatures": [],
       "kind": "interface",
       "line": 11,
@@ -271,7 +271,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
-          "id": "interface.IShortcut.property.callback",
+          "id": "+interface.IShortcut.+property.callback",
           "kind": "interface-property",
           "line": 14,
           "name": "callback",
@@ -280,7 +280,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
-          "id": "interface.IShortcut.property.caseSensitive",
+          "id": "+interface.IShortcut.+property.caseSensitive",
           "kind": "interface-property",
           "line": 16,
           "name": "caseSensitive",
@@ -289,7 +289,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
-          "id": "interface.IShortcut.property.condition",
+          "id": "+interface.IShortcut.+property.condition",
           "kind": "interface-property",
           "line": 13,
           "name": "condition",
@@ -298,7 +298,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
-          "id": "interface.IShortcut.property.enabled",
+          "id": "+interface.IShortcut.+property.enabled",
           "kind": "interface-property",
           "line": 15,
           "name": "enabled",
@@ -307,7 +307,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
-          "id": "interface.IShortcut.property.sequence",
+          "id": "+interface.IShortcut.+property.sequence",
           "kind": "interface-property",
           "line": 12,
           "name": "sequence",
@@ -323,7 +323,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
       "getAccessors": [],
-      "id": "interface.IShortcutCondition",
+      "id": "+interface.IShortcutCondition",
       "indexSignatures": [],
       "kind": "interface",
       "line": 7,
@@ -333,7 +333,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
-          "id": "interface.IShortcutCondition.property.field",
+          "id": "+interface.IShortcutCondition.+property.field",
           "kind": "interface-property",
           "line": 8,
           "name": "field",
@@ -342,7 +342,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
-          "id": "interface.IShortcutCondition.property.not",
+          "id": "+interface.IShortcutCondition.+property.not",
           "kind": "interface-property",
           "line": 9,
           "name": "not",
@@ -358,7 +358,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
       "getAccessors": [],
-      "id": "interface.IShortcutConditionCache",
+      "id": "+interface.IShortcutConditionCache",
       "indexSignatures": [],
       "kind": "interface",
       "line": 22,
@@ -368,7 +368,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
-          "id": "interface.IShortcutConditionCache.property.count",
+          "id": "+interface.IShortcutConditionCache.+property.count",
           "kind": "interface-property",
           "line": 23,
           "name": "count",
@@ -377,7 +377,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
-          "id": "interface.IShortcutConditionCache.property.result",
+          "id": "+interface.IShortcutConditionCache.+property.result",
           "kind": "interface-property",
           "line": 25,
           "name": "result",
@@ -386,7 +386,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
-          "id": "interface.IShortcutConditionCache.property.value",
+          "id": "+interface.IShortcutConditionCache.+property.value",
           "kind": "interface-property",
           "line": 24,
           "name": "value",
@@ -402,7 +402,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
       "getAccessors": [],
-      "id": "interface.IShortcutKey",
+      "id": "+interface.IShortcutKey",
       "indexSignatures": [],
       "kind": "interface",
       "line": 35,
@@ -412,7 +412,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
-          "id": "interface.IShortcutKey.property.base",
+          "id": "+interface.IShortcutKey.+property.base",
           "kind": "interface-property",
           "line": 36,
           "name": "base",
@@ -421,7 +421,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
-          "id": "interface.IShortcutKey.property.caseSensitive",
+          "id": "+interface.IShortcutKey.+property.caseSensitive",
           "kind": "interface-property",
           "line": 38,
           "name": "caseSensitive",
@@ -430,7 +430,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
-          "id": "interface.IShortcutKey.property.modifierState",
+          "id": "+interface.IShortcutKey.+property.modifierState",
           "kind": "interface-property",
           "line": 37,
           "name": "modifierState",
@@ -446,7 +446,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
       "getAccessors": [],
-      "id": "interface.IShortcutModifiers",
+      "id": "+interface.IShortcutModifiers",
       "indexSignatures": [],
       "kind": "interface",
       "line": 1,
@@ -456,7 +456,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
-          "id": "interface.IShortcutModifiers.property.a",
+          "id": "+interface.IShortcutModifiers.+property.a",
           "kind": "interface-property",
           "line": 4,
           "name": "a",
@@ -465,7 +465,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
-          "id": "interface.IShortcutModifiers.property.c",
+          "id": "+interface.IShortcutModifiers.+property.c",
           "kind": "interface-property",
           "line": 2,
           "name": "c",
@@ -474,7 +474,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
-          "id": "interface.IShortcutModifiers.property.m",
+          "id": "+interface.IShortcutModifiers.+property.m",
           "kind": "interface-property",
           "line": 5,
           "name": "m",
@@ -483,7 +483,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
-          "id": "interface.IShortcutModifiers.property.s",
+          "id": "+interface.IShortcutModifiers.+property.s",
           "kind": "interface-property",
           "line": 3,
           "name": "s",
@@ -499,7 +499,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
       "getAccessors": [],
-      "id": "interface.IShortcutOptions",
+      "id": "+interface.IShortcutOptions",
       "indexSignatures": [],
       "kind": "interface",
       "line": 27,
@@ -509,7 +509,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
-          "id": "interface.IShortcutOptions.property.caseSensitive",
+          "id": "+interface.IShortcutOptions.+property.caseSensitive",
           "kind": "interface-property",
           "line": 29,
           "name": "caseSensitive",
@@ -518,7 +518,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
         {
           "docs": [],
           "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
-          "id": "interface.IShortcutOptions.property.condition",
+          "id": "+interface.IShortcutOptions.+property.condition",
           "kind": "interface-property",
           "line": 28,
           "name": "condition",
@@ -534,7 +534,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
       "getAccessors": [],
-      "id": "interface.IShortcutServiceOptions",
+      "id": "+interface.IShortcutServiceOptions",
       "indexSignatures": [],
       "kind": "interface",
       "line": 31,
@@ -546,7 +546,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
             "/** Max timeout between two keys within a sequence. */",
           ],
           "file": "/@violentmonkey/shortcut/types/types/index.d.ts",
-          "id": "interface.IShortcutServiceOptions.property.sequenceTimeout",
+          "id": "+interface.IShortcutServiceOptions.+property.sequenceTimeout",
           "kind": "interface-property",
           "line": 33,
           "name": "sequenceTimeout",
@@ -559,7 +559,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
     {
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/constants.d.ts",
-      "id": "type.IModifier",
+      "id": "+type.IModifier",
       "kind": "type",
       "line": 2,
       "name": "IModifier",
@@ -568,7 +568,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
     {
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/constants.d.ts",
-      "id": "variable.aliases",
+      "id": "+variable.aliases",
       "kind": "variable",
       "line": 11,
       "name": "aliases",
@@ -577,7 +577,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
     {
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/constants.d.ts",
-      "id": "variable.modifierAliases",
+      "id": "+variable.modifierAliases",
       "kind": "variable",
       "line": 4,
       "name": "modifierAliases",
@@ -586,7 +586,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
     {
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/constants.d.ts",
-      "id": "variable.modifierList",
+      "id": "+variable.modifierList",
       "kind": "variable",
       "line": 1,
       "name": "modifierList",
@@ -595,7 +595,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
     {
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/constants.d.ts",
-      "id": "variable.modifiers",
+      "id": "+variable.modifiers",
       "kind": "variable",
       "line": 3,
       "name": "modifiers",
@@ -604,7 +604,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
     {
       "docs": [],
       "file": "/@violentmonkey/shortcut/types/constants.d.ts",
-      "id": "variable.modifierSymbols",
+      "id": "+variable.modifierSymbols",
       "kind": "variable",
       "line": 5,
       "name": "modifierSymbols",

@@ -12,7 +12,7 @@ export const extractFunctionExpression = async (
 	declaration: VariableDeclaration,
 ): Promise<ExtractedFunction> => ({
 	kind: "function",
-	id: id(containerName, "function", exportName),
+	id: id(containerName, "+function", exportName),
 	name: exportName,
 	docs: docs(declaration),
 	file: sourceFilePath(declaration),

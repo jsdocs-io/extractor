@@ -182,7 +182,7 @@ const extractDeclaration = async ({
 		}
 		seenNamespaces.add(exportName);
 		const innerDeclarations = await extractDeclarations({
-			containerName: id(containerName, "namespace", exportName),
+			containerName: id(containerName, "+namespace", exportName),
 			container: declaration,
 			maxDepth: maxDepth - 1,
 		});
@@ -193,7 +193,7 @@ const extractDeclaration = async ({
 		// `import * as ns from module; export { ns };` or
 		// `export * as ns from module`.
 		const innerDeclarations = await extractDeclarations({
-			containerName: id(containerName, "namespace", exportName),
+			containerName: id(containerName, "+namespace", exportName),
 			container: declaration,
 			maxDepth: maxDepth - 1,
 		});

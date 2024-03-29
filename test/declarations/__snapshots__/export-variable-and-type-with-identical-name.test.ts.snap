@@ -5,7 +5,7 @@ exports[`export variable and type with identical name 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "type.foo",
+    "id": "+type.foo",
     "kind": "type",
     "line": 2,
     "name": "foo",
@@ -14,7 +14,7 @@ exports[`export variable and type with identical name 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "variable.foo",
+    "id": "+variable.foo",
     "kind": "variable",
     "line": 3,
     "name": "foo",

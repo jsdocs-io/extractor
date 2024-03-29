@@ -6,7 +6,7 @@ exports[`class with overloaded methods 1`] = `
     "constructors": [],
     "docs": [],
     "file": "/index.d.ts",
-    "id": "class.Class1",
+    "id": "+class.Class1",
     "kind": "class",
     "line": 1,
     "methods": [
@@ -16,7 +16,7 @@ exports[`class with overloaded methods 1`] = `
           "/** (B) foo */",
         ],
         "file": "/index.d.ts",
-        "id": "class.Class1.method.foo",
+        "id": "+class.Class1.+method.foo",
         "kind": "class-method",
         "line": 3,
         "name": "foo",

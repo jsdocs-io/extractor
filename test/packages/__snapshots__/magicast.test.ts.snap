@@ -10,7 +10,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/index.d.ts",
-          "id": "class.MagicastError.constructor",
+          "id": "+class.MagicastError.constructor",
           "kind": "class-constructor",
           "line": 26,
           "name": "constructor",
@@ -19,7 +19,7 @@ exports[`magicast@0.3.3 1`] = `
       ],
       "docs": [],
       "file": "/magicast/dist/index.d.ts",
-      "id": "class.MagicastError",
+      "id": "+class.MagicastError",
       "kind": "class",
       "line": 23,
       "methods": [],
@@ -28,7 +28,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/index.d.ts",
-          "id": "class.MagicastError.property.options",
+          "id": "+class.MagicastError.+property.options",
           "kind": "class-property",
           "line": 25,
           "name": "options",
@@ -37,7 +37,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/index.d.ts",
-          "id": "class.MagicastError.property.rawMessage",
+          "id": "+class.MagicastError.+property.rawMessage",
           "kind": "class-property",
           "line": 24,
           "name": "rawMessage",
@@ -49,7 +49,7 @@ exports[`magicast@0.3.3 1`] = `
     {
       "docs": [],
       "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-      "id": "function.detectCodeFormat",
+      "id": "+function.detectCodeFormat",
       "kind": "function",
       "line": 159,
       "name": "detectCodeFormat",
@@ -61,7 +61,7 @@ exports[`magicast@0.3.3 1`] = `
     {
       "docs": [],
       "file": "/magicast/dist/index.d.ts",
-      "id": "function.generateCode",
+      "id": "+function.generateCode",
       "kind": "function",
       "line": 8,
       "name": "generateCode",
@@ -73,7 +73,7 @@ exports[`magicast@0.3.3 1`] = `
     {
       "docs": [],
       "file": "/magicast/dist/index.d.ts",
-      "id": "function.loadFile",
+      "id": "+function.loadFile",
       "kind": "function",
       "line": 14,
       "name": "loadFile",
@@ -85,7 +85,7 @@ exports[`magicast@0.3.3 1`] = `
     {
       "docs": [],
       "file": "/magicast/dist/index.d.ts",
-      "id": "function.parseExpression",
+      "id": "+function.parseExpression",
       "kind": "function",
       "line": 7,
       "name": "parseExpression",
@@ -94,7 +94,7 @@ exports[`magicast@0.3.3 1`] = `
     {
       "docs": [],
       "file": "/magicast/dist/index.d.ts",
-      "id": "function.parseModule",
+      "id": "+function.parseModule",
       "kind": "function",
       "line": 6,
       "name": "parseModule",
@@ -106,7 +106,7 @@ exports[`magicast@0.3.3 1`] = `
     {
       "docs": [],
       "file": "/magicast/dist/index.d.ts",
-      "id": "function.writeFile",
+      "id": "+function.writeFile",
       "kind": "function",
       "line": 15,
       "name": "writeFile",
@@ -122,7 +122,7 @@ exports[`magicast@0.3.3 1`] = `
       "docs": [],
       "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
       "getAccessors": [],
-      "id": "interface.CodeFormatOptions",
+      "id": "+interface.CodeFormatOptions",
       "indexSignatures": [],
       "kind": "interface",
       "line": 148,
@@ -132,7 +132,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.CodeFormatOptions.property.arrayBracketSpacing",
+          "id": "+interface.CodeFormatOptions.+property.arrayBracketSpacing",
           "kind": "interface-property",
           "line": 154,
           "name": "arrayBracketSpacing",
@@ -141,7 +141,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.CodeFormatOptions.property.arrowParensAlways",
+          "id": "+interface.CodeFormatOptions.+property.arrowParensAlways",
           "kind": "interface-property",
           "line": 156,
           "name": "arrowParensAlways",
@@ -150,7 +150,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.CodeFormatOptions.property.objectCurlySpacing",
+          "id": "+interface.CodeFormatOptions.+property.objectCurlySpacing",
           "kind": "interface-property",
           "line": 155,
           "name": "objectCurlySpacing",
@@ -159,7 +159,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.CodeFormatOptions.property.quote",
+          "id": "+interface.CodeFormatOptions.+property.quote",
           "kind": "interface-property",
           "line": 152,
           "name": "quote",
@@ -168,7 +168,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.CodeFormatOptions.property.tabWidth",
+          "id": "+interface.CodeFormatOptions.+property.tabWidth",
           "kind": "interface-property",
           "line": 149,
           "name": "tabWidth",
@@ -177,7 +177,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.CodeFormatOptions.property.trailingComma",
+          "id": "+interface.CodeFormatOptions.+property.trailingComma",
           "kind": "interface-property",
           "line": 153,
           "name": "trailingComma",
@@ -186,7 +186,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.CodeFormatOptions.property.useSemi",
+          "id": "+interface.CodeFormatOptions.+property.useSemi",
           "kind": "interface-property",
           "line": 157,
           "name": "useSemi",
@@ -195,7 +195,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.CodeFormatOptions.property.useTabs",
+          "id": "+interface.CodeFormatOptions.+property.useTabs",
           "kind": "interface-property",
           "line": 150,
           "name": "useTabs",
@@ -204,7 +204,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.CodeFormatOptions.property.wrapColumn",
+          "id": "+interface.CodeFormatOptions.+property.wrapColumn",
           "kind": "interface-property",
           "line": 151,
           "name": "wrapColumn",
@@ -220,7 +220,7 @@ exports[`magicast@0.3.3 1`] = `
       "docs": [],
       "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
       "getAccessors": [],
-      "id": "interface.ImportItemInput",
+      "id": "+interface.ImportItemInput",
       "indexSignatures": [],
       "kind": "interface",
       "line": 225,
@@ -230,7 +230,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.ImportItemInput.property.from",
+          "id": "+interface.ImportItemInput.+property.from",
           "kind": "interface-property",
           "line": 228,
           "name": "from",
@@ -239,7 +239,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.ImportItemInput.property.imported",
+          "id": "+interface.ImportItemInput.+property.imported",
           "kind": "interface-property",
           "line": 227,
           "name": "imported",
@@ -248,7 +248,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.ImportItemInput.property.local",
+          "id": "+interface.ImportItemInput.+property.local",
           "kind": "interface-property",
           "line": 226,
           "name": "local",
@@ -264,7 +264,7 @@ exports[`magicast@0.3.3 1`] = `
       "docs": [],
       "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
       "getAccessors": [],
-      "id": "interface.Loc",
+      "id": "+interface.Loc",
       "indexSignatures": [],
       "kind": "interface",
       "line": 233,
@@ -274,7 +274,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.Loc.property.end",
+          "id": "+interface.Loc.+property.end",
           "kind": "interface-property",
           "line": 239,
           "name": "end",
@@ -287,7 +287,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.Loc.property.lines",
+          "id": "+interface.Loc.+property.lines",
           "kind": "interface-property",
           "line": 244,
           "name": "lines",
@@ -296,7 +296,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.Loc.property.start",
+          "id": "+interface.Loc.+property.start",
           "kind": "interface-property",
           "line": 234,
           "name": "start",
@@ -316,7 +316,7 @@ exports[`magicast@0.3.3 1`] = `
       "docs": [],
       "file": "/magicast/dist/index.d.ts",
       "getAccessors": [],
-      "id": "interface.MagicastErrorOptions",
+      "id": "+interface.MagicastErrorOptions",
       "indexSignatures": [],
       "kind": "interface",
       "line": 19,
@@ -326,7 +326,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/index.d.ts",
-          "id": "interface.MagicastErrorOptions.property.ast",
+          "id": "+interface.MagicastErrorOptions.+property.ast",
           "kind": "interface-property",
           "line": 20,
           "name": "ast",
@@ -335,7 +335,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/index.d.ts",
-          "id": "interface.MagicastErrorOptions.property.code",
+          "id": "+interface.MagicastErrorOptions.+property.code",
           "kind": "interface-property",
           "line": 21,
           "name": "code",
@@ -351,7 +351,7 @@ exports[`magicast@0.3.3 1`] = `
       "docs": [],
       "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
       "getAccessors": [],
-      "id": "interface.ParsedFileNode",
+      "id": "+interface.ParsedFileNode",
       "indexSignatures": [],
       "kind": "interface",
       "line": 251,
@@ -361,7 +361,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.ParsedFileNode.property.comments",
+          "id": "+interface.ParsedFileNode.+property.comments",
           "kind": "interface-property",
           "line": 255,
           "name": "comments",
@@ -370,7 +370,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.ParsedFileNode.property.loc",
+          "id": "+interface.ParsedFileNode.+property.loc",
           "kind": "interface-property",
           "line": 254,
           "name": "loc",
@@ -379,7 +379,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.ParsedFileNode.property.program",
+          "id": "+interface.ParsedFileNode.+property.program",
           "kind": "interface-property",
           "line": 253,
           "name": "program",
@@ -388,7 +388,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.ParsedFileNode.property.type",
+          "id": "+interface.ParsedFileNode.+property.type",
           "kind": "interface-property",
           "line": 252,
           "name": "type",
@@ -404,7 +404,7 @@ exports[`magicast@0.3.3 1`] = `
       "docs": [],
       "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
       "getAccessors": [],
-      "id": "interface.ProxifiedImportItem",
+      "id": "+interface.ProxifiedImportItem",
       "indexSignatures": [],
       "kind": "interface",
       "line": 217,
@@ -414,7 +414,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.ProxifiedImportItem.property.$ast",
+          "id": "+interface.ProxifiedImportItem.+property.$ast",
           "kind": "interface-property",
           "line": 219,
           "name": "$ast",
@@ -423,7 +423,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.ProxifiedImportItem.property.$declaration",
+          "id": "+interface.ProxifiedImportItem.+property.$declaration",
           "kind": "interface-property",
           "line": 220,
           "name": "$declaration",
@@ -432,7 +432,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.ProxifiedImportItem.property.$type",
+          "id": "+interface.ProxifiedImportItem.+property.$type",
           "kind": "interface-property",
           "line": 218,
           "name": "$type",
@@ -441,7 +441,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.ProxifiedImportItem.property.from",
+          "id": "+interface.ProxifiedImportItem.+property.from",
           "kind": "interface-property",
           "line": 223,
           "name": "from",
@@ -450,7 +450,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.ProxifiedImportItem.property.imported",
+          "id": "+interface.ProxifiedImportItem.+property.imported",
           "kind": "interface-property",
           "line": 221,
           "name": "imported",
@@ -459,7 +459,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.ProxifiedImportItem.property.local",
+          "id": "+interface.ProxifiedImportItem.+property.local",
           "kind": "interface-property",
           "line": 222,
           "name": "local",
@@ -475,7 +475,7 @@ exports[`magicast@0.3.3 1`] = `
       "docs": [],
       "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
       "getAccessors": [],
-      "id": "interface.ProxyBase",
+      "id": "+interface.ProxyBase",
       "indexSignatures": [],
       "kind": "interface",
       "line": 161,
@@ -485,7 +485,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.ProxyBase.property.$ast",
+          "id": "+interface.ProxyBase.+property.$ast",
           "kind": "interface-property",
           "line": 162,
           "name": "$ast",
@@ -501,7 +501,7 @@ exports[`magicast@0.3.3 1`] = `
       "docs": [],
       "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
       "getAccessors": [],
-      "id": "interface.Token",
+      "id": "+interface.Token",
       "indexSignatures": [],
       "kind": "interface",
       "line": 246,
@@ -511,7 +511,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.Token.property.loc",
+          "id": "+interface.Token.+property.loc",
           "kind": "interface-property",
           "line": 249,
           "name": "loc",
@@ -520,7 +520,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.Token.property.type",
+          "id": "+interface.Token.+property.type",
           "kind": "interface-property",
           "line": 247,
           "name": "type",
@@ -529,7 +529,7 @@ exports[`magicast@0.3.3 1`] = `
         {
           "docs": [],
           "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-          "id": "interface.Token.property.value",
+          "id": "+interface.Token.+property.value",
           "kind": "interface-property",
           "line": 248,
           "name": "value",
@@ -542,7 +542,7 @@ exports[`magicast@0.3.3 1`] = `
     {
       "docs": [],
       "file": "/@babel/types/lib/index.d.ts",
-      "id": "type.ASTNode",
+      "id": "+type.ASTNode",
       "kind": "type",
       "line": 1490,
       "name": "ASTNode",
@@ -805,7 +805,7 @@ exports[`magicast@0.3.3 1`] = `
     {
       "docs": [],
       "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-      "id": "type.GenerateOptions",
+      "id": "+type.GenerateOptions",
       "kind": "type",
       "line": 257,
       "name": "GenerateOptions",
@@ -816,7 +816,7 @@ exports[`magicast@0.3.3 1`] = `
     {
       "docs": [],
       "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-      "id": "type.Proxified",
+      "id": "+type.Proxified",
       "kind": "type",
       "line": 193,
       "name": "Proxified",
@@ -846,7 +846,7 @@ exports[`magicast@0.3.3 1`] = `
     {
       "docs": [],
       "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-      "id": "type.ProxifiedArray",
+      "id": "+type.ProxifiedArray",
       "kind": "type",
       "line": 164,
       "name": "ProxifiedArray",
@@ -859,7 +859,7 @@ exports[`magicast@0.3.3 1`] = `
     {
       "docs": [],
       "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-      "id": "type.ProxifiedArrowFunctionExpression",
+      "id": "+type.ProxifiedArrowFunctionExpression",
       "kind": "type",
       "line": 179,
       "name": "ProxifiedArrowFunctionExpression",
@@ -873,7 +873,7 @@ exports[`magicast@0.3.3 1`] = `
     {
       "docs": [],
       "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-      "id": "type.ProxifiedFunctionCall",
+      "id": "+type.ProxifiedFunctionCall",
       "kind": "type",
       "line": 169,
       "name": "ProxifiedFunctionCall",
@@ -886,7 +886,7 @@ exports[`magicast@0.3.3 1`] = `
     {
       "docs": [],
       "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-      "id": "type.ProxifiedIdentifier",
+      "id": "+type.ProxifiedIdentifier",
       "kind": "type",
       "line": 189,
       "name": "ProxifiedIdentifier",
@@ -898,7 +898,7 @@ exports[`magicast@0.3.3 1`] = `
     {
       "docs": [],
       "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-      "id": "type.ProxifiedImportsMap",
+      "id": "+type.ProxifiedImportsMap",
       "kind": "type",
       "line": 212,
       "name": "ProxifiedImportsMap",
@@ -912,7 +912,7 @@ exports[`magicast@0.3.3 1`] = `
     {
       "docs": [],
       "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-      "id": "type.ProxifiedModule",
+      "id": "+type.ProxifiedModule",
       "kind": "type",
       "line": 202,
       "name": "ProxifiedModule",
@@ -930,7 +930,7 @@ exports[`magicast@0.3.3 1`] = `
     {
       "docs": [],
       "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-      "id": "type.ProxifiedNewExpression",
+      "id": "+type.ProxifiedNewExpression",
       "kind": "type",
       "line": 174,
       "name": "ProxifiedNewExpression",
@@ -943,7 +943,7 @@ exports[`magicast@0.3.3 1`] = `
     {
       "docs": [],
       "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-      "id": "type.ProxifiedObject",
+      "id": "+type.ProxifiedObject",
       "kind": "type",
       "line": 184,
       "name": "ProxifiedObject",
@@ -956,7 +956,7 @@ exports[`magicast@0.3.3 1`] = `
     {
       "docs": [],
       "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-      "id": "type.ProxifiedValue",
+      "id": "+type.ProxifiedValue",
       "kind": "type",
       "line": 230,
       "name": "ProxifiedValue",
@@ -974,7 +974,7 @@ exports[`magicast@0.3.3 1`] = `
     {
       "docs": [],
       "file": "/magicast/dist/shared/magicast.03f97f18.d.ts",
-      "id": "type.ProxyType",
+      "id": "+type.ProxyType",
       "kind": "type",
       "line": 231,
       "name": "ProxyType",
@@ -983,7 +983,7 @@ exports[`magicast@0.3.3 1`] = `
     {
       "docs": [],
       "file": "/magicast/dist/index.d.ts",
-      "id": "variable.builders",
+      "id": "+variable.builders",
       "kind": "variable",
       "line": 29,
       "name": "builders",

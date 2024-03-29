@@ -10,7 +10,7 @@ exports[`exome@2.4.0 1`] = `
         {
           "docs": [],
           "file": "/exome/constructor.d.ts",
-          "id": "class.Exome.constructor",
+          "id": "+class.Exome.constructor",
           "kind": "class-constructor",
           "line": 5,
           "name": "constructor",
@@ -19,7 +19,7 @@ exports[`exome@2.4.0 1`] = `
       ],
       "docs": [],
       "file": "/exome/constructor.d.ts",
-      "id": "class.Exome",
+      "id": "+class.Exome",
       "kind": "class",
       "line": 2,
       "methods": [],
@@ -30,7 +30,7 @@ exports[`exome@2.4.0 1`] = `
     {
       "docs": [],
       "file": "/exome/middleware.d.ts",
-      "id": "function.addMiddleware",
+      "id": "+function.addMiddleware",
       "kind": "function",
       "line": 4,
       "name": "addMiddleware",
@@ -39,7 +39,7 @@ exports[`exome@2.4.0 1`] = `
     {
       "docs": [],
       "file": "/exome/utils/id.d.ts",
-      "id": "function.getExomeId",
+      "id": "+function.getExomeId",
       "kind": "function",
       "line": 2,
       "name": "getExomeId",
@@ -48,7 +48,7 @@ exports[`exome@2.4.0 1`] = `
     {
       "docs": [],
       "file": "/exome/on-action.d.ts",
-      "id": "function.onAction",
+      "id": "+function.onAction",
       "kind": "function",
       "line": 3,
       "name": "onAction",
@@ -67,7 +67,7 @@ exports[`exome@2.4.0 1`] = `
     {
       "docs": [],
       "file": "/exome/middleware.d.ts",
-      "id": "function.runMiddleware",
+      "id": "+function.runMiddleware",
       "kind": "function",
       "line": 5,
       "name": "runMiddleware",
@@ -80,7 +80,7 @@ exports[`exome@2.4.0 1`] = `
     {
       "docs": [],
       "file": "/exome/utils/id.d.ts",
-      "id": "function.setExomeId",
+      "id": "+function.setExomeId",
       "kind": "function",
       "line": 3,
       "name": "setExomeId",
@@ -89,7 +89,7 @@ exports[`exome@2.4.0 1`] = `
     {
       "docs": [],
       "file": "/exome/subscribe.d.ts",
-      "id": "function.subscribe",
+      "id": "+function.subscribe",
       "kind": "function",
       "line": 3,
       "name": "subscribe",
@@ -101,7 +101,7 @@ exports[`exome@2.4.0 1`] = `
     {
       "docs": [],
       "file": "/exome/subscribe.d.ts",
-      "id": "function.update",
+      "id": "+function.update",
       "kind": "function",
       "line": 4,
       "name": "update",
@@ -110,7 +110,7 @@ exports[`exome@2.4.0 1`] = `
     {
       "docs": [],
       "file": "/exome/subscribe.d.ts",
-      "id": "function.updateAll",
+      "id": "+function.updateAll",
       "kind": "function",
       "line": 5,
       "name": "updateAll",
@@ -119,7 +119,7 @@ exports[`exome@2.4.0 1`] = `
     {
       "docs": [],
       "file": "/exome/middleware.d.ts",
-      "id": "type.Middleware",
+      "id": "+type.Middleware",
       "kind": "type",
       "line": 2,
       "name": "Middleware",
@@ -132,7 +132,7 @@ exports[`exome@2.4.0 1`] = `
     {
       "docs": [],
       "file": "/exome/constants.d.ts",
-      "id": "variable.exomeId",
+      "id": "+variable.exomeId",
       "kind": "variable",
       "line": 1,
       "name": "exomeId",
@@ -141,7 +141,7 @@ exports[`exome@2.4.0 1`] = `
     {
       "docs": [],
       "file": "/exome/constants.d.ts",
-      "id": "variable.exomeName",
+      "id": "+variable.exomeName",
       "kind": "variable",
       "line": 2,
       "name": "exomeName",
@@ -166,7 +166,7 @@ exports[`exome@2.4.0@ghost 1`] = `
       "constructors": [],
       "docs": [],
       "file": "/exome/ghost.d.ts",
-      "id": "class.GhostExome",
+      "id": "+class.GhostExome",
       "kind": "class",
       "line": 2,
       "methods": [],

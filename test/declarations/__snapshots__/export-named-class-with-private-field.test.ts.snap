@@ -8,14 +8,14 @@ exports[`export named class with private field 1`] = `
       "/** Class1 */",
     ],
     "file": "/index.ts",
-    "id": "class.Class1",
+    "id": "+class.Class1",
     "kind": "class",
     "line": 2,
     "methods": [
       {
         "docs": [],
         "file": "/index.ts",
-        "id": "class.Class1.method.qux",
+        "id": "+class.Class1.+method.qux",
         "kind": "class-method",
         "line": 9,
         "name": "qux",
@@ -27,7 +27,7 @@ exports[`export named class with private field 1`] = `
       {
         "docs": [],
         "file": "/index.ts",
-        "id": "class.Class1.property.bar",
+        "id": "+class.Class1.+property.bar",
         "kind": "class-property",
         "line": 7,
         "name": "bar",

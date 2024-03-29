@@ -10,7 +10,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "class.Router.constructor",
+          "id": "+class.Router.constructor",
           "kind": "class-constructor",
           "line": 473,
           "name": "constructor",
@@ -19,14 +19,14 @@ exports[`@storylite/storylite@0.14.0 1`] = `
       ],
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "class.Router",
+      "id": "+class.Router",
       "kind": "class",
       "line": 461,
       "methods": [
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "class.Router.method.[Symbol.iterator]",
+          "id": "+class.Router.+method.[Symbol.iterator]",
           "kind": "class-method",
           "line": 462,
           "name": "[Symbol.iterator]",
@@ -35,7 +35,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "class.Router.method.add",
+          "id": "+class.Router.+method.add",
           "kind": "class-method",
           "line": 480,
           "name": "add",
@@ -44,7 +44,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "class.Router.method.back",
+          "id": "+class.Router.+method.back",
           "kind": "class-method",
           "line": 474,
           "name": "back",
@@ -53,7 +53,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "class.Router.method.forward",
+          "id": "+class.Router.+method.forward",
           "kind": "class-method",
           "line": 475,
           "name": "forward",
@@ -62,7 +62,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "class.Router.method.getFallback",
+          "id": "+class.Router.+method.getFallback",
           "kind": "class-method",
           "line": 483,
           "name": "getFallback",
@@ -71,7 +71,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "class.Router.method.getMatches",
+          "id": "+class.Router.+method.getMatches",
           "kind": "class-method",
           "line": 485,
           "name": "getMatches",
@@ -80,7 +80,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "class.Router.method.isNotFound",
+          "id": "+class.Router.+method.isNotFound",
           "kind": "class-method",
           "line": 476,
           "name": "isNotFound",
@@ -89,7 +89,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "class.Router.method.matches",
+          "id": "+class.Router.+method.matches",
           "kind": "class-method",
           "line": 484,
           "name": "matches",
@@ -98,7 +98,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "class.Router.method.navigate",
+          "id": "+class.Router.+method.navigate",
           "kind": "class-method",
           "line": 477,
           "name": "navigate",
@@ -111,7 +111,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "class.Router.method.refresh",
+          "id": "+class.Router.+method.refresh",
           "kind": "class-method",
           "line": 478,
           "name": "refresh",
@@ -120,7 +120,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "class.Router.method.register",
+          "id": "+class.Router.+method.register",
           "kind": "class-method",
           "line": 479,
           "name": "register",
@@ -129,7 +129,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "class.Router.method.remove",
+          "id": "+class.Router.+method.remove",
           "kind": "class-method",
           "line": 481,
           "name": "remove",
@@ -138,7 +138,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "class.Router.method.setFallback",
+          "id": "+class.Router.+method.setFallback",
           "kind": "class-method",
           "line": 482,
           "name": "setFallback",
@@ -150,7 +150,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "class.Router.property.currentRoute",
+          "id": "+class.Router.+property.currentRoute",
           "kind": "class-property",
           "line": 472,
           "name": "currentRoute",
@@ -159,7 +159,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "class.Router.property.Hasbang",
+          "id": "+class.Router.+property.Hasbang",
           "kind": "class-property",
           "line": 463,
           "name": "Hasbang",
@@ -168,7 +168,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "class.Router.property.length",
+          "id": "+class.Router.+property.length",
           "kind": "class-property",
           "line": 467,
           "name": "length",
@@ -177,7 +177,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "class.Router.property.params",
+          "id": "+class.Router.+property.params",
           "kind": "class-property",
           "line": 470,
           "name": "params",
@@ -186,7 +186,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "class.Router.property.path",
+          "id": "+class.Router.+property.path",
           "kind": "class-property",
           "line": 469,
           "name": "path",
@@ -195,7 +195,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "class.Router.property.query",
+          "id": "+class.Router.+property.query",
           "kind": "class-property",
           "line": 471,
           "name": "query",
@@ -204,7 +204,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "class.Router.property.url",
+          "id": "+class.Router.+property.url",
           "kind": "class-property",
           "line": 468,
           "name": "url",
@@ -216,14 +216,14 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "enum.SLColorScheme",
+      "id": "+enum.SLColorScheme",
       "kind": "enum",
       "line": 216,
       "members": [
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "enum.SLColorScheme.member.Light",
+          "id": "+enum.SLColorScheme.+member.Light",
           "kind": "enum-member",
           "line": 217,
           "name": "Light",
@@ -232,7 +232,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "enum.SLColorScheme.member.Dark",
+          "id": "+enum.SLColorScheme.+member.Dark",
           "kind": "enum-member",
           "line": 218,
           "name": "Dark",
@@ -241,7 +241,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "enum.SLColorScheme.member.Auto",
+          "id": "+enum.SLColorScheme.+member.Auto",
           "kind": "enum-member",
           "line": 219,
           "name": "Auto",
@@ -254,14 +254,14 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "enum.SLCoreAddon",
+      "id": "+enum.SLCoreAddon",
       "kind": "enum",
       "line": 99,
       "members": [
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "enum.SLCoreAddon.member.Grid",
+          "id": "+enum.SLCoreAddon.+member.Grid",
           "kind": "enum-member",
           "line": 100,
           "name": "Grid",
@@ -270,7 +270,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "enum.SLCoreAddon.member.Outline",
+          "id": "+enum.SLCoreAddon.+member.Outline",
           "kind": "enum-member",
           "line": 101,
           "name": "Outline",
@@ -279,7 +279,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "enum.SLCoreAddon.member.Responsive",
+          "id": "+enum.SLCoreAddon.+member.Responsive",
           "kind": "enum-member",
           "line": 102,
           "name": "Responsive",
@@ -288,7 +288,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "enum.SLCoreAddon.member.ColorScheme",
+          "id": "+enum.SLCoreAddon.+member.ColorScheme",
           "kind": "enum-member",
           "line": 103,
           "name": "ColorScheme",
@@ -297,7 +297,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "enum.SLCoreAddon.member.Maximize",
+          "id": "+enum.SLCoreAddon.+member.Maximize",
           "kind": "enum-member",
           "line": 104,
           "name": "Maximize",
@@ -306,7 +306,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "enum.SLCoreAddon.member.OpenStory",
+          "id": "+enum.SLCoreAddon.+member.OpenStory",
           "kind": "enum-member",
           "line": 105,
           "name": "OpenStory",
@@ -319,14 +319,14 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "enum.SLPanel",
+      "id": "+enum.SLPanel",
       "kind": "enum",
       "line": 209,
       "members": [
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "enum.SLPanel.member.Sidebar",
+          "id": "+enum.SLPanel.+member.Sidebar",
           "kind": "enum-member",
           "line": 210,
           "name": "Sidebar",
@@ -335,7 +335,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "enum.SLPanel.member.Addons",
+          "id": "+enum.SLPanel.+member.Addons",
           "kind": "enum-member",
           "line": 211,
           "name": "Addons",
@@ -344,7 +344,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "enum.SLPanel.member.Canvas",
+          "id": "+enum.SLPanel.+member.Canvas",
           "kind": "enum-member",
           "line": 212,
           "name": "Canvas",
@@ -353,7 +353,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "enum.SLPanel.member.Properties",
+          "id": "+enum.SLPanel.+member.Properties",
           "kind": "enum-member",
           "line": 213,
           "name": "Properties",
@@ -362,7 +362,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "enum.SLPanel.member.Inspector",
+          "id": "+enum.SLPanel.+member.Inspector",
           "kind": "enum-member",
           "line": 214,
           "name": "Inspector",
@@ -375,7 +375,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "function.createStoryLiteRouter",
+      "id": "+function.createStoryLiteRouter",
       "kind": "function",
       "line": 488,
       "name": "createStoryLiteRouter",
@@ -388,7 +388,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "function.getStoryLiteBasePath",
+      "id": "+function.getStoryLiteBasePath",
       "kind": "function",
       "line": 490,
       "name": "getStoryLiteBasePath",
@@ -397,7 +397,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "function.Link",
+      "id": "+function.Link",
       "kind": "function",
       "line": 497,
       "name": "Link",
@@ -418,7 +418,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
  */",
       ],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "function.renderStoryLiteApp",
+      "id": "+function.renderStoryLiteApp",
       "kind": "function",
       "line": 429,
       "name": "renderStoryLiteApp",
@@ -431,7 +431,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "function.RouteRenderer",
+      "id": "+function.RouteRenderer",
       "kind": "function",
       "line": 496,
       "name": "RouteRenderer",
@@ -444,7 +444,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "function.StoryLiteApp",
+      "id": "+function.StoryLiteApp",
       "kind": "function",
       "line": 424,
       "name": "StoryLiteApp",
@@ -453,7 +453,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "function.useRouterParams",
+      "id": "+function.useRouterParams",
       "kind": "function",
       "line": 519,
       "name": "useRouterParams",
@@ -462,7 +462,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "function.useRouterQuery",
+      "id": "+function.useRouterQuery",
       "kind": "function",
       "line": 522,
       "name": "useRouterQuery",
@@ -471,7 +471,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "function.useStoryLiteIframe",
+      "id": "+function.useStoryLiteIframe",
       "kind": "function",
       "line": 432,
       "name": "useStoryLiteIframe",
@@ -489,7 +489,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
       "getAccessors": [],
-      "id": "interface.BaseStory",
+      "id": "+interface.BaseStory",
       "indexSignatures": [],
       "kind": "interface",
       "line": 272,
@@ -505,7 +505,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
      */",
           ],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "interface.BaseStory.property._isDefault",
+          "id": "+interface.BaseStory.+property._isDefault",
           "kind": "interface-property",
           "line": 301,
           "name": "_isDefault",
@@ -520,7 +520,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
      */",
           ],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "interface.BaseStory.property._moduleId",
+          "id": "+interface.BaseStory.+property._moduleId",
           "kind": "interface-property",
           "line": 307,
           "name": "_moduleId",
@@ -539,7 +539,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
      */",
           ],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "interface.BaseStory.property.component",
+          "id": "+interface.BaseStory.+property.component",
           "kind": "interface-property",
           "line": 295,
           "name": "component",
@@ -554,7 +554,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
      */",
           ],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "interface.BaseStory.property.name",
+          "id": "+interface.BaseStory.+property.name",
           "kind": "interface-property",
           "line": 285,
           "name": "name",
@@ -570,7 +570,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
      */",
           ],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "interface.BaseStory.property.title",
+          "id": "+interface.BaseStory.+property.title",
           "kind": "interface-property",
           "line": 279,
           "name": "title",
@@ -605,7 +605,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
       ],
       "file": "/@storylite/storylite/dist/index.d.ts",
       "getAccessors": [],
-      "id": "interface.Story",
+      "id": "+interface.Story",
       "indexSignatures": [],
       "kind": "interface",
       "line": 327,
@@ -619,7 +619,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
      */",
           ],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "interface.Story.property.args",
+          "id": "+interface.Story.+property.args",
           "kind": "interface-property",
           "line": 331,
           "name": "args",
@@ -632,7 +632,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
      */",
           ],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "interface.Story.property.decorators",
+          "id": "+interface.Story.+property.decorators",
           "kind": "interface-property",
           "line": 347,
           "name": "decorators",
@@ -647,7 +647,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
      */",
           ],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "interface.Story.property.navigation",
+          "id": "+interface.Story.+property.navigation",
           "kind": "interface-property",
           "line": 391,
           "name": "navigation",
@@ -679,7 +679,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
      */",
           ],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "interface.Story.property.parameters",
+          "id": "+interface.Story.+property.parameters",
           "kind": "interface-property",
           "line": 339,
           "name": "parameters",
@@ -700,7 +700,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
      */",
           ],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "interface.Story.property.render",
+          "id": "+interface.Story.+property.render",
           "kind": "interface-property",
           "line": 369,
           "name": "render",
@@ -720,7 +720,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
      */",
           ],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "interface.Story.property.renderFrame",
+          "id": "+interface.Story.+property.renderFrame",
           "kind": "interface-property",
           "line": 380,
           "name": "renderFrame",
@@ -737,7 +737,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
       "getAccessors": [],
-      "id": "interface.StoryWithId",
+      "id": "+interface.StoryWithId",
       "indexSignatures": [],
       "kind": "interface",
       "line": 411,
@@ -747,7 +747,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         {
           "docs": [],
           "file": "/@storylite/storylite/dist/index.d.ts",
-          "id": "interface.StoryWithId.property.id",
+          "id": "+interface.StoryWithId.+property.id",
           "kind": "interface-property",
           "line": 412,
           "name": "id",
@@ -761,7 +761,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.CurrentRoute",
+      "id": "+type.CurrentRoute",
       "kind": "type",
       "line": 451,
       "name": "CurrentRoute",
@@ -770,7 +770,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.ParsedUri",
+      "id": "+type.ParsedUri",
       "kind": "type",
       "line": 445,
       "name": "ParsedUri",
@@ -784,7 +784,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.Route",
+      "id": "+type.Route",
       "kind": "type",
       "line": 440,
       "name": "Route",
@@ -797,7 +797,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.RouterContextState",
+      "id": "+type.RouterContextState",
       "kind": "type",
       "line": 456,
       "name": "RouterContextState",
@@ -809,7 +809,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.RouteRendererProps",
+      "id": "+type.RouteRendererProps",
       "kind": "type",
       "line": 492,
       "name": "RouteRendererProps",
@@ -821,7 +821,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.RouterPage",
+      "id": "+type.RouterPage",
       "kind": "type",
       "line": 452,
       "name": "RouterPage",
@@ -833,7 +833,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLAddonContext",
+      "id": "+type.SLAddonContext",
       "kind": "type",
       "line": 111,
       "name": "SLAddonContext",
@@ -847,7 +847,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLAddonPanel",
+      "id": "+type.SLAddonPanel",
       "kind": "type",
       "line": 221,
       "name": "SLAddonPanel",
@@ -862,7 +862,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
  */",
       ],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLAddonProps",
+      "id": "+type.SLAddonProps",
       "kind": "type",
       "line": 122,
       "name": "SLAddonProps",
@@ -966,7 +966,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLAddonPropsWithoutId",
+      "id": "+type.SLAddonPropsWithoutId",
       "kind": "type",
       "line": 202,
       "name": "SLAddonPropsWithoutId",
@@ -975,7 +975,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLAddonsMap",
+      "id": "+type.SLAddonsMap",
       "kind": "type",
       "line": 204,
       "name": "SLAddonsMap",
@@ -984,7 +984,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLAddonsMapWithoutId",
+      "id": "+type.SLAddonsMapWithoutId",
       "kind": "type",
       "line": 203,
       "name": "SLAddonsMapWithoutId",
@@ -996,7 +996,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLAddonState",
+      "id": "+type.SLAddonState",
       "kind": "type",
       "line": 107,
       "name": "SLAddonState",
@@ -1011,7 +1011,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLAppComponentProps",
+      "id": "+type.SLAppComponentProps",
       "kind": "type",
       "line": 223,
       "name": "SLAppComponentProps",
@@ -1029,7 +1029,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLArgTypes",
+      "id": "+type.SLArgTypes",
       "kind": "type",
       "line": 37,
       "name": "SLArgTypes",
@@ -1040,7 +1040,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLArrayType",
+      "id": "+type.SLArrayType",
       "kind": "type",
       "line": 18,
       "name": "SLArrayType",
@@ -1052,7 +1052,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLBaseType",
+      "id": "+type.SLBaseType",
       "kind": "type",
       "line": 9,
       "name": "SLBaseType",
@@ -1065,7 +1065,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLComponentProps",
+      "id": "+type.SLComponentProps",
       "kind": "type",
       "line": 54,
       "name": "SLComponentProps",
@@ -1088,7 +1088,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLDecorator",
+      "id": "+type.SLDecorator",
       "kind": "type",
       "line": 271,
       "name": "SLDecorator",
@@ -1100,7 +1100,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLDecoratorContext",
+      "id": "+type.SLDecoratorContext",
       "kind": "type",
       "line": 264,
       "name": "SLDecoratorContext",
@@ -1111,7 +1111,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLElement",
+      "id": "+type.SLElement",
       "kind": "type",
       "line": 47,
       "name": "SLElement",
@@ -1124,7 +1124,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLEnumType",
+      "id": "+type.SLEnumType",
       "kind": "type",
       "line": 22,
       "name": "SLEnumType",
@@ -1136,7 +1136,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLFunctionComponent",
+      "id": "+type.SLFunctionComponent",
       "kind": "type",
       "line": 53,
       "name": "SLFunctionComponent",
@@ -1145,7 +1145,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLInputType",
+      "id": "+type.SLInputType",
       "kind": "type",
       "line": 29,
       "name": "SLInputType",
@@ -1161,7 +1161,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLNativeScalarType",
+      "id": "+type.SLNativeScalarType",
       "kind": "type",
       "line": 26,
       "name": "SLNativeScalarType",
@@ -1170,7 +1170,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLNativeType",
+      "id": "+type.SLNativeType",
       "kind": "type",
       "line": 27,
       "name": "SLNativeType",
@@ -1179,7 +1179,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLNode",
+      "id": "+type.SLNode",
       "kind": "type",
       "line": 52,
       "name": "SLNode",
@@ -1188,7 +1188,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLObject",
+      "id": "+type.SLObject",
       "kind": "type",
       "line": 6,
       "name": "SLObject",
@@ -1201,7 +1201,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLPageProps",
+      "id": "+type.SLPageProps",
       "kind": "type",
       "line": 40,
       "name": "SLPageProps",
@@ -1212,7 +1212,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLParameters",
+      "id": "+type.SLParameters",
       "kind": "type",
       "line": 239,
       "name": "SLParameters",
@@ -1225,7 +1225,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLParametersConfig",
+      "id": "+type.SLParametersConfig",
       "kind": "type",
       "line": 234,
       "name": "SLParametersConfig",
@@ -1238,7 +1238,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLPlayContext",
+      "id": "+type.SLPlayContext",
       "kind": "type",
       "line": 265,
       "name": "SLPlayContext",
@@ -1253,7 +1253,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLScalarType",
+      "id": "+type.SLScalarType",
       "kind": "type",
       "line": 14,
       "name": "SLScalarType",
@@ -1265,7 +1265,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLStoryContext",
+      "id": "+type.SLStoryContext",
       "kind": "type",
       "line": 245,
       "name": "SLStoryContext",
@@ -1292,7 +1292,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLStoryPageProps",
+      "id": "+type.SLStoryPageProps",
       "kind": "type",
       "line": 43,
       "name": "SLStoryPageProps",
@@ -1303,7 +1303,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLType",
+      "id": "+type.SLType",
       "kind": "type",
       "line": 28,
       "name": "SLType",
@@ -1312,7 +1312,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.SLUserDefinedAddons",
+      "id": "+type.SLUserDefinedAddons",
       "kind": "type",
       "line": 205,
       "name": "SLUserDefinedAddons",
@@ -1324,7 +1324,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.StoryLiteActions",
+      "id": "+type.StoryLiteActions",
       "kind": "type",
       "line": 74,
       "name": "StoryLiteActions",
@@ -1358,7 +1358,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.StoryLiteAppProps",
+      "id": "+type.StoryLiteAppProps",
       "kind": "type",
       "line": 419,
       "name": "StoryLiteAppProps",
@@ -1371,7 +1371,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.StoryLiteCanvasState",
+      "id": "+type.StoryLiteCanvasState",
       "kind": "type",
       "line": 60,
       "name": "StoryLiteCanvasState",
@@ -1383,7 +1383,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.StoryLiteParamValue",
+      "id": "+type.StoryLiteParamValue",
       "kind": "type",
       "line": 64,
       "name": "StoryLiteParamValue",
@@ -1399,7 +1399,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.StoryLiteState",
+      "id": "+type.StoryLiteState",
       "kind": "type",
       "line": 65,
       "name": "StoryLiteState",
@@ -1416,7 +1416,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.StoryLiteStore",
+      "id": "+type.StoryLiteStore",
       "kind": "type",
       "line": 90,
       "name": "StoryLiteStore",
@@ -1425,7 +1425,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.StoryMap",
+      "id": "+type.StoryMap",
       "kind": "type",
       "line": 414,
       "name": "StoryMap",
@@ -1434,7 +1434,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "type.StoryModuleMap",
+      "id": "+type.StoryModuleMap",
       "kind": "type",
       "line": 415,
       "name": "StoryModuleMap",
@@ -1448,7 +1448,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "variable.useRouterStore",
+      "id": "+variable.useRouterStore",
       "kind": "variable",
       "line": 518,
       "name": "useRouterStore",
@@ -1463,7 +1463,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
     {
       "docs": [],
       "file": "/@storylite/storylite/dist/index.d.ts",
-      "id": "variable.useStoryLiteStore",
+      "id": "+variable.useStoryLiteStore",
       "kind": "variable",
       "line": 431,
       "name": "useStoryLiteStore",

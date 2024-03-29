@@ -32,7 +32,7 @@ export const extractEnum = async (
 	exportName: string,
 	declaration: EnumDeclaration,
 ): Promise<ExtractedEnum> => {
-	const enumId = id(containerName, "enum", exportName);
+	const enumId = id(containerName, "+enum", exportName);
 	return {
 		kind: "enum",
 		id: enumId,
@@ -62,7 +62,7 @@ const extractEnumMembers = async (
 		const name = declaration.getName();
 		members.push({
 			kind: "enum-member" as const,
-			id: id(enumId, "member", name),
+			id: id(enumId, "+member", name),
 			name,
 			docs: docs(declaration),
 			file: sourceFilePath(declaration),

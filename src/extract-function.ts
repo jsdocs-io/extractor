@@ -21,7 +21,7 @@ export const extractFunction = async (
 	declaration: FunctionDeclaration | ArrowFunction,
 ): Promise<ExtractedFunction> => ({
 	kind: "function",
-	id: id(containerName, "function", exportName),
+	id: id(containerName, "+function", exportName),
 	name: exportName,
 	docs: docs(declaration),
 	file: sourceFilePath(declaration),

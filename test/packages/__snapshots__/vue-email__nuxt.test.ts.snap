@@ -11,7 +11,7 @@ exports[`@vue-email/nuxt@0.8.13 1`] = `
       "docs": [],
       "file": "/@vue-email/nuxt/dist/module.d.ts",
       "getAccessors": [],
-      "id": "interface.ModuleOptions",
+      "id": "+interface.ModuleOptions",
       "indexSignatures": [],
       "kind": "interface",
       "line": 4,
@@ -21,7 +21,7 @@ exports[`@vue-email/nuxt@0.8.13 1`] = `
         {
           "docs": [],
           "file": "/@vue-email/nuxt/dist/module.d.ts",
-          "id": "interface.ModuleOptions.property.autoImport",
+          "id": "+interface.ModuleOptions.+property.autoImport",
           "kind": "interface-property",
           "line": 8,
           "name": "autoImport",
@@ -30,7 +30,7 @@ exports[`@vue-email/nuxt@0.8.13 1`] = `
         {
           "docs": [],
           "file": "/@vue-email/nuxt/dist/module.d.ts",
-          "id": "interface.ModuleOptions.property.baseUrl",
+          "id": "+interface.ModuleOptions.+property.baseUrl",
           "kind": "interface-property",
           "line": 5,
           "name": "baseUrl",
@@ -39,7 +39,7 @@ exports[`@vue-email/nuxt@0.8.13 1`] = `
         {
           "docs": [],
           "file": "/@vue-email/nuxt/dist/module.d.ts",
-          "id": "interface.ModuleOptions.property.i18n",
+          "id": "+interface.ModuleOptions.+property.i18n",
           "kind": "interface-property",
           "line": 6,
           "name": "i18n",
@@ -48,7 +48,7 @@ exports[`@vue-email/nuxt@0.8.13 1`] = `
         {
           "docs": [],
           "file": "/@vue-email/nuxt/dist/module.d.ts",
-          "id": "interface.ModuleOptions.property.playground",
+          "id": "+interface.ModuleOptions.+property.playground",
           "kind": "interface-property",
           "line": 7,
           "name": "playground",
@@ -57,7 +57,7 @@ exports[`@vue-email/nuxt@0.8.13 1`] = `
         {
           "docs": [],
           "file": "/@vue-email/nuxt/dist/module.d.ts",
-          "id": "interface.ModuleOptions.property.tailwind",
+          "id": "+interface.ModuleOptions.+property.tailwind",
           "kind": "interface-property",
           "line": 10,
           "name": "tailwind",
@@ -66,7 +66,7 @@ exports[`@vue-email/nuxt@0.8.13 1`] = `
         {
           "docs": [],
           "file": "/@vue-email/nuxt/dist/module.d.ts",
-          "id": "interface.ModuleOptions.property.useNuxtTailwind",
+          "id": "+interface.ModuleOptions.+property.useNuxtTailwind",
           "kind": "interface-property",
           "line": 9,
           "name": "useNuxtTailwind",
@@ -79,7 +79,7 @@ exports[`@vue-email/nuxt@0.8.13 1`] = `
     {
       "docs": [],
       "file": "/@vue-email/nuxt/dist/module.d.ts",
-      "id": "variable.default",
+      "id": "+variable.default",
       "kind": "variable",
       "line": 12,
       "name": "default",

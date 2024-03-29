@@ -20,7 +20,7 @@ export const extractTypeAlias = async (
 	declaration: TypeAliasDeclaration,
 ): Promise<ExtractedTypeAlias> => ({
 	kind: "type",
-	id: id(containerName, "type", exportName),
+	id: id(containerName, "+type", exportName),
 	name: exportName,
 	docs: docs(declaration),
 	file: sourceFilePath(declaration),

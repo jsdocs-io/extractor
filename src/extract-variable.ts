@@ -21,7 +21,7 @@ export const extractVariable = async (
 	declaration: VariableDeclaration,
 ): Promise<ExtractedVariable> => ({
 	kind: "variable",
-	id: id(containerName, "variable", exportName),
+	id: id(containerName, "+variable", exportName),
 	name: exportName,
 	docs: docs(declaration),
 	file: sourceFilePath(declaration),

@@ -66,7 +66,7 @@ export const extractClass = async (
 	exportName: string,
 	declaration: ClassDeclaration,
 ): Promise<ExtractedClass> => {
-	const classId = id(containerName, "class", exportName);
+	const classId = id(containerName, "+class", exportName);
 	return {
 		kind: "class",
 		id: classId,
@@ -162,7 +162,7 @@ const extractClassProperties = async (
 		const name = declaration.getName();
 		properties.push({
 			kind: "class-property" as const,
-			id: id(classId, "property", name),
+			id: id(classId, "+property", name),
 			name,
 			docs: docs(declaration),
 			file: sourceFilePath(declaration),
@@ -213,7 +213,7 @@ const extractClassMethods = async (
 		seenMethods.add(name);
 		methods.push({
 			kind: "class-method" as const,
-			id: id(classId, "method", name),
+			id: id(classId, "+method", name),
 			name,
 			docs: docs(declaration),
 			file: sourceFilePath(declaration),

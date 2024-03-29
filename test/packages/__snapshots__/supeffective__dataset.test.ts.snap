@@ -8,7 +8,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.createDataUrlResolver",
+      "id": "+function.createDataUrlResolver",
       "kind": "function",
       "line": 1653,
       "name": "createDataUrlResolver",
@@ -17,7 +17,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.createImageUrlResolver",
+      "id": "+function.createImageUrlResolver",
       "kind": "function",
       "line": 1654,
       "name": "createImageUrlResolver",
@@ -26,7 +26,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.createPlaceholderPokemon",
+      "id": "+function.createPlaceholderPokemon",
       "kind": "function",
       "line": 1608,
       "name": "createPlaceholderPokemon",
@@ -35,7 +35,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.createSearchIndex",
+      "id": "+function.createSearchIndex",
       "kind": "function",
       "line": 1600,
       "name": "createSearchIndex",
@@ -46,7 +46,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.fetchBoxPreset",
+      "id": "+function.fetchBoxPreset",
       "kind": "function",
       "line": 1493,
       "name": "fetchBoxPreset",
@@ -60,7 +60,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.fetchBoxPresetIndex",
+      "id": "+function.fetchBoxPresetIndex",
       "kind": "function",
       "line": 1492,
       "name": "fetchBoxPresetIndex",
@@ -72,7 +72,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.fetchCollection",
+      "id": "+function.fetchCollection",
       "kind": "function",
       "line": 1649,
       "name": "fetchCollection",
@@ -85,7 +85,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.fetchCollectionWithCache",
+      "id": "+function.fetchCollectionWithCache",
       "kind": "function",
       "line": 1650,
       "name": "fetchCollectionWithCache",
@@ -99,7 +99,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.fetchPokedex",
+      "id": "+function.fetchPokedex",
       "kind": "function",
       "line": 1530,
       "name": "fetchPokedex",
@@ -112,7 +112,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.fetchPokedexIndex",
+      "id": "+function.fetchPokedexIndex",
       "kind": "function",
       "line": 1529,
       "name": "fetchPokedexIndex",
@@ -121,7 +121,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.fetchPokemon",
+      "id": "+function.fetchPokemon",
       "kind": "function",
       "line": 1607,
       "name": "fetchPokemon",
@@ -135,7 +135,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.fetchPokemonIndex",
+      "id": "+function.fetchPokemonIndex",
       "kind": "function",
       "line": 1606,
       "name": "fetchPokemonIndex",
@@ -147,7 +147,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.fetchResource",
+      "id": "+function.fetchResource",
       "kind": "function",
       "line": 1651,
       "name": "fetchResource",
@@ -160,7 +160,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findAbilitiesByIds",
+      "id": "+function.findAbilitiesByIds",
       "kind": "function",
       "line": 1486,
       "name": "findAbilitiesByIds",
@@ -173,7 +173,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findAbilityById",
+      "id": "+function.findAbilityById",
       "kind": "function",
       "line": 1484,
       "name": "findAbilityById",
@@ -186,7 +186,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findBoxPresetById",
+      "id": "+function.findBoxPresetById",
       "kind": "function",
       "line": 1490,
       "name": "findBoxPresetById",
@@ -199,7 +199,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findBoxPresetsByIds",
+      "id": "+function.findBoxPresetsByIds",
       "kind": "function",
       "line": 1491,
       "name": "findBoxPresetsByIds",
@@ -212,7 +212,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findCharacterById",
+      "id": "+function.findCharacterById",
       "kind": "function",
       "line": 1497,
       "name": "findCharacterById",
@@ -225,7 +225,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findCharactersByIds",
+      "id": "+function.findCharactersByIds",
       "kind": "function",
       "line": 1498,
       "name": "findCharactersByIds",
@@ -238,7 +238,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findGameById",
+      "id": "+function.findGameById",
       "kind": "function",
       "line": 1502,
       "name": "findGameById",
@@ -247,7 +247,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findGamesByIds",
+      "id": "+function.findGamesByIds",
       "kind": "function",
       "line": 1503,
       "name": "findGamesByIds",
@@ -256,7 +256,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findItemById",
+      "id": "+function.findItemById",
       "kind": "function",
       "line": 1507,
       "name": "findItemById",
@@ -269,7 +269,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findItemsByIds",
+      "id": "+function.findItemsByIds",
       "kind": "function",
       "line": 1508,
       "name": "findItemsByIds",
@@ -282,7 +282,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findLocationById",
+      "id": "+function.findLocationById",
       "kind": "function",
       "line": 1512,
       "name": "findLocationById",
@@ -295,7 +295,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findLocationsByIds",
+      "id": "+function.findLocationsByIds",
       "kind": "function",
       "line": 1513,
       "name": "findLocationsByIds",
@@ -308,7 +308,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findMarkById",
+      "id": "+function.findMarkById",
       "kind": "function",
       "line": 1517,
       "name": "findMarkById",
@@ -321,7 +321,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findMarksByIds",
+      "id": "+function.findMarksByIds",
       "kind": "function",
       "line": 1518,
       "name": "findMarksByIds",
@@ -334,7 +334,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findMoveById",
+      "id": "+function.findMoveById",
       "kind": "function",
       "line": 1522,
       "name": "findMoveById",
@@ -347,7 +347,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findMovesByIds",
+      "id": "+function.findMovesByIds",
       "kind": "function",
       "line": 1523,
       "name": "findMovesByIds",
@@ -360,7 +360,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findPokedexById",
+      "id": "+function.findPokedexById",
       "kind": "function",
       "line": 1527,
       "name": "findPokedexById",
@@ -373,7 +373,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findPokedexesByIds",
+      "id": "+function.findPokedexesByIds",
       "kind": "function",
       "line": 1528,
       "name": "findPokedexesByIds",
@@ -386,7 +386,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findPokemonById",
+      "id": "+function.findPokemonById",
       "kind": "function",
       "line": 1604,
       "name": "findPokemonById",
@@ -399,7 +399,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findPokemonByIds",
+      "id": "+function.findPokemonByIds",
       "kind": "function",
       "line": 1605,
       "name": "findPokemonByIds",
@@ -412,7 +412,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findResource",
+      "id": "+function.findResource",
       "kind": "function",
       "line": 1480,
       "name": "findResource",
@@ -427,7 +427,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findResourceByField",
+      "id": "+function.findResourceByField",
       "kind": "function",
       "line": 1475,
       "name": "findResourceByField",
@@ -440,7 +440,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findResourceById",
+      "id": "+function.findResourceById",
       "kind": "function",
       "line": 1476,
       "name": "findResourceById",
@@ -452,7 +452,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findResourcesByIds",
+      "id": "+function.findResourcesByIds",
       "kind": "function",
       "line": 1477,
       "name": "findResourcesByIds",
@@ -464,7 +464,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findRibbonById",
+      "id": "+function.findRibbonById",
       "kind": "function",
       "line": 1614,
       "name": "findRibbonById",
@@ -477,7 +477,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.findRibbonsByIds",
+      "id": "+function.findRibbonsByIds",
       "kind": "function",
       "line": 1615,
       "name": "findRibbonsByIds",
@@ -490,7 +490,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getAbilityById",
+      "id": "+function.getAbilityById",
       "kind": "function",
       "line": 1485,
       "name": "getAbilityById",
@@ -503,7 +503,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getAllAbilities",
+      "id": "+function.getAllAbilities",
       "kind": "function",
       "line": 1483,
       "name": "getAllAbilities",
@@ -515,7 +515,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getAllBoxPresets",
+      "id": "+function.getAllBoxPresets",
       "kind": "function",
       "line": 1488,
       "name": "getAllBoxPresets",
@@ -527,7 +527,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getAllCharacters",
+      "id": "+function.getAllCharacters",
       "kind": "function",
       "line": 1495,
       "name": "getAllCharacters",
@@ -539,7 +539,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getAllGames",
+      "id": "+function.getAllGames",
       "kind": "function",
       "line": 1500,
       "name": "getAllGames",
@@ -548,7 +548,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getAllItems",
+      "id": "+function.getAllItems",
       "kind": "function",
       "line": 1505,
       "name": "getAllItems",
@@ -560,7 +560,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getAllLocations",
+      "id": "+function.getAllLocations",
       "kind": "function",
       "line": 1510,
       "name": "getAllLocations",
@@ -572,7 +572,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getAllMarks",
+      "id": "+function.getAllMarks",
       "kind": "function",
       "line": 1515,
       "name": "getAllMarks",
@@ -584,7 +584,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getAllMoves",
+      "id": "+function.getAllMoves",
       "kind": "function",
       "line": 1520,
       "name": "getAllMoves",
@@ -596,7 +596,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getAllPokedexes",
+      "id": "+function.getAllPokedexes",
       "kind": "function",
       "line": 1525,
       "name": "getAllPokedexes",
@@ -608,7 +608,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getAllPokemon",
+      "id": "+function.getAllPokemon",
       "kind": "function",
       "line": 1602,
       "name": "getAllPokemon",
@@ -620,7 +620,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getAllRibbons",
+      "id": "+function.getAllRibbons",
       "kind": "function",
       "line": 1612,
       "name": "getAllRibbons",
@@ -632,7 +632,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getBoxPresetById",
+      "id": "+function.getBoxPresetById",
       "kind": "function",
       "line": 1489,
       "name": "getBoxPresetById",
@@ -645,7 +645,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getCharacterById",
+      "id": "+function.getCharacterById",
       "kind": "function",
       "line": 1496,
       "name": "getCharacterById",
@@ -658,7 +658,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getGameById",
+      "id": "+function.getGameById",
       "kind": "function",
       "line": 1501,
       "name": "getGameById",
@@ -667,7 +667,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getItemById",
+      "id": "+function.getItemById",
       "kind": "function",
       "line": 1506,
       "name": "getItemById",
@@ -680,7 +680,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getLocationById",
+      "id": "+function.getLocationById",
       "kind": "function",
       "line": 1511,
       "name": "getLocationById",
@@ -693,7 +693,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getMarkById",
+      "id": "+function.getMarkById",
       "kind": "function",
       "line": 1516,
       "name": "getMarkById",
@@ -706,7 +706,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getMoveById",
+      "id": "+function.getMoveById",
       "kind": "function",
       "line": 1521,
       "name": "getMoveById",
@@ -719,7 +719,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getPokedexById",
+      "id": "+function.getPokedexById",
       "kind": "function",
       "line": 1526,
       "name": "getPokedexById",
@@ -732,7 +732,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getPokemonById",
+      "id": "+function.getPokemonById",
       "kind": "function",
       "line": 1603,
       "name": "getPokemonById",
@@ -745,7 +745,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getResource",
+      "id": "+function.getResource",
       "kind": "function",
       "line": 1481,
       "name": "getResource",
@@ -761,7 +761,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getResourceByField",
+      "id": "+function.getResourceByField",
       "kind": "function",
       "line": 1478,
       "name": "getResourceByField",
@@ -775,7 +775,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getResourceById",
+      "id": "+function.getResourceById",
       "kind": "function",
       "line": 1479,
       "name": "getResourceById",
@@ -788,7 +788,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getRibbonById",
+      "id": "+function.getRibbonById",
       "kind": "function",
       "line": 1613,
       "name": "getRibbonById",
@@ -801,7 +801,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.getSiblingEntities",
+      "id": "+function.getSiblingEntities",
       "kind": "function",
       "line": 1471,
       "name": "getSiblingEntities",
@@ -813,7 +813,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.hydratePokemonSearchIndex",
+      "id": "+function.hydratePokemonSearchIndex",
       "kind": "function",
       "line": 1610,
       "name": "hydratePokemonSearchIndex",
@@ -928,7 +928,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "function.isPlaceholderPokemon",
+      "id": "+function.isPlaceholderPokemon",
       "kind": "function",
       "line": 1609,
       "name": "isPlaceholderPokemon",
@@ -940,7 +940,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
       "getAccessors": [],
-      "id": "interface.AssetUrlResolver",
+      "id": "+interface.AssetUrlResolver",
       "indexSignatures": [],
       "kind": "interface",
       "line": 1635,
@@ -948,7 +948,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
         {
           "docs": [],
           "file": "/@supeffective/dataset/dist/index.d.ts",
-          "id": "interface.AssetUrlResolver.method.resolveUri",
+          "id": "+interface.AssetUrlResolver.+method.resolveUri",
           "kind": "interface-method",
           "line": 1637,
           "name": "resolveUri",
@@ -960,7 +960,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
         {
           "docs": [],
           "file": "/@supeffective/dataset/dist/index.d.ts",
-          "id": "interface.AssetUrlResolver.property.baseUri",
+          "id": "+interface.AssetUrlResolver.+property.baseUri",
           "kind": "interface-property",
           "line": 1636,
           "name": "baseUri",
@@ -976,7 +976,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
       "getAccessors": [],
-      "id": "interface.Entity",
+      "id": "+interface.Entity",
       "indexSignatures": [],
       "kind": "interface",
       "line": 1466,
@@ -986,7 +986,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
         {
           "docs": [],
           "file": "/@supeffective/dataset/dist/index.d.ts",
-          "id": "interface.Entity.property.id",
+          "id": "+interface.Entity.+property.id",
           "kind": "interface-property",
           "line": 1467,
           "name": "id",
@@ -995,7 +995,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
         {
           "docs": [],
           "file": "/@supeffective/dataset/dist/index.d.ts",
-          "id": "interface.Entity.property.name",
+          "id": "+interface.Entity.+property.name",
           "kind": "interface-property",
           "line": 1468,
           "name": "name",
@@ -1011,7 +1011,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
       "getAccessors": [],
-      "id": "interface.ImageUrlResolver",
+      "id": "+interface.ImageUrlResolver",
       "indexSignatures": [],
       "kind": "interface",
       "line": 1639,
@@ -1019,7 +1019,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
         {
           "docs": [],
           "file": "/@supeffective/dataset/dist/index.d.ts",
-          "id": "interface.ImageUrlResolver.method.gameImg",
+          "id": "+interface.ImageUrlResolver.+method.gameImg",
           "kind": "interface-method",
           "line": 1641,
           "name": "gameImg",
@@ -1028,7 +1028,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
         {
           "docs": [],
           "file": "/@supeffective/dataset/dist/index.d.ts",
-          "id": "interface.ImageUrlResolver.method.itemImg",
+          "id": "+interface.ImageUrlResolver.+method.itemImg",
           "kind": "interface-method",
           "line": 1642,
           "name": "itemImg",
@@ -1037,7 +1037,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
         {
           "docs": [],
           "file": "/@supeffective/dataset/dist/index.d.ts",
-          "id": "interface.ImageUrlResolver.method.markImg",
+          "id": "+interface.ImageUrlResolver.+method.markImg",
           "kind": "interface-method",
           "line": 1644,
           "name": "markImg",
@@ -1046,7 +1046,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
         {
           "docs": [],
           "file": "/@supeffective/dataset/dist/index.d.ts",
-          "id": "interface.ImageUrlResolver.method.originMarkImg",
+          "id": "+interface.ImageUrlResolver.+method.originMarkImg",
           "kind": "interface-method",
           "line": 1646,
           "name": "originMarkImg",
@@ -1055,7 +1055,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
         {
           "docs": [],
           "file": "/@supeffective/dataset/dist/index.d.ts",
-          "id": "interface.ImageUrlResolver.method.pokemonImg",
+          "id": "+interface.ImageUrlResolver.+method.pokemonImg",
           "kind": "interface-method",
           "line": 1640,
           "name": "pokemonImg",
@@ -1064,7 +1064,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
         {
           "docs": [],
           "file": "/@supeffective/dataset/dist/index.d.ts",
-          "id": "interface.ImageUrlResolver.method.ribbonImg",
+          "id": "+interface.ImageUrlResolver.+method.ribbonImg",
           "kind": "interface-method",
           "line": 1643,
           "name": "ribbonImg",
@@ -1073,7 +1073,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
         {
           "docs": [],
           "file": "/@supeffective/dataset/dist/index.d.ts",
-          "id": "interface.ImageUrlResolver.method.typeImg",
+          "id": "+interface.ImageUrlResolver.+method.typeImg",
           "kind": "interface-method",
           "line": 1645,
           "name": "typeImg",
@@ -1095,7 +1095,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
       ],
       "file": "/@supeffective/dataset/dist/index.d.ts",
       "getAccessors": [],
-      "id": "interface.LegacyRepository",
+      "id": "+interface.LegacyRepository",
       "indexSignatures": [],
       "kind": "interface",
       "line": 1535,
@@ -1103,7 +1103,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
         {
           "docs": [],
           "file": "/@supeffective/dataset/dist/index.d.ts",
-          "id": "interface.LegacyRepository.method.findById",
+          "id": "+interface.LegacyRepository.+method.findById",
           "kind": "interface-method",
           "line": 1539,
           "name": "findById",
@@ -1112,7 +1112,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
         {
           "docs": [],
           "file": "/@supeffective/dataset/dist/index.d.ts",
-          "id": "interface.LegacyRepository.method.getAll",
+          "id": "+interface.LegacyRepository.+method.getAll",
           "kind": "interface-method",
           "line": 1537,
           "name": "getAll",
@@ -1121,7 +1121,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
         {
           "docs": [],
           "file": "/@supeffective/dataset/dist/index.d.ts",
-          "id": "interface.LegacyRepository.method.getById",
+          "id": "+interface.LegacyRepository.+method.getById",
           "kind": "interface-method",
           "line": 1538,
           "name": "getById",
@@ -1130,7 +1130,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
         {
           "docs": [],
           "file": "/@supeffective/dataset/dist/index.d.ts",
-          "id": "interface.LegacyRepository.method.getManyByIds",
+          "id": "+interface.LegacyRepository.+method.getManyByIds",
           "kind": "interface-method",
           "line": 1540,
           "name": "getManyByIds",
@@ -1142,7 +1142,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
         {
           "docs": [],
           "file": "/@supeffective/dataset/dist/index.d.ts",
-          "id": "interface.LegacyRepository.property.id",
+          "id": "+interface.LegacyRepository.+property.id",
           "kind": "interface-property",
           "line": 1536,
           "name": "id",
@@ -1158,7 +1158,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
       "getAccessors": [],
-      "id": "interface.SearchEngine",
+      "id": "+interface.SearchEngine",
       "indexSignatures": [],
       "kind": "interface",
       "line": 1557,
@@ -1166,7 +1166,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
         {
           "docs": [],
           "file": "/@supeffective/dataset/dist/index.d.ts",
-          "id": "interface.SearchEngine.method.search",
+          "id": "+interface.SearchEngine.+method.search",
           "kind": "interface-method",
           "line": 1559,
           "name": "search",
@@ -1184,7 +1184,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
         {
           "docs": [],
           "file": "/@supeffective/dataset/dist/index.d.ts",
-          "id": "interface.SearchEngine.property.id",
+          "id": "+interface.SearchEngine.+property.id",
           "kind": "interface-property",
           "line": 1558,
           "name": "id",
@@ -1200,7 +1200,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
       "getAccessors": [],
-      "id": "interface.SearchFilter",
+      "id": "+interface.SearchFilter",
       "indexSignatures": [],
       "kind": "interface",
       "line": 1542,
@@ -1210,7 +1210,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
         {
           "docs": [],
           "file": "/@supeffective/dataset/dist/index.d.ts",
-          "id": "interface.SearchFilter.property.field",
+          "id": "+interface.SearchFilter.+property.field",
           "kind": "interface-property",
           "line": 1543,
           "name": "field",
@@ -1219,7 +1219,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
         {
           "docs": [],
           "file": "/@supeffective/dataset/dist/index.d.ts",
-          "id": "interface.SearchFilter.property.operator",
+          "id": "+interface.SearchFilter.+property.operator",
           "kind": "interface-property",
           "line": 1545,
           "name": "operator",
@@ -1242,7 +1242,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
         {
           "docs": [],
           "file": "/@supeffective/dataset/dist/index.d.ts",
-          "id": "interface.SearchFilter.property.value",
+          "id": "+interface.SearchFilter.+property.value",
           "kind": "interface-property",
           "line": 1544,
           "name": "value",
@@ -1255,7 +1255,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.Ability",
+      "id": "+type.Ability",
       "kind": "type",
       "line": 25,
       "name": "Ability",
@@ -1264,7 +1264,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.BaseEntity",
+      "id": "+type.BaseEntity",
       "kind": "type",
       "line": 320,
       "name": "BaseEntity",
@@ -1273,7 +1273,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.BoxPreset",
+      "id": "+type.BoxPreset",
       "kind": "type",
       "line": 253,
       "name": "BoxPreset",
@@ -1282,7 +1282,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.BoxPresetBox",
+      "id": "+type.BoxPresetBox",
       "kind": "type",
       "line": 252,
       "name": "BoxPresetBox",
@@ -1291,7 +1291,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.BoxPresetBoxPokemon",
+      "id": "+type.BoxPresetBoxPokemon",
       "kind": "type",
       "line": 251,
       "name": "BoxPresetBoxPokemon",
@@ -1300,7 +1300,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.BoxPresetIndexItem",
+      "id": "+type.BoxPresetIndexItem",
       "kind": "type",
       "line": 43,
       "name": "BoxPresetIndexItem",
@@ -1309,7 +1309,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.BoxPresetMap",
+      "id": "+type.BoxPresetMap",
       "kind": "type",
       "line": 254,
       "name": "BoxPresetMap",
@@ -1318,7 +1318,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.BoxPresetRecord",
+      "id": "+type.BoxPresetRecord",
       "kind": "type",
       "line": 255,
       "name": "BoxPresetRecord",
@@ -1327,7 +1327,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.Character",
+      "id": "+type.Character",
       "kind": "type",
       "line": 267,
       "name": "Character",
@@ -1336,7 +1336,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.Characteristic",
+      "id": "+type.Characteristic",
       "kind": "type",
       "line": 285,
       "name": "Characteristic",
@@ -1345,7 +1345,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.Color",
+      "id": "+type.Color",
       "kind": "type",
       "line": 300,
       "name": "Color",
@@ -1354,7 +1354,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.CompactPokemon",
+      "id": "+type.CompactPokemon",
       "kind": "type",
       "line": 1237,
       "name": "CompactPokemon",
@@ -1363,7 +1363,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.DatasetClientConfig",
+      "id": "+type.DatasetClientConfig",
       "kind": "type",
       "line": 1628,
       "name": "DatasetClientConfig",
@@ -1375,7 +1375,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.Game",
+      "id": "+type.Game",
       "kind": "type",
       "line": 468,
       "name": "Game",
@@ -1384,7 +1384,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.GameFeature",
+      "id": "+type.GameFeature",
       "kind": "type",
       "line": 332,
       "name": "GameFeature",
@@ -1393,7 +1393,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.IDType",
+      "id": "+type.IDType",
       "kind": "type",
       "line": 309,
       "name": "IDType",
@@ -1402,7 +1402,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.InMemoryCache",
+      "id": "+type.InMemoryCache",
       "kind": "type",
       "line": 1632,
       "name": "InMemoryCache",
@@ -1413,7 +1413,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.Item",
+      "id": "+type.Item",
       "kind": "type",
       "line": 497,
       "name": "Item",
@@ -1422,7 +1422,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.ItemCategory",
+      "id": "+type.ItemCategory",
       "kind": "type",
       "line": 471,
       "name": "ItemCategory",
@@ -1431,7 +1431,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.Language",
+      "id": "+type.Language",
       "kind": "type",
       "line": 518,
       "name": "Language",
@@ -1440,7 +1440,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.LegacyPokemon",
+      "id": "+type.LegacyPokemon",
       "kind": "type",
       "line": 1238,
       "name": "LegacyPokemon",
@@ -1512,7 +1512,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.Location",
+      "id": "+type.Location",
       "kind": "type",
       "line": 533,
       "name": "Location",
@@ -1521,7 +1521,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.Mark",
+      "id": "+type.Mark",
       "kind": "type",
       "line": 563,
       "name": "Mark",
@@ -1530,7 +1530,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.Move",
+      "id": "+type.Move",
       "kind": "type",
       "line": 611,
       "name": "Move",
@@ -1539,7 +1539,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.Nature",
+      "id": "+type.Nature",
       "kind": "type",
       "line": 632,
       "name": "Nature",
@@ -1554,7 +1554,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
  */",
       ],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.NextCompatibleRequestInit",
+      "id": "+type.NextCompatibleRequestInit",
       "kind": "type",
       "line": 1622,
       "name": "NextCompatibleRequestInit",
@@ -1568,7 +1568,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.OriginMark",
+      "id": "+type.OriginMark",
       "kind": "type",
       "line": 644,
       "name": "OriginMark",
@@ -1577,7 +1577,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.Pokedex",
+      "id": "+type.Pokedex",
       "kind": "type",
       "line": 727,
       "name": "Pokedex",
@@ -1586,7 +1586,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.PokedexEntry",
+      "id": "+type.PokedexEntry",
       "kind": "type",
       "line": 728,
       "name": "PokedexEntry",
@@ -1595,7 +1595,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.PokedexIndexItem",
+      "id": "+type.PokedexIndexItem",
       "kind": "type",
       "line": 665,
       "name": "PokedexIndexItem",
@@ -1604,7 +1604,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.Pokemon",
+      "id": "+type.Pokemon",
       "kind": "type",
       "line": 1058,
       "name": "Pokemon",
@@ -1613,7 +1613,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.PokemonIndexItem",
+      "id": "+type.PokemonIndexItem",
       "kind": "type",
       "line": 749,
       "name": "PokemonIndexItem",
@@ -1622,7 +1622,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.PokeType",
+      "id": "+type.PokeType",
       "kind": "type",
       "line": 1359,
       "name": "PokeType",
@@ -1631,7 +1631,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.PokeTypeId",
+      "id": "+type.PokeTypeId",
       "kind": "type",
       "line": 1360,
       "name": "PokeTypeId",
@@ -1640,7 +1640,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.Region",
+      "id": "+type.Region",
       "kind": "type",
       "line": 1316,
       "name": "Region",
@@ -1649,7 +1649,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.Ribbon",
+      "id": "+type.Ribbon",
       "kind": "type",
       "line": 1340,
       "name": "Ribbon",
@@ -1658,7 +1658,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.SearchEngineIndex",
+      "id": "+type.SearchEngineIndex",
       "kind": "type",
       "line": 1562,
       "name": "SearchEngineIndex",
@@ -1704,7 +1704,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.SearchEngineIndexHydrator",
+      "id": "+type.SearchEngineIndexHydrator",
       "kind": "type",
       "line": 1561,
       "name": "SearchEngineIndexHydrator",
@@ -1727,7 +1727,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
  */",
       ],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "type.SearchQuery",
+      "id": "+type.SearchQuery",
       "kind": "type",
       "line": 1556,
       "name": "SearchQuery",
@@ -1736,7 +1736,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.abilitySchema",
+      "id": "+variable.abilitySchema",
       "kind": "variable",
       "line": 3,
       "name": "abilitySchema",
@@ -1772,7 +1772,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.baseEntitySchema",
+      "id": "+variable.baseEntitySchema",
       "kind": "variable",
       "line": 310,
       "name": "baseEntitySchema",
@@ -1787,7 +1787,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.boxPresetBoxPokemonSchema",
+      "id": "+variable.boxPresetBoxPokemonSchema",
       "kind": "variable",
       "line": 44,
       "name": "boxPresetBoxPokemonSchema",
@@ -1822,7 +1822,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.boxPresetBoxSchema",
+      "id": "+variable.boxPresetBoxSchema",
       "kind": "variable",
       "line": 60,
       "name": "boxPresetBoxSchema",
@@ -1893,7 +1893,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.boxPresetIndexItemSchema",
+      "id": "+variable.boxPresetIndexItemSchema",
       "kind": "variable",
       "line": 27,
       "name": "boxPresetIndexItemSchema",
@@ -1913,7 +1913,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.boxPresetMapSchema",
+      "id": "+variable.boxPresetMapSchema",
       "kind": "variable",
       "line": 173,
       "name": "boxPresetMapSchema",
@@ -2050,7 +2050,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.boxPresetSchema",
+      "id": "+variable.boxPresetSchema",
       "kind": "variable",
       "line": 95,
       "name": "boxPresetSchema",
@@ -2181,7 +2181,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.characteristics",
+      "id": "+variable.characteristics",
       "kind": "variable",
       "line": 1372,
       "name": "characteristics",
@@ -2195,7 +2195,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.characteristicSchema",
+      "id": "+variable.characteristicSchema",
       "kind": "variable",
       "line": 269,
       "name": "characteristicSchema",
@@ -2227,7 +2227,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.characteristicsMap",
+      "id": "+variable.characteristicsMap",
       "kind": "variable",
       "line": 1459,
       "name": "characteristicsMap",
@@ -2244,7 +2244,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.characterSchema",
+      "id": "+variable.characterSchema",
       "kind": "variable",
       "line": 257,
       "name": "characterSchema",
@@ -2259,7 +2259,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.colorSchema",
+      "id": "+variable.colorSchema",
       "kind": "variable",
       "line": 287,
       "name": "colorSchema",
@@ -2274,7 +2274,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.defaultSearchIndexHydrator",
+      "id": "+variable.defaultSearchIndexHydrator",
       "kind": "variable",
       "line": 1598,
       "name": "defaultSearchIndexHydrator",
@@ -2283,7 +2283,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.descriptionSchema",
+      "id": "+variable.descriptionSchema",
       "kind": "variable",
       "line": 305,
       "name": "descriptionSchema",
@@ -2292,7 +2292,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.detailSchema",
+      "id": "+variable.detailSchema",
       "kind": "variable",
       "line": 306,
       "name": "detailSchema",
@@ -2301,7 +2301,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.gameFeatures",
+      "id": "+variable.gameFeatures",
       "kind": "variable",
       "line": 1371,
       "name": "gameFeatures",
@@ -2310,7 +2310,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.gameFeatureSchema",
+      "id": "+variable.gameFeatureSchema",
       "kind": "variable",
       "line": 322,
       "name": "gameFeatureSchema",
@@ -2325,7 +2325,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.gameFeaturesMap",
+      "id": "+variable.gameFeaturesMap",
       "kind": "variable",
       "line": 1455,
       "name": "gameFeaturesMap",
@@ -2334,7 +2334,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.gameSchema",
+      "id": "+variable.gameSchema",
       "kind": "variable",
       "line": 334,
       "name": "gameSchema",
@@ -2482,7 +2482,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.generationSchema",
+      "id": "+variable.generationSchema",
       "kind": "variable",
       "line": 304,
       "name": "generationSchema",
@@ -2491,7 +2491,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.hexColorSchema",
+      "id": "+variable.hexColorSchema",
       "kind": "variable",
       "line": 307,
       "name": "hexColorSchema",
@@ -2500,7 +2500,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.itemCategorySchema",
+      "id": "+variable.itemCategorySchema",
       "kind": "variable",
       "line": 470,
       "name": "itemCategorySchema",
@@ -2523,7 +2523,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.itemSchema",
+      "id": "+variable.itemSchema",
       "kind": "variable",
       "line": 472,
       "name": "itemSchema",
@@ -2598,7 +2598,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.languageSchema",
+      "id": "+variable.languageSchema",
       "kind": "variable",
       "line": 499,
       "name": "languageSchema",
@@ -2631,7 +2631,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.locationSchema",
+      "id": "+variable.locationSchema",
       "kind": "variable",
       "line": 520,
       "name": "locationSchema",
@@ -2658,7 +2658,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.markSchema",
+      "id": "+variable.markSchema",
       "kind": "variable",
       "line": 535,
       "name": "markSchema",
@@ -2700,7 +2700,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.moveSchema",
+      "id": "+variable.moveSchema",
       "kind": "variable",
       "line": 565,
       "name": "moveSchema",
@@ -2760,7 +2760,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.nameSchema",
+      "id": "+variable.nameSchema",
       "kind": "variable",
       "line": 302,
       "name": "nameSchema",
@@ -2769,7 +2769,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.natureSchema",
+      "id": "+variable.natureSchema",
       "kind": "variable",
       "line": 613,
       "name": "natureSchema",
@@ -2806,7 +2806,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.originMarkSchema",
+      "id": "+variable.originMarkSchema",
       "kind": "variable",
       "line": 634,
       "name": "originMarkSchema",
@@ -2821,7 +2821,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.PKM_LATEST_GAMESET",
+      "id": "+variable.PKM_LATEST_GAMESET",
       "kind": "variable",
       "line": 1657,
       "name": "PKM_LATEST_GAMESET",
@@ -2830,7 +2830,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.PKM_LATEST_GENERATION",
+      "id": "+variable.PKM_LATEST_GENERATION",
       "kind": "variable",
       "line": 1656,
       "name": "PKM_LATEST_GENERATION",
@@ -2839,7 +2839,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.PKM_LATEST_POKEDEX",
+      "id": "+variable.PKM_LATEST_POKEDEX",
       "kind": "variable",
       "line": 1659,
       "name": "PKM_LATEST_POKEDEX",
@@ -2848,7 +2848,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.PKM_LATEST_REGION",
+      "id": "+variable.PKM_LATEST_REGION",
       "kind": "variable",
       "line": 1658,
       "name": "PKM_LATEST_REGION",
@@ -2857,7 +2857,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.PKM_SWITCH_GAMESET_IDS",
+      "id": "+variable.PKM_SWITCH_GAMESET_IDS",
       "kind": "variable",
       "line": 1660,
       "name": "PKM_SWITCH_GAMESET_IDS",
@@ -2866,7 +2866,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokedexEntrySchema",
+      "id": "+variable.pokedexEntrySchema",
       "kind": "variable",
       "line": 666,
       "name": "pokedexEntrySchema",
@@ -2881,7 +2881,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokedexesIndex",
+      "id": "+variable.pokedexesIndex",
       "kind": "variable",
       "line": 1369,
       "name": "pokedexesIndex",
@@ -2896,7 +2896,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokedexesIndexMap",
+      "id": "+variable.pokedexesIndexMap",
       "kind": "variable",
       "line": 1441,
       "name": "pokedexesIndexMap",
@@ -2914,7 +2914,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokedexItemIndexSchema",
+      "id": "+variable.pokedexItemIndexSchema",
       "kind": "variable",
       "line": 646,
       "name": "pokedexItemIndexSchema",
@@ -2947,7 +2947,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokedexSchema",
+      "id": "+variable.pokedexSchema",
       "kind": "variable",
       "line": 679,
       "name": "pokedexSchema",
@@ -3002,7 +3002,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokemonColors",
+      "id": "+variable.pokemonColors",
       "kind": "variable",
       "line": 1362,
       "name": "pokemonColors",
@@ -3011,7 +3011,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokemonColorsMap",
+      "id": "+variable.pokemonColorsMap",
       "kind": "variable",
       "line": 1373,
       "name": "pokemonColorsMap",
@@ -3023,7 +3023,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokemonCompactSchema",
+      "id": "+variable.pokemonCompactSchema",
       "kind": "variable",
       "line": 1059,
       "name": "pokemonCompactSchema",
@@ -3254,7 +3254,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokemonGames",
+      "id": "+variable.pokemonGames",
       "kind": "variable",
       "line": 1368,
       "name": "pokemonGames",
@@ -3293,7 +3293,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokemonGamesMap",
+      "id": "+variable.pokemonGamesMap",
       "kind": "variable",
       "line": 1407,
       "name": "pokemonGamesMap",
@@ -3335,7 +3335,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokemonIndex",
+      "id": "+variable.pokemonIndex",
       "kind": "variable",
       "line": 1370,
       "name": "pokemonIndex",
@@ -3350,7 +3350,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokemonIndexItemSchema",
+      "id": "+variable.pokemonIndexItemSchema",
       "kind": "variable",
       "line": 730,
       "name": "pokemonIndexItemSchema",
@@ -3371,7 +3371,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokemonIndexMap",
+      "id": "+variable.pokemonIndexMap",
       "kind": "variable",
       "line": 1448,
       "name": "pokemonIndexMap",
@@ -3383,7 +3383,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokemonLanguages",
+      "id": "+variable.pokemonLanguages",
       "kind": "variable",
       "line": 1363,
       "name": "pokemonLanguages",
@@ -3398,7 +3398,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokemonLanguagesMap",
+      "id": "+variable.pokemonLanguagesMap",
       "kind": "variable",
       "line": 1378,
       "name": "pokemonLanguagesMap",
@@ -3416,7 +3416,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokemonNatures",
+      "id": "+variable.pokemonNatures",
       "kind": "variable",
       "line": 1364,
       "name": "pokemonNatures",
@@ -3431,7 +3431,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokemonNaturesMap",
+      "id": "+variable.pokemonNaturesMap",
       "kind": "variable",
       "line": 1385,
       "name": "pokemonNaturesMap",
@@ -3449,7 +3449,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokemonOriginMarks",
+      "id": "+variable.pokemonOriginMarks",
       "kind": "variable",
       "line": 1365,
       "name": "pokemonOriginMarks",
@@ -3458,7 +3458,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokemonOriginMarksMap",
+      "id": "+variable.pokemonOriginMarksMap",
       "kind": "variable",
       "line": 1392,
       "name": "pokemonOriginMarksMap",
@@ -3467,7 +3467,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokemonRegions",
+      "id": "+variable.pokemonRegions",
       "kind": "variable",
       "line": 1366,
       "name": "pokemonRegions",
@@ -3476,7 +3476,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokemonRegionsMap",
+      "id": "+variable.pokemonRegionsMap",
       "kind": "variable",
       "line": 1396,
       "name": "pokemonRegionsMap",
@@ -3488,7 +3488,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokemonSchema",
+      "id": "+variable.pokemonSchema",
       "kind": "variable",
       "line": 750,
       "name": "pokemonSchema",
@@ -3829,7 +3829,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokemonTypes",
+      "id": "+variable.pokemonTypes",
       "kind": "variable",
       "line": 1367,
       "name": "pokemonTypes",
@@ -3863,7 +3863,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokemonTypesMap",
+      "id": "+variable.pokemonTypesMap",
       "kind": "variable",
       "line": 1401,
       "name": "pokemonTypesMap",
@@ -3900,7 +3900,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokeTypeIdSchema",
+      "id": "+variable.pokeTypeIdSchema",
       "kind": "variable",
       "line": 1342,
       "name": "pokeTypeIdSchema",
@@ -3932,7 +3932,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.pokeTypeSchema",
+      "id": "+variable.pokeTypeSchema",
       "kind": "variable",
       "line": 1343,
       "name": "pokeTypeSchema",
@@ -4025,7 +4025,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.regionSchema",
+      "id": "+variable.regionSchema",
       "kind": "variable",
       "line": 1303,
       "name": "regionSchema",
@@ -4044,7 +4044,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.ribbonSchema",
+      "id": "+variable.ribbonSchema",
       "kind": "variable",
       "line": 1318,
       "name": "ribbonSchema",
@@ -4080,7 +4080,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.slugSchema",
+      "id": "+variable.slugSchema",
       "kind": "variable",
       "line": 303,
       "name": "slugSchema",
@@ -4089,7 +4089,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     {
       "docs": [],
       "file": "/@supeffective/dataset/dist/index.d.ts",
-      "id": "variable.statIdSchema",
+      "id": "+variable.statIdSchema",
       "kind": "variable",
       "line": 308,
       "name": "statIdSchema",

@@ -109,7 +109,7 @@ export const extractInterface = async (
 	exportName: string,
 	declaration: InterfaceDeclaration,
 ): Promise<ExtractedInterface> => {
-	const interfaceId = id(containerName, "interface", exportName);
+	const interfaceId = id(containerName, "+interface", exportName);
 	return {
 		kind: "interface",
 		id: interfaceId,
@@ -145,7 +145,7 @@ const extractInterfaceProperties = async (
 		const name = declaration.getName();
 		properties.push({
 			kind: "interface-property" as const,
-			id: id(interfaceId, "property", name),
+			id: id(interfaceId, "+property", name),
 			name,
 			docs: docs(declaration),
 			file: sourceFilePath(declaration),
@@ -179,7 +179,7 @@ const extractInterfaceMethods = async (
 		seenMethods.add(name);
 		methods.push({
 			kind: "interface-method" as const,
-			id: id(interfaceId, "method", name),
+			id: id(interfaceId, "+method", name),
 			name,
 			docs: docs(declaration),
 			file: sourceFilePath(declaration),
@@ -297,7 +297,7 @@ const extractInterfaceGetAccessors = async (
 		const name = declaration.getName();
 		getAccessors.push({
 			kind: "interface-get-accessor" as const,
-			id: id(interfaceId, "get-accessor", name),
+			id: id(interfaceId, "+get-accessor", name),
 			name,
 			docs: docs(declaration),
 			file: sourceFilePath(declaration),
@@ -327,7 +327,7 @@ const extractInterfaceSetAccessors = async (
 		const name = declaration.getName();
 		setAccessors.push({
 			kind: "interface-set-accessor" as const,
-			id: id(interfaceId, "set-accessor", name),
+			id: id(interfaceId, "+set-accessor", name),
 			name,
 			docs: docs(declaration),
 			file: sourceFilePath(declaration),

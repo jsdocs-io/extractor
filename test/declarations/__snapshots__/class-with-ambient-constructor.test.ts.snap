@@ -7,7 +7,7 @@ exports[`class with ambient constructor 1`] = `
       {
         "docs": [],
         "file": "/index.d.ts",
-        "id": "class.Class1.constructor",
+        "id": "+class.Class1.constructor",
         "kind": "class-constructor",
         "line": 2,
         "name": "constructor",
@@ -16,7 +16,7 @@ exports[`class with ambient constructor 1`] = `
     ],
     "docs": [],
     "file": "/index.d.ts",
-    "id": "class.Class1",
+    "id": "+class.Class1",
     "kind": "class",
     "line": 1,
     "methods": [],

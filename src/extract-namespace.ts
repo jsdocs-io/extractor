@@ -23,7 +23,7 @@ export const extractNamespace = async (
 	declarations: ExtractedDeclaration[],
 ): Promise<ExtractedNamespace> => ({
 	kind: "namespace",
-	id: id(containerName, "namespace", exportName),
+	id: id(containerName, "+namespace", exportName),
 	name: exportName,
 	docs: docs(declaration),
 	file: sourceFilePath(declaration),

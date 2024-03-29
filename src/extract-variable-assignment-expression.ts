@@ -17,7 +17,7 @@ export const extractVariableAssignmentExpression = async (
 		.getDeclarations()[0] as VariableDeclaration;
 	return {
 		kind: "variable",
-		id: id(containerName, "variable", exportName),
+		id: id(containerName, "+variable", exportName),
 		name: exportName,
 		docs: docs(variableDeclaration),
 		file: sourceFilePath(variableDeclaration),

@@ -5,7 +5,7 @@ exports[`export all from module 1`] = `
   {
     "docs": [],
     "file": "/module.ts",
-    "id": "variable.foo",
+    "id": "+variable.foo",
     "kind": "variable",
     "line": 1,
     "name": "foo",
@@ -21,7 +21,7 @@ exports[`export all from module as renamed 1`] = `
       {
         "docs": [],
         "file": "/module.ts",
-        "id": "namespace.myModule.variable.foo",
+        "id": "+namespace.myModule.+variable.foo",
         "kind": "variable",
         "line": 1,
         "name": "foo",
@@ -30,7 +30,7 @@ exports[`export all from module as renamed 1`] = `
     ],
     "docs": [],
     "file": "/module.ts",
-    "id": "namespace.myModule",
+    "id": "+namespace.myModule",
     "kind": "namespace",
     "line": 1,
     "name": "myModule",
@@ -46,7 +46,7 @@ exports[`export const assignment list 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "variable.bar",
+    "id": "+variable.bar",
     "kind": "variable",
     "line": 1,
     "name": "bar",
@@ -55,7 +55,7 @@ exports[`export const assignment list 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "variable.foo",
+    "id": "+variable.foo",
     "kind": "variable",
     "line": 1,
     "name": "foo",
@@ -72,7 +72,7 @@ exports[`export default anonymous class 1`] = `
     "constructors": [],
     "docs": [],
     "file": "/index.ts",
-    "id": "class.default",
+    "id": "+class.default",
     "kind": "class",
     "line": 1,
     "methods": [],
@@ -88,7 +88,7 @@ exports[`export default anonymous function 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "function.default",
+    "id": "+function.default",
     "kind": "function",
     "line": 1,
     "name": "default",
@@ -102,7 +102,7 @@ exports[`export default anonymous generator function 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "function.default",
+    "id": "+function.default",
     "kind": "function",
     "line": 1,
     "name": "default",
@@ -116,7 +116,7 @@ exports[`export default as renamed from module 1`] = `
   {
     "docs": [],
     "file": "/module.ts",
-    "id": "function.myDefault",
+    "id": "+function.myDefault",
     "kind": "function",
     "line": 1,
     "name": "myDefault",
@@ -130,7 +130,7 @@ exports[`export default expression 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "variable.default",
+    "id": "+variable.default",
     "kind": "variable",
     "line": 1,
     "name": "default",
@@ -144,7 +144,7 @@ exports[`export default from module 1`] = `
   {
     "docs": [],
     "file": "/module.ts",
-    "id": "function.default",
+    "id": "+function.default",
     "kind": "function",
     "line": 1,
     "name": "default",
@@ -159,7 +159,7 @@ exports[`export default named class 1`] = `
     "constructors": [],
     "docs": [],
     "file": "/index.ts",
-    "id": "class.default",
+    "id": "+class.default",
     "kind": "class",
     "line": 1,
     "methods": [],
@@ -175,7 +175,7 @@ exports[`export default named function 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "function.default",
+    "id": "+function.default",
     "kind": "function",
     "line": 1,
     "name": "default",
@@ -189,7 +189,7 @@ exports[`export default named generator function 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "function.default",
+    "id": "+function.default",
     "kind": "function",
     "line": 1,
     "name": "default",
@@ -205,7 +205,7 @@ exports[`export let assignment list 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "variable.bar",
+    "id": "+variable.bar",
     "kind": "variable",
     "line": 1,
     "name": "bar",
@@ -214,7 +214,7 @@ exports[`export let assignment list 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "variable.foo",
+    "id": "+variable.foo",
     "kind": "variable",
     "line": 1,
     "name": "foo",
@@ -228,7 +228,7 @@ exports[`export let list 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "variable.bar",
+    "id": "+variable.bar",
     "kind": "variable",
     "line": 1,
     "name": "bar",
@@ -237,7 +237,7 @@ exports[`export let list 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "variable.foo",
+    "id": "+variable.foo",
     "kind": "variable",
     "line": 1,
     "name": "foo",
@@ -251,7 +251,7 @@ exports[`export list 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "function.foo",
+    "id": "+function.foo",
     "kind": "function",
     "line": 1,
     "name": "foo",
@@ -260,7 +260,7 @@ exports[`export list 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "variable.bar",
+    "id": "+variable.bar",
     "kind": "variable",
     "line": 2,
     "name": "bar",
@@ -274,7 +274,7 @@ exports[`export list as renamed 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "function.myFoo",
+    "id": "+function.myFoo",
     "kind": "function",
     "line": 1,
     "name": "myFoo",
@@ -283,7 +283,7 @@ exports[`export list as renamed 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "variable.myBar",
+    "id": "+variable.myBar",
     "kind": "variable",
     "line": 2,
     "name": "myBar",
@@ -297,7 +297,7 @@ exports[`export list as renamed from module 1`] = `
   {
     "docs": [],
     "file": "/module.ts",
-    "id": "function.myFoo",
+    "id": "+function.myFoo",
     "kind": "function",
     "line": 1,
     "name": "myFoo",
@@ -306,7 +306,7 @@ exports[`export list as renamed from module 1`] = `
   {
     "docs": [],
     "file": "/module.ts",
-    "id": "variable.myBar",
+    "id": "+variable.myBar",
     "kind": "variable",
     "line": 2,
     "name": "myBar",
@@ -320,7 +320,7 @@ exports[`export list as renamed to default 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "function.default",
+    "id": "+function.default",
     "kind": "function",
     "line": 1,
     "name": "default",
@@ -329,7 +329,7 @@ exports[`export list as renamed to default 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "variable.bar",
+    "id": "+variable.bar",
     "kind": "variable",
     "line": 2,
     "name": "bar",
@@ -345,7 +345,7 @@ exports[`export list from module 1`] = `
   {
     "docs": [],
     "file": "/module.ts",
-    "id": "function.foo",
+    "id": "+function.foo",
     "kind": "function",
     "line": 1,
     "name": "foo",
@@ -354,7 +354,7 @@ exports[`export list from module 1`] = `
   {
     "docs": [],
     "file": "/module.ts",
-    "id": "variable.bar",
+    "id": "+variable.bar",
     "kind": "variable",
     "line": 2,
     "name": "bar",
@@ -369,7 +369,7 @@ exports[`export named class 1`] = `
     "constructors": [],
     "docs": [],
     "file": "/index.ts",
-    "id": "class.Foo",
+    "id": "+class.Foo",
     "kind": "class",
     "line": 1,
     "methods": [],
@@ -385,7 +385,7 @@ exports[`export named function 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "function.foo",
+    "id": "+function.foo",
     "kind": "function",
     "line": 1,
     "name": "foo",
@@ -399,7 +399,7 @@ exports[`export named generator function 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "function.generatorFoo",
+    "id": "+function.generatorFoo",
     "kind": "function",
     "line": 1,
     "name": "generatorFoo",
@@ -413,7 +413,7 @@ exports[`export var assignment list 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "variable.bar",
+    "id": "+variable.bar",
     "kind": "variable",
     "line": 1,
     "name": "bar",
@@ -422,7 +422,7 @@ exports[`export var assignment list 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "variable.foo",
+    "id": "+variable.foo",
     "kind": "variable",
     "line": 1,
     "name": "foo",
@@ -436,7 +436,7 @@ exports[`export var list 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "variable.bar",
+    "id": "+variable.bar",
     "kind": "variable",
     "line": 1,
     "name": "bar",
@@ -445,7 +445,7 @@ exports[`export var list 1`] = `
   {
     "docs": [],
     "file": "/index.ts",
-    "id": "variable.foo",
+    "id": "+variable.foo",
     "kind": "variable",
     "line": 1,
     "name": "foo",
