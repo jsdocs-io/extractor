@@ -1,7 +1,7 @@
+// See https://www.totaltypescript.com/tsconfig-cheat-sheet.
 {
-	// See https://www.totaltypescript.com/tsconfig-cheat-sheet.
 	"compilerOptions": {
-		/* Base Options: */
+		// Base options.
 		"esModuleInterop": true,
 		"skipLibCheck": true,
 		"target": "es2022",
@@ -10,16 +10,15 @@
 		"moduleDetection": "force",
 		"isolatedModules": true,
 		"verbatimModuleSyntax": true,
-		/* Strictness */
+		// Strictness.
 		"strict": true,
 		"noUncheckedIndexedAccess": true,
-		/* If you're building for a library: */
+		// Building a library.
 		"declaration": true,
-		/* If NOT transpiling with TypeScript: */
-		"moduleResolution": "bundler",
-		"module": "esnext",
+		// Transpiling with a bundler.
+		"module": "preserve",
 		"noEmit": true,
-		/* If your code doesn't run in the DOM: */
+		// No DOM.
 		"lib": ["es2022"]
 	}
 }
