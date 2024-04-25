@@ -6,15 +6,13 @@ import { InstallPackageError, PackageManager } from "./package-manager";
 export const bunPackageManager = (bunPath = "bun") =>
 	PackageManager.of({
 		installPackage: ({ pkg, cwd }) =>
-			Effect.gen(function* (_) {
+			Effect.gen(function* () {
 				// Run `bun add <pkg> --verbose`.
 				// See https://bun.sh/docs/cli/add.
-				const { stdout } = yield* _(
-					Effect.tryPromise({
-						try: () => execa(bunPath, ["add", pkg, "--verbose"], { cwd }),
-						catch: (e) => new InstallPackageError({ cause: e }),
-					}),
-				);
+				const { stdout } = yield* Effect.tryPromise({
+					try: () => execa(bunPath, ["add", pkg, "--verbose"], { cwd }),
+					catch: (e) => new InstallPackageError({ cause: e }),
+				});
 
 				// With verbose output on, bun prints one line per installed package
 				// (e.g., "foo@1.0.0"), including all installed dependencies.

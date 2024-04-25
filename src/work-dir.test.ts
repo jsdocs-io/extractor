@@ -7,8 +7,8 @@ import { workDir } from "./work-dir";
 
 const _workDir = () =>
 	Effect.runPromise(
-		Effect.gen(function* (_) {
-			const { path } = yield* _(workDir);
+		Effect.gen(function* () {
+			const { path } = yield* workDir;
 			return path;
 		}).pipe(Effect.scoped),
 	);

@@ -9,12 +9,12 @@ export class PackageNameError extends Data.TaggedError("PackageNameError")<{
 
 /** @internal */
 export const packageName = (pkg: string) =>
-	Effect.gen(function* (_) {
+	Effect.gen(function* () {
 		const versionMarker = pkg.lastIndexOf("@");
 		const pkgName = pkg.slice(0, versionMarker > 0 ? versionMarker : undefined);
 		const { validForNewPackages, warnings, errors } = validate(pkgName);
 		if (!validForNewPackages) {
-			return yield* _(new PackageNameError({ warnings, errors }));
+			return yield* new PackageNameError({ warnings, errors });
 		}
 		return pkgName;
 	});

@@ -14,8 +14,8 @@ export class PackageTypesError extends Data.TaggedError("PackageTypesError") {}
 @internal
 */
 export const packageTypes = (pkgJson: Partial<NormalizedPackageJson>, subpath: string) =>
-	Effect.gen(function* (_) {
-		const resolvedPaths = yield* _(resolveExports(pkgJson, subpath));
+	Effect.gen(function* () {
+		const resolvedPaths = yield* resolveExports(pkgJson, subpath);
 		const firstPath = resolvedPaths[0];
 		if (firstPath && isTypesFile(firstPath)) {
 			return firstPath;
@@ -27,7 +27,7 @@ export const packageTypes = (pkgJson: Partial<NormalizedPackageJson>, subpath: s
 		if (isRootSubpath && pkgJson.typings && isTypesFile(pkgJson.typings)) {
 			return pkgJson.typings;
 		}
-		return yield* _(new PackageTypesError());
+		return yield* new PackageTypesError();
 	});
 
 const resolveExports = (pkgJson: Partial<NormalizedPackageJson>, subpath: string) => {

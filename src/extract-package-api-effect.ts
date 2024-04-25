@@ -17,19 +17,19 @@ export const extractPackageApiEffect = ({
 	subpath = ".",
 	maxDepth = 5,
 }: Omit<ExtractPackageApiOptions, "bunPath">) =>
-	Effect.gen(function* (_) {
+	Effect.gen(function* () {
 		const startTime = performance.now();
-		const pkgName = yield* _(packageName(pkg));
-		const { path: cwd } = yield* _(workDir);
-		const pm = yield* _(PackageManager);
-		const packages = yield* _(pm.installPackage({ pkg, cwd }));
+		const pkgName = yield* packageName(pkg);
+		const { path: cwd } = yield* workDir;
+		const pm = yield* PackageManager;
+		const packages = yield* pm.installPackage({ pkg, cwd });
 		const pkgDir = join(cwd, "node_modules", pkgName);
-		const pkgJson = yield* _(packageJson(pkgDir));
-		const types = yield* _(packageTypes(pkgJson, subpath));
+		const pkgJson = yield* packageJson(pkgDir);
+		const types = yield* packageTypes(pkgJson, subpath);
 		const indexFilePath = join(pkgDir, types);
-		const { project, indexFile } = yield* _(createProject({ indexFilePath, cwd }));
+		const { project, indexFile } = yield* createProject({ indexFilePath, cwd });
 		const overview = packageOverview(indexFile);
-		const declarations = yield* _(packageDeclarations({ pkgName, project, indexFile, maxDepth }));
+		const declarations = yield* packageDeclarations({ pkgName, project, indexFile, maxDepth });
 		const pkgApi: PackageApi = {
 			name: pkgJson.name,
 			version: pkgJson.version,
