@@ -1,4 +1,4 @@
-import { TypeFormatFlags, ts, type Node } from "ts-morph";
+import { TypeFormatFlags, type Node } from "ts-morph";
 
 export const typeCheckerType = (node: Node): string => {
 	try {
@@ -7,7 +7,7 @@ export const typeCheckerType = (node: Node): string => {
 		return typeChecker.typeToString(
 			nodeType,
 			node.compilerNode,
-			ts.TypeFormatFlags.NoTruncation | TypeFormatFlags.UseAliasDefinedOutsideCurrentScope,
+			TypeFormatFlags.NoTruncation | TypeFormatFlags.UseAliasDefinedOutsideCurrentScope,
 		);
 	} catch {
 		return "any";
