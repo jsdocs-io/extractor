@@ -10,7 +10,7 @@ dependencies:
     version: 0.14.2
   effect:
     specifier: ^3.0.6
-    version: 3.0.6
+    version: 3.1.0
   execa:
     specifier: ^8.0.1
     version: 8.0.1
@@ -1595,8 +1595,8 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
 
-  /effect@3.0.6:
-    resolution: {integrity: sha512-mm83ZhJnSH1BRnnWnVxk0w+gMN1WPaxq2LEoxATv2esCtd8bSq9BFLuWysWWmnEO3Q8wkGIcjmeIxZymHo2qZw==}
+  /effect@3.1.0:
+    resolution: {integrity: sha512-A0kUH8qeH0jS0X4ViJXf/O5qfMQBrJRsTD1xHed4jpFF5ChUP96LmseaV9LQkFbVDo791REFWTOlMPGCyM/0Ng==}
     dev: false
 
   /elegant-spinner@1.0.1:
