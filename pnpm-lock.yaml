@@ -69,7 +69,7 @@ devDependencies:
     version: 8.0.2(typescript@5.4.5)
   tsx:
     specifier: ^4.7.3
-    version: 4.7.3
+    version: 4.8.1
   typescript:
     specifier: ^5.4.5
     version: 5.4.5
@@ -3858,12 +3858,12 @@ packages:
       - ts-node
     dev: true
 
-  /tsx@4.7.3:
-    resolution: {integrity: sha512-+fQnMqIp/jxZEXLcj6WzYy9FhcS5/Dfk8y4AtzJ6ejKcKqmfTF8Gso/jtrzDggCF2zTU20gJa6n8XqPYwDAUYQ==}
+  /tsx@4.8.1:
+    resolution: {integrity: sha512-xkdE3/l+gZPHKfcZDCeCrCj2aJS5V8WFF2lPmMfj5ZAPa9RNN74XQsXA6lnPDe3uToGMCZ0ybytLvoP2rv8f5Q==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     dependencies:
-      esbuild: 0.19.12
+      esbuild: 0.20.2
       get-tsconfig: 4.7.3
     optionalDependencies:
       fsevents: 2.3.3
