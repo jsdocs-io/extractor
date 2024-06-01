@@ -57,7 +57,7 @@
 		"release": "np"
 	},
 	"dependencies": {
-		"@microsoft/tsdoc": "^0.14.2",
+		"@microsoft/tsdoc": "^0.15.0",
 		"effect": "^3.2.5",
 		"execa": "^9.1.0",
 		"memoize": "^10.0.0",
