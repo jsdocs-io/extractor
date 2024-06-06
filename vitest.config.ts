@@ -7,7 +7,7 @@ export default defineConfig({
 		pool: "forks",
 
 		// Package analysis tests require a lot of time.
-		testTimeout: 40000,
+		testTimeout: 60000,
 
 		coverage: {
 			include: ["src/**"],
