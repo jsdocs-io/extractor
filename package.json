@@ -58,7 +58,7 @@
 	},
 	"dependencies": {
 		"@microsoft/tsdoc": "^0.15.0",
-		"effect": "^3.3.4",
+		"effect": "^3.3.5",
 		"execa": "^9.2.0",
 		"memoize": "^10.0.0",
 		"natural-orderby": "^3.0.2",
@@ -76,7 +76,7 @@
 		"@types/node": "^20.14.5",
 		"@types/validate-npm-package-name": "^4.0.2",
 		"@vitest/coverage-v8": "^1.6.0",
-		"np": "^10.0.5",
+		"np": "^10.0.6",
 		"ts-dedent": "^2.2.0",
 		"tsup": "^8.1.0",
 		"typescript": "^5.4.5",
