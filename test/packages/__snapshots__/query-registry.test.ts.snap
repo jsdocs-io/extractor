@@ -4178,7 +4178,7 @@ The following time periods are supported by npm:
       "file": "/zod-package-json/dist/index.d.ts",
       "id": "+type.PackageJson",
       "kind": "type",
-      "line": 575,
+      "line": 587,
       "name": "PackageJson",
       "signature": "type PackageJson = z.infer<typeof PackageJson>;",
     },
@@ -6797,7 +6797,9 @@ for all packages in the registry in a given time period.
       >
     >;
     packageManager: z.ZodOptional<z.ZodString>;
-    sideEffects: z.ZodOptional<z.ZodBoolean>;
+    sideEffects: z.ZodOptional<
+      z.ZodUnion<[z.ZodBoolean, z.ZodArray<z.ZodString, "many">]>
+    >;
     imports: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnknown>>;
     exports: z.ZodOptional<
       z.ZodUnion<
@@ -7032,7 +7034,9 @@ for all packages in the registry in a given time period.
         >
       >;
       packageManager: z.ZodOptional<z.ZodString>;
-      sideEffects: z.ZodOptional<z.ZodBoolean>;
+      sideEffects: z.ZodOptional<
+        z.ZodUnion<[z.ZodBoolean, z.ZodArray<z.ZodString, "many">]>
+      >;
       imports: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnknown>>;
       exports: z.ZodOptional<
         z.ZodUnion<
@@ -7268,7 +7272,9 @@ for all packages in the registry in a given time period.
         >
       >;
       packageManager: z.ZodOptional<z.ZodString>;
-      sideEffects: z.ZodOptional<z.ZodBoolean>;
+      sideEffects: z.ZodOptional<
+        z.ZodUnion<[z.ZodBoolean, z.ZodArray<z.ZodString, "many">]>
+      >;
       imports: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnknown>>;
       exports: z.ZodOptional<
         z.ZodUnion<
