@@ -624,9 +624,7 @@ exports[`@sentry/browser@7.100.1 1`] = `
           "kind": "class-method",
           "line": 115,
           "name": "getClient",
-          "signature": "getClient: <C extends Client<ClientOptions<BaseTransportOptions>>>() =>
-  | C
-  | undefined;",
+          "signature": "getClient: <C extends Client>() => C | undefined;",
         },
         {
           "docs": [
@@ -788,7 +786,7 @@ exports[`@sentry/browser@7.100.1 1`] = `
           "kind": "class-method",
           "line": 197,
           "name": "setContext",
-          "signature": "setContext: (name: string, context: { [key: string]: any }) => void;",
+          "signature": "setContext: (name: string, context: { [key: string]: any } | null) => void;",
         },
         {
           "docs": [
@@ -2155,13 +2153,17 @@ exports[`@sentry/browser@7.100.1 1`] = `
     enableLongTask: boolean;
     _metricOptions?: Partial<{ _reportAllChanges: boolean }> | undefined;
     _experiments: Partial<{ enableInteractions: boolean }>;
-    beforeStartSpan?: (options: StartSpanOptions) => StartSpanOptions;
+    beforeStartSpan?:
+      | ((options: StartSpanOptions) => StartSpanOptions)
+      | undefined;
     tracingOrigins: (string | RegExp)[];
     tracePropagationTargets: (string | RegExp)[];
     traceFetch: boolean;
     traceXHR: boolean;
     enableHTTPTimings: boolean;
-    shouldCreateSpanForRequest?: (this: void, url: string) => boolean;
+    shouldCreateSpanForRequest?:
+      | ((this: void, url: string) => boolean)
+      | undefined;
   };
 };",
     },
@@ -2479,9 +2481,7 @@ exports[`@sentry/browser@7.100.1 1`] = `
       "kind": "function",
       "line": 192,
       "name": "getClient",
-      "signature": "getClient: <C extends Client<ClientOptions<BaseTransportOptions>>>() =>
-  | C
-  | undefined;",
+      "signature": "getClient: <C extends Client>() => C | undefined;",
     },
     {
       "docs": [
@@ -2905,7 +2905,7 @@ exports[`@sentry/browser@7.100.1 1`] = `
       "name": "setContext",
       "signature": "setContext: (
   name: string,
-  context: { [key: string]: any },
+  context: { [key: string]: any } | null,
 ) => ReturnType<Hub["setContext"]>;",
     },
     {
@@ -3213,7 +3213,7 @@ exports[`@sentry/browser@7.100.1 1`] = `
       "name": "withScope",
       "signature": "withScope: {
   <T>(callback: (scope: Scope) => T): T;
-  <T>(scope: ScopeInterface, callback: (scope: Scope) => T): T;
+  <T>(scope: ScopeInterface | undefined, callback: (scope: Scope) => T): T;
 };",
     },
     {
@@ -5996,7 +5996,9 @@ exports[`@sentry/browser@7.100.1 1`] = `
       "kind": "variable",
       "line": 23,
       "name": "extractTraceparentData",
-      "signature": "const extractTraceparentData: (traceparent?: string) => TraceparentData;",
+      "signature": "const extractTraceparentData: (
+  traceparent?: string,
+) => TraceparentData | undefined;",
     },
     {
       "docs": [
@@ -6096,8 +6098,8 @@ exports[`@sentry/browser@7.100.1 1`] = `
       "line": 3,
       "name": "Integrations",
       "signature": "const Integrations: {
-  GlobalHandlers: IntegrationClass<
-    Integration & {
+  GlobalHandlers: import("@sentry/types").IntegrationClass<
+    import("@sentry/types").Integration & {
       setup: (
         client: import("@sentry/types").Client<
           import("@sentry/types").ClientOptions<
@@ -6112,7 +6114,9 @@ exports[`@sentry/browser@7.100.1 1`] = `
         | Partial<{ onerror: boolean; onunhandledrejection: boolean }>
         | undefined,
     ) => import("@sentry/types").Integration);
-  TryCatch: IntegrationClass<Integration> &
+  TryCatch: import("@sentry/types").IntegrationClass<
+    import("@sentry/types").Integration
+  > &
     (new (
       options?:
         | {
@@ -6124,8 +6128,8 @@ exports[`@sentry/browser@7.100.1 1`] = `
           }
         | undefined,
     ) => import("@sentry/types").Integration);
-  Breadcrumbs: IntegrationClass<
-    Integration & {
+  Breadcrumbs: import("@sentry/types").IntegrationClass<
+    import("@sentry/types").Integration & {
       setup: (
         client: import("@sentry/types").Client<
           import("@sentry/types").ClientOptions<
@@ -6152,8 +6156,8 @@ exports[`@sentry/browser@7.100.1 1`] = `
           }>
         | undefined,
     ) => import("@sentry/types").Integration);
-  LinkedErrors: IntegrationClass<
-    Integration & {
+  LinkedErrors: import("@sentry/types").IntegrationClass<
+    import("@sentry/types").Integration & {
       preprocessEvent: (
         event: import("@sentry/types").Event,
         hint: import("@sentry/types").EventHint,
@@ -6170,13 +6174,13 @@ exports[`@sentry/browser@7.100.1 1`] = `
         | { key?: string | undefined; limit?: number | undefined }
         | undefined,
     ) => import("@sentry/types").Integration);
-  HttpContext: IntegrationClass<
-    Integration & {
+  HttpContext: import("@sentry/types").IntegrationClass<
+    import("@sentry/types").Integration & {
       preprocessEvent: (event: import("@sentry/types").Event) => void;
     }
   >;
-  Dedupe: IntegrationClass<
-    Integration & {
+  Dedupe: import("@sentry/types").IntegrationClass<
+    import("@sentry/types").Integration & {
       processEvent: (
         event: import("@sentry/types").Event,
       ) => import("@sentry/types").Event;
@@ -6185,8 +6189,8 @@ exports[`@sentry/browser@7.100.1 1`] = `
   FunctionToString: import("@sentry/types").IntegrationClass<
     import("@sentry/types").Integration & { setupOnce: () => void }
   >;
-  InboundFilters: IntegrationClass<
-    Integration & {
+  InboundFilters: import("@sentry/types").IntegrationClass<
+    import("@sentry/types").Integration & {
       preprocessEvent: (
         event: import("@sentry/types").Event,
         hint: import("@sentry/types").EventHint,
@@ -6244,8 +6248,8 @@ exports[`@sentry/browser@7.100.1 1`] = `
   distribution: typeof distribution;
   set: typeof set;
   gauge: typeof gauge;
-  MetricsAggregator: IntegrationClass<
-    Integration & {
+  MetricsAggregator: import("@sentry/types").IntegrationClass<
+    import("@sentry/types").Integration & {
       setup: (
         client: import("@sentry/types").Client<
           ClientOptions<import("@sentry/types").BaseTransportOptions>

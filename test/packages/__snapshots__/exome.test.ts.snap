@@ -54,7 +54,7 @@ exports[`exome@2.4.0 1`] = `
       "name": "onAction",
       "signature": "onAction: <T extends Exome>(
   Parent: new (...args: any[]) => T,
-  action: "NEW" | "LOAD_STATE" | keyof T,
+  action: "NEW" | "LOAD_STATE" | keyof T | null,
   callback: (
     instance: T,
     action: "NEW" | "LOAD_STATE" | keyof T,

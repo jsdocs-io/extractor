@@ -457,7 +457,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
       "kind": "function",
       "line": 519,
       "name": "useRouterParams",
-      "signature": "useRouterParams: () => { [key: string]: string };",
+      "signature": "useRouterParams: () => { [key: string]: string | undefined };",
     },
     {
       "docs": [],
@@ -466,7 +466,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
       "kind": "function",
       "line": 522,
       "name": "useRouterQuery",
-      "signature": "useRouterQuery: () => { [key: string]: string };",
+      "signature": "useRouterQuery: () => { [key: string]: string | undefined };",
     },
     {
       "docs": [],

@@ -817,110 +817,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
       "kind": "function",
       "line": 1610,
       "name": "hydratePokemonSearchIndex",
-      "signature": "hydratePokemonSearchIndex: <
-  K extends
-    | {
-        id: string;
-        name: string;
-        generation: number;
-        color: string;
-        region: string;
-        isGmax: boolean;
-        dexNum: number;
-        isForm: boolean;
-        nid: string;
-        formId: string;
-        formName: string;
-        type1: string;
-        type2: string;
-        teraType: string;
-        abilities: { primary: string; secondary: string; hidden: string };
-        isDefault: boolean;
-        isLegendary: boolean;
-        isMythical: boolean;
-        isUltraBeast: boolean;
-        ultraBeastCode: string;
-        isSpecialAbilityForm: boolean;
-        isCosmeticForm: boolean;
-        isFemaleForm: boolean;
-        hasGenderDifferences: boolean;
-        isBattleOnlyForm: boolean;
-        isSwitchableForm: boolean;
-        isFusion: boolean;
-        fusedWith: string[];
-        isMega: boolean;
-        isPrimal: boolean;
-        isRegional: boolean;
-        canGmax: boolean;
-        canDynamax: boolean;
-        canBeAlpha: boolean;
-        debutIn: string;
-        obtainableIn: string[];
-        versionExclusiveIn: string[];
-        eventOnlyIn: string[];
-        storableIn: string[];
-        registrableIn: string[];
-        shinyReleased: boolean;
-        shinyBase: string;
-        baseStats: {
-          hp: number;
-          atk: number;
-          def: number;
-          spa: number;
-          spd: number;
-          spe: number;
-        };
-        weight: number;
-        height: number;
-        maleRate: number;
-        femaleRate: number;
-        baseSpecies: string;
-        baseForms: string[];
-        forms: string[];
-        evolvesFrom: {
-          pokemon?: string;
-          level?: number;
-          item?: string;
-          move?: string;
-          type?: string;
-          region?: string;
-          ability?: string;
-          condition?: string;
-        };
-        refs: {
-          smogon: string;
-          showdown: string;
-          showdownName: string;
-          serebii: string;
-          bulbapedia: string;
-        };
-        isParadox?: boolean;
-        paradoxSpecies?: string[];
-        isConvergent?: boolean;
-        convergentSpecies?: string[];
-        family?: string;
-      }
-    | {
-        id: string;
-        name: string;
-        generation: number;
-        color: string;
-        region: string;
-        dexNum: number;
-        isForm: boolean;
-        nid: string;
-        formId: string;
-        formName: string;
-        type1: string;
-        type2: string;
-        isDefault: boolean;
-        isSpecialAbilityForm: boolean;
-        isCosmeticForm: boolean;
-        isFemaleForm: boolean;
-        storableIn: string[];
-        baseSpecies: string;
-      },
->(
+      "signature": "hydratePokemonSearchIndex: <K extends CompactPokemon | Pokemon>(
   entities: K[],
   searchIndex: SearchEngineIndex<K>,
 ) => Promise<void>;",
@@ -2888,9 +2785,9 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
       "signature": "const pokedexesIndex: {
   id: string;
   name: string;
-  region: string;
-  baseDex: string;
-  pokeApiId?: number;
+  region: string | null;
+  baseDex: string | null;
+  pokeApiId?: number | undefined;
 }[];",
     },
     {
@@ -3261,15 +3158,15 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
       "signature": "const pokemonGames: {
   id: string;
   name: string;
-  type: "superset" | "set" | "game" | "dlc";
+  type: "set" | "superset" | "game" | "dlc";
   generation: number;
-  gameSet: string;
-  gameSuperSet: string;
-  codename: string;
+  gameSet: string | null;
+  gameSuperSet: string | null;
+  codename: string | null;
   releaseDate: string;
   platforms: ("gb" | "gbc" | "gba" | "nds" | "3ds" | "switch" | "mobile")[];
-  region: string;
-  originMark: string;
+  region: string | null;
+  originMark: string | null;
   pokedexes: string[];
   features: {
     gmax: boolean;
@@ -3287,7 +3184,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
     marks: boolean;
   };
   storage: { numBoxes: number; boxCapacity: number };
-  fullName?: string;
+  fullName?: string | undefined;
 }[];",
     },
     {
@@ -3391,7 +3288,7 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
   id: string;
   name: string;
   isoCode: string;
-  locale: string;
+  locale: string | null;
   urlSlug: string;
 }[];",
     },
@@ -3423,9 +3320,9 @@ exports[`@supeffective/dataset@2.2.2 1`] = `
       "signature": "const pokemonNatures: {
   id: string;
   name: string;
-  berry: string;
-  raises: "hp" | "atk" | "def" | "spa" | "spd" | "spe" | "acc" | "eva";
-  lowers: "hp" | "atk" | "def" | "spa" | "spd" | "spe" | "acc" | "eva";
+  berry: string | null;
+  raises: "hp" | "atk" | "def" | "spa" | "spd" | "spe" | "acc" | "eva" | null;
+  lowers: "hp" | "atk" | "def" | "spa" | "spd" | "spe" | "acc" | "eva" | null;
 }[];",
     },
     {

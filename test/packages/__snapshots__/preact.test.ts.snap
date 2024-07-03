@@ -79,8 +79,7 @@ exports[`preact@10.19.4 1`] = `
         prevState: Readonly<S>,
         props: Readonly<P>,
       ) => Pick<S, K> | Partial<S> | null)
-    | Pick<S, K>
-    | Partial<S>,
+    | (Pick<S, K> | Partial<S> | null),
   callback?: () => void,
 ) => void;",
         },
@@ -223,7 +222,7 @@ exports[`preact@10.19.4 1`] = `
       "kind": "function",
       "line": 369,
       "name": "isValidElement",
-      "signature": "isValidElement: (vnode: any) => vnode is VNode<{}>;",
+      "signature": "isValidElement: (vnode: any) => vnode is VNode;",
     },
     {
       "docs": [
@@ -1453,8 +1452,8 @@ exports[`preact@10.19.4@hooks 1`] = `
       "name": "useRef",
       "signature": "useRef: {
   <T>(initialValue: T): MutableRef<T>;
-  <T>(initialValue: T): Ref<T>;
-  <T = undefined>(): MutableRef<T>;
+  <T>(initialValue: T | null): Ref<T>;
+  <T = undefined>(): MutableRef<T | undefined>;
 };",
     },
     {
@@ -1471,7 +1470,7 @@ exports[`preact@10.19.4@hooks 1`] = `
       "name": "useState",
       "signature": "useState: {
   <S>(initialState: S | (() => S)): [S, StateUpdater<S>];
-  <S = undefined>(): [S, StateUpdater<S>];
+  <S = undefined>(): [S | undefined, StateUpdater<S | undefined>];
 };",
     },
     {
