@@ -605,7 +605,7 @@ exports[`h3@1.10.1 1`] = `
   T = unknown,
   _R = any,
   F extends (req: RequestInfo | URL, opts?: any) => any = (
-    input: URL | RequestInfo,
+    input: RequestInfo | URL,
     init?: RequestInit,
   ) => Promise<Response>,
 >(
@@ -702,7 +702,7 @@ exports[`h3@1.10.1 1`] = `
       "name": "getQuery",
       "signature": "getQuery: <
   T,
-  Event extends H3Event<EventHandlerRequest> = H3Event<EventHandlerRequest>,
+  Event extends H3Event = H3Event<EventHandlerRequest>,
   _T = Exclude<InferEventInput<"query", Event, T>, undefined>,
 >(
   event: Event,
@@ -904,7 +904,7 @@ exports[`h3@1.10.1 1`] = `
       "name": "getValidatedQuery",
       "signature": "getValidatedQuery: <
   T,
-  Event extends H3Event<EventHandlerRequest> = H3Event<EventHandlerRequest>,
+  Event extends H3Event = H3Event<EventHandlerRequest>,
   _T = InferEventInput<"query", Event, T>,
 >(
   event: Event,
@@ -920,7 +920,7 @@ exports[`h3@1.10.1 1`] = `
       "name": "getValidatedRouterParams",
       "signature": "getValidatedRouterParams: <
   T,
-  Event extends H3Event<EventHandlerRequest> = H3Event<EventHandlerRequest>,
+  Event extends H3Event = H3Event<EventHandlerRequest>,
   _T = InferEventInput<"routerParams", Event, T>,
 >(
   event: Event,
@@ -994,7 +994,7 @@ exports[`h3@1.10.1 1`] = `
       "kind": "function",
       "line": 59,
       "name": "isEvent",
-      "signature": "isEvent: (input: any) => input is H3Event<EventHandlerRequest>;",
+      "signature": "isEvent: (input: any) => input is H3Event;",
     },
     {
       "docs": [
@@ -1009,9 +1009,7 @@ exports[`h3@1.10.1 1`] = `
       "kind": "function",
       "line": 79,
       "name": "isEventHandler",
-      "signature": "isEventHandler: (
-  input: any,
-) => input is EventHandler<EventHandlerRequest, any>;",
+      "signature": "isEventHandler: (input: any) => input is EventHandler;",
     },
     {
       "docs": [],
@@ -1042,7 +1040,7 @@ exports[`h3@1.10.1 1`] = `
       "kind": "function",
       "line": 602,
       "name": "isStream",
-      "signature": "isStream: (data: any) => data is any;",
+      "signature": "isStream: (data: any) => data is Readable | ReadableStream;",
     },
     {
       "docs": [],
@@ -1116,7 +1114,7 @@ exports[`h3@1.10.1 1`] = `
       "name": "readBody",
       "signature": "readBody: <
   T,
-  Event extends H3Event<EventHandlerRequest> = H3Event<EventHandlerRequest>,
+  Event extends H3Event = H3Event<EventHandlerRequest>,
   _T = InferEventInput<"body", Event, T>,
 >(
   event: Event,
@@ -1230,7 +1228,7 @@ exports[`h3@1.10.1 1`] = `
       "name": "readValidatedBody",
       "signature": "readValidatedBody: <
   T,
-  Event extends H3Event<EventHandlerRequest> = H3Event<EventHandlerRequest>,
+  Event extends H3Event = H3Event<EventHandlerRequest>,
   _T = InferEventInput<"body", Event, T>,
 >(
   event: Event,
@@ -3331,7 +3329,7 @@ exports[`h3@1.10.1 1`] = `
       "line": 594,
       "name": "appendHeader",
       "signature": "const appendHeader: (
-  event: H3Event<EventHandlerRequest>,
+  event: H3Event,
   name: HTTPHeaderName,
   value: string,
 ) => void;",
@@ -3343,10 +3341,7 @@ exports[`h3@1.10.1 1`] = `
       "kind": "variable",
       "line": 592,
       "name": "appendHeaders",
-      "signature": "const appendHeaders: (
-  event: H3Event<EventHandlerRequest>,
-  headers: Record<string, string>,
-) => void;",
+      "signature": "const appendHeaders: (event: H3Event, headers: Record<string, string>) => void;",
     },
     {
       "docs": [],
@@ -3380,9 +3375,9 @@ exports[`h3@1.10.1 1`] = `
       "line": 451,
       "name": "getHeader",
       "signature": "const getHeader: (
-  event: H3Event<EventHandlerRequest>,
+  event: H3Event,
   name: HTTPHeaderName,
-) => string;",
+) => RequestHeaders[string];",
     },
     {
       "docs": [],
@@ -3391,9 +3386,7 @@ exports[`h3@1.10.1 1`] = `
       "kind": "variable",
       "line": 449,
       "name": "getHeaders",
-      "signature": "const getHeaders: (
-  event: H3Event<EventHandlerRequest>,
-) => Partial<Record<HTTPHeaderName, string>>;",
+      "signature": "const getHeaders: (event: H3Event) => RequestHeaders;",
     },
     {
       "docs": [],
@@ -3472,9 +3465,9 @@ exports[`h3@1.10.1 1`] = `
       "line": 590,
       "name": "setHeader",
       "signature": "const setHeader: (
-  event: H3Event<EventHandlerRequest>,
+  event: H3Event,
   name: HTTPHeaderName,
-  value: unknown,
+  value: Parameters<OutgoingMessage["setHeader"]>[1],
 ) => void;",
     },
     {
@@ -3485,8 +3478,10 @@ exports[`h3@1.10.1 1`] = `
       "line": 588,
       "name": "setHeaders",
       "signature": "const setHeaders: (
-  event: H3Event<EventHandlerRequest>,
-  headers: Partial<Record<HTTPHeaderName, unknown>>,
+  event: H3Event,
+  headers: Partial<
+    Record<HTTPHeaderName, Parameters<OutgoingMessage["setHeader"]>[1]>
+  >,
 ) => void;",
     },
   ],
