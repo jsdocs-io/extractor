@@ -58,7 +58,7 @@
 	},
 	"dependencies": {
 		"@microsoft/tsdoc": "^0.15.0",
-		"effect": "^3.5.5",
+		"effect": "^3.5.7",
 		"execa": "^9.3.0",
 		"memoize": "^10.0.0",
 		"natural-orderby": "^3.0.2",
@@ -73,13 +73,13 @@
 	"devDependencies": {
 		"@arethetypeswrong/cli": "^0.15.3",
 		"@total-typescript/shoehorn": "^0.1.2",
-		"@types/node": "^20.14.11",
+		"@types/node": "^20.14.12",
 		"@types/validate-npm-package-name": "^4.0.2",
-		"@vitest/coverage-v8": "^2.0.3",
+		"@vitest/coverage-v8": "^2.0.4",
 		"np": "^10.0.7",
 		"ts-dedent": "^2.2.0",
-		"tsup": "^8.1.2",
-		"typescript": "^5.5.3",
-		"vitest": "^2.0.3"
+		"tsup": "^8.2.3",
+		"typescript": "^5.5.4",
+		"vitest": "^2.0.4"
 	}
 }
