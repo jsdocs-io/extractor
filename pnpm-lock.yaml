@@ -12,7 +12,7 @@ importers:
         specifier: ^0.15.0
         version: 0.15.0
       effect:
-        specifier: ^3.5.7
+        specifier: ^3.6.0
         version: 3.6.0
       execa:
         specifier: ^9.3.0
@@ -58,7 +58,7 @@ importers:
         specifier: ^4.0.2
         version: 4.0.2
       '@vitest/coverage-v8':
-        specifier: ^2.0.4
+        specifier: ^2.0.5
         version: 2.0.5(vitest@2.0.5(@types/node@22.0.2))
       np:
         specifier: ^10.0.7
@@ -73,7 +73,7 @@ importers:
         specifier: ^5.5.4
         version: 5.5.4
       vitest:
-        specifier: ^2.0.4
+        specifier: ^2.0.5
         version: 2.0.5(@types/node@22.0.2)
 
 packages:
