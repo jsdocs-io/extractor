@@ -544,7 +544,7 @@ exports[`magicast@0.3.3 1`] = `
       "file": "/@babel/types/lib/index.d.ts",
       "id": "+type.ASTNode",
       "kind": "type",
-      "line": 1464,
+      "line": 1480,
       "name": "ASTNode",
       "signature": "type Node =
   | AnyTypeAnnotation
