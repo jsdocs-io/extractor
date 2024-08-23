@@ -83,7 +83,11 @@ exports[`@vue-email/nuxt@0.8.13 1`] = `
       "kind": "variable",
       "line": 12,
       "name": "default",
-      "signature": "const default: _nuxt_schema.NuxtModule<ModuleOptions>;",
+      "signature": "const default: _nuxt_schema.NuxtModule<
+  ModuleOptions,
+  Partial<ModuleOptions>,
+  false
+>;",
     },
   ],
   "name": "@vue-email/nuxt",
