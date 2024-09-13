@@ -49,12 +49,12 @@
 		"check": "tsc --noEmit",
 		"build": "tsc --noEmit && tsup",
 		"attw": "attw --pack . --ignore-rules cjs-resolves-to-esm",
-		"test": "vitest run src test/declarations --coverage --bail 1",
-		"test:ci": "vitest run src test/declarations test/packages --coverage --bail 1",
-		"test:update": "vitest run src test/declarations test/packages --update",
+		"test": "bun --revision && vitest run src test/declarations --coverage --bail 1",
+		"test:ci": "bun --revision && vitest run src test/declarations test/packages --coverage --bail 1",
+		"test:update": "bun --revision && vitest run src test/declarations test/packages --update",
 		"lint": "prettier --check .",
 		"format": "prettier --write .",
-		"pre-push": "pnpm i && pnpm lint && pnpm build && pnpm test:ci",
+		"pre-push": "bun --revision && pnpm i && pnpm lint && pnpm build && pnpm test:ci",
 		"release": "np"
 	},
 	"dependencies": {
