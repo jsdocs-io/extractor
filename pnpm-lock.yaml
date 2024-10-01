@@ -13,7 +13,7 @@ importers:
         version: 0.15.0
       effect:
         specifier: ^3.8.0
-        version: 3.8.0
+        version: 3.8.4
       execa:
         specifier: ^9.3.1
         version: 9.3.1
@@ -975,8 +975,8 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  effect@3.8.0:
-    resolution: {integrity: sha512-9ouAF51iUYMhbWOSQjWayfoyDDMziQCr2Y8VfhnUmRdfi44n+91VplTA5qqV2mWvFNM3ZV4R6bcfW2js9fK7IA==}
+  effect@3.8.4:
+    resolution: {integrity: sha512-rOZ1XAi+Fb+fAHoUJ5FnJPSPZEBxVbCl5QWtOWFTgOeFHx0QpbK3pezWvq9OIxQPdwvSkPOw926qrs4xdD9dLA==}
 
   elegant-spinner@1.0.1:
     resolution: {integrity: sha512-B+ZM+RXvRqQaAmkMlO/oSe5nMUOaUnyfGYCEHoR8wrXsZR2mA0XVibsxV1bvTwxdRWah1PkQqso2EzhILGHtEQ==}
@@ -3116,7 +3116,7 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  effect@3.8.0: {}
+  effect@3.8.4: {}
 
   elegant-spinner@1.0.1: {}
 
