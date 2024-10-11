@@ -338,7 +338,28 @@ exports[`export list as renamed to default 1`] = `
 ]
 `;
 
-exports[`export list as renamed to string 1`] = `[]`;
+exports[`export list as renamed to string (arbitrary module identifiers) 1`] = `
+[
+  {
+    "docs": [],
+    "file": "/index.ts",
+    "id": "+function.my foo",
+    "kind": "function",
+    "line": 1,
+    "name": "my foo",
+    "signature": "my foo: () => void",
+  },
+  {
+    "docs": [],
+    "file": "/index.ts",
+    "id": "+variable.my bar",
+    "kind": "variable",
+    "line": 2,
+    "name": "my bar",
+    "signature": "const my bar: string",
+  },
+]
+`;
 
 exports[`export list from module 1`] = `
 [

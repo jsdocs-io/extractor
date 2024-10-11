@@ -86,10 +86,7 @@ exports[`enttec-open-dmx-usb@4.0.1 1`] = `
           "kind": "class-method",
           "line": 40,
           "name": "setChannels",
-          "signature": "setChannels: (
-  channels: Buffer | number[] | Record<number, number>,
-  clear?: boolean,
-) => void;",
+          "signature": "setChannels: (channels: any, clear?: boolean) => void;",
         },
         {
           "docs": [

@@ -1360,10 +1360,7 @@ exports[`h3@1.10.1 1`] = `
       "kind": "function",
       "line": 604,
       "name": "sendStream",
-      "signature": "sendStream: (
-  event: H3Event,
-  stream: Readable | ReadableStream,
-) => Promise<void>;",
+      "signature": "sendStream: (event: H3Event, stream: any) => Promise<void>;",
     },
     {
       "docs": [],

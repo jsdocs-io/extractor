@@ -345,9 +345,11 @@ test("export list as renamed", async () => {
 	).toMatchSnapshot();
 });
 
-// Currently not supported by TypeScript.
+// Supported since TypeScript 5.6 and ts-morph 24.
+// See: https://devblogs.microsoft.com/typescript/announcing-typescript-5-6/#support-for-arbitrary-module-identifiers
+// See: https://github.com/dsherret/ts-morph/blob/latest/packages/ts-morph/CHANGELOG.md#2400-2024-10-05
 // See: https://github.com/microsoft/TypeScript/issues/40594.
-test("export list as renamed to string", async () => {
+test("export list as renamed to string (arbitrary module identifiers)", async () => {
 	const project = new Project({
 		useInMemoryFileSystem: true,
 		compilerOptions: {
