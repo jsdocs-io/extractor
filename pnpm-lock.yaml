@@ -62,16 +62,16 @@ importers:
         version: 2.1.2(vitest@2.1.2(@types/node@22.10.1))
       np:
         specifier: ^10.0.7
-        version: 10.1.0(typescript@5.6.3)
+        version: 10.1.0(typescript@5.7.2)
       ts-dedent:
         specifier: ^2.2.0
         version: 2.2.0
       tsup:
         specifier: ^8.3.0
-        version: 8.3.5(postcss@8.4.47)(typescript@5.6.3)(yaml@2.5.1)
+        version: 8.3.5(postcss@8.4.47)(typescript@5.7.2)(yaml@2.5.1)
       typescript:
         specifier: ^5.6.3
-        version: 5.6.3
+        version: 5.7.2
       vitest:
         specifier: ^2.1.2
         version: 2.1.2(@types/node@22.10.1)
@@ -2145,8 +2145,8 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  typescript@5.6.3:
-    resolution: {integrity: sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==}
+  typescript@5.7.2:
+    resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -2952,14 +2952,14 @@ snapshots:
 
   consola@3.2.3: {}
 
-  cosmiconfig@8.3.6(typescript@5.6.3):
+  cosmiconfig@8.3.6(typescript@5.7.2):
     dependencies:
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       parse-json: 5.2.0
       path-type: 4.0.0
     optionalDependencies:
-      typescript: 5.6.3
+      typescript: 5.7.2
 
   cross-spawn@7.0.6:
     dependencies:
@@ -3630,11 +3630,11 @@ snapshots:
       semver: 7.6.3
       validate-npm-package-license: 3.0.4
 
-  np@10.1.0(typescript@5.6.3):
+  np@10.1.0(typescript@5.7.2):
     dependencies:
       chalk: 5.3.0
       chalk-template: 1.1.0
-      cosmiconfig: 8.3.6(typescript@5.6.3)
+      cosmiconfig: 8.3.6(typescript@5.7.2)
       del: 8.0.0
       escape-goat: 4.0.0
       escape-string-regexp: 5.0.0
@@ -4188,7 +4188,7 @@ snapshots:
 
   tslib@2.7.0: {}
 
-  tsup@8.3.5(postcss@8.4.47)(typescript@5.6.3)(yaml@2.5.1):
+  tsup@8.3.5(postcss@8.4.47)(typescript@5.7.2)(yaml@2.5.1):
     dependencies:
       bundle-require: 5.0.0(esbuild@0.24.0)
       cac: 6.7.14
@@ -4208,7 +4208,7 @@ snapshots:
       tree-kill: 1.2.2
     optionalDependencies:
       postcss: 8.4.47
-      typescript: 5.6.3
+      typescript: 5.7.2
     transitivePeerDependencies:
       - jiti
       - supports-color
@@ -4227,7 +4227,7 @@ snapshots:
 
   typescript@5.6.1-rc: {}
 
-  typescript@5.6.3: {}
+  typescript@5.7.2: {}
 
   undici-types@6.20.0: {}
 
