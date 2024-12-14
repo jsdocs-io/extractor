@@ -21,8 +21,8 @@ importers:
         specifier: ^10.0.0
         version: 10.0.0
       natural-orderby:
-        specifier: ^4.0.0
-        version: 4.0.0
+        specifier: ^5.0.0
+        version: 5.0.0
       pathe:
         specifier: ^1.1.2
         version: 1.1.2
@@ -1524,8 +1524,8 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  natural-orderby@4.0.0:
-    resolution: {integrity: sha512-IKbGiBbsEis4F0JuAoERsLwVwVwExW20e7vwo0G4n00cWOIuHRwjv7dONoXKW1PfxRnWxwywmg1FA5ivyv170g==}
+  natural-orderby@5.0.0:
+    resolution: {integrity: sha512-kKHJhxwpR/Okycz4HhQKKlhWe4ASEfPgkSWNmKFHd7+ezuQlxkA5cM3+XkBPvm1gmHen3w53qsYAv+8GwRrBlg==}
     engines: {node: '>=18'}
 
   new-github-release-url@2.0.0:
@@ -3611,7 +3611,7 @@ snapshots:
 
   nanoid@3.3.8: {}
 
-  natural-orderby@4.0.0: {}
+  natural-orderby@5.0.0: {}
 
   new-github-release-url@2.0.0:
     dependencies:
