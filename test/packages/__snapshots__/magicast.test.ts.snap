@@ -544,7 +544,7 @@ exports[`magicast@0.3.3 1`] = `
       "file": "/@babel/types/lib/index.d.ts",
       "id": "+type.ASTNode",
       "kind": "type",
-      "line": 1480,
+      "line": 377,
       "name": "ASTNode",
       "signature": "type Node =
   | AnyTypeAnnotation
@@ -665,7 +665,7 @@ exports[`magicast@0.3.3 1`] = `
   | NullLiteral
   | NullLiteralTypeAnnotation
   | NullableTypeAnnotation
-  | NumberLiteral
+  | NumberLiteral$1
   | NumberLiteralTypeAnnotation
   | NumberTypeAnnotation
   | NumericLiteral
@@ -693,13 +693,13 @@ exports[`magicast@0.3.3 1`] = `
   | QualifiedTypeIdentifier
   | RecordExpression
   | RegExpLiteral
-  | RegexLiteral
+  | RegexLiteral$1
   | RestElement
-  | RestProperty
+  | RestProperty$1
   | ReturnStatement
   | SequenceExpression
   | SpreadElement
-  | SpreadProperty
+  | SpreadProperty$1
   | StaticBlock
   | StringLiteral
   | StringLiteralTypeAnnotation
@@ -719,6 +719,7 @@ exports[`magicast@0.3.3 1`] = `
   | TSConstructorType
   | TSDeclareFunction
   | TSDeclareMethod
+  | TSEnumBody
   | TSEnumDeclaration
   | TSEnumMember
   | TSExportAssignment
@@ -756,6 +757,7 @@ exports[`magicast@0.3.3 1`] = `
   | TSSatisfiesExpression
   | TSStringKeyword
   | TSSymbolKeyword
+  | TSTemplateLiteralType
   | TSThisType
   | TSTupleType
   | TSTypeAliasDeclaration
