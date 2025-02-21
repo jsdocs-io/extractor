@@ -58,29 +58,29 @@
 		"release": "np"
 	},
 	"dependencies": {
-		"@microsoft/tsdoc": "^0.15.0",
-		"effect": "^3.9.1",
-		"execa": "^9.4.0",
-		"memoize": "^10.0.0",
+		"@microsoft/tsdoc": "^0.15.1",
+		"effect": "^3.13.2",
+		"execa": "^9.5.2",
+		"memoize": "^10.1.0",
 		"natural-orderby": "^5.0.0",
-		"pathe": "^1.1.2",
-		"prettier": "^3.3.3",
+		"pathe": "^2.0.3",
+		"prettier": "^3.5.1",
 		"read-pkg": "^9.0.1",
-		"resolve.exports": "^2.0.2",
+		"resolve.exports": "^2.0.3",
 		"tempy": "^3.1.0",
-		"ts-morph": "^24.0.0",
+		"ts-morph": "^25.0.1",
 		"validate-npm-package-name": "^6.0.0"
 	},
 	"devDependencies": {
-		"@arethetypeswrong/cli": "^0.17.2",
+		"@arethetypeswrong/cli": "^0.17.3",
 		"@total-typescript/shoehorn": "^0.1.2",
-		"@types/node": "^22.7.5",
+		"@types/node": "^22.13.4",
 		"@types/validate-npm-package-name": "^4.0.2",
-		"@vitest/coverage-v8": "^2.1.2",
-		"np": "^10.0.7",
+		"@vitest/coverage-v8": "^3.0.6",
+		"np": "^10.2.0",
 		"ts-dedent": "^2.2.0",
-		"tsup": "^8.3.0",
-		"typescript": "^5.6.3",
-		"vitest": "^2.1.2"
+		"tsup": "^8.3.6",
+		"typescript": "^5.7.3",
+		"vitest": "^3.0.6"
 	}
 }
