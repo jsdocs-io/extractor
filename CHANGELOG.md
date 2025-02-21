@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - String union type `DeclarationKind` replaces enum `DeclarationKinds`.
 - Support only Node >= 20.
+- ESM only
 
 ## [0.4.0] - 2022-08-15
 
