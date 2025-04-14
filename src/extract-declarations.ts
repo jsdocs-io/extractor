@@ -142,13 +142,13 @@ const extractDeclaration = async ({
 	seenNamespaces,
 }: ExtractDeclarationOptions): Promise<ExtractedDeclaration | undefined> => {
 	if (isVariable(declaration)) {
-		return extractVariable(containerName, exportName, declaration);
+		return await extractVariable(containerName, exportName, declaration);
 	}
 	if (isVariableAssignmentExpression(declaration)) {
-		return extractVariableAssignmentExpression(containerName, exportName, declaration);
+		return await extractVariableAssignmentExpression(containerName, exportName, declaration);
 	}
 	if (isExpression(declaration)) {
-		return extractExpression(containerName, exportName, declaration);
+		return await extractExpression(containerName, exportName, declaration);
 	}
 	if (isFunction(declaration)) {
 		if (seenFunctions.has(exportName)) {
@@ -157,22 +157,22 @@ const extractDeclaration = async ({
 			return undefined;
 		}
 		seenFunctions.add(exportName);
-		return extractFunction(containerName, exportName, declaration);
+		return await extractFunction(containerName, exportName, declaration);
 	}
 	if (isFunctionExpression(declaration)) {
-		return extractFunctionExpression(containerName, exportName, declaration);
+		return await extractFunctionExpression(containerName, exportName, declaration);
 	}
 	if (isClass(declaration)) {
-		return extractClass(containerName, exportName, declaration);
+		return await extractClass(containerName, exportName, declaration);
 	}
 	if (isInterface(declaration)) {
-		return extractInterface(containerName, exportName, declaration);
+		return await extractInterface(containerName, exportName, declaration);
 	}
 	if (isEnum(declaration)) {
-		return extractEnum(containerName, exportName, declaration);
+		return await extractEnum(containerName, exportName, declaration);
 	}
 	if (isTypeAlias(declaration)) {
-		return extractTypeAlias(containerName, exportName, declaration);
+		return await extractTypeAlias(containerName, exportName, declaration);
 	}
 	if (isNamespace(declaration) && maxDepth > 0) {
 		if (seenNamespaces.has(exportName)) {
@@ -186,7 +186,7 @@ const extractDeclaration = async ({
 			container: declaration,
 			maxDepth: maxDepth - 1,
 		});
-		return extractNamespace(containerName, exportName, declaration, innerDeclarations);
+		return await extractNamespace(containerName, exportName, declaration, innerDeclarations);
 	}
 	if (isFileModule(declaration) && maxDepth > 0) {
 		// A file module declaration happens with the following export forms:
@@ -197,7 +197,7 @@ const extractDeclaration = async ({
 			container: declaration,
 			maxDepth: maxDepth - 1,
 		});
-		return extractFileModule(containerName, exportName, declaration, innerDeclarations);
+		return await extractFileModule(containerName, exportName, declaration, innerDeclarations);
 	}
 	return undefined;
 };

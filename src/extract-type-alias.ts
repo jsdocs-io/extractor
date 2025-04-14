@@ -40,5 +40,5 @@ const typeAliasSignature = async (declaration: TypeAliasDeclaration): Promise<st
 	// - https://github.com/dsherret/ts-morph/issues/453#issuecomment-427405736
 	// - https://twitter.com/drosenwasser/status/1289640180035403776
 	const signature = declaration.getText();
-	return formatSignature("type", signature);
+	return await formatSignature("type", signature);
 };

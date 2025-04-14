@@ -36,5 +36,5 @@ const namespaceSignature = async (exportName: string): Promise<string> => {
 	const containerKeyword =
 		exportName.startsWith('"') || exportName.startsWith("'") ? "module" : "namespace";
 	const signature = `${containerKeyword} ${exportName} {}`;
-	return formatSignature("namespace", signature);
+	return await formatSignature("namespace", signature);
 };

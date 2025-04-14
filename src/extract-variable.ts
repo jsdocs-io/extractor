@@ -35,5 +35,5 @@ const variableSignature = async (
 ): Promise<string> => {
 	const kind = declaration.getVariableStatementOrThrow().getDeclarationKind().toString();
 	const type = apparentType(declaration);
-	return formatSignature("variable", `${kind} ${name}: ${type}`);
+	return await formatSignature("variable", `${kind} ${name}: ${type}`);
 };

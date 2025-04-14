@@ -83,7 +83,7 @@ export const extractClass = async (
 
 const classSignature = async (declaration: ClassDeclaration): Promise<string> => {
 	const signature = headText(declaration);
-	return formatSignature("class", signature);
+	return await formatSignature("class", signature);
 };
 
 const extractClassConstructors = async (
@@ -136,7 +136,7 @@ const classConstructorSignature = async (declaration: ConstructorDeclaration): P
 		})
 		.join(",");
 	const signature = `${modifiers} constructor(${params});`;
-	return formatSignature("class-constructor", signature);
+	return await formatSignature("class-constructor", signature);
 };
 
 const extractClassProperties = async (
@@ -188,7 +188,7 @@ const classPropertySignature = async (
 	const staticKeyword = declaration.isStatic() ? "static" : "";
 	const readonlyKeyword = declaration.getSetAccessor() === undefined ? "readonly" : "";
 	const signature = `${staticKeyword} ${readonlyKeyword} ${name}: ${type}`;
-	return formatSignature("class-property", signature);
+	return await formatSignature("class-property", signature);
 };
 
 const extractClassMethods = async (
@@ -230,5 +230,5 @@ const classMethodSignature = async (
 ): Promise<string> => {
 	const modifiers = modifiersText(declaration);
 	const type = typeCheckerType(declaration);
-	return formatSignature("class-method", `${modifiers} ${name}: ${type}`);
+	return await formatSignature("class-method", `${modifiers} ${name}: ${type}`);
 };

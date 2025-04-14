@@ -130,7 +130,7 @@ export const extractInterface = async (
 
 const interfaceSignature = async (declaration: InterfaceDeclaration): Promise<string> => {
 	const signature = headText(declaration);
-	return formatSignature("interface", signature);
+	return await formatSignature("interface", signature);
 };
 
 const extractInterfaceProperties = async (
@@ -158,7 +158,7 @@ const extractInterfaceProperties = async (
 
 const interfacePropertySignature = async (declaration: PropertySignature): Promise<string> => {
 	const signature = declaration.getText();
-	return formatSignature("interface-property", signature);
+	return await formatSignature("interface-property", signature);
 };
 
 const extractInterfaceMethods = async (
@@ -195,7 +195,7 @@ const interfaceMethodSignature = async (
 	declaration: MethodSignature,
 ): Promise<string> => {
 	const type = typeCheckerType(declaration);
-	return formatSignature("interface-method", `${name}: ${type}`);
+	return await formatSignature("interface-method", `${name}: ${type}`);
 };
 
 const extractInterfaceConstructSignatures = async (
@@ -224,7 +224,7 @@ const interfaceConstructSignatureSignature = async (
 	declaration: ConstructSignatureDeclaration,
 ): Promise<string> => {
 	const signature = declaration.getText();
-	return formatSignature("interface-construct-signature", signature);
+	return await formatSignature("interface-construct-signature", signature);
 };
 
 const extractInterfaceCallSignatures = async (
@@ -253,7 +253,7 @@ const interfaceCallSignatureSignature = async (
 	declaration: CallSignatureDeclaration,
 ): Promise<string> => {
 	const signature = declaration.getText();
-	return formatSignature("interface-call-signature", signature);
+	return await formatSignature("interface-call-signature", signature);
 };
 
 const extractInterfaceIndexSignatures = async (
@@ -282,7 +282,7 @@ const interfaceIndexSignatureSignature = async (
 	declaration: IndexSignatureDeclaration,
 ): Promise<string> => {
 	const signature = declaration.getText();
-	return formatSignature("interface-index-signature", signature);
+	return await formatSignature("interface-index-signature", signature);
 };
 
 const extractInterfaceGetAccessors = async (
@@ -312,7 +312,7 @@ const interfaceGetAccessorSignature = async (
 	declaration: GetAccessorDeclaration,
 ): Promise<string> => {
 	const signature = declaration.getText();
-	return formatSignature("interface-get-accessor", signature);
+	return await formatSignature("interface-get-accessor", signature);
 };
 
 const extractInterfaceSetAccessors = async (
@@ -342,5 +342,5 @@ const interfaceSetAccessorSignature = async (
 	declaration: SetAccessorDeclaration,
 ): Promise<string> => {
 	const signature = declaration.getText();
-	return formatSignature("interface-get-accessor", signature);
+	return await formatSignature("interface-get-accessor", signature);
 };

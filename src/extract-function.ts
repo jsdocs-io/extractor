@@ -34,5 +34,5 @@ const functionSignature = async (
 	declaration: FunctionDeclaration | ArrowFunction,
 ): Promise<string> => {
 	const type = typeCheckerType(declaration);
-	return formatSignature("function", `${name}: ${type}`);
+	return await formatSignature("function", `${name}: ${type}`);
 };

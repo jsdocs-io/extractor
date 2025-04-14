@@ -31,5 +31,5 @@ const fileModuleDocs = (declaration: SourceFile): string[] => {
 
 const fileModuleSignature = async (declaration: SourceFile): Promise<string> => {
 	const filename = declaration.getSourceFile().getBaseName();
-	return formatSignature("namespace", `module "${filename}" {}`);
+	return await formatSignature("namespace", `module "${filename}" {}`);
 };

@@ -39,5 +39,5 @@ const variableAssignmentExpressionSignature = async (
 	const variableType = apparentType(variableDeclaration);
 	const expressionType = apparentType(declaration);
 	const type = variableType !== "any" ? variableType : expressionType;
-	return formatSignature("variable", `${kind} ${name}: ${type}`);
+	return await formatSignature("variable", `${kind} ${name}: ${type}`);
 };

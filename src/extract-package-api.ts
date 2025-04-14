@@ -125,14 +125,15 @@ console.log(JSON.stringify(packageApi, null, 2));
 
 @returns A {@link PackageApi} object
 */
-export const extractPackageApi = ({
+export const extractPackageApi = async ({
 	pkg,
 	subpath = ".",
 	maxDepth = 5,
 	bunPath = "bun",
-}: ExtractPackageApiOptions): Promise<PackageApi> =>
-	extractPackageApiEffect({ pkg, subpath, maxDepth }).pipe(
+}: ExtractPackageApiOptions): Promise<PackageApi> => {
+	return await extractPackageApiEffect({ pkg, subpath, maxDepth }).pipe(
 		Effect.scoped,
 		Effect.provideService(PackageManager, bunPackageManager(bunPath)),
 		Effect.runPromise,
 	);
+};

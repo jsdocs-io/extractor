@@ -23,5 +23,5 @@ export const extractExpression = async (
 const expressionSignature = async (name: string, declaration: Expression): Promise<string> => {
 	const kind = "const";
 	const type = apparentType(declaration);
-	return formatSignature("variable", `${kind} ${name}: ${type}`);
+	return await formatSignature("variable", `${kind} ${name}: ${type}`);
 };
