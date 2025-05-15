@@ -1,0 +1,5782 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ts-api-utils@2.1.0 1`] = `
+{
+  "analyzedAt": Any<String>,
+  "analyzedIn": Any<Number>,
+  "declarations": [
+    {
+      "docs": [
+        "/**
+ * What operations(s), if any, an expression applies.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+enum.AccessKind",
+      "kind": "enum",
+      "line": 171,
+      "members": [
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+enum.AccessKind.+member.None",
+          "kind": "enum-member",
+          "line": 172,
+          "name": "None",
+          "signature": "None = 0",
+        },
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+enum.AccessKind.+member.Read",
+          "kind": "enum-member",
+          "line": 173,
+          "name": "Read",
+          "signature": "Read = 1",
+        },
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+enum.AccessKind.+member.Write",
+          "kind": "enum-member",
+          "line": 174,
+          "name": "Write",
+          "signature": "Write = 2",
+        },
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+enum.AccessKind.+member.Delete",
+          "kind": "enum-member",
+          "line": 175,
+          "name": "Delete",
+          "signature": "Delete = 4",
+        },
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+enum.AccessKind.+member.ReadWrite",
+          "kind": "enum-member",
+          "line": 176,
+          "name": "ReadWrite",
+          "signature": "ReadWrite = 3",
+        },
+      ],
+      "name": "AccessKind",
+      "signature": "enum AccessKind {}",
+    },
+    {
+      "docs": [
+        "/**
+ * Which "domain"(s) (most commonly, type or value space) a declaration is within.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+enum.DeclarationDomain",
+      "kind": "enum",
+      "line": 2947,
+      "members": [
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+enum.DeclarationDomain.+member.Namespace",
+          "kind": "enum-member",
+          "line": 2948,
+          "name": "Namespace",
+          "signature": "Namespace = 1",
+        },
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+enum.DeclarationDomain.+member.Type",
+          "kind": "enum-member",
+          "line": 2949,
+          "name": "Type",
+          "signature": "Type = 2",
+        },
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+enum.DeclarationDomain.+member.Value",
+          "kind": "enum-member",
+          "line": 2950,
+          "name": "Value",
+          "signature": "Value = 4",
+        },
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+enum.DeclarationDomain.+member.Any",
+          "kind": "enum-member",
+          "line": 2951,
+          "name": "Any",
+          "signature": "Any = 7",
+        },
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+enum.DeclarationDomain.+member.Import",
+          "kind": "enum-member",
+          "line": 2952,
+          "name": "Import",
+          "signature": "Import = 8",
+        },
+      ],
+      "name": "DeclarationDomain",
+      "signature": "enum DeclarationDomain {}",
+    },
+    {
+      "docs": [
+        "/**
+ * Which "domain"(s) (most commonly, type or value space) a usage is within.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+enum.UsageDomain",
+      "kind": "enum",
+      "line": 2958,
+      "members": [
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+enum.UsageDomain.+member.Namespace",
+          "kind": "enum-member",
+          "line": 2959,
+          "name": "Namespace",
+          "signature": "Namespace = 1",
+        },
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+enum.UsageDomain.+member.Type",
+          "kind": "enum-member",
+          "line": 2960,
+          "name": "Type",
+          "signature": "Type = 2",
+        },
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+enum.UsageDomain.+member.Value",
+          "kind": "enum-member",
+          "line": 2961,
+          "name": "Value",
+          "signature": "Value = 4",
+        },
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+enum.UsageDomain.+member.Any",
+          "kind": "enum-member",
+          "line": 2962,
+          "name": "Any",
+          "signature": "Any = 7",
+        },
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+enum.UsageDomain.+member.TypeQuery",
+          "kind": "enum-member",
+          "line": 2963,
+          "name": "TypeQuery",
+          "signature": "TypeQuery = 8",
+        },
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+enum.UsageDomain.+member.ValueOrNamespace",
+          "kind": "enum-member",
+          "line": 2964,
+          "name": "ValueOrNamespace",
+          "signature": "ValueOrNamespace = 5",
+        },
+      ],
+      "name": "UsageDomain",
+      "signature": "enum UsageDomain {}",
+    },
+    {
+      "docs": [
+        "/**
+ * Creates a mapping of each declared type and value to its type information.
+ * @category Nodes - Other Utilities
+ * @example
+ * \`\`\`ts
+ * declare const sourceFile: ts.SourceFile;
+ *
+ * const usage = collectVariableUsage(sourceFile);
+ *
+ * for (const [identifier, information] of usage) {
+ * 	console.log(\`\${identifier.getText()} is used \${information.uses.length} time(s).\`);
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.collectVariableUsage",
+      "kind": "function",
+      "line": 3017,
+      "name": "collectVariableUsage",
+      "signature": "collectVariableUsage: (
+  sourceFile: ts.SourceFile,
+) => Map<ts.Identifier, UsageInfo>;",
+    },
+    {
+      "docs": [
+        "/**
+ * Iterates over all comments owned by \`node\` or its children.
+ * @category Nodes - Other Utilities
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * forEachComment(node, (fullText, comment) => {
+ *    console.log(\`Found comment at position \${comment.pos}: '\${fullText}'.\`);
+ * });
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.forEachComment",
+      "kind": "function",
+      "line": 28,
+      "name": "forEachComment",
+      "signature": "forEachComment: (
+  node: ts.Node,
+  callback: ForEachCommentCallback,
+  sourceFile?: ts.SourceFile,
+) => void;",
+    },
+    {
+      "docs": [
+        "/**
+ * Iterates over all tokens of \`node\`
+ * @category Nodes - Other Utilities
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * forEachToken(node, (token) => {
+ * 	console.log("Found token:", token.getText());
+ * });
+ * \`\`\`
+ * @param node The node whose tokens should be visited
+ * @param callback Is called for every token contained in \`node\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.forEachToken",
+      "kind": "function",
+      "line": 2049,
+      "name": "forEachToken",
+      "signature": "forEachToken: (
+  node: ts.Node,
+  callback: ForEachTokenCallback,
+  sourceFile?: ts.SourceFile,
+) => void;",
+    },
+    {
+      "docs": [
+        "/**
+ * Determines which operation(s), if any, an expression applies.
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Expression;
+ *
+ * if (getAccessKind(node).Write & AccessKind.Write) !== 0) {
+ *   // this is a reassignment (write)
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.getAccessKind",
+      "kind": "function",
+      "line": 189,
+      "name": "getAccessKind",
+      "signature": "getAccessKind: (node: ts.Expression) => AccessKind;",
+    },
+    {
+      "docs": [
+        "/**
+ * Get the \`CallSignatures\` of the given type.
+ * @category Types - Getters
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * getCallSignaturesOfType(type);
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.getCallSignaturesOfType",
+      "kind": "function",
+      "line": 2061,
+      "name": "getCallSignaturesOfType",
+      "signature": "getCallSignaturesOfType: (type: ts.Type) => readonly ts.Signature[];",
+    },
+    {
+      "docs": [
+        "/**
+ * Get the property with the given name on the given type (if it exists).
+ * @category Types - Getters
+ * @example
+ * \`\`\`ts
+ * declare const property: ts.Symbol;
+ * declare const type: ts.Type;
+ *
+ * getPropertyOfType(type, property.getEscapedName());
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.getPropertyOfType",
+      "kind": "function",
+      "line": 2073,
+      "name": "getPropertyOfType",
+      "signature": "getPropertyOfType: (
+  type: ts.Type,
+  name: ts.__String,
+) => ts.Symbol | undefined;",
+    },
+    {
+      "docs": [
+        "/**
+ * Retrieves a type symbol corresponding to a well-known string name.
+ * @category Types - Getters
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ * declare const typeChecker: ts.TypeChecker;
+ *
+ * getWellKnownSymbolPropertyOfType(type, "asyncIterator", typeChecker);
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.getWellKnownSymbolPropertyOfType",
+      "kind": "function",
+      "line": 2085,
+      "name": "getWellKnownSymbolPropertyOfType",
+      "signature": "getWellKnownSymbolPropertyOfType: (
+  type: ts.Type,
+  wellKnownSymbolName: string,
+  typeChecker: ts.TypeChecker,
+) => ts.Symbol | undefined;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`HasDecorators\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (hasDecorators(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`HasDecorators\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.hasDecorators",
+      "kind": "function",
+      "line": 1195,
+      "name": "hasDecorators",
+      "signature": "hasDecorators: (node: ts.Node) => node is ts.HasDecorators;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`HasExpressionInitializer\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (hasExpressionInitializer(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`HasExpressionInitializer\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.hasExpressionInitializer",
+      "kind": "function",
+      "line": 1209,
+      "name": "hasExpressionInitializer",
+      "signature": "hasExpressionInitializer: (
+  node: ts.Node,
+) => node is ts.HasExpressionInitializer;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`HasInitializer\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (hasInitializer(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`HasInitializer\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.hasInitializer",
+      "kind": "function",
+      "line": 1223,
+      "name": "hasInitializer",
+      "signature": "hasInitializer: (node: ts.Node) => node is ts.HasInitializer;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`HasJSDoc\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (hasJSDoc(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`HasJSDoc\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.hasJSDoc",
+      "kind": "function",
+      "line": 1237,
+      "name": "hasJSDoc",
+      "signature": "hasJSDoc: (node: ts.Node) => node is ts.HasJSDoc;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`HasModifiers\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (hasModifiers(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`HasModifiers\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.hasModifiers",
+      "kind": "function",
+      "line": 1251,
+      "name": "hasModifiers",
+      "signature": "hasModifiers: (node: ts.Node) => node is ts.HasModifiers;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`HasType\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (hasType(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`HasType\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.hasType",
+      "kind": "function",
+      "line": 1265,
+      "name": "hasType",
+      "signature": "hasType: (node: ts.Node) => node is ts.HasType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`HasTypeArguments\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (hasTypeArguments(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`HasTypeArguments\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.hasTypeArguments",
+      "kind": "function",
+      "line": 1279,
+      "name": "hasTypeArguments",
+      "signature": "hasTypeArguments: (node: ts.Node) => node is ts.HasTypeArguments;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if the given iterable includes a modifier of any of the given kinds.
+ * @category Modifier Utilities
+ * @example
+ * \`\`\`ts
+ * declare const modifiers: ts.Modifier[];
+ *
+ * includesModifier(modifiers, ts.SyntaxKind.AbstractKeyword);
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.includesModifier",
+      "kind": "function",
+      "line": 166,
+      "name": "includesModifier",
+      "signature": "includesModifier: (
+  modifiers: Iterable<ts.ModifierLike> | undefined,
+  ...kinds: ts.ModifierSyntaxKind[]
+) => boolean;",
+    },
+    {
+      "docs": [
+        "/**
+ * Get the intersection type parts of the given type.
+ *
+ * If the given type is not a intersection type, an array contain only that type will be returned.
+ * @category Types - Utilities
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * for (const constituent of intersectionConstituents(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.intersectionConstituents",
+      "kind": "function",
+      "line": 2796,
+      "name": "intersectionConstituents",
+      "signature": "intersectionConstituents: (type: ts.Type) => ts.Type[];",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`AbstractKeyword\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isAbstractKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`AbstractKeyword\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isAbstractKeyword",
+      "kind": "function",
+      "line": 457,
+      "name": "isAbstractKeyword",
+      "signature": "isAbstractKeyword: (node: ts.Node) => node is ts.AbstractKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`AccessExpression\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isAccessExpression(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`AccessExpression\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isAccessExpression",
+      "kind": "function",
+      "line": 1293,
+      "name": "isAccessExpression",
+      "signature": "isAccessExpression: (node: ts.Node) => node is ts.AccessExpression;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`AccessibilityModifier\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isAccessibilityModifier(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`AccessibilityModifier\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isAccessibilityModifier",
+      "kind": "function",
+      "line": 1307,
+      "name": "isAccessibilityModifier",
+      "signature": "isAccessibilityModifier: (
+  node: ts.Node,
+) => node is ts.AccessibilityModifier;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`AccessorDeclaration\`.
+ * @deprecated With TypeScript v5, in favor of typescript's \`isAccessor\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isAccessorDeclaration(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`AccessorDeclaration\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isAccessorDeclaration",
+      "kind": "function",
+      "line": 1322,
+      "name": "isAccessorDeclaration",
+      "signature": "isAccessorDeclaration: (node: ts.Node) => node is ts.AccessorDeclaration;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`AccessorKeyword\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isAccessorKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`AccessorKeyword\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isAccessorKeyword",
+      "kind": "function",
+      "line": 471,
+      "name": "isAccessorKeyword",
+      "signature": "isAccessorKeyword: (node: ts.Node) => node is ts.AccessorKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an {@link AnyKeyword}.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isAnyKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an {@link AnyKeyword}.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isAnyKeyword",
+      "kind": "function",
+      "line": 485,
+      "name": "isAnyKeyword",
+      "signature": "isAnyKeyword: (node: ts.Node) => node is AnyKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`ArrayBindingElement\`.
+ * @deprecated With TypeScript v5, in favor of typescript's \`isArrayBindingElement\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isArrayBindingElement(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`ArrayBindingElement\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isArrayBindingElement",
+      "kind": "function",
+      "line": 1337,
+      "name": "isArrayBindingElement",
+      "signature": "isArrayBindingElement: (node: ts.Node) => node is ts.ArrayBindingElement;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`ArrayBindingOrAssignmentPattern\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isArrayBindingOrAssignmentPattern(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`ArrayBindingOrAssignmentPattern\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isArrayBindingOrAssignmentPattern",
+      "kind": "function",
+      "line": 1351,
+      "name": "isArrayBindingOrAssignmentPattern",
+      "signature": "isArrayBindingOrAssignmentPattern: (
+  node: ts.Node,
+) => node is ts.ArrayBindingOrAssignmentPattern;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`AssertKeyword\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isAssertKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`AssertKeyword\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isAssertKeyword",
+      "kind": "function",
+      "line": 499,
+      "name": "isAssertKeyword",
+      "signature": "isAssertKeyword: (node: ts.Node) => node is ts.AssertKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`AssertsKeyword\`.
+ * @deprecated With TypeScript v5, in favor of typescript's \`isAssertsKeyword\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isAssertsKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`AssertsKeyword\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isAssertsKeyword",
+      "kind": "function",
+      "line": 514,
+      "name": "isAssertsKeyword",
+      "signature": "isAssertsKeyword: (node: ts.Node) => node is ts.AssertsKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test of the kind given is for assignment.
+ * @category Syntax Utilities
+ * @example
+ * \`\`\`ts
+ * declare const kind: ts.SyntaxKind;
+ *
+ * isAssignmentKind(kind);
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isAssignmentKind",
+      "kind": "function",
+      "line": 2002,
+      "name": "isAssignmentKind",
+      "signature": "isAssignmentKind: (kind: ts.SyntaxKind) => boolean;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`AssignmentPattern\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isAssignmentPattern(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`AssignmentPattern\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isAssignmentPattern",
+      "kind": "function",
+      "line": 1365,
+      "name": "isAssignmentPattern",
+      "signature": "isAssignmentPattern: (node: ts.Node) => node is ts.AssignmentPattern;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`AsyncKeyword\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isAsyncKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`AsyncKeyword\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isAsyncKeyword",
+      "kind": "function",
+      "line": 528,
+      "name": "isAsyncKeyword",
+      "signature": "isAsyncKeyword: (node: ts.Node) => node is ts.AsyncKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`AwaitKeyword\`.
+ * @deprecated With TypeScript v5, in favor of typescript's \`isAwaitKeyword\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isAwaitKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`AwaitKeyword\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isAwaitKeyword",
+      "kind": "function",
+      "line": 543,
+      "name": "isAwaitKeyword",
+      "signature": "isAwaitKeyword: (node: ts.Node) => node is ts.AwaitKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a {@link BigIntKeyword}.
+ * @deprecated With TypeScript v5, in favor of typescript's \`isBigIntKeyword\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isBigIntKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a {@link BigIntKeyword}.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isBigIntKeyword",
+      "kind": "function",
+      "line": 558,
+      "name": "isBigIntKeyword",
+      "signature": "isBigIntKeyword: (node: ts.Node) => node is BigIntKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`BigIntLiteralType\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isBigIntLiteralType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isBigIntLiteralType",
+      "kind": "function",
+      "line": 2450,
+      "name": "isBigIntLiteralType",
+      "signature": "isBigIntLiteralType: (type: ts.Type) => type is ts.BigIntLiteralType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`BindingOrAssignmentElementRestIndicator\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isBindingOrAssignmentElementRestIndicator(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`BindingOrAssignmentElementRestIndicator\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isBindingOrAssignmentElementRestIndicator",
+      "kind": "function",
+      "line": 1379,
+      "name": "isBindingOrAssignmentElementRestIndicator",
+      "signature": "isBindingOrAssignmentElementRestIndicator: (
+  node: ts.Node,
+) => node is ts.BindingOrAssignmentElementRestIndicator;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`BindingOrAssignmentElementTarget\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isBindingOrAssignmentElementTarget(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`BindingOrAssignmentElementTarget\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isBindingOrAssignmentElementTarget",
+      "kind": "function",
+      "line": 1393,
+      "name": "isBindingOrAssignmentElementTarget",
+      "signature": "isBindingOrAssignmentElementTarget: (
+  node: ts.Node,
+) => node is ts.BindingOrAssignmentElementTarget;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`BindingOrAssignmentPattern\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isBindingOrAssignmentPattern(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`BindingOrAssignmentPattern\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isBindingOrAssignmentPattern",
+      "kind": "function",
+      "line": 1407,
+      "name": "isBindingOrAssignmentPattern",
+      "signature": "isBindingOrAssignmentPattern: (
+  node: ts.Node,
+) => node is ts.BindingOrAssignmentPattern;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`BindingPattern\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isBindingPattern(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`BindingPattern\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isBindingPattern",
+      "kind": "function",
+      "line": 1421,
+      "name": "isBindingPattern",
+      "signature": "isBindingPattern: (node: ts.Node) => node is ts.BindingPattern;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`BlockLike\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isBlockLike(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`BlockLike\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isBlockLike",
+      "kind": "function",
+      "line": 1435,
+      "name": "isBlockLike",
+      "signature": "isBlockLike: (node: ts.Node) => node is ts.BlockLike;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a {@link BooleanKeyword}.
+ * @deprecated With TypeScript v5, in favor of typescript's \`isBooleanKeyword\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isBooleanKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a {@link BooleanKeyword}.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isBooleanKeyword",
+      "kind": "function",
+      "line": 573,
+      "name": "isBooleanKeyword",
+      "signature": "isBooleanKeyword: (node: ts.Node) => node is BooleanKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`BooleanLiteral\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isBooleanLiteral(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`BooleanLiteral\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isBooleanLiteral",
+      "kind": "function",
+      "line": 1449,
+      "name": "isBooleanLiteral",
+      "signature": "isBooleanLiteral: (node: ts.Node) => node is ts.BooleanLiteral;",
+    },
+    {
+      "docs": [
+        "/**
+ * Determines whether the given type is a boolean literal type.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isBooleanLiteralType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isBooleanLiteralType",
+      "kind": "function",
+      "line": 2463,
+      "name": "isBooleanLiteralType",
+      "signature": "isBooleanLiteralType: (type: ts.Type) => type is BooleanLiteralType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`ClassLikeDeclaration\`.
+ * @deprecated With TypeScript v5, in favor of typescript's \`isClassLike\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isClassLikeDeclaration(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`ClassLikeDeclaration\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isClassLikeDeclaration",
+      "kind": "function",
+      "line": 1464,
+      "name": "isClassLikeDeclaration",
+      "signature": "isClassLikeDeclaration: (node: ts.Node) => node is ts.ClassLikeDeclaration;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`ClassMemberModifier\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isClassMemberModifier(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`ClassMemberModifier\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isClassMemberModifier",
+      "kind": "function",
+      "line": 1478,
+      "name": "isClassMemberModifier",
+      "signature": "isClassMemberModifier: (node: ts.Node) => node is ts.ClassMemberModifier;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`ColonToken\`.
+ * @deprecated With TypeScript v5, in favor of typescript's \`isColonToken\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isColonToken(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`ColonToken\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isColonToken",
+      "kind": "function",
+      "line": 588,
+      "name": "isColonToken",
+      "signature": "isColonToken: (node: ts.Node) => node is ts.ColonToken;",
+    },
+    {
+      "docs": [
+        "/**
+ * Checks if a given compiler option is enabled.
+ * It handles dependencies of options, e.g. \`declaration\` is implicitly enabled by \`composite\` or \`strictNullChecks\` is enabled by \`strict\`.
+ * However, it does not check dependencies that are already checked and reported as errors, e.g. \`checkJs\` without \`allowJs\`.
+ * This function only handles boolean flags.
+ * @category Compiler Options
+ * @example
+ * \`\`\`ts
+ * const options = {
+ * 	allowJs: true,
+ * };
+ *
+ * isCompilerOptionEnabled(options, "allowJs"); // true
+ * isCompilerOptionEnabled(options, "allowSyntheticDefaultImports"); // false
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isCompilerOptionEnabled",
+      "kind": "function",
+      "line": 58,
+      "name": "isCompilerOptionEnabled",
+      "signature": "isCompilerOptionEnabled: (
+  options: ts.CompilerOptions,
+  option: BooleanCompilerOptions,
+) => boolean;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`ConditionalType\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isConditionalType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isConditionalType",
+      "kind": "function",
+      "line": 2595,
+      "name": "isConditionalType",
+      "signature": "isConditionalType: (type: ts.Type) => type is ts.ConditionalType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a {@link ConstAssertionExpression}.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isConstAssertionExpression(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a {@link ConstAssertionExpression}.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isConstAssertionExpression",
+      "kind": "function",
+      "line": 231,
+      "name": "isConstAssertionExpression",
+      "signature": "isConstAssertionExpression: (
+  node: ts.AssertionExpression,
+) => node is ConstAssertionExpression;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`ConstKeyword\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isConstKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`ConstKeyword\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isConstKeyword",
+      "kind": "function",
+      "line": 602,
+      "name": "isConstKeyword",
+      "signature": "isConstKeyword: (node: ts.Node) => node is ts.ConstKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`DeclarationName\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isDeclarationName(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`DeclarationName\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isDeclarationName",
+      "kind": "function",
+      "line": 1492,
+      "name": "isDeclarationName",
+      "signature": "isDeclarationName: (node: ts.Node) => node is ts.DeclarationName;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`DeclarationWithTypeParameterChildren\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isDeclarationWithTypeParameterChildren(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`DeclarationWithTypeParameterChildren\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isDeclarationWithTypeParameterChildren",
+      "kind": "function",
+      "line": 1506,
+      "name": "isDeclarationWithTypeParameterChildren",
+      "signature": "isDeclarationWithTypeParameterChildren: (
+  node: ts.Node,
+) => node is ts.DeclarationWithTypeParameterChildren;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`DeclarationWithTypeParameters\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isDeclarationWithTypeParameters(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`DeclarationWithTypeParameters\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isDeclarationWithTypeParameters",
+      "kind": "function",
+      "line": 1520,
+      "name": "isDeclarationWithTypeParameters",
+      "signature": "isDeclarationWithTypeParameters: (
+  node: ts.Node,
+) => node is ts.DeclarationWithTypeParameters;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`DeclareKeyword\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isDeclareKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`DeclareKeyword\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isDeclareKeyword",
+      "kind": "function",
+      "line": 616,
+      "name": "isDeclareKeyword",
+      "signature": "isDeclareKeyword: (node: ts.Node) => node is ts.DeclareKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`DefaultKeyword\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isDefaultKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`DefaultKeyword\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isDefaultKeyword",
+      "kind": "function",
+      "line": 630,
+      "name": "isDefaultKeyword",
+      "signature": "isDefaultKeyword: (node: ts.Node) => node is ts.DefaultKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`DestructuringPattern\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isDestructuringPattern(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`DestructuringPattern\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isDestructuringPattern",
+      "kind": "function",
+      "line": 1534,
+      "name": "isDestructuringPattern",
+      "signature": "isDestructuringPattern: (node: ts.Node) => node is ts.DestructuringPattern;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`DotToken\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isDotToken(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`DotToken\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isDotToken",
+      "kind": "function",
+      "line": 644,
+      "name": "isDotToken",
+      "signature": "isDotToken: (node: ts.Node) => node is ts.DotToken;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`EndOfFileToken\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isEndOfFileToken(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`EndOfFileToken\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isEndOfFileToken",
+      "kind": "function",
+      "line": 658,
+      "name": "isEndOfFileToken",
+      "signature": "isEndOfFileToken: (node: ts.Node) => node is ts.EndOfFileToken;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`EntityNameExpression\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isEntityNameExpression(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`EntityNameExpression\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isEntityNameExpression",
+      "kind": "function",
+      "line": 1548,
+      "name": "isEntityNameExpression",
+      "signature": "isEntityNameExpression: (node: ts.Node) => node is ts.EntityNameExpression;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`EntityNameOrEntityNameExpression\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isEntityNameOrEntityNameExpression(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`EntityNameOrEntityNameExpression\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isEntityNameOrEntityNameExpression",
+      "kind": "function",
+      "line": 1562,
+      "name": "isEntityNameOrEntityNameExpression",
+      "signature": "isEntityNameOrEntityNameExpression: (
+  node: ts.Node,
+) => node is ts.EntityNameOrEntityNameExpression;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`EnumType\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isEnumType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isEnumType",
+      "kind": "function",
+      "line": 2608,
+      "name": "isEnumType",
+      "signature": "isEnumType: (type: ts.Type) => type is ts.EnumType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`EqualsGreaterThanToken\`.
+ * @deprecated With TypeScript v5, in favor of typescript's \`isEqualsGreaterThanToken\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isEqualsGreaterThanToken(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`EqualsGreaterThanToken\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isEqualsGreaterThanToken",
+      "kind": "function",
+      "line": 673,
+      "name": "isEqualsGreaterThanToken",
+      "signature": "isEqualsGreaterThanToken: (
+  node: ts.Node,
+) => node is ts.EqualsGreaterThanToken;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`EqualsToken\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isEqualsToken(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`EqualsToken\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isEqualsToken",
+      "kind": "function",
+      "line": 687,
+      "name": "isEqualsToken",
+      "signature": "isEqualsToken: (node: ts.Node) => node is ts.EqualsToken;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`EvolvingArrayType\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isEvolvingArrayType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isEvolvingArrayType",
+      "kind": "function",
+      "line": 2555,
+      "name": "isEvolvingArrayType",
+      "signature": "isEvolvingArrayType: (type: ts.Type) => type is ts.EvolvingArrayType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`ExclamationToken\`.
+ * @deprecated With TypeScript v5, in favor of typescript's \`isExclamationToken\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isExclamationToken(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`ExclamationToken\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isExclamationToken",
+      "kind": "function",
+      "line": 702,
+      "name": "isExclamationToken",
+      "signature": "isExclamationToken: (node: ts.Node) => node is ts.ExclamationToken;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`ExportKeyword\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isExportKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`ExportKeyword\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isExportKeyword",
+      "kind": "function",
+      "line": 716,
+      "name": "isExportKeyword",
+      "signature": "isExportKeyword: (node: ts.Node) => node is ts.ExportKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a {@link FalseKeyword}.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isFalseKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a {@link FalseKeyword}.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isFalseKeyword",
+      "kind": "function",
+      "line": 730,
+      "name": "isFalseKeyword",
+      "signature": "isFalseKeyword: (node: ts.Node) => node is FalseKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`FalseLiteral\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isFalseLiteral(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`FalseLiteral\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isFalseLiteral",
+      "kind": "function",
+      "line": 744,
+      "name": "isFalseLiteral",
+      "signature": "isFalseLiteral: (node: ts.Node) => node is ts.FalseLiteral;",
+    },
+    {
+      "docs": [
+        "/**
+ * Determines whether the given type is a boolean literal type for "false".
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isFalseLiteralType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isFalseLiteralType",
+      "kind": "function",
+      "line": 2476,
+      "name": "isFalseLiteralType",
+      "signature": "isFalseLiteralType: (type: ts.Type) => type is FalseLiteralType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Determines whether a type is definitely falsy. This function doesn't unwrap union types.
+ * @category Types - Utilities
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isFalsyType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isFalsyType",
+      "kind": "function",
+      "line": 2815,
+      "name": "isFalsyType",
+      "signature": "isFalsyType: (type: ts.Type) => boolean;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`ForInOrOfStatement\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isForInOrOfStatement(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`ForInOrOfStatement\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isForInOrOfStatement",
+      "kind": "function",
+      "line": 1576,
+      "name": "isForInOrOfStatement",
+      "signature": "isForInOrOfStatement: (node: ts.Node) => node is ts.ForInOrOfStatement;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`FreshableIntrinsicType\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isFreshableIntrinsicType(type)) {
+ *   // ...
+ * }
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isFreshableIntrinsicType",
+      "kind": "function",
+      "line": 2394,
+      "name": "isFreshableIntrinsicType",
+      "signature": "isFreshableIntrinsicType: (type: ts.Type) => type is FreshableIntrinsicType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`FreshableType\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isFreshableType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isFreshableType",
+      "kind": "function",
+      "line": 2621,
+      "name": "isFreshableType",
+      "signature": "isFreshableType: (type: ts.Type) => type is ts.FreshableType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`FunctionLikeDeclaration\`.
+ * @deprecated With TypeScript v5, in favor of typescript's \`isFunctionLike\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isFunctionLikeDeclaration(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`FunctionLikeDeclaration\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isFunctionLikeDeclaration",
+      "kind": "function",
+      "line": 1591,
+      "name": "isFunctionLikeDeclaration",
+      "signature": "isFunctionLikeDeclaration: (
+  node: ts.Node,
+) => node is ts.FunctionLikeDeclaration;",
+    },
+    {
+      "docs": [
+        "/**
+ * Is the node a scope boundary, specifically due to it being a function.
+ * @category Scope Utilities
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isFunctionScopeBoundary(node, ts.ObjectFlags.Anonymous)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isFunctionScopeBoundary",
+      "kind": "function",
+      "line": 1990,
+      "name": "isFunctionScopeBoundary",
+      "signature": "isFunctionScopeBoundary: (node: ts.Node) => boolean;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`ImportExpression\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isImportExpression(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`ImportExpression\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isImportExpression",
+      "kind": "function",
+      "line": 758,
+      "name": "isImportExpression",
+      "signature": "isImportExpression: (node: ts.Node) => node is ts.ImportExpression;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an {@link ImportKeyword}.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isImportKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an {@link ImportKeyword}.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isImportKeyword",
+      "kind": "function",
+      "line": 772,
+      "name": "isImportKeyword",
+      "signature": "isImportKeyword: (node: ts.Node) => node is ImportKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`IndexedAccessType\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isIndexedAccessType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isIndexedAccessType",
+      "kind": "function",
+      "line": 2634,
+      "name": "isIndexedAccessType",
+      "signature": "isIndexedAccessType: (type: ts.Type) => type is ts.IndexedAccessType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`IndexType\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isIndexType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isIndexType",
+      "kind": "function",
+      "line": 2647,
+      "name": "isIndexType",
+      "signature": "isIndexType: (type: ts.Type) => type is ts.IndexType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`InKeyword\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isInKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`InKeyword\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isInKeyword",
+      "kind": "function",
+      "line": 786,
+      "name": "isInKeyword",
+      "signature": "isInKeyword: (node: ts.Node) => node is ts.InKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`InstantiableType\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isInstantiableType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isInstantiableType",
+      "kind": "function",
+      "line": 2660,
+      "name": "isInstantiableType",
+      "signature": "isInstantiableType: (type: ts.Type) => type is ts.InstantiableType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`IntersectionType\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isIntersectionType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isIntersectionType",
+      "kind": "function",
+      "line": 2673,
+      "name": "isIntersectionType",
+      "signature": "isIntersectionType: (type: ts.Type) => type is ts.IntersectionType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Determines whether the given type is the "any" intrinsic type.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isIntrinsicAnyType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isIntrinsicAnyType",
+      "kind": "function",
+      "line": 2145,
+      "name": "isIntrinsicAnyType",
+      "signature": "isIntrinsicAnyType: (type: ts.Type) => type is IntrinsicAnyType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Determines whether the given type is the "bigint" intrinsic type.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isIntrinsicBigIntType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isIntrinsicBigIntType",
+      "kind": "function",
+      "line": 2158,
+      "name": "isIntrinsicBigIntType",
+      "signature": "isIntrinsicBigIntType: (type: ts.Type) => type is IntrinsicBigIntType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Determines whether the given type is the "boolean" intrinsic type.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isIntrinsicBooleanType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isIntrinsicBooleanType",
+      "kind": "function",
+      "line": 2171,
+      "name": "isIntrinsicBooleanType",
+      "signature": "isIntrinsicBooleanType: (type: ts.Type) => type is IntrinsicBooleanType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Determines whether the given type is the "error" intrinsic type.
+ *
+ * The intrinsic error type occurs when TypeScript encounters an error while
+ * trying to resolve the type.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isIntrinsicErrorType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isIntrinsicErrorType",
+      "kind": "function",
+      "line": 2187,
+      "name": "isIntrinsicErrorType",
+      "signature": "isIntrinsicErrorType: (type: ts.Type) => type is IntrinsicErrorType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Determines whether the given type is the "symbol" intrinsic type.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isIntrinsicESSymbolType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isIntrinsicESSymbolType",
+      "kind": "function",
+      "line": 2200,
+      "name": "isIntrinsicESSymbolType",
+      "signature": "isIntrinsicESSymbolType: (type: ts.Type) => type is IntrinsicESSymbolType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Determines whether the given type is the "never" intrinsic type.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isIntrinsicNeverType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isIntrinsicNeverType",
+      "kind": "function",
+      "line": 2270,
+      "name": "isIntrinsicNeverType",
+      "signature": "isIntrinsicNeverType: (type: ts.Type) => type is IntrinsicNeverType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Determines whether the given type is a non-primitive intrinsic type.
+ * E.g. An "object" intrinsic type.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isIntrinsicNonPrimitiveType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isIntrinsicNonPrimitiveType",
+      "kind": "function",
+      "line": 2284,
+      "name": "isIntrinsicNonPrimitiveType",
+      "signature": "isIntrinsicNonPrimitiveType: (
+  type: ts.Type,
+) => type is IntrinsicNonPrimitiveType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Determines whether the given type is the "null" intrinsic type.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isIntrinsicNullType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isIntrinsicNullType",
+      "kind": "function",
+      "line": 2297,
+      "name": "isIntrinsicNullType",
+      "signature": "isIntrinsicNullType: (type: ts.Type) => type is IntrinsicNullType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Determines whether the given type is the "number" intrinsic type.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isIntrinsicNumberType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isIntrinsicNumberType",
+      "kind": "function",
+      "line": 2310,
+      "name": "isIntrinsicNumberType",
+      "signature": "isIntrinsicNumberType: (type: ts.Type) => type is IntrinsicNumberType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Determines whether the given type is the "string" intrinsic type.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isIntrinsicStringType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isIntrinsicStringType",
+      "kind": "function",
+      "line": 2323,
+      "name": "isIntrinsicStringType",
+      "signature": "isIntrinsicStringType: (type: ts.Type) => type is IntrinsicStringType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is an {@link IntrinsicType}.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isIntrinsicType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isIntrinsicType",
+      "kind": "function",
+      "line": 2336,
+      "name": "isIntrinsicType",
+      "signature": "isIntrinsicType: (type: ts.Type) => type is IntrinsicType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Determines whether the given type is the "undefined" intrinsic type.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isIntrinsicUndefinedType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isIntrinsicUndefinedType",
+      "kind": "function",
+      "line": 2349,
+      "name": "isIntrinsicUndefinedType",
+      "signature": "isIntrinsicUndefinedType: (type: ts.Type) => type is IntrinsicUndefinedType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Determines whether the given type is the "unknown" intrinsic type.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isIntrinsicUnknownType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isIntrinsicUnknownType",
+      "kind": "function",
+      "line": 2362,
+      "name": "isIntrinsicUnknownType",
+      "signature": "isIntrinsicUnknownType: (type: ts.Type) => type is IntrinsicUnknownType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Determines whether the given type is the "void" intrinsic type.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isIntrinsicVoidType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isIntrinsicVoidType",
+      "kind": "function",
+      "line": 2375,
+      "name": "isIntrinsicVoidType",
+      "signature": "isIntrinsicVoidType: (type: ts.Type) => type is IntrinsicVoidType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`IterationStatement\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isIterationStatement(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`IterationStatement\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isIterationStatement",
+      "kind": "function",
+      "line": 245,
+      "name": "isIterationStatement",
+      "signature": "isIterationStatement: (node: ts.Node) => node is ts.IterationStatement;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`JSDocComment\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isJSDocComment(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`JSDocComment\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isJSDocComment",
+      "kind": "function",
+      "line": 1605,
+      "name": "isJSDocComment",
+      "signature": "isJSDocComment: (node: ts.Node) => node is ts.JSDocComment;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`JSDocNamespaceBody\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isJSDocNamespaceBody(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`JSDocNamespaceBody\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isJSDocNamespaceBody",
+      "kind": "function",
+      "line": 1619,
+      "name": "isJSDocNamespaceBody",
+      "signature": "isJSDocNamespaceBody: (node: ts.Node) => node is ts.JSDocNamespaceBody;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`JSDocNamespaceDeclaration\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isJSDocNamespaceDeclaration(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`JSDocNamespaceDeclaration\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isJSDocNamespaceDeclaration",
+      "kind": "function",
+      "line": 259,
+      "name": "isJSDocNamespaceDeclaration",
+      "signature": "isJSDocNamespaceDeclaration: (
+  node: ts.Node,
+) => node is ts.JSDocNamespaceDeclaration;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`JSDocText\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isJSDocText(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`JSDocText\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isJSDocText",
+      "kind": "function",
+      "line": 800,
+      "name": "isJSDocText",
+      "signature": "isJSDocText: (node: ts.Node) => node is ts.JSDocText;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`JSDocTypeReferencingNode\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isJSDocTypeReferencingNode(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`JSDocTypeReferencingNode\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isJSDocTypeReferencingNode",
+      "kind": "function",
+      "line": 1633,
+      "name": "isJSDocTypeReferencingNode",
+      "signature": "isJSDocTypeReferencingNode: (
+  node: ts.Node,
+) => node is ts.JSDocTypeReferencingNode;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`JsonMinusNumericLiteral\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isJsonMinusNumericLiteral(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`JsonMinusNumericLiteral\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isJsonMinusNumericLiteral",
+      "kind": "function",
+      "line": 814,
+      "name": "isJsonMinusNumericLiteral",
+      "signature": "isJsonMinusNumericLiteral: (
+  node: ts.Node,
+) => node is ts.JsonMinusNumericLiteral;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`JsonObjectExpression\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isJsonObjectExpression(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`JsonObjectExpression\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isJsonObjectExpression",
+      "kind": "function",
+      "line": 1647,
+      "name": "isJsonObjectExpression",
+      "signature": "isJsonObjectExpression: (node: ts.Node) => node is ts.JsonObjectExpression;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`JsxAttributeLike\`.
+ * @deprecated With TypeScript v5, in favor of typescript's \`isJsxAttributeLike\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isJsxAttributeLike(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`JsxAttributeLike\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isJsxAttributeLike",
+      "kind": "function",
+      "line": 1662,
+      "name": "isJsxAttributeLike",
+      "signature": "isJsxAttributeLike: (node: ts.Node) => node is ts.JsxAttributeLike;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`JsxAttributeValue\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isJsxAttributeValue(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`JsxAttributeValue\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isJsxAttributeValue",
+      "kind": "function",
+      "line": 1676,
+      "name": "isJsxAttributeValue",
+      "signature": "isJsxAttributeValue: (node: ts.Node) => node is ts.JsxAttributeValue;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`JsxChild\`.
+ * @deprecated With TypeScript v5, in favor of typescript's \`isJsxChild\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isJsxChild(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`JsxChild\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isJsxChild",
+      "kind": "function",
+      "line": 1691,
+      "name": "isJsxChild",
+      "signature": "isJsxChild: (node: ts.Node) => node is ts.JsxChild;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`JsxTagNameExpression\`.
+ * @deprecated With TypeScript v5, in favor of typescript's \`isJsxTagNameExpression\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isJsxTagNameExpression(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`JsxTagNameExpression\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isJsxTagNameExpression",
+      "kind": "function",
+      "line": 1706,
+      "name": "isJsxTagNameExpression",
+      "signature": "isJsxTagNameExpression: (node: ts.Node) => node is ts.JsxTagNameExpression;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`JsxTagNamePropertyAccess\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isJsxTagNamePropertyAccess(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`JsxTagNamePropertyAccess\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isJsxTagNamePropertyAccess",
+      "kind": "function",
+      "line": 273,
+      "name": "isJsxTagNamePropertyAccess",
+      "signature": "isJsxTagNamePropertyAccess: (
+  node: ts.Node,
+) => node is ts.JsxTagNamePropertyAccess;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`LiteralToken\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isLiteralToken(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`LiteralToken\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isLiteralToken",
+      "kind": "function",
+      "line": 1720,
+      "name": "isLiteralToken",
+      "signature": "isLiteralToken: (node: ts.Node) => node is ts.LiteralToken;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`LiteralType\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isLiteralType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isLiteralType",
+      "kind": "function",
+      "line": 2489,
+      "name": "isLiteralType",
+      "signature": "isLiteralType: (type: ts.Type) => type is ts.LiteralType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if the given node has the given \`ModifierFlags\` set.
+ * @category Nodes - Flag Utilities
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isModifierFlagSet(node, ts.ModifierFlags.Abstract)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isModifierFlagSet",
+      "kind": "function",
+      "line": 97,
+      "name": "isModifierFlagSet",
+      "signature": "isModifierFlagSet: (
+  node: ts.Declaration,
+  flag: ts.ModifierFlags,
+) => boolean;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`ModuleBody\`.
+ * @deprecated With TypeScript v5, in favor of typescript's \`isModuleBody\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isModuleBody(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`ModuleBody\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isModuleBody",
+      "kind": "function",
+      "line": 1735,
+      "name": "isModuleBody",
+      "signature": "isModuleBody: (node: ts.Node) => node is ts.ModuleBody;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`ModuleName\`.
+ * @deprecated With TypeScript v5, in favor of typescript's \`isModuleName\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isModuleName(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`ModuleName\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isModuleName",
+      "kind": "function",
+      "line": 1750,
+      "name": "isModuleName",
+      "signature": "isModuleName: (node: ts.Node) => node is ts.ModuleName;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`ModuleReference\`.
+ * @deprecated With TypeScript v5, in favor of typescript's \`isModuleReference\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isModuleReference(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`ModuleReference\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isModuleReference",
+      "kind": "function",
+      "line": 1765,
+      "name": "isModuleReference",
+      "signature": "isModuleReference: (node: ts.Node) => node is ts.ModuleReference;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a {@link NamedDeclarationWithName}.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isNamedDeclarationWithName(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a {@link NamedDeclarationWithName}.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isNamedDeclarationWithName",
+      "kind": "function",
+      "line": 287,
+      "name": "isNamedDeclarationWithName",
+      "signature": "isNamedDeclarationWithName: (
+  node: ts.Declaration,
+) => node is NamedDeclarationWithName;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`NamedImportBindings\`.
+ * @deprecated With TypeScript v5, in favor of typescript's \`isNamedImportBindings\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isNamedImportBindings(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`NamedImportBindings\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isNamedImportBindings",
+      "kind": "function",
+      "line": 1780,
+      "name": "isNamedImportBindings",
+      "signature": "isNamedImportBindings: (node: ts.Node) => node is ts.NamedImportBindings;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`NamedImportsOrExports\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isNamedImportsOrExports(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`NamedImportsOrExports\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isNamedImportsOrExports",
+      "kind": "function",
+      "line": 1794,
+      "name": "isNamedImportsOrExports",
+      "signature": "isNamedImportsOrExports: (
+  node: ts.Node,
+) => node is ts.NamedImportsOrExports;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`NamespaceBody\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isNamespaceBody(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`NamespaceBody\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isNamespaceBody",
+      "kind": "function",
+      "line": 1808,
+      "name": "isNamespaceBody",
+      "signature": "isNamespaceBody: (node: ts.Node) => node is ts.NamespaceBody;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`NamespaceDeclaration\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isNamespaceDeclaration(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`NamespaceDeclaration\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isNamespaceDeclaration",
+      "kind": "function",
+      "line": 301,
+      "name": "isNamespaceDeclaration",
+      "signature": "isNamespaceDeclaration: (node: ts.Node) => node is ts.NamespaceDeclaration;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a {@link NeverKeyword}.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isNeverKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a {@link NeverKeyword}.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isNeverKeyword",
+      "kind": "function",
+      "line": 828,
+      "name": "isNeverKeyword",
+      "signature": "isNeverKeyword: (node: ts.Node) => node is NeverKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if the given node has the given \`NodeFlags\` set.
+ * @category Nodes - Flag Utilities
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isNodeFlagSet(node, ts.NodeFlags.AwaitContext)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isNodeFlagSet",
+      "kind": "function",
+      "line": 110,
+      "name": "isNodeFlagSet",
+      "signature": "isNodeFlagSet: (node: ts.Node, flag: ts.NodeFlags) => boolean;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a {@link NullKeyword}.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isNullKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a {@link NullKeyword}.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isNullKeyword",
+      "kind": "function",
+      "line": 842,
+      "name": "isNullKeyword",
+      "signature": "isNullKeyword: (node: ts.Node) => node is NullKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`NullLiteral\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isNullLiteral(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`NullLiteral\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isNullLiteral",
+      "kind": "function",
+      "line": 856,
+      "name": "isNullLiteral",
+      "signature": "isNullLiteral: (node: ts.Node) => node is ts.NullLiteral;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a {@link NumberKeyword}.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isNumberKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a {@link NumberKeyword}.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isNumberKeyword",
+      "kind": "function",
+      "line": 870,
+      "name": "isNumberKeyword",
+      "signature": "isNumberKeyword: (node: ts.Node) => node is NumberKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`NumberLiteralType\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isNumberLiteralType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isNumberLiteralType",
+      "kind": "function",
+      "line": 2502,
+      "name": "isNumberLiteralType",
+      "signature": "isNumberLiteralType: (type: ts.Type) => type is ts.NumberLiteralType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a {@link NumericOrStringLikeLiteral}.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isNumericOrStringLikeLiteral(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a {@link NumericOrStringLikeLiteral}.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isNumericOrStringLikeLiteral",
+      "kind": "function",
+      "line": 315,
+      "name": "isNumericOrStringLikeLiteral",
+      "signature": "isNumericOrStringLikeLiteral: (
+  node: ts.Node,
+) => node is NumericOrStringLikeLiteral;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a string is numeric.
+ * @category Syntax Utilities
+ * @example
+ * \`\`\`ts
+ * isNumericPropertyName("abc"); // false
+ * isNumericPropertyName("123"); // true
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isNumericPropertyName",
+      "kind": "function",
+      "line": 2012,
+      "name": "isNumericPropertyName",
+      "signature": "isNumericPropertyName: (name: string | ts.__String) => boolean;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`ObjectBindingOrAssignmentElement\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isObjectBindingOrAssignmentElement(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`ObjectBindingOrAssignmentElement\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isObjectBindingOrAssignmentElement",
+      "kind": "function",
+      "line": 1822,
+      "name": "isObjectBindingOrAssignmentElement",
+      "signature": "isObjectBindingOrAssignmentElement: (
+  node: ts.Node,
+) => node is ts.ObjectBindingOrAssignmentElement;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`ObjectBindingOrAssignmentPattern\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isObjectBindingOrAssignmentPattern(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`ObjectBindingOrAssignmentPattern\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isObjectBindingOrAssignmentPattern",
+      "kind": "function",
+      "line": 1836,
+      "name": "isObjectBindingOrAssignmentPattern",
+      "signature": "isObjectBindingOrAssignmentPattern: (
+  node: ts.Node,
+) => node is ts.ObjectBindingOrAssignmentPattern;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if the given node has the given \`ObjectFlags\` set.
+ * @category Nodes - Flag Utilities
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isObjectFlagSet(node, ts.ObjectFlags.Anonymous)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isObjectFlagSet",
+      "kind": "function",
+      "line": 123,
+      "name": "isObjectFlagSet",
+      "signature": "isObjectFlagSet: (
+  objectType: ts.ObjectType,
+  flag: ts.ObjectFlags,
+) => boolean;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an {@link ObjectKeyword}.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isObjectKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an {@link ObjectKeyword}.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isObjectKeyword",
+      "kind": "function",
+      "line": 884,
+      "name": "isObjectKeyword",
+      "signature": "isObjectKeyword: (node: ts.Node) => node is ObjectKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`ObjectType\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isObjectType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isObjectType",
+      "kind": "function",
+      "line": 2686,
+      "name": "isObjectType",
+      "signature": "isObjectType: (type: ts.Type) => type is ts.ObjectType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`ObjectTypeDeclaration\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isObjectTypeDeclaration(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`ObjectTypeDeclaration\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isObjectTypeDeclaration",
+      "kind": "function",
+      "line": 1850,
+      "name": "isObjectTypeDeclaration",
+      "signature": "isObjectTypeDeclaration: (
+  node: ts.Node,
+) => node is ts.ObjectTypeDeclaration;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`OutKeyword\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isOutKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`OutKeyword\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isOutKeyword",
+      "kind": "function",
+      "line": 898,
+      "name": "isOutKeyword",
+      "signature": "isOutKeyword: (node: ts.Node) => node is ts.OutKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`OverrideKeyword\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isOverrideKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`OverrideKeyword\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isOverrideKeyword",
+      "kind": "function",
+      "line": 912,
+      "name": "isOverrideKeyword",
+      "signature": "isOverrideKeyword: (node: ts.Node) => node is ts.OverrideKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`ParameterPropertyModifier\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isParameterPropertyModifier(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`ParameterPropertyModifier\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isParameterPropertyModifier",
+      "kind": "function",
+      "line": 1864,
+      "name": "isParameterPropertyModifier",
+      "signature": "isParameterPropertyModifier: (
+  node: ts.Node,
+) => node is ts.ParameterPropertyModifier;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`PrivateKeyword\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isPrivateKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`PrivateKeyword\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isPrivateKeyword",
+      "kind": "function",
+      "line": 926,
+      "name": "isPrivateKeyword",
+      "signature": "isPrivateKeyword: (node: ts.Node) => node is ts.PrivateKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`PropertyAccessEntityNameExpression\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isPropertyAccessEntityNameExpression(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`PropertyAccessEntityNameExpression\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isPropertyAccessEntityNameExpression",
+      "kind": "function",
+      "line": 329,
+      "name": "isPropertyAccessEntityNameExpression",
+      "signature": "isPropertyAccessEntityNameExpression: (
+  node: ts.Node,
+) => node is ts.PropertyAccessEntityNameExpression;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`PropertyNameLiteral\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isPropertyNameLiteral(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`PropertyNameLiteral\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isPropertyNameLiteral",
+      "kind": "function",
+      "line": 1878,
+      "name": "isPropertyNameLiteral",
+      "signature": "isPropertyNameLiteral: (node: ts.Node) => node is ts.PropertyNameLiteral;",
+    },
+    {
+      "docs": [
+        "/**
+ * Determines whether writing to a certain property of a given type is allowed.
+ * @category Types - Utilities
+ * @example
+ * \`\`\`ts
+ * declare const property: ts.Symbol;
+ * declare const type: ts.Type;
+ * declare const typeChecker: ts.TypeChecker;
+ *
+ * if (isPropertyReadonlyInType(type, property.getEscapedName(), typeChecker)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isPropertyReadonlyInType",
+      "kind": "function",
+      "line": 2830,
+      "name": "isPropertyReadonlyInType",
+      "signature": "isPropertyReadonlyInType: (
+  type: ts.Type,
+  name: ts.__String,
+  typeChecker: ts.TypeChecker,
+) => boolean;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`ProtectedKeyword\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isProtectedKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`ProtectedKeyword\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isProtectedKeyword",
+      "kind": "function",
+      "line": 940,
+      "name": "isProtectedKeyword",
+      "signature": "isProtectedKeyword: (node: ts.Node) => node is ts.ProtectedKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`PseudoLiteralToken\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isPseudoLiteralToken(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`PseudoLiteralToken\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isPseudoLiteralToken",
+      "kind": "function",
+      "line": 1892,
+      "name": "isPseudoLiteralToken",
+      "signature": "isPseudoLiteralToken: (node: ts.Node) => node is ts.PseudoLiteralToken;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`PublicKeyword\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isPublicKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`PublicKeyword\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isPublicKeyword",
+      "kind": "function",
+      "line": 954,
+      "name": "isPublicKeyword",
+      "signature": "isPublicKeyword: (node: ts.Node) => node is ts.PublicKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`QuestionDotToken\`.
+ * @deprecated With TypeScript v5, in favor of typescript's \`isQuestionDotToken\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isQuestionDotToken(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`QuestionDotToken\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isQuestionDotToken",
+      "kind": "function",
+      "line": 969,
+      "name": "isQuestionDotToken",
+      "signature": "isQuestionDotToken: (node: ts.Node) => node is ts.QuestionDotToken;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`QuestionToken\`.
+ * @deprecated With TypeScript v5, in favor of typescript's \`isQuestionToken\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isQuestionToken(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`QuestionToken\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isQuestionToken",
+      "kind": "function",
+      "line": 984,
+      "name": "isQuestionToken",
+      "signature": "isQuestionToken: (node: ts.Node) => node is ts.QuestionToken;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`ReadonlyKeyword\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isReadonlyKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`ReadonlyKeyword\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isReadonlyKeyword",
+      "kind": "function",
+      "line": 998,
+      "name": "isReadonlyKeyword",
+      "signature": "isReadonlyKeyword: (node: ts.Node) => node is ts.ReadonlyKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`SignatureDeclaration\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isSignatureDeclaration(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`SignatureDeclaration\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isSignatureDeclaration",
+      "kind": "function",
+      "line": 1906,
+      "name": "isSignatureDeclaration",
+      "signature": "isSignatureDeclaration: (node: ts.Node) => node is ts.SignatureDeclaration;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`StaticKeyword\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isStaticKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`StaticKeyword\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isStaticKeyword",
+      "kind": "function",
+      "line": 1012,
+      "name": "isStaticKeyword",
+      "signature": "isStaticKeyword: (node: ts.Node) => node is ts.StaticKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Checks if a given compiler option is enabled, accounting for whether all flags
+ * (except \`strictPropertyInitialization\`) have been enabled by \`strict: true\`.
+ * @category Compiler Options
+ * @example
+ * \`\`\`ts
+ * const optionsLenient = {
+ * 	noImplicitAny: true,
+ * };
+ *
+ * isStrictCompilerOptionEnabled(optionsLenient, "noImplicitAny"); // true
+ * isStrictCompilerOptionEnabled(optionsLenient, "noImplicitThis"); // false
+ * \`\`\`
+ * @example
+ * \`\`\`ts
+ * const optionsStrict = {
+ * 	noImplicitThis: false,
+ * 	strict: true,
+ * };
+ *
+ * isStrictCompilerOptionEnabled(optionsStrict, "noImplicitAny"); // true
+ * isStrictCompilerOptionEnabled(optionsStrict, "noImplicitThis"); // false
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isStrictCompilerOptionEnabled",
+      "kind": "function",
+      "line": 83,
+      "name": "isStrictCompilerOptionEnabled",
+      "signature": "isStrictCompilerOptionEnabled: (
+  options: ts.CompilerOptions,
+  option: StrictCompilerOption,
+) => boolean;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a {@link StringKeyword}.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isStringKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a {@link StringKeyword}.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isStringKeyword",
+      "kind": "function",
+      "line": 1026,
+      "name": "isStringKeyword",
+      "signature": "isStringKeyword: (node: ts.Node) => node is StringKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`StringLiteralType\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isStringLiteralType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isStringLiteralType",
+      "kind": "function",
+      "line": 2515,
+      "name": "isStringLiteralType",
+      "signature": "isStringLiteralType: (type: ts.Type) => type is ts.StringLiteralType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`StringMappingType\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isStringMappingType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isStringMappingType",
+      "kind": "function",
+      "line": 2699,
+      "name": "isStringMappingType",
+      "signature": "isStringMappingType: (type: ts.Type) => type is ts.StringMappingType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`SubstitutionType\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isSubstitutionType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isSubstitutionType",
+      "kind": "function",
+      "line": 2712,
+      "name": "isSubstitutionType",
+      "signature": "isSubstitutionType: (type: ts.Type) => type is ts.SubstitutionType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`SuperElementAccessExpression\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isSuperElementAccessExpression(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`SuperElementAccessExpression\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isSuperElementAccessExpression",
+      "kind": "function",
+      "line": 343,
+      "name": "isSuperElementAccessExpression",
+      "signature": "isSuperElementAccessExpression: (
+  node: ts.Node,
+) => node is ts.SuperElementAccessExpression;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`SuperExpression\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isSuperExpression(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`SuperExpression\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isSuperExpression",
+      "kind": "function",
+      "line": 1040,
+      "name": "isSuperExpression",
+      "signature": "isSuperExpression: (node: ts.Node) => node is ts.SuperExpression;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a {@link SuperKeyword}.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isSuperKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a {@link SuperKeyword}.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isSuperKeyword",
+      "kind": "function",
+      "line": 1054,
+      "name": "isSuperKeyword",
+      "signature": "isSuperKeyword: (node: ts.Node) => node is SuperKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`SuperProperty\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isSuperProperty(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`SuperProperty\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isSuperProperty",
+      "kind": "function",
+      "line": 1920,
+      "name": "isSuperProperty",
+      "signature": "isSuperProperty: (node: ts.Node) => node is ts.SuperProperty;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`SuperPropertyAccessExpression\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isSuperPropertyAccessExpression(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`SuperPropertyAccessExpression\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isSuperPropertyAccessExpression",
+      "kind": "function",
+      "line": 357,
+      "name": "isSuperPropertyAccessExpression",
+      "signature": "isSuperPropertyAccessExpression: (
+  node: ts.Node,
+) => node is ts.SuperPropertyAccessExpression;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if the given node has the given \`SymbolFlags\` set.
+ * @category Nodes - Flag Utilities
+ * @example
+ * \`\`\`ts
+ * declare const symbol: ts.Symbol;
+ *
+ * if (isSymbolFlagSet(symbol, ts.SymbolFlags.Accessor)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isSymbolFlagSet",
+      "kind": "function",
+      "line": 136,
+      "name": "isSymbolFlagSet",
+      "signature": "isSymbolFlagSet: (symbol: ts.Symbol, flag: ts.SymbolFlags) => boolean;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a {@link SymbolKeyword}.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isSymbolKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a {@link SymbolKeyword}.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isSymbolKeyword",
+      "kind": "function",
+      "line": 1068,
+      "name": "isSymbolKeyword",
+      "signature": "isSymbolKeyword: (node: ts.Node) => node is SymbolKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`SyntaxList\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isSyntaxList(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`SyntaxList\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isSyntaxList",
+      "kind": "function",
+      "line": 1082,
+      "name": "isSyntaxList",
+      "signature": "isSyntaxList: (node: ts.Node) => node is ts.SyntaxList;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`TemplateLiteralType\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isTemplateLiteralType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isTemplateLiteralType",
+      "kind": "function",
+      "line": 2528,
+      "name": "isTemplateLiteralType",
+      "signature": "isTemplateLiteralType: (type: ts.Type) => type is ts.TemplateLiteralType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Determines whether a type is thenable and thus can be used with \`await\`.
+ * @category Types - Utilities
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ * declare const type: ts.Type;
+ * declare const typeChecker: ts.TypeChecker;
+ *
+ * if (isThenableType(typeChecker, node, type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+        "/**
+ * Determines whether a type is thenable and thus can be used with \`await\`.
+ * @category Types - Utilities
+ * @example
+ * \`\`\`ts
+ * declare const expression: ts.Expression;
+ * declare const typeChecker: ts.TypeChecker;
+ *
+ * if (isThenableType(typeChecker, expression)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @example
+ * \`\`\`ts
+ * declare const expression: ts.Expression;
+ * declare const typeChecker: ts.TypeChecker;
+ * declare const type: ts.Type;
+ *
+ * if (isThenableType(typeChecker, expression, type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isThenableType",
+      "kind": "function",
+      "line": 2845,
+      "name": "isThenableType",
+      "signature": "isThenableType: {
+  (typeChecker: ts.TypeChecker, node: ts.Node, type: ts.Type): boolean;
+  (typeChecker: ts.TypeChecker, node: ts.Expression, type?: ts.Type): boolean;
+};",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`ThisExpression\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isThisExpression(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`ThisExpression\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isThisExpression",
+      "kind": "function",
+      "line": 1096,
+      "name": "isThisExpression",
+      "signature": "isThisExpression: (node: ts.Node) => node is ts.ThisExpression;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a {@link ThisKeyword}.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isThisKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a {@link ThisKeyword}.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isThisKeyword",
+      "kind": "function",
+      "line": 1110,
+      "name": "isThisKeyword",
+      "signature": "isThisKeyword: (node: ts.Node) => node is ThisKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a {@link TrueKeyword}.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isTrueKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a {@link TrueKeyword}.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isTrueKeyword",
+      "kind": "function",
+      "line": 1124,
+      "name": "isTrueKeyword",
+      "signature": "isTrueKeyword: (node: ts.Node) => node is TrueKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`TrueLiteral\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isTrueLiteral(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`TrueLiteral\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isTrueLiteral",
+      "kind": "function",
+      "line": 1138,
+      "name": "isTrueLiteral",
+      "signature": "isTrueLiteral: (node: ts.Node) => node is ts.TrueLiteral;",
+    },
+    {
+      "docs": [
+        "/**
+ * Determines whether the given type is a boolean literal type for "true".
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isTrueLiteralType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isTrueLiteralType",
+      "kind": "function",
+      "line": 2541,
+      "name": "isTrueLiteralType",
+      "signature": "isTrueLiteralType: (type: ts.Type) => type is TrueLiteralType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`TupleType\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isTupleType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isTupleType",
+      "kind": "function",
+      "line": 2568,
+      "name": "isTupleType",
+      "signature": "isTupleType: (type: ts.Type) => type is ts.TupleType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`TupleTypeReference\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isTupleTypeReference(type)) {
+ *   // ...
+ * }
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isTupleTypeReference",
+      "kind": "function",
+      "line": 2406,
+      "name": "isTupleTypeReference",
+      "signature": "isTupleTypeReference: (type: ts.Type) => type is ts.TupleTypeReference;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if the given node has the given \`TypeFlags\` set.
+ * @category Nodes - Flag Utilities
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isTypeFlagSet(type, ts.TypeFlags.Any)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isTypeFlagSet",
+      "kind": "function",
+      "line": 154,
+      "name": "isTypeFlagSet",
+      "signature": "isTypeFlagSet: (type: ts.Type, flag: ts.TypeFlags) => boolean;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`TypeOnlyCompatibleAliasDeclaration\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isTypeOnlyCompatibleAliasDeclaration(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`TypeOnlyCompatibleAliasDeclaration\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isTypeOnlyCompatibleAliasDeclaration",
+      "kind": "function",
+      "line": 1934,
+      "name": "isTypeOnlyCompatibleAliasDeclaration",
+      "signature": "isTypeOnlyCompatibleAliasDeclaration: (
+  node: ts.Node,
+) => node is ts.TypeOnlyCompatibleAliasDeclaration;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`TypeParameter\`.
+ *
+ * Note: It is intentional that this is not a type guard.
+ * @see https://github.com/JoshuaKGoldberg/ts-api-utils/issues/382
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isTypeParameter(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isTypeParameter",
+      "kind": "function",
+      "line": 2728,
+      "name": "isTypeParameter",
+      "signature": "isTypeParameter: (type: ts.Type) => boolean;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`TypeReference\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isTypeReference(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isTypeReference",
+      "kind": "function",
+      "line": 2581,
+      "name": "isTypeReference",
+      "signature": "isTypeReference: (type: ts.Type) => type is ts.TypeReference;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`TypeReferenceType\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isTypeReferenceType(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`TypeReferenceType\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isTypeReferenceType",
+      "kind": "function",
+      "line": 1948,
+      "name": "isTypeReferenceType",
+      "signature": "isTypeReferenceType: (node: ts.Node) => node is ts.TypeReferenceType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`TypeVariable\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isTypeVariable(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isTypeVariable",
+      "kind": "function",
+      "line": 2741,
+      "name": "isTypeVariable",
+      "signature": "isTypeVariable: (type: ts.Type) => type is ts.TypeVariable;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an {@link UndefinedKeyword}.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isUndefinedKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an {@link UndefinedKeyword}.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isUndefinedKeyword",
+      "kind": "function",
+      "line": 1152,
+      "name": "isUndefinedKeyword",
+      "signature": "isUndefinedKeyword: (node: ts.Node) => node is UndefinedKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`UnionOrIntersectionType\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isUnionOrIntersectionType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isUnionOrIntersectionType",
+      "kind": "function",
+      "line": 2754,
+      "name": "isUnionOrIntersectionType",
+      "signature": "isUnionOrIntersectionType: (
+  type: ts.Type,
+) => type is ts.UnionOrIntersectionType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an \`UnionOrIntersectionTypeNode\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isUnionOrIntersectionTypeNode(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an \`UnionOrIntersectionTypeNode\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isUnionOrIntersectionTypeNode",
+      "kind": "function",
+      "line": 1962,
+      "name": "isUnionOrIntersectionTypeNode",
+      "signature": "isUnionOrIntersectionTypeNode: (
+  node: ts.Node,
+) => node is ts.UnionOrIntersectionTypeNode;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`UnionType\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isUnionType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isUnionType",
+      "kind": "function",
+      "line": 2767,
+      "name": "isUnionType",
+      "signature": "isUnionType: (type: ts.Type) => type is ts.UnionType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a type is a \`UniqueESSymbolType\`.
+ * @category Types - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (isUniqueESSymbolType(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isUniqueESSymbolType",
+      "kind": "function",
+      "line": 2780,
+      "name": "isUniqueESSymbolType",
+      "signature": "isUniqueESSymbolType: (type: ts.Type) => type is ts.UniqueESSymbolType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is an {@link UnknownKeyword}.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isUnknownKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be an {@link UnknownKeyword}.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isUnknownKeyword",
+      "kind": "function",
+      "line": 1166,
+      "name": "isUnknownKeyword",
+      "signature": "isUnknownKeyword: (node: ts.Node) => node is UnknownKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Determines whether the given text can be used to access a property with a \`PropertyAccessExpression\` while preserving the property's name.
+ * @category Syntax Utilities
+ * @example
+ * \`\`\`ts
+ * isValidPropertyAccess("abc"); // true
+ * isValidPropertyAccess("123"); // false
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isValidPropertyAccess",
+      "kind": "function",
+      "line": 2022,
+      "name": "isValidPropertyAccess",
+      "signature": "isValidPropertyAccess: (
+  text: string,
+  languageVersion?: ts.ScriptTarget,
+) => boolean;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a \`VariableLikeDeclaration\`.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isVariableLikeDeclaration(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a \`VariableLikeDeclaration\`.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isVariableLikeDeclaration",
+      "kind": "function",
+      "line": 1976,
+      "name": "isVariableLikeDeclaration",
+      "signature": "isVariableLikeDeclaration: (
+  node: ts.Node,
+) => node is ts.VariableLikeDeclaration;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if a node is a {@link VoidKeyword}.
+ * @category Nodes - Type Guards
+ * @example
+ * \`\`\`ts
+ * declare const node: ts.Node;
+ *
+ * if (isVoidKeyword(node)) {
+ *   // ...
+ * }
+ * \`\`\`
+ * @returns Whether the given node appears to be a {@link VoidKeyword}.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.isVoidKeyword",
+      "kind": "function",
+      "line": 1180,
+      "name": "isVoidKeyword",
+      "signature": "isVoidKeyword: (node: ts.Node) => node is VoidKeyword;",
+    },
+    {
+      "docs": [
+        "/**
+ * Test if the given symbol has a readonly declaration.
+ * @category Symbols - Utilities
+ * @example
+ * \`\`\`ts
+ * declare const symbol: ts.Symbol;
+ * declare const typeChecker: ts.TypeChecker;
+ *
+ * if (symbolHasReadonlyDeclaration(symbol, typeChecker)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.symbolHasReadonlyDeclaration",
+      "kind": "function",
+      "line": 2883,
+      "name": "symbolHasReadonlyDeclaration",
+      "signature": "symbolHasReadonlyDeclaration: (
+  symbol: ts.Symbol,
+  typeChecker: ts.TypeChecker,
+) => boolean;",
+    },
+    {
+      "docs": [
+        "/**
+ * Get the intersection or union type parts of the given type.
+ *
+ * Note that this is a shallow collection: it only returns \`type.types\` or \`[type]\`.
+ *
+ * If the given type is not an intersection or union type, an array contain only that type will be returned.
+ * @category Types - Utilities
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * for (const constituent of typeConstituents(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.typeConstituents",
+      "kind": "function",
+      "line": 2900,
+      "name": "typeConstituents",
+      "signature": "typeConstituents: (type: ts.Type) => ts.Type[];",
+    },
+    {
+      "docs": [
+        "/**
+ * TS's \`type.isLiteral()\` is bugged before TS v5.0 and won't return \`true\` for
+ * bigint literals. Use this function instead if you need to check for bigint
+ * literals in TS versions before v5.0. Otherwise, you should just use
+ * \`type.isLiteral()\`.
+ * @see https://github.com/microsoft/TypeScript/pull/50929
+ * @category Types - Utilities
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * if (typeIsLiteral(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.typeIsLiteral",
+      "kind": "function",
+      "line": 2917,
+      "name": "typeIsLiteral",
+      "signature": "typeIsLiteral: (type: ts.Type) => type is ts.LiteralType;",
+    },
+    {
+      "docs": [
+        "/**
+ * Get the union type parts of the given type.
+ *
+ * If the given type is not a union type, an array contain only that type will be returned.
+ * @category Types - Utilities
+ * @example
+ * \`\`\`ts
+ * declare const type: ts.Type;
+ *
+ * for (const constituent of unionConstituents(type)) {
+ *   // ...
+ * }
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+function.unionConstituents",
+      "kind": "function",
+      "line": 2937,
+      "name": "unionConstituents",
+      "signature": "unionConstituents: (type: ts.Type) => ts.Type[];",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * A boolean literal.
+ * i.e. Either a "true" or "false" literal.
+ * @category Type Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "getAccessors": [],
+      "id": "+interface.BooleanLiteralType",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 2413,
+      "methods": [],
+      "name": "BooleanLiteralType",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.BooleanLiteralType.+property.intrinsicName",
+          "kind": "interface-property",
+          "line": 2414,
+          "name": "intrinsicName",
+          "signature": "intrinsicName: "false" | "true";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface BooleanLiteralType extends FreshableIntrinsicType {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * A "false" literal.
+ * @category Type Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "getAccessors": [],
+      "id": "+interface.FalseLiteralType",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 2420,
+      "methods": [],
+      "name": "FalseLiteralType",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.FalseLiteralType.+property.intrinsicName",
+          "kind": "interface-property",
+          "line": 2421,
+          "name": "intrinsicName",
+          "signature": "intrinsicName: "false";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface FalseLiteralType extends BooleanLiteralType {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * A type that is both an {@link IntrinsicType} and a \`FreshableType\`
+ * @category Type Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "getAccessors": [],
+      "id": "+interface.FreshableIntrinsicType",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 2381,
+      "methods": [],
+      "name": "FreshableIntrinsicType",
+      "properties": [],
+      "setAccessors": [],
+      "signature": "interface FreshableIntrinsicType extends ts.FreshableType, IntrinsicType {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * A "any" intrinsic type.
+ * @category Type Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "getAccessors": [],
+      "id": "+interface.IntrinsicAnyType",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 2091,
+      "methods": [],
+      "name": "IntrinsicAnyType",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.IntrinsicAnyType.+property.intrinsicName",
+          "kind": "interface-property",
+          "line": 2092,
+          "name": "intrinsicName",
+          "signature": "intrinsicName: "any";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IntrinsicAnyType extends IntrinsicType {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * A "bigint" intrinsic type.
+ * @category Type Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "getAccessors": [],
+      "id": "+interface.IntrinsicBigIntType",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 2098,
+      "methods": [],
+      "name": "IntrinsicBigIntType",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.IntrinsicBigIntType.+property.intrinsicName",
+          "kind": "interface-property",
+          "line": 2099,
+          "name": "intrinsicName",
+          "signature": "intrinsicName: "bigint";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IntrinsicBigIntType extends IntrinsicType {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * A "boolean" intrinsic type.
+ * @category Type Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "getAccessors": [],
+      "id": "+interface.IntrinsicBooleanType",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 2105,
+      "methods": [],
+      "name": "IntrinsicBooleanType",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.IntrinsicBooleanType.+property.intrinsicName",
+          "kind": "interface-property",
+          "line": 2106,
+          "name": "intrinsicName",
+          "signature": "intrinsicName: "boolean";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IntrinsicBooleanType extends IntrinsicType {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * An "error" intrinsic type.
+ *
+ * This refers to a type generated when TypeScript encounters an error while
+ * trying to resolve the type.
+ * @category Type Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "getAccessors": [],
+      "id": "+interface.IntrinsicErrorType",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 2115,
+      "methods": [],
+      "name": "IntrinsicErrorType",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.IntrinsicErrorType.+property.intrinsicName",
+          "kind": "interface-property",
+          "line": 2116,
+          "name": "intrinsicName",
+          "signature": "intrinsicName: "error";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IntrinsicErrorType extends IntrinsicType {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * A "symbol" intrinsic type.
+ * @category Type Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "getAccessors": [],
+      "id": "+interface.IntrinsicESSymbolType",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 2122,
+      "methods": [],
+      "name": "IntrinsicESSymbolType",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.IntrinsicESSymbolType.+property.intrinsicName",
+          "kind": "interface-property",
+          "line": 2123,
+          "name": "intrinsicName",
+          "signature": "intrinsicName: "symbol";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IntrinsicESSymbolType extends IntrinsicType {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * A "never" intrinsic type.
+ * @category Type Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "getAccessors": [],
+      "id": "+interface.IntrinsicNeverType",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 2205,
+      "methods": [],
+      "name": "IntrinsicNeverType",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.IntrinsicNeverType.+property.intrinsicName",
+          "kind": "interface-property",
+          "line": 2206,
+          "name": "intrinsicName",
+          "signature": "intrinsicName: "never";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IntrinsicNeverType extends IntrinsicType {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * A non-primitive intrinsic type.
+ * E.g. An "object" intrinsic type.
+ * @category Type Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "getAccessors": [],
+      "id": "+interface.IntrinsicNonPrimitiveType",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 2213,
+      "methods": [],
+      "name": "IntrinsicNonPrimitiveType",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.IntrinsicNonPrimitiveType.+property.intrinsicName",
+          "kind": "interface-property",
+          "line": 2214,
+          "name": "intrinsicName",
+          "signature": "intrinsicName: "";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IntrinsicNonPrimitiveType extends IntrinsicType {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * A "null" intrinsic type.
+ * @category Type Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "getAccessors": [],
+      "id": "+interface.IntrinsicNullType",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 2220,
+      "methods": [],
+      "name": "IntrinsicNullType",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.IntrinsicNullType.+property.intrinsicName",
+          "kind": "interface-property",
+          "line": 2221,
+          "name": "intrinsicName",
+          "signature": "intrinsicName: "null";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IntrinsicNullType extends IntrinsicType {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * A "number" intrinsic type.
+ * @category Type Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "getAccessors": [],
+      "id": "+interface.IntrinsicNumberType",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 2227,
+      "methods": [],
+      "name": "IntrinsicNumberType",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.IntrinsicNumberType.+property.intrinsicName",
+          "kind": "interface-property",
+          "line": 2228,
+          "name": "intrinsicName",
+          "signature": "intrinsicName: "number";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IntrinsicNumberType extends IntrinsicType {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * A "string" intrinsic type.
+ * @category Type Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "getAccessors": [],
+      "id": "+interface.IntrinsicStringType",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 2234,
+      "methods": [],
+      "name": "IntrinsicStringType",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.IntrinsicStringType.+property.intrinsicName",
+          "kind": "interface-property",
+          "line": 2235,
+          "name": "intrinsicName",
+          "signature": "intrinsicName: "string";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IntrinsicStringType extends IntrinsicType {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * An "intrinsic" (built-in to TypeScript) type.
+ * @category Type Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "getAccessors": [],
+      "id": "+interface.IntrinsicType",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 2129,
+      "methods": [],
+      "name": "IntrinsicType",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.IntrinsicType.+property.intrinsicName",
+          "kind": "interface-property",
+          "line": 2130,
+          "name": "intrinsicName",
+          "signature": "intrinsicName: string;",
+        },
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.IntrinsicType.+property.objectFlags",
+          "kind": "interface-property",
+          "line": 2131,
+          "name": "objectFlags",
+          "signature": "objectFlags: ts.ObjectFlags;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IntrinsicType extends ts.Type {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * The built-in \`undefined\` type.
+ * @category Type Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "getAccessors": [],
+      "id": "+interface.IntrinsicUndefinedType",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 2241,
+      "methods": [],
+      "name": "IntrinsicUndefinedType",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.IntrinsicUndefinedType.+property.intrinsicName",
+          "kind": "interface-property",
+          "line": 2242,
+          "name": "intrinsicName",
+          "signature": "intrinsicName: "undefined";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IntrinsicUndefinedType extends IntrinsicType {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * The built-in \`unknown\` type.
+ * @category Type Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "getAccessors": [],
+      "id": "+interface.IntrinsicUnknownType",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 2248,
+      "methods": [],
+      "name": "IntrinsicUnknownType",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.IntrinsicUnknownType.+property.intrinsicName",
+          "kind": "interface-property",
+          "line": 2249,
+          "name": "intrinsicName",
+          "signature": "intrinsicName: "unknown";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IntrinsicUnknownType extends IntrinsicType {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * A "void" intrinsic type.
+ * @category Type Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "getAccessors": [],
+      "id": "+interface.IntrinsicVoidType",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 2255,
+      "methods": [],
+      "name": "IntrinsicVoidType",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.IntrinsicVoidType.+property.intrinsicName",
+          "kind": "interface-property",
+          "line": 2256,
+          "name": "intrinsicName",
+          "signature": "intrinsicName: "void";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface IntrinsicVoidType extends IntrinsicType {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * a \`NamedDeclaration\` that definitely has a name.
+ * @category Node Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "getAccessors": [],
+      "id": "+interface.NamedDeclarationWithName",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 210,
+      "methods": [],
+      "name": "NamedDeclarationWithName",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.NamedDeclarationWithName.+property.name",
+          "kind": "interface-property",
+          "line": 211,
+          "name": "name",
+          "signature": "name: ts.DeclarationName;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface NamedDeclarationWithName extends ts.NamedDeclaration {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * A "true" literal.
+ * @category Type Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "getAccessors": [],
+      "id": "+interface.TrueLiteralType",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 2427,
+      "methods": [],
+      "name": "TrueLiteralType",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.TrueLiteralType.+property.intrinsicName",
+          "kind": "interface-property",
+          "line": 2428,
+          "name": "intrinsicName",
+          "signature": "intrinsicName: "true";",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface TrueLiteralType extends BooleanLiteralType {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * \`LiteralType\` from typescript except that it allows for it to work on arbitrary types.
+ * @deprecated Use {@link FreshableIntrinsicType} instead.
+ * @category Type Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "getAccessors": [],
+      "id": "+interface.UnknownLiteralType",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 2435,
+      "methods": [],
+      "name": "UnknownLiteralType",
+      "properties": [
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.UnknownLiteralType.+property.value",
+          "kind": "interface-property",
+          "line": 2436,
+          "name": "value",
+          "signature": "value?: unknown;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface UnknownLiteralType extends FreshableIntrinsicType {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * How an item (type or value) was declared and/or referenced.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "getAccessors": [],
+      "id": "+interface.VariableInfo",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 2980,
+      "methods": [],
+      "name": "VariableInfo",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Locations where the item was declared.
+     */",
+          ],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.VariableInfo.+property.declarations",
+          "kind": "interface-property",
+          "line": 2984,
+          "name": "declarations",
+          "signature": "declarations: ts.Identifier[];",
+        },
+        {
+          "docs": [
+            "/**
+     * Which space(s) the item is within.
+     */",
+          ],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.VariableInfo.+property.domain",
+          "kind": "interface-property",
+          "line": 2988,
+          "name": "domain",
+          "signature": "domain: DeclarationDomain;",
+        },
+        {
+          "docs": [
+            "/**
+     * Whether the item was exported from its module or namespace scope.
+     */",
+          ],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.VariableInfo.+property.exported",
+          "kind": "interface-property",
+          "line": 2992,
+          "name": "exported",
+          "signature": "exported: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * Whether the item's declaration was in the global scope.
+     */",
+          ],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.VariableInfo.+property.inGlobalScope",
+          "kind": "interface-property",
+          "line": 2996,
+          "name": "inGlobalScope",
+          "signature": "inGlobalScope: boolean;",
+        },
+        {
+          "docs": [
+            "/**
+     * Each reference to the item in the file.
+     */",
+          ],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.VariableInfo.+property.uses",
+          "kind": "interface-property",
+          "line": 3000,
+          "name": "uses",
+          "signature": "uses: Usage[];",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface UsageInfo {}",
+    },
+    {
+      "callSignatures": [],
+      "constructSignatures": [],
+      "docs": [
+        "/**
+ * An instance of an item (type or value) being used.
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "getAccessors": [],
+      "id": "+interface.VariableUse",
+      "indexSignatures": [],
+      "kind": "interface",
+      "line": 2970,
+      "methods": [],
+      "name": "VariableUse",
+      "properties": [
+        {
+          "docs": [
+            "/**
+     * Which space(s) the usage is within.
+     */",
+          ],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.VariableUse.+property.domain",
+          "kind": "interface-property",
+          "line": 2974,
+          "name": "domain",
+          "signature": "domain: UsageDomain;",
+        },
+        {
+          "docs": [],
+          "file": "/ts-api-utils/lib/index.d.ts",
+          "id": "+interface.VariableUse.+property.location",
+          "kind": "interface-property",
+          "line": 2975,
+          "name": "location",
+          "signature": "location: ts.Identifier;",
+        },
+      ],
+      "setAccessors": [],
+      "signature": "interface Usage {}",
+    },
+    {
+      "docs": [
+        "/**
+ * A node that represents the any keyword.
+ * @category Node Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.AnyKeyword",
+      "kind": "type",
+      "line": 363,
+      "name": "AnyKeyword",
+      "signature": "type AnyKeyword = ts.KeywordToken<ts.SyntaxKind.AnyKeyword>;",
+    },
+    {
+      "docs": [
+        "/**
+ * A node that represents the bigint keyword.
+ * @category Node Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.BigIntKeyword",
+      "kind": "type",
+      "line": 368,
+      "name": "BigIntKeyword",
+      "signature": "type BigIntKeyword = ts.KeywordToken<ts.SyntaxKind.BigIntKeyword>;",
+    },
+    {
+      "docs": [
+        "/**
+ * An option that can be tested with {@link isCompilerOptionEnabled}.
+ * @category Compiler Options
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.BooleanCompilerOptions",
+      "kind": "type",
+      "line": 34,
+      "name": "BooleanCompilerOptions",
+      "signature": "type BooleanCompilerOptions = keyof {
+  [K in keyof ts.CompilerOptions as NonNullable<
+    ts.CompilerOptions[K]
+  > extends boolean
+    ? K
+    : never]: unknown;
+};",
+    },
+    {
+      "docs": [
+        "/**
+ * A node that represents the boolean keyword.
+ * @category Node Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.BooleanKeyword",
+      "kind": "type",
+      "line": 373,
+      "name": "BooleanKeyword",
+      "signature": "type BooleanKeyword = ts.KeywordToken<ts.SyntaxKind.BooleanKeyword>;",
+    },
+    {
+      "docs": [
+        "/**
+ * An \`AssertionExpression\` that is declared as const.
+ * @category Node Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.ConstAssertionExpression",
+      "kind": "type",
+      "line": 195,
+      "name": "ConstAssertionExpression",
+      "signature": "type ConstAssertionExpression = ts.AssertionExpression & {
+  type: ts.TypeReferenceNode;
+  typeName: ConstAssertionIdentifier;
+};",
+    },
+    {
+      "docs": [
+        "/**
+ * An \`Identifier\` with an \`escapedText\` value of \`"const"\`.
+ * @category Node Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.ConstAssertionIdentifier",
+      "kind": "type",
+      "line": 203,
+      "name": "ConstAssertionIdentifier",
+      "signature": "type ConstAssertionIdentifier = ts.Identifier & {
+  escapedText: "const" & ts.__String;
+};",
+    },
+    {
+      "docs": [
+        "/**
+ * A node that represents the false keyword.
+ * @category Node Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.FalseKeyword",
+      "kind": "type",
+      "line": 378,
+      "name": "FalseKeyword",
+      "signature": "type FalseKeyword = ts.KeywordToken<ts.SyntaxKind.FalseKeyword>;",
+    },
+    {
+      "docs": [
+        "/**
+ * Callback type used for {@link forEachComment}.
+ * @category Callbacks
+ * @param fullText Full parsed text of the comment.
+ * @param comment Text range of the comment in its file.
+ * @example
+ * \`\`\`ts
+ * let onComment: ForEachCommentCallback = (fullText, comment) => {
+ *    console.log(\`Found comment at position \${comment.pos}: '\${fullText}'.\`);
+ * };
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.ForEachCommentCallback",
+      "kind": "type",
+      "line": 15,
+      "name": "ForEachCommentCallback",
+      "signature": "type ForEachCommentCallback = (
+  fullText: string,
+  comment: ts.CommentRange,
+) => void;",
+    },
+    {
+      "docs": [
+        "/**
+ * Callback type used for {@link forEachToken}.
+ * @category Callbacks
+ * @example
+ * \`\`\`ts
+ * let onToken: ForEachTokenCallback = (token) => {
+ *    console.log(\`Found token at position: \${token.pos}.\`);
+ * };
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.ForEachTokenCallback",
+      "kind": "type",
+      "line": 2034,
+      "name": "ForEachTokenCallback",
+      "signature": "type ForEachTokenCallback = (token: ts.Node) => void;",
+    },
+    {
+      "docs": [
+        "/**
+ * A node that represents the import keyword.
+ * @category Node Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.ImportKeyword",
+      "kind": "type",
+      "line": 383,
+      "name": "ImportKeyword",
+      "signature": "type ImportKeyword = ts.KeywordToken<ts.SyntaxKind.ImportKeyword>;",
+    },
+    {
+      "docs": [
+        "/**
+ * A node that represents the never keyword.
+ * @category Node Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.NeverKeyword",
+      "kind": "type",
+      "line": 388,
+      "name": "NeverKeyword",
+      "signature": "type NeverKeyword = ts.KeywordToken<ts.SyntaxKind.NeverKeyword>;",
+    },
+    {
+      "docs": [
+        "/**
+ * A node that represents the null keyword.
+ * @category Node Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.NullKeyword",
+      "kind": "type",
+      "line": 393,
+      "name": "NullKeyword",
+      "signature": "type NullKeyword = ts.KeywordToken<ts.SyntaxKind.NullKeyword>;",
+    },
+    {
+      "docs": [
+        "/**
+ * A node that represents the number keyword.
+ * @category Node Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.NumberKeyword",
+      "kind": "type",
+      "line": 398,
+      "name": "NumberKeyword",
+      "signature": "type NumberKeyword = ts.KeywordToken<ts.SyntaxKind.NumberKeyword>;",
+    },
+    {
+      "docs": [
+        "/**
+ * A number or string-like literal.
+ * @category Node Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.NumericOrStringLikeLiteral",
+      "kind": "type",
+      "line": 217,
+      "name": "NumericOrStringLikeLiteral",
+      "signature": "type NumericOrStringLikeLiteral = ts.NumericLiteral | ts.StringLiteralLike;",
+    },
+    {
+      "docs": [
+        "/**
+ * A node that represents the object keyword.
+ * @category Node Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.ObjectKeyword",
+      "kind": "type",
+      "line": 403,
+      "name": "ObjectKeyword",
+      "signature": "type ObjectKeyword = ts.KeywordToken<ts.SyntaxKind.ObjectKeyword>;",
+    },
+    {
+      "docs": [
+        "/**
+ * An option that can be tested with {@link isStrictCompilerOptionEnabled}.
+ * @category Compiler Options
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.StrictCompilerOption",
+      "kind": "type",
+      "line": 41,
+      "name": "StrictCompilerOption",
+      "signature": "type StrictCompilerOption =
+  | "alwaysStrict"
+  | "noImplicitAny"
+  | "noImplicitThis"
+  | "strictBindCallApply"
+  | "strictFunctionTypes"
+  | "strictNullChecks"
+  | "strictPropertyInitialization";",
+    },
+    {
+      "docs": [
+        "/**
+ * A node that represents the string keyword.
+ * @category Node Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.StringKeyword",
+      "kind": "type",
+      "line": 408,
+      "name": "StringKeyword",
+      "signature": "type StringKeyword = ts.KeywordToken<ts.SyntaxKind.StringKeyword>;",
+    },
+    {
+      "docs": [
+        "/**
+ * A node that represents the super keyword.
+ * @category Node Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.SuperKeyword",
+      "kind": "type",
+      "line": 413,
+      "name": "SuperKeyword",
+      "signature": "type SuperKeyword = ts.KeywordToken<ts.SyntaxKind.SuperKeyword>;",
+    },
+    {
+      "docs": [
+        "/**
+ * A node that represents the symbol keyword.
+ * @category Node Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.SymbolKeyword",
+      "kind": "type",
+      "line": 418,
+      "name": "SymbolKeyword",
+      "signature": "type SymbolKeyword = ts.KeywordToken<ts.SyntaxKind.SymbolKeyword>;",
+    },
+    {
+      "docs": [
+        "/**
+ * A node that represents the this keyword.
+ * @category Node Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.ThisKeyword",
+      "kind": "type",
+      "line": 423,
+      "name": "ThisKeyword",
+      "signature": "type ThisKeyword = ts.KeywordToken<ts.SyntaxKind.ThisKeyword>;",
+    },
+    {
+      "docs": [
+        "/**
+ * A node that represents the true keyword.
+ * @category Node Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.TrueKeyword",
+      "kind": "type",
+      "line": 428,
+      "name": "TrueKeyword",
+      "signature": "type TrueKeyword = ts.KeywordToken<ts.SyntaxKind.TrueKeyword>;",
+    },
+    {
+      "docs": [
+        "/**
+ * A node that represents the undefined keyword.
+ * @category Node Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.UndefinedKeyword",
+      "kind": "type",
+      "line": 433,
+      "name": "UndefinedKeyword",
+      "signature": "type UndefinedKeyword = ts.KeywordToken<ts.SyntaxKind.UndefinedKeyword>;",
+    },
+    {
+      "docs": [
+        "/**
+ * A node that represents the unknown keyword.
+ * @category Node Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.UnknownKeyword",
+      "kind": "type",
+      "line": 438,
+      "name": "UnknownKeyword",
+      "signature": "type UnknownKeyword = ts.KeywordToken<ts.SyntaxKind.UnknownKeyword>;",
+    },
+    {
+      "docs": [
+        "/**
+ * A node that represents the void keyword.
+ * @category Node Types
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+type.VoidKeyword",
+      "kind": "type",
+      "line": 443,
+      "name": "VoidKeyword",
+      "signature": "type VoidKeyword = ts.KeywordToken<ts.SyntaxKind.VoidKeyword>;",
+    },
+    {
+      "docs": [
+        "/**
+ * @deprecated Use {@link intersectionConstituents} instead.
+ * @category Types - Utilities
+ * \`\`\`
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+variable.intersectionTypeParts",
+      "kind": "variable",
+      "line": 2802,
+      "name": "intersectionTypeParts",
+      "signature": "const intersectionTypeParts: (type: ts.Type) => ts.Type[];",
+    },
+    {
+      "docs": [
+        "/**
+ * @deprecated Use {@link typeConstituents} instead.
+ * @category Types - Utilities
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+variable.typeParts",
+      "kind": "variable",
+      "line": 2922,
+      "name": "typeParts",
+      "signature": "const typeParts: (type: ts.Type) => ts.Type[];",
+    },
+    {
+      "docs": [
+        "/**
+ * @deprecated Use {@link unionConstituents} instead.
+ * @category Types - Utilities
+ */",
+      ],
+      "file": "/ts-api-utils/lib/index.d.ts",
+      "id": "+variable.unionTypeParts",
+      "kind": "variable",
+      "line": 2942,
+      "name": "unionTypeParts",
+      "signature": "const unionTypeParts: (type: ts.Type) => ts.Type[];",
+    },
+  ],
+  "name": "ts-api-utils",
+  "overview": undefined,
+  "packages": Any<Array>,
+  "subpath": ".",
+  "types": "./lib/index.d.ts",
+  "version": "2.1.0",
+}
+`;
