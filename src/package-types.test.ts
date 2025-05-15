@@ -56,7 +56,7 @@ test("types from exports for root `.` subpath", async () => {
 	).resolves.toBe("index.d.ts");
 });
 
-test("types from exports for root `foo` subpath", async () => {
+test("types from exports for root `foo` package name subpath", async () => {
 	await expect(
 		_packageTypes(
 			{
@@ -136,4 +136,105 @@ test("types not from `typings` fallback if not root subpath", async () => {
 			"custom",
 		),
 	).rejects.toThrow();
+});
+
+test("ts-api-utils@2.1.0", async () => {
+	await expect(
+		_packageTypes(
+			{
+				name: "ts-api-utils",
+				version: "2.1.0",
+				type: "module",
+				exports: {
+					".": {
+						types: {
+							import: "./lib/index.d.ts",
+							require: "./lib/index.d.cts",
+						},
+						import: "./lib/index.js",
+						require: "./lib/index.cjs",
+					},
+				},
+			},
+			".",
+		),
+	).resolves.toBe("./lib/index.d.ts");
+});
+
+// https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-7.html#packagejson-exports-imports-and-self-referencing
+test("ts 4.7 release", async () => {
+	await expect(
+		_packageTypes(
+			{
+				name: "my-package",
+				type: "module",
+				exports: {
+					".": {
+						// Entry-point for `import "my-package"` in ESM
+						import: {
+							// Where TypeScript will look.
+							types: "./types/esm/index.d.ts",
+							// Where Node.js will look.
+							default: "./esm/index.js",
+						},
+						// Entry-point for `require("my-package") in CJS
+						require: {
+							// Where TypeScript will look.
+							types: "./types/commonjs/index.d.cts",
+							// Where Node.js will look.
+							default: "./commonjs/index.cjs",
+						},
+					},
+				},
+				// Fall-back for older versions of TypeScript
+				types: "./types/index.d.ts",
+				// CJS fall-back for older versions of Node.js
+				main: "./commonjs/index.cjs",
+			},
+			".",
+		),
+	).resolves.toBe("./types/esm/index.d.ts");
+});
+
+// https://www.typescriptlang.org/docs/handbook/modules/reference.html#example-explicit-types-condition
+test("ts module handbook explicit types", async () => {
+	await expect(
+		_packageTypes(
+			{
+				name: "pkg",
+				exports: {
+					"./subpath": {
+						import: {
+							types: "./types/subpath/index.d.mts",
+							default: "./es/subpath/index.mjs",
+						},
+						require: {
+							types: "./types/subpath/index.d.cts",
+							default: "./cjs/subpath/index.cjs",
+						},
+					},
+				},
+			},
+			"subpath",
+		),
+	).resolves.toBe("./types/subpath/index.d.mts");
+});
+
+// https://www.typescriptlang.org/docs/handbook/modules/reference.html#example-subpath-patterns
+test("ts module handbook subpath patterns", async () => {
+	await expect(
+		_packageTypes(
+			{
+				name: "pkg",
+				type: "module",
+				exports: {
+					"./*.js": {
+						types: "./types/*.d.ts",
+						default: "./dist/*.js",
+					},
+				},
+			},
+			"wildcard.js",
+		),
+	).resolves.toBe("./types/wildcard.d.ts");
 });
