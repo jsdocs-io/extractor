@@ -54,7 +54,7 @@
 		"test:update": "bun --revision && vitest run src test/declarations test/packages --update",
 		"lint": "prettier --check .",
 		"format": "prettier --write .",
-		"pre-push": "bun --revision && pnpm i && pnpm lint && pnpm build && pnpm test:ci",
+		"pre-push": "bun --revision && bun i && bun run lint && bun run build && bun run test:ci && bun run attw",
 		"release": "np"
 	},
 	"dependencies": {

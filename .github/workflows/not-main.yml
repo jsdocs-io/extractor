@@ -12,34 +12,28 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 10
+      - name: Setup bun
+        uses: oven-sh/setup-bun@v2
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: lts/*
-          cache: "pnpm"
-
-      - name: Setup bun
-        uses: oven-sh/setup-bun@v2
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: bun install --frozen-lockfile
 
       - name: Lint
-        run: pnpm lint
+        run: bun run lint
 
       - name: Test
-        run: pnpm test:ci
+        run: bun run test:ci
 
       - name: Build
-        run: pnpm build
+        run: bun run build
 
       - name: Are the types wrong
-        run: pnpm attw
+        run: bun run attw
 
       - name: CodeCov
         uses: codecov/codecov-action@v5.4.2
