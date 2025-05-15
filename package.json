@@ -55,7 +55,7 @@
 		"lint": "prettier --check .",
 		"format": "prettier --write .",
 		"pre-push": "bun --revision && bun i && bun run lint && bun run build && bun run test:ci && bun run attw",
-		"release": "np"
+		"release": "np --no-cleanup"
 	},
 	"dependencies": {
 		"@microsoft/tsdoc": "^0.15.1",
