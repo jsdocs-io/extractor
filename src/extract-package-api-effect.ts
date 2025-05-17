@@ -6,7 +6,6 @@ import type { ExtractPackageApiOptions, PackageApi } from "./extract-package-api
 import { packageDeclarations } from "./package-declarations";
 import { packageJson } from "./package-json";
 import { PackageManager } from "./package-manager";
-import { packageName } from "./package-name";
 import { packageOverview } from "./package-overview";
 import { packageTypes } from "./package-types";
 import { workDir } from "./work-dir";
@@ -19,10 +18,11 @@ export const extractPackageApiEffect = ({
 }: Omit<ExtractPackageApiOptions, "bunPath">) =>
 	Effect.gen(function* () {
 		const startTime = performance.now();
-		const pkgName = yield* packageName(pkg);
 		const { path: cwd } = yield* workDir;
 		const pm = yield* PackageManager;
 		const packages = yield* pm.installPackage({ pkg, cwd });
+		const workDirPkgJson = yield* packageJson(cwd);
+		const pkgName = Object.keys(workDirPkgJson.dependencies!)[0]!;
 		const pkgDir = join(cwd, "node_modules", pkgName);
 		const pkgJson = yield* packageJson(pkgDir);
 		const types = yield* packageTypes(pkgJson, subpath);
