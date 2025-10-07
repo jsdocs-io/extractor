@@ -1,0 +1,484 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`geasty@0.0.6 1`] = `
+{
+  "analyzedAt": Any<String>,
+  "analyzedIn": Any<Number>,
+  "declarations": [
+    {
+      "constructors": [
+        {
+          "docs": [
+            "/**
+   * @param options Geasty options
+   * @param options.access_token Fine-grained personal access tokens
+   *
+   * @example
+   * \`\`\`ts
+   * const geasty = new Geast({
+   *   access_token: 'your_access_token_created_by_github'
+   * })
+   * \`\`\`
+   */",
+          ],
+          "file": "/geasty/dist/index.d.mts",
+          "id": "+class.default.constructor",
+          "kind": "class-constructor",
+          "line": 229,
+          "name": "constructor",
+          "signature": "constructor(options?: GeastyOptions);",
+        },
+      ],
+      "docs": [],
+      "file": "/geasty/dist/index.d.mts",
+      "id": "+class.default",
+      "kind": "class",
+      "line": 205,
+      "methods": [
+        {
+          "docs": [
+            "/**
+   * Allows you to add a new gist with one or more files.
+   *
+   * @param options
+   * @param options.description Description of the gist
+   * @param options.public Flag indicating whether the gist is public
+   * @param options.files Names and content for the files that make up the gist
+   * @returns The created gist
+   *
+   * @example
+   * \`\`\`ts
+   * creaetAGist({
+   *   description: 'Example Gist',
+   *   public: true,
+   *   files: {'test.txt': {content: 'Hello World!'}},
+   * })
+   * \`\`\`
+   */",
+          ],
+          "file": "/geasty/dist/index.d.mts",
+          "id": "+class.default.+method.createAGist",
+          "kind": "class-method",
+          "line": 248,
+          "name": "createAGist",
+          "signature": "createAGist: (options: CreateAGistOptions) => Promise<Gist>;",
+        },
+        {
+          "docs": [
+            "/**
+   * Delete a gist.
+   * The fine-grained token must have the following permission set:
+   *   - "Gists" user permissions (write)
+   *
+   * @param gistId The unique identifier of the gist.
+   *
+   * @example
+   * \`\`\`ts
+   * deleteAGist('gist_id')
+   * \`\`\`
+   */",
+          ],
+          "file": "/geasty/dist/index.d.mts",
+          "id": "+class.default.+method.deleteAGist",
+          "kind": "class-method",
+          "line": 261,
+          "name": "deleteAGist",
+          "signature": "deleteAGist: (gistId: string) => Promise<void>;",
+        },
+        {
+          "docs": [
+            "/**
+   * Fork a gist.
+   * The fine-grained token must have the following permission set:
+   *   - "Gists" user permissions (write)
+   *
+   * @param gistId The unique identifier of the gist.
+   *
+   * @example
+   * \`\`\`ts
+   * forkAGist('gist_id')
+   * \`\`\`
+   */",
+          ],
+          "file": "/geasty/dist/index.d.mts",
+          "id": "+class.default.+method.forkAGist",
+          "kind": "class-method",
+          "line": 474,
+          "name": "forkAGist",
+          "signature": "forkAGist: (gistId: string) => Promise<void>;",
+        },
+        {
+          "docs": [
+            "/**
+   * Gets a specified gist.
+   *
+   * @param gistId The unique identifier of the gist.
+   * @returns Gist that matches the gist ID
+   *
+   * @example
+   * \`\`\`ts
+   * getAGist('gist_id')
+   * \`\`\`
+   */",
+          ],
+          "file": "/geasty/dist/index.d.mts",
+          "id": "+class.default.+method.getAGist",
+          "kind": "class-method",
+          "line": 313,
+          "name": "getAGist",
+          "signature": "getAGist: (gistId: string) => Promise<Gist>;",
+        },
+        {
+          "docs": [
+            "/**
+   * Gets a specified gist revision.
+   *
+   * @param gistId The unique identifier of the gist
+   * @param sha The sha of the gist revision
+   * @returns Gist revision that matches the gist ID and sha
+   *
+   * @example
+   * \`\`\`ts
+   * getAGistRevision('gist_id', 'sha')
+   * \`\`\`
+   */",
+          ],
+          "file": "/geasty/dist/index.d.mts",
+          "id": "+class.default.+method.getAGistRevision",
+          "kind": "class-method",
+          "line": 347,
+          "name": "getAGistRevision",
+          "signature": "getAGistRevision: (gistId: string, sha: string) => Promise<Gist[]>;",
+        },
+        {
+          "docs": [
+            "/**
+   * Lists the authenticated user's gists or if called anonymously, this returns all public gists.
+   *
+   * @param options
+   * @param options.since Only show results that were last updated after the given time. This is a timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ.
+   * @param options.page The page number of the results to fetch.
+   * @param options.per_page The number of results per page (max 100).
+   * @returns List of gists
+   *
+   * @example
+   * \`\`\`ts
+   * getAllGists({
+   *   since: '2023-01-01T00:00:00Z',
+   *   page: 1,
+   *   per_page: 10,
+   * })
+   * \`\`\`
+   */",
+          ],
+          "file": "/geasty/dist/index.d.mts",
+          "id": "+class.default.+method.getAllGists",
+          "kind": "class-method",
+          "line": 301,
+          "name": "getAllGists",
+          "signature": "getAllGists: (options?: GetGistsOptions) => Promise<Gist[]>;",
+        },
+        {
+          "docs": [
+            "/**
+   * List gist commits.
+   *
+   * @param options
+   * @param options.gistId The unique identifier of the gist.
+   * @param options.page The page number of the results to fetch.
+   * @param options.per_page The number of results per page (max 100).
+   * @returns List of gist commits
+   *
+   * @example
+   * \`\`\`ts
+   * getGistCommits({
+   *   gistId: 'gist_id',
+   *   page: 1,
+   *   per_page: 10,
+   * })
+   * \`\`\`
+   */",
+          ],
+          "file": "/geasty/dist/index.d.mts",
+          "id": "+class.default.+method.getGistCommits",
+          "kind": "class-method",
+          "line": 423,
+          "name": "getGistCommits",
+          "signature": "getGistCommits: (
+  options: GetGistForksOrCommitsOptions,
+) => Promise<GistCommit[]>;",
+        },
+        {
+          "docs": [
+            "/**
+   * List gist forks.
+   *
+   * @param options
+   * @param options.gistId The unique identifier of the gist.
+   * @param options.page The page number of the results to fetch.
+   * @param options.per_page The number of results per page (max 100).
+   * @returns List of gist forks
+   *
+   * @example
+   * \`\`\`ts
+   * getGistForks({
+   *   gistId: 'gist_id',
+   *   page: 1,
+   *   per_page: 10,
+   * })
+   * \`\`\`
+   */",
+          ],
+          "file": "/geasty/dist/index.d.mts",
+          "id": "+class.default.+method.getGistForks",
+          "kind": "class-method",
+          "line": 404,
+          "name": "getGistForks",
+          "signature": "getGistForks: (options: GetGistForksOrCommitsOptions) => Promise<Gist[]>;",
+        },
+        {
+          "docs": [
+            "/**
+   * Lists public gists for the specified user.
+   *
+   * @param options
+   * @param options.username The handle for the GitHub user account
+   * @param options.since Only show results that were last updated after the given time. This is a timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ.
+   * @param options.page The page number of the results to fetch.
+   * @param options.per_page The number of results per page (max 100).
+   * @returns List of public gists for the specified user
+   *
+   * @example
+   * \`\`\`ts
+   * getGistsForUser({
+   *   username: 'github_username',
+   *   since: '2023-01-01T00:00:00Z',
+   *   page: 1,
+   *   per_page: 10,
+   * })
+   * \`\`\`
+   */",
+          ],
+          "file": "/geasty/dist/index.d.mts",
+          "id": "+class.default.+method.getGistsForUser",
+          "kind": "class-method",
+          "line": 334,
+          "name": "getGistsForUser",
+          "signature": "getGistsForUser: (options: GetGistForUserOptions) => Promise<Gist[]>;",
+        },
+        {
+          "docs": [
+            "/**
+   * List public gists sorted by most recently updated to least recently updated.
+   *
+   * @param options
+   * @param options.since Only show results that were last updated after the given time. This is a timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ.
+   * @param options.page The page number of the results to fetch.
+   * @param options.per_page The number of results per page (max 100).
+   * @returns List of gists
+   *
+   * @example
+   * \`\`\`ts
+   * getPublicGists({
+   *   since: '2023-01-01T00:00:00Z',
+   *   page: 1,
+   *   per_page: 10,
+   * })
+   * \`\`\`
+   */",
+          ],
+          "file": "/geasty/dist/index.d.mts",
+          "id": "+class.default.+method.getPublicGists",
+          "kind": "class-method",
+          "line": 366,
+          "name": "getPublicGists",
+          "signature": "getPublicGists: (options?: GetGistsOptions) => Promise<Gist[]>;",
+        },
+        {
+          "docs": [
+            "/**
+   * Get the raw content of a gist file.
+   *
+   * @param options
+   * @param options.username The handle for the GitHub user account
+   * @param options.gistId The unique identifier of the gist
+   * @param options.filename The name of the file within the gist. If not provided, the raw content of the first file in the gist will be returned.
+   * @returns Raw content of the gist file
+   *
+   * @example
+   * \`\`\`ts
+   * getRawGistFileContent({
+   *   username: 'github_username',
+   *   gistId: 'gist_id',
+   *   filename: 'file_name.txt',
+   * })
+   * \`\`\`
+   */",
+          ],
+          "file": "/geasty/dist/index.d.mts",
+          "id": "+class.default.+method.getRawGistFileContent",
+          "kind": "class-method",
+          "line": 493,
+          "name": "getRawGistFileContent",
+          "signature": "getRawGistFileContent: (options: {
+  username: string;
+  gistId: string;
+  filename?: string;
+}) => Promise<any>;",
+        },
+        {
+          "docs": [
+            "/**
+   * List the authenticated user's starred gists.
+   *
+   * @param options
+   * @param options.since Only show results that were last updated after the given time. This is a timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ.
+   * @param options.page The page number of the results to fetch.
+   * @param options.per_page The number of results per page (max 100).
+   * @returns List of starred gists
+   *
+   * @example
+   * \`\`\`ts
+   * getStarredGists({
+   *   since: '2023-01-01T00:00:00Z',
+   *   page: 1,
+   *   per_page: 10,
+   * })
+   * \`\`\`
+   */",
+          ],
+          "file": "/geasty/dist/index.d.mts",
+          "id": "+class.default.+method.getStarredGists",
+          "kind": "class-method",
+          "line": 385,
+          "name": "getStarredGists",
+          "signature": "getStarredGists: (options?: GetGistsOptions) => Promise<Gist[]>;",
+        },
+        {
+          "docs": [
+            "/**
+   * Check if access token is provided.
+   *
+   * @returns Boolean indicating whether access token is provided
+   */",
+          ],
+          "file": "/geasty/dist/index.d.mts",
+          "id": "+class.default.+method.hasAccessToken",
+          "kind": "class-method",
+          "line": 512,
+          "name": "hasAccessToken",
+          "signature": "hasAccessToken: () => boolean;",
+        },
+        {
+          "docs": [
+            "/**
+   * Check if a gist is starred.
+   *
+   * @param gistId The unique identifier of the gist.
+   * @returns Boolean indicating whether the gist is starred
+   *
+   * @example
+   * \`\`\`ts
+   * isGistStarred('gist_id')
+   * \`\`\`
+   */",
+          ],
+          "file": "/geasty/dist/index.d.mts",
+          "id": "+class.default.+method.isGistStarred",
+          "kind": "class-method",
+          "line": 435,
+          "name": "isGistStarred",
+          "signature": "isGistStarred: (gistId: string) => Promise<boolean>;",
+        },
+        {
+          "docs": [
+            "/**
+   * Star a gist.
+   * The fine-grained token must have the following permission set:
+   *   - "Gists" user permissions (write)
+   *
+   * @param gistId The unique identifier of the gist.
+   *
+   * @example
+   * \`\`\`ts
+   * starAGist('gist_id')
+   * \`\`\`
+   */",
+          ],
+          "file": "/geasty/dist/index.d.mts",
+          "id": "+class.default.+method.starAGist",
+          "kind": "class-method",
+          "line": 448,
+          "name": "starAGist",
+          "signature": "starAGist: (gistId: string) => Promise<void>;",
+        },
+        {
+          "docs": [
+            "/**
+   * Unstar a gist.
+   * The fine-grained token must have the following permission set:
+   *   - "Gists" user permissions (write)
+   *
+   * @param gistId The unique identifier of the gist.
+   *
+   * @example
+   * \`\`\`ts
+   * unstarAGist('gist_id')
+   * \`\`\`
+   */",
+          ],
+          "file": "/geasty/dist/index.d.mts",
+          "id": "+class.default.+method.unstarAGist",
+          "kind": "class-method",
+          "line": 461,
+          "name": "unstarAGist",
+          "signature": "unstarAGist: (gistId: string) => Promise<void>;",
+        },
+        {
+          "docs": [
+            "/**
+   * Allows you to update a gist's description and to update, delete, or rename gist files. Files from the previous version of the gist that aren't explicitly changed during an edit are unchanged.
+   * The fine-grained token must have the following permission set:
+   *   - "Gists" user permissions (write)
+   *
+   * @param options
+   * @param options.gistId The unique identifier of the gist.
+   * @param options.description The description of the gist.
+   * @param options.files The gist files to be updated, renamed, or deleted.
+   * @returns Updated gist
+   *
+   * @example
+   * \`\`\`ts
+   * updateAGist({
+   *   gistId: 'gist_id',
+   *   description: 'Updated Description',
+   *   files: {'test.txt': {content: 'Hello Geasty!'}},
+   * })
+   * \`\`\`
+   */",
+          ],
+          "file": "/geasty/dist/index.d.mts",
+          "id": "+class.default.+method.updateAGist",
+          "kind": "class-method",
+          "line": 282,
+          "name": "updateAGist",
+          "signature": "updateAGist: (
+  options:
+    | WithRequired<UpdateAGistOptions, "description">
+    | WithRequired<UpdateAGistOptions, "files">,
+) => Promise<Gist>;",
+        },
+      ],
+      "name": "default",
+      "properties": [],
+      "signature": "class Geasty {}",
+    },
+  ],
+  "name": "geasty",
+  "overview": undefined,
+  "packages": Any<Array>,
+  "subpath": ".",
+  "types": "./dist/index.d.mts",
+  "version": "0.0.6",
+}
+`;
