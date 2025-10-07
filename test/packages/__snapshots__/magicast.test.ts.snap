@@ -544,7 +544,7 @@ exports[`magicast@0.3.3 1`] = `
       "file": "/@babel/types/lib/index.d.ts",
       "id": "+type.ASTNode",
       "kind": "type",
-      "line": 377,
+      "line": 379,
       "name": "ASTNode",
       "signature": "type Node =
   | AnyTypeAnnotation
@@ -799,6 +799,7 @@ exports[`magicast@0.3.3 1`] = `
   | VariableDeclaration
   | VariableDeclarator
   | Variance
+  | VoidPattern
   | VoidTypeAnnotation
   | WhileStatement
   | WithStatement
