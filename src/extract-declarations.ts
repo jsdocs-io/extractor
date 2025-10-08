@@ -1,24 +1,18 @@
 import { orderBy } from "natural-orderby";
-import {
-	Node,
-	type ExportedDeclarations,
-	type ModuleDeclaration,
-	type Project,
-	type SourceFile,
-} from "ts-morph";
+import { Node, type ExportedDeclarations } from "ts-morph";
 import { ambientModulesDeclarations } from "./ambient-modules-declarations";
 import { exportEqualsDeclarations } from "./export-equals-declarations";
 import { exportedDeclarations } from "./exported-declarations";
-import { extractClass, type ExtractedClass } from "./extract-class";
-import { extractEnum, type ExtractedEnum } from "./extract-enum";
+import { extractClass } from "./extract-class";
+import { extractEnum } from "./extract-enum";
 import { extractExpression } from "./extract-expression";
 import { extractFileModule } from "./extract-file-module";
-import { extractFunction, type ExtractedFunction } from "./extract-function";
+import { extractFunction } from "./extract-function";
 import { extractFunctionExpression } from "./extract-function-expression";
-import { extractInterface, type ExtractedInterface } from "./extract-interface";
-import { extractNamespace, type ExtractedNamespace } from "./extract-namespace";
-import { extractTypeAlias, type ExtractedTypeAlias } from "./extract-type-alias";
-import { extractVariable, type ExtractedVariable } from "./extract-variable";
+import { extractInterface } from "./extract-interface";
+import { extractNamespace } from "./extract-namespace";
+import { extractTypeAlias } from "./extract-type-alias";
+import { extractVariable } from "./extract-variable";
 import { extractVariableAssignmentExpression } from "./extract-variable-assignment-expression";
 import { globalAmbientDeclarations } from "./global-ambient-declarations";
 import { id } from "./id";
@@ -33,55 +27,7 @@ import { isNamespace } from "./is-namespace";
 import { isTypeAlias } from "./is-type-alias";
 import { isVariable } from "./is-variable";
 import { isVariableAssignmentExpression } from "./is-variable-assignment-expression";
-
-/**
-`ExtractDeclarationsOptions` contains all the options
-for calling {@link extractDeclarations}.
-
-@internal
-*/
-export type ExtractDeclarationsOptions = {
-	/**
-  Name of the container that contains the top-level declarations
-  (e.g., a namespace's name). This is used to generate declaration IDs.
-  */
-	containerName: string;
-
-	/** Container that contains the top-level declarations. */
-	container: SourceFile | ModuleDeclaration;
-
-	/** Maximum extraction depth for nested namespaces. */
-	maxDepth: number;
-
-	/**
-  Instance of a  `ts-morph` `Project`. This is used to find ambient modules.
-  */
-	project?: Project;
-
-	/**
-  Name of the package being analyzed. This is used to filter ambient modules.
-  */
-	pkgName?: string;
-};
-
-/**
-`ExtractedDeclaration` is the union of all possible top-level declarations
-that can be extracted from a package, module or namespace.
-*/
-export type ExtractedDeclaration =
-	| ExtractedVariable
-	| ExtractedFunction
-	| ExtractedClass
-	| ExtractedInterface
-	| ExtractedEnum
-	| ExtractedTypeAlias
-	| ExtractedNamespace;
-
-/**
-`ExtractedDeclarationKind` is the union of all discriminators
-used to detect the kind of top-level declaration.
-*/
-export type ExtractedDeclarationKind = ExtractedDeclaration["kind"];
+import type { ExtractDeclarationsOptions, ExtractedDeclaration } from "./types";
 
 /**
 `extractDeclarations` extracts the top-level declarations found in a container

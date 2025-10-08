@@ -17,49 +17,12 @@ import { isHidden } from "./is-hidden";
 import { modifiersText } from "./modifiers-text";
 import { sourceFilePath } from "./source-file-path";
 import { typeCheckerType } from "./type-checker-type";
-
-export type ExtractedClass = {
-	kind: "class";
-	id: string;
-	name: string;
-	docs: string[];
-	file: string;
-	line: number;
-	signature: string;
-	constructors: ExtractedClassConstructor[];
-	properties: ExtractedClassProperty[];
-	methods: ExtractedClassMethod[];
-};
-
-export type ExtractedClassConstructor = {
-	kind: "class-constructor";
-	id: string;
-	name: string;
-	docs: string[];
-	file: string;
-	line: number;
-	signature: string;
-};
-
-export type ExtractedClassProperty = {
-	kind: "class-property";
-	id: string;
-	name: string;
-	docs: string[];
-	file: string;
-	line: number;
-	signature: string;
-};
-
-export type ExtractedClassMethod = {
-	kind: "class-method";
-	id: string;
-	name: string;
-	docs: string[];
-	file: string;
-	line: number;
-	signature: string;
-};
+import type {
+	ExtractedClass,
+	ExtractedClassConstructor,
+	ExtractedClassMethod,
+	ExtractedClassProperty,
+} from "./types";
 
 export const extractClass = async (
 	containerName: string,

@@ -5,27 +5,7 @@ import { headText } from "./head-text";
 import { id } from "./id";
 import { isHidden } from "./is-hidden";
 import { sourceFilePath } from "./source-file-path";
-
-export type ExtractedEnum = {
-	kind: "enum";
-	id: string;
-	name: string;
-	docs: string[];
-	file: string;
-	line: number;
-	signature: string;
-	members: ExtractedEnumMember[];
-};
-
-export type ExtractedEnumMember = {
-	kind: "enum-member";
-	id: string;
-	name: string;
-	docs: string[];
-	file: string;
-	line: number;
-	signature: string;
-};
+import type { ExtractedEnum, ExtractedEnumMember } from "./types";
 
 export const extractEnum = async (
 	containerName: string,

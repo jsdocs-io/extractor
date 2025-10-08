@@ -1,10 +1,10 @@
 import type { VariableDeclaration } from "ts-morph";
 import { docs } from "./docs";
-import type { ExtractedFunction } from "./extract-function";
 import { formatSignature } from "./format-signature";
 import { id } from "./id";
 import { sourceFilePath } from "./source-file-path";
 import { typeCheckerType } from "./type-checker-type";
+import type { ExtractedFunction } from "./types";
 
 export const extractFunctionExpression = async (
 	containerName: string,

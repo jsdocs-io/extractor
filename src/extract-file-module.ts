@@ -1,9 +1,8 @@
 import { SourceFile, SyntaxKind } from "ts-morph";
-import type { ExtractedDeclaration } from "./extract-declarations";
-import type { ExtractedNamespace } from "./extract-namespace";
 import { formatSignature } from "./format-signature";
 import { id } from "./id";
 import { sourceFilePath } from "./source-file-path";
+import type { ExtractedDeclaration, ExtractedNamespace } from "./types";
 
 export const extractFileModule = async (
 	containerName: string,

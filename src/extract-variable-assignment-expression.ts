@@ -1,10 +1,10 @@
 import type { BinaryExpression, VariableDeclaration } from "ts-morph";
 import { apparentType } from "./apparent-type";
 import { docs } from "./docs";
-import type { ExtractedVariable } from "./extract-variable";
 import { formatSignature } from "./format-signature";
 import { id } from "./id";
 import { sourceFilePath } from "./source-file-path";
+import type { ExtractedVariable } from "./types";
 
 export const extractVariableAssignmentExpression = async (
 	containerName: string,

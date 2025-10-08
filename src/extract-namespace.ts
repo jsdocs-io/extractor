@@ -1,20 +1,9 @@
 import { ModuleDeclaration } from "ts-morph";
 import { docs } from "./docs";
-import type { ExtractedDeclaration } from "./extract-declarations";
 import { formatSignature } from "./format-signature";
 import { id } from "./id";
 import { sourceFilePath } from "./source-file-path";
-
-export type ExtractedNamespace = {
-	kind: "namespace";
-	id: string;
-	name: string;
-	docs: string[];
-	file: string;
-	line: number;
-	signature: string;
-	declarations: ExtractedDeclaration[];
-};
+import type { ExtractedDeclaration, ExtractedNamespace } from "./types";
 
 export const extractNamespace = async (
 	containerName: string,

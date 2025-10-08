@@ -16,93 +16,16 @@ import { id } from "./id";
 import { isHidden } from "./is-hidden";
 import { sourceFilePath } from "./source-file-path";
 import { typeCheckerType } from "./type-checker-type";
-
-export type ExtractedInterface = {
-	kind: "interface";
-	id: string;
-	name: string;
-	docs: string[];
-	file: string;
-	line: number;
-	signature: string;
-	properties: ExtractedInterfaceProperty[];
-	methods: ExtractedInterfaceMethod[];
-	constructSignatures: ExtractedInterfaceConstructSignature[];
-	callSignatures: ExtractedInterfaceCallSignature[];
-	indexSignatures: ExtractedInterfaceIndexSignature[];
-	getAccessors: ExtractedInterfaceGetAccessor[];
-	setAccessors: ExtractedInterfaceSetAccessor[];
-};
-
-export type ExtractedInterfaceProperty = {
-	kind: "interface-property";
-	id: string;
-	name: string;
-	docs: string[];
-	file: string;
-	line: number;
-	signature: string;
-};
-
-export type ExtractedInterfaceMethod = {
-	kind: "interface-method";
-	id: string;
-	name: string;
-	docs: string[];
-	file: string;
-	line: number;
-	signature: string;
-};
-
-export type ExtractedInterfaceConstructSignature = {
-	kind: "interface-construct-signature";
-	id: string;
-	name: string;
-	docs: string[];
-	file: string;
-	line: number;
-	signature: string;
-};
-
-export type ExtractedInterfaceCallSignature = {
-	kind: "interface-call-signature";
-	id: string;
-	name: string;
-	docs: string[];
-	file: string;
-	line: number;
-	signature: string;
-};
-
-export type ExtractedInterfaceIndexSignature = {
-	kind: "interface-index-signature";
-	id: string;
-	name: string;
-	docs: string[];
-	file: string;
-	line: number;
-	signature: string;
-};
-
-export type ExtractedInterfaceGetAccessor = {
-	kind: "interface-get-accessor";
-	id: string;
-	name: string;
-	docs: string[];
-	file: string;
-	line: number;
-	signature: string;
-};
-
-export type ExtractedInterfaceSetAccessor = {
-	kind: "interface-set-accessor";
-	id: string;
-	name: string;
-	docs: string[];
-	file: string;
-	line: number;
-	signature: string;
-};
+import type {
+	ExtractedInterface,
+	ExtractedInterfaceCallSignature,
+	ExtractedInterfaceConstructSignature,
+	ExtractedInterfaceGetAccessor,
+	ExtractedInterfaceIndexSignature,
+	ExtractedInterfaceMethod,
+	ExtractedInterfaceProperty,
+	ExtractedInterfaceSetAccessor,
+} from "./types";
 
 export const extractInterface = async (
 	containerName: string,

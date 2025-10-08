@@ -1,5 +1,5 @@
 import { format } from "prettier";
-import type { AllExtractedDeclarationKind } from "./all-extracted-declaration";
+import type { AllExtractedDeclarationKind } from "./types";
 
 export const formatSignature = async (
 	kind: AllExtractedDeclarationKind,

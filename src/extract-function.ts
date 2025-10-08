@@ -4,16 +4,7 @@ import { formatSignature } from "./format-signature";
 import { id } from "./id";
 import { sourceFilePath } from "./source-file-path";
 import { typeCheckerType } from "./type-checker-type";
-
-export type ExtractedFunction = {
-	kind: "function";
-	id: string;
-	name: string;
-	docs: string[];
-	file: string;
-	line: number;
-	signature: string;
-};
+import type { ExtractedFunction } from "./types";
 
 export const extractFunction = async (
 	containerName: string,
