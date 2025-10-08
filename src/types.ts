@@ -46,7 +46,7 @@ export interface ExtractPackageApiOptions {
 
 /** `PackageApi` contains all the information extracted from a package. */
 export interface PackageApi {
-	/** Package name (e.g., `foo`). */
+	/** Package name (e.g., `foo`, `@foo/bar`). */
 	name: string;
 
 	/** Package version number (e.g., `1.0.0`). */
