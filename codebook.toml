@@ -1,8 +1,10 @@
 words = [
+    "accessors",
     "agpl",
     "attw",
     "bundler",
     "cjs",
+    "cwd",
     "esm",
     "execa",
     "jsdocs",
@@ -12,5 +14,6 @@ words = [
     "tsc",
     "tsdoc",
     "vitest",
+    "zod",
     "zshy",
 ]
