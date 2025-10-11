@@ -1,4 +1,4 @@
-export * from "./types";
+export type * from "./types";
 export { bunPackageManager } from "./bun-package-manager";
 export { ProjectError } from "./create-project";
 export { extractDeclarations } from "./extract-declarations";
