@@ -1,12 +1,12 @@
 import type { ModuleDeclaration, Project, SourceFile } from "ts-morph";
 
-/** `ExtractPackageApiOptions` contains all the options for calling {@link extractPackageApi}. */
+/** `ExtractPackageApiOptions` contains the options for calling {@link extractPackageApi}. */
 export interface ExtractPackageApiOptions {
 	/**
   Package to extract the API from.
 
-  This can be either a package name (e.g., `foo`) or any other query
-  that can be passed to `bun add` (e.g., `foo@1.0.0`).
+  This can be either a package name (e.g., `foo`, `@foo/bar`) or
+  any other query that can be passed to `bun add` (e.g., `foo@1.0.0`).
 
   @see {@link https://bun.sh/docs/cli/add | Bun docs}
   */
@@ -80,6 +80,7 @@ export interface PackageApi {
 
   @example
   ```ts
+  // Installing `foo` brings in also `bar` and `baz` as dependencies.
   ["foo@1.0.0", "bar@2.0.0", "baz@3.0.0"]
   ```
   */
@@ -92,24 +93,23 @@ export interface PackageApi {
 	analyzedIn: number;
 }
 
-/** `ExtractDeclarationsOptions` contains all the options for calling {@link extractDeclarations}. */
+/** `ExtractDeclarationsOptions` contains the options for calling {@link extractDeclarations}. */
 export interface ExtractDeclarationsOptions {
+	/** Container that exports the top-level declarations. */
+	container: SourceFile | ModuleDeclaration;
+
 	/**
-  Name of the container that contains the top-level declarations (e.g., the name of a namespace).
-  This is used to generate declaration IDs.
+  Container name (e.g., the name of a namespace), used to generate declaration IDs.
   */
 	containerName: string;
-
-	/** Container that contains the top-level declarations. */
-	container: SourceFile | ModuleDeclaration;
 
 	/** Maximum extraction depth for nested namespaces. */
 	maxDepth: number;
 
-	/** Instance of a `ts-morph` `Project`. This is used to find ambient modules. */
+	/** Instance of a `ts-morph` `Project`, used to find ambient modules. */
 	project?: Project;
 
-	/** Name of the package being analyzed. This is used to filter ambient modules. */
+	/** Name of the package being analyzed, used to filter ambient modules. */
 	pkgName?: string;
 }
 
@@ -118,7 +118,7 @@ export interface BaseDeclaration {
 	/** Unique ID. */
 	id: string;
 
-	/** Export name. */
+	/** Export name (may differ from the original name). */
 	name: string;
 
 	/** List of associated JSDoc comments. */
