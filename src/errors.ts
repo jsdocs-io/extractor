@@ -16,3 +16,8 @@ export class PackageTypesError extends Data.TaggedError("PackageTypesError") {}
 
 /** `ProjectError` occurs when the `ts-morph` project cannot be created. */
 export class ProjectError extends Data.TaggedError("ProjectError")<{ readonly cause?: unknown }> {}
+
+/** `PackageDeclarationsError` occurs when the declarations extraction fails. */
+export class PackageDeclarationsError extends Data.TaggedError("PackageDeclarationsError")<{
+	cause?: unknown;
+}> {}

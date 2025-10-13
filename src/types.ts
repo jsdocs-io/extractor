@@ -306,3 +306,18 @@ export interface CreateProjectReturn {
 	/** `SourceFile` created with `ts-morph` representing the index file. */
 	indexFile: SourceFile;
 }
+
+/** `PackageDeclarationsOptions` contains the options for calling {@link packageDeclarations}. */
+export interface PackageDeclarationsOptions {
+	/** Name of the analyzed package. */
+	pkgName: string;
+
+	/** `Project` created with `ts-morph`. */
+	project: Project;
+
+	/** `SourceFile` created with `ts-morph` representing the index file. */
+	indexFile: SourceFile;
+
+	/** Depth limit for the extraction. */
+	maxDepth: number;
+}

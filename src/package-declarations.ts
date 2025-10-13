@@ -1,26 +1,16 @@
-import { Data, Effect } from "effect";
-import type { Project, SourceFile } from "ts-morph";
+import { Effect } from "effect";
+import { PackageDeclarationsError } from "./errors.ts";
 import { extractDeclarations } from "./extract-declarations.ts";
+import type { PackageDeclarationsOptions } from "./types.ts";
 
-export type PackageDeclarationsOptions = {
-	pkgName: string;
-	project: Project;
-	indexFile: SourceFile;
-	maxDepth: number;
-};
-
-/** @internal */
-export class PackageDeclarationsError extends Data.TaggedError("PackageDeclarationsError")<{
-	cause?: unknown;
-}> {}
-
-export const packageDeclarations = ({
+/** `packageDeclarations` returns an Effect that extracts declarations from a package. */
+export function packageDeclarations({
 	pkgName,
 	project,
 	indexFile,
 	maxDepth,
-}: PackageDeclarationsOptions) =>
-	Effect.tryPromise({
+}: PackageDeclarationsOptions) {
+	return Effect.tryPromise({
 		try: () =>
 			extractDeclarations({
 				containerName: "",
@@ -29,5 +19,6 @@ export const packageDeclarations = ({
 				project,
 				pkgName,
 			}),
-		catch: (e) => new PackageDeclarationsError({ cause: e }),
+		catch: (err) => new PackageDeclarationsError({ cause: err }),
 	});
+}
