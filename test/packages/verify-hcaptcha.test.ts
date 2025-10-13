@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { extractPackageApi } from "../../src/extract-package-api.ts"
+import { extractPackageApi } from "../../src/extract-package-api.ts";
 
 test("verify-hcaptcha@1.0.0", async () => {
 	expect(

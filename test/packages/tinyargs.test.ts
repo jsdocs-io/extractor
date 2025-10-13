@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { extractPackageApi } from "../../src/extract-package-api.ts"
+import { extractPackageApi } from "../../src/extract-package-api.ts";
 
 test("tinyargs@0.1.4", async () => {
 	expect(
