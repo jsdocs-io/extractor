@@ -8,10 +8,10 @@ export type ExportedDeclarationsReturn = {
 	declaration: ExportedDeclarations;
 }[];
 
-export const exportedDeclarations = (
+export function exportedDeclarations(
 	containerName: string,
 	container: SourceFile | ModuleDeclaration,
-): ExportedDeclarationsReturn => {
+): ExportedDeclarationsReturn {
 	const exportedDeclarations = [];
 	for (const [exportName, declarations] of container.getExportedDeclarations()) {
 		for (const declaration of declarations) {
@@ -22,4 +22,4 @@ export const exportedDeclarations = (
 		}
 	}
 	return exportedDeclarations;
-};
+}

@@ -34,16 +34,14 @@ import type { ExtractDeclarationsOptions, ExtractedDeclaration } from "./types.t
 found in a container and/or a project.
 
 @param options - {@link ExtractDeclarationsOptions}
-
-@internal
 */
-export const extractDeclarations = async ({
+export async function extractDeclarations({
 	containerName,
 	container,
 	maxDepth,
 	project,
 	pkgName,
-}: ExtractDeclarationsOptions): Promise<ExtractedDeclaration[]> => {
+}: ExtractDeclarationsOptions): Promise<ExtractedDeclaration[]> {
 	const foundDeclarations = [
 		...exportedDeclarations(containerName, container),
 		...exportEqualsDeclarations(containerName, container),
@@ -62,13 +60,11 @@ export const extractDeclarations = async ({
 			seenFunctions,
 			seenNamespaces,
 		});
-		if (!extractedDeclaration) {
-			continue;
-		}
+		if (!extractedDeclaration) continue;
 		extractedDeclarations.push(extractedDeclaration);
 	}
 	return orderBy(extractedDeclarations, "id");
-};
+}
 
 type ExtractDeclarationOptions = {
 	containerName: string;
@@ -79,14 +75,14 @@ type ExtractDeclarationOptions = {
 	seenNamespaces: Set<string>;
 };
 
-const extractDeclaration = async ({
+async function extractDeclaration({
 	containerName,
 	exportName,
 	declaration,
 	maxDepth,
 	seenFunctions,
 	seenNamespaces,
-}: ExtractDeclarationOptions): Promise<ExtractedDeclaration | undefined> => {
+}: ExtractDeclarationOptions): Promise<ExtractedDeclaration | undefined> {
 	if (isVariable(declaration)) {
 		return await extractVariable(containerName, exportName, declaration);
 	}
@@ -146,4 +142,4 @@ const extractDeclaration = async ({
 		return await extractFileModule(containerName, exportName, declaration, innerDeclarations);
 	}
 	return undefined;
-};
+}

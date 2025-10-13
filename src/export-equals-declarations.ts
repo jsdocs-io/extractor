@@ -10,10 +10,10 @@ export type ExportEqualsDeclarationsReturn = {
 	declaration: Exclude<ExportedDeclarations, ModuleDeclaration>;
 }[];
 
-export const exportEqualsDeclarations = (
+export function exportEqualsDeclarations(
 	containerName: string,
 	container: SourceFile | ModuleDeclaration,
-): ExportEqualsDeclarationsReturn => {
+): ExportEqualsDeclarationsReturn {
 	if (isShorthandAmbientModule(container)) {
 		// Export equals declarations may exist inside the body of ambient modules.
 		// However, this is impossible for shorthand ambient modules with no body.
@@ -41,4 +41,4 @@ export const exportEqualsDeclarations = (
 		exportEqualsDeclarations.push({ containerName, exportName, declaration });
 	}
 	return exportEqualsDeclarations;
-};
+}

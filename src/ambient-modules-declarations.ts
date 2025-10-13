@@ -8,11 +8,11 @@ export type AmbientModulesDeclarationsReturn = {
 	declaration: ModuleDeclaration;
 }[];
 
-export const ambientModulesDeclarations = (
+export function ambientModulesDeclarations(
 	containerName: string,
 	project: Project,
 	pkgName?: string,
-): AmbientModulesDeclarationsReturn => {
+): AmbientModulesDeclarationsReturn {
 	const ambientModulesDeclarations = [];
 	for (const symbol of project.getAmbientModules()) {
 		for (const declaration of symbol.getDeclarations()) {
@@ -32,4 +32,4 @@ export const ambientModulesDeclarations = (
 		}
 	}
 	return ambientModulesDeclarations;
-};
+}

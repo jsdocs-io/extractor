@@ -13,10 +13,10 @@ export type GlobalAmbientDeclarationsReturn = {
 	declaration: VariableDeclaration | FunctionDeclaration | ModuleDeclaration;
 }[];
 
-export const globalAmbientDeclarations = (
+export function globalAmbientDeclarations(
 	containerName: string,
 	container: SourceFile,
-): GlobalAmbientDeclarationsReturn => {
+): GlobalAmbientDeclarationsReturn {
 	// See https://www.typescriptlang.org/docs/handbook/declaration-files/by-example.html#global-variables.
 	const globalCandidates = [
 		...container.getVariableDeclarations(),
@@ -36,4 +36,4 @@ export const globalAmbientDeclarations = (
 		});
 	}
 	return globalAmbientDeclarations;
-};
+}
