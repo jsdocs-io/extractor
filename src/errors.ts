@@ -10,3 +10,6 @@ export class WorkDirError extends Data.TaggedError("WorkDirError")<{ cause?: unk
 
 /** `PackageJsonError` occurs when a `package.json` file cannot be read. */
 export class PackageJsonError extends Data.TaggedError("PackageJsonError")<{ cause?: unknown }> {}
+
+/** `PackageTypesError` occurs when the types entry point file for a package cannot be resolved. */
+export class PackageTypesError extends Data.TaggedError("PackageTypesError") {}
