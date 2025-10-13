@@ -30,8 +30,8 @@ import { isVariable } from "./is-variable.ts";
 import type { ExtractDeclarationsOptions, ExtractedDeclaration } from "./types.ts";
 
 /**
-`extractDeclarations` extracts the top-level declarations found in a container
-and/or a project.
+`extractDeclarations` extracts the top-level declarations
+found in a container and/or a project.
 
 @param options - {@link ExtractDeclarationsOptions}
 

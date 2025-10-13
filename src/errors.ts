@@ -22,7 +22,7 @@ export class PackageDeclarationsError extends Data.TaggedError("PackageDeclarati
 	cause?: unknown;
 }> {}
 
-/** `PackageNameError` occurs when the name of a package is not a name valid on the npm registry. */
+/** `PackageNameError` occurs when the name of a package is not a valid name on the npm registry. */
 export class PackageNameError extends Data.TaggedError("PackageNameError")<{
 	warnings?: string[];
 	errors?: string[];
