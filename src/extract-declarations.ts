@@ -1,6 +1,19 @@
 import { orderBy } from "natural-orderby";
 import { Node, type ExportedDeclarations } from "ts-morph";
 import { ambientModulesDeclarations } from "./ambient-modules-declarations.ts";
+import {
+	isClass,
+	isEnum,
+	isExpression,
+	isFileModule,
+	isFunction,
+	isFunctionExpression,
+	isInterface,
+	isNamespace,
+	isTypeAlias,
+	isVariable,
+	isVariableAssignmentExpression,
+} from "./declaration-type-guards.ts";
 import { exportEqualsDeclarations } from "./export-equals-declarations.ts";
 import { exportedDeclarations } from "./exported-declarations.ts";
 import { extractClass } from "./extract-class.ts";
@@ -16,17 +29,6 @@ import { extractVariableAssignmentExpression } from "./extract-variable-assignme
 import { extractVariable } from "./extract-variable.ts";
 import { globalAmbientDeclarations } from "./global-ambient-declarations.ts";
 import { id } from "./id.ts";
-import { isClass } from "./is-class.ts";
-import { isEnum } from "./is-enum.ts";
-import { isExpression } from "./is-expression.ts";
-import { isFileModule } from "./is-file-module.ts";
-import { isFunctionExpression } from "./is-function-expression.ts";
-import { isFunction } from "./is-function.ts";
-import { isInterface } from "./is-interface.ts";
-import { isNamespace } from "./is-namespace.ts";
-import { isTypeAlias } from "./is-type-alias.ts";
-import { isVariableAssignmentExpression } from "./is-variable-assignment-expression.ts";
-import { isVariable } from "./is-variable.ts";
 import type { ExtractDeclarationsOptions, ExtractedDeclaration } from "./types.ts";
 
 /**

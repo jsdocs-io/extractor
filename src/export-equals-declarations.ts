@@ -1,7 +1,7 @@
 import { ModuleDeclaration, SourceFile, SyntaxKind, type ExportedDeclarations } from "ts-morph";
+import { isNamespace } from "./declaration-type-guards.ts";
 import { isExportedDeclarations } from "./is-exported-declarations.ts";
 import { isHidden } from "./is-hidden.ts";
-import { isNamespace } from "./is-namespace.ts";
 import { isShorthandAmbientModule } from "./is-shorthand-ambient-module.ts";
 
 export type ExportEqualsDeclarationsReturn = {
