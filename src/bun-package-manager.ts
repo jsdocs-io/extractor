@@ -3,16 +3,16 @@ import { execa } from "execa";
 import { InstallPackageError } from "./errors.ts";
 import { PackageManager } from "./package-manager.ts";
 
-/** @internal */
-export const bunPackageManager = (bunPath = "bun") =>
-	PackageManager.of({
+/** `bunPackageManager` implements the {@link PackageManager} service using bun. */
+export function bunPackageManager(bunPath = "bun") {
+	return PackageManager.of({
 		installPackage: ({ pkg, cwd }) =>
 			Effect.gen(function* () {
 				// Run `bun add <pkg> --verbose`.
 				// See https://bun.sh/docs/cli/add.
 				const { stdout } = yield* Effect.tryPromise({
 					try: () => execa(bunPath, ["add", pkg, "--verbose"], { cwd }),
-					catch: (e) => new InstallPackageError({ cause: e }),
+					catch: (err) => new InstallPackageError({ cause: err }),
 				});
 
 				// With verbose output on, bun prints one line per installed package
@@ -26,3 +26,4 @@ export const bunPackageManager = (bunPath = "bun") =>
 				return installedPackages;
 			}),
 	});
+}
