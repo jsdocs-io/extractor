@@ -21,3 +21,9 @@ export class ProjectError extends Data.TaggedError("ProjectError")<{ readonly ca
 export class PackageDeclarationsError extends Data.TaggedError("PackageDeclarationsError")<{
 	cause?: unknown;
 }> {}
+
+/** `PackageNameError` occurs when the name of a package is not a name valid on the npm registry. */
+export class PackageNameError extends Data.TaggedError("PackageNameError")<{
+	warnings?: string[];
+	errors?: string[];
+}> {}
