@@ -44,6 +44,9 @@ export interface ExtractPackageApiOptions {
 	bunPath?: string;
 }
 
+/** `ExtractPackageApiEffectOptions` contains the options for calling {@link extractPackageApiEffect}. */
+export type ExtractPackageApiEffectOptions = Omit<ExtractPackageApiOptions, "bunPath">;
+
 /** `PackageApi` contains all the information extracted from a package. */
 export interface PackageApi {
 	/** Package name (e.g., `foo`, `@foo/bar`). */
