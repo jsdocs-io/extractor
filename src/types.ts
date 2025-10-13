@@ -270,3 +270,21 @@ export type AllExtractedDeclaration =
 used to detect the kind of declaration.
 */
 export type AllExtractedDeclarationKind = AllExtractedDeclaration["kind"];
+
+/** `InstallPackageOptions` contains the options for calling {@link PackageManager.installPackage}. */
+export interface InstallPackageOptions {
+	/** Package to install. */
+	pkg: string;
+
+	/** Directory where to install the package as a dependency. */
+	cwd: string;
+}
+
+/** `WorkDir` represents a temporary directory resource. */
+export interface WorkDir {
+	/** Directory path. */
+	path: string;
+
+	/** Cleanup function to remove the directory. */
+	close: () => Promise<void>;
+}

@@ -1,23 +1,17 @@
-import { Context, Data, Effect } from "effect";
+import { Context, Effect } from "effect";
+import type { InstallPackageError } from "./errors.ts";
+import type { InstallPackageOptions } from "./types.ts";
 
-/** @internal */
-export type InstallPackageOptions = {
-	pkg: string;
-	cwd: string;
-};
-
-/** @internal */
-export class InstallPackageError extends Data.TaggedError("InstallPackageError")<{
-	cause?: unknown;
-}> {}
-
-/** @internal */
+/**
+`PackageManager` is an Effect service that represent a package manager
+(e.g., bun) that can install a package and its dependencies returning
+the list of all installed packages.
+*/
 export class PackageManager extends Context.Tag("PackageManager")<
 	PackageManager,
 	{
-		readonly installPackage: ({
-			pkg,
-			cwd,
-		}: InstallPackageOptions) => Effect.Effect<string[], InstallPackageError>;
+		readonly installPackage: (
+			opts: InstallPackageOptions,
+		) => Effect.Effect<string[], InstallPackageError>;
 	}
 >() {}

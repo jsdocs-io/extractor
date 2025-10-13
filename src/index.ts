@@ -1,3 +1,4 @@
+export * from "./errors.ts";
 export * from "./extract-package-api.ts";
 export type * from "./types.ts";
 

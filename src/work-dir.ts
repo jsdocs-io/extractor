@@ -1,34 +1,24 @@
-import { Data, Effect } from "effect";
+import { Effect } from "effect";
 import { rm } from "node:fs/promises";
 import { temporaryDirectory } from "tempy";
+import { WorkDirError } from "./errors.ts";
+import type { WorkDir } from "./types.ts";
 
-/** @internal */
-export type WorkDir = {
-	readonly path: string;
-	readonly close: () => Promise<void>;
-};
-
-/** @internal */
-export class WorkDirError extends Data.TaggedError("WorkDirError")<{
-	cause?: unknown;
-}> {}
-
-const acquire = Effect.try({
-	try: () => {
-		const path = temporaryDirectory();
-		return {
-			path,
-			close: async () => {
-				try {
-					await rm(path, { force: true, recursive: true, maxRetries: 3 });
-				} catch {}
-			},
-		};
-	},
-	catch: (e) => new WorkDirError({ cause: e }),
-});
-
-const release = (workDir: WorkDir) => Effect.promise(() => workDir.close());
-
-/** @internal */
-export const workDir = Effect.acquireRelease(acquire, release);
+/** `workDir` is an Effect resource that represents a temporary directory. */
+export const workDir = Effect.acquireRelease(
+	Effect.try({
+		try: (): WorkDir => {
+			const path = temporaryDirectory();
+			return {
+				path,
+				close: async () => {
+					try {
+						await rm(path, { force: true, recursive: true, maxRetries: 3 });
+					} catch {}
+				},
+			};
+		},
+		catch: (err) => new WorkDirError({ cause: err }),
+	}),
+	(workDir: WorkDir) => Effect.promise(() => workDir.close()),
+);

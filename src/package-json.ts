@@ -1,14 +1,11 @@
-import { Data, Effect } from "effect";
+import { Effect } from "effect";
 import { readPackage } from "read-pkg";
+import { PackageJsonError } from "./errors.ts";
 
-/** @internal */
-export class PackageJsonError extends Data.TaggedError("PackageJsonError")<{
-	cause?: unknown;
-}> {}
-
-/** @internal */
-export const packageJson = (pkgDir: string) =>
-	Effect.tryPromise({
+/** `packageJson` returns an Effect for reading the `package.json` file in the given directory. */
+export function packageJson(pkgDir: string) {
+	return Effect.tryPromise({
 		try: () => readPackage({ cwd: pkgDir }),
-		catch: (e) => new PackageJsonError({ cause: e }),
+		catch: (err) => new PackageJsonError({ cause: err }),
 	});
+}

@@ -1,6 +1,7 @@
 import { Effect } from "effect";
 import { execa } from "execa";
-import { InstallPackageError, PackageManager } from "./package-manager.ts";
+import { InstallPackageError } from "./errors.ts";
+import { PackageManager } from "./package-manager.ts";
 
 /** @internal */
 export const bunPackageManager = (bunPath = "bun") =>

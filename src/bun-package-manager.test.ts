@@ -2,12 +2,12 @@ import { Effect } from "effect";
 import { temporaryDirectoryTask } from "tempy";
 import { expect, test } from "vitest";
 import { bunPackageManager } from "./bun-package-manager.ts";
-import type { InstallPackageOptions } from "./package-manager.ts";
+import type { InstallPackageOptions } from "./types.ts";
 
 const bun = bunPackageManager();
 
-const _installPackage = (options: InstallPackageOptions) =>
-	Effect.runPromise(bun.installPackage(options));
+const _installPackage = (opts: InstallPackageOptions) =>
+	Effect.runPromise(bun.installPackage(opts));
 
 test("invalid package", async () => {
 	await temporaryDirectoryTask(async (cwd) => {
