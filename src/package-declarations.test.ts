@@ -1,5 +1,5 @@
 import { Effect } from "effect";
-import dedent from "ts-dedent";
+import { dedent } from "ts-dedent";
 import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { afterEach, expect, test, vi } from "vitest";
 import { extractDeclarations } from "./extract-declarations";
