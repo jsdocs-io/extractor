@@ -13,3 +13,6 @@ export class PackageJsonError extends Data.TaggedError("PackageJsonError")<{ cau
 
 /** `PackageTypesError` occurs when the types entry point file for a package cannot be resolved. */
 export class PackageTypesError extends Data.TaggedError("PackageTypesError") {}
+
+/** `ProjectError` occurs when the `ts-morph` project cannot be created. */
+export class ProjectError extends Data.TaggedError("ProjectError")<{ readonly cause?: unknown }> {}

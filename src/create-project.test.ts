@@ -3,9 +3,10 @@ import fs from "node:fs/promises";
 import { join } from "pathe";
 import { temporaryDirectoryTask } from "tempy";
 import { expect, test } from "vitest";
-import { createProject, type CreateProjectOptions } from "./create-project.ts";
+import { createProject } from "./create-project.ts";
+import type { CreateProjectOptions } from "./types.ts";
 
-const _createProject = (options: CreateProjectOptions) => Effect.runPromise(createProject(options));
+const _createProject = (opts: CreateProjectOptions) => Effect.runPromise(createProject(opts));
 
 test("no cwd", async () => {
 	await temporaryDirectoryTask(async (dir) => {

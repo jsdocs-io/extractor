@@ -288,3 +288,21 @@ export interface WorkDir {
 	/** Cleanup function to remove the directory. */
 	close: () => Promise<void>;
 }
+
+/** `CreateProjectOptions` contains the options for calling {@link createProject}. */
+export interface CreateProjectOptions {
+	/** Path to the types entry point file. */
+	indexFilePath: string;
+
+	/** Directory where the analyzed package is installed. */
+	cwd: string;
+}
+
+/** `CreateProjectReturn` represents the return value of {@link createProject}. */
+export interface CreateProjectReturn {
+	/** `Project` created with `ts-morph`. */
+	project: Project;
+
+	/** `SourceFile` created with `ts-morph` representing the index file. */
+	indexFile: SourceFile;
+}
