@@ -1,7 +1,7 @@
 import { dedent } from "ts-dedent";
 import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
-import { isExpression } from "./is-expression";
+import { isExpression } from "./is-expression.ts";
 
 test("is expression", () => {
 	const project = new Project({

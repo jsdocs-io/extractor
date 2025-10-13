@@ -1,7 +1,7 @@
 import { dedent } from "ts-dedent";
 import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
-import { apparentType } from "./apparent-type";
+import { apparentType } from "./apparent-type.ts";
 
 test("apparent type", () => {
 	const project = new Project({

@@ -2,8 +2,8 @@ import { Effect } from "effect";
 import { dedent } from "ts-dedent";
 import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { afterEach, expect, test, vi } from "vitest";
-import { extractDeclarations } from "./extract-declarations";
-import { packageDeclarations, type PackageDeclarationsOptions } from "./package-declarations";
+import { extractDeclarations } from "./extract-declarations.ts";
+import { packageDeclarations, type PackageDeclarationsOptions } from "./package-declarations.ts";
 
 const _packageDeclarations = (options: PackageDeclarationsOptions) =>
 	Effect.runPromise(packageDeclarations(options));

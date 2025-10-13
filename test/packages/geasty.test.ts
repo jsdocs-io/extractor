@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { extractPackageApi } from "../../src";
+import { extractPackageApi } from "../../src/extract-package-api.ts"
 
 test("geasty@0.0.6", async () => {
 	expect(

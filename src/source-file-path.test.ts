@@ -1,6 +1,6 @@
 import { fromPartial } from "@total-typescript/shoehorn";
 import { expect, test } from "vitest";
-import { sourceFilePath } from "./source-file-path";
+import { sourceFilePath } from "./source-file-path.ts";
 
 test("empty path", async () => {
 	expect(

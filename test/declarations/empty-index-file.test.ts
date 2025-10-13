@@ -1,6 +1,6 @@
 import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
-import { extractDeclarations } from "../../src";
+import { extractDeclarations } from "../../src/extract-declarations.ts";
 
 test("empty index file", async () => {
 	const project = new Project({

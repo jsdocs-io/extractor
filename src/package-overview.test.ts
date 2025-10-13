@@ -1,7 +1,7 @@
 import { dedent } from "ts-dedent";
 import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
-import { packageOverview } from "./package-overview";
+import { packageOverview } from "./package-overview.ts";
 
 test("no overview", () => {
 	const project = new Project({

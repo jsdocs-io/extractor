@@ -1,7 +1,7 @@
 import { dedent } from "ts-dedent";
 import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
-import { isTypeAlias } from "./is-type-alias";
+import { isTypeAlias } from "./is-type-alias.ts";
 
 test("is type alias", () => {
 	const project = new Project({

@@ -1,7 +1,7 @@
 import { dedent } from "ts-dedent";
 import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
-import { headText } from "./head-text";
+import { headText } from "./head-text.ts";
 
 test("return text from declaration before body without JSDoc", () => {
 	const project = new Project({

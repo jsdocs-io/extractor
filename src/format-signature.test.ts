@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { formatSignature } from "./format-signature";
+import { formatSignature } from "./format-signature.ts";
 
 test("format signature", async () => {
 	const tests = [

@@ -1,7 +1,7 @@
 import { dedent } from "ts-dedent";
 import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
-import { isShorthandAmbientModule } from "./is-shorthand-ambient-module";
+import { isShorthandAmbientModule } from "./is-shorthand-ambient-module.ts";
 
 test("is shorthand ambient module", () => {
 	const project = new Project({

@@ -1,6 +1,6 @@
 import { Effect } from "effect";
 import { expect, test } from "vitest";
-import { packageName } from "./package-name";
+import { packageName } from "./package-name.ts";
 
 const _packageName = (pkg: string) => Effect.runPromise(packageName(pkg));
 

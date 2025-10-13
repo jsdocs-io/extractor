@@ -1,7 +1,7 @@
 import { dedent } from "ts-dedent";
 import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
-import { isHidden } from "./is-hidden";
+import { isHidden } from "./is-hidden.ts";
 
 test("private properties", () => {
 	const project = new Project({

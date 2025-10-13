@@ -1,7 +1,7 @@
 import { Effect } from "effect";
 import type { NormalizedPackageJson } from "read-pkg";
 import { expect, test } from "vitest";
-import { packageTypes } from "./package-types";
+import { packageTypes } from "./package-types.ts";
 
 const _packageTypes = (pkgJson: Partial<NormalizedPackageJson>, subpath: string) =>
 	Effect.runPromise(packageTypes(pkgJson, subpath));

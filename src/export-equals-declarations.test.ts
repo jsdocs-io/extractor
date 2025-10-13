@@ -1,7 +1,7 @@
 import { dedent } from "ts-dedent";
 import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
-import { exportEqualsDeclarations } from "./export-equals-declarations";
+import { exportEqualsDeclarations } from "./export-equals-declarations.ts";
 
 test("shorthand ambient module", () => {
 	const project = new Project({

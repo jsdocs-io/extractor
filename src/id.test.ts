@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { id } from "./id";
+import { id } from "./id.ts";
 
 test("no parts", () => {
 	expect(id()).toBe("");

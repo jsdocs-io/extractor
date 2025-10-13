@@ -1,6 +1,6 @@
 import { Node, SyntaxKind } from "ts-morph";
-import { docs } from "./docs";
-import { parseDocComment } from "./parse-doc-comment";
+import { docs } from "./docs.ts";
+import { parseDocComment } from "./parse-doc-comment.ts";
 
 export const isHidden = (node: Node): boolean =>
 	// Check if a declaration is part of a package's private API.

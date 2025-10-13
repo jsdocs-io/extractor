@@ -1,7 +1,7 @@
 import { fromPartial } from "@total-typescript/shoehorn";
 import { SyntaxKind } from "ts-morph";
 import { expect, test } from "vitest";
-import { modifiersText } from "./modifiers-text";
+import { modifiersText } from "./modifiers-text.ts";
 
 test("ignore public keyword", async () => {
 	expect(

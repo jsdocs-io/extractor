@@ -1,7 +1,7 @@
 import { dedent } from "ts-dedent";
 import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
-import { isFileModule } from "./is-file-module";
+import { isFileModule } from "./is-file-module.ts";
 
 test("is file module", () => {
 	const project = new Project({

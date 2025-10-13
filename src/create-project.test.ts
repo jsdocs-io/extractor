@@ -3,7 +3,7 @@ import fs from "node:fs/promises";
 import { join } from "pathe";
 import { temporaryDirectoryTask } from "tempy";
 import { expect, test } from "vitest";
-import { createProject, type CreateProjectOptions } from "./create-project";
+import { createProject, type CreateProjectOptions } from "./create-project.ts";
 
 const _createProject = (options: CreateProjectOptions) => Effect.runPromise(createProject(options));
 

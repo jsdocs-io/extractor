@@ -4,8 +4,8 @@ import {
 	type ModuleDeclaration,
 	type VariableDeclaration,
 } from "ts-morph";
-import { isGlobal } from "./is-global";
-import { isHidden } from "./is-hidden";
+import { isGlobal } from "./is-global.ts";
+import { isHidden } from "./is-hidden.ts";
 
 export type GlobalAmbientDeclarationsReturn = {
 	containerName: string;

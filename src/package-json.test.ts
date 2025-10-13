@@ -3,7 +3,7 @@ import fs from "node:fs/promises";
 import { join } from "pathe";
 import { temporaryDirectoryTask } from "tempy";
 import { expect, test } from "vitest";
-import { packageJson } from "./package-json";
+import { packageJson } from "./package-json.ts";
 
 const _packageJson = (pkgDir: string) => Effect.runPromise(packageJson(pkgDir));
 

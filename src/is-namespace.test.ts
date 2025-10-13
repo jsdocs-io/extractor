@@ -1,7 +1,7 @@
 import { dedent } from "ts-dedent";
 import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
-import { isNamespace } from "./is-namespace";
+import { isNamespace } from "./is-namespace.ts";
 
 test("is namespace", () => {
 	const project = new Project({

@@ -1,7 +1,7 @@
 import { dedent } from "ts-dedent";
 import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
-import { isVariableAssignmentExpression } from "./is-variable-assignment-expression";
+import { isVariableAssignmentExpression } from "./is-variable-assignment-expression.ts";
 
 test("is variable assignment expression", () => {
 	const project = new Project({

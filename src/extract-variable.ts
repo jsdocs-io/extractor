@@ -1,10 +1,10 @@
 import type { VariableDeclaration } from "ts-morph";
-import { apparentType } from "./apparent-type";
-import { docs } from "./docs";
-import { formatSignature } from "./format-signature";
-import { id } from "./id";
-import { sourceFilePath } from "./source-file-path";
-import type { ExtractedVariable } from "./types";
+import { apparentType } from "./apparent-type.ts";
+import { docs } from "./docs.ts";
+import { formatSignature } from "./format-signature.ts";
+import { id } from "./id.ts";
+import { sourceFilePath } from "./source-file-path.ts";
+import type { ExtractedVariable } from "./types.ts";
 
 export const extractVariable = async (
 	containerName: string,

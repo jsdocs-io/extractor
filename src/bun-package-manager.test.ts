@@ -1,8 +1,8 @@
 import { Effect } from "effect";
 import { temporaryDirectoryTask } from "tempy";
 import { expect, test } from "vitest";
-import { bunPackageManager } from "./bun-package-manager";
-import type { InstallPackageOptions } from "./package-manager";
+import { bunPackageManager } from "./bun-package-manager.ts";
+import type { InstallPackageOptions } from "./package-manager.ts";
 
 const bun = bunPackageManager();
 

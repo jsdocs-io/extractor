@@ -1,7 +1,7 @@
 import { dedent } from "ts-dedent";
 import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
-import { isInterface } from "./is-interface";
+import { isInterface } from "./is-interface.ts";
 
 test("is interface", () => {
 	const project = new Project({

@@ -14,10 +14,10 @@
 		"strict": true,
 		"noUncheckedIndexedAccess": true,
 		"noImplicitOverride": true,
-		// Building a library.
+		// Building a library with zshy.
 		"declaration": true,
-		// Transpiling with a bundler.
-		"module": "preserve",
+		"module": "NodeNext",
+		"allowImportingTsExtensions": true,
 		"noEmit": true,
 		// No DOM.
 		"lib": ["es2022"]

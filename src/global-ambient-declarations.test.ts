@@ -1,7 +1,7 @@
 import { dedent } from "ts-dedent";
 import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
-import { globalAmbientDeclarations } from "./global-ambient-declarations";
+import { globalAmbientDeclarations } from "./global-ambient-declarations.ts";
 
 test("no globals", () => {
 	const project = new Project({

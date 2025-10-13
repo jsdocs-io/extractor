@@ -1,6 +1,6 @@
 import { Data, Effect } from "effect";
 import type { Project, SourceFile } from "ts-morph";
-import { extractDeclarations } from "./extract-declarations";
+import { extractDeclarations } from "./extract-declarations.ts";
 
 export type PackageDeclarationsOptions = {
 	pkgName: string;

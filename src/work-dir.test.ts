@@ -3,7 +3,7 @@ import { rm } from "node:fs/promises";
 import { join } from "pathe";
 import { temporaryDirectory, temporaryDirectoryTask } from "tempy";
 import { afterEach, expect, test, vi } from "vitest";
-import { workDir } from "./work-dir";
+import { workDir } from "./work-dir.ts";
 
 const _workDir = () =>
 	Effect.runPromise(

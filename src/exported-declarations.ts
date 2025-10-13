@@ -1,6 +1,6 @@
 import type { ExportedDeclarations, ModuleDeclaration, SourceFile } from "ts-morph";
-import { isExportedDeclarations } from "./is-exported-declarations";
-import { isHidden } from "./is-hidden";
+import { isExportedDeclarations } from "./is-exported-declarations.ts";
+import { isHidden } from "./is-hidden.ts";
 
 export type ExportedDeclarationsReturn = {
 	containerName: string;

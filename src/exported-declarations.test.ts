@@ -1,7 +1,7 @@
 import { dedent } from "ts-dedent";
 import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
-import { exportedDeclarations } from "./exported-declarations";
+import { exportedDeclarations } from "./exported-declarations.ts";
 
 test("no exports", () => {
 	const project = new Project({

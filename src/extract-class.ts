@@ -8,21 +8,21 @@ import {
 	type ClassDeclaration,
 	type ConstructorDeclaration,
 } from "ts-morph";
-import { apparentType } from "./apparent-type";
-import { docs } from "./docs";
-import { formatSignature } from "./format-signature";
-import { headText } from "./head-text";
-import { id } from "./id";
-import { isHidden } from "./is-hidden";
-import { modifiersText } from "./modifiers-text";
-import { sourceFilePath } from "./source-file-path";
-import { typeCheckerType } from "./type-checker-type";
+import { apparentType } from "./apparent-type.ts";
+import { docs } from "./docs.ts";
+import { formatSignature } from "./format-signature.ts";
+import { headText } from "./head-text.ts";
+import { id } from "./id.ts";
+import { isHidden } from "./is-hidden.ts";
+import { modifiersText } from "./modifiers-text.ts";
+import { sourceFilePath } from "./source-file-path.ts";
+import { typeCheckerType } from "./type-checker-type.ts";
 import type {
 	ExtractedClass,
 	ExtractedClassConstructor,
 	ExtractedClassMethod,
 	ExtractedClassProperty,
-} from "./types";
+} from "./types.ts";
 
 export const extractClass = async (
 	containerName: string,

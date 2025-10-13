@@ -1,7 +1,7 @@
 import { dedent } from "ts-dedent";
 import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
-import { isEnum } from "./is-enum";
+import { isEnum } from "./is-enum.ts";
 
 test("is enum", () => {
 	const project = new Project({

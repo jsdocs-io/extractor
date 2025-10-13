@@ -1,6 +1,6 @@
 import { ModuleDeclaration, Node, type Project } from "ts-morph";
-import { isHidden } from "./is-hidden";
-import { sourceFilePath } from "./source-file-path";
+import { isHidden } from "./is-hidden.ts";
+import { sourceFilePath } from "./source-file-path.ts";
 
 export type AmbientModulesDeclarationsReturn = {
 	containerName: string;

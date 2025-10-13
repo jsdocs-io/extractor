@@ -1,7 +1,7 @@
 import { dedent } from "ts-dedent";
 import { ModuleKind, ModuleResolutionKind, Project, ScriptTarget } from "ts-morph";
 import { expect, test } from "vitest";
-import { isVariable } from "./is-variable";
+import { isVariable } from "./is-variable.ts";
 
 test("is variable", () => {
 	const project = new Project({

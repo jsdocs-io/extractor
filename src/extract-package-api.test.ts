@@ -1,6 +1,6 @@
 import { join } from "pathe";
 import { expect, test } from "vitest";
-import { extractPackageApi } from "./extract-package-api";
+import { extractPackageApi } from "./extract-package-api.ts";
 
 test("invalid package name", async () => {
 	const startDir = process.cwd();
