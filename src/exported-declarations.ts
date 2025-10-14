@@ -1,23 +1,17 @@
-import type { ExportedDeclarations, ModuleDeclaration, SourceFile } from "ts-morph";
+import type { ModuleDeclaration, SourceFile } from "ts-morph";
 import { isExportedDeclarations } from "./is-exported-declarations.ts";
 import { isHidden } from "./is-hidden.ts";
-
-export type ExportedDeclarationsReturn = {
-	containerName: string;
-	exportName: string;
-	declaration: ExportedDeclarations;
-}[];
+import type { FoundDeclaration } from "./types.ts";
 
 export function exportedDeclarations(
 	containerName: string,
 	container: SourceFile | ModuleDeclaration,
-): ExportedDeclarationsReturn {
+): FoundDeclaration[] {
 	const exportedDeclarations = [];
 	for (const [exportName, declarations] of container.getExportedDeclarations()) {
 		for (const declaration of declarations) {
-			if (isHidden(declaration) || !isExportedDeclarations(declaration)) {
-				continue;
-			}
+			if (!isExportedDeclarations(declaration)) continue;
+			if (isHidden(declaration)) continue;
 			exportedDeclarations.push({ containerName, exportName, declaration });
 		}
 	}
