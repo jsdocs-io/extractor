@@ -39,3 +39,9 @@ test("local tarball package successfully analyzed", async () => {
 	});
 	expect(process.cwd()).toBe(startDir);
 });
+
+test("custom bun path", async () => {
+	const startDir = process.cwd();
+	await expect(extractPackageApi({ pkg: "", bunPath: "/path/to/bun" })).rejects.toThrow();
+	expect(process.cwd()).toBe(startDir);
+});
