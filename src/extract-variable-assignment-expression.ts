@@ -6,11 +6,11 @@ import { id } from "./id.ts";
 import { sourceFilePath } from "./source-file-path.ts";
 import type { ExtractedVariable } from "./types.ts";
 
-export const extractVariableAssignmentExpression = async (
+export async function extractVariableAssignmentExpression(
 	containerName: string,
 	exportName: string,
 	declaration: BinaryExpression,
-): Promise<ExtractedVariable> => {
+): Promise<ExtractedVariable> {
 	const variableDeclaration = declaration
 		.getLeft()
 		.getSymbol()!
@@ -28,16 +28,16 @@ export const extractVariableAssignmentExpression = async (
 			variableDeclaration,
 		),
 	};
-};
+}
 
-const variableAssignmentExpressionSignature = async (
+async function variableAssignmentExpressionSignature(
 	name: string,
 	declaration: BinaryExpression,
 	variableDeclaration: VariableDeclaration,
-): Promise<string> => {
+): Promise<string> {
 	const kind = variableDeclaration.getVariableStatementOrThrow().getDeclarationKind().toString();
 	const variableType = apparentType(variableDeclaration);
 	const expressionType = apparentType(declaration);
 	const type = variableType !== "any" ? variableType : expressionType;
 	return await formatSignature("variable", `${kind} ${name}: ${type}`);
-};
+}

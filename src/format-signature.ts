@@ -1,10 +1,10 @@
 import { format } from "prettier";
 import type { AllExtractedDeclarationKind } from "./types.ts";
 
-export const formatSignature = async (
+export async function formatSignature(
 	kind: AllExtractedDeclarationKind,
 	signature: string,
-): Promise<string> => {
+): Promise<string> {
 	const s = signature
 		.trim()
 		// Remove unnecessary keywords at declaration start.
@@ -60,13 +60,13 @@ export const formatSignature = async (
 			return formatted;
 		}
 	}
-};
+}
 
-const formatWithPrettier = async (s: string): Promise<string> => {
+async function formatWithPrettier(s: string): Promise<string> {
 	try {
 		const formatted = (await format(s, { parser: "typescript" })).trim();
 		return formatted;
 	} catch {
 		return s;
 	}
-};
+}

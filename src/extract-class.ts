@@ -24,11 +24,11 @@ import type {
 	ExtractedClassProperty,
 } from "./types.ts";
 
-export const extractClass = async (
+export async function extractClass(
 	containerName: string,
 	exportName: string,
 	declaration: ClassDeclaration,
-): Promise<ExtractedClass> => {
+): Promise<ExtractedClass> {
 	const classId = id(containerName, "+class", exportName);
 	return {
 		kind: "class",
@@ -42,17 +42,17 @@ export const extractClass = async (
 		properties: await extractClassProperties(classId, declaration),
 		methods: await extractClassMethods(classId, declaration),
 	};
-};
+}
 
-const classSignature = async (declaration: ClassDeclaration): Promise<string> => {
+async function classSignature(declaration: ClassDeclaration): Promise<string> {
 	const signature = headText(declaration);
 	return await formatSignature("class", signature);
-};
+}
 
-const extractClassConstructors = async (
+async function extractClassConstructors(
 	classId: string,
 	classDeclaration: ClassDeclaration,
-): Promise<ExtractedClassConstructor[]> => {
+): Promise<ExtractedClassConstructor[]> {
 	// Calling `getConstructors()` returns all constructors in ambient modules
 	// but only the implementation constructor in normal modules.
 	// We get the first constructor and then find all others starting from it.
@@ -68,9 +68,7 @@ const extractClassConstructors = async (
 	];
 	const constructors = [];
 	for (const [index, declaration] of constructorDeclarations.entries()) {
-		if (isHidden(declaration)) {
-			continue;
-		}
+		if (isHidden(declaration)) continue;
 		constructors.push({
 			kind: "class-constructor" as const,
 			id: id(classId, "constructor", index > 0 ? `${index}` : ""),
@@ -82,9 +80,9 @@ const extractClassConstructors = async (
 		});
 	}
 	return constructors;
-};
+}
 
-const classConstructorSignature = async (declaration: ConstructorDeclaration): Promise<string> => {
+async function classConstructorSignature(declaration: ConstructorDeclaration): Promise<string> {
 	const modifiers = modifiersText(declaration);
 	const params = declaration
 		.getParameters()
@@ -100,12 +98,12 @@ const classConstructorSignature = async (declaration: ConstructorDeclaration): P
 		.join(",");
 	const signature = `${modifiers} constructor(${params});`;
 	return await formatSignature("class-constructor", signature);
-};
+}
 
-const extractClassProperties = async (
+async function extractClassProperties(
 	classId: string,
 	classDeclaration: ClassDeclaration,
-): Promise<ExtractedClassProperty[]> => {
+): Promise<ExtractedClassProperty[]> {
 	const propertiesDeclarations = [
 		...classDeclaration.getInstanceProperties(),
 		...classDeclaration.getStaticProperties(),
@@ -134,12 +132,12 @@ const extractClassProperties = async (
 		});
 	}
 	return orderBy(properties, "id");
-};
+}
 
-const classPropertySignature = async (
+async function classPropertySignature(
 	name: string,
 	declaration: ParameterDeclaration | PropertyDeclaration | GetAccessorDeclaration,
-): Promise<string> => {
+): Promise<string> {
 	const type = apparentType(declaration);
 	if (Node.isParameterDeclaration(declaration) || Node.isPropertyDeclaration(declaration)) {
 		const modifiers = modifiersText(declaration);
@@ -147,17 +145,18 @@ const classPropertySignature = async (
 		const signature = `${modifiers} ${name}${optional}: ${type}`;
 		return formatSignature("class-property", signature);
 	}
+
 	// GetAccessorDeclaration.
 	const staticKeyword = declaration.isStatic() ? "static" : "";
 	const readonlyKeyword = declaration.getSetAccessor() === undefined ? "readonly" : "";
 	const signature = `${staticKeyword} ${readonlyKeyword} ${name}: ${type}`;
 	return await formatSignature("class-property", signature);
-};
+}
 
-const extractClassMethods = async (
+async function extractClassMethods(
 	classId: string,
 	classDeclaration: ClassDeclaration,
-): Promise<ExtractedClassMethod[]> => {
+): Promise<ExtractedClassMethod[]> {
 	const methodsDeclarations = [
 		...classDeclaration.getInstanceMethods(),
 		...classDeclaration.getStaticMethods(),
@@ -165,9 +164,7 @@ const extractClassMethods = async (
 	const methods = [];
 	const seenMethods = new Set<string>();
 	for (const declaration of methodsDeclarations) {
-		if (isHidden(declaration)) {
-			continue;
-		}
+		if (isHidden(declaration)) continue;
 		const name = declaration.getName();
 		if (seenMethods.has(name)) {
 			// Skip overloaded methods.
@@ -185,13 +182,10 @@ const extractClassMethods = async (
 		});
 	}
 	return orderBy(methods, "id");
-};
+}
 
-const classMethodSignature = async (
-	name: string,
-	declaration: MethodDeclaration,
-): Promise<string> => {
+async function classMethodSignature(name: string, declaration: MethodDeclaration): Promise<string> {
 	const modifiers = modifiersText(declaration);
 	const type = typeCheckerType(declaration);
 	return await formatSignature("class-method", `${modifiers} ${name}: ${type}`);
-};
+}

@@ -1,1 +1,3 @@
-export const id = (...parts: string[]) => parts.filter(Boolean).join(".");
+export function id(...parts: string[]) {
+	return parts.filter(Boolean).join(".");
+}

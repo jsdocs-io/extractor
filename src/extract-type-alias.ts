@@ -5,21 +5,23 @@ import { id } from "./id.ts";
 import { sourceFilePath } from "./source-file-path.ts";
 import type { ExtractedTypeAlias } from "./types.ts";
 
-export const extractTypeAlias = async (
+export async function extractTypeAlias(
 	containerName: string,
 	exportName: string,
 	declaration: TypeAliasDeclaration,
-): Promise<ExtractedTypeAlias> => ({
-	kind: "type",
-	id: id(containerName, "+type", exportName),
-	name: exportName,
-	docs: docs(declaration),
-	file: sourceFilePath(declaration),
-	line: declaration.getStartLineNumber(),
-	signature: await typeAliasSignature(declaration),
-});
+): Promise<ExtractedTypeAlias> {
+	return {
+		kind: "type",
+		id: id(containerName, "+type", exportName),
+		name: exportName,
+		docs: docs(declaration),
+		file: sourceFilePath(declaration),
+		line: declaration.getStartLineNumber(),
+		signature: await typeAliasSignature(declaration),
+	};
+}
 
-const typeAliasSignature = async (declaration: TypeAliasDeclaration): Promise<string> => {
+async function typeAliasSignature(declaration: TypeAliasDeclaration): Promise<string> {
 	// Using `declaration.getType().getText(declaration);` returns the expanded/resolved type.
 	// However this causes:
 	// - inline imports like `import('...').SomeType` to appear in the signature
@@ -32,4 +34,4 @@ const typeAliasSignature = async (declaration: TypeAliasDeclaration): Promise<st
 	// - https://twitter.com/drosenwasser/status/1289640180035403776
 	const signature = declaration.getText();
 	return await formatSignature("type", signature);
-};
+}

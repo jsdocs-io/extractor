@@ -6,24 +6,26 @@ import { sourceFilePath } from "./source-file-path.ts";
 import { typeCheckerType } from "./type-checker-type.ts";
 import type { ExtractedFunction } from "./types.ts";
 
-export const extractFunctionExpression = async (
+export async function extractFunctionExpression(
 	containerName: string,
 	exportName: string,
 	declaration: VariableDeclaration,
-): Promise<ExtractedFunction> => ({
-	kind: "function",
-	id: id(containerName, "+function", exportName),
-	name: exportName,
-	docs: docs(declaration),
-	file: sourceFilePath(declaration),
-	line: declaration.getStartLineNumber(),
-	signature: await functionExpressionSignature(exportName, declaration),
-});
+): Promise<ExtractedFunction> {
+	return {
+		kind: "function",
+		id: id(containerName, "+function", exportName),
+		name: exportName,
+		docs: docs(declaration),
+		file: sourceFilePath(declaration),
+		line: declaration.getStartLineNumber(),
+		signature: await functionExpressionSignature(exportName, declaration),
+	};
+}
 
-const functionExpressionSignature = async (
+async function functionExpressionSignature(
 	name: string,
 	declaration: VariableDeclaration,
-): Promise<string> => {
+): Promise<string> {
 	const type = typeCheckerType(declaration);
 	return await formatSignature("function", `${name}: ${type}`);
-};
+}

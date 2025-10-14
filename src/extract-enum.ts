@@ -7,11 +7,11 @@ import { isHidden } from "./is-hidden.ts";
 import { sourceFilePath } from "./source-file-path.ts";
 import type { ExtractedEnum, ExtractedEnumMember } from "./types.ts";
 
-export const extractEnum = async (
+export async function extractEnum(
 	containerName: string,
 	exportName: string,
 	declaration: EnumDeclaration,
-): Promise<ExtractedEnum> => {
+): Promise<ExtractedEnum> {
 	const enumId = id(containerName, "+enum", exportName);
 	return {
 		kind: "enum",
@@ -23,22 +23,20 @@ export const extractEnum = async (
 		signature: await enumSignature(declaration),
 		members: await extractEnumMembers(enumId, declaration),
 	};
-};
+}
 
-const enumSignature = async (declaration: EnumDeclaration): Promise<string> => {
+async function enumSignature(declaration: EnumDeclaration): Promise<string> {
 	const signature = headText(declaration);
 	return await formatSignature("enum", signature);
-};
+}
 
-const extractEnumMembers = async (
+async function extractEnumMembers(
 	enumId: string,
 	enumDeclaration: EnumDeclaration,
-): Promise<ExtractedEnumMember[]> => {
+): Promise<ExtractedEnumMember[]> {
 	const members = [];
 	for (const declaration of enumDeclaration.getMembers()) {
-		if (isHidden(declaration)) {
-			continue;
-		}
+		if (isHidden(declaration)) continue;
 		const name = declaration.getName();
 		members.push({
 			kind: "enum-member" as const,
@@ -51,9 +49,9 @@ const extractEnumMembers = async (
 		});
 	}
 	return members;
-};
+}
 
-const enumMemberSignature = async (declaration: EnumMember): Promise<string> => {
+async function enumMemberSignature(declaration: EnumMember): Promise<string> {
 	const signature = declaration.getText();
 	return await formatSignature("enum-member", signature);
-};
+}

@@ -2,18 +2,20 @@ import { Node, SyntaxKind } from "ts-morph";
 import { docs } from "./docs.ts";
 import { parseDocComment } from "./parse-doc-comment.ts";
 
-export const isHidden = (node: Node): boolean =>
-	// Check if a declaration is part of a package's private API.
-	isPrivateProperty(node) || hasPrivateModifier(node) || hasInternalTag(node);
-
-const isPrivateProperty = (node: Node): boolean =>
+/** `isHidden` checks if a declaration is part of a package's private API. */
+export function isHidden(node: Node): boolean {
+	// JavaScript private class properties (e.g., `#foo`, `#bar() { ... }`).
 	// See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_properties.
-	Node.hasName(node) && Node.isPrivateIdentifier(node.getNameNode());
+	if (Node.hasName(node) && Node.isPrivateIdentifier(node.getNameNode())) return true;
 
-const hasPrivateModifier = (node: Node): boolean =>
+	// TypeScript `private` keyword properties (e.g., `private foo`).
 	// See https://www.typescriptlang.org/docs/handbook/2/classes.html#private.
-	Node.isModifierable(node) && node.hasModifier(SyntaxKind.PrivateKeyword);
+	if (Node.isModifierable(node) && node.hasModifier(SyntaxKind.PrivateKeyword)) return true;
 
-const hasInternalTag = (node: Node): boolean =>
+	// TSDoc/JSDoc comment with `@internal` tag.
 	// See https://tsdoc.org/pages/tags/internal.
-	docs(node).some((doc) => parseDocComment(doc).modifierTagSet.isInternal());
+	if (docs(node).some((doc) => parseDocComment(doc).modifierTagSet.isInternal())) return true;
+
+	// Not hidden, part of public API.
+	return false;
+}

@@ -27,11 +27,11 @@ import type {
 	ExtractedInterfaceSetAccessor,
 } from "./types.ts";
 
-export const extractInterface = async (
+export async function extractInterface(
 	containerName: string,
 	exportName: string,
 	declaration: InterfaceDeclaration,
-): Promise<ExtractedInterface> => {
+): Promise<ExtractedInterface> {
 	const interfaceId = id(containerName, "+interface", exportName);
 	return {
 		kind: "interface",
@@ -49,22 +49,20 @@ export const extractInterface = async (
 		getAccessors: await extractInterfaceGetAccessors(interfaceId, declaration),
 		setAccessors: await extractInterfaceSetAccessors(interfaceId, declaration),
 	};
-};
+}
 
-const interfaceSignature = async (declaration: InterfaceDeclaration): Promise<string> => {
+async function interfaceSignature(declaration: InterfaceDeclaration): Promise<string> {
 	const signature = headText(declaration);
 	return await formatSignature("interface", signature);
-};
+}
 
-const extractInterfaceProperties = async (
+async function extractInterfaceProperties(
 	interfaceId: string,
 	interfaceDeclaration: InterfaceDeclaration,
-): Promise<ExtractedInterfaceProperty[]> => {
+): Promise<ExtractedInterfaceProperty[]> {
 	const properties = [];
 	for (const declaration of interfaceDeclaration.getProperties()) {
-		if (isHidden(declaration)) {
-			continue;
-		}
+		if (isHidden(declaration)) continue;
 		const name = declaration.getName();
 		properties.push({
 			kind: "interface-property" as const,
@@ -77,28 +75,26 @@ const extractInterfaceProperties = async (
 		});
 	}
 	return orderBy(properties, "id");
-};
+}
 
-const interfacePropertySignature = async (declaration: PropertySignature): Promise<string> => {
+async function interfacePropertySignature(declaration: PropertySignature): Promise<string> {
 	const signature = declaration.getText();
 	return await formatSignature("interface-property", signature);
-};
+}
 
-const extractInterfaceMethods = async (
+async function extractInterfaceMethods(
 	interfaceId: string,
 	interfaceDeclaration: InterfaceDeclaration,
-): Promise<ExtractedInterfaceMethod[]> => {
+): Promise<ExtractedInterfaceMethod[]> {
 	const methods = [];
 	const seenMethods = new Set<string>();
 	for (const declaration of interfaceDeclaration.getMethods()) {
-		if (isHidden(declaration)) {
-			continue;
-		}
+		if (isHidden(declaration)) continue;
 		const name = declaration.getName();
-		if (seenMethods.has(name)) {
-			// Skip overloaded methods.
-			continue;
-		}
+
+		// Skip overloaded methods.
+		if (seenMethods.has(name)) continue;
+
 		seenMethods.add(name);
 		methods.push({
 			kind: "interface-method" as const,
@@ -111,25 +107,23 @@ const extractInterfaceMethods = async (
 		});
 	}
 	return orderBy(methods, "id");
-};
+}
 
-const interfaceMethodSignature = async (
+async function interfaceMethodSignature(
 	name: string,
 	declaration: MethodSignature,
-): Promise<string> => {
+): Promise<string> {
 	const type = typeCheckerType(declaration);
 	return await formatSignature("interface-method", `${name}: ${type}`);
-};
+}
 
-const extractInterfaceConstructSignatures = async (
+async function extractInterfaceConstructSignatures(
 	interfaceId: string,
 	interfaceDeclaration: InterfaceDeclaration,
-): Promise<ExtractedInterfaceConstructSignature[]> => {
+): Promise<ExtractedInterfaceConstructSignature[]> {
 	const constructSignatures = [];
 	for (const [index, declaration] of interfaceDeclaration.getConstructSignatures().entries()) {
-		if (isHidden(declaration)) {
-			continue;
-		}
+		if (isHidden(declaration)) continue;
 		constructSignatures.push({
 			kind: "interface-construct-signature" as const,
 			id: id(interfaceId, "construct-signature", index > 0 ? `${index}` : ""),
@@ -141,24 +135,22 @@ const extractInterfaceConstructSignatures = async (
 		});
 	}
 	return orderBy(constructSignatures, "id");
-};
+}
 
-const interfaceConstructSignatureSignature = async (
+async function interfaceConstructSignatureSignature(
 	declaration: ConstructSignatureDeclaration,
-): Promise<string> => {
+): Promise<string> {
 	const signature = declaration.getText();
 	return await formatSignature("interface-construct-signature", signature);
-};
+}
 
-const extractInterfaceCallSignatures = async (
+async function extractInterfaceCallSignatures(
 	interfaceId: string,
 	interfaceDeclaration: InterfaceDeclaration,
-): Promise<ExtractedInterfaceCallSignature[]> => {
+): Promise<ExtractedInterfaceCallSignature[]> {
 	const callSignatures = [];
 	for (const [index, declaration] of interfaceDeclaration.getCallSignatures().entries()) {
-		if (isHidden(declaration)) {
-			continue;
-		}
+		if (isHidden(declaration)) continue;
 		callSignatures.push({
 			kind: "interface-call-signature" as const,
 			id: id(interfaceId, "call-signature", index > 0 ? `${index}` : ""),
@@ -170,24 +162,22 @@ const extractInterfaceCallSignatures = async (
 		});
 	}
 	return orderBy(callSignatures, "id");
-};
+}
 
-const interfaceCallSignatureSignature = async (
+async function interfaceCallSignatureSignature(
 	declaration: CallSignatureDeclaration,
-): Promise<string> => {
+): Promise<string> {
 	const signature = declaration.getText();
 	return await formatSignature("interface-call-signature", signature);
-};
+}
 
-const extractInterfaceIndexSignatures = async (
+async function extractInterfaceIndexSignatures(
 	interfaceId: string,
 	interfaceDeclaration: InterfaceDeclaration,
-): Promise<ExtractedInterfaceIndexSignature[]> => {
+): Promise<ExtractedInterfaceIndexSignature[]> {
 	const indexSignatures = [];
 	for (const [index, declaration] of interfaceDeclaration.getIndexSignatures().entries()) {
-		if (isHidden(declaration)) {
-			continue;
-		}
+		if (isHidden(declaration)) continue;
 		indexSignatures.push({
 			kind: "interface-index-signature" as const,
 			id: id(interfaceId, "index-signature", index > 0 ? `${index}` : ""),
@@ -199,24 +189,22 @@ const extractInterfaceIndexSignatures = async (
 		});
 	}
 	return orderBy(indexSignatures, "id");
-};
+}
 
-const interfaceIndexSignatureSignature = async (
+async function interfaceIndexSignatureSignature(
 	declaration: IndexSignatureDeclaration,
-): Promise<string> => {
+): Promise<string> {
 	const signature = declaration.getText();
 	return await formatSignature("interface-index-signature", signature);
-};
+}
 
-const extractInterfaceGetAccessors = async (
+async function extractInterfaceGetAccessors(
 	interfaceId: string,
 	interfaceDeclaration: InterfaceDeclaration,
-): Promise<ExtractedInterfaceGetAccessor[]> => {
+): Promise<ExtractedInterfaceGetAccessor[]> {
 	const getAccessors = [];
 	for (const declaration of interfaceDeclaration.getGetAccessors()) {
-		if (isHidden(declaration)) {
-			continue;
-		}
+		if (isHidden(declaration)) continue;
 		const name = declaration.getName();
 		getAccessors.push({
 			kind: "interface-get-accessor" as const,
@@ -229,24 +217,20 @@ const extractInterfaceGetAccessors = async (
 		});
 	}
 	return orderBy(getAccessors, "id");
-};
+}
 
-const interfaceGetAccessorSignature = async (
-	declaration: GetAccessorDeclaration,
-): Promise<string> => {
+async function interfaceGetAccessorSignature(declaration: GetAccessorDeclaration): Promise<string> {
 	const signature = declaration.getText();
 	return await formatSignature("interface-get-accessor", signature);
-};
+}
 
-const extractInterfaceSetAccessors = async (
+async function extractInterfaceSetAccessors(
 	interfaceId: string,
 	interfaceDeclaration: InterfaceDeclaration,
-): Promise<ExtractedInterfaceSetAccessor[]> => {
+): Promise<ExtractedInterfaceSetAccessor[]> {
 	const setAccessors = [];
 	for (const declaration of interfaceDeclaration.getSetAccessors()) {
-		if (isHidden(declaration)) {
-			continue;
-		}
+		if (isHidden(declaration)) continue;
 		const name = declaration.getName();
 		setAccessors.push({
 			kind: "interface-set-accessor" as const,
@@ -259,11 +243,9 @@ const extractInterfaceSetAccessors = async (
 		});
 	}
 	return orderBy(setAccessors, "id");
-};
+}
 
-const interfaceSetAccessorSignature = async (
-	declaration: SetAccessorDeclaration,
-): Promise<string> => {
+async function interfaceSetAccessorSignature(declaration: SetAccessorDeclaration): Promise<string> {
 	const signature = declaration.getText();
 	return await formatSignature("interface-get-accessor", signature);
-};
+}

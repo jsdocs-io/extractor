@@ -1,6 +1,6 @@
 import { TypeFormatFlags, type Node } from "ts-morph";
 
-export const typeCheckerType = (node: Node): string => {
+export function typeCheckerType(node: Node): string {
 	try {
 		const typeChecker = node.getProject().getTypeChecker().compilerObject;
 		const nodeType = typeChecker.getTypeAtLocation(node.compilerNode);
@@ -12,4 +12,4 @@ export const typeCheckerType = (node: Node): string => {
 	} catch {
 		return "any";
 	}
-};
+}
