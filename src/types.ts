@@ -1,4 +1,4 @@
-import type { ModuleDeclaration, Project, SourceFile } from "ts-morph";
+import type { ExportedDeclarations, ModuleDeclaration, Project, SourceFile } from "ts-morph";
 
 /** `ExtractPackageApiOptions` contains the options for calling {@link extractPackageApi}. */
 export interface ExtractPackageApiOptions {
@@ -320,4 +320,16 @@ export interface PackageDeclarationsOptions {
 
 	/** Depth limit for the extraction. */
 	maxDepth: number;
+}
+
+/** `FoundDeclaration` represents a declaration found during the initial extraction process. */
+export interface FoundDeclaration {
+	/** Declaration container name. */
+	containerName: string;
+
+	/** Export name (may differ from the original name). */
+	exportName: string;
+
+	/** Declaration. */
+	declaration: ExportedDeclarations;
 }

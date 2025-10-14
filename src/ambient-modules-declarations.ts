@@ -1,34 +1,24 @@
-import { ModuleDeclaration, Node, type Project } from "ts-morph";
+import { Node, type Project } from "ts-morph";
 import { isHidden } from "./is-hidden.ts";
 import { sourceFilePath } from "./source-file-path.ts";
-
-export type AmbientModulesDeclarationsReturn = {
-	containerName: string;
-	exportName: string;
-	declaration: ModuleDeclaration;
-}[];
+import type { FoundDeclaration } from "./types.ts";
 
 export function ambientModulesDeclarations(
 	containerName: string,
 	project: Project,
 	pkgName?: string,
-): AmbientModulesDeclarationsReturn {
+): FoundDeclaration[] {
 	const ambientModulesDeclarations = [];
 	for (const symbol of project.getAmbientModules()) {
 		for (const declaration of symbol.getDeclarations()) {
-			if (isHidden(declaration) || !Node.isModuleDeclaration(declaration)) {
-				continue;
-			}
-			if (pkgName && !sourceFilePath(declaration).startsWith(`/${pkgName}`)) {
-				// Ignore ambient modules that are not from the analyzed package.
-				continue;
-			}
+			if (!Node.isModuleDeclaration(declaration)) continue;
+			if (isHidden(declaration)) continue;
+
+			// Ignore ambient modules that are not from the analyzed package.
+			if (pkgName && !sourceFilePath(declaration).startsWith(`/${pkgName}`)) continue;
+
 			const exportName = declaration.getName();
-			ambientModulesDeclarations.push({
-				containerName,
-				exportName,
-				declaration,
-			});
+			ambientModulesDeclarations.push({ containerName, exportName, declaration });
 		}
 	}
 	return ambientModulesDeclarations;
