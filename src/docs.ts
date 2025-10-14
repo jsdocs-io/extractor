@@ -9,14 +9,10 @@ export function docs(node: Node): string[] {
 }
 
 function nodesWithDocs(node: Node): Node[] {
-	// A node may not have the jsdoc comment directly attached to it in the AST.
-	// Let's find the nodes that do so starting from the given node.
-	if (Node.isVariableDeclaration(node)) {
-		return [node.getVariableStatementOrThrow()];
-	}
-	if (Node.isExpression(node)) {
-		return [node.getParent()!];
-	}
+	// A node may not have a JSDoc comment directly attached to it in the AST.
+	// Find the nodes that have the attached comment starting from the given node.
+	if (Node.isVariableDeclaration(node)) return [node.getVariableStatementOrThrow()];
+	if (Node.isExpression(node)) return [node.getParent()!];
 	if (Node.isOverloadable(node) && !Node.isConstructorDeclaration(node)) {
 		// Functions and class methods can be overloaded with each declaration
 		// having its own doc. Since we return overloaded declarations grouped
@@ -30,7 +26,7 @@ function nodesWithDocs(node: Node): Node[] {
 		Node.isMethodSignature(node) &&
 		node.getParent().getKind() === SyntaxKind.InterfaceDeclaration
 	) {
-		// Treat interface methods like overloadable class methods above.
+		// Treat interface methods like overloaded class methods.
 		const methodName = node.getName();
 		const overloads = node
 			.getParentIfKindOrThrow(SyntaxKind.InterfaceDeclaration)
@@ -42,12 +38,12 @@ function nodesWithDocs(node: Node): Node[] {
 }
 
 function lastDoc(node: Node): string | undefined {
-	// Get the jsdoc comment closest to the node.
+	// Get the JSDoc comment closest to the node.
 	const doc = node.getLastChildByKind(SyntaxKind.JSDoc)?.getText();
 	if (!doc) return undefined;
 	if (parseDocComment(doc).modifierTagSet.isPackageDocumentation()) {
-		// The first declaration after package documentation should not
-		// inherit that unrelated jsdoc comment if it has none itself.
+		// The first declaration after the package documentation comment
+		// should not use that comment for its own documentation.
 		// See `export-named-declaration-without-jsdoc.test.ts`.
 		return undefined;
 	}
