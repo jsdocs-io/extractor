@@ -1,22 +1,12 @@
-import {
-	SourceFile,
-	type FunctionDeclaration,
-	type ModuleDeclaration,
-	type VariableDeclaration,
-} from "ts-morph";
+import { SourceFile } from "ts-morph";
 import { isGlobal } from "./is-global.ts";
 import { isHidden } from "./is-hidden.ts";
-
-export type GlobalAmbientDeclarationsReturn = {
-	containerName: string;
-	exportName: string;
-	declaration: VariableDeclaration | FunctionDeclaration | ModuleDeclaration;
-}[];
+import type { FoundDeclaration } from "./types.ts";
 
 export function globalAmbientDeclarations(
 	containerName: string,
 	container: SourceFile,
-): GlobalAmbientDeclarationsReturn {
+): FoundDeclaration[] {
 	// See https://www.typescriptlang.org/docs/handbook/declaration-files/by-example.html#global-variables.
 	const globalCandidates = [
 		...container.getVariableDeclarations(),
@@ -25,15 +15,12 @@ export function globalAmbientDeclarations(
 	];
 	const globalAmbientDeclarations = [];
 	for (const declaration of globalCandidates) {
-		if (isHidden(declaration) || !isGlobal(declaration)) {
-			continue;
-		}
-		globalAmbientDeclarations.push({
-			containerName,
-			// Global ambient functions must have a name.
-			exportName: declaration.getName()!,
-			declaration,
-		});
+		if (!isGlobal(declaration)) continue;
+		if (isHidden(declaration)) continue;
+
+		// Global ambient functions must have a name.
+		const exportName = declaration.getName()!;
+		globalAmbientDeclarations.push({ containerName, exportName, declaration });
 	}
 	return globalAmbientDeclarations;
 }
