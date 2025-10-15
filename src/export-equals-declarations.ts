@@ -22,8 +22,7 @@ export function exportEqualsDeclarations(
 	const exportName = exportIdentifier.getText();
 	const exportEqualsDeclarations = [];
 	for (const declaration of exportIdentifier.getDefinitionNodes()) {
-		if (!isExportedDeclarations(declaration)) continue;
-		if (isHidden(declaration)) continue;
+		if (!isExportedDeclarations(declaration) || isHidden(declaration)) continue;
 		if (isNamespace(declaration)) {
 			// Ignore namespaces since `exportedDeclarations()` already extracts
 			// the inner declarations of an export equals namespace as

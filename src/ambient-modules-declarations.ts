@@ -11,8 +11,7 @@ export function ambientModulesDeclarations(
 	const ambientModulesDeclarations = [];
 	for (const symbol of project.getAmbientModules()) {
 		for (const declaration of symbol.getDeclarations()) {
-			if (!Node.isModuleDeclaration(declaration)) continue;
-			if (isHidden(declaration)) continue;
+			if (!Node.isModuleDeclaration(declaration) || isHidden(declaration)) continue;
 
 			// Ignore ambient modules that are not from the analyzed package.
 			if (pkgName && !sourceFilePath(declaration).startsWith(`/${pkgName}`)) continue;
