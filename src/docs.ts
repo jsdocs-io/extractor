@@ -1,11 +1,9 @@
 import { Node, SyntaxKind } from "ts-morph";
 import { parseDocComment } from "./parse-doc-comment.ts";
 
+/** `docs` returns a list of unique JSDoc comments that are closest to the node. */
 export function docs(node: Node): string[] {
-	return [
-		// List of unique JSDoc comments that are closest to the node.
-		...new Set(nodesWithDocs(node).flatMap((node) => lastDoc(node) ?? [])),
-	];
+	return [...new Set(nodesWithDocs(node).flatMap((node) => lastDoc(node) ?? []))];
 }
 
 function nodesWithDocs(node: Node): Node[] {

@@ -11,10 +11,14 @@ export function exportEqualsDeclarations(
 ): FoundDeclaration[] {
 	// Shorthand ambient modules have no body and thus no declarations.
 	if (isShorthandAmbientModule(container)) return [];
+
+	// Get the identifier from the export equals assignment (e.g., `export = foo`).
 	const exportIdentifier = container
 		.getExportAssignment((assignment) => assignment.isExportEquals())
 		?.getLastChildByKind(SyntaxKind.Identifier);
 	if (!exportIdentifier) return [];
+
+	// Get the declarations linked to the exported identifier.
 	const exportName = exportIdentifier.getText();
 	const exportEqualsDeclarations = [];
 	for (const declaration of exportIdentifier.getDefinitionNodes()) {
