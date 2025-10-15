@@ -5,13 +5,14 @@ import { temporaryDirectory, temporaryDirectoryTask } from "tempy";
 import { afterEach, expect, test, vi } from "vitest";
 import { workDir } from "./work-dir.ts";
 
-const _workDir = () =>
-	Effect.runPromise(
+function _workDir() {
+	return Effect.runPromise(
 		Effect.gen(function* () {
 			const { path } = yield* workDir;
 			return path;
 		}).pipe(Effect.scoped),
 	);
+}
 
 vi.mock("tempy", async (importOriginal) => {
 	const actual: any = await importOriginal();

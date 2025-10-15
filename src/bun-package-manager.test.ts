@@ -6,8 +6,9 @@ import type { InstallPackageOptions } from "./types.ts";
 
 const bun = bunPackageManager();
 
-const _installPackage = (opts: InstallPackageOptions) =>
-	Effect.runPromise(bun.installPackage(opts));
+function _installPackage(opts: InstallPackageOptions) {
+	return Effect.runPromise(bun.installPackage(opts));
+}
 
 test("invalid package", async () => {
 	await temporaryDirectoryTask(async (cwd) => {

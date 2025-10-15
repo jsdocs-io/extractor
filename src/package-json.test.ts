@@ -5,7 +5,9 @@ import { temporaryDirectoryTask } from "tempy";
 import { expect, test } from "vitest";
 import { packageJson } from "./package-json.ts";
 
-const _packageJson = (pkgDir: string) => Effect.runPromise(packageJson(pkgDir));
+function _packageJson(pkgDir: string) {
+	return Effect.runPromise(packageJson(pkgDir));
+}
 
 test("no package.json", async () => {
 	await temporaryDirectoryTask(async (dir) => {

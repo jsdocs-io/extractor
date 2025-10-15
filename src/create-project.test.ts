@@ -6,7 +6,9 @@ import { expect, test } from "vitest";
 import { createProject } from "./create-project.ts";
 import type { CreateProjectOptions } from "./types.ts";
 
-const _createProject = (opts: CreateProjectOptions) => Effect.runPromise(createProject(opts));
+function _createProject(opts: CreateProjectOptions) {
+	return Effect.runPromise(createProject(opts));
+}
 
 test("no cwd", async () => {
 	await temporaryDirectoryTask(async (dir) => {
