@@ -89,11 +89,11 @@ async function extractInterfaceMethods(
 	const methods = [];
 	const seenMethods = new Set<string>();
 	for (const declaration of interfaceDeclaration.getMethods()) {
-		if (isHidden(declaration)) continue;
 		const name = declaration.getName();
 
 		// Skip overloaded methods.
 		if (seenMethods.has(name)) continue;
+		if (isHidden(declaration)) continue;
 
 		seenMethods.add(name);
 		methods.push({

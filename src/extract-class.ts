@@ -56,11 +56,8 @@ async function extractClassConstructors(
 	// Calling `getConstructors()` returns all constructors in ambient modules
 	// but only the implementation constructor in normal modules.
 	// We get the first constructor and then find all others starting from it.
-	const declaration = classDeclaration.getConstructors()[0];
-	if (!declaration) {
-		// No constructors.
-		return [];
-	}
+	const declaration = classDeclaration.getConstructors().at(0);
+	if (!declaration) return [];
 	const implementation = declaration.getImplementation();
 	const constructorDeclarations = [
 		...(implementation ? [implementation] : []),
@@ -111,7 +108,6 @@ async function extractClassProperties(
 	const properties = [];
 	for (const declaration of propertiesDeclarations) {
 		if (
-			isHidden(declaration) ||
 			!(
 				Node.isParameterDeclaration(declaration) ||
 				Node.isPropertyDeclaration(declaration) ||
@@ -120,6 +116,7 @@ async function extractClassProperties(
 		) {
 			continue;
 		}
+		if (isHidden(declaration)) continue;
 		const name = declaration.getName();
 		properties.push({
 			kind: "class-property" as const,
@@ -164,12 +161,12 @@ async function extractClassMethods(
 	const methods = [];
 	const seenMethods = new Set<string>();
 	for (const declaration of methodsDeclarations) {
-		if (isHidden(declaration)) continue;
 		const name = declaration.getName();
-		if (seenMethods.has(name)) {
-			// Skip overloaded methods.
-			continue;
-		}
+
+		// Skip overloaded methods.
+		if (seenMethods.has(name)) continue;
+		if (isHidden(declaration)) continue;
+
 		seenMethods.add(name);
 		methods.push({
 			kind: "class-method" as const,
