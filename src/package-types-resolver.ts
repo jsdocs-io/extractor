@@ -2,19 +2,19 @@ import type { NormalizedPackageJson } from "read-pkg";
 import { exports } from "resolve.exports";
 
 export class PackageTypesResolver {
-	#pkgJson: Partial<NormalizedPackageJson>;
-	#subpath: string;
+	#pkgJson;
+	#subpath;
 
-	constructor(pkgJson: Partial<NormalizedPackageJson>, subpath: string) {
+	constructor(pkgJson: Partial<NormalizedPackageJson>, subpath = ".") {
 		this.#pkgJson = pkgJson;
 		this.#subpath = subpath.trim();
 	}
 
-	resolveTypes(): string | undefined {
-		return this.resolveExportsMapTypes() ?? this.resolveTypesOrTypings();
+	getTypes(): string | undefined {
+		return this.getExportsMapTypes() ?? this.getTypesOrTypings();
 	}
 
-	resolveExportsMapTypes(): string | undefined {
+	getExportsMapTypes(): string | undefined {
 		try {
 			const entries =
 				exports(this.#pkgJson, this.#subpath, {
@@ -22,7 +22,7 @@ export class PackageTypesResolver {
 					unsafe: true,
 				}) ?? [];
 			const entry = entries.at(0);
-			if (!entry || !this.isTypesFile(entry)) return undefined;
+			if (!entry || !this.#isTypesFile(entry)) return undefined;
 			return entry;
 		} catch {
 			// The package may not have an `exports` map.
@@ -30,12 +30,12 @@ export class PackageTypesResolver {
 		}
 	}
 
-	resolveTypesOrTypings(): string | undefined {
+	getTypesOrTypings(): string | undefined {
 		// Try to find the `package.json#/types` (or `typings`) file
 		// but accept it only to describe the types for the root subpath.
 		if (!this.isRootSubpath()) return undefined;
 		const entry = this.#pkgJson.types || this.#pkgJson.typings;
-		if (!entry || !this.isTypesFile(entry)) return undefined;
+		if (!entry || !this.#isTypesFile(entry)) return undefined;
 		return entry;
 	}
 
@@ -43,7 +43,7 @@ export class PackageTypesResolver {
 		return [".", this.#pkgJson.name].includes(this.#subpath);
 	}
 
-	isTypesFile(filename: string): boolean {
+	#isTypesFile(filename: string): boolean {
 		return [".d.ts", ".d.mts", ".d.cts"].some((ext) => filename.endsWith(ext));
 	}
 }
