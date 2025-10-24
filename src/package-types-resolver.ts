@@ -18,7 +18,7 @@ export class PackageTypesResolver {
 		try {
 			const entries =
 				exports(this.#pkgJson, this.#subpath, {
-					conditions: ["!default", "!import", "!node", "types"],
+					conditions: ["!default", "!node", "import", "types"],
 				}) ?? [];
 			const entry = entries.at(0);
 			if (!entry || !this.#isTypesFile(entry)) return undefined;
