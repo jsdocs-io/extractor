@@ -1,6 +1,6 @@
+import { exports } from "@es-joy/resolve.exports";
 import { Effect } from "effect";
 import type { NormalizedPackageJson } from "read-pkg";
-import { exports } from "resolve.exports";
 import { PackageTypesError } from "./errors.ts";
 
 /**

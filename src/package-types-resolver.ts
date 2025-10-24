@@ -1,5 +1,5 @@
+import { exports } from "@es-joy/resolve.exports";
 import type { NormalizedPackageJson } from "read-pkg";
-import { exports } from "resolve.exports";
 
 export class PackageTypesResolver {
 	#pkgJson;
@@ -18,8 +18,7 @@ export class PackageTypesResolver {
 		try {
 			const entries =
 				exports(this.#pkgJson, this.#subpath, {
-					conditions: ["types", "import", "node"],
-					unsafe: true,
+					conditions: ["!default", "!import", "!node", "types"],
 				}) ?? [];
 			const entry = entries.at(0);
 			if (!entry || !this.#isTypesFile(entry)) return undefined;

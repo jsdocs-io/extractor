@@ -66,6 +66,7 @@
 		"release": "np --no-cleanup"
 	},
 	"dependencies": {
+		"@es-joy/resolve.exports": "^1.0.0",
 		"@microsoft/tsdoc": "^0.15.1",
 		"effect": "^3.18.4",
 		"execa": "^9.6.0",
@@ -74,7 +75,6 @@
 		"pathe": "^2.0.3",
 		"prettier": "^3.6.2",
 		"read-pkg": "^9.0.1",
-		"resolve.exports": "^2.0.3",
 		"tempy": "^3.1.0",
 		"ts-morph": "^27.0.2",
 		"validate-npm-package-name": "^6.0.2"
