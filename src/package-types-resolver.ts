@@ -1,4 +1,5 @@
 import { exports } from "@es-joy/resolve.exports";
+import { goTry } from "go-go-try";
 import type { NormalizedPackageJson } from "read-pkg";
 
 export class PackageTypesResolver {
@@ -15,18 +16,22 @@ export class PackageTypesResolver {
 	}
 
 	getExportsMapTypes(): string | undefined {
-		try {
-			const entries =
-				exports(this.#pkgJson, this.#subpath, {
-					conditions: ["!default", "!node", "import", "types"],
-				}) ?? [];
-			const entry = entries.at(0);
-			if (!entry || !this.#isTypesFile(entry)) return undefined;
-			return entry;
-		} catch {
-			// The package may not have an `exports` map.
-			return undefined;
-		}
+		// Try to resolve the `exports` map in `package.json`
+		// with conditions `import` and `types` enabled to find
+		// a valid TypeScript type definitions file.
+		const [err, entries = []] = goTry(() =>
+			exports(this.#pkgJson, this.#subpath, {
+				conditions: ["!default", "!node", "import", "types"],
+			}),
+		);
+
+		// The package may not have an `exports` map.
+		if (err !== undefined) return undefined;
+
+		// Return first entry, if valid.
+		const entry = entries.at(0);
+		if (!entry || !this.#isTypesFile(entry)) return undefined;
+		return entry;
 	}
 
 	getTypesOrTypings(): string | undefined {
