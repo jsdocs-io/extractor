@@ -23,6 +23,7 @@
         "@types/node": "^24.9.1",
         "@types/validate-npm-package-name": "^4.0.2",
         "@vitest/coverage-v8": "^4.0.3",
+        "go-go-try": "^6.2.0",
         "np": "^10.2.0",
         "prettier-plugin-organize-imports": "^4.3.0",
         "ts-dedent": "^2.2.0",
@@ -408,6 +409,8 @@
     "global-directory": ["global-directory@4.0.1", "", { "dependencies": { "ini": "4.1.1" } }, "sha512-wHTUcDUoZ1H5/0iVqEudYW4/kAlN5cZ3j/bXn0Dpbizl9iaUVeWSHqiOjsgk6OW2bkLclbBjzewBz6weQ1zA2Q=="],
 
     "globby": ["globby@14.1.0", "", { "dependencies": { "@sindresorhus/merge-streams": "^2.1.0", "fast-glob": "^3.3.3", "ignore": "^7.0.3", "path-type": "^6.0.0", "slash": "^5.1.0", "unicorn-magic": "^0.3.0" } }, "sha512-0Ia46fDOaT7k4og1PDW4YbodWWr3scS2vAr2lTbsplOt2WkKp0vQbkI9wKis/T5LV/dqPjO3bpS/z6GTJB82LA=="],
+
+    "go-go-try": ["go-go-try@6.2.0", "", {}, "sha512-Q1p/HgxdWFkjgjOvBIPf0v5+kCUBSlUMw7p54OmCAdT+F+LujnaE68aFk9z4PL5s/sJvNpe1do9/96JPvoCr6g=="],
 
     "graceful-fs": ["graceful-fs@4.2.11", "", {}, "sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ=="],
 
