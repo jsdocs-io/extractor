@@ -68,7 +68,6 @@
 	"dependencies": {
 		"@es-joy/resolve.exports": "^1.0.0",
 		"@microsoft/tsdoc": "^0.15.1",
-		"effect": "^3.18.4",
 		"execa": "^9.6.0",
 		"go-go-try": "^6.2.0",
 		"memoize": "^10.2.0",
@@ -76,15 +75,12 @@
 		"pathe": "^2.0.3",
 		"prettier": "^3.6.2",
 		"read-pkg": "^9.0.1",
-		"tempy": "^3.1.0",
-		"ts-morph": "^27.0.2",
-		"validate-npm-package-name": "^7.0.0"
+		"ts-morph": "^27.0.2"
 	},
 	"devDependencies": {
 		"@arethetypeswrong/cli": "^0.18.2",
 		"@total-typescript/shoehorn": "^0.1.2",
 		"@types/node": "^24.9.1",
-		"@types/validate-npm-package-name": "^4.0.2",
 		"@vitest/coverage-v8": "^4.0.3",
 		"np": "^10.2.0",
 		"prettier-plugin-organize-imports": "^4.3.0",
