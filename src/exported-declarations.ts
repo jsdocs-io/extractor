@@ -1,7 +1,7 @@
 import type { ModuleDeclaration, SourceFile } from "ts-morph";
+import type { FoundDeclaration } from "./extract-declarations.ts";
 import { isExportedDeclarations } from "./is-exported-declarations.ts";
 import { isHidden } from "./is-hidden.ts";
-import type { FoundDeclaration } from "./types.ts";
 
 export function exportedDeclarations(
 	containerName: string,

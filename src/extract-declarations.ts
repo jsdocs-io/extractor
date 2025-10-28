@@ -1,5 +1,11 @@
 import { orderBy } from "natural-orderby";
-import { Node, type ExportedDeclarations } from "ts-morph";
+import {
+	type ExportedDeclarations,
+	type ModuleDeclaration,
+	Node,
+	type Project,
+	type SourceFile,
+} from "ts-morph";
 import { ambientModulesDeclarations } from "./ambient-modules-declarations.ts";
 import {
 	isClass,
@@ -29,7 +35,39 @@ import { extractVariableAssignmentExpression } from "./extract-variable-assignme
 import { extractVariable } from "./extract-variable.ts";
 import { globalAmbientDeclarations } from "./global-ambient-declarations.ts";
 import { id } from "./id.ts";
-import type { ExtractDeclarationsOptions, ExtractedDeclaration } from "./types.ts";
+import type { ExtractedDeclaration } from "./types.ts";
+
+/** `ExtractDeclarationsOptions` contains the options for calling {@link extractDeclarations}. */
+export interface ExtractDeclarationsOptions {
+	/** Container that exports the top-level declarations. */
+	container: SourceFile | ModuleDeclaration;
+
+	/**
+  Container name (e.g., the name of a namespace), used to generate declaration IDs.
+  */
+	containerName: string;
+
+	/** Maximum extraction depth for nested namespaces. */
+	maxDepth: number;
+
+	/** Instance of a `ts-morph` `Project`, used to find ambient modules. */
+	project?: Project;
+
+	/** Name of the package being analyzed, used to filter ambient modules. */
+	pkgName?: string;
+}
+
+/** `FoundDeclaration` represents a declaration found during the initial extraction process. */
+export interface FoundDeclaration {
+	/** Declaration container name. */
+	containerName: string;
+
+	/** Export name (may differ from the original name). */
+	exportName: string;
+
+	/** Declaration. */
+	declaration: ExportedDeclarations;
+}
 
 /**
 `extractDeclarations` extracts the top-level declarations
@@ -68,14 +106,14 @@ export async function extractDeclarations({
 	return orderBy(extractedDeclarations, "id");
 }
 
-type ExtractDeclarationOptions = {
+interface ExtractDeclarationOptions {
 	containerName: string;
 	exportName: string;
 	declaration: ExportedDeclarations;
 	maxDepth: number;
 	seenFunctions: Set<string>;
 	seenNamespaces: Set<string>;
-};
+}
 
 async function extractDeclaration({
 	containerName,

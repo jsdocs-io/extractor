@@ -1,9 +1,9 @@
 import { ModuleDeclaration, SourceFile, SyntaxKind } from "ts-morph";
 import { isNamespace } from "./declaration-type-guards.ts";
+import type { FoundDeclaration } from "./extract-declarations.ts";
 import { isExportedDeclarations } from "./is-exported-declarations.ts";
 import { isHidden } from "./is-hidden.ts";
 import { isShorthandAmbientModule } from "./is-shorthand-ambient-module.ts";
-import type { FoundDeclaration } from "./types.ts";
 
 export function exportEqualsDeclarations(
 	containerName: string,

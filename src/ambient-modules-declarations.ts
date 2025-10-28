@@ -1,7 +1,7 @@
 import { Node, type Project } from "ts-morph";
+import type { FoundDeclaration } from "./extract-declarations.ts";
 import { isHidden } from "./is-hidden.ts";
 import { sourceFilePath } from "./source-file-path.ts";
-import type { FoundDeclaration } from "./types.ts";
 
 export function ambientModulesDeclarations(
 	containerName: string,

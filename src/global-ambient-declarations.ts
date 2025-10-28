@@ -1,7 +1,7 @@
 import { SourceFile } from "ts-morph";
+import type { FoundDeclaration } from "./extract-declarations.ts";
 import { isGlobal } from "./is-global.ts";
 import { isHidden } from "./is-hidden.ts";
-import type { FoundDeclaration } from "./types.ts";
 
 export function globalAmbientDeclarations(
 	containerName: string,
