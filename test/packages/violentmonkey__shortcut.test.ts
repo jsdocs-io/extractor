@@ -1,14 +1,14 @@
 import { expect, test } from "vitest";
-import { extractPackageApi } from "../../src/extract-package-api.ts";
+import { getPackageApi } from "../../src/get-package-api.ts";
 
 test("@violentmonkey/shortcut@1.4.1", async () => {
 	expect(
-		await extractPackageApi({
+		await getPackageApi({
 			pkg: "@violentmonkey/shortcut@1.4.1",
 		}),
 	).toMatchSnapshot({
 		analyzedAt: expect.any(String),
 		analyzedIn: expect.any(Number),
-		packages: expect.any(Array),
+		dependencies: expect.any(Array),
 	});
 });

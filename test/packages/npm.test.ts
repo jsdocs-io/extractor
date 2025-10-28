@@ -1,9 +1,9 @@
 import { expect, test } from "vitest";
-import { extractPackageApi } from "../../src/extract-package-api.ts";
+import { getPackageApi } from "../../src/get-package-api.ts";
 
 test("npm@11.4.0", async () => {
-	await expect(
-		extractPackageApi({
+	expect(
+		await getPackageApi({
 			pkg: "npm@11.4.0",
 		}),
 	).rejects.toThrow();
@@ -11,12 +11,12 @@ test("npm@11.4.0", async () => {
 
 test("@types/npm@7.19.3", async () => {
 	expect(
-		await extractPackageApi({
+		await getPackageApi({
 			pkg: "@types/npm@7.19.3",
 		}),
 	).toMatchSnapshot({
 		analyzedAt: expect.any(String),
 		analyzedIn: expect.any(Number),
-		packages: expect.any(Array),
+		dependencies: expect.any(Array),
 	});
 });

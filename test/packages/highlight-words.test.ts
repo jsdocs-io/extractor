@@ -1,14 +1,14 @@
 import { expect, test } from "vitest";
-import { extractPackageApi } from "../../src/extract-package-api.ts";
+import { getPackageApi } from "../../src/get-package-api.ts";
 
 test("highlight-words@1.2.2", async () => {
 	expect(
-		await extractPackageApi({
+		await getPackageApi({
 			pkg: "highlight-words@1.2.2",
 		}),
 	).toMatchSnapshot({
 		analyzedAt: expect.any(String),
 		analyzedIn: expect.any(Number),
-		packages: expect.any(Array),
+		dependencies: expect.any(Array),
 	});
 });
