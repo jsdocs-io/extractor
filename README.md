@@ -34,7 +34,7 @@ It downloads packages from the npm registry and analyzes them to extract their p
 import { extractPackageApi } from "@jsdocs-io/extractor";
 
 (async () => {
-	const packageApi = await extractPackageApi({ pkg: "preact" });
+	const packageApi = await getPackageApi({ pkg: "preact" });
 	console.log(JSON.stringify(packageApi, null, 2));
 })();
 ```
@@ -45,7 +45,7 @@ import { extractPackageApi } from "@jsdocs-io/extractor";
 import { extractPackageApi } from "@jsdocs-io/extractor";
 
 (async () => {
-	const result = await extractPackageApi({ pkg: "preact", subpath: "hooks" });
+	const result = await getPackageApi({ pkg: "preact", subpath: "hooks" });
 	console.log(JSON.stringify(packageApi, null, 2));
 })();
 ```
