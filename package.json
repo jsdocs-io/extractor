@@ -57,12 +57,12 @@
 		"check": "tsc --noEmit",
 		"build": "tsc --noEmit && zshy",
 		"attw": "attw --pack . --profile esm-only",
-		"test": "bun --revision && vitest run src test/declarations --coverage --bail 1",
-		"test:ci": "bun --revision && vitest run src test/declarations test/packages --coverage --bail 1",
-		"test:update": "bun --revision && vitest run src test/declarations test/packages --update",
+		"test": "node -v && bun --revision && vitest run src test/declarations --coverage --bail 1",
+		"test:ci": "node -v && bun --revision && vitest run src test/declarations test/packages --coverage --bail 1",
+		"test:update": "node -v && bun --revision && vitest run src test/declarations test/packages --update",
 		"lint": "prettier --check .",
 		"format": "prettier --write .",
-		"pre-push": "bun --revision && bun i && bun run lint && bun run build && bun run test:ci && bun run attw",
+		"pre-push": "node -v && bun --revision && bun i && bun run lint && bun run build && bun run test:ci && bun run attw",
 		"release": "np --no-cleanup"
 	},
 	"dependencies": {
