@@ -3,7 +3,7 @@ import { SyntaxKind } from "ts-morph";
 import { expect, test } from "vitest";
 import { modifiersText } from "./modifiers-text.ts";
 
-test("ignore public keyword", async () => {
+test("ignore public keyword", () => {
 	expect(
 		modifiersText(
 			fromPartial({
@@ -24,7 +24,7 @@ test("ignore public keyword", async () => {
 	).toBe("");
 });
 
-test("collect and return modifiers", async () => {
+test("collect and return modifiers", () => {
 	expect(
 		modifiersText(
 			fromPartial({

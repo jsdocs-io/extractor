@@ -2,7 +2,7 @@ import { fromPartial } from "@total-typescript/shoehorn";
 import { expect, test } from "vitest";
 import { sourceFilePath } from "./source-file-path.ts";
 
-test("empty path", async () => {
+test("empty path", () => {
 	expect(
 		sourceFilePath(
 			fromPartial({
@@ -18,7 +18,7 @@ test("empty path", async () => {
 	).toBe("");
 });
 
-test("only filename", async () => {
+test("only filename", () => {
 	expect(
 		sourceFilePath(
 			fromPartial({
@@ -34,7 +34,7 @@ test("only filename", async () => {
 	).toBe("index.ts");
 });
 
-test("dir and filename", async () => {
+test("dir and filename", () => {
 	expect(
 		sourceFilePath(
 			fromPartial({
@@ -50,7 +50,7 @@ test("dir and filename", async () => {
 	).toBe("/src/index.ts");
 });
 
-test("node_modules, dir and filename", async () => {
+test("node_modules, dir and filename", () => {
 	expect(
 		sourceFilePath(
 			fromPartial({
@@ -66,7 +66,7 @@ test("node_modules, dir and filename", async () => {
 	).toBe("/src/index.ts");
 });
 
-test("temp dir, node_modules, package dir and filename", async () => {
+test("temp dir, node_modules, package dir and filename", () => {
 	expect(
 		sourceFilePath(
 			fromPartial({
@@ -82,7 +82,7 @@ test("temp dir, node_modules, package dir and filename", async () => {
 	).toBe("/my-package/src/index.ts");
 });
 
-test("temp dir, node_modules, scoped package dir and filename", async () => {
+test("temp dir, node_modules, scoped package dir and filename", () => {
 	expect(
 		sourceFilePath(
 			fromPartial({
