@@ -6,7 +6,11 @@ test("npm@11.4.0", async () => {
 		await getPackageApi({
 			pkg: "npm@11.4.0",
 		}),
-	).rejects.toThrow();
+	).toMatchSnapshot({
+		analyzedAt: expect.any(String),
+		analyzedIn: expect.any(Number),
+		dependencies: expect.any(Array),
+	});
 });
 
 test("@types/npm@7.19.3", async () => {
