@@ -2640,6 +2640,7 @@ exports[`@microsoft/api-extractor@7.13.0 1`] = `
       "signature": "interface IExtractorMessagesConfig {}",
     },
   ],
+  "dependencies": Any<Array>,
   "name": "@microsoft/api-extractor",
   "overview": "/**
  * API Extractor helps with validation, documentation, and reviewing of the exported API for a TypeScript library.
@@ -2648,7 +2649,6 @@ exports[`@microsoft/api-extractor@7.13.0 1`] = `
  *
  * @packageDocumentation
  */",
-  "packages": Any<Array>,
   "subpath": ".",
   "types": "dist/rollup.d.ts",
   "version": "7.13.0",

@@ -3708,11 +3708,25 @@ exports[`@types/npm@7.19.3 1`] = `
       "signature": "var npm: npm.Static;",
     },
   ],
+  "dependencies": Any<Array>,
   "name": "@types/npm",
   "overview": undefined,
-  "packages": Any<Array>,
   "subpath": ".",
   "types": "index.d.ts",
   "version": "7.19.3",
+}
+`;
+
+exports[`npm@11.4.0 1`] = `
+{
+  "analyzedAt": Any<String>,
+  "analyzedIn": Any<Number>,
+  "declarations": [],
+  "dependencies": Any<Array>,
+  "name": "npm",
+  "overview": undefined,
+  "subpath": ".",
+  "types": undefined,
+  "version": "11.4.0",
 }
 `;

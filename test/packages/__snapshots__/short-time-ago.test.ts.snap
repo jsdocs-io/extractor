@@ -78,6 +78,7 @@ exports[`short-time-ago@2.0.0 1`] = `
       "signature": "timeAgo: (date: Date, now?: Date) => string;",
     },
   ],
+  "dependencies": Any<Array>,
   "name": "short-time-ago",
   "overview": "/**
  * This package exports a single function, {@link timeAgo},
@@ -86,7 +87,6 @@ exports[`short-time-ago@2.0.0 1`] = `
  *
  * @packageDocumentation
  */",
-  "packages": Any<Array>,
   "subpath": ".",
   "types": "./dist/index.d.ts",
   "version": "2.0.0",

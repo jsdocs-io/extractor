@@ -544,7 +544,7 @@ exports[`magicast@0.3.3 1`] = `
       "file": "/@babel/types/lib/index.d.ts",
       "id": "+type.ASTNode",
       "kind": "type",
-      "line": 379,
+      "line": 378,
       "name": "ASTNode",
       "signature": "type Node =
   | AnyTypeAnnotation
@@ -998,9 +998,9 @@ exports[`magicast@0.3.3 1`] = `
 };",
     },
   ],
+  "dependencies": Any<Array>,
   "name": "magicast",
   "overview": undefined,
-  "packages": Any<Array>,
   "subpath": ".",
   "types": "./dist/index.d.ts",
   "version": "0.3.3",

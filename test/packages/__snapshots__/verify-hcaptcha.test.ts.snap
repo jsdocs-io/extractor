@@ -305,6 +305,7 @@ exports[`verify-hcaptcha@1.0.0 1`] = `
   | "sitekey-secret-mismatch";",
     },
   ],
+  "dependencies": Any<Array>,
   "name": "verify-hcaptcha",
   "overview": "/**
  *
@@ -361,7 +362,6 @@ exports[`verify-hcaptcha@1.0.0 1`] = `
  *
  * @packageDocumentation
  */",
-  "packages": Any<Array>,
   "subpath": ".",
   "types": "dist/index.d.ts",
   "version": "1.0.0",

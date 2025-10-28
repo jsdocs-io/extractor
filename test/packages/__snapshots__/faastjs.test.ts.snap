@@ -3694,6 +3694,7 @@ exports[`faastjs@8.0.64 1`] = `
       "signature": "const providers: Provider[];",
     },
   ],
+  "dependencies": Any<Array>,
   "name": "faastjs",
   "overview": "/**
  * Faast.js transforms ordinary JavaScript modules into serverless cloud
@@ -3706,7 +3707,6 @@ exports[`faastjs@8.0.64 1`] = `
  * that invokes faast.js and calls the resulting cloud functions.
  * @packageDocumentation
  */",
-  "packages": Any<Array>,
   "subpath": ".",
   "types": "dist/faastjs.d.ts",
   "version": "8.0.64",
