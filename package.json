@@ -66,7 +66,7 @@
 		"release": "np --no-cleanup"
 	},
 	"dependencies": {
-		"@es-joy/resolve.exports": "^1.0.0",
+		"@es-joy/resolve.exports": "^1.2.0",
 		"@microsoft/tsdoc": "^0.15.1",
 		"execa": "^9.6.0",
 		"go-go-try": "^6.2.0",
@@ -80,7 +80,7 @@
 	"devDependencies": {
 		"@arethetypeswrong/cli": "^0.18.2",
 		"@total-typescript/shoehorn": "^0.1.2",
-		"@types/node": "^24.9.1",
+		"@types/node": "^24.9.2",
 		"@vitest/coverage-v8": "^4.0.4",
 		"np": "^10.2.0",
 		"prettier-plugin-organize-imports": "^4.3.0",
