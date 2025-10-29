@@ -13,7 +13,7 @@ It downloads packages from the npm registry and analyzes them to extract their p
 
 ## Requirements
 
-- [Bun](https://bun.sh/) must be installed to resolve and install packages
+- [Bun](https://bun.sh/) must be installed and available in the `PATH` to resolve and install packages
 
 ## API & Package Info
 
@@ -31,7 +31,7 @@ It downloads packages from the npm registry and analyzes them to extract their p
 1. Analyze the latest version of the `preact` package from the npm registry:
 
 ```ts
-import { extractPackageApi } from "@jsdocs-io/extractor";
+import { getPackageApi } from "@jsdocs-io/extractor";
 
 (async () => {
 	const packageApi = await getPackageApi({ pkg: "preact" });
@@ -42,7 +42,7 @@ import { extractPackageApi } from "@jsdocs-io/extractor";
 2. Analyze a specific [subpath export](https://nodejs.org/api/packages.html#subpath-exports), like `preact/hooks`:
 
 ```ts
-import { extractPackageApi } from "@jsdocs-io/extractor";
+import { getPackageApi } from "@jsdocs-io/extractor";
 
 (async () => {
 	const result = await getPackageApi({ pkg: "preact", subpath: "hooks" });
