@@ -10,8 +10,7 @@ export function exportedDeclarations(
 	const exportedDeclarations = [];
 	for (const [exportName, declarations] of container.getExportedDeclarations()) {
 		for (const declaration of declarations) {
-			if (!isExportedDeclarations(declaration)) continue;
-			if (isHidden(declaration)) continue;
+			if (!isExportedDeclarations(declaration) || isHidden(declaration)) continue;
 			exportedDeclarations.push({ containerName, exportName, declaration });
 		}
 	}

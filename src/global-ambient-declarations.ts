@@ -15,8 +15,7 @@ export function globalAmbientDeclarations(
 	];
 	const globalAmbientDeclarations = [];
 	for (const declaration of globalCandidates) {
-		if (!isGlobal(declaration)) continue;
-		if (isHidden(declaration)) continue;
+		if (!isGlobal(declaration) || isHidden(declaration)) continue;
 
 		// Global ambient functions must have a name.
 		const exportName = declaration.getName()!;
