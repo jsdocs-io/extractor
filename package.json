@@ -60,7 +60,7 @@
 		"test": "node -v && bun --revision && vitest run src test/declarations --coverage --bail 1",
 		"test:ci": "node -v && bun --revision && vitest run src test/declarations test/packages --coverage --bail 1",
 		"test:update": "node -v && bun --revision && vitest run src test/declarations test/packages --update",
-		"lint": "prettier --check .",
+		"lint": "prettier --check . && bun run oxlint --type-aware",
 		"format": "prettier --write .",
 		"pre-push": "node -v && bun --revision && bun i && bun run lint && bun run build && bun run test:ci && bun run attw",
 		"release": "np --no-cleanup"
@@ -83,6 +83,8 @@
 		"@vitest/coverage-v8": "^4.0.5",
 		"go-go-try": "^6.2.0",
 		"np": "^10.2.0",
+		"oxlint": "^1.25.0",
+		"oxlint-tsgolint": "^0.4.0",
 		"prettier-plugin-organize-imports": "^4.3.0",
 		"ts-dedent": "^2.2.0",
 		"typescript": "^5.9.3",
