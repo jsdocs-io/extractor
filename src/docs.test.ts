@@ -55,7 +55,7 @@ test("docs", () => {
 	expect(docs(indexFile.getVariableDeclarationOrThrow("bar"))).toStrictEqual([
 		"/** Docs for bar */",
 	]);
-	expect(docs(indexFile.getExportedDeclarations().get("default")?.at(0)!)).toStrictEqual([
+	expect(docs(indexFile.getExportedDeclarations().get("default")!.at(0)!)).toStrictEqual([
 		"/** Docs for expression */",
 	]);
 	expect(docs(indexFile.getFunctionOrThrow("fooFunc"))).toStrictEqual([

@@ -62,7 +62,7 @@ test("isVariableAssignmentExpression", () => {
 	);
 	expect(isVariableAssignmentExpression(indexFile.getFunctionOrThrow("foo"))).toBe(false);
 	expect(
-		isVariableAssignmentExpression(indexFile.getExportedDeclarations().get("default")?.at(0)!),
+		isVariableAssignmentExpression(indexFile.getExportedDeclarations().get("default")!.at(0)!),
 	).toBe(true);
 });
 
@@ -85,7 +85,7 @@ test("isExpression", () => {
     `,
 	);
 	expect(isExpression(indexFile.getFunctionOrThrow("foo"))).toBe(false);
-	expect(isExpression(indexFile.getExportedDeclarations().get("default")?.at(0)!)).toBe(true);
+	expect(isExpression(indexFile.getExportedDeclarations().get("default")!.at(0)!)).toBe(true);
 });
 
 test("isFunction", () => {
