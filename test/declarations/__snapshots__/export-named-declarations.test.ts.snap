@@ -840,8 +840,7 @@ exports[`export named declarations 1`] = `
     "properties": [],
     "setAccessors": [],
     "signature": "interface Interface009<T extends object, U, V extends keyof T>
-  extends Interface001,
-    Interface002 {}",
+  extends Interface001, Interface002 {}",
   },
   {
     "callSignatures": [],

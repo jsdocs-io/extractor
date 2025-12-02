@@ -5591,8 +5591,7 @@ exports[`@sentry/browser@7.100.1 1`] = `
       ],
       "setAccessors": [],
       "signature": "interface Transaction
-  extends TransactionContext,
-    Omit<Span, "setName" | "name"> {}",
+  extends TransactionContext, Omit<Span, "setName" | "name"> {}",
     },
     {
       "callSignatures": [],

@@ -546,10 +546,9 @@ exports[`preact@10.19.4 1`] = `
       "name": "Consumer",
       "properties": [],
       "setAccessors": [],
-      "signature": "interface Consumer<T>
-  extends FunctionComponent<{
-    children: (value: T) => ComponentChildren;
-  }> {}",
+      "signature": "interface Consumer<T> extends FunctionComponent<{
+  children: (value: T) => ComponentChildren;
+}> {}",
     },
     {
       "callSignatures": [],
@@ -987,11 +986,10 @@ exports[`preact@10.19.4 1`] = `
       "name": "Provider",
       "properties": [],
       "setAccessors": [],
-      "signature": "interface Provider<T>
-  extends FunctionComponent<{
-    value: T;
-    children?: ComponentChildren;
-  }> {}",
+      "signature": "interface Provider<T> extends FunctionComponent<{
+  value: T;
+  children?: ComponentChildren;
+}> {}",
     },
     {
       "callSignatures": [],

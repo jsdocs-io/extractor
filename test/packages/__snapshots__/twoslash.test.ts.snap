@@ -1114,13 +1114,12 @@ exports[`twoslash@0.2.1 1`] = `
         },
       ],
       "setAccessors": [],
-      "signature": "interface TwoslashExecuteOptions
-  extends Partial<
-    Pick<
-      TwoslashReturnMeta,
-      "positionQueries" | "positionCompletions" | "positionHighlights"
-    >
-  > {}",
+      "signature": "interface TwoslashExecuteOptions extends Partial<
+  Pick<
+    TwoslashReturnMeta,
+    "positionQueries" | "positionCompletions" | "positionHighlights"
+  >
+> {}",
     },
     {
       "callSignatures": [],
@@ -1245,8 +1244,7 @@ exports[`twoslash@0.2.1 1`] = `
       "properties": [],
       "setAccessors": [],
       "signature": "interface TwoslashOptions
-  extends CreateTwoslashOptions,
-    TwoslashExecuteOptions {}",
+  extends CreateTwoslashOptions, TwoslashExecuteOptions {}",
     },
     {
       "callSignatures": [],

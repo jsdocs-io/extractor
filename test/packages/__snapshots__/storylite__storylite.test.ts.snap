@@ -728,8 +728,9 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         },
       ],
       "setAccessors": [],
-      "signature": "interface Story<P extends SLFunctionComponent = SLFunctionComponent<{}>>
-  extends BaseStory<P> {}",
+      "signature": "interface Story<
+  P extends SLFunctionComponent = SLFunctionComponent<{}>,
+> extends BaseStory<P> {}",
     },
     {
       "callSignatures": [],
@@ -755,8 +756,9 @@ exports[`@storylite/storylite@0.14.0 1`] = `
         },
       ],
       "setAccessors": [],
-      "signature": "interface StoryWithId<P extends SLFunctionComponent = SLFunctionComponent<{}>>
-  extends Story<P> {}",
+      "signature": "interface StoryWithId<
+  P extends SLFunctionComponent = SLFunctionComponent<{}>,
+> extends Story<P> {}",
     },
     {
       "docs": [],
