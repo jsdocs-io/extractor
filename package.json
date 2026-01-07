@@ -72,23 +72,23 @@
 		"memoize": "^10.2.0",
 		"natural-orderby": "^5.0.0",
 		"pathe": "^2.0.3",
-		"prettier": "^3.6.2",
+		"prettier": "^3.7.4",
 		"read-pkg": "^10.0.0",
 		"ts-morph": "^27.0.2"
 	},
 	"devDependencies": {
 		"@arethetypeswrong/cli": "^0.18.2",
 		"@total-typescript/shoehorn": "^0.1.2",
-		"@types/node": "^24.9.2",
-		"@vitest/coverage-v8": "^4.0.5",
+		"@types/node": "^25.0.3",
+		"@vitest/coverage-v8": "^4.0.16",
 		"go-go-try": "^6.2.0",
 		"np": "^10.2.0",
-		"oxlint": "^1.25.0",
-		"oxlint-tsgolint": "^0.10.0",
+		"oxlint": "^1.38.0",
+		"oxlint-tsgolint": "^0.10.1",
 		"prettier-plugin-organize-imports": "^4.3.0",
 		"ts-dedent": "^2.2.0",
 		"typescript": "^5.9.3",
-		"vitest": "^4.0.5",
+		"vitest": "^4.0.16",
 		"zshy": "^0.7.0"
 	}
 }
