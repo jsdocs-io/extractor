@@ -20,7 +20,7 @@
         "@total-typescript/shoehorn": "^0.1.2",
         "@types/node": "^25.0.3",
         "@vitest/coverage-v8": "^4.0.16",
-        "go-go-try": "^6.2.0",
+        "go-go-try": "^7.4.1",
         "np": "^11.0.2",
         "oxlint": "^1.38.0",
         "oxlint-tsgolint": "^0.15.0",
@@ -475,7 +475,7 @@
 
     "globby": ["globby@14.1.0", "", { "dependencies": { "@sindresorhus/merge-streams": "^2.1.0", "fast-glob": "^3.3.3", "ignore": "^7.0.3", "path-type": "^6.0.0", "slash": "^5.1.0", "unicorn-magic": "^0.3.0" } }, "sha512-0Ia46fDOaT7k4og1PDW4YbodWWr3scS2vAr2lTbsplOt2WkKp0vQbkI9wKis/T5LV/dqPjO3bpS/z6GTJB82LA=="],
 
-    "go-go-try": ["go-go-try@6.2.0", "", {}, "sha512-Q1p/HgxdWFkjgjOvBIPf0v5+kCUBSlUMw7p54OmCAdT+F+LujnaE68aFk9z4PL5s/sJvNpe1do9/96JPvoCr6g=="],
+    "go-go-try": ["go-go-try@7.4.1", "", {}, "sha512-jQNSAQ9Ow+z7whOXiS/ew0gerzCB0O1/pB9dbtFhoKpKILMfnU5XlHDTbzhlnWDBNzZQC8dFYJErDxSw5BILsg=="],
 
     "graceful-fs": ["graceful-fs@4.2.11", "", {}, "sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ=="],
 
