@@ -5,30 +5,30 @@ import { sourceFilePath } from "./source-file-path.ts";
 import type { ExtractedDeclaration, ExtractedNamespace } from "./types.ts";
 
 export async function extractFileModule(
-	containerName: string,
-	exportName: string,
-	declaration: SourceFile,
-	declarations: ExtractedDeclaration[],
+  containerName: string,
+  exportName: string,
+  declaration: SourceFile,
+  declarations: ExtractedDeclaration[],
 ): Promise<ExtractedNamespace> {
-	return {
-		kind: "namespace",
-		id: id(containerName, "+namespace", exportName),
-		name: exportName,
-		docs: fileModuleDocs(declaration),
-		file: sourceFilePath(declaration),
-		line: declaration.getStartLineNumber(),
-		signature: await fileModuleSignature(declaration),
-		declarations,
-	};
+  return {
+    kind: "namespace",
+    id: id(containerName, "+namespace", exportName),
+    name: exportName,
+    docs: fileModuleDocs(declaration),
+    file: sourceFilePath(declaration),
+    line: declaration.getStartLineNumber(),
+    signature: await fileModuleSignature(declaration),
+    declarations,
+  };
 }
 
 function fileModuleDocs(declaration: SourceFile): string[] {
-	const firstDoc = declaration.getFirstDescendantByKind(SyntaxKind.JSDoc)?.getText();
-	if (!firstDoc) return [];
-	return [firstDoc];
+  const firstDoc = declaration.getFirstDescendantByKind(SyntaxKind.JSDoc)?.getText();
+  if (!firstDoc) return [];
+  return [firstDoc];
 }
 
 async function fileModuleSignature(declaration: SourceFile): Promise<string> {
-	const filename = declaration.getSourceFile().getBaseName();
-	return await formatSignature("namespace", `module "${filename}" {}`);
+  const filename = declaration.getSourceFile().getBaseName();
+  return await formatSignature("namespace", `module "${filename}" {}`);
 }

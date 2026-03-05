@@ -1,95 +1,95 @@
 {
-	"name": "@jsdocs-io/extractor",
-	"version": "2.0.0",
-	"description": "The API extractor for npm packages powering jsdocs.io",
-	"license": "AGPL-3.0-or-later",
-	"author": {
-		"name": "Edoardo Scibona",
-		"url": "http://github.com/velut"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/jsdocs-io/extractor.git"
-	},
-	"bugs": {
-		"url": "https://github.com/jsdocs-io/extractor/issues"
-	},
-	"keywords": [
-		"npm",
-		"registry",
-		"package",
-		"analyze",
-		"api",
-		"extractor",
-		"documentation",
-		"generator",
-		"typescript",
-		"javascript",
-		"jsdoc",
-		"tsdoc",
-		"jsdocs.io"
-	],
-	"sideEffects": false,
-	"type": "module",
-	"zshy": {
-		"exports": {
-			"./package.json": "./package.json",
-			".": "./src/index.ts"
-		},
-		"cjs": false
-	},
-	"module": "./dist/index.js",
-	"types": "./dist/index.d.ts",
-	"exports": {
-		"./package.json": "./package.json",
-		".": {
-			"types": "./dist/index.d.ts",
-			"default": "./dist/index.js"
-		}
-	},
-	"files": [
-		"dist"
-	],
-	"engines": {
-		"node": ">=24.4"
-	},
-	"scripts": {
-		"check": "tsc --noEmit",
-		"build": "tsc --noEmit && zshy",
-		"attw": "attw --pack . --profile esm-only",
-		"test": "node -v && bun --revision && vitest run src test/declarations --coverage --bail 1",
-		"test:ci": "node -v && bun --revision && vitest run src test/declarations test/packages --coverage --bail 1",
-		"test:update": "node -v && bun --revision && vitest run src test/declarations test/packages --update",
-		"lint": "oxfmt --check && bun run oxlint --type-aware",
-		"format": "oxfmt",
-		"pre-push": "node -v && bun --revision && bun i && bun run lint && bun run build && bun run test:ci && bun run attw",
-		"release": "np --no-cleanup"
-	},
-	"dependencies": {
-		"@es-joy/resolve.exports": "^1.2.0",
-		"@microsoft/tsdoc": "^0.16.0",
-		"execa": "^9.6.0",
-		"memoize": "^10.2.0",
-		"natural-orderby": "^5.0.0",
-		"pathe": "^2.0.3",
-		"prettier": "^3.7.4",
-		"read-pkg": "^10.0.0",
-		"ts-morph": "^27.0.2"
-	},
-	"devDependencies": {
-		"@arethetypeswrong/cli": "^0.18.2",
-		"@total-typescript/shoehorn": "^0.1.2",
-		"@types/node": "^25.0.3",
-		"@vitest/coverage-v8": "^4.0.16",
-		"go-go-try": "^7.4.1",
-		"np": "^11.0.2",
-		"oxfmt": "^0.36.0",
-		"oxlint": "^1.51.0",
-		"oxlint-tsgolint": "^0.16.0",
-		"prettier-plugin-organize-imports": "^4.3.0",
-		"ts-dedent": "^2.2.0",
-		"typescript": "^5.9.3",
-		"vitest": "^4.0.16",
-		"zshy": "^0.7.0"
-	}
+  "name": "@jsdocs-io/extractor",
+  "version": "2.0.0",
+  "description": "The API extractor for npm packages powering jsdocs.io",
+  "keywords": [
+    "analyze",
+    "api",
+    "documentation",
+    "extractor",
+    "generator",
+    "javascript",
+    "jsdoc",
+    "jsdocs.io",
+    "npm",
+    "package",
+    "registry",
+    "tsdoc",
+    "typescript"
+  ],
+  "bugs": {
+    "url": "https://github.com/jsdocs-io/extractor/issues"
+  },
+  "license": "AGPL-3.0-or-later",
+  "author": {
+    "name": "Edoardo Scibona",
+    "url": "http://github.com/velut"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsdocs-io/extractor.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "tsc --noEmit && zshy",
+    "attw": "attw --pack . --profile esm-only",
+    "test": "node -v && bun --revision && vitest run src test/declarations --coverage --bail 1",
+    "test:ci": "node -v && bun --revision && vitest run src test/declarations test/packages --coverage --bail 1",
+    "test:update": "node -v && bun --revision && vitest run src test/declarations test/packages --update",
+    "lint": "oxfmt --check && bun run oxlint --type-aware",
+    "format": "oxfmt",
+    "pre-push": "node -v && bun --revision && bun i && bun run lint && bun run build && bun run test:ci && bun run attw",
+    "release": "np --no-cleanup"
+  },
+  "dependencies": {
+    "@es-joy/resolve.exports": "^1.2.0",
+    "@microsoft/tsdoc": "^0.16.0",
+    "execa": "^9.6.0",
+    "memoize": "^10.2.0",
+    "natural-orderby": "^5.0.0",
+    "pathe": "^2.0.3",
+    "prettier": "^3.7.4",
+    "read-pkg": "^10.0.0",
+    "ts-morph": "^27.0.2"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.2",
+    "@total-typescript/shoehorn": "^0.1.2",
+    "@types/node": "^25.0.3",
+    "@vitest/coverage-v8": "^4.0.16",
+    "go-go-try": "^7.4.1",
+    "np": "^11.0.2",
+    "oxfmt": "^0.36.0",
+    "oxlint": "^1.51.0",
+    "oxlint-tsgolint": "^0.16.0",
+    "prettier-plugin-organize-imports": "^4.3.0",
+    "ts-dedent": "^2.2.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.16",
+    "zshy": "^0.7.0"
+  },
+  "engines": {
+    "node": ">=24.4"
+  },
+  "zshy": {
+    "exports": {
+      "./package.json": "./package.json",
+      ".": "./src/index.ts"
+    },
+    "cjs": false
+  }
 }

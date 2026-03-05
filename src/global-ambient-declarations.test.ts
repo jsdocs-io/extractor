@@ -4,78 +4,78 @@ import { expect, test } from "vitest";
 import { globalAmbientDeclarations } from "./global-ambient-declarations.ts";
 
 test("no globals", () => {
-	const project = new Project({
-		useInMemoryFileSystem: true,
-		compilerOptions: {
-			lib: ["lib.esnext.full.d.ts"],
-			target: ScriptTarget.ESNext,
-			module: ModuleKind.ESNext,
-			moduleResolution: ModuleResolutionKind.Bundler,
-		},
-	});
-	const indexFile = project.createSourceFile(
-		"index.d.ts",
-		dedent`
+  const project = new Project({
+    useInMemoryFileSystem: true,
+    compilerOptions: {
+      lib: ["lib.esnext.full.d.ts"],
+      target: ScriptTarget.ESNext,
+      module: ModuleKind.ESNext,
+      moduleResolution: ModuleResolutionKind.Bundler,
+    },
+  });
+  const indexFile = project.createSourceFile(
+    "index.d.ts",
+    dedent`
     export {};
     `,
-	);
-	expect(globalAmbientDeclarations("", indexFile)).toStrictEqual([]);
+  );
+  expect(globalAmbientDeclarations("", indexFile)).toStrictEqual([]);
 });
 
 test("not global", () => {
-	const project = new Project({
-		useInMemoryFileSystem: true,
-		compilerOptions: {
-			lib: ["lib.esnext.full.d.ts"],
-			target: ScriptTarget.ESNext,
-			module: ModuleKind.ESNext,
-			moduleResolution: ModuleResolutionKind.Bundler,
-		},
-	});
-	const indexFile = project.createSourceFile(
-		"index.d.ts",
-		dedent`
+  const project = new Project({
+    useInMemoryFileSystem: true,
+    compilerOptions: {
+      lib: ["lib.esnext.full.d.ts"],
+      target: ScriptTarget.ESNext,
+      module: ModuleKind.ESNext,
+      moduleResolution: ModuleResolutionKind.Bundler,
+    },
+  });
+  const indexFile = project.createSourceFile(
+    "index.d.ts",
+    dedent`
     export const foo: number;
     `,
-	);
-	expect(globalAmbientDeclarations("", indexFile)).toStrictEqual([]);
+  );
+  expect(globalAmbientDeclarations("", indexFile)).toStrictEqual([]);
 });
 
 test("hidden global", () => {
-	const project = new Project({
-		useInMemoryFileSystem: true,
-		compilerOptions: {
-			lib: ["lib.esnext.full.d.ts"],
-			target: ScriptTarget.ESNext,
-			module: ModuleKind.ESNext,
-			moduleResolution: ModuleResolutionKind.Bundler,
-		},
-	});
-	const indexFile = project.createSourceFile(
-		"index.d.ts",
-		dedent`
+  const project = new Project({
+    useInMemoryFileSystem: true,
+    compilerOptions: {
+      lib: ["lib.esnext.full.d.ts"],
+      target: ScriptTarget.ESNext,
+      module: ModuleKind.ESNext,
+      moduleResolution: ModuleResolutionKind.Bundler,
+    },
+  });
+  const indexFile = project.createSourceFile(
+    "index.d.ts",
+    dedent`
     /** @internal */
     declare const foo: number;
     `,
-	);
-	expect(globalAmbientDeclarations("", indexFile)).toStrictEqual([]);
+  );
+  expect(globalAmbientDeclarations("", indexFile)).toStrictEqual([]);
 });
 
 test("global declaration", () => {
-	const project = new Project({
-		useInMemoryFileSystem: true,
-		compilerOptions: {
-			lib: ["lib.esnext.full.d.ts"],
-			target: ScriptTarget.ESNext,
-			module: ModuleKind.ESNext,
-			moduleResolution: ModuleResolutionKind.Bundler,
-		},
-	});
-	const indexFile = project.createSourceFile(
-		"index.d.ts",
-		dedent`
+  const project = new Project({
+    useInMemoryFileSystem: true,
+    compilerOptions: {
+      lib: ["lib.esnext.full.d.ts"],
+      target: ScriptTarget.ESNext,
+      module: ModuleKind.ESNext,
+      moduleResolution: ModuleResolutionKind.Bundler,
+    },
+  });
+  const indexFile = project.createSourceFile(
+    "index.d.ts",
+    dedent`
     declare const foo: number;
     `,
-	);
-	expect(globalAmbientDeclarations("", indexFile).at(0)?.exportName).toBe("foo");
+  );
+  expect(globalAmbientDeclarations("", indexFile).at(0)?.exportName).toBe("foo");
 });

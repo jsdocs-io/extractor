@@ -4,30 +4,30 @@ import { expect, test } from "vitest";
 import { extractDeclarations } from "../../src/extract-declarations.ts";
 
 test("export default const", async () => {
-	const project = new Project({
-		useInMemoryFileSystem: true,
-		compilerOptions: {
-			lib: ["lib.esnext.full.d.ts"],
-			target: ScriptTarget.ESNext,
-			module: ModuleKind.ESNext,
-			moduleResolution: ModuleResolutionKind.Bundler,
-		},
-	});
-	const indexFile = project.createSourceFile(
-		"index.ts",
-		dedent`
+  const project = new Project({
+    useInMemoryFileSystem: true,
+    compilerOptions: {
+      lib: ["lib.esnext.full.d.ts"],
+      target: ScriptTarget.ESNext,
+      module: ModuleKind.ESNext,
+      moduleResolution: ModuleResolutionKind.Bundler,
+    },
+  });
+  const indexFile = project.createSourceFile(
+    "index.ts",
+    dedent`
     /** var1 */
     const var1 = "var1";
 
     export default var1;
     `,
-	);
-	expect(
-		await extractDeclarations({
-			containerName: "",
-			container: indexFile,
-			maxDepth: 5,
-			project,
-		}),
-	).toMatchSnapshot();
+  );
+  expect(
+    await extractDeclarations({
+      containerName: "",
+      container: indexFile,
+      maxDepth: 5,
+      project,
+    }),
+  ).toMatchSnapshot();
 });

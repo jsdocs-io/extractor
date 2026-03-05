@@ -11,7 +11,7 @@ import type { ExtractedDeclaration } from "./types.ts";
 
 /** `GetPackageApiOptions` contains the options for calling {@link getPackageApi}. */
 export interface GetPackageApiOptions {
-	/**
+  /**
   Package to extract the API from.
 
   This can be either a package name (e.g., `foo`, `@foo/bar`) or
@@ -19,9 +19,9 @@ export interface GetPackageApiOptions {
 
   @see {@link https://bun.sh/docs/cli/add | Bun docs}
   */
-	pkg: string;
+  pkg: string;
 
-	/**
+  /**
   Specific subpath to consider in a package.
 
   If a package has multiple entrypoints listed in the `exports` map property
@@ -33,9 +33,9 @@ export interface GetPackageApiOptions {
   @see {@link https://nodejs.org/api/packages.html#subpath-exports | Node.js docs}
   @see {@link https://github.com/lukeed/resolve.exports | resolve.exports docs}
   */
-	subpath?: string;
+  subpath?: string;
 
-	/**
+  /**
   Packages can have deeply nested modules and namespaces.
 
   Use `maxDepth` to limit the depth of the extraction.
@@ -43,48 +43,48 @@ export interface GetPackageApiOptions {
 
   @defaultValue 5
   */
-	maxDepth?: number;
+  maxDepth?: number;
 
-	/**
+  /**
 	Bun instance used to install the package.
 
   @defaultValue a new `Bun` instance
   */
-	bun?: Bun;
+  bun?: Bun;
 }
 
 /** `PackageApi` contains the data extracted from a package by calling {@link getPackageApi}. */
 export interface PackageApi {
-	/** Package name (e.g., `foo`, `@foo/bar`). */
-	name: string;
+  /** Package name (e.g., `foo`, `@foo/bar`). */
+  name: string;
 
-	/** Package version number (e.g., `1.0.0`). */
-	version: string;
+  /** Package version number (e.g., `1.0.0`). */
+  version: string;
 
-	/**
+  /**
   Package subpath selected when extracting the API (e.g., `.`, `someFeature`).
 
   @see {@link ExtractPackageApiOptions.subpath}
   @see {@link https://nodejs.org/api/packages.html#subpath-exports | Node.js docs}
   */
-	subpath: string;
+  subpath: string;
 
-	/**
+  /**
   Type declarations file, resolved from the selected `subpath`,
   that acts as the entrypoint for the package (e.g., `index.d.ts`).
   */
-	types?: string;
+  types?: string;
 
-	/**
+  /**
   Package description extracted from the `types` file if a
   JSDoc comment with the `@packageDocumentation` tag is found.
   */
-	overview?: string;
+  overview?: string;
 
-	/** Declarations exported (or re-exported) by the package. */
-	declarations: ExtractedDeclaration[];
+  /** Declarations exported (or re-exported) by the package. */
+  declarations: ExtractedDeclaration[];
 
-	/**
+  /**
   All packages resolved and installed when installing the package (included).
 
   @example
@@ -93,13 +93,13 @@ export interface PackageApi {
   ["foo@1.0.0", "bar@2.0.0", "baz@3.0.0"]
   ```
   */
-	dependencies: string[];
+  dependencies: string[];
 
-	/** Timestamp of when the package was analyzed. */
-	analyzedAt: string;
+  /** Timestamp of when the package was analyzed. */
+  analyzedAt: string;
 
-	/** Package analysis duration in milliseconds. */
-	analyzedIn: number;
+  /** Package analysis duration in milliseconds. */
+  analyzedIn: number;
 }
 
 /**
@@ -126,84 +126,84 @@ console.log(JSON.stringify(packageApi, null, 2));
 @returns A {@link PackageApi} object
 */
 export async function getPackageApi({
-	pkg,
-	subpath = ".",
-	maxDepth = 5,
-	bun = new Bun(),
+  pkg,
+  subpath = ".",
+  maxDepth = 5,
+  bun = new Bun(),
 }: GetPackageApiOptions): Promise<PackageApi> {
-	// Normalize options.
-	pkg = pkg.trim();
-	subpath = subpath.trim() || ".";
-	maxDepth = Math.max(1, Math.round(maxDepth));
+  // Normalize options.
+  pkg = pkg.trim();
+  subpath = subpath.trim() || ".";
+  maxDepth = Math.max(1, Math.round(maxDepth));
 
-	// Start performance timer.
-	const start = performance.now();
+  // Start performance timer.
+  const start = performance.now();
 
-	// Create a temporary directory where to install the package.
-	await using dir = await tempDir();
-	const cwd = dir.path;
+  // Create a temporary directory where to install the package.
+  await using dir = await tempDir();
+  const cwd = dir.path;
 
-	// Install the package and its direct and third-party dependencies.
-	const dependencies = await bun.add(pkg, cwd);
+  // Install the package and its direct and third-party dependencies.
+  const dependencies = await bun.add(pkg, cwd);
 
-	// Read the package's `package.json`.
-	const pkgName = await getInstalledPackageName(cwd);
-	const pkgDir = join(cwd, "node_modules", pkgName);
-	const pkgJson = await getPackageJson(pkgDir);
-	const { name, version } = pkgJson;
+  // Read the package's `package.json`.
+  const pkgName = await getInstalledPackageName(cwd);
+  const pkgDir = join(cwd, "node_modules", pkgName);
+  const pkgJson = await getPackageJson(pkgDir);
+  const { name, version } = pkgJson;
 
-	// Find the package's types entry point file, if any.
-	const types = getPackageTypes({ pkgJson, subpath });
-	if (!types) {
-		return {
-			name,
-			version,
-			subpath,
-			types: undefined,
-			overview: undefined,
-			declarations: [],
-			dependencies,
-			analyzedAt: analyzedAt(),
-			analyzedIn: analyzedIn(start),
-		};
-	}
+  // Find the package's types entry point file, if any.
+  const types = getPackageTypes({ pkgJson, subpath });
+  if (!types) {
+    return {
+      name,
+      version,
+      subpath,
+      types: undefined,
+      overview: undefined,
+      declarations: [],
+      dependencies,
+      analyzedAt: analyzedAt(),
+      analyzedIn: analyzedIn(start),
+    };
+  }
 
-	// Create TypeScript project.
-	const pkgTypes = join(pkgDir, types);
-	const { project, indexFile } = getProject({ indexFilePath: pkgTypes, typeRoots: cwd });
+  // Create TypeScript project.
+  const pkgTypes = join(pkgDir, types);
+  const { project, indexFile } = getProject({ indexFilePath: pkgTypes, typeRoots: cwd });
 
-	// Get overview.
-	const overview = getPackageOverview(indexFile);
+  // Get overview.
+  const overview = getPackageOverview(indexFile);
 
-	// Extract the declarations exported by the package.
-	const declarations = await getPackageDeclarations({ pkgName, project, indexFile, maxDepth });
+  // Extract the declarations exported by the package.
+  const declarations = await getPackageDeclarations({ pkgName, project, indexFile, maxDepth });
 
-	// Return the data extracted from the package.
-	return {
-		name,
-		version,
-		subpath,
-		types,
-		overview,
-		declarations,
-		dependencies,
-		analyzedAt: analyzedAt(),
-		analyzedIn: analyzedIn(start),
-	};
+  // Return the data extracted from the package.
+  return {
+    name,
+    version,
+    subpath,
+    types,
+    overview,
+    declarations,
+    dependencies,
+    analyzedAt: analyzedAt(),
+    analyzedIn: analyzedIn(start),
+  };
 }
 
 async function getInstalledPackageName(cwd: string): Promise<string> {
-	// Since `pkg` can contain any argument accepted by Bun's `add` command
-	// (e.g., URLs), get the package name from the only dependency listed in
-	// the `package.json` file created by Bun in the `cwd` on install.
-	const pkgJson = await getPackageJson(cwd);
-	return Object.keys(pkgJson.dependencies!).at(0)!;
+  // Since `pkg` can contain any argument accepted by Bun's `add` command
+  // (e.g., URLs), get the package name from the only dependency listed in
+  // the `package.json` file created by Bun in the `cwd` on install.
+  const pkgJson = await getPackageJson(cwd);
+  return Object.keys(pkgJson.dependencies!).at(0)!;
 }
 
 function analyzedAt(): string {
-	return new Date().toISOString();
+  return new Date().toISOString();
 }
 
 function analyzedIn(start: number): number {
-	return Math.round(performance.now() - start);
+  return Math.round(performance.now() - start);
 }

@@ -10,6 +10,6 @@ Parsed comments are memoized.
 @param comment - the raw string comment
 */
 export const parseDocComment = memoize((comment: string): DocComment => {
-	const parser = new TSDocParser();
-	return parser.parseString(comment).docComment;
+  const parser = new TSDocParser();
+  return parser.parseString(comment).docComment;
 });

@@ -1,26 +1,26 @@
 // See https://www.totaltypescript.com/tsconfig-cheat-sheet.
 {
-	"compilerOptions": {
-		// Base options.
-		"esModuleInterop": true,
-		"skipLibCheck": true,
-		"target": "es2022",
-		"allowJs": true,
-		"resolveJsonModule": true,
-		"moduleDetection": "force",
-		"isolatedModules": true,
-		"verbatimModuleSyntax": true,
-		// Strictness.
-		"strict": true,
-		"noUncheckedIndexedAccess": true,
-		"noImplicitOverride": true,
-		// Building a library with zshy.
-		"declaration": true,
-		"module": "NodeNext",
-		"allowImportingTsExtensions": true,
-		"noEmit": true,
-		// No DOM.
-		"lib": ["es2022"]
-	},
-	"exclude": ["coverage", "dist", "node_modules"]
+  "compilerOptions": {
+    // Base options.
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    // Strictness.
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    // Building a library with zshy.
+    "declaration": true,
+    "module": "NodeNext",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    // No DOM.
+    "lib": ["es2022"]
+  },
+  "exclude": ["coverage", "dist", "node_modules"]
 }

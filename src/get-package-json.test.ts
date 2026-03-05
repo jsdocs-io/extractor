@@ -6,17 +6,17 @@ import { getPackageJson } from "./get-package-json.ts";
 import { tempDir } from "./temp-dir.ts";
 
 test("no package.json", async () => {
-	await using dir = await tempDir();
-	const [err, _] = await goTry(getPackageJson(dir.path));
-	expect(err).toBeDefined();
+  await using dir = await tempDir();
+  const [err, _] = await goTry(getPackageJson(dir.path));
+  expect(err).toBeDefined();
 });
 
 test("with empty package.json", async () => {
-	await using dir = await tempDir();
-	await fs.writeFile(join(dir.path, "package.json"), "{}");
-	const [err, pkgJson] = await goTry(getPackageJson(dir.path));
-	expect(err).toBeUndefined();
-	expect(pkgJson).toMatchInlineSnapshot(`
+  await using dir = await tempDir();
+  await fs.writeFile(join(dir.path, "package.json"), "{}");
+  const [err, pkgJson] = await goTry(getPackageJson(dir.path));
+  expect(err).toBeUndefined();
+  expect(pkgJson).toMatchInlineSnapshot(`
 		{
 		  "_id": "@",
 		  "name": "",
@@ -27,11 +27,11 @@ test("with empty package.json", async () => {
 });
 
 test("with minimal package.json", async () => {
-	await using dir = await tempDir();
-	await fs.writeFile(join(dir.path, "package.json"), '{ "name": "foo", "version": "1.0.0" }');
-	const [err, pkgJson] = await goTry(getPackageJson(dir.path));
-	expect(err).toBeUndefined();
-	expect(pkgJson).toMatchInlineSnapshot(`
+  await using dir = await tempDir();
+  await fs.writeFile(join(dir.path, "package.json"), '{ "name": "foo", "version": "1.0.0" }');
+  const [err, pkgJson] = await goTry(getPackageJson(dir.path));
+  expect(err).toBeUndefined();
+  expect(pkgJson).toMatchInlineSnapshot(`
 		{
 		  "_id": "foo@1.0.0",
 		  "name": "foo",
@@ -42,11 +42,11 @@ test("with minimal package.json", async () => {
 });
 
 test("with minimal scoped package.json", async () => {
-	await using dir = await tempDir();
-	await fs.writeFile(join(dir.path, "package.json"), '{ "name": "@foo/bar", "version": "1.0.0" }');
-	const [err, pkgJson] = await goTry(getPackageJson(dir.path));
-	expect(err).toBeUndefined();
-	expect(pkgJson).toMatchInlineSnapshot(`
+  await using dir = await tempDir();
+  await fs.writeFile(join(dir.path, "package.json"), '{ "name": "@foo/bar", "version": "1.0.0" }');
+  const [err, pkgJson] = await goTry(getPackageJson(dir.path));
+  expect(err).toBeUndefined();
+  expect(pkgJson).toMatchInlineSnapshot(`
 		{
 		  "_id": "@foo/bar@1.0.0",
 		  "name": "@foo/bar",
@@ -57,11 +57,11 @@ test("with minimal scoped package.json", async () => {
 });
 
 test("with package.json from project workdir with npm package", async () => {
-	await using dir = await tempDir();
-	await fs.writeFile(join(dir.path, "package.json"), '{ "dependencies": { "foo": "1.0.0" } }');
-	const [err, pkgJson] = await goTry(getPackageJson(dir.path));
-	expect(err).toBeUndefined();
-	expect(pkgJson).toMatchInlineSnapshot(`
+  await using dir = await tempDir();
+  await fs.writeFile(join(dir.path, "package.json"), '{ "dependencies": { "foo": "1.0.0" } }');
+  const [err, pkgJson] = await goTry(getPackageJson(dir.path));
+  expect(err).toBeUndefined();
+  expect(pkgJson).toMatchInlineSnapshot(`
 		{
 		  "_id": "@",
 		  "dependencies": {
@@ -75,14 +75,14 @@ test("with package.json from project workdir with npm package", async () => {
 });
 
 test("with package.json from project workdir with scoped npm package", async () => {
-	await using dir = await tempDir();
-	await fs.writeFile(
-		join(dir.path, "package.json"),
-		'{ "dependencies": { "@foo/bar": "^1.0.0" } }',
-	);
-	const [err, pkgJson] = await goTry(getPackageJson(dir.path));
-	expect(err).toBeUndefined();
-	expect(pkgJson).toMatchInlineSnapshot(`
+  await using dir = await tempDir();
+  await fs.writeFile(
+    join(dir.path, "package.json"),
+    '{ "dependencies": { "@foo/bar": "^1.0.0" } }',
+  );
+  const [err, pkgJson] = await goTry(getPackageJson(dir.path));
+  expect(err).toBeUndefined();
+  expect(pkgJson).toMatchInlineSnapshot(`
 		{
 		  "_id": "@",
 		  "dependencies": {
@@ -96,14 +96,14 @@ test("with package.json from project workdir with scoped npm package", async () 
 });
 
 test("with package.json from project workdir with local package", async () => {
-	await using dir = await tempDir();
-	await fs.writeFile(
-		join(dir.path, "package.json"),
-		'{ "dependencies": { "foo": "/path/to/tarball.tgz" } }',
-	);
-	const [err, pkgJson] = await goTry(getPackageJson(dir.path));
-	expect(err).toBeUndefined();
-	expect(pkgJson).toMatchInlineSnapshot(`
+  await using dir = await tempDir();
+  await fs.writeFile(
+    join(dir.path, "package.json"),
+    '{ "dependencies": { "foo": "/path/to/tarball.tgz" } }',
+  );
+  const [err, pkgJson] = await goTry(getPackageJson(dir.path));
+  expect(err).toBeUndefined();
+  expect(pkgJson).toMatchInlineSnapshot(`
 		{
 		  "_id": "@",
 		  "dependencies": {
@@ -117,14 +117,14 @@ test("with package.json from project workdir with local package", async () => {
 });
 
 test("with package.json from project workdir with scoped local package", async () => {
-	await using dir = await tempDir();
-	await fs.writeFile(
-		join(dir.path, "package.json"),
-		'{ "dependencies": { "@foo/bar": "/path/to/tarball.tgz" } }',
-	);
-	const [err, pkgJson] = await goTry(getPackageJson(dir.path));
-	expect(err).toBeUndefined();
-	expect(pkgJson).toMatchInlineSnapshot(`
+  await using dir = await tempDir();
+  await fs.writeFile(
+    join(dir.path, "package.json"),
+    '{ "dependencies": { "@foo/bar": "/path/to/tarball.tgz" } }',
+  );
+  const [err, pkgJson] = await goTry(getPackageJson(dir.path));
+  expect(err).toBeUndefined();
+  expect(pkgJson).toMatchInlineSnapshot(`
 		{
 		  "_id": "@",
 		  "dependencies": {

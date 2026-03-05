@@ -7,25 +7,25 @@ import { typeCheckerType } from "./type-checker-type.ts";
 import type { ExtractedFunction } from "./types.ts";
 
 export async function extractFunctionExpression(
-	containerName: string,
-	exportName: string,
-	declaration: VariableDeclaration,
+  containerName: string,
+  exportName: string,
+  declaration: VariableDeclaration,
 ): Promise<ExtractedFunction> {
-	return {
-		kind: "function",
-		id: id(containerName, "+function", exportName),
-		name: exportName,
-		docs: docs(declaration),
-		file: sourceFilePath(declaration),
-		line: declaration.getStartLineNumber(),
-		signature: await functionExpressionSignature(exportName, declaration),
-	};
+  return {
+    kind: "function",
+    id: id(containerName, "+function", exportName),
+    name: exportName,
+    docs: docs(declaration),
+    file: sourceFilePath(declaration),
+    line: declaration.getStartLineNumber(),
+    signature: await functionExpressionSignature(exportName, declaration),
+  };
 }
 
 async function functionExpressionSignature(
-	name: string,
-	declaration: VariableDeclaration,
+  name: string,
+  declaration: VariableDeclaration,
 ): Promise<string> {
-	const type = typeCheckerType(declaration);
-	return await formatSignature("function", `${name}: ${type}`);
+  const type = typeCheckerType(declaration);
+  return await formatSignature("function", `${name}: ${type}`);
 }

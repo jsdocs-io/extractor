@@ -3,15 +3,15 @@ import type { NormalizedPackageJson } from "read-pkg";
 
 /** `GetPackageTypesOptions` contains the options for calling {@link getPackageTypes}. */
 export interface GetPackageTypesOptions {
-	/** The contents of the `package.json` file. */
-	pkgJson: Partial<NormalizedPackageJson>;
+  /** The contents of the `package.json` file. */
+  pkgJson: Partial<NormalizedPackageJson>;
 
-	/**
+  /**
 	The subpath for which to resolve the `types` condition.
 
   @defaultValue `.` (package root)
 	*/
-	subpath?: string;
+  subpath?: string;
 }
 
 /**
@@ -19,49 +19,49 @@ export interface GetPackageTypesOptions {
 that acts as the entry point for the package at the given subpath.
 */
 export function getPackageTypes({
-	pkgJson,
-	subpath = ".",
+  pkgJson,
+  subpath = ".",
 }: GetPackageTypesOptions): string | undefined {
-	subpath = subpath.trim() || ".";
-	return getExportsMapTypes({ pkgJson, subpath }) ?? getTypesOrTypings({ pkgJson, subpath });
+  subpath = subpath.trim() || ".";
+  return getExportsMapTypes({ pkgJson, subpath }) ?? getTypesOrTypings({ pkgJson, subpath });
 }
 
 function getExportsMapTypes({
-	pkgJson,
-	subpath,
+  pkgJson,
+  subpath,
 }: Required<GetPackageTypesOptions>): string | undefined {
-	try {
-		// Try to resolve the `exports` map in `package.json`
-		// with conditions `import` and `types` enabled to find
-		// a valid TypeScript type definitions file.
-		const entries = resolveTypes(pkgJson, subpath) ?? [];
+  try {
+    // Try to resolve the `exports` map in `package.json`
+    // with conditions `import` and `types` enabled to find
+    // a valid TypeScript type definitions file.
+    const entries = resolveTypes(pkgJson, subpath) ?? [];
 
-		// Return first entry, if valid.
-		const entry = entries.at(0);
-		if (!entry || !isTypesFile(entry)) return undefined;
-		return entry;
-	} catch {
-		// The package may not have an `exports` map.
-		return undefined;
-	}
+    // Return first entry, if valid.
+    const entry = entries.at(0);
+    if (!entry || !isTypesFile(entry)) return undefined;
+    return entry;
+  } catch {
+    // The package may not have an `exports` map.
+    return undefined;
+  }
 }
 
 function getTypesOrTypings({
-	pkgJson,
-	subpath,
+  pkgJson,
+  subpath,
 }: Required<GetPackageTypesOptions>): string | undefined {
-	// Try to find the `package.json#/types` (or `typings`) file
-	// but accept it only to describe the types for the root subpath.
-	if (!isRootSubpath({ pkgJson, subpath })) return undefined;
-	const entry = pkgJson.types || pkgJson.typings;
-	if (!entry || !isTypesFile(entry)) return undefined;
-	return entry;
+  // Try to find the `package.json#/types` (or `typings`) file
+  // but accept it only to describe the types for the root subpath.
+  if (!isRootSubpath({ pkgJson, subpath })) return undefined;
+  const entry = pkgJson.types || pkgJson.typings;
+  if (!entry || !isTypesFile(entry)) return undefined;
+  return entry;
 }
 
 function isRootSubpath({ pkgJson, subpath }: Required<GetPackageTypesOptions>): boolean {
-	return [".", pkgJson.name].includes(subpath);
+  return [".", pkgJson.name].includes(subpath);
 }
 
 function isTypesFile(filename: string): boolean {
-	return [".d.ts", ".d.mts", ".d.cts"].some((ext) => filename.endsWith(ext));
+  return [".d.ts", ".d.mts", ".d.cts"].some((ext) => filename.endsWith(ext));
 }

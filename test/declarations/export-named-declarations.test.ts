@@ -4,18 +4,18 @@ import { expect, test } from "vitest";
 import { extractDeclarations } from "../../src/extract-declarations.ts";
 
 test("export named declarations", async () => {
-	const project = new Project({
-		useInMemoryFileSystem: true,
-		compilerOptions: {
-			lib: ["lib.esnext.full.d.ts"],
-			target: ScriptTarget.ESNext,
-			module: ModuleKind.ESNext,
-			moduleResolution: ModuleResolutionKind.Bundler,
-		},
-	});
-	project.createSourceFile(
-		"classes.ts",
-		dedent`
+  const project = new Project({
+    useInMemoryFileSystem: true,
+    compilerOptions: {
+      lib: ["lib.esnext.full.d.ts"],
+      target: ScriptTarget.ESNext,
+      module: ModuleKind.ESNext,
+      moduleResolution: ModuleResolutionKind.Bundler,
+    },
+  });
+  project.createSourceFile(
+    "classes.ts",
+    dedent`
     /**
      * Class001
      */
@@ -167,10 +167,10 @@ test("export named declarations", async () => {
       baz() {}
     }
     `,
-	);
-	project.createSourceFile(
-		"enums.ts",
-		dedent`
+  );
+  project.createSourceFile(
+    "enums.ts",
+    dedent`
     /**
      * Enum1
      */
@@ -204,10 +204,10 @@ test("export named declarations", async () => {
       B,
     }
     `,
-	);
-	project.createSourceFile(
-		"functions.ts",
-		dedent`
+  );
+  project.createSourceFile(
+    "functions.ts",
+    dedent`
     /**
      * Func1 returns the sum of two numbers.
      * @param a - the first number
@@ -254,10 +254,10 @@ test("export named declarations", async () => {
 
     export let func8: (a: string) => number;
     `,
-	);
-	project.createSourceFile(
-		"interfaces.ts",
-		dedent`
+  );
+  project.createSourceFile(
+    "interfaces.ts",
+    dedent`
     /**
      * Interface001
      */
@@ -357,16 +357,16 @@ test("export named declarations", async () => {
       readonly [index: number]: any;
     }
     `,
-	);
-	project.createSourceFile(
-		"internal.ts",
-		dedent`
+  );
+  project.createSourceFile(
+    "internal.ts",
+    dedent`
     export interface SomeType {}
     `,
-	);
-	project.createSourceFile(
-		"namespaces.ts",
-		dedent`
+  );
+  project.createSourceFile(
+    "namespaces.ts",
+    dedent`
     /**
      * Namespace1.
      */
@@ -396,10 +396,10 @@ test("export named declarations", async () => {
     /** @internal */
     export namespace Namespace4 {}
     `,
-	);
-	project.createSourceFile(
-		"type-aliases.ts",
-		dedent`
+  );
+  project.createSourceFile(
+    "type-aliases.ts",
+    dedent`
     /**
      * TypeAlias1 aliases a function.
      */
@@ -414,10 +414,10 @@ test("export named declarations", async () => {
     /** @internal */
     export type TypeAlias4 = string;
     `,
-	);
-	project.createSourceFile(
-		"variables.ts",
-		dedent`
+  );
+  project.createSourceFile(
+    "variables.ts",
+    dedent`
     import type { SomeType } from "./internal";
 
     export const var4 = "last variable";
@@ -442,10 +442,10 @@ test("export named declarations", async () => {
 
     export let var7: string;
     `,
-	);
-	const indexFile = project.createSourceFile(
-		"index.ts",
-		dedent`
+  );
+  const indexFile = project.createSourceFile(
+    "index.ts",
+    dedent`
     /**
      * This is the overview.
      *
@@ -460,13 +460,13 @@ test("export named declarations", async () => {
     export * from "./type-aliases";
     export * from "./variables";
     `,
-	);
-	expect(
-		await extractDeclarations({
-			containerName: "",
-			container: indexFile,
-			maxDepth: 5,
-			project,
-		}),
-	).toMatchSnapshot();
+  );
+  expect(
+    await extractDeclarations({
+      containerName: "",
+      container: indexFile,
+      maxDepth: 5,
+      project,
+    }),
+  ).toMatchSnapshot();
 });

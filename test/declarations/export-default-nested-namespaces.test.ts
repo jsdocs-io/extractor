@@ -4,18 +4,18 @@ import { expect, test } from "vitest";
 import { extractDeclarations } from "../../src/extract-declarations.ts";
 
 test("export default nested namespaces", async () => {
-	const project = new Project({
-		useInMemoryFileSystem: true,
-		compilerOptions: {
-			lib: ["lib.esnext.full.d.ts"],
-			target: ScriptTarget.ESNext,
-			module: ModuleKind.ESNext,
-			moduleResolution: ModuleResolutionKind.Bundler,
-		},
-	});
-	const indexFile = project.createSourceFile(
-		"index.d.ts",
-		dedent`
+  const project = new Project({
+    useInMemoryFileSystem: true,
+    compilerOptions: {
+      lib: ["lib.esnext.full.d.ts"],
+      target: ScriptTarget.ESNext,
+      module: ModuleKind.ESNext,
+      moduleResolution: ModuleResolutionKind.Bundler,
+    },
+  });
+  const indexFile = project.createSourceFile(
+    "index.d.ts",
+    dedent`
     /**
      * This is similar to the structure of \`index.d.ts\` for \`firebase@8.2.2\`.
      *
@@ -45,13 +45,13 @@ test("export default nested namespaces", async () => {
 
     export default foo;
     `,
-	);
-	expect(
-		await extractDeclarations({
-			containerName: "",
-			container: indexFile,
-			maxDepth: 5,
-			project,
-		}),
-	).toMatchSnapshot();
+  );
+  expect(
+    await extractDeclarations({
+      containerName: "",
+      container: indexFile,
+      maxDepth: 5,
+      project,
+    }),
+  ).toMatchSnapshot();
 });

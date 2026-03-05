@@ -3,13 +3,13 @@ import { expect, test } from "vitest";
 import { typeCheckerType } from "./type-checker-type.ts";
 
 test("return `any` in case of errors", () => {
-	expect(
-		typeCheckerType(
-			fromPartial({
-				getProject() {
-					throw new Error();
-				},
-			}),
-		),
-	).toBe("any");
+  expect(
+    typeCheckerType(
+      fromPartial({
+        getProject() {
+          throw new Error();
+        },
+      }),
+    ),
+  ).toBe("any");
 });
