@@ -1,6 +1,6 @@
 import type { Project, SourceFile } from "ts-morph";
-import { extractDeclarations } from "./extract-declarations.ts";
 import type { ExtractedDeclaration } from "./types.ts";
+import { extractDeclarations } from "./extract-declarations.ts";
 
 /** `GetPackageDeclarationsOptions` contains the options for calling {@link getPackageDeclarations}. */
 export interface GetPackageDeclarationsOptions {

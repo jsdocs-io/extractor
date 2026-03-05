@@ -8,6 +8,12 @@ import {
   type ClassDeclaration,
   type ConstructorDeclaration,
 } from "ts-morph";
+import type {
+  ExtractedClass,
+  ExtractedClassConstructor,
+  ExtractedClassMethod,
+  ExtractedClassProperty,
+} from "./types.ts";
 import { apparentType } from "./apparent-type.ts";
 import { docs } from "./docs.ts";
 import { formatSignature } from "./format-signature.ts";
@@ -17,12 +23,6 @@ import { isHidden } from "./is-hidden.ts";
 import { modifiersText } from "./modifiers-text.ts";
 import { sourceFilePath } from "./source-file-path.ts";
 import { typeCheckerType } from "./type-checker-type.ts";
-import type {
-  ExtractedClass,
-  ExtractedClassConstructor,
-  ExtractedClassMethod,
-  ExtractedClassProperty,
-} from "./types.ts";
 
 export async function extractClass(
   containerName: string,

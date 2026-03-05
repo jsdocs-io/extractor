@@ -6,6 +6,7 @@ import {
   type Project,
   type SourceFile,
 } from "ts-morph";
+import type { ExtractedDeclaration } from "./types.ts";
 import { ambientModulesDeclarations } from "./ambient-modules-declarations.ts";
 import {
   isClass,
@@ -35,7 +36,6 @@ import { extractVariableAssignmentExpression } from "./extract-variable-assignme
 import { extractVariable } from "./extract-variable.ts";
 import { globalAmbientDeclarations } from "./global-ambient-declarations.ts";
 import { id } from "./id.ts";
-import type { ExtractedDeclaration } from "./types.ts";
 
 /** `ExtractDeclarationsOptions` contains the options for calling {@link extractDeclarations}. */
 export interface ExtractDeclarationsOptions {

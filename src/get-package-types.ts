@@ -1,5 +1,5 @@
-import { types as resolveTypes } from "@es-joy/resolve.exports";
 import type { NormalizedPackageJson } from "read-pkg";
+import { types as resolveTypes } from "@es-joy/resolve.exports";
 
 /** `GetPackageTypesOptions` contains the options for calling {@link getPackageTypes}. */
 export interface GetPackageTypesOptions {

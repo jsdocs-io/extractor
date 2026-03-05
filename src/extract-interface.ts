@@ -9,13 +9,6 @@ import {
   PropertySignature,
   SetAccessorDeclaration,
 } from "ts-morph";
-import { docs } from "./docs.ts";
-import { formatSignature } from "./format-signature.ts";
-import { headText } from "./head-text.ts";
-import { id } from "./id.ts";
-import { isHidden } from "./is-hidden.ts";
-import { sourceFilePath } from "./source-file-path.ts";
-import { typeCheckerType } from "./type-checker-type.ts";
 import type {
   ExtractedInterface,
   ExtractedInterfaceCallSignature,
@@ -26,6 +19,13 @@ import type {
   ExtractedInterfaceProperty,
   ExtractedInterfaceSetAccessor,
 } from "./types.ts";
+import { docs } from "./docs.ts";
+import { formatSignature } from "./format-signature.ts";
+import { headText } from "./head-text.ts";
+import { id } from "./id.ts";
+import { isHidden } from "./is-hidden.ts";
+import { sourceFilePath } from "./source-file-path.ts";
+import { typeCheckerType } from "./type-checker-type.ts";
 
 export async function extractInterface(
   containerName: string,

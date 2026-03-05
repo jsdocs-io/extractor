@@ -1,5 +1,6 @@
 import { performance } from "node:perf_hooks";
 import { join } from "pathe";
+import type { ExtractedDeclaration } from "./types.ts";
 import { Bun } from "./bun.ts";
 import { getPackageDeclarations } from "./get-package-declarations.ts";
 import { getPackageJson } from "./get-package-json.ts";
@@ -7,7 +8,6 @@ import { getPackageOverview } from "./get-package-overview.ts";
 import { getPackageTypes } from "./get-package-types.ts";
 import { getProject } from "./get-project.ts";
 import { tempDir } from "./temp-dir.ts";
-import type { ExtractedDeclaration } from "./types.ts";
 
 /** `GetPackageApiOptions` contains the options for calling {@link getPackageApi}. */
 export interface GetPackageApiOptions {

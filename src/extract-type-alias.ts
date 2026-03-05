@@ -1,9 +1,9 @@
 import type { TypeAliasDeclaration } from "ts-morph";
+import type { ExtractedTypeAlias } from "./types.ts";
 import { docs } from "./docs.ts";
 import { formatSignature } from "./format-signature.ts";
 import { id } from "./id.ts";
 import { sourceFilePath } from "./source-file-path.ts";
-import type { ExtractedTypeAlias } from "./types.ts";
 
 export async function extractTypeAlias(
   containerName: string,

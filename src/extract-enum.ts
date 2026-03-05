@@ -1,11 +1,11 @@
 import { EnumMember, type EnumDeclaration } from "ts-morph";
+import type { ExtractedEnum, ExtractedEnumMember } from "./types.ts";
 import { docs } from "./docs.ts";
 import { formatSignature } from "./format-signature.ts";
 import { headText } from "./head-text.ts";
 import { id } from "./id.ts";
 import { isHidden } from "./is-hidden.ts";
 import { sourceFilePath } from "./source-file-path.ts";
-import type { ExtractedEnum, ExtractedEnumMember } from "./types.ts";
 
 export async function extractEnum(
   containerName: string,

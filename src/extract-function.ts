@@ -1,10 +1,10 @@
 import type { ArrowFunction, FunctionDeclaration } from "ts-morph";
+import type { ExtractedFunction } from "./types.ts";
 import { docs } from "./docs.ts";
 import { formatSignature } from "./format-signature.ts";
 import { id } from "./id.ts";
 import { sourceFilePath } from "./source-file-path.ts";
 import { typeCheckerType } from "./type-checker-type.ts";
-import type { ExtractedFunction } from "./types.ts";
 
 export async function extractFunction(
   containerName: string,

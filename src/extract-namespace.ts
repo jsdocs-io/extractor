@@ -1,9 +1,9 @@
 import { ModuleDeclaration } from "ts-morph";
+import type { ExtractedDeclaration, ExtractedNamespace } from "./types.ts";
 import { docs } from "./docs.ts";
 import { formatSignature } from "./format-signature.ts";
 import { id } from "./id.ts";
 import { sourceFilePath } from "./source-file-path.ts";
-import type { ExtractedDeclaration, ExtractedNamespace } from "./types.ts";
 
 export async function extractNamespace(
   containerName: string,
