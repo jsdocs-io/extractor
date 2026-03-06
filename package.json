@@ -50,7 +50,7 @@
     "test": "node -v && bun --revision && vitest run src test/declarations --coverage --bail 1",
     "test:ci": "node -v && bun --revision && vitest run src test/declarations test/packages --coverage --bail 1",
     "test:update": "node -v && bun --revision && vitest run src test/declarations test/packages --update",
-    "lint": "oxfmt --check && bun run oxlint --type-aware",
+    "lint": "oxfmt --check && oxlint --type-aware",
     "format": "oxfmt",
     "pre-push": "node -v && bun --revision && bun i && bun run lint && bun run build && bun run test:ci && bun run attw",
     "release": "np --no-cleanup"
