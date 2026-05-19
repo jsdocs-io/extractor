@@ -14,7 +14,7 @@ exports[`preact@10.19.4 1`] = `
           "kind": "class-constructor",
           "line": 141,
           "name": "constructor",
-          "signature": "constructor(props?: {}, context?: any);",
+          "signature": "constructor(props?: P | undefined, context?: any);",
         },
       ],
       "docs": [],
@@ -39,7 +39,7 @@ exports[`preact@10.19.4 1`] = `
           "kind": "class-method",
           "line": 157,
           "name": "getDerivedStateFromError",
-          "signature": "static getDerivedStateFromError: (error: any) => object | null;",
+          "signature": "static getDerivedStateFromError: ((error: any) => object | null) | undefined;",
         },
         {
           "docs": [],
@@ -48,10 +48,9 @@ exports[`preact@10.19.4 1`] = `
           "kind": "class-method",
           "line": 153,
           "name": "getDerivedStateFromProps",
-          "signature": "static getDerivedStateFromProps: (
-  props: Readonly<object>,
-  state: Readonly<object>,
-) => object | null;",
+          "signature": "static getDerivedStateFromProps:
+  | ((props: Readonly<object>, state: Readonly<object>) => object | null)
+  | undefined;",
         },
         {
           "docs": [],
@@ -93,7 +92,7 @@ exports[`preact@10.19.4 1`] = `
           "kind": "class-property",
           "line": 162,
           "name": "base",
-          "signature": "base?: Element | Text;",
+          "signature": "base?: Element | Text | undefined;",
         },
         {
           "docs": [],
@@ -111,7 +110,7 @@ exports[`preact@10.19.4 1`] = `
           "kind": "class-property",
           "line": 145,
           "name": "contextType",
-          "signature": "static contextType?: Context<any>;",
+          "signature": "static contextType?: Context<any> | undefined;",
         },
         {
           "docs": [],
@@ -129,7 +128,7 @@ exports[`preact@10.19.4 1`] = `
           "kind": "class-property",
           "line": 143,
           "name": "displayName",
-          "signature": "static displayName?: string;",
+          "signature": "static displayName?: string | undefined;",
         },
         {
           "docs": [],
@@ -139,7 +138,7 @@ exports[`preact@10.19.4 1`] = `
           "line": 160,
           "name": "props",
           "signature": "props: Readonly<
-  Attributes & { children?: ComponentChildren; ref?: Ref<any> }
+  Attributes & { children?: ComponentChildren; ref?: Ref<any> | undefined }
 >;",
         },
         {
@@ -336,7 +335,7 @@ exports[`preact@10.19.4 1`] = `
           "kind": "interface-method",
           "line": 137,
           "name": "componentDidCatch",
-          "signature": "componentDidCatch: (error: any, errorInfo: ErrorInfo) => void;",
+          "signature": "componentDidCatch: ((error: any, errorInfo: ErrorInfo) => void) | undefined;",
         },
         {
           "docs": [],
@@ -345,7 +344,7 @@ exports[`preact@10.19.4 1`] = `
           "kind": "interface-method",
           "line": 117,
           "name": "componentDidMount",
-          "signature": "componentDidMount: () => void;",
+          "signature": "componentDidMount: (() => void) | undefined;",
         },
         {
           "docs": [],
@@ -354,11 +353,13 @@ exports[`preact@10.19.4 1`] = `
           "kind": "interface-method",
           "line": 132,
           "name": "componentDidUpdate",
-          "signature": "componentDidUpdate: (
-  previousProps: Readonly<P>,
-  previousState: Readonly<S>,
-  snapshot: any,
-) => void;",
+          "signature": "componentDidUpdate:
+  | ((
+      previousProps: Readonly<P>,
+      previousState: Readonly<S>,
+      snapshot: any,
+    ) => void)
+  | undefined;",
         },
         {
           "docs": [],
@@ -367,7 +368,7 @@ exports[`preact@10.19.4 1`] = `
           "kind": "interface-method",
           "line": 116,
           "name": "componentWillMount",
-          "signature": "componentWillMount: () => void;",
+          "signature": "componentWillMount: (() => void) | undefined;",
         },
         {
           "docs": [],
@@ -376,7 +377,9 @@ exports[`preact@10.19.4 1`] = `
           "kind": "interface-method",
           "line": 120,
           "name": "componentWillReceiveProps",
-          "signature": "componentWillReceiveProps: (nextProps: Readonly<P>, nextContext: any) => void;",
+          "signature": "componentWillReceiveProps:
+  | ((nextProps: Readonly<P>, nextContext: any) => void)
+  | undefined;",
         },
         {
           "docs": [],
@@ -385,7 +388,7 @@ exports[`preact@10.19.4 1`] = `
           "kind": "interface-method",
           "line": 118,
           "name": "componentWillUnmount",
-          "signature": "componentWillUnmount: () => void;",
+          "signature": "componentWillUnmount: (() => void) | undefined;",
         },
         {
           "docs": [],
@@ -394,11 +397,13 @@ exports[`preact@10.19.4 1`] = `
           "kind": "interface-method",
           "line": 126,
           "name": "componentWillUpdate",
-          "signature": "componentWillUpdate: (
-  nextProps: Readonly<P>,
-  nextState: Readonly<S>,
-  nextContext: any,
-) => void;",
+          "signature": "componentWillUpdate:
+  | ((
+      nextProps: Readonly<P>,
+      nextState: Readonly<S>,
+      nextContext: any,
+    ) => void)
+  | undefined;",
         },
         {
           "docs": [],
@@ -407,7 +412,7 @@ exports[`preact@10.19.4 1`] = `
           "kind": "interface-method",
           "line": 119,
           "name": "getChildContext",
-          "signature": "getChildContext: () => object;",
+          "signature": "getChildContext: (() => object) | undefined;",
         },
         {
           "docs": [],
@@ -416,10 +421,9 @@ exports[`preact@10.19.4 1`] = `
           "kind": "interface-method",
           "line": 131,
           "name": "getSnapshotBeforeUpdate",
-          "signature": "getSnapshotBeforeUpdate: (
-  oldProps: Readonly<P>,
-  oldState: Readonly<S>,
-) => any;",
+          "signature": "getSnapshotBeforeUpdate:
+  | ((oldProps: Readonly<P>, oldState: Readonly<S>) => any)
+  | undefined;",
         },
         {
           "docs": [],
@@ -428,11 +432,13 @@ exports[`preact@10.19.4 1`] = `
           "kind": "interface-method",
           "line": 121,
           "name": "shouldComponentUpdate",
-          "signature": "shouldComponentUpdate: (
-  nextProps: Readonly<P>,
-  nextState: Readonly<S>,
-  nextContext: any,
-) => boolean;",
+          "signature": "shouldComponentUpdate:
+  | ((
+      nextProps: Readonly<P>,
+      nextState: Readonly<S>,
+      nextContext: any,
+    ) => boolean)
+  | undefined;",
         },
       ],
       "name": "Component",
@@ -468,7 +474,7 @@ exports[`preact@10.19.4 1`] = `
           "kind": "interface-method",
           "line": 105,
           "name": "getDerivedStateFromError",
-          "signature": "getDerivedStateFromError: (error: any) => Partial<S> | null;",
+          "signature": "getDerivedStateFromError: ((error: any) => Partial<S> | null) | undefined;",
         },
         {
           "docs": [],
@@ -477,10 +483,9 @@ exports[`preact@10.19.4 1`] = `
           "kind": "interface-method",
           "line": 101,
           "name": "getDerivedStateFromProps",
-          "signature": "getDerivedStateFromProps: (
-  props: Readonly<P>,
-  state: Readonly<S>,
-) => Partial<S> | null;",
+          "signature": "getDerivedStateFromProps:
+  | ((props: Readonly<P>, state: Readonly<S>) => Partial<S> | null)
+  | undefined;",
         },
       ],
       "name": "ComponentClass",
@@ -787,7 +792,7 @@ exports[`preact@10.19.4 1`] = `
           "kind": "interface-method",
           "line": 350,
           "name": "__suspenseDidResolve",
-          "signature": "__suspenseDidResolve: (vnode: VNode, cb: () => void) => void;",
+          "signature": "__suspenseDidResolve: ((vnode: VNode, cb: () => void) => void) | undefined;",
         },
         {
           "docs": [],
@@ -796,7 +801,7 @@ exports[`preact@10.19.4 1`] = `
           "kind": "interface-method",
           "line": 349,
           "name": "_addHookName",
-          "signature": "_addHookName: (name: string | number) => void;",
+          "signature": "_addHookName: ((name: string | number) => void) | undefined;",
         },
         {
           "docs": [
@@ -810,7 +815,7 @@ exports[`preact@10.19.4 1`] = `
           "kind": "interface-method",
           "line": 357,
           "name": "attr",
-          "signature": "attr: (name: string, value: any) => string | void;",
+          "signature": "attr: ((name: string, value: any) => string | void) | undefined;",
         },
         {
           "docs": [],
@@ -819,7 +824,7 @@ exports[`preact@10.19.4 1`] = `
           "kind": "interface-method",
           "line": 347,
           "name": "debounceRendering",
-          "signature": "debounceRendering: (cb: () => void) => void;",
+          "signature": "debounceRendering: ((cb: () => void) => void) | undefined;",
         },
         {
           "docs": [
@@ -830,7 +835,7 @@ exports[`preact@10.19.4 1`] = `
           "kind": "interface-method",
           "line": 344,
           "name": "diffed",
-          "signature": "diffed: (vnode: VNode) => void;",
+          "signature": "diffed: ((vnode: VNode) => void) | undefined;",
         },
         {
           "docs": [],
@@ -839,7 +844,7 @@ exports[`preact@10.19.4 1`] = `
           "kind": "interface-method",
           "line": 345,
           "name": "event",
-          "signature": "event: (e: Event) => any;",
+          "signature": "event: ((e: Event) => any) | undefined;",
         },
         {
           "docs": [],
@@ -848,7 +853,7 @@ exports[`preact@10.19.4 1`] = `
           "kind": "interface-method",
           "line": 346,
           "name": "requestAnimationFrame",
-          "signature": "requestAnimationFrame: (callback: () => void) => void;",
+          "signature": "requestAnimationFrame: ((callback: () => void) => void) | undefined;",
         },
         {
           "docs": [
@@ -859,7 +864,7 @@ exports[`preact@10.19.4 1`] = `
           "kind": "interface-method",
           "line": 342,
           "name": "unmount",
-          "signature": "unmount: (vnode: VNode) => void;",
+          "signature": "unmount: ((vnode: VNode) => void) | undefined;",
         },
         {
           "docs": [],
@@ -868,7 +873,7 @@ exports[`preact@10.19.4 1`] = `
           "kind": "interface-method",
           "line": 348,
           "name": "useDebugValue",
-          "signature": "useDebugValue: (value: string | number) => void;",
+          "signature": "useDebugValue: ((value: string | number) => void) | undefined;",
         },
         {
           "docs": [
@@ -879,7 +884,7 @@ exports[`preact@10.19.4 1`] = `
           "kind": "interface-method",
           "line": 340,
           "name": "vnode",
-          "signature": "vnode: (vnode: VNode) => void;",
+          "signature": "vnode: ((vnode: VNode) => void) | undefined;",
         },
       ],
       "name": "Options",

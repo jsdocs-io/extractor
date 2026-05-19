@@ -21,7 +21,11 @@ exports[`enttec-open-dmx-usb@4.0.1 1`] = `
           "kind": "class-constructor",
           "line": 22,
           "name": "constructor",
-          "signature": "constructor(path: string, startSending?: boolean, usleep?: Usleep);",
+          "signature": "constructor(
+  path: string,
+  startSending?: boolean | undefined,
+  usleep?: Usleep | null | undefined,
+);",
         },
       ],
       "docs": [],

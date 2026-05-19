@@ -50,7 +50,7 @@ exports[`@microsoft/api-extractor@7.13.0 1`] = `
           "kind": "class-property",
           "line": 26,
           "name": "program",
-          "signature": "readonly program: {};",
+          "signature": "readonly program: unknown;",
         },
       ],
       "signature": "class CompilerState {}",
@@ -398,7 +398,7 @@ exports[`@microsoft/api-extractor@7.13.0 1`] = `
           "kind": "class-property",
           "line": 176,
           "name": "overrideTsconfig",
-          "signature": "readonly overrideTsconfig: {};",
+          "signature": "readonly overrideTsconfig: {} | undefined;",
         },
         {
           "docs": [
@@ -412,7 +412,7 @@ exports[`@microsoft/api-extractor@7.13.0 1`] = `
           "kind": "class-property",
           "line": 168,
           "name": "packageFolder",
-          "signature": "readonly packageFolder: string;",
+          "signature": "readonly packageFolder: string | undefined;",
         },
         {
           "docs": [
@@ -426,7 +426,7 @@ exports[`@microsoft/api-extractor@7.13.0 1`] = `
           "kind": "class-property",
           "line": 163,
           "name": "packageJson",
-          "signature": "readonly packageJson: INodePackageJson;",
+          "signature": "readonly packageJson: INodePackageJson | undefined;",
         },
         {
           "docs": [
@@ -696,7 +696,7 @@ exports[`@microsoft/api-extractor@7.13.0 1`] = `
           "kind": "class-property",
           "line": 363,
           "name": "sourceFileColumn",
-          "signature": "readonly sourceFileColumn: number;",
+          "signature": "readonly sourceFileColumn: number | undefined;",
         },
         {
           "docs": [
@@ -710,7 +710,7 @@ exports[`@microsoft/api-extractor@7.13.0 1`] = `
           "kind": "class-property",
           "line": 358,
           "name": "sourceFileLine",
-          "signature": "readonly sourceFileLine: number;",
+          "signature": "readonly sourceFileLine: number | undefined;",
         },
         {
           "docs": [
@@ -723,7 +723,7 @@ exports[`@microsoft/api-extractor@7.13.0 1`] = `
           "kind": "class-property",
           "line": 353,
           "name": "sourceFilePath",
-          "signature": "readonly sourceFilePath: string;",
+          "signature": "readonly sourceFilePath: string | undefined;",
         },
         {
           "docs": [

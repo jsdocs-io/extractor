@@ -117,7 +117,7 @@ exports[`@sentry/browser@7.100.1 1`] = `
           "kind": "class-constructor",
           "line": 124,
           "name": "constructor",
-          "signature": "constructor(_options?: Partial<BrowserTracingOptions>);",
+          "signature": "constructor(_options?: Partial<BrowserTracingOptions> | undefined);",
         },
       ],
       "docs": [
@@ -218,7 +218,7 @@ exports[`@sentry/browser@7.100.1 1`] = `
   onFormOpen,
   onSubmitError,
   onSubmitSuccess,
-}?: OptionalFeedbackConfiguration);",
+}?: OptionalFeedbackConfiguration | undefined);",
         },
       ],
       "docs": [
@@ -470,10 +470,10 @@ exports[`@sentry/browser@7.100.1 1`] = `
           "line": 75,
           "name": "constructor",
           "signature": "constructor(
-  client?: Client<ClientOptions<BaseTransportOptions>>,
-  scope?: Scope,
-  isolationScope?: Scope,
-  _version?: number,
+  client?: Client<ClientOptions<BaseTransportOptions>> | undefined,
+  scope?: Scope | undefined,
+  isolationScope?: Scope | undefined,
+  _version?: number | undefined,
 );",
         },
       ],
@@ -1002,7 +1002,7 @@ exports[`@sentry/browser@7.100.1 1`] = `
   maskTextClass,
   maskTextSelector,
   ignoreClass,
-}?: ReplayConfiguration);",
+}?: ReplayConfiguration | undefined);",
         },
       ],
       "docs": [
@@ -1755,7 +1755,7 @@ exports[`@sentry/browser@7.100.1 1`] = `
           "kind": "class-property",
           "line": 51,
           "name": "_client",
-          "signature": "protected _client?: Client<ClientOptions<BaseTransportOptions>>;",
+          "signature": "protected _client?: Client<ClientOptions<BaseTransportOptions>> | undefined;",
         },
         {
           "docs": [
@@ -1799,7 +1799,7 @@ exports[`@sentry/browser@7.100.1 1`] = `
           "kind": "class-property",
           "line": 37,
           "name": "_fingerprint",
-          "signature": "protected _fingerprint?: string[];",
+          "signature": "protected _fingerprint?: string[] | undefined;",
         },
         {
           "docs": [
@@ -1810,7 +1810,7 @@ exports[`@sentry/browser@7.100.1 1`] = `
           "kind": "class-property",
           "line": 39,
           "name": "_level",
-          "signature": "protected _level?: Severity | SeverityLevel;",
+          "signature": "protected _level?: Severity | SeverityLevel | undefined;",
         },
         {
           "docs": [
@@ -1843,7 +1843,7 @@ exports[`@sentry/browser@7.100.1 1`] = `
           "kind": "class-property",
           "line": 49,
           "name": "_requestSession",
-          "signature": "protected _requestSession?: RequestSession;",
+          "signature": "protected _requestSession?: RequestSession | undefined;",
         },
         {
           "docs": [
@@ -1879,7 +1879,7 @@ exports[`@sentry/browser@7.100.1 1`] = `
           "kind": "class-property",
           "line": 47,
           "name": "_session",
-          "signature": "protected _session?: Session;",
+          "signature": "protected _session?: Session | undefined;",
         },
         {
           "docs": [
@@ -1890,7 +1890,7 @@ exports[`@sentry/browser@7.100.1 1`] = `
           "kind": "class-property",
           "line": 45,
           "name": "_span",
-          "signature": "protected _span?: Span;",
+          "signature": "protected _span?: Span | undefined;",
         },
         {
           "docs": [
@@ -1914,7 +1914,7 @@ exports[`@sentry/browser@7.100.1 1`] = `
           "kind": "class-property",
           "line": 43,
           "name": "_transactionName",
-          "signature": "protected _transactionName?: string;",
+          "signature": "protected _transactionName?: string | undefined;",
         },
         {
           "docs": [
@@ -3944,7 +3944,7 @@ exports[`@sentry/browser@7.100.1 1`] = `
           "kind": "interface-method",
           "line": 52,
           "name": "onClose",
-          "signature": "onClose: (this: void) => void;",
+          "signature": "onClose: ((this: void) => void) | undefined;",
         },
         {
           "docs": [
@@ -3955,7 +3955,7 @@ exports[`@sentry/browser@7.100.1 1`] = `
           "kind": "interface-method",
           "line": 50,
           "name": "onLoad",
-          "signature": "onLoad: (this: void) => void;",
+          "signature": "onLoad: ((this: void) => void) | undefined;",
         },
       ],
       "name": "ReportDialogOptions",
@@ -4217,7 +4217,9 @@ exports[`@sentry/browser@7.100.1 1`] = `
           "kind": "interface-method",
           "line": 45,
           "name": "shouldCreateSpanForRequest",
-          "signature": "shouldCreateSpanForRequest: (this: void, url: string) => boolean;",
+          "signature": "shouldCreateSpanForRequest:
+  | ((this: void, url: string) => boolean)
+  | undefined;",
         },
       ],
       "name": "RequestInstrumentationOptions",

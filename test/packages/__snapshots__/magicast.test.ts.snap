@@ -14,7 +14,7 @@ exports[`magicast@0.3.3 1`] = `
           "kind": "class-constructor",
           "line": 26,
           "name": "constructor",
-          "signature": "constructor(message: string, options?: MagicastErrorOptions);",
+          "signature": "constructor(message: string, options?: MagicastErrorOptions | undefined);",
         },
       ],
       "docs": [],
@@ -32,7 +32,7 @@ exports[`magicast@0.3.3 1`] = `
           "kind": "class-property",
           "line": 25,
           "name": "options",
-          "signature": "options?: MagicastErrorOptions;",
+          "signature": "options?: MagicastErrorOptions | undefined;",
         },
         {
           "docs": [],

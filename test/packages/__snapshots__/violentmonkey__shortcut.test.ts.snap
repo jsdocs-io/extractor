@@ -14,7 +14,7 @@ exports[`@violentmonkey/shortcut@1.4.1 1`] = `
           "kind": "class-constructor",
           "line": 16,
           "name": "constructor",
-          "signature": "constructor(options?: Partial<IShortcutServiceOptions>);",
+          "signature": "constructor(options?: Partial<IShortcutServiceOptions> | undefined);",
         },
       ],
       "docs": [],

@@ -154,7 +154,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
           "kind": "class-property",
           "line": 472,
           "name": "currentRoute",
-          "signature": "readonly currentRoute: CurrentRoute;",
+          "signature": "readonly currentRoute: CurrentRoute | undefined;",
         },
         {
           "docs": [],
@@ -181,7 +181,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
           "kind": "class-property",
           "line": 470,
           "name": "params",
-          "signature": "readonly params: URLSearchParams;",
+          "signature": "readonly params: URLSearchParams | undefined;",
         },
         {
           "docs": [],
@@ -190,7 +190,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
           "kind": "class-property",
           "line": 469,
           "name": "path",
-          "signature": "readonly path: string;",
+          "signature": "readonly path: string | undefined;",
         },
         {
           "docs": [],
@@ -199,7 +199,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
           "kind": "class-property",
           "line": 471,
           "name": "query",
-          "signature": "readonly query: URLSearchParams;",
+          "signature": "readonly query: URLSearchParams | undefined;",
         },
         {
           "docs": [],
@@ -208,7 +208,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
           "kind": "class-property",
           "line": 468,
           "name": "url",
-          "signature": "readonly url: URL;",
+          "signature": "readonly url: URL | undefined;",
         },
       ],
       "signature": "class Router implements Iterable<Route> {}",
@@ -1458,7 +1458,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
   (): State & Actions;
   <U>(
     selector: (state: State & Actions) => U,
-    equalityFn?: (a: U, b: U) => boolean,
+    equalityFn?: ((a: U, b: U) => boolean) | undefined,
   ): U;
 } & zustand_vanilla.StoreApi<State & Actions>;",
     },
@@ -1473,7 +1473,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
   (): StoryLiteState & StoryLiteActions;
   <U>(
     selector: (state: StoryLiteState & StoryLiteActions) => U,
-    equalityFn?: (a: U, b: U) => boolean,
+    equalityFn?: ((a: U, b: U) => boolean) | undefined,
   ): U;
 } & zustand_vanilla.StoreApi<StoryLiteState & StoryLiteActions>;",
     },

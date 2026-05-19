@@ -18,7 +18,7 @@ exports[`twoslash@0.2.1 1`] = `
   title: string,
   description: string,
   recommendation: string,
-  code?: string,
+  code?: string | undefined,
 );",
         },
       ],
@@ -37,7 +37,7 @@ exports[`twoslash@0.2.1 1`] = `
           "kind": "class-property",
           "line": 205,
           "name": "code",
-          "signature": "code: string;",
+          "signature": "code: string | undefined;",
         },
         {
           "docs": [],

@@ -14,7 +14,7 @@ exports[`h3@1.10.1 1`] = `
           "kind": "class-constructor",
           "line": 226,
           "name": "constructor",
-          "signature": "constructor(message: string, opts?: { cause?: unknown });",
+          "signature": "constructor(message: string, opts?: { cause?: unknown } | undefined);",
         },
       ],
       "docs": [
@@ -67,7 +67,7 @@ exports[`h3@1.10.1 1`] = `
           "kind": "class-property",
           "line": 225,
           "name": "cause",
-          "signature": "cause?: {};",
+          "signature": "cause?: unknown;",
         },
         {
           "docs": [],
@@ -76,7 +76,7 @@ exports[`h3@1.10.1 1`] = `
           "kind": "class-property",
           "line": 224,
           "name": "data",
-          "signature": "data?: {};",
+          "signature": "data?: DataT | undefined;",
         },
         {
           "docs": [],
@@ -103,7 +103,7 @@ exports[`h3@1.10.1 1`] = `
           "kind": "class-property",
           "line": 223,
           "name": "statusMessage",
-          "signature": "statusMessage?: string;",
+          "signature": "statusMessage?: string | undefined;",
         },
         {
           "docs": [],
@@ -190,7 +190,7 @@ exports[`h3@1.10.1 1`] = `
           "kind": "class-property",
           "line": 35,
           "name": "_headers",
-          "signature": "_headers?: Headers;",
+          "signature": "_headers?: Headers | undefined;",
         },
         {
           "docs": [],
@@ -199,7 +199,7 @@ exports[`h3@1.10.1 1`] = `
           "kind": "class-property",
           "line": 33,
           "name": "_method",
-          "signature": "_method?: HTTPMethod;",
+          "signature": "_method?: HTTPMethod | undefined;",
         },
         {
           "docs": [],
@@ -208,7 +208,7 @@ exports[`h3@1.10.1 1`] = `
           "kind": "class-property",
           "line": 34,
           "name": "_path",
-          "signature": "_path?: string;",
+          "signature": "_path?: string | undefined;",
         },
         {
           "docs": [],
@@ -217,7 +217,7 @@ exports[`h3@1.10.1 1`] = `
           "kind": "class-property",
           "line": 36,
           "name": "_requestBody",
-          "signature": "_requestBody?: BodyInit;",
+          "signature": "_requestBody?: BodyInit | undefined;",
         },
         {
           "docs": [],
@@ -302,7 +302,7 @@ exports[`h3@1.10.1 1`] = `
           "kind": "class-property",
           "line": 31,
           "name": "web",
-          "signature": "web?: WebEventContext;",
+          "signature": "web?: WebEventContext | undefined;",
         },
       ],
       "signature": "class H3Event<

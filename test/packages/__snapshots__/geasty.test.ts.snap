@@ -26,7 +26,7 @@ exports[`geasty@0.0.6 1`] = `
           "kind": "class-constructor",
           "line": 229,
           "name": "constructor",
-          "signature": "constructor(options?: GeastyOptions);",
+          "signature": "constructor(options?: GeastyOptions | undefined);",
         },
       ],
       "docs": [],
