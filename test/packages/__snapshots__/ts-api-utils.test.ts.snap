@@ -5398,11 +5398,13 @@ exports[`ts-api-utils@2.1.0 1`] = `
       "line": 34,
       "name": "BooleanCompilerOptions",
       "signature": "type BooleanCompilerOptions = keyof {
-  [K in keyof ts.CompilerOptions as NonNullable<
-    ts.CompilerOptions[K]
-  > extends boolean
-    ? K
-    : never]: unknown;
+  [
+    K in keyof ts.CompilerOptions as NonNullable<
+      ts.CompilerOptions[K]
+    > extends boolean
+      ? K
+      : never
+  ]: unknown;
 };",
     },
     {

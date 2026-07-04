@@ -1390,13 +1390,7 @@ exports[`@storylite/storylite@0.14.0 1`] = `
       "line": 64,
       "name": "StoryLiteParamValue",
       "signature": "type StoryLiteParamValue =
-  | string
-  | string[]
-  | number
-  | number[]
-  | boolean
-  | undefined
-  | null;",
+  string | string[] | number | number[] | boolean | undefined | null;",
     },
     {
       "docs": [],

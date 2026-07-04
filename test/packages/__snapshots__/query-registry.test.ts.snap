@@ -3473,10 +3473,7 @@ exports[`query-registry@2.6.0 1`] = `
       "line": 23,
       "name": "DefaultDownloadPeriod",
       "signature": "type DefaultDownloadPeriod =
-  | "last-day"
-  | "last-week"
-  | "last-month"
-  | "last-year";",
+  "last-day" | "last-week" | "last-month" | "last-year";",
     },
     {
       "docs": [

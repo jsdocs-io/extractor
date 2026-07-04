@@ -1863,12 +1863,7 @@ exports[`twoslash@0.2.1 1`] = `
       "line": 70,
       "name": "TwoslashNode",
       "signature": "type TwoslashNode =
-  | NodeHighlight
-  | NodeHover
-  | NodeQuery
-  | NodeCompletion
-  | NodeError
-  | NodeTag;",
+  NodeHighlight | NodeHover | NodeQuery | NodeCompletion | NodeError | NodeTag;",
     },
     {
       "docs": [],

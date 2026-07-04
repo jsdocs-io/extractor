@@ -824,13 +824,7 @@ exports[`magicast@0.3.3 1`] = `
       "line": 193,
       "name": "Proxified",
       "signature": "type Proxified<T = any> = T extends
-  | number
-  | string
-  | null
-  | undefined
-  | boolean
-  | bigint
-  | symbol
+  number | string | null | undefined | boolean | bigint | symbol
   ? T
   : T extends any[]
     ? {

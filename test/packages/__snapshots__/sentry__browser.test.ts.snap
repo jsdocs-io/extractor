@@ -2154,16 +2154,14 @@ exports[`@sentry/browser@7.100.1 1`] = `
     _metricOptions?: Partial<{ _reportAllChanges: boolean }> | undefined;
     _experiments: Partial<{ enableInteractions: boolean }>;
     beforeStartSpan?:
-      | ((options: StartSpanOptions) => StartSpanOptions)
-      | undefined;
+      ((options: StartSpanOptions) => StartSpanOptions) | undefined;
     tracingOrigins: (string | RegExp)[];
     tracePropagationTargets: (string | RegExp)[];
     traceFetch: boolean;
     traceXHR: boolean;
     enableHTTPTimings: boolean;
     shouldCreateSpanForRequest?:
-      | ((this: void, url: string) => boolean)
-      | undefined;
+      ((this: void, url: string) => boolean) | undefined;
   };
 };",
     },
@@ -4218,8 +4216,7 @@ exports[`@sentry/browser@7.100.1 1`] = `
           "line": 45,
           "name": "shouldCreateSpanForRequest",
           "signature": "shouldCreateSpanForRequest:
-  | ((this: void, url: string) => boolean)
-  | undefined;",
+  ((this: void, url: string) => boolean) | undefined;",
         },
       ],
       "name": "RequestInstrumentationOptions",
@@ -5781,9 +5778,7 @@ exports[`@sentry/browser@7.100.1 1`] = `
       "line": 179,
       "name": "ReplayFrameEvent",
       "signature": "type ReplayFrameEvent =
-  | ReplayBreadcrumbFrameEvent
-  | ReplaySpanFrameEvent
-  | ReplayOptionFrameEvent;",
+  ReplayBreadcrumbFrameEvent | ReplaySpanFrameEvent | ReplayOptionFrameEvent;",
     },
     {
       "docs": [],
@@ -6172,8 +6167,7 @@ exports[`@sentry/browser@7.100.1 1`] = `
   > &
     (new (
       options?:
-        | { key?: string | undefined; limit?: number | undefined }
-        | undefined,
+        { key?: string | undefined; limit?: number | undefined } | undefined,
     ) => import("@sentry/types").Integration);
   HttpContext: import("@sentry/types").IntegrationClass<
     import("@sentry/types").Integration & {
