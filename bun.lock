@@ -6,7 +6,7 @@
       "name": "@jsdocs-io/extractor",
       "dependencies": {
         "@es-joy/resolve.exports": "^1.2.0",
-        "@microsoft/tsdoc": "^0.16.0",
+        "@microsoft/tsdoc": "^0.17.0",
         "execa": "^9.6.1",
         "memoize": "^11.0.0",
         "natural-orderby": "^5.0.0",
@@ -153,7 +153,7 @@
 
     "@loaderkit/resolve": ["@loaderkit/resolve@1.0.4", "", { "dependencies": { "@braidai/lang": "^1.0.0" } }, "sha512-rJzYKVcV4dxJv+vW6jlvagF8zvGxHJ2+HTr1e2qOejfmGhAApgJHl8Aog4mMszxceTRiKTTbnpgmTO1bEZHV/A=="],
 
-    "@microsoft/tsdoc": ["@microsoft/tsdoc@0.16.0", "", {}, "sha512-xgAyonlVVS+q7Vc7qLW0UrJU7rSFcETRWsqdXZtjzRU8dF+6CkozTK4V4y1LwOX7j8r/vHphjDeMeGI4tNGeGA=="],
+    "@microsoft/tsdoc": ["@microsoft/tsdoc@0.17.0", "", {}, "sha512-p68VexhnH7ojf3U27RdryUDqnKJgKaWUbCL96vJR7N0mqDuhKG5OIECk3sCPPdynxjk+yoVhRkScqtv5KQjzsw=="],
 
     "@nodelib/fs.scandir": ["@nodelib/fs.scandir@2.1.5", "", { "dependencies": { "@nodelib/fs.stat": "2.0.5", "run-parallel": "^1.1.9" } }, "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g=="],
 
